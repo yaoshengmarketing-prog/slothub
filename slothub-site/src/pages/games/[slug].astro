@@ -17,6 +17,10 @@ const provider = providers.find((item) => item.id === entry.data.provider);
 const displayName = entry.data.displayNameZhHant ?? entry.data.originalName ?? entry.data.name;
 const originalName = entry.data.originalName ?? entry.data.name;
 const normalizedVolatility = entry.data.volatilityNormalized ?? entry.data.volatility;
+const titleCharacters = Array.from(displayName);
+const titlePrefix = titleCharacters.length > 4 ? titleCharacters.slice(0, -2).join('') : displayName;
+const titleTail = titleCharacters.length > 4 ? titleCharacters.slice(-2).join('') : '';
+const titleSizeClass = titleCharacters.length >= 16 ? 'is-very-long-title' : titleCharacters.length >= 10 ? 'is-long-title' : '';
 
 const formatDate = (date: Date) => date.toISOString().slice(0, 10);
 const formatMultiplier = (value: number) => `${value.toLocaleString('en-US')}×`;
@@ -40,7 +44,7 @@ const winCountDisplay = entry.data.winCount
     : entry.data.winMechanism === 'ways-to-win' || entry.data.winMechanism === 'megaways'
       ? `${entry.data.winCount.toLocaleString()} 路`
       : entry.data.winCount.toLocaleString()
-  : entry.data.paylines;
+  : undefined;
 
 const explicitRelated = entry.data.relatedGames
   .map((slug) => allGames.find((game) => game.id === slug))
@@ -118,7 +122,7 @@ const schema = {
       </figure>
       <div class="game-file-identity">
         <p class="eyebrow">GAME FILE / {entry.id}</p>
-        <h1>{displayName}</h1>
+        <h1 class={titleSizeClass}>{titlePrefix}{titleTail && <span class="game-title-tail">{titleTail}</span>}</h1>
         {entry.data.displayNameZhHant && <p class="game-file-original">{originalName}</p>}
         <div class="game-file-meta">
           {provider && <a href={providerUrl(entry.data.provider)}>{provider.data.name} ↗</a>}
