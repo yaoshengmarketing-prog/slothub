@@ -3,6 +3,7 @@ import { readFile, stat } from 'node:fs/promises';
 const root = new URL('../dist/', import.meta.url);
 const expectedPages = [
   'index.html',
+  '404.html',
   'guide/index.html',
   'games/index.html',
   'providers/index.html',
