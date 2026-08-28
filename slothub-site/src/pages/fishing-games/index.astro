@@ -1,5 +1,15 @@
 ---
-import FrameworkPage from '../../components/FrameworkPage.astro';
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { gameUrl, guideUrl, providerUrl } from '../../lib/urls';
+const fishingGames = (await getCollection('games')).filter((entry) => entry.data.status === 'published' && entry.data.primaryType === 'fishing-games');
+const providers = (await getCollection('providers')).filter((entry) => entry.data.status === 'published' && entry.data.gameTypes.includes('fishing-games'));
+const articles = (await getCollection('guides')).filter((entry) => entry.data.status === 'published' && entry.data.category === 'fishing');
 ---
-<FrameworkPage eyebrow="Category hub" title="捕魚機 Hub" description="捕魚機主題的預留入口；目前不包含遊戲或平台事實。" />
-
+<BaseLayout title="捕魚機入門與遊戲資料｜Slot Hub" description="了解捕魚機基本玩法、與老虎機的差異，以及未來遊戲與廠商資料入口。" canonicalPath="/fishing-games/">
+  <section class="page-hero shell"><p class="eyebrow">FISHING GAMES</p><h1>捕魚機</h1><p>捕魚機以即時畫面、目標與操作節奏為核心。這裡獨立整理玩法、遊戲與廠商，不混入老虎機篩選邏輯。</p></section>
+  <section class="section shell hub-intro"><div><p class="eyebrow">HOW IT WORKS</p><h2>先理解基本玩法</h2></div><div class="prose-card"><p>玩家通常控制炮台或相似工具，在移動中的畫面選擇目標。每款遊戲的投注、倍率、特殊目標與獎勵事件可能不同，實際規則應以該遊戲的官方說明為準。</p><a class="button secondary" href={guideUrl('fishing-games-basics')}>閱讀捕魚機入門 →</a></div></section>
+  <section class="hub-band"><div class="shell"><div class="section-head"><div><p class="eyebrow">SLOTS VS FISHING</p><h2>和老虎機有什麼不同？</h2></div><p>兩種遊戲採不同的操作與資料模型，因此分開整理。</p></div><div class="difference-grid"><div><span>老虎機</span><strong>轉輪與符號組合</strong><p>常見資料包括 Reels、Paylines／Ways、RTP、波動度與 Bonus features。</p></div><div><span>捕魚機</span><strong>即時目標與操作</strong><p>未來會整理控制方式、目標類型、武器／炮台、特殊事件及版本來源。</p></div></div></div></section>
+  <section class="section shell"><div class="section-head"><div><p class="eyebrow">FISHING LIBRARY</p><h2>遊戲與廠商資料位置</h2></div><p>個別遊戲仍使用 <code>/games/&#123;slug&#125;/</code>，廠商使用 <code>/providers/&#123;slug&#125;/</code>；資料成熟後會自動匯入此 Hub。</p></div>{fishingGames.length ? <div class="simple-game-list">{fishingGames.map((game) => <a href={gameUrl(game.id)}><strong>{game.data.name}</strong><span>查看資料 →</span></a>)}</div> : <div class="useful-empty"><strong>第一批捕魚機資料正在核對</strong><p>目前先提供玩法與資料欄位說明；不建立未確認遊戲的空白頁。</p></div>}{providers.length > 0 && <div class="provider-chips fishing-providers">{providers.map((provider) => <a href={providerUrl(provider.id)}><strong>{provider.data.name}</strong><small>查看廠商資料 →</small></a>)}</div>}</section>
+  <section class="section shell"><div class="section-head"><div><p class="eyebrow">LEARN</p><h2>相關教學</h2></div><p>內容會隨首批遊戲資料逐步增加。</p></div><div class="guide-list">{articles.map((article, index) => <a href={guideUrl(article.id)}><span>0{index + 1}</span><div><strong>{article.data.title}</strong><p>{article.data.description}</p></div><b>閱讀 →</b></a>)}</div></section>
+</BaseLayout>

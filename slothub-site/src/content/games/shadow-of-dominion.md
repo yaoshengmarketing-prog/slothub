@@ -10,6 +10,7 @@ volatility: high
 reels: 6x6
 paylines: Scatter Pays（8 個以上）
 bonusFeatures: [Giant Symbols, Dominion Respins, Progressive Win Multiplier, Free Spins, Super Free Spins]
+image: { src: /assets/games/shadow-of-dominion.jpg, alt: Shadow of Dominion 官方遊戲主圖, sourceUrl: https://cms.slotmill.com/uploads/855x688_93ef67d6df.jpg, retrievedAt: 2026-08-28 }
 releaseDate: 2026-08-18
 editorialFeatured: true
 status: published

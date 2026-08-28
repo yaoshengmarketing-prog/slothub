@@ -1,6 +1,7 @@
 ---
 title: RTP 是什麼？如何正確閱讀
 description: 說明老虎機標示 RTP 的意義、限制與多版本差異。
+category: data
 level: beginner
 tags: [RTP, 機率]
 status: published

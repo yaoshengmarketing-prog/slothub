@@ -1,6 +1,7 @@
 ---
 title: 老虎機新手入門：先看懂遊戲資料
 description: 從遊戲類型、RTP、波動度與盤面開始，建立查資料的基本方法。
+category: beginner
 level: beginner
 tags: [老虎機, RTP, 波動度]
 status: published

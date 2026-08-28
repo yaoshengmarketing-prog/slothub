@@ -1,6 +1,7 @@
 ---
 title: 波動度怎麼看？低、中、高代表什麼
 description: 用資料探索角度理解老虎機波動度，而不是把它當成輸贏預測。
+category: data
 level: beginner
 tags: [波動度, 老虎機]
 status: published

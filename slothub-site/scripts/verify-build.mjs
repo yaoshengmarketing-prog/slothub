@@ -16,6 +16,13 @@ const expectedPages = [
   'robots.txt',
   '_headers',
 ];
+const expectedMedia = [
+  'assets/games/cash-crew.jpg', 'assets/games/chaos-crew.jpg', 'assets/games/hand-of-anubis.jpg',
+  'assets/games/fish-tales-double-catch-max-scatter.png', 'assets/games/fortune-paw.png', 'assets/games/greedy-for-gold-hold-and-win.png',
+  'assets/games/ragnarok-gold.jpg', 'assets/games/shadow-of-dominion.jpg', 'assets/games/wildhalla.jpg',
+  'assets/games/storm-of-seth-2-awakening.webp', 'assets/games/storm-of-seth.webp', 'assets/games/sun-wu-kong.webp',
+  'assets/providers/atg-games.png', 'assets/providers/booming-games.svg', 'assets/providers/hacksaw-gaming.png', 'assets/providers/slotmill.png',
+];
 
 const failures = [];
 
@@ -26,11 +33,23 @@ for (const path of expectedPages) {
     failures.push(`Missing build output: ${path}`);
   }
 }
+for (const path of expectedMedia) {
+  try {
+    await stat(new URL(path, root));
+  } catch {
+    failures.push(`Missing media output: ${path}`);
+  }
+}
 
 const home = await readFile(new URL('index.html', root), 'utf8');
 const sitemap = await readFile(new URL('sitemap.xml', root), 'utf8');
 const robots = await readFile(new URL('robots.txt', root), 'utf8');
 const headers = await readFile(new URL('_headers', root), 'utf8');
+const slots = await readFile(new URL('slots/index.html', root), 'utf8');
+const fishing = await readFile(new URL('fishing-games/index.html', root), 'utf8');
+const tools = await readFile(new URL('tools/index.html', root), 'utf8');
+const guides = await readFile(new URL('guide/index.html', root), 'utf8');
+const compare = await readFile(new URL('compare/index.html', root), 'utf8');
 
 const checks = [
   [home.includes('content="noindex,nofollow"'), 'Homepage meta robots is not noindex,nofollow'],
@@ -41,6 +60,11 @@ const checks = [
   [!sitemap.includes('<url><loc>'), 'Preview sitemap must not publish formal URLs'],
   [robots.includes('Allow: /') && !robots.includes('Disallow: /'), 'robots.txt must allow crawling for noindex discovery'],
   [headers.includes('X-Robots-Tag: noindex, nofollow'), 'Cloudflare X-Robots-Tag safeguard is missing'],
+  [slots.includes('探索老虎機') && slots.includes('Wild') && slots.includes('Jackpot'), 'Slot Hub content is incomplete'],
+  [fishing.includes('和老虎機有什麼不同') && fishing.includes('捕魚機入門'), 'Fishing Hub content is incomplete'],
+  [tools.includes('全站搜尋') && tools.includes('遊戲探索器') && tools.includes('三款遊戲比較'), 'Tool index is incomplete'],
+  [guides.includes('新手入門') && guides.includes('遊戲機制') && guides.includes('捕魚機教學'), 'Guide topics are incomplete'],
+  [!compare.includes('先選擇兩至三款遊戲'), 'Compare page must not server-render the transient empty state'],
 ];
 
 for (const [passed, message] of checks) {
@@ -52,4 +76,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`PASS: ${expectedPages.length} outputs and ${checks.length} SEO safeguards verified.`);
+console.log(`PASS: ${expectedPages.length} outputs, ${expectedMedia.length} media files and ${checks.length} safeguards verified.`);

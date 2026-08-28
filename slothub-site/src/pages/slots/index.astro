@@ -1,5 +1,30 @@
 ---
-import FrameworkPage from '../../components/FrameworkPage.astro';
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GameExplorer from '../../components/GameExplorer';
+import { gameUrl, guideUrl, providerUrl } from '../../lib/urls';
+import { subtypeLabels } from '../../lib/taxonomy';
+const providers = (await getCollection('providers')).filter((entry) => entry.data.status === 'published');
+const names = new Map(providers.map((provider) => [provider.id, provider.data.name]));
+const entries = (await getCollection('games')).filter((entry) => entry.data.status === 'published' && entry.data.primaryType === 'slots');
+const games = entries.map((game) => ({ slug: game.id, name: game.data.name, provider: game.data.provider, providerName: names.get(game.data.provider) ?? game.data.provider, primaryType: game.data.primaryType, subtypes: game.data.subtypes, summary: game.data.summary, image: game.data.image ? { src: game.data.image.src, alt: game.data.image.alt } : undefined, rtp: game.data.rtp, volatility: game.data.volatility, reels: game.data.reels, paylines: game.data.paylines, bonusFeatures: game.data.bonusFeatures, editorialFeatured: game.data.editorialFeatured, url: gameUrl(game.id) }));
+const subtypeCounts = [...new Set(games.flatMap((game) => game.subtypes))].map((type) => ({ type, count: games.filter((game) => game.subtypes.includes(type)).length }));
+const guides = (await getCollection('guides')).filter((entry) => entry.data.status === 'published');
+const knowledge = [
+  { label: 'RTP', text: '長期理論回報率與多版本差異', href: guideUrl('rtp-explained') },
+  { label: '波動度', text: '理解結果分布起伏，不把它當預測', href: guideUrl('volatility-explained') },
+  { label: 'Wild', text: '替代符號、倍數與擴展形式', href: guideUrl('slot-symbols-and-features') },
+  { label: 'Scatter', text: '常見觸發條件與位置規則', href: guideUrl('slot-symbols-and-features') },
+  { label: 'Free Spins', text: '免費回合與附加機制', href: guideUrl('slot-symbols-and-features') },
+  { label: 'Jackpot', text: '固定獎與累積獎的資料差異', href: guideUrl('slot-symbols-and-features') },
+];
 ---
-<FrameworkPage eyebrow="Category hub" title="老虎機 Hub" description="Slot Hub 專屬的老虎機主題入口；正式內容與分類規則尚未發布。" />
-
+<BaseLayout title="老虎機遊戲探索｜Slot Hub" description="依廠商、子類型、RTP 與波動度探索老虎機，閱讀常見機制與新手教學。" canonicalPath="/slots/">
+  <section class="page-hero shell"><p class="eyebrow">SLOT HUB</p><h1>老虎機</h1><p>從遊戲本身開始：查廠商、看資料、比較機制，再用教學理解欄位。</p></section>
+  <section class="section shell"><div class="section-head"><div><p class="eyebrow">EXPLORE</p><h2>探索老虎機</h2></div><p>依目前有可靠資料的條件篩選；底層分類代碼不會顯示給使用者。</p></div><GameExplorer games={games} initialLimit={8} client:load /></section>
+  <section class="hub-band"><div class="shell"><div class="section-head"><div><p class="eyebrow">SUBTYPES</p><h2>從玩法結構開始找</h2></div><p>同一款遊戲可以同時具有多個子類型，個別網址仍固定在 <code>/games/&#123;slug&#125;/</code>。</p></div><div class="topic-grid">{subtypeCounts.map((item) => <a href="/games/"><strong>{subtypeLabels[item.type] ?? item.type}</strong><span>{item.count} 款目前資料</span><b>進入遊戲庫 →</b></a>)}</div></div></section>
+  <section class="section shell"><div class="section-head"><div><p class="eyebrow">KNOWLEDGE MAP</p><h2>先看懂常見資料</h2></div><p>每個入口都連到可閱讀的內容，不建立只有標題的薄頁。</p></div><div class="knowledge-grid">{knowledge.map((item) => <a href={item.href}><strong>{item.label}</strong><span>{item.text}</span><b>閱讀 →</b></a>)}</div></section>
+  <section class="dark-section"><div class="shell"><div class="section-head light"><div><p class="eyebrow">EDITOR'S SELECTION</p><h2>編輯精選遊戲</h2></div><p>依資料完整度與探索測試需求選擇，不代表熱門排行。</p></div><div class="feature-strip">{games.filter((game) => game.editorialFeatured).slice(0, 5).map((game, index) => <a href={game.url}><span>0{index + 1}</span><div><small>{game.providerName}</small><strong>{game.name}</strong></div><b>{game.rtp ? `${game.rtp}% RTP` : '資料整理中'} →</b></a>)}</div></div></section>
+  <section class="section providers-band shell"><div><p class="eyebrow">SLOT PROVIDERS</p><h2>目前收錄廠商</h2></div><div class="provider-chips">{providers.filter((provider) => games.some((game) => game.provider === provider.id)).map((provider) => <a href={providerUrl(provider.id)}>{provider.data.logo ? <span class="provider-logo"><img src={provider.data.logo.src} alt={provider.data.logo.alt} loading="lazy" /></span> : <span>{provider.data.name.slice(0, 2)}</span>}<strong>{provider.data.name}</strong><small>{games.filter((game) => game.provider === provider.id).length} 款資料</small></a>)}</div></section>
+  <section class="section shell"><div class="section-head"><div><p class="eyebrow">START HERE</p><h2>新手閱讀路線</h2></div><p>先理解基本欄位，再回到探索器實際操作。</p></div><div class="guide-list">{guides.filter((guide) => ['beginner', 'data', 'mechanics'].includes(guide.data.category)).slice(0, 5).map((guide, index) => <a href={guideUrl(guide.id)}><span>0{index + 1}</span><div><strong>{guide.data.title}</strong><p>{guide.data.description}</p></div><b>閱讀 →</b></a>)}</div></section>
+</BaseLayout>

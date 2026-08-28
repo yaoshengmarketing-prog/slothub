@@ -10,6 +10,7 @@ volatility: very-high
 reels: 5x5
 paylines: 19 paylines
 bonusFeatures: [Multipliers, Bonus Game, Bonus Buy]
+image: { src: /assets/games/chaos-crew.jpg, alt: Chaos Crew 官方遊戲主圖, sourceUrl: https://www-live.hacksawgaming.com/casino_thumbnails/1867.jpg, retrievedAt: 2026-08-28 }
 editorialFeatured: true
 status: published
 source: { label: Hacksaw Gaming 官方遊戲頁, url: https://www.hacksawgaming.com/games/chaos-crew, checkedAt: 2026-08-28 }

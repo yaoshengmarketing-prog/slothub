@@ -7,6 +7,7 @@ summary: 5×3、10 條固定線的 Fish Tales 系列作品，包含 Max Scatter 
 reels: 5x3
 paylines: 10 fixed paylines
 bonusFeatures: [Max Scatter, Free Spins, Wild Collection, Barrel Boost]
+image: { src: /assets/games/fish-tales-double-catch-max-scatter.png, alt: Fish Tales Double Catch Max Scatter 官方宣傳圖, sourceUrl: https://strapi-dev.booming-games.com/PR_2_1200x800_Fish_Tales_Double_Catch_Max_Scatter_a50a71cc9d.png, retrievedAt: 2026-08-28 }
 releaseDate: 2026-07-09
 editorialFeatured: true
 status: published

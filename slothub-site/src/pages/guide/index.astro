@@ -1,4 +1,13 @@
 ---
-import {getCollection} from 'astro:content';import BaseLayout from '../../layouts/BaseLayout.astro';import {guideUrl} from '../../lib/urls';const guides=(await getCollection('guides')).filter(x=>x.data.status==='published');
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { guideUrl } from '../../lib/urls';
+import { guideCategoryLabels } from '../../lib/taxonomy';
+const guides = (await getCollection('guides')).filter((entry) => entry.data.status === 'published');
+const categories = ['beginner', 'mechanics', 'data', 'terms', 'fishing'];
 ---
-<BaseLayout title="教學與知識｜Slot Hub" description="閱讀老虎機 RTP、波動度與基礎資料欄位教學。" canonicalPath="/guide/"><section class="page-hero shell"><p class="eyebrow">GUIDE LIBRARY</p><h1>教學與知識</h1><p>先理解資料，再使用搜尋、探索與比較工具。</p></section><section class="section shell guide-list">{guides.map((g,i)=><a href={guideUrl(g.id)}><span>0{i+1}</span><div><strong>{g.data.title}</strong><p>{g.data.description}</p></div><b>閱讀 →</b></a>)}</section></BaseLayout>
+<BaseLayout title="教學與知識｜Slot Hub" description="依新手入門、遊戲機制、數據概念、Slot 術語及捕魚機教學閱讀內容。" canonicalPath="/guide/">
+  <section class="page-hero shell"><p class="eyebrow">GUIDE LIBRARY</p><h1>教學與知識</h1><p>先理解資料，再使用搜尋、探索與比較工具。文章網址固定維持 <code>/guide/&#123;slug&#125;/</code>。</p></section>
+  <nav class="guide-topics shell" aria-label="教學主題">{categories.map((category) => <a href={`#${category}`}><span>{guides.filter((guide) => guide.data.category === category).length}</span>{guideCategoryLabels[category]}</a>)}</nav>
+  <div class="shell guide-sections">{categories.map((category) => { const items = guides.filter((guide) => guide.data.category === category); return <section id={category}><div class="guide-section-head"><p class="eyebrow">{category.toUpperCase()}</p><h2>{guideCategoryLabels[category]}</h2><span>{items.length ? `${items.length} 篇` : '內容準備中'}</span></div>{items.length ? <div class="guide-list">{items.map((guide, index) => <a href={guideUrl(guide.id)}><span>0{index + 1}</span><div><strong>{guide.data.title}</strong><p>{guide.data.description}</p></div><b>閱讀 →</b></a>)}</div> : <div class="useful-empty"><p>此主題已保留分類，不會自動產生空白文章頁。</p></div>}</section>; })}</div>
+</BaseLayout>
