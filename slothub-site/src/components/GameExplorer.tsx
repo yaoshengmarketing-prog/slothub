@@ -15,7 +15,8 @@ function load() { try { return (JSON.parse(localStorage.getItem(KEY) || '[]') as
 function mechanismLabel(game: Game) {
   if (game.winMechanism !== 'other') return game.winMechanism ? winMechanismLabels[game.winMechanism] ?? game.winMechanism : undefined;
   const legacyDescription = game.paylines?.toLowerCase() ?? '';
-  if (legacyDescription.includes('scatter') || legacyDescription.includes('pay anywhere')) return '散佈賠付';
+  if (legacyDescription.includes('pay anywhere')) return winMechanismLabels['pay-anywhere'];
+  if (legacyDescription.includes('scatter')) return '散佈賠付';
   if (legacyDescription.includes('ways')) return '多路贏法';
   return winMechanismLabels.other;
 }

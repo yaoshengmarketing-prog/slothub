@@ -30,7 +30,8 @@ const getMechanismLabel = () => {
     return winMechanismLabels[entry.data.winMechanism] ?? entry.data.winMechanism;
   }
   const detail = entry.data.paylines?.toLowerCase() ?? '';
-  if (detail.includes('scatter') || detail.includes('pay anywhere')) return '散佈賠付';
+  if (detail.includes('pay anywhere')) return winMechanismLabels['pay-anywhere'];
+  if (detail.includes('scatter')) return '散佈賠付';
   if (detail.includes('ways')) return '多路贏法';
   return entry.data.winMechanism ? winMechanismLabels[entry.data.winMechanism] : undefined;
 };

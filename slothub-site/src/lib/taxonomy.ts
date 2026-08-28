@@ -27,6 +27,7 @@ export const winMechanismLabels: Record<string, string> = {
   'ways-to-win': '多路贏法',
   megaways: 'Megaways',
   'cluster-pays': '群集賠付',
+  'pay-anywhere': '任意位置賠付',
   other: '其他',
 };
 

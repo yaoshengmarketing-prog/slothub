@@ -3,7 +3,7 @@ import { glob } from 'astro/loaders';
 const source = z.object({ label: z.string(), url: z.string().url(), checkedAt: z.coerce.date() });
 const media = z.object({ src: z.string(), alt: z.string(), sourceUrl: z.string().url(), retrievedAt: z.coerce.date() });
 const normalizedVolatility = z.enum(['low','medium','medium-high','high','very-high']);
-const winMechanism = z.enum(['paylines','ways-to-win','megaways','cluster-pays','other']);
+const winMechanism = z.enum(['paylines','ways-to-win','megaways','cluster-pays','pay-anywhere','other']);
 const feature = z.enum([
   'free-spins','wild','scatter','multiplier','hold-and-spin','cascading','bonus-buy',
   'respins','cash-collection','giant-symbols','symbol-splitting','sticky-symbols','jackpot','other',

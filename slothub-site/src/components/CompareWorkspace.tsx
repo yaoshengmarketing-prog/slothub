@@ -19,7 +19,8 @@ function initialSelection(valid: string[]) {
 function mechanismLabel(game: Game) {
   if (game.winMechanism && game.winMechanism !== 'other') return winMechanismLabels[game.winMechanism] ?? game.winMechanism;
   const legacy = game.paylines?.toLowerCase() ?? '';
-  if (legacy.includes('scatter') || legacy.includes('pay anywhere')) return '散佈賠付';
+  if (legacy.includes('pay anywhere')) return winMechanismLabels['pay-anywhere'];
+  if (legacy.includes('scatter')) return '散佈賠付';
   if (legacy.includes('ways')) return '多路贏法';
   return game.winMechanism === 'other' ? '其他' : EMPTY;
 }

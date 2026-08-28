@@ -18,7 +18,7 @@ const fields = [
   'jackpotType', 'minBet', 'maxBet', 'releaseDate', 'gameId', 'sources', 'lastVerifiedAt',
 ];
 const normalizedVolatilities = new Set(['low', 'medium', 'medium-high', 'high', 'very-high']);
-const winMechanisms = new Set(['paylines', 'ways-to-win', 'megaways', 'cluster-pays', 'other']);
+const winMechanisms = new Set(['paylines', 'ways-to-win', 'megaways', 'cluster-pays', 'pay-anywhere', 'other']);
 const features = new Set([
   'free-spins', 'wild', 'scatter', 'multiplier', 'hold-and-spin', 'cascading', 'bonus-buy',
   'respins', 'cash-collection', 'giant-symbols', 'symbol-splitting', 'sticky-symbols', 'jackpot', 'other',
@@ -64,7 +64,7 @@ const coverage = Object.fromEntries(fields.map((field) => {
 
 console.log(`Audited ${records.length} game records.`);
 console.table(coverage);
-if (records.length !== 12) errors.push(`expected 12 game records, found ${records.length}`);
+if (records.length < 18) errors.push(`expected at least 18 game records, found ${records.length}`);
 if (errors.length) {
   console.error(`\n${errors.length} data validation error(s):`);
   for (const error of errors) console.error(`- ${error}`);
