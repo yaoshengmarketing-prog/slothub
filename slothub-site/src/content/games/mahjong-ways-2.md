@@ -24,12 +24,13 @@ winCount: 2000
 paylines: 2000 ways (base bet 20)
 features: [wild, free-spins, multiplier, scatter, cascading]
 bonusFeatures: [Wild symbol transformation, Free Spins Feature, increasing multiplier, golden Mahjong symbols, Scatter symbol, irregular reel layout]
+image: { src: /assets/games/mahjong-ways-2.png, alt: Mahjong Ways 2 官方原作主圖, sourceUrl: https://www.pgsoft.com/uploads/Games/Pdf/Mahjong_Ways_2_Gameinformation_EN.pdf, retrievedAt: 2026-08-29 }
 editorialFeatured: false
 status: draft
 source: { label: PG SOFT 官方 Mahjong Ways 2 遊戲頁, url: https://www.pgsoft.com/en/games/60/, checkedAt: 2026-08-29 }
 sources:
   - { label: PG SOFT 官方 Mahjong Ways 2 遊戲頁, url: https://www.pgsoft.com/en/games/60/, checkedAt: 2026-08-29 }
-  - { label: PG SOFT 官方 Mahjong Ways 2 英文規則, url: https://www.pgsoft.com/uploads/Games/Pdf/Mahjong_Ways_2_Gameinformation_EN.pdf, checkedAt: 2026-08-29 }
+  - { label: PG SOFT 官方 Mahjong Ways 2 英文規則（主圖原始 1686×1192；等比縮放置中為 600×500 PNG，未裁切）, url: https://www.pgsoft.com/uploads/Games/Pdf/Mahjong_Ways_2_Gameinformation_EN.pdf, checkedAt: 2026-08-29 }
   - { label: PG SOFT 官方 Mahjong Ways 2 中文規則, url: https://www.pgsoft.com/uploads/Games/Pdf/Mahjong_Ways_2_Gameinformation_ZH.pdf, checkedAt: 2026-08-29 }
   - { label: PG SOFT 官方 Mahjong Ways 2 續作介紹, url: https://www.pgsoft.com/en/news/93/, checkedAt: 2026-08-29 }
 lastVerifiedAt: 2026-08-29

@@ -25,12 +25,13 @@ winCount: 1024
 paylines: 1024 ways (base bet 20)
 features: [wild, free-spins, multiplier, scatter, cascading]
 bonusFeatures: [Wild symbol transformation, Free Spins Feature, increasing multiplier, Scatter symbol, gold plated symbols, cascaded down]
+image: { src: /assets/games/mahjong-ways.png, alt: Mahjong Ways 官方原作主圖, sourceUrl: https://www.pgsoft.com/uploads/Games/Pdf/MahjongWays_Gameinformation_EN.pdf, retrievedAt: 2026-08-29 }
 editorialFeatured: false
 status: draft
 source: { label: PG SOFT 官方 Mahjong Ways 遊戲頁, url: https://www.pgsoft.com/en/games/50/, checkedAt: 2026-08-29 }
 sources:
   - { label: PG SOFT 官方 Mahjong Ways 遊戲頁, url: https://www.pgsoft.com/en/games/50/, checkedAt: 2026-08-29 }
-  - { label: PG SOFT 官方 Mahjong Ways 英文規則, url: https://www.pgsoft.com/uploads/Games/Pdf/MahjongWays_Gameinformation_EN.pdf, checkedAt: 2026-08-29 }
+  - { label: PG SOFT 官方 Mahjong Ways 英文規則（主圖原始 1686×1192；等比縮放置中為 600×500 PNG，未裁切）, url: https://www.pgsoft.com/uploads/Games/Pdf/MahjongWays_Gameinformation_EN.pdf, checkedAt: 2026-08-29 }
   - { label: PG SOFT 官方 Mahjong Ways 中文規則, url: https://www.pgsoft.com/uploads/Games/Pdf/MahjongWays_Gameinformation_ZH.pdf, checkedAt: 2026-08-29 }
   - { label: PG SOFT 官方 Mahjong Ways 介紹, url: https://www.pgsoft.com/en/news/81/, checkedAt: 2026-08-29 }
 lastVerifiedAt: 2026-08-29

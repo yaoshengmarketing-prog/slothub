@@ -14,6 +14,7 @@ rows: 3
 features: [scatter, free-spins, wild, cash-collection, multiplier]
 bonusFeatures: [Bass Scatter symbols, Bonus Round, Fisherman acts as a wild, money symbols, money collect feature, dynamite, retrigger]
 releaseDate: 2020-12-14
+image: { src: /assets/games/big-bass-bonanza.png, alt: Big Bass Bonanza 官方原作縮圖, sourceUrl: https://www.pragmaticplay.com/wp-content/uploads/2020/11/Big-Bass-Bonanza%E2%84%A2_EN_339x180_04.png, retrievedAt: 2026-08-29 }
 editorialFeatured: false
 status: draft
 source: { label: Pragmatic Play 官方 Big Bass Bonanza 遊戲頁, url: "https://www.pragmaticplay.com/en/games/big-bass-bonanza/?cur=tnd&gamelang=en", checkedAt: 2026-08-29 }
@@ -21,6 +22,7 @@ sources:
   - { label: Pragmatic Play 官方 Big Bass Bonanza 遊戲頁, url: "https://www.pragmaticplay.com/en/games/big-bass-bonanza/?cur=tnd&gamelang=en", checkedAt: 2026-08-29 }
   - { label: Pragmatic Play 官方 Big Bass Bonanza 中文市場頁, url: "https://www.pragmaticplay.com/zh/%E6%B8%B8%E6%88%8F/big-bass-bonanza-zh/", checkedAt: 2026-08-29 }
   - { label: Pragmatic Play 官方發布稿（Pragmatic Play 與 Reel Kingdom 合作線索）, url: https://www.pragmaticplay.com/en/news/pragmatic-play-turns-fishing-to-spins-in-big-bass-bonanza/, checkedAt: 2026-08-29 }
+  - { label: Pragmatic Play 官方 Big Bass Bonanza 縮圖（原始 339×180；等比縮放置中為 600×500 PNG，未裁切）, url: https://www.pragmaticplay.com/wp-content/uploads/2020/11/Big-Bass-Bonanza%E2%84%A2_EN_339x180_04.png, checkedAt: 2026-08-29 }
 lastVerifiedAt: 2026-08-29
 updatedAt: 2026-08-29
 ---
