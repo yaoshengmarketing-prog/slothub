@@ -11,7 +11,8 @@
     "check": "astro check",
     "verify:links": "node scripts/check-links.mjs",
     "verify:search": "node scripts/test-search.mjs",
-    "verify": "npm run verify:search && npm run check && npm run build && npm run verify:build && npm run verify:links"
+    "verify:data": "node scripts/audit-game-data.mjs",
+    "verify": "npm run verify:data && npm run verify:search && npm run check && npm run build && npm run verify:build && npm run verify:links"
   },
   "dependencies": {
     "@astrojs/react": "latest",

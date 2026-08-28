@@ -2,6 +2,13 @@ import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 const source = z.object({ label: z.string(), url: z.string().url(), checkedAt: z.coerce.date() });
 const media = z.object({ src: z.string(), alt: z.string(), sourceUrl: z.string().url(), retrievedAt: z.coerce.date() });
+const normalizedVolatility = z.enum(['low','medium','medium-high','high','very-high']);
+const winMechanism = z.enum(['paylines','ways-to-win','megaways','cluster-pays','other']);
+const feature = z.enum([
+  'free-spins','wild','scatter','multiplier','hold-and-spin','cascading','bonus-buy',
+  'respins','cash-collection','giant-symbols','symbol-splitting','sticky-symbols','jackpot','other',
+]);
+const jackpotType = z.enum(['none','fixed','progressive','local','networked','multiple','other']);
 const providers = defineCollection({ loader: glob({ pattern: '**/*.md', base: './src/content/providers' }), schema: z.object({
   name: z.string(), brandName: z.string().optional(), aliases: z.array(z.string()).default([]), roles: z.array(z.enum(['developer','publisher','aggregator','platform'])),
   parentOrganization: z.string().optional(), subBrands: z.array(z.string()).default([]), originRegions: z.array(z.string()).default([]), serviceMarkets: z.array(z.string()).default([]),
@@ -12,8 +19,14 @@ const games = defineCollection({ loader: glob({ pattern: '**/*.md', base: './src
   name: z.string(), originalName: z.string().optional(), displayNameZhHant: z.string().optional(), aliases: z.array(z.string()).default([]),
   seriesId: z.string().optional(), seriesNameZhHant: z.string().optional(), installment: z.number().int().positive().optional(), relatedGames: z.array(z.string()).default([]),
   provider: z.string(), primaryType: z.enum(['slots','fishing-games','other']), subtypes: z.array(z.string()).default([]), summary: z.string(),
-  rtp: z.number().min(0).max(100).optional(), rtpVariants: z.array(z.number()).default([]), volatility: z.enum(['low','medium','medium-high','high','very-high']).optional(),
-  reels: z.string().optional(), paylines: z.string().optional(), jackpotType: z.string().optional(), bonusFeatures: z.array(z.string()).default([]), releaseDate: z.coerce.date().optional(),
+  // Compatibility fields remain available while v1 fields become the canonical structured layer.
+  rtp: z.number().min(0).max(100).optional(), rtpVariants: z.array(z.number().min(0).max(100)).default([]), volatility: normalizedVolatility.optional(),
+  volatilityOriginal: z.string().optional(), volatilityNormalized: normalizedVolatility.optional(), maxWinMultiplier: z.number().positive().optional(),
+  reels: z.string().optional(), rows: z.number().int().positive().optional(),
+  winMechanism: winMechanism.optional(), winCount: z.number().int().positive().optional(),
+  paylines: z.string().optional(), features: z.array(feature).default([]), bonusFeatures: z.array(z.string()).default([]), bonusBuy: z.boolean().optional(),
+  jackpotType: jackpotType.optional(), minBet: z.number().nonnegative().optional(), maxBet: z.number().positive().optional(), releaseDate: z.coerce.date().optional(), gameId: z.string().optional(),
+  sources: z.array(source).default([]), lastVerifiedAt: z.coerce.date().optional(),
   image: media.optional(), editorialFeatured: z.boolean().default(false), status: z.enum(['draft','published']).default('draft'), source, updatedAt: z.coerce.date(),
 }) });
 const guides = defineCollection({ loader: glob({ pattern: '**/*.md', base: './src/content/guides' }), schema: z.object({
