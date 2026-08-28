@@ -2,8 +2,10 @@ import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 const source = z.object({ label: z.string(), url: z.string().url(), checkedAt: z.coerce.date() });
 const providers = defineCollection({ loader: glob({ pattern: '**/*.md', base: './src/content/providers' }), schema: z.object({
-  name: z.string(), aliases: z.array(z.string()).default([]), organizationType: z.enum(['developer','aggregator','platform']), summary: z.string(),
-  officialUrl: z.string().url(), status: z.enum(['draft','published']).default('draft'), source, updatedAt: z.coerce.date(),
+  name: z.string(), brandName: z.string().optional(), aliases: z.array(z.string()).default([]), roles: z.array(z.enum(['developer','publisher','aggregator','platform'])),
+  parentOrganization: z.string().optional(), subBrands: z.array(z.string()).default([]), originRegions: z.array(z.string()).default([]), serviceMarkets: z.array(z.string()).default([]),
+  marketTags: z.array(z.string()).default([]), languages: z.array(z.string()).default([]), gameTypes: z.array(z.string()).default([]), summary: z.string(),
+  officialUrl: z.string().url(), status: z.enum(['candidate','draft','published','inactive']).default('candidate'), source, updatedAt: z.coerce.date(),
 }) });
 const games = defineCollection({ loader: glob({ pattern: '**/*.md', base: './src/content/games' }), schema: z.object({
   name: z.string(), provider: z.string(), primaryType: z.enum(['slots','fishing-games','other']), subtypes: z.array(z.string()).default([]), summary: z.string(),

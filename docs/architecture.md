@@ -8,6 +8,8 @@
 
 Content Collections are the current source. Pages receive normalized records through a small mapping layer so a future D1 repository can replace file reads without rewriting React views.
 
+Provider records scale independently and support formal/brand names, aliases, parent and child brands, multiple roles, origin regions, service markets, Asia tags, languages, game types and lifecycle status. Only `published` records generate public pages; `candidate`, `draft` and `inactive` records remain out of routes and sitemap.
+
 ## Data rules
 
 - BNG/Booongo and Booming Games are independent providers.

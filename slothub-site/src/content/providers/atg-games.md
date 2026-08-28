@@ -1,7 +1,13 @@
 ---
 name: ATG Games
 aliases: [Agile Titan Games, ATG]
-organizationType: developer
+brandName: ATG Games
+roles: [developer]
+originRegions: [Asia]
+serviceMarkets: [Asia]
+marketTags: [asia-market]
+languages: [English, Traditional Chinese]
+gameTypes: [slots, fishing-games, table-games]
 summary: 提供老虎機及其他電子遊戲產品的遊戲開發商。
 officialUrl: https://www.atg-games.com/
 status: published

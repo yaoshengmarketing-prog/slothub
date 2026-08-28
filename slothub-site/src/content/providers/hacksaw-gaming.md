@@ -1,7 +1,12 @@
 ---
 name: Hacksaw Gaming
 aliases: [Hacksaw]
-organizationType: developer
+roles: [developer]
+originRegions: []
+serviceMarkets: []
+marketTags: []
+languages: [English]
+gameTypes: [slots, instant-games]
 summary: 提供老虎機、即開型及其他電子遊戲產品的遊戲開發商。
 officialUrl: https://www.hacksawgaming.com/
 status: published
