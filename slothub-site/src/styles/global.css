@@ -169,11 +169,12 @@ body { background:var(--white); }
 .compare-table[data-cols="1"]{min-width:390px}.compare-table[data-cols="2"]{min-width:630px}.compare-table[data-cols="3"]{min-width:870px}
 .compare-table>div{border-right:1px solid #d8dde6}
 .compare-label{position:sticky;left:0;z-index:3;box-shadow:8px 0 16px -16px rgba(17,24,43,.8)}
-.compare-corner,.compare-head{position:sticky;top:0;z-index:5;border-bottom-color:#3b4357!important}
-.compare-table>.compare-corner{z-index:7;display:flex;align-items:flex-start;padding-top:20px;background:#e8edf5}
+.compare-corner,.compare-head{border-bottom-color:#3b4357!important}
+.compare-table>.compare-corner{z-index:4;display:flex;align-items:flex-start;padding-top:20px;background:#e8edf5}
 .compare-table>.compare-head{justify-content:flex-start;gap:11px;min-height:300px;padding:16px;background:var(--navy)}
 .compare-image{overflow:hidden;width:100%;aspect-ratio:1.55;border-radius:9px;background:#202941}
 .compare-image img{display:block;width:100%;height:100%;object-fit:cover}
+.compare-image-placeholder{display:grid;place-items:center;background:linear-gradient(135deg,#202941,#303b56);color:var(--lime);font:900 1.2rem/1 "Cascadia Mono",monospace;letter-spacing:.08em}
 .compare-identity{display:grid;align-content:start;gap:5px;min-width:0}
 .compare-identity>a{color:white;font-size:1.05rem;font-weight:850;line-height:1.28;text-decoration:none;overflow-wrap:anywhere}
 .compare-identity>small{color:#c7cddd;font-size:.76rem;line-height:1.35;overflow-wrap:anywhere}
@@ -184,11 +185,19 @@ body { background:var(--white); }
 .compare-rtp{display:flex;flex-wrap:wrap;align-items:center;gap:7px}.compare-rtp small{padding:3px 6px;border:1px solid #cbd2de;border-radius:5px;background:#f1f4f8;color:#4c5568;font-size:.62rem;font-weight:800;white-space:nowrap}
 .compare-feature-tags{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}.compare-feature-tags li{padding:5px 7px;border:1px solid #d8dde6;border-radius:6px;background:#f7f9fc;color:#31394b;font-size:.72rem;font-weight:750;line-height:1.25}
 .compare-clear{display:block;margin-top:12px;color:var(--navy)}
-.compare-scroll.is-scrolled .compare-table>.compare-head{min-height:96px;padding:11px 14px;box-shadow:0 10px 18px -18px #000}
-.compare-scroll.is-scrolled .compare-image,.compare-scroll.is-scrolled .compare-head>button{display:none}
-.compare-scroll.is-scrolled .compare-identity>a{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2;font-size:.92rem}
-.compare-scroll.is-scrolled .compare-identity>small{font-size:.68rem}
-.compare-scroll.is-scrolled .compare-corner{padding-top:14px}
+.compare-sticky-bar{position:sticky;top:0;z-index:8;display:grid;grid-template-columns:150px repeat(var(--cols),minmax(240px,1fr));visibility:hidden;width:100%;min-width:0;height:0;opacity:0;pointer-events:none;transition:opacity .14s ease,visibility 0s linear .14s}
+.compare-sticky-bar[data-cols="1"]{min-width:390px}.compare-sticky-bar[data-cols="2"]{min-width:630px}.compare-sticky-bar[data-cols="3"]{min-width:870px}
+.compare-scroll.is-scrolled .compare-sticky-bar{visibility:visible;opacity:1;pointer-events:auto;transition-delay:0s}
+.compare-sticky-label,.compare-sticky-head{box-sizing:border-box;height:96px;border-right:1px solid #3b4357;border-bottom:1px solid #3b4357;box-shadow:0 10px 18px -18px #000}
+.compare-sticky-label{position:sticky;left:0;z-index:2;padding:14px;background:#e8edf5;color:var(--navy);font-weight:800}
+.compare-sticky-head{display:grid;grid-template-columns:52px minmax(0,1fr);gap:10px;align-items:center;padding:10px 14px;background:var(--navy);color:white}
+.compare-sticky-image{display:grid;overflow:hidden;width:52px;height:42px;place-items:center;border-radius:7px;background:#202941;color:var(--lime);font:900 .72rem/1 "Cascadia Mono",monospace;letter-spacing:.06em}
+.compare-sticky-image img{display:block;width:100%;height:100%;object-fit:cover}
+.compare-sticky-identity{display:grid;align-content:center;gap:3px;min-width:0}
+.compare-sticky-identity>a{display:-webkit-box;overflow:hidden;color:white;font-size:.9rem;font-weight:850;line-height:1.22;text-decoration:none;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.compare-sticky-identity>small{overflow:hidden;color:#c7cddd;font-size:.66rem;line-height:1.25;text-overflow:ellipsis;white-space:nowrap}
+.compare-sticky-identity .compare-series{font-size:.62rem}
+@media(prefers-reduced-motion:reduce){.compare-sticky-bar{transition:none}}
 
 @media(max-width:620px){
   .compare-scroll{max-height:68svh;margin-inline:-12px;scrollbar-gutter:auto}
@@ -196,11 +205,16 @@ body { background:var(--white); }
   .compare-table[data-cols="1"]{min-width:269px}.compare-table[data-cols="2"]{min-width:434px}.compare-table[data-cols="3"]{min-width:599px}
   .compare-table>div{padding:11px;min-height:66px}
   .compare-table>.compare-head{min-height:240px}
-  .compare-scroll.is-scrolled .compare-table>.compare-head{min-height:78px;padding:9px 10px}
-  .compare-scroll.is-scrolled .compare-identity>a{font-size:.82rem;line-height:1.2}
-  .compare-scroll.is-scrolled .compare-identity>small,.compare-scroll.is-scrolled .series-name{display:none}
-  .compare-scroll.is-scrolled .series-name+.compare-installment:before{content:none}
-  .compare-scroll.is-scrolled .compare-series{font-size:.62rem}
+  .compare-sticky-bar{grid-template-columns:104px repeat(var(--cols),minmax(165px,1fr))}
+  .compare-sticky-bar[data-cols="1"]{min-width:269px}.compare-sticky-bar[data-cols="2"]{min-width:434px}.compare-sticky-bar[data-cols="3"]{min-width:599px}
+  .compare-sticky-label,.compare-sticky-head{height:78px}
+  .compare-sticky-label{padding:11px;font-size:.76rem}
+  .compare-sticky-head{grid-template-columns:34px minmax(0,1fr);gap:7px;padding:8px 9px}
+  .compare-sticky-image{width:34px;height:34px;border-radius:6px;font-size:.58rem}
+  .compare-sticky-identity>a{font-size:.8rem;line-height:1.18}
+  .compare-sticky-identity>small,.compare-sticky-identity .series-name{display:none}
+  .compare-sticky-identity .series-name+.compare-installment:before{content:none}
+  .compare-sticky-identity .compare-series{font-size:.58rem}
   .compare-corner{font-size:.76rem}
 }
 
