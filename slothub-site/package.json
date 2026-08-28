@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "verify:build": "node scripts/verify-build.mjs",
     "check": "astro check",
-    "verify": "npm run check && npm run build && npm run verify:build"
+    "verify:links": "node scripts/check-links.mjs",
+    "verify": "npm run check && npm run build && npm run verify:build && npm run verify:links"
   },
   "dependencies": {
     "@astrojs/react": "latest",
