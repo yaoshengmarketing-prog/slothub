@@ -1,15 +1,26 @@
 import { useEffect, useMemo, useState } from 'react';
-import { primaryTypeLabels, subtypeLabels, volatilityLabels } from '../lib/taxonomy';
+import { primaryTypeLabels, subtypeLabels, volatilityLabels, winMechanismLabels } from '../lib/taxonomy';
 import { rankSearch } from '../lib/search.js';
 
 export type Game = {
   slug: string; name: string; originalName: string; displayNameZhHant?: string; aliases: string[]; seriesId?: string; seriesNameZhHant?: string; installment?: number; relatedGames: string[]; provider: string; providerName: string; primaryType: string; subtypes: string[];
-  summary: string; image?: { src: string; alt: string }; rtp?: number; volatility?: string; reels?: string;
+  summary: string; image?: { src: string; alt: string }; rtp?: number; rtpVariants?: number[]; volatility?: string; reels?: string;
+  maxWinMultiplier?: number; winMechanism?: string;
   paylines?: string; bonusFeatures: string[]; editorialFeatured: boolean; url: string;
 };
 
 const KEY = 'slothub-compare';
 function load() { try { return (JSON.parse(localStorage.getItem(KEY) || '[]') as string[]).slice(0, 3); } catch { return []; } }
+
+function mechanismLabel(game: Game) {
+  if (game.winMechanism !== 'other') return game.winMechanism ? winMechanismLabels[game.winMechanism] ?? game.winMechanism : undefined;
+  const legacyDescription = game.paylines?.toLowerCase() ?? '';
+  if (legacyDescription.includes('scatter') || legacyDescription.includes('pay anywhere')) return '散佈賠付';
+  if (legacyDescription.includes('ways')) return '多路贏法';
+  return winMechanismLabels.other;
+}
+
+function formatMultiplier(value: number) { return `${value.toLocaleString('en-US')}×`; }
 
 export function useCompare(valid: string[]) {
   const [selected, setSelected] = useState<string[]>([]);
@@ -43,7 +54,15 @@ export default function GameExplorer({ games, initialLimit }: { games: Game[]; i
       <label>波動度<select value={volatility} onChange={(event) => setVolatility(event.target.value)}><option value="">不限</option>{Object.entries(volatilityLabels).map(([value, name]) => <option key={value} value={value}>{name}</option>)}</select></label>
     </div>
     <div className="result-heading"><strong>{filtered.length}</strong><span>款符合目前條件</span></div>
-    <div className="game-grid">{shown.map((game) => <article className="game-card" key={game.slug}><a className="game-art" href={game.url} aria-label={`查看 ${game.name}`}>{game.image ? <img src={game.image.src} alt={game.image.alt} loading="lazy" /> : <b>{game.name.slice(0, 1)}</b>}<small>{game.providerName}</small></a><div className="game-card-body"><p>{game.providerName}</p><h3><a href={game.url}>{game.name}</a>{game.displayNameZhHant&&<small>{game.originalName}</small>}</h3><div className="data-row"><span>RTP <b>{game.rtp ? `${game.rtp}%` : '待補'}</b></span><span>波動 <b>{game.volatility ? volatilityLabels[game.volatility] : '待補'}</b></span></div><button className={compare.selected.includes(game.slug) ? 'compare-add active' : 'compare-add'} onClick={() => compare.toggle(game.slug)} disabled={!compare.selected.includes(game.slug) && compare.selected.length >= 3}>{compare.selected.includes(game.slug) ? '✓ 已加入比較' : '＋ 加入比較'}</button></div></article>)}</div>
+    <div className="game-grid">{shown.map((game) => {
+      const metrics = [
+        game.rtp !== undefined ? { label: 'RTP', value: `${game.rtp}%`, note: (game.rtpVariants?.length ?? 0) > 1 ? '多版本' : undefined } : undefined,
+        game.volatility ? { label: '波動度', value: volatilityLabels[game.volatility] ?? game.volatility } : undefined,
+        game.maxWinMultiplier !== undefined ? { label: '最高倍數', value: formatMultiplier(game.maxWinMultiplier) } : undefined,
+      ].filter(Boolean) as { label: string; value: string; note?: string }[];
+      const mechanism = mechanismLabel(game);
+      return <article className="game-card" key={game.slug}><a className="game-art" href={game.url} aria-label={`查看 ${game.name}`}>{game.image ? <img src={game.image.src} alt={game.image.alt} loading="lazy" /> : <b>{game.name.slice(0, 1)}</b>}<small>{game.providerName}</small></a><div className="game-card-body"><p>{game.providerName}</p><h3><a href={game.url}>{game.name}</a>{game.displayNameZhHant&&<small>{game.originalName}</small>}</h3>{metrics.length > 0 && <dl className="game-metrics">{metrics.map((metric) => <div key={metric.label}><dt>{metric.label}</dt><dd>{metric.value}{metric.note && <small>{metric.note}</small>}</dd></div>)}</dl>}{mechanism && <div className="game-mechanism"><span>賠付機制</span><b>{mechanism}</b></div>}<button className={compare.selected.includes(game.slug) ? 'compare-add active' : 'compare-add'} onClick={() => compare.toggle(game.slug)} disabled={!compare.selected.includes(game.slug) && compare.selected.length >= 3}>{compare.selected.includes(game.slug) ? '✓ 已加入比較' : '＋ 加入比較'}</button></div></article>;
+    })}</div>
     {!shown.length && <div className="empty-result"><strong>沒有符合條件的遊戲</strong><button onClick={clear}>清除篩選</button></div>}
     {compare.selected.length > 0 && <CompareTray games={games} selected={compare.selected} remove={compare.remove} clear={compare.clear} />}
   </div>;

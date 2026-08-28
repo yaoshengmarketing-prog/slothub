@@ -159,6 +159,10 @@ body { background:var(--white); }
 .original-game-name{margin:.65rem 0 0!important;color:var(--muted);font-size:1.08rem}.series-line{margin:.55rem 0!important;color:var(--signal)!important;font-weight:800}
 .related-games{display:grid;gap:8px}.related-games a{display:grid;gap:3px;padding:14px;border:1px solid #d8dde6;border-radius:10px;text-decoration:none}.related-games small,.bilingual-list-title small{display:block;color:var(--muted);font-weight:500}.bilingual-list-title{display:grid;gap:3px}
 
+/* Game data card v1 */
+.game-card{display:flex;flex-direction:column}.game-card-body{display:flex;flex:1;flex-direction:column}.game-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(66px,1fr));margin:0 0 10px;border-block:1px solid #e1e5ec;background:#f8fafc}.game-metrics>div{min-width:0;padding:9px 7px}.game-metrics>div+div{border-left:1px solid #e1e5ec}.game-metrics dt{color:var(--muted);font-size:.6rem;font-weight:750;letter-spacing:.03em}.game-metrics dd{display:flex;flex-wrap:wrap;align-items:center;gap:4px;margin:4px 0 0;color:var(--navy);font-size:.82rem;font-weight:850;font-variant-numeric:tabular-nums}.game-metrics dd small{padding:2px 4px;border-radius:4px;background:var(--lime);color:var(--navy);font-size:.54rem;line-height:1.2;white-space:nowrap}.game-mechanism{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;color:var(--muted);font-size:.67rem}.game-mechanism b{color:var(--navy);font-size:.76rem}.game-card .compare-add{margin-top:auto}
+@media(max-width:620px){.game-card h3{min-height:auto}.game-metrics{grid-template-columns:repeat(auto-fit,minmax(82px,1fr))}.game-metrics>div{padding:10px 9px}}
+
 /* Sticky bilingual comparison matrix */
 .compare-scroll{position:relative;max-height:min(72vh,760px);overflow:auto;overscroll-behavior:contain;border:1px solid #d8dde6;border-top-color:var(--navy);background:var(--white);scrollbar-gutter:stable}
 .compare-table{width:100%;min-width:0;overflow:visible;border:0;grid-template-columns:150px repeat(var(--cols),minmax(240px,1fr))}

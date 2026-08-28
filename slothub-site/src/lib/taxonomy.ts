@@ -22,6 +22,14 @@ export const volatilityLabels: Record<string, string> = {
   'very-high': '極高',
 };
 
+export const winMechanismLabels: Record<string, string> = {
+  paylines: '賠線',
+  'ways-to-win': '多路贏法',
+  megaways: 'Megaways',
+  'cluster-pays': '群集賠付',
+  other: '其他',
+};
+
 export const providerRoleLabels: Record<string, string> = {
   developer: '遊戲開發商',
   publisher: '發行商',
