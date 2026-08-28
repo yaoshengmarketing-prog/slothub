@@ -180,6 +180,9 @@ body { background:var(--white); }
 .compare-series{display:flex;flex-wrap:wrap;gap:0;color:var(--lime)!important;font:700 .68rem/1.35 "Cascadia Mono",monospace}
 .series-name+.compare-installment:before{content:"·";margin:0 .42rem;color:#7f899f}
 .compare-head>button{margin-top:auto}.compare-value{line-height:1.5;overflow-wrap:anywhere}
+.compare-value{display:flex;align-items:center;color:var(--navy);font-variant-numeric:tabular-nums}
+.compare-rtp{display:flex;flex-wrap:wrap;align-items:center;gap:7px}.compare-rtp small{padding:3px 6px;border:1px solid #cbd2de;border-radius:5px;background:#f1f4f8;color:#4c5568;font-size:.62rem;font-weight:800;white-space:nowrap}
+.compare-feature-tags{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}.compare-feature-tags li{padding:5px 7px;border:1px solid #d8dde6;border-radius:6px;background:#f7f9fc;color:#31394b;font-size:.72rem;font-weight:750;line-height:1.25}
 .compare-clear{display:block;margin-top:12px;color:var(--navy)}
 .compare-scroll.is-scrolled .compare-table>.compare-head{min-height:96px;padding:11px 14px;box-shadow:0 10px 18px -18px #000}
 .compare-scroll.is-scrolled .compare-image,.compare-scroll.is-scrolled .compare-head>button{display:none}

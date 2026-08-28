@@ -5,7 +5,7 @@ import { rankSearch } from '../lib/search.js';
 export type Game = {
   slug: string; name: string; originalName: string; displayNameZhHant?: string; aliases: string[]; seriesId?: string; seriesNameZhHant?: string; installment?: number; relatedGames: string[]; provider: string; providerName: string; primaryType: string; subtypes: string[];
   summary: string; image?: { src: string; alt: string }; rtp?: number; rtpVariants?: number[]; volatility?: string; reels?: string;
-  maxWinMultiplier?: number; winMechanism?: string;
+  maxWinMultiplier?: number; winMechanism?: string; rows?: number; winCount?: number; features?: string[]; bonusBuy?: boolean;
   paylines?: string; bonusFeatures: string[]; editorialFeatured: boolean; url: string;
 };
 
