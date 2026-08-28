@@ -1,0 +1,4 @@
+---
+import {getCollection} from 'astro:content';import BaseLayout from '../../layouts/BaseLayout.astro';import {providerUrl} from '../../lib/urls';const providers=(await getCollection('providers')).filter(x=>x.data.status==='published');const games=await getCollection('games');
+---
+<BaseLayout title="遊戲廠商｜Slot Hub" description="瀏覽 Slot Hub 已整理的遊戲開發商及旗下遊戲資料。" canonicalPath="/providers/"><section class="page-hero shell"><p class="eyebrow">PROVIDER INDEX</p><h1>遊戲廠商</h1><p>廠商與聚合平台分開建模，第一版只在開發商篩選中顯示遊戲開發商。</p></section><section class="section shell provider-list">{providers.map(p=><a href={providerUrl(p.id)}><span>{p.data.name.slice(0,2).toUpperCase()}</span><div><small>{p.data.organizationType}</small><h2>{p.data.name}</h2><p>{p.data.summary}</p></div><b>{games.filter(g=>g.data.provider===p.id).length} 款 →</b></a>)}</section></BaseLayout>

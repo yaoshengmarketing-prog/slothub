@@ -1,0 +1,29 @@
+{
+  "name": "slothub-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "verify:build": "node scripts/verify-build.mjs",
+    "check": "astro check",
+    "verify": "npm run check && npm run build && npm run verify:build"
+  },
+  "dependencies": {
+    "@astrojs/react": "latest",
+    "@astrojs/rss": "latest",
+    "@astrojs/sitemap": "latest",
+    "astro": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@astrojs/check": "latest",
+    "typescript": "latest",
+    "wrangler": "latest"
+  }
+}

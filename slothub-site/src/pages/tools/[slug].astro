@@ -1,0 +1,8 @@
+---
+import FrameworkPage from '../../components/FrameworkPage.astro';
+import { tools } from '../../data/catalog';
+export function getStaticPaths() { return tools.map((item) => ({ params: { slug: item.slug }, props: { item } })); }
+const { item } = Astro.props;
+---
+<FrameworkPage eyebrow="Tool" title={item.title} description={item.description} />
+

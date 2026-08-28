@@ -1,0 +1,4 @@
+---
+import {getCollection} from 'astro:content';import BaseLayout from '../../layouts/BaseLayout.astro';import {guideUrl} from '../../lib/urls';const guides=(await getCollection('guides')).filter(x=>x.data.status==='published');
+---
+<BaseLayout title="教學與知識｜Slot Hub" description="閱讀老虎機 RTP、波動度與基礎資料欄位教學。" canonicalPath="/guide/"><section class="page-hero shell"><p class="eyebrow">GUIDE LIBRARY</p><h1>教學與知識</h1><p>先理解資料，再使用搜尋、探索與比較工具。</p></section><section class="section shell guide-list">{guides.map((g,i)=><a href={guideUrl(g.id)}><span>0{i+1}</span><div><strong>{g.data.title}</strong><p>{g.data.description}</p></div><b>閱讀 →</b></a>)}</section></BaseLayout>

@@ -1,0 +1,14 @@
+---
+import { compareUrl, gamesIndexUrl, guideIndexUrl, providersIndexUrl, slotsUrl, fishingGamesUrl, toolsIndexUrl } from '../lib/urls';
+const nav = [['遊戲庫',gamesIndexUrl()],['老虎機',slotsUrl()],['捕魚機',fishingGamesUrl()],['遊戲廠商',providersIndexUrl()],['工具',toolsIndexUrl()],['教學',guideIndexUrl()]];
+---
+<header class="site-header">
+  <a class="brand" href="/" aria-label="Slot Hub 首頁"><span class="brand-mark">SH</span><span>SLOT HUB<small>GAME INDEX</small></span></a>
+  <nav aria-label="主要導覽">{nav.map(([label,href]) => <a href={href}>{label}</a>)}</nav>
+  <a class="header-compare" href={compareUrl()}>比較遊戲 <span data-compare-count>0</span></a>
+</header>
+<script>
+  const count = () => { try { return JSON.parse(localStorage.getItem('slothub-compare') || '[]').length } catch { return 0 } };
+  const paint = () => document.querySelectorAll('[data-compare-count]').forEach((el) => el.textContent = String(count()));
+  paint(); addEventListener('slothub:compare', paint); addEventListener('storage', paint);
+</script>

@@ -1,0 +1,39 @@
+name: Validate Slot Hub site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'slothub-site/**'
+      - '.github/workflows/validate-site.yml'
+  pull_request:
+    paths:
+      - 'slothub-site/**'
+      - '.github/workflows/validate-site.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: slothub-site
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: slothub-site/package-lock.json
+      - name: Install dependencies
+        run: npm ci
+      - name: Build and verify
+        run: npm run verify
+        env:
+          ASTRO_TELEMETRY_DISABLED: 1
+          PUBLIC_SITE_ENV: preview

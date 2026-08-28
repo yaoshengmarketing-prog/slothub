@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { homeUrl } from '../lib/urls';
+
+interface Props {
+  eyebrow: string;
+  title: string;
+  description: string;
+}
+
+const { eyebrow, title, description } = Astro.props;
+---
+
+<BaseLayout title={`${title}｜Slot Hub 開發預覽`} description={description}>
+  <section class="framework-shell">
+    <a class="back-link" href={homeUrl()}>← 返回開發預覽首頁</a>
+    <p class="eyebrow">{eyebrow}</p>
+    <h1>{title}</h1>
+    <p class="framework-copy">{description}</p>
+    <div class="empty-state" role="status">
+      <strong>路由框架已建立</strong>
+      <span>此頁尚未發布正式內容，也不代表現有 Wix 網站資訊。</span>
+    </div>
+  </section>
+</BaseLayout>
+
