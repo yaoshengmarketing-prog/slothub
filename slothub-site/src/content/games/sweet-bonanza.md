@@ -22,7 +22,7 @@ bonusFeatures: [tumbling, matching symbols anywhere, Free Spins Feature, multipl
 releaseDate: 2019-06-25
 image: { src: /assets/games/sweet-bonanza.png, alt: Sweet Bonanza 官方原作縮圖, sourceUrl: https://www.pragmaticplay.com/wp-content/uploads/2019/03/Sweet-Bonanza%E2%84%A2_Thumb_339x180-3.png, retrievedAt: 2026-08-29 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Pragmatic Play 官方 Sweet Bonanza 遊戲頁, url: "https://www.pragmaticplay.com/en/games/sweet-bonanza-slot/?cur=eur&gamelang=en", checkedAt: 2026-08-29 }
 sources:
   - { label: Pragmatic Play 官方 Sweet Bonanza 遊戲頁, url: "https://www.pragmaticplay.com/en/games/sweet-bonanza-slot/?cur=eur&gamelang=en", checkedAt: 2026-08-29 }

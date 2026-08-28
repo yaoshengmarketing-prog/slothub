@@ -17,7 +17,7 @@ bonusFeatures: [TUMBLE FEATURE, progressive global multiplier, Scatter symbols, 
 releaseDate: 2021-02-24
 image: { src: /assets/games/gates-of-olympus.png, alt: Gates of Olympus 官方原作縮圖, sourceUrl: https://www.pragmaticplay.com/wp-content/uploads/2021/02/GOOL_EN_339x180.png, retrievedAt: 2026-08-29 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Pragmatic Play 官方 Gates of Olympus 遊戲頁與內嵌 Game Rules, url: "https://www.pragmaticplay.com/en/games/gates-of-olympus/?cur=USD&gamelang=en", checkedAt: 2026-08-29 }
 sources:
   - { label: Pragmatic Play 官方 Gates of Olympus 遊戲頁與內嵌 Game Rules, url: "https://www.pragmaticplay.com/en/games/gates-of-olympus/?cur=USD&gamelang=en", checkedAt: 2026-08-29 }
