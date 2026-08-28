@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState } from 'react';
 import { primaryTypeLabels, subtypeLabels, volatilityLabels } from '../lib/taxonomy';
+import { rankSearch } from '../lib/search.js';
 
 export type Game = {
-  slug: string; name: string; provider: string; providerName: string; primaryType: string; subtypes: string[];
+  slug: string; name: string; originalName: string; displayNameZhHant?: string; aliases: string[]; seriesId?: string; seriesNameZhHant?: string; installment?: number; relatedGames: string[]; provider: string; providerName: string; primaryType: string; subtypes: string[];
   summary: string; image?: { src: string; alt: string }; rtp?: number; volatility?: string; reels?: string;
   paylines?: string; bonusFeatures: string[]; editorialFeatured: boolean; url: string;
 };
@@ -25,7 +26,10 @@ export function useCompare(valid: string[]) {
 export default function GameExplorer({ games, initialLimit }: { games: Game[]; initialLimit?: number }) {
   const [q, setQ] = useState(''), [provider, setProvider] = useState(''), [primaryType, setPrimaryType] = useState(''), [subtype, setSubtype] = useState(''), [rtp, setRtp] = useState(''), [volatility, setVolatility] = useState('');
   const ids = useMemo(() => games.map((game) => game.slug), [games]); const compare = useCompare(ids);
-  const filtered = useMemo(() => games.filter((game) => !q || `${game.name} ${game.providerName} ${game.summary}`.toLowerCase().includes(q.toLowerCase())).filter((game) => !provider || game.provider === provider).filter((game) => !primaryType || game.primaryType === primaryType).filter((game) => !subtype || game.subtypes.includes(subtype)).filter((game) => !rtp || (game.rtp !== undefined && game.rtp >= Number(rtp))).filter((game) => !volatility || game.volatility === volatility), [games, q, provider, primaryType, subtype, rtp, volatility]);
+  const filtered = useMemo(() => {
+    const searched = q ? rankSearch(games.map((game) => ({ ...game, title: game.name, secondaryTitle: game.displayNameZhHant ? game.originalName : undefined, description: game.summary, kind: '遊戲' as const, aliases: game.aliases, seriesName: game.seriesNameZhHant, searchText: [game.providerName, game.summary] })), q, games.length).map((result) => games.find((game) => game.slug === result.slug)!) : games;
+    return searched.filter((game) => !provider || game.provider === provider).filter((game) => !primaryType || game.primaryType === primaryType).filter((game) => !subtype || game.subtypes.includes(subtype)).filter((game) => !rtp || (game.rtp !== undefined && game.rtp >= Number(rtp))).filter((game) => !volatility || game.volatility === volatility);
+  }, [games, q, provider, primaryType, subtype, rtp, volatility]);
   const providers = [...new Map(games.map((game) => [game.provider, game.providerName])).entries()], primaryTypes = [...new Set(games.map((game) => game.primaryType))], subtypes = [...new Set(games.flatMap((game) => game.subtypes))];
   const hasFilters = q || provider || primaryType || subtype || rtp || volatility;
   const shown = initialLimit && !hasFilters ? filtered.slice(0, initialLimit) : filtered;
@@ -39,7 +43,7 @@ export default function GameExplorer({ games, initialLimit }: { games: Game[]; i
       <label>波動度<select value={volatility} onChange={(event) => setVolatility(event.target.value)}><option value="">不限</option>{Object.entries(volatilityLabels).map(([value, name]) => <option key={value} value={value}>{name}</option>)}</select></label>
     </div>
     <div className="result-heading"><strong>{filtered.length}</strong><span>款符合目前條件</span></div>
-    <div className="game-grid">{shown.map((game) => <article className="game-card" key={game.slug}><a className="game-art" href={game.url} aria-label={`查看 ${game.name}`}>{game.image ? <img src={game.image.src} alt={game.image.alt} loading="lazy" /> : <b>{game.name.slice(0, 1)}</b>}<small>{game.providerName}</small></a><div className="game-card-body"><p>{game.providerName}</p><h3><a href={game.url}>{game.name}</a></h3><div className="data-row"><span>RTP <b>{game.rtp ? `${game.rtp}%` : '待補'}</b></span><span>波動 <b>{game.volatility ? volatilityLabels[game.volatility] : '待補'}</b></span></div><button className={compare.selected.includes(game.slug) ? 'compare-add active' : 'compare-add'} onClick={() => compare.toggle(game.slug)} disabled={!compare.selected.includes(game.slug) && compare.selected.length >= 3}>{compare.selected.includes(game.slug) ? '✓ 已加入比較' : '＋ 加入比較'}</button></div></article>)}</div>
+    <div className="game-grid">{shown.map((game) => <article className="game-card" key={game.slug}><a className="game-art" href={game.url} aria-label={`查看 ${game.name}`}>{game.image ? <img src={game.image.src} alt={game.image.alt} loading="lazy" /> : <b>{game.name.slice(0, 1)}</b>}<small>{game.providerName}</small></a><div className="game-card-body"><p>{game.providerName}</p><h3><a href={game.url}>{game.name}</a>{game.displayNameZhHant&&<small>{game.originalName}</small>}</h3><div className="data-row"><span>RTP <b>{game.rtp ? `${game.rtp}%` : '待補'}</b></span><span>波動 <b>{game.volatility ? volatilityLabels[game.volatility] : '待補'}</b></span></div><button className={compare.selected.includes(game.slug) ? 'compare-add active' : 'compare-add'} onClick={() => compare.toggle(game.slug)} disabled={!compare.selected.includes(game.slug) && compare.selected.length >= 3}>{compare.selected.includes(game.slug) ? '✓ 已加入比較' : '＋ 加入比較'}</button></div></article>)}</div>
     {!shown.length && <div className="empty-result"><strong>沒有符合條件的遊戲</strong><button onClick={clear}>清除篩選</button></div>}
     {compare.selected.length > 0 && <CompareTray games={games} selected={compare.selected} remove={compare.remove} clear={compare.clear} />}
   </div>;

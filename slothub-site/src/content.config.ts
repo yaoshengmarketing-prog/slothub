@@ -9,7 +9,9 @@ const providers = defineCollection({ loader: glob({ pattern: '**/*.md', base: '.
   officialUrl: z.string().url(), logo: media.optional(), status: z.enum(['candidate','draft','published','inactive']).default('candidate'), source, updatedAt: z.coerce.date(),
 }) });
 const games = defineCollection({ loader: glob({ pattern: '**/*.md', base: './src/content/games' }), schema: z.object({
-  name: z.string(), provider: z.string(), primaryType: z.enum(['slots','fishing-games','other']), subtypes: z.array(z.string()).default([]), summary: z.string(),
+  name: z.string(), originalName: z.string().optional(), displayNameZhHant: z.string().optional(), aliases: z.array(z.string()).default([]),
+  seriesId: z.string().optional(), seriesNameZhHant: z.string().optional(), installment: z.number().int().positive().optional(), relatedGames: z.array(z.string()).default([]),
+  provider: z.string(), primaryType: z.enum(['slots','fishing-games','other']), subtypes: z.array(z.string()).default([]), summary: z.string(),
   rtp: z.number().min(0).max(100).optional(), rtpVariants: z.array(z.number()).default([]), volatility: z.enum(['low','medium','medium-high','high','very-high']).optional(),
   reels: z.string().optional(), paylines: z.string().optional(), jackpotType: z.string().optional(), bonusFeatures: z.array(z.string()).default([]), releaseDate: z.coerce.date().optional(),
   image: media.optional(), editorialFeatured: z.boolean().default(false), status: z.enum(['draft','published']).default('draft'), source, updatedAt: z.coerce.date(),
