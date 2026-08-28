@@ -30,6 +30,18 @@ export const winMechanismLabels: Record<string, string> = {
   other: '其他',
 };
 
+export const featureLabels: Record<string, string> = {
+  'free-spins': '免費旋轉', wild: '百搭符號', scatter: '散佈符號', multiplier: '倍數',
+  'hold-and-spin': 'Hold & Spin', cascading: '連鎖消除', 'bonus-buy': 'Bonus Buy', respins: '重轉',
+  'cash-collection': '獎金收集', 'giant-symbols': '巨型符號', 'symbol-splitting': '符號分裂',
+  'sticky-symbols': '黏著符號', jackpot: 'Jackpot 功能', other: '其他功能',
+};
+
+export const jackpotTypeLabels: Record<string, string> = {
+  none: '無', fixed: '固定彩金', progressive: '累進彩金', local: '區域彩金',
+  networked: '聯網彩金', multiple: '多種彩金', other: '其他',
+};
+
 export const providerRoleLabels: Record<string, string> = {
   developer: '遊戲開發商',
   publisher: '發行商',

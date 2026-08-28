@@ -8,11 +8,12 @@
     "build": "astro build",
     "preview": "astro preview",
     "verify:build": "node scripts/verify-build.mjs",
+    "verify:game-detail": "node scripts/verify-game-detail.mjs",
     "check": "astro check",
     "verify:links": "node scripts/check-links.mjs",
     "verify:search": "node scripts/test-search.mjs",
     "verify:data": "node scripts/audit-game-data.mjs",
-    "verify": "npm run verify:data && npm run verify:search && npm run check && npm run build && npm run verify:build && npm run verify:links"
+    "verify": "npm run verify:data && npm run verify:search && npm run check && npm run build && npm run verify:build && npm run verify:game-detail && npm run verify:links"
   },
   "dependencies": {
     "@astrojs/react": "latest",

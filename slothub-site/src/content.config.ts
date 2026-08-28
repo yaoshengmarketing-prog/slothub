@@ -21,7 +21,7 @@ const games = defineCollection({ loader: glob({ pattern: '**/*.md', base: './src
   provider: z.string(), primaryType: z.enum(['slots','fishing-games','other']), subtypes: z.array(z.string()).default([]), summary: z.string(),
   // Compatibility fields remain available while v1 fields become the canonical structured layer.
   rtp: z.number().min(0).max(100).optional(), rtpVariants: z.array(z.number().min(0).max(100)).default([]), volatility: normalizedVolatility.optional(),
-  volatilityOriginal: z.string().optional(), volatilityNormalized: normalizedVolatility.optional(), maxWinMultiplier: z.number().positive().optional(),
+  volatilityOriginal: z.string().optional(), volatilityNormalized: normalizedVolatility.optional(), maxWinMultiplier: z.number().positive().optional(), maxWinLabelOriginal: z.string().optional(),
   reels: z.string().optional(), rows: z.number().int().positive().optional(),
   winMechanism: winMechanism.optional(), winCount: z.number().int().positive().optional(),
   paylines: z.string().optional(), features: z.array(feature).default([]), bonusFeatures: z.array(z.string()).default([]), bonusBuy: z.boolean().optional(),

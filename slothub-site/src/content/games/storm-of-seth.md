@@ -16,6 +16,7 @@ volatility: high
 volatilityOriginal: Advanced
 volatilityNormalized: high
 maxWinMultiplier: 51000
+maxWinLabelOriginal: Max Win
 winMechanism: other
 paylines: Scatter Pays（8 個以上）
 features: [free-spins, scatter, multiplier, bonus-buy]

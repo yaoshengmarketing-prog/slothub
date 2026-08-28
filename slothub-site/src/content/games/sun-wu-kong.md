@@ -9,6 +9,7 @@ volatility: high
 volatilityOriginal: Advanced
 volatilityNormalized: high
 maxWinMultiplier: 3000
+maxWinLabelOriginal: Winning ratio
 reels: 5x3
 rows: 3
 winMechanism: paylines
