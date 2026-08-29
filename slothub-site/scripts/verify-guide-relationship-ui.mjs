@@ -9,7 +9,7 @@ const globalCssSource = await readFile(new URL('../src/styles/global.css', impor
 const maxWinGuidePublished = /^status: published$/m.test(maxWinGuideSource);
 const cascadingGuideSource = await readFile(new URL('../src/content/guides/slot-cascading-tumble-avalanche-explained.md', import.meta.url), 'utf8');
 const cascadingGuidePublished = /^status: published$/m.test(cascadingGuideSource);
-const [rtp, glossary, symbols, payout, bigBass, bonanza, reactoonz, superAce, gamesIndex, search, slots, cascadingGuide] = await Promise.all([
+const [rtp, glossary, symbols, payout, bigBass, bonanza, reactoonz, superAce, handOfAnubis, gamesIndex, search, slots, cascadingGuide] = await Promise.all([
   load('guide/rtp-explained/index.html'),
   load('guide/slot-terms-glossary/index.html'),
   load('guide/slot-symbols-and-features/index.html'),
@@ -18,6 +18,7 @@ const [rtp, glossary, symbols, payout, bigBass, bonanza, reactoonz, superAce, ga
   load('games/bonanza/index.html'),
   load('games/reactoonz/index.html'),
   load('games/super-ace/index.html'),
+  load('games/hand-of-anubis/index.html'),
   load('games/index.html'),
   load('search/index.html'),
   load('slots/index.html'),
@@ -63,6 +64,9 @@ if (cascadingGuidePublished) assert.match(reactoonzRail, /老虎機連鎖消除�
 else assert.ok(!reactoonzRail.includes('老虎機連鎖消除怎麼看'), 'Draft Cascading Guide entered the Reactoonz detail rail');
 const superAceRail = superAce.match(/<section class="game-guide-rail"[\s\S]*?<\/section>/)?.[0] ?? '';
 assert.ok(!superAceRail.includes('老虎機連鎖消除怎麼看'), 'Super Ace inherited a Cascading Guide relation without the cascading Feature');
+const handOfAnubisRail = handOfAnubis.match(/<section class="game-guide-rail"[\s\S]*?<\/section>/)?.[0] ?? '';
+assert.ok(!handOfAnubisRail.includes('slot-symbols-and-features'), 'Hand of Anubis retained an unsupported Symbols Guide relation');
+assert.match(handOfAnubisRail, /slot-cascading-tumble-avalanche-explained/, 'Hand of Anubis lost its verified Cascading Guide relation');
 
 assert.match(gamesIndex, /relationshipLinks/, 'Explorer did not receive relationship links');
 assert.match(search, /了解概念/, 'Search learn intent missing');
@@ -130,8 +134,8 @@ for (const slug of gameDirectories) {
 
 const directItems = renderedKnowledge.filter((item) => item.placement !== 'feature-overflow');
 const overflowItems = renderedKnowledge.filter((item) => item.placement === 'feature-overflow');
-assert.equal(renderedKnowledge.length, 167, 'Expected all 167 unique Game → Guide relationships to remain visible');
-assert.equal(directItems.length, 163, 'Expected 163 relationships without expansion');
+assert.equal(renderedKnowledge.length, 166, 'Expected all 166 unique Game → Guide relationships to remain visible');
+assert.equal(directItems.length, 162, 'Expected 162 relationships without expansion');
 assert.equal(overflowItems.length, 4, 'Expected four relationships in the overflow area');
 
 const countPlacement = (placement) => renderedKnowledge.filter((item) => item.placement === placement).length;
@@ -143,7 +147,7 @@ assert.equal(countPlacement('core-max-win'), 25, 'Max Win contextual Guide count
 assert.equal(countGuide('slot-multiplier-explained'), 25, 'Multiplier Feature Guide count changed');
 assert.equal(countGuide('slot-cascading-tumble-avalanche-explained'), 12, 'Cascading Feature Guide count changed');
 assert.equal(countGuide('slot-terms-glossary'), 12, 'Bonus Buy Feature Guide count changed');
-assert.equal(countGuide('slot-symbols-and-features'), 29, 'Symbols Feature Guide count changed');
+assert.equal(countGuide('slot-symbols-and-features'), 28, 'Symbols Feature Guide count changed');
 assert.ok(!renderedKnowledge.some((item) => item.gameSlug === 'super-ace' && item.guideSlug === 'slot-cascading-tumble-avalanche-explained'), 'Super Ace regained an invalid Cascading relationship');
 
 for (const slug of ['bonanza', 'gates-of-olympus-1000', 'storm-of-seth-2-awakening', 'sun-wu-kong']) {
@@ -191,4 +195,4 @@ assert.match(globalCssSource, /\.game-field-guide-link\{[^}]*min-height:44px/, '
 assert.match(globalCssSource, /\.game-guide-overflow summary\{[^}]*min-height:44px/, 'Overflow summary must keep a 44px touch target');
 assert.match(globalCssSource, /game-guide-overflow summary:focus-visible/, 'Overflow summary focus style missing');
 
-console.log('Guide relationship UI, 167-entry Game detail presentation, generic overflow, independent Explorer URLs, Search intents and Preview safeguards verified.');
+console.log('Guide relationship UI, 166-entry Game detail presentation, generic overflow, independent Explorer URLs, Search intents and Preview safeguards verified.');

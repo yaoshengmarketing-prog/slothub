@@ -50,6 +50,15 @@ for (const [slug, relations] of Object.entries(expected)) {
 assert.deepEqual(index.featureToGuides.wild.map((guide) => guide.slug), ['slot-symbols-and-features']);
 assert.deepEqual(index.dataTopicToGuides.rtp.map((guide) => guide.slug), ['rtp-explained']);
 
+const symbolsGuideSlug = 'slot-symbols-and-features';
+const expectedSymbolsFeatureCounts = { 'free-spins': 23, wild: 14, scatter: 15, jackpot: 1 };
+for (const [feature, expectedCount] of Object.entries(expectedSymbolsFeatureCounts)) {
+  const matchingGames = games.filter((game) => game.status === 'published' && game.features?.includes(feature));
+  assert.equal(matchingGames.length, expectedCount, `${feature}: published Game Feature count changed`);
+}
+assert.equal(index.guideToGames[symbolsGuideSlug].length, 28, 'Symbols Guide must derive the 28 published Games with at least one owned Feature');
+assert.ok(!index.gameToGuides['hand-of-anubis'].some(({ guide }) => guide.slug === symbolsGuideSlug), 'Hand of Anubis retained an unsupported Symbols Guide relation');
+
 const cascadingGuideSlug = 'slot-cascading-tumble-avalanche-explained';
 const cascadingGuide = guides.find((guide) => guide.slug === cascadingGuideSlug);
 assert.ok(cascadingGuide, 'Cascading Guide is missing or its slug changed');
@@ -67,6 +76,7 @@ for (const game of gamesWithoutCascading) {
   assert.ok(!cascadingPreviewIndex.gameToGuides[game.slug].some(({ guide }) => guide.slug === cascadingGuideSlug), `${game.slug}: missing cascading Feature must not create a Cascading Guide relation`);
 }
 assert.ok(!cascadingPreviewIndex.gameToGuides['super-ace'].some(({ guide }) => guide.slug === cascadingGuideSlug), 'Super Ace must not create a Cascading Guide relation');
+assert.ok(cascadingPreviewIndex.gameToGuides['hand-of-anubis'].some(({ guide }) => guide.slug === cascadingGuideSlug), 'Hand of Anubis must retain its verified Cascading Guide relation');
 const cascadingVisibleInTopThree = cascadingPreviewIndex.guideToGames[cascadingGuideSlug]
   .filter((game) => cascadingPreviewIndex.gameToGuides[game.slug].slice(0, 3).some(({ guide }) => guide.slug === cascadingGuideSlug));
 assert.deepEqual(cascadingVisibleInTopThree.map((game) => game.slug), ['reactoonz'], 'Only Reactoonz may show the Cascading Guide within the three-Guide display limit');

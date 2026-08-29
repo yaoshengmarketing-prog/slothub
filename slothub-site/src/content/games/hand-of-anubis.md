@@ -11,7 +11,7 @@ maxWinMultiplier: 10000
 reels: 5x6
 rows: 6
 winMechanism: cluster-pays
-features: [wild, scatter, cascading]
+features: [cascading]
 bonusFeatures: [Cascading Wins, Cluster Pays]
 image: { src: /assets/games/hand-of-anubis.jpg, alt: Hand of Anubis 官方遊戲主圖, sourceUrl: https://www-live.hacksawgaming.com/casino_thumbnails/1164.jpg, retrievedAt: 2026-08-28 }
 status: published
