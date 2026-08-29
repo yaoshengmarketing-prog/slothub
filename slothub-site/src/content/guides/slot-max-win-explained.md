@@ -6,7 +6,7 @@ level: beginner
 tags: [最高倍數, Max Win, Max Exposure, Winning Ratio, 老虎機術語]
 relatedDataTopics:
   - max-win
-status: draft
+status: published
 publishedAt: 2026-08-29
 updatedAt: 2026-08-29
 ---
