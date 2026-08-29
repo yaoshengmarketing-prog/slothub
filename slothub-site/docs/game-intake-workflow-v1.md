@@ -316,7 +316,11 @@ HUMAN_APPROVAL_REQUIRED: YES | NO；<需要核准的具體事項>
 - 已界定範圍內、可恢復且不改產品語意的安全修正。
 - 測試期間暫時模擬 published，前提是完成後恢復 draft 並確認 Git 狀態。
 
-狀態通過後，Codex 必須直接回報 `NEXT_ALLOWED_ACTION`，不得只說「已完成」。沒有下一階段授權時，回報允許動作並停止；不得把「可以做」解讀成「已授權跨越人工關卡」。
+- 當 `STAGE_RESULT: PASS_TO_NEXT_STAGE` 且 `HUMAN_APPROVAL_REQUIRED: NO` 時，Codex 必須在同一任務內直接執行 `NEXT_ALLOWED_ACTION`，不得只回報下一步後結束工作。
+- 可以發送進度回報，但不能把進度回報當成停止點。
+- 只有到達人工關卡、發生明確 blocker、超出允許檔案範圍或觸發本工作流固定停止條件時才能結束。
+- 同一任務可以連續跨越多個不需人工核准的狀態。
+- 若下一階段標示 `HUMAN_APPROVAL_REQUIRED: YES` 或符合下列人工關卡，回報允許動作並停止；不得把「可以做」解讀成「已授權跨越人工關卡」。
 
 ### 必須停止的人工關卡
 
