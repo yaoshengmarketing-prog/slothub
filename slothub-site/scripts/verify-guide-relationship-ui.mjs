@@ -56,7 +56,9 @@ for (const dataTopic of ['rtp', 'rtp-variants', 'volatility', 'max-win']) {
   assert.ok(!search.includes(`explore-data-topic-${dataTopic}-`), `${dataTopic}: Search rendered an imprecise Data Topic explore intent`);
 }
 assert.match(search, /連鎖掉落/, 'Search Cascading Chinese alias missing');
-assert.ok(!search.includes('learn-feature-multiplier'), 'Deferred Multiplier received a Search Guide intent');
+assert.match(search, /learn-feature-multiplier-slot-multiplier-explained/, 'Search Multiplier learn intent missing');
+assert.match(search, /explore-feature-multiplier-slot-multiplier-explained/, 'Search Multiplier explore intent missing');
+assert.match(search, /\/games\/\?features=multiplier/, 'Search Multiplier Explorer URL must use the exact Feature filter');
 if (maxWinGuidePublished) {
   assert.match(search, /learn-data-topic-max-win-slot-max-win-explained/, 'Published Max Win Guide Search learn intent missing');
   assert.ok(!search.includes('explore-data-topic-max-win-'), 'Max Win rendered an imprecise Search explore intent');

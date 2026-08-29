@@ -49,7 +49,23 @@ for (const [slug, relations] of Object.entries(expected)) {
 
 assert.deepEqual(index.featureToGuides.wild.map((guide) => guide.slug), ['slot-symbols-and-features']);
 assert.deepEqual(index.dataTopicToGuides.rtp.map((guide) => guide.slug), ['rtp-explained']);
-for (const deferred of ['multiplier']) assert.deepEqual(index.featureToGuides[deferred], [], `${deferred} must remain valid without a Guide`);
+
+const multiplierGuideSlug = 'slot-multiplier-explained';
+const multiplierGuide = guides.find((guide) => guide.slug === multiplierGuideSlug);
+assert.ok(multiplierGuide, 'Multiplier Guide is missing or its slug changed');
+assert.equal(multiplierGuide.status, 'published', 'Multiplier Guide must remain published');
+assert.deepEqual(multiplierGuide.relatedFeatures, ['multiplier'], 'Multiplier Guide must own only the multiplier Feature');
+assert.deepEqual(index.featureToGuides.multiplier.map((guide) => guide.slug), [multiplierGuideSlug], 'multiplier must have exactly one published Guide owner');
+assert.equal(index.guideToGames[multiplierGuideSlug].length, 25, 'Multiplier Guide must derive exactly the 25 Games tagged with multiplier');
+
+const gamesWithoutMultiplier = ['greedy-for-gold-hold-and-win', 'hand-of-anubis', 'legacy-of-dead', 'rich-wilde-and-the-book-of-dead', 'starburst'];
+for (const slug of gamesWithoutMultiplier) {
+  assert.ok(!index.gameToGuides[slug].some(({ guide }) => guide.slug === multiplierGuideSlug), `${slug}: missing multiplier Feature must not create a Multiplier Guide relation`);
+}
+const multiplierVisibleInTopThree = index.guideToGames[multiplierGuideSlug]
+  .filter((game) => index.gameToGuides[game.slug].slice(0, 3).some(({ guide }) => guide.slug === multiplierGuideSlug));
+assert.equal(multiplierVisibleInTopThree.length, 8, 'Multiplier Guide must appear in the first three Guide matches for exactly 8 Games');
+assert.equal(index.guideToGames[multiplierGuideSlug].length - multiplierVisibleInTopThree.length, 17, 'The remaining 17 Multiplier relations must stay valid outside the three-Guide display limit');
 
 const maxWinGuideSlug = 'slot-max-win-explained';
 const maxWinGuide = guides.find((guide) => guide.slug === maxWinGuideSlug);
