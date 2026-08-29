@@ -4,6 +4,8 @@ import { loadPublishedGameCatalog, type GameCatalogItem } from './game-catalog';
 import { dataTopicLabels, dataTopicSearchTerms, featureLabels, featureSearchTerms, winMechanismLabels, winMechanismSearchTerms } from './taxonomy';
 import { gamesIndexUrl, guideUrl } from './urls';
 import type { SearchItem } from './search.js';
+export { buildGameDetailKnowledgePresentation } from './game-detail-knowledge-presentation';
+export type { GameDetailFieldPlacement, GameDetailKnowledgePresentation } from './game-detail-knowledge-presentation';
 
 export type ExplorerGuideLink = {
   type: 'mechanism' | 'feature';

@@ -1,9 +1,11 @@
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { readdir, readFile } from 'node:fs/promises';
+import { buildGameDetailKnowledgePresentation } from '../src/lib/game-detail-knowledge-presentation.ts';
 
 const root = new URL('../dist/', import.meta.url);
 const load = (path) => readFile(new URL(path, root), 'utf8');
 const maxWinGuideSource = await readFile(new URL('../src/content/guides/slot-max-win-explained.md', import.meta.url), 'utf8');
+const globalCssSource = await readFile(new URL('../src/styles/global.css', import.meta.url), 'utf8');
 const maxWinGuidePublished = /^status: published$/m.test(maxWinGuideSource);
 const cascadingGuideSource = await readFile(new URL('../src/content/guides/slot-cascading-tumble-avalanche-explained.md', import.meta.url), 'utf8');
 const cascadingGuidePublished = /^status: published$/m.test(cascadingGuideSource);
@@ -48,14 +50,14 @@ if (cascadingGuidePublished) {
   assert.ok(!slots.includes('/guide/slot-cascading-tumble-avalanche-explained/'), 'Draft Cascading Guide entered the Slots Knowledge Map');
 }
 
-assert.match(bigBass, /看懂這些資料/, 'Game detail Guide rail missing');
+assert.match(bigBass, /看懂遊戲功能/, 'Game detail Feature Guide rail missing');
 assert.ok(!bigBass.includes('Slot 常用術語快速查詢'), 'Big Bass inherited the glossary after Mechanism ownership transfer');
-assert.match(bigBass, /老虎機賠付機制怎麼看/, 'Big Bass did not inherit the published payout Guide');
+assert.match(bigBass, /data-guide-slug="slot-payout-mechanisms-explained"/, 'Big Bass did not inherit the published payout Guide');
 const bonanzaRail = bonanza.match(/<section class="game-guide-rail"[\s\S]*?<\/section>/)?.[0] ?? '';
 assert.ok(bonanzaRail, 'Bonanza Guide rail missing');
-assert.match(bonanzaRail, /老虎機賠付機制怎麼看/, 'Megaways did not resolve to the published payout Guide');
-if (maxWinGuidePublished) assert.match(bonanzaRail, /老虎機最高倍數怎麼看/, 'Published Max Win Guide did not enter the Game detail rail');
-else assert.ok(!bonanzaRail.includes('老虎機最高倍數怎麼看'), 'Draft Max Win Guide entered the Game detail rail');
+assert.match(bonanza, /data-guide-slug="slot-payout-mechanisms-explained"/, 'Megaways did not resolve to the published payout Guide');
+if (maxWinGuidePublished) assert.match(bonanza, /data-guide-slug="slot-max-win-explained"/, 'Published Max Win Guide did not enter the Game detail presentation');
+else assert.ok(!bonanza.includes('data-guide-slug="slot-max-win-explained"'), 'Draft Max Win Guide entered the Game detail presentation');
 const reactoonzRail = reactoonz.match(/<section class="game-guide-rail"[\s\S]*?<\/section>/)?.[0] ?? '';
 if (cascadingGuidePublished) assert.match(reactoonzRail, /老虎機連鎖消除怎麼看/, 'Reactoonz did not show the Cascading Guide within its first three Guide matches');
 else assert.ok(!reactoonzRail.includes('老虎機連鎖消除怎麼看'), 'Draft Cascading Guide entered the Reactoonz detail rail');
@@ -111,4 +113,82 @@ for (const [name, html] of [['game', bigBass], ['guide', rtp], ['explorer', game
   assert.ok(!html.includes('rel="canonical"'), `${name}: Preview canonical must remain absent`);
 }
 
-console.log('Guide relationship UI, independent Explorer URLs, Search intents, Deferred gaps and Preview safeguards verified.');
+const gameDirectories = (await readdir(new URL('games/', root), { withFileTypes: true }))
+  .filter((entry) => entry.isDirectory())
+  .map((entry) => entry.name)
+  .sort();
+assert.equal(gameDirectories.length, 30, 'Game detail knowledge presentation must cover all 30 published Games');
+
+const renderedKnowledge = [];
+for (const slug of gameDirectories) {
+  const html = await load(`games/${slug}/index.html`);
+  const items = [...html.matchAll(/<a[^>]*data-guide-slug="([^"]+)"[^>]*data-guide-placement="([^"]+)"/g)]
+    .map((match) => ({ guideSlug: match[1], placement: match[2] }));
+  assert.equal(new Set(items.map((item) => item.guideSlug)).size, items.length, `${slug}: a Guide was rendered more than once`);
+  renderedKnowledge.push(...items.map((item) => ({ gameSlug: slug, ...item })));
+}
+
+const directItems = renderedKnowledge.filter((item) => item.placement !== 'feature-overflow');
+const overflowItems = renderedKnowledge.filter((item) => item.placement === 'feature-overflow');
+assert.equal(renderedKnowledge.length, 167, 'Expected all 167 unique Game → Guide relationships to remain visible');
+assert.equal(directItems.length, 163, 'Expected 163 relationships without expansion');
+assert.equal(overflowItems.length, 4, 'Expected four relationships in the overflow area');
+
+const countPlacement = (placement) => renderedKnowledge.filter((item) => item.placement === placement).length;
+const countGuide = (guideSlug) => renderedKnowledge.filter((item) => item.guideSlug === guideSlug).length;
+assert.equal(countPlacement('core-mechanism'), 27, 'Mechanism contextual Guide count changed');
+assert.equal(countPlacement('core-rtp'), 17, 'RTP contextual Guide count changed');
+assert.equal(countPlacement('core-volatility') + countPlacement('full-volatility'), 20, 'Volatility contextual Guide count changed');
+assert.equal(countPlacement('core-max-win'), 25, 'Max Win contextual Guide count changed');
+assert.equal(countGuide('slot-multiplier-explained'), 25, 'Multiplier Feature Guide count changed');
+assert.equal(countGuide('slot-cascading-tumble-avalanche-explained'), 12, 'Cascading Feature Guide count changed');
+assert.equal(countGuide('slot-terms-glossary'), 12, 'Bonus Buy Feature Guide count changed');
+assert.equal(countGuide('slot-symbols-and-features'), 29, 'Symbols Feature Guide count changed');
+assert.ok(!renderedKnowledge.some((item) => item.gameSlug === 'super-ace' && item.guideSlug === 'slot-cascading-tumble-avalanche-explained'), 'Super Ace regained an invalid Cascading relationship');
+
+for (const slug of ['bonanza', 'gates-of-olympus-1000', 'storm-of-seth-2-awakening', 'sun-wu-kong']) {
+  const pageItems = overflowItems.filter((item) => item.gameSlug === slug);
+  assert.equal(pageItems.length, 1, `${slug}: expected one current overflow Guide`);
+  const html = await load(`games/${slug}/index.html`);
+  assert.match(html, /<details class="game-guide-overflow"><summary>查看更多相關教學（1）<\/summary>/, `${slug}: dynamic overflow summary missing`);
+}
+for (const slug of gameDirectories.filter((gameSlug) => !overflowItems.some((item) => item.gameSlug === gameSlug))) {
+  const html = await load(`games/${slug}/index.html`);
+  assert.ok(!html.includes('game-guide-overflow'), `${slug}: rendered an empty overflow disclosure`);
+}
+
+const fakeMatch = (number, type = 'feature', value = `feature-${number}`) => ({
+  guide: { slug: `guide-${number}`, title: `Guide ${number}`, description: '', url: `/guide/guide-${number}/`, status: 'published' },
+  priority: number,
+  reasons: [{ type, value }],
+});
+const emptyFacts = { hasPrimaryRtp: false, hasRtpVariants: false, hasNormalizedVolatility: false, hasOriginalVolatility: false, hasMaxWin: false };
+for (const count of [0, 1, 2, 3, 4, 6]) {
+  const presentation = buildGameDetailKnowledgePresentation(Array.from({ length: count }, (_, index) => fakeMatch(index)), emptyFacts);
+  assert.equal(presentation.featureGuides.direct.length, Math.min(count, 3), `${count}-Guide fixture direct count is not generic`);
+  assert.equal(presentation.featureGuides.overflow.length, Math.max(0, count - 3), `${count}-Guide fixture overflow count is not generic`);
+}
+const rtpMatch = {
+  guide: { slug: 'rtp-guide', title: 'RTP Guide', description: '', url: '/guide/rtp-guide/', status: 'published' },
+  priority: 1,
+  reasons: [{ type: 'data-topic', value: 'rtp' }, { type: 'data-topic', value: 'rtp-variants' }],
+};
+const primaryRtpPresentation = buildGameDetailKnowledgePresentation([rtpMatch], { ...emptyFacts, hasPrimaryRtp: true, hasRtpVariants: true });
+assert.equal(primaryRtpPresentation.fieldGuides['core-rtp']?.length, 1, 'Primary RTP and variants did not share one canonical CTA');
+assert.equal(primaryRtpPresentation.fieldGuides['full-rtp-variants'], undefined, 'RTP variants duplicated the primary RTP CTA');
+const variantsOnlyPresentation = buildGameDetailKnowledgePresentation([rtpMatch], { ...emptyFacts, hasRtpVariants: true });
+assert.equal(variantsOnlyPresentation.fieldGuides['full-rtp-variants']?.length, 1, 'RTP-variants-only fixture did not use the full-data placement');
+
+const mergedFeatureMatch = {
+  guide: { slug: 'feature-guide', title: 'Feature Guide', description: '', url: '/guide/feature-guide/', status: 'published' },
+  priority: 1,
+  reasons: [{ type: 'feature', value: 'wild' }, { type: 'feature', value: 'scatter' }],
+};
+const mergedFeaturePresentation = buildGameDetailKnowledgePresentation([mergedFeatureMatch, mergedFeatureMatch], emptyFacts);
+assert.equal(mergedFeaturePresentation.allGuideSlugs.length, 1, 'Merged Feature reasons rendered the same Guide twice');
+assert.deepEqual(mergedFeaturePresentation.featureGuides.direct[0].displayReasons, mergedFeatureMatch.reasons, 'Feature reasons were not preserved from the resolver match');
+assert.match(globalCssSource, /\.game-field-guide-link\{[^}]*min-height:44px/, 'Contextual Guide links must keep a 44px touch target');
+assert.match(globalCssSource, /\.game-guide-overflow summary\{[^}]*min-height:44px/, 'Overflow summary must keep a 44px touch target');
+assert.match(globalCssSource, /game-guide-overflow summary:focus-visible/, 'Overflow summary focus style missing');
+
+console.log('Guide relationship UI, 167-entry Game detail presentation, generic overflow, independent Explorer URLs, Search intents and Preview safeguards verified.');

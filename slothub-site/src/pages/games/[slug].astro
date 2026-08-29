@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import AddCompareButton from '../../components/AddCompareButton';
 import { absoluteUrl, gameUrl, providerUrl } from '../../lib/urls';
 import { featureLabels, jackpotTypeLabels, primaryTypeLabels, volatilityLabels, winMechanismLabels } from '../../lib/taxonomy';
-import { loadGuideRelationshipIndex, relationshipLabel } from '../../lib/guide-relationship-catalog';
+import { buildGameDetailKnowledgePresentation, loadGuideRelationshipIndex, relationshipLabel, type GameDetailFieldPlacement } from '../../lib/guide-relationship-catalog';
 
 export async function getStaticPaths() {
   const games = (await getCollection('games')).filter((game) => game.data.status === 'published');
@@ -16,7 +16,16 @@ const providers = await getCollection('providers');
 const allGames = (await getCollection('games')).filter((game) => game.data.status === 'published');
 const provider = providers.find((item) => item.id === entry.data.provider);
 const relationshipIndex = await loadGuideRelationshipIndex();
-const relatedGuideMatches = (relationshipIndex.gameToGuides[entry.id] ?? []).slice(0, 3);
+const knowledgePresentation = buildGameDetailKnowledgePresentation(
+  relationshipIndex.gameToGuides[entry.id] ?? [],
+  {
+    hasPrimaryRtp: entry.data.rtp !== undefined,
+    hasRtpVariants: entry.data.rtpVariants.length > 0,
+    hasNormalizedVolatility: Boolean(entry.data.volatilityNormalized ?? entry.data.volatility),
+    hasOriginalVolatility: Boolean(entry.data.volatilityOriginal),
+    hasMaxWin: entry.data.maxWinMultiplier !== undefined,
+  },
+);
 const displayName = entry.data.displayNameZhHant ?? entry.data.originalName ?? entry.data.name;
 const originalName = entry.data.originalName ?? entry.data.name;
 const normalizedVolatility = entry.data.volatilityNormalized ?? entry.data.volatility;
@@ -69,15 +78,15 @@ const providerGames = allGames
   .slice(0, 4);
 
 const coreStats = [
-  entry.data.rtp !== undefined ? { label: '主要 RTP', value: `${entry.data.rtp}%`, badge: entry.data.rtpVariants.length > 1 ? '多版本' : undefined } : undefined,
-  normalizedVolatility ? { label: '統一波動度', value: volatilityLabels[normalizedVolatility] ?? normalizedVolatility } : undefined,
-  entry.data.maxWinMultiplier !== undefined ? { label: '最高倍數', value: formatMultiplier(entry.data.maxWinMultiplier) } : undefined,
-  mechanism ? { label: '賠付機制', value: mechanism } : undefined,
-].filter(Boolean) as { label: string; value: string; badge?: string }[];
+  entry.data.rtp !== undefined ? { label: '主要 RTP', value: `${entry.data.rtp}%`, badge: entry.data.rtpVariants.length > 1 ? '多版本' : undefined, guidePlacement: 'core-rtp' as const } : undefined,
+  normalizedVolatility ? { label: '統一波動度', value: volatilityLabels[normalizedVolatility] ?? normalizedVolatility, guidePlacement: 'core-volatility' as const } : undefined,
+  entry.data.maxWinMultiplier !== undefined ? { label: '最高倍數', value: formatMultiplier(entry.data.maxWinMultiplier), guidePlacement: 'core-max-win' as const } : undefined,
+  mechanism ? { label: '賠付機制', value: mechanism, guidePlacement: 'core-mechanism' as const } : undefined,
+].filter(Boolean) as { label: string; value: string; badge?: string; guidePlacement: GameDetailFieldPlacement }[];
 
 const fullSpecs = [
-  entry.data.rtpVariants.length ? { label: '所有 RTP 版本', value: entry.data.rtpVariants.map((value) => `${value}%`).join('、') } : undefined,
-  entry.data.volatilityOriginal ? { label: '原廠波動度', value: entry.data.volatilityOriginal } : undefined,
+  entry.data.rtpVariants.length ? { label: '所有 RTP 版本', value: entry.data.rtpVariants.map((value) => `${value}%`).join('、'), guidePlacement: 'full-rtp-variants' as const } : undefined,
+  entry.data.volatilityOriginal ? { label: '原廠波動度', value: entry.data.volatilityOriginal, guidePlacement: 'full-volatility' as const } : undefined,
   normalizedVolatility ? { label: 'Slot Hub 統一波動度', value: volatilityLabels[normalizedVolatility] ?? normalizedVolatility } : undefined,
   gridDisplay ? { label: '盤面', value: gridDisplay } : undefined,
   winCountDisplay ? { label: '賠線／Ways 數量', value: winCountDisplay } : undefined,
@@ -88,7 +97,10 @@ const fullSpecs = [
   entry.data.maxBet !== undefined ? { label: '最高投注', value: formatNumber(entry.data.maxBet) } : undefined,
   entry.data.releaseDate ? { label: '發行日期', value: formatDate(entry.data.releaseDate) } : undefined,
   entry.data.gameId ? { label: 'Game ID', value: entry.data.gameId } : undefined,
-].filter(Boolean) as { label: string; value: string; note?: string }[];
+].filter(Boolean) as { label: string; value: string; note?: string; guidePlacement?: GameDetailFieldPlacement }[];
+
+const featureGuideDirect = knowledgePresentation.featureGuides.direct;
+const featureGuideOverflow = knowledgePresentation.featureGuides.overflow;
 
 const sources = entry.data.sources.length ? entry.data.sources : [entry.data.source];
 const game = {
@@ -142,18 +154,21 @@ const schema = {
 
     {coreStats.length > 0 && <section class="game-core-stats" aria-labelledby="core-data-title">
       <h2 id="core-data-title">核心數據</h2>
-      <dl>{coreStats.map((stat) => <div><dt>{stat.label}</dt><dd>{stat.value}{stat.badge && <small>{stat.badge}</small>}</dd></div>)}</dl>
+      <dl>{coreStats.map((stat) => <div><dt>{stat.label}</dt><dd>{stat.value}{stat.badge && <small>{stat.badge}</small>}</dd>{knowledgePresentation.fieldGuides[stat.guidePlacement]?.map((match) => <a class="game-field-guide-link" href={match.guide.url} aria-label={`了解${stat.label}：${match.guide.title}`} data-guide-slug={match.guide.slug} data-guide-placement={stat.guidePlacement}>了解這項資料 →</a>)}</div>)}</dl>
     </section>}
 
     {(fullSpecs.length > 0 || entry.data.features.length > 0) && <section class="game-data-section" aria-labelledby="full-data-title">
       <div class="game-section-heading"><p class="eyebrow">STRUCTURED DATA</p><h2 id="full-data-title">完整遊戲資料</h2></div>
-      {fullSpecs.length > 0 && <dl class="game-spec-grid">{fullSpecs.map((spec) => <div><dt>{spec.label}</dt><dd>{spec.value}</dd>{spec.note && <small>{spec.note}</small>}</div>)}</dl>}
+      {fullSpecs.length > 0 && <dl class="game-spec-grid">{fullSpecs.map((spec) => <div><dt>{spec.label}</dt><dd>{spec.value}</dd>{spec.note && <small>{spec.note}</small>}{spec.guidePlacement && knowledgePresentation.fieldGuides[spec.guidePlacement]?.map((match) => <a class="game-field-guide-link" href={match.guide.url} aria-label={`了解${spec.label}：${match.guide.title}`} data-guide-slug={match.guide.slug} data-guide-placement={spec.guidePlacement}>了解這項資料 →</a>)}</div>)}</dl>}
       {entry.data.features.length > 0 && <div class="game-features"><h3>遊戲功能</h3><ul>{entry.data.features.map((feature) => <li>{featureLabels[feature] ?? feature}</li>)}</ul></div>}
     </section>}
 
-    {relatedGuideMatches.length > 0 && <section class="game-guide-rail" aria-labelledby="game-guide-title">
-      <div><p class="eyebrow">READ THE DATA</p><h2 id="game-guide-title">看懂這些資料</h2><p>從這款遊戲實際使用的欄位與機制，前往對應說明。</p></div>
-      <nav>{relatedGuideMatches.map((match) => <a href={match.guide.url}><span>{match.reasons.map((reason) => relationshipLabel(reason.type, reason.value)).join('、')}</span><strong>{match.guide.title}</strong><b>閱讀 →</b></a>)}</nav>
+    {featureGuideDirect.length > 0 && <section class="game-guide-rail" aria-labelledby="game-guide-title">
+      <div><p class="eyebrow">FEATURE GUIDES</p><h2 id="game-guide-title">看懂遊戲功能</h2><p>依這款遊戲實際標記的功能，前往對應說明。</p></div>
+      <div class="game-guide-list">
+        <nav aria-label="相關遊戲功能教學">{featureGuideDirect.map((match) => <a href={match.guide.url} data-guide-slug={match.guide.slug} data-guide-placement="feature-direct"><span>{match.displayReasons.map((reason) => relationshipLabel(reason.type, reason.value)).join('、')}</span><strong>{match.guide.title}</strong><b>閱讀 →</b></a>)}</nav>
+        {featureGuideOverflow.length > 0 && <details class="game-guide-overflow"><summary>查看更多相關教學（{featureGuideOverflow.length}）</summary><nav aria-label="更多相關遊戲功能教學">{featureGuideOverflow.map((match) => <a href={match.guide.url} data-guide-slug={match.guide.slug} data-guide-placement="feature-overflow"><span>{match.displayReasons.map((reason) => relationshipLabel(reason.type, reason.value)).join('、')}</span><strong>{match.guide.title}</strong><b>閱讀 →</b></a>)}</nav></details>}
+      </div>
     </section>}
 
     {(seriesGames.length > 0 || providerGames.length > 0) && <section class="game-relations" aria-labelledby="related-title">
