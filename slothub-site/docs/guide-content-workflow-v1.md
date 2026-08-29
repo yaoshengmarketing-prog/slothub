@@ -15,9 +15,11 @@
 3. `docs/game-intake-workflow-v1.md`，僅參考狀態、人工關卡與固定尾段格式
 4. `docs/slot-payout-mechanisms-guide-brief.md`
 5. `docs/max-win-guide-v1-readonly-brief.md`
-6. `src/content/guides/slot-payout-mechanisms-explained.md`
-7. `src/content/guides/slot-max-win-explained.md`
-8. 現有 Guide Schema、relationship resolver／catalog、Search 投影與 UI／驗證程式
+6. `docs/slot-multiplier-guide-v1-readonly-brief.md`
+7. `src/content/guides/slot-payout-mechanisms-explained.md`
+8. `src/content/guides/slot-max-win-explained.md`
+9. `src/content/guides/slot-multiplier-explained.md`
+10. 現有 Guide Schema、relationship resolver／catalog、Search 投影與 UI／驗證程式
 
 治理順位如下：
 
@@ -209,14 +211,14 @@ Game 不保存第二份人工 `relatedGuides`。正反向關係都由 published 
 ### 7.5 `RELATIONSHIP_PREVIEW_REVIEW`
 
 - 進入條件：Guide draft 與 frontmatter 已完成，可在本機安全模擬 published。
-- 允許動作：暫時將 Guide 改為 `published`，Build 並檢查所有關聯入口、排序、響應式及隔離；完成後恢復 `draft`。
+- 允許動作：暫時將 Guide 改為 `published`，檢查所有關聯入口、排序與響應式，並在仍為模擬 `published` 的狀態下執行與 GitHub Actions 相同的完整驗證；全部通過後才恢復 `draft`。
 - 允許修改檔案：Guide 的暫時 status；核准範圍內的局部內容、frontmatter、共用投影或測試修正。
 - 可查官方來源：是，僅用於解決審查發現的來源問題。
 - 可建立或修改 Guide：是；不得永久保留模擬發布狀態。
 - Commit：不得提交暫時 `published`；模擬通過並恢復 `draft` 後可準備 draft Commit。
 - Push：否。
 - Deploy：否。
-- 完成條件：Guide → Game、Game → Guide、Guide 總覽、Search、Explorer、Slots Knowledge Map、代表遊戲、最多三篇排序、0／1／2／3 篇、桌機與 390×844 手機、長標題及 draft 隔離均通過。
+- 完成條件：Guide → Game、Game → Guide、Guide 總覽、Search、Explorer、Slots Knowledge Map、代表遊戲、最多三篇排序、0／1／2／3 篇、桌機與 390×844 手機、長標題及 draft 隔離均通過；完整 CI 命令已在模擬 `published` 狀態下成功執行，且 Guide 已恢復 `draft`。
 - 下一正常狀態：`CONTENT_DRAFT_READY_FOR_REVIEW`。
 - 失敗返回：來源、內容、關聯或 UI 問題進入對應 RETURN 狀態；需要新 Schema／taxonomy／resolver／URL 決策時進入 `BLOCKED`。
 - 人工核准：本機模擬不需要；任何涉及既有 published Guide frontmatter 的關聯所有權移交都需要事前人工核准。
@@ -261,14 +263,14 @@ Game 不保存第二份人工 `relatedGuides`。正反向關係都由 published 
 - Commit：可，且發布狀態必須使用獨立 Commit。
 - Push：可，僅限人工核准的 Commit；遠端有新 Commit 時停止，不自行 rebase、merge 或 force push。
 - Deploy：可，僅限既有 GitHub → Cloudflare Pages Preview 流程。
-- 完成條件：Cloudflare Deployment 成功產生，且 Deployment SHA 與發布 Commit 一致。
+- 完成條件：GitHub Actions 已以完整命令驗證成功、Cloudflare Pages Deployment 成功，且 Deployment SHA 與發布 Commit 一致；三項缺一不可。
 - 下一正常狀態：`PUBLISHED_TO_PREVIEW`。
-- 失敗返回：遠端有新 Commit 時進入 `BLOCKED`；CI 或部署失敗時維持 `PUBLISHING_TO_PREVIEW` 或依阻擋性質進入 `BLOCKED`。
+- 失敗返回：CI 的來源、內容、關聯或 UI 驗證失敗時進入對應 RETURN 狀態；Node、權限、遠端衝突或無法判定的基礎設施問題進入 `BLOCKED`。只有仍在既有授權內、可安全等待或重試的部署程序才維持 `PUBLISHING_TO_PREVIEW`。Cloudflare 成功但 GitHub Actions 失敗時，不得前進。
 - 人工核准：進入本狀態前需要；核准範圍內可自動完成 Commit、Push、CI 與部署等待。
 
 ### 7.9 `PUBLISHED_TO_PREVIEW`
 
-- 進入條件：Cloudflare Deployment 已成功產生，且 Deployment SHA 對應正確發布 Commit。
+- 進入條件：GitHub Actions 完整驗證成功、Cloudflare Pages Deployment 成功，且 Deployment SHA 對應正確發布 Commit；三項必須同時成立。
 - 允許動作：只執行線上回讀與結果回報。
 - 允許修改檔案：無。
 - 可查官方來源：否；若線上回讀揭露來源問題，進入 `RETURN_FOR_SOURCE_FIX`。
@@ -428,12 +430,22 @@ Resolver 不會自行選定主要文章，不能把重複所有權留給 UI 猜�
 ### 8.5 模擬發布
 
 1. 暫時把新 Guide 改為 `published`。
-2. 執行 Schema、關聯、搜尋、Explorer、Build、內部連結與 UI 驗證。
+2. 若新 Guide 接管既有 Deferred taxonomy，先檢查 relationship tests、relationship UI tests，以及 Search／Explorer 的所有權預期，移除或改寫已過時的 Deferred 假設；其他仍延後概念的斷言必須保留。
 3. 實際檢查 Guide → Game、Game → Guide、Guide 總覽、Search、Explorer、Slots Knowledge Map、代表遊戲及最多三篇排序。
 4. 覆蓋 0／1／2／3 篇 Guide 的 Game detail 狀態。
 5. 檢查桌機、390×844 手機、長中文標題及整頁水平溢位。
-6. 完成後恢復 `status: draft`。
-7. 確認 draft 不出現在公開路由、Search、relationship index 或靜態輸出。
+6. 在 Guide 仍為模擬 `published` 的狀態下，從 `slothub-site/` 執行與 GitHub Actions 相同的完整命令：
+
+   ```powershell
+   $env:ASTRO_TELEMETRY_DISABLED='1'
+   $env:PUBLIC_SITE_ENV='preview'
+   npm run verify
+   ```
+
+   上述為 Windows PowerShell 語法；其他 shell 應使用等效的環境變數設定語法。無論使用哪一種 shell，都必須設定相同的 `ASTRO_TELEMETRY_DISABLED=1`、`PUBLIC_SITE_ENV=preview`，並執行相同的 `npm run verify`。
+
+7. 不得先恢復 `draft` 再執行完整驗證；只有完整命令成功後，才恢復 `status: draft` 並進入人工內容審查。
+8. 恢復 `draft` 後，確認 draft 不出現在公開路由、Search、relationship index 或靜態輸出。
 
 暫時 `published` 狀態不得進入 Commit。
 
@@ -475,8 +487,8 @@ Resolver 不會自行選定主要文章，不能把重複所有權留給 UI 猜�
 2. 建立獨立發布 Commit。
 3. Push 前核對遠端；若有新 Commit，進入 `BLOCKED`，不得自行 rebase、merge 或 force push。
 4. 安全 Push，等待 GitHub Actions 與 Cloudflare Pages。
-5. CI 或部署失敗時維持 `PUBLISHING_TO_PREVIEW`，或依阻擋性質進入 `BLOCKED`。
-6. Cloudflare Deployment 成功且 SHA 對應正確發布 Commit 後，進入 `PUBLISHED_TO_PREVIEW`。
+5. GitHub Actions 失敗時依失敗性質進入對應 RETURN 狀態或 `BLOCKED`；不得因 Cloudflare 已成功部署而繼續前進。
+6. 只有 GitHub Actions 完整驗證成功、Cloudflare Pages Deployment 成功，且 Deployment SHA 對應正確發布 Commit 後，才進入 `PUBLISHED_TO_PREVIEW`。
 
 ### 8.10 線上回讀與結案
 
@@ -518,6 +530,8 @@ Resolver 不會自行選定主要文章，不能把重複所有權留給 UI 猜�
 - Preview safeguards。
 - `git diff --check`。
 
+`RELATIONSHIP_PREVIEW_REVIEW` 的完整驗證不得用上述局部命令組合取代 GitHub Actions 使用的 `npm run verify`，也不得在恢復 `draft` 後才執行。
+
 若任一工具名稱或測試入口與現況不一致，先以只讀方式確認實際腳本；不得為符合文件名稱另建重複測試。
 
 ## 10. 失敗與返回路徑
@@ -530,7 +544,13 @@ Resolver 不會自行選定主要文章，不能把重複所有權留給 UI 猜�
 | 溢位、CTA、互動、長標題或響應式錯誤 | `RETURN_FOR_UI_FIX` | 修正根因，不以隱藏內容規避 |
 | 需要 Schema、taxonomy、resolver、URL 或產品新決策 | `BLOCKED` | 停止並等待人工核准 |
 | 遠端出現新 Commit | `BLOCKED` | 停止，不自行 rebase、merge 或 force push |
-| CI 或 Cloudflare 部署失敗 | `PUBLISHING_TO_PREVIEW` 或 `BLOCKED` | 保留發布現況；依失敗是否可在既有授權內重試判斷 |
+| CI 的來源驗證失敗 | `RETURN_FOR_SOURCE_FIX` | 補證、刪除或降低未通過的來源敘述 |
+| CI 的文章內容驗證失敗 | `RETURN_FOR_CONTENT_FIX` | 局部修正內容並重新取得發布授權 |
+| CI 的 Relationship／Search／Explorer 所有權驗證失敗 | `RETURN_FOR_RELATIONSHIP_FIX` | 修正正式所有權預期並完整回歸 |
+| CI 的 UI／響應式驗證失敗 | `RETURN_FOR_UI_FIX` | 修正 UI 根因並重測桌機與手機 |
+| Node、權限、遠端衝突或無法判定的基礎設施問題 | `BLOCKED` | 停止並回報，不自行擴張或覆蓋遠端 |
+| 仍在既有授權內、可安全等待或重試的部署程序 | `PUBLISHING_TO_PREVIEW` | 只允許等待或安全重試；不得藉此修改內容或程式 |
+| Cloudflare 成功但 GitHub Actions 失敗 | 對應 RETURN 狀態或 `BLOCKED` | 不得進入 `PUBLISHED_TO_PREVIEW` 或 `CLOSED` |
 | 線上來源、內容、關聯或 UI 驗證失敗 | 對應 RETURN 狀態 | 停止線上發布閉環；修正與重新發布需重新核准 |
 | 非預期檔案或範圍擴張 | `BLOCKED` | 保留現況並回報精確差異 |
 
@@ -578,6 +598,9 @@ CONTENT_QA_RESULT:
 RELATIONSHIP_RESULT:
 UI_RESULT:
 TEST_RESULTS:
+PUBLISHED_SIMULATION_RESULT:
+EXACT_CI_COMMAND_RETESTED:
+RELATIONSHIP_EXPECTATION_MIGRATIONS:
 BLOCKERS:
 FILES_CHANGED:
 COMMIT_SHA:
@@ -618,6 +641,14 @@ HUMAN_APPROVAL_REQUIRED:
 - `READY_TO_PUBLISH` 只等待人工核准；`PUBLISHED_TO_PREVIEW` 只執行線上回讀，避免同一狀態同時具有寫入與唯讀權限。
 - 明確規定任何涉及既有 published Guide frontmatter 的關聯所有權移交都需要人工核准；新 Guide 自己的 frontmatter 仍可依已核准 Brief 執行。
 
+### 13.4 2026-08-29 Multiplier Guide 正式 CI 實證
+
+- Multiplier Guide 在發布前模擬中曾回報 Relationship 測試通過，但完整 `npm run verify` 是在恢復 `draft` 後執行，因此兩支仍將 `multiplier` 視為 Deferred 的過時斷言未被觸發。
+- 正式發布後，GitHub Actions 在 published 狀態執行相同命令，才揭露 relationship 與 relationship UI 測試的所有權預期尚未遷移。
+- 工作流因此要求完整 CI 命令必須在 Guide 仍為模擬 `published` 時執行；接管 Deferred taxonomy 時，必須同步檢查 Relationship、Relationship UI、Search 與 Explorer 的所有權預期。
+- 完整驗證通過後才能恢復 `draft` 並進入人工內容審查，避免草稿路徑掩蓋正式發布狀態才會出現的失敗。
+- 本次 Cloudflare Pages 曾在 GitHub Actions 失敗時仍成功產生 Deployment，證明部署成功不能取代 CI。此後只有 GitHub Actions 完整驗證成功、Cloudflare Pages Deployment 成功且 SHA 對應發布 Commit 三項同時成立，才能進入 `PUBLISHED_TO_PREVIEW`；CI 失敗必須依來源、內容、關聯、UI 或基礎設施性質分流。
+
 ## 14. 本文件審查出口
 
 ```text
@@ -626,11 +657,14 @@ CURRENT_STATE: WORKFLOW_APPROVED_V1
 GUIDE_SLUG: N/A
 GUIDE_TITLE: N/A
 RELATIONSHIP_TYPE: N/A
-SOURCE_STATUS: 已核對兩份 Brief、兩篇已發布 Guide、現有 Schema、resolver／catalog、Search 與 UI 驗證程式
+SOURCE_STATUS: 已核對現行 Guide Brief、已發布 Guide 實證、現有 Schema、resolver／catalog、Search 與 UI 驗證程式
 CONTENT_QA_RESULT: 工作流已通過人工審查，並涵蓋治理、狀態、來源、關聯、驗證、返回路徑與 Decision Log
 RELATIONSHIP_RESULT: N/A
 UI_RESULT: N/A
 TEST_RESULTS: Markdown 格式、結構與尾端空白檢查通過
+PUBLISHED_SIMULATION_RESULT: N/A
+EXACT_CI_COMMAND_RETESTED: N/A
+RELATIONSHIP_EXPECTATION_MIGRATIONS: N/A
 BLOCKERS: NONE
 FILES_CHANGED: docs/guide-content-workflow-v1.md
 COMMIT_SHA: 由本輪提交結果回報
