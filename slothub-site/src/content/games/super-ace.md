@@ -16,7 +16,7 @@ maxWinLabelOriginal: "MAX WIN: 10000x"
 winMechanism: ways-to-win
 winCount: 1024
 paylines: "Official field label: Paylines; value: 1024 ways"
-features: [free-spins, multiplier, cascading]
+features: [free-spins, multiplier]
 bonusFeatures: [Free Game, Free Spin, Accumulated multipliers through elimination, Free Game double multipliers, Golden Card, Golden Joker, "Publish Time: 2020.08"]
 image: { src: /assets/games/super-ace-card.png, alt: Super Ace 官方作品圖, sourceUrl: https://storage.googleapis.com/tada-cdn-asia/All-In-One/production/img/jiliPlusPlayer/games/7ycivbeSFZ2FzMIi4UfVi4vfmALw2iwP3gEaCsmO.png, retrievedAt: 2026-08-29 }
 editorialFeatured: false
