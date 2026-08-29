@@ -26,7 +26,7 @@ bonusBuy: true
 gameId: "1067"
 image: { src: /assets/games/wanted-dead-or-a-wild.png, alt: Wanted Dead or a Wild 官方桌機作品圖, sourceUrl: https://www-live.hacksawgaming.com/casino_thumbnails/1067_hero_DESKTOP.png, retrievedAt: 2026-08-29 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Hacksaw Gaming 官方 Wanted Dead or a Wild 遊戲頁, url: https://www.hacksawgaming.com/games/wanted-dead-or-a-wild, checkedAt: 2026-08-29 }
 sources:
   - { label: Hacksaw Gaming 官方 Wanted Dead or a Wild 遊戲頁, url: https://www.hacksawgaming.com/games/wanted-dead-or-a-wild, checkedAt: 2026-08-29 }

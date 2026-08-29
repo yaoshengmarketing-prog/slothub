@@ -22,7 +22,7 @@ releaseDate: 2023-12-14
 gameId: "Pragmatic Play gameSymbol: vs20olympx"
 image: { src: /assets/games/gates-of-olympus-1000.png, alt: Gates of Olympus 1000 官方作品圖, sourceUrl: https://www.pragmaticplay.com/wp-content/uploads/2023/12/Gates-of-Olympus_1000_339x180.png, retrievedAt: 2026-08-29 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Pragmatic Play 官方 Gates of Olympus 1000 遊戲頁, url: https://www.pragmaticplay.com/en/games/gates-of-olympus-1000/, checkedAt: 2026-08-29 }
 sources:
   - { label: Pragmatic Play 官方 Gates of Olympus 1000 遊戲頁, url: https://www.pragmaticplay.com/en/games/gates-of-olympus-1000/, checkedAt: 2026-08-29 }

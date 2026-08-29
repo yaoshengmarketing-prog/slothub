@@ -24,7 +24,7 @@ bonusFeatures: [Fortune Ox Feature, Respins until a non-winning spin, Full-reel 
 gameId: "PG SOFT gid: 83 / pgid: 98"
 image: { src: /assets/games/fortune-ox.jpg, alt: Fortune Ox 官方作品圖, sourceUrl: https://www.pgsoft.com/uploads/Games/Images/2fad9820-8301-4f6c-8f81-e3163cd1022e.jpg, retrievedAt: 2026-08-29 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: PG SOFT 官方 Fortune Ox 遊戲頁, url: https://www.pgsoft.com/en/games/83/, checkedAt: 2026-08-29 }
 sources:
   - { label: PG SOFT 官方 Fortune Ox 遊戲頁, url: https://www.pgsoft.com/en/games/83/, checkedAt: 2026-08-29 }

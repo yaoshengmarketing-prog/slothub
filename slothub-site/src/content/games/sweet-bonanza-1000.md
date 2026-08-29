@@ -21,7 +21,7 @@ releaseDate: 2024-06-03
 gameId: "Pragmatic Play gameSymbol: vs20fruitswx"
 image: { src: /assets/games/sweet-bonanza-1000.png, alt: Sweet Bonanza 1000 官方作品圖, sourceUrl: https://www.pragmaticplay.com/wp-content/uploads/2024/05/Sweet-Bonanza-1000_339x180.png, retrievedAt: 2026-08-29 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Pragmatic Play 官方 Sweet Bonanza 1000 遊戲頁, url: https://www.pragmaticplay.com/en/games/sweet-bonanza-1000/, checkedAt: 2026-08-29 }
 sources:
   - { label: Pragmatic Play 官方 Sweet Bonanza 1000 遊戲頁（6×5）, url: https://www.pragmaticplay.com/en/games/sweet-bonanza-1000/, checkedAt: 2026-08-29 }

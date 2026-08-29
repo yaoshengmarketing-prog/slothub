@@ -28,7 +28,7 @@ releaseDate: 2016-01-14
 gameId: "1044"
 image: { src: /assets/games/rich-wilde-and-the-book-of-dead.webp, alt: Rich Wilde and the Book of Dead 官方作品圖, sourceUrl: "https://static.wixstatic.com/media/b24144_002e6f4aa59d4b41a4ae4bb88dd251c4~mv2.webp/v1/fill/w_500,h_350,al_c/b24144_002e6f4aa59d4b41a4ae4bb88dd251c4~mv2.webp", retrievedAt: 2026-08-29 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Play’n GO 官方 Rich Wilde and the Book of Dead 遊戲頁, url: https://www.playngo.com/games/rich-wilde-and-the-book-of-dead, checkedAt: 2026-08-29 }
 sources:
   - { label: Play’n GO 官方 Rich Wilde and the Book of Dead 遊戲頁, url: https://www.playngo.com/games/rich-wilde-and-the-book-of-dead, checkedAt: 2026-08-29 }

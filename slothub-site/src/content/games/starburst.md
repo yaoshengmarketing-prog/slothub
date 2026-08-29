@@ -28,7 +28,7 @@ releaseDate: 2012-01-23
 gameId: "NetEnt tableId: starburstr000000"
 image: { src: /assets/games/starburst.png, alt: Starburst 官方作品圖, sourceUrl: https://fan-cdn.nolimitcity.com/Starburst_fansitethumb_512x512_04_09_2025_79a329f5be.png, retrievedAt: 2026-08-29 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: NetEnt 官方 Starburst 遊戲頁, url: https://netent.com/games/starburst, checkedAt: 2026-08-29 }
 sources:
   - { label: NetEnt 官方 Starburst 遊戲頁, url: https://netent.com/games/starburst, checkedAt: 2026-08-29 }
