@@ -38,7 +38,7 @@ const expected = {
   'rtp-explained': { relatedDataTopics: ['rtp', 'rtp-variants'] },
   'volatility-explained': { relatedDataTopics: ['volatility'] },
   'slot-symbols-and-features': { relatedFeatures: ['free-spins', 'wild', 'scatter', 'jackpot'] },
-  'slot-terms-glossary': { relatedFeatures: ['cascading', 'bonus-buy'] },
+  'slot-terms-glossary': { relatedFeatures: ['bonus-buy'] },
 };
 for (const [slug, relations] of Object.entries(expected)) {
   const guide = guides.find((item) => item.slug === slug);
@@ -49,6 +49,28 @@ for (const [slug, relations] of Object.entries(expected)) {
 
 assert.deepEqual(index.featureToGuides.wild.map((guide) => guide.slug), ['slot-symbols-and-features']);
 assert.deepEqual(index.dataTopicToGuides.rtp.map((guide) => guide.slug), ['rtp-explained']);
+
+const cascadingGuideSlug = 'slot-cascading-tumble-avalanche-explained';
+const cascadingGuide = guides.find((guide) => guide.slug === cascadingGuideSlug);
+assert.ok(cascadingGuide, 'Cascading Guide is missing or its slug changed');
+assert.deepEqual(cascadingGuide.relatedFeatures, ['cascading'], 'Cascading Guide must own only the cascading Feature');
+const expectedCascadingOwners = cascadingGuide.status === 'published' ? [cascadingGuideSlug] : [];
+assert.deepEqual(index.featureToGuides.cascading.map((guide) => guide.slug), expectedCascadingOwners, 'cascading ownership must follow the Cascading Guide status');
+
+const cascadingPreviewGuides = guides.map((guide) => guide.slug === cascadingGuideSlug ? { ...guide, status: 'published' } : guide);
+const cascadingPreviewIndex = buildGuideRelationshipIndex(cascadingPreviewGuides, games, options);
+assert.deepEqual(cascadingPreviewIndex.featureToGuides.cascading.map((guide) => guide.slug), [cascadingGuideSlug], 'cascading must have exactly one published Guide owner');
+assert.equal(cascadingPreviewIndex.guideToGames[cascadingGuideSlug].length, 12, 'Cascading Guide must derive exactly the 12 Games tagged with cascading');
+const gamesWithoutCascading = games.filter((game) => game.status === 'published' && !game.features?.includes('cascading'));
+assert.equal(gamesWithoutCascading.length, 18, 'Exactly 18 published Games must remain outside the cascading Feature set');
+for (const game of gamesWithoutCascading) {
+  assert.ok(!cascadingPreviewIndex.gameToGuides[game.slug].some(({ guide }) => guide.slug === cascadingGuideSlug), `${game.slug}: missing cascading Feature must not create a Cascading Guide relation`);
+}
+assert.ok(!cascadingPreviewIndex.gameToGuides['super-ace'].some(({ guide }) => guide.slug === cascadingGuideSlug), 'Super Ace must not create a Cascading Guide relation');
+const cascadingVisibleInTopThree = cascadingPreviewIndex.guideToGames[cascadingGuideSlug]
+  .filter((game) => cascadingPreviewIndex.gameToGuides[game.slug].slice(0, 3).some(({ guide }) => guide.slug === cascadingGuideSlug));
+assert.deepEqual(cascadingVisibleInTopThree.map((game) => game.slug), ['reactoonz'], 'Only Reactoonz may show the Cascading Guide within the three-Guide display limit');
+assert.equal(cascadingPreviewIndex.guideToGames[cascadingGuideSlug].length - cascadingVisibleInTopThree.length, 11, 'The remaining 11 Cascading relations must stay valid outside the three-Guide display limit');
 
 const multiplierGuideSlug = 'slot-multiplier-explained';
 const multiplierGuide = guides.find((guide) => guide.slug === multiplierGuideSlug);
@@ -94,7 +116,7 @@ const previewIndex = buildGuideRelationshipIndex(previewGuides, games, options);
 for (const mechanism of payoutMechanisms) {
   assert.deepEqual(previewIndex.mechanismToGuides[mechanism].map((guide) => guide.slug), [payoutGuideSlug], `${mechanism}: ownership must transfer only to the payout Guide`);
 }
-assert.deepEqual(previewIndex.featureToGuides.cascading.map((guide) => guide.slug), ['slot-terms-glossary']);
+assert.deepEqual(previewIndex.featureToGuides.cascading.map((guide) => guide.slug), expectedCascadingOwners);
 assert.deepEqual(previewIndex.featureToGuides['bonus-buy'].map((guide) => guide.slug), ['slot-terms-glossary']);
 assert.ok(!previewIndex.mechanismToGuides.paylines.some((guide) => guide.slug === 'slot-terms-glossary'), 'Glossary retained Paylines ownership');
 assert.ok(!previewIndex.mechanismToGuides['ways-to-win'].some((guide) => guide.slug === 'slot-terms-glossary'), 'Glossary retained Ways ownership');
