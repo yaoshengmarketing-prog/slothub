@@ -6,7 +6,7 @@ level: beginner
 tags: [Multiplier, 倍數, Wild Multiplier, 累積倍數, 老虎機功能]
 relatedFeatures:
   - multiplier
-status: draft
+status: published
 publishedAt: 2026-08-29
 updatedAt: 2026-08-29
 ---
