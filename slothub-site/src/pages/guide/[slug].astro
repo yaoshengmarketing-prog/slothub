@@ -1,7 +1,9 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { guideUrl } from '../../lib/urls';
+import { gameUrl, guideUrl } from '../../lib/urls';
+import { loadPublishedGameCatalog } from '../../lib/game-catalog';
+import { createGuideRelationshipIndex, guideConceptLinks } from '../../lib/guide-relationship-catalog';
 
 export async function getStaticPaths() {
   const entries = await getCollection('guides', ({ data }) => data.status === 'published');
@@ -10,7 +12,17 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+const [allGuides, catalog] = await Promise.all([getCollection('guides'), loadPublishedGameCatalog()]);
+const relationships = createGuideRelationshipIndex(allGuides, catalog.games);
+const relatedGames = (relationships.guideToGames[entry.id] ?? []).slice(0, 6);
+const conceptLinks = guideConceptLinks(relationships, entry.id);
 ---
 <BaseLayout title={`${entry.data.title}｜Slot Hub`} description={entry.data.description} canonicalPath={guideUrl(entry.id)} ogType="article">
-  <article class="article-shell"><h1>{entry.data.title}</h1><Content /></article>
+  <article class="article-shell"><h1>{entry.data.title}</h1><Content />
+    {relatedGames.length > 0 && <section class="guide-related-games" aria-labelledby="guide-related-title">
+      <div class="guide-relationship-heading"><p class="eyebrow">FROM KNOWLEDGE TO DATA</p><h2 id="guide-related-title">用實際遊戲看懂概念</h2><p>以下遊戲由本文的結構化關聯自動整理，不是熱門排行。</p></div>
+      <div class="guide-game-grid">{relatedGames.map((game) => <a href={gameUrl(game.slug)}>{game.image ? <img src={game.image.src} alt="" loading="lazy" /> : <span aria-hidden="true">{game.name.slice(0, 1)}</span>}<strong>{game.name}</strong>{game.displayNameZhHant && <small>{game.originalName}</small>}<b>{game.providerName}</b></a>)}</div>
+      <div class="guide-concept-links" aria-label="依本文概念探索遊戲">{conceptLinks.map((concept) => <a href={concept.href}><span>{concept.label}</span><b>查看符合條件的遊戲 →</b></a>)}</div>
+    </section>}
+  </article>
 </BaseLayout>

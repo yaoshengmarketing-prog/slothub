@@ -13,8 +13,10 @@
     "verify:links": "node scripts/check-links.mjs",
     "verify:search": "node scripts/test-search.mjs",
     "verify:explorer": "node scripts/test-game-explorer.mjs",
+    "verify:relationships": "node scripts/verify-guide-relationships.mjs",
+    "verify:relationship-ui": "node scripts/verify-guide-relationship-ui.mjs",
     "verify:data": "node scripts/audit-game-data.mjs",
-    "verify": "npm run verify:data && npm run verify:search && npm run verify:explorer && npm run check && npm run build && npm run verify:build && npm run verify:game-detail && npm run verify:links"
+    "verify": "npm run verify:data && npm run verify:search && npm run verify:explorer && npm run verify:relationships && npm run check && npm run build && npm run verify:build && npm run verify:game-detail && npm run verify:relationship-ui && npm run verify:links"
   },
   "dependencies": {
     "@astrojs/react": "latest",

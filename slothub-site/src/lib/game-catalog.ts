@@ -1,6 +1,6 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { gameUrl } from './urls';
-import { featureLabels, winMechanismLabels } from './taxonomy';
+import { dataTopicSearchTerms, featureLabels, featureSearchTerms, winMechanismLabels, winMechanismSearchTerms } from './taxonomy';
 import type { SearchItem } from './search.js';
 
 export type CatalogProvider = CollectionEntry<'providers'>;
@@ -23,6 +23,7 @@ export type GameCatalogItem = {
   image?: { src: string; alt: string };
   rtp?: number;
   rtpVariants: number[];
+  volatilityOriginal?: string;
   volatilityNormalized?: string;
   maxWinMultiplier?: number;
   reels?: string;
@@ -38,32 +39,6 @@ export type GameCatalogItem = {
   editorialFeatured: boolean;
   searchTerms: string[];
   url: string;
-};
-
-const mechanismEnglishLabels: Record<string, string[]> = {
-  paylines: ['Paylines', 'Payline'],
-  'ways-to-win': ['Ways to Win', 'Ways'],
-  megaways: ['Megaways'],
-  'cluster-pays': ['Cluster Pays'],
-  'pay-anywhere': ['Pay Anywhere'],
-  other: ['Other mechanism'],
-};
-
-const featureEnglishLabels: Record<string, string[]> = {
-  'free-spins': ['Free Spins'],
-  wild: ['Wild'],
-  scatter: ['Scatter'],
-  multiplier: ['Multiplier'],
-  'hold-and-spin': ['Hold and Spin', 'Hold & Spin'],
-  cascading: ['Cascading', 'Avalanche', 'Tumble'],
-  'bonus-buy': ['Bonus Buy'],
-  respins: ['Respins', 'Respin'],
-  'cash-collection': ['Cash Collection', 'Money Collect'],
-  'giant-symbols': ['Giant Symbols'],
-  'symbol-splitting': ['Symbol Splitting'],
-  'sticky-symbols': ['Sticky Symbols'],
-  jackpot: ['Jackpot'],
-  other: ['Other feature'],
 };
 
 function mechanismLabel(game: CollectionEntry<'games'>['data']) {
@@ -98,12 +73,12 @@ export function projectPublishedGames(
       const featureTerms = game.data.features.flatMap((feature) => [
         featureLabels[feature] ?? feature,
         feature,
-        ...(featureEnglishLabels[feature] ?? []),
+        ...(featureSearchTerms[feature] ?? []),
       ]);
       const mechanismTerms = game.data.winMechanism ? [
         normalizedMechanismLabel,
         game.data.winMechanism,
-        ...(mechanismEnglishLabels[game.data.winMechanism] ?? []),
+        ...(winMechanismSearchTerms[game.data.winMechanism] ?? []),
       ] : [];
 
       return {
@@ -124,6 +99,7 @@ export function projectPublishedGames(
         image: game.data.image ? { src: game.data.image.src, alt: game.data.image.alt } : undefined,
         rtp: game.data.rtp,
         rtpVariants: game.data.rtpVariants,
+        volatilityOriginal: game.data.volatilityOriginal,
         volatilityNormalized: normalizedVolatility,
         maxWinMultiplier: game.data.maxWinMultiplier,
         reels: game.data.reels,
@@ -142,6 +118,10 @@ export function projectPublishedGames(
           game.data.summary,
           ...mechanismTerms,
           ...featureTerms,
+          ...(game.data.rtp !== undefined ? dataTopicSearchTerms.rtp : []),
+          ...(game.data.rtpVariants.length ? dataTopicSearchTerms['rtp-variants'] : []),
+          ...(game.data.volatilityOriginal || normalizedVolatility ? dataTopicSearchTerms.volatility : []),
+          ...(game.data.maxWinMultiplier !== undefined ? dataTopicSearchTerms['max-win'] : []),
         ]),
         url: gameUrl(game.id),
       } satisfies GameCatalogItem;

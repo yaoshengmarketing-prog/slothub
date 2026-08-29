@@ -7,8 +7,10 @@ export function buildPublishedSearchCatalog(
   games: GameCatalogItem[],
   providers: CatalogProvider[],
   guides: CollectionEntry<'guides'>[],
+  relationshipItems: SearchItem[] = [],
 ): SearchItem[] {
   return [
+    ...relationshipItems,
     ...games.map(toGameSearchItem),
     ...providers.map((provider) => ({
       slug: provider.id,

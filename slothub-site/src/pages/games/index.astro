@@ -2,7 +2,11 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import GameExplorer from '../../components/GameExplorer';
 import { loadPublishedGameCatalog } from '../../lib/game-catalog';
+import { createGuideRelationshipIndex, explorerGuideLinks } from '../../lib/guide-relationship-catalog';
+import { getCollection } from 'astro:content';
 
 const { games } = await loadPublishedGameCatalog();
+const relationships = createGuideRelationshipIndex(await getCollection('guides'), games);
+const relationshipLinks = explorerGuideLinks(relationships);
 ---
-<BaseLayout title="遊戲庫｜Slot Hub" description="依廠商、玩法、功能與數據搜尋、篩選及比較遊戲。" canonicalPath="/games/"><section class="page-hero shell"><p class="eyebrow">GAME LIBRARY</p><h1>遊戲庫</h1><p>用資料找遊戲。所有未核對的欄位都會保留空白，不影響其他條件的探索。</p></section><section class="section shell"><GameExplorer games={games} urlState client:load/></section></BaseLayout>
+<BaseLayout title="遊戲庫｜Slot Hub" description="依廠商、玩法、功能與數據搜尋、篩選及比較遊戲。" canonicalPath="/games/"><section class="page-hero shell"><p class="eyebrow">GAME LIBRARY</p><h1>遊戲庫</h1><p>用資料找遊戲。所有未核對的欄位都會保留空白，不影響其他條件的探索。</p></section><section class="section shell"><GameExplorer games={games} relationshipLinks={relationshipLinks} urlState client:load/></section></BaseLayout>

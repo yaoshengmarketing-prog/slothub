@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import AddCompareButton from '../../components/AddCompareButton';
 import { absoluteUrl, gameUrl, providerUrl } from '../../lib/urls';
 import { featureLabels, jackpotTypeLabels, primaryTypeLabels, volatilityLabels, winMechanismLabels } from '../../lib/taxonomy';
+import { loadGuideRelationshipIndex, relationshipLabel } from '../../lib/guide-relationship-catalog';
 
 export async function getStaticPaths() {
   const games = (await getCollection('games')).filter((game) => game.data.status === 'published');
@@ -14,6 +15,8 @@ const { entry } = Astro.props;
 const providers = await getCollection('providers');
 const allGames = (await getCollection('games')).filter((game) => game.data.status === 'published');
 const provider = providers.find((item) => item.id === entry.data.provider);
+const relationshipIndex = await loadGuideRelationshipIndex();
+const relatedGuideMatches = (relationshipIndex.gameToGuides[entry.id] ?? []).slice(0, 3);
 const displayName = entry.data.displayNameZhHant ?? entry.data.originalName ?? entry.data.name;
 const originalName = entry.data.originalName ?? entry.data.name;
 const normalizedVolatility = entry.data.volatilityNormalized ?? entry.data.volatility;
@@ -146,6 +149,11 @@ const schema = {
       <div class="game-section-heading"><p class="eyebrow">STRUCTURED DATA</p><h2 id="full-data-title">完整遊戲資料</h2></div>
       {fullSpecs.length > 0 && <dl class="game-spec-grid">{fullSpecs.map((spec) => <div><dt>{spec.label}</dt><dd>{spec.value}</dd>{spec.note && <small>{spec.note}</small>}</div>)}</dl>}
       {entry.data.features.length > 0 && <div class="game-features"><h3>遊戲功能</h3><ul>{entry.data.features.map((feature) => <li>{featureLabels[feature] ?? feature}</li>)}</ul></div>}
+    </section>}
+
+    {relatedGuideMatches.length > 0 && <section class="game-guide-rail" aria-labelledby="game-guide-title">
+      <div><p class="eyebrow">READ THE DATA</p><h2 id="game-guide-title">看懂這些資料</h2><p>從這款遊戲實際使用的欄位與機制，前往對應說明。</p></div>
+      <nav>{relatedGuideMatches.map((match) => <a href={match.guide.url}><span>{match.reasons.map((reason) => relationshipLabel(reason.type, reason.value)).join('、')}</span><strong>{match.guide.title}</strong><b>閱讀 →</b></a>)}</nav>
     </section>}
 
     {(seriesGames.length > 0 || providerGames.length > 0) && <section class="game-relations" aria-labelledby="related-title">

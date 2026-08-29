@@ -5,6 +5,7 @@ import {
   MAX_WIN_THRESHOLDS, parseExplorerState, RTP_THRESHOLDS, type ExplorerState,
 } from '../lib/game-explorer-state.mjs';
 import { gamesIndexUrl } from '../lib/urls';
+import type { ExplorerGuideLink } from '../lib/guide-relationship-catalog';
 import { featureLabels, primaryTypeLabels, subtypeLabels, volatilityLabels, winMechanismLabels } from '../lib/taxonomy';
 
 export type Game = GameCatalogItem;
@@ -44,7 +45,7 @@ function FeatureToggle({ feature, count, selected, onToggle }: { feature: string
   </button>;
 }
 
-export default function GameExplorer({ games, initialLimit, urlState = false }: { games: GameCatalogItem[]; initialLimit?: number; urlState?: boolean }) {
+export default function GameExplorer({ games, initialLimit, urlState = false, relationshipLinks = [] }: { games: GameCatalogItem[]; initialLimit?: number; urlState?: boolean; relationshipLinks?: ExplorerGuideLink[] }) {
   const [state, setState] = useState<ExplorerState>(() => emptyExplorerState());
   const [urlReady, setUrlReady] = useState(!urlState);
   const ids = useMemo(() => games.map((game) => game.slug), [games]);
@@ -79,6 +80,10 @@ export default function GameExplorer({ games, initialLimit, urlState = false }: 
   const shown = initialLimit && !hasFilters ? filtered.slice(0, initialLimit) : filtered;
   const hasNumericFilter = state.rtpMin !== undefined || Boolean(state.volatility) || state.maxWinMin !== undefined;
   const advancedActive = Boolean(state.rtpMin !== undefined || state.volatility || state.maxWinMin !== undefined || state.subtype || advancedFeatures.some((feature) => state.features.includes(feature)));
+  const activeGuideLinks = relationshipLinks.filter((link) =>
+    (link.type === 'mechanism' && state.mechanism === link.value)
+    || (link.type === 'feature' && state.features.includes(link.value)),
+  );
 
   const update = (patch: Partial<ExplorerState>) => setState((current) => {
     const next = { ...current, ...patch };
@@ -114,6 +119,10 @@ export default function GameExplorer({ games, initialLimit, urlState = false }: 
     </div>
 
     <div className="result-heading explorer-result-heading"><div><strong>{filtered.length}</strong><span>款符合目前條件</span>{hasNumericFilter && <small>數值條件只包含已取得該欄位的遊戲</small>}</div>{hasFilters && <button type="button" className="clear-filters" onClick={clear}>清除全部條件</button>}</div>
+    {activeGuideLinks.length > 0 && <aside className="explorer-guide-links" aria-label="目前條件的相關教學">
+      <span>看懂目前條件</span>
+      <div>{activeGuideLinks.map((link) => <a key={`${link.type}-${link.value}`} href={link.guideUrl}><b>{link.label}</b><small>{link.guideTitle}</small><i>閱讀 →</i></a>)}</div>
+    </aside>}
     {state.primaryType && primaryTypes.length === 1 && <div className="active-context">目前類型：<b>{primaryTypeLabels[state.primaryType] ?? state.primaryType}</b></div>}
     {!urlState && hasFilters && <a className="explorer-share-link" href={gamesIndexUrl(state)}>在完整遊戲庫開啟這組條件 →</a>}
     <div className="game-grid">{shown.map((game) => {

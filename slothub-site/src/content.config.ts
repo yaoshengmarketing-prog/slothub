@@ -8,6 +8,7 @@ const feature = z.enum([
   'free-spins','wild','scatter','multiplier','hold-and-spin','cascading','bonus-buy',
   'respins','cash-collection','giant-symbols','symbol-splitting','sticky-symbols','jackpot','other',
 ]);
+const guideDataTopic = z.enum(['rtp', 'rtp-variants', 'volatility', 'max-win']);
 const jackpotType = z.enum(['none','fixed','progressive','local','networked','multiple','other']);
 const providers = defineCollection({ loader: glob({ pattern: '**/*.md', base: './src/content/providers' }), schema: z.object({
   name: z.string(), brandName: z.string().optional(), aliases: z.array(z.string()).default([]), roles: z.array(z.enum(['developer','publisher','aggregator','platform'])),
@@ -31,6 +32,7 @@ const games = defineCollection({ loader: glob({ pattern: '**/*.md', base: './src
 }) });
 const guides = defineCollection({ loader: glob({ pattern: '**/*.md', base: './src/content/guides' }), schema: z.object({
   title: z.string(), description: z.string(), category: z.enum(['beginner','mechanics','data','terms','fishing']).default('beginner'), level: z.enum(['beginner','intermediate','advanced']).default('beginner'), tags: z.array(z.string()).default([]),
+  relatedMechanisms: z.array(winMechanism).optional(), relatedFeatures: z.array(feature).optional(), relatedDataTopics: z.array(guideDataTopic).optional(),
   status: z.enum(['draft','published']).default('draft'), publishedAt: z.coerce.date(), updatedAt: z.coerce.date(),
 }) });
 export const collections = { providers, games, guides };

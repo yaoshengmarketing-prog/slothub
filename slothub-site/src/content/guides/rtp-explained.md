@@ -4,6 +4,7 @@ description: 說明老虎機標示 RTP 的意義、限制與多版本差異。
 category: data
 level: beginner
 tags: [RTP, 機率]
+relatedDataTopics: [rtp, rtp-variants]
 status: published
 publishedAt: 2026-08-28
 updatedAt: 2026-08-28

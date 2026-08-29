@@ -6,9 +6,12 @@ import GameExplorer from '../components/GameExplorer';
 import { providerUrl, guideUrl } from '../lib/urls';
 import { loadPublishedGameCatalog } from '../lib/game-catalog';
 import { buildPublishedSearchCatalog } from '../lib/search-catalog';
+import { createGuideRelationshipIndex, explorerGuideLinks, relationshipSearchItems } from '../lib/guide-relationship-catalog';
 const { games, providers: providerEntries } = await loadPublishedGameCatalog();
 const guides=(await getCollection('guides')).filter(x=>x.data.status==='published');
-const searchItems=buildPublishedSearchCatalog(games,providerEntries,guides);
+const relationships=createGuideRelationshipIndex(guides,games);
+const relationshipLinks=explorerGuideLinks(relationships);
+const searchItems=buildPublishedSearchCatalog(games,providerEntries,guides,relationshipSearchItems(relationships));
 const schema={'@context':'https://schema.org','@type':'WebSite',name:'Slot Hub',url:'https://www.slothub.com.tw/',inLanguage:'zh-Hant-TW'};
 ---
 <BaseLayout title="Slot Hub｜老虎機遊戲資料、搜尋與比較" description="搜尋老虎機與遊戲廠商，依 RTP、波動度及類型探索遊戲，最多比較三款遊戲。" schema={schema}>
@@ -16,7 +19,7 @@ const schema={'@context':'https://schema.org','@type':'WebSite',name:'Slot Hub',
   <div class="hero-kicker"><span>DATA / KNOWLEDGE / DISCOVERY</span><i>開發預覽</i></div>
   <div class="hero-grid"><div><h1>找到遊戲，<br/><em>再看懂它。</em></h1><p>Slot Hub 把遊戲資料、廠商與核心知識放在同一個探索介面。知道名稱就直接搜尋；第一次接觸，也能從新手路線開始。</p><a class="button secondary" href="/guide/slot-beginners-guide/">新手開始了解 →</a></div><div class="hero-search"><SearchHub items={searchItems} client:load/><div class="hero-stats"><span><b>{games.length}</b> 款首批遊戲</span><span><b>{providerEntries.length}</b> 家遊戲開發商</span><span><b>3</b> 款比較上限</span></div></div></div>
  </section>
- <section class="section shell" id="explore"><div class="section-head"><div><p class="eyebrow">GAME EXPLORER</p><h2>用條件縮小選擇，<br/>不靠排行榜猜答案。</h2></div><p>篩選條件只在有資料時呈現；缺少的欄位會清楚標示，不補造數字。</p></div><GameExplorer games={games} initialLimit={8} client:load/><a class="inline-link" href="/games/">查看完整遊戲庫 →</a></section>
+ <section class="section shell" id="explore"><div class="section-head"><div><p class="eyebrow">GAME EXPLORER</p><h2>用條件縮小選擇，<br/>不靠排行榜猜答案。</h2></div><p>篩選條件只在有資料時呈現；缺少的欄位會清楚標示，不補造數字。</p></div><GameExplorer games={games} relationshipLinks={relationshipLinks} initialLimit={8} client:load/><a class="inline-link" href="/games/">查看完整遊戲庫 →</a></section>
  <section class="dark-section"><div class="shell"><div class="section-head light"><div><p class="eyebrow">EDITOR'S SELECTION</p><h2>第一批編輯精選</h2></div><p>依資料完整度與測試需求挑選，不代表熱門程度或排名。</p></div><div class="feature-strip">{games.filter(g=>g.editorialFeatured).slice(0,4).map((g,i)=><a href={g.url}><span>0{i+1}</span><div><small>{g.providerName}</small><strong>{g.name}</strong></div><b>{g.rtp?`${g.rtp}% RTP`:'資料整理中'} →</b></a>)}</div></div></section>
  <section class="section shell"><div class="split-heading"><div><p class="eyebrow">START WITH THE BASICS</p><h2>第一次接觸老虎機？</h2><p>先理解資料欄位，再開始探索遊戲。教學是第二入口，不會蓋過遊戲工具。</p></div><div class="guide-list">{guides.map((g,i)=><a href={guideUrl(g.id)}><span>0{i+1}</span><div><strong>{g.data.title}</strong><p>{g.data.description}</p></div><b>閱讀 →</b></a>)}</div></div></section>
  <section class="section providers-band shell"><div><p class="eyebrow">PROVIDERS</p><h2>從遊戲商開始找</h2></div><div class="provider-chips">{providerEntries.map(p=><a href={providerUrl(p.id)}>{p.data.logo?<span class="provider-logo"><img src={p.data.logo.src} alt={p.data.logo.alt} loading="lazy"/></span>:<span>{p.data.name.slice(0,2).toUpperCase()}</span>}<strong>{p.data.name}</strong><small>{games.filter(g=>g.provider===p.id).length} 款資料</small></a>)}</div></section>

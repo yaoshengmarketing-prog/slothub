@@ -4,6 +4,7 @@ description: 用資料探索角度理解老虎機波動度，而不是把它當�
 category: data
 level: beginner
 tags: [波動度, 老虎機]
+relatedDataTopics: [volatility]
 status: published
 publishedAt: 2026-08-28
 updatedAt: 2026-08-28

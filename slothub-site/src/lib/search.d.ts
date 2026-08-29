@@ -3,7 +3,7 @@ export type SearchItem = {
   title: string;
   secondaryTitle?: string;
   description: string;
-  kind: '遊戲' | '廠商' | '教學';
+  kind: '遊戲' | '廠商' | '教學' | '了解概念' | '探索遊戲';
   url: string;
   aliases?: string[];
   providerName?: string;

@@ -4,6 +4,7 @@ description: 認識老虎機常見特殊符號與獎勵機制，知道查遊戲�
 category: mechanics
 level: beginner
 tags: [Wild, Scatter, Free Spins, Jackpot]
+relatedFeatures: [free-spins, wild, scatter, jackpot]
 status: published
 publishedAt: 2026-08-28
 updatedAt: 2026-08-28
