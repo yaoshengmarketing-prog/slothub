@@ -3,6 +3,8 @@ import { readFile } from 'node:fs/promises';
 
 const root = new URL('../dist/', import.meta.url);
 const load = (path) => readFile(new URL(path, root), 'utf8');
+const maxWinGuideSource = await readFile(new URL('../src/content/guides/slot-max-win-explained.md', import.meta.url), 'utf8');
+const maxWinGuidePublished = /^status: published$/m.test(maxWinGuideSource);
 const [rtp, glossary, symbols, payout, bigBass, bonanza, gamesIndex, search, slots] = await Promise.all([
   load('guide/rtp-explained/index.html'),
   load('guide/slot-terms-glossary/index.html'),
@@ -21,8 +23,9 @@ for (const [name, html] of [['RTP', rtp], ['glossary', glossary], ['symbols', sy
   const cards = grid.match(/href="\/games\/[^?][^"]*\/"/g)?.length ?? 0;
   assert.ok(cards >= 3 && cards <= 6, `${name}: expected 3–6 representative Games, received ${cards}`);
 }
-assert.match(rtp, /href="\/games\/\?q=RTP"/, 'RTP Explorer URL must use the existing serializer');
-assert.match(rtp, /href="\/games\/\?q=%E5%A4%9A%E7%89%88%E6%9C%AC\+RTP"/, 'RTP variants Explorer URL must be independently serialized');
+assert.ok(!rtp.includes('/games/?q=RTP'), 'RTP received an imprecise text-search Explorer URL');
+assert.ok(!rtp.includes('/games/?q=%E5%A4%9A%E7%89%88%E6%9C%AC'), 'RTP variants received an imprecise text-search Explorer URL');
+assert.match(rtp, /<div class="guide-concept-links"[^>]*><\/div>/, 'Data Topic Guide concept container must stay empty without a precise Explorer URL');
 assert.ok(!glossary.includes('mechanism=paylines'), 'Glossary retained Paylines ownership');
 assert.ok(!glossary.includes('mechanism=ways-to-win'), 'Glossary retained Ways ownership');
 assert.match(glossary, /href="\/games\/\?features=cascading"/, 'Cascading Explorer URL missing');
@@ -35,7 +38,8 @@ assert.match(bigBass, /老虎機賠付機制怎麼看/, 'Big Bass did not inheri
 const bonanzaRail = bonanza.match(/<section class="game-guide-rail"[\s\S]*?<\/section>/)?.[0] ?? '';
 assert.ok(bonanzaRail, 'Bonanza Guide rail missing');
 assert.match(bonanzaRail, /老虎機賠付機制怎麼看/, 'Megaways did not resolve to the published payout Guide');
-assert.ok(!bonanzaRail.includes('最高倍數'), 'Deferred max-win topic received a fallback Guide');
+if (maxWinGuidePublished) assert.match(bonanzaRail, /老虎機最高倍數怎麼看/, 'Published Max Win Guide did not enter the Game detail rail');
+else assert.ok(!bonanzaRail.includes('老虎機最高倍數怎麼看'), 'Draft Max Win Guide entered the Game detail rail');
 
 assert.match(gamesIndex, /relationshipLinks/, 'Explorer did not receive relationship links');
 assert.match(search, /了解概念/, 'Search learn intent missing');
@@ -45,9 +49,22 @@ for (const mechanism of ['paylines', 'ways-to-win', 'megaways', 'cluster-pays', 
 }
 assert.match(search, /learn-feature-cascading-slot-terms-glossary/, 'Search Cascading learn intent missing');
 assert.match(search, /explore-feature-cascading-slot-terms-glossary/, 'Search Cascading explore intent missing');
+assert.match(search, /learn-data-topic-rtp-rtp-explained/, 'Search RTP learn intent missing');
+assert.match(search, /learn-data-topic-rtp-variants-rtp-explained/, 'Search RTP variants learn intent missing');
+assert.match(search, /learn-data-topic-volatility-volatility-explained/, 'Search volatility learn intent missing');
+for (const dataTopic of ['rtp', 'rtp-variants', 'volatility', 'max-win']) {
+  assert.ok(!search.includes(`explore-data-topic-${dataTopic}-`), `${dataTopic}: Search rendered an imprecise Data Topic explore intent`);
+}
 assert.match(search, /連鎖掉落/, 'Search Cascading Chinese alias missing');
 assert.ok(!search.includes('learn-feature-multiplier'), 'Deferred Multiplier received a Search Guide intent');
-assert.ok(!search.includes('learn-data-topic-max-win'), 'Deferred max-win received a Search Guide intent');
+if (maxWinGuidePublished) {
+  assert.match(search, /learn-data-topic-max-win-slot-max-win-explained/, 'Published Max Win Guide Search learn intent missing');
+  assert.ok(!search.includes('explore-data-topic-max-win-'), 'Max Win rendered an imprecise Search explore intent');
+  const maxWinGuide = await load('guide/slot-max-win-explained/index.html');
+  assert.match(maxWinGuide, /guide-related-games/, 'Max Win Guide representative Game section missing');
+  assert.match(maxWinGuide, /<div class="guide-concept-links"[^>]*><\/div>/, 'Max Win Guide rendered a false Explorer CTA');
+  assert.ok(!maxWinGuide.includes('/games/?q='), 'Max Win Guide contains a text-search Explorer URL');
+} else assert.ok(!search.includes('learn-data-topic-max-win'), 'Draft max-win Guide entered Search');
 
 assert.match(slots, /relationship-knowledge-grid/, 'Slots Knowledge Map did not use the relationship presentation');
 assert.match(slots, /了解概念 →/, 'Slots Guide action missing');

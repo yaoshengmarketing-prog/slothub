@@ -56,7 +56,7 @@ function conceptTerms(type: RelationshipType, value: string) {
 export function conceptExplorerUrl(type: RelationshipType, value: string) {
   if (type === 'mechanism') return gamesIndexUrl({ mechanism: value });
   if (type === 'feature') return gamesIndexUrl({ features: [value] });
-  return gamesIndexUrl({ q: conceptLabel(type, value), sort: 'relevance' });
+  return null;
 }
 
 export function guideConceptLinks(index: GuideRelationshipIndex, guideSlug: string) {
@@ -66,7 +66,10 @@ export function guideConceptLinks(index: GuideRelationshipIndex, guideSlug: stri
     ...(guide.relatedMechanisms ?? []).map((value) => ({ type: 'mechanism' as const, value })),
     ...(guide.relatedDataTopics ?? []).map((value) => ({ type: 'data-topic' as const, value })),
     ...(guide.relatedFeatures ?? []).map((value) => ({ type: 'feature' as const, value })),
-  ].map(({ type, value }) => ({ type, value, label: conceptLabel(type, value), href: conceptExplorerUrl(type, value) }));
+  ].flatMap(({ type, value }) => {
+    const href = conceptExplorerUrl(type, value);
+    return href ? [{ type, value, label: conceptLabel(type, value), href }] : [];
+  });
 }
 
 export function explorerGuideLinks(index: GuideRelationshipIndex): ExplorerGuideLink[] {
@@ -85,10 +88,12 @@ export function relationshipSearchItems(index: GuideRelationshipIndex): SearchIt
   return concepts.flatMap(({ type, value, guide }) => {
     const label = conceptLabel(type, value);
     const aliases = conceptTerms(type, value);
-    return [
-      { slug: `learn-${type}-${value}-${guide.slug}`, title: label, description: guide.title, kind: '了解概念' as const, url: guide.url, aliases, searchText: [guide.description] },
-      { slug: `explore-${type}-${value}-${guide.slug}`, title: label, description: `查看具有「${label}」資料的遊戲`, kind: '探索遊戲' as const, url: conceptExplorerUrl(type, value), aliases, searchText: [`${label} 遊戲`] },
-    ];
+    const learnItem = { slug: `learn-${type}-${value}-${guide.slug}`, title: label, description: guide.title, kind: '了解概念' as const, url: guide.url, aliases, searchText: [guide.description] };
+    const explorerUrl = conceptExplorerUrl(type, value);
+    return explorerUrl ? [
+      learnItem,
+      { slug: `explore-${type}-${value}-${guide.slug}`, title: label, description: `查看具有「${label}」資料的遊戲`, kind: '探索遊戲' as const, url: explorerUrl, aliases, searchText: [`${label} 遊戲`] },
+    ] : [learnItem];
   });
 }
 

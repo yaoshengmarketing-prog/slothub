@@ -50,7 +50,20 @@ for (const [slug, relations] of Object.entries(expected)) {
 assert.deepEqual(index.featureToGuides.wild.map((guide) => guide.slug), ['slot-symbols-and-features']);
 assert.deepEqual(index.dataTopicToGuides.rtp.map((guide) => guide.slug), ['rtp-explained']);
 for (const deferred of ['multiplier']) assert.deepEqual(index.featureToGuides[deferred], [], `${deferred} must remain valid without a Guide`);
-assert.deepEqual(index.dataTopicToGuides['max-win'], [], 'max-win must remain valid without a Guide');
+
+const maxWinGuideSlug = 'slot-max-win-explained';
+const maxWinGuide = guides.find((guide) => guide.slug === maxWinGuideSlug);
+assert.ok(maxWinGuide, 'Max Win Guide is missing or its slug changed');
+assert.deepEqual(maxWinGuide.relatedDataTopics, ['max-win'], 'Max Win Guide must own only the max-win Data Topic');
+const expectedMaxWinOwners = maxWinGuide.status === 'published' ? [maxWinGuideSlug] : [];
+assert.deepEqual(index.dataTopicToGuides['max-win'].map((guide) => guide.slug), expectedMaxWinOwners, 'max-win ownership must follow the Guide status');
+const maxWinPreviewGuides = guides.map((guide) => guide.slug === maxWinGuideSlug ? { ...guide, status: 'published' } : guide);
+const maxWinPreviewIndex = buildGuideRelationshipIndex(maxWinPreviewGuides, games, options);
+assert.deepEqual(maxWinPreviewIndex.dataTopicToGuides['max-win'].map((guide) => guide.slug), [maxWinGuideSlug]);
+assert.equal(maxWinPreviewIndex.guideToGames[maxWinGuideSlug].length, 25, 'Max Win Guide must derive exactly the 25 Games with maxWinMultiplier');
+for (const slug of ['big-bass-bonanza', 'gates-of-olympus', 'jump-high', 'legacy-of-dead', 'reactoonz']) {
+  assert.ok(!maxWinPreviewIndex.gameToGuides[slug].some(({ guide }) => guide.slug === maxWinGuideSlug), `${slug}: missing maxWinMultiplier must not create a Max Win Guide relation`);
+}
 
 const payoutGuideSlug = 'slot-payout-mechanisms-explained';
 const payoutMechanisms = ['paylines', 'ways-to-win', 'megaways', 'cluster-pays', 'pay-anywhere'];
