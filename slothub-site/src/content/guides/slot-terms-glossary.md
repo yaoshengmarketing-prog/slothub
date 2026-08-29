@@ -4,7 +4,6 @@ description: 整理 Reels、Paylines、Ways、Cascades、Bonus Buy 等常見資�
 category: terms
 level: beginner
 tags: [Reels, Paylines, Ways, Cascades, Bonus Buy]
-relatedMechanisms: [paylines, ways-to-win]
 relatedFeatures: [cascading, bonus-buy]
 status: published
 publishedAt: 2026-08-28

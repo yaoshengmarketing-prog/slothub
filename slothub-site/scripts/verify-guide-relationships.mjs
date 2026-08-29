@@ -38,7 +38,7 @@ const expected = {
   'rtp-explained': { relatedDataTopics: ['rtp', 'rtp-variants'] },
   'volatility-explained': { relatedDataTopics: ['volatility'] },
   'slot-symbols-and-features': { relatedFeatures: ['free-spins', 'wild', 'scatter', 'jackpot'] },
-  'slot-terms-glossary': { relatedMechanisms: ['paylines', 'ways-to-win'], relatedFeatures: ['cascading', 'bonus-buy'] },
+  'slot-terms-glossary': { relatedFeatures: ['cascading', 'bonus-buy'] },
 };
 for (const [slug, relations] of Object.entries(expected)) {
   const guide = guides.find((item) => item.slug === slug);
@@ -47,12 +47,28 @@ for (const [slug, relations] of Object.entries(expected)) {
   for (const [field, values] of Object.entries(relations)) assert.deepEqual(guide[field], values, `${slug}: ${field}`);
 }
 
-assert.deepEqual(index.mechanismToGuides.paylines.map((guide) => guide.slug), ['slot-terms-glossary']);
 assert.deepEqual(index.featureToGuides.wild.map((guide) => guide.slug), ['slot-symbols-and-features']);
 assert.deepEqual(index.dataTopicToGuides.rtp.map((guide) => guide.slug), ['rtp-explained']);
-for (const deferred of ['pay-anywhere', 'cluster-pays', 'megaways']) assert.deepEqual(index.mechanismToGuides[deferred], [], `${deferred} must remain valid without a Guide`);
 for (const deferred of ['multiplier']) assert.deepEqual(index.featureToGuides[deferred], [], `${deferred} must remain valid without a Guide`);
 assert.deepEqual(index.dataTopicToGuides['max-win'], [], 'max-win must remain valid without a Guide');
+
+const payoutGuideSlug = 'slot-payout-mechanisms-explained';
+const payoutMechanisms = ['paylines', 'ways-to-win', 'megaways', 'cluster-pays', 'pay-anywhere'];
+const payoutGuide = guides.find((guide) => guide.slug === payoutGuideSlug);
+assert.ok(payoutGuide, 'Payout Guide is missing or its slug changed');
+const expectedPublishedOwners = payoutGuide.status === 'published' ? [payoutGuideSlug] : [];
+for (const mechanism of payoutMechanisms) {
+  assert.deepEqual(index.mechanismToGuides[mechanism].map((guide) => guide.slug), expectedPublishedOwners, `${mechanism}: public ownership must follow the payout Guide status`);
+}
+const previewGuides = guides.map((guide) => guide.slug === payoutGuideSlug ? { ...guide, status: 'published' } : guide);
+const previewIndex = buildGuideRelationshipIndex(previewGuides, games, options);
+for (const mechanism of payoutMechanisms) {
+  assert.deepEqual(previewIndex.mechanismToGuides[mechanism].map((guide) => guide.slug), [payoutGuideSlug], `${mechanism}: ownership must transfer only to the payout Guide`);
+}
+assert.deepEqual(previewIndex.featureToGuides.cascading.map((guide) => guide.slug), ['slot-terms-glossary']);
+assert.deepEqual(previewIndex.featureToGuides['bonus-buy'].map((guide) => guide.slug), ['slot-terms-glossary']);
+assert.ok(!previewIndex.mechanismToGuides.paylines.some((guide) => guide.slug === 'slot-terms-glossary'), 'Glossary retained Paylines ownership');
+assert.ok(!previewIndex.mechanismToGuides['ways-to-win'].some((guide) => guide.slug === 'slot-terms-glossary'), 'Glossary retained Ways ownership');
 
 for (const [slug, matches] of Object.entries(index.gameToGuides)) {
   const game = games.find((item) => item.slug === slug);
