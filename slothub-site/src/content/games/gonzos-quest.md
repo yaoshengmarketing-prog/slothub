@@ -22,7 +22,7 @@ bonusFeatures: [Avalanche™, Avalanche Win Multiplier, Free Fall Feature, Retri
 releaseDate: 2010-03-15
 image: { src: /assets/games/gonzos-quest.jpg, alt: Gonzo’s Quest 官方橫幅作品圖, sourceUrl: https://fan-cdn.nolimitcity.com/gonzos_quest_ne_fansite_splashpost_2560x820px_f2768e9202.jpg, retrievedAt: 2026-08-29 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: NetEnt 官方 Gonzo’s Quest 遊戲頁, url: https://netent.com/games/gonzos-quest/, checkedAt: 2026-08-29 }
 sources:
   - { label: "NetEnt 官方 Gonzo’s Quest 遊戲頁（Play lines max 20；EUR Min/Max bet €0.20／€50.00）", url: https://netent.com/games/gonzos-quest/, checkedAt: 2026-08-29 }

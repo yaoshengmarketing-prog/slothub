@@ -18,7 +18,7 @@ bonusFeatures: [Flux Capacitors, Gargantoon, Quantum Leap, Oversized aliens, Cha
 releaseDate: 2017-10-23
 image: { src: /assets/games/reactoonz.webp, alt: Reactoonz 官方作品圖, sourceUrl: "https://static.wixstatic.com/media/b3ef59_2dec18c13e3a42b8ba4db380623350c0~mv2.webp/v1/fill/w_500,h_350,al_c/b3ef59_2dec18c13e3a42b8ba4db380623350c0~mv2.webp", retrievedAt: 2026-08-29 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Play’n GO 官方 Reactoonz 遊戲頁, url: https://www.playngo.com/games/reactoonz, checkedAt: 2026-08-29 }
 sources:
   - { label: Play’n GO 官方 Reactoonz 遊戲頁, url: https://www.playngo.com/games/reactoonz, checkedAt: 2026-08-29 }

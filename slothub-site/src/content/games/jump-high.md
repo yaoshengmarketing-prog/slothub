@@ -15,7 +15,7 @@ features: [free-spins, multiplier]
 bonusFeatures: [243 Ways mechanic, Free Game, Accumulating Multiplier in Free Game]
 image: { src: /assets/games/jump-high.png, alt: Jump High 官方遊戲目錄縮圖, sourceUrl: https://images.hfyali.com/cherry/icon/PCddPyrH.png, retrievedAt: 2026-08-29 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: CQ9 Gaming 官方 Jump High 中文品牌新聞, url: https://www.cq9gaming.com/cn/news/detail/948, checkedAt: 2026-08-29 }
 sources:
   - { label: CQ9 Gaming 官方 Jump High 中文品牌新聞, url: https://www.cq9gaming.com/cn/news/detail/948, checkedAt: 2026-08-29 }

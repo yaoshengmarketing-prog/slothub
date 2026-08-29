@@ -20,7 +20,7 @@ features: [free-spins, multiplier, cascading]
 bonusFeatures: [Free Game, Free Spin, Accumulated multipliers through elimination, Free Game double multipliers, Golden Card, Golden Joker, "Publish Time: 2020.08"]
 image: { src: /assets/games/super-ace-card.png, alt: Super Ace 官方作品圖, sourceUrl: https://storage.googleapis.com/tada-cdn-asia/All-In-One/production/img/jiliPlusPlayer/games/7ycivbeSFZ2FzMIi4UfVi4vfmALw2iwP3gEaCsmO.png, retrievedAt: 2026-08-29 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: JILI Games 官方 Super Ace 遊戲頁, url: "https://jiligames.com/PlusIntro/49?showGame=true", checkedAt: 2026-08-29 }
 sources:
   - { label: JILI Games 官方 Super Ace 遊戲頁（原廠波動度 LOW-MED、Paylines／1024 ways、Publish Time 2020.08）, url: "https://jiligames.com/PlusIntro/49?showGame=true", checkedAt: 2026-08-29 }

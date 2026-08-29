@@ -19,7 +19,7 @@ bonusFeatures: [Tomb Scatter and Wild, Free Spins, Special Expanding Symbol, Ret
 releaseDate: 2020-01-02
 image: { src: /assets/games/legacy-of-dead.webp, alt: Legacy of Dead 官方作品圖, sourceUrl: "https://static.wixstatic.com/media/47c2af_667385683f1e4438b985bed2b1fcc396~mv2.webp/v1/fill/w_500,h_350,al_c/47c2af_667385683f1e4438b985bed2b1fcc396~mv2.webp", retrievedAt: 2026-08-29 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Play’n GO 官方 Legacy of Dead 遊戲頁, url: https://www.playngo.com/games/legacy-of-dead, checkedAt: 2026-08-29 }
 sources:
   - { label: "Play’n GO 官方 Legacy of Dead 遊戲頁（最高獎項原文：up to 250000 coins）", url: https://www.playngo.com/games/legacy-of-dead, checkedAt: 2026-08-29 }

@@ -20,7 +20,7 @@ bonusBuy: true
 releaseDate: 2016-12-07
 image: { src: /assets/games/bonanza.jpg, alt: Bonanza 官方橫式作品圖, sourceUrl: https://images.squarespace-cdn.com/content/v1/60aedd95a74c4c4033f9d064/1624241048032-Y1JGMZ3I0U9BM5DBV981/Bonanza_Rectangular_1600x755.jpg, retrievedAt: 2026-08-29 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Big Time Gaming 官方 Bonanza 現行產品資料頁, url: https://beta.bigtimegaming.com/games/bonanza, checkedAt: 2026-08-29 }
 sources:
   - { label: Big Time Gaming 官方 Bonanza 遊戲頁, url: https://www.bigtimegaming.com/games/bonanza, checkedAt: 2026-08-29 }
