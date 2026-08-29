@@ -15,7 +15,7 @@ volatilityOriginal: "Session Volatility: Medium"
 volatilityNormalized: medium
 maxWinMultiplier: 2000
 maxWinLabelOriginal: "Theoretical Maximum Win / Max Exposure: 2,000x"
-reels: "3 reels; irregular reel heights 3/4/3"
+reels: "3／4／3 不規則盤面"
 winMechanism: paylines
 winCount: 10
 paylines: 10 lines
@@ -28,7 +28,7 @@ status: draft
 source: { label: PG SOFT 官方 Fortune Ox 遊戲頁, url: https://www.pgsoft.com/en/games/83/, checkedAt: 2026-08-29 }
 sources:
   - { label: PG SOFT 官方 Fortune Ox 遊戲頁, url: https://www.pgsoft.com/en/games/83/, checkedAt: 2026-08-29 }
-  - { label: PG SOFT 官方 Fortune Ox 英文規則, url: https://www.pgsoft.com/uploads/Games/Pdf/Fortune_OxGameinformation_EN.pdf, checkedAt: 2026-08-29 }
+  - { label: "PG SOFT 官方 Fortune Ox 英文規則（原廠盤面原文：3 reels; irregular reel heights 3/4/3）", url: https://www.pgsoft.com/uploads/Games/Pdf/Fortune_OxGameinformation_EN.pdf, checkedAt: 2026-08-29 }
   - { label: PG SOFT 官方 Fortune Ox 中文規則, url: https://www.pgsoft.com/uploads/Games/Pdf/Fortune_OxGameinformation_ZH.pdf, checkedAt: 2026-08-29 }
   - { label: PG SOFT 官方 Fortune Ox 作品圖（原始 540×330 JPEG；未裁切、未轉檔）, url: https://www.pgsoft.com/uploads/Games/Images/2fad9820-8301-4f6c-8f81-e3163cd1022e.jpg, checkedAt: 2026-08-29 }
 lastVerifiedAt: 2026-08-29
