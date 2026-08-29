@@ -10,7 +10,7 @@ relatedMechanisms:
   - megaways
   - cluster-pays
   - pay-anywhere
-status: draft
+status: published
 publishedAt: 2026-08-29
 updatedAt: 2026-08-29
 ---
