@@ -6,7 +6,7 @@ level: beginner
 tags: [Cascading, Tumble, Avalanche, 連鎖消除, 老虎機功能]
 relatedFeatures:
   - cascading
-status: draft
+status: published
 publishedAt: 2026-08-29
 updatedAt: 2026-08-29
 ---
