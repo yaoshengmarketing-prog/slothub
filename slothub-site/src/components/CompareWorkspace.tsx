@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { CSSProperties, ReactNode } from 'react';
-import type { Game } from './GameExplorer';
+import type { GameCatalogItem as Game } from '../lib/game-catalog';
 import { featureLabels, volatilityLabels, winMechanismLabels } from '../lib/taxonomy';
 
 const EMPTY = '—';
@@ -17,6 +17,7 @@ function initialSelection(valid: string[]) {
 }
 
 function mechanismLabel(game: Game) {
+  if (game.mechanismLabel) return game.mechanismLabel;
   if (game.winMechanism && game.winMechanism !== 'other') return winMechanismLabels[game.winMechanism] ?? game.winMechanism;
   const legacy = game.paylines?.toLowerCase() ?? '';
   if (legacy.includes('pay anywhere')) return winMechanismLabels['pay-anywhere'];
@@ -93,7 +94,7 @@ export default function CompareWorkspace({ games }: { games: Game[] }) {
   const rows: CompareRow[] = [
     { label: '廠商', render: (game) => game.providerName || EMPTY },
     { label: '主要 RTP', render: (game) => <div className="compare-rtp"><span>{game.rtp !== undefined ? `${game.rtp}%` : EMPTY}</span>{(game.rtpVariants?.length ?? 0) > 1 && <small>多版本</small>}</div> },
-    { label: '統一波動度', render: (game) => game.volatility ? volatilityLabels[game.volatility] ?? game.volatility : EMPTY },
+    { label: '統一波動度', render: (game) => game.volatilityNormalized ? volatilityLabels[game.volatilityNormalized] ?? game.volatilityNormalized : EMPTY },
     { label: '最高倍數', render: (game) => game.maxWinMultiplier !== undefined ? `${game.maxWinMultiplier.toLocaleString('en-US')}×` : EMPTY },
     { label: '賠付機制', render: mechanismLabel },
     { label: '軸數 × 列數', render: gridLabel },

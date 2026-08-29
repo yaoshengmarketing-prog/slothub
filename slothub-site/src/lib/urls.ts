@@ -1,4 +1,6 @@
 import { SITE } from '../consts';
+import { emptyExplorerState, serializeExplorerState } from './game-explorer-state.mjs';
+import type { ExplorerState } from './game-explorer-state.mjs';
 
 const slugSegment = (slug: string) => {
   const value = slug.trim();
@@ -11,7 +13,11 @@ const slugSegment = (slug: string) => {
 export const homeUrl = () => '/';
 export const guideIndexUrl = () => '/guide/';
 export const guideUrl = (slug: string) => `/guide/${slugSegment(slug)}/`;
-export const gamesIndexUrl = () => '/games/';
+export const gamesIndexUrl = (filters?: Partial<ExplorerState>) => {
+  if (!filters) return '/games/';
+  const query = serializeExplorerState({ ...emptyExplorerState(), ...filters });
+  return query ? `/games/?${query}` : '/games/';
+};
 export const gameUrl = (slug: string) => `/games/${slugSegment(slug)}/`;
 export const providersIndexUrl = () => '/providers/';
 export const providerUrl = (slug: string) => `/providers/${slugSegment(slug)}/`;

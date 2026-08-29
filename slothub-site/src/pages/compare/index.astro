@@ -1,43 +1,8 @@
 ---
-import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CompareWorkspace from '../../components/CompareWorkspace';
-import { gameUrl } from '../../lib/urls';
+import { loadPublishedGameCatalog } from '../../lib/game-catalog';
 
-const providers = await getCollection('providers');
-const providerNames = new Map(providers.map((provider) => [provider.id, provider.data.name]));
-const games = (await getCollection('games'))
-  .filter((game) => game.data.status === 'published')
-  .map((game) => ({
-    slug: game.id,
-    name: game.data.displayNameZhHant ?? game.data.originalName ?? game.data.name,
-    originalName: game.data.originalName ?? game.data.name,
-    displayNameZhHant: game.data.displayNameZhHant,
-    aliases: game.data.aliases,
-    seriesId: game.data.seriesId,
-    seriesNameZhHant: game.data.seriesNameZhHant,
-    installment: game.data.installment,
-    relatedGames: game.data.relatedGames,
-    provider: game.data.provider,
-    providerName: providerNames.get(game.data.provider) ?? game.data.provider,
-    primaryType: game.data.primaryType,
-    subtypes: game.data.subtypes,
-    summary: game.data.summary,
-    image: game.data.image ? { src: game.data.image.src, alt: game.data.image.alt } : undefined,
-    rtp: game.data.rtp,
-    rtpVariants: game.data.rtpVariants,
-    volatility: game.data.volatilityNormalized ?? game.data.volatility,
-    maxWinMultiplier: game.data.maxWinMultiplier,
-    reels: game.data.reels,
-    rows: game.data.rows,
-    winMechanism: game.data.winMechanism,
-    winCount: game.data.winCount,
-    paylines: game.data.paylines,
-    features: game.data.features,
-    bonusFeatures: game.data.bonusFeatures,
-    bonusBuy: game.data.bonusBuy,
-    editorialFeatured: game.data.editorialFeatured,
-    url: gameUrl(game.id),
-  }));
+const { games } = await loadPublishedGameCatalog();
 ---
 <BaseLayout title="遊戲比較｜Slot Hub" description="最多選擇三款遊戲，比較廠商、RTP、波動度與遊戲機制。" canonicalPath="/compare/" robots="noindex,follow"><section class="page-hero shell"><p class="eyebrow">COMPARE / MAX 3</p><h1>遊戲比較</h1><p>分享網址會保留選擇；無效或重複的遊戲代碼會自動忽略。</p></section><section class="section shell compare-stage"><CompareWorkspace games={games} client:only="react"/></section></BaseLayout>
