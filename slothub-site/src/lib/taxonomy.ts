@@ -49,7 +49,7 @@ export const featureLabels: Record<string, string> = {
 
 export const featureSearchTerms: Record<string, string[]> = {
   'free-spins': ['Free Spins', '免費旋轉'], wild: ['Wild', '百搭符號'], scatter: ['Scatter', '散佈符號'], multiplier: ['Multiplier', '倍數'],
-  'hold-and-spin': ['Hold and Spin', 'Hold & Spin'], cascading: ['Cascading', 'Avalanche', 'Tumble', '連鎖消除'], 'bonus-buy': ['Bonus Buy'],
+  'hold-and-spin': ['Hold and Spin', 'Hold & Spin'], cascading: ['Cascading', 'Avalanche', 'Tumble', '連鎖消除', '連鎖掉落'], 'bonus-buy': ['Bonus Buy'],
   respins: ['Respins', 'Respin', '重轉'], 'cash-collection': ['Cash Collection', 'Money Collect', '獎金收集'],
   'giant-symbols': ['Giant Symbols', '巨型符號'], 'symbol-splitting': ['Symbol Splitting', '符號分裂'],
   'sticky-symbols': ['Sticky Symbols', '黏著符號'], jackpot: ['Jackpot', 'Jackpot 功能'], other: ['Other feature', '其他功能'],

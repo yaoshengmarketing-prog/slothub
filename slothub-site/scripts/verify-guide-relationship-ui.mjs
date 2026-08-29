@@ -39,6 +39,9 @@ assert.match(gamesIndex, /relationshipLinks/, 'Explorer did not receive relation
 assert.match(search, /了解概念/, 'Search learn intent missing');
 assert.match(search, /探索遊戲/, 'Search explore intent missing');
 assert.match(search, /learn-mechanism-paylines/, 'Search Paylines learn intent missing');
+assert.match(search, /learn-feature-cascading-slot-terms-glossary/, 'Search Cascading learn intent missing');
+assert.match(search, /explore-feature-cascading-slot-terms-glossary/, 'Search Cascading explore intent missing');
+assert.match(search, /連鎖掉落/, 'Search Cascading Chinese alias missing');
 assert.ok(!search.includes('learn-mechanism-pay-anywhere'), 'Deferred Pay Anywhere received a Search Guide intent');
 assert.ok(!search.includes('learn-feature-multiplier'), 'Deferred Multiplier received a Search Guide intent');
 assert.ok(!search.includes('learn-data-topic-max-win'), 'Deferred max-win received a Search Guide intent');
