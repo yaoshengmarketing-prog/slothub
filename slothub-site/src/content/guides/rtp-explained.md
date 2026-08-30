@@ -52,7 +52,7 @@ RTP 只描述長期平均，沒有告訴你獎金如何分布。兩款遊戲即�
 
 PG SOFT 的 Mahjong Ways 2019 Game Information 把 Overall RTP 96.92%、Main Game 68.89% 與 Free Spins Feature 28.03% 分開列出。後兩項是在說明整體 RTP 的組成，不是另外兩個可選版本。較新的官方 Game Information summary 則明確列出 94%、95%、96.92%、97%、98%、99% 與 100%，才是可保存的多版本清單。
 
-來源時期不同也要分開處理。NetEnt 現行 Starburst 官方頁標示 96.08%，專案保存的歷史官方文章曾出現 96.09%。兩個時期的相近數字本身不足以證明它們是現在可選的兩個版本，因此 Slot Hub 只把現行 96.08% 作為主要 RTP，不把 96.09% 自動列成 variant。
+不同時期文件中的數字差異，也不能自動視為目前可選的 RTP 版本；仍須確認原廠是否明確將其列為配置或版本。
 
 ## 7. RTP 與 House Edge 何時能對照
 
@@ -96,5 +96,3 @@ PG SOFT 的 Mahjong Ways 2019 Game Information 把 Overall RTP 96.92%、Main Gam
 - [PG SOFT：Mahjong Ways Game Information summary](https://www.pgsoft.com/uploads/Games/Pdf/MahjongWays_Gameinformation_EN.pdf)
 - [Hacksaw Gaming：Wanted Dead or a Wild](https://www.hacksawgaming.com/games/wanted-dead-or-a-wild)
 - [Slotmill：Official Game list](https://developer.slotmill.com/gamelist/)
-- [NetEnt：Starburst current game page](https://netent.com/games/starburst)
-- [NetEnt：Historical Starburst article](https://old.netent.com/sv/4-favorite-netent-games-played-in-japan/)
