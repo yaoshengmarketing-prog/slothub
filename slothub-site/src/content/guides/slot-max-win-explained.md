@@ -17,6 +17,68 @@ updatedAt: 2026-08-29
 
 最高倍數描述的是特定規則與投注基準下的上限，不代表發生機率，也不代表單次遊戲結果。
 
+<figure class="guide-knowledge-diagram guide-knowledge-diagram--decision" aria-labelledby="max-win-decision-diagram-title">
+  <figcaption id="max-win-decision-diagram-title">
+    <span class="guide-knowledge-diagram__eyebrow">判讀流程</span>
+    <strong>最高倍數能不能直接比較？</strong>
+    <span>先核對基準、適用範圍與限制；數字較大，不代表較容易取得。</span>
+  </figcaption>
+  <ol class="guide-knowledge-diagram__steps">
+    <li>
+      <span class="guide-knowledge-diagram__number" aria-hidden="true">01</span>
+      <div>
+        <span class="guide-knowledge-diagram__term">基準</span>
+        <strong>這個 × 乘以什麼？</strong>
+        <p>核對 total bet、original bet、line bet、coins 或其他原廠單位。</p>
+      </div>
+    </li>
+    <li>
+      <span class="guide-knowledge-diagram__number" aria-hidden="true">02</span>
+      <div>
+        <span class="guide-knowledge-diagram__term">範圍</span>
+        <strong>是整局上限還是局部數值？</strong>
+        <p>分清整款遊戲與單一符號、Bonus 或 Feature 的上限。</p>
+      </div>
+    </li>
+    <li>
+      <span class="guide-knowledge-diagram__number" aria-hidden="true">03</span>
+      <div>
+        <span class="guide-knowledge-diagram__term">條件</span>
+        <strong>有沒有額外限制？</strong>
+        <p>核對版本、投注額度、市場與原廠明示條件；缺值不自行補足。</p>
+      </div>
+    </li>
+    <li>
+      <span class="guide-knowledge-diagram__number" aria-hidden="true">04</span>
+      <div>
+        <span class="guide-knowledge-diagram__term">證據</span>
+        <strong>原始資訊能否一起確認？</strong>
+        <p>標籤、單位、條件與第一方來源不完整時，必須降低可比性。</p>
+      </div>
+    </li>
+  </ol>
+  <div class="guide-knowledge-diagram__decision">
+    <strong>核對後，依證據完整度保守處理</strong>
+    <ul class="guide-knowledge-diagram__branches">
+      <li class="guide-knowledge-diagram__branch">
+        <span class="guide-knowledge-diagram__term">可比較性較高</span>
+        <strong>可作較高可比性的統一值</strong>
+        <p>第一方確認整局上限、投注基準與必要條件；仍不代表較容易取得。</p>
+      </li>
+      <li class="guide-knowledge-diagram__branch">
+        <span class="guide-knowledge-diagram__term">保留警告</span>
+        <strong>可辨識，但比較時必須保留警告</strong>
+        <p>像 Winning Ratio 這類基準未完整定義的標籤，保留原文與來源，不等同 x total bet。</p>
+      </li>
+      <li class="guide-knowledge-diagram__branch">
+        <span class="guide-knowledge-diagram__term">不可直接比較</span>
+        <strong>不能進入統一比較</strong>
+        <p>單一符號、Bonus 或 Feature 上限，或單位與範圍無法確認時，只保留原廠說明。</p>
+      </li>
+    </ul>
+  </div>
+</figure>
+
 ## 先看懂 10,000× 的乘數基準
 
 `10,000×` 的意思，是某個贏分數值為某個基準的 10,000 倍。問題在於，基準不一定相同。
