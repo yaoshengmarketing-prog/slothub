@@ -13,6 +13,40 @@ updatedAt: 2026-08-30
 
 Bonus Buy、Feature Buy 或 Buy Free Games，通常是用規則指定的成本，直接進入某個 Free Spins 或 Bonus Feature。你買到的是**進入功能的入口**，不是某個指定獎項、固定倍數或獲利結果。
 
+<figure class="guide-knowledge-diagram guide-knowledge-diagram--sequence" aria-labelledby="bonus-buy-diagram-title">
+  <figcaption id="bonus-buy-diagram-title">
+    <span class="guide-knowledge-diagram__eyebrow">閱讀順序</span>
+    <strong>Bonus Buy 買的是入口，不是結果</strong>
+    <span>先核對成本基準，再確認進入什麼功能；實際結果仍由該功能的正式規則決定。</span>
+  </figcaption>
+  <ol class="guide-knowledge-diagram__steps">
+    <li>
+      <span class="guide-knowledge-diagram__number" aria-hidden="true">01</span>
+      <div>
+        <span class="guide-knowledge-diagram__term" lang="en">COST</span>
+        <strong>依規則支付指定成本</strong>
+        <p>核對原廠使用的投注基準，不把不同基準直接視為同一單位。</p>
+      </div>
+    </li>
+    <li>
+      <span class="guide-knowledge-diagram__number" aria-hidden="true">02</span>
+      <div>
+        <span class="guide-knowledge-diagram__term" lang="en">ENTRY</span>
+        <strong>進入指定 Feature</strong>
+        <p>入口、起始條件及市場可用性，都要按個別遊戲規則核對。</p>
+      </div>
+    </li>
+    <li>
+      <span class="guide-knowledge-diagram__number" aria-hidden="true">03</span>
+      <div>
+        <span class="guide-knowledge-diagram__term" lang="en">OUTCOME</span>
+        <strong>結果由功能規則決定</strong>
+        <p>購買不保證回收、獲利、指定獎項或較高勝率。</p>
+      </div>
+    </li>
+  </ol>
+</figure>
+
 看到 `90×`、`100×` 這類價格時，也不能只記數字。原廠可能寫 `stake`、`bet amount`、`player's bet` 或 `your bet`；這些詞要連同規則語境一起讀，不能在定義不完整時自行當成完全相同的投注基準。
 
 ## 先分清：買入口，不是買結果
