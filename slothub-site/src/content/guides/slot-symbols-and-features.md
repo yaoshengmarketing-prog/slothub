@@ -96,7 +96,7 @@ Free Spins 是一段額外遊戲回合，不代表固定獎金，也不代表較
 
 Free Spins 期間可能改變盤面、選出 Special Expanding Symbol、加入 Sticky Wild、累積 Multiplier，或使用不同的 Paytable。這些都是 Bonus 專屬條件，不代表 Base Game 也採相同規則。
 
-Free Spins 也不等於 Cascading 或 Bonus Buy。Cascading 描述得獎後符號如何更新，可另看[連鎖消除教學](/guide/slot-cascading-tumble-avalanche-explained/)；Bonus Buy 是進入部分獎勵功能的另一種入口，定義可參考[Slot 常用術語](/guide/slot-terms-glossary/)。
+Free Spins 也不等於 Cascading 或 Bonus Buy。Cascading 描述得獎後符號如何更新，可另看[連鎖消除教學](/guide/slot-cascading-tumble-avalanche-explained/)；Bonus Buy 是進入部分獎勵功能的另一種入口，可另看[Bonus Buy 教學](/guide/slot-bonus-buy-explained/)。
 
 ## Jackpot：先確認有沒有足夠證據分類
 

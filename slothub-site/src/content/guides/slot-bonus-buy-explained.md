@@ -6,7 +6,7 @@ level: beginner
 tags: [Bonus Buy, Feature Buy, 功能購買, Fast Track]
 relatedFeatures:
   - bonus-buy
-status: draft
+status: published
 publishedAt: 2026-08-30
 updatedAt: 2026-08-30
 ---
