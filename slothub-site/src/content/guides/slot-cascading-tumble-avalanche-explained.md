@@ -13,6 +13,63 @@ updatedAt: 2026-08-29
 
 老虎機規則出現 `Cascading`、`Tumble` 或 `Avalanche` 時，通常是在描述一次得獎之後，盤面如何清除符號、補入新符號，再判定有沒有下一次得獎。這類流程可統稱為連鎖消除，但不同廠商的補位方向、停止條件、倍數與 Bonus 規則不一定相同。
 
+<figure class="guide-knowledge-diagram guide-knowledge-diagram--cycle" aria-labelledby="cascading-cycle-diagram-title">
+  <figcaption id="cascading-cycle-diagram-title">
+    <span class="guide-knowledge-diagram__eyebrow">循環判定</span>
+    <strong>一次得獎之後，盤面如何繼續運作</strong>
+    <span>用來理解共通循環；補位、停止與特殊規則仍須逐款核對。</span>
+  </figcaption>
+  <ol class="guide-knowledge-diagram__steps">
+    <li>
+      <span class="guide-knowledge-diagram__number" aria-hidden="true">01</span>
+      <div>
+        <span class="guide-knowledge-diagram__term">開始</span>
+        <strong>得獎成立</strong>
+        <p>先依主要賠付機制確認有效組合。</p>
+      </div>
+    </li>
+    <li>
+      <span class="guide-knowledge-diagram__number" aria-hidden="true">02</span>
+      <div>
+        <span class="guide-knowledge-diagram__term">更新</span>
+        <strong>清除得獎符號</strong>
+        <p>哪些符號移除或保留，必須按個別規則核對。</p>
+      </div>
+    </li>
+    <li>
+      <span class="guide-knowledge-diagram__number" aria-hidden="true">03</span>
+      <div>
+        <span class="guide-knowledge-diagram__term">補位</span>
+        <strong>補入新符號</strong>
+        <p>補位方向與排列方式依遊戲而異，不一定只由上往下。</p>
+      </div>
+    </li>
+    <li>
+      <span class="guide-knowledge-diagram__number" aria-hidden="true">04</span>
+      <div>
+        <span class="guide-knowledge-diagram__term">判定</span>
+        <strong>再次檢查得獎</strong>
+        <p>新盤面仍在原付費 spin／round 中再次判定。</p>
+      </div>
+    </li>
+  </ol>
+  <div class="guide-knowledge-diagram__decision">
+    <strong>再次判定後，流程分成兩條路</strong>
+    <ul class="guide-knowledge-diagram__branches">
+      <li class="guide-knowledge-diagram__branch guide-knowledge-diagram__branch--continue">
+        <span class="guide-knowledge-diagram__term">繼續循環</span>
+        <strong>再次得獎：回到第 2 步</strong>
+        <p>清除新得獎符號、補位，再次判定。</p>
+      </li>
+      <li class="guide-knowledge-diagram__branch guide-knowledge-diagram__branch--stop">
+        <span class="guide-knowledge-diagram__term">停止</span>
+        <strong>沒有得獎或符合停止條件</strong>
+        <p>本次連鎖結束；停止條件仍以個別規則為準。</p>
+      </li>
+    </ul>
+  </div>
+</figure>
+
 連鎖消除是一種 **Feature**，通常不負責決定第一個得獎組合怎麼成立。第一個組合仍可能由 Paylines、Ways to Win、Megaways、Cluster Pays 或 Pay Anywhere 判定。Feature 存在也不表示更容易中獎，更不能用來預測下一次結果。
 
 ## 先看四個步驟：得獎、清除、補入、再判定
