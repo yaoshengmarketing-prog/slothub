@@ -14,7 +14,7 @@
 }
 
 * { box-sizing: border-box; }
-html { min-width: 320px; background: var(--paper); }
+html { min-width: 0; background: var(--paper); }
 body { margin: 0; min-height: 100vh; background:
   radial-gradient(circle at 87% 3%, rgba(103, 87, 217, .16), transparent 28rem),
   radial-gradient(circle at 3% 92%, rgba(26, 157, 152, .14), transparent 24rem),
@@ -242,3 +242,19 @@ body { background:var(--white); }
 .guide-relationship-heading h2{font-size:clamp(2rem,3.5vw,2.55rem);text-wrap:balance}
 @media(max-width:760px){.explorer-guide-links,.game-guide-rail{grid-template-columns:1fr}.explorer-guide-links{gap:8px}.guide-relationship-heading{grid-template-columns:1fr}.guide-relationship-heading .eyebrow{grid-column:auto}.guide-game-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.guide-concept-links{grid-template-columns:1fr}}
 @media(max-width:620px){.explorer-guide-links a{grid-template-columns:1fr auto}.explorer-guide-links small{grid-column:1/-1;grid-row:2;white-space:normal}.game-guide-rail{gap:22px;padding:58px 0}.game-guide-rail nav a{grid-template-columns:1fr auto}.game-guide-rail nav span{grid-column:1/-1}.guide-related-games{margin-top:54px;padding-top:40px}.guide-game-grid{grid-template-columns:1fr 1fr}.guide-game-grid strong{font-size:.8rem}.guide-concept-links a{align-items:flex-start;flex-direction:column;gap:4px}.guide-concept-links b{white-space:normal}}
+
+/* Guide typography and reading layout v1 */
+.article-shell{padding-top:64px}
+.guide-reading-intro{position:relative;max-width:850px;padding-left:22px}
+.guide-reading-intro:before{position:absolute;inset:4px auto 2px 0;width:4px;border-radius:4px;background:linear-gradient(var(--lime) 0 26%,var(--navy) 26% 100%);content:""}
+.guide-reading-eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 18px!important;color:var(--muted)!important;font:750 .72rem/1.2 "Cascadia Mono",monospace;letter-spacing:.11em;text-transform:uppercase}
+.guide-reading-eyebrow b{color:var(--navy)}
+.guide-reading-eyebrow i{width:5px;height:5px;border-radius:50%;background:var(--signal)}
+.guide-reading-intro>h1{max-width:min(100%,20ch);margin:0;color:var(--navy);font-size:clamp(3rem,4.7vw,4rem);line-height:1.04;letter-spacing:-.04em;overflow-wrap:normal;word-break:normal;line-break:strict;text-wrap:balance}
+.guide-title-phrase{white-space:nowrap}
+.guide-reading-lead{max-width:760px;margin:24px 0 0!important;color:#4f586a!important;font-size:clamp(1.05rem,1.5vw,1.18rem);line-height:1.72;text-wrap:pretty}
+.guide-reading-start{display:grid;grid-template-columns:max-content 1fr;align-items:center;gap:16px;margin:34px 0 28px;color:var(--muted);font:700 .67rem/1 "Cascadia Mono",monospace;letter-spacing:.1em}
+.guide-reading-start:after{height:1px;background:#d8dde6;content:""}
+.article-shell>table{display:block;width:100%;max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain}
+@media(max-width:620px){.article-shell{padding-top:48px}.guide-reading-intro{padding-left:14px}.guide-reading-intro:before{width:3px}.guide-reading-eyebrow{margin-bottom:14px!important;font-size:.64rem}.guide-reading-intro>h1{max-width:100%;font-size:clamp(2.25rem,10.3vw,2.65rem);line-height:1.07;letter-spacing:-.04em}.guide-reading-lead{margin-top:18px!important;font-size:1rem;line-height:1.65}.guide-reading-start{margin:24px 0 20px}}
+@media(max-width:340px){.site-header{gap:8px;padding-inline:8px}.brand{flex:0 1 auto;gap:7px;font-size:.82rem;letter-spacing:.09em;white-space:nowrap}.brand-mark{width:35px;height:35px;flex:none}.brand small{font-size:.48rem;letter-spacing:.12em}.header-compare{display:inline-flex;flex:none;align-items:center;gap:5px;margin-left:auto;padding:.55rem .62rem;font-size:.76rem;white-space:nowrap}.header-compare span{flex:none;margin-left:0}.article-shell{padding-top:42px}.guide-reading-intro>h1{font-size:2.18rem;line-height:1.08;letter-spacing:-.035em}}

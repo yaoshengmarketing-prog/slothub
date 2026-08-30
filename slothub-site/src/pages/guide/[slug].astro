@@ -16,9 +16,19 @@ const [allGuides, catalog] = await Promise.all([getCollection('guides'), loadPub
 const relationships = createGuideRelationshipIndex(allGuides, catalog.games);
 const relatedGames = (relationships.guideToGames[entry.id] ?? []).slice(0, 6);
 const conceptLinks = guideConceptLinks(relationships, entry.id);
+const categoryLabels = { beginner: 'BEGINNER', mechanics: 'MECHANICS', data: 'DATA', terms: 'TERMS', fishing: 'FISHING' } as const;
+const levelLabels = { beginner: 'BEGINNER GUIDE', intermediate: 'INTERMEDIATE GUIDE', advanced: 'ADVANCED GUIDE' } as const;
+const titleSegments = entry.data.title.split(/(怎麼看[？?])/u).filter(Boolean);
 ---
 <BaseLayout title={`${entry.data.title}｜Slot Hub`} description={entry.data.description} canonicalPath={guideUrl(entry.id)} ogType="article">
-  <article class="article-shell"><h1>{entry.data.title}</h1><Content />
+  <article class="article-shell">
+    <header class="guide-reading-intro">
+      <p class="guide-reading-eyebrow"><b>{categoryLabels[entry.data.category]}</b><i aria-hidden="true"></i>{levelLabels[entry.data.level]}</p>
+      <h1>{titleSegments.map((segment) => /^怎麼看[？?]$/u.test(segment) ? <span class="guide-title-phrase">{segment}</span> : segment)}</h1>
+      <p class="guide-reading-lead">{entry.data.description}</p>
+    </header>
+    <div class="guide-reading-start"><span>從這裡開始</span></div>
+    <Content />
     {relatedGames.length > 0 && <section class="guide-related-games" aria-labelledby="guide-related-title">
       <div class="guide-relationship-heading"><p class="eyebrow">FROM KNOWLEDGE TO DATA</p><h2 id="guide-related-title">用實際遊戲看懂概念</h2><p>以下遊戲由本文的結構化關聯自動整理，不是熱門排行。</p></div>
       <div class="guide-game-grid">{relatedGames.map((game) => <a href={gameUrl(game.slug)}>{game.image ? <img src={game.image.src} alt="" loading="lazy" /> : <span aria-hidden="true">{game.name.slice(0, 1)}</span>}<strong>{game.name}</strong>{game.displayNameZhHant && <small>{game.originalName}</small>}<b>{game.providerName}</b></a>)}</div>
