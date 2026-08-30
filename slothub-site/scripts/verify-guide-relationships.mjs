@@ -29,6 +29,12 @@ const features = [
   'respins', 'cash-collection', 'giant-symbols', 'symbol-splitting', 'sticky-symbols', 'jackpot', 'other',
 ];
 const options = { mechanisms, features, dataTopics: GUIDE_DATA_TOPICS };
+const bonusBuyGuideSlug = 'slot-bonus-buy-explained';
+const bonusBuyGuide = guides.find((guide) => guide.slug === bonusBuyGuideSlug);
+assert.ok(bonusBuyGuide, 'Bonus Buy Guide is missing or its slug changed');
+assert.deepEqual(bonusBuyGuide.relatedFeatures, ['bonus-buy'], 'Bonus Buy Guide must own only the bonus-buy Feature');
+const bonusBuyGuidePublished = bonusBuyGuide.status === 'published';
+const bonusBuyOwnerSlug = bonusBuyGuidePublished ? bonusBuyGuideSlug : 'slot-terms-glossary';
 
 validateGuideDeclarations(guides, options);
 const index = buildGuideRelationshipIndex(guides, games, options);
@@ -38,7 +44,9 @@ const expected = {
   'rtp-explained': { relatedDataTopics: ['rtp', 'rtp-variants'] },
   'volatility-explained': { relatedDataTopics: ['volatility'] },
   'slot-symbols-and-features': { relatedFeatures: ['free-spins', 'wild', 'scatter', 'jackpot'] },
-  'slot-terms-glossary': { relatedFeatures: ['bonus-buy'] },
+  ...(bonusBuyGuidePublished
+    ? { [bonusBuyGuideSlug]: { relatedFeatures: ['bonus-buy'] } }
+    : { 'slot-terms-glossary': { relatedFeatures: ['bonus-buy'] } }),
 };
 for (const [slug, relations] of Object.entries(expected)) {
   const guide = guides.find((item) => item.slug === slug);
@@ -49,6 +57,19 @@ for (const [slug, relations] of Object.entries(expected)) {
 
 assert.deepEqual(index.featureToGuides.wild.map((guide) => guide.slug), ['slot-symbols-and-features']);
 assert.deepEqual(index.dataTopicToGuides.rtp.map((guide) => guide.slug), ['rtp-explained']);
+assert.deepEqual(index.featureToGuides['bonus-buy'].map((guide) => guide.slug), [bonusBuyOwnerSlug], 'bonus-buy must have exactly one published Guide owner');
+assert.equal(index.guideToGames[bonusBuyOwnerSlug].length, 12, 'Bonus Buy owner must derive exactly the 12 Games tagged with bonus-buy');
+const gamesWithoutBonusBuy = games.filter((game) => game.status === 'published' && !game.features?.includes('bonus-buy'));
+assert.equal(gamesWithoutBonusBuy.length, 18, 'Exactly 18 published Games must remain outside the bonus-buy Feature set');
+for (const game of gamesWithoutBonusBuy) {
+  assert.ok(!index.gameToGuides[game.slug].some(({ guide }) => guide.slug === bonusBuyOwnerSlug), `${game.slug}: missing bonus-buy Feature must not create a Bonus Buy Guide relation`);
+}
+if (bonusBuyGuidePublished) {
+  const glossary = guides.find((guide) => guide.slug === 'slot-terms-glossary');
+  assert.ok(!glossary.relatedFeatures?.includes('bonus-buy'), 'Glossary retained bonus-buy ownership after the new Guide was published');
+} else {
+  assert.ok(!index.guides.some((guide) => guide.slug === bonusBuyGuideSlug), 'Draft Bonus Buy Guide entered the public relationship index');
+}
 
 const symbolsGuideSlug = 'slot-symbols-and-features';
 const expectedSymbolsFeatureCounts = { 'free-spins': 23, wild: 14, scatter: 15, jackpot: 1 };
@@ -96,8 +117,9 @@ for (const slug of gamesWithoutMultiplier) {
 }
 const multiplierVisibleInTopThree = index.guideToGames[multiplierGuideSlug]
   .filter((game) => index.gameToGuides[game.slug].slice(0, 3).some(({ guide }) => guide.slug === multiplierGuideSlug));
-assert.equal(multiplierVisibleInTopThree.length, 8, 'Multiplier Guide must appear in the first three Guide matches for exactly 8 Games');
-assert.equal(index.guideToGames[multiplierGuideSlug].length - multiplierVisibleInTopThree.length, 17, 'The remaining 17 Multiplier relations must stay valid outside the three-Guide display limit');
+const expectedMultiplierLegacyTopThree = bonusBuyGuidePublished ? 6 : 8;
+assert.equal(multiplierVisibleInTopThree.length, expectedMultiplierLegacyTopThree, 'Multiplier Guide legacy top-three expectation must follow the legal Bonus Buy owner state');
+assert.equal(index.guideToGames[multiplierGuideSlug].length - multiplierVisibleInTopThree.length, 25 - expectedMultiplierLegacyTopThree, 'All Multiplier relations must stay valid outside the legacy top-three snapshot');
 
 const maxWinGuideSlug = 'slot-max-win-explained';
 const maxWinGuide = guides.find((guide) => guide.slug === maxWinGuideSlug);
@@ -127,7 +149,7 @@ for (const mechanism of payoutMechanisms) {
   assert.deepEqual(previewIndex.mechanismToGuides[mechanism].map((guide) => guide.slug), [payoutGuideSlug], `${mechanism}: ownership must transfer only to the payout Guide`);
 }
 assert.deepEqual(previewIndex.featureToGuides.cascading.map((guide) => guide.slug), expectedCascadingOwners);
-assert.deepEqual(previewIndex.featureToGuides['bonus-buy'].map((guide) => guide.slug), ['slot-terms-glossary']);
+assert.deepEqual(previewIndex.featureToGuides['bonus-buy'].map((guide) => guide.slug), [bonusBuyOwnerSlug]);
 assert.ok(!previewIndex.mechanismToGuides.paylines.some((guide) => guide.slug === 'slot-terms-glossary'), 'Glossary retained Paylines ownership');
 assert.ok(!previewIndex.mechanismToGuides['ways-to-win'].some((guide) => guide.slug === 'slot-terms-glossary'), 'Glossary retained Ways ownership');
 

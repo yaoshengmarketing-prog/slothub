@@ -7,9 +7,12 @@ const load = (path) => readFile(new URL(path, root), 'utf8');
 const maxWinGuideSource = await readFile(new URL('../src/content/guides/slot-max-win-explained.md', import.meta.url), 'utf8');
 const globalCssSource = await readFile(new URL('../src/styles/global.css', import.meta.url), 'utf8');
 const maxWinGuidePublished = /^status: published$/m.test(maxWinGuideSource);
+const bonusBuyGuideSource = await readFile(new URL('../src/content/guides/slot-bonus-buy-explained.md', import.meta.url), 'utf8');
+const bonusBuyGuidePublished = /^status: published$/m.test(bonusBuyGuideSource);
+const bonusBuyOwnerSlug = bonusBuyGuidePublished ? 'slot-bonus-buy-explained' : 'slot-terms-glossary';
 const cascadingGuideSource = await readFile(new URL('../src/content/guides/slot-cascading-tumble-avalanche-explained.md', import.meta.url), 'utf8');
 const cascadingGuidePublished = /^status: published$/m.test(cascadingGuideSource);
-const [rtp, glossary, symbols, payout, bigBass, bonanza, reactoonz, superAce, handOfAnubis, gamesIndex, search, slots, cascadingGuide] = await Promise.all([
+const [rtp, glossary, symbols, payout, bigBass, bonanza, reactoonz, superAce, handOfAnubis, gamesIndex, search, slots, cascadingGuide, bonusBuyGuide] = await Promise.all([
   load('guide/rtp-explained/index.html'),
   load('guide/slot-terms-glossary/index.html'),
   load('guide/slot-symbols-and-features/index.html'),
@@ -23,9 +26,11 @@ const [rtp, glossary, symbols, payout, bigBass, bonanza, reactoonz, superAce, ha
   load('search/index.html'),
   load('slots/index.html'),
   cascadingGuidePublished ? load('guide/slot-cascading-tumble-avalanche-explained/index.html') : Promise.resolve(''),
+  bonusBuyGuidePublished ? load('guide/slot-bonus-buy-explained/index.html') : Promise.resolve(''),
 ]);
 
-for (const [name, html] of [['RTP', rtp], ['glossary', glossary], ['symbols', symbols], ['payout', payout]]) {
+const guidesWithDerivedGames = [['RTP', rtp], ['symbols', symbols], ['payout', payout], [bonusBuyGuidePublished ? 'Bonus Buy' : 'glossary', bonusBuyGuidePublished ? bonusBuyGuide : glossary]];
+for (const [name, html] of guidesWithDerivedGames) {
   assert.match(html, /guide-related-games/, `${name}: related Game section missing`);
   const grid = html.match(/<div class="guide-game-grid">([\s\S]*?)<\/div>\s*<div class="guide-concept-links"/)?.[1] ?? '';
   const cards = grid.match(/href="\/games\/[^?][^"]*\/"/g)?.length ?? 0;
@@ -37,7 +42,17 @@ assert.match(rtp, /<div class="guide-concept-links"[^>]*><\/div>/, 'Data Topic G
 assert.ok(!glossary.includes('mechanism=paylines'), 'Glossary retained Paylines ownership');
 assert.ok(!glossary.includes('mechanism=ways-to-win'), 'Glossary retained Ways ownership');
 assert.ok(!glossary.includes('features=cascading'), 'Glossary retained Cascading ownership');
-assert.match(glossary, /href="\/games\/\?features=bonus-buy"/, 'Bonus Buy Explorer URL missing');
+if (bonusBuyGuidePublished) {
+  assert.ok(!glossary.includes('features=bonus-buy'), 'Glossary retained the Bonus Buy Explorer CTA after ownership transfer');
+  assert.match(bonusBuyGuide, /href="\/games\/\?features=bonus-buy"/, 'Bonus Buy Guide exact Explorer URL missing');
+  assert.match(symbols, /href="\/guide\/slot-bonus-buy-explained\/"/, 'Symbols Guide did not point to the published Bonus Buy Guide');
+  assert.ok(!symbols.includes('href="/guide/slot-terms-glossary/"'), 'Symbols Guide retained the old Bonus Buy manual link');
+} else {
+  assert.match(glossary, /href="\/games\/\?features=bonus-buy"/, 'Bonus Buy Explorer URL missing from the current glossary owner');
+  assert.match(symbols, /href="\/guide\/slot-terms-glossary\/"/, 'Symbols Guide lost the current published Bonus Buy destination');
+  assert.ok(!search.includes('slot-bonus-buy-explained'), 'Draft Bonus Buy Guide entered Search');
+  assert.ok(!slots.includes('/guide/slot-bonus-buy-explained/'), 'Draft Bonus Buy Guide entered the Slots Knowledge Map');
+}
 assert.ok(!glossary.includes('mechanism=paylines&amp;'), 'Guide concepts were incorrectly combined as AND');
 
 if (cascadingGuidePublished) {
@@ -92,6 +107,9 @@ for (const dataTopic of ['rtp', 'rtp-variants', 'volatility', 'max-win']) {
 assert.match(search, /learn-feature-multiplier-slot-multiplier-explained/, 'Search Multiplier learn intent missing');
 assert.match(search, /explore-feature-multiplier-slot-multiplier-explained/, 'Search Multiplier explore intent missing');
 assert.match(search, /\/games\/\?features=multiplier/, 'Search Multiplier Explorer URL must use the exact Feature filter');
+assert.match(search, new RegExp(`learn-feature-bonus-buy-${bonusBuyOwnerSlug}`), 'Search Bonus Buy learn intent owner is incorrect');
+assert.match(search, new RegExp(`explore-feature-bonus-buy-${bonusBuyOwnerSlug}`), 'Search Bonus Buy explore intent owner is incorrect');
+assert.match(search, /\/games\/\?features=bonus-buy/, 'Search Bonus Buy Explorer URL must use the exact Feature filter');
 if (maxWinGuidePublished) {
   assert.match(search, /learn-data-topic-max-win-slot-max-win-explained/, 'Published Max Win Guide Search learn intent missing');
   assert.ok(!search.includes('explore-data-topic-max-win-'), 'Max Win rendered an imprecise Search explore intent');
@@ -107,7 +125,7 @@ assert.match(slots, /探索遊戲 →/, 'Slots Explorer action missing');
 if (cascadingGuidePublished) {
   const knowledgeGrid = slots.match(/<div class="relationship-knowledge-grid">([\s\S]*?)<\/div>\s*<\/section>/)?.[1] ?? slots;
   const cascadingPosition = knowledgeGrid.indexOf('/guide/slot-cascading-tumble-avalanche-explained/');
-  const bonusBuyPosition = knowledgeGrid.indexOf('/guide/slot-terms-glossary/');
+  const bonusBuyPosition = knowledgeGrid.indexOf(`/guide/${bonusBuyOwnerSlug}/`);
   assert.ok(cascadingPosition >= 0, 'Slots Knowledge Map Cascading card did not transfer to the new Guide');
   assert.ok(bonusBuyPosition > cascadingPosition, 'Slots Knowledge Map Cascading card position changed relative to Bonus Buy');
 }
@@ -146,7 +164,8 @@ assert.equal(countPlacement('core-volatility') + countPlacement('full-volatility
 assert.equal(countPlacement('core-max-win'), 25, 'Max Win contextual Guide count changed');
 assert.equal(countGuide('slot-multiplier-explained'), 25, 'Multiplier Feature Guide count changed');
 assert.equal(countGuide('slot-cascading-tumble-avalanche-explained'), 12, 'Cascading Feature Guide count changed');
-assert.equal(countGuide('slot-terms-glossary'), 12, 'Bonus Buy Feature Guide count changed');
+assert.equal(countGuide(bonusBuyOwnerSlug), 12, 'Bonus Buy Feature Guide count changed');
+assert.equal(countGuide(bonusBuyGuidePublished ? 'slot-terms-glossary' : 'slot-bonus-buy-explained'), 0, 'Inactive Bonus Buy owner appeared in Game detail');
 assert.equal(countGuide('slot-symbols-and-features'), 28, 'Symbols Feature Guide count changed');
 assert.ok(!renderedKnowledge.some((item) => item.gameSlug === 'super-ace' && item.guideSlug === 'slot-cascading-tumble-avalanche-explained'), 'Super Ace regained an invalid Cascading relationship');
 
