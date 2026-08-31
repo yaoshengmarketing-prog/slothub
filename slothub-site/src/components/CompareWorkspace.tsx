@@ -2,6 +2,10 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import type { CSSProperties, ReactNode } from 'react';
 import type { GameCatalogItem as Game } from '../lib/game-catalog';
 import { featureLabels, volatilityLabels, winMechanismLabels } from '../lib/taxonomy';
+import {
+  COMPARE_STORAGE_KEY, compareStateUrl, normalizeCompareSlugs, readCompareQuery,
+  readStoredCompare, writeCanonicalHistory,
+} from '../lib/core-flow-state.mjs';
 
 const EMPTY = '—';
 const CORE_FEATURES = [
@@ -10,10 +14,8 @@ const CORE_FEATURES = [
 ];
 
 function initialSelection(valid: string[]) {
-  const query = new URLSearchParams(location.search).get('games')?.split(',') ?? [];
-  let stored: string[] = [];
-  try { stored = JSON.parse(localStorage.getItem('slothub-compare') || '[]'); } catch { stored = []; }
-  return [...new Set(query.length ? query : stored)].filter((slug) => valid.includes(slug)).slice(0, 3);
+  const query = readCompareQuery(location.search, valid);
+  return query.hasGames ? query.slugs : readStoredCompare(localStorage.getItem(COMPARE_STORAGE_KEY), valid);
 }
 
 function mechanismLabel(game: Game) {
@@ -73,14 +75,28 @@ export default function CompareWorkspace({ games }: { games: Game[] }) {
   const [selected, setSelected] = useState<string[]>(() => initialSelection(valid));
   const [tableScrolled, setTableScrolled] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
-  const sync = (next: string[]) => {
-    const clean = [...new Set(next)].filter((slug) => valid.includes(slug)).slice(0, 3);
+  const syncStorage = (next: string[]) => {
+    const clean = normalizeCompareSlugs(next, valid);
     setSelected(clean);
-    localStorage.setItem('slothub-compare', JSON.stringify(clean));
-    history.replaceState(null, '', clean.length ? `/compare/?games=${clean.join(',')}` : '/compare/');
+    localStorage.setItem(COMPARE_STORAGE_KEY, JSON.stringify(clean));
+    return clean;
+  };
+  const commit = (next: string[], mode: 'push' | 'replace') => {
+    const clean = syncStorage(next);
+    writeCanonicalHistory(window, compareStateUrl(clean), mode);
     dispatchEvent(new Event('slothub:compare'));
   };
-  useEffect(() => { sync(selected); }, []);
+  useEffect(() => {
+    commit(selected, 'replace');
+    const restore = () => {
+      const query = readCompareQuery(location.search, valid);
+      const clean = syncStorage(query.hasGames ? query.slugs : []);
+      writeCanonicalHistory(window, compareStateUrl(clean), 'replace');
+      dispatchEvent(new Event('slothub:compare'));
+    };
+    addEventListener('popstate', restore);
+    return () => removeEventListener('popstate', restore);
+  }, [valid.join('|')]);
   const picked = selected.map((slug) => games.find((game) => game.slug === slug)).filter(Boolean) as Game[];
   useEffect(() => {
     const element = scrollRef.current;
@@ -107,7 +123,7 @@ export default function CompareWorkspace({ games }: { games: Game[] }) {
   ];
 
   return <div className="compare-workspace">
-    <div className="compare-picker"><label htmlFor="compare-select">加入比較（最多三款）</label><select id="compare-select" value="" onChange={(event) => event.target.value && sync([...selected, event.target.value])} disabled={selected.length >= 3}><option value="">選擇遊戲</option>{games.filter((game) => !selected.includes(game.slug)).map((game) => <option key={game.slug} value={game.slug}>{game.name}{game.displayNameZhHant ? ` / ${game.originalName}` : ''} — {game.providerName}</option>)}</select></div>
+    <div className="compare-picker"><label htmlFor="compare-select">加入比較（最多三款）</label><select id="compare-select" value="" onChange={(event) => event.target.value && commit([...selected, event.target.value], 'push')} disabled={selected.length >= 3}><option value="">選擇遊戲</option>{games.filter((game) => !selected.includes(game.slug)).map((game) => <option key={game.slug} value={game.slug}>{game.name}{game.displayNameZhHant ? ` / ${game.originalName}` : ''} — {game.providerName}</option>)}</select></div>
     {picked.length ? <>
       <div ref={scrollRef} className={`compare-scroll ${tableScrolled ? 'is-scrolled' : ''}`} tabIndex={0} aria-label="遊戲比較表，可上下及左右捲動">
         <div className="compare-sticky-bar" data-cols={picked.length} style={{ '--cols': picked.length } as CSSProperties} aria-hidden={!tableScrolled}>
@@ -122,12 +138,12 @@ export default function CompareWorkspace({ games }: { games: Game[] }) {
           {picked.map((game) => <div className="compare-head" key={game.slug}>
             <CompareArtwork game={game} />
             <CompareIdentity game={game} />
-            <button aria-label={`從比較中移除 ${game.name}`} onClick={() => sync(selected.filter((slug) => slug !== game.slug))}>移除</button>
+            <button aria-label={`從比較中移除 ${game.name}`} onClick={() => commit(selected.filter((slug) => slug !== game.slug), 'push')}>移除</button>
           </div>)}
           {rows.flatMap((row) => [<div className="compare-label" key={`${row.label}-label`}>{row.label}</div>, ...picked.map((game) => <div className="compare-value" key={`${row.label}-${game.slug}`}>{row.render(game)}</div>)])}
         </div>
       </div>
-      <button className="text-button compare-clear" onClick={() => sync([])}>清除全部</button>
+      <button className="text-button compare-clear" onClick={() => commit([], 'push')}>清除全部</button>
     </> : <div className="empty-result"><strong>先選擇兩至三款遊戲</strong><p>比較表只呈現資料庫中已有的欄位，不會為了填滿表格補造資料。</p></div>}
   </div>;
 }

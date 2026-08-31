@@ -1,14 +1,24 @@
 ---
+import { getCollection } from 'astro:content';
 import { compareUrl, gamesIndexUrl, guideIndexUrl, providersIndexUrl, slotsUrl, fishingGamesUrl, toolsIndexUrl } from '../lib/urls';
 const nav = [['遊戲庫',gamesIndexUrl()],['老虎機',slotsUrl()],['捕魚機',fishingGamesUrl()],['遊戲廠商',providersIndexUrl()],['工具',toolsIndexUrl()],['教學',guideIndexUrl()]];
+const validCompareSlugs = (await getCollection('games')).filter((game) => game.data.status === 'published').map((game) => game.id);
 ---
 <header class="site-header">
   <a class="brand" href="/" aria-label="Slot Hub 首頁"><span class="brand-mark">SH</span><span>SLOT HUB<small>GAME INDEX</small></span></a>
   <nav aria-label="主要導覽">{nav.map(([label,href]) => <a href={href}>{label}</a>)}</nav>
-  <a class="header-compare" href={compareUrl()}>比較遊戲 <span data-compare-count>0</span></a>
+  <a class="header-compare" href={compareUrl()} data-valid-compare-slugs={validCompareSlugs.join(',')}>比較遊戲 <span data-compare-count>0</span></a>
 </header>
 <script>
-  const count = () => { try { return JSON.parse(localStorage.getItem('slothub-compare') || '[]').length } catch { return 0 } };
-  const paint = () => document.querySelectorAll('[data-compare-count]').forEach((el) => el.textContent = String(count()));
+  import { COMPARE_STORAGE_KEY, compareStateUrl, readCompareQuery, readStoredCompare } from '../lib/core-flow-state.mjs';
+  const paint = () => document.querySelectorAll<HTMLAnchorElement>('.header-compare').forEach((link) => {
+    const valid = (link.dataset.validCompareSlugs || '').split(',').filter(Boolean);
+    const query = location.pathname === '/compare/' ? readCompareQuery(location.search, valid) : { hasGames: false, slugs: [] };
+    const selected = query.hasGames ? query.slugs : readStoredCompare(localStorage.getItem(COMPARE_STORAGE_KEY), valid);
+    localStorage.setItem(COMPARE_STORAGE_KEY, JSON.stringify(selected));
+    link.href = compareStateUrl(selected);
+    const count = link.querySelector('[data-compare-count]');
+    if (count) count.textContent = String(selected.length);
+  });
   paint(); addEventListener('slothub:compare', paint); addEventListener('storage', paint);
 </script>

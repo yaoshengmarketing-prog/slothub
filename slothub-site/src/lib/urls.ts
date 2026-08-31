@@ -1,4 +1,5 @@
 import { SITE } from '../consts';
+import { compareStateUrl, searchStateUrl } from './core-flow-state.mjs';
 import { emptyExplorerState, serializeExplorerState } from './game-explorer-state.mjs';
 import type { ExplorerState } from './game-explorer-state.mjs';
 
@@ -27,11 +28,10 @@ export const slotsUrl = () => '/slots/';
 export const fishingGamesUrl = () => '/fishing-games/';
 export const rouletteUrl = () => '/roulette/';
 export const rankingsUrl = () => '/rankings/';
-export const searchUrl = (query?: string) =>
-  query ? `/search/?q=${encodeURIComponent(query)}` : '/search/';
+export const searchUrl = (query?: string) => searchStateUrl(query);
 export const compareUrl = (slugs: string[] = []) => {
   const clean = [...new Set(slugs.map(slugSegment))].slice(0, 3);
-  return clean.length ? `/compare/?games=${clean.join(',')}` : '/compare/';
+  return compareStateUrl(clean);
 };
 
 export const absoluteUrl = (path: string) => new URL(path, SITE.origin).href;

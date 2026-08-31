@@ -10,4 +10,4 @@ const guides=(await getCollection('guides')).filter(g=>g.data.status==='publishe
 const relationships=createGuideRelationshipIndex(guides,games);
 const items=buildPublishedSearchCatalog(games,providers,guides,relationshipSearchItems(relationships));
 ---
-<BaseLayout title="搜尋｜Slot Hub" description="搜尋 Slot Hub 的遊戲、廠商與教學內容。" canonicalPath="/search/" robots="noindex,follow"><section class="page-hero shell"><p class="eyebrow">SEARCH</p><h1>搜尋 Slot Hub</h1><p>目前索引涵蓋遊戲、遊戲廠商及教學內容。</p></section><section class="search-page shell"><SearchHub items={items} client:load/></section></BaseLayout>
+<BaseLayout title="搜尋｜Slot Hub" description="搜尋 Slot Hub 的遊戲、廠商與教學內容。" canonicalPath="/search/" robots="noindex,follow"><section class="page-hero shell"><p class="eyebrow">SEARCH</p><h1>搜尋 Slot Hub</h1><p>目前索引涵蓋遊戲、遊戲廠商及教學內容。</p></section><section class="search-page shell"><SearchHub items={items} urlState client:load/></section></BaseLayout>
