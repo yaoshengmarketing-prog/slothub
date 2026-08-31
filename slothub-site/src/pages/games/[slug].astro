@@ -2,9 +2,10 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AddCompareButton from '../../components/AddCompareButton';
-import { absoluteUrl, gameUrl, providerUrl } from '../../lib/urls';
+import { absoluteUrl, gameUrl, gamesIndexUrl, providerUrl } from '../../lib/urls';
 import { featureLabels, jackpotTypeLabels, primaryTypeLabels, volatilityLabels, winMechanismLabels } from '../../lib/taxonomy';
 import { buildGameDetailKnowledgePresentation, loadGuideRelationshipIndex, relationshipLabel, type GameDetailFieldPlacement } from '../../lib/guide-relationship-catalog';
+import { buildSimilarPlayPresentation } from '../../lib/similar-play.mjs';
 
 export async function getStaticPaths() {
   const games = (await getCollection('games')).filter((game) => game.data.status === 'published');
@@ -13,8 +14,10 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const providers = await getCollection('providers');
-const allGames = (await getCollection('games')).filter((game) => game.data.status === 'published');
+const gameEntries = await getCollection('games');
+const allGames = gameEntries.filter((game) => game.data.status === 'published');
 const provider = providers.find((item) => item.id === entry.data.provider);
+const providerNames = new Map(providers.map((item) => [item.id, item.data.name]));
 const relationshipIndex = await loadGuideRelationshipIndex();
 const knowledgePresentation = buildGameDetailKnowledgePresentation(
   relationshipIndex.gameToGuides[entry.id] ?? [],
@@ -101,6 +104,23 @@ const fullSpecs = [
 
 const featureGuideDirect = knowledgePresentation.featureGuides.direct;
 const featureGuideOverflow = knowledgePresentation.featureGuides.overflow;
+const similarPlay = buildSimilarPlayPresentation(entry.id, gameEntries.map((item) => ({
+  slug: item.id,
+  status: item.data.status,
+  name: item.data.displayNameZhHant ?? item.data.originalName ?? item.data.name,
+  providerName: providerNames.get(item.data.provider) ?? item.data.provider,
+  image: item.data.image ? { src: item.data.image.src, alt: item.data.image.alt } : undefined,
+  winMechanism: item.data.winMechanism,
+  winCount: item.data.winCount,
+  features: item.data.features,
+})));
+const similarMechanismLabel = similarPlay.mechanism ? winMechanismLabels[similarPlay.mechanism] ?? similarPlay.mechanism : undefined;
+const similarExploreUrl = similarPlay.mechanism ? gamesIndexUrl({ mechanism: similarPlay.mechanism }) : undefined;
+const similarReasonLabel = (reason: { type: string; value: string | number }) => reason.type === 'win-count'
+  ? entry.data.winMechanism === 'paylines'
+    ? `同為 ${Number(reason.value).toLocaleString()} 條賠線`
+    : `同為 ${Number(reason.value).toLocaleString()} 路`
+  : featureLabels[String(reason.value)] ?? String(reason.value);
 
 const sources = entry.data.sources.length ? entry.data.sources : [entry.data.source];
 const game = {
@@ -169,6 +189,23 @@ const schema = {
         <nav aria-label="相關遊戲功能教學">{featureGuideDirect.map((match) => <a href={match.guide.url} data-guide-slug={match.guide.slug} data-guide-placement="feature-direct"><span>{match.displayReasons.map((reason) => relationshipLabel(reason.type, reason.value)).join('、')}</span><strong>{match.guide.title}</strong><b>閱讀 →</b></a>)}</nav>
         {featureGuideOverflow.length > 0 && <details class="game-guide-overflow"><summary>查看更多相關教學（{featureGuideOverflow.length}）</summary><nav aria-label="更多相關遊戲功能教學">{featureGuideOverflow.map((match) => <a href={match.guide.url} data-guide-slug={match.guide.slug} data-guide-placement="feature-overflow"><span>{match.displayReasons.map((reason) => relationshipLabel(reason.type, reason.value)).join('、')}</span><strong>{match.guide.title}</strong><b>閱讀 →</b></a>)}</nav></details>}
       </div>
+    </section>}
+
+    {similarPlay.items.length > 0 && similarMechanismLabel && similarExploreUrl && <section class="game-similar-play" aria-labelledby="similar-play-title">
+      <div class="game-section-heading similar-play-heading">
+        <p class="eyebrow">PLAY PATTERN</p>
+        <div><h2 id="similar-play-title">玩法相近</h2><p>依主要賠付機制整理，功能與規則可能不同。</p></div>
+      </div>
+      <ul class="similar-play-grid">
+        {similarPlay.items.map(({ game: item, reasons }) => <li><a href={gameUrl(item.slug)} data-similar-play-slug={item.slug}>
+          {item.image ? <img src={item.image.src} alt="" loading="lazy" /> : <span class="similar-play-placeholder" aria-hidden="true">{item.name.slice(0, 1)}</span>}
+          <span class="similar-play-card-body">
+            <span class="similar-play-identity"><strong>{item.name}</strong><small>{item.providerName}</small></span>
+            <span class="similar-play-reasons"><b>{similarMechanismLabel}</b>{reasons.map((reason: { type: string; value: string | number }) => <small>{similarReasonLabel(reason)}</small>)}</span>
+          </span>
+        </a></li>)}
+      </ul>
+      <a class="button secondary similar-play-explore" href={similarExploreUrl}>探索更多同類遊戲</a>
     </section>}
 
     {(seriesGames.length > 0 || providerGames.length > 0) && <section class="game-relations" aria-labelledby="related-title">

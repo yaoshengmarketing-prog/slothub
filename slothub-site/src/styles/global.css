@@ -223,6 +223,29 @@ body { background:var(--white); }
 @media(max-width:960px){.game-file-hero{grid-template-columns:1fr}.game-file-art{width:min(620px,100%)}.game-core-stats{grid-template-columns:1fr}.game-core-stats>h2{border-right:0;border-bottom:1px solid #343d52}.game-spec-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.game-file-page{padding-top:30px}.game-file-back{margin-bottom:28px}.game-file-hero{gap:38px}.game-file-art{border-radius:18px;box-shadow:7px 8px 0 #e3e7f0}.game-file-art img{padding:8px}.game-file-identity h1{font-size:clamp(2.65rem,14vw,4.1rem)}.game-file-identity h1.is-long-title{font-size:clamp(2.4rem,11.8vw,3.45rem)}.game-file-identity h1.is-very-long-title{font-size:clamp(2.15rem,10.5vw,3.05rem)}.game-file-original{font-size:1rem}.game-file-meta{margin-top:16px}.game-file-summary{font-size:.92rem}.game-file-identity .action-row{align-items:stretch;flex-direction:column}.game-core-stats{margin-top:50px}.game-core-stats dl{grid-template-columns:repeat(2,1fr)}.game-core-stats dl>div{padding:18px}.game-core-stats dd{font-size:1.15rem}.game-data-section,.game-relations{padding:62px 0}.game-section-heading,.game-sources{grid-template-columns:1fr;gap:10px}.game-spec-grid{grid-template-columns:repeat(2,1fr)}.game-spec-grid>div{min-height:105px;padding:15px}.game-spec-grid dd{font-size:.92rem}.game-features{grid-template-columns:1fr}.related-game-grid{grid-template-columns:1fr}.related-game-grid a{grid-template-columns:70px 1fr auto}.related-game-grid img{width:70px}.game-sources{padding-top:55px}.game-sources ul{margin-top:18px}.game-sources li{align-items:flex-start;flex-direction:column;gap:5px}.game-sources small{white-space:normal}}
 
+/* Game detail similar play v1 */
+.game-similar-play{padding:84px 0;border-bottom:1px solid var(--navy)}
+.similar-play-heading{align-items:start}
+.similar-play-heading>div{display:grid;gap:13px}
+.similar-play-heading>div>p{max-width:520px;margin:0;color:var(--muted);font-size:.84rem;line-height:1.65}
+.similar-play-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0;padding:0;list-style:none}
+.similar-play-grid>li{min-width:0}
+.similar-play-grid>li>a{display:grid;grid-template-columns:108px minmax(0,1fr);gap:15px;align-items:stretch;min-height:150px;padding:11px;border:1px solid #d9dde5;border-radius:15px;background:white;text-decoration:none}
+.similar-play-grid>li>a:hover{border-color:var(--signal);box-shadow:0 10px 24px rgba(17,24,43,.07)}
+.similar-play-grid>li>a:focus-visible,.similar-play-explore:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.similar-play-grid img,.similar-play-placeholder{display:grid;width:108px;height:100%;min-height:126px;place-items:center;border-radius:10px;background:var(--soft);object-fit:contain;color:var(--navy);font:900 2.4rem/1 "Aptos Display",sans-serif}
+.similar-play-grid img{padding:5px}
+.similar-play-card-body{display:flex;min-width:0;flex-direction:column;justify-content:space-between;gap:14px;padding:5px 3px}
+.similar-play-identity{display:grid;min-width:0;gap:5px}
+.similar-play-identity strong{font-size:1rem;line-height:1.3;overflow-wrap:anywhere}
+.similar-play-identity small{color:var(--muted);font-size:.7rem;line-height:1.35;overflow-wrap:anywhere}
+.similar-play-reasons{display:flex;flex-wrap:wrap;gap:5px}
+.similar-play-reasons b,.similar-play-reasons small{padding:5px 7px;border-radius:6px;font-size:.66rem;line-height:1.25}
+.similar-play-reasons b{background:var(--navy);color:white}
+.similar-play-reasons small{border:1px solid #d9dde5;background:var(--soft);color:var(--signal);font-weight:800}
+.similar-play-explore{min-height:44px;margin-top:18px}
+@media(max-width:620px){.game-similar-play{padding:62px 0}.similar-play-heading{gap:14px}.similar-play-grid{grid-template-columns:1fr}.similar-play-grid>li>a{grid-template-columns:86px minmax(0,1fr);min-height:132px;padding:9px}.similar-play-grid img,.similar-play-placeholder{width:86px;min-height:112px}}
+
 /* Game Explorer v2 data console */
 .filter-console-v2{overflow:hidden;border:1px solid #ccd2dd;border-top:4px solid var(--signal);border-radius:18px;background:white;box-shadow:0 14px 35px rgba(17,24,43,.06)}
 .filter-search-v2{display:grid;grid-template-columns:130px 1fr;align-items:center;padding:18px 20px;border-bottom:1px solid #dfe3ea;background:var(--navy);color:white}.filter-search-v2>label{font:750 .68rem/1 "Cascadia Mono",monospace;letter-spacing:.09em;text-transform:uppercase}.filter-search-v2>div{display:flex;align-items:center;gap:10px;min-width:0;padding:6px 13px;border-radius:11px;background:white;color:var(--navy)}.filter-search-v2>div>span{font-size:1.45rem}.filter-search-v2 input{width:100%;min-width:0;min-height:38px;border:0;outline:0;background:transparent;color:var(--navy);font:700 .92rem inherit}
