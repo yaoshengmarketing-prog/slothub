@@ -2,7 +2,7 @@
 
 文件狀態：`APPROVED`
 
-最近更新：2026-08-31
+最近更新：2026-09-01
 
 目前依據：`docs/slot-hub-master-blueprint-v2.md` 是目前最高產品與施工順序依據；`docs/slot-hub-master-blueprint-v1.md` 保留為歷史決策文件。
 
@@ -48,7 +48,7 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 | Guide 閱讀與核心內容 | Guide typography、三個 Knowledge Diagram、RTP／Volatility／Beginners 補強 | `已完成` |
 | Preview 保護 | noindex、X-Robots-Tag、空 sitemap、無 production canonical | `已完成` |
 
-## 4. 第 1～2 項完成與第 3 項等待人工審查
+## 4. 第 1～3 項完成與第 4 項本機施工
 
 ### 第 1 項：第二輪產品設計
 
@@ -76,26 +76,39 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 
 **狀態：** `已完成`
 
-### 目前項目：第 3 項 Game detail 相同玩法探索
+### 第 3 項：Game detail 相同玩法探索
 
 **目前進度：**
 
 - 第 3-1 步「只讀盤點 Game detail 相同玩法探索」已完成。
 - 只讀規格：`docs/slot-hub-game-detail-similar-play-v1-readonly-spec.md`。
 - 第 3-1 步九項產品決定與排序修正已人工核准。
-- 第 3-2 步「Game detail 玩法相近本機施工」已完成本機實作、完整驗證與獨立 Commit，等待人工審查。
+- 第 3-2 步「Game detail 玩法相近本機施工」已完成本機實作、完整驗證與獨立 Commit。
+- 第 3-3 步 Push、Cloudflare Preview 部署與線上回讀已完成。
+- 最終 deployed Commit：`87966e63048bab13ddbce6a632e437782d942607`。
 
-**狀態：** `等待人工審查`
+**狀態：** `已完成`
 
-**下一個允許動作：** 人工審查第 3-2 步完整 Patch、代表案例與三種 viewport 畫面；不得 Push 或部署。
+### 目前項目：第 4 項 Compare 資料判讀 v2
+
+**目前進度：**
+
+- 第 4-1 步「只讀產品與資料盤點」已完成。
+- 只讀規格：`docs/slot-hub-compare-data-interpretation-v2-readonly-spec.md`。
+- 第 4-1 步七項產品決定與三項施工小邊界已人工核准。
+- 第 4-2 步「Compare 資料判讀 v2 本機施工」進行中。
+
+**狀態：** `本機製作`
+
+**下一個允許動作：** 依核准規格完成第 4-2 步本機施工、驗證及獨立 Implementation Commit；不得 Push 或部署。
 
 ## 5. 第 2～10 項施工順序
 
 | 順序 | 項目 | 白話目的 | 狀態 | 下一個允許動作 |
 | ---: | --- | --- | --- | --- |
 | 2 | 核心動線一致性 | 讓首頁搜尋、完整搜尋、Explorer 與 Compare 的網址、重新整理及上一頁／下一頁行為一致；修正假 CTA 與過時文案。 | `已完成` | 已結案。 |
-| 3 | Game detail 相同玩法探索 | 讓使用者從單款遊戲直接探索相同 Mechanism 或 Feature，並清楚區分系列、Provider 與玩法條件。 | `等待人工審查` | 人工審查第 3-2 步完整 Patch、代表案例與三種 viewport 畫面；不得 Push 或部署。 |
-| 4 | Compare 資料判讀 v2 | 不只並排數字，也說明哪些能比較、哪些要保留警告、哪些不能統一。 | `尚未開始` | 第 3 項結案後，盤點可比較欄位、取得率與手機負擔。 |
+| 3 | Game detail 相同玩法探索 | 讓使用者從單款遊戲直接探索相同 Mechanism 或 Feature，並清楚區分系列、Provider 與玩法條件。 | `已完成` | 已結案。 |
+| 4 | Compare 資料判讀 v2 | 不只並排數字，也說明哪些能比較、哪些要保留警告、哪些不能統一。 | `本機製作` | 依核准規格完成第 4-2 步本機施工與驗證，完成後等待人工審查。 |
 | 5 | Provider Hub v2 | 把 Provider 頁從基本名單提升成有來源、有限定母體的資料入口，並連到 filtered Explorer。 | `尚未開始` | 第 4 項結案後，先做 11 家 Provider 資料覆蓋只讀盤點。 |
 | 6 | 資料方法與可信度入口 | 用一般使用者看得懂的方式說明原廠值、統一值、缺值、版本、來源與可比較限制。 | `尚未開始` | 第 5 項結案後，決定頁型、內容邊界及與既有 Guide 的重複處理。 |
 | 7 | Guide 閱讀路線 v1 | 讓首頁、Guide index、Slots 依「第一次使用、核心數據、玩法、功能、限制」組織內容。 | `尚未開始` | 第 6 項結案後，先做內容排序與入口規格；不新增帳號或進度。 |
@@ -172,28 +185,28 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 
 `STAGE_RESULT: PASS_TO_NEXT_STAGE`
 
-`CURRENT_STATE: LOCAL_IMPLEMENTATION_READY_FOR_REVIEW`
+`CURRENT_STATE: LOCAL_IMPLEMENTATION_IN_PROGRESS`
 
-`CURRENT_ITEM: 第3項 Game detail 相同玩法探索`
+`CURRENT_ITEM: 第4項 Compare 資料判讀 v2`
 
-`CURRENT_STATUS: 等待人工審查`
+`CURRENT_STATUS: 本機製作`
 
-`CURRENT_STEP: 第3-2步 Game detail玩法相近本機施工`
+`CURRENT_STEP: 第4-2步 本機施工`
 
 `ROADMAP_STATUS: APPROVED`
 
-`NEXT_ITEM: 第3項 Game detail 相同玩法探索`
+`NEXT_ITEM: 第4項 Compare 資料判讀 v2`
 
-`NEXT_ITEM_STATUS: 等待人工審查`
+`NEXT_ITEM_STATUS: 本機製作`
 
-`WEBSITE_CHANGED: YES`
+`WEBSITE_CHANGED: NOT_YET`
 
-`COMMIT_ALLOWED: NO`
+`COMMIT_ALLOWED: YES；限核准的規格Commit與Implementation Commit`
 
 `PUSH_ALLOWED: NO`
 
 `DEPLOY_ALLOWED: NO`
 
-`HUMAN_APPROVAL_REQUIRED: YES；第3-2步本機實作需完成人工審查`
+`HUMAN_APPROVAL_REQUIRED: YES；第4-2步完成後需人工審查`
 
-`NEXT_ALLOWED_ACTION: 人工審查完整Patch、代表案例及三種viewport畫面；不得Push或部署`
+`NEXT_ALLOWED_ACTION: 完成第4-2步本機施工、驗證與獨立Implementation Commit`
