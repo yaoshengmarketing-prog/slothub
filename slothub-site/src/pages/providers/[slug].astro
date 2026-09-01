@@ -1,4 +1,176 @@
 ---
-import {getCollection} from 'astro:content';import BaseLayout from '../../layouts/BaseLayout.astro';import {providerUrl,gameUrl} from '../../lib/urls';import {providerRoleLabels} from '../../lib/taxonomy';export async function getStaticPaths(){const entries=(await getCollection('providers')).filter(x=>x.data.status==='published');return entries.map(entry=>({params:{slug:entry.id},props:{entry}}))}const {entry}=Astro.props;const games=(await getCollection('games')).filter(g=>g.data.provider===entry.id&&g.data.status==='published');
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { buildProviderHubProjection } from '../../lib/provider-hub.mjs';
+import { gameUrl, gamesIndexUrl, providerUrl } from '../../lib/urls';
+import { featureLabels, providerRoleLabels, winMechanismLabels } from '../../lib/taxonomy';
+
+type ProviderGame = {
+  slug: string;
+  name: string;
+  originalName?: string;
+  displayNameZhHant?: string;
+  rtp?: number;
+};
+
+type ProviderPresentation = {
+  providerSlug: string;
+  provider: {
+    name: string;
+    roles: string[];
+    summary: string;
+    officialUrl: string;
+    parentOrganization?: string;
+    updatedAt: Date;
+    source: { label: string; url: string };
+    logo?: { src: string; alt: string; sourceUrl: string; retrievedAt: Date };
+  };
+  games: ProviderGame[];
+  sampleSize: number;
+  hasGames: boolean;
+  showStatistics: boolean;
+  mechanisms: Array<{ value: string; label: string; count: number }>;
+  unclassifiedMechanismCount: number;
+  features: Array<{ value: string; label: string; count: number }>;
+  coverage: Array<{ key: string; label: string; count: number }>;
+};
+
+export async function getStaticPaths() {
+  const entries = (await getCollection('providers')).filter((entry) => entry.data.status === 'published');
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const gameEntries = await getCollection('games');
+const presentation = buildProviderHubProjection(entry, gameEntries, {
+  mechanismLabels: winMechanismLabels,
+  featureLabels,
+}) as ProviderPresentation;
+const { provider, providerSlug, games, sampleSize, hasGames, showStatistics } = presentation;
+const explorerUrl = gamesIndexUrl({ provider: providerSlug });
+const updatedDate = provider.updatedAt.toISOString().slice(0, 10);
 ---
-<BaseLayout title={`${entry.data.name}｜遊戲廠商｜Slot Hub`} description={entry.data.summary} canonicalPath={providerUrl(entry.id)}><article class="detail-page shell"><a class="back-link" href="/providers/">← 返回遊戲廠商</a><div class="provider-hero">{entry.data.logo?<div class="provider-monogram provider-logo"><img src={entry.data.logo.src} alt={entry.data.logo.alt}/></div>:<div class="provider-monogram">{entry.data.name.slice(0,2).toUpperCase()}</div>}<div><p class="eyebrow">PROVIDER / {entry.data.roles.map(r=>providerRoleLabels[r]??r).join(' + ')}</p><h1>{entry.data.name}</h1><p>{entry.data.summary}</p><a class="inline-link" href={entry.data.officialUrl} rel="nofollow">官方網站 ↗</a>{entry.data.logo&&<p class="media-credit"><a href={entry.data.logo.sourceUrl} rel="nofollow">Logo 來源 ↗</a> · 取得日期 {entry.data.logo.retrievedAt.toISOString().slice(0,10)}</p>}</div></div><section class="section"><div class="section-head"><h2>目前收錄遊戲</h2><p>{games.length} 款已收錄資料</p></div><div class="simple-game-list">{games.map(g=><a href={gameUrl(g.id)}><span class="bilingual-list-title"><strong>{g.data.displayNameZhHant??g.data.originalName??g.data.name}</strong>{g.data.displayNameZhHant&&<small>{g.data.originalName??g.data.name}</small>}</span><span>{g.data.rtp?`RTP ${g.data.rtp}%`:'數值整理中'} →</span></a>)}</div></section></article></BaseLayout>
+
+<BaseLayout
+  title={`${provider.name}｜遊戲廠商｜Slot Hub`}
+  description={provider.summary}
+  canonicalPath={providerUrl(providerSlug)}
+>
+  <article class="detail-page shell provider-detail-v2">
+    <a class="back-link" href="/providers/">← 返回遊戲廠商</a>
+
+    <header class="provider-hero">
+      {provider.logo
+        ? <div class="provider-monogram provider-logo"><img src={provider.logo.src} alt={provider.logo.alt} /></div>
+        : <div class="provider-monogram">{provider.name.slice(0, 2).toUpperCase()}</div>}
+      <div>
+        <p class="eyebrow">PROVIDER / {provider.roles.map((role) => providerRoleLabels[role] ?? role).join(' + ')}</p>
+        <h1>{provider.name}</h1>
+        <p>{provider.summary}</p>
+        {provider.parentOrganization && <p class="provider-parent"><strong>母組織：</strong>{provider.parentOrganization}</p>}
+        <a class="inline-link provider-primary-link" href={provider.officialUrl} rel="nofollow">官方網站 ↗</a>
+      </div>
+    </header>
+
+    <section class="provider-sample-disclosure" aria-labelledby="provider-sample-title">
+      <p class="eyebrow">SLOT HUB SAMPLE</p>
+      <h2 id="provider-sample-title">Slot Hub 收錄範圍</h2>
+      {hasGames
+        ? <p>以下只整理 Slot Hub 目前收錄、歸類於此 Provider 的 {sampleSize} 款遊戲，不代表該 Provider 的完整產品線。</p>
+        : <p>Slot Hub 目前尚未收錄此廠商已公開的遊戲。</p>}
+      <p class="provider-owner-note">這是 Slot Hub 用來整理遊戲資料的廠商歸類，不必然代表唯一開發商、發行商、母公司或合作關係。</p>
+    </section>
+
+    {hasGames && (
+      <section class="section provider-games" aria-labelledby="provider-games-title">
+        <div class="section-head">
+          <h2 id="provider-games-title">目前收錄遊戲</h2>
+          <p>Slot Hub 收錄 {sampleSize} 款</p>
+        </div>
+        <div class="simple-game-list">
+          {games.map((game) => (
+            <a href={gameUrl(game.slug)}>
+              <span class="bilingual-list-title">
+                <strong>{game.displayNameZhHant ?? game.originalName ?? game.name}</strong>
+                {game.displayNameZhHant && <small>{game.originalName ?? game.name}</small>}
+              </span>
+              <span>{game.rtp !== undefined ? `RTP ${game.rtp}%` : 'RTP 尚未核實'} →</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {showStatistics && (
+      <section class="provider-sample-stats" aria-labelledby="provider-patterns-title">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">CURRENT SAMPLE</p>
+            <h2 id="provider-patterns-title">玩法與功能樣本</h2>
+          </div>
+          <p>以下為 Slot Hub 目前收錄的 {sampleSize} 款遊戲原始計數。</p>
+        </div>
+
+        <div class="provider-stat-groups">
+          <section aria-labelledby="provider-mechanisms-title">
+            <h3 id="provider-mechanisms-title">主要賠付機制</h3>
+            {presentation.mechanisms.length > 0 && (
+              <ul class="provider-stat-list">
+                {presentation.mechanisms.map((item) => <li><strong>{item.label}</strong><span>{item.count}/{sampleSize} 款</span></li>)}
+              </ul>
+            )}
+            {presentation.unclassifiedMechanismCount > 0 && (
+              <p class="provider-unclassified">主要機制尚未細分：{presentation.unclassifiedMechanismCount}/{sampleSize} 款</p>
+            )}
+          </section>
+
+          <section aria-labelledby="provider-features-title">
+            <h3 id="provider-features-title">已記錄功能</h3>
+            <ul class="provider-stat-list">
+              {presentation.features.map((item) => <li><strong>{item.label}</strong><span>已記錄包含 {item.count}/{sampleSize}</span></li>)}
+            </ul>
+            <p class="provider-stat-note">同一款遊戲可能包含多個功能，因此各項數字不會相加等於 {sampleSize}；未列出的功能也不表示已核實不存在。</p>
+          </section>
+        </div>
+      </section>
+    )}
+
+    {showStatistics && (
+      <section class="provider-coverage" aria-labelledby="provider-coverage-title">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">DATA AVAILABILITY</p>
+            <h2 id="provider-coverage-title">目前資料可查到什麼</h2>
+          </div>
+          <p>分子只表示具有明確已記錄值的 published Game 數量，不是支援數、品質或完整度。</p>
+        </div>
+        <dl class="provider-coverage-list">
+          {presentation.coverage.map((item) => <div><dt>{item.label}</dt><dd>{item.count}/{sampleSize}</dd></div>)}
+        </dl>
+      </section>
+    )}
+
+    {hasGames && (
+      <div class="provider-explorer-callout">
+        <div>
+          <p class="eyebrow">FILTERED EXPLORER</p>
+          <h2>在遊戲庫繼續探索</h2>
+          <p>以既有 Provider 條件開啟完整遊戲庫；可再加入玩法、功能或資料條件。</p>
+        </div>
+        <a class="button primary provider-explorer-cta" href={explorerUrl}>查看 Slot Hub 收錄的 {sampleSize} 款遊戲</a>
+      </div>
+    )}
+
+    <section class="provider-sources" aria-labelledby="provider-sources-title">
+      <p class="eyebrow">SOURCES</p>
+      <h2 id="provider-sources-title">Provider 資料來源</h2>
+      <ul>
+        <li><a href={provider.officialUrl} rel="nofollow">官方網站 ↗</a></li>
+        <li><a href={provider.source.url} rel="nofollow">{provider.source.label} ↗</a></li>
+        {provider.logo && <li><a href={provider.logo.sourceUrl} rel="nofollow">Logo 來源 ↗</a>（取得日期 {provider.logo.retrievedAt.toISOString().slice(0, 10)}）</li>}
+      </ul>
+      <p><strong>Provider 資料更新：</strong>{updatedDate}</p>
+      <p class="provider-source-note">此日期代表本站 Provider 資料紀錄的更新時間，不代表官方網站所有資訊均在當日發布。個別遊戲的來源與核對日期仍以各 Game detail 為準。</p>
+    </section>
+  </article>
+</BaseLayout>

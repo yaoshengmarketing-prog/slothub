@@ -1,4 +1,55 @@
 ---
-import {getCollection} from 'astro:content';import BaseLayout from '../../layouts/BaseLayout.astro';import {providerUrl} from '../../lib/urls';import {providerRoleLabels} from '../../lib/taxonomy';const providers=(await getCollection('providers')).filter(x=>x.data.status==='published');const games=(await getCollection('games')).filter(x=>x.data.status==='published');
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { buildProviderHubIndex } from '../../lib/provider-hub.mjs';
+import { providerUrl } from '../../lib/urls';
+import { featureLabels, providerRoleLabels, winMechanismLabels } from '../../lib/taxonomy';
+
+type ProviderIndexItem = {
+  providerSlug: string;
+  sampleSize: number;
+  provider: {
+    name: string;
+    roles: string[];
+    summary: string;
+    logo?: { src: string; alt: string };
+  };
+};
+
+const [providerEntries, gameEntries] = await Promise.all([
+  getCollection('providers'),
+  getCollection('games'),
+]);
+const providers = buildProviderHubIndex(providerEntries, gameEntries, {
+  mechanismLabels: winMechanismLabels,
+  featureLabels,
+}) as ProviderIndexItem[];
 ---
-<BaseLayout title="遊戲廠商｜Slot Hub" description="瀏覽 Slot Hub 已整理的遊戲開發商及旗下遊戲資料。" canonicalPath="/providers/"><section class="page-hero shell"><p class="eyebrow">PROVIDER INDEX</p><h1>遊戲廠商</h1><p>目前收錄 {providers.length} 家廠商；廠商、發行商與聚合平台可具有多重角色。</p></section><section class="section shell provider-list">{providers.map(p=><a href={providerUrl(p.id)}>{p.data.logo?<span class="provider-logo"><img src={p.data.logo.src} alt={p.data.logo.alt} loading="lazy"/></span>:<span>{p.data.name.slice(0,2).toUpperCase()}</span>}<div><small>{p.data.roles.map(r=>providerRoleLabels[r]??r).join(' / ')}</small><h2>{p.data.name}</h2><p>{p.data.summary}</p></div><b>{games.filter(g=>g.data.provider===p.id).length} 款 →</b></a>)}</section></BaseLayout>
+
+<BaseLayout
+  title="遊戲廠商｜Slot Hub"
+  description="瀏覽 Slot Hub 已整理的遊戲開發商及目前收錄的遊戲資料。"
+  canonicalPath="/providers/"
+>
+  <section class="page-hero shell">
+    <p class="eyebrow">PROVIDER INDEX</p>
+    <h1>遊戲廠商</h1>
+    <p>目前收錄 {providers.length} 家 Provider；廠商、發行商與聚合平台可具有多重角色。</p>
+    <p class="provider-scope-note">遊戲數量只代表 Slot Hub 目前已收錄、已有資料紀錄的作品，不是各 Provider 的完整遊戲目錄。</p>
+  </section>
+  <section class="section shell provider-list" aria-label="Provider 清單">
+    {providers.map(({ providerSlug, provider, sampleSize }) => (
+      <a href={providerUrl(providerSlug)}>
+        {provider.logo
+          ? <span class="provider-logo"><img src={provider.logo.src} alt={provider.logo.alt} loading="lazy" /></span>
+          : <span>{provider.name.slice(0, 2).toUpperCase()}</span>}
+        <div>
+          <small>{provider.roles.map((role) => providerRoleLabels[role] ?? role).join(' / ')}</small>
+          <h2>{provider.name}</h2>
+          <p>{provider.summary}</p>
+        </div>
+        <b>Slot Hub 收錄 {sampleSize} 款 →</b>
+      </a>
+    ))}
+  </section>
+</BaseLayout>
