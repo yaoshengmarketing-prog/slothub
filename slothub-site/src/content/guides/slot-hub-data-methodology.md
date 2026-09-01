@@ -4,7 +4,7 @@ description: 了解 Slot Hub 如何保留原廠資料、建立統一顯示、處
 category: data
 level: beginner
 tags: [資料方法, 資料來源, 缺值, 原廠資料, 統一值, 資料可信度]
-status: draft
+status: published
 publishedAt: 2026-09-02
 updatedAt: 2026-09-02
 ---
