@@ -26,6 +26,7 @@ export type GameCatalogItem = {
   volatilityOriginal?: string;
   volatilityNormalized?: string;
   maxWinMultiplier?: number;
+  maxWinLabelOriginal?: string;
   reels?: string;
   rows?: number;
   winMechanism?: string;
@@ -36,6 +37,7 @@ export type GameCatalogItem = {
   bonusFeatures: string[];
   bonusBuy?: boolean;
   releaseDate?: string;
+  lastVerifiedAt?: string;
   editorialFeatured: boolean;
   searchTerms: string[];
   url: string;
@@ -102,6 +104,7 @@ export function projectPublishedGames(
         volatilityOriginal: game.data.volatilityOriginal,
         volatilityNormalized: normalizedVolatility,
         maxWinMultiplier: game.data.maxWinMultiplier,
+        maxWinLabelOriginal: game.data.maxWinLabelOriginal,
         reels: game.data.reels,
         rows: game.data.rows,
         winMechanism: game.data.winMechanism,
@@ -112,6 +115,7 @@ export function projectPublishedGames(
         bonusFeatures: game.data.bonusFeatures,
         bonusBuy: game.data.bonusBuy,
         releaseDate: game.data.releaseDate?.toISOString().slice(0, 10),
+        lastVerifiedAt: game.data.lastVerifiedAt?.toISOString().slice(0, 10),
         editorialFeatured: game.data.editorialFeatured,
         searchTerms: uniqueTerms([
           providerNames.get(game.data.provider) ?? game.data.provider,

@@ -74,6 +74,13 @@ assert.ok(
 );
 assert.match(header, /readStoredCompare/);
 assert.match(header, /link\.href = compareStateUrl\(selected\)/);
+assert.match(compare, /<table className="compare-table"/, 'Compare v2 must use a semantic table');
+assert.match(compare, /scope="col"/, 'Compare game identities must be column headers');
+assert.match(compare, /scope="row"/, 'Compare fields must be row headers');
+assert.match(compare, /scope="rowgroup"/, 'Compare sections must have semantic row-group headers');
+assert.doesNotMatch(compare, /compare-section-row[^\n]*scope="colgroup"/, 'Compare section headers must not claim column-group scope');
+assert.match(compare, /CORE_FEATURES\.filter/, 'Compare must preserve the existing core Feature projection');
+assert.doesNotMatch(compare, /Game ID/, 'Game ID must remain outside the primary comparison matrix');
 assert.match(styles, /\.topic-grid a,\.knowledge-grid>a,\.tool-grid>a\{/, 'Knowledge card dimensions must only apply to direct child cards');
 
 for (const [name, text] of [['home', home], ['provider index', providerIndex], ['provider detail', providerDetail], ['fishing', fishing]]) {

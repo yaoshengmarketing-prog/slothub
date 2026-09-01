@@ -1,13 +1,16 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
-import type { CSSProperties, ReactNode } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import type { ReactNode } from 'react';
 import type { GameCatalogItem as Game } from '../lib/game-catalog';
 import { featureLabels, volatilityLabels, winMechanismLabels } from '../lib/taxonomy';
+import {
+  COMPARE_MISSING, COMPARE_NORMALIZED_MISSING, COMPARE_ORIGINAL_MISSING,
+  bonusBuyLabel, compareGridLabel, compareWinCountLabel, formatCompareDate,
+} from '../lib/compare-presentation.mjs';
 import {
   COMPARE_STORAGE_KEY, compareStateUrl, normalizeCompareSlugs, readCompareQuery,
   readStoredCompare, writeCanonicalHistory,
 } from '../lib/core-flow-state.mjs';
 
-const EMPTY = '—';
 const CORE_FEATURES = [
   'free-spins', 'wild', 'scatter', 'multiplier', 'hold-and-spin', 'cascading',
   'respins', 'cash-collection', 'jackpot',
@@ -19,29 +22,8 @@ function initialSelection(valid: string[]) {
 }
 
 function mechanismLabel(game: Game) {
-  if (game.mechanismLabel) return game.mechanismLabel;
-  if (game.winMechanism && game.winMechanism !== 'other') return winMechanismLabels[game.winMechanism] ?? game.winMechanism;
-  const legacy = game.paylines?.toLowerCase() ?? '';
-  if (legacy.includes('pay anywhere')) return winMechanismLabels['pay-anywhere'];
-  if (legacy.includes('scatter')) return '散佈賠付';
-  if (legacy.includes('ways')) return '多路贏法';
-  return game.winMechanism === 'other' ? '其他' : EMPTY;
-}
-
-function gridLabel(game: Game) {
-  if (game.reels && /[x×]/i.test(game.reels)) return game.reels.replace(/\s*[x×]\s*/i, ' × ');
-  if (game.reels && game.rows !== undefined) return `${game.reels} × ${game.rows}`;
-  if (game.reels) return game.reels;
-  if (game.rows !== undefined) return `${game.rows} 列`;
-  return EMPTY;
-}
-
-function winCountLabel(game: Game) {
-  if (game.winCount === undefined) return EMPTY;
-  const count = game.winCount.toLocaleString('en-US');
-  if (game.winMechanism === 'paylines') return `${count} 條`;
-  if (game.winMechanism === 'ways-to-win' || game.winMechanism === 'megaways') return `${count} 路`;
-  return count;
+  if (!game.winMechanism) return COMPARE_MISSING;
+  return winMechanismLabels[game.winMechanism] ?? game.winMechanism;
 }
 
 function coreFeatures(game: Game) {
@@ -49,32 +31,128 @@ function coreFeatures(game: Game) {
   return CORE_FEATURES.filter((feature) => present.has(feature)).slice(0, 6);
 }
 
-type CompareRow = { label: string; render: (game: Game) => ReactNode };
-
-function CompareArtwork({ game, compact = false }: { game: Game; compact?: boolean }) {
+function CompareArtwork({ game }: { game: Game }) {
   if (game.image) {
-    return <div className={compact ? 'compare-sticky-image' : 'compare-image'}><img src={game.image.src} alt={game.image.alt} /></div>;
+    return <div className="compare-image"><img src={game.image.src} alt={game.image.alt} /></div>;
   }
-
-  return <div className={`${compact ? 'compare-sticky-image' : 'compare-image'} compare-image-placeholder`} role="img" aria-label={`${game.name} 尚無圖片`}>SH</div>;
+  return <div className="compare-image compare-image-placeholder" role="img" aria-label={`${game.name} 尚無圖片`}>SH</div>;
 }
 
-function CompareIdentity({ game, compact = false }: { game: Game; compact?: boolean }) {
-  return <div className={compact ? 'compare-sticky-identity' : 'compare-identity'}>
+function CompareIdentity({ game }: { game: Game }) {
+  return <div className="compare-identity">
     <a href={game.url}>{game.name}</a>
     {game.displayNameZhHant && <small>{game.originalName}</small>}
     {(game.seriesNameZhHant || game.installment) && <span className="compare-series">
-      {game.seriesNameZhHant && <span className="series-name">{game.seriesNameZhHant}</span>}
+      {game.seriesNameZhHant && <span>{game.seriesNameZhHant}</span>}
       {game.installment && <span className="compare-installment">第 {game.installment} 代</span>}
     </span>}
   </div>;
 }
 
+function RtpValue({ game }: { game: Game }) {
+  const variants = game.rtpVariants ?? [];
+  return <div className="compare-value-stack">
+    {game.rtp !== undefined
+      ? <><small className="compare-primary-label">主要顯示值</small><span>{game.rtp}%</span></>
+      : <span>{COMPARE_MISSING}</span>}
+    {variants.length > 0 && <details className="compare-details">
+      <summary>查看 {variants.length} 個已核實版本</summary>
+      <ul>{variants.map((value) => <li key={value}>{value}%</li>)}</ul>
+    </details>}
+  </div>;
+}
+
+function VolatilityValue({ game, normalized = false }: { game: Game; normalized?: boolean }) {
+  if (!normalized) return game.volatilityOriginal ?? COMPARE_ORIGINAL_MISSING;
+  if (game.volatilityNormalized) return volatilityLabels[game.volatilityNormalized] ?? game.volatilityNormalized;
+  return game.volatilityOriginal ? COMPARE_NORMALIZED_MISSING : COMPARE_MISSING;
+}
+
+function MaxWinValue({ game, original = false }: { game: Game; original?: boolean }) {
+  if (original) {
+    if (game.maxWinLabelOriginal) return game.maxWinLabelOriginal;
+    return game.maxWinMultiplier !== undefined
+      ? <span className="compare-caution">未取得原廠標籤；比較時需保留基準限制</span>
+      : COMPARE_MISSING;
+  }
+  return game.maxWinMultiplier !== undefined
+    ? `${game.maxWinMultiplier.toLocaleString('en-US')}×`
+    : COMPARE_MISSING;
+}
+
+function StructureValue({ game }: { game: Game }) {
+  const count = compareWinCountLabel(game.winMechanism, game.winCount);
+  return <div className="compare-value-stack">
+    <span>{count}</span>
+    {game.paylines && <small>原文：{game.paylines}</small>}
+  </div>;
+}
+
+function FeatureValue({ game }: { game: Game }) {
+  const features = coreFeatures(game);
+  return features.length
+    ? <ul className="compare-feature-tags">{features.map((feature) => <li key={feature}>{featureLabels[feature] ?? feature}</li>)}</ul>
+    : COMPARE_MISSING;
+}
+
+type CompareRow = {
+  key: string;
+  label: string;
+  help?: string;
+  render: (game: Game) => ReactNode;
+};
+
+type CompareSection = {
+  key: string;
+  title: string;
+  rows: CompareRow[];
+};
+
+const sections: CompareSection[] = [
+  {
+    key: 'identity',
+    title: '遊戲身份',
+    rows: [
+      { key: 'provider', label: 'Provider', render: (game) => game.providerName || COMPARE_MISSING },
+      { key: 'series', label: 'Series', render: (game) => game.seriesNameZhHant ?? '未建立正式系列資料' },
+      { key: 'release', label: 'Release date', render: (game) => formatCompareDate(game.releaseDate) },
+    ],
+  },
+  {
+    key: 'core-data',
+    title: '核心數據',
+    rows: [
+      { key: 'rtp', label: 'RTP', help: '長期理論比例，不代表單次或短期結果。', render: (game) => <RtpValue game={game} /> },
+      { key: 'volatility-original', label: '原廠波動度', help: '保留原廠文字或尺度，不直接跨 Provider 排名。', render: (game) => <VolatilityValue game={game} /> },
+      { key: 'volatility-normalized', label: 'Slot Hub 統一波動度', help: '編輯統一顯示，不是產業共同精確尺度。', render: (game) => <VolatilityValue game={game} normalized /> },
+      { key: 'max-win', label: '統一 Max Win', help: '最高上限不代表常見結果或出現頻率。', render: (game) => <MaxWinValue game={game} /> },
+      { key: 'max-win-original', label: 'Max Win 原廠標籤／基準', help: '原始標籤與投注基準不同時，不可視為完全同質。', render: (game) => <MaxWinValue game={game} original /> },
+    ],
+  },
+  {
+    key: 'structure',
+    title: '玩法結構',
+    rows: [
+      { key: 'mechanism', label: '主要賠付機制', help: '類別描述得獎方式，不代表數字高低或優劣。', render: mechanismLabel },
+      { key: 'win-count', label: '賠線／Ways', help: '條、路與動態上限的語意不同，不能只比較數字。', render: (game) => <StructureValue game={game} /> },
+      { key: 'grid', label: '盤面', help: '固定盤面才格式化；動態或描述型資料保留原文。', render: (game) => compareGridLabel(game.reels, game.rows) },
+    ],
+  },
+  {
+    key: 'trust',
+    title: '功能與資料可信度',
+    rows: [
+      { key: 'bonus-buy', label: 'Bonus Buy', help: '缺值只代表尚未核實，不等於不支援。', render: (game) => bonusBuyLabel(game.bonusBuy) },
+      { key: 'features', label: '核心 Features', help: '功能清單只協助辨識，不以數量判定遊戲優劣。', render: (game) => <FeatureValue game={game} /> },
+      { key: 'sources', label: '完整資料與來源', render: (game) => <a className="compare-source-link" href={game.url}>查看完整資料與來源</a> },
+      { key: 'verified', label: '這款資料最後核對日期', help: '代表整筆資料的核對時間，不等於每個欄位在該日由原廠重新發布。', render: (game) => formatCompareDate(game.lastVerifiedAt) },
+    ],
+  },
+];
+
 export default function CompareWorkspace({ games }: { games: Game[] }) {
   const valid = useMemo(() => games.map((game) => game.slug), [games]);
   const [selected, setSelected] = useState<string[]>(() => initialSelection(valid));
-  const [tableScrolled, setTableScrolled] = useState(false);
-  const scrollRef = useRef<HTMLDivElement>(null);
   const syncStorage = (next: string[]) => {
     const clean = normalizeCompareSlugs(next, valid);
     setSelected(clean);
@@ -98,50 +176,42 @@ export default function CompareWorkspace({ games }: { games: Game[] }) {
     return () => removeEventListener('popstate', restore);
   }, [valid.join('|')]);
   const picked = selected.map((slug) => games.find((game) => game.slug === slug)).filter(Boolean) as Game[];
-  useEffect(() => {
-    const element = scrollRef.current;
-    if (!element) return;
-    const updateStickyState = () => setTableScrolled(element.scrollTop > 16);
-    element.addEventListener('scroll', updateStickyState, { passive: true });
-    updateStickyState();
-    return () => element.removeEventListener('scroll', updateStickyState);
-  }, [picked.length]);
-
-  const rows: CompareRow[] = [
-    { label: '廠商', render: (game) => game.providerName || EMPTY },
-    { label: '主要 RTP', render: (game) => <div className="compare-rtp"><span>{game.rtp !== undefined ? `${game.rtp}%` : EMPTY}</span>{(game.rtpVariants?.length ?? 0) > 1 && <small>多版本</small>}</div> },
-    { label: '統一波動度', render: (game) => game.volatilityNormalized ? volatilityLabels[game.volatilityNormalized] ?? game.volatilityNormalized : EMPTY },
-    { label: '最高倍數', render: (game) => game.maxWinMultiplier !== undefined ? `${game.maxWinMultiplier.toLocaleString('en-US')}×` : EMPTY },
-    { label: '賠付機制', render: mechanismLabel },
-    { label: '軸數 × 列數', render: gridLabel },
-    { label: '賠線／Ways 數量', render: winCountLabel },
-    { label: 'Bonus Buy', render: (game) => game.bonusBuy === true ? '有' : game.bonusBuy === false ? '無' : '未確認' },
-    { label: '核心 Features', render: (game) => {
-      const features = coreFeatures(game);
-      return features.length ? <ul className="compare-feature-tags">{features.map((feature) => <li key={feature}>{featureLabels[feature] ?? feature}</li>)}</ul> : EMPTY;
-    } },
-  ];
 
   return <div className="compare-workspace">
+    <aside className="compare-reading-note" aria-label="比較資料閱讀提醒">
+      <strong>先看資料定義，再看數字差異</strong>
+      <p>RTP、波動度與 Max Win 回答不同問題；本表不計算贏家、勝率或推薦排名。</p>
+    </aside>
     <div className="compare-picker"><label htmlFor="compare-select">加入比較（最多三款）</label><select id="compare-select" value="" onChange={(event) => event.target.value && commit([...selected, event.target.value], 'push')} disabled={selected.length >= 3}><option value="">選擇遊戲</option>{games.filter((game) => !selected.includes(game.slug)).map((game) => <option key={game.slug} value={game.slug}>{game.name}{game.displayNameZhHant ? ` / ${game.originalName}` : ''} — {game.providerName}</option>)}</select></div>
     {picked.length ? <>
-      <div ref={scrollRef} className={`compare-scroll ${tableScrolled ? 'is-scrolled' : ''}`} tabIndex={0} aria-label="遊戲比較表，可上下及左右捲動">
-        <div className="compare-sticky-bar" data-cols={picked.length} style={{ '--cols': picked.length } as CSSProperties} aria-hidden={!tableScrolled}>
-          <div className="compare-sticky-label">遊戲名稱</div>
-          {picked.map((game) => <div className="compare-sticky-head" key={`sticky-${game.slug}`}>
-            <CompareArtwork game={game} compact />
-            <CompareIdentity game={game} compact />
-          </div>)}
+      <div className="compare-scroll" tabIndex={0} aria-label="遊戲比較表，可上下及左右捲動" onScroll={(event) => {
+        const head = event.currentTarget.querySelector('thead');
+        const threshold = head ? head.offsetTop + head.offsetHeight : Number.POSITIVE_INFINITY;
+        event.currentTarget.classList.toggle('is-scrolled', event.currentTarget.scrollTop >= threshold);
+      }}>
+        <div className="compare-sticky-bar" data-cols={picked.length} aria-hidden="true">
+          <div className="compare-sticky-label">比較欄位</div>
+          {picked.map((game) => <div className="compare-sticky-head" key={`sticky-${game.slug}`}><span>{game.name}</span></div>)}
         </div>
-        <div className="compare-table" data-cols={picked.length} style={{ '--cols': picked.length } as CSSProperties}>
-          <div className="compare-label compare-corner">遊戲名稱</div>
-          {picked.map((game) => <div className="compare-head" key={game.slug}>
-            <CompareArtwork game={game} />
-            <CompareIdentity game={game} />
-            <button aria-label={`從比較中移除 ${game.name}`} onClick={() => commit(selected.filter((slug) => slug !== game.slug), 'push')}>移除</button>
-          </div>)}
-          {rows.flatMap((row) => [<div className="compare-label" key={`${row.label}-label`}>{row.label}</div>, ...picked.map((game) => <div className="compare-value" key={`${row.label}-${game.slug}`}>{row.render(game)}</div>)])}
-        </div>
+        <table className="compare-table" data-cols={picked.length}>
+          <caption>最多三款遊戲的資料判讀比較</caption>
+          <colgroup><col className="compare-field-column" />{picked.map((game) => <col className="compare-game-column" key={`col-${game.slug}`} />)}</colgroup>
+          <thead><tr>
+            <th className="compare-corner" scope="col">比較欄位</th>
+            {picked.map((game) => <th className="compare-head" scope="col" key={game.slug}>
+              <CompareArtwork game={game} />
+              <CompareIdentity game={game} />
+              <button aria-label={`從比較中移除 ${game.name}`} onClick={() => commit(selected.filter((slug) => slug !== game.slug), 'push')}>移除</button>
+            </th>)}
+          </tr></thead>
+          {sections.map((section) => <tbody aria-labelledby={`compare-section-${section.key}`} key={section.key}>
+            <tr className="compare-section-row"><th id={`compare-section-${section.key}`} colSpan={picked.length + 1} scope="rowgroup">{section.title}</th></tr>
+            {section.rows.map((row) => <tr key={row.key}>
+              <th className="compare-label" scope="row"><span>{row.label}</span>{row.help && <small>{row.help}</small>}</th>
+              {picked.map((game) => <td className="compare-value" key={`${row.key}-${game.slug}`}>{row.render(game)}</td>)}
+            </tr>)}
+          </tbody>)}
+        </table>
       </div>
       <button className="text-button compare-clear" onClick={() => commit([], 'push')}>清除全部</button>
     </> : <div className="empty-result"><strong>先選擇兩至三款遊戲</strong><p>比較表只呈現資料庫中已有的欄位，不會為了填滿表格補造資料。</p></div>}

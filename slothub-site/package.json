@@ -14,12 +14,13 @@
     "verify:search": "node scripts/test-search.mjs",
     "verify:explorer": "node scripts/test-game-explorer.mjs",
     "verify:core-flow": "node scripts/test-core-flow.mjs",
+    "verify:compare-data": "node scripts/verify-compare-data.mjs",
     "verify:relationships": "node scripts/verify-guide-relationships.mjs",
     "verify:relationship-ui": "node scripts/verify-guide-relationship-ui.mjs",
     "verify:diagrams": "node scripts/verify-guide-diagrams.mjs",
     "verify:similar-play": "node scripts/verify-similar-play.mjs",
     "verify:data": "node scripts/audit-game-data.mjs",
-    "verify": "npm run verify:data && npm run verify:search && npm run verify:explorer && npm run verify:core-flow && npm run verify:relationships && npm run check && npm run build && npm run verify:build && npm run verify:game-detail && npm run verify:similar-play && npm run verify:relationship-ui && npm run verify:diagrams && npm run verify:links"
+    "verify": "npm run verify:data && npm run verify:search && npm run verify:explorer && npm run verify:core-flow && npm run verify:compare-data && npm run verify:relationships && npm run check && npm run build && npm run verify:build && npm run verify:game-detail && npm run verify:similar-play && npm run verify:relationship-ui && npm run verify:diagrams && npm run verify:links"
   },
   "dependencies": {
     "@astrojs/react": "latest",

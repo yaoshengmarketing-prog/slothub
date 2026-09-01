@@ -65,6 +65,7 @@ const checks = [
   [tools.includes('全站搜尋') && tools.includes('遊戲探索器') && tools.includes('三款遊戲比較'), 'Tool index is incomplete'],
   [guides.includes('新手入門') && guides.includes('遊戲機制') && guides.includes('捕魚機教學'), 'Guide topics are incomplete'],
   [!compare.includes('先選擇兩至三款遊戲'), 'Compare page must not server-render the transient empty state'],
+  [compare.includes('比較工具需要 JavaScript') && compare.includes('href="/games/"'), 'Compare no-JavaScript fallback is missing'],
 ];
 
 for (const [passed, message] of checks) {
