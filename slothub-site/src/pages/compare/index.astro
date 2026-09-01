@@ -2,7 +2,9 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CompareWorkspace from '../../components/CompareWorkspace';
 import { loadPublishedGameCatalog } from '../../lib/game-catalog';
+import { loadPublishedDataMethodologyEntry } from '../../lib/data-methodology';
 
 const { games } = await loadPublishedGameCatalog();
+const methodology = await loadPublishedDataMethodologyEntry();
 ---
-<BaseLayout title="遊戲比較｜Slot Hub" description="最多選擇三款遊戲，比較廠商、RTP、波動度與遊戲機制。" canonicalPath="/compare/" robots="noindex,follow"><section class="page-hero shell"><p class="eyebrow">COMPARE / MAX 3</p><h1>遊戲比較</h1><p>分享網址會保留選擇；無效或重複的遊戲代碼會自動忽略。</p></section><section class="section shell compare-stage"><noscript><div class="compare-noscript"><strong>比較工具需要 JavaScript</strong><p>開啟 JavaScript 後可恢復分享網址中的比較狀態；你仍可前往遊戲庫逐款查看已核實資料。</p><a class="button secondary" href="/games/">前往遊戲庫</a></div></noscript><CompareWorkspace games={games} client:only="react"/></section></BaseLayout>
+<BaseLayout title="遊戲比較｜Slot Hub" description="最多選擇三款遊戲，比較廠商、RTP、波動度與遊戲機制。" canonicalPath="/compare/" robots="noindex,follow"><section class="page-hero shell"><p class="eyebrow">COMPARE / MAX 3</p><h1>遊戲比較</h1><p>分享網址會保留選擇；無效或重複的遊戲代碼會自動忽略。</p></section><section class="section shell compare-stage">{methodology && <p class="compare-methodology-entry"><a class="data-methodology-link" href={methodology.url} data-methodology-entry="compare">閱讀資料方法與可信度 →</a></p>}<noscript><div class="compare-noscript"><strong>比較工具需要 JavaScript</strong><p>開啟 JavaScript 後可恢復分享網址中的比較狀態；你仍可前往遊戲庫逐款查看已核實資料。</p><a class="button secondary" href="/games/">前往遊戲庫</a></div></noscript><CompareWorkspace games={games} client:only="react"/></section></BaseLayout>

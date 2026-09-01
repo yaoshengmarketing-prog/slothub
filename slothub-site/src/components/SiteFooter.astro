@@ -1,4 +1,13 @@
+---
+import { loadPublishedDataMethodologyEntry } from '../lib/data-methodology';
+
+const methodology = await loadPublishedDataMethodologyEntry();
+---
+
 <footer class="site-footer">
   <div><strong>SLOT HUB</strong><p>老虎機與電子遊戲的資料、知識與探索平台。</p></div>
-  <p>本站提供遊戲資訊與資料整理，不提供遊戲、下注或結果預測服務。</p>
+  <div class="site-footer-info">
+    <p>本站提供遊戲資訊與資料整理，不提供遊戲、下注或結果預測服務。</p>
+    {methodology && <a class="data-methodology-link" href={methodology.url} data-methodology-entry="footer">資料方法與可信度 →</a>}
+  </div>
 </footer>

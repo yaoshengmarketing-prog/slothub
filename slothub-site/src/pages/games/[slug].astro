@@ -6,6 +6,7 @@ import { absoluteUrl, gameUrl, gamesIndexUrl, providerUrl } from '../../lib/urls
 import { featureLabels, jackpotTypeLabels, primaryTypeLabels, volatilityLabels, winMechanismLabels } from '../../lib/taxonomy';
 import { buildGameDetailKnowledgePresentation, loadGuideRelationshipIndex, relationshipLabel, type GameDetailFieldPlacement } from '../../lib/guide-relationship-catalog';
 import { buildSimilarPlayPresentation } from '../../lib/similar-play.mjs';
+import { loadPublishedDataMethodologyEntry } from '../../lib/data-methodology';
 
 export async function getStaticPaths() {
   const games = (await getCollection('games')).filter((game) => game.data.status === 'published');
@@ -19,6 +20,7 @@ const allGames = gameEntries.filter((game) => game.data.status === 'published');
 const provider = providers.find((item) => item.id === entry.data.provider);
 const providerNames = new Map(providers.map((item) => [item.id, item.data.name]));
 const relationshipIndex = await loadGuideRelationshipIndex();
+const dataMethodology = await loadPublishedDataMethodologyEntry();
 const knowledgePresentation = buildGameDetailKnowledgePresentation(
   relationshipIndex.gameToGuides[entry.id] ?? [],
   {
@@ -219,7 +221,7 @@ const schema = {
     </section>}
 
     {(sources.length > 0 || entry.data.lastVerifiedAt || entry.data.image) && <section class="game-sources" aria-labelledby="source-title">
-      <div><p class="eyebrow">DATA NOTES</p><h2 id="source-title">資料資訊</h2>{entry.data.lastVerifiedAt && <p>最後核對日期 <strong>{formatDate(entry.data.lastVerifiedAt)}</strong></p>}</div>
+      <div><p class="eyebrow">DATA NOTES</p><h2 id="source-title">資料資訊</h2>{entry.data.lastVerifiedAt && <p>最後核對日期 <strong>{formatDate(entry.data.lastVerifiedAt)}</strong></p>}{dataMethodology && <a class="data-methodology-link" href={dataMethodology.url} data-methodology-entry="game-detail">了解 Slot Hub 如何整理資料 →</a>}</div>
       <ul>
         {sources.map((source) => <li><a href={source.url} rel="nofollow">{source.label} ↗</a><small>核對 {formatDate(source.checkedAt)}</small></li>)}
         {entry.data.image && <li><a href={entry.data.image.sourceUrl} rel="nofollow">圖片來源 ↗</a><small>取得 {formatDate(entry.data.image.retrievedAt)}</small></li>}
