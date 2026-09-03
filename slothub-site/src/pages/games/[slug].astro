@@ -6,6 +6,7 @@ import { absoluteUrl, gameUrl, gamesIndexUrl, providerUrl } from '../../lib/urls
 import { featureLabels, jackpotTypeLabels, primaryTypeLabels, volatilityLabels, winMechanismLabels } from '../../lib/taxonomy';
 import { buildGameDetailKnowledgePresentation, loadGuideRelationshipIndex, relationshipLabel, type GameDetailFieldPlacement } from '../../lib/guide-relationship-catalog';
 import { buildSimilarPlayPresentation } from '../../lib/similar-play.mjs';
+import { buildGameDnaPilot } from '../../lib/game-dna-pilot.mjs';
 import { loadPublishedDataMethodologyEntry } from '../../lib/data-methodology';
 
 export async function getStaticPaths() {
@@ -125,6 +126,18 @@ const similarReasonLabel = (reason: { type: string; value: string | number }) =>
   : featureLabels[String(reason.value)] ?? String(reason.value);
 
 const sources = entry.data.sources.length ? entry.data.sources : [entry.data.source];
+const gameDna = buildGameDnaPilot(entry.id, entry.data);
+const gameDnaMechanism = gameDna?.gameplay.mechanism
+  ? winMechanismLabels[gameDna.gameplay.mechanism] ?? gameDna.gameplay.mechanism
+  : undefined;
+const gameDnaGrid = gameDna?.gameplay.reels
+  ? gameDna.gameplay.reels.replace(/\s*[x×]\s*/i, ' × ')
+  : gameDna?.gameplay.rows ? `${gameDna.gameplay.rows} 列` : undefined;
+const gameDnaWinCount = gameDna?.gameplay.winCount
+  ? gameDna.gameplay.mechanism === 'paylines'
+    ? `${gameDna.gameplay.winCount.toLocaleString()} 條賠線`
+    : `${gameDna.gameplay.winCount.toLocaleString()} 路`
+  : undefined;
 const game = {
   slug: entry.id, name: displayName, originalName, displayNameZhHant: entry.data.displayNameZhHant,
   aliases: entry.data.aliases, seriesId: entry.data.seriesId, seriesNameZhHant: entry.data.seriesNameZhHant,
@@ -177,6 +190,62 @@ const schema = {
     {coreStats.length > 0 && <section class="game-core-stats" aria-labelledby="core-data-title">
       <h2 id="core-data-title">核心數據</h2>
       <dl>{coreStats.map((stat) => <div><dt>{stat.label}</dt><dd>{stat.value}{stat.badge && <small>{stat.badge}</small>}</dd>{knowledgePresentation.fieldGuides[stat.guidePlacement]?.map((match) => <a class="game-field-guide-link" href={match.guide.url} aria-label={`了解${stat.label}：${match.guide.title}`} data-guide-slug={match.guide.slug} data-guide-placement={stat.guidePlacement}>了解這項資料 →</a>)}</div>)}</dl>
+    </section>}
+
+    {gameDna && <section class="game-dna-pilot" aria-labelledby="game-dna-title" data-game-dna-pilot={gameDna.slug}>
+      <header class="game-dna-heading">
+        <p class="eyebrow">DATA FINGERPRINT / SINGLE-GAME PILOT</p>
+        <div>
+          <h2 id="game-dna-title">遊戲 DNA</h2>
+          <p>把同一筆遊戲資料中的玩法、版本與來源放在一起讀；這不是評分或推薦。</p>
+        </div>
+      </header>
+      <div class="game-dna-band">
+        <section class="game-dna-group" aria-labelledby="game-dna-gameplay">
+          <h3 id="game-dna-gameplay">玩法骨架</h3>
+          <dl>
+            {gameDnaMechanism && <div><dt>主要玩法</dt><dd>{gameDnaMechanism}</dd></div>}
+            {gameDnaWinCount && <div><dt>組合數</dt><dd>{gameDnaWinCount}</dd></div>}
+            {gameDnaGrid && <div><dt>盤面</dt><dd>{gameDnaGrid}</dd></div>}
+          </dl>
+          {gameDna.gameplay.features.length > 0 && <ul class="game-dna-features" aria-label="已記錄的遊戲功能">
+            {gameDna.gameplay.features.map((feature: string) => <li>{featureLabels[feature] ?? feature}</li>)}
+          </ul>}
+        </section>
+
+        <section class="game-dna-group" aria-labelledby="game-dna-rtp">
+          <h3 id="game-dna-rtp">RTP 版本</h3>
+          <dl>
+            {gameDna.rtp.primary !== undefined && <div><dt>主要顯示值</dt><dd>{gameDna.rtp.primary}%</dd></div>}
+            <div><dt>已收錄數值</dt><dd>{gameDna.rtp.values.length} 個</dd></div>
+          </dl>
+          <p class="game-dna-note">不同數值需連同版本與來源閱讀，不代表每個市場都可自由選擇。</p>
+        </section>
+
+        <section class="game-dna-group" aria-labelledby="game-dna-labels">
+          <h3 id="game-dna-labels">原廠與統一顯示</h3>
+          <dl>
+            {gameDna.labels.volatilityOriginal && <div><dt>原廠波動度</dt><dd>{gameDna.labels.volatilityOriginal}</dd></div>}
+            {gameDna.labels.volatilityNormalized && <div><dt>Slot Hub 統一值</dt><dd>{volatilityLabels[gameDna.labels.volatilityNormalized] ?? gameDna.labels.volatilityNormalized}</dd></div>}
+            {gameDna.labels.maxWinMultiplier !== undefined && <div><dt>最高倍數</dt><dd>{formatMultiplier(gameDna.labels.maxWinMultiplier)}</dd></div>}
+          </dl>
+          {gameDna.labels.maxWinOriginal && <p class="game-dna-original">原廠標示：{gameDna.labels.maxWinOriginal}</p>}
+          <p class="game-dna-note">數字較大不代表較容易取得；投注基準與成立條件仍以原廠資料為準。</p>
+        </section>
+
+        <section class="game-dna-group game-dna-trust" aria-labelledby="game-dna-trust">
+          <h3 id="game-dna-trust">來源與下一步</h3>
+          <dl>
+            <div><dt>第一方來源</dt><dd>{gameDna.trust.sourceCount} 筆</dd></div>
+            {gameDna.trust.lastVerifiedAt && <div><dt>最後核對</dt><dd>{formatDate(gameDna.trust.lastVerifiedAt)}</dd></div>}
+          </dl>
+          <nav aria-label="繼續閱讀 Mahjong Ways 資料">
+            <a href="#full-data-title">查看完整遊戲資料</a>
+            {similarPlay.items.length > 0 && <a href="#similar-play-title">查看玩法相近</a>}
+            {dataMethodology && <a href={dataMethodology.url}>了解資料整理方式</a>}
+          </nav>
+        </section>
+      </div>
     </section>}
 
     {(fullSpecs.length > 0 || entry.data.features.length > 0) && <section class="game-data-section" aria-labelledby="full-data-title">
