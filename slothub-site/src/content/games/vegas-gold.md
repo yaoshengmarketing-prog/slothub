@@ -26,7 +26,7 @@ releaseDate: 2021-05-31
 gameId: "19011"
 image: { src: /assets/games/vegas-gold.png, alt: Vegas Gold 官方作品圖, sourceUrl: https://cms.slotmill.com/uploads/Vegas_Gold_Main_b51bd980f9.png, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Slotmill 官方 Vegas Gold 遊戲頁, url: https://slotmill.com/games/vegas-gold, checkedAt: 2026-09-03 }
 sources:
   - { label: "Slotmill 官方 Vegas Gold 遊戲頁（玩法、RTP、High、5,000× bet 與功能）", url: https://slotmill.com/games/vegas-gold, checkedAt: 2026-09-03 }

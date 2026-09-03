@@ -28,7 +28,7 @@ releaseDate: 2022-03-22
 gameId: "19017"
 image: { src: /assets/games/drunken-sailors.png, alt: Drunken Sailors 官方作品圖, sourceUrl: https://cms.slotmill.com/uploads/drunken_sailors_870x688_1_6e38c62d11.png, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Slotmill 官方 Drunken Sailors 遊戲頁, url: https://slotmill.com/games/drunken-sailors, checkedAt: 2026-09-03 }
 sources:
   - { label: "Slotmill 官方 Drunken Sailors 遊戲頁（40 betlines、RTP versions、Medium-High、5,000× bet、Free Spins 與 Fast Track）", url: https://slotmill.com/games/drunken-sailors, checkedAt: 2026-09-03 }

@@ -17,7 +17,7 @@ bonusBuy: true
 releaseDate: 2017-10-25
 image: { src: /assets/games/white-rabbit.jpg, alt: White Rabbit 官方橫式作品圖, sourceUrl: "https://images.squarespace-cdn.com/content/v1/60aedd95a74c4c4033f9d064/1623736045149-PCBXP2ZUU7WP5SEOQE2I/banner_large_WhiteRabbit_1600x755.jpg?format=1500w", retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Big Time Gaming 官方 White Rabbit 遊戲頁, url: https://www.bigtimegaming.com/games/white-rabbit, checkedAt: 2026-09-03 }
 sources:
   - { label: "Big Time Gaming 官方 White Rabbit 遊戲頁（Feature Drop、Extending Reels、248,832 Megaways 與 Free Spins）", url: https://www.bigtimegaming.com/games/white-rabbit, checkedAt: 2026-09-03 }

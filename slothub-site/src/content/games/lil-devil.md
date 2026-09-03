@@ -18,7 +18,7 @@ bonusFeatures: [Heartstopper enhanced free spins, Feature Choice, Lil Devil Wild
 releaseDate: 2019-09-12
 image: { src: /assets/games/lil-devil.jpg, alt: Lil Devil 官方橫式作品圖, sourceUrl: "https://images.squarespace-cdn.com/content/v1/60aedd95a74c4c4033f9d064/1623292412544-40GJPH9DO0E5CETCUVKH/banner_large_LilDevil_1600x755.jpg?format=1500w", retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Big Time Gaming 官方 Lil Devil 遊戲頁, url: https://www.bigtimegaming.com/games/lil-devil, checkedAt: 2026-09-03 }
 sources:
   - { label: "Big Time Gaming 官方 Lil Devil 遊戲頁（4096 Ways、Feature Choice、Heartstopper、Wild 與 extremely volatile）", url: https://www.bigtimegaming.com/games/lil-devil, checkedAt: 2026-09-03 }
