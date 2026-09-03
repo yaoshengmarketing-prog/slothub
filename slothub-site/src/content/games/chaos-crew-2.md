@@ -26,7 +26,7 @@ bonusFeatures: [Epic Drop, Cranky Cat Wild Multipliers, Bonus, Super Bonus, Best
 bonusBuy: true
 image: { src: /assets/games/chaos-crew-2.png, alt: Chaos Crew 2 官方桌機作品圖, sourceUrl: https://www-live.hacksawgaming.com/casino_thumbnails/1352_hero_Device_Desktop16x9.png, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Hacksaw Gaming 官方 Chaos Crew 2 遊戲頁, url: https://www.hacksawgaming.com/games/chaos-crew-2, checkedAt: 2026-09-03 }
 sources:
   - { label: "Hacksaw Gaming 官方 Chaos Crew 2 遊戲頁（5×5、19 Paylines、RTP、5/5、20,000× 與功能）", url: https://www.hacksawgaming.com/games/chaos-crew-2, checkedAt: 2026-09-03 }

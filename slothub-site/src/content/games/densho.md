@@ -25,7 +25,7 @@ bonusBuy: true
 releaseDate: 2023-09-07
 image: { src: /assets/games/densho.png, alt: Densho 官方桌機作品圖, sourceUrl: https://www-live.hacksawgaming.com/casino_thumbnails/1348_hero_Device_Desktop.png, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Hacksaw Gaming 官方 Densho 遊戲頁, url: https://www.hacksawgaming.com/games/densho, checkedAt: 2026-09-03 }
 sources:
   - { label: "Hacksaw Gaming 官方 Densho 遊戲頁（5×4、10 Paylines、RTP、4/5、10,000× 與功能）", url: https://www.hacksawgaming.com/games/densho, checkedAt: 2026-09-03 }

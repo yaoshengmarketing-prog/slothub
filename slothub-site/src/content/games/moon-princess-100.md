@@ -18,7 +18,7 @@ bonusFeatures: [Girl Power, Trinity, Free Spins, Clear the Grid Prize, Win Multi
 releaseDate: 2022-04-07
 image: { src: /assets/games/moon-princess-100.webp, alt: Moon Princess 100 官方作品圖, sourceUrl: "https://static.wixstatic.com/media/72cc99_09b2e8c9357649a6b1ae9c7e14f11aaa~mv2.webp/v1/fill/w_500,h_350,al_c/72cc99_09b2e8c9357649a6b1ae9c7e14f11aaa~mv2.webp", retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Play’n GO 官方 Moon Princess 100 遊戲頁, url: https://www.playngo.com/games/moon-princess-100, checkedAt: 2026-09-03 }
 sources:
   - { label: "Play’n GO 官方 Moon Princess 100 遊戲頁（5×5 Grid、發行日、Girl Power、Free Spins、Multiplier 與 Clear the Grid Prize）", url: https://www.playngo.com/games/moon-princess-100, checkedAt: 2026-09-03 }

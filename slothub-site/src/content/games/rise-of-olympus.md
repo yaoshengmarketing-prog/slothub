@@ -18,7 +18,7 @@ bonusFeatures: [Round Multiplier, Hand of God, Wrath of God, Free Spins, Clear t
 releaseDate: 2018-08-22
 image: { src: /assets/games/rise-of-olympus.webp, alt: Rise of Olympus 官方作品圖, sourceUrl: "https://static.wixstatic.com/media/9710a8_82c60403324e4b77b0c77ae05d2260a0~mv2.webp/v1/fill/w_500,h_350,al_c/9710a8_82c60403324e4b77b0c77ae05d2260a0~mv2.webp", retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Play’n GO 官方 Rise of Olympus 遊戲頁, url: https://www.playngo.com/games/rise-of-olympus, checkedAt: 2026-09-03 }
 sources:
   - { label: "Play’n GO 官方 Rise of Olympus 遊戲頁（Grid Slot、發行日、Round Multiplier、Hand of God、Free Spins 與 Clear the Grid Prize）", url: https://www.playngo.com/games/rise-of-olympus, checkedAt: 2026-09-03 }
