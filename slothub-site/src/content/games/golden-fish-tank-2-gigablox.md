@@ -23,7 +23,7 @@ bonusFeatures: [GigaBlox, Free Spins, Pick and Click, Bonus Chest, Wild substitu
 releaseDate: 2021-10-28
 image: { src: /assets/games/golden-fish-tank-2-gigablox.png, alt: Golden Fish Tank 2 GigaBlox 官方遊戲 Logo, sourceUrl: https://yggdrasilgaming.com/w/files/2021/09/golden_fish_tank_2-Logo-Template-750x540px.png, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Yggdrasil Gaming 官方 Golden Fish Tank 2 GigaBlox 遊戲頁, url: https://yggdrasilgaming.com/games/golden-fish-tank-2-gigablox, checkedAt: 2026-09-03 }
 sources:
   - { label: "Yggdrasil Gaming 官方 Golden Fish Tank 2 GigaBlox 遊戲頁（盤面、賠線、RTP、波動度、貨幣 Max Win、功能與日期）", url: https://yggdrasilgaming.com/games/golden-fish-tank-2-gigablox, checkedAt: 2026-09-03 }
@@ -31,4 +31,3 @@ sources:
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---
-

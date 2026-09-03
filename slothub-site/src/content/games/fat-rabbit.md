@@ -23,7 +23,7 @@ bonusBuy: true
 releaseDate: 2018-03-27
 image: { src: /assets/games/fat-rabbit.jpg, alt: Fat Rabbit 官方遊戲主圖, sourceUrl: https://www.pushgaming.com/uploads/fat-rabbit-page-bg.jpg, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Push Gaming 官方 Fat Rabbit 遊戲頁, url: https://www.pushgaming.com/games/fat-rabbit.html, checkedAt: 2026-09-03 }
 sources:
   - { label: "Push Gaming 官方 Fat Rabbit 遊戲頁（5×5、50 paylines、RTP、波動度、功能與 Bonus Buy）", url: https://www.pushgaming.com/games/fat-rabbit.html, checkedAt: 2026-09-03 }
@@ -32,4 +32,3 @@ sources:
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---
-

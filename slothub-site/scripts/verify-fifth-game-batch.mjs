@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFile, stat } from 'node:fs/promises';
+import { readdir, readFile, stat } from 'node:fs/promises';
 import { parse } from 'yaml';
 
 const gameSlugs = ['extra-chilli', 'jammin-jars', 'razor-shark', 'vikings-go-berzerk'];
@@ -109,10 +109,13 @@ for (const slug of providerSlugs) {
 }
 
 if (published) {
-  assert.match(await readFile(new URL('../dist/providers/push-gaming/index.html', import.meta.url), 'utf8'), /Slot Hub 收錄 2 款/);
-  const yggHtml = await readFile(new URL('../dist/providers/yggdrasil-gaming/index.html', import.meta.url), 'utf8');
-  assert.match(yggHtml, /Slot Hub 收錄 1 款/);
-  assert.ok(!yggHtml.includes('樣本統計'), 'N=1 Provider must not claim aggregate statistics');
+  const allGameFiles = (await readdir(new URL('../src/content/games/', import.meta.url))).filter((file) => file.endsWith('.md'));
+  const allPublishedGames = await Promise.all(allGameFiles.map(async (file) => (await readEntry('games', file.replace(/\.md$/, ''))).data));
+  for (const slug of providerSlugs) {
+    const providerCount = allPublishedGames.filter((game) => game.status === 'published' && game.provider === slug).length;
+    const providerHtml = await readFile(new URL(`../dist/providers/${slug}/index.html`, import.meta.url), 'utf8');
+    assert.match(providerHtml, new RegExp(`Slot Hub 收錄 ${providerCount} 款`), `${slug}: published game count is stale`);
+  }
 }
 
 console.log(`PASS: fifth batch is atomically ${[...statuses][0]}; 4 Games and 2 Providers preserve first-party labels, ranges and media without Schema/taxonomy changes.`);

@@ -23,7 +23,7 @@ bonusFeatures: [Free Games, Sticky Wilds, Instant Prizes, Swarm Mode, "RTPs may 
 releaseDate: 2018-06-19
 image: { src: /assets/games/wild-swarm.jpg, alt: Wild Swarm 官方遊戲主圖, sourceUrl: https://www.pushgaming.com/uploads/wild-swarm-page-bg.jpg, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Push Gaming 官方 Wild Swarm 遊戲頁, url: https://www.pushgaming.com/games/wild-swarm.html, checkedAt: 2026-09-03 }
 sources:
   - { label: "Push Gaming 官方 Wild Swarm 遊戲頁（5×4、20 winlines、RTP、波動度與功能）", url: https://www.pushgaming.com/games/wild-swarm.html, checkedAt: 2026-09-03 }
@@ -32,4 +32,3 @@ sources:
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---
-

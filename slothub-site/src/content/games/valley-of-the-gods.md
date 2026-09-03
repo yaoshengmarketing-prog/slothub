@@ -22,7 +22,7 @@ bonusFeatures: [Respin with every win, Expanding game area, Destroying Blockers,
 releaseDate: 2017-08-24
 image: { src: /assets/games/valley-of-the-gods.png, alt: Valley of the Gods 官方遊戲 Logo, sourceUrl: https://yggdrasilgaming.com/w/files/2017/08/Yggdrasil-ValleyoftheGods.png, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Yggdrasil Gaming 官方 Valley of the Gods 遊戲頁, url: https://yggdrasilgaming.com/games/valley-of-the-gods, checkedAt: 2026-09-03 }
 sources:
   - { label: "Yggdrasil Gaming 官方 Valley of the Gods 遊戲頁（ways、RTP、波動度、貨幣 Max Win、功能與日期）", url: https://yggdrasilgaming.com/games/valley-of-the-gods, checkedAt: 2026-09-03 }
@@ -30,4 +30,3 @@ sources:
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---
-

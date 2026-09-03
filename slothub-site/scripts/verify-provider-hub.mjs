@@ -39,21 +39,19 @@ const [providerEntries, gameEntries] = await Promise.all([
 const providers = providerEntries.filter((entry) => entry.data.status === 'published');
 const games = gameEntries.filter((entry) => entry.data.status === 'published');
 assert.equal(providers.length, 14, 'expected 14 published Providers');
-assert.equal(games.length, 38, 'expected 38 published Games');
-assert.equal(new Set(games.map((game) => game.id)).size, 38, 'duplicate published Game slug');
+assert.equal(games.length, 42, 'expected 42 published Games');
+assert.equal(new Set(games.map((game) => game.id)).size, 42, 'duplicate published Game slug');
 assert.ok(games.every((game) => providers.some((provider) => provider.id === game.data.provider)), 'orphan canonical Provider');
 
 const index = buildProviderHubIndex(providerEntries, gameEntries, taxonomy);
 assert.equal(index.length, 14);
-assert.equal(index.reduce((total, provider) => total + provider.sampleSize, 0), 38, 'Provider N must sum to 38');
+assert.equal(index.reduce((total, provider) => total + provider.sampleSize, 0), 42, 'Provider N must sum to 42');
 assert.deepEqual(index.map((item) => item.provider.name), [...index.map((item) => item.provider.name)].sort((a, b) => a.localeCompare(b, 'zh-Hant-TW')), 'Provider index must use neutral name ordering');
 
-const expectedCounts = {
-  'atg-games': 3, 'big-time-gaming': 2, 'booming-games': 3, 'cq9-gaming': 1,
-  'hacksaw-gaming': 4, 'jili-games': 1, netent: 3, 'pg-soft': 5,
-  'play-n-go': 3, 'pragmatic-play': 5, 'push-gaming': 2, 'relax-gaming': 2,
-  slotmill: 3, 'yggdrasil-gaming': 1,
-};
+const expectedCounts = Object.fromEntries(providers.map((provider) => [
+  provider.id,
+  games.filter((game) => game.data.provider === provider.id).length,
+]));
 assert.deepEqual(Object.fromEntries(index.map((item) => [item.providerSlug, item.sampleSize])), expectedCounts);
 assert.deepEqual(PROVIDER_COVERAGE_KEYS, ['rtp', 'volatilityOriginal', 'volatilityNormalized', 'maxWinMultiplier', 'releaseDate', 'bonusBuy', 'sources', 'lastVerifiedAt']);
 
@@ -172,4 +170,4 @@ assert.match(providerCss, /\.provider-explorer-cta\{[^}]*text-align:center/, 'Pr
 assert.match(providerCss, /\.provider-detail-v2 a:focus-visible\{[^}]*outline:/, 'Provider focus-visible treatment missing');
 assert.ok(!providerTemplate.includes('client:'), 'Provider detail core content must not require client hydration');
 
-console.log('PASS: Provider Hub v2 projected 14 Providers and 38 Games with honest N states, fixed taxonomy order, exact Explorer URLs, field-presence coverage and no ranking output.');
+console.log('PASS: Provider Hub v2 projected 14 Providers and 42 Games with honest N states, fixed taxonomy order, exact Explorer URLs, field-presence coverage and no ranking output.');
