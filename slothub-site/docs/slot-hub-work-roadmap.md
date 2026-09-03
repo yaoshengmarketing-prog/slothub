@@ -48,7 +48,7 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 | Guide 閱讀與核心內容 | Guide typography、三個 Knowledge Diagram、RTP／Volatility／Beginners 補強 | `已完成` |
 | Preview 保護 | noindex、X-Robots-Tag、空 sitemap、無 production canonical | `已完成` |
 
-## 4. 第 1～7 項完成與第 8 項本機製作
+## 4. 第 1～8 項完成與第 9 項本機製作
 
 ### 第 1 項：第二輪產品設計
 
@@ -141,7 +141,7 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 
 **狀態：** `已完成`
 
-### 目前項目：第 8 項 引導式遊戲探索 Pilot
+### 第 8 項：引導式遊戲探索 Pilot
 
 **目前進度：**
 
@@ -149,11 +149,24 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 - 核准規格：`docs/slot-hub-guided-game-exploration-pilot-v1-readonly-spec.md`。
 - Pilot 先顯示條件、真實結果數與精確 Explorer URL，再由使用者確認進入遊戲庫。
 - 0 款不提供結果 CTA；不建立推薦引擎、AI 推薦或投注建議。
-- 第 8-2 步「同步核准規格並進行本機施工」進行中。
+- 第 8 項本機施工、完整驗證、Push、Cloudflare Preview 部署與線上回讀已完成。
+- 最終 deployed Commit：`3d035e531019f073ed96c3b2119f4edb844f3b25`。
+
+**狀態：** `已完成`
+
+### 目前項目：第 9 項 遊戲 DNA 單款 Pilot
+
+**目前進度：**
+
+- 人工選定 `mahjong-ways` 作為唯一 Pilot。
+- 核准規格：`docs/slot-hub-game-dna-mahjong-ways-pilot-v1-readonly-spec.md`。
+- DNA 由現有 Game record build-time 產生，只整理玩法、版本、原廠／統一值、來源與下一步入口。
+- 不新增 Game 欄位、第二份資料 mapping、分數、排名或推薦。
+- 第 9 項進入本機施工、完整驗證、Commit、Push、Preview 部署與線上回讀。
 
 **狀態：** `本機製作`
 
-**下一個允許動作：** 完成單一 Pilot、完整驗證、Commit、Push、Preview 部署與線上回讀；不得開始第 9 項。
+**下一個允許動作：** 完成 Mahjong Ways 單款 Pilot 並線上回讀；不得開始第 10 項。
 
 ## 5. 第 2～10 項施工順序
 
@@ -165,8 +178,8 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 | 5 | Provider Hub v2 | 把 Provider 頁從基本名單提升成有來源、有限定母體的資料入口，並連到 filtered Explorer。 | `已完成` | 已結案。 |
 | 6 | 資料方法與可信度入口 | 用一般使用者看得懂的方式說明原廠值、統一值、缺值、版本、來源與可比較限制。 | `已完成` | 已結案。 |
 | 7 | Guide 閱讀路線 v1 | 讓首頁、Guide index、Slots 依「第一次使用、核心數據、玩法、功能、限制」組織內容。 | `已完成` | 已結案。 |
-| 8 | 引導式遊戲探索 Pilot | 用幾個容易理解的選擇，轉成看得見、可修改、可分享的 Explorer 條件。 | `本機製作` | 完成 `/tools/` 單一 Pilot、完整驗證、Preview 部署及線上回讀。 |
-| 9 | 遊戲 DNA 單款 Pilot | 用一個精簡區塊整理單款遊戲的數據狀態、玩法、版本與可信度，不建立分數。 | `尚未開始` | 第 8 項結案後，選定一款代表 Game 並完成人工內容／視覺規格。 |
+| 8 | 引導式遊戲探索 Pilot | 用幾個容易理解的選擇，轉成看得見、可修改、可分享的 Explorer 條件。 | `已完成` | 已結案。 |
+| 9 | 遊戲 DNA 單款 Pilot | 用一個精簡區塊整理單款遊戲的數據狀態、玩法、版本與可信度，不建立分數。 | `本機製作` | 完成 Mahjong Ways 單款 Pilot、完整驗證、Preview 部署及線上回讀。 |
 | 10 | Game／Provider 擴充 | 持續增加可靠、可搜尋的 Game 與 Provider，不以數量取代來源品質。 | `尚未開始` | 依每次獨立人工核准啟動批次；第四批名單與數量尚未核准。 |
 
 第 10 項是長期持續工作，可在一個主要產品項目完成後，以獨立核准範圍交錯進行；不得在其他主要項目施工中自行插隊。
