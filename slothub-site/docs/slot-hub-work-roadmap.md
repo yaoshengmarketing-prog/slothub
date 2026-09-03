@@ -2,7 +2,7 @@
 
 文件狀態：`APPROVED`
 
-最近更新：2026-09-01
+最近更新：2026-09-03
 
 目前依據：`docs/slot-hub-master-blueprint-v2.md` 是目前最高產品與施工順序依據；`docs/slot-hub-master-blueprint-v1.md` 保留為歷史決策文件。
 
@@ -48,7 +48,7 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 | Guide 閱讀與核心內容 | Guide typography、三個 Knowledge Diagram、RTP／Volatility／Beginners 補強 | `已完成` |
 | Preview 保護 | noindex、X-Robots-Tag、空 sitemap、無 production canonical | `已完成` |
 
-## 4. 第 1～8 項完成與第 9 項本機製作
+## 4. 第 1～9 項完成與第 10 項第四批驗證
 
 ### 第 1 項：第二輪產品設計
 
@@ -154,7 +154,7 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 
 **狀態：** `已完成`
 
-### 目前項目：第 9 項 遊戲 DNA 單款 Pilot
+### 第 9 項：遊戲 DNA 單款 Pilot
 
 **目前進度：**
 
@@ -162,11 +162,24 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 - 核准規格：`docs/slot-hub-game-dna-mahjong-ways-pilot-v1-readonly-spec.md`。
 - DNA 由現有 Game record build-time 產生，只整理玩法、版本、原廠／統一值、來源與下一步入口。
 - 不新增 Game 欄位、第二份資料 mapping、分數、排名或推薦。
-- 第 9 項進入本機施工、完整驗證、Commit、Push、Preview 部署與線上回讀。
+- 第 9 項本機施工、完整驗證、Commit、Push、Preview 部署與線上回讀已完成。
+- 最終 deployed Commit：`c90ea932e8145cac104db3ca26703df8e66f76fc`。
+
+**狀態：** `已完成`
+
+### 目前項目：第 10 項 Game／Provider 擴充
+
+**目前進度：**
+
+- 第四批人工核准名單固定為 Fortune Rabbit、Dead or Alive 2、Temple Tumble、The Great Pigsby Megaways，以及新 Provider Relax Gaming。
+- 正式只讀驗證：`docs/fourth-game-batch-readonly-validation.md`。
+- 四款 Game 與 Provider 身份、第一方來源及官方圖片均已確認。
+- Dead or Alive 2 的最高倍數差異，以及 The Great Pigsby Megaways 的盤面／波動度差異，將依既有規則保留原文與缺值。
+- 不新增 Schema、taxonomy、Money Train 4、Fishing、Crash／Aviator 或其他遊戲。
 
 **狀態：** `本機製作`
 
-**下一個允許動作：** 完成 Mahjong Ways 單款 Pilot 並線上回讀；不得開始第 10 項。
+**下一個允許動作：** 依本批人工授權建立合法 draft、完整驗證、發布與 Cloudflare Pages Preview 線上回讀。
 
 ## 5. 第 2～10 項施工順序
 
@@ -179,8 +192,8 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 | 6 | 資料方法與可信度入口 | 用一般使用者看得懂的方式說明原廠值、統一值、缺值、版本、來源與可比較限制。 | `已完成` | 已結案。 |
 | 7 | Guide 閱讀路線 v1 | 讓首頁、Guide index、Slots 依「第一次使用、核心數據、玩法、功能、限制」組織內容。 | `已完成` | 已結案。 |
 | 8 | 引導式遊戲探索 Pilot | 用幾個容易理解的選擇，轉成看得見、可修改、可分享的 Explorer 條件。 | `已完成` | 已結案。 |
-| 9 | 遊戲 DNA 單款 Pilot | 用一個精簡區塊整理單款遊戲的數據狀態、玩法、版本與可信度，不建立分數。 | `本機製作` | 完成 Mahjong Ways 單款 Pilot、完整驗證、Preview 部署及線上回讀。 |
-| 10 | Game／Provider 擴充 | 持續增加可靠、可搜尋的 Game 與 Provider，不以數量取代來源品質。 | `尚未開始` | 依每次獨立人工核准啟動批次；第四批名單與數量尚未核准。 |
+| 9 | 遊戲 DNA 單款 Pilot | 用一個精簡區塊整理單款遊戲的數據狀態、玩法、版本與可信度，不建立分數。 | `已完成` | 已結案。 |
+| 10 | Game／Provider 擴充 | 持續增加可靠、可搜尋的 Game 與 Provider，不以數量取代來源品質。 | `本機製作` | 完成已核准第四批四款 Game 與 Relax Gaming 的收錄、驗證、Preview 部署及線上回讀。 |
 
 第 10 項是長期持續工作，可在一個主要產品項目完成後，以獨立核准範圍交錯進行；不得在其他主要項目施工中自行插隊。
 
@@ -196,7 +209,7 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 | 第 7 項 | 會員、學習帳號、閱讀進度、大量路線薄頁 |
 | 第 8 項 | AI 推薦、個人下注建議、「適合你玩」 |
 | 第 9 項 | 分數、排名、一次套用全部 Game detail |
-| 第 10 項 | 未核准第四批、未驗證來源、未追溯圖片 |
+| 第 10 項 | 本批以外未核准遊戲、未驗證來源、未追溯圖片；Money Train 4、Fishing、Crash／Aviator 不在第四批 |
 
 ## 7. 保留能力與研究方向
 
@@ -251,21 +264,21 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 
 `STAGE_RESULT: PASS_TO_NEXT_STAGE`
 
-`CURRENT_STATE: LOCAL_IMPLEMENTATION_IN_PROGRESS`
+`CURRENT_STATE: FOURTH_BATCH_VALIDATION_COMPLETE`
 
-`CURRENT_ITEM: 第8項 引導式遊戲探索 Pilot`
+`CURRENT_ITEM: 第10項 Game／Provider 擴充`
 
 `CURRENT_STATUS: 本機製作`
 
-`CURRENT_STEP: 第8-2步 同步核准規格並進行本機施工`
+`CURRENT_STEP: 第四批正式只讀驗證完成`
 
 `ROADMAP_STATUS: APPROVED`
 
-`NEXT_ITEM: 第8項 引導式遊戲探索 Pilot`
+`NEXT_ITEM: 第10項 Game／Provider 擴充（第四批）`
 
-`NEXT_ITEM_STATUS: 第8-2步本機製作`
+`NEXT_ITEM_STATUS: 已核准繼續建立 draft、驗證、發布與 Preview 線上回讀`
 
-`WEBSITE_CHANGED: YES；僅本機`
+`WEBSITE_CHANGED: NO；目前只完成驗證文件`
 
 `COMMIT_ALLOWED: YES；僅核准規格、實作與發布 Commit`
 
@@ -275,4 +288,4 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 
 `HUMAN_APPROVAL_REQUIRED: NO；本輪已核准自動續行至線上回讀，遇到新產品決策或重大風險時停止`
 
-`NEXT_ALLOWED_ACTION: 完成單一 Pilot、Commit、Push、CI、Preview 部署與線上回讀；不得開始第9項`
+`NEXT_ALLOWED_ACTION: 完成第四批資料與圖片收錄、Commit、Push、CI、Preview 部署及線上回讀；不得擴張批次`
