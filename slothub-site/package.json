@@ -24,8 +24,9 @@
     "verify:guide-reading-path": "node scripts/verify-guide-reading-path.mjs",
     "verify:guided-explorer": "node scripts/verify-guided-explorer-pilot.mjs",
     "verify:game-dna": "node scripts/verify-game-dna-pilot.mjs",
+    "verify:fourth-batch": "node scripts/verify-fourth-game-batch.mjs",
     "verify:data": "node scripts/audit-game-data.mjs",
-    "verify": "npm run verify:data && npm run verify:search && npm run verify:explorer && npm run verify:core-flow && npm run verify:compare-data && npm run verify:relationships && npm run check && npm run build && npm run verify:build && npm run verify:game-detail && npm run verify:similar-play && npm run verify:provider-hub && npm run verify:data-methodology && npm run verify:guide-reading-path && npm run verify:guided-explorer && npm run verify:game-dna && npm run verify:relationship-ui && npm run verify:diagrams && npm run verify:links"
+    "verify": "npm run verify:data && npm run verify:search && npm run verify:explorer && npm run verify:core-flow && npm run verify:compare-data && npm run verify:relationships && npm run check && npm run build && npm run verify:fourth-batch && npm run verify:build && npm run verify:game-detail && npm run verify:similar-play && npm run verify:provider-hub && npm run verify:data-methodology && npm run verify:guide-reading-path && npm run verify:guided-explorer && npm run verify:game-dna && npm run verify:relationship-ui && npm run verify:diagrams && npm run verify:links"
   },
   "dependencies": {
     "@astrojs/react": "latest",
