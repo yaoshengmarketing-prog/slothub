@@ -48,7 +48,7 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 | Guide 閱讀與核心內容 | Guide typography、三個 Knowledge Diagram、RTP／Volatility／Beginners 補強 | `已完成` |
 | Preview 保護 | noindex、X-Robots-Tag、空 sitemap、無 production canonical | `已完成` |
 
-## 4. 第 1～6 項完成與第 7 項本機製作
+## 4. 第 1～7 項完成與第 8 項本機製作
 
 ### 第 1 項：第二輪產品設計
 
@@ -128,7 +128,7 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 
 **狀態：** `已完成`
 
-### 目前項目：第 7 項 Guide 閱讀路線 v1
+### 第 7 項：Guide 閱讀路線 v1
 
 **目前進度：**
 
@@ -136,11 +136,24 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 - 核准規格：`docs/slot-hub-guide-reading-path-v1-readonly-spec.md`。
 - 閱讀路線固定為「第一次使用、核心數據、玩法機制、遊戲功能、資料限制」。
 - 第一版只調整首頁、Guide index 與 `/slots/` 的內容組織；不新增學習帳號、閱讀進度、永久路線頁或 relationship。
-- 第 7-2 步「同步核准規格並進行本機施工」進行中。
+- 第 7-2 步本機施工、完整驗證、Push、Cloudflare Preview 部署與線上回讀已完成。
+- 最終 deployed Commit：`a205733737a950c3e1ef65ac41a5e34fc4626a28`。
+
+**狀態：** `已完成`
+
+### 目前項目：第 8 項 引導式遊戲探索 Pilot
+
+**目前進度：**
+
+- 已核准在 `/tools/` 使用「主要玩法＋可選單一功能」的單一 Pilot。
+- 核准規格：`docs/slot-hub-guided-game-exploration-pilot-v1-readonly-spec.md`。
+- Pilot 先顯示條件、真實結果數與精確 Explorer URL，再由使用者確認進入遊戲庫。
+- 0 款不提供結果 CTA；不建立推薦引擎、AI 推薦或投注建議。
+- 第 8-2 步「同步核准規格並進行本機施工」進行中。
 
 **狀態：** `本機製作`
 
-**下一個允許動作：** 完成共用閱讀路線、三個頁面投影、完整驗證、Commit、Push、Preview 部署與線上回讀；不得開始第 8 項。
+**下一個允許動作：** 完成單一 Pilot、完整驗證、Commit、Push、Preview 部署與線上回讀；不得開始第 9 項。
 
 ## 5. 第 2～10 項施工順序
 
@@ -151,8 +164,8 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 | 4 | Compare 資料判讀 v2 | 不只並排數字，也說明哪些能比較、哪些要保留警告、哪些不能統一。 | `已完成` | 已結案。 |
 | 5 | Provider Hub v2 | 把 Provider 頁從基本名單提升成有來源、有限定母體的資料入口，並連到 filtered Explorer。 | `已完成` | 已結案。 |
 | 6 | 資料方法與可信度入口 | 用一般使用者看得懂的方式說明原廠值、統一值、缺值、版本、來源與可比較限制。 | `已完成` | 已結案。 |
-| 7 | Guide 閱讀路線 v1 | 讓首頁、Guide index、Slots 依「第一次使用、核心數據、玩法、功能、限制」組織內容。 | `本機製作` | 完成核准共用閱讀路線、完整驗證、Preview 部署及線上回讀。 |
-| 8 | 引導式遊戲探索 Pilot | 用幾個容易理解的選擇，轉成看得見、可修改、可分享的 Explorer 條件。 | `尚未開始` | 第 7 項結案後，核准單一 Pilot 問題與輸出；不做推薦引擎。 |
+| 7 | Guide 閱讀路線 v1 | 讓首頁、Guide index、Slots 依「第一次使用、核心數據、玩法、功能、限制」組織內容。 | `已完成` | 已結案。 |
+| 8 | 引導式遊戲探索 Pilot | 用幾個容易理解的選擇，轉成看得見、可修改、可分享的 Explorer 條件。 | `本機製作` | 完成 `/tools/` 單一 Pilot、完整驗證、Preview 部署及線上回讀。 |
 | 9 | 遊戲 DNA 單款 Pilot | 用一個精簡區塊整理單款遊戲的數據狀態、玩法、版本與可信度，不建立分數。 | `尚未開始` | 第 8 項結案後，選定一款代表 Game 並完成人工內容／視覺規格。 |
 | 10 | Game／Provider 擴充 | 持續增加可靠、可搜尋的 Game 與 Provider，不以數量取代來源品質。 | `尚未開始` | 依每次獨立人工核准啟動批次；第四批名單與數量尚未核准。 |
 
@@ -227,17 +240,17 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 
 `CURRENT_STATE: LOCAL_IMPLEMENTATION_IN_PROGRESS`
 
-`CURRENT_ITEM: 第7項 Guide 閱讀路線 v1`
+`CURRENT_ITEM: 第8項 引導式遊戲探索 Pilot`
 
 `CURRENT_STATUS: 本機製作`
 
-`CURRENT_STEP: 第7-2步 同步核准規格並進行本機施工`
+`CURRENT_STEP: 第8-2步 同步核准規格並進行本機施工`
 
 `ROADMAP_STATUS: APPROVED`
 
-`NEXT_ITEM: 第7項 Guide 閱讀路線 v1`
+`NEXT_ITEM: 第8項 引導式遊戲探索 Pilot`
 
-`NEXT_ITEM_STATUS: 第7-2步本機製作`
+`NEXT_ITEM_STATUS: 第8-2步本機製作`
 
 `WEBSITE_CHANGED: YES；僅本機`
 
@@ -249,4 +262,4 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 
 `HUMAN_APPROVAL_REQUIRED: NO；本輪已核准自動續行至線上回讀，遇到新產品決策或重大風險時停止`
 
-`NEXT_ALLOWED_ACTION: 完成本機施工、Commit、Push、CI、Preview 部署與線上回讀；不得開始第8項`
+`NEXT_ALLOWED_ACTION: 完成單一 Pilot、Commit、Push、CI、Preview 部署與線上回讀；不得開始第9項`
