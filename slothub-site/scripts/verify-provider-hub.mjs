@@ -39,13 +39,13 @@ const [providerEntries, gameEntries] = await Promise.all([
 const providers = providerEntries.filter((entry) => entry.data.status === 'published');
 const games = gameEntries.filter((entry) => entry.data.status === 'published');
 assert.equal(providers.length, 14, 'expected 14 published Providers');
-assert.equal(games.length, 50, 'expected 50 published Games');
-assert.equal(new Set(games.map((game) => game.id)).size, 50, 'duplicate published Game slug');
+assert.equal(games.length, 54, 'expected 54 published Games');
+assert.equal(new Set(games.map((game) => game.id)).size, 54, 'duplicate published Game slug');
 assert.ok(games.every((game) => providers.some((provider) => provider.id === game.data.provider)), 'orphan canonical Provider');
 
 const index = buildProviderHubIndex(providerEntries, gameEntries, taxonomy);
 assert.equal(index.length, 14);
-assert.equal(index.reduce((total, provider) => total + provider.sampleSize, 0), 50, 'Provider N must sum to 50');
+assert.equal(index.reduce((total, provider) => total + provider.sampleSize, 0), 54, 'Provider N must sum to 54');
 assert.deepEqual(index.map((item) => item.provider.name), [...index.map((item) => item.provider.name)].sort((a, b) => a.localeCompare(b, 'zh-Hant-TW')), 'Provider index must use neutral name ordering');
 
 const expectedCounts = Object.fromEntries(providers.map((provider) => [
@@ -170,4 +170,4 @@ assert.match(providerCss, /\.provider-explorer-cta\{[^}]*text-align:center/, 'Pr
 assert.match(providerCss, /\.provider-detail-v2 a:focus-visible\{[^}]*outline:/, 'Provider focus-visible treatment missing');
 assert.ok(!providerTemplate.includes('client:'), 'Provider detail core content must not require client hydration');
 
-console.log('PASS: Provider Hub v2 projected 14 Providers and 50 Games with honest N states, fixed taxonomy order, exact Explorer URLs, field-presence coverage and no ranking output.');
+console.log('PASS: Provider Hub v2 projected 14 Providers and 54 Games with honest N states, fixed taxonomy order, exact Explorer URLs, field-presence coverage and no ranking output.');

@@ -18,7 +18,7 @@ bonusFeatures: [Buffalo Bonus Wheel, Wild Buffalo Herd, Wild x2, Ultra Hold and 
 releaseDate: 2026-04-02
 image: { src: /assets/games/ultra-buffalo-hold-and-win.png, alt: Ultra Buffalo Hold and Win 官方發布圖, sourceUrl: https://strapi-dev.booming-games.com/2/PR_2_1200x800_68b39ed687.png, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Booming Games 官方 Ultra Buffalo Hold and Win 發布稿, url: https://booming-games.com/news/f34aq09hi9887lp05sl0c77b, checkedAt: 2026-09-03 }
 sources:
   - { label: "Booming Games 官方發布稿（發行日、5×3、20 fixed paylines、5,000×、動態盤面與功能）", url: https://booming-games.com/news/f34aq09hi9887lp05sl0c77b, checkedAt: 2026-09-03 }

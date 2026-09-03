@@ -23,7 +23,7 @@ maxBet: 100
 releaseDate: 2020-11-24
 image: { src: /assets/games/divine-fortune-megaways.png, alt: Divine Fortune Megaways 官方作品圖, sourceUrl: https://fan-cdn.nolimitcity.com/divine_fortune_megaways_fansitethumb_512x512_04_09_2025_01_cee2ef97d4.png, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: NetEnt 官方 Divine Fortune Megaways 遊戲頁, url: https://netent.com/games/divine-fortune-megaways, checkedAt: 2026-09-03 }
 sources:
   - { label: "NetEnt 官方 Divine Fortune Megaways 遊戲頁（RTP、Max payout、動態盤面、Megaways、發行日與功能）", url: https://netent.com/games/divine-fortune-megaways, checkedAt: 2026-09-03 }

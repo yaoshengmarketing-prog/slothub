@@ -27,7 +27,7 @@ maxBet: 100
 releaseDate: 2017-01-24
 image: { src: /assets/games/divine-fortune.png, alt: Divine Fortune 官方作品圖, sourceUrl: https://fan-cdn.nolimitcity.com/divine_fortune_fansitethumb_512x512_04_09_2025_01_8af5e68478.png, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: NetEnt 官方 Divine Fortune 遊戲頁, url: https://netent.com/games/divine-fortune, checkedAt: 2026-09-03 }
 sources:
   - { label: "NetEnt 官方 Divine Fortune 遊戲頁（RTP、Medium、Max payout、盤面、Paylines、發行日與功能）", url: https://netent.com/games/divine-fortune, checkedAt: 2026-09-03 }

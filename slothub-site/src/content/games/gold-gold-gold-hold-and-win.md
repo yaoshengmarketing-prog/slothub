@@ -18,7 +18,7 @@ bonusFeatures: [Hold and Win bonus, Respins, Free Spins]
 releaseDate: 2026-02-12
 image: { src: /assets/games/gold-gold-gold-hold-and-win.png, alt: Gold Gold Gold Hold and Win 官方發布圖, sourceUrl: https://strapi-dev.booming-games.com/PR_2_1200x800_Gold_Gold_Gold_Hold_and_Win_8f424aaa39.png, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Booming Games 官方 Gold Gold Gold Hold and Win 發布稿, url: https://booming-games.com/news/jxim9en1egtnixcj9s34fnft, checkedAt: 2026-09-03 }
 sources:
   - { label: "Booming Games 官方發布稿（發行日、5×3、25 paylines、2,000× 與功能）", url: https://booming-games.com/news/jxim9en1egtnixcj9s34fnft, checkedAt: 2026-09-03 }

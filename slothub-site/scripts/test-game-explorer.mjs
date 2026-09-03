@@ -24,19 +24,19 @@ const records = readdirSync(gamesDirectory)
     };
   });
 const games = records.filter((game) => game.status === 'published');
-assert.equal(games.length, 50, 'Explorer fixture must cover all 50 published games');
+assert.equal(games.length, 54, 'Explorer fixture must cover all 54 published games');
 
 const state = (patch = {}) => ({ ...emptyExplorerState(), ...patch });
 assert.equal(filterAndSortGames(games, state({ provider: 'pragmatic-play' })).length, 5);
 assert.equal(filterAndSortGames(games, state({ mechanism: 'pay-anywhere' })).length, 4);
 assert.equal(filterAndSortGames(games, state({ provider: 'relax-gaming' })).length, 2);
-assert.equal(filterAndSortGames(games, state({ mechanism: 'megaways' })).length, 5);
+assert.equal(filterAndSortGames(games, state({ mechanism: 'megaways' })).length, 6);
 const cascadingGames = filterAndSortGames(games, state({ features: ['cascading'] }));
 assert.equal(cascadingGames.length, 16, 'Cascading Explorer must return exactly 16 structurally tagged Games');
 assert.ok(!cascadingGames.some((game) => game.slug === 'super-ace'), 'Super Ace must not appear in the Cascading Explorer result');
 assert.equal(serializeExplorerState(state({ features: ['cascading'] })), 'features=cascading', 'Cascading Explorer must keep the exact structured URL query');
-assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild'] })).length, 21, 'Features must use AND');
-assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild', 'scatter'] })).length, 10, 'Three Features must use AND');
+assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild'] })).length, 24, 'Features must use AND');
+assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild', 'scatter'] })).length, 13, 'Three Features must use AND');
 assert.equal(filterAndSortGames(games, state({ provider: 'pg-soft', mechanism: 'ways-to-win', features: ['wild', 'cascading'], rtpMin: 96.5 })).length, 2, 'Cross-facet conditions must use AND');
 
 for (const [field, patch, missingSlug] of [
