@@ -19,7 +19,7 @@ bonusFeatures: [10 Free Spins, Expanding Wilds, Great Pigsby respins, Wild respi
 releaseDate: 2022-10-19
 image: { src: /assets/games/the-great-pigsby-megaways.png, alt: The Great Pigsby Megaways 官方遊戲縮圖, sourceUrl: https://clientarea.relax-gaming.com/gameassets/greatpigsbymegaways/thumbnail2x/5AMFvNnWB88Nd5QCfN8E/Thumbnail_The_Great_Pigsby_Megaways_600x600.png, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Relax Gaming 官方 The Great Pigsby Megaways 產品頁, url: https://www.relax-gaming.com/products/casino/greatpigsbymegaways, checkedAt: 2026-09-03 }
 sources:
   - { label: "Relax Gaming 官方 The Great Pigsby Megaways 產品頁（Megaways、6×7、Medium、RTP variants 與功能）", url: https://www.relax-gaming.com/products/casino/greatpigsbymegaways, checkedAt: 2026-09-03 }

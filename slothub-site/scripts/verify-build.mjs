@@ -21,7 +21,9 @@ const expectedMedia = [
   'assets/games/fish-tales-double-catch-max-scatter.png', 'assets/games/fortune-paw.png', 'assets/games/greedy-for-gold-hold-and-win.png',
   'assets/games/ragnarok-gold.jpg', 'assets/games/shadow-of-dominion.jpg', 'assets/games/wildhalla.jpg',
   'assets/games/storm-of-seth-2-awakening.webp', 'assets/games/storm-of-seth.webp', 'assets/games/sun-wu-kong.webp',
+  'assets/games/fortune-rabbit.png', 'assets/games/dead-or-alive-2.jpg', 'assets/games/temple-tumble.png', 'assets/games/the-great-pigsby-megaways.png',
   'assets/providers/atg-games.png', 'assets/providers/booming-games.svg', 'assets/providers/hacksaw-gaming.png', 'assets/providers/slotmill.png',
+  'assets/providers/relax-gaming.svg',
 ];
 
 const failures = [];

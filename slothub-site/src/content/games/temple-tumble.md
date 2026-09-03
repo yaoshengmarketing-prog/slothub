@@ -18,7 +18,7 @@ bonusFeatures: [Cascading mechanic, Free Spins, Choice of multipliers, Extra spi
 releaseDate: 2019-01-29
 image: { src: /assets/games/temple-tumble.png, alt: Temple Tumble 官方遊戲縮圖, sourceUrl: https://clientarea.relax-gaming.com/gameassets/templetumble/thumbnail2x/WH6ZbZZczeFSfeb75huV/thumbnail_Temple_Tumble_600x600.png, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Relax Gaming 官方 Temple Tumble 產品頁, url: https://www.relax-gaming.com/products/casino/templetumble, checkedAt: 2026-09-03 }
 sources:
   - { label: "Relax Gaming 官方 Temple Tumble 產品頁（6×6、46,656 ways、German RTP 90% 與 Game ID 原文）", url: https://www.relax-gaming.com/products/casino/templetumble, checkedAt: 2026-09-03 }

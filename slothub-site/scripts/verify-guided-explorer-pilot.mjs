@@ -35,7 +35,7 @@ const records = await Promise.all(files.map(async (file) => {
 }));
 const games = records.filter((game) => game.status === 'published');
 
-assert.equal(games.length, 30, 'Pilot must use all 30 published Games');
+assert.equal(games.length, 34, 'Pilot must use all 34 published Games');
 assert.deepEqual(GUIDED_EXPLORER_MECHANISMS, ['paylines', 'ways-to-win', 'megaways', 'cluster-pays', 'pay-anywhere']);
 assert.deepEqual(GUIDED_EXPLORER_FEATURES, ['cascading', 'bonus-buy', 'multiplier', 'free-spins']);
 assert.ok(!GUIDED_EXPLORER_MECHANISMS.includes('other'));
@@ -52,7 +52,7 @@ assert.equal(buildGuidedExplorerResult(games).complete, false);
 assert.equal(buildGuidedExplorerResult(games, 'other').complete, false);
 
 const positive = buildGuidedExplorerResult(games, 'paylines', 'bonus-buy');
-assert.equal(positive.count, 6);
+assert.equal(positive.count, 7);
 const empty = buildGuidedExplorerResult(games, 'ways-to-win', 'bonus-buy');
 assert.equal(empty.count, 0, 'Pilot requires a truthful zero-result fixture');
 
@@ -76,4 +76,4 @@ assert.match(source, /result\.count === 0/);
 assert.match(source, /canOpen \? <a/);
 assert.doesNotMatch(source, /推薦|適合你|最好|容易贏/);
 
-console.log('PASS: guided Explorer Pilot reuses 30 published Games, exact one-Feature conditions, true counts and a no-CTA zero state.');
+console.log('PASS: guided Explorer Pilot reuses 34 published Games, exact one-Feature conditions, true counts and a no-CTA zero state.');

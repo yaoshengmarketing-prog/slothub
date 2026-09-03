@@ -23,7 +23,7 @@ bonusBuy: true
 releaseDate: 2019-04-23
 image: { src: /assets/games/dead-or-alive-2.jpg, alt: Dead or Alive 2 官方橫幅作品圖, sourceUrl: https://fan-cdn.nolimitcity.com/dead_or_alive_2_ne_fansite_splashpost_2560x820px_870a5e759f.jpg, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: NetEnt 官方 Dead or Alive 2 遊戲頁, url: https://netent.com/games/dead-or-alive-2, checkedAt: 2026-09-03 }
 sources:
   - { label: "NetEnt 官方 Dead or Alive 2 遊戲頁（RTP、盤面、9 paylines、Feature buy-in 與兩種最高倍數語境）", url: https://netent.com/games/dead-or-alive-2, checkedAt: 2026-09-03 }

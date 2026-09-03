@@ -21,16 +21,23 @@ const bySlug = new Map(published.map((game) => [game.slug, game]));
 const has = (value) => value !== undefined && value !== null && value !== '' && (!Array.isArray(value) || value.length > 0);
 const coverage = (field) => published.filter((game) => has(game[field])).length;
 
-assert.equal(published.length, 30, 'expected 30 published Games');
+assert.equal(published.length, 34, 'expected 34 published Games');
 assert.deepEqual({
   releaseDate: coverage('releaseDate'), rtp: coverage('rtp'), rtpVariants: coverage('rtpVariants'),
   volatilityOriginal: coverage('volatilityOriginal'), volatilityNormalized: coverage('volatilityNormalized'),
   maxWinMultiplier: coverage('maxWinMultiplier'), maxWinLabelOriginal: coverage('maxWinLabelOriginal'),
   lastVerifiedAt: coverage('lastVerifiedAt'),
 }, {
-  releaseDate: 17, rtp: 17, rtpVariants: 10, volatilityOriginal: 20,
-  volatilityNormalized: 17, maxWinMultiplier: 25, maxWinLabelOriginal: 16, lastVerifiedAt: 30,
+  releaseDate: 20, rtp: 19, rtpVariants: 13, volatilityOriginal: 24,
+  volatilityNormalized: 18, maxWinMultiplier: 26, maxWinLabelOriginal: 19, lastVerifiedAt: 34,
 });
+
+assert.equal(bySlug.get('dead-or-alive-2').maxWinMultiplier, undefined);
+assert.match(bySlug.get('dead-or-alive-2').maxWinLabelOriginal, /1,600 x bet/);
+assert.match(bySlug.get('dead-or-alive-2').maxWinLabelOriginal, /100,000x of the original bet/);
+assert.equal(bySlug.get('the-great-pigsby-megaways').volatilityNormalized, undefined);
+assert.match(bySlug.get('the-great-pigsby-megaways').volatilityOriginal, /medium volatility/);
+assert.match(bySlug.get('the-great-pigsby-megaways').volatilityOriginal, /high-volatility/);
 
 assert.equal(bonusBuyLabel(bySlug.get('starburst').bonusBuy), '已確認不支援');
 assert.equal(bonusBuyLabel(bySlug.get('bonanza').bonusBuy), '已確認支援');
@@ -85,4 +92,4 @@ assert.match(comparePage, /href="\/games\/"/);
 assert.match(styles, /\.compare-details summary\{[^}]*min-height:44px/);
 assert.match(styles, /@media\(forced-colors:active\)\{[^}]*\.compare-reading-note/);
 
-console.log('PASS: Compare v2 projected 30 Games with stable coverage, explicit missing states, semantic sections and no ranking output.');
+console.log('PASS: Compare v2 projected 34 Games with stable coverage, explicit missing states, semantic sections and no ranking output.');

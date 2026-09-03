@@ -23,7 +23,7 @@ features: [wild]
 bonusFeatures: [Fortune Rabbit Feature, 8 Fortune Spins, "Wild substitutes all symbols except Prize Symbol", "Official EUR bet range: €0.20／€200.00"]
 image: { src: /assets/games/fortune-rabbit.png, alt: Fortune Rabbit 金錢兔官方遊戲主圖, sourceUrl: https://www.pgsoft.com/uploads/Games/Pdf/Fortune_Rabbit_Gameinformation_ZH.pdf, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: PG SOFT 官方 Fortune Rabbit 遊戲頁, url: https://www.pgsoft.com/en/games/129/, checkedAt: 2026-09-03 }
 sources:
   - { label: PG SOFT 官方 Fortune Rabbit 遊戲頁, url: https://www.pgsoft.com/en/games/129/, checkedAt: 2026-09-03 }
