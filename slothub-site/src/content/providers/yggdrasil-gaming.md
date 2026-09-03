@@ -9,7 +9,7 @@ serviceMarkets: []
 marketTags: [international]
 languages: [English]
 gameTypes: [slots]
-summary: Yggdrasil Gaming 開發並發行老虎機，也提供遊戲製作與平台技術；Slot Hub 第五批先收錄 Vikings Go Berzerk。
+summary: Yggdrasil Gaming 開發並發行老虎機，也提供遊戲製作與平台技術；Slot Hub 只呈現目前已有第一方資料與官方圖片支持的收錄樣本。
 officialUrl: https://yggdrasilgaming.com/
 logo: { src: /assets/providers/yggdrasil-gaming.svg, alt: Yggdrasil Gaming 官方 Logo, sourceUrl: https://yggdrasilgaming.com/w/files/2022/02/logo-header.svg, retrievedAt: 2026-09-03 }
 status: published
