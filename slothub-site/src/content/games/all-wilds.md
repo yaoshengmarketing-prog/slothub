@@ -22,7 +22,7 @@ features: [free-spins, wild]
 bonusFeatures: [Full-reel Wild copy in Free Game]
 image: { src: /assets/games/all-wilds.jpg, alt: All Wilds 官方橫式作品背景, sourceUrl: https://images.hfyali.com/cherry/background/MKnWEjIW.jpg, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: CQ9 Gaming 官方 All Wilds Guide, url: https://site.cq9gaming.com/guides/38, checkedAt: 2026-09-03 }
 sources:
   - { label: "CQ9 Gaming 官方 All Wilds Guide（40 Paylines、固定連線與 Free Game Wild 複製）", url: https://site.cq9gaming.com/guides/38, checkedAt: 2026-09-03 }

@@ -17,7 +17,7 @@ features: [free-spins, wild, multiplier, cascading]
 bonusFeatures: [Free Game, Free Spin, Gold frame Wild conversion, Symbol elimination, Accumulating multiplier in Free Games, "Publish Time: 2023.12"]
 image: { src: /assets/games/golden-empire.jpg, alt: Golden Empire 官方橫式作品背景, sourceUrl: https://storage.googleapis.com/tada-cdn-asia/All-In-One/production/img/jiliPlusPlayer/games/Gr2SZlPFNAXciokBFQR5VNzLuZhtCStJHt7Um2pw.jpeg, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: JILI Games 官方 Golden Empire 遊戲頁, url: "https://jiligames.com/PlusIntro/103?showGame=true", checkedAt: 2026-09-03 }
 sources:
   - { label: "JILI Games 官方 Golden Empire 遊戲頁（MAX WIN、LOW-MED、32,400 megaways、Feature 與 Publish Time）", url: "https://jiligames.com/PlusIntro/103?showGame=true", checkedAt: 2026-09-03 }

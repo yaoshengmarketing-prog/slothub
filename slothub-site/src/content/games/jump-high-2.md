@@ -25,7 +25,7 @@ features: [free-spins, multiplier]
 bonusFeatures: [Five Free Game feature options, Golden ball trigger, Accumulating multiplier in Free Game]
 image: { src: /assets/games/jump-high-2.jpg, alt: Jump High 2 官方橫式作品背景, sourceUrl: https://images.hfyali.com/cherry/background/ci5G2GQC.jpg, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: CQ9 Gaming 官方 Jump High 2 Guide, url: https://site.cq9gaming.com/guides/179, checkedAt: 2026-09-03 }
 sources:
   - { label: "CQ9 Gaming 官方 Jump High 2 Guide（243 Ways、Free Game 選項、觸發與倍數規則）", url: https://site.cq9gaming.com/guides/179, checkedAt: 2026-09-03 }

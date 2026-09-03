@@ -16,7 +16,7 @@ const records = await Promise.all(files.map(async (file) => {
 }));
 
 const published = records.filter((record) => record.data.status === 'published');
-assert.equal(published.length, 54, 'expected 54 published Games');
+assert.equal(published.length, 58, 'expected 58 published Games');
 assert.equal(GAME_DNA_PILOT_SLUG, 'mahjong-ways');
 
 const presentations = published.map((record) => ({
