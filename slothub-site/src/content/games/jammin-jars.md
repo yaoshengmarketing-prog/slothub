@@ -22,7 +22,7 @@ bonusBuy: true
 releaseDate: 2018-09-18
 image: { src: /assets/games/jammin-jars.jpg, alt: Jammin’ Jars 官方遊戲目錄圖, sourceUrl: https://www.pushgaming.com/uploads/Jammin-Jars_preview2020.jpg, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Push Gaming 官方 Jammin’ Jars 遊戲頁, url: https://www.pushgaming.com/games/jammin-jars.html, checkedAt: 2026-09-03 }
 sources:
   - { label: "Push Gaming 官方 Jammin’ Jars 遊戲頁（8×8、功能、RTP、High、Highest Observed Win 與 Bonus Buy）", url: https://www.pushgaming.com/games/jammin-jars.html, checkedAt: 2026-09-03 }

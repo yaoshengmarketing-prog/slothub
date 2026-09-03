@@ -21,7 +21,7 @@ bonusFeatures: [Mystery Stacks, Nudge and Reveal, Razor Reveal, "Razor Reveal in
 releaseDate: 2019-09-03
 image: { src: /assets/games/razor-shark.jpg, alt: Razor Shark 官方遊戲目錄圖, sourceUrl: https://www.pushgaming.com/uploads/razor-shark/razor-shark_preview1.jpg, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Push Gaming 官方 Razor Shark 遊戲頁, url: https://www.pushgaming.com/games/razor-shark.html, checkedAt: 2026-09-03 }
 sources:
   - { label: "Push Gaming 官方 Razor Shark 遊戲頁（5×4、20 paylines、RTP、High 與功能）", url: https://www.pushgaming.com/games/razor-shark.html, checkedAt: 2026-09-03 }

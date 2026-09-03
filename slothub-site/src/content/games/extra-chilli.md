@@ -15,7 +15,7 @@ features: [free-spins, multiplier]
 bonusFeatures: [Dual Reactions, Feature Drop, Free Spins Gamble, Unlimited multiplier, "Official RTP range: 96.15–96.41%", "With Feature Drop: 96.26–96.82%"]
 image: { src: /assets/games/extra-chilli.webp, alt: Extra Chilli 官方橫式作品圖, sourceUrl: "https://images.squarespace-cdn.com/content/v1/60aedd95a74c4c4033f9d064/1623907276259-UEJ8QOZKXND1KBD23Z62/banner_large_ExtraChilli_1600x755.jpg?format=1500w", retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Big Time Gaming 官方 Extra Chilli 遊戲頁, url: https://www.bigtimegaming.com/games/extra-chilli, checkedAt: 2026-09-03 }
 sources:
   - { label: "Big Time Gaming 官方 Extra Chilli 遊戲頁（Megaways、Feature Drop、Free Spins Gamble 與 Unlimited Multiplier）", url: https://www.bigtimegaming.com/games/extra-chilli, checkedAt: 2026-09-03 }

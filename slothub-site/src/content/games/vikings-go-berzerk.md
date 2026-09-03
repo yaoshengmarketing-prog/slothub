@@ -24,7 +24,7 @@ bonusFeatures: [Rage metres, Free Spins mode, Berzerk Mode, Sticky Wild, Ragnar�
 releaseDate: 2016-11-23
 image: { src: /assets/games/vikings-go-berzerk.png, alt: Vikings Go Berzerk 官方遊戲 Logo, sourceUrl: https://yggdrasilgaming.com/w/files/2016/11/Yggdrasil-VikingsGoBerzerk.png, retrievedAt: 2026-09-03 }
 editorialFeatured: false
-status: draft
+status: published
 source: { label: Yggdrasil Gaming 官方 Vikings Go Berzerk 遊戲頁, url: https://yggdrasilgaming.com/games/vikings-go-berzerk, checkedAt: 2026-09-03 }
 sources:
   - { label: "Yggdrasil Gaming 官方 Vikings Go Berzerk 遊戲頁（5×4、25 paylines、RTP、波動度、Max Win、功能與發行日）", url: https://yggdrasilgaming.com/games/vikings-go-berzerk, checkedAt: 2026-09-03 }
