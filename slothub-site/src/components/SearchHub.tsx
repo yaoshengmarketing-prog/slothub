@@ -47,10 +47,15 @@ export default function SearchHub({items, compact=false, urlState=false}:{items:
       location.assign(nextUrl);
     }
   };
+  const submitFromInput = (event:React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key !== 'Enter' || event.nativeEvent.isComposing || event.nativeEvent.keyCode === 229) return;
+    event.preventDefault();
+    event.currentTarget.form?.requestSubmit();
+  };
   const results=useMemo(()=>rankSearch(items,q,8),[q,items]);
   return <div className={`search-hub ${compact?'compact':''}`}>
     <label htmlFor="site-search">搜尋遊戲、廠商或教學</label>
-    <form className="search-field" action="/search/" method="get" onSubmit={submit}><span aria-hidden="true">⌕</span><input id="site-search" name="q" value={q} onChange={e=>updateQuery(e.target.value)} placeholder="例如：Chaos Crew、Slotmill、RTP" autoComplete="off"/><button className="button primary" type="submit">搜尋</button></form>
+    <form className="search-field" action="/search/" method="get" onSubmit={submit}><span aria-hidden="true">⌕</span><input id="site-search" name="q" value={q} onChange={e=>updateQuery(e.target.value)} onKeyDown={submitFromInput} placeholder="例如：Chaos Crew、Slotmill、RTP" autoComplete="off"/><button className="button primary" type="submit">搜尋</button></form>
     {q && <div className="search-results" role="listbox" aria-label="搜尋結果">
       {results.length ? results.map(i=><a href={i.url} key={`${i.kind}-${i.slug}`} onClick={flushPendingQuery}><small>{i.kind}</small><strong>{i.title}</strong>{i.secondaryTitle&&<em>{i.secondaryTitle}</em>}<span>{i.providerName ? `${i.providerName}${i.seriesName ? ` · ${i.seriesName}` : ''}${i.installment ? ` · 第 ${i.installment} 代` : ''}` : i.description}</span></a>) : <p>找不到符合「{q}」的資料，試試較短的名稱。</p>}
     </div>}

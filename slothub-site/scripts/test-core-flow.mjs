@@ -45,6 +45,7 @@ const home = source('../src/pages/index.astro');
 const slots = source('../src/pages/slots/index.astro');
 const providerIndex = source('../src/pages/providers/index.astro');
 const providerDetail = source('../src/pages/providers/[slug].astro');
+const gameDetail = source('../src/pages/games/[slug].astro');
 const fishing = source('../src/pages/fishing-games/index.astro');
 const styles = source('../src/styles/global.css');
 
@@ -52,6 +53,10 @@ assert.match(search, /<form className="search-field" action="\/search\/" method=
 assert.match(search, /addEventListener\('popstate', restore\)/);
 assert.match(search, /writeCanonicalHistory\(window, searchStateUrl\(value\), 'replace'\)/);
 assert.match(search, /onClick=\{flushPendingQuery\}/, 'Search results must flush pending text state before navigation');
+assert.match(search, /onKeyDown=\{submitFromInput\}/, 'Search text input must forward an explicit Enter to the shared form submission');
+assert.match(search, /nativeEvent\.isComposing/, 'Search Enter must ignore active IME composition');
+assert.match(search, /nativeEvent\.keyCode === 229/, 'Search Enter must ignore IME process-key events');
+assert.match(search, /currentTarget\.form\?\.requestSubmit\(\)/, 'Search Enter and the submit button must share one form owner');
 assert.match(explorer, /writeCanonicalHistory\(window, nextUrl, 'push'\)/);
 assert.match(explorer, /'replace-debounced'/);
 assert.match(explorer, /addEventListener\('popstate', readUrl\)/);
@@ -74,6 +79,16 @@ assert.ok(
 );
 assert.match(header, /readStoredCompare/);
 assert.match(header, /link\.href = compareStateUrl\(selected\)/);
+assert.match(header, /\['搜尋', searchUrl\(\), true\]/, 'The shared primary navigation must expose Search on mobile');
+assert.match(header, /\['遊戲庫', gamesIndexUrl\(\), true\]/);
+assert.match(header, /\['遊戲廠商', providersIndexUrl\(\), true\]/);
+assert.match(header, /\['工具', toolsIndexUrl\(\), true\]/);
+assert.match(header, /\['教學', guideIndexUrl\(\), true\]/);
+assert.match(styles, /\.site-header nav a\.desktop-nav-extra\{display:none\}/, 'Mobile navigation must remain limited to the five primary destinations');
+assert.match(header, /aria-controls="site-primary-nav"/, 'The mobile navigation control must own the existing primary navigation');
+assert.match(header, /aria-expanded="false"/, 'The mobile navigation must expose its collapsed state');
+assert.match(header, /event\.key !== 'Escape'/, 'The mobile navigation must support keyboard dismissal');
+assert.match(gameDetail, /href="\/games\/">前往遊戲庫 →<\/a>/, 'The fixed game-library link must not imply filter-state restoration');
 assert.match(compare, /<table className="compare-table"/, 'Compare v2 must use a semantic table');
 assert.match(compare, /scope="col"/, 'Compare game identities must be column headers');
 assert.match(compare, /scope="row"/, 'Compare fields must be row headers');

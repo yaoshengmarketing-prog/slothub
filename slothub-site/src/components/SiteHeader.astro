@@ -1,16 +1,45 @@
 ---
 import { getCollection } from 'astro:content';
-import { compareUrl, gamesIndexUrl, guideIndexUrl, providersIndexUrl, slotsUrl, fishingGamesUrl, toolsIndexUrl } from '../lib/urls';
-const nav = [['遊戲庫',gamesIndexUrl()],['老虎機',slotsUrl()],['捕魚機',fishingGamesUrl()],['遊戲廠商',providersIndexUrl()],['工具',toolsIndexUrl()],['教學',guideIndexUrl()]];
+import { compareUrl, gamesIndexUrl, guideIndexUrl, providersIndexUrl, searchUrl, slotsUrl, fishingGamesUrl, toolsIndexUrl } from '../lib/urls';
+const nav = [
+  ['遊戲庫', gamesIndexUrl(), true],
+  ['搜尋', searchUrl(), true],
+  ['老虎機', slotsUrl(), false],
+  ['捕魚機', fishingGamesUrl(), false],
+  ['遊戲廠商', providersIndexUrl(), true],
+  ['工具', toolsIndexUrl(), true],
+  ['教學', guideIndexUrl(), true],
+] as const;
 const validCompareSlugs = (await getCollection('games')).filter((game) => game.data.status === 'published').map((game) => game.id);
 ---
 <header class="site-header">
   <a class="brand" href="/" aria-label="Slot Hub 首頁"><span class="brand-mark">SH</span><span>SLOT HUB<small>GAME INDEX</small></span></a>
-  <nav aria-label="主要導覽">{nav.map(([label,href]) => <a href={href}>{label}</a>)}</nav>
+  <button class="header-menu" type="button" aria-label="開啟主要導覽" aria-expanded="false" aria-controls="site-primary-nav" data-header-menu><span aria-hidden="true">☰</span></button>
+  <nav id="site-primary-nav" aria-label="主要導覽">{nav.map(([label,href,mobilePrimary]) => <a class:list={{ 'desktop-nav-extra': !mobilePrimary }} href={href}>{label}</a>)}</nav>
   <a class="header-compare" href={compareUrl()} data-valid-compare-slugs={validCompareSlugs.join(',')}>比較遊戲 <span data-compare-count>0</span></a>
 </header>
 <script>
   import { COMPARE_STORAGE_KEY, compareStateUrl, readCompareQuery, readStoredCompare } from '../lib/core-flow-state.mjs';
+  const menuButton = document.querySelector<HTMLButtonElement>('[data-header-menu]');
+  const primaryNav = document.querySelector<HTMLElement>('#site-primary-nav');
+  const setMenuOpen = (open: boolean) => {
+    if (!menuButton || !primaryNav) return;
+    menuButton.setAttribute('aria-expanded', String(open));
+    menuButton.setAttribute('aria-label', open ? '關閉主要導覽' : '開啟主要導覽');
+    primaryNav.classList.toggle('is-open', open);
+  };
+  menuButton?.addEventListener('click', () => setMenuOpen(menuButton.getAttribute('aria-expanded') !== 'true'));
+  primaryNav?.addEventListener('click', (event) => {
+    if ((event.target as Element).closest('a')) setMenuOpen(false);
+  });
+  document.addEventListener('click', (event) => {
+    if (menuButton?.getAttribute('aria-expanded') === 'true' && !(event.target as Element).closest('.site-header')) setMenuOpen(false);
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape' || menuButton?.getAttribute('aria-expanded') !== 'true') return;
+    setMenuOpen(false);
+    menuButton.focus();
+  });
   const paint = () => document.querySelectorAll<HTMLAnchorElement>('.header-compare').forEach((link) => {
     const valid = (link.dataset.validCompareSlugs || '').split(',').filter(Boolean);
     const query = location.pathname === '/compare/' ? readCompareQuery(location.search, valid) : { hasGames: false, slugs: [] };
