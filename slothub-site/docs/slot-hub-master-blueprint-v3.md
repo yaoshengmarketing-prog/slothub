@@ -427,11 +427,13 @@ Game／Provider 持續擴充是獨立且可與介面批次並行的內容工作�
 
 ### 批次 2：Games 找遊戲流程
 
-狀態：`LOCAL IMPLEMENTATION IN PROGRESS`
+狀態：`CLOSED`
 
 整合 Guided Explorer、完整條件、結果摘要、結果落點與 0 結果復原；不修改 Explorer URL schema 或 filter 邏輯。
 
 ### 批次 3：Slots Hub
+
+狀態：`LOCAL IMPLEMENTATION IN PROGRESS`
 
 把 `/slots/` 重排為 Mechanism、Feature、Data Topic 與精確 Explorer／Guide 入口；移除重複完整 Explorer。
 
@@ -485,6 +487,12 @@ Game／Provider 持續擴充是獨立且可與介面批次並行的內容工作�
 - 無 JavaScript 基線限定於核心內容與普通入口可讀；完整互動式 Explorer 仍可合理依賴 JavaScript。
 - Game／Provider 擴充保留為可並行內容工作軌，繼續沿用既有來源、缺值與審核規則。
 - Header 與首頁選路批次完成 1425px 中文語意片段修正與回歸驗證，狀態更新為 `CLOSED`；Games 找遊戲流程進入本機施工。
+
+### 2026-09-06：Games 找遊戲流程結案
+
+- Guided 與完整條件共用 `/games/` 的同一個 Explorer owner；精確 URL、結果摘要、結果落點、Reload 與 Back／Forward 均能恢復一致狀態。
+- 0 結果不建立假入口，並保留重新選擇與清除條件的可逆操作；`#game-results` 維持可辨識且不被 sticky Header 遮住的品牌色焦點。
+- `/tools/` 不再包含第二份 Guided form；Games 找遊戲流程狀態更新為 `CLOSED`，Slots Hub 進入本機施工。
 
 ## 15. 固定出口
 
