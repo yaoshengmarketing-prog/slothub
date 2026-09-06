@@ -6,7 +6,7 @@ import { absoluteUrl, gameUrl, gamesIndexUrl, providerUrl } from '../../lib/urls
 import { featureLabels, jackpotTypeLabels, primaryTypeLabels, volatilityLabels, winMechanismLabels } from '../../lib/taxonomy';
 import { buildGameDetailKnowledgePresentation, loadGuideRelationshipIndex, relationshipLabel, type GameDetailFieldPlacement } from '../../lib/guide-relationship-catalog';
 import { buildSimilarPlayPresentation } from '../../lib/similar-play.mjs';
-import { buildGameDnaPilot } from '../../lib/game-dna-pilot.mjs';
+import { buildGameDetailPresentation } from '../../lib/game-detail-presentation.mjs';
 import { loadPublishedDataMethodologyEntry } from '../../lib/data-methodology';
 
 export async function getStaticPaths() {
@@ -35,6 +35,7 @@ const knowledgePresentation = buildGameDetailKnowledgePresentation(
 const displayName = entry.data.displayNameZhHant ?? entry.data.originalName ?? entry.data.name;
 const originalName = entry.data.originalName ?? entry.data.name;
 const normalizedVolatility = entry.data.volatilityNormalized ?? entry.data.volatility;
+const presentation = buildGameDetailPresentation(entry.data);
 const titleCharacters = Array.from(displayName);
 const titlePrefix = titleCharacters.length > 4 ? titleCharacters.slice(0, -2).join('') : displayName;
 const titleTail = titleCharacters.length > 4 ? titleCharacters.slice(-2).join('') : '';
@@ -43,27 +44,20 @@ const titleSizeClass = titleCharacters.length >= 16 ? 'is-very-long-title' : tit
 const formatDate = (date: Date) => date.toISOString().slice(0, 10);
 const formatMultiplier = (value: number) => `${value.toLocaleString('en-US')}×`;
 const formatNumber = (value: number) => value.toLocaleString('zh-Hant-TW', { maximumFractionDigits: 8 });
-const getMechanismLabel = () => {
-  if (entry.data.winMechanism && entry.data.winMechanism !== 'other') {
-    return winMechanismLabels[entry.data.winMechanism] ?? entry.data.winMechanism;
-  }
-  const detail = entry.data.paylines?.toLowerCase() ?? '';
-  if (detail.includes('pay anywhere')) return winMechanismLabels['pay-anywhere'];
-  if (detail.includes('scatter')) return '散佈賠付';
-  if (detail.includes('ways')) return '多路贏法';
-  return entry.data.winMechanism ? winMechanismLabels[entry.data.winMechanism] : undefined;
-};
-const mechanism = getMechanismLabel();
-const gridDisplay = entry.data.reels
-  ? entry.data.reels.replace(/\s*[x×]\s*/i, ' × ')
-  : entry.data.rows ? `${entry.data.rows} 列` : undefined;
-const winCountDisplay = entry.data.winCount
-  ? entry.data.winMechanism === 'paylines'
-    ? `${entry.data.winCount.toLocaleString()} 條賠線`
-    : entry.data.winMechanism === 'ways-to-win' || entry.data.winMechanism === 'megaways'
-      ? `${entry.data.winCount.toLocaleString()} 路`
-      : entry.data.winCount.toLocaleString()
+const mechanism = presentation.operation.mechanism
+  ? winMechanismLabels[presentation.operation.mechanism] ?? presentation.operation.mechanism
   : undefined;
+const gridDisplay = presentation.full.reels
+  ? presentation.full.reels.replace(/\s*[x×]\s*/i, ' × ')
+  : presentation.full.rows ? `${presentation.full.rows} 列` : undefined;
+const formatWinCount = (value: number | undefined, mechanismValue: string | undefined) => value
+  ? mechanismValue === 'paylines'
+    ? `${value.toLocaleString()} 條賠線`
+    : mechanismValue === 'ways-to-win' || mechanismValue === 'megaways'
+      ? `${value.toLocaleString()} 路`
+      : value.toLocaleString()
+  : undefined;
+const winCountDisplay = formatWinCount(presentation.full.winCount, presentation.full.winMechanism);
 
 const explicitRelated = entry.data.relatedGames
   .map((slug) => allGames.find((game) => game.id === slug))
@@ -73,37 +67,62 @@ const sameSeries = entry.data.seriesId
   : [];
 const seriesGames = [...explicitRelated, ...sameSeries]
   .filter((game, index, games) => game && games.findIndex((item) => item?.id === game.id) === index);
-const seriesSlugs = new Set(seriesGames.map((game) => game!.id));
-const providerGames = allGames
-  .filter((game) => game.id !== entry.id && game.data.provider === entry.data.provider && !seriesSlugs.has(game.id))
-  .sort((a, b) => {
-    const aName = a.data.displayNameZhHant ?? a.data.originalName ?? a.data.name;
-    const bName = b.data.displayNameZhHant ?? b.data.originalName ?? b.data.name;
-    return aName.localeCompare(bName, 'zh-Hant-TW');
-  })
-  .slice(0, 4);
+const quickStats = [
+  {
+    label: '主要玩法',
+    value: mechanism,
+    note: mechanism
+      ? [gridDisplay, winCountDisplay].filter(Boolean).join(' · ') || '依原廠與已核實資料標示。'
+      : '未用盤面、主題或功能反推主要賠付機制。',
+    guidePlacement: 'core-mechanism' as const,
+  },
+  {
+    label: '主要 RTP',
+    value: presentation.quick.rtp.value !== undefined ? `${presentation.quick.rtp.value}%` : undefined,
+    badge: presentation.quick.rtp.additionalVariantCount > 0 ? '多版本' : undefined,
+    note: presentation.quick.rtp.value !== undefined
+      ? presentation.quick.rtp.additionalVariantCount > 0
+        ? `另有 ${presentation.quick.rtp.additionalVariantCount} 個已收錄數值，需連同版本與來源閱讀。`
+        : '目前保存一個已核實的主要顯示值。'
+      : '不從其他版本、同系列或第三方摘要補猜。',
+    guidePlacement: 'core-rtp' as const,
+  },
+  {
+    label: '統一波動度',
+    value: presentation.quick.volatility.value
+      ? volatilityLabels[presentation.quick.volatility.value] ?? presentation.quick.volatility.value
+      : undefined,
+    note: presentation.quick.volatility.original
+      ? `原廠標示：${presentation.quick.volatility.original}`
+      : '不由 RTP、題材或短期試玩結果推測。',
+    guidePlacement: 'core-volatility' as const,
+  },
+  {
+    label: '最高倍數',
+    value: presentation.quick.maxWin.value !== undefined ? formatMultiplier(presentation.quick.maxWin.value) : undefined,
+    note: presentation.quick.maxWin.value !== undefined
+      ? '需連同原廠基準、範圍與成立條件閱讀。'
+      : '不以單一符號或 Feature 的局部倍數替代整局上限。',
+    guidePlacement: 'core-max-win' as const,
+  },
+] as { label: string; value?: string; badge?: string; note: string; guidePlacement: GameDetailFieldPlacement }[];
 
-const coreStats = [
-  entry.data.rtp !== undefined ? { label: '主要 RTP', value: `${entry.data.rtp}%`, badge: entry.data.rtpVariants.length > 1 ? '多版本' : undefined, guidePlacement: 'core-rtp' as const } : undefined,
-  normalizedVolatility ? { label: '統一波動度', value: volatilityLabels[normalizedVolatility] ?? normalizedVolatility, guidePlacement: 'core-volatility' as const } : undefined,
-  entry.data.maxWinMultiplier !== undefined ? { label: '最高倍數', value: formatMultiplier(entry.data.maxWinMultiplier), guidePlacement: 'core-max-win' as const } : undefined,
-  mechanism ? { label: '賠付機制', value: mechanism, guidePlacement: 'core-mechanism' as const } : undefined,
-].filter(Boolean) as { label: string; value: string; badge?: string; guidePlacement: GameDetailFieldPlacement }[];
-
+const unknown = '尚未核實';
+const betRange = presentation.full.minBet !== undefined || presentation.full.maxBet !== undefined
+  ? `${presentation.full.minBet !== undefined ? formatNumber(presentation.full.minBet) : unknown} ～ ${presentation.full.maxBet !== undefined ? formatNumber(presentation.full.maxBet) : unknown}`
+  : undefined;
 const fullSpecs = [
-  entry.data.rtpVariants.length ? { label: '所有 RTP 版本', value: entry.data.rtpVariants.map((value) => `${value}%`).join('、'), guidePlacement: 'full-rtp-variants' as const } : undefined,
-  entry.data.volatilityOriginal ? { label: '原廠波動度', value: entry.data.volatilityOriginal, guidePlacement: 'full-volatility' as const } : undefined,
-  normalizedVolatility ? { label: 'Slot Hub 統一波動度', value: volatilityLabels[normalizedVolatility] ?? normalizedVolatility } : undefined,
-  gridDisplay ? { label: '盤面', value: gridDisplay } : undefined,
-  winCountDisplay ? { label: '賠線／Ways 數量', value: winCountDisplay } : undefined,
-  entry.data.maxWinMultiplier !== undefined ? { label: '最高倍數', value: formatMultiplier(entry.data.maxWinMultiplier), note: entry.data.maxWinLabelOriginal ? `原廠標示：${entry.data.maxWinLabelOriginal}` : undefined } : undefined,
-  entry.data.bonusBuy !== undefined ? { label: 'Bonus Buy', value: entry.data.bonusBuy ? '支援' : '不支援' } : undefined,
-  entry.data.jackpotType ? { label: 'Jackpot 類型', value: jackpotTypeLabels[entry.data.jackpotType] ?? entry.data.jackpotType } : undefined,
-  entry.data.minBet !== undefined ? { label: '最低投注', value: formatNumber(entry.data.minBet) } : undefined,
-  entry.data.maxBet !== undefined ? { label: '最高投注', value: formatNumber(entry.data.maxBet) } : undefined,
-  entry.data.releaseDate ? { label: '發行日期', value: formatDate(entry.data.releaseDate) } : undefined,
-  entry.data.gameId ? { label: 'Game ID', value: entry.data.gameId } : undefined,
-].filter(Boolean) as { label: string; value: string; note?: string; guidePlacement?: GameDetailFieldPlacement }[];
+  { label: '原廠波動度', value: presentation.full.volatilityOriginal, guidePlacement: 'full-volatility' as const },
+  { label: 'Slot Hub 統一波動度', value: presentation.full.volatilityNormalized ? volatilityLabels[presentation.full.volatilityNormalized] ?? presentation.full.volatilityNormalized : undefined, note: presentation.full.volatilityNormalized ? '編輯統一顯示，不是產業共同量表。' : undefined },
+  { label: '盤面', value: gridDisplay },
+  { label: '原廠賠付說明', value: presentation.full.originalWinDescription ?? winCountDisplay },
+  { label: '最高倍數原文', value: presentation.full.maxWinOriginal ?? (presentation.full.maxWinMultiplier !== undefined ? formatMultiplier(presentation.full.maxWinMultiplier) : undefined) },
+  { label: 'Bonus Buy', value: presentation.full.bonusBuy === undefined ? undefined : presentation.full.bonusBuy ? '支援' : '不支援', note: presentation.full.bonusBuy === undefined ? '缺值不等於不支援。' : undefined },
+  { label: 'Jackpot 類型', value: presentation.full.jackpotType ? jackpotTypeLabels[presentation.full.jackpotType] ?? presentation.full.jackpotType : undefined },
+  { label: '投注範圍', value: betRange },
+  { label: '發行日期', value: presentation.full.releaseDate ? formatDate(presentation.full.releaseDate) : undefined },
+  { label: 'Game ID', value: presentation.full.gameId },
+] as { label: string; value?: string; note?: string; guidePlacement?: GameDetailFieldPlacement }[];
 
 const featureGuideDirect = knowledgePresentation.featureGuides.direct;
 const featureGuideOverflow = knowledgePresentation.featureGuides.overflow;
@@ -126,18 +145,6 @@ const similarReasonLabel = (reason: { type: string; value: string | number }) =>
   : featureLabels[String(reason.value)] ?? String(reason.value);
 
 const sources = entry.data.sources.length ? entry.data.sources : [entry.data.source];
-const gameDna = buildGameDnaPilot(entry.id, entry.data);
-const gameDnaMechanism = gameDna?.gameplay.mechanism
-  ? winMechanismLabels[gameDna.gameplay.mechanism] ?? gameDna.gameplay.mechanism
-  : undefined;
-const gameDnaGrid = gameDna?.gameplay.reels
-  ? gameDna.gameplay.reels.replace(/\s*[x×]\s*/i, ' × ')
-  : gameDna?.gameplay.rows ? `${gameDna.gameplay.rows} 列` : undefined;
-const gameDnaWinCount = gameDna?.gameplay.winCount
-  ? gameDna.gameplay.mechanism === 'paylines'
-    ? `${gameDna.gameplay.winCount.toLocaleString()} 條賠線`
-    : `${gameDna.gameplay.winCount.toLocaleString()} 路`
-  : undefined;
 const game = {
   slug: entry.id, name: displayName, originalName, displayNameZhHant: entry.data.displayNameZhHant,
   aliases: entry.data.aliases, seriesId: entry.data.seriesId, seriesNameZhHant: entry.data.seriesNameZhHant,
@@ -178,6 +185,7 @@ const schema = {
         <div class="game-file-meta">
           {provider && <a href={providerUrl(entry.data.provider)}>{provider.data.name} ↗</a>}
           {entry.data.seriesNameZhHant && <span>{entry.data.seriesNameZhHant}{entry.data.installment ? ` · 第 ${entry.data.installment} 代` : ''}</span>}
+          {entry.data.lastVerifiedAt && <span>最後核對 {formatDate(entry.data.lastVerifiedAt)}</span>}
         </div>
         <p class="game-file-summary">{entry.data.summary}</p>
         <div class="action-row">
@@ -187,110 +195,83 @@ const schema = {
       </div>
     </header>
 
-    {coreStats.length > 0 && <section class="game-core-stats" aria-labelledby="core-data-title">
-      <h2 id="core-data-title">核心數據</h2>
-      <dl>{coreStats.map((stat) => <div><dt>{stat.label}</dt><dd>{stat.value}{stat.badge && <small>{stat.badge}</small>}</dd>{knowledgePresentation.fieldGuides[stat.guidePlacement]?.map((match) => <a class="game-field-guide-link" href={match.guide.url} aria-label={`了解${stat.label}：${match.guide.title}`} data-guide-slug={match.guide.slug} data-guide-placement={stat.guidePlacement}>了解這項資料 →</a>)}</div>)}</dl>
-    </section>}
+    <section class="game-quick-read" aria-labelledby="quick-read-title">
+      <div class="game-quick-heading"><p class="eyebrow">AT A GLANCE</p><h2 id="quick-read-title">快速看懂</h2></div>
+      <dl>{quickStats.map((stat) => <div><dt>{stat.label}</dt><dd class={!stat.value ? 'is-unknown' : undefined}>{stat.value ?? unknown}{stat.badge && <small>{stat.badge}</small>}</dd><p>{stat.note}</p>{stat.value && knowledgePresentation.fieldGuides[stat.guidePlacement]?.map((match) => <a class="game-field-guide-link" href={match.guide.url} aria-label={`了解${stat.label}：${match.guide.title}`} data-guide-slug={match.guide.slug} data-guide-placement={stat.guidePlacement}>了解這項資料 →</a>)}</div>)}</dl>
+    </section>
 
-    {gameDna && <section class="game-dna-pilot" aria-labelledby="game-dna-title" data-game-dna-pilot={gameDna.slug}>
-      <header class="game-dna-heading">
-        <p class="eyebrow">DATA FINGERPRINT / SINGLE-GAME PILOT</p>
-        <div>
-          <h2 id="game-dna-title">遊戲 DNA</h2>
-          <p>把同一筆遊戲資料中的玩法、版本與來源放在一起讀；這不是評分或推薦。</p>
-        </div>
-      </header>
-      <div class="game-dna-band">
-        <section class="game-dna-group" aria-labelledby="game-dna-gameplay">
-          <h3 id="game-dna-gameplay">玩法骨架</h3>
-          <dl>
-            {gameDnaMechanism && <div><dt>主要玩法</dt><dd>{gameDnaMechanism}</dd></div>}
-            {gameDnaWinCount && <div><dt>組合數</dt><dd>{gameDnaWinCount}</dd></div>}
-            {gameDnaGrid && <div><dt>盤面</dt><dd>{gameDnaGrid}</dd></div>}
-          </dl>
-          {gameDna.gameplay.features.length > 0 && <ul class="game-dna-features" aria-label="已記錄的遊戲功能">
-            {gameDna.gameplay.features.map((feature: string) => <li>{featureLabels[feature] ?? feature}</li>)}
-          </ul>}
+    <section class="game-operation" aria-labelledby="operation-title">
+      <div class="game-section-heading"><p class="eyebrow">HOW IT WORKS</p><div><h2 id="operation-title">這款怎麼運作</h2><p>先看一般得獎如何成立，再把盤面流程與各項功能分開閱讀。</p></div></div>
+      <div class="game-operation-band">
+        <section aria-labelledby="mechanism-title">
+          <p class="eyebrow">主要賠付機制</p>
+          <h3 id="mechanism-title">{mechanism ?? unknown}</h3>
+          {presentation.operation.originalWinDescription && <p>{presentation.operation.originalWinDescription}</p>}
+          {(gridDisplay || winCountDisplay) && <dl><div><dt>盤面</dt><dd>{gridDisplay ?? unknown}</dd></div><div><dt>賠線／Ways</dt><dd>{winCountDisplay ?? unknown}</dd></div></dl>}
         </section>
-
-        <section class="game-dna-group" aria-labelledby="game-dna-rtp">
-          <h3 id="game-dna-rtp">RTP 版本</h3>
-          <dl>
-            {gameDna.rtp.primary !== undefined && <div><dt>主要顯示值</dt><dd>{gameDna.rtp.primary}%</dd></div>}
-            <div><dt>已收錄數值</dt><dd>{gameDna.rtp.values.length} 個</dd></div>
-          </dl>
-          <p class="game-dna-note">不同數值需連同版本與來源閱讀，不代表每個市場都可自由選擇。</p>
-        </section>
-
-        <section class="game-dna-group" aria-labelledby="game-dna-labels">
-          <h3 id="game-dna-labels">原廠與統一顯示</h3>
-          <dl>
-            {gameDna.labels.volatilityOriginal && <div><dt>原廠波動度</dt><dd>{gameDna.labels.volatilityOriginal}</dd></div>}
-            {gameDna.labels.volatilityNormalized && <div><dt>Slot Hub 統一值</dt><dd>{volatilityLabels[gameDna.labels.volatilityNormalized] ?? gameDna.labels.volatilityNormalized}</dd></div>}
-            {gameDna.labels.maxWinMultiplier !== undefined && <div><dt>最高倍數</dt><dd>{formatMultiplier(gameDna.labels.maxWinMultiplier)}</dd></div>}
-          </dl>
-          {gameDna.labels.maxWinOriginal && <p class="game-dna-original">原廠標示：{gameDna.labels.maxWinOriginal}</p>}
-          <p class="game-dna-note">數字較大不代表較容易取得；投注基準與成立條件仍以原廠資料為準。</p>
-        </section>
-
-        <section class="game-dna-group game-dna-trust" aria-labelledby="game-dna-trust">
-          <h3 id="game-dna-trust">來源與下一步</h3>
-          <dl>
-            <div><dt>第一方來源</dt><dd>{gameDna.trust.sourceCount} 筆</dd></div>
-            {gameDna.trust.lastVerifiedAt && <div><dt>最後核對</dt><dd>{formatDate(gameDna.trust.lastVerifiedAt)}</dd></div>}
-          </dl>
-          <nav aria-label="繼續閱讀 Mahjong Ways 資料">
-            <a href="#full-data-title">查看完整遊戲資料</a>
-            {similarPlay.items.length > 0 && <a href="#similar-play-title">查看玩法相近</a>}
-            {dataMethodology && <a href={dataMethodology.url}>了解資料整理方式</a>}
-          </nav>
+        <section aria-labelledby="features-title">
+          <p class="eyebrow">已確認功能</p>
+          <h3 id="features-title">功能各有自己的規則</h3>
+          {presentation.operation.features.length > 0
+            ? <ul class="game-operation-features">{presentation.operation.features.map((feature: string) => <li>{featureLabels[feature] ?? feature}</li>)}</ul>
+            : <p class="game-operation-unknown">目前尚未核實可列出的功能標籤。</p>}
+          {presentation.operation.ruleNotes.length > 0 && <details class="game-rule-notes"><summary>查看已記錄的功能規則（{presentation.operation.ruleNotes.length}）</summary><ul>{presentation.operation.ruleNotes.map((note: string) => <li>{note}</li>)}</ul></details>}
         </section>
       </div>
-    </section>}
+    </section>
 
-    {(fullSpecs.length > 0 || entry.data.features.length > 0) && <section class="game-data-section" aria-labelledby="full-data-title">
-      <div class="game-section-heading"><p class="eyebrow">STRUCTURED DATA</p><h2 id="full-data-title">完整遊戲資料</h2></div>
-      {fullSpecs.length > 0 && <dl class="game-spec-grid">{fullSpecs.map((spec) => <div><dt>{spec.label}</dt><dd>{spec.value}</dd>{spec.note && <small>{spec.note}</small>}{spec.guidePlacement && knowledgePresentation.fieldGuides[spec.guidePlacement]?.map((match) => <a class="game-field-guide-link" href={match.guide.url} aria-label={`了解${spec.label}：${match.guide.title}`} data-guide-slug={match.guide.slug} data-guide-placement={spec.guidePlacement}>了解這項資料 →</a>)}</div>)}</dl>}
-      {entry.data.features.length > 0 && <div class="game-features"><h3>遊戲功能</h3><ul>{entry.data.features.map((feature) => <li>{featureLabels[feature] ?? feature}</li>)}</ul></div>}
+    <section class="game-data-section" aria-labelledby="full-data-title">
+      <div class="game-section-heading"><p class="eyebrow">STRUCTURED DATA</p><div><h2 id="full-data-title">完整資料與版本</h2><p>保留原廠文字、已收錄版本與缺值；缺值一律表示目前尚未核實。</p></div></div>
+      <dl class="game-data-ledger">
+        <div>
+          <dt>Slot Hub 已收錄的 RTP 版本</dt>
+          <dd class={presentation.full.rtpValues.length === 0 ? 'is-unknown' : undefined}>
+            {presentation.full.rtpValues.length > 1
+              ? <details><summary>查看 {presentation.full.rtpValues.length} 個已收錄數值</summary><p>{presentation.full.rtpValues.map((value: number) => `${value}%`).join('、')}</p><small>不同數值不代表每個市場都可自由選擇。</small></details>
+              : presentation.full.rtpValues.length === 1 ? `${presentation.full.rtpValues[0]}%` : unknown}
+          </dd>
+          {knowledgePresentation.fieldGuides['full-rtp-variants']?.map((match) => <a class="game-field-guide-link" href={match.guide.url} aria-label={`了解 RTP 版本：${match.guide.title}`} data-guide-slug={match.guide.slug} data-guide-placement="full-rtp-variants">了解這項資料 →</a>)}
+        </div>
+        {fullSpecs.map((spec) => <div><dt>{spec.label}</dt><dd class={!spec.value ? 'is-unknown' : undefined}>{spec.value ?? unknown}{spec.note && <small>{spec.note}</small>}</dd>{spec.guidePlacement && knowledgePresentation.fieldGuides[spec.guidePlacement]?.map((match) => <a class="game-field-guide-link" href={match.guide.url} aria-label={`了解${spec.label}：${match.guide.title}`} data-guide-slug={match.guide.slug} data-guide-placement={spec.guidePlacement}>了解這項資料 →</a>)}</div>)}
+      </dl>
+    </section>
+
+    {(seriesGames.length > 0 || similarPlay.items.length > 0 || provider || similarExploreUrl) && <section class="game-next-explore" aria-labelledby="next-explore-title">
+      <div class="game-section-heading"><p class="eyebrow">NEXT</p><div><h2 id="next-explore-title">接著探索</h2><p>從已確認的系列、主要玩法、玩法相近或遊戲廠商繼續找。</p></div></div>
+
+      {seriesGames.length > 0 && <div class="game-explore-group"><h3>同系列遊戲</h3><div class="related-game-grid">
+        {seriesGames.map((item) => item && <a href={gameUrl(item.id)}>{item.data.image && <img src={item.data.image.src} alt="" loading="lazy" />}<span><strong>{item.data.displayNameZhHant ?? item.data.originalName ?? item.data.name}</strong>{item.data.displayNameZhHant && <small>{item.data.originalName ?? item.data.name}</small>}</span>{item.data.installment && <b>第 {item.data.installment} 代</b>}</a>)}
+      </div></div>}
+
+      {similarPlay.items.length > 0 && similarMechanismLabel && <div class="game-similar-play" aria-labelledby="similar-play-title">
+        <div class="similar-play-subheading"><h3 id="similar-play-title">玩法相近</h3><p>依主要賠付機制整理，功能與規則可能不同。</p></div>
+        <ul class="similar-play-grid">
+          {similarPlay.items.map(({ game: item, reasons }) => <li><a href={gameUrl(item.slug)} data-similar-play-slug={item.slug}>
+            {item.image ? <img src={item.image.src} alt="" loading="lazy" /> : <span class="similar-play-placeholder" aria-hidden="true">{item.name.slice(0, 1)}</span>}
+            <span class="similar-play-card-body">
+              <span class="similar-play-identity"><strong>{item.name}</strong><small>{item.providerName}</small></span>
+              <span class="similar-play-reasons"><b>{similarMechanismLabel}</b>{reasons.map((reason: { type: string; value: string | number }) => <small>{similarReasonLabel(reason)}</small>)}</span>
+            </span>
+          </a></li>)}
+        </ul>
+      </div>}
+
+      <nav class="game-explore-actions" aria-label="更多遊戲探索方式">
+        {similarExploreUrl && similarMechanismLabel && <a class="button secondary" href={similarExploreUrl}>探索更多 {similarMechanismLabel} 遊戲</a>}
+        {provider && <a class="button secondary" href={providerUrl(entry.data.provider)}>查看 {provider.data.name} 收錄遊戲</a>}
+      </nav>
     </section>}
 
     {featureGuideDirect.length > 0 && <section class="game-guide-rail" aria-labelledby="game-guide-title">
-      <div><p class="eyebrow">FEATURE GUIDES</p><h2 id="game-guide-title">看懂遊戲功能</h2><p>依這款遊戲實際標記的功能，前往對應說明。</p></div>
+      <div><p class="eyebrow">RELATED GUIDES</p><h2 id="game-guide-title">看懂相關概念</h2><p>依這款遊戲已確認的資料與功能，前往對應教學。</p></div>
       <div class="game-guide-list">
         <nav aria-label="相關遊戲功能教學">{featureGuideDirect.map((match) => <a href={match.guide.url} data-guide-slug={match.guide.slug} data-guide-placement="feature-direct"><span>{match.displayReasons.map((reason) => relationshipLabel(reason.type, reason.value)).join('、')}</span><strong>{match.guide.title}</strong><b>閱讀 →</b></a>)}</nav>
         {featureGuideOverflow.length > 0 && <details class="game-guide-overflow"><summary>查看更多相關教學（{featureGuideOverflow.length}）</summary><nav aria-label="更多相關遊戲功能教學">{featureGuideOverflow.map((match) => <a href={match.guide.url} data-guide-slug={match.guide.slug} data-guide-placement="feature-overflow"><span>{match.displayReasons.map((reason) => relationshipLabel(reason.type, reason.value)).join('、')}</span><strong>{match.guide.title}</strong><b>閱讀 →</b></a>)}</nav></details>}
       </div>
     </section>}
 
-    {similarPlay.items.length > 0 && similarMechanismLabel && similarExploreUrl && <section class="game-similar-play" aria-labelledby="similar-play-title">
-      <div class="game-section-heading similar-play-heading">
-        <p class="eyebrow">PLAY PATTERN</p>
-        <div><h2 id="similar-play-title">玩法相近</h2><p>依主要賠付機制整理，功能與規則可能不同。</p></div>
-      </div>
-      <ul class="similar-play-grid">
-        {similarPlay.items.map(({ game: item, reasons }) => <li><a href={gameUrl(item.slug)} data-similar-play-slug={item.slug}>
-          {item.image ? <img src={item.image.src} alt="" loading="lazy" /> : <span class="similar-play-placeholder" aria-hidden="true">{item.name.slice(0, 1)}</span>}
-          <span class="similar-play-card-body">
-            <span class="similar-play-identity"><strong>{item.name}</strong><small>{item.providerName}</small></span>
-            <span class="similar-play-reasons"><b>{similarMechanismLabel}</b>{reasons.map((reason: { type: string; value: string | number }) => <small>{similarReasonLabel(reason)}</small>)}</span>
-          </span>
-        </a></li>)}
-      </ul>
-      <a class="button secondary similar-play-explore" href={similarExploreUrl}>探索更多同類遊戲</a>
-    </section>}
-
-    {(seriesGames.length > 0 || providerGames.length > 0) && <section class="game-relations" aria-labelledby="related-title">
-      <div class="game-section-heading"><p class="eyebrow">RELATED GAMES</p><h2 id="related-title">關聯遊戲</h2></div>
-      {seriesGames.length > 0 && <div class="relation-group"><h3>同系列遊戲</h3><div class="related-game-grid">
-        {seriesGames.map((item) => item && <a href={gameUrl(item.id)}>{item.data.image && <img src={item.data.image.src} alt="" loading="lazy" />}<span><strong>{item.data.displayNameZhHant ?? item.data.originalName ?? item.data.name}</strong>{item.data.displayNameZhHant && <small>{item.data.originalName ?? item.data.name}</small>}</span>{item.data.installment && <b>第 {item.data.installment} 代</b>}</a>)}
-      </div></div>}
-      {providerGames.length > 0 && <div class="relation-group"><h3>同廠商遊戲</h3><div class="related-game-grid">
-        {providerGames.map((item) => <a href={gameUrl(item.id)}>{item.data.image && <img src={item.data.image.src} alt="" loading="lazy" />}<span><strong>{item.data.displayNameZhHant ?? item.data.originalName ?? item.data.name}</strong>{item.data.displayNameZhHant && <small>{item.data.originalName ?? item.data.name}</small>}</span></a>)}
-      </div></div>}
-    </section>}
-
     {(sources.length > 0 || entry.data.lastVerifiedAt || entry.data.image) && <section class="game-sources" aria-labelledby="source-title">
-      <div><p class="eyebrow">DATA NOTES</p><h2 id="source-title">資料資訊</h2>{entry.data.lastVerifiedAt && <p>最後核對日期 <strong>{formatDate(entry.data.lastVerifiedAt)}</strong></p>}{dataMethodology && <a class="data-methodology-link" href={dataMethodology.url} data-methodology-entry="game-detail">了解 Slot Hub 如何整理資料 →</a>}</div>
+      <div><p class="eyebrow">SOURCES & TRUST</p><h2 id="source-title">資料來源與可信度</h2>{entry.data.lastVerifiedAt && <p>最後核對日期 <strong>{formatDate(entry.data.lastVerifiedAt)}</strong></p>}{dataMethodology && <a class="data-methodology-link" href={dataMethodology.url} data-methodology-entry="game-detail">了解 Slot Hub 如何整理資料 →</a>}</div>
       <ul>
         {sources.map((source) => <li><a href={source.url} rel="nofollow">{source.label} ↗</a><small>核對 {formatDate(source.checkedAt)}</small></li>)}
         {entry.data.image && <li><a href={entry.data.image.sourceUrl} rel="nofollow">圖片來源 ↗</a><small>取得 {formatDate(entry.data.image.retrievedAt)}</small></li>}

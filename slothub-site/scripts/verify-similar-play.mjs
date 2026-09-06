@@ -113,8 +113,8 @@ for (const game of published) {
 assert.equal(renderedModules, 53, 'expected 53 rendered similar-play modules');
 
 const representativeHtml = await readFile(join(distGamesDirectory, 'big-bass-bonanza', 'index.html'), 'utf8');
-assert.ok(representativeHtml.indexOf('class="game-guide-rail"') < representativeHtml.indexOf('class="game-similar-play"'), 'similar-play must follow the Feature Guide rail');
-assert.ok(representativeHtml.indexOf('class="game-similar-play"') < representativeHtml.indexOf('class="game-relations"'), 'similar-play must precede existing series/provider relations');
+assert.ok(representativeHtml.indexOf('class="game-next-explore"') < representativeHtml.indexOf('class="game-similar-play"'), 'similar-play must belong to the shared next-explore section');
+assert.ok(representativeHtml.indexOf('class="game-similar-play"') < representativeHtml.indexOf('class="game-guide-rail"'), 'similar-play must precede the related Guide section');
 const styles = await readFile(fileURLToPath(new URL('../src/styles/global.css', import.meta.url)), 'utf8');
 assert.match(styles, /\.similar-play-explore\{[^}]*min-height:44px/, 'Explore CTA must preserve a 44px touch target');
 assert.match(styles, /\.similar-play-grid>li>a:focus-visible[^}]*outline:/, 'similar-play links need a visible keyboard focus style');

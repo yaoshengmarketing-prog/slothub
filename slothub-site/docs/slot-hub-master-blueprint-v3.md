@@ -439,6 +439,8 @@ Game／Provider 持續擴充是獨立且可與介面批次並行的內容工作�
 
 ### 批次 4：Game detail 共用骨架
 
+狀態：`CLOSED`
+
 建立共用 presentation projection，依核准順序重排；以 Mahjong Ways 與 Big Bass Bonanza 驗證完整與缺值，之後全量回讀 58 款。
 
 ### 批次 5：Search、Tools 與跨頁清理
@@ -501,6 +503,13 @@ Game／Provider 持續擴充是獨立且可與介面批次並行的內容工作�
 - 所有數量由 58 款 published Game 與既有 relationship index 建置時計算；本批尚未 Push 或部署。
 - 主入口按鈕的白字／品牌橘對比為 2.82:1，低於一般文字基準；局部改用既有深藍文字後為 6.26:1。第三批經人工方向核准與此最小收尾後狀態更新為 `CLOSED`。
 
+### 2026-09-07：Game detail 共用骨架本機完成
+
+- 58 款 published Game 共用同一套 presentation projection，依「身份 → 快速看懂 → 怎麼運作 → 完整資料與版本 → 接著探索 → 相關 Guide → 來源與可信度」呈現。
+- 快速看懂固定承接主要玩法、主要 RTP、統一波動度與最高倍數；完整資料保留原廠文字、已收錄版本與缺值，缺值統一顯示「尚未核實」。
+- Mahjong Ways DNA Pilot 已吸收進共用資訊層並移除單款 mapping；Mahjong Ways 與 Big Bass Bonanza 分別驗證完整資料與重要缺值，58 款完成全量投影驗證。
+- Compare、Guide relationship、玩法相近、系列／Provider 與來源普通連結維持原責任；本批已通過人工審查並標記為 `CLOSED`，尚未 Push 或部署。
+
 ## 15. 固定出口
 
 STAGE_RESULT: PASS_TO_NEXT_STAGE
@@ -523,7 +532,7 @@ DATA_STRUCTURE_CHANGED: NO
 
 SEO_INDEX_POLICY_CHANGED: NO
 
-NEXT_ALLOWED_ACTION: 依第 12 章開始第一批正式網站本機施工
+NEXT_ALLOWED_ACTION: 人工核准後開始批次 5 Search、Tools 與跨頁清理
 
 PUSH_ALLOWED: NO
 

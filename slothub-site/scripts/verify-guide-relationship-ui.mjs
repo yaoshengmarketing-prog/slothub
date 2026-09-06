@@ -66,7 +66,7 @@ if (cascadingGuidePublished) {
   assert.ok(!slots.includes('/guide/slot-cascading-tumble-avalanche-explained/'), 'Draft Cascading Guide entered the Slots Knowledge Map');
 }
 
-assert.match(bigBass, /看懂遊戲功能/, 'Game detail Feature Guide rail missing');
+assert.match(bigBass, /看懂相關概念/, 'Game detail related Guide rail missing');
 assert.ok(!bigBass.includes('Slot 常用術語快速查詢'), 'Big Bass inherited the glossary after Mechanism ownership transfer');
 assert.match(bigBass, /data-guide-slug="slot-payout-mechanisms-explained"/, 'Big Bass did not inherit the published payout Guide');
 const bonanzaRail = bonanza.match(/<section class="game-guide-rail"[\s\S]*?<\/section>/)?.[0] ?? '';
