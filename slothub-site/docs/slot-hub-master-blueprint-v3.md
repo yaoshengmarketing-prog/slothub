@@ -50,7 +50,7 @@ v3 以目前已驗證的底座為起點：
 ### 0.3 施工授權
 
 - 本藍圖決定產品方向、頁面責任與施工順序。
-- 每一批本機施工只可改動該批列明的檔案與測試預期。
+- 每一批只修改與該批責任直接相關的檔案；實際檔案由執行者依現況判斷並在完成時回報。
 - 永久 URL、資料結構、SEO 索引策略、內容大量刪除或重大產品選擇，必須另行人工決策。
 - 本藍圖核准不等於 Push、部署或正式網域上線授權。
 
@@ -327,7 +327,7 @@ Compare 動作保留在身份區。
 - 互動觸控高度至少 44px。
 - 不使用 `word-break: break-all`；保護重要繁中語意片段。
 - 表格只在自己的容器內水平捲動，不能推寬整頁。
-- 核心內容、普通連結、表格與 `<details>` 在無 JavaScript 時仍可讀。
+- 核心內容、普通入口、表格與 `<details>` 在無 JavaScript 時仍可閱讀與抵達；這不表示完整互動式 Explorer 必須在無 JavaScript 下運作。
 - 鍵盤順序、focus-visible、螢幕閱讀器語意、forced colors 與 200% reflow 不退化。
 - sticky Header 下的錨點標題不得被遮住。
 
@@ -403,9 +403,15 @@ Compare 動作保留在身份區。
 - 未成熟的 Fishing 專屬 Schema／Explorer 與 Crash／Aviator 擴張。
 - Wix、migration、301、410、GSC、DNS、舊內容搬移與正式網域切換。
 
+### 11.5 可並行的內容工作軌
+
+Game／Provider 持續擴充是獨立且可與介面批次並行的內容工作軌。它沿用既有來源、圖片、缺值、多版本與人工審核規則，不因 v3 介面施工完成而停止，也不因列入並行工作軌而自動取得 Schema、taxonomy、永久 URL、Push 或部署權限。
+
 ## 12. 正式網站本機施工批次
 
 ### 批次 1：Header 與首頁選路
+
+狀態：`CLOSED`
 
 預計範圍：共用 Header、首頁、Guide 首頁摘要的既有測試預期與必要的 scoped CSS。
 
@@ -420,6 +426,8 @@ Compare 動作保留在身份區。
 - 1440、390、320 無水平溢位；Enter、IME、鍵盤與無 JavaScript 基本入口正常。
 
 ### 批次 2：Games 找遊戲流程
+
+狀態：`LOCAL IMPLEMENTATION IN PROGRESS`
 
 整合 Guided Explorer、完整條件、結果摘要、結果落點與 0 結果復原；不修改 Explorer URL schema 或 filter 邏輯。
 
@@ -470,6 +478,13 @@ Compare 動作保留在身份區。
 - 第 3 階段低保真原型通過，證明同一 Game detail 骨架可承接完整與重要缺值案例。
 - 第 4 階段高保真方向通過；最小收尾完成主圖路徑、44px 觸控基準、320px Slots 標題、表單邊界、前台詞彙、缺值與 Guided Explorer 結果落點。
 - Editorial／data-led 視覺方向正式採用，不建立另一輪大型原型。
+
+### 2026-09-06：施工邊界與第一批結案
+
+- 施工檔案以批次責任為邊界，由執行者依現況判斷並回報實際清單，不以事前列名作為唯一授權判準。
+- 無 JavaScript 基線限定於核心內容與普通入口可讀；完整互動式 Explorer 仍可合理依賴 JavaScript。
+- Game／Provider 擴充保留為可並行內容工作軌，繼續沿用既有來源、缺值與審核規則。
+- Header 與首頁選路批次完成 1425px 中文語意片段修正與回歸驗證，狀態更新為 `CLOSED`；Games 找遊戲流程進入本機施工。
 
 ## 15. 固定出口
 
