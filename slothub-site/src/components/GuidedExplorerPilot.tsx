@@ -8,9 +8,9 @@ import {
 import { featureLabels, winMechanismLabels } from '../lib/taxonomy';
 import { gamesIndexUrl } from '../lib/urls';
 
-type Props = { games: GameCatalogItem[] };
+type Props = { games: GameCatalogItem[]; resultAnchor?: string };
 
-export default function GuidedExplorerPilot({ games }: Props) {
+export default function GuidedExplorerPilot({ games, resultAnchor }: Props) {
   const [mechanism, setMechanism] = useState('');
   const [feature, setFeature] = useState('');
   const result = useMemo(
@@ -18,6 +18,7 @@ export default function GuidedExplorerPilot({ games }: Props) {
     [games, mechanism, feature],
   );
   const explorerUrl = result.explorerState ? gamesIndexUrl(result.explorerState) : undefined;
+  const destinationUrl = explorerUrl && resultAnchor ? `${explorerUrl}#${resultAnchor}` : explorerUrl;
   const canOpen = result.complete && Boolean(result.count) && explorerUrl;
 
   return <div className="guided-explorer-pilot" data-guided-explorer-pilot>
@@ -59,7 +60,10 @@ export default function GuidedExplorerPilot({ games }: Props) {
         </dl>
         <div className="guided-result-count"><strong>{result.count}</strong><span>款符合條件</span></div>
         <code>{explorerUrl}</code>
-        {canOpen ? <a className="button primary guided-explorer-cta" href={explorerUrl}>在遊戲庫查看 {result.count} 款</a> : <p className="guided-zero-result">這組條件目前沒有已收錄結果，請更改一項條件。</p>}
+        {canOpen ? <a className="button primary guided-explorer-cta" href={destinationUrl}>在遊戲庫查看 {result.count} 款</a> : <div className="guided-zero-result">
+          <p>這組條件目前沒有已收錄結果，請重新選擇條件。</p>
+          <button type="button" onClick={() => { setMechanism(''); setFeature(''); }}>清除條件</button>
+        </div>}
       </>}
     </aside>
   </div>;

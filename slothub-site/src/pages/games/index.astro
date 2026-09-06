@@ -1,12 +1,34 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import GameExplorer from '../../components/GameExplorer';
+import GuidedExplorerPilot from '../../components/GuidedExplorerPilot';
 import { loadPublishedGameCatalog } from '../../lib/game-catalog';
 import { createGuideRelationshipIndex, explorerGuideLinks } from '../../lib/guide-relationship-catalog';
+import { gamesIndexUrl } from '../../lib/urls';
+import { GUIDED_EXPLORER_MECHANISMS } from '../../lib/guided-explorer-pilot.mjs';
+import { winMechanismLabels } from '../../lib/taxonomy';
 import { getCollection } from 'astro:content';
 
 const { games } = await loadPublishedGameCatalog();
+const providerCount = new Set(games.map((game) => game.provider)).size;
 const relationships = createGuideRelationshipIndex(await getCollection('guides'), games);
 const relationshipLinks = explorerGuideLinks(relationships);
 ---
-<BaseLayout title="遊戲庫｜Slot Hub" description="依廠商、玩法、功能與數據搜尋、篩選及比較遊戲。" canonicalPath="/games/"><section class="page-hero shell"><p class="eyebrow">GAME LIBRARY</p><h1>遊戲庫</h1><p>用資料找遊戲。所有未核對的欄位都會保留空白，不影響其他條件的探索。</p></section><section class="section shell"><GameExplorer games={games} relationshipLinks={relationshipLinks} urlState client:load/></section></BaseLayout>
+<BaseLayout title="遊戲庫｜Slot Hub" description="依廠商、玩法、功能與數據搜尋、篩選及比較遊戲。" canonicalPath="/games/">
+  <section class="games-v3-intro shell">
+    <p class="eyebrow">GAME LIBRARY</p>
+    <div><h1>找一款有明確資料的遊戲</h1><p>目前收錄 {games.length} 款遊戲、{providerCount} 家廠商。可以先用兩個條件開始，也可以直接調整完整篩選；兩種入口共用同一個 Explorer 與網址狀態。</p></div>
+    <nav class="games-v3-mode-links" aria-label="選擇找遊戲方式"><a href="#guided-explorer">從玩法開始</a><a href="#full-explorer">直接調整完整條件</a></nav>
+  </section>
+
+  <section class="games-v3-guided shell" id="guided-explorer" aria-labelledby="guided-explorer-title">
+    <header class="games-v3-section-head"><div><p class="eyebrow">GUIDED START</p><h2 id="guided-explorer-title">先用主要玩法與一項功能縮小範圍</h2></div><p>選擇後先確認條件、真實結果數與遊戲庫網址，再前往同一個完整 Explorer。0 款時不會提供假結果入口。</p></header>
+    <GuidedExplorerPilot games={games} resultAnchor="game-results" client:load />
+    <noscript><div class="guided-explorer-noscript"><strong>關閉 JavaScript 時仍可依主要玩法前往遊戲庫</strong><p>完整互動篩選需要 JavaScript；以下普通連結只套用一項精確玩法條件。</p><ul>{GUIDED_EXPLORER_MECHANISMS.map((mechanism) => <li><a href={gamesIndexUrl({ mechanism })}>{winMechanismLabels[mechanism]}</a></li>)}</ul></div></noscript>
+  </section>
+
+  <section class="games-v3-full shell" id="full-explorer" aria-labelledby="full-explorer-title">
+    <header class="games-v3-section-head"><div><p class="eyebrow">FULL EXPLORER</p><h2 id="full-explorer-title">完整遊戲篩選</h2></div><p>依名稱、廠商、主要玩法、功能與已取得的數值欄位調整。網址會保存正式條件，Reload 與上一頁／下一頁都能恢復。</p></header>
+    <GameExplorer games={games} relationshipLinks={relationshipLinks} resultAnchor="game-results" urlState client:load/>
+  </section>
+</BaseLayout>

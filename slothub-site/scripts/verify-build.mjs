@@ -52,6 +52,7 @@ const fishing = await readFile(new URL('fishing-games/index.html', root), 'utf8'
 const tools = await readFile(new URL('tools/index.html', root), 'utf8');
 const guides = await readFile(new URL('guide/index.html', root), 'utf8');
 const compare = await readFile(new URL('compare/index.html', root), 'utf8');
+const gameLibrary = await readFile(new URL('games/index.html', root), 'utf8');
 
 const checks = [
   [home.includes('content="noindex,nofollow"'), 'Homepage meta robots is not noindex,nofollow'],
@@ -71,6 +72,9 @@ const checks = [
   [guides.includes('新手入門') && guides.includes('遊戲機制') && guides.includes('捕魚機教學'), 'Guide topics are incomplete'],
   [!compare.includes('先選擇兩至三款遊戲'), 'Compare page must not server-render the transient empty state'],
   [compare.includes('比較工具需要 JavaScript') && compare.includes('href="/games/"'), 'Compare no-JavaScript fallback is missing'],
+  [gameLibrary.includes('data-guided-explorer-pilot') && gameLibrary.includes('id="full-explorer"'), 'Games must expose guided and full Explorer modes on one owner page'],
+  [gameLibrary.includes('id="game-results"'), 'Games result landing is missing'],
+  [(gameLibrary.match(/href="\/games\/\?mechanism=/g) ?? []).length >= 5, 'Games no-JavaScript mechanism links are missing'],
 ];
 
 for (const [passed, message] of checks) {

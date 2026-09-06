@@ -1,12 +1,5 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import GuidedExplorerPilot from '../../components/GuidedExplorerPilot';
-import { loadPublishedGameCatalog } from '../../lib/game-catalog';
-import { gamesIndexUrl } from '../../lib/urls';
-import { GUIDED_EXPLORER_MECHANISMS } from '../../lib/guided-explorer-pilot.mjs';
-import { winMechanismLabels } from '../../lib/taxonomy';
-
-const { games } = await loadPublishedGameCatalog();
 const tools = [
   { code: 'SEARCH', title: '全站搜尋', text: '搜尋遊戲名稱、廠商與教學內容。', href: '/search/', action: '開始搜尋' },
   { code: 'EXPLORE', title: '遊戲探索器', text: '依廠商、類型、RTP 與波動度縮小選擇。', href: '/games/', action: '探索遊戲' },
@@ -16,10 +9,5 @@ const tools = [
 <BaseLayout title="遊戲搜尋、探索與比較工具｜Slot Hub" description="使用 Slot Hub 的全站搜尋、遊戲探索器及三款遊戲比較。" canonicalPath="/tools/">
   <section class="page-hero shell"><p class="eyebrow">TOOL INDEX</p><h1>工具總覽</h1><p>這些工具已經可以實際操作。資料不足的欄位會保留空白，不用推測值填滿結果。</p></section>
   <section class="section shell tool-grid">{tools.map((tool, index) => <a href={tool.href}><span>0{index + 1} / {tool.code}</span><h2>{tool.title}</h2><p>{tool.text}</p><b>{tool.action} →</b></a>)}</section>
-  <section class="section shell guided-explorer-section" aria-labelledby="guided-explorer-title">
-    <header class="section-head"><div><p class="eyebrow">GUIDED EXPLORER PILOT</p><h2 id="guided-explorer-title">用兩個條件開始探索</h2></div><p>先選主要玩法，再視需要加入一項功能。這裡只組合已收錄資料，不替你推薦遊戲。</p></header>
-    <GuidedExplorerPilot games={games} client:load />
-    <noscript><div class="guided-explorer-noscript"><strong>關閉 JavaScript 時仍可依主要玩法前往遊戲庫</strong><p>功能組合需要互動；以下連結只套用一項精確的主要玩法條件。</p><ul>{GUIDED_EXPLORER_MECHANISMS.map((mechanism) => <li><a href={gamesIndexUrl({ mechanism })}>{winMechanismLabels[mechanism]}</a></li>)}</ul></div></noscript>
-  </section>
   <section class="hub-band"><div class="shell hub-intro"><div><p class="eyebrow">WORKFLOW</p><h2>從查找，到看懂差異</h2></div><div class="workflow-list"><p><b>1</b> 知道名稱時，先用全站搜尋直接前往資料頁。</p><p><b>2</b> 不確定遊戲時，用探索器依資料條件縮小範圍。</p><p><b>3</b> 選出候選後，加入比較查看實際可取得的欄位。</p></div></div></section>
 </BaseLayout>

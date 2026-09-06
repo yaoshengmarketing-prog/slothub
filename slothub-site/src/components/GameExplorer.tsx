@@ -44,10 +44,11 @@ function FeatureToggle({ feature, count, selected, onToggle }: { feature: string
   </button>;
 }
 
-export default function GameExplorer({ games, initialLimit, urlState = false, handoffDefaults = {}, relationshipLinks = [] }: { games: GameCatalogItem[]; initialLimit?: number; urlState?: boolean; handoffDefaults?: Partial<ExplorerState>; relationshipLinks?: ExplorerGuideLink[] }) {
+export default function GameExplorer({ games, initialLimit, urlState = false, handoffDefaults = {}, relationshipLinks = [], resultAnchor }: { games: GameCatalogItem[]; initialLimit?: number; urlState?: boolean; handoffDefaults?: Partial<ExplorerState>; relationshipLinks?: ExplorerGuideLink[]; resultAnchor?: string }) {
   const [state, setState] = useState<ExplorerState>(() => emptyExplorerState());
   const [urlReady, setUrlReady] = useState(!urlState);
   const replaceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const resultHeadingRef = useRef<HTMLDivElement | null>(null);
   const ids = useMemo(() => games.map((game) => game.slug), [games]);
   const compare = useCompare(ids);
   const options = useMemo(() => explorerOptions(games), [games]);
@@ -85,6 +86,26 @@ export default function GameExplorer({ games, initialLimit, urlState = false, ha
     (link.type === 'mechanism' && state.mechanism === link.value)
     || (link.type === 'feature' && state.features.includes(link.value)),
   );
+  const activeFilterLabels = [
+    state.q ? `搜尋：${state.q}` : undefined,
+    state.provider ? `廠商：${providers.find(([id]) => id === state.provider)?.[1] ?? state.provider}` : undefined,
+    state.primaryType ? `類型：${primaryTypeLabels[state.primaryType] ?? state.primaryType}` : undefined,
+    state.mechanism ? `玩法：${winMechanismLabels[state.mechanism] ?? state.mechanism}` : undefined,
+    ...state.features.map((feature) => `功能：${featureLabels[feature] ?? feature}`),
+    state.rtpMin !== undefined ? `RTP：${state.rtpMin}% 以上` : undefined,
+    state.volatility ? `波動度：${volatilityLabels[state.volatility] ?? state.volatility}` : undefined,
+    state.maxWinMin !== undefined ? `最高倍數：${formatMultiplier(state.maxWinMin)} 以上` : undefined,
+    state.subtype ? `子類型：${subtypeLabels[state.subtype] ?? state.subtype}` : undefined,
+  ].filter(Boolean) as string[];
+
+  useEffect(() => {
+    if (!resultAnchor || !urlReady || location.hash !== `#${resultAnchor}`) return;
+    const frame = requestAnimationFrame(() => {
+      resultHeadingRef.current?.focus({ preventScroll: true });
+      resultHeadingRef.current?.scrollIntoView({ block: 'start' });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [resultAnchor, urlReady]);
 
   const update = (patch: Partial<ExplorerState>, historyMode: 'push' | 'replace-debounced' = 'push') => {
     const next = { ...state, ...patch };
@@ -143,7 +164,7 @@ export default function GameExplorer({ games, initialLimit, urlState = false, ha
       </details>
     </div>
 
-    <div className="result-heading explorer-result-heading"><div><strong>{filtered.length}</strong><span>款符合目前條件</span>{hasNumericFilter && <small>數值條件只包含已取得該欄位的遊戲</small>}</div>{hasFilters && <button type="button" className="clear-filters" onClick={clear}>清除全部條件</button>}</div>
+    <div className="result-heading explorer-result-heading" id={resultAnchor} ref={resultHeadingRef} tabIndex={resultAnchor ? -1 : undefined}><div><strong>{filtered.length}</strong><span>款符合目前條件</span>{hasNumericFilter && <small>數值條件只包含已取得該欄位的遊戲</small>}</div>{hasFilters && <button type="button" className="clear-filters" onClick={clear}>清除全部條件</button>}{activeFilterLabels.length > 0 && <ul className="explorer-active-filters" aria-label="已套用條件">{activeFilterLabels.map((label) => <li key={label}>{label}</li>)}</ul>}</div>
     {activeGuideLinks.length > 0 && <aside className="explorer-guide-links" aria-label="目前條件的相關教學">
       <span>看懂目前條件</span>
       <div>{activeGuideLinks.map((link) => <a key={`${link.type}-${link.value}`} href={link.guideUrl}><b>{link.label}</b><small>{link.guideTitle}</small><i>閱讀 →</i></a>)}</div>

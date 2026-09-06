@@ -42,6 +42,7 @@ const explorer = source('../src/components/GameExplorer.tsx');
 const compare = source('../src/components/CompareWorkspace.tsx');
 const header = source('../src/components/SiteHeader.astro');
 const home = source('../src/pages/index.astro');
+const gamesIndex = source('../src/pages/games/index.astro');
 const slots = source('../src/pages/slots/index.astro');
 const providerIndex = source('../src/pages/providers/index.astro');
 const providerDetail = source('../src/pages/providers/[slug].astro');
@@ -68,7 +69,12 @@ if (explorerKeyHandler) {
 }
 assert.match(explorer, /writeCanonicalHistory\(window, gamesIndexUrl\(state\), 'push'\)/, 'Explorer explicit submission must push a changed canonical URL');
 assert.match(explorer, /onClick=\{flushPendingQuery\}/, 'Explorer detail links must flush pending text state before navigation');
+assert.match(explorer, /resultAnchor/, 'Explorer must accept a result landing target without creating another state owner');
+assert.match(explorer, /location\.hash !== `#\$\{resultAnchor\}`/, 'Explorer must only focus the requested result landing target');
+assert.match(explorer, /explorer-active-filters/, 'Explorer must expose a readable summary of active conditions');
 assert.match(explorer, /handoffDefaults\.primaryType/);
+assert.match(gamesIndex, /<GuidedExplorerPilot games=\{games\} resultAnchor="game-results" client:load \/>/, 'Games must hand the guided mode to the shared result target');
+assert.match(gamesIndex, /<GameExplorer games=\{games\} relationshipLinks=\{relationshipLinks\} resultAnchor="game-results" urlState client:load\/>/, 'Games must keep the existing full Explorer as the only state owner');
 assert.match(slots, /handoffDefaults=\{\{ primaryType: 'slots' \}\}/);
 assert.match(slots, /item\.exploreHref && <a href=\{item\.exploreHref\}>探索遊戲/);
 assert.match(compare, /query\.hasGames \? query\.slugs : \[\]/, 'Popstate bare Compare must restore an explicit empty state');

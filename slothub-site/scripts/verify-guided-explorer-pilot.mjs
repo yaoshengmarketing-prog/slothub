@@ -61,19 +61,22 @@ const [toolsHtml, positiveGamesHtml, emptyGamesHtml] = await Promise.all([
   readFile(new URL('../dist/games/index.html', import.meta.url), 'utf8'),
   readFile(new URL('../dist/games/index.html', import.meta.url), 'utf8'),
 ]);
-assert.match(toolsHtml, /data-guided-explorer-pilot/);
-assert.match(toolsHtml, /用兩個條件開始探索/);
-assert.match(toolsHtml, /先選一種主要玩法/);
+assert.doesNotMatch(toolsHtml, /data-guided-explorer-pilot/, 'Tools must remain a simple index after the guided flow moves to Games');
 for (const mechanism of GUIDED_EXPLORER_MECHANISMS) {
-  assert.ok(toolsHtml.includes(`/games/?mechanism=${mechanism}`), `${mechanism} no-JS URL missing`);
+  assert.ok(positiveGamesHtml.includes(`/games/?mechanism=${mechanism}`), `${mechanism} no-JS URL missing from Games`);
 }
-assert.doesNotMatch(toolsHtml, /guided-explorer[^\n]*\?q=/, 'Pilot must not use text search as a structured condition');
-assert.match(positiveGamesHtml, /data-react-props|遊戲庫/);
+assert.doesNotMatch(positiveGamesHtml, /guided-explorer[^\n]*\?q=/, 'Pilot must not use text search as a structured condition');
+assert.match(positiveGamesHtml, /data-guided-explorer-pilot/, 'Games owner must include the guided entry mode');
+assert.match(positiveGamesHtml, /id="full-explorer"/, 'Games owner must retain the full Explorer');
+assert.match(positiveGamesHtml, /id="game-results"/, 'Games owner must expose one shared result landing target');
 assert.match(emptyGamesHtml, /data-react-props|遊戲庫/);
 
 const source = await readFile(new URL('../src/components/GuidedExplorerPilot.tsx', import.meta.url), 'utf8');
 assert.match(source, /result\.count === 0/);
 assert.match(source, /canOpen \? <a/);
+assert.match(source, />清除條件<\/button>/, 'A zero-result selection must expose a reversible clear action');
+assert.match(source, /resultAnchor/);
+assert.match(source, /`\$\{explorerUrl\}#\$\{resultAnchor\}`/, 'Guided handoff must keep the canonical Explorer query and add only a result anchor');
 assert.doesNotMatch(source, /推薦|適合你|最好|容易贏/);
 
 console.log('PASS: guided Explorer Pilot reuses 58 published Games, exact one-Feature conditions, true counts and a no-CTA zero state.');
