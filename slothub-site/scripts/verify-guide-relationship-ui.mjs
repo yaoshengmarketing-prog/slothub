@@ -121,7 +121,9 @@ if (maxWinGuidePublished) {
 
 assert.match(slots, /relationship-knowledge-grid/, 'Slots Knowledge Map did not use the relationship presentation');
 assert.match(slots, /了解概念 →/, 'Slots Guide action missing');
-assert.match(slots, /探索遊戲 →/, 'Slots Explorer action missing');
+assert.match(slots, /href="\/games\/\?features=bonus-buy"/, 'Slots exact Feature Explorer action missing');
+assert.match(slots, /href="\/games\/\?mechanism=paylines"/, 'Slots exact mechanism Explorer action missing');
+assert.ok(!slots.includes('/games/?q=RTP'), 'Slots rendered an imprecise Data Topic Explorer action');
 if (cascadingGuidePublished) {
   const knowledgeGrid = slots.match(/<div class="relationship-knowledge-grid">([\s\S]*?)<\/div>\s*<\/section>/)?.[1] ?? slots;
   const cascadingPosition = knowledgeGrid.indexOf('/guide/slot-cascading-tumble-avalanche-explained/');

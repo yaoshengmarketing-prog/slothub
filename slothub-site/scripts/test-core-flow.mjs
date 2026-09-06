@@ -75,8 +75,11 @@ assert.match(explorer, /explorer-active-filters/, 'Explorer must expose a readab
 assert.match(explorer, /handoffDefaults\.primaryType/);
 assert.match(gamesIndex, /<GuidedExplorerPilot games=\{games\} resultAnchor="game-results" client:load \/>/, 'Games must hand the guided mode to the shared result target');
 assert.match(gamesIndex, /<GameExplorer games=\{games\} relationshipLinks=\{relationshipLinks\} resultAnchor="game-results" urlState client:load\/>/, 'Games must keep the existing full Explorer as the only state owner');
-assert.match(slots, /handoffDefaults=\{\{ primaryType: 'slots' \}\}/);
-assert.match(slots, /item\.exploreHref && <a href=\{item\.exploreHref\}>探索遊戲/);
+assert.doesNotMatch(slots, /<GameExplorer\b/, 'Slots must not duplicate the full Explorer owner');
+assert.match(slots, /gamesIndexUrl\(\{ primaryType: 'slots' \}\)/, 'Slots must hand the complete catalog task to Games');
+for (const anchor of ['mechanisms', 'features', 'data-topics']) assert.match(slots, new RegExp(`id="${anchor}"`), `Slots ${anchor} section missing`);
+assert.match(slots, /conceptExplorerUrl\('mechanism'/, 'Slots mechanism entries must use the exact Explorer URL serializer');
+assert.match(slots, /conceptExplorerUrl\('feature'/, 'Slots Feature entries must use the exact Explorer URL serializer');
 assert.match(compare, /query\.hasGames \? query\.slugs : \[\]/, 'Popstate bare Compare must restore an explicit empty state');
 assert.match(compare, /writeCanonicalHistory\(window, compareStateUrl\(clean\), mode\)/);
 assert.ok(

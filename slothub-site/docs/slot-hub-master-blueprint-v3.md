@@ -433,7 +433,7 @@ Game／Provider 持續擴充是獨立且可與介面批次並行的內容工作�
 
 ### 批次 3：Slots Hub
 
-狀態：`LOCAL IMPLEMENTATION IN PROGRESS`
+狀態：`CLOSED`
 
 把 `/slots/` 重排為 Mechanism、Feature、Data Topic 與精確 Explorer／Guide 入口；移除重複完整 Explorer。
 
@@ -493,6 +493,13 @@ Game／Provider 持續擴充是獨立且可與介面批次並行的內容工作�
 - Guided 與完整條件共用 `/games/` 的同一個 Explorer owner；精確 URL、結果摘要、結果落點、Reload 與 Back／Forward 均能恢復一致狀態。
 - 0 結果不建立假入口，並保留重新選擇與清除條件的可逆操作；`#game-results` 維持可辨識且不被 sticky Header 遮住的品牌色焦點。
 - `/tools/` 不再包含第二份 Guided form；Games 找遊戲流程狀態更新為 `CLOSED`，Slots Hub 進入本機施工。
+
+### 2026-09-06：Slots 玩法與資料 Hub 本機完成
+
+- `/slots/` 改以主要賠付方式、Feature、Data Topic 與 Guide 閱讀路線分工，不再重複完整 Explorer、遊戲精選或 Provider 清單。
+- Mechanism 與 Feature 的遊戲入口皆沿用既有精確 `/games/?...` URL；Data Topic 只保留已有正式 owner 的 Guide 普通連結，不建立虛假篩選入口。
+- 所有數量由 58 款 published Game 與既有 relationship index 建置時計算；本批尚未 Push 或部署。
+- 主入口按鈕的白字／品牌橘對比為 2.82:1，低於一般文字基準；局部改用既有深藍文字後為 6.26:1。第三批經人工方向核准與此最小收尾後狀態更新為 `CLOSED`。
 
 ## 15. 固定出口
 

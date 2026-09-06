@@ -1,44 +1,153 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import GameExplorer from '../../components/GameExplorer';
-import { gamesIndexUrl, providerUrl } from '../../lib/urls';
+import { gamesIndexUrl } from '../../lib/urls';
 import { filterAndSortGames, emptyExplorerState } from '../../lib/game-explorer-state.mjs';
 import { loadPublishedGameCatalog } from '../../lib/game-catalog';
-import { subtypeLabels } from '../../lib/taxonomy';
-import { createGuideRelationshipIndex, conceptExplorerUrl, explorerGuideLinks, relationshipLabel } from '../../lib/guide-relationship-catalog';
+import { createGuideRelationshipIndex, conceptExplorerUrl, relationshipLabel } from '../../lib/guide-relationship-catalog';
 import { buildGuideReadingSections, GUIDE_READING_PATHS } from '../../lib/guide-reading-path.mjs';
+
 const catalog = await loadPublishedGameCatalog();
-const providers = catalog.providers;
 const games = catalog.games.filter((game) => game.primaryType === 'slots');
-const subtypeCounts = [...new Set(games.flatMap((game) => game.subtypes))].map((type) => ({
-  type,
-  count: filterAndSortGames(games, { ...emptyExplorerState(), primaryType: 'slots', subtype: type }).length,
-  href: gamesIndexUrl({ primaryType: 'slots', subtype: type }),
-}));
 const guides = (await getCollection('guides')).filter((entry) => entry.data.status === 'published');
 const relationships = createGuideRelationshipIndex(guides, catalog.games);
-const relationshipLinks = explorerGuideLinks(relationships);
 const readingPaths = buildGuideReadingSections(guides, GUIDE_READING_PATHS);
-const knowledgeConcepts = [
-  { type: 'data-topic', value: 'rtp' }, { type: 'data-topic', value: 'volatility' },
-  { type: 'mechanism', value: 'paylines' }, { type: 'mechanism', value: 'ways-to-win' },
-  { type: 'feature', value: 'wild' }, { type: 'feature', value: 'scatter' },
-  { type: 'feature', value: 'free-spins' }, { type: 'feature', value: 'jackpot' },
-  { type: 'feature', value: 'cascading' }, { type: 'feature', value: 'bonus-buy' },
+
+const conceptCount = (type: 'mechanism' | 'feature', value: string) => filterAndSortGames(games, {
+  ...emptyExplorerState(),
+  ...(type === 'mechanism' ? { mechanism: value } : { features: [value] }),
+}).length;
+
+const mechanismDefinitions = [
+  { value: 'paylines', summary: '沿固定賠線核對一般得獎組合。' },
+  { value: 'ways-to-win', summary: '按相鄰轉輪與符合位置判定多路組合。' },
+  { value: 'megaways', summary: '每次盤面可能改變可用符號位置與贏法數。' },
+  { value: 'cluster-pays', summary: '以相鄰符號群集是否達成條件判定。' },
+  { value: 'pay-anywhere', summary: '依個別規則核對符號數量與位置要求。' },
 ] as const;
-const lookup = { mechanism: relationships.mechanismToGuides, feature: relationships.featureToGuides, 'data-topic': relationships.dataTopicToGuides };
-const knowledge = knowledgeConcepts.flatMap(({ type, value }) => {
-  const guide = lookup[type][value]?.[0];
-  return guide ? [{ label: relationshipLabel(type, value), text: guide.description, guideHref: guide.url, exploreHref: conceptExplorerUrl(type, value) }] : [];
+
+const mechanismConcepts = mechanismDefinitions.flatMap((definition) => {
+  const guide = relationships.mechanismToGuides[definition.value]?.[0];
+  const exploreHref = conceptExplorerUrl('mechanism', definition.value);
+  return guide && exploreHref ? [{
+    ...definition,
+    label: relationshipLabel('mechanism', definition.value),
+    guide,
+    exploreHref,
+    count: conceptCount('mechanism', definition.value),
+  }] : [];
+});
+
+const featureDefinitions = [
+  { title: 'Symbols 與 Feature 角色', values: ['wild', 'scatter', 'free-spins', 'jackpot'] },
+  { title: 'Multiplier 倍數功能', values: ['multiplier'] },
+  { title: 'Cascading 連鎖消除', values: ['cascading'] },
+  { title: 'Bonus Buy 功能購買', values: ['bonus-buy'] },
+] as const;
+
+const featureGroups = featureDefinitions.flatMap((definition) => {
+  const guide = relationships.featureToGuides[definition.values[0]]?.[0];
+  if (!guide) return [];
+  const concepts = definition.values.flatMap((value) => {
+    const exploreHref = conceptExplorerUrl('feature', value);
+    return exploreHref ? [{
+      value,
+      label: relationshipLabel('feature', value),
+      exploreHref,
+      count: conceptCount('feature', value),
+    }] : [];
+  });
+  return [{ ...definition, guide, concepts }];
+});
+
+const dataTopicDefinitions = [
+  { value: 'rtp', title: 'RTP 與多版本' },
+  { value: 'volatility', title: '波動度' },
+  { value: 'max-win', title: '最高倍數' },
+] as const;
+
+const dataTopics = dataTopicDefinitions.flatMap((definition) => {
+  const guide = relationships.dataTopicToGuides[definition.value]?.[0];
+  return guide ? [{ ...definition, guide }] : [];
 });
 ---
-<BaseLayout title="老虎機遊戲探索｜Slot Hub" description="依廠商、子類型、RTP 與波動度探索老虎機，閱讀常見機制與新手教學。" canonicalPath="/slots/">
-  <section class="page-hero shell"><p class="eyebrow">SLOT HUB</p><h1>老虎機</h1><p>從遊戲本身開始：查廠商、看資料、比較機制，再用教學理解欄位。</p></section>
-  <section class="section shell"><div class="section-head"><div><p class="eyebrow">EXPLORE</p><h2>探索老虎機</h2></div><p>依目前有可靠資料的條件篩選；底層分類代碼不會顯示給使用者。</p></div><GameExplorer games={games} relationshipLinks={relationshipLinks} handoffDefaults={{ primaryType: 'slots' }} initialLimit={8} client:load /></section>
-  <section class="hub-band"><div class="shell"><div class="section-head"><div><p class="eyebrow">SUBTYPES</p><h2>從玩法結構開始找</h2></div><p>同一款遊戲可以同時具有多個子類型，個別網址仍固定在 <code>/games/&#123;slug&#125;/</code>。</p></div><div class="topic-grid">{subtypeCounts.map((item) => <a href={item.href}><strong>{subtypeLabels[item.type] ?? item.type}</strong><span>{item.count} 款目前資料</span><b>套用條件探索 →</b></a>)}</div></div></section>
-  <section class="section shell"><div class="section-head"><div><p class="eyebrow">KNOWLEDGE MAP</p><h2>先看懂常見資料</h2></div><p>只顯示已有正式教學承接的概念；探索入口會保留目前資料條件。</p></div><div class="knowledge-grid relationship-knowledge-grid">{knowledge.map((item) => <article><strong>{item.label}</strong><span>{item.text}</span><div><a href={item.guideHref}>了解概念 →</a>{item.exploreHref && <a href={item.exploreHref}>探索遊戲 →</a>}</div></article>)}</div></section>
-  <section class="dark-section"><div class="shell"><div class="section-head light"><div><p class="eyebrow">EDITOR'S SELECTION</p><h2>編輯精選遊戲</h2></div><p>依資料完整度與探索測試需求選擇，不代表熱門排行。</p></div><div class="feature-strip">{games.filter((game) => game.editorialFeatured).slice(0, 5).map((game, index) => <a href={game.url}><span>0{index + 1}</span><div><small>{game.providerName}</small><strong>{game.name}</strong></div><b>{game.rtp ? `${game.rtp}% RTP` : '資料整理中'} →</b></a>)}</div></div></section>
-  <section class="section providers-band shell"><div><p class="eyebrow">SLOT PROVIDERS</p><h2>目前收錄廠商</h2></div><div class="provider-chips">{providers.filter((provider) => games.some((game) => game.provider === provider.id)).map((provider) => <a href={providerUrl(provider.id)}>{provider.data.logo ? <span class="provider-logo"><img src={provider.data.logo.src} alt={provider.data.logo.alt} loading="lazy" /></span> : <span>{provider.data.name.slice(0, 2)}</span>}<strong>{provider.data.name}</strong><small>{games.filter((game) => game.provider === provider.id).length} 款資料</small></a>)}</div></section>
-  <section class="section shell"><div class="section-head"><div><p class="eyebrow">GUIDE READING PATH</p><h2>依閱讀問題前進</h2></div><p>從第一次使用到資料限制，五段路線使用和 Guide 總覽相同的順序。</p></div><div class="guide-route-grid" data-guide-reading-summary="slots">{readingPaths.map((path) => <a class="guide-route-card" href={path.href} data-guide-reading-route={path.id}><span>{path.index} / {path.eyebrow}</span><strong>{path.title}</strong><p>{path.description}</p><b>{path.guides.length} 篇 Guide →</b></a>)}</div></section>
+<BaseLayout title="老虎機玩法與資料｜Slot Hub" description="從主要賠付機制、遊戲功能與核心數據理解老虎機，再用精確條件前往完整遊戲庫。" canonicalPath="/slots/">
+  <section class="slots-v3-hero">
+    <div class="shell">
+      <div>
+        <p class="eyebrow">PLAY &amp; DATA HUB</p>
+        <h1><span class="keep">老虎機</span><span class="keep">玩法與資料</span></h1>
+        <p>這裡先解釋遊戲怎麼判定、功能怎麼運作，以及資料欄位該怎麼讀。要調整完整條件時，再前往同一個遊戲庫 Explorer。</p>
+        <div class="slots-v3-actions">
+          <a class="button primary" href={gamesIndexUrl({ primaryType: 'slots' })}>前往 {games.length} 款老虎機</a>
+          <a class="button secondary" href="/guide/slot-beginners-guide/">第一次使用先從這裡開始</a>
+        </div>
+      </div>
+      <aside aria-label="玩法與資料入口摘要">
+        <strong>{games.length}</strong><span>款老虎機資料</span>
+        <strong>{mechanismConcepts.length}</strong><span>種主要賠付方式</span>
+        <strong>{featureGroups.reduce((total, group) => total + group.concepts.length, 0)}</strong><span>項已有教學承接的功能</span>
+      </aside>
+    </div>
+    <nav class="slots-v3-jump shell" aria-label="玩法與資料分類">
+      <a href="#mechanisms">看懂賠付方式</a>
+      <a href="#features">看懂遊戲功能</a>
+      <a href="#data-topics">看懂核心資料</a>
+    </nav>
+  </section>
+
+  <section class="slots-hub-section shell" id="mechanisms" aria-labelledby="mechanisms-title">
+    <header class="slots-hub-heading">
+      <div><p class="eyebrow">HOW WINS FORM</p><h2 id="mechanisms-title">先分清主要賠付方式</h2></div>
+      <p>主要賠付機制回答「一般得獎組合如何成立」。同一個名稱下仍可能有不同盤面、功能與細部規則，請回到個別遊戲資料核對。</p>
+    </header>
+    <div class="slots-mechanism-grid">
+      {mechanismConcepts.map((item, index) => <article>
+        <span>{String(index + 1).padStart(2, '0')} / {item.count} 款</span>
+        <h3>{item.label}</h3>
+        <p>{item.summary}</p>
+        <div><a href={item.exploreHref}>查看 {item.count} 款遊戲</a><a href={item.guide.url}>看懂賠付機制</a></div>
+      </article>)}
+    </div>
+  </section>
+
+  <section class="slots-hub-section slots-hub-section-soft" id="features" aria-labelledby="features-title">
+    <div class="shell">
+      <header class="slots-hub-heading">
+        <div><p class="eyebrow">FEATURES</p><h2 id="features-title">再看功能如何改變過程</h2></div>
+        <p>功能可能改變符號、盤面更新或 Bonus 入口，但不會自動取代主要賠付機制。每個探索入口只套用一項已結構化的 Feature 條件。</p>
+      </header>
+      <div class="knowledge-grid relationship-knowledge-grid slots-feature-grid">
+        {featureGroups.map((group) => <article>
+          <strong>{group.title}</strong>
+          <span>{group.guide.description}</span>
+          <ul aria-label={`${group.title}可探索功能`}>{group.concepts.map((concept) => <li><a href={concept.exploreHref}>{concept.label}<small>{concept.count} 款</small></a></li>)}</ul>
+          <div><a href={group.guide.url}>了解概念 →</a></div>
+        </article>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="slots-hub-section shell" id="data-topics" aria-labelledby="data-topics-title">
+    <header class="slots-hub-heading">
+      <div><p class="eyebrow">DATA TOPICS</p><h2 id="data-topics-title">資料數字要連同基準一起讀</h2></div>
+      <p>RTP、波動度與最高倍數回答不同問題。它們不是短期結果預測，也不能只看數字大小就排出哪款比較容易贏。</p>
+    </header>
+    <div class="slots-data-grid">
+      {dataTopics.map((item) => <article>
+        <strong>{item.title}</strong>
+        <p>{item.guide.description}</p>
+        <a href={item.guide.url}>閱讀完整 Guide →</a>
+      </article>)}
+    </div>
+    <aside class="slots-method-note">
+      <div><strong>資料從哪裡來？</strong><p>查看 Slot Hub 如何保留原廠文字、處理缺值、多版本與核對日期。</p></div>
+      <a href="/guide/slot-hub-data-methodology/">資料方法與可信度 →</a>
+    </aside>
+  </section>
+
+  <section class="slots-hub-section slots-reading-section shell">
+    <header class="slots-hub-heading"><div><p class="eyebrow">GUIDE READING PATH</p><h2>需要完整脈絡時，依問題繼續讀</h2></div><p>五段閱讀路線與 Guide 總覽使用相同順序；也可以直接進入任何一篇需要的教學。</p></header>
+    <div class="guide-route-grid" data-guide-reading-summary="slots">{readingPaths.map((path) => <a class="guide-route-card" href={path.href} data-guide-reading-route={path.id}><span>{path.index} / {path.eyebrow}</span><strong>{path.title}</strong><p>{path.description}</p><b>{path.guides.length} 篇 Guide →</b></a>)}</div>
+  </section>
 </BaseLayout>
