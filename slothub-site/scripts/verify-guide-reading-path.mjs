@@ -34,13 +34,12 @@ const [home, guideIndex, slots] = await Promise.all([
   readFile(new URL('../dist/slots/index.html', import.meta.url), 'utf8'),
 ]);
 
-assert.match(home, /data-guide-reading-summary="home"/);
+assert.doesNotMatch(home, /data-guide-reading-summary="home"/);
+assert.match(home, /data-home-beginner-guide/);
 assert.match(slots, /data-guide-reading-summary="slots"/);
 for (const route of GUIDE_READING_PATHS) {
   const marker = `data-guide-reading-route="${route.id}"`;
-  assert.equal(home.split(marker).length - 1, 1, `home must show ${route.id} once`);
   assert.equal(slots.split(marker).length - 1, 1, `slots must show ${route.id} once`);
-  assert.ok(home.includes(`/guide/#route-${route.id}`));
   assert.ok(slots.includes(`/guide/#route-${route.id}`));
 }
 for (const section of definitions) {
@@ -51,16 +50,15 @@ for (const slug of assigned) {
   assert.equal(guideIndex.split(`data-guide-reading-slug="${slug}"`).length - 1, 1, `${slug} must render once in Guide index`);
   assert.ok(guideIndex.includes(`/guide/${slug}/`), `${slug} URL missing from Guide index`);
 }
-assert.equal((home.match(/data-guide-reading-route=/g) ?? []).length, 5);
+assert.equal((home.match(/data-guide-reading-route=/g) ?? []).length, 0);
 assert.equal((slots.match(/data-guide-reading-route=/g) ?? []).length, 5);
 assert.equal((guideIndex.match(/data-guide-reading-slug=/g) ?? []).length, published.length);
 const readingAnchors = [
-  ...(home.match(/<a\b[^>]*data-guide-reading-route="[^"]+"[^>]*>/g) ?? []),
   ...(slots.match(/<a\b[^>]*data-guide-reading-route="[^"]+"[^>]*>/g) ?? []),
   ...(guideIndex.match(/<a\b[^>]*data-guide-reading-slug="[^"]+"[^>]*>/g) ?? []),
 ];
-assert.equal(readingAnchors.length, 10 + published.length);
+assert.equal(readingAnchors.length, 5 + published.length);
 for (const anchor of readingAnchors) assert.match(anchor, /\shref="[^"]+"/, 'reading-path anchors require real href destinations');
 assert.match(slots, /relationship-knowledge-grid/);
 
-console.log(`PASS: ${published.length} published Guides projected once across five reading paths and one extension; home, Guide index and Slots share exact anchors.`);
+console.log(`PASS: ${published.length} published Guides projected once across five reading paths and one extension; Guide index and Slots share exact anchors, while home points first-time users to the Beginners Guide.`);

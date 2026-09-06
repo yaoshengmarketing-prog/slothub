@@ -1,22 +1,23 @@
 ---
 import { getCollection } from 'astro:content';
-import { compareUrl, gamesIndexUrl, guideIndexUrl, providersIndexUrl, searchUrl, slotsUrl, fishingGamesUrl, toolsIndexUrl } from '../lib/urls';
+import { compareUrl, gamesIndexUrl, guideIndexUrl, providersIndexUrl, searchUrl, slotsUrl, toolsIndexUrl } from '../lib/urls';
 const nav = [
-  ['遊戲庫', gamesIndexUrl(), true],
-  ['搜尋', searchUrl(), true],
-  ['老虎機', slotsUrl(), false],
-  ['捕魚機', fishingGamesUrl(), false],
-  ['遊戲廠商', providersIndexUrl(), true],
+  ['找遊戲', gamesIndexUrl(), false],
+  ['玩法與資料', slotsUrl(), false],
+  ['遊戲廠商', providersIndexUrl(), false],
+  ['教學', guideIndexUrl(), false],
   ['工具', toolsIndexUrl(), true],
-  ['教學', guideIndexUrl(), true],
 ] as const;
 const validCompareSlugs = (await getCollection('games')).filter((game) => game.data.status === 'published').map((game) => game.id);
 ---
 <header class="site-header">
   <a class="brand" href="/" aria-label="Slot Hub 首頁"><span class="brand-mark">SH</span><span>SLOT HUB<small>GAME INDEX</small></span></a>
-  <button class="header-menu" type="button" aria-label="開啟主要導覽" aria-expanded="false" aria-controls="site-primary-nav" data-header-menu><span aria-hidden="true">☰</span></button>
-  <nav id="site-primary-nav" aria-label="主要導覽">{nav.map(([label,href,mobilePrimary]) => <a class:list={{ 'desktop-nav-extra': !mobilePrimary }} href={href}>{label}</a>)}</nav>
-  <a class="header-compare" href={compareUrl()} data-valid-compare-slugs={validCompareSlugs.join(',')}>比較遊戲 <span data-compare-count>0</span></a>
+  <nav id="site-primary-nav" aria-label="主要導覽">{nav.map(([label,href,mobileOnly]) => <a class:list={{ 'mobile-nav-only': mobileOnly }} href={href}>{label}</a>)}</nav>
+  <div class="header-actions">
+    <a class="header-search" href={searchUrl()}>搜尋</a>
+    <a class="header-compare" href={compareUrl()} data-valid-compare-slugs={validCompareSlugs.join(',')}>比較遊戲 <span data-compare-count>0</span></a>
+    <button class="header-menu" type="button" aria-label="開啟主要導覽" aria-expanded="false" aria-controls="site-primary-nav" data-header-menu><span aria-hidden="true">☰</span></button>
+  </div>
 </header>
 <script>
   import { COMPARE_STORAGE_KEY, compareStateUrl, readCompareQuery, readStoredCompare } from '../lib/core-flow-state.mjs';

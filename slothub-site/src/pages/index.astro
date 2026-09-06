@@ -2,28 +2,33 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SearchHub from '../components/SearchHub';
-import GameExplorer from '../components/GameExplorer';
-import { providerUrl } from '../lib/urls';
 import { loadPublishedGameCatalog } from '../lib/game-catalog';
 import { buildPublishedSearchCatalog } from '../lib/search-catalog';
-import { createGuideRelationshipIndex, explorerGuideLinks, relationshipSearchItems } from '../lib/guide-relationship-catalog';
-import { buildGuideReadingSections, GUIDE_READING_PATHS } from '../lib/guide-reading-path.mjs';
+import { createGuideRelationshipIndex, relationshipSearchItems } from '../lib/guide-relationship-catalog';
 const { games, providers: providerEntries } = await loadPublishedGameCatalog();
 const guides=(await getCollection('guides')).filter(x=>x.data.status==='published');
 const relationships=createGuideRelationshipIndex(guides,games);
-const relationshipLinks=explorerGuideLinks(relationships);
 const searchItems=buildPublishedSearchCatalog(games,providerEntries,guides,relationshipSearchItems(relationships));
-const readingPaths=buildGuideReadingSections(guides, GUIDE_READING_PATHS);
+const intentRoutes = [
+  { index: '01', title: '我知道遊戲名稱', description: '搜尋繁中名稱、原文名稱、別名或廠商。', href: '/search/', action: '開啟搜尋' },
+  { index: '02', title: '我只記得遊戲廠商', description: '從 14 家已收錄廠商找到旗下遊戲。', href: '/providers/', action: '查看遊戲廠商' },
+  { index: '03', title: '我記得功能或玩法', description: '先分清玩法、Feature 與資料，再用條件探索。', href: '/slots/', action: '理解玩法與資料' },
+  { index: '04', title: '我想找類似玩法', description: '先選一款參考遊戲，再查看有明確共同點的玩法相近項目。', href: '/games/', action: '先選一款遊戲' },
+] as const;
 const schema={'@context':'https://schema.org','@type':'WebSite',name:'Slot Hub',url:'https://www.slothub.com.tw/',inLanguage:'zh-Hant-TW'};
 ---
 <BaseLayout title="Slot Hub｜老虎機遊戲資料、搜尋與比較" description="搜尋老虎機與遊戲廠商，依 RTP、波動度及類型探索遊戲，最多比較三款遊戲。" schema={schema}>
- <section class="hero-home shell">
-  <div class="hero-kicker"><span>DATA / KNOWLEDGE / DISCOVERY</span><i>開發預覽</i></div>
-  <div class="hero-grid"><div><h1>找到遊戲，<br/><em>再看懂它。</em></h1><p>Slot Hub 把遊戲資料、廠商與核心知識放在同一個探索介面。知道名稱就直接搜尋；第一次接觸，也能從新手路線開始。</p><a class="button secondary" href="/guide/slot-beginners-guide/">新手開始了解 →</a></div><div class="hero-search"><SearchHub items={searchItems} client:load/><div class="hero-stats"><span><b>{games.length}</b> 款已收錄遊戲</span><span><b>{providerEntries.length}</b> 家遊戲開發商</span><span><b>3</b> 款比較上限</span></div></div></div>
- </section>
- <section class="section shell" id="explore"><div class="section-head"><div><p class="eyebrow">GAME EXPLORER</p><h2>用條件縮小選擇，<br/>不靠排行榜猜答案。</h2></div><p>篩選條件只在有資料時呈現；缺少的欄位會清楚標示，不補造數字。</p></div><GameExplorer games={games} relationshipLinks={relationshipLinks} initialLimit={8} client:load/></section>
- <section class="dark-section"><div class="shell"><div class="section-head light"><div><p class="eyebrow">EDITOR'S SELECTION</p><h2>編輯精選</h2></div><p>依資料完整度與測試需求挑選，不代表熱門程度或排名。</p></div><div class="feature-strip">{games.filter(g=>g.editorialFeatured).slice(0,4).map((g,i)=><a href={g.url}><span>0{i+1}</span><div><small>{g.providerName}</small><strong>{g.name}</strong></div><b>{g.rtp?`${g.rtp}% RTP`:'資料整理中'} →</b></a>)}</div></div></section>
- <section class="section shell"><div class="section-head"><div><p class="eyebrow">GUIDE READING PATH</p><h2>從問題開始，<br/>依序看懂資料。</h2></div><p>五段路線是閱讀建議，不是必須完成的課程；你也可以直接前往任何一篇 Guide。</p></div><div class="guide-route-grid" data-guide-reading-summary="home">{readingPaths.map((path)=><a class="guide-route-card" href={path.href} data-guide-reading-route={path.id}><span>{path.index} / {path.eyebrow}</span><strong>{path.title}</strong><p>{path.description}</p><b>{path.guides.length} 篇 Guide →</b></a>)}</div></section>
- <section class="section providers-band shell"><div><p class="eyebrow">PROVIDERS</p><h2>從遊戲商開始找</h2></div><div class="provider-chips">{providerEntries.map(p=><a href={providerUrl(p.id)}>{p.data.logo?<span class="provider-logo"><img src={p.data.logo.src} alt={p.data.logo.alt} loading="lazy"/></span>:<span>{p.data.name.slice(0,2).toUpperCase()}</span>}<strong>{p.data.name}</strong><small>{games.filter(g=>g.provider===p.id).length} 款資料</small></a>)}</div></section>
- <section class="section shell extension"><div><p class="eyebrow">BEYOND SLOTS</p><h2>捕魚機與其他電子遊戲</h2><p>目前仍以老虎機為核心；捕魚機保留獨立入口，其他類型按資料成熟度逐步擴充。</p></div><a class="button secondary" href="/fishing-games/">查看捕魚機規劃 →</a></section>
+  <section class="home-v3-stage shell">
+    <div class="hero-kicker"><span>GAME DATA / KNOWLEDGE / DISCOVERY</span><i>資料持續核對</i></div>
+    <div class="home-v3-head">
+      <div class="home-v3-copy"><p class="eyebrow">SLOT HUB</p><h1>用你記得的線索，<br/><em>找到並看懂<span class="keep">遊戲。</span></em></h1><p>搜尋名稱、從廠商開始，或先看懂某個玩法。Slot Hub 會保留來源、版本與未知欄位，不用排行榜替你猜答案。</p></div>
+      <div class="home-v3-search" id="home-search"><SearchHub items={searchItems} client:load/><dl class="home-v3-counts"><div><dt>遊戲</dt><dd>{games.length}</dd></div><div><dt>廠商</dt><dd>{providerEntries.length}</dd></div><div><dt>教學</dt><dd>{guides.length}</dd></div></dl></div>
+    </div>
+  </section>
+
+  <section class="home-v3-routes shell" aria-labelledby="home-routes-title"><div class="home-v3-route-head"><div><p class="eyebrow">CHOOSE A START</p><h2 id="home-routes-title">你現在記得什麼？</h2></div><p>四條路都會回到同一份遊戲與來源資料，你可以隨時換一種找法。</p></div><ol>{intentRoutes.map((route)=><li><span>{route.index}</span><div><h3>{route.title}</h3><p>{route.description}</p></div><a href={route.href} data-home-intent-route={route.index}>{route.action} →</a></li>)}</ol></section>
+
+  <section class="home-v3-first"><div class="shell"><div><p class="eyebrow">FIRST VISIT</p><h2>第一次使用？先學會讀一款遊戲。</h2><p>從身份、RTP、波動度、最高倍數、玩法、缺值到來源，依序看懂 Game detail。</p></div><a class="button secondary" href="/guide/slot-beginners-guide/" data-home-beginner-guide>閱讀新手指南 →</a></div></section>
+
+  <section class="home-v3-proof shell" aria-labelledby="home-proof-title"><div><p class="eyebrow">WHY SLOT HUB</p><h2 id="home-proof-title">資料有邊界，才值得比較。</h2></div><article><h3>保留原廠來源</h3><p>具名數字與功能回到來源，不用搜尋摘要補成事實。</p></article><article><h3>版本不混成單一值</h3><p>多個 RTP 與原廠標籤保留差異，不平均、不補猜。</p></article><article><h3>缺值就是未知</h3><p>尚未核實不等於 0、不支援或功能不存在。</p></article></section>
 </BaseLayout>
