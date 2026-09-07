@@ -1,13 +1,13 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { compareUrl, gamesIndexUrl, searchUrl } from '../../lib/urls';
 const tools = [
-  { code: 'SEARCH', title: '全站搜尋', text: '搜尋遊戲名稱、廠商與教學內容。', href: '/search/', action: '開始搜尋' },
-  { code: 'EXPLORE', title: '遊戲探索器', text: '依廠商、類型、RTP 與波動度縮小選擇。', href: '/games/', action: '探索遊戲' },
-  { code: 'COMPARE', title: '三款遊戲比較', text: '最多選擇三款，保留分享網址並比較已有資料。', href: '/compare/', action: '開始比較' },
+  { code: '名稱與關鍵字', title: '全站搜尋', text: '記得遊戲名稱、原文名稱、廠商或概念時，直接找到對應資料與教學。', href: searchUrl(), action: '開始搜尋' },
+  { code: '玩法與條件', title: '完整遊戲篩選', text: '不確定名稱時，依主要玩法、功能與目前已有的資料縮小結果。', href: gamesIndexUrl(), action: '前往遊戲庫' },
+  { code: '最多三款', title: '比較遊戲', text: '選好候選後並排查看資料；未知欄位仍維持未知，不會自動補齊。', href: compareUrl(), action: '開始比較' },
 ];
 ---
 <BaseLayout title="遊戲搜尋、探索與比較工具｜Slot Hub" description="使用 Slot Hub 的全站搜尋、遊戲探索器及三款遊戲比較。" canonicalPath="/tools/">
-  <section class="page-hero shell"><p class="eyebrow">TOOL INDEX</p><h1>工具總覽</h1><p>這些工具已經可以實際操作。資料不足的欄位會保留空白，不用推測值填滿結果。</p></section>
-  <section class="section shell tool-grid">{tools.map((tool, index) => <a href={tool.href}><span>0{index + 1} / {tool.code}</span><h2>{tool.title}</h2><p>{tool.text}</p><b>{tool.action} →</b></a>)}</section>
-  <section class="hub-band"><div class="shell hub-intro"><div><p class="eyebrow">WORKFLOW</p><h2>從查找，到看懂差異</h2></div><div class="workflow-list"><p><b>1</b> 知道名稱時，先用全站搜尋直接前往資料頁。</p><p><b>2</b> 不確定遊戲時，用探索器依資料條件縮小範圍。</p><p><b>3</b> 選出候選後，加入比較查看實際可取得的欄位。</p></div></div></section>
+  <section class="tools-v3-stage shell"><div><p class="eyebrow">TOOLS</p><h1>工具總覽</h1><p>這裡只整理三個常用入口：搜尋文字線索、依條件找遊戲，以及並排查看候選資料。</p></div><p>每個工具都使用同一份已收錄遊戲資料。缺少的欄位會明確保留未知，不會為了比較而補猜。</p></section>
+  <section class="tools-v3-list shell tool-grid" aria-label="Slot Hub 工具">{tools.map((tool) => <a href={tool.href}><span>{tool.code}</span><h2>{tool.title}</h2><p>{tool.text}</p><b>{tool.action} →</b></a>)}</section>
 </BaseLayout>

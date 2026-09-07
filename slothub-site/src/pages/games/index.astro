@@ -24,7 +24,7 @@ const relationshipLinks = explorerGuideLinks(relationships);
   <section class="games-v3-guided shell" id="guided-explorer" aria-labelledby="guided-explorer-title">
     <header class="games-v3-section-head"><div><p class="eyebrow">GUIDED START</p><h2 id="guided-explorer-title">先用主要玩法與一項功能縮小範圍</h2></div><p>選擇後先確認條件、真實結果數與遊戲庫網址，再前往同一個完整 Explorer。0 款時不會提供假結果入口。</p></header>
     <GuidedExplorerPilot games={games} resultAnchor="game-results" client:load />
-    <noscript><div class="guided-explorer-noscript"><strong>關閉 JavaScript 時仍可依主要玩法前往遊戲庫</strong><p>完整互動篩選需要 JavaScript；以下普通連結只套用一項精確玩法條件。</p><ul>{GUIDED_EXPLORER_MECHANISMS.map((mechanism) => <li><a href={gamesIndexUrl({ mechanism })}>{winMechanismLabels[mechanism]}</a></li>)}</ul></div></noscript>
+    <noscript><div class="guided-explorer-noscript"><strong>關閉 JavaScript 時仍可依主要玩法前往遊戲庫</strong><p>完整互動篩選需要 JavaScript；下方入口會各自套用一項主要玩法條件。</p><ul>{GUIDED_EXPLORER_MECHANISMS.map((mechanism) => <li><a href={gamesIndexUrl({ mechanism })}>{winMechanismLabels[mechanism]}</a></li>)}</ul></div></noscript>
   </section>
 
   <section class="games-v3-full shell" id="full-explorer" aria-labelledby="full-explorer-title">

@@ -445,6 +445,8 @@ Game／Provider 持續擴充是獨立且可與介面批次並行的內容工作�
 
 ### 批次 5：Search、Tools 與跨頁清理
 
+狀態：`LOCAL IMPLEMENTATION READY FOR REVIEW`
+
 改善 Search 結果責任、簡化 Tools，統一前台詞彙、錨點與普通連結，不改核心搜尋排名。
 
 ### 批次 6：整站回歸與 Preview 審查
@@ -510,6 +512,13 @@ Game／Provider 持續擴充是獨立且可與介面批次並行的內容工作�
 - Mahjong Ways DNA Pilot 已吸收進共用資訊層並移除單款 mapping；Mahjong Ways 與 Big Bass Bonanza 分別驗證完整資料與重要缺值，58 款完成全量投影驗證。
 - Compare、Guide relationship、玩法相近、系列／Provider 與來源普通連結維持原責任；本批已通過人工審查並標記為 `CLOSED`，尚未 Push 或部署。
 
+### 2026-09-07：Search、Tools 與跨頁清理本機完成
+
+- Search 保留既有 catalog、前八筆排名與 URL／history owner，改以「遊戲／遊戲廠商／教學與概念」呈現結果責任，並補上無查詢與零結果時可逆的永久入口。
+- `/tools/` 簡化為全站搜尋、完整遊戲篩選與比較遊戲三個入口，不再重複找遊戲流程或完整 Explorer；Tools 維持次級入口。
+- Footer 補上找遊戲、玩法與資料、遊戲廠商、教學、工具與第一次使用的普通連結；跨頁錨點避開 sticky Header，前台無 JavaScript 說明移除工程用語。
+- 本批已完成本機 Preview、URL 恢復、1440／390／320、無頁面級水平溢位與既有驗證；尚未 Push 或部署，等待人工審查。
+
 ## 15. 固定出口
 
 STAGE_RESULT: PASS_TO_NEXT_STAGE
@@ -532,7 +541,7 @@ DATA_STRUCTURE_CHANGED: NO
 
 SEO_INDEX_POLICY_CHANGED: NO
 
-NEXT_ALLOWED_ACTION: 人工核准後開始批次 5 Search、Tools 與跨頁清理
+NEXT_ALLOWED_ACTION: 人工審查批次 5 Search、Tools 與跨頁清理
 
 PUSH_ALLOWED: NO
 

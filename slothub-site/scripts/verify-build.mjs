@@ -53,6 +53,7 @@ const tools = await readFile(new URL('tools/index.html', root), 'utf8');
 const guides = await readFile(new URL('guide/index.html', root), 'utf8');
 const compare = await readFile(new URL('compare/index.html', root), 'utf8');
 const gameLibrary = await readFile(new URL('games/index.html', root), 'utf8');
+const search = await readFile(new URL('search/index.html', root), 'utf8');
 
 const checks = [
   [home.includes('content="noindex,nofollow"'), 'Homepage meta robots is not noindex,nofollow'],
@@ -71,7 +72,11 @@ const checks = [
   [(slots.match(/href="\/games\/\?mechanism=/g) ?? []).length === 5, 'Slot Hub must expose five exact mechanism Explorer links'],
   [slots.includes('/guide/slot-beginners-guide/') && slots.includes('/guide/slot-hub-data-methodology/'), 'Slot Hub permanent Guide entries are incomplete'],
   [fishing.includes('和老虎機有什麼不同') && fishing.includes('捕魚機入門'), 'Fishing Hub content is incomplete'],
-  [tools.includes('全站搜尋') && tools.includes('遊戲探索器') && tools.includes('三款遊戲比較'), 'Tool index is incomplete'],
+  [tools.includes('全站搜尋') && tools.includes('完整遊戲篩選') && tools.includes('比較遊戲'), 'Tool index is incomplete'],
+  [!tools.includes('從查找，到看懂差異') && !tools.includes('data-guided-explorer-pilot'), 'Tools must not duplicate a workflow or guided Explorer'],
+  [search.includes('用文字線索找遊戲') && search.includes('其他找遊戲入口'), 'Search task framing or no-query paths are incomplete'],
+  [search.includes('href="/games/"') && search.includes('href="/providers/"') && search.includes('href="/slots/"') && search.includes('href="/guide/"'), 'Search ordinary fallback entries are incomplete'],
+  [home.includes('href="/tools/"') && home.includes('href="/guide/slot-beginners-guide/"'), 'Footer secondary entries are incomplete'],
   [guides.includes('新手入門') && guides.includes('遊戲機制') && guides.includes('捕魚機教學'), 'Guide topics are incomplete'],
   [!compare.includes('先選擇兩至三款遊戲'), 'Compare page must not server-render the transient empty state'],
   [compare.includes('比較工具需要 JavaScript') && compare.includes('href="/games/"'), 'Compare no-JavaScript fallback is missing'],

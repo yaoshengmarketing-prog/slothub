@@ -1,11 +1,21 @@
 ---
 import { loadPublishedDataMethodologyEntry } from '../lib/data-methodology';
+import { gamesIndexUrl, guideIndexUrl, guideUrl, providersIndexUrl, slotsUrl, toolsIndexUrl } from '../lib/urls';
 
 const methodology = await loadPublishedDataMethodologyEntry();
+const footerLinks = [
+  ['找遊戲', gamesIndexUrl()],
+  ['玩法與資料', slotsUrl()],
+  ['遊戲廠商', providersIndexUrl()],
+  ['教學', guideIndexUrl()],
+  ['工具', toolsIndexUrl()],
+  ['第一次使用', guideUrl('slot-beginners-guide')],
+] as const;
 ---
 
 <footer class="site-footer">
-  <div><strong>SLOT HUB</strong><p>老虎機與電子遊戲的資料、知識與探索平台。</p></div>
+  <div class="site-footer-brand"><strong>SLOT HUB</strong><p>老虎機與電子遊戲的資料、知識與探索平台。</p></div>
+  <nav class="site-footer-nav" aria-label="頁尾導覽"><span>網站入口</span><div>{footerLinks.map(([label, href]) => <a href={href}>{label}</a>)}</div></nav>
   <div class="site-footer-info">
     <p>本站提供遊戲資訊與資料整理，不提供遊戲、下注或結果預測服務。</p>
     {methodology && <a class="data-methodology-link" href={methodology.url} data-methodology-entry="footer">資料方法與可信度 →</a>}

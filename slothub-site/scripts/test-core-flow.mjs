@@ -48,6 +48,9 @@ const providerIndex = source('../src/pages/providers/index.astro');
 const providerDetail = source('../src/pages/providers/[slug].astro');
 const gameDetail = source('../src/pages/games/[slug].astro');
 const fishing = source('../src/pages/fishing-games/index.astro');
+const searchPage = source('../src/pages/search/index.astro');
+const toolsPage = source('../src/pages/tools/index.astro');
+const footer = source('../src/components/SiteFooter.astro');
 const styles = source('../src/styles/global.css');
 
 assert.match(search, /<form className="search-field" action="\/search\/" method="get"/);
@@ -58,6 +61,10 @@ assert.match(search, /onKeyDown=\{submitFromInput\}/, 'Search text input must fo
 assert.match(search, /nativeEvent\.isComposing/, 'Search Enter must ignore active IME composition');
 assert.match(search, /nativeEvent\.keyCode === 229/, 'Search Enter must ignore IME process-key events');
 assert.match(search, /currentTarget\.form\?\.requestSubmit\(\)/, 'Search Enter and the submit button must share one form owner');
+for (const group of ['遊戲', '遊戲廠商', '教學與概念']) assert.match(search, new RegExp(`title: '${group}'`), `Search result group missing: ${group}`);
+assert.doesNotMatch(search, /role="listbox"/, 'Search links must not claim listbox semantics');
+assert.match(search, /search-start-guide/, 'Search must retain ordinary starting links before a query');
+assert.match(searchPage, /search-v3-stage/, 'Search owner must use the compact v3 task-first layout');
 assert.match(explorer, /writeCanonicalHistory\(window, nextUrl, 'push'\)/);
 assert.match(explorer, /'replace-debounced'/);
 assert.match(explorer, /addEventListener\('popstate', readUrl\)/);
@@ -101,6 +108,7 @@ assert.match(header, /aria-expanded="false"/, 'The mobile navigation must expose
 assert.match(header, /event\.key !== 'Escape'/, 'The mobile navigation must support keyboard dismissal');
 assert.match(gameDetail, /href="\/games\/">前往遊戲庫 →<\/a>/, 'The fixed game-library link must not imply filter-state restoration');
 assert.equal((home.match(/data-home-intent-route=/g) ?? []).length, 1, 'Astro source must project the four homepage routes from one definition');
+assert.match(home, /<SearchHub items=\{searchItems\} compact client:load\/>/, 'Homepage Search must retain the compact handoff presentation');
 assert.match(home, /data-home-beginner-guide/, 'Homepage must link first-time visitors to the existing Beginners Guide owner');
 assert.doesNotMatch(home, /<GameExplorer\b/, 'Homepage must not duplicate the full Explorer owner');
 assert.match(compare, /<table className="compare-table"/, 'Compare v2 must use a semantic table');
@@ -111,6 +119,13 @@ assert.doesNotMatch(compare, /compare-section-row[^\n]*scope="colgroup"/, 'Compa
 assert.match(compare, /CORE_FEATURES\.filter/, 'Compare must preserve the existing core Feature projection');
 assert.doesNotMatch(compare, /Game ID/, 'Game ID must remain outside the primary comparison matrix');
 assert.match(styles, /\.topic-grid a,\.knowledge-grid>a,\.tool-grid>a\{/, 'Knowledge card dimensions must only apply to direct child cards');
+assert.match(styles, /main :where\(section\[id\],h2\[id\]\)\{scroll-margin-top:84px\}/, 'Cross-page anchors must clear the sticky Header');
+
+for (const title of ['全站搜尋', '完整遊戲篩選', '比較遊戲']) assert.match(toolsPage, new RegExp(`title: '${title}'`), `Tools entry missing: ${title}`);
+assert.doesNotMatch(toolsPage, /workflow-list|GuidedExplorerPilot|GameExplorer/, 'Tools must remain a short index without a duplicate workflow or Explorer');
+for (const helper of ['gamesIndexUrl', 'slotsUrl', 'providersIndexUrl', 'guideIndexUrl', 'toolsIndexUrl']) assert.match(footer, new RegExp(helper), `Footer route missing: ${helper}`);
+assert.match(footer, /guideUrl\('slot-beginners-guide'\)/, 'Footer must expose the first-time Guide');
+assert.doesNotMatch(gamesIndex, /普通連結/, 'User-facing no-JavaScript copy must not expose implementation language');
 
 for (const [name, text] of [['home', home], ['provider index', providerIndex], ['provider detail', providerDetail], ['fishing', fishing]]) {
   assert.doesNotMatch(text, /首批|第一批|第一版公開四家|Seed Data/, `${name} still contains stale batch copy`);

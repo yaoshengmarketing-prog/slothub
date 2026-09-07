@@ -521,3 +521,73 @@ body { background:var(--white); }
   .header-menu{width:40px;height:44px}
   .home-v3-copy h1{font-size:2.18rem}
 }
+
+/* Slot Hub v3 batch 5 — Search, Tools and cross-page entries */
+main :where(section[id],h2[id]){scroll-margin-top:84px}
+
+.search-v3-stage{display:grid;grid-template-columns:minmax(260px,.72fr) minmax(0,1.28fr);gap:clamp(40px,8vw,110px);align-items:start;padding:72px 0 92px}
+.search-v3-stage>header{padding-top:15px}
+.search-v3-stage h1{max-width:540px;margin:0;color:var(--navy);font:900 clamp(3rem,5.7vw,5.4rem)/.94 "Aptos Display","Noto Sans TC",sans-serif;letter-spacing:-.055em;text-wrap:balance}
+.search-v3-stage>header>p:last-child{max-width:530px;margin:22px 0 0;color:var(--muted);font-size:.94rem;line-height:1.72}
+.search-page-v3{min-width:0}
+.search-page-v3 .search-hub{padding:22px;border-radius:18px;box-shadow:9px 10px 0 var(--sky)}
+.search-page-v3 .search-results{position:static;margin-top:18px;overflow:visible;border-color:#d6dbe5;border-radius:13px;box-shadow:none}
+.search-result-summary{margin:0!important;padding:13px 16px!important;border-bottom:1px solid #dfe3ea;color:var(--muted)!important;font-size:.72rem!important}
+.search-result-group+.search-result-group{border-top:5px solid #f1f3f7}
+.search-result-group>h2{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0;padding:11px 16px;border-bottom:1px solid #e2e6ec;background:#f8fafc;color:var(--navy);font:850 .76rem/1.2 "Aptos","Noto Sans TC",sans-serif}
+.search-result-group>h2 small{display:grid;min-width:24px;height:24px;place-items:center;border-radius:50%;background:var(--navy);color:white;font-size:.65rem}
+.search-results a>b{color:var(--signal);font-size:.68rem;white-space:nowrap}
+.search-results a:focus-visible,.search-start-guide a:focus-visible,.search-empty-state a:focus-visible{outline:3px solid var(--signal);outline-offset:-3px}
+.search-page-v3 .search-results a{grid-template-columns:80px minmax(0,1fr) max-content;align-items:center}
+.search-page-v3 .search-results a>small{grid-row:1/4}
+.search-page-v3 .search-results a>b{grid-column:3;grid-row:1/4}
+.search-hub.compact .search-results{max-height:min(65vh,520px);overflow-y:auto}
+.search-hub.compact .search-result-summary{padding-block:10px!important}
+.search-hub.compact .search-result-group>h2{padding-block:8px}
+.search-hub.compact .search-results a>b{grid-column:2;margin-top:3px}
+.search-start-guide{margin-top:17px;padding:17px;border:1px solid #3a4357;border-radius:12px;background:#0b1020}
+.search-start-guide>p{margin:0;color:#c1c9d7;font-size:.79rem;line-height:1.55}
+.search-start-guide nav{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}
+.search-start-guide a{display:inline-flex;min-height:44px;align-items:center;padding:7px 9px;border:1px solid #48536b;border-radius:8px;color:white;font-size:.69rem;font-weight:800;text-decoration:none}
+.search-start-guide a:hover{border-color:var(--lime);color:var(--lime)}
+.search-empty-state{padding:22px}
+.search-empty-state>strong{font-size:1rem}.search-empty-state>p{margin:8px 0 0!important;padding:0!important}
+.search-empty-state>div{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}
+.search-empty-state a{display:inline-flex;min-height:44px;align-items:center;padding:7px 10px;border:1px solid #d3d9e2;border-radius:8px;color:var(--navy);font-size:.7rem;font-weight:800;text-decoration:none}
+.search-empty-state a:hover{border-color:var(--signal);color:var(--signal)}
+
+.tools-v3-stage{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(280px,.72fr);gap:clamp(36px,8vw,100px);align-items:end;padding:72px 0 48px;border-bottom:1px solid var(--navy)}
+.tools-v3-stage h1{margin:0;color:var(--navy);font:900 clamp(3.2rem,6vw,5.8rem)/.92 "Aptos Display","Noto Sans TC",sans-serif;letter-spacing:-.06em}
+.tools-v3-stage p{color:var(--muted);line-height:1.72}.tools-v3-stage>div>p:last-child{max-width:620px;margin:22px 0 0;font-size:.95rem}.tools-v3-stage>p{max-width:430px;margin:0;font-size:.82rem}
+.tools-v3-list{padding:48px 0 88px}
+.tools-v3-list>a{min-height:220px}
+.tools-v3-list>a:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+
+.site-footer{display:grid;grid-template-columns:minmax(180px,.65fr) minmax(300px,1fr) minmax(260px,1.2fr);align-items:start}
+.site-footer-brand p{margin-bottom:0}
+.site-footer-nav>span{display:block;margin-bottom:13px;color:white;font-size:.72rem;font-weight:850}
+.site-footer-nav>div{display:flex;flex-wrap:wrap;gap:5px 15px}
+.site-footer-nav a{display:inline-flex;min-height:44px;align-items:center;color:#c7cedc;font-size:.76rem;font-weight:750;text-underline-offset:4px}
+.site-footer-nav a:hover{color:var(--lime)}
+.site-footer-nav a:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+
+@media(max-width:960px){
+  .search-v3-stage{grid-template-columns:1fr;gap:30px;padding-top:56px}
+  .search-v3-stage>header{padding-top:0}
+  .tools-v3-stage{grid-template-columns:1fr;gap:20px}
+  .site-footer{grid-template-columns:1fr 1.25fr}
+  .site-footer-info{grid-column:1/-1}
+}
+@media(max-width:620px){
+  .search-v3-stage{gap:24px;padding:42px 0 62px}
+  .search-v3-stage h1{font-size:clamp(2.5rem,13vw,3.45rem);line-height:.98}
+  .search-v3-stage>header>p:last-child{margin-top:15px;font-size:.84rem}
+  .search-page-v3 .search-hub{padding:15px;border-radius:15px;box-shadow:6px 7px 0 var(--sky)}
+  .search-page-v3 .search-results a{grid-template-columns:58px minmax(0,1fr);align-items:start}
+  .search-page-v3 .search-results a>b{grid-column:2;grid-row:auto;margin-top:4px;white-space:normal}
+  .search-result-group>h2{padding-inline:13px}
+  .search-empty-state{padding:18px 14px}.search-empty-state>div{display:grid}.search-empty-state a{justify-content:center}
+  .tools-v3-stage{padding:48px 0 36px}.tools-v3-stage h1{font-size:clamp(2.8rem,14vw,3.8rem)}.tools-v3-list{padding:34px 0 66px}.tools-v3-list>a{min-height:0}
+  .site-footer{grid-template-columns:1fr;gap:26px}.site-footer-info{grid-column:auto}
+}
+@media(forced-colors:active){.search-page-v3 .search-hub,.search-results,.search-start-guide,.search-empty-state a,.tools-v3-list>a{border:1px solid CanvasText;box-shadow:none}.search-result-group>h2,.search-start-guide{background:Canvas;color:CanvasText}}
