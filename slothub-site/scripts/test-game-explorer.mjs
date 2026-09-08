@@ -3,7 +3,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { basename } from 'node:path';
 import { parse } from 'yaml';
 import {
-  emptyExplorerState, filterAndSortGames, parseExplorerState, serializeExplorerState,
+  emptyExplorerState, filterAndSortGames, parseExplorerState, serializeExplorerState, zeroResultRecoveryOptions,
 } from '../src/lib/game-explorer-state.mjs';
 
 const gamesDirectory = new URL('../src/content/games/', import.meta.url);
@@ -82,5 +82,16 @@ assert.equal(query, 'q=%E8%B3%BD%E7%89%B9&provider=atg-games&type=slots&subtype=
 assert.deepEqual(parseExplorerState(query, games), parseExplorerState(serializeExplorerState(parseExplorerState(query, games)), games), 'URL state must be idempotent');
 assert.equal(serializeExplorerState(emptyExplorerState()), '', 'Clear state must produce a clean /games/ URL');
 assert.equal(parseExplorerState('?sort=relevance&provider=unknown&features=unknown&rtp-min=99', games).sort, 'name-asc', 'Invalid query values must be ignored');
+
+const zeroState = state({ mechanism: 'ways-to-win', features: ['bonus-buy'] });
+assert.equal(filterAndSortGames(games, zeroState).length, 0, 'Recovery fixture must start from a truthful zero-result state');
+const recoveryOptions = zeroResultRecoveryOptions(games, zeroState);
+assert.deepEqual(recoveryOptions.map(({ field, value, count }) => ({ field, value, count })), [
+  { field: 'feature', value: 'bonus-buy', count: 7 },
+  { field: 'mechanism', value: 'ways-to-win', count: 19 },
+], 'Recovery options must remove exactly one condition and report the resulting real count');
+assert.ok(recoveryOptions.every((option) => filterAndSortGames(games, option.state).length === option.count && option.count > 0), 'Every recovery option must lead to its reported non-zero result');
+assert.deepEqual(zeroResultRecoveryOptions([], zeroState), [], 'A relaxation that remains at zero must not appear as a recovery option');
+assert.equal(zeroResultRecoveryOptions(games, state({ q: '__no-such-game__' }))[0]?.state.q, '', 'Clearing a zero-result text query must be a reversible option');
 
 console.log('Game Explorer v2 state, filtering, sorting, missing-value and search tests passed.');

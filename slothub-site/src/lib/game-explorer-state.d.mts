@@ -27,3 +27,10 @@ export function serializeExplorerState(state: ExplorerState): string;
 export function filterAndSortGames(games: GameCatalogItem[], state: ExplorerState): GameCatalogItem[];
 export function hasExplorerFilters(state: ExplorerState): boolean;
 export function featureResultCount(games: GameCatalogItem[], state: ExplorerState, feature: string): number;
+export type ZeroResultRecoveryOption = {
+  field: 'q' | 'provider' | 'primaryType' | 'subtype' | 'mechanism' | 'feature' | 'rtpMin' | 'volatility' | 'maxWinMin';
+  value: string | number;
+  count: number;
+  state: ExplorerState;
+};
+export function zeroResultRecoveryOptions(games: GameCatalogItem[], state: ExplorerState, limit?: number): ZeroResultRecoveryOption[];

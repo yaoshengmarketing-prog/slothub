@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import type { GameCatalogItem } from '../lib/game-catalog';
 import {
   emptyExplorerState, explorerOptions, featureResultCount, filterAndSortGames, hasExplorerFilters,
-  MAX_WIN_THRESHOLDS, parseExplorerState, RTP_THRESHOLDS, type ExplorerState,
+  MAX_WIN_THRESHOLDS, parseExplorerState, RTP_THRESHOLDS, zeroResultRecoveryOptions, type ExplorerState,
 } from '../lib/game-explorer-state.mjs';
 import { gamesIndexUrl } from '../lib/urls';
 import { COMPARE_STORAGE_KEY, normalizeCompareSlugs, readStoredCompare, writeCanonicalHistory } from '../lib/core-flow-state.mjs';
@@ -97,6 +97,18 @@ export default function GameExplorer({ games, initialLimit, urlState = false, ha
     state.maxWinMin !== undefined ? `最高倍數：${formatMultiplier(state.maxWinMin)} 以上` : undefined,
     state.subtype ? `子類型：${subtypeLabels[state.subtype] ?? state.subtype}` : undefined,
   ].filter(Boolean) as string[];
+  const recoveryOptions = useMemo(() => filtered.length === 0 ? zeroResultRecoveryOptions(games, state) : [], [filtered.length, games, state]);
+  const recoveryLabel = (option: { field: string; value: string | number }) => {
+    if (option.field === 'q') return `搜尋：${option.value}`;
+    if (option.field === 'provider') return `廠商：${providers.find(([id]) => id === option.value)?.[1] ?? option.value}`;
+    if (option.field === 'primaryType') return `類型：${primaryTypeLabels[String(option.value)] ?? option.value}`;
+    if (option.field === 'subtype') return `子類型：${subtypeLabels[String(option.value)] ?? option.value}`;
+    if (option.field === 'mechanism') return `玩法：${winMechanismLabels[String(option.value)] ?? option.value}`;
+    if (option.field === 'feature') return `功能：${featureLabels[String(option.value)] ?? option.value}`;
+    if (option.field === 'rtpMin') return `RTP：${option.value}% 以上`;
+    if (option.field === 'volatility') return `波動度：${volatilityLabels[String(option.value)] ?? option.value}`;
+    return `最高倍數：${formatMultiplier(Number(option.value))} 以上`;
+  };
 
   useEffect(() => {
     if (!resultAnchor || !urlReady || location.hash !== `#${resultAnchor}`) return;
@@ -179,7 +191,7 @@ export default function GameExplorer({ games, initialLimit, urlState = false, ha
       ].filter(Boolean) as { label: string; value: string; note?: string }[];
       return <article className="game-card" key={game.slug}><a className="game-art" href={game.url} aria-label={`查看 ${game.name}`} onClick={flushPendingQuery}>{game.image ? <img src={game.image.src} alt={game.image.alt} loading="lazy" /> : <b>{game.name.slice(0, 1)}</b>}<small>{game.providerName}</small></a><div className="game-card-body"><p>{game.providerName}</p><h3><a href={game.url} onClick={flushPendingQuery}>{game.name}</a>{game.displayNameZhHant && <small>{game.originalName}</small>}</h3>{metrics.length > 0 && <dl className="game-metrics">{metrics.map((metric) => <div key={metric.label}><dt>{metric.label}</dt><dd>{metric.value}{metric.note && <small>{metric.note}</small>}</dd></div>)}</dl>}{game.mechanismLabel && <div className="game-mechanism"><span>賠付機制</span><b>{game.mechanismLabel}</b></div>}<button className={compare.selected.includes(game.slug) ? 'compare-add active' : 'compare-add'} onClick={() => compare.toggle(game.slug)} disabled={!compare.selected.includes(game.slug) && compare.selected.length >= 3}>{compare.selected.includes(game.slug) ? '✓ 已加入比較' : '＋ 加入比較'}</button></div></article>;
     })}</div>
-    {!shown.length && <div className="empty-result"><strong>沒有符合這組條件的遊戲</strong><p>移除一個功能或降低數值門檻，再看看其他結果。</p><button onClick={clear}>清除篩選</button></div>}
+    {!shown.length && <div className="empty-result"><strong>沒有符合這組條件的遊戲</strong><p>{recoveryOptions.length > 0 ? '目前條件組合沒有結果；可以先移除一項條件，再查看實際可用結果。' : '目前沒有能以單一條件調整恢復的結果；可以清除全部條件重新開始。'}</p>{recoveryOptions.length > 0 && <ul className="explorer-recovery-list" aria-label="可移除的條件">{recoveryOptions.map((option) => <li key={`${option.field}-${option.value}`}><button type="button" className="button secondary" onClick={() => update(option.state)}>移除「{recoveryLabel(option)}」— 可查看 {option.count} 款</button></li>)}</ul>}<button type="button" className="button secondary" onClick={clear}>清除全部條件</button></div>}
     {compare.selected.length > 0 && <CompareTray games={games} selected={compare.selected} remove={compare.remove} clear={compare.clear} />}
   </div>;
 }

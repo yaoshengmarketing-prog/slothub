@@ -127,3 +127,28 @@ export function featureResultCount(games, state, feature) {
   const features = state.features.includes(feature) ? state.features : [...state.features, feature];
   return filterAndSortGames(games, { ...state, features }).length;
 }
+
+export function zeroResultRecoveryOptions(games, state, limit = 3) {
+  const candidates = [];
+  const add = (field, value, nextState) => {
+    const count = filterAndSortGames(games, nextState).length;
+    if (count > 0) candidates.push({ field, value, count, state: nextState, order: candidates.length });
+  };
+
+  if (state.q) add('q', state.q, { ...state, q: '', sort: state.sort === 'relevance' ? 'name-asc' : state.sort });
+  if (state.provider) add('provider', state.provider, { ...state, provider: '' });
+  if (state.primaryType) add('primaryType', state.primaryType, { ...state, primaryType: '' });
+  if (state.subtype) add('subtype', state.subtype, { ...state, subtype: '' });
+  if (state.mechanism) add('mechanism', state.mechanism, { ...state, mechanism: '' });
+  for (const feature of state.features) {
+    add('feature', feature, { ...state, features: state.features.filter((item) => item !== feature) });
+  }
+  if (state.rtpMin !== undefined) add('rtpMin', state.rtpMin, { ...state, rtpMin: undefined });
+  if (state.volatility) add('volatility', state.volatility, { ...state, volatility: '' });
+  if (state.maxWinMin !== undefined) add('maxWinMin', state.maxWinMin, { ...state, maxWinMin: undefined });
+
+  return candidates
+    .sort((left, right) => left.count - right.count || left.order - right.order)
+    .slice(0, limit)
+    .map(({ order: _order, ...candidate }) => candidate);
+}
