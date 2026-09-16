@@ -66,7 +66,7 @@ Pilot 以 2 款遊戲完成逐款來源核對、翻譯判讀、圖片保存及�
 
 排程需避開現有 08:30、09:00 與 18:30 工作：
 
-- 每日 02:10：最多處理 2 款，依 failed → pending → captured 待補順序接續。
+- 每日 02:10：最多處理 2 款，依 in-progress → failed → pending → captured 待補順序接續。
 - 每週日 03:10：只更新 Provider 目錄與新增候選，不更新 Game `lastVerifiedAt`。
 - 每月 1 日 04:10：最多回查 2 款已收錄 Game；只有逐欄位重新核對完成才更新 `lastVerifiedAt`。
 
