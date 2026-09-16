@@ -6,6 +6,7 @@ import { loadPublishedGameCatalog } from '../../lib/game-catalog';
 import { createGuideRelationshipIndex, explorerGuideLinks } from '../../lib/guide-relationship-catalog';
 import { gamesIndexUrl } from '../../lib/urls';
 import { GUIDED_EXPLORER_MECHANISMS } from '../../lib/guided-explorer-pilot.mjs';
+import { selectRecentlyVerifiedGames } from '../../lib/recently-verified-games.mjs';
 import { winMechanismLabels } from '../../lib/taxonomy';
 import { getCollection } from 'astro:content';
 
@@ -13,12 +14,39 @@ const { games } = await loadPublishedGameCatalog();
 const providerCount = new Set(games.map((game) => game.provider)).size;
 const relationships = createGuideRelationshipIndex(await getCollection('guides'), games);
 const relationshipLinks = explorerGuideLinks(relationships);
+const recentlyVerifiedGames = selectRecentlyVerifiedGames(games);
+const verifiedDateFormatter = new Intl.DateTimeFormat('zh-TW', {
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+});
 ---
 <BaseLayout title="遊戲庫｜Slot Hub" description="依廠商、玩法、功能與數據搜尋、篩選及比較遊戲。" canonicalPath="/games/">
   <section class="games-v3-intro shell">
     <p class="eyebrow">GAME LIBRARY</p>
     <div><h1>找一款有明確資料的遊戲</h1><p>目前收錄 {games.length} 款遊戲、{providerCount} 家廠商。可以先用兩個條件開始，也可以直接調整完整篩選；兩種入口共用同一個 Explorer 與網址狀態。</p></div>
     <nav class="games-v3-mode-links" aria-label="選擇找遊戲方式"><a href="#guided-explorer">從玩法開始</a><a href="#full-explorer">直接調整完整條件</a></nav>
+  </section>
+
+  <section class="games-recent-verified shell" aria-labelledby="recently-verified-title">
+    <header class="games-v3-section-head">
+      <div><p class="eyebrow">RECENTLY VERIFIED</p><h2 id="recently-verified-title">最近核對的遊戲資料</h2></div>
+      <p>依 Slot Hub 最近一次回讀來源的日期排列。這不是新作、熱門或資料最完整排行；日期只表示該筆資料最近何時完成核對。</p>
+    </header>
+    <div class="games-recent-verified__grid">
+      {recentlyVerifiedGames.map((game) => (
+        <a class="games-recent-verified__card" href={game.url} data-recently-verified-game={game.slug}>
+          <span class="games-recent-verified__image" aria-hidden="true">
+            {game.image ? <img src={game.image.src} alt="" loading="lazy" /> : <span>{game.name.slice(0, 1)}</span>}
+          </span>
+          <span class="games-recent-verified__body">
+            <span class="games-recent-verified__date">核對於 <time datetime={game.lastVerifiedAt}>{verifiedDateFormatter.format(new Date(`${game.lastVerifiedAt}T00:00:00+08:00`))}</time></span>
+            <strong>{game.name}</strong>
+            <span>{game.providerName}</span>
+          </span>
+        </a>
+      ))}
+    </div>
   </section>
 
   <section class="games-v3-guided shell" id="guided-explorer" aria-labelledby="guided-explorer-title">

@@ -12,11 +12,13 @@ const bonusBuyGuidePublished = /^status: published$/m.test(bonusBuyGuideSource);
 const bonusBuyOwnerSlug = bonusBuyGuidePublished ? 'slot-bonus-buy-explained' : 'slot-terms-glossary';
 const cascadingGuideSource = await readFile(new URL('../src/content/guides/slot-cascading-tumble-avalanche-explained.md', import.meta.url), 'utf8');
 const cascadingGuidePublished = /^status: published$/m.test(cascadingGuideSource);
-const [rtp, glossary, symbols, payout, bigBass, bonanza, reactoonz, superAce, handOfAnubis, gamesIndex, search, slots, cascadingGuide, bonusBuyGuide] = await Promise.all([
+const [rtp, glossary, symbols, payout, waysGuide, paytableGuide, bigBass, bonanza, reactoonz, superAce, handOfAnubis, gamesIndex, search, slots, cascadingGuide, bonusBuyGuide] = await Promise.all([
   load('guide/rtp-explained/index.html'),
   load('guide/slot-terms-glossary/index.html'),
   load('guide/slot-symbols-and-features/index.html'),
   load('guide/slot-payout-mechanisms-explained/index.html'),
+  load('guide/slot-ways-to-win-explained/index.html'),
+  load('guide/slot-paytable-and-betting-risk-explained/index.html'),
   load('games/big-bass-bonanza/index.html'),
   load('games/bonanza/index.html'),
   load('games/reactoonz/index.html'),
@@ -29,7 +31,7 @@ const [rtp, glossary, symbols, payout, bigBass, bonanza, reactoonz, superAce, ha
   bonusBuyGuidePublished ? load('guide/slot-bonus-buy-explained/index.html') : Promise.resolve(''),
 ]);
 
-const guidesWithDerivedGames = [['RTP', rtp], ['symbols', symbols], ['payout', payout], [bonusBuyGuidePublished ? 'Bonus Buy' : 'glossary', bonusBuyGuidePublished ? bonusBuyGuide : glossary]];
+const guidesWithDerivedGames = [['RTP', rtp], ['symbols', symbols], ['payout', payout], ['Ways to Win', waysGuide], [bonusBuyGuidePublished ? 'Bonus Buy' : 'glossary', bonusBuyGuidePublished ? bonusBuyGuide : glossary]];
 for (const [name, html] of guidesWithDerivedGames) {
   assert.match(html, /guide-related-games/, `${name}: related Game section missing`);
   const grid = html.match(/<div class="guide-game-grid">([\s\S]*?)<\/div>\s*<div class="guide-concept-links"/)?.[1] ?? '';
@@ -41,6 +43,9 @@ assert.ok(!rtp.includes('/games/?q=%E5%A4%9A%E7%89%88%E6%9C%AC'), 'RTP variants 
 assert.match(rtp, /<div class="guide-concept-links"[^>]*><\/div>/, 'Data Topic Guide concept container must stay empty without a precise Explorer URL');
 assert.ok(!glossary.includes('mechanism=paylines'), 'Glossary retained Paylines ownership');
 assert.ok(!glossary.includes('mechanism=ways-to-win'), 'Glossary retained Ways ownership');
+assert.match(waysGuide, /href="\/games\/\?mechanism=ways-to-win"/, 'Ways to Win Guide exact Explorer URL missing');
+assert.match(payout, /href="\/guide\/slot-ways-to-win-explained\/"/, 'Payout overview did not link to the focused Ways to Win Guide');
+assert.match(paytableGuide, /href="\/guide\/slot-bonus-buy-explained\/"/, 'Paytable Guide did not preserve the Bonus Buy content boundary');
 assert.ok(!glossary.includes('features=cascading'), 'Glossary retained Cascading ownership');
 if (bonusBuyGuidePublished) {
   assert.ok(!glossary.includes('features=bonus-buy'), 'Glossary retained the Bonus Buy Explorer CTA after ownership transfer');
@@ -79,6 +84,8 @@ if (cascadingGuidePublished) assert.match(reactoonzRail, /老虎機連鎖消除�
 else assert.ok(!reactoonzRail.includes('老虎機連鎖消除怎麼看'), 'Draft Cascading Guide entered the Reactoonz detail rail');
 const superAceRail = superAce.match(/<section class="game-guide-rail"[\s\S]*?<\/section>/)?.[0] ?? '';
 assert.ok(!superAceRail.includes('老虎機連鎖消除怎麼看'), 'Super Ace inherited a Cascading Guide relation without the cascading Feature');
+assert.match(superAce, /data-guide-slug="slot-ways-to-win-explained"/, 'Super Ace did not receive the focused Ways to Win owner');
+assert.ok(!superAce.includes('data-guide-slug="slot-payout-mechanisms-explained"'), 'Super Ace retained the old payout overview owner');
 const handOfAnubisRail = handOfAnubis.match(/<section class="game-guide-rail"[\s\S]*?<\/section>/)?.[0] ?? '';
 assert.ok(!handOfAnubisRail.includes('slot-symbols-and-features'), 'Hand of Anubis retained an unsupported Symbols Guide relation');
 assert.match(handOfAnubisRail, /slot-cascading-tumble-avalanche-explained/, 'Hand of Anubis lost its verified Cascading Guide relation');
@@ -86,9 +93,12 @@ assert.match(handOfAnubisRail, /slot-cascading-tumble-avalanche-explained/, 'Han
 assert.match(gamesIndex, /relationshipLinks/, 'Explorer did not receive relationship links');
 assert.match(search, /了解概念/, 'Search learn intent missing');
 assert.match(search, /探索遊戲/, 'Search explore intent missing');
-for (const mechanism of ['paylines', 'ways-to-win', 'megaways', 'cluster-pays', 'pay-anywhere']) {
+for (const mechanism of ['paylines', 'megaways', 'cluster-pays', 'pay-anywhere']) {
   assert.match(search, new RegExp(`learn-mechanism-${mechanism}-slot-payout-mechanisms-explained`), `${mechanism}: published payout Guide Search intent missing`);
 }
+assert.match(search, /learn-mechanism-ways-to-win-slot-ways-to-win-explained/, 'Ways to Win Search learn intent did not transfer to the focused Guide');
+assert.match(search, /explore-mechanism-ways-to-win-slot-ways-to-win-explained/, 'Ways to Win Search explore intent did not transfer to the focused Guide');
+assert.ok(!search.includes('learn-mechanism-ways-to-win-slot-payout-mechanisms-explained'), 'Search retained the old Ways owner');
 if (cascadingGuidePublished) {
   assert.match(search, /learn-feature-cascading-slot-cascading-tumble-avalanche-explained/, 'Search Cascading learn intent did not transfer to the new Guide');
   assert.match(search, /explore-feature-cascading-slot-cascading-tumble-avalanche-explained/, 'Search Cascading explore intent did not transfer to the new Guide');
@@ -123,6 +133,7 @@ assert.match(slots, /relationship-knowledge-grid/, 'Slots Knowledge Map did not 
 assert.match(slots, /了解概念 →/, 'Slots Guide action missing');
 assert.match(slots, /href="\/games\/\?features=bonus-buy"/, 'Slots exact Feature Explorer action missing');
 assert.match(slots, /href="\/games\/\?mechanism=paylines"/, 'Slots exact mechanism Explorer action missing');
+assert.match(slots, /href="\/guide\/slot-ways-to-win-explained\/"/, 'Slots Knowledge Map Ways owner did not transfer to the focused Guide');
 assert.ok(!slots.includes('/games/?q=RTP'), 'Slots rendered an imprecise Data Topic Explorer action');
 if (cascadingGuidePublished) {
   const knowledgeGrid = slots.match(/<div class="relationship-knowledge-grid">([\s\S]*?)<\/div>\s*<\/section>/)?.[1] ?? slots;
@@ -169,6 +180,8 @@ assert.equal(countGuide('slot-cascading-tumble-avalanche-explained'), 17, 'Casca
 assert.equal(countGuide(bonusBuyOwnerSlug), 19, 'Bonus Buy Feature Guide count changed');
 assert.equal(countGuide(bonusBuyGuidePublished ? 'slot-terms-glossary' : 'slot-bonus-buy-explained'), 0, 'Inactive Bonus Buy owner appeared in Game detail');
 assert.equal(countGuide('slot-symbols-and-features'), 54, 'Symbols Feature Guide count changed');
+assert.equal(countGuide('slot-ways-to-win-explained'), 7, 'Ways to Win Guide reverse relationship count changed');
+assert.equal(countGuide('slot-payout-mechanisms-explained'), 46, 'Payout overview relationship count must exclude the seven Ways Games');
 assert.ok(!renderedKnowledge.some((item) => item.gameSlug === 'super-ace' && item.guideSlug === 'slot-cascading-tumble-avalanche-explained'), 'Super Ace regained an invalid Cascading relationship');
 
 for (const slug of ['bonanza', 'gates-of-olympus-1000', 'jammin-jars', 'storm-of-seth-2-awakening', 'sun-wu-kong']) {

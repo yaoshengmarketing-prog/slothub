@@ -136,22 +136,32 @@ for (const slug of ['big-bass-bonanza', 'dead-or-alive-2', 'fat-rabbit', 'gates-
 }
 
 const payoutGuideSlug = 'slot-payout-mechanisms-explained';
-const payoutMechanisms = ['paylines', 'ways-to-win', 'megaways', 'cluster-pays', 'pay-anywhere'];
+const payoutMechanisms = ['paylines', 'megaways', 'cluster-pays', 'pay-anywhere'];
 const payoutGuide = guides.find((guide) => guide.slug === payoutGuideSlug);
 assert.ok(payoutGuide, 'Payout Guide is missing or its slug changed');
+assert.deepEqual(payoutGuide.relatedMechanisms, payoutMechanisms, 'Payout Guide must retain the four overview Mechanism owners');
 const expectedPublishedOwners = payoutGuide.status === 'published' ? [payoutGuideSlug] : [];
 for (const mechanism of payoutMechanisms) {
   assert.deepEqual(index.mechanismToGuides[mechanism].map((guide) => guide.slug), expectedPublishedOwners, `${mechanism}: public ownership must follow the payout Guide status`);
 }
-const previewGuides = guides.map((guide) => guide.slug === payoutGuideSlug ? { ...guide, status: 'published' } : guide);
-const previewIndex = buildGuideRelationshipIndex(previewGuides, games, options);
-for (const mechanism of payoutMechanisms) {
-  assert.deepEqual(previewIndex.mechanismToGuides[mechanism].map((guide) => guide.slug), [payoutGuideSlug], `${mechanism}: ownership must transfer only to the payout Guide`);
+const waysGuideSlug = 'slot-ways-to-win-explained';
+const waysGuide = guides.find((guide) => guide.slug === waysGuideSlug);
+assert.ok(waysGuide, 'Ways to Win Guide is missing or its slug changed');
+assert.equal(waysGuide.status, 'published', 'Ways to Win Guide must be published');
+assert.deepEqual(waysGuide.relatedMechanisms, ['ways-to-win'], 'Ways to Win Guide must own only ways-to-win');
+assert.deepEqual(index.mechanismToGuides['ways-to-win'].map((guide) => guide.slug), [waysGuideSlug], 'ways-to-win must have exactly one published Guide owner');
+const waysGames = games.filter((game) => game.status === 'published' && game.winMechanism === 'ways-to-win');
+assert.equal(waysGames.length, 7, 'ways-to-win coverage must remain seven published Games');
+assert.deepEqual(
+  new Set(index.guideToGames[waysGuideSlug].map((game) => game.slug)),
+  new Set(waysGames.map((game) => game.slug)),
+  'Ways to Win Guide reverse relationships must derive from the seven structured Games',
+);
+for (const game of games.filter((item) => item.status === 'published' && item.winMechanism !== 'ways-to-win')) {
+  assert.ok(!index.gameToGuides[game.slug].some(({ guide }) => guide.slug === waysGuideSlug), `${game.slug}: non-Ways Game must not receive the Ways to Win Guide`);
 }
-assert.deepEqual(previewIndex.featureToGuides.cascading.map((guide) => guide.slug), expectedCascadingOwners);
-assert.deepEqual(previewIndex.featureToGuides['bonus-buy'].map((guide) => guide.slug), [bonusBuyOwnerSlug]);
-assert.ok(!previewIndex.mechanismToGuides.paylines.some((guide) => guide.slug === 'slot-terms-glossary'), 'Glossary retained Paylines ownership');
-assert.ok(!previewIndex.mechanismToGuides['ways-to-win'].some((guide) => guide.slug === 'slot-terms-glossary'), 'Glossary retained Ways ownership');
+assert.ok(!index.mechanismToGuides.paylines.some((guide) => guide.slug === 'slot-terms-glossary'), 'Glossary retained Paylines ownership');
+assert.ok(!index.mechanismToGuides['ways-to-win'].some((guide) => guide.slug === payoutGuideSlug), 'Payout overview retained Ways ownership after migration');
 
 for (const [slug, matches] of Object.entries(index.gameToGuides)) {
   const game = games.find((item) => item.slug === slug);

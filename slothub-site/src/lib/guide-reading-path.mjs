@@ -21,7 +21,11 @@ export const GUIDE_READING_PATHS = [
     eyebrow: 'MECHANISMS',
     title: '玩法機制',
     description: '理解一般得獎組合依賠線、Ways、群集或其他主要規則成立。',
-    guideSlugs: ['slot-payout-mechanisms-explained'],
+    guideSlugs: [
+      'slot-payout-mechanisms-explained',
+      'slot-ways-to-win-explained',
+      'slot-paytable-and-betting-risk-explained',
+    ],
   },
   {
     id: 'features',

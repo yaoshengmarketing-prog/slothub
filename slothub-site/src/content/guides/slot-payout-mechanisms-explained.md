@@ -6,7 +6,6 @@ level: beginner
 tags: [賠付機制, Paylines, Ways to Win, Megaways, Cluster Pays, Pay Anywhere]
 relatedMechanisms:
   - paylines
-  - ways-to-win
   - megaways
   - cluster-pays
   - pay-anywhere
@@ -49,6 +48,8 @@ Ways to Win 通常不要求符號沿著預先畫好的線路排列，而是看�
 [Mahjong Ways](/games/mahjong-ways/) 的官方規則列出 5 軸、4 列與 1,024 Ways；[Jump High](/games/jump-high/) 列出 243 Ways；[Super Ace](/games/super-ace/) 的官方欄位標題雖寫 Paylines，數值卻明列 `1024 ways`，因此 Slot Hub 保留原廠差異並按主要規則分類。
 
 Ways 數量描述的是盤面位置能形成多少種有效組合，不代表每一種組合的機率相同，也不能直接拿來判斷哪款遊戲比較容易中獎。
+
+固定路數、動態上限及相鄰轉輪的計算方式，可繼續閱讀[多路贏法教學](/guide/slot-ways-to-win-explained/)。
 
 ## Megaways：Ways 會隨當次盤面改變
 
