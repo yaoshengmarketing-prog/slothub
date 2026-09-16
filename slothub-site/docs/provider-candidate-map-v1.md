@@ -102,3 +102,25 @@
 `TAXONOMY_CHANGE_ALLOWED: NO`
 
 `FORMAL_DOMAIN_CHANGE_ALLOWED: NO`
+
+## 8. 外部目錄接續順序（2026-09-16）
+
+Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；網站目前為 60 款 published Game、14 家 published Provider。後續沿用本文件，不另建平行管理系統。
+
+| 順序 | Provider | 目前收錄 | 官方目錄／主要入口 | 接續理由 |
+| ---: | --- | ---: | --- | --- |
+| 1 | ATG Games | 3 | https://www.atg-games.com/en/games?type=all | 薄 Provider；既有頁面可提供身份、玩法與圖片 |
+| 2 | CQ9 Gaming | 3 | https://site.cq9gaming.com/en/games | 薄 Provider；正式目錄可先完成身份與圖片骨架 |
+| 3 | JILI Games | 3 | https://jiligames.com/games?showSlotGames=true | 薄 Provider；正式 Game Info 可承接功能與原廠標籤 |
+| 4 | Yggdrasil Gaming | 3 | https://yggdrasilgaming.com/games | 薄 Provider；詳情頁與 client／source 資料可補玩法 |
+| 5 | Big Time Gaming | 4 | https://www.bigtimegaming.com/games/category/All | Megaways 與既有搜尋需求；精確數值可能在圖中 |
+| 6 | Push Gaming | 4 | https://www.pushgaming.com/games/ | RTP variants、波動度與 Feature 資料相對完整 |
+| 7 | Booming Games | 5 | https://booming-games.com/games | 目錄與逐款頁可直接承接身份、玩法與圖片 |
+| 8 | Play’n GO | 5 | https://www.playngo.com/games | 遊戲頁、Demo Help 與新聞稿可交叉核對 |
+| 9 | Slotmill | 5 | https://developer.slotmill.com/gamelist/ | 技術欄位完整，但需保留多配置差異 |
+| 10 | PG SOFT | 5 | https://www.pgsoft.com/games/all/ | 目錄可直接提供 RTP、波動度與 Max Win 欄位 |
+| 11 | Pragmatic Play | 5 | https://www.pragmaticplay.com/en/games/ | 既有覆蓋較厚，排在薄 Provider 之後 |
+| 12 | NetEnt | 5 | https://netent.com/games | 舊作資料入口分散；逐款確認可用頁後再處理 |
+| 13 | Hacksaw Gaming | 6 | https://www.hacksawgaming.com/games | 現有覆蓋最厚，仍可由 Games／Client Hub 接續 |
+
+接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。下一家為 ATG Games。

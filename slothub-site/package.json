@@ -33,10 +33,11 @@
     "verify:ninth-batch": "node scripts/verify-ninth-game-batch.mjs",
     "verify:tenth-batch": "node scripts/verify-tenth-game-batch.mjs",
     "verify:external-intake": "node scripts/verify-external-intake-pilot.mjs",
+    "verify:intake-resume": "node scripts/verify-intake-resume.mjs",
     "intake:catalog:relax": "node scripts/collect-provider-catalog.mjs",
     "intake:queue:relax": "node scripts/intake-progress.mjs --provider=relax-gaming --list --limit=2",
     "verify:data": "node scripts/audit-game-data.mjs",
-    "verify": "npm run verify:data && npm run verify:search && npm run verify:explorer && npm run verify:core-flow && npm run verify:compare-data && npm run verify:relationships && npm run check && npm run build && npm run verify:external-intake && npm run verify:fourth-batch && npm run verify:fifth-batch && npm run verify:sixth-batch && npm run verify:seventh-batch && npm run verify:eighth-batch && npm run verify:ninth-batch && npm run verify:tenth-batch && npm run verify:build && npm run verify:game-detail && npm run verify:similar-play && npm run verify:provider-hub && npm run verify:data-methodology && npm run verify:guide-reading-path && npm run verify:guided-explorer && npm run verify:game-detail-presentation && npm run verify:p1-expansion && npm run verify:relationship-ui && npm run verify:diagrams && npm run verify:links"
+    "verify": "npm run verify:data && npm run verify:search && npm run verify:explorer && npm run verify:core-flow && npm run verify:compare-data && npm run verify:relationships && npm run check && npm run build && npm run verify:external-intake && npm run verify:intake-resume && npm run verify:fourth-batch && npm run verify:fifth-batch && npm run verify:sixth-batch && npm run verify:seventh-batch && npm run verify:eighth-batch && npm run verify:ninth-batch && npm run verify:tenth-batch && npm run verify:build && npm run verify:game-detail && npm run verify:similar-play && npm run verify:provider-hub && npm run verify:data-methodology && npm run verify:guide-reading-path && npm run verify:guided-explorer && npm run verify:game-detail-presentation && npm run verify:p1-expansion && npm run verify:relationship-ui && npm run verify:diagrams && npm run verify:links"
   },
   "dependencies": {
     "@astrojs/react": "latest",

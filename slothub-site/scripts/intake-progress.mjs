@@ -8,13 +8,28 @@ const args = Object.fromEntries(process.argv.slice(2).map((arg) => {
   return [key, rest.join('=') || true];
 }));
 const provider = String(args.provider || 'relax-gaming');
-const manifestPath = path.join(root, 'data', 'external-intake', `${provider}-catalog.json`);
+const manifestPath = args.manifest
+  ? path.resolve(String(args.manifest))
+  : path.join(root, 'data', 'external-intake', `${provider}-catalog.json`);
 const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
+
+const selectableStatuses = String(args.statuses || 'failed,pending,captured')
+  .split(',')
+  .map((value) => value.trim())
+  .filter(Boolean);
+const statusPriority = new Map(selectableStatuses.map((status, index) => [status, index]));
 
 if (args.list) {
   const limit = Number(args.limit || 2);
+  const seen = new Set();
   const pending = manifest.entries
-    .filter((entry) => entry.eligibleForGameIntake !== false && entry.detailStatus === 'pending')
+    .filter((entry) => entry.eligibleForGameIntake !== false && statusPriority.has(entry.detailStatus))
+    .filter((entry) => {
+      if (seen.has(entry.officialUrl)) return false;
+      seen.add(entry.officialUrl);
+      return true;
+    })
+    .sort((left, right) => (statusPriority.get(left.detailStatus) - statusPriority.get(right.detailStatus)) || left.officialUrl.localeCompare(right.officialUrl, 'en'))
     .slice(0, limit);
   console.log(JSON.stringify(pending, null, 2));
   process.exit(0);
@@ -29,8 +44,14 @@ if (args['verified-at']) entry.verifiedAt = args['verified-at'];
 if (args['import-status']) entry.importStatus = args['import-status'];
 if (args.slug) entry.existingSlug = args.slug;
 if (args.note) entry.notes = [...new Set([...(entry.notes ?? []), args.note])];
+if (args['attempted-at']) entry.lastAttemptAt = args['attempted-at'];
+if (args['attempt-result']) entry.lastAttemptResult = args['attempt-result'];
+if (args['collection-outcome']) entry.collectionOutcome = args['collection-outcome'];
 
 manifest.existingMatchCount = manifest.entries.filter((item) => item.existingSlug).length;
 manifest.pendingDetailCount = manifest.entries.filter((item) => item.eligibleForGameIntake !== false && item.detailStatus === 'pending').length;
+manifest.retryableDetailCount = manifest.entries.filter((item) => item.eligibleForGameIntake !== false && ['pending', 'failed'].includes(item.detailStatus)).length;
+manifest.capturedNeedsReviewCount = manifest.entries.filter((item) => item.eligibleForGameIntake !== false && item.detailStatus === 'captured').length;
+manifest.excludedCount = manifest.entries.filter((item) => item.eligibleForGameIntake === false).length;
 await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
 console.log(`Updated ${entry.officialName}: ${entry.detailStatus} / ${entry.importStatus}.`);

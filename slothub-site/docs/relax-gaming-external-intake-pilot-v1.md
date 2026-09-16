@@ -1,6 +1,6 @@
 # Relax Gaming 外部資料收集 Pilot v1
 
-> 狀態：`PILOT IMPLEMENTED`
+> 狀態：`FULL CATALOG CAPTURE COMPLETE; EDITORIAL INTAKE ACTIVE`
 >
 > 核對日期：2026-09-16
 
@@ -11,7 +11,7 @@
 - 既有基線：14 家 Provider、58 款 published Game。
 - 官方目錄：175 筆產品，其中 173 筆符合現行 Game 收錄範圍；2 筆是 Roulette／Blackjack 桌面遊戲，留在目錄但不進遊戲處理佇列。
 - 去重結果：既有 `Temple Tumble`、`The Great Pigsby Megaways` 直接命中；Pilot 新增 `Money Train 2`、`Iron Bank` 後，目錄共對應 4 筆站內資料。
-- 待逐款核對：169 筆。待處理只代表目錄候選，不代表都會發布。
+- 全目錄第一輪：173 筆 eligible 產品頁與真實圖片候選均已擷取；169 筆尚待重要欄位補查與逐款編輯核對。待補不代表都會發布。
 
 ## 2. 收集責任分工
 
@@ -38,25 +38,34 @@
 
 ## 4. 續跑與失敗處理
 
-- `data/external-intake/relax-gaming-catalog.json` 保存每筆 `pending／verified／failed` 與 `not-imported／imported` 狀態。
+- `data/external-intake/relax-gaming-catalog.json` 保存每筆 `pending／captured／verified／failed`、`not-imported／imported` 與 `collectionOutcome` 狀態。
 - 每款完成後立即寫回，不需重抓已完成項目。
+- 每日佇列依 `failed → pending → captured` 排序；失敗項優先接回，已完成項目重跑時為 no-op，官方 URL 在同一佇列中只會出現一次。
 - 欄位找不到時保留缺值；版本分開保存；來源衝突寫入 notes 並保留既有值。
-- 單款失敗不阻擋其他項目，下一輪只選尚未完成的 eligible entries。
+- 單款失敗不阻擋其他項目，下一輪只選失敗或尚未完成的 eligible entries。
+
+重要欄位的補查順序為：官方產品頁、Rules／Paytable／Help、正式 PDF／Client Hub、官方新聞稿、可追溯的官方授權合作方，最後才是清楚標示的非官方資料站。後兩者不得無來源覆寫既有值；衝突保留差異，不平均、不補猜。
+
+圖片先驗證官方目錄及產品頁提供的真實素材。只有所有安全真實來源都不可用時，才建立並明確標示示意封面；缺圖本身不會把遊戲從目錄移除。
 
 ## 5. 第一輪上限與排程依據
 
-Pilot 以 2 款遊戲完成逐款來源核對、翻譯判讀、圖片保存及全站驗證。第一版每日上限因此設定為 2 款；後續只有在品質與執行時間穩定後才調整。
+Pilot 以 2 款遊戲完成逐款來源核對、翻譯判讀、圖片保存及全站驗證。完整機械擷取實跑 173 款共 423,804 ms，平均每款 2,464 ms；但正式發布的主要成本仍是補查、語意判讀與整站驗證，因此每日發布上限暫維持 2 款，不因下載速度快而放寬品質門檻。
 
 排程需避開現有 08:30、09:00 與 18:30 工作：
 
-- 每日 02:10：最多處理 2 款 pending Game。
+- 每日 02:10：最多處理 2 款，依 failed → pending → captured 待補順序接續。
 - 每週日 03:10：只更新 Provider 目錄與新增候選，不更新 Game `lastVerifiedAt`。
 - 每月 1 日 04:10：最多回查 2 款已收錄 Game；只有逐欄位重新核對完成才更新 `lastVerifiedAt`。
+
+三個排程都執行於目前 Codex `Local` 主機，工作目錄是 `C:\Users\User\Documents\Claude\Projects\老虎機 Slot`，排程時區為 `Asia/Taipei`。因為不是雲端 runner，排程時間需要該 Windows 主機保持開機、清醒、可連網，且本機 Codex 排程服務可用。
 
 ## 6. Pilot 出口
 
 - 新增：2 款。
 - 更新：1 家 Provider 摘要與來源核對日期；既有兩款 Game 未因目錄掃描更新。
-- 待處理：169 款 eligible Relax 目錄候選。
-- 失敗：0 款。
+- 全目錄擷取：173／173 款成功，真實圖片可用 173／173。
+- 待補查：169 款；其中 RTP 待補 145、波動度待補 160、Max Win 待補 117。各欄位數量可重疊。
+- 排除：2 款桌上遊戲（Roulette Nouveau、Blackjack Neo），均保存原因。
+- 失敗：0 款；retryable queue 為 0。
 - 網站總量：60 款 published Game、14 家 published Provider。

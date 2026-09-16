@@ -16,8 +16,27 @@ assert.match(manifest.catalogSeenAtMeaning, /不代表任何單款內容已重�
 assert.equal(manifest.catalogEntryCount, 175);
 assert.equal(manifest.eligibleGameCount, 173);
 assert.equal(manifest.existingMatchCount, 4);
-assert.equal(manifest.pendingDetailCount, 169);
+assert.equal(manifest.pendingDetailCount, 0);
+assert.equal(manifest.retryableDetailCount, 0);
+assert.equal(manifest.capturedNeedsReviewCount, 169);
+assert.equal(manifest.excludedCount, 2);
+assert.equal(manifest.detailCollection.capturedCount, 173);
+assert.equal(manifest.detailCollection.failedCount, 0);
+assert.equal(manifest.detailCollection.imageAvailableCount, 173);
+assert.equal(manifest.detailCollection.imageMissingCount, 0);
 assert.equal(new Set(manifest.entries.map((entry) => entry.officialUrl)).size, manifest.entries.length, 'duplicate official catalog URL');
+
+for (const entry of manifest.entries.filter((item) => item.eligibleForGameIntake !== false)) {
+  assert.equal(entry.detailCapture?.status, 'captured', `${entry.officialName}: detail page not captured`);
+  assert.equal(entry.detailCapture?.image?.status, 'available', `${entry.officialName}: real image candidate unavailable`);
+  assert.equal(entry.detailSnapshot?.sourceUrl, entry.officialUrl, `${entry.officialName}: detail source mismatch`);
+  assert.match(entry.detailSnapshot?.sourceSha256 ?? '', /^[a-f0-9]{64}$/, `${entry.officialName}: source snapshot hash missing`);
+}
+
+for (const entry of manifest.entries.filter((item) => item.eligibleForGameIntake === false)) {
+  assert.equal(entry.collectionOutcome, 'excluded');
+  assert.ok(entry.exclusionReason, `${entry.officialName}: exclusion reason missing`);
+}
 
 for (const [name, slug] of [['Money Train 2', 'money-train-2'], ['Iron Bank', 'iron-bank']]) {
   const entry = manifest.entries.find((item) => item.officialName === name);
@@ -85,4 +104,4 @@ for (const [name, slug] of [['Money Train 2', 'money-train-2'], ['Iron Bank', 'i
   assert.match(compareHtml, new RegExp(slug), `${name}: missing from Compare catalog`);
 }
 
-console.log('PASS: Relax Gaming pilot preserves catalog-vs-verification dates, dedupes existing records, and publishes two verified Games across Search, Explorer, Compare, Provider and Game detail.');
+console.log('PASS: Relax Gaming full-pass intake captures 173 eligible detail pages and real images, preserves catalog-vs-verification dates, dedupes existing records, and keeps two verified pilot Games published across Search, Explorer, Compare, Provider and Game detail.');

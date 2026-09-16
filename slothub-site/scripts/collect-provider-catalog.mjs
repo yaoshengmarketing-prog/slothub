@@ -101,6 +101,7 @@ const entries = catalogEntries.map((entry) => {
   const existingSlug = existingGames.get(entry.normalizedName) ?? null;
   const eligibleForGameIntake = !/^table\b/i.test(entry.productType ?? '');
   return {
+    ...(prior ?? {}),
     ...entry,
     eligibleForGameIntake,
     existingSlug,
@@ -109,6 +110,8 @@ const entries = catalogEntries.map((entry) => {
     verifiedAt: prior?.verifiedAt ?? null,
     importStatus: prior?.importStatus ?? (existingSlug ? 'existing' : 'not-imported'),
     notes: prior?.notes ?? [],
+    collectionOutcome: prior?.collectionOutcome ?? (eligibleForGameIntake ? (existingSlug ? 'collected-existing' : 'pending') : 'excluded'),
+    exclusionReason: eligibleForGameIntake ? null : (prior?.exclusionReason ?? `不屬於現行 Game 收錄範圍：${entry.productType ?? 'unknown product type'}`),
   };
 });
 
@@ -121,6 +124,19 @@ const output = {
   eligibleGameCount: entries.filter((entry) => entry.eligibleForGameIntake).length,
   existingMatchCount: entries.filter((entry) => entry.existingSlug).length,
   pendingDetailCount: entries.filter((entry) => entry.eligibleForGameIntake && entry.detailStatus === 'pending').length,
+  retryableDetailCount: entries.filter((entry) => entry.eligibleForGameIntake && ['pending', 'failed'].includes(entry.detailStatus)).length,
+  capturedNeedsReviewCount: entries.filter((entry) => entry.eligibleForGameIntake && entry.detailStatus === 'captured').length,
+  excludedCount: entries.filter((entry) => !entry.eligibleForGameIntake).length,
+  detailCollection: {
+    ...(previous?.detailCollection ?? {}),
+    lastCompletedFullPassAt: entries.filter((entry) => entry.eligibleForGameIntake).every((entry) => entry.detailCapture?.status === 'captured')
+      ? seenAt
+      : previous?.detailCollection?.lastCompletedFullPassAt ?? null,
+    capturedCount: entries.filter((entry) => entry.detailCapture?.status === 'captured').length,
+    failedCount: entries.filter((entry) => entry.detailCapture?.status === 'failed').length,
+    imageAvailableCount: entries.filter((entry) => entry.detailCapture?.image?.status === 'available').length,
+    imageMissingCount: entries.filter((entry) => entry.eligibleForGameIntake && entry.detailCapture?.image?.status === 'missing').length,
+  },
   entries,
 };
 
