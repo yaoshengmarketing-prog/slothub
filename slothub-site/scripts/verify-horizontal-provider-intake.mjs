@@ -74,4 +74,7 @@ for (const name of ['Thunderkick', 'BGaming', 'Triple Cherry', 'Spinmatic', 'ELA
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`), `${name}: candidate map status not updated`);
 }
 
+const gamesIndexHtml = await readFile(new URL('../dist/games/index.html', import.meta.url), 'utf8');
+assert.match(gamesIndexHtml, /<time datetime="2026-09-16">2026\/09\/16<\/time>/, 'Recently verified dates must not shift back one day in the build timezone');
+
 console.log('PASS: horizontal intake published five traceable Providers and one verified Game per Provider without schema, taxonomy or inferred-value changes.');
