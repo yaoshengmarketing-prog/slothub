@@ -16,7 +16,7 @@ const records = await Promise.all(files.map(async (file) => {
 }));
 const published = records.filter((record) => record.data.status === 'published');
 
-assert.equal(published.length, 67, 'expected 67 published Games');
+assert.equal(published.length, 72, 'expected 72 published Games');
 assert.deepEqual(GAME_DETAIL_QUICK_KEYS, ['mechanism', 'rtp', 'volatility', 'max-win']);
 
 for (const { slug, data } of published) {
@@ -80,4 +80,4 @@ assert.match(styles, /@media\(max-width:620px\)[^{]*\{\.game-quick-read[^}]*[\s\
 assert.match(styles, /@media\(forced-colors:active\)\{\.game-quick-read/, 'forced-colors support missing');
 assert.match(styles, /@media print\{\.game-quick-read/, 'print support missing');
 
-console.log('PASS: shared Game detail presentation renders for 67 Games; Mahjong Ways complete data and Big Bass Bonanza honest missing states verified.');
+console.log('PASS: shared Game detail presentation renders for 72 Games; Mahjong Ways complete data and Big Bass Bonanza honest missing states verified.');
