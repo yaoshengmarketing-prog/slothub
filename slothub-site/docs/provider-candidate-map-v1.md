@@ -4,14 +4,14 @@
 >
 > 建立日期：2026-09-03
 >
-> 本輪更新：2026-09-16（併入 additional brands 補充並實跑每週接續流程；首輪確認 9 個新品牌，續跑確認 Spearhead Studios、去重 RAW Group／RAW iGaming，候選擴至 222 家）
+> 本輪更新：2026-09-16（橫向收錄第一批：Thunderkick、BGaming、Triple Cherry、Spinmatic、ELA Games 各先收錄一款；候選總數仍為 222 家）
 >
 > 用途：作為外部遊戲資料收集的 Provider 骨架與去重對照。這不是完整產業名錄，不授權一次建立所有 Provider 公開頁，也不改變 Schema、taxonomy、產品功能或既有發布標準。
 
 ## 1. 使用原則
 
-- Provider 是候選骨架，Game 仍按每批四款完成逐款驗證、收錄與發布。
-- 優先補強目前只有 1～2 款的既有 Provider；新增 Provider 時，同批原則上至少發布兩款。
+- Provider 是候選骨架；Game 仍須逐款完成來源、圖片、結構化欄位與正式驗證後才可收錄。
+- 本輪採「未收錄 Provider 優先、每家先一款」的橫向收錄方式；單一候選不足時改用下一家，不以 Provider、遊戲或欄位數量硬湊批次。
 - 候選必須能確認遊戲身份、Provider、主要玩法、功能、官方或安全授權圖片，以及足以形成獨立 Game detail 的內容。
 - RTP、波動度與 Max Win 優先核對官方遊戲頁、Rules、Paytable、Help、正式 PDF、Client Hub 與官方新聞稿。缺乏可靠精確值時維持「尚未核實」，不推論為原廠未公開。
 - 官方授權合作方只補官方缺值，並在 Game sources 中清楚標示。搜尋摘要、一般資料庫、娛樂城與聯盟文章只作線索。
@@ -21,9 +21,9 @@
 ## 2. 目前基線
 
 - 盤點日期：2026-09-16
-- Published Games：62
-- Published Providers：14
-- 本站 Provider 仍以現有 14 筆 published Provider content 為準；以下產業盤點不會自動建立公開 Provider 頁，也不會改動現有 Game 或收集進度。
+- Published Games：67
+- Published Providers：19
+- 本站 Provider 以現有 19 筆 published Provider content 為準；候選名單不會自動建立公開頁，只有完成逐款驗證的橫向收錄項目才進入網站。
 
 | Provider | 現有遊戲 | 官方資料入口 | 圖片入口 | 補強優先度 | 主要候選／備選 |
 | --- | ---: | --- | --- | --- | --- |
@@ -41,6 +41,11 @@
 | Relax Gaming | 6 | 官方 own-games 目錄、新聞、Client Area | 官方遊戲圖／新聞素材 | 進行中 | 175 筆目錄已擷取，逐款佇列保留 |
 | Slotmill | 5 | 官方 Games、product sheets、Developer Game List | 官方 Logo／promo pack | 中 | 保留多配置差異 |
 | Yggdrasil Gaming | 3 | 官方 Games、Client／Source 資料 | 官方詳情頁 Logo／主圖 | 高 | 目錄失敗時重試，不阻擋其他品牌 |
+| Thunderkick | 1 | 官方 Games 與逐款頁 | 官方作品頁 Banner | 橫向首收 | Zoom 已完成；其餘依目錄逐款核對 |
+| BGaming | 1 | 官方 Games、Rules 與逐款頁 | 官方作品頁圖片 | 橫向首收 | Adventures 已完成；保留原廠尺度與版本差異 |
+| Triple Cherry | 1 | 官方遊戲頁與 Game Assets | 官方逐款作品圖 | 橫向首收 | Dragon’s Heirs 已完成；RTP 配置分開保存 |
+| Spinmatic | 1 | 官方 Games 與逐款規格 | 官方 OG／作品圖 | 橫向首收 | Baby Blue 已完成；Paylines／Ways 原文差異保留 |
+| ELA Games | 1 | 官方 Games 與發布資料 | 官方逐款作品圖 | 橫向首收 | Rabbit Winpot Deluxe 已完成；RTP 範圍不強制成單一值 |
 
 ### 2.1 本輪目錄來源與統計邊界
 
@@ -106,7 +111,7 @@
 | 9 | ATG Games | Agile Titan Games | — | 開發 | Slots、Poker、Arcade、Lottery | [官方目錄](https://atg-games.com/games) | 官方 | — | 已收錄（3） |
 | 10 | AvatarUX | Avatar UX | — | 開發 | Slots | [官方目錄](https://avatarux.com/games/) | SS、EM、官方 | — | 未收錄 |
 | 11 | Betsoft Gaming | Betsoft | — | 開發 | Slots、Table | [官網](https://betsoft.com/) | SS、官方 | — | 未收錄 |
-| 12 | BGaming | — | — | 開發 | Slots、Table、Casual、Cards、Crash | [官方目錄](https://bgaming.com/games) | SS、官方 | — | 未收錄 |
+| 12 | BGaming | — | — | 開發 | Slots、Table、Casual、Cards、Crash | [官方目錄](https://bgaming.com/games) | SS、官方 | — | 已收錄（1） |
 | 13 | Big Time Gaming | BTG | Evolution | 開發 | Slots、Table | [Evolution 品牌頁](https://games.evolution.com/evolution-brands/) | SS、官方 | — | 已收錄（4） |
 | 14 | Blueprint Gaming | — | MERKUR Group | 開發、發行 | Slots | [官網目錄](https://blueprintgaming.com/) | SS、官方 | — | 未收錄 |
 | 15 | Booming Games | — | — | 開發 | Slots | [官方目錄](https://booming-games.com/games) | SS、EM、官方 | — | 已收錄（5） |
@@ -142,7 +147,7 @@
 | 45 | Stakelogic | — | SEGA SAMMY CREATION | 開發 | Slots、Live／Hybrid | [官方目錄](https://stakelogic.com/games/) | 官方 | — | 未收錄 |
 | 46 | Swintt | — | Glitnor Group | 開發、發行 | Slots、Table | [官方目錄](https://swintt.com/games/) | SS、官方 | — | 未收錄 |
 | 47 | TaDa Gaming | TaDa | — | 開發 | Slots、Fish、Table、Casual、Crash、Bingo | [官方目錄](https://tadagaming.com/games) | SS、RX、官方 | 60+ certified（Relax 發布稿，2025-05-22；非完整總數） | 未收錄 |
-| 48 | Thunderkick | — | — | 開發 | Slots | [官方目錄](https://www.thunderkick.com/games/) | SS、SL、官方 | — | 未收錄 |
+| 48 | Thunderkick | — | — | 開發 | Slots | [官方目錄](https://www.thunderkick.com/games/) | SS、SL、官方 | — | 已收錄（1） |
 | 49 | Wazdan | — | — | 開發 | Slots、Table、Casual | [官方目錄](https://wazdan.com/games) | SS、SL、官方 | — | 未收錄 |
 | 50 | Wizard Games | Pariplay in-house studio（來源關係） | Aristocrat Interactive | 開發 | Slots、Table、Lottery | [官方目錄](https://wizard.games/games/) | SS、官方 | 180+（官網，2026-09-16） | 未收錄 |
 | 51 | Yggdrasil Gaming | Yggdrasil | — | 開發、發行、聚合 | Slots、Table | [官方目錄](https://yggdrasilgaming.com/games) | SS、官方 | — | 已收錄（3） |
@@ -368,10 +373,10 @@
 | 215 | GAMING1 | 公司同時經營平台與營運業務 | 開發、平台 | Slots、Table | [The Wall 官方產品頁](https://www.gaming1.com/en/games/game/details/d93ba6da-7f4e-b2a0-ff80-b1316a1b2be6) | 官方頁直接標示 Slot、5 reels 與 243 paylines，足以確認遊戲供應身份；不因其他業務另加品牌 | 未收錄 |
 | 216 | Betixon | — | 開發 | Slots | [官方遊戲文章目錄](https://www.betixon.com/category/games/)、[Fate of Zeus 官方公告](https://www.betixon.com/betixon-and-rush-street-interactive-expand-partnership-to-michigan-2/) | 品牌網站保存多款具名作品與開發署名；合作營運商不計為開發品牌 | 未收錄 |
 | 217 | RAW iGaming | RAW Group | 開發、發行 | Slots、Arcade | [官方品牌與遊戲入口](https://www.rawgroup.com/) | RAW Group 與 RAW iGaming 合併為一個品牌單位；官網有具名 slot 作品，尚未到發布日的預告作只作作品線索、不匯入為已上線遊戲 | 未收錄 |
-| 218 | Triple Cherry | 3cherry；Triple Cherry S.L. | 開發 | Slots、Crash、Scratch | [官方遊戲目錄](https://www.3cherry.com/)、[Dragon’s Heirs 官方頁](https://www.3cherry.com/games/dragons-heirs/) | 官網明示 slot developer 並有逐款作品頁；名稱寫法合併，不以法人另加一筆 | 未收錄 |
-| 219 | Spinmatic | Virtual Gaming Technologies Ltd. | 開發、供應 | Slots、Crash | [官方網站](https://spinmatic.com/)、[Plata o Plomo 官方頁](https://spinmatic.com/game/plata-o-plomo-hold-and-win) | 官方明示 B2B developer／supplier 與 HTML5 slot 產品，逐款頁可作後續收集入口 | 未收錄 |
+| 218 | Triple Cherry | 3cherry；Triple Cherry S.L. | 開發 | Slots、Crash、Scratch | [官方遊戲目錄](https://www.3cherry.com/)、[Dragon’s Heirs 官方頁](https://www.3cherry.com/games/dragons-heirs/) | 官網明示 slot developer 並有逐款作品頁；名稱寫法合併，不以法人另加一筆 | 已收錄（1） |
+| 219 | Spinmatic | Virtual Gaming Technologies Ltd. | 開發、供應 | Slots、Crash | [官方網站](https://spinmatic.com/)、[Baby Blue 官方頁](https://spinmatic.com/game/baby-blue) | 官方明示 B2B developer／supplier 與 HTML5 slot 產品，逐款頁可作後續收集入口 | 已收錄（1） |
 | 220 | FUGASO | Future Gaming Solutions | 開發 | Slots | [官方遊戲目錄](https://fugaso.com/) | 官網列 Almighty Hot Wins、Fortune Coin Link 等具名 slot 作品；全名與品牌縮寫不拆分 | 未收錄 |
-| 221 | ELA Games | — | 開發 | Slots | [官方遊戲目錄](https://www.elagames.com/our-games)、[Rabbit Winpot Deluxe 官方頁](https://www.elagames.com/games/rabbit-winpot-deluxe) | 官方目錄與逐款頁共同確認 studio／slot provider 身份及具名作品 | 未收錄 |
+| 221 | ELA Games | — | 開發 | Slots | [官方遊戲目錄](https://www.elagames.com/our-games)、[Rabbit Winpot Deluxe 官方頁](https://www.elagames.com/games/rabbit-winpot-deluxe) | 官方目錄與逐款頁共同確認 studio／slot provider 身份及具名作品 | 已收錄（1） |
 | 222 | G.Games | G、G Games；G Gaming Ltd. | 開發 | Slots、Table、Lottery | [官方作品目錄](https://g.games/games/) | 官網列 Psycho Candies Slots、10P Slots 等作品；G／G Games 名稱變體合併，Gamevy、Glück 只保留歷史線索 | 未收錄 |
 | 223 | Spearhead Studios | EveryMatrix group studio；舊品牌網域目前轉向 Fantasma Games | 開發 | Slots、Table、其他 real-money games | [EveryMatrix 官方 studio 頁](https://everymatrix.com/partners/spearhead-studios/)、[EveryMatrix 內容名錄](https://everymatrix.com/games/) | 目前官方名錄仍將 Spearhead 與 Fantasma 分列，並列 Book of the Princess、Lara Jones in Cleopatra、Book of Souls 等作品；因此不可只因舊網域轉址而視為 Fantasma 別名 | 未收錄 |
 
@@ -395,8 +400,8 @@
 - 第六批由 ADD26 補充首輪確認 9 家，再由排程接續小輪從 EveryMatrix 官方內容名錄確認 Spearhead Studios：累計淨新增候選 **10 家**，均可確認 Slots 作品；Slotopia 保留待查。RAW Group／RAW iGaming 重跑為同一品牌，不重複計數。
 - 全表合計去重後、已確認遊戲品牌：**222 家**。表內保留 OMNIPLAY 的研究 ID 102 供追查，但它不在這個數字內。
 - 全表合計明確提供 Slots：**208 家**。Evolution 與 SPRIBE 仍不計入 Slot 品牌家數；Evolution 旗下具 Slot 品牌身份的 NetEnt、Red Tiger、Big Time Gaming、Nolimit City 各自統計。BRINO Games、EA Gaming、OptimoPlay、Upgames、Winfinity（live）、Galaxy Gaming、On Air Entertainment、Real Dealer Studios、Switch Studios、Playjeux Studios、SidePlay 與 iMoon Games 等保留為非 Slot 或目前未確認有 Slot 的遊戲品牌。
-- Slot Hub 已收錄：**14 家**。
-- 全表合計尚未收錄：**208 家**；其中尚未收錄的 Slot 品牌：**194 家**。
+- Slot Hub 已收錄：**19 家**。
+- 全表合計尚未收錄：**203 家**；其中尚未收錄的 Slot 品牌：**189 家**。
 - 聚合、分發、展會與監管來源層只用於發現及交叉查找，不額外灌入品牌總數。除了既有 SOFTSWISS、Slotegrator、EveryMatrix、Hub88、Relax 聚合網路與 Games Global，本輪新增使用 SBC 官方展商內容、Bragg studio 網路、Light & Wonder partner roadmap 與 PAGCOR 核准資料。Relax 同時是開發品牌，所以只在品牌清單計數一次。
 - 只有 3 家在本輪取得可明確引用的完整目錄／作品集數量，另有 TaDa Gaming 的 60+ certified 子集合；其餘保持空白。這不代表沒有遊戲，只代表目前沒有取得可安全當作完整總數的公開值。
 
@@ -447,14 +452,14 @@
 
 | 候選 Provider | 官方目錄可用性 | 可能補位 | 目前決定 |
 | --- | --- | --- | --- |
-| ELK Studios | 官方 Games 與遊戲詳情可核對；圖片需逐款確認下載與使用來源 | Cluster／Ways、X-iter 類原廠功能 | `DEFERRED CANDIDATE`；必須同批至少兩款且完成圖片核對 |
-| Thunderkick | 官方 Games 與新聞可確認身份；精確數值需逐款補 Help／合作方 | Paylines、Feature 差異與歐洲作品覆蓋 | `DEFERRED CANDIDATE`；不優先於既有薄 Provider |
+| ELK Studios | 官方 Games 與遊戲詳情可核對；圖片需逐款確認下載與使用來源 | Cluster／Ways、X-iter 類原廠功能 | `HORIZONTAL INTAKE CANDIDATE`；可先收一款，但仍須完成圖片與逐款資料核對 |
+| Thunderkick | 官方 Games 與新聞可確認身份；精確數值需逐款補 Help／合作方 | Paylines、Feature 差異與歐洲作品覆蓋 | `COLLECTED (1)`；Zoom 已完成第一款橫向收錄 |
 | Nolimit City | 官方目錄與正式遊戲資料可追溯；題材與功能原文需審慎處理 | xWays／xNudge 等品牌功能 | `DEFERRED CANDIDATE`；不擴張 taxonomy，不把品牌名硬映射 |
 | Red Tiger | Evolution 體系可確認身份；舊遊戲資料與圖片需逐款核對 | Jackpot、Paylines 與品牌覆蓋 | `DEFERRED CANDIDATE`；先確認可持續的官方 Game detail 入口 |
 
-## 5. 第六至第十批工作池
+## 5. 已完成的第六至第十批工作池（歷史）
 
-工作池是驗證順序，不是未核對資料的發布承諾；每批仍以四款通過正式驗證的遊戲為準。
+本表保存已完成的縱向補強批次，不再代表目前收錄優先規則；目前改採「未收錄 Provider 優先、每家先一款」的橫向方式。
 
 | 批次 | 優先候選 | 備選 | Provider 骨架目的 |
 | --- | --- | --- | --- |
@@ -503,7 +508,7 @@
 
 `TOTAL_SLOT_CAPABLE_BRAND_COUNT: 208`
 
-`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 194`
+`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 189`
 
 `REMAINING_RESEARCH_LEAD_COUNT: 6`
 
@@ -519,7 +524,7 @@
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
-Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble 已由同一排程流程完成補查、匯入與發布準備。網站目前為 62 款 published Game、14 家 published Provider。後續沿用本文件，不另建平行管理系統。
+Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble 已由同一排程流程完成補查、匯入與發布準備。橫向收錄第一批另完成 Thunderkick、BGaming、Triple Cherry、Spinmatic、ELA Games 各一款，網站目前為 67 款 published Game、19 家 published Provider。後續沿用本文件，不另建平行管理系統。
 
 | 順序 | Provider | 目前收錄 | 官方目錄／主要入口 | 接續理由 |
 | ---: | --- | ---: | --- | --- |
