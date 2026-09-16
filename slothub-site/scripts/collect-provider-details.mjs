@@ -106,7 +106,7 @@ async function inspectImage(url) {
 
 async function save(manifest) {
   manifest.pendingDetailCount = manifest.entries.filter((item) => item.eligibleForGameIntake !== false && item.detailStatus === 'pending').length;
-  manifest.retryableDetailCount = manifest.entries.filter((item) => item.eligibleForGameIntake !== false && ['pending', 'failed'].includes(item.detailStatus)).length;
+  manifest.retryableDetailCount = manifest.entries.filter((item) => item.eligibleForGameIntake !== false && (item.detailCapture?.status === 'in-progress' || ['pending', 'failed'].includes(item.detailStatus))).length;
   manifest.capturedNeedsReviewCount = manifest.entries.filter((item) => item.eligibleForGameIntake !== false && item.detailStatus === 'captured').length;
   manifest.excludedCount = manifest.entries.filter((item) => item.eligibleForGameIntake === false).length;
   manifest.detailCollection = {
@@ -124,10 +124,13 @@ const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
 const eligible = manifest.entries.filter((entry) => entry.eligibleForGameIntake !== false);
 const queuedUrls = new Set();
 const queue = eligible
-  .filter((entry) => includeComplete || !entry.detailCapture || entry.detailCapture.status === 'failed')
+  .filter((entry) => includeComplete || !entry.detailCapture || ['failed', 'in-progress'].includes(entry.detailCapture.status))
   .sort((left, right) => {
-    const leftPriority = left.detailCapture?.status === 'failed' || left.detailStatus === 'failed' ? 0 : 1;
-    const rightPriority = right.detailCapture?.status === 'failed' || right.detailStatus === 'failed' ? 0 : 1;
+    const priority = (entry) => entry.detailCapture?.status === 'in-progress'
+      ? 0
+      : (entry.detailCapture?.status === 'failed' || entry.detailStatus === 'failed' ? 1 : 2);
+    const leftPriority = priority(left);
+    const rightPriority = priority(right);
     return leftPriority - rightPriority;
   })
   .filter((entry) => {

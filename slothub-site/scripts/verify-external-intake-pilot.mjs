@@ -15,10 +15,10 @@ assert.equal(manifest.catalogSeenAt, '2026-09-16');
 assert.match(manifest.catalogSeenAtMeaning, /不代表任何單款內容已重新核對/);
 assert.equal(manifest.catalogEntryCount, 175);
 assert.equal(manifest.eligibleGameCount, 173);
-assert.equal(manifest.existingMatchCount, 4);
+assert.equal(manifest.existingMatchCount, 6);
 assert.equal(manifest.pendingDetailCount, 0);
 assert.equal(manifest.retryableDetailCount, 0);
-assert.equal(manifest.capturedNeedsReviewCount, 169);
+assert.equal(manifest.capturedNeedsReviewCount, 167);
 assert.equal(manifest.excludedCount, 2);
 assert.equal(manifest.detailCollection.capturedCount, 173);
 assert.equal(manifest.detailCollection.failedCount, 0);
@@ -45,6 +45,16 @@ for (const [name, slug] of [['Money Train 2', 'money-train-2'], ['Iron Bank', 'i
   assert.equal(entry.detailStatus, 'verified');
   assert.equal(entry.verifiedAt, '2026-09-16');
   assert.equal(entry.importStatus, 'imported');
+}
+
+for (const [name, slug] of [['AgroCulture', 'agroculture'], ['Ancient Tumble', 'ancient-tumble']]) {
+  const entry = manifest.entries.find((item) => item.officialName === name);
+  assert.ok(entry, `${name}: catalog entry missing`);
+  assert.equal(entry.existingSlug, slug);
+  assert.equal(entry.detailStatus, 'verified');
+  assert.equal(entry.verifiedAt, '2026-09-16');
+  assert.equal(entry.importStatus, 'imported');
+  assert.equal(entry.collectionOutcome, 'imported');
 }
 
 for (const [name, slug] of [['Temple Tumble', 'temple-tumble'], ['The Great Pigsby Megaways', 'the-great-pigsby-megaways']]) {
@@ -75,6 +85,30 @@ assert.equal(iron.data.winCount, 4096);
 assert.equal(iron.data.maxWinMultiplier, 49998.9);
 assert.ok(!iron.data.features.includes('scatter'), 'Bonus symbols must not be inferred as Scatter');
 
+const agro = await readFrontmatter(new URL('../src/content/games/agroculture.md', import.meta.url));
+assert.equal(agro.data.provider, 'relax-gaming');
+assert.deepEqual(agro.data.rtpVariants, [96.1]);
+assert.equal(agro.data.rtp, undefined, 'secondary RTP evidence must not become a universal primary RTP');
+assert.match(agro.data.volatilityOriginal, /conflict/i);
+assert.equal(agro.data.volatilityNormalized, undefined, 'conflicting secondary volatility labels must not be normalized');
+assert.equal(agro.data.winMechanism, 'ways-to-win');
+assert.equal(agro.data.winCount, 1024);
+assert.equal(agro.data.maxWinMultiplier, 10000);
+assert.equal(agro.data.bonusBuy, true);
+assert.ok(agro.data.features.includes('cash-collection'));
+
+const ancient = await readFrontmatter(new URL('../src/content/games/ancient-tumble.md', import.meta.url));
+assert.equal(ancient.data.provider, 'relax-gaming');
+assert.deepEqual(ancient.data.rtpVariants, [96.1, 94]);
+assert.equal(ancient.data.rtp, undefined, 'multiple RTP versions must not create an inferred primary RTP');
+assert.match(ancient.data.volatilityOriginal, /conflict/i);
+assert.equal(ancient.data.volatilityNormalized, undefined, 'conflicting secondary volatility labels must not be normalized');
+assert.equal(ancient.data.winMechanism, 'ways-to-win');
+assert.equal(ancient.data.winCount, 46656);
+assert.equal(ancient.data.maxWinMultiplier, 10000);
+assert.ok(ancient.data.features.includes('cascading'));
+assert.ok(ancient.data.features.includes('giant-symbols'));
+
 for (const game of [money, iron]) {
   assert.equal(game.data.status, 'published');
   assert.equal(String(game.data.lastVerifiedAt).slice(0, 10), '2026-09-16');
@@ -84,24 +118,35 @@ for (const game of [money, iron]) {
   assert.ok(image.size > 100_000, `${game.data.name}: official image asset is unexpectedly small`);
 }
 
-const [moneyHtml, ironHtml, providerHtml, gamesHtml, searchHtml, compareHtml] = await Promise.all([
+for (const [slug, game] of [['agroculture', agro], ['ancient-tumble', ancient]]) {
+  assert.equal(game.data.status, 'published');
+  assert.equal(String(game.data.lastVerifiedAt).slice(0, 10), '2026-09-16');
+  assert.ok(game.data.sources.some((source) => /二級來源/.test(source.label)), `${slug}: supplemental source labels missing`);
+  assert.ok(game.data.sources.some((source) => /relax-gaming\.com/.test(source.url)), `${slug}: first-party source missing`);
+  const image = await stat(new URL(`../public${game.data.image.src}`, import.meta.url));
+  assert.ok(image.size > 100_000, `${game.data.name}: official image asset is unexpectedly small`);
+}
+
+const [moneyHtml, ironHtml, agroHtml, ancientHtml, providerHtml, gamesHtml, searchHtml, compareHtml] = await Promise.all([
   readFile(new URL('../dist/games/money-train-2/index.html', import.meta.url), 'utf8'),
   readFile(new URL('../dist/games/iron-bank/index.html', import.meta.url), 'utf8'),
+  readFile(new URL('../dist/games/agroculture/index.html', import.meta.url), 'utf8'),
+  readFile(new URL('../dist/games/ancient-tumble/index.html', import.meta.url), 'utf8'),
   readFile(new URL('../dist/providers/relax-gaming/index.html', import.meta.url), 'utf8'),
   readFile(new URL('../dist/games/index.html', import.meta.url), 'utf8'),
   readFile(new URL('../dist/search/index.html', import.meta.url), 'utf8'),
   readFile(new URL('../dist/compare/index.html', import.meta.url), 'utf8'),
 ]);
-for (const [slug, html] of [['money-train-2', moneyHtml], ['iron-bank', ironHtml]]) {
+for (const [slug, html] of [['money-train-2', moneyHtml], ['iron-bank', ironHtml], ['agroculture', agroHtml], ['ancient-tumble', ancientHtml]]) {
   assert.match(html, /content="noindex,nofollow"/);
   assert.ok(!html.includes('rel="canonical"'));
   assert.match(html, /Relax Gaming/);
   assert.match(providerHtml, new RegExp(`/games/${slug}/`), `${slug}: missing from Provider Hub`);
 }
-for (const [name, slug] of [['Money Train 2', 'money-train-2'], ['Iron Bank', 'iron-bank']]) {
+for (const [name, slug] of [['Money Train 2', 'money-train-2'], ['Iron Bank', 'iron-bank'], ['AgroCulture', 'agroculture'], ['Ancient Tumble', 'ancient-tumble']]) {
   assert.match(gamesHtml, new RegExp(slug), `${name}: missing from Explorer catalog`);
   assert.match(searchHtml, new RegExp(slug), `${name}: missing from Search catalog`);
   assert.match(compareHtml, new RegExp(slug), `${name}: missing from Compare catalog`);
 }
 
-console.log('PASS: Relax Gaming full-pass intake captures 173 eligible detail pages and real images, preserves catalog-vs-verification dates, dedupes existing records, and keeps two verified pilot Games published across Search, Explorer, Compare, Provider and Game detail.');
+console.log('PASS: Relax Gaming full-pass intake captures 173 eligible detail pages and real images, preserves catalog-vs-verification dates, resumes missing-image/interrupted work, and keeps four verified imported Games published across Search, Explorer, Compare, Provider and Game detail.');

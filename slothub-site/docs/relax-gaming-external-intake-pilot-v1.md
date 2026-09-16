@@ -10,8 +10,8 @@
 
 - 既有基線：14 家 Provider、58 款 published Game。
 - 官方目錄：175 筆產品，其中 173 筆符合現行 Game 收錄範圍；2 筆是 Roulette／Blackjack 桌面遊戲，留在目錄但不進遊戲處理佇列。
-- 去重結果：既有 `Temple Tumble`、`The Great Pigsby Megaways` 直接命中；Pilot 新增 `Money Train 2`、`Iron Bank` 後，目錄共對應 4 筆站內資料。
-- 全目錄第一輪：173 筆 eligible 產品頁與真實圖片候選均已擷取；169 筆尚待重要欄位補查與逐款編輯核對。待補不代表都會發布。
+- 去重結果：既有 `Temple Tumble`、`The Great Pigsby Megaways` 直接命中；先後新增 `Money Train 2`、`Iron Bank`、`AgroCulture`、`Ancient Tumble` 後，目錄共對應 6 筆站內資料。
+- 全目錄第一輪：173 筆 eligible 產品頁與真實圖片候選均已擷取；167 筆尚待重要欄位補查與逐款編輯核對。待補不代表都會發布。
 
 ## 2. 收集責任分工
 
@@ -36,11 +36,23 @@
 - 官方產品頁只列 `German RTP: 90%`，因此保存為 `rtpVariants: [90]`，不建立主要 RTP。
 - 原廠寫的是 `Bonus symbols`，沒有把它推論成 Scatter taxonomy。
 
+### AgroCulture
+
+- 官方產品頁、發布稿、Demo config 與 Client Area 圖片完成核對；保存 2-4-4-4-4-2、1,024 Ways、五級入口成本、10,000×、Bonus 路徑與最高 32 次 Free Spins。
+- 多個二級資料來源一致報告 RTP 96.1%，故只保存為一個已知版本值，不建立主要 RTP；官方頁所列 `_94／_90／_86／_92` 只保存為 Game ID，不由尾碼補猜 RTP。
+- 波動度來源有 `Medium-High` 與 `High` 差異，保留原文衝突，不建立 Slot Hub 統一值。
+
+### Ancient Tumble
+
+- 官方產品頁、發布稿、Bonus Reels 發布稿與 Client Area 圖片完成核對；保存五種 Free Spins、Cascading、50×／400× Buy Feature、後續 10× Bonus Reels 與 10,000×。
+- 二級來源交叉支持 6×6、最高 46,656 Ways 與 RTP 96.1%／94% 兩個版本；兩值分開保存，不指定主要 RTP。
+- 波動度來源有 `High` 與 `Medium to High` 差異，保留原文衝突，不建立 Slot Hub 統一值。
+
 ## 4. 續跑與失敗處理
 
 - `data/external-intake/relax-gaming-catalog.json` 保存每筆 `pending／captured／verified／failed`、`not-imported／imported` 與 `collectionOutcome` 狀態。
 - 每款完成後立即寫回，不需重抓已完成項目。
-- 每日佇列依 `failed → pending → captured` 排序；失敗項優先接回，已完成項目重跑時為 no-op，官方 URL 在同一佇列中只會出現一次。
+- 每日佇列依 `in-progress → failed → pending → captured` 排序；突然中斷的項目與失敗項會優先接回，已完成項目重跑時為 no-op，官方 URL 在同一佇列中只會出現一次。
 - 欄位找不到時保留缺值；版本分開保存；來源衝突寫入 notes 並保留既有值。
 - 單款失敗不阻擋其他項目，下一輪只選失敗或尚未完成的 eligible entries。
 
@@ -62,10 +74,10 @@ Pilot 以 2 款遊戲完成逐款來源核對、翻譯判讀、圖片保存及�
 
 ## 6. Pilot 出口
 
-- 新增：2 款。
+- 新增：4 款（本次排程實跑新增 AgroCulture、Ancient Tumble 兩款）。
 - 更新：1 家 Provider 摘要與來源核對日期；既有兩款 Game 未因目錄掃描更新。
 - 全目錄擷取：173／173 款成功，真實圖片可用 173／173。
-- 待補查：169 款；其中 RTP 待補 145、波動度待補 160、Max Win 待補 117。各欄位數量可重疊。
+- 待補查：167 款；原始全目錄缺值統計仍作佇列優先線索，本次兩款已完成逐欄位補查，未把二級來源不足的欄位猜成原廠值。
 - 排除：2 款桌上遊戲（Roulette Nouveau、Blackjack Neo），均保存原因。
 - 失敗：0 款；retryable queue 為 0。
-- 網站總量：60 款 published Game、14 家 published Provider。
+- 網站總量：62 款 published Game、14 家 published Provider。

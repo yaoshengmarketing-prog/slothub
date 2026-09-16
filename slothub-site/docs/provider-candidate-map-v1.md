@@ -30,7 +30,7 @@
 | Yggdrasil Gaming | 1 | 官方 Games 詳情頁與 Source／Client zone | 官方詳情頁 Logo／主圖 | 高 | Valley of the Gods、Golden Fish Tank 2 GigaBlox；備選 Valley of the Gods 2、Holmes and the Stolen Stones |
 | Big Time Gaming | 2 | 官方 Games 詳情頁、Game Stats 圖與 Marketing Pack | 官方詳情頁主圖 | 高 | White Rabbit、Lil Devil；備選 Danger High Voltage、Wild Unicorns |
 | Push Gaming | 2 | 官方 Games 詳情頁、Blog、Client area | 官方詳情頁背景／目錄圖 | 高 | Fat Rabbit、Wild Swarm；備選 Tiki Tumble、Fat Santa |
-| Relax Gaming | 2 | 官方遊戲／新聞與正式合作資料 | 官方遊戲圖／新聞素材 | 中 | Money Train 2、Iron Bank；備選 Snake Arena、Temple Tumble 2 |
+| Relax Gaming | 6 | 官方遊戲／新聞、Demo config 與正式合作資料 | 官方 Client Area 遊戲圖／新聞素材 | 中 | 已收錄 Money Train 2、Iron Bank、AgroCulture、Ancient Tumble；後續由 captured 佇列逐款補查 |
 | ATG Games | 3 | 官方遊戲頁／文件 | 官方遊戲頁圖片 | 中 | 只在現有來源仍可穩定追溯時補強；目前不優先於 1～2 款 Provider |
 | Booming Games | 3 | 官方 Games 目錄與遊戲頁 | 官方遊戲頁圖片 | 中 | Cash Pig、Buffalo Hold and Win；備選 Mighty Gorilla、Burning Classics |
 | NetEnt | 3 | 官方 Game pages／Help 與 Evolution 發行資料 | 官方遊戲頁圖片 | 中 | Divine Fortune、Twin Spin；備選 Jack Hammer 2、Fruit Shop |
@@ -105,7 +105,7 @@
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
-Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；網站目前為 60 款 published Game、14 家 published Provider。後續沿用本文件，不另建平行管理系統。
+Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble 已由同一排程流程完成補查、匯入與發布準備。網站目前為 62 款 published Game、14 家 published Provider。後續沿用本文件，不另建平行管理系統。
 
 | 順序 | Provider | 目前收錄 | 官方目錄／主要入口 | 接續理由 |
 | ---: | --- | ---: | --- | --- |

@@ -13,23 +13,24 @@ const manifestPath = args.manifest
   : path.join(root, 'data', 'external-intake', `${provider}-catalog.json`);
 const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
 
-const selectableStatuses = String(args.statuses || 'failed,pending,captured')
+const selectableStatuses = String(args.statuses || 'in-progress,failed,pending,captured')
   .split(',')
   .map((value) => value.trim())
   .filter(Boolean);
 const statusPriority = new Map(selectableStatuses.map((status, index) => [status, index]));
+const effectiveStatus = (entry) => entry.detailCapture?.status === 'in-progress' ? 'in-progress' : entry.detailStatus;
 
 if (args.list) {
   const limit = Number(args.limit || 2);
   const seen = new Set();
   const pending = manifest.entries
-    .filter((entry) => entry.eligibleForGameIntake !== false && statusPriority.has(entry.detailStatus))
+    .filter((entry) => entry.eligibleForGameIntake !== false && statusPriority.has(effectiveStatus(entry)))
     .filter((entry) => {
       if (seen.has(entry.officialUrl)) return false;
       seen.add(entry.officialUrl);
       return true;
     })
-    .sort((left, right) => (statusPriority.get(left.detailStatus) - statusPriority.get(right.detailStatus)) || left.officialUrl.localeCompare(right.officialUrl, 'en'))
+    .sort((left, right) => (statusPriority.get(effectiveStatus(left)) - statusPriority.get(effectiveStatus(right))) || left.officialUrl.localeCompare(right.officialUrl, 'en'))
     .slice(0, limit);
   console.log(JSON.stringify(pending, null, 2));
   process.exit(0);
@@ -50,7 +51,7 @@ if (args['collection-outcome']) entry.collectionOutcome = args['collection-outco
 
 manifest.existingMatchCount = manifest.entries.filter((item) => item.existingSlug).length;
 manifest.pendingDetailCount = manifest.entries.filter((item) => item.eligibleForGameIntake !== false && item.detailStatus === 'pending').length;
-manifest.retryableDetailCount = manifest.entries.filter((item) => item.eligibleForGameIntake !== false && ['pending', 'failed'].includes(item.detailStatus)).length;
+manifest.retryableDetailCount = manifest.entries.filter((item) => item.eligibleForGameIntake !== false && (item.detailCapture?.status === 'in-progress' || ['pending', 'failed'].includes(item.detailStatus))).length;
 manifest.capturedNeedsReviewCount = manifest.entries.filter((item) => item.eligibleForGameIntake !== false && item.detailStatus === 'captured').length;
 manifest.excludedCount = manifest.entries.filter((item) => item.eligibleForGameIntake === false).length;
 await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');

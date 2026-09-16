@@ -6,7 +6,11 @@ import { parse } from 'yaml';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const providerSlug = 'relax-gaming';
 const catalogUrl = 'https://www.relax-gaming.com/products/own-games';
-const outputPath = path.join(root, 'data', 'external-intake', `${providerSlug}-catalog.json`);
+const outputArg = process.argv.find((arg) => arg.startsWith('--output='))?.slice('--output='.length);
+const catalogFileArg = process.argv.find((arg) => arg.startsWith('--catalog-file='))?.slice('--catalog-file='.length);
+const outputPath = outputArg
+  ? path.resolve(outputArg)
+  : path.join(root, 'data', 'external-intake', `${providerSlug}-catalog.json`);
 const seenAt = process.argv.find((arg) => arg.startsWith('--seen-at='))?.split('=')[1];
 
 if (!seenAt || !/^\d{4}-\d{2}-\d{2}$/.test(seenAt)) {
@@ -61,15 +65,18 @@ function parseCatalog(html) {
     const imageMatch = content.match(/<img\b[^>]*src="([^"]+)"[^>]*alt="([^"]*)"/i);
     const typeValues = [...content.matchAll(/<div\b[^>]*class="[^"]*game-type[^"]*"[^>]*>([\s\S]*?)<\/div>/gi)]
       .map((item) => decodeHtml(item[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()));
-    if (!imageMatch) continue;
-    const imageUrl = decodeHtml(imageMatch[1]);
-    const officialName = decodeHtml(imageMatch[2]).replace(/\s+Thumbnail$/i, '').trim();
+    const slugName = decodeURIComponent(relativeUrl.split('/').filter(Boolean).at(-1) ?? '')
+      .replace(/[-_]+/g, ' ')
+      .trim();
+    const imageName = imageMatch ? decodeHtml(imageMatch[2]).replace(/\s+Thumbnail$/i, '').trim() : '';
+    const officialName = imageName || slugName;
     if (!officialName) continue;
     entries.push({
       officialName,
       normalizedName: normalizeName(officialName),
       officialUrl: new URL(relativeUrl, catalogUrl).href,
-      imageUrl,
+      imageUrl: imageMatch ? decodeHtml(imageMatch[1]) : null,
+      identitySource: imageName ? 'catalog-image-alt' : 'official-url-slug',
       studioLabel: typeValues[0] || null,
       productType: typeValues[1] || null,
     });
@@ -86,11 +93,16 @@ async function loadPrevious() {
   }
 }
 
-const response = await fetch(catalogUrl, { headers: { 'user-agent': 'SlotHubCatalogAudit/1.0 (+readonly catalog inventory)' } });
-if (!response.ok) throw new Error(`Catalog request failed: ${response.status} ${response.statusText}`);
-const html = await response.text();
+let html;
+if (catalogFileArg) {
+  html = await readFile(path.resolve(catalogFileArg), 'utf8');
+} else {
+  const response = await fetch(catalogUrl, { headers: { 'user-agent': 'SlotHubCatalogAudit/1.0 (+readonly catalog inventory)' } });
+  if (!response.ok) throw new Error(`Catalog request failed: ${response.status} ${response.statusText}`);
+  html = await response.text();
+}
 const catalogEntries = parseCatalog(html);
-if (catalogEntries.length < 100) throw new Error(`Catalog parse returned only ${catalogEntries.length} entries`);
+if (!catalogFileArg && catalogEntries.length < 100) throw new Error(`Catalog parse returned only ${catalogEntries.length} entries`);
 
 const existingGames = await loadExistingGames();
 const previous = await loadPrevious();
@@ -103,6 +115,8 @@ const entries = catalogEntries.map((entry) => {
   return {
     ...(prior ?? {}),
     ...entry,
+    imageUrl: entry.imageUrl ?? prior?.imageUrl ?? null,
+    catalogImageStatus: entry.imageUrl ? 'available' : 'missing',
     eligibleForGameIntake,
     existingSlug,
     catalogStatus: 'observed',
@@ -124,7 +138,7 @@ const output = {
   eligibleGameCount: entries.filter((entry) => entry.eligibleForGameIntake).length,
   existingMatchCount: entries.filter((entry) => entry.existingSlug).length,
   pendingDetailCount: entries.filter((entry) => entry.eligibleForGameIntake && entry.detailStatus === 'pending').length,
-  retryableDetailCount: entries.filter((entry) => entry.eligibleForGameIntake && ['pending', 'failed'].includes(entry.detailStatus)).length,
+  retryableDetailCount: entries.filter((entry) => entry.eligibleForGameIntake && (entry.detailCapture?.status === 'in-progress' || ['pending', 'failed'].includes(entry.detailStatus))).length,
   capturedNeedsReviewCount: entries.filter((entry) => entry.eligibleForGameIntake && entry.detailStatus === 'captured').length,
   excludedCount: entries.filter((entry) => !entry.eligibleForGameIntake).length,
   detailCollection: {

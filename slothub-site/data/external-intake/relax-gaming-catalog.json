@@ -5,10 +5,10 @@
   "catalogSeenAtMeaning": "目錄發現日期；不代表任何單款內容已重新核對，不得用於更新 Game lastVerifiedAt。",
   "catalogEntryCount": 175,
   "eligibleGameCount": 173,
-  "existingMatchCount": 4,
+  "existingMatchCount": 6,
   "pendingDetailCount": 0,
   "retryableDetailCount": 0,
-  "capturedNeedsReviewCount": 169,
+  "capturedNeedsReviewCount": 167,
   "excludedCount": 2,
   "detailCollection": {
     "lastCompletedFullPassAt": "2026-09-16",
@@ -99,7 +99,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Money Train 5",
@@ -185,7 +187,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Nugget Ridge",
@@ -267,7 +271,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "AgroCulture",
@@ -277,12 +283,14 @@
       "studioLabel": "Relax Gaming",
       "productType": "Video Slot",
       "eligibleForGameIntake": true,
-      "existingSlug": null,
+      "existingSlug": "agroculture",
       "catalogStatus": "observed",
-      "detailStatus": "captured",
-      "verifiedAt": null,
-      "importStatus": "not-imported",
-      "notes": [],
+      "detailStatus": "verified",
+      "verifiedAt": "2026-09-16",
+      "importStatus": "imported",
+      "notes": [
+        "Imported with first-party identity, mechanism, feature, max-win and image evidence; RTP/volatility retained as explicitly labelled secondary-source evidence with conflicts preserved."
+      ],
       "detailCapture": {
         "status": "captured",
         "capturedAt": "2026-09-16",
@@ -346,9 +354,12 @@
           "https://clientarea.relax-gaming.com/gameassets/agroculture/thumbnail2x/Thumbnail_AgroCulture_600x600.png"
         ]
       },
-      "collectionOutcome": "pending-supplement",
-      "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "collectionOutcome": "imported",
+      "lastAttemptResult": "verified-and-imported",
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available",
+      "lastAttemptAt": "2026-09-16"
     },
     {
       "officialName": "Money Plane",
@@ -429,7 +440,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Midnight Marauder - ClusterBreaker",
@@ -509,7 +522,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "World Class Kick Off Dream Drop",
@@ -588,7 +603,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Guitar Quest",
@@ -672,7 +689,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Purrrminator Dream Drop",
@@ -753,7 +772,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Bonsai Dragon Blitz",
@@ -833,7 +854,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "World Class Kick Off",
@@ -909,7 +932,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Cod of Thunder Dream Drop",
@@ -987,7 +1012,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Treasure Tumble",
@@ -1067,7 +1094,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Beast Gains",
@@ -1151,7 +1180,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Pharaoh's Last Wish",
@@ -1232,7 +1263,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Olympus 7s Dream Drop",
@@ -1309,7 +1342,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Necromancer’s Gate",
@@ -1392,7 +1427,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Bill & Coin 2 Dream Drop",
@@ -1471,7 +1508,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Iron Bank 2",
@@ -1550,7 +1589,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Snake Arena 2",
@@ -1630,7 +1671,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Treasure Tumble Dream Drop",
@@ -1707,7 +1750,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Frank's Diner",
@@ -1787,7 +1832,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Masked Treasures",
@@ -1865,7 +1912,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Bacon Bankroll",
@@ -1943,7 +1992,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Net Gains Dream Drop",
@@ -2023,7 +2074,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Bill & Coin 2",
@@ -2104,7 +2157,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Aura God",
@@ -2184,7 +2239,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Legend Of Odysseus",
@@ -2263,7 +2320,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Conquer Babylon",
@@ -2344,7 +2403,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Jumbo Juicy",
@@ -2425,7 +2486,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Groovy Knights Dream Drop",
@@ -2504,7 +2567,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Bounty County",
@@ -2586,7 +2651,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Bonsai Dragon Blitz Dream Drop",
@@ -2665,7 +2732,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Fang's Inferno",
@@ -2746,7 +2815,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Cash in Transit",
@@ -2826,7 +2897,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Tiger Shrine",
@@ -2910,7 +2983,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Mystic Multipliers",
@@ -2990,7 +3065,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Wild Chapo 2 Dream Drop",
@@ -3067,7 +3144,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Purrrminator",
@@ -3150,7 +3229,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Glyph of Gods",
@@ -3232,7 +3313,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Giants & Sheep",
@@ -3316,7 +3399,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Camelot Cash",
@@ -3397,7 +3482,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Kraken's Cove",
@@ -3482,7 +3569,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "The Great Pigsby Dream Drop",
@@ -3562,7 +3651,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Immortal 5",
@@ -3642,7 +3733,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Magawa vs Mines",
@@ -3720,7 +3813,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Winter Champions",
@@ -3796,7 +3891,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Money Sleigh",
@@ -3872,7 +3969,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Bill & Coin Dream Drop",
@@ -3953,7 +4052,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Feather Fury",
@@ -4032,7 +4133,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Freaked out Fish",
@@ -4108,7 +4211,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Quackin' Reels",
@@ -4185,7 +4290,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "The Tumbles",
@@ -4264,7 +4371,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Bone Raiders",
@@ -4343,7 +4452,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Space Attacks Dream Drop",
@@ -4421,7 +4532,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Atlantis Crush",
@@ -4502,7 +4615,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "St Louis 1904",
@@ -4578,7 +4693,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Fang's Inferno Dream Drop",
@@ -4655,7 +4772,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Ancient Tumble",
@@ -4665,12 +4784,14 @@
       "studioLabel": "Relax Gaming",
       "productType": "Video Slot",
       "eligibleForGameIntake": true,
-      "existingSlug": null,
+      "existingSlug": "ancient-tumble",
       "catalogStatus": "observed",
-      "detailStatus": "captured",
-      "verifiedAt": null,
-      "importStatus": "not-imported",
-      "notes": [],
+      "detailStatus": "verified",
+      "verifiedAt": "2026-09-16",
+      "importStatus": "imported",
+      "notes": [
+        "Imported with first-party identity, features, buy costs, max-win and image evidence; grid/RTP/volatility secondary-source evidence labelled and volatility conflict preserved."
+      ],
       "detailCapture": {
         "status": "captured",
         "capturedAt": "2026-09-16",
@@ -4731,9 +4852,12 @@
           "https://clientarea.relax-gaming.com/gameassets/ancienttumble/thumbnail2x/V96xFQsTzTZV7FmCTBWb/Thumbnail_AncientTumble_600x600.png"
         ]
       },
-      "collectionOutcome": "pending-supplement",
-      "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "collectionOutcome": "imported",
+      "lastAttemptResult": "verified-and-imported",
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available",
+      "lastAttemptAt": "2026-09-16"
     },
     {
       "officialName": "Line Busters Dream Drop",
@@ -4809,7 +4933,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Epic Dreams",
@@ -4886,7 +5012,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Sultan Spins",
@@ -4963,7 +5091,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Space Miners Dream Drop",
@@ -5042,7 +5172,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Totem Guardians Dream Drop",
@@ -5118,7 +5250,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "FireWins Factory",
@@ -5194,7 +5328,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Sweetopia Royale",
@@ -5270,7 +5406,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Cowabunga Dream Drop",
@@ -5346,7 +5484,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Money Cart 4",
@@ -5425,7 +5565,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Hercules Unleashed Dream Drop",
@@ -5501,7 +5643,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Bill & Coin",
@@ -5579,7 +5723,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Aussies vs Emus",
@@ -5655,7 +5801,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Galactic Racers Dream Drop",
@@ -5731,7 +5879,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Templar Tumble Dream Drop",
@@ -5807,7 +5957,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Lure of Fortune",
@@ -5884,7 +6036,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Snake's Gold Dream Drop",
@@ -5960,7 +6114,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Titan Strike",
@@ -6036,7 +6192,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Money Train 4",
@@ -6115,7 +6273,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Dead Mans Trail Dream Drop",
@@ -6191,7 +6351,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Joker Split",
@@ -6267,7 +6429,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Pinata Popper Dream Drop",
@@ -6343,7 +6507,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Torii Tumble",
@@ -6419,7 +6585,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Sloth Tumble",
@@ -6495,7 +6663,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Midnight Marauder Dream Drop",
@@ -6573,7 +6743,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Shark Wash",
@@ -6649,7 +6821,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Cluster Tumble Dream Drop",
@@ -6729,7 +6903,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Money Train Origins Dream Drop",
@@ -6808,7 +6984,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Fly Cat$ Dream Drop",
@@ -6884,7 +7062,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Mega Heist",
@@ -6960,7 +7140,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Hellcatraz 2 Dream Drop",
@@ -7036,7 +7218,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Money Cart 3",
@@ -7112,7 +7296,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Banana Town Dream Drop",
@@ -7188,7 +7374,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Beellionaires Dream Drop",
@@ -7264,7 +7452,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Book of Power",
@@ -7344,7 +7534,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Wild Chapo 2",
@@ -7424,7 +7616,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Wild Hike",
@@ -7500,7 +7694,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Horror Hotel",
@@ -7577,7 +7773,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Grim The Splitter Dream Drop",
@@ -7653,7 +7851,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Napoleon vs Rabbits",
@@ -7729,7 +7929,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Net Gains",
@@ -7808,7 +8010,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Santa's Stack Dream Drop",
@@ -7886,7 +8090,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Wild Yield",
@@ -7966,7 +8172,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Hot Rod Racers",
@@ -8042,7 +8250,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Templar Tumble 2 Dream Drop",
@@ -8120,7 +8330,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "The Great Pigsby Megaways",
@@ -8200,7 +8412,9 @@
       },
       "collectionOutcome": "collected-existing",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Dream Drop Diamonds",
@@ -8279,7 +8493,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Money Train 3",
@@ -8360,7 +8576,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Neko Night Dream Drop",
@@ -8437,7 +8655,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Dead Riders Trail",
@@ -8514,7 +8734,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "TNT Tumble Dream Drop",
@@ -8592,7 +8814,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Wild Chapo Dream Drop",
@@ -8669,7 +8893,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Volatile Vikings 2 Dream Drop",
@@ -8748,7 +8974,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Banana Town",
@@ -8825,7 +9053,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Blender Blitz",
@@ -8904,7 +9134,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Curse of the Mummies",
@@ -8980,7 +9212,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Snake Arena Dream Drop",
@@ -9056,7 +9290,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Midnight Marauder",
@@ -9134,7 +9370,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Temple Tumble 2 Dream Drop",
@@ -9214,7 +9452,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Jurassic Party",
@@ -9292,7 +9532,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "The Great Pigsby Megapays",
@@ -9368,7 +9610,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Hex",
@@ -9444,7 +9688,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Tiger Kingdom Infinity Reels",
@@ -9520,7 +9766,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Beast Mode",
@@ -9600,7 +9848,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Space Miners",
@@ -9677,7 +9927,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Hazakura Ways",
@@ -9754,7 +10006,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Plunderland",
@@ -9833,7 +10087,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Money Cart",
@@ -9910,7 +10166,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Santa's Stack",
@@ -9988,7 +10246,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Cluster Tumble",
@@ -10069,7 +10329,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Mega Mine",
@@ -10147,7 +10409,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Helios Fury",
@@ -10223,7 +10487,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Volatile Vikings",
@@ -10301,7 +10567,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Dead Man's Trail",
@@ -10378,7 +10646,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Troll's Gold",
@@ -10455,7 +10725,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Deep Descent",
@@ -10531,7 +10803,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Money Cart 2",
@@ -10609,7 +10883,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Chip Spin",
@@ -10686,7 +10962,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Spirit of The Beast",
@@ -10762,7 +11040,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Top Dawg$",
@@ -10839,7 +11119,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Sails of Fortune",
@@ -10916,7 +11198,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Book of 99",
@@ -10993,7 +11277,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Wild Chapo",
@@ -11070,7 +11356,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Templar Tumble",
@@ -11150,7 +11438,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Emerald's Infinity Reels",
@@ -11225,7 +11515,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Multiplier Odyssey",
@@ -11300,7 +11592,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Kluster Krystals Megaclusters",
@@ -11377,7 +11671,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Frequent Flyer",
@@ -11452,7 +11748,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Iron Bank",
@@ -11531,7 +11829,9 @@
       },
       "collectionOutcome": "collected-existing",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Ramses Revenge",
@@ -11606,7 +11906,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Money Train 2",
@@ -11684,7 +11986,9 @@
       },
       "collectionOutcome": "collected-existing",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "La Fiesta",
@@ -11759,7 +12063,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Marching Legions",
@@ -11834,7 +12140,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Mega Flip",
@@ -11909,7 +12217,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Hellcatraz",
@@ -11986,7 +12296,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "TNT Tumble",
@@ -12063,7 +12375,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Mega Masks",
@@ -12138,7 +12452,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Heroes' Gathering",
@@ -12215,7 +12531,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Snake Arena",
@@ -12294,7 +12612,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Wildchemy",
@@ -12371,7 +12691,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Tower Tumble",
@@ -12449,7 +12771,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "It's Time",
@@ -12528,7 +12852,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Let's get ready to Rumble",
@@ -12605,7 +12931,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Money Train",
@@ -12684,7 +13012,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Powerspin",
@@ -12761,7 +13091,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Ignite The Night",
@@ -12836,7 +13168,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Caveman Bob",
@@ -12914,7 +13248,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "King of Kings",
@@ -12989,7 +13325,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Dragons Awakening",
@@ -13067,7 +13405,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Temple Tumble",
@@ -13150,7 +13490,9 @@
       },
       "collectionOutcome": "collected-existing",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "The Great Pigsby",
@@ -13231,7 +13573,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Epic Joker",
@@ -13310,7 +13654,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Zombie Circus",
@@ -13387,7 +13733,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Erik the Red",
@@ -13464,7 +13812,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Roulette Nouveau",
@@ -13481,7 +13831,9 @@
       "importStatus": "not-imported",
       "notes": [],
       "collectionOutcome": "excluded",
-      "exclusionReason": "不屬於現行 Game 收錄範圍：Table - Roulette (EU)"
+      "exclusionReason": "不屬於現行 Game 收錄範圍：Table - Roulette (EU)",
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Blackjack Neo",
@@ -13498,7 +13850,9 @@
       "importStatus": "not-imported",
       "notes": [],
       "collectionOutcome": "excluded",
-      "exclusionReason": "不屬於現行 Game 收錄範圍：Table - Blackjack"
+      "exclusionReason": "不屬於現行 Game 收錄範圍：Table - Blackjack",
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     },
     {
       "officialName": "Attila The Hun",
@@ -13577,7 +13931,9 @@
       },
       "collectionOutcome": "pending-supplement",
       "lastAttemptResult": "captured",
-      "exclusionReason": null
+      "exclusionReason": null,
+      "identitySource": "catalog-image-alt",
+      "catalogImageStatus": "available"
     }
   ]
 }
