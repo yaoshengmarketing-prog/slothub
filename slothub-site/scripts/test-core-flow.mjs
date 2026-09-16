@@ -79,6 +79,8 @@ assert.match(explorer, /onClick=\{flushPendingQuery\}/, 'Explorer detail links m
 assert.match(explorer, /resultAnchor/, 'Explorer must accept a result landing target without creating another state owner');
 assert.match(explorer, /location\.hash !== `#\$\{resultAnchor\}`/, 'Explorer must only focus the requested result landing target');
 assert.match(explorer, /explorer-active-filters/, 'Explorer must expose a readable summary of active conditions');
+assert.match(styles, /\.explorer-result-heading\{[^}]*flex-wrap:wrap/, 'Explorer result heading must wrap its full-width filter summary instead of widening the page');
+assert.match(styles, /\.explorer-active-filters\{[^}]*flex:1 1 100%;[^}]*min-width:0/, 'Explorer active filters must be allowed to shrink within the result heading');
 assert.match(explorer, /handoffDefaults\.primaryType/);
 assert.match(gamesIndex, /<GuidedExplorerPilot games=\{games\} resultAnchor="game-results" client:load \/>/, 'Games must hand the guided mode to the shared result target');
 assert.match(gamesIndex, /<GameExplorer games=\{games\} relationshipLinks=\{relationshipLinks\} resultAnchor="game-results" urlState client:load\/>/, 'Games must keep the existing full Explorer as the only state owner');
