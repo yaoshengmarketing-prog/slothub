@@ -35,7 +35,7 @@ const records = await Promise.all(files.map(async (file) => {
 }));
 const games = records.filter((game) => game.status === 'published');
 
-assert.equal(games.length, 112, 'Pilot must use all 112 published Games');
+assert.equal(games.length, 117, 'Pilot must use all 117 published Games');
 assert.deepEqual(GUIDED_EXPLORER_MECHANISMS, ['paylines', 'ways-to-win', 'megaways', 'cluster-pays', 'pay-anywhere']);
 assert.deepEqual(GUIDED_EXPLORER_FEATURES, ['cascading', 'bonus-buy', 'multiplier', 'free-spins']);
 assert.ok(!GUIDED_EXPLORER_MECHANISMS.includes('other'));
@@ -79,4 +79,4 @@ assert.match(source, /resultAnchor/);
 assert.match(source, /`\$\{explorerUrl\}#\$\{resultAnchor\}`/, 'Guided handoff must keep the canonical Explorer query and add only a result anchor');
 assert.doesNotMatch(source, /推薦|適合你|最好|容易贏/);
 
-console.log('PASS: guided Explorer Pilot reuses 112 published Games, exact one-Feature conditions, true counts and a no-CTA zero state.');
+console.log('PASS: guided Explorer Pilot reuses 117 published Games, exact one-Feature conditions, true counts and a no-CTA zero state.');

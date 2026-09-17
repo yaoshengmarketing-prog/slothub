@@ -38,7 +38,7 @@ const bonusBuyOwnerSlug = bonusBuyGuidePublished ? bonusBuyGuideSlug : 'slot-ter
 
 validateGuideDeclarations(guides, options);
 const index = buildGuideRelationshipIndex(guides, games, options);
-assert.equal(games.filter((game) => game.status === 'published').length, 112, 'Relationship fixture must cover 112 published games');
+assert.equal(games.filter((game) => game.status === 'published').length, 117, 'Relationship fixture must cover 117 published games');
 
 const expected = {
   'rtp-explained': { relatedDataTopics: ['rtp', 'rtp-variants'] },
@@ -58,9 +58,9 @@ for (const [slug, relations] of Object.entries(expected)) {
 assert.deepEqual(index.featureToGuides.wild.map((guide) => guide.slug), ['slot-symbols-and-features']);
 assert.deepEqual(index.dataTopicToGuides.rtp.map((guide) => guide.slug), ['rtp-explained']);
 assert.deepEqual(index.featureToGuides['bonus-buy'].map((guide) => guide.slug), [bonusBuyOwnerSlug], 'bonus-buy must have exactly one published Guide owner');
-assert.equal(index.guideToGames[bonusBuyOwnerSlug].length, 37, 'Bonus Buy owner must derive exactly the 37 Games tagged with bonus-buy');
+assert.equal(index.guideToGames[bonusBuyOwnerSlug].length, 39, 'Bonus Buy owner must derive exactly the 39 Games tagged with bonus-buy');
 const gamesWithoutBonusBuy = games.filter((game) => game.status === 'published' && !game.features?.includes('bonus-buy'));
-assert.equal(gamesWithoutBonusBuy.length, 75, 'Exactly 75 published Games must remain outside the bonus-buy Feature set');
+assert.equal(gamesWithoutBonusBuy.length, 78, 'Exactly 78 published Games must remain outside the bonus-buy Feature set');
 for (const game of gamesWithoutBonusBuy) {
   assert.ok(!index.gameToGuides[game.slug].some(({ guide }) => guide.slug === bonusBuyOwnerSlug), `${game.slug}: missing bonus-buy Feature must not create a Bonus Buy Guide relation`);
 }
@@ -72,12 +72,12 @@ if (bonusBuyGuidePublished) {
 }
 
 const symbolsGuideSlug = 'slot-symbols-and-features';
-const expectedSymbolsFeatureCounts = { 'free-spins': 81, wild: 67, scatter: 36, jackpot: 13 };
+const expectedSymbolsFeatureCounts = { 'free-spins': 83, wild: 69, scatter: 36, jackpot: 13 };
 for (const [feature, expectedCount] of Object.entries(expectedSymbolsFeatureCounts)) {
   const matchingGames = games.filter((game) => game.status === 'published' && game.features?.includes(feature));
   assert.equal(matchingGames.length, expectedCount, `${feature}: published Game Feature count changed`);
 }
-assert.equal(index.guideToGames[symbolsGuideSlug].length, 102, 'Symbols Guide must derive the 102 published Games with at least one owned Feature');
+assert.equal(index.guideToGames[symbolsGuideSlug].length, 105, 'Symbols Guide must derive the 105 published Games with at least one owned Feature');
 assert.ok(!index.gameToGuides['hand-of-anubis'].some(({ guide }) => guide.slug === symbolsGuideSlug), 'Hand of Anubis retained an unsupported Symbols Guide relation');
 
 const cascadingGuideSlug = 'slot-cascading-tumble-avalanche-explained';
@@ -90,9 +90,9 @@ assert.deepEqual(index.featureToGuides.cascading.map((guide) => guide.slug), exp
 const cascadingPreviewGuides = guides.map((guide) => guide.slug === cascadingGuideSlug ? { ...guide, status: 'published' } : guide);
 const cascadingPreviewIndex = buildGuideRelationshipIndex(cascadingPreviewGuides, games, options);
 assert.deepEqual(cascadingPreviewIndex.featureToGuides.cascading.map((guide) => guide.slug), [cascadingGuideSlug], 'cascading must have exactly one published Guide owner');
-assert.equal(cascadingPreviewIndex.guideToGames[cascadingGuideSlug].length, 26, 'Cascading Guide must derive exactly the 26 Games tagged with cascading');
+assert.equal(cascadingPreviewIndex.guideToGames[cascadingGuideSlug].length, 27, 'Cascading Guide must derive exactly the 27 Games tagged with cascading');
 const gamesWithoutCascading = games.filter((game) => game.status === 'published' && !game.features?.includes('cascading'));
-assert.equal(gamesWithoutCascading.length, 86, 'Exactly 86 published Games must remain outside the cascading Feature set');
+assert.equal(gamesWithoutCascading.length, 90, 'Exactly 90 published Games must remain outside the cascading Feature set');
 for (const game of gamesWithoutCascading) {
   assert.ok(!cascadingPreviewIndex.gameToGuides[game.slug].some(({ guide }) => guide.slug === cascadingGuideSlug), `${game.slug}: missing cascading Feature must not create a Cascading Guide relation`);
 }
@@ -101,7 +101,7 @@ assert.ok(cascadingPreviewIndex.gameToGuides['hand-of-anubis'].some(({ guide }) 
 const cascadingVisibleInTopThree = cascadingPreviewIndex.guideToGames[cascadingGuideSlug]
   .filter((game) => cascadingPreviewIndex.gameToGuides[game.slug].slice(0, 3).some(({ guide }) => guide.slug === cascadingGuideSlug));
 assert.deepEqual(cascadingVisibleInTopThree.map((game) => game.slug), ['moon-princess-100', 'reactoonz', 'rise-of-olympus'], 'Cascading legacy top-three snapshot changed unexpectedly');
-assert.equal(cascadingPreviewIndex.guideToGames[cascadingGuideSlug].length - cascadingVisibleInTopThree.length, 23, 'The remaining 23 Cascading relations must stay valid outside the legacy three-Guide snapshot');
+assert.equal(cascadingPreviewIndex.guideToGames[cascadingGuideSlug].length - cascadingVisibleInTopThree.length, 24, 'The remaining 24 Cascading relations must stay valid outside the legacy three-Guide snapshot');
 
 const multiplierGuideSlug = 'slot-multiplier-explained';
 const multiplierGuide = guides.find((guide) => guide.slug === multiplierGuideSlug);
@@ -130,7 +130,7 @@ assert.deepEqual(index.dataTopicToGuides['max-win'].map((guide) => guide.slug), 
 const maxWinPreviewGuides = guides.map((guide) => guide.slug === maxWinGuideSlug ? { ...guide, status: 'published' } : guide);
 const maxWinPreviewIndex = buildGuideRelationshipIndex(maxWinPreviewGuides, games, options);
 assert.deepEqual(maxWinPreviewIndex.dataTopicToGuides['max-win'].map((guide) => guide.slug), [maxWinGuideSlug]);
-assert.equal(maxWinPreviewIndex.guideToGames[maxWinGuideSlug].length, 71, 'Max Win Guide must derive exactly the 71 Games with maxWinMultiplier');
+assert.equal(maxWinPreviewIndex.guideToGames[maxWinGuideSlug].length, 74, 'Max Win Guide must derive exactly the 74 Games with maxWinMultiplier');
 for (const slug of ['big-bass-bonanza', 'dead-or-alive-2', 'fat-rabbit', 'gates-of-olympus', 'golden-fish-tank-2-gigablox', 'jammin-jars', 'jump-high', 'legacy-of-dead', 'moon-princess-100', 'razor-shark', 'reactoonz', 'rise-of-olympus', 'temple-tumble', 'the-great-pigsby-megaways', 'valley-of-the-gods', 'vikings-go-berzerk', 'wild-swarm']) {
   assert.ok(!maxWinPreviewIndex.gameToGuides[slug].some(({ guide }) => guide.slug === maxWinGuideSlug), `${slug}: missing maxWinMultiplier must not create a Max Win Guide relation`);
 }

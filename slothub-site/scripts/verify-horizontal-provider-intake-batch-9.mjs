@@ -82,6 +82,6 @@ for (const name of ['Aristocrat Gaming', 'Aruze Gaming Global', 'BF Games', 'Blu
 }
 assert.match(map, /AGS[^\n]+線上作品與版本範圍/);
 assert.match(map, /Amigo Gaming[^\n]+作品目錄有存取門檻/);
-assert.match(map, /下一個主動接續品牌維持 CT Interactive/);
+assert.match(map, /第九批已完成 Aristocrat Gaming、Aruze Gaming Global、BF Games、Bluberi 與 CT Gaming/);
 
 console.log('PASS: horizontal intake batch 9 published five previously unlisted slot Providers and one source-backed game per Provider while preserving land-based product boundaries, RTP variants, original volatility scales and unstated Max Win bases.');
