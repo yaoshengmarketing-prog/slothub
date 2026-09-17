@@ -4,7 +4,7 @@
 >
 > 建立日期：2026-09-03
 >
-> 本輪更新：2026-09-17（橫向收錄第四批依現行「未收錄 Provider 優先、每家先一款」規則完成 ELK Studios、Endorphina、Evoplay、Greentube、Habanero；Evolution 為 Live／Game Shows／First Person RNG 品牌，不以老虎機名額硬湊；候選總數仍為 222 家）
+> 本輪更新：2026-09-17（橫向收錄第五批完成 IGT PlayDigital、Kalamba Games、Light & Wonder、Nolimit City、Peter & Sons 各一款；第一方來源不足的數學欄位維持缺值，Peter & Sons 新舊官方資料差異保留於來源說明；候選總數仍為 222 家）
 >
 > 用途：作為外部遊戲資料收集的 Provider 骨架與去重對照。這不是完整產業名錄，不授權一次建立所有 Provider 公開頁，也不改變 Schema、taxonomy、產品功能或既有發布標準。
 
@@ -21,9 +21,9 @@
 ## 2. 目前基線
 
 - 盤點日期：2026-09-16
-- Published Games：87
-- Published Providers：34
-- 本站 Provider 以現有 34 筆 published Provider content 為準；候選名單不會自動建立公開頁，只有完成逐款驗證的橫向收錄項目才進入網站。
+- Published Games：92
+- Published Providers：39
+- 本站 Provider 以現有 39 筆 published Provider content 為準；候選名單不會自動建立公開頁，只有完成逐款驗證的橫向收錄項目才進入網站。
 
 | Provider | 現有遊戲 | 官方資料入口 | 圖片入口 | 補強優先度 | 主要候選／備選 |
 | --- | ---: | --- | --- | --- | --- |
@@ -56,6 +56,11 @@
 | Greentube | 1 | 官方產品頁、發布稿與 Rules PDF | 官方新聞稿作品圖 | 橫向首收 | Book of Ra Deluxe Win Ways 已完成；部分牌照版本條件保留 |
 | Habanero | 1 | 官方 Games 與逐款頁 | 官方逐款作品圖 | 橫向首收 | Hot Hot Fruit 已完成；約略 RTP 版本不灌入精確欄位 |
 | 4ThePlayer | 1 | 官方 Games 與逐款 stats | 官方逐款遊戲畫面 | 橫向首收 | 123 BOOM! 已完成；RTP、Ways、波動度與 Max Win 均保留原廠基準 |
+| IGT PlayDigital | 1 | 官方 PlayDigital 頁、產品頁與發布稿 | 官方產品素材 | 橫向首收 | Whitney Houston Slots 已完成；線上版本未取得的數學欄位維持缺值 |
+| Kalamba Games | 1 | 官方 Games 與逐款頁 | 官方逐款作品圖 | 橫向首收 | Golden Kegs 50K 已完成；公開頁未顯示的精確數學欄位不補猜 |
+| Light & Wonder | 1 | 官方 iGaming 作品頁與 Portfolio | 官方逐款作品圖 | 橫向首收 | Hell of a Deal 已完成；只收 Studio 明示為 Light & Wonder 的作品 |
+| Nolimit City | 1 | 官方資料表、作品入口與 Evolution 公告 | 官方資料表視覺 | 橫向首收 | Space Arcade 已完成；3/10 波動度保留原廠尺度 |
+| Peter & Sons | 1 | 官方 Games、逐款頁與 Game Sheet | 官方逐款縮圖 | 橫向首收 | Barbarossa Revenge 已完成；現行頁與舊資料表差異保留，不自動視為 variants |
 
 ### 2.1 本輪目錄來源與統計邊界
 
@@ -133,14 +138,14 @@
 | 21 | Greentube | Novomatic Interactive | NOVOMATIC AG | 開發、發行 | Slots、Table | [官網](https://www.greentube.com/) | SS、官方 | — | 已收錄（1） |
 | 22 | Habanero | Habanero Systems | — | 開發 | Slots、Table | [官方目錄](https://habanerosystems.com/games/) | SS、SL、官方 | — | 已收錄（1） |
 | 23 | Hacksaw Gaming | Hacksaw | — | 開發 | Slots、Lottery、Scratch | [官方目錄](https://www.hacksawgaming.com/games) | SS、官方 | — | 已收錄（6） |
-| 24 | IGT PlayDigital | IGT Digital | International Game Technology | 開發、發行 | Slots、Table、Lottery | [官方產品頁](https://www.igt.com/products-and-services/igaming) | 官方 | — | 未收錄 |
+| 24 | IGT PlayDigital | IGT Digital | International Game Technology | 開發、發行 | Slots、Table、Lottery | [官方產品頁](https://www.igt.com/products-and-services/playdigital) | 官方 | — | 已收錄（1） |
 | 25 | JILI Games | JILI | — | 開發 | Slots、Fish、Table、Crash、Bingo | [官方目錄](https://jiligames.com/games?showSlotGames=true) | 官方 | — | 已收錄（3） |
-| 26 | Kalamba Games | Kalamba | — | 開發 | Slots | [官方目錄](https://kalambagames.com/games/) | SS、SL、官方 | — | 未收錄 |
-| 27 | Light & Wonder | Scientific Games | Light & Wonder, Inc. | 開發、發行、聚合 | Slots、Table、Instant | [官方遊戲入口](https://games.lightnwonder.com/) | 官方 | — | 未收錄 |
+| 26 | Kalamba Games | Kalamba | — | 開發 | Slots | [官方目錄](https://kalambagames.com/games/) | SS、SL、官方 | — | 已收錄（1） |
+| 27 | Light & Wonder | Scientific Games | Light & Wonder, Inc. | 開發、發行、聚合 | Slots、Table、Instant | [官方遊戲入口](https://igaming.lnw.com/) | 官方 | — | 已收錄（1） |
 | 28 | NetEnt | Net Entertainment | Evolution | 開發 | Slots、Table | [Evolution 品牌頁](https://games.evolution.com/evolution-brands/) | SS、官方 | — | 已收錄（5） |
-| 29 | Nolimit City | NoLimit City | Evolution | 開發 | Slots | [官方目錄](https://nolimitcity.com/games/) | SS、官方 | — | 未收錄 |
+| 29 | Nolimit City | NoLimit City | Evolution | 開發 | Slots | [官方目錄](https://evo.nolimitcity.com/) | SS、官方 | — | 已收錄（1） |
 | 30 | PG SOFT | Pocket Games Soft、PGSoft | — | 開發 | Slots、Casual | [官方目錄](https://www.pgsoft.com/games/all/) | SS、官方 | — | 已收錄（5） |
-| 31 | Peter & Sons | Peter and Sons | — | 開發 | Slots | [官方目錄](https://peterandsonsgames.com/games/) | SS、官方 | — | 未收錄 |
+| 31 | Peter & Sons | Peter and Sons | — | 開發 | Slots | [官方目錄](https://peterandsonsgames.com/games/) | SS、官方 | — | 已收錄（1） |
 | 32 | Play’n GO | Play'n GO、Play N Go | — | 開發 | Slots、Table、Casual | [官方目錄](https://www.playngo.com/games) | SS、官方 | — | 已收錄（5） |
 | 33 | Playtech | — | Playtech plc | 開發、發行、聚合 | Slots、Table、Live、Lottery | [官方 Casino 入口](https://www.playtech.com/products/casino/) | SS、官方 | — | 未收錄 |
 | 34 | Playson | — | — | 開發 | Slots、Table | [官方目錄](https://playson.com/games/) | SS、SL、官方 | — | 未收錄 |
@@ -410,8 +415,8 @@
 - 第六批由 ADD26 補充首輪確認 9 家，再由排程接續小輪從 EveryMatrix 官方內容名錄確認 Spearhead Studios：累計淨新增候選 **10 家**，均可確認 Slots 作品；Slotopia 保留待查。RAW Group／RAW iGaming 重跑為同一品牌，不重複計數。
 - 全表合計去重後、已確認遊戲品牌：**222 家**。表內保留 OMNIPLAY 的研究 ID 102 供追查，但它不在這個數字內。
 - 全表合計明確提供 Slots：**208 家**。Evolution 與 SPRIBE 仍不計入 Slot 品牌家數；Evolution 旗下具 Slot 品牌身份的 NetEnt、Red Tiger、Big Time Gaming、Nolimit City 各自統計。BRINO Games、EA Gaming、OptimoPlay、Upgames、Winfinity（live）、Galaxy Gaming、On Air Entertainment、Real Dealer Studios、Switch Studios、Playjeux Studios、SidePlay 與 iMoon Games 等保留為非 Slot 或目前未確認有 Slot 的遊戲品牌。
-- Slot Hub 已收錄：**29 家**。
-- 全表合計尚未收錄：**187 家**；其中尚未收錄、且目前可確認有 Slots 的品牌：**174 家**。
+- Slot Hub 已收錄：**39 家**。
+- 全表合計尚未收錄：**182 家**；其中尚未收錄、且目前可確認有 Slots 的品牌：**169 家**。
 - 聚合、分發、展會與監管來源層只用於發現及交叉查找，不額外灌入品牌總數。除了既有 SOFTSWISS、Slotegrator、EveryMatrix、Hub88、Relax 聚合網路與 Games Global，本輪新增使用 SBC 官方展商內容、Bragg studio 網路、Light & Wonder partner roadmap 與 PAGCOR 核准資料。Relax 同時是開發品牌，所以只在品牌清單計數一次。
 - 只有 3 家在本輪取得可明確引用的完整目錄／作品集數量，另有 TaDa Gaming 的 60+ certified 子集合；其餘保持空白。這不代表沒有遊戲，只代表目前沒有取得可安全當作完整總數的公開值。
 
@@ -518,7 +523,7 @@
 
 `TOTAL_SLOT_CAPABLE_BRAND_COUNT: 207`
 
-`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 183`
+`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 169`
 
 `REMAINING_RESEARCH_LEAD_COUNT: 6`
 
@@ -534,7 +539,7 @@
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
-Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble 與 2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll 已由同一排程流程完成核對與匯入。這五款屬於既有 Relax 深度隊列收尾，不改變橫向隊列的優先規則。橫向收錄第一至四批合計完成 20 家新 Provider 各一款，網站目前為 87 款 published Game、34 家 published Provider。後續沿用本文件，不另建平行管理系統。
+Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble 與 2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll 已由同一排程流程完成核對與匯入。這五款屬於既有 Relax 深度隊列收尾，不改變橫向隊列的優先規則。橫向收錄第一至五批合計完成 25 家新 Provider 各一款，網站目前為 92 款 published Game、39 家 published Provider。後續沿用本文件，不另建平行管理系統。
 
 | 順序 | Provider | 目前收錄 | 官方目錄／主要入口 | 接續理由 |
 | ---: | --- | ---: | --- | --- |
@@ -552,4 +557,4 @@ Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片
 | 12 | NetEnt | 5 | https://netent.com/games | 舊作資料入口分散；逐款確認可用頁後再處理 |
 | 13 | Hacksaw Gaming | 6 | https://www.hacksawgaming.com/games | 現有覆蓋最厚，仍可由 Games／Client Hub 接續 |
 
-接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 隊列已完成 ELK Studios、Endorphina、Evoplay、Greentube 與 Habanero，Evolution 因現有官方類型不屬 Slots 而跳過，下一批從 IGT PlayDigital 接續。每週廠商挖掘游標仍為 Leander Games，三條隊列彼此不覆蓋。
+接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 隊列已完成 IGT PlayDigital、Kalamba Games、Light & Wonder、Nolimit City 與 Peter & Sons，本批下一個未收錄品牌為 Playtech。每週廠商挖掘游標仍為 Leander Games，三條隊列彼此不覆蓋。

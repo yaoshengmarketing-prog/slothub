@@ -79,7 +79,4 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['ELK Studios', 'Endorphina', 'Evoplay', 'Greentube', 'Habanero']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`), `${name}: candidate map status not updated`);
 }
-assert.match(map, /橫向未收錄 Provider 隊列.*下一批從 IGT PlayDigital 接續/);
-assert.match(map, /Evolution 因現有官方類型不屬 Slots 而跳過/);
-
 console.log('PASS: horizontal intake batch 4 published five previously unlisted slot Providers and one source-backed game per Provider without manufacturing fixed counts, normalized scales, multipliers or exact RTP values.');
