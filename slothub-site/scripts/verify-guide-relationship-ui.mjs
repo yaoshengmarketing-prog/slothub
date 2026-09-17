@@ -152,7 +152,7 @@ const gameDirectories = (await readdir(new URL('games/', root), { withFileTypes:
   .filter((entry) => entry.isDirectory())
   .map((entry) => entry.name)
   .sort();
-assert.equal(gameDirectories.length, 77, 'Game detail knowledge presentation must cover all 77 published Games');
+assert.equal(gameDirectories.length, 82, 'Game detail knowledge presentation must cover all 82 published Games');
 
 const renderedKnowledge = [];
 for (const slug of gameDirectories) {
@@ -165,23 +165,23 @@ for (const slug of gameDirectories) {
 
 const directItems = renderedKnowledge.filter((item) => item.placement !== 'feature-overflow');
 const overflowItems = renderedKnowledge.filter((item) => item.placement === 'feature-overflow');
-assert.equal(renderedKnowledge.length, 396, 'Expected all 396 unique Game → Guide relationships to remain visible');
-assert.equal(directItems.length, 388, 'Expected 388 relationships without expansion');
+assert.equal(renderedKnowledge.length, 415, 'Expected all 415 unique Game → Guide relationships to remain visible');
+assert.equal(directItems.length, 407, 'Expected 407 relationships without expansion');
 assert.equal(overflowItems.length, 8, 'Expected eight relationships in the overflow area');
 
 const countPlacement = (placement) => renderedKnowledge.filter((item) => item.placement === placement).length;
 const countGuide = (guideSlug) => renderedKnowledge.filter((item) => item.guideSlug === guideSlug).length;
-assert.equal(countPlacement('core-mechanism'), 69, 'Mechanism contextual Guide count changed');
-assert.equal(countPlacement('core-rtp') + countPlacement('full-rtp-variants'), 48, 'RTP contextual Guide count changed');
-assert.equal(countPlacement('core-volatility') + countPlacement('full-volatility'), 52, 'Volatility contextual Guide count changed');
-assert.equal(countPlacement('core-max-win'), 54, 'Max Win contextual Guide count changed');
-assert.equal(countGuide('slot-multiplier-explained'), 54, 'Multiplier Feature Guide count changed');
-assert.equal(countGuide('slot-cascading-tumble-avalanche-explained'), 23, 'Cascading Feature Guide count changed');
+assert.equal(countPlacement('core-mechanism'), 73, 'Mechanism contextual Guide count changed');
+assert.equal(countPlacement('core-rtp') + countPlacement('full-rtp-variants'), 52, 'RTP contextual Guide count changed');
+assert.equal(countPlacement('core-volatility') + countPlacement('full-volatility'), 55, 'Volatility contextual Guide count changed');
+assert.equal(countPlacement('core-max-win'), 55, 'Max Win contextual Guide count changed');
+assert.equal(countGuide('slot-multiplier-explained'), 56, 'Multiplier Feature Guide count changed');
+assert.equal(countGuide('slot-cascading-tumble-avalanche-explained'), 24, 'Cascading Feature Guide count changed');
 assert.equal(countGuide(bonusBuyOwnerSlug), 26, 'Bonus Buy Feature Guide count changed');
 assert.equal(countGuide(bonusBuyGuidePublished ? 'slot-terms-glossary' : 'slot-bonus-buy-explained'), 0, 'Inactive Bonus Buy owner appeared in Game detail');
-assert.equal(countGuide('slot-symbols-and-features'), 70, 'Symbols Feature Guide count changed');
-assert.equal(countGuide('slot-ways-to-win-explained'), 14, 'Ways to Win Guide reverse relationship count changed');
-assert.equal(countGuide('slot-payout-mechanisms-explained'), 55, 'Payout overview relationship count must exclude the fourteen Ways Games');
+assert.equal(countGuide('slot-symbols-and-features'), 74, 'Symbols Feature Guide count changed');
+assert.equal(countGuide('slot-ways-to-win-explained'), 16, 'Ways to Win Guide reverse relationship count changed');
+assert.equal(countGuide('slot-payout-mechanisms-explained'), 57, 'Payout overview relationship count must exclude the sixteen Ways Games');
 assert.ok(!renderedKnowledge.some((item) => item.gameSlug === 'super-ace' && item.guideSlug === 'slot-cascading-tumble-avalanche-explained'), 'Super Ace regained an invalid Cascading relationship');
 
 for (const slug of ['ancient-tumble', 'bonanza', 'dragons-heirs', 'gates-of-olympus-1000', 'jammin-jars', 'storm-of-seth-2-awakening', 'sun-wu-kong']) {

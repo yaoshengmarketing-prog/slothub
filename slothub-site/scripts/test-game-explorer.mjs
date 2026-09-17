@@ -24,7 +24,7 @@ const records = readdirSync(gamesDirectory)
     };
   });
 const games = records.filter((game) => game.status === 'published');
-assert.equal(games.length, 77, 'Explorer fixture must cover all 77 published games');
+assert.equal(games.length, 82, 'Explorer fixture must cover all 82 published games');
 
 const state = (patch = {}) => ({ ...emptyExplorerState(), ...patch });
 assert.equal(filterAndSortGames(games, state({ provider: 'pragmatic-play' })).length, 5);
@@ -32,11 +32,11 @@ assert.equal(filterAndSortGames(games, state({ mechanism: 'pay-anywhere' })).len
 assert.equal(filterAndSortGames(games, state({ provider: 'relax-gaming' })).length, 11);
 assert.equal(filterAndSortGames(games, state({ mechanism: 'megaways' })).length, 7);
 const cascadingGames = filterAndSortGames(games, state({ features: ['cascading'] }));
-assert.equal(cascadingGames.length, 23, 'Cascading Explorer must return exactly 23 structurally tagged Games');
+assert.equal(cascadingGames.length, 24, 'Cascading Explorer must return exactly 24 structurally tagged Games');
 assert.ok(!cascadingGames.some((game) => game.slug === 'super-ace'), 'Super Ace must not appear in the Cascading Explorer result');
 assert.equal(serializeExplorerState(state({ features: ['cascading'] })), 'features=cascading', 'Cascading Explorer must keep the exact structured URL query');
-assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild'] })).length, 32, 'Features must use AND');
-assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild', 'scatter'] })).length, 14, 'Three Features must use AND');
+assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild'] })).length, 34, 'Features must use AND');
+assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild', 'scatter'] })).length, 15, 'Three Features must use AND');
 assert.equal(filterAndSortGames(games, state({ provider: 'pg-soft', mechanism: 'ways-to-win', features: ['wild', 'cascading'], rtpMin: 96.5 })).length, 2, 'Cross-facet conditions must use AND');
 
 for (const [field, patch, missingSlug] of [
@@ -88,7 +88,7 @@ assert.equal(filterAndSortGames(games, zeroState).length, 0, 'Recovery fixture m
 const recoveryOptions = zeroResultRecoveryOptions(games, zeroState);
 assert.deepEqual(recoveryOptions.map(({ field, value, count }) => ({ field, value, count })), [
   { field: 'mechanism', value: 'ways-to-win', count: 6 },
-  { field: 'feature', value: 'hold-and-spin', count: 14 },
+  { field: 'feature', value: 'hold-and-spin', count: 16 },
 ], 'Recovery options must remove exactly one condition and report the resulting real count');
 assert.ok(recoveryOptions.every((option) => filterAndSortGames(games, option.state).length === option.count && option.count > 0), 'Every recovery option must lead to its reported non-zero result');
 assert.deepEqual(zeroResultRecoveryOptions([], zeroState), [], 'A relaxation that remains at zero must not appear as a recovery option');

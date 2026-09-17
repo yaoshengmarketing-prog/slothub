@@ -31,7 +31,7 @@ const records = await Promise.all(files.map(async (file) => {
 }));
 
 const published = records.filter((game) => game.status === 'published');
-assert.equal(published.length, 77, 'expected 77 published Games');
+assert.equal(published.length, 82, 'expected 82 published Games');
 assert.deepEqual(SIMILAR_PLAY_DISTINCTIVE_FEATURES, [
   'cascading', 'bonus-buy', 'hold-and-spin', 'respins', 'cash-collection',
   'giant-symbols', 'sticky-symbols', 'symbol-splitting', 'jackpot',
@@ -41,8 +41,8 @@ assert.deepEqual(SIMILAR_PLAY_EXCLUDED_FEATURES, ['wild', 'scatter', 'other']);
 const presentations = new Map(published.map((game) => [game.slug, buildSimilarPlayPresentation(game.slug, records)]));
 const withResults = [...presentations.values()].filter((presentation) => presentation.items.length > 0);
 const zeroSlugs = [...presentations.entries()].filter(([, presentation]) => presentation.items.length === 0).map(([slug]) => slug).sort();
-assert.equal(withResults.length, 69, '69 Games should have similar-play results');
-assert.deepEqual(zeroSlugs, ['3-dragon-pots', '3-plucky-hens', 'atlantis-crush', 'money-coming', 'shadow-of-dominion', 'storm-of-seth', 'storm-of-seth-2-awakening', 'vegas-gold']);
+assert.equal(withResults.length, 73, '73 Games should have similar-play results');
+assert.deepEqual(zeroSlugs, ['3-dragon-pots', '3-plucky-hens', 'atlantis-crush', 'book-of-aztec', 'money-coming', 'shadow-of-dominion', 'storm-of-seth', 'storm-of-seth-2-awakening', 'vegas-gold']);
 
 for (const [slug, presentation] of presentations) {
   assert.ok(presentation.items.length <= 4, `${slug}: rendered over four cards`);
@@ -110,7 +110,7 @@ for (const game of published) {
   assert.equal((html.match(/data-similar-play-slug=/g) ?? []).length, presentations.get(game.slug).items.length, `${game.slug}: rendered card count mismatch`);
   assert.ok(!html.includes('similarity-score'), `${game.slug}: similarity score rendered`);
 }
-assert.equal(renderedModules, 69, 'expected 69 rendered similar-play modules');
+assert.equal(renderedModules, 73, 'expected 73 rendered similar-play modules');
 
 const representativeHtml = await readFile(join(distGamesDirectory, 'big-bass-bonanza', 'index.html'), 'utf8');
 assert.ok(representativeHtml.indexOf('class="game-next-explore"') < representativeHtml.indexOf('class="game-similar-play"'), 'similar-play must belong to the shared next-explore section');
@@ -119,4 +119,4 @@ const styles = await readFile(fileURLToPath(new URL('../src/styles/global.css', 
 assert.match(styles, /\.similar-play-explore\{[^}]*min-height:44px/, 'Explore CTA must preserve a 44px touch target');
 assert.match(styles, /\.similar-play-grid>li>a:focus-visible[^}]*outline:/, 'similar-play links need a visible keyboard focus style');
 
-console.log('PASS: Similar play computed for 77 Games with stable sorting, exact reasons and mechanism URLs verified.');
+console.log('PASS: Similar play computed for 82 Games with stable sorting, exact reasons and mechanism URLs verified.');
