@@ -4,7 +4,7 @@
 >
 > 建立日期：2026-09-03
 >
-> 本輪更新：2026-09-17（橫向收錄第五批完成 IGT PlayDigital、Kalamba Games、Light & Wonder、Nolimit City、Peter & Sons 各一款；第一方來源不足的數學欄位維持缺值，Peter & Sons 新舊官方資料差異保留於來源說明；候選總數仍為 222 家）
+> 本輪更新：2026-09-17（橫向收錄第六批完成 Playson、Quickspin、Red Rake Gaming、Red Tiger Gaming、RubyPlay 各一款；Playtech 因現有官方作品頁未提供可辨識的遊戲主圖而保留待補，不以通用媒體圖代替；候選總數仍為 222 家）
 >
 > 用途：作為外部遊戲資料收集的 Provider 骨架與去重對照。這不是完整產業名錄，不授權一次建立所有 Provider 公開頁，也不改變 Schema、taxonomy、產品功能或既有發布標準。
 
@@ -21,9 +21,9 @@
 ## 2. 目前基線
 
 - 盤點日期：2026-09-16
-- Published Games：92
-- Published Providers：39
-- 本站 Provider 以現有 39 筆 published Provider content 為準；候選名單不會自動建立公開頁，只有完成逐款驗證的橫向收錄項目才進入網站。
+- Published Games：97
+- Published Providers：44
+- 本站 Provider 以現有 44 筆 published Provider content 為準；候選名單不會自動建立公開頁，只有完成逐款驗證的橫向收錄項目才進入網站。
 
 | Provider | 現有遊戲 | 官方資料入口 | 圖片入口 | 補強優先度 | 主要候選／備選 |
 | --- | ---: | --- | --- | --- | --- |
@@ -61,6 +61,11 @@
 | Light & Wonder | 1 | 官方 iGaming 作品頁與 Portfolio | 官方逐款作品圖 | 橫向首收 | Hell of a Deal 已完成；只收 Studio 明示為 Light & Wonder 的作品 |
 | Nolimit City | 1 | 官方資料表、作品入口與 Evolution 公告 | 官方資料表視覺 | 橫向首收 | Space Arcade 已完成；3/10 波動度保留原廠尺度 |
 | Peter & Sons | 1 | 官方 Games、逐款頁與 Game Sheet | 官方逐款縮圖 | 橫向首收 | Barbarossa Revenge 已完成；現行頁與舊資料表差異保留，不自動視為 variants |
+| Playson | 1 | 官方 Games 與逐款頁 | 官方授權合作方作品縮圖 | 橫向首收 | Flaming Bells: Hold and Win 已完成；5,000x Grand Jackpot 不改寫為整局 Max Win |
+| Quickspin | 1 | 官方 Games 與逐款頁 | 官方逐款作品圖 | 橫向首收 | Spinions Game Day 已完成；87%／94%／96% 保留為 RTP models |
+| Red Rake Gaming | 1 | 官方 Games 與發布稿 | 官方發布作品圖 | 橫向首收 | 3 Dragons Rake It In 已完成；未取得的數學欄位維持缺值 |
+| Red Tiger Gaming | 1 | 官方遊戲頁與 Factsheet | 官方逐款作品圖 | 橫向首收 | 777 Super Strike 已完成；不同 Jackpot 設定的 RTP options 不混成單一 variants 清單 |
+| RubyPlay | 1 | 官方 Games 與逐款頁 | 官方逐款作品圖 | 橫向首收 | Book of 8 Riches 已完成；原廠 Medium/High 與 8,000x 基準保留 |
 
 ### 2.1 本輪目錄來源與統計邊界
 
@@ -147,15 +152,15 @@
 | 30 | PG SOFT | Pocket Games Soft、PGSoft | — | 開發 | Slots、Casual | [官方目錄](https://www.pgsoft.com/games/all/) | SS、官方 | — | 已收錄（5） |
 | 31 | Peter & Sons | Peter and Sons | — | 開發 | Slots | [官方目錄](https://peterandsonsgames.com/games/) | SS、官方 | — | 已收錄（1） |
 | 32 | Play’n GO | Play'n GO、Play N Go | — | 開發 | Slots、Table、Casual | [官方目錄](https://www.playngo.com/games) | SS、官方 | — | 已收錄（5） |
-| 33 | Playtech | — | Playtech plc | 開發、發行、聚合 | Slots、Table、Live、Lottery | [官方 Casino 入口](https://www.playtech.com/products/casino/) | SS、官方 | — | 未收錄 |
-| 34 | Playson | — | — | 開發 | Slots、Table | [官方目錄](https://playson.com/games/) | SS、SL、官方 | — | 未收錄 |
+| 33 | Playtech | — | Playtech plc | 開發、發行、聚合 | Slots、Table、Live、Lottery | [官方 Casino 入口](https://www.playtech.com/products/casino/) | SS、官方 | — | 未收錄；本批驗證 Heart of the Frontier 身份與玩法，但官方頁只提供通用媒體圖，保留待取得可辨識作品圖 |
+| 34 | Playson | — | — | 開發 | Slots、Table | [官方目錄](https://playson.com/games/) | SS、SL、官方 | — | 已收錄（1） |
 | 35 | Pragmatic Play | Pragmatic | — | 開發、發行 | Slots、Table、Live、Lottery、Bingo | [官方目錄](https://www.pragmaticplay.com/en/games/) | SS、官方 | — | 已收錄（5） |
 | 36 | Push Gaming | Push | LeoVegas Group（MGM Resorts） | 開發 | Slots | [官方目錄](https://www.pushgaming.com/games/) | SS、官方 | — | 已收錄（4） |
-| 37 | Quickspin | — | Playtech plc | 開發 | Slots | [官方目錄](https://quickspin.com/games/) | SS、官方 | — | 未收錄 |
-| 38 | Red Rake Gaming | Red Rake | — | 開發 | Slots、Table、Bingo | [官方目錄](https://redrakegaming.com/games/) | SS、SL、官方 | — | 未收錄 |
-| 39 | Red Tiger Gaming | Red Tiger | Evolution | 開發 | Slots、Table | [Evolution 品牌頁](https://games.evolution.com/evolution-brands/) | SS、官方 | — | 未收錄 |
+| 37 | Quickspin | — | Playtech plc | 開發 | Slots | [官方目錄](https://quickspin.com/games/) | SS、官方 | — | 已收錄（1） |
+| 38 | Red Rake Gaming | Red Rake | — | 開發 | Slots、Table、Bingo | [官方目錄](https://redrakegaming.com/games/) | SS、SL、官方 | — | 已收錄（1） |
+| 39 | Red Tiger Gaming | Red Tiger | Evolution | 開發 | Slots、Table | [Evolution 品牌頁](https://games.evolution.com/evolution-brands/) | SS、官方 | — | 已收錄（1） |
 | 40 | Relax Gaming | Relax | FDJ UNITED | 開發、發行、聚合 | Slots、Table、Bingo、Poker | [官方 own-games](https://www.relax-gaming.com/casino/own-games) | SS、H88、官方 | 175（本站完整目錄擷取，2026-09-16） | 已收錄（6） |
-| 41 | RubyPlay | Ruby Play | — | 開發 | Slots | [官方目錄](https://rubyplay.com/games/) | SS、官方 | — | 未收錄 |
+| 41 | RubyPlay | Ruby Play | — | 開發 | Slots | [官方目錄](https://rubyplay.com/games/) | SS、官方 | — | 已收錄（1） |
 | 42 | Slotmill | — | — | 開發 | Slots | [官方目錄](https://www.slotmill.com/) | SS、官方 | — | 已收錄（5） |
 | 43 | Spinomenal | — | — | 開發、發行 | Slots、Lottery、Casual | [官方目錄](https://www.spinomenal.com/games/) | SS、SL、官方 | — | 未收錄 |
 | 44 | SPRIBE | Spribe | — | 開發 | Crash、Table、Casual | [官網](https://spribe.co/) | SS、官方 | — | 未收錄 |
@@ -415,8 +420,8 @@
 - 第六批由 ADD26 補充首輪確認 9 家，再由排程接續小輪從 EveryMatrix 官方內容名錄確認 Spearhead Studios：累計淨新增候選 **10 家**，均可確認 Slots 作品；Slotopia 保留待查。RAW Group／RAW iGaming 重跑為同一品牌，不重複計數。
 - 全表合計去重後、已確認遊戲品牌：**222 家**。表內保留 OMNIPLAY 的研究 ID 102 供追查，但它不在這個數字內。
 - 全表合計明確提供 Slots：**208 家**。Evolution 與 SPRIBE 仍不計入 Slot 品牌家數；Evolution 旗下具 Slot 品牌身份的 NetEnt、Red Tiger、Big Time Gaming、Nolimit City 各自統計。BRINO Games、EA Gaming、OptimoPlay、Upgames、Winfinity（live）、Galaxy Gaming、On Air Entertainment、Real Dealer Studios、Switch Studios、Playjeux Studios、SidePlay 與 iMoon Games 等保留為非 Slot 或目前未確認有 Slot 的遊戲品牌。
-- Slot Hub 已收錄：**39 家**。
-- 全表合計尚未收錄：**182 家**；其中尚未收錄、且目前可確認有 Slots 的品牌：**169 家**。
+- Slot Hub 已收錄：**44 家**。
+- 全表合計尚未收錄：**177 家**；其中尚未收錄、且目前可確認有 Slots 的品牌：**164 家**。
 - 聚合、分發、展會與監管來源層只用於發現及交叉查找，不額外灌入品牌總數。除了既有 SOFTSWISS、Slotegrator、EveryMatrix、Hub88、Relax 聚合網路與 Games Global，本輪新增使用 SBC 官方展商內容、Bragg studio 網路、Light & Wonder partner roadmap 與 PAGCOR 核准資料。Relax 同時是開發品牌，所以只在品牌清單計數一次。
 - 只有 3 家在本輪取得可明確引用的完整目錄／作品集數量，另有 TaDa Gaming 的 60+ certified 子集合；其餘保持空白。這不代表沒有遊戲，只代表目前沒有取得可安全當作完整總數的公開值。
 
@@ -521,9 +526,9 @@
 
 `TOTAL_CANDIDATE_BRAND_COUNT: 222`
 
-`TOTAL_SLOT_CAPABLE_BRAND_COUNT: 207`
+`TOTAL_SLOT_CAPABLE_BRAND_COUNT: 208`
 
-`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 169`
+`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 164`
 
 `REMAINING_RESEARCH_LEAD_COUNT: 6`
 
@@ -557,4 +562,4 @@ Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片
 | 12 | NetEnt | 5 | https://netent.com/games | 舊作資料入口分散；逐款確認可用頁後再處理 |
 | 13 | Hacksaw Gaming | 6 | https://www.hacksawgaming.com/games | 現有覆蓋最厚，仍可由 Games／Client Hub 接續 |
 
-接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 隊列已完成 IGT PlayDigital、Kalamba Games、Light & Wonder、Nolimit City 與 Peter & Sons，本批下一個未收錄品牌為 Playtech。每週廠商挖掘游標仍為 Leander Games，三條隊列彼此不覆蓋。
+接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 隊列第六批已完成 Playson、Quickspin、Red Rake Gaming、Red Tiger Gaming 與 RubyPlay。Playtech 因缺少可辨識的作品圖保留待補，下一個主動接續品牌為 Spinomenal。每週廠商挖掘游標仍為 Leander Games，三條隊列彼此不覆蓋。

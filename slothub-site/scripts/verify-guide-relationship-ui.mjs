@@ -152,7 +152,7 @@ const gameDirectories = (await readdir(new URL('games/', root), { withFileTypes:
   .filter((entry) => entry.isDirectory())
   .map((entry) => entry.name)
   .sort();
-assert.equal(gameDirectories.length, 92, 'Game detail knowledge presentation must cover all 92 published Games');
+assert.equal(gameDirectories.length, 97, 'Game detail knowledge presentation must cover all 97 published Games');
 
 const renderedKnowledge = [];
 for (const slug of gameDirectories) {
@@ -165,23 +165,23 @@ for (const slug of gameDirectories) {
 
 const directItems = renderedKnowledge.filter((item) => item.placement !== 'feature-overflow');
 const overflowItems = renderedKnowledge.filter((item) => item.placement === 'feature-overflow');
-assert.equal(renderedKnowledge.length, 458, 'Expected all 458 unique Game → Guide relationships to remain visible');
-assert.equal(directItems.length, 449, 'Expected 449 relationships without expansion');
+assert.equal(renderedKnowledge.length, 479, 'Expected all 479 unique Game → Guide relationships to remain visible');
+assert.equal(directItems.length, 470, 'Expected 470 relationships without expansion');
 assert.equal(overflowItems.length, 9, 'Expected nine relationships in the overflow area');
 
 const countPlacement = (placement) => renderedKnowledge.filter((item) => item.placement === placement).length;
 const countGuide = (guideSlug) => renderedKnowledge.filter((item) => item.guideSlug === guideSlug).length;
-assert.equal(countPlacement('core-mechanism'), 82, 'Mechanism contextual Guide count changed');
-assert.equal(countPlacement('core-rtp') + countPlacement('full-rtp-variants'), 57, 'RTP contextual Guide count changed');
-assert.equal(countPlacement('core-volatility') + countPlacement('full-volatility'), 60, 'Volatility contextual Guide count changed');
-assert.equal(countPlacement('core-max-win'), 59, 'Max Win contextual Guide count changed');
-assert.equal(countGuide('slot-multiplier-explained'), 60, 'Multiplier Feature Guide count changed');
+assert.equal(countPlacement('core-mechanism'), 87, 'Mechanism contextual Guide count changed');
+assert.equal(countPlacement('core-rtp') + countPlacement('full-rtp-variants'), 60, 'RTP contextual Guide count changed');
+assert.equal(countPlacement('core-volatility') + countPlacement('full-volatility'), 62, 'Volatility contextual Guide count changed');
+assert.equal(countPlacement('core-max-win'), 61, 'Max Win contextual Guide count changed');
+assert.equal(countGuide('slot-multiplier-explained'), 63, 'Multiplier Feature Guide count changed');
 assert.equal(countGuide('slot-cascading-tumble-avalanche-explained'), 25, 'Cascading Feature Guide count changed');
-assert.equal(countGuide(bonusBuyOwnerSlug), 31, 'Bonus Buy Feature Guide count changed');
+assert.equal(countGuide(bonusBuyOwnerSlug), 33, 'Bonus Buy Feature Guide count changed');
 assert.equal(countGuide(bonusBuyGuidePublished ? 'slot-terms-glossary' : 'slot-bonus-buy-explained'), 0, 'Inactive Bonus Buy owner appeared in Game detail');
-assert.equal(countGuide('slot-symbols-and-features'), 84, 'Symbols Feature Guide count changed');
-assert.equal(countGuide('slot-ways-to-win-explained'), 20, 'Ways to Win Guide reverse relationship count changed');
-assert.equal(countGuide('slot-payout-mechanisms-explained'), 62, 'Payout overview relationship count must exclude the twenty Ways Games');
+assert.equal(countGuide('slot-symbols-and-features'), 88, 'Symbols Feature Guide count changed');
+assert.equal(countGuide('slot-ways-to-win-explained'), 21, 'Ways to Win Guide reverse relationship count changed');
+assert.equal(countGuide('slot-payout-mechanisms-explained'), 66, 'Payout overview relationship count must exclude the twenty-one Ways Games');
 assert.ok(!renderedKnowledge.some((item) => item.gameSlug === 'super-ace' && item.guideSlug === 'slot-cascading-tumble-avalanche-explained'), 'Super Ace regained an invalid Cascading relationship');
 
 for (const slug of ['ancient-tumble', 'atlantis-crush', 'barbarossa-revenge', 'bonanza', 'dragons-heirs', 'gates-of-olympus-1000', 'jammin-jars', 'storm-of-seth-2-awakening', 'sun-wu-kong']) {
