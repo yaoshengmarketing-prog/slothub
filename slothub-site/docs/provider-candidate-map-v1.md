@@ -190,12 +190,12 @@
 | 54 | Air Dice | Air Dice Group | — | 開發 | Slots、Table／策略型 money games | [官網](https://airdice.com/) | ICE26、ICE27 | 已收錄（1） |
 | 55 | Amigo Gaming | Amigo | Cloudbridge Ltd | 開發 | Slots | [官方產品目錄](https://product.amigogaming.com/) | ICE27 | 未收錄 |
 | 56 | Apollo Games | Apollo Soft | — | 開發 | Slots、Plinko、Land-based | [官網／遊戲入口](https://www.apollogames.com/) | ICE26、ICE27 | 已收錄（1） |
-| 57 | Aristocrat Gaming | Aristocrat | Aristocrat Leisure Limited | 開發、發行 | Slots、Table、Land-based | [官方遊戲目錄](https://www.aristocratgaming.com/us/games) | ICE26、ICE27 | 未收錄 |
-| 58 | Aruze Gaming Global | AG2、Aruze | — | 開發 | Slots、Electronic Table、Land-based | [官網](https://aruzeglobal.com/) | ICE26、ICE27 | 未收錄 |
+| 57 | Aristocrat Gaming | Aristocrat | Aristocrat Leisure Limited | 開發、發行 | Slots、Table、Land-based | [官方遊戲目錄](https://www.aristocratgaming.com/us/games) | ICE26、ICE27 | 已收錄（1） |
+| 58 | Aruze Gaming Global | AG2、Aruze | — | 開發 | Slots、Electronic Table、Land-based | [官網](https://aruzeglobal.com/) | ICE26、ICE27 | 已收錄（1） |
 | 59 | Belatra Games | Belatra | — | 開發 | Slots、Plinko、Crash、Bingo、Table、Instant | [官方遊戲目錄](https://belatragames.com/en/games) | ICE26、ICE27 | 已收錄（1） |
-| 60 | BF Games | BF | — | 開發 | Slots | [官方遊戲目錄](https://bfgames.com/games-library/) | ICE26、ICE27 | 未收錄 |
-| 61 | Bluberi | — | — | 開發 | Slots、Land-based | [官方遊戲入口](https://bluberi.com/) | ICE26、ICE27 | 未收錄 |
-| 62 | CT Gaming | Casino Technology | — | 開發 | Slots、Bingo、Land-based | [官方遊戲目錄](https://ctgaming.com/products/games/) | ICE26、ICE27 | 未收錄 |
+| 60 | BF Games | BF | — | 開發 | Slots | [官方遊戲目錄](https://bfgames.com/games-library/) | ICE26、ICE27 | 已收錄（1） |
+| 61 | Bluberi | — | — | 開發 | Slots、Land-based | [官方遊戲入口](https://bluberi.com/) | ICE26、ICE27 | 已收錄（1） |
+| 62 | CT Gaming | Casino Technology | — | 開發 | Slots、Bingo、Land-based | [官方遊戲目錄](https://ctgaming.com/products/games/) | ICE26、ICE27 | 已收錄（1） |
 | 63 | CT Interactive | CTI | CT Gaming | 開發 | Online Slots | [官方遊戲目錄](https://www.ct-interactive.com/games/games-library) | ICE26、ICE27 | 未收錄 |
 | 64 | FA CHAI Gaming | FC、FA CHAI | WiseInNet Technologies B.V. | 開發 | Slots、Fishing、Arcade、Table | [官方遊戲入口](https://fachaigaming.com/en/) | ICE27 | 未收錄 |
 | 65 | Galaxsys | — | — | 開發 | Slots、Crash、Instant／Turbo、Fishing、Table | [官方遊戲目錄](https://galaxsys.co/games/) | ICE26、ICE27 | 未收錄 |
@@ -549,9 +549,9 @@
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
-Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble 與 2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll 已由同一排程流程完成核對與匯入。這五款屬於既有 Relax 深度隊列收尾，不改變橫向隊列的優先規則。橫向收錄第一至八批合計完成 40 家新 Provider 各一款，網站目前為 107 款 published Game、54 家 published Provider。後續沿用本文件，不另建平行管理系統。
+Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble 與 2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll 已由同一排程流程完成核對與匯入。這五款屬於既有 Relax 深度隊列收尾，不改變橫向隊列的優先規則。橫向收錄第一至九批合計完成 45 家新 Provider 各一款，網站目前為 112 款 published Game、59 家 published Provider。後續沿用本文件，不另建平行管理系統。
 
-第七批接續紀錄：SPRIBE 目前的確認類型為 Crash／Table／Casual，因此未納入老虎機橫向收錄；Playtech 因缺少可辨識的作品圖持續保留待補；該批完成時的下一個主動接續品牌為 Wizard Games。Wizard Games 已於第八批完成，現行游標以本節末尾的接續原則為準。
+第七批接續紀錄：SPRIBE 目前的確認類型為 Crash／Table／Casual，因此未納入老虎機橫向收錄；Playtech 因缺少可辨識的作品圖持續保留待補；該批完成時的下一個主動接續品牌為 Wizard Games。Wizard Games 已於第八批完成；第八批完成時的下一個主動接續品牌維持 Aristocrat Gaming，現行游標以本節末尾的接續原則為準。
 
 | 順序 | Provider | 目前收錄 | 官方目錄／主要入口 | 接續理由 |
 | ---: | --- | ---: | --- | --- |
@@ -569,4 +569,4 @@ Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片
 | 12 | NetEnt | 5 | https://netent.com/games | 舊作資料入口分散；逐款確認可用頁後再處理 |
 | 13 | Hacksaw Gaming | 6 | https://www.hacksawgaming.com/games | 現有覆蓋最厚，仍可由 Games／Client Hub 接續 |
 
-接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 隊列第八批已完成 Wizard Games、7777 Gaming、Air Dice、Apollo Games 與 Belatra Games。AGS 因現有官方資料仍需釐清線上作品與版本範圍、Amigo Gaming 因公開作品目錄有存取門檻而保留待補；Aristocrat Gaming 與 Aruze Gaming Global 尚未完成逐款判讀，下一個主動接續品牌為 Aristocrat Gaming；下一個主動接續品牌維持 Aristocrat Gaming。每週廠商挖掘游標仍為 Leander Games，三條隊列彼此不覆蓋。
+接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 隊列第八批已完成 Wizard Games、7777 Gaming、Air Dice、Apollo Games 與 Belatra Games，第九批已完成 Aristocrat Gaming、Aruze Gaming Global、BF Games、Bluberi 與 CT Gaming。AGS 因現有官方資料仍需釐清線上作品與版本範圍、Amigo Gaming 因公開作品目錄有存取門檻而保留待補；第九批對 Aristocrat、Aruze 與 Bluberi 只保存官方頁直接支持的作品身份、功能及圖片，不推算未公開數學資料。下一個主動接續品牌為 CT Interactive；下一個主動接續品牌維持 CT Interactive。每週廠商挖掘游標仍為 Leander Games，三條隊列彼此不覆蓋。
