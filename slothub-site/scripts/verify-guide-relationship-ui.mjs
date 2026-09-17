@@ -152,7 +152,7 @@ const gameDirectories = (await readdir(new URL('games/', root), { withFileTypes:
   .filter((entry) => entry.isDirectory())
   .map((entry) => entry.name)
   .sort();
-assert.equal(gameDirectories.length, 117, 'Game detail knowledge presentation must cover all 117 published Games');
+assert.equal(gameDirectories.length, 122, 'Game detail knowledge presentation must cover all 122 published Games');
 
 const renderedKnowledge = [];
 for (const slug of gameDirectories) {
@@ -177,7 +177,7 @@ assert.equal(countPlacement('core-volatility') + countPlacement('full-volatility
 assert.equal(countPlacement('core-max-win'), 74, 'Max Win contextual Guide count changed');
 assert.equal(countGuide('slot-multiplier-explained'), 65, 'Multiplier Feature Guide count changed');
 assert.equal(countGuide('slot-cascading-tumble-avalanche-explained'), 27, 'Cascading Feature Guide count changed');
-assert.equal(countGuide(bonusBuyOwnerSlug), 39, 'Bonus Buy Feature Guide count changed');
+assert.equal(countGuide(bonusBuyOwnerSlug), 40, 'Bonus Buy Feature Guide count changed');
 assert.equal(countGuide(bonusBuyGuidePublished ? 'slot-terms-glossary' : 'slot-bonus-buy-explained'), 0, 'Inactive Bonus Buy owner appeared in Game detail');
 assert.equal(countGuide('slot-symbols-and-features'), 105, 'Symbols Feature Guide count changed');
 assert.equal(countGuide('slot-ways-to-win-explained'), 23, 'Ways to Win Guide reverse relationship count changed');

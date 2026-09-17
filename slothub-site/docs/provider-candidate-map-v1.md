@@ -509,7 +509,7 @@
 
 `CURRENT_SCOPE: 廠商盤點與分類`
 
-`CURRENT_GAME_COUNT: 117`
+`CURRENT_GAME_COUNT: 122`
 
 `CURRENT_PROVIDER_COUNT: 64`
 
@@ -549,7 +549,7 @@
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
-Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble 與 2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll 已由同一排程流程完成核對與匯入。這五款屬於既有 Relax 深度隊列收尾，不改變橫向隊列的優先規則。橫向收錄第一至十批合計完成 50 家新 Provider 各一款，網站目前為 117 款 published Game、64 家 published Provider。第十批完成 CT Interactive、FA CHAI Gaming、GameArt、Gamzix 與 Inspired Entertainment；Galaxsys 的 El Dorado 文字資料已核實，但官方作品圖受存取限制而保留待補，不阻擋其他品牌。後續沿用本文件，不另建平行管理系統。
+Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至十批合計完成 50 家新 Provider 各一款，網站目前為 122 款 published Game、64 家 published Provider。第十批完成 CT Interactive、FA CHAI Gaming、GameArt、Gamzix 與 Inspired Entertainment；Galaxsys 的 El Dorado 文字資料已核實，但官方作品圖受存取限制而保留待補，不阻擋其他品牌。後續沿用本文件，不另建平行管理系統。
 
 第七批接續紀錄：SPRIBE 目前的確認類型為 Crash／Table／Casual，因此未納入老虎機橫向收錄；Playtech 因缺少可辨識的作品圖持續保留待補；該批完成時的下一個主動接續品牌為 Wizard Games。Wizard Games 已於第八批完成；第八批完成時的下一個主動接續品牌維持 Aristocrat Gaming，現行游標以本節末尾的接續原則為準。
 

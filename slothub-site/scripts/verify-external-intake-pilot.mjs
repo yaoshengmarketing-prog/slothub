@@ -18,7 +18,7 @@ assert.equal(manifest.eligibleGameCount, 173);
 assert.equal(manifest.existingMatchCount, 11);
 assert.equal(manifest.pendingDetailCount, 0);
 assert.equal(manifest.retryableDetailCount, 0);
-assert.equal(manifest.capturedNeedsReviewCount, 162);
+assert.equal(manifest.capturedNeedsReviewCount, 157);
 assert.equal(manifest.excludedCount, 2);
 assert.equal(manifest.detailCollection.capturedCount, 173);
 assert.equal(manifest.detailCollection.failedCount, 0);
