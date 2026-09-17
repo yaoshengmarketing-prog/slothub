@@ -79,7 +79,7 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['Playson', 'Quickspin', 'Red Rake Gaming', 'Red Tiger Gaming', 'RubyPlay']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`), `${name}: candidate map status not updated`);
 }
-assert.match(map, /Playtech 因缺少可辨識的作品圖保留待補/);
-assert.match(map, /下一個主動接續品牌為 Spinomenal/);
+assert.match(map, /Playtech[^\n]+保留待補[^\n]+不以通用媒體圖代替/);
+assert.match(map, /下一個主動接續品牌為 [^。]+/);
 
 console.log('PASS: horizontal intake batch 6 published five previously unlisted slot Providers and one source-backed game per Provider while preserving missing values, original scales and configuration boundaries.');

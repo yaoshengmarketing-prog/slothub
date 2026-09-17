@@ -21,9 +21,9 @@
 ## 2. 目前基線
 
 - 盤點日期：2026-09-16
-- Published Games：97
-- Published Providers：44
-- 本站 Provider 以現有 44 筆 published Provider content 為準；候選名單不會自動建立公開頁，只有完成逐款驗證的橫向收錄項目才進入網站。
+- Published Games：102
+- Published Providers：49
+- 本站 Provider 以現有 49 筆 published Provider content 為準；候選名單不會自動建立公開頁，只有完成逐款驗證的橫向收錄項目才進入網站。
 
 | Provider | 現有遊戲 | 官方資料入口 | 圖片入口 | 補強優先度 | 主要候選／備選 |
 | --- | ---: | --- | --- | --- | --- |
@@ -162,13 +162,13 @@
 | 40 | Relax Gaming | Relax | FDJ UNITED | 開發、發行、聚合 | Slots、Table、Bingo、Poker | [官方 own-games](https://www.relax-gaming.com/casino/own-games) | SS、H88、官方 | 175（本站完整目錄擷取，2026-09-16） | 已收錄（6） |
 | 41 | RubyPlay | Ruby Play | — | 開發 | Slots | [官方目錄](https://rubyplay.com/games/) | SS、官方 | — | 已收錄（1） |
 | 42 | Slotmill | — | — | 開發 | Slots | [官方目錄](https://www.slotmill.com/) | SS、官方 | — | 已收錄（5） |
-| 43 | Spinomenal | — | — | 開發、發行 | Slots、Lottery、Casual | [官方目錄](https://www.spinomenal.com/games/) | SS、SL、官方 | — | 未收錄 |
+| 43 | Spinomenal | — | — | 開發、發行 | Slots、Lottery、Casual | [官方目錄](https://www.spinomenal.com/games/) | SS、SL、官方 | — | 已收錄（1） |
 | 44 | SPRIBE | Spribe | — | 開發 | Crash、Table、Casual | [官網](https://spribe.co/) | SS、官方 | — | 未收錄 |
-| 45 | Stakelogic | — | SEGA SAMMY CREATION | 開發 | Slots、Live／Hybrid | [官方目錄](https://stakelogic.com/games/) | 官方 | — | 未收錄 |
-| 46 | Swintt | — | Glitnor Group | 開發、發行 | Slots、Table | [官方目錄](https://swintt.com/games/) | SS、官方 | — | 未收錄 |
-| 47 | TaDa Gaming | TaDa | — | 開發 | Slots、Fish、Table、Casual、Crash、Bingo | [官方目錄](https://tadagaming.com/games) | SS、RX、官方 | 60+ certified（Relax 發布稿，2025-05-22；非完整總數） | 未收錄 |
+| 45 | Stakelogic | — | SEGA SAMMY CREATION | 開發 | Slots、Live／Hybrid | [官方目錄](https://stakelogic.com/games/) | 官方 | — | 已收錄（1） |
+| 46 | Swintt | — | Glitnor Group | 開發、發行 | Slots、Table | [官方目錄](https://swintt.com/games/) | SS、官方 | — | 已收錄（1） |
+| 47 | TaDa Gaming | TaDa | — | 開發 | Slots、Fish、Table、Casual、Crash、Bingo | [官方目錄](https://tadagaming.com/games) | SS、RX、官方 | 60+ certified（Relax 發布稿，2025-05-22；非完整總數） | 已收錄（1） |
 | 48 | Thunderkick | — | — | 開發 | Slots | [官方目錄](https://www.thunderkick.com/games/) | SS、SL、官方 | — | 已收錄（1） |
-| 49 | Wazdan | — | — | 開發 | Slots、Table、Casual | [官方目錄](https://wazdan.com/games) | SS、SL、官方 | — | 未收錄 |
+| 49 | Wazdan | — | — | 開發 | Slots、Table、Casual | [官方目錄](https://wazdan.com/games) | SS、SL、官方 | — | 已收錄（1） |
 | 50 | Wizard Games | Pariplay in-house studio（來源關係） | Aristocrat Interactive | 開發 | Slots、Table、Lottery | [官方目錄](https://wizard.games/games/) | SS、官方 | 180+（官網，2026-09-16） | 未收錄 |
 | 51 | Yggdrasil Gaming | Yggdrasil | — | 開發、發行、聚合 | Slots、Table | [官方目錄](https://yggdrasilgaming.com/games) | SS、官方 | — | 已收錄（3） |
 
@@ -420,8 +420,8 @@
 - 第六批由 ADD26 補充首輪確認 9 家，再由排程接續小輪從 EveryMatrix 官方內容名錄確認 Spearhead Studios：累計淨新增候選 **10 家**，均可確認 Slots 作品；Slotopia 保留待查。RAW Group／RAW iGaming 重跑為同一品牌，不重複計數。
 - 全表合計去重後、已確認遊戲品牌：**222 家**。表內保留 OMNIPLAY 的研究 ID 102 供追查，但它不在這個數字內。
 - 全表合計明確提供 Slots：**208 家**。Evolution 與 SPRIBE 仍不計入 Slot 品牌家數；Evolution 旗下具 Slot 品牌身份的 NetEnt、Red Tiger、Big Time Gaming、Nolimit City 各自統計。BRINO Games、EA Gaming、OptimoPlay、Upgames、Winfinity（live）、Galaxy Gaming、On Air Entertainment、Real Dealer Studios、Switch Studios、Playjeux Studios、SidePlay 與 iMoon Games 等保留為非 Slot 或目前未確認有 Slot 的遊戲品牌。
-- Slot Hub 已收錄：**44 家**。
-- 全表合計尚未收錄：**177 家**；其中尚未收錄、且目前可確認有 Slots 的品牌：**164 家**。
+- Slot Hub 已收錄：**49 家**。
+- 全表合計尚未收錄：**172 家**；其中尚未收錄、且目前可確認有 Slots 的品牌：**159 家**。
 - 聚合、分發、展會與監管來源層只用於發現及交叉查找，不額外灌入品牌總數。除了既有 SOFTSWISS、Slotegrator、EveryMatrix、Hub88、Relax 聚合網路與 Games Global，本輪新增使用 SBC 官方展商內容、Bragg studio 網路、Light & Wonder partner roadmap 與 PAGCOR 核准資料。Relax 同時是開發品牌，所以只在品牌清單計數一次。
 - 只有 3 家在本輪取得可明確引用的完整目錄／作品集數量，另有 TaDa Gaming 的 60+ certified 子集合；其餘保持空白。這不代表沒有遊戲，只代表目前沒有取得可安全當作完整總數的公開值。
 
@@ -528,7 +528,7 @@
 
 `TOTAL_SLOT_CAPABLE_BRAND_COUNT: 208`
 
-`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 164`
+`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 159`
 
 `REMAINING_RESEARCH_LEAD_COUNT: 6`
 
@@ -562,4 +562,4 @@ Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片
 | 12 | NetEnt | 5 | https://netent.com/games | 舊作資料入口分散；逐款確認可用頁後再處理 |
 | 13 | Hacksaw Gaming | 6 | https://www.hacksawgaming.com/games | 現有覆蓋最厚，仍可由 Games／Client Hub 接續 |
 
-接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 隊列第六批已完成 Playson、Quickspin、Red Rake Gaming、Red Tiger Gaming 與 RubyPlay。Playtech 因缺少可辨識的作品圖保留待補，下一個主動接續品牌為 Spinomenal。每週廠商挖掘游標仍為 Leander Games，三條隊列彼此不覆蓋。
+接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 隊列第七批已完成 Spinomenal、Stakelogic、Swintt、TaDa Gaming 與 Wazdan。SPRIBE 目前的確認類型為 Crash／Table／Casual，不計入本輪老虎機橫向收錄；Playtech 因缺少可辨識的作品圖持續保留待補，下一個主動接續品牌為 Wizard Games。每週廠商挖掘游標仍為 Leander Games，三條隊列彼此不覆蓋。

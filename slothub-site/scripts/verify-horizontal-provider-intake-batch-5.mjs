@@ -82,6 +82,6 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['IGT PlayDigital', 'Kalamba Games', 'Light & Wonder', 'Nolimit City', 'Peter & Sons']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`), `${name}: candidate map status not updated`);
 }
-assert.match(map, /橫向未收錄 Provider 隊列第六批已完成/, 'candidate map must preserve progress beyond batch 5');
+assert.match(map, /橫向未收錄 Provider 隊列第.+批已完成/, 'candidate map must preserve progress beyond batch 5');
 
 console.log('PASS: horizontal intake batch 5 published five previously unlisted slot Providers and one source-backed game per Provider while preserving missing values, original scales and source conflicts.');
