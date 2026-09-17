@@ -21,7 +21,7 @@
 ## 2. 目前基線
 
 - 盤點日期：2026-09-16
-- Published Games：72
+- Published Games：77
 - Published Providers：24
 - 本站 Provider 以現有 24 筆 published Provider content 為準；候選名單不會自動建立公開頁，只有完成逐款驗證的橫向收錄項目才進入網站。
 
@@ -489,7 +489,7 @@
 
 `CURRENT_SCOPE: 廠商盤點與分類`
 
-`CURRENT_GAME_COUNT: 72`
+`CURRENT_GAME_COUNT: 77`
 
 `CURRENT_PROVIDER_COUNT: 24`
 
@@ -529,7 +529,7 @@
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
-Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble 已由同一排程流程完成補查、匯入與發布準備。橫向收錄第一、二批合計完成 10 家新 Provider 各一款，網站目前為 72 款 published Game、24 家 published Provider。後續沿用本文件，不另建平行管理系統。
+Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble 與 2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll 已由同一排程流程完成核對與匯入。橫向收錄第一、二批合計完成 10 家新 Provider 各一款，網站目前為 77 款 published Game、24 家 published Provider。後續沿用本文件，不另建平行管理系統。
 
 | 順序 | Provider | 目前收錄 | 官方目錄／主要入口 | 接續理由 |
 | ---: | --- | ---: | --- | --- |
