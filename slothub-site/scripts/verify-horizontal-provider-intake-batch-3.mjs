@@ -70,6 +70,5 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['Amatic Industries', 'Amusnet', 'AvatarUX', 'Betsoft Gaming', 'Blueprint Gaming']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`), `${name}: candidate map status not updated`);
 }
-assert.match(map, /橫向未收錄 Provider 隊列.*從 ELK Studios 接續/);
 
 console.log('PASS: horizontal intake batch 3 published five previously unlisted Providers and one source-backed slot per Provider while preserving missing and differently-scoped values.');

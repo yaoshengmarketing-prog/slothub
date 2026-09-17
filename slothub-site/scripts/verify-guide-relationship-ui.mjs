@@ -152,7 +152,7 @@ const gameDirectories = (await readdir(new URL('games/', root), { withFileTypes:
   .filter((entry) => entry.isDirectory())
   .map((entry) => entry.name)
   .sort();
-assert.equal(gameDirectories.length, 82, 'Game detail knowledge presentation must cover all 82 published Games');
+assert.equal(gameDirectories.length, 87, 'Game detail knowledge presentation must cover all 87 published Games');
 
 const renderedKnowledge = [];
 for (const slug of gameDirectories) {
@@ -165,26 +165,26 @@ for (const slug of gameDirectories) {
 
 const directItems = renderedKnowledge.filter((item) => item.placement !== 'feature-overflow');
 const overflowItems = renderedKnowledge.filter((item) => item.placement === 'feature-overflow');
-assert.equal(renderedKnowledge.length, 415, 'Expected all 415 unique Game → Guide relationships to remain visible');
-assert.equal(directItems.length, 407, 'Expected 407 relationships without expansion');
+assert.equal(renderedKnowledge.length, 435, 'Expected all 435 unique Game → Guide relationships to remain visible');
+assert.equal(directItems.length, 427, 'Expected 427 relationships without expansion');
 assert.equal(overflowItems.length, 8, 'Expected eight relationships in the overflow area');
 
 const countPlacement = (placement) => renderedKnowledge.filter((item) => item.placement === placement).length;
 const countGuide = (guideSlug) => renderedKnowledge.filter((item) => item.guideSlug === guideSlug).length;
-assert.equal(countPlacement('core-mechanism'), 73, 'Mechanism contextual Guide count changed');
-assert.equal(countPlacement('core-rtp') + countPlacement('full-rtp-variants'), 52, 'RTP contextual Guide count changed');
-assert.equal(countPlacement('core-volatility') + countPlacement('full-volatility'), 55, 'Volatility contextual Guide count changed');
-assert.equal(countPlacement('core-max-win'), 55, 'Max Win contextual Guide count changed');
-assert.equal(countGuide('slot-multiplier-explained'), 56, 'Multiplier Feature Guide count changed');
+assert.equal(countPlacement('core-mechanism'), 78, 'Mechanism contextual Guide count changed');
+assert.equal(countPlacement('core-rtp') + countPlacement('full-rtp-variants'), 54, 'RTP contextual Guide count changed');
+assert.equal(countPlacement('core-volatility') + countPlacement('full-volatility'), 58, 'Volatility contextual Guide count changed');
+assert.equal(countPlacement('core-max-win'), 56, 'Max Win contextual Guide count changed');
+assert.equal(countGuide('slot-multiplier-explained'), 57, 'Multiplier Feature Guide count changed');
 assert.equal(countGuide('slot-cascading-tumble-avalanche-explained'), 24, 'Cascading Feature Guide count changed');
-assert.equal(countGuide(bonusBuyOwnerSlug), 26, 'Bonus Buy Feature Guide count changed');
+assert.equal(countGuide(bonusBuyOwnerSlug), 29, 'Bonus Buy Feature Guide count changed');
 assert.equal(countGuide(bonusBuyGuidePublished ? 'slot-terms-glossary' : 'slot-bonus-buy-explained'), 0, 'Inactive Bonus Buy owner appeared in Game detail');
-assert.equal(countGuide('slot-symbols-and-features'), 74, 'Symbols Feature Guide count changed');
-assert.equal(countGuide('slot-ways-to-win-explained'), 16, 'Ways to Win Guide reverse relationship count changed');
-assert.equal(countGuide('slot-payout-mechanisms-explained'), 57, 'Payout overview relationship count must exclude the sixteen Ways Games');
+assert.equal(countGuide('slot-symbols-and-features'), 79, 'Symbols Feature Guide count changed');
+assert.equal(countGuide('slot-ways-to-win-explained'), 18, 'Ways to Win Guide reverse relationship count changed');
+assert.equal(countGuide('slot-payout-mechanisms-explained'), 60, 'Payout overview relationship count must exclude the eighteen Ways Games');
 assert.ok(!renderedKnowledge.some((item) => item.gameSlug === 'super-ace' && item.guideSlug === 'slot-cascading-tumble-avalanche-explained'), 'Super Ace regained an invalid Cascading relationship');
 
-for (const slug of ['ancient-tumble', 'bonanza', 'dragons-heirs', 'gates-of-olympus-1000', 'jammin-jars', 'storm-of-seth-2-awakening', 'sun-wu-kong']) {
+for (const slug of ['ancient-tumble', 'atlantis-crush', 'bonanza', 'dragons-heirs', 'gates-of-olympus-1000', 'jammin-jars', 'storm-of-seth-2-awakening', 'sun-wu-kong']) {
   const pageItems = overflowItems.filter((item) => item.gameSlug === slug);
   assert.equal(pageItems.length, 1, `${slug}: expected one current overflow Guide`);
   const html = await load(`games/${slug}/index.html`);

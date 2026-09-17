@@ -11,7 +11,7 @@ const relationships=createGuideRelationshipIndex(guides,games);
 const searchItems=buildPublishedSearchCatalog(games,providerEntries,guides,relationshipSearchItems(relationships));
 const intentRoutes = [
   { index: '01', title: '我知道遊戲名稱', description: '搜尋繁中名稱、原文名稱、別名或廠商。', href: '/search/', action: '開啟搜尋' },
-  { index: '02', title: '我只記得遊戲廠商', description: '從 29 家已收錄廠商找到旗下遊戲。', href: '/providers/', action: '查看遊戲廠商' },
+  { index: '02', title: '我只記得遊戲廠商', description: '從 34 家已收錄廠商找到旗下遊戲。', href: '/providers/', action: '查看遊戲廠商' },
   { index: '03', title: '我記得功能或玩法', description: '先分清玩法、Feature 與資料，再用條件探索。', href: '/slots/', action: '理解玩法與資料' },
   { index: '04', title: '我想找類似玩法', description: '先選一款參考遊戲，再查看有明確共同點的玩法相近項目。', href: '/games/', action: '先選一款遊戲' },
 ] as const;
