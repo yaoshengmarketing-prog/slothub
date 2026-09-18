@@ -582,4 +582,4 @@ Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片
 | 12 | NetEnt | 5 | https://netent.com/games | 舊作資料入口分散；逐款確認可用頁後再處理 |
 | 13 | Hacksaw Gaming | 6 | https://www.hacksawgaming.com/games | 現有覆蓋最厚，仍可由 Games／Client Hub 接續 |
 
-接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向第十三批已完成 DYG、e-gaming、Kendoo、Million Games 與 Pateplay。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個主動接續品牌為 RichyPlay。每週廠商挖掘游標已改為新的展會／合作名錄線索，三條隊列彼此不覆蓋。
+接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 隊列第十三批已完成 DYG、e-gaming、Kendoo、Million Games 與 Pateplay。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個主動接續品牌為 RichyPlay。每週廠商挖掘游標已改為新的展會／合作名錄線索，三條隊列彼此不覆蓋。
