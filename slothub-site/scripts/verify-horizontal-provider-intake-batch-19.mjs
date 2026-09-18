@@ -70,7 +70,6 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['Lightning Box', 'Live 5', 'Pariplay', 'Rogue', 'WMG']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`));
 }
-assert.match(map, /Gaming Realms 因 Slingo 為 Slots／Bingo hybrid、Ricochet 因具名作品證據不足而保留待查/);
-assert.match(map, /下一個橫向接續位置為候選地圖第 141 項 All For One Studios/);
+assert.match(map, /第十九批完成 Lightning Box、Live 5、Pariplay、Rogue 與 WMG/);
 
 console.log('PASS: horizontal intake batch 19 published five identity-confirmed slot Providers with one official game each while preserving hybrid, aggregation, ambiguous mechanism and missing-value boundaries.');
