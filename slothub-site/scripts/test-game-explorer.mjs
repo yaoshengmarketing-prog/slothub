@@ -24,7 +24,7 @@ const records = readdirSync(gamesDirectory)
     };
   });
 const games = records.filter((game) => game.status === 'published');
-assert.equal(games.length, 182, 'Explorer fixture must cover all 182 published games');
+assert.equal(games.length, 187, 'Explorer fixture must cover all 187 published games');
 
 const state = (patch = {}) => ({ ...emptyExplorerState(), ...patch });
 assert.equal(filterAndSortGames(games, state({ provider: 'pragmatic-play' })).length, 5);
@@ -32,10 +32,10 @@ assert.equal(filterAndSortGames(games, state({ mechanism: 'pay-anywhere' })).len
 assert.equal(filterAndSortGames(games, state({ provider: 'relax-gaming' })).length, 16);
 assert.equal(filterAndSortGames(games, state({ mechanism: 'megaways' })).length, 8);
 const cascadingGames = filterAndSortGames(games, state({ features: ['cascading'] }));
-assert.equal(cascadingGames.length, 30, 'Cascading Explorer must return exactly 30 structurally tagged Games');
+assert.equal(cascadingGames.length, 31, 'Cascading Explorer must return exactly 31 structurally tagged Games');
 assert.ok(!cascadingGames.some((game) => game.slug === 'super-ace'), 'Super Ace must not appear in the Cascading Explorer result');
 assert.equal(serializeExplorerState(state({ features: ['cascading'] })), 'features=cascading', 'Cascading Explorer must keep the exact structured URL query');
-assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild'] })).length, 69, 'Features must use AND');
+assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild'] })).length, 72, 'Features must use AND');
 assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild', 'scatter'] })).length, 25, 'Three Features must use AND');
 assert.equal(filterAndSortGames(games, state({ provider: 'pg-soft', mechanism: 'ways-to-win', features: ['wild', 'cascading'], rtpMin: 96.5 })).length, 2, 'Cross-facet conditions must use AND');
 
@@ -87,7 +87,7 @@ const zeroState = state({ mechanism: 'megaways', features: ['symbol-splitting'] 
 assert.equal(filterAndSortGames(games, zeroState).length, 0, 'Recovery fixture must start from a truthful zero-result state');
 const recoveryOptions = zeroResultRecoveryOptions(games, zeroState);
 assert.deepEqual(recoveryOptions.map(({ field, value, count }) => ({ field, value, count })), [
-  { field: 'mechanism', value: 'megaways', count: 2 },
+  { field: 'mechanism', value: 'megaways', count: 3 },
   { field: 'feature', value: 'symbol-splitting', count: 8 },
 ], 'Recovery options must remove exactly one condition and report the resulting real count');
 assert.ok(recoveryOptions.every((option) => filterAndSortGames(games, option.state).length === option.count && option.count > 0), 'Every recovery option must lead to its reported non-zero result');
