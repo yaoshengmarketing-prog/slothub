@@ -70,6 +70,6 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['Reflex Gaming', 'Sega Sammy Creation', 'Ainsworth', 'Bang Bang Games', 'Crucible Gaming']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`));
 }
-assert.match(map, /下一個橫向接續位置為候選地圖第 129 項 Digital Gaming Corp/);
+assert.match(map, /第十七批完成 Reflex Gaming、Sega Sammy Creation、Ainsworth、Bang Bang Games 與 Crucible Gaming/);
 
 console.log('PASS: horizontal intake batch 17 published five identity-confirmed slot Providers with one first-party game each while preserving RTP versions, dynamic paylines and unsupported values without schema or taxonomy changes.');

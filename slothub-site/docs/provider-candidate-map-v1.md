@@ -280,12 +280,12 @@
 | 126 | Ainsworth | 獨立品牌 | 開發 | Slots、Land-based／Online | [Ainsworth 官方作品目錄](https://www.agtslots.com/us/games) | AGT26、LNW26 | 已收錄（1） |
 | 127 | Bang Bang Games | L&W OpenGaming partner | 開發 | Slots | [L&W 官方 studio 頁](https://igaming.lnw.com/studios/bang-bang-games/) | LNW26 | 已收錄（1） |
 | 128 | Crucible Gaming | L&W OpenGaming partner | 開發 | Slots／Casino content | [L&W 官方 studio 頁](https://igaming.lnw.com/studios/crucible-gaming/) | LNW26 | 已收錄（1） |
-| 129 | Digital Gaming Corp | L&W OpenGaming partner | 開發 | Slots、Jackpot、Table | [L&W partner roadmap](https://igaming.lnw.com/partner-roadmaps/?date=available) | LNW26 | 未收錄 |
-| 130 | DreamSpin | L&W OpenGaming partner | 開發 | Slots | [L&W partner roadmap](https://igaming.lnw.com/partner-roadmaps/?date=available) | LNW26 | 未收錄 |
-| 131 | Everi | L&W OpenGaming partner | 開發 | Slots、Land-based／Online | [L&W partner roadmap](https://igaming.lnw.com/partner-roadmaps/?orderby=network-access) | LNW26 | 未收錄 |
-| 132 | Fantasma Games | L&W OpenGaming partner | 開發 | Slots | [L&W studio 頁](https://igaming.lnw.com/studios/fantasma/) | LNW26 | 未收錄 |
+| 129 | Digital Gaming Corp | L&W OpenGaming partner | 開發 | Slots、Jackpot、Table | [L&W partner roadmap](https://igaming.lnw.com/partner-roadmaps/?date=available) | LNW26 | 已收錄（1） |
+| 130 | DreamSpin | L&W OpenGaming partner | 開發 | Slots | [L&W partner roadmap](https://igaming.lnw.com/partner-roadmaps/?date=available) | LNW26 | 已收錄（1） |
+| 131 | Everi | L&W OpenGaming partner | 開發 | Slots、Land-based／Online | [L&W partner roadmap](https://igaming.lnw.com/partner-roadmaps/?orderby=network-access) | LNW26 | 已收錄（1） |
+| 132 | Fantasma Games | L&W OpenGaming partner | 開發 | Slots | [L&W studio 頁](https://igaming.lnw.com/studios/fantasma/) | LNW26 | 已收錄（1） |
 | 133 | Gaming Realms | L&W OpenGaming partner | 開發、授權 | Slingo（Slots／Bingo hybrid） | [L&W studio 頁](https://igaming.lnw.com/studios/gaming-realms/) | LNW26 | 未收錄 |
-| 134 | HITSqwad | L&W OpenGaming partner | 開發 | Slots、Jackpot | [L&W partner roadmap](https://igaming.lnw.com/partner-roadmaps/?orderby=network-access) | LNW26 | 未收錄 |
+| 134 | HITSqwad | L&W OpenGaming partner | 開發 | Slots、Jackpot | [L&W partner roadmap](https://igaming.lnw.com/partner-roadmaps/?orderby=network-access) | LNW26 | 已收錄（1） |
 | 135 | Lightning Box | L&W OpenGaming partner | 開發 | Slots | [L&W studio 頁](https://igaming.lnw.com/studios/lightning-box-2/) | LNW26 | 未收錄 |
 | 136 | Live 5 | L&W OpenGaming partner | 開發 | Slots | [L&W partner roadmap](https://igaming.lnw.com/partner-roadmaps/?date=available) | LNW26 | 未收錄 |
 | 137 | Pariplay | Aristocrat Interactive；同時經 L&W 分發 | 開發、聚合 | Slots、Casino | [L&W partner roadmap](https://igaming.lnw.com/partner-roadmaps/?orderby=network-access) | LNW26；Fusion 聚合內容不得當成 Pariplay 自製 | 未收錄 |
@@ -520,9 +520,9 @@
 
 `CURRENT_SCOPE: 廠商盤點與分類`
 
-`CURRENT_GAME_COUNT: 157`
+`CURRENT_GAME_COUNT: 162`
 
-`CURRENT_PROVIDER_COUNT: 99`
+`CURRENT_PROVIDER_COUNT: 104`
 
 `FIRST_BATCH_CANDIDATE_BRAND_COUNT: 51`
 
@@ -546,7 +546,7 @@
 
 `TOTAL_SLOT_CAPABLE_BRAND_COUNT: 213`
 
-`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 134`
+`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 129`
 
 `REMAINING_RESEARCH_LEAD_COUNT: 0`
 
@@ -562,7 +562,7 @@
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
-Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至十七批合計完成 85 家新 Provider 各一款，網站目前為 157 款 published Game、99 家 published Provider。第十七批完成 Reflex Gaming／Redbeard’s Ruby – Fortune Map、Sega Sammy Creation／Jolly Leprechaun、Ainsworth／Eagle Bucks、Bang Bang Games／Super Cash Drop Deluxe 與 Crucible Gaming／Book of Sevens；不同 RTP 版本、動態 paylines 與原廠功能詞分開保存，來源未公開的數值維持缺值。後續沿用本文件，不另建平行管理系統。
+Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至十八批合計完成 90 家新 Provider 各一款，網站目前為 162 款 published Game、104 家 published Provider。第十八批完成 Digital Gaming Corp／9 Masks of Fire、DreamSpin／Buzz Thrills、Everi／Double Ruby、Fantasma Games／Prometheus Titan of Fire 與 HITSqwad／Ragnar: First Strike；官方頁未提供的數值維持缺值，來源內 RTP 差異與未標示投注倍數的 Top Prize 保留原始邊界。後續沿用本文件，不另建平行管理系統。
 
 第七批接續紀錄：SPRIBE 目前的確認類型為 Crash／Table／Casual，因此未納入老虎機橫向收錄；Playtech 因缺少可辨識的作品圖持續保留待補；該批完成時的下一個主動接續品牌為 Wizard Games。Wizard Games 已於第八批完成；第八批完成時的下一個主動接續品牌維持 Aristocrat Gaming，現行游標以本節末尾的接續原則為準。
 
@@ -582,4 +582,4 @@ Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片
 | 12 | NetEnt | 5 | https://netent.com/games | 舊作資料入口分散；逐款確認可用頁後再處理 |
 | 13 | Hacksaw Gaming | 6 | https://www.hacksawgaming.com/games | 現有覆蓋最厚，仍可由 Games／Client Hub 接續 |
 
-接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 的這輪 20 家已由第十二至十五批完成，最後一批為 Atomic Slot Lab、Indigo Magic、Wild Streak Gaming、Spin Games 與 ORYX Gaming。第十六批自候選地圖接續並完成五家；Win Fast 因缺少可直接歸屬的具名作品證據而保留待補，Galaxy Gaming 因目前只確認 Table games 而跳過。第十七批完成 Reflex Gaming、Sega Sammy Creation、Ainsworth、Bang Bang Games 與 Crucible Gaming，各以第一方作品頁建立一款遊戲。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個橫向接續位置為候選地圖第 129 項 Digital Gaming Corp；每週廠商挖掘游標維持新的展會／合作名錄線索，三條隊列彼此不覆蓋。
+接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 的這輪 20 家已由第十二至十五批完成，最後一批為 Atomic Slot Lab、Indigo Magic、Wild Streak Gaming、Spin Games 與 ORYX Gaming。第十六批自候選地圖接續並完成五家；Win Fast 因缺少可直接歸屬的具名作品證據而保留待補，Galaxy Gaming 因目前只確認 Table games 而跳過。第十七批完成 Reflex Gaming、Sega Sammy Creation、Ainsworth、Bang Bang Games 與 Crucible Gaming。第十八批完成 Digital Gaming Corp、DreamSpin、Everi、Fantasma Games 與 HITSqwad；Gaming Realms 因產品為 Slingo（Slots／Bingo hybrid）而保留下一批獨立判讀，不用來取代純 Slots 候選。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個橫向接續位置為候選地圖第 133 項 Gaming Realms；每週廠商挖掘游標維持新的展會／合作名錄線索，三條隊列彼此不覆蓋。
