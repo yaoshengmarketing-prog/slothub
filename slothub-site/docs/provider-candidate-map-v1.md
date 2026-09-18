@@ -4,7 +4,7 @@
 >
 > 建立日期：2026-09-03
 >
-> 本輪更新：2026-09-19（橫向收錄第二十批完成 ALL FOR ONE Studios、Foxium、Just For The Win Studios、Northern Lights Gaming、Snowborn Games 各一款；Almond Gaming、Deep Stake Games 因具名作品資料不足，Nailed It! Games 因缺少可直接歸屬的官方遊戲圖片而保留待查；候選總數仍為 222 家）
+> 本輪更新：2026-09-19（橫向收錄第二十一批完成 Wishbone、Fortune Factory Studios、Gameburger Studios、Triple Edge Studios、SpinPlay Games 各一款；五款均有 Games Global 具名發行資料與可直接歸屬的官方圖片，未取得的 RTP 或統一玩法欄位維持缺值；候選總數仍為 222 家）
 >
 > 用途：作為外部遊戲資料收集的 Provider 骨架與去重對照。這不是完整產業名錄，不授權一次建立所有 Provider 公開頁，也不改變 Schema、taxonomy、產品功能或既有發布標準。
 
@@ -303,11 +303,11 @@
 | 149 | Real Dealer Studios | Games Global exclusive studio | 開發 | Live／Cinematic table games | [Games Global studios](https://www.gamesglobal.com/Studios) | GG、官方；未確認 Slots，不列入 Slot 家數 | 未收錄 |
 | 150 | Snowborn Games | Games Global exclusive studio | 開發 | Slots | [Games Global studios](https://www.gamesglobal.com/Studios) | GG、官方 | 已收錄（1） |
 | 151 | Switch Studios | Games Global exclusive studio | 開發 | Table games | [Games Global studios](https://www.gamesglobal.com/Studios) | GG、官方；未確認 Slots，不列入 Slot 家數 | 未收錄 |
-| 152 | Wishbone | Games Global exclusive studio | 開發 | Slots | [Games Global studios](https://www.gamesglobal.com/Studios) | GG、官方 | 未收錄 |
-| 153 | Fortune Factory Studios | Games Global portfolio studio | 開發 | Slots | [Games Global products](https://www.gamesglobal.com/Products) | GG、官方作品署名 | 未收錄 |
-| 154 | Gameburger Studios | Games Global portfolio studio | 開發 | Slots | [Games Global products](https://www.gamesglobal.com/Products) | GG、官方作品署名 | 未收錄 |
-| 155 | Triple Edge Studios | Games Global portfolio studio | 開發 | Slots | [Games Global products](https://www.gamesglobal.com/Products) | GG、官方作品署名 | 未收錄 |
-| 156 | SpinPlay Games | Games Global portfolio studio | 開發 | Slots | [Games Global products](https://www.gamesglobal.com/Products) | GG、官方作品署名 | 未收錄 |
+| 152 | Wishbone | Games Global exclusive studio | 開發 | Slots | [Games Global studios](https://www.gamesglobal.com/Studios) | GG、官方 | 已收錄（1） |
+| 153 | Fortune Factory Studios | Games Global portfolio studio | 開發 | Slots | [Games Global products](https://www.gamesglobal.com/Products) | GG、官方作品署名 | 已收錄（1） |
+| 154 | Gameburger Studios | Games Global portfolio studio | 開發 | Slots | [Games Global products](https://www.gamesglobal.com/Products) | GG、官方作品署名 | 已收錄（1） |
+| 155 | Triple Edge Studios | Games Global portfolio studio | 開發 | Slots | [Games Global products](https://www.gamesglobal.com/Products) | GG、官方作品署名 | 已收錄（1） |
+| 156 | SpinPlay Games | Games Global portfolio studio | 開發 | Slots | [Games Global products](https://www.gamesglobal.com/Products) | GG、官方作品署名 | 已收錄（1） |
 | 157 | Aurum Signature Studios | Games Global portfolio studio | 開發 | Slots | [Games Global products](https://www.gamesglobal.com/Products) | GG、官方作品署名 | 未收錄 |
 | 158 | DELULU Gaming | Veritas Apex Ltd. | 開發 | Slots、Instant | [官方作品入口](https://www.delulugaming.com/) | SBC26、官方 | 未收錄 |
 | 159 | EnjoyGaming | EnjoyGaming Ltd. | 開發 | Slots、Crash、Multiplayer | [官方 Slots 目錄](https://enjoygaming.com/slot-games) | SBC26、官方 | 未收錄 |
@@ -562,7 +562,7 @@
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
-Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至二十批合計完成 100 家新 Provider 各一款，網站目前為 172 款 published Game、114 家 published Provider。第二十批完成 ALL FOR ONE Studios／Kings of Crystals II、Foxium／Rome Fight for Gold Eternal Empire、Just For The Win Studios／Trojan Kingdom、Northern Lights Gaming／Bison Moon 與 Snowborn Games／Pile’Em Up；官方頁未提供的 RTP 或統一玩法基準維持缺值。後續沿用本文件，不另建平行管理系統。
+Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至二十一批合計完成 105 家新 Provider 各一款，網站目前為 177 款 published Game、119 家 published Provider。第二十一批完成 Wishbone／Kingfisher、Fortune Factory Studios／UFC Gold Blitz Extreme、Gameburger Studios／Carnaval Drums、Triple Edge Studios／Goal Strike Rising Rewards 與 SpinPlay Games／3 Lucky Rainbows Action Boost；官方頁未提供的 RTP 或統一玩法基準維持缺值。後續沿用本文件，不另建平行管理系統。
 
 第七批接續紀錄：SPRIBE 目前的確認類型為 Crash／Table／Casual，因此未納入老虎機橫向收錄；Playtech 因缺少可辨識的作品圖持續保留待補；該批完成時的下一個主動接續品牌為 Wizard Games。Wizard Games 已於第八批完成；第八批完成時的下一個主動接續品牌維持 Aristocrat Gaming，現行游標以本節末尾的接續原則為準。
 
@@ -582,4 +582,4 @@ Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片
 | 12 | NetEnt | 5 | https://netent.com/games | 舊作資料入口分散；逐款確認可用頁後再處理 |
 | 13 | Hacksaw Gaming | 6 | https://www.hacksawgaming.com/games | 現有覆蓋最厚，仍可由 Games／Client Hub 接續 |
 
-接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 的這輪 20 家已由第十二至十五批完成，最後一批為 Atomic Slot Lab、Indigo Magic、Wild Streak Gaming、Spin Games 與 ORYX Gaming。第十六批自候選地圖接續並完成五家；Win Fast 因缺少可直接歸屬的具名作品證據而保留待補，Galaxy Gaming 因目前只確認 Table games 而跳過。第十七批完成 Reflex Gaming、Sega Sammy Creation、Ainsworth、Bang Bang Games 與 Crucible Gaming。第十八批完成 Digital Gaming Corp、DreamSpin、Everi、Fantasma Games 與 HITSqwad。第十九批完成 Lightning Box、Live 5、Pariplay、Rogue 與 WMG。第二十批完成 ALL FOR ONE Studios、Foxium、Just For The Win Studios、Northern Lights Gaming 與 Snowborn Games；Almond Gaming、Deep Stake Games 與 Nailed It! Games 的待補原因已保存。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個橫向接續位置為候選地圖第 152 項 Wishbone；每週廠商挖掘游標維持新的展會／合作名錄線索，三條隊列彼此不覆蓋。
+接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 的這輪 20 家已由第十二至十五批完成，最後一批為 Atomic Slot Lab、Indigo Magic、Wild Streak Gaming、Spin Games 與 ORYX Gaming。第十六批自候選地圖接續並完成五家；Win Fast 因缺少可直接歸屬的具名作品證據而保留待補，Galaxy Gaming 因目前只確認 Table games 而跳過。第十七批完成 Reflex Gaming、Sega Sammy Creation、Ainsworth、Bang Bang Games 與 Crucible Gaming。第十八批完成 Digital Gaming Corp、DreamSpin、Everi、Fantasma Games 與 HITSqwad。第十九批完成 Lightning Box、Live 5、Pariplay、Rogue 與 WMG。第二十批完成 ALL FOR ONE Studios、Foxium、Just For The Win Studios、Northern Lights Gaming 與 Snowborn Games；Almond Gaming、Deep Stake Games 與 Nailed It! Games 的待補原因已保存。第二十一批完成 Wishbone、Fortune Factory Studios、Gameburger Studios、Triple Edge Studios 與 SpinPlay Games。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個橫向接續位置為候選地圖第 157 項 Aurum Signature Studios；每週廠商挖掘游標維持新的展會／合作名錄線索，三條隊列彼此不覆蓋。

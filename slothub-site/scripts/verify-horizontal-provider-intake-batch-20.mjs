@@ -75,7 +75,6 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['All For One Studios', 'Foxium', 'Just For The Win Studios', 'Northern Lights Gaming', 'Snowborn Games']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`));
 }
-assert.match(map, /Almond Gaming、Deep Stake Games 與 Nailed It! Games 的待補原因已保存/);
-assert.match(map, /下一個橫向接續位置為候選地圖第 152 項 Wishbone/);
+assert.match(map, /第二十批完成 ALL FOR ONE Studios、Foxium、Just For The Win Studios、Northern Lights Gaming 與 Snowborn Games/);
 
 console.log('PASS: horizontal intake batch 20 published five identity-confirmed slot studios with one official game each while preserving missing RTP, source boundaries and deferred image evidence.');
