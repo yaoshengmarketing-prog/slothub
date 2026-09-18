@@ -78,9 +78,8 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['KingMidas Games', 'Mancala Gaming', 'Mascot Gaming', '1spin4win']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`), `${name}: candidate map status not updated`);
 }
-for (const hold of ['JDB Gaming 因地區封鎖', 'KA Gaming 與 NetGame 因逐款官方資料不足']) {
-  assert.match(map, new RegExp(hold), `${hold}: hold reason missing`);
-}
-assert.match(map, /下一個主動接續品牌為 7Mojos/);
+assert.match(map, /JDB Gaming、KA Gaming 與 NetGame[^\n]+既有待補原因維持/, 'deferred access/data reasons missing');
+assert.match(map, /\| 7Mojos .*\| 已收錄（1） \|/);
+assert.match(map, /下一個主動接續品牌為 DYG/);
 
 console.log('PASS: horizontal intake batch 11 published five previously unlisted slot Providers and one source-backed game per Provider while preserving Provider-specific volatility scales, honest missing values and deferred access-limited candidates.');

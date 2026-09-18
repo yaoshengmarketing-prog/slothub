@@ -72,6 +72,6 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['1X2gaming', 'Iron Dog Studio', 'Prospect Gaming', '3 Oaks Gaming', '4ThePlayer']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`), `${name}: candidate map status not updated`);
 }
-assert.match(map, /AD LUNAM.*待補老虎機作品證據/);
+assert.match(map, /AD LUNAM.*身分已清，不計入 Slot 品牌家數/);
 
 console.log('PASS: horizontal intake batch 2 published five traceable Providers and one verified slot per Provider while preserving conflicts and missing values.');

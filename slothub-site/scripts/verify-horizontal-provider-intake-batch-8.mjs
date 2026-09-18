@@ -84,8 +84,7 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['Wizard Games', '7777 Gaming', 'Air Dice', 'Apollo Games', 'Belatra Games']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`), `${name}: candidate map status not updated`);
 }
-assert.match(map, /AGS[^\n]+線上作品與版本範圍/);
-assert.match(map, /Amigo Gaming[^\n]+作品目錄有存取門檻/);
-assert.match(map, /下一個主動接續品牌維持 Aristocrat Gaming/);
+assert.match(map, /AGS、Amigo Gaming[^\n]+既有待補原因維持/);
+assert.match(map, /下一個主動接續品牌為 DYG/);
 
 console.log('PASS: horizontal intake batch 8 published five previously unlisted slot Providers and one source-backed game per Provider while preserving RTP conflicts, ranges, original scales and Max Win boundaries.');

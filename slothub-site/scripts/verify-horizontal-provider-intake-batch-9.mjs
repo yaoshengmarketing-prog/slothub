@@ -80,8 +80,6 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['Aristocrat Gaming', 'Aruze Gaming Global', 'BF Games', 'Bluberi', 'CT Gaming']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`), `${name}: candidate map status not updated`);
 }
-assert.match(map, /AGS[^\n]+線上作品與版本範圍/);
-assert.match(map, /Amigo Gaming[^\n]+作品目錄有存取門檻/);
-assert.match(map, /第九批已完成 Aristocrat Gaming、Aruze Gaming Global、BF Games、Bluberi 與 CT Gaming/);
+assert.match(map, /AGS、Amigo Gaming[^\n]+既有待補原因維持/);
 
 console.log('PASS: horizontal intake batch 9 published five previously unlisted slot Providers and one source-backed game per Provider while preserving land-based product boundaries, RTP variants, original volatility scales and unstated Max Win bases.');

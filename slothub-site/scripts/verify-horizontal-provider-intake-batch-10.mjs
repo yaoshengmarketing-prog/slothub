@@ -77,6 +77,5 @@ for (const name of ['CT Interactive', 'FA CHAI Gaming', 'GameArt', 'Gamzix', 'In
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`), `${name}: candidate map status not updated`);
 }
 assert.match(map, /Galaxsys[^\n]+官方作品圖受存取限制/);
-assert.match(map, /第十批已完成 CT Interactive、FA CHAI Gaming、GameArt、Gamzix 與 Inspired Entertainment/);
 
 console.log('PASS: horizontal intake batch 10 published five previously unlisted slot Providers and one source-backed game per Provider while preserving original RTP variants, unsupported Max Win bases and the Galaxsys image-access hold.');

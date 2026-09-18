@@ -128,7 +128,7 @@
 | 1 | 1X2gaming | 1X2 Gaming | 1X2 Network | 開發 | Slots、Virtual Sports、Lottery | [官網目錄](https://www.1x2network.com/games/) | SS、官方 | — | 已收錄（1） |
 | 2 | Iron Dog Studio | Iron Dog | 1X2 Network | 開發 | Slots、Table、Scratch | [官網目錄](https://www.1x2network.com/games/) | SS、官方 | — | 已收錄（1） |
 | 3 | Prospect Gaming | — | 1X2 Network | 開發 | Slots | [官網目錄](https://www.1x2network.com/games/) | 官方 | — | 已收錄（1） |
-| 4 | AD LUNAM | Ad Lunam | 1X2 Network | 開發 | Crash／Arcade；Slots 待確認 | [官網目錄](https://www.1x2network.com/games/) | 官方 | — | 未收錄；待補老虎機作品證據 |
+| 4 | AD LUNAM | Ad Lunam | 1X2 Network | 開發 | Crash／Arcade／Alternative；目前未確認傳統 Slots | [官方 studio 目錄](https://site.1x2network.com/product-category/ad-lunam/) | 官方 | — | 未收錄；身分已清，不計入 Slot 品牌家數 |
 | 5 | 3 Oaks Gaming | 3 Oaks | — | 發行、聚合 | Slots | [官網目錄](https://3oaks.com/games/) | SS、官方 | — | 已收錄（1） |
 | 6 | 4ThePlayer | 4ThePlayer.com | — | 開發 | Slots、Fish | [官網目錄](https://www.4theplayer.com/games/) | SS、官方 | — | 已收錄（1） |
 | 7 | Amatic Industries | Amatic | — | 開發 | Slots、Table | [官網](https://amatic.com/) | SS | — | 已收錄（1） |
@@ -242,18 +242,18 @@
 | # | 遊戲品牌 | 品牌關係 | 角色 | 遊戲類型 | 官網／作品入口 | 發現與複核來源 | 本站 |
 | ---: | --- | --- | --- | --- | --- | --- | --- |
 | 90 | 1spin4win | 獨立品牌 | 開發 | Slots | [官方遊戲目錄](https://www.1spin4win.com/games) | ICE26／ICE27、官方；官網列 200+ games | 已收錄（1） |
-| 91 | 7Mojos | 獨立品牌 | 開發 | Slots、Live、Table | [官方遊戲入口](https://www.7mojos.com/) | ICE26／ICE27、官方 | 未收錄 |
-| 92 | SpinOro／Anakatech | SpinOro 為對外遊戲／商業品牌；Anakatech Holdings 為公司責任主體 | 開發、聚合、平台 | Slots、Scratch、Instant、Table | [SpinOro 自有遊戲目錄](https://www.spinoro.com/provider/spinoro/)、[Anakatech 遊戲目錄](https://www.anakatech.com/games/) | 官網標示 powered by Anakatech，監管資料亦使用 `Anakatech Holdings LTD (SpinOro)`；合併為一個品牌統計單位 | 未收錄 |
-| 93 | ApexWin | WANIN International 支持 | 開發 | Slots、Fishing | [官方品牌頁](https://www.apex-win.com/en-US/About?Culture=en-US) | ICE27、官方；首款 Lucky Fruit Spin 與兩類開發中心可確認 | 未收錄 |
+| 91 | 7Mojos | 獨立品牌 | 開發 | Slots、Live、Table | [官方遊戲入口](https://www.7mojos.com/) | ICE26／ICE27、官方 | 已收錄（1） |
+| 92 | SpinOro／Anakatech | SpinOro 為對外遊戲／商業品牌；Anakatech Holdings 為公司責任主體 | 開發、聚合、平台 | Slots、Scratch、Instant、Table | [SpinOro 自有遊戲目錄](https://www.spinoro.com/provider/spinoro/)、[Anakatech 遊戲目錄](https://www.anakatech.com/games/) | 官網標示 powered by Anakatech，監管資料亦使用 `Anakatech Holdings LTD (SpinOro)`；合併為一個品牌統計單位 | 已收錄（1） |
+| 93 | ApexWin | WANIN International 支持 | 開發 | Slots、Fishing | [官方品牌頁](https://www.apex-win.com/en-US/About?Culture=en-US) | ICE27、官方；首款 Lucky Fruit Spin 與兩類開發中心可確認 | 已收錄（1） |
 | 94 | BRINO Games | 獨立品牌 | 開發、平台 | Live、Table、Card、Virtual | [官方品牌頁](https://www.brinogames.com/about-us) | ICE27、官方；未確認 Slots，不列入 Slot 家數 | 未收錄 |
-| 95 | Bulgames | 與 Alfastreet 為代理合作，不合併 | 開發、製造、發行 | Slots、Land-based、Roulette | [官方遊戲入口](https://bulgames-bg.com/en/) | ICE26／ICE27、官方 | 未收錄 |
-| 96 | CP.GAMES | Astral Games Ltd.（網站法律資訊） | 開發 | Slots、Crash | [官方遊戲目錄](https://b2b.cp.games/games) | ICE27、SBC26、官方；網站列 100+ HTML games | 未收錄 |
+| 95 | Bulgames | 與 Alfastreet 為代理合作，不合併 | 開發、製造、發行 | Slots、Land-based、Roulette | [官方遊戲入口](https://bulgames-bg.com/en/) | ICE26／ICE27、官方 | 已收錄（1） |
+| 96 | CP.GAMES | Astral Games Ltd.（網站法律資訊） | 開發 | Slots、Crash | [官方遊戲目錄](https://b2b.cp.games/games) | ICE27、SBC26、官方；網站列 100+ HTML games | 已收錄（1） |
 | 97 | DYG | 獨立品牌 | 開發 | Slots、Casino | [官方品牌頁](https://www.dyg-games.com/about/) | ICE27、SBC26、官方；品牌稱 300+ casino content games | 未收錄 |
 | 98 | EA Gaming | 獨立品牌 | 開發 | Live Casino | [官方遊戲入口](https://ea-gaming.com/en/index.html) | ICE27、官方；未確認 RNG Slots，不列入 Slot 家數 | 未收錄 |
 | 99 | e-gaming | 獨立品牌 | 開發、製造 | Slots、Dice／Land-based | [官方遊戲目錄](https://www.e-gaming.cz/en/games) | ICE26／ICE27、官方 | 未收錄 |
 | 100 | Kendoo | 獨立品牌 | 開發 | Slots | [官方遊戲目錄](https://kendoo.com/) | ICE27、SBC26、官方；官網列 30+ games | 未收錄 |
 | 101 | Million Games | Reelsoft Vision RGS 為技術／分發關係，不合併品牌 | 開發、發行 | Slots、Crash、Casino | [官方品牌與作品入口](https://www.milliongames.com/) | ICE27、官方合作公告 | 未收錄 |
-| 102 | OMNIPLAY | Galatic Events Corp.（僅見於 PAGCOR 文件） | **身份待確認；不計入候選／Slot 統計** | 待確認 | [品牌入口](https://omniplay.mobi/)、[PAGCOR 核准遊戲清單](https://www.pagcor.ph/regulatory/pdf/App%20Kits/OMNIPLAY.pdf) | PAG26 只能證明清單中的遊戲名稱、類型與版本，不能單獨證明 OMNIPLAY 是開發品牌 | 待確認 |
+| 102 | OMNIPLAY | Galatic Events Corp. | 遊戲／服務 offering；**不計入開發品牌或 Slot 品牌候選** | Casino offering | [品牌入口](https://omniplay.mobi/)、[PAGCOR 服務／遊戲 offering](https://www.pagcor.ph/regulatory/cegs.php)、[PAGCOR 核准遊戲清單](https://www.pagcor.ph/regulatory/pdf/App%20Kits/OMNIPLAY.pdf) | 可確認對外服務品牌與核准 offering，但沒有足以把逐款作品署名為 OMNIPLAY 自行開發的證據 | 已收斂；新逐款開發署名出現前不重開 |
 | 103 | OptimoPlay | 獨立品牌 | 開發 | Crash、Mini games | [官方品牌頁](https://optimoplay.com/about) | ICE27、官方；未確認 Slots，不列入 Slot 家數 | 未收錄 |
 | 104 | Pateplay | Pate Play Ltd. | 開發、發行 | Slots、Live、Crash、Land-based | [官方產品入口](https://pateplay.com/about) | ICE26／ICE27、SBC26、官方 | 未收錄 |
 | 105 | RichyPlay | 原待查表記為 Ritchy Play，依官網更正 | 開發 | Slots、Live | [官方 Slots 目錄](https://richyplay.live/slots/) | ICE27、官方 | 未收錄 |
@@ -351,7 +351,7 @@
 | 188 | Aspect Gaming | 獨立對外品牌 | 開發、平台 | Slots、Land-based／Social | [官方品牌與作品入口](https://aspectgaming.com/) | 官網明示作品改編自 GLI-certified slot machines | 未收錄 |
 | 189 | Barbara Bang | 獨立對外品牌 | 開發 | Slots | [官方公司頁](https://barbarabang.games/company) | 官網可確認 game studio 身份；官方合作發布提供逐款 slot 入口 | 未收錄 |
 | 190 | Bigpot Gaming | Bigpot Gaming Limited | 開發 | Slots、Casual、Casino | [官方品牌與遊戲入口](https://www.bigpotgaming.com/home) | 官網明示 60+ slot games，並分列 Bonus Buy、Free Spin、Jackpot 等功能 | 未收錄 |
-| 191 | Funky Games | GodziSlots 為 powered side brand，另列待查 | 開發 | Slots、Instant、Crash、Table | [官方遊戲目錄](https://funkygames.io/games/) | 官網有可讀作品目錄並明示 200+ games；不把同名一般遊戲工作室混入 | 未收錄 |
+| 191 | Funky Games | GodziSlots 為官方 secondary brand，作品另以 `#GodziSlots` 署名 | 開發 | Slots、Instant、Crash、Table | [官方遊戲目錄](https://funkygames.io/games/) | 官網有可讀作品目錄並明示 200+ games；Funky Games 與 GodziSlots 分開保存作品署名，但母子品牌關係不改寫 | 未收錄 |
 | 192 | GameBeat | 獨立對外品牌 | 開發 | Slots | [官方品牌頁](https://gamebeat.com/about) | 官網明示 iGaming studio 與 casino slots；作品入口可回查署名內容 | 未收錄 |
 | 193 | iMoon Games | iMoon B.V. | 開發、Provider | RNG、Crash、Instant | [官方品牌入口](https://imoon.com/)、[官方開發者文件](https://dev.imoon.com/) | 可確認遊戲 Provider 身份與 RNG／Crash／Instant 作品；目前未確認傳統 Slots，不列入 Slot 家數 | 未收錄 |
 | 194 | PHOENIX 7 | PHOENIX 7 Malta／Poland／Japan teams | 開發 | Slots、Instant | [官方遊戲目錄](https://phoenix7.com/games/) | 官網分列 Video Slots 與 Instant Games，作品可直接辨識 | 未收錄 |
@@ -390,7 +390,7 @@
 
 ### 2.9 第六批：additional brands 補充與每週挖掘首輪
 
-本批將 `ADD26` 與最新版候選地圖去重後，依補充檔順序實跑前 10 條線索。前 9 條均由品牌官網、官方遊戲目錄或官方逐款頁取得「對外品牌＋具名作品」雙重證據，納入候選；第 10 條 Slotopia 雖可確認為使用 Evoplay 引擎的 slot 品牌，但獨立作品署名與重複關係尚未核清，保留待查。首輪沒有名稱重複；同品牌的全名、縮寫與標點差異已合併。
+本批將 `ADD26` 與最新版候選地圖去重後，依補充檔順序實跑前 10 條線索。前 9 條均由品牌官網、官方遊戲目錄或官方逐款頁取得「對外品牌＋具名作品」雙重證據，納入候選；第 10 條 Slotopia 先保留待查，之後於 2.10 身分收斂輪以獨立官網、逐款目錄與網站法律資訊完成確認。首輪沒有名稱重複；同品牌的全名、縮寫與標點差異已合併。
 
 | 研究 ID | 遊戲品牌 | 別名／品牌關係 | 角色 | 遊戲類型 | 官網／作品入口 | 複核結論 | 本站 |
 | ---: | --- | --- | --- | --- | --- | --- | --- |
@@ -414,30 +414,48 @@
 
 小輪完成後游標由 Spearhead Studios 前移至 **Leander Games**；重跑 RAW Group／RAW iGaming 時沒有新增第二筆，證明去重會先讀現有正規名稱、別名與官網紀錄。
 
-### 2.10 統計摘要
+### 2.10 身分收斂輪：將待查品牌改為明確結果
 
-- 第一批去重後遊戲品牌：**51 家**；其中目前可直接確認提供 Slots **48 家**、本站已收錄 **22 家**、尚未收錄的 Slot 品牌 **26 家**。AD LUNAM 的公開作品目前只能直接確認 Crash／Arcade，保留老虎機身份待查，不計入可直接確認的 Slots 數量。這 51 家是已保存的第一批，不代表全球盤點完成。
+本輪針對候選地圖仍使用「待查／待確認」的條目逐筆回到品牌官網、逐款作品頁、公司或收購公告與監管資料。可辨識為獨立對外署名品牌者納入候選；只確認服務／發行身份但不能確認開發署名者，明確保留在候選外；完全沒有可追溯品牌或作品入口者封存，不再占用每週游標。
+
+| 研究 ID | 品牌／線索 | 身分結論 | 作品與關係證據 | 統計處理 |
+| ---: | --- | --- | --- | --- |
+| 224 | Leander Games | 已確認的歷史 Slot 開發與平台品牌；2022 年由 RAW iGaming 收購，現存 demo 由 Xterra Holdings Ltd. 以 Leander Games 名義營運 | [Leander 現存 demo／法律署名](https://demo.leandergames.com/)、[RAW 官方品牌入口](https://www.rawgroup.com/about)；收購後舊 Leander 目錄不得自動改算 RAW 自製作品 | 新增候選 1；不與 RAW iGaming 合併，不列為目前橫向收錄優先 |
+| 225 | Mobilots | 已確認的 B2B 遊戲開發／供應品牌，提供 Slots、Scratch、Crash、Video Poker、Instant Sports 與 Bingo | [官方 About](https://www.mobilots.com/about)、[官方 Casino Games 目錄](https://www.mobilots.com/casinoGames)；目錄列 Juicy Jackpot、3 Wild Jockeys、Hit It Quick 等具名作品 | 新增候選 1；明確提供 Slots |
+| 226 | GodziSlots | Funky Games 官方 secondary brand；逐款頁以 `#GodziSlots` 穩定署名，作品仍由 Funky Games 生態供應 | [Funky Games 官方 About](https://funkygames.io/about/)、[Golden Sun Aztec 官方頁](https://funkygames.io/games/1902637/)、[Roma Reborn 官方頁](https://funkygames.io/games/1902627/) | 新增候選 1；與 Funky Games 分開保存品牌署名，但保留母品牌關係 |
+| 227 | Slotopia | Evoplay Entertainment B.V. 擁有與維護的獨立對外 Slot 品牌，使用 Evoplay 引擎並有自己的作品目錄 | [官方 About](https://slotopia.games/about-us/)、[官方 Games 目錄](https://slotopia.games/games/)、[官方網站條款](https://slotopia.games/terms/) | 新增候選 1；不可把 Slotopia 目錄灌回 Evoplay 自製目錄或重複計數 |
+| 228 | BNG／Booongo | BNG 是 Booongo 的現行對外品牌脈絡，兼具自有作品與 partner program；與 3 Oaks Gaming 的分發公司身份分開 | [BNG 官方目錄](https://bng.games/games/)、[BNG 官方 roadmap](https://bng.games/roadmap/)、[歷史 Booongo RNG 證書](https://bng.games/static/media/RNG_Certificate_SWE_Boongo_18Feb21.pdf)、[3 Oaks 官方說明](https://3oaks.com/partners?category=media-partners) | 新增候選 1；Booongo 合併為別名，3 Oaks 不合併 |
+| — | AD LUNAM | 已確認為 1X2 Network 正式 studio；目前官方 7 款作品與 studio 定位是 Arcade／Crash／Alternative，不確認傳統 Slots | [1X2 Network About](https://www.1x2network.com/about/)、[AD LUNAM 產品目錄](https://site.1x2network.com/product-category/ad-lunam/) | 身分已清；維持既有候選，但不計入 Slot 品牌家數 |
+| — | OMNIPLAY | 已確認為 Galatic Events Corp. 持有的遊戲／服務品牌及 PAGCOR 核准 game offering；仍沒有足以把逐款作品署名為 OMNIPLAY 自行開發的證據 | [官方品牌入口](https://omniplay.mobi/)、[PAGCOR 服務／遊戲 offering](https://www.pagcor.ph/regulatory/cegs.php)、[PAGCOR 核准遊戲清單](https://www.pagcor.ph/regulatory/pdf/App%20Kits/OMNIPLAY.pdf) | 身分歸為服務／發行 offering，不計入開發品牌或 Slot 品牌候選；除非取得逐款開發署名才重開 |
+| — | Yellow Orbit Gaming | 找不到可驗證的正式公司頁、作品目錄、逐款署名或可信合作公告；同名搜尋結果均不能連回 iGaming 品牌 | — | 封存為未證實名稱，不計數；只有取得新的第一方證據才重開 |
+
+本輪把原有模糊待查全部收斂：**5 家新增候選、2 條確認但不納入、1 家既有候選確認為非 Slot studio**。沒有以搜尋摘要、PAGCOR 清單或聚合商名單單獨把品牌升格為開發商。
+
+### 2.11 統計摘要
+
+- 第一批去重後遊戲品牌：**51 家**；其中目前可直接確認提供 Slots **48 家**、本站已收錄 **22 家**、尚未收錄的 Slot 品牌 **26 家**。AD LUNAM 的官方 studio 目錄已確認為 Crash／Arcade／Alternative，現階段不計入 Slots 數量。這 51 家是已保存的第一批，不代表全球盤點完成。
 - 第二批由主要展會名錄補入：**36 家**，本輪均以官方品牌／遊戲入口確認有 Slots 產品；目前已收錄 4 家。
 - 主要展會第二批與共同探索補充新增：**38 家**（36 + 2），均以官方品牌／遊戲入口或直接合作方頁確認有 Slots 產品；目前皆未收錄。
 - 第三批由原待查線索、官方 studio 網路、SBC／Bragg／Light & Wonder／Games Global 名錄及 STUD26 補充複核後確認：**79 家**；其中明確提供 Slots **70 家**。原研究 ID 102（OMNIPLAY）已撤回身份待確認，不計入候選與 Slot 統計。
 - 第四批完成既定 35 條線索首輪複核並追入 Prag by PopOK：淨新增確認候選 **29 家**，其中明確提供 Slots **26 家**。Playjeux、SidePlay 與 iMoon 保存為目前未確認有 Slots 的遊戲品牌。
 - 第五批由 OPEN26 補充與既有待查接續確認：淨新增候選 **15 家**，均可確認 Slots 作品；兩份內容相同的 OpenRGS 補充檔只作一份來源計算。
-- 第六批由 ADD26 補充首輪確認 9 家，再由排程接續小輪從 EveryMatrix 官方內容名錄確認 Spearhead Studios：累計淨新增候選 **10 家**，均可確認 Slots 作品；Slotopia 保留待查。RAW Group／RAW iGaming 重跑為同一品牌，不重複計數。
-- 全表合計去重後、已確認遊戲品牌：**222 家**。表內保留 OMNIPLAY 的研究 ID 102 供追查，但它不在這個數字內。
-- 全表合計明確提供 Slots：**208 家**。Evolution 與 SPRIBE 仍不計入 Slot 品牌家數；Evolution 旗下具 Slot 品牌身份的 NetEnt、Red Tiger、Big Time Gaming、Nolimit City 各自統計。BRINO Games、EA Gaming、OptimoPlay、Upgames、Winfinity（live）、Galaxy Gaming、On Air Entertainment、Real Dealer Studios、Switch Studios、Playjeux Studios、SidePlay 與 iMoon Games 等保留為非 Slot 或目前未確認有 Slot 的遊戲品牌。
-- Slot Hub 已收錄：**59 家**。
-- 全表合計尚未收錄：**162 家**；其中尚未收錄、且目前可確認有 Slots 的品牌：**149 家**。
+- 第六批由 ADD26 補充首輪確認 9 家，再由排程接續小輪從 EveryMatrix 官方內容名錄確認 Spearhead Studios：累計淨新增候選 **10 家**，均可確認 Slots 作品；RAW Group／RAW iGaming 重跑為同一品牌，不重複計數。
+- 身分收斂輪確認 Leander Games、Mobilots、GodziSlots、Slotopia 與 BNG／Booongo：淨新增候選 **5 家**，均有 Slots 作品；OMNIPLAY 與 Yellow Orbit Gaming 不納入。
+- 全表合計去重後、已確認遊戲品牌：**227 家**。表內保留 OMNIPLAY 的研究 ID 102 供查核歷史，但它不在這個數字內。
+- 全表合計明確提供 Slots：**213 家**。Evolution 與 SPRIBE 仍不計入 Slot 品牌家數；Evolution 旗下具 Slot 品牌身份的 NetEnt、Red Tiger、Big Time Gaming、Nolimit City 各自統計。BRINO Games、EA Gaming、OptimoPlay、Upgames、Winfinity（live）、Galaxy Gaming、On Air Entertainment、Real Dealer Studios、Switch Studios、Playjeux Studios、SidePlay、iMoon Games 與 AD LUNAM 等保留為非 Slot 或目前未確認有傳統 Slots 的遊戲品牌。
+- Slot Hub 已收錄：**74 家**。
+- 全表合計尚未收錄：**158 家**；其中尚未收錄、且目前可確認有 Slots 的品牌：**144 家**。
 - 聚合、分發、展會與監管來源層只用於發現及交叉查找，不額外灌入品牌總數。除了既有 SOFTSWISS、Slotegrator、EveryMatrix、Hub88、Relax 聚合網路與 Games Global，本輪新增使用 SBC 官方展商內容、Bragg studio 網路、Light & Wonder partner roadmap 與 PAGCOR 核准資料。Relax 同時是開發品牌，所以只在品牌清單計數一次。
 - 只有 3 家在本輪取得可明確引用的完整目錄／作品集數量，另有 TaDa Gaming 的 60+ certified 子集合；其餘保持空白。這不代表沒有遊戲，只代表目前沒有取得可安全當作完整總數的公開值。
 
-### 2.11 去重判定與待複核
+### 2.12 去重判定與已收斂邊界
 
-- `BNG (Booongo)`、3 Oaks Gaming 與可能的發行關係尚不足以當作單純改名；先不合併、不加入 51 家主表，待官方公司／版權資料複核。
+- `BNG／Booongo` 合併為一個品牌；BNG 官網同時保存現行 BNG 自有署名與歷史 Booongo 作品。3 Oaks 官方將自身定位為分發商，兩者不得合併。
 - Games Global 是發行與 studio 網路。其官方 2022 年公告的 3,000+ 是整體平台組合，不是單一遊戲品牌數，因此沒有套到任何 studio。
 - EveryMatrix、SOFTSWISS、Hub88 是供應商／聚合目錄來源，不視為遊戲品牌候選。
 - Anakatech 已以對外開發品牌計數；SpinOro 官網標示 powered by Anakatech，監管資料亦使用 `Anakatech Holdings LTD (SpinOro)`，因此保存為對外商業品牌／別名，不另加一家。
 - Million Games 保留為具獨立作品入口的遊戲品牌；Reelsoft 官方資料明示其責任為 Million Games 的 Vision RGS／平台供應商，因此不計入遊戲品牌。
-- OMNIPLAY 研究 ID 102 只保留查核歷史：PAGCOR 清單能證明核准遊戲名稱、類型與版本；2026 商標申請則只確認 GALATIC EVENTS CORP. 申請 OMNIPLAY 的娛樂／博弈服務商標。兩者仍不足以單獨證明逐款遊戲的開發署名，因此確認前不得算入候選或 Slot 家數。
+- OMNIPLAY 研究 ID 102 只保留查核歷史：品牌官網、PAGCOR service／offering 名錄與商標資料足以確認 Galatic Events Corp. 的對外服務品牌，但不足以證明逐款遊戲由 OMNIPLAY 自行開發，因此不算入開發品牌或 Slot 品牌候選。
 - `Winfinity`（live casino 品牌）與 NOVOMATIC 旗下 `Winfinity Games`（slot studio）有不同官網、產品與公司脈絡，不能因名稱相同合併。
 - `Vivid Gaming` 與手機遊戲公司 `Vivid Games S.A.` 不是同一品牌；本表只收錄具有 Slots 作品目錄的 Vivid Gaming。
 - Bragg、Light & Wonder、Games Global 與其他 studio 的合作／分發關係不等於母公司關係；只有官方明確揭露收購或旗下關係時才寫入母公司欄。
@@ -445,18 +463,11 @@
 - RAW Group／RAW iGaming、Triple Cherry／3cherry、FUGASO／Future Gaming Solutions 與 G.Games／G／G Games 已按同一對外遊戲品牌合併，不因公司全名或標點另計。
 - 這份清單只決定後續研究順序；任何品牌或遊戲仍須依既有來源、圖片、缺值與逐款審核規則才能進入網站。
 
-### 2.12 下一輪深挖線索（不計入 222 家）
+### 2.13 身分查核出口與下一游標
 
-上一版 35 條線索已全部走過一輪；Dragoon Soft、Clutch Gaming、Zerplaay Games 與 Spearhead Studios 已完成複核並移入主表。ADD26 的首輪處理到 Slotopia，接續小輪已處理 Spearhead；所以下列共有 **6 條**仍需釐清品牌身份、作品署名或承接關係，暫不灌入統計：
+上一版的 6 條未決線索與額外的 AD LUNAM、BNG／Booongo 邊界均已處理。現在沒有需要沿舊證據反覆重跑的身分待查項目：能確認的已進主表；OMNIPLAY 已歸類為服務／遊戲 offering 而非已確認開發品牌；Yellow Orbit Gaming 已封存為未證實名稱。
 
-- **OMNIPLAY**：保留研究 ID 102。品牌入口資料不足；PAGCOR 清單只能作核准遊戲與版本線索，2026 商標申請也只確認服務商標申請人，不能單獨證明遊戲開發署名。
-- **Yellow Orbit Gaming**：尚未取得可驗證的正式公司頁與署名作品入口。
-- **GodziSlots**：Funky Games 官網明示為 powered side brand，但尚缺可穩定分拆作品署名的獨立目錄；確認前不與 Funky Games重複計數。
-- **Slotopia**：官方 About 可確認為使用 Evoplay 引擎的 slot 品牌，但仍需逐款確認獨立作品署名及與 Evoplay 既有作品的去重邊界。
-- **Leander Games**：補充資料記錄舊站轉向 RAW Group，但本輪即時讀取逾時；需核對歷史作品署名及目前品牌承接，不能直接併入 RAW 自製目錄。
-- **Mobilots**：官方入口為僅 JavaScript 應用，本輪未取得可核對的具名作品；保留品牌線索，不因讀不到正文判定不存在。
-
-每週挖掘游標：**Leander Games**。依 ADD26 尚未完成的順序先查 Leander Games、Mobilots，再回到 Yellow Orbit Gaming、OMNIPLAY、GodziSlots；Slotopia 則在取得可辨識逐款署名後重查。每次最多處理 10 條，輪流使用展會、合作名錄與官方消息補充新線索；不得使用 PAGCOR 或聚合商清單單獨把待查名稱升格為開發品牌。
+每週挖掘下一游標改為：**新的展會／合作名錄線索**。每次仍最多處理 10 條；先和 227 家正規名稱、別名、官網及品牌關係去重，再回到第一方來源確認。OMNIPLAY 與 Yellow Orbit Gaming 只有在出現新的逐款署名或正式品牌證據時才重開，不再占用例行游標。
 
 ## 3. 可持續使用的官方目錄
 
@@ -529,17 +540,19 @@
 
 `SIXTH_BATCH_NET_NEW_BRAND_COUNT: 10`
 
-`TOTAL_CANDIDATE_BRAND_COUNT: 222`
+`IDENTITY_CLOSURE_NET_NEW_BRAND_COUNT: 5`
 
-`TOTAL_SLOT_CAPABLE_BRAND_COUNT: 208`
+`TOTAL_CANDIDATE_BRAND_COUNT: 227`
 
-`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 149`
+`TOTAL_SLOT_CAPABLE_BRAND_COUNT: 213`
 
-`REMAINING_RESEARCH_LEAD_COUNT: 6`
+`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 144`
 
-`WEEKLY_DISCOVERY_CURSOR: Leander Games`
+`REMAINING_RESEARCH_LEAD_COUNT: 0`
 
-`NEXT_ALLOWED_ACTION: 從 2.12 的 Leander Games 接續，每次最多處理 10 條；確認前不得使用 PAGCOR 或聚合商清單單獨升格為開發品牌`
+`WEEKLY_DISCOVERY_CURSOR: 新的展會／合作名錄線索`
+
+`NEXT_ALLOWED_ACTION: 依 2.13 從新的展會／合作名錄線索接續；先和 227 家候選去重，且不得使用 PAGCOR 或聚合商清單單獨升格為開發品牌`
 
 `SCHEMA_CHANGE_ALLOWED: NO`
 
@@ -549,7 +562,7 @@
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
-Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至十一批合計完成 55 家新 Provider 各一款，網站目前為 127 款 published Game、69 家 published Provider。第十一批完成 GoldenRace／Sizzling Neon Jackpot、KingMidas Games／LEPPY LOOT、Mancala Gaming／Golden Fruit Vegas Classic、Mascot Gaming／The Rite 與 1spin4win／Book of Armour；JDB Gaming 因目前環境遭官方地區封鎖、KA Gaming 因缺少可回查的官方逐款資料入口、NetGame 因官網未暴露足夠逐款資料而保留待補，不阻擋其他品牌。後續沿用本文件，不另建平行管理系統。
+Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至十二批合計完成 60 家新 Provider 各一款，網站目前為 132 款 published Game、74 家 published Provider。第十二批完成 7Mojos／Fruit Dash、SpinOro／Honor of Egypt、ApexWin／Thief's Plan、Bulgames／Winter Hills 與 CP.GAMES／Werewolf；官方未公開的資料維持缺值，沒有跨廠商推算。後續沿用本文件，不另建平行管理系統。
 
 第七批接續紀錄：SPRIBE 目前的確認類型為 Crash／Table／Casual，因此未納入老虎機橫向收錄；Playtech 因缺少可辨識的作品圖持續保留待補；該批完成時的下一個主動接續品牌為 Wizard Games。Wizard Games 已於第八批完成；第八批完成時的下一個主動接續品牌維持 Aristocrat Gaming，現行游標以本節末尾的接續原則為準。
 
@@ -569,4 +582,4 @@ Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片
 | 12 | NetEnt | 5 | https://netent.com/games | 舊作資料入口分散；逐款確認可用頁後再處理 |
 | 13 | Hacksaw Gaming | 6 | https://www.hacksawgaming.com/games | 現有覆蓋最厚，仍可由 Games／Client Hub 接續 |
 
-接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 隊列第八批已完成 Wizard Games、7777 Gaming、Air Dice、Apollo Games 與 Belatra Games，第九批已完成 Aristocrat Gaming、Aruze Gaming Global、BF Games、Bluberi 與 CT Gaming，第十批已完成 CT Interactive、FA CHAI Gaming、GameArt、Gamzix 與 Inspired Entertainment，第十一批已完成 GoldenRace、KingMidas Games、Mancala Gaming、Mascot Gaming 與 1spin4win。AGS 因現有官方資料仍需釐清線上作品與版本範圍、Amigo Gaming 因公開作品目錄有存取門檻、Galaxsys 因官方作品圖受存取限制、JDB Gaming 因地區封鎖、KA Gaming 與 NetGame 因逐款官方資料不足而保留待補；這些待補不阻擋其他 Provider。下一個主動接續品牌為 7Mojos。每週廠商挖掘游標仍為 Leander Games，三條隊列彼此不覆蓋。
+接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 隊列第八至十一批維持既有完成紀錄，第十二批已完成 7Mojos、SpinOro／Anakatech、ApexWin、Bulgames 與 CP.GAMES。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個主動接續品牌為 DYG。每週廠商挖掘游標已改為新的展會／合作名錄線索，三條隊列彼此不覆蓋。
