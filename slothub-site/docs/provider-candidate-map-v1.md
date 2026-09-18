@@ -4,7 +4,7 @@
 >
 > 建立日期：2026-09-03
 >
-> 本輪更新：2026-09-19（橫向收錄第二十三批完成 Stormcraft Studios、PearFiction Studios、Bulletproof Games、HungryBear Gaming、Jade Rabbit Studio 各一款；KISS Gaming 因官方文件入口尚未建立可直接核對圖片與規格的單款頁面而保留待補；候選總數仍為 222 家）
+> 本輪更新：2026-09-19（橫向收錄第二十四批完成 Atlantic Digital、Design Works Gaming、High 5 Games、Hot Rise Games、Pixiu Gaming 各一款；Nazionale Elettronica 目前只有 AWP／實體機台型錄，尚不足以建立符合現有網站責任的線上單款資料頁；候選總數仍為 222 家）
 >
 > 用途：作為外部遊戲資料收集的 Provider 骨架與去重對照。這不是完整產業名錄，不授權一次建立所有 Provider 公開頁，也不改變 Schema、taxonomy、產品功能或既有發布標準。
 
@@ -330,12 +330,12 @@
 
 | 研究 ID | 遊戲品牌 | 品牌關係 | 角色 | 遊戲類型 | 官網／作品入口 | 複核結論 | 本站 |
 | ---: | --- | --- | --- | --- | --- | --- | --- |
-| 170 | Atlantic Digital | L&W OpenGaming 分發合作；未據此推定股權 | 開發 | Slots | [官方品牌與作品入口](https://www.atlanticd.co/) | 官網明示 London studio 與 branded slots，作品頁可辨識 Friends、Cheers 等署名內容 | 未收錄 |
-| 171 | Design Works Gaming | DWG；L&W OpenGaming 合作 | 開發 | Slots、LuckyTap | [官方網站與遊戲入口](https://designworksgaming.com/) | 官網明示 800+ 自製 games，包含 steppers、video slots 與 LuckyTap | 未收錄 |
-| 172 | High 5 Games | H5G；獨立對外品牌 | 開發、平台 | Slots、Land-based／Online | [官方 Game Studio](https://high5games.com/our-solutions/game-studio/) | 官網有可搜尋 slot library，並區分 studio 與 casino platform | 未收錄 |
-| 173 | Hot Rise Games | L&W OpenGaming 分發合作 | 開發 | Slots | [官方遊戲目錄](https://hotrisegames.com/games/) | Monsters VS Gigablox、Supermassive Infinity Reels 等作品可直接辨識 | 未收錄 |
-| 174 | Nazionale Elettronica | Nazionale Elettronica S.r.l. | 開發、製造 | Slots、AWP／Land-based | [官方 AWP 遊戲目錄](https://nazionaleelettronica.it/giochi-awp/) | 官網列機台與遊戲；官方型錄同時標示設備與遊戲板製造者 | 未收錄 |
-| 175 | Pixiu Gaming | L&W 全球分發合作 | 開發 | Slots、Keno、Table | [官方遊戲目錄](https://pixiugaming.com/ourgames/) | Money Megaways、Lucky 8 Megaways 等 slot／keno 作品可直接辨識 | 未收錄 |
+| 170 | Atlantic Digital | L&W OpenGaming 分發合作；未據此推定股權 | 開發 | Slots | [官方品牌與作品入口](https://www.atlanticd.co/) | Friends: The One With The Multi Drop 已由官方單款頁核對盤面、RTP、波動度、最高倍數、功能與主視覺 | 已收錄（1） |
+| 171 | Design Works Gaming | DWG；L&W OpenGaming 合作 | 開發 | Slots、LuckyTap | [官方網站與遊戲入口](https://designworksgaming.com/) | 10X Fortune 已由官方作品頁核對 5 條有效賠線、Wild 乘數、Bonus Free Games 與主視覺；未公開數值維持缺值 | 已收錄（1） |
+| 172 | High 5 Games | H5G；獨立對外品牌 | 開發、平台 | Slots、Land-based／Online | [官方 Game Studio](https://high5games.com/our-solutions/game-studio/) | A Visit from St. Nick 已由官方單款頁核對類型、推出年份、3×5、243 Ways、Bonus Select 與主視覺 | 已收錄（1） |
+| 173 | Hot Rise Games | L&W OpenGaming 分發合作 | 開發 | Slots | [官方遊戲目錄](https://hotrisegames.com/games/) | 98 Bounty Hot 1 已由官方單款頁核對可變盤面、最高 1,112 Ways、Free Spins、Hot 1 與遊戲畫面 | 已收錄（1） |
+| 174 | Nazionale Elettronica | Nazionale Elettronica S.r.l. | 開發、製造 | Slots、AWP／Land-based | [官方 AWP 遊戲目錄](https://nazionaleelettronica.it/giochi-awp/) | 目前可直接核對的是 AWP／實體機台與遊戲板型錄，尚缺能由現有線上 Game detail 誠實承接的單款入口與圖片，保留待補 | 未收錄 |
+| 175 | Pixiu Gaming | L&W 全球分發合作 | 開發 | Slots、Keno、Table | [官方遊戲目錄](https://pixiugaming.com/ourgames/) | Lucky 8 Golden Dragon 已由官方單款頁核對盤面、Ante Bet 前後 RTP、波動度、最高倍數、Jackpot 狀態與主視覺 | 已收錄（1） |
 | 176 | Playjeux Studios | L&W OpenGaming 獨家分發合作 | 開發、平台 | Multiplayer Table | [官方品牌與遊戲入口](https://playjeuxstudios.com/) | 目前公開作品為 roulette、baccarat、blackjack；保留為非 Slot 遊戲品牌 | 未收錄 |
 | 177 | Realistic Games | 獨立品牌 | 開發 | Slots、Table | [官方品牌頁](https://www.realisticgames.co.uk/about-us)、[官方作品例](https://www.realisticgames.co.uk/games/fireworks/) | 官方品牌頁與遊戲頁能直接確認 digital casino supplier 及 slot 作品 | 未收錄 |
 | 178 | Red Desert Games | L&W 分發合作；未據此推定股權 | 開發 | Slots、Land-based／Online | [官方網站與遊戲入口](https://reddesert.games/) | 官網自稱 game studio，並列 Lucky Zodiac、Treasures of Wonderland 等作品 | 未收錄 |
@@ -562,7 +562,7 @@
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
-Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至二十三批合計完成 115 家新 Provider 各一款，網站目前為 187 款 published Game、129 家 published Provider。第二十三批完成 Stormcraft Studios／Thunderstruck Stormchaser、PearFiction Studios／Cerberus Gold、Bulletproof Games／7th Squadron DoubleMax、HungryBear Gaming／The Secret Of Amun-Ra 與 Jade Rabbit Studio／Reel Holidays；KISS Gaming 因缺少可核對的單款官方頁面而保留待補，官方未提供或基準不足的數值維持缺值。後續沿用本文件，不另建平行管理系統。
+Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至二十四批合計完成 120 家新 Provider 各一款，網站目前為 192 款 published Game、134 家 published Provider。第二十四批完成 Atlantic Digital／Friends: The One With The Multi Drop、Design Works Gaming／10X Fortune、High 5 Games／A Visit from St. Nick、Hot Rise Games／98 Bounty Hot 1 與 Pixiu Gaming／Lucky 8 Golden Dragon；Nazionale Elettronica 因目前只有 AWP／實體機台型錄而保留待補，未公開或基準不足的數值維持缺值。後續沿用本文件，不另建平行管理系統。
 
 第七批接續紀錄：SPRIBE 目前的確認類型為 Crash／Table／Casual，因此未納入老虎機橫向收錄；Playtech 因缺少可辨識的作品圖持續保留待補；該批完成時的下一個主動接續品牌為 Wizard Games。Wizard Games 已於第八批完成；第八批完成時的下一個主動接續品牌維持 Aristocrat Gaming，現行游標以本節末尾的接續原則為準。
 
@@ -582,4 +582,4 @@ Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片
 | 12 | NetEnt | 5 | https://netent.com/games | 舊作資料入口分散；逐款確認可用頁後再處理 |
 | 13 | Hacksaw Gaming | 6 | https://www.hacksawgaming.com/games | 現有覆蓋最厚，仍可由 Games／Client Hub 接續 |
 
-接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 的這輪 20 家已由第十二至十五批完成，最後一批為 Atomic Slot Lab、Indigo Magic、Wild Streak Gaming、Spin Games 與 ORYX Gaming。第十六批自候選地圖接續並完成五家；Win Fast 因缺少可直接歸屬的具名作品證據而保留待補，Galaxy Gaming 因目前只確認 Table games 而跳過。第十七批完成 Reflex Gaming、Sega Sammy Creation、Ainsworth、Bang Bang Games 與 Crucible Gaming。第十八批完成 Digital Gaming Corp、DreamSpin、Everi、Fantasma Games 與 HITSqwad。第十九批完成 Lightning Box、Live 5、Pariplay、Rogue 與 WMG。第二十批完成 ALL FOR ONE Studios、Foxium、Just For The Win Studios、Northern Lights Gaming 與 Snowborn Games；Almond Gaming、Deep Stake Games 與 Nailed It! Games 的待補原因已保存。第二十一批完成 Wishbone、Fortune Factory Studios、Gameburger Studios、Triple Edge Studios 與 SpinPlay Games。第二十二批完成 DELULU Gaming、ENJOY、WorldMatch、Caleta Gaming 與 Print Studios；Aurum Signature Studios 與 Fastspin 的待補原因已保存。第二十三批完成 Stormcraft Studios、PearFiction Studios、Bulletproof Games、HungryBear Gaming 與 Jade Rabbit Studio；KISS Gaming 的待補原因已保存。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個橫向接續位置為候選地圖第 170 項 Atlantic Digital；每週廠商挖掘游標維持新的展會／合作名錄線索，三條隊列彼此不覆蓋。
+接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 的這輪 20 家已由第十二至十五批完成，最後一批為 Atomic Slot Lab、Indigo Magic、Wild Streak Gaming、Spin Games 與 ORYX Gaming。第十六批自候選地圖接續並完成五家；Win Fast 因缺少可直接歸屬的具名作品證據而保留待補，Galaxy Gaming 因目前只確認 Table games 而跳過。第十七批完成 Reflex Gaming、Sega Sammy Creation、Ainsworth、Bang Bang Games 與 Crucible Gaming。第十八批完成 Digital Gaming Corp、DreamSpin、Everi、Fantasma Games 與 HITSqwad。第十九批完成 Lightning Box、Live 5、Pariplay、Rogue 與 WMG。第二十批完成 ALL FOR ONE Studios、Foxium、Just For The Win Studios、Northern Lights Gaming 與 Snowborn Games；Almond Gaming、Deep Stake Games 與 Nailed It! Games 的待補原因已保存。第二十一批完成 Wishbone、Fortune Factory Studios、Gameburger Studios、Triple Edge Studios 與 SpinPlay Games。第二十二批完成 DELULU Gaming、ENJOY、WorldMatch、Caleta Gaming 與 Print Studios；Aurum Signature Studios 與 Fastspin 的待補原因已保存。第二十三批完成 Stormcraft Studios、PearFiction Studios、Bulletproof Games、HungryBear Gaming 與 Jade Rabbit Studio；KISS Gaming 的待補原因已保存。第二十四批完成 Atlantic Digital、Design Works Gaming、High 5 Games、Hot Rise Games 與 Pixiu Gaming；Nazionale Elettronica 的 AWP／實體機台內容尚不足以建立符合目前網站責任的線上單款頁，Playjeux Studios 目前只有 Multiplayer Table 作品，均不拿來湊數。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個橫向接續位置為候選地圖第 177 項 Realistic Games；每週廠商挖掘游標維持新的展會／合作名錄線索，三條隊列彼此不覆蓋。
