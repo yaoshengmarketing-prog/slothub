@@ -78,6 +78,6 @@ for (const name of ['Atlantic Digital', 'Design Works Gaming', 'High 5 Games', '
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`));
 }
 assert.match(map, /Nazionale Elettronica .*保留待補 .*未收錄/);
-assert.match(map, /下一個橫向接續位置為候選地圖第 177 項 Realistic Games/);
+assert.match(map, /第二十四批完成 Atlantic Digital、Design Works Gaming、High 5 Games、Hot Rise Games 與 Pixiu Gaming/);
 
 console.log('PASS: horizontal intake batch 24 published five first-party-source slot titles, preserved conditional and missing values, and deferred incompatible AWP-only evidence without guessing.');
