@@ -80,7 +80,7 @@ for (const name of ['AGS', 'NextSpin', 'NOVOMATIC Gaming', 'Octoplay', 'Onlyplay
 for (const name of ['Amigo Gaming', 'JDB Gaming', 'Konami Gaming']) {
   assert.match(map, new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*(保留待|待可直接)`));
 }
-assert.match(map, /網站目前為 227 款 published Game、169 家 published Provider/);
-assert.match(map, /下一個橫向接續位置為主表第 80 項 Platipus Gaming/);
+assert.match(map, /第三十一批完成 AGS／Imperial Fortunes、NextSpin／Big CaiShen、NOVOMATIC Gaming／Book of Ra Magic Wheel、Octoplay／2 Lucky Fellas: Hold & Win 與 Onlyplay／Tiger Jackpots/);
+assert.match(map, /第 31 批由 AGS 接續，完成五家並保存 Amigo Gaming、JDB Gaming 與 Konami Gaming 的圖片待補原因/);
 
 console.log('PASS: horizontal intake batch 31 added five first-party provider/game pairs, preserved unsupported values as missing, recorded three skips, and advanced the cursor.');
