@@ -71,6 +71,7 @@ for (const name of ['Koala Games', 'Trusty Gaming', 'RAW iGaming', 'G.Games']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*已收錄（1）`));
 }
 assert.match(map, /Slotopia.*Reel Hit.*已收錄（1）/);
-assert.match(map, /下一個橫向接續位置.*Bullshark Games/);
+assert.match(map, /Bullshark Games.*已收錄（1）/);
+assert.match(map, /下一個橫向接續位置.*第 205 項 Jinx Gaming/);
 
 console.log('PASS: horizontal intake batch 27 published five first-party-source slot titles, preserved version and source conflicts, and avoided unsupported multiplier or mechanism guesses.');
