@@ -79,6 +79,6 @@ for (const name of ['Playzido', 'Bullshark Games', 'Backseat Gaming', 'Kitsune G
   assert.match(map, new RegExp(`\\| \\d+ \\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')}[^\\r\\n]*已收錄（1）`));
 }
 assert.match(map, /Ace Roll.*第 28 批記錄後跳過.*未收錄/);
-assert.match(map, /下一個橫向接續位置.*第 205 項 Jinx Gaming/);
+assert.match(map, /第十六至二十八批的完成與待補原因維持原紀錄/);
 
 console.log('PASS: horizontal intake batch 28 published five first-party-evidenced titles, preserved unknown math fields, and advanced the candidate cursor without guessing or duplication.');

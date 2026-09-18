@@ -31,7 +31,7 @@ const records = await Promise.all(files.map(async (file) => {
 }));
 
 const published = records.filter((game) => game.status === 'published');
-assert.equal(published.length, 212, 'expected 212 published Games');
+assert.equal(published.length, 217, 'expected 217 published Games');
 assert.deepEqual(SIMILAR_PLAY_DISTINCTIVE_FEATURES, [
   'cascading', 'bonus-buy', 'hold-and-spin', 'respins', 'cash-collection',
   'giant-symbols', 'sticky-symbols', 'symbol-splitting', 'jackpot',
@@ -42,7 +42,7 @@ const presentations = new Map(published.map((game) => [game.slug, buildSimilarPl
 const withResults = [...presentations.values()].filter((presentation) => presentation.items.length > 0);
 const zeroSlugs = [...presentations.entries()].filter(([, presentation]) => presentation.items.length === 0).map(([slug]) => slug).sort();
 assert.equal(withResults.length, 162, '162 Games should have similar-play results');
-assert.deepEqual(zeroSlugs, ['3-dragon-pots', '3-lucky-rainbows-action-boost', '3-plucky-hens', '3-wonders-luck-of-stallion', '9-masks-of-fire', 'atlantis-crush', 'banana-town', 'banana-town-dream-drop', 'best-bet', 'bison-moon', 'book-of-aztec', 'enchanted-woods', 'fate-of-olympus', 'fire-stampede-dollars-and-dreams', 'fowl-play-gold', 'goal-strike-rising-rewards', 'golden-fruit-vegas-classic', 'golden-ticket', 'jolly-leprechaun', 'kingdom-wardens', 'kingfisher', 'kings-of-crystals-ii', 'loaded-up-riches-pots', 'lucky-zodiac', 'money-coming', 'money-tree-jackpot-hold-and-win', 'oh-my-gods', 'precious-monkeys', 'push-the-button', 'pyramid-of-light', 'redbeards-ruby-fortune-map', 'rome-fight-for-gold-eternal-empire', 'shadow-of-dominion', 'shoot-for-the-loot', 'space-bar', 'storm-of-seth', 'storm-of-seth-2-awakening', 'the-book-beyond-2', 'the-library-kitsune', 'the-secret-of-amun-ra', 'ufc-gold-blitz-extreme', 'uncle-profit', 'upshot-prosperity-rising', 'vegas-gold', 'werewolf-cp-games', 'whitney-houston-slots', 'wild-fruit-super-wheel', 'wild-hour-league', 'wild-whopper', 'win-in-rome']);
+assert.deepEqual(zeroSlugs, ['3-dragon-pots', '3-lucky-rainbows-action-boost', '3-plucky-hens', '3-wonders-luck-of-stallion', '9-masks-of-fire', 'atlantis-crush', 'avalanche-good-times', 'banana-town', 'banana-town-dream-drop', 'best-bet', 'bison-moon', 'book-of-aztec', 'coconut-chaos', 'dead-headz', 'enchanted-woods', 'fate-of-olympus', 'fire-stampede-dollars-and-dreams', 'fowl-play-gold', 'goal-strike-rising-rewards', 'golden-fruit-vegas-classic', 'golden-ticket', 'jolly-leprechaun', 'kingdom-wardens', 'kingfisher', 'kings-of-crystals-ii', 'loaded-up-riches-pots', 'lucky-zodiac', 'money-coming', 'money-tree-jackpot-hold-and-win', 'mortal-oath', 'oh-my-gods', 'precious-monkeys', 'push-the-button', 'pyramid-of-light', 'redbeards-ruby-fortune-map', 'rome-fight-for-gold-eternal-empire', 'shadow-of-dominion', 'shoot-for-the-loot', 'space-bar', 'storm-of-seth', 'storm-of-seth-2-awakening', 'the-book-beyond-2', 'the-library-kitsune', 'the-secret-of-amun-ra', 'tikitopia-boosterbelt', 'ufc-gold-blitz-extreme', 'uncle-profit', 'upshot-prosperity-rising', 'vegas-gold', 'werewolf-cp-games', 'whitney-houston-slots', 'wild-fruit-super-wheel', 'wild-hour-league', 'wild-whopper', 'win-in-rome']);
 
 for (const [slug, presentation] of presentations) {
   assert.ok(presentation.items.length <= 4, `${slug}: rendered over four cards`);
@@ -119,4 +119,4 @@ const styles = await readFile(fileURLToPath(new URL('../src/styles/global.css', 
 assert.match(styles, /\.similar-play-explore\{[^}]*min-height:44px/, 'Explore CTA must preserve a 44px touch target');
 assert.match(styles, /\.similar-play-grid>li>a:focus-visible[^}]*outline:/, 'similar-play links need a visible keyboard focus style');
 
-console.log('PASS: Similar play computed for 212 Games with stable sorting, exact reasons and mechanism URLs verified.');
+console.log('PASS: Similar play computed for 217 Games with stable sorting, exact reasons and mechanism URLs verified.');

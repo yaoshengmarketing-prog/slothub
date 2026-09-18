@@ -38,7 +38,7 @@ const bonusBuyOwnerSlug = bonusBuyGuidePublished ? bonusBuyGuideSlug : 'slot-ter
 
 validateGuideDeclarations(guides, options);
 const index = buildGuideRelationshipIndex(guides, games, options);
-assert.equal(games.filter((game) => game.status === 'published').length, 212, 'Relationship fixture must cover 212 published games');
+assert.equal(games.filter((game) => game.status === 'published').length, 217, 'Relationship fixture must cover 217 published games');
 
 const expected = {
   'rtp-explained': { relatedDataTopics: ['rtp', 'rtp-variants'] },
@@ -60,7 +60,7 @@ assert.deepEqual(index.dataTopicToGuides.rtp.map((guide) => guide.slug), ['rtp-e
 assert.deepEqual(index.featureToGuides['bonus-buy'].map((guide) => guide.slug), [bonusBuyOwnerSlug], 'bonus-buy must have exactly one published Guide owner');
 assert.equal(index.guideToGames[bonusBuyOwnerSlug].length, 56, 'Bonus Buy owner must derive exactly the 56 Games tagged with bonus-buy');
 const gamesWithoutBonusBuy = games.filter((game) => game.status === 'published' && !game.features?.includes('bonus-buy'));
-assert.equal(gamesWithoutBonusBuy.length, 156, 'Exactly 156 published Games must remain outside the bonus-buy Feature set');
+assert.equal(gamesWithoutBonusBuy.length, 161, 'Exactly 161 published Games must remain outside the bonus-buy Feature set');
 for (const game of gamesWithoutBonusBuy) {
   assert.ok(!index.gameToGuides[game.slug].some(({ guide }) => guide.slug === bonusBuyOwnerSlug), `${game.slug}: missing bonus-buy Feature must not create a Bonus Buy Guide relation`);
 }
@@ -92,7 +92,7 @@ const cascadingPreviewIndex = buildGuideRelationshipIndex(cascadingPreviewGuides
 assert.deepEqual(cascadingPreviewIndex.featureToGuides.cascading.map((guide) => guide.slug), [cascadingGuideSlug], 'cascading must have exactly one published Guide owner');
 assert.equal(cascadingPreviewIndex.guideToGames[cascadingGuideSlug].length, 36, 'Cascading Guide must derive exactly the 36 Games tagged with cascading');
 const gamesWithoutCascading = games.filter((game) => game.status === 'published' && !game.features?.includes('cascading'));
-assert.equal(gamesWithoutCascading.length, 176, 'Exactly 176 published Games must remain outside the cascading Feature set');
+assert.equal(gamesWithoutCascading.length, 181, 'Exactly 181 published Games must remain outside the cascading Feature set');
 for (const game of gamesWithoutCascading) {
   assert.ok(!cascadingPreviewIndex.gameToGuides[game.slug].some(({ guide }) => guide.slug === cascadingGuideSlug), `${game.slug}: missing cascading Feature must not create a Cascading Guide relation`);
 }

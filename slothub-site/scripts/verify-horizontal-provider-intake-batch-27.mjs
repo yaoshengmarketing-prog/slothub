@@ -72,6 +72,6 @@ for (const name of ['Koala Games', 'Trusty Gaming', 'RAW iGaming', 'G.Games']) {
 }
 assert.match(map, /Slotopia.*Reel Hit.*已收錄（1）/);
 assert.match(map, /Bullshark Games.*已收錄（1）/);
-assert.match(map, /下一個橫向接續位置.*第 205 項 Jinx Gaming/);
+assert.match(map, /第十六至二十八批的完成與待補原因維持原紀錄/);
 
 console.log('PASS: horizontal intake batch 27 published five first-party-source slot titles, preserved version and source conflicts, and avoided unsupported multiplier or mechanism guesses.');
