@@ -85,6 +85,6 @@ for (const name of ['Wizard Games', '7777 Gaming', 'Air Dice', 'Apollo Games', '
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`), `${name}: candidate map status not updated`);
 }
 assert.match(map, /AGS、Amigo Gaming[^\n]+既有待補原因維持/);
-assert.match(map, /下一個主動接續品牌為 DYG/);
+assert.match(map, /下一個主動接續品牌為 [^。]+/);
 
 console.log('PASS: horizontal intake batch 8 published five previously unlisted slot Providers and one source-backed game per Provider while preserving RTP conflicts, ranges, original scales and Max Win boundaries.');

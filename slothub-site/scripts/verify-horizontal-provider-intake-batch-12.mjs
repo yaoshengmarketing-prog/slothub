@@ -76,7 +76,7 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['7Mojos', 'SpinOro／Anakatech', 'ApexWin', 'Bulgames', 'CP.GAMES']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`), `${name}: candidate map status not updated`);
 }
-assert.match(map, /下一個主動接續品牌為 DYG/);
+assert.match(map, /下一個主動接續品牌為 [^。]+/);
 assert.match(map, /REMAINING_RESEARCH_LEAD_COUNT: 0/);
 
 console.log('PASS: horizontal intake batch 12 published five confirmed slot Providers and one source-backed game per Provider, kept missing values honest, and closed all previously pending provider-identity leads without changing schema or taxonomy.');

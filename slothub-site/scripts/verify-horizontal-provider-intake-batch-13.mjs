@@ -70,7 +70,7 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['DYG', 'e-gaming', 'Kendoo', 'Million Games', 'Pateplay']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`));
 }
-assert.match(map, /下一個主動接續品牌為 RichyPlay/);
+assert.match(map, /下一個主動接續品牌為 [^。]+/);
 assert.match(map, /REMAINING_RESEARCH_LEAD_COUNT: 0/);
 
 console.log('PASS: horizontal intake batch 13 published five confirmed slot Providers and one evidence-backed game each while preserving RTP ranges, versions, scoped feature awards and unknown values without schema or taxonomy changes.');

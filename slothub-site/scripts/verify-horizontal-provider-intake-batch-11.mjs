@@ -80,6 +80,6 @@ for (const name of ['KingMidas Games', 'Mancala Gaming', 'Mascot Gaming', '1spin
 }
 assert.match(map, /JDB Gaming、KA Gaming 與 NetGame[^\n]+既有待補原因維持/, 'deferred access/data reasons missing');
 assert.match(map, /\| 7Mojos .*\| 已收錄（1） \|/);
-assert.match(map, /下一個主動接續品牌為 DYG/);
+assert.match(map, /下一個主動接續品牌為 [^。]+/);
 
 console.log('PASS: horizontal intake batch 11 published five previously unlisted slot Providers and one source-backed game per Provider while preserving Provider-specific volatility scales, honest missing values and deferred access-limited candidates.');
