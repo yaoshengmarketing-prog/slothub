@@ -248,14 +248,14 @@
 | 94 | BRINO Games | 獨立品牌 | 開發、平台 | Live、Table、Card、Virtual | [官方品牌頁](https://www.brinogames.com/about-us) | ICE27、官方；未確認 Slots，不列入 Slot 家數 | 未收錄 |
 | 95 | Bulgames | 與 Alfastreet 為代理合作，不合併 | 開發、製造、發行 | Slots、Land-based、Roulette | [官方遊戲入口](https://bulgames-bg.com/en/) | ICE26／ICE27、官方 | 已收錄（1） |
 | 96 | CP.GAMES | Astral Games Ltd.（網站法律資訊） | 開發 | Slots、Crash | [官方遊戲目錄](https://b2b.cp.games/games) | ICE27、SBC26、官方；網站列 100+ HTML games | 已收錄（1） |
-| 97 | DYG | 獨立品牌 | 開發 | Slots、Casino | [官方品牌頁](https://www.dyg-games.com/about/) | ICE27、SBC26、官方；品牌稱 300+ casino content games | 未收錄 |
+| 97 | DYG | 獨立品牌 | 開發 | Slots、Casino | [官方品牌頁](https://www.dyg-games.com/about/) | ICE27、SBC26、官方；品牌稱 300+ casino content games | 已收錄（1） |
 | 98 | EA Gaming | 獨立品牌 | 開發 | Live Casino | [官方遊戲入口](https://ea-gaming.com/en/index.html) | ICE27、官方；未確認 RNG Slots，不列入 Slot 家數 | 未收錄 |
-| 99 | e-gaming | 獨立品牌 | 開發、製造 | Slots、Dice／Land-based | [官方遊戲目錄](https://www.e-gaming.cz/en/games) | ICE26／ICE27、官方 | 未收錄 |
-| 100 | Kendoo | 獨立品牌 | 開發 | Slots | [官方遊戲目錄](https://kendoo.com/) | ICE27、SBC26、官方；官網列 30+ games | 未收錄 |
-| 101 | Million Games | Reelsoft Vision RGS 為技術／分發關係，不合併品牌 | 開發、發行 | Slots、Crash、Casino | [官方品牌與作品入口](https://www.milliongames.com/) | ICE27、官方合作公告 | 未收錄 |
+| 99 | e-gaming | 獨立品牌 | 開發、製造 | Slots、Dice／Land-based | [官方遊戲目錄](https://www.e-gaming.cz/en/games) | ICE26／ICE27、官方 | 已收錄（1） |
+| 100 | Kendoo | 獨立品牌 | 開發 | Slots | [官方遊戲目錄](https://kendoo.com/) | ICE27、SBC26、官方；官網列 30+ games | 已收錄（1） |
+| 101 | Million Games | Reelsoft Vision RGS 為技術／分發關係，不合併品牌 | 開發、發行 | Slots、Crash、Casino | [官方品牌與作品入口](https://www.milliongames.com/) | ICE27、官方合作公告 | 已收錄（1） |
 | 102 | OMNIPLAY | Galatic Events Corp. | 遊戲／服務 offering；**不計入開發品牌或 Slot 品牌候選** | Casino offering | [品牌入口](https://omniplay.mobi/)、[PAGCOR 服務／遊戲 offering](https://www.pagcor.ph/regulatory/cegs.php)、[PAGCOR 核准遊戲清單](https://www.pagcor.ph/regulatory/pdf/App%20Kits/OMNIPLAY.pdf) | 可確認對外服務品牌與核准 offering，但沒有足以把逐款作品署名為 OMNIPLAY 自行開發的證據 | 已收斂；新逐款開發署名出現前不重開 |
 | 103 | OptimoPlay | 獨立品牌 | 開發 | Crash、Mini games | [官方品牌頁](https://optimoplay.com/about) | ICE27、官方；未確認 Slots，不列入 Slot 家數 | 未收錄 |
-| 104 | Pateplay | Pate Play Ltd. | 開發、發行 | Slots、Live、Crash、Land-based | [官方產品入口](https://pateplay.com/about) | ICE26／ICE27、SBC26、官方 | 未收錄 |
+| 104 | Pateplay | Pate Play Ltd. | 開發、發行 | Slots、Live、Crash、Land-based | [官方產品入口](https://pateplay.com/about) | ICE26／ICE27、SBC26、官方 | 已收錄（1） |
 | 105 | RichyPlay | 原待查表記為 Ritchy Play，依官網更正 | 開發 | Slots、Live | [官方 Slots 目錄](https://richyplay.live/slots/) | ICE27、官方 | 未收錄 |
 | 106 | Thunderspin | Thunderspin Ltd. | 開發 | Slots | [官方遊戲目錄](https://thunderspin.com/games) | ICE26／ICE27、SBC26、官方；官網列 115+ developed | 未收錄 |
 | 107 | Upgames | 2025 年自 Upgaming spin-off；兩品牌分開 | 開發 | Crash、Instant、Mini games | [官方遊戲目錄](https://upgames.com/games/) | ICE27、官方；未確認 Slots，不列入 Slot 家數 | 未收錄 |
@@ -443,7 +443,7 @@
 - 身分收斂輪確認 Leander Games、Mobilots、GodziSlots、Slotopia 與 BNG／Booongo：淨新增候選 **5 家**，均有 Slots 作品；OMNIPLAY 與 Yellow Orbit Gaming 不納入。
 - 全表合計去重後、已確認遊戲品牌：**227 家**。表內保留 OMNIPLAY 的研究 ID 102 供查核歷史，但它不在這個數字內。
 - 全表合計明確提供 Slots：**213 家**。Evolution 與 SPRIBE 仍不計入 Slot 品牌家數；Evolution 旗下具 Slot 品牌身份的 NetEnt、Red Tiger、Big Time Gaming、Nolimit City 各自統計。BRINO Games、EA Gaming、OptimoPlay、Upgames、Winfinity（live）、Galaxy Gaming、On Air Entertainment、Real Dealer Studios、Switch Studios、Playjeux Studios、SidePlay、iMoon Games 與 AD LUNAM 等保留為非 Slot 或目前未確認有傳統 Slots 的遊戲品牌。
-- Slot Hub 已收錄：**74 家**。
+- Slot Hub 已收錄：**79 家**。
 - 全表合計尚未收錄：**158 家**；其中尚未收錄、且目前可確認有 Slots 的品牌：**144 家**。
 - 聚合、分發、展會與監管來源層只用於發現及交叉查找，不額外灌入品牌總數。除了既有 SOFTSWISS、Slotegrator、EveryMatrix、Hub88、Relax 聚合網路與 Games Global，本輪新增使用 SBC 官方展商內容、Bragg studio 網路、Light & Wonder partner roadmap 與 PAGCOR 核准資料。Relax 同時是開發品牌，所以只在品牌清單計數一次。
 - 只有 3 家在本輪取得可明確引用的完整目錄／作品集數量，另有 TaDa Gaming 的 60+ certified 子集合；其餘保持空白。這不代表沒有遊戲，只代表目前沒有取得可安全當作完整總數的公開值。
@@ -562,7 +562,7 @@
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
-Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至十二批合計完成 60 家新 Provider 各一款，網站目前為 132 款 published Game、74 家 published Provider。第十二批完成 7Mojos／Fruit Dash、SpinOro／Honor of Egypt、ApexWin／Thief's Plan、Bulgames／Winter Hills 與 CP.GAMES／Werewolf；官方未公開的資料維持缺值，沒有跨廠商推算。後續沿用本文件，不另建平行管理系統。
+Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至十三批合計完成 65 家新 Provider 各一款，網站目前為 137 款 published Game、79 家 published Provider。第十三批完成 DYG／Tale of Anubis、e-gaming／Spinning Wild 6、Kendoo／Diamond & Jokers、Million Games／Temple Treasure 與 Pateplay／100 Happy Seven；RTP 範圍、版本與局部 Feature 上限均保留原始基準，未改寫成主要 RTP 或整局 Max Win。後續沿用本文件，不另建平行管理系統。
 
 第七批接續紀錄：SPRIBE 目前的確認類型為 Crash／Table／Casual，因此未納入老虎機橫向收錄；Playtech 因缺少可辨識的作品圖持續保留待補；該批完成時的下一個主動接續品牌為 Wizard Games。Wizard Games 已於第八批完成；第八批完成時的下一個主動接續品牌維持 Aristocrat Gaming，現行游標以本節末尾的接續原則為準。
 
@@ -582,4 +582,4 @@ Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片
 | 12 | NetEnt | 5 | https://netent.com/games | 舊作資料入口分散；逐款確認可用頁後再處理 |
 | 13 | Hacksaw Gaming | 6 | https://www.hacksawgaming.com/games | 現有覆蓋最厚，仍可由 Games／Client Hub 接續 |
 
-接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 隊列第八至十一批維持既有完成紀錄，第十二批已完成 7Mojos、SpinOro／Anakatech、ApexWin、Bulgames 與 CP.GAMES。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個主動接續品牌為 DYG。每週廠商挖掘游標已改為新的展會／合作名錄線索，三條隊列彼此不覆蓋。
+接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向第十三批已完成 DYG、e-gaming、Kendoo、Million Games 與 Pateplay。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個主動接續品牌為 RichyPlay。每週廠商挖掘游標已改為新的展會／合作名錄線索，三條隊列彼此不覆蓋。
