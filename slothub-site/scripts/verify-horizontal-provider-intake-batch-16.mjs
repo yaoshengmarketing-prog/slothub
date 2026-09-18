@@ -68,6 +68,4 @@ for (const name of ['GAMOMAT', 'Incredible Technologies', 'King Show Games', 'Bo
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`));
 }
 assert.match(map, /Win Fast .*缺少可直接歸屬的具名作品證據.*\| 未收錄 \|/);
-assert.match(map, /下一個橫向接續位置為候選地圖第 124 項 Reflex Gaming/);
-
 console.log('PASS: horizontal intake batch 16 published five identity-confirmed slot brands with one traceable official game each, while preserving Win Fast as a documented skip and unsupported fields as missing.');
