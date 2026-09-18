@@ -80,7 +80,7 @@ for (const name of ['Betixon', 'FUGASO', 'Mobilots', 'GodziSlots', 'BNG／Booong
 for (const name of ['Zerplaay Games', 'Clutch Gaming', 'Dragoon Soft', 'Spearhead Studios', 'Leander Games']) {
   assert.match(map, new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*保留待補`));
 }
-assert.match(map, /網站目前為 222 款 published Game、164 家 published Provider/);
-assert.match(map, /下一個橫向接續位置回到主表第 53 項 AGS/);
+assert.match(map, /第一至三十批完成時的歷史基線為 222 款 published Game、164 家 published Provider/);
+assert.match(map, /第 31 批由 AGS 接續/);
 
 console.log('PASS: horizontal intake batch 30 added five traceable provider/game pairs, preserved unsupported values as missing, recorded five skips, and advanced the cursor.');
