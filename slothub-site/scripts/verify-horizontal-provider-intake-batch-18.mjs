@@ -71,6 +71,6 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['Digital Gaming Corp', 'DreamSpin', 'Everi', 'Fantasma Games', 'HITSqwad']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`));
 }
-assert.match(map, /下一個橫向接續位置為候選地圖第 133 項 Gaming Realms/);
+assert.match(map, /第十八批完成 Digital Gaming Corp、DreamSpin、Everi、Fantasma Games 與 HITSqwad/);
 
 console.log('PASS: horizontal intake batch 18 published five identity-confirmed slot Providers with one official-partner game each while preserving missing values, RTP conflicts and non-multiplier prize labels.');
