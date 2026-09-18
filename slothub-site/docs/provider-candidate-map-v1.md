@@ -263,11 +263,11 @@
 | 109 | Wicked Games | Wicked Tech Malta Ltd. | 開發 | Slots、Live、Crash | [官方遊戲目錄](https://www.wicked.games/games/all) | ICE27、RX、官方 | 已收錄（1） |
 | 110 | Winfinity | 獨立 Live Casino 品牌 | 開發 | Live Casino、Game shows | [官方品牌頁](https://winfinity.live/) | ICE27、SBC26、官方；不與 NOVOMATIC 的 Winfinity Games 合併 | 未收錄 |
 | 111 | Winfinity Games | NOVOMATIC AG studio | 開發 | Slots、Land-based／Online | [NOVOMATIC studio 說明](https://www.novomatic.com/tech-heroes) | ICE26／ICE27、NOVOMATIC 官方型錄；與 Winfinity Live 分開 | 已收錄（1） |
-| 112 | Atomic Slot Lab | Bragg Studios | 開發 | Slots | [官方 studio／作品入口](https://bragg.group/casino-games/atomic-slot-lab/egyptian-magic/) | BRAGG26 | 未收錄 |
-| 113 | Indigo Magic | Bragg Studios | 開發 | Slots | [官方 studio 頁](https://bragg.group/casino-games/indigo-magic/) | BRAGG26 | 未收錄 |
-| 114 | Wild Streak Gaming | Bragg Studios | 開發 | Slots | [Bragg studio 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26、LNW26 | 未收錄 |
-| 115 | Spin Games | Bragg Studios | 開發 | Slots、Video Poker、Bingo、Keno | [Bragg studio 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26、LNW26；L&W 直接頁稱 150+ interactive games | 未收錄 |
-| 116 | ORYX Gaming | Bragg Gaming Group；平台與自有內容並存 | 開發、發行、聚合 | Slots、Table | [Bragg studio 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26；不把 ORYX Hub 的全部第三方內容當成 ORYX 自製 | 未收錄 |
+| 112 | Atomic Slot Lab | Bragg Studios | 開發 | Slots | [官方 studio／作品入口](https://bragg.group/casino-games/atomic-slot-lab/egyptian-magic/) | BRAGG26 | 已收錄（1） |
+| 113 | Indigo Magic | Bragg Studios | 開發 | Slots | [官方 studio 頁](https://bragg.group/casino-games/indigo-magic/) | BRAGG26 | 已收錄（1） |
+| 114 | Wild Streak Gaming | Bragg Studios | 開發 | Slots | [Bragg studio 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26、LNW26 | 已收錄（1） |
+| 115 | Spin Games | Bragg Studios | 開發 | Slots、Video Poker、Bingo、Keno | [Bragg studio 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26、LNW26；L&W 直接頁稱 150+ interactive games | 已收錄（1） |
+| 116 | ORYX Gaming | Bragg Gaming Group；平台與自有內容並存 | 開發、發行、聚合 | Slots、Table | [Bragg studio 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26；不把 ORYX Hub 的全部第三方內容當成 ORYX 自製 | 已收錄（1） |
 | 117 | GAMOMAT | Powered by Bragg 合作 studio | 開發 | Slots | [Bragg partner 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26 | 未收錄 |
 | 118 | Incredible Technologies | Powered by Bragg 合作 studio | 開發 | Slots、Land-based | [Bragg partner 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26 | 未收錄 |
 | 119 | King Show Games | Powered by Bragg 合作 studio | 開發 | Slots、Land-based／Online | [Bragg partner 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26 | 未收錄 |
@@ -582,4 +582,4 @@ Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片
 | 12 | NetEnt | 5 | https://netent.com/games | 舊作資料入口分散；逐款確認可用頁後再處理 |
 | 13 | Hacksaw Gaming | 6 | https://www.hacksawgaming.com/games | 現有覆蓋最厚，仍可由 Games／Client Hub 接續 |
 
-接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 隊列第十四批已完成 RichyPlay、Thunderspin、Vivid Gaming、Wicked Games 與 Winfinity Games。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個主動接續品牌為 Atomic Slot Lab。每週廠商挖掘游標已改為新的展會／合作名錄線索，三條隊列彼此不覆蓋。
+接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 的這輪 20 家已由第十二至十五批完成，最後一批為 Atomic Slot Lab、Indigo Magic、Wild Streak Gaming、Spin Games 與 ORYX Gaming。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個橫向接續位置回到候選地圖中尚未收錄且身分已確認的品牌；每週廠商挖掘游標維持新的展會／合作名錄線索，三條隊列彼此不覆蓋。
