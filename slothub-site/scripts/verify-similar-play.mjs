@@ -31,7 +31,7 @@ const records = await Promise.all(files.map(async (file) => {
 }));
 
 const published = records.filter((game) => game.status === 'published');
-assert.equal(published.length, 202, 'expected 202 published Games');
+assert.equal(published.length, 207, 'expected 207 published Games');
 assert.deepEqual(SIMILAR_PLAY_DISTINCTIVE_FEATURES, [
   'cascading', 'bonus-buy', 'hold-and-spin', 'respins', 'cash-collection',
   'giant-symbols', 'sticky-symbols', 'symbol-splitting', 'jackpot',
@@ -41,8 +41,8 @@ assert.deepEqual(SIMILAR_PLAY_EXCLUDED_FEATURES, ['wild', 'scatter', 'other']);
 const presentations = new Map(published.map((game) => [game.slug, buildSimilarPlayPresentation(game.slug, records)]));
 const withResults = [...presentations.values()].filter((presentation) => presentation.items.length > 0);
 const zeroSlugs = [...presentations.entries()].filter(([, presentation]) => presentation.items.length === 0).map(([slug]) => slug).sort();
-assert.equal(withResults.length, 154, '154 Games should have similar-play results');
-assert.deepEqual(zeroSlugs, ['3-dragon-pots', '3-lucky-rainbows-action-boost', '3-plucky-hens', '3-wonders-luck-of-stallion', '9-masks-of-fire', 'atlantis-crush', 'banana-town', 'banana-town-dream-drop', 'best-bet', 'bison-moon', 'book-of-aztec', 'enchanted-woods', 'fate-of-olympus', 'fire-stampede-dollars-and-dreams', 'fowl-play-gold', 'goal-strike-rising-rewards', 'golden-fruit-vegas-classic', 'golden-ticket', 'jolly-leprechaun', 'kingdom-wardens', 'kingfisher', 'kings-of-crystals-ii', 'loaded-up-riches-pots', 'lucky-zodiac', 'money-coming', 'money-tree-jackpot-hold-and-win', 'oh-my-gods', 'push-the-button', 'pyramid-of-light', 'redbeards-ruby-fortune-map', 'rome-fight-for-gold-eternal-empire', 'shadow-of-dominion', 'shoot-for-the-loot', 'space-bar', 'storm-of-seth', 'storm-of-seth-2-awakening', 'the-book-beyond-2', 'the-secret-of-amun-ra', 'ufc-gold-blitz-extreme', 'uncle-profit', 'upshot-prosperity-rising', 'vegas-gold', 'werewolf-cp-games', 'whitney-houston-slots', 'wild-fruit-super-wheel', 'wild-hour-league', 'wild-whopper', 'win-in-rome']);
+assert.equal(withResults.length, 158, '158 Games should have similar-play results');
+assert.deepEqual(zeroSlugs, ['3-dragon-pots', '3-lucky-rainbows-action-boost', '3-plucky-hens', '3-wonders-luck-of-stallion', '9-masks-of-fire', 'atlantis-crush', 'banana-town', 'banana-town-dream-drop', 'best-bet', 'bison-moon', 'book-of-aztec', 'enchanted-woods', 'fate-of-olympus', 'fire-stampede-dollars-and-dreams', 'fowl-play-gold', 'goal-strike-rising-rewards', 'golden-fruit-vegas-classic', 'golden-ticket', 'jolly-leprechaun', 'kingdom-wardens', 'kingfisher', 'kings-of-crystals-ii', 'loaded-up-riches-pots', 'lucky-zodiac', 'money-coming', 'money-tree-jackpot-hold-and-win', 'oh-my-gods', 'precious-monkeys', 'push-the-button', 'pyramid-of-light', 'redbeards-ruby-fortune-map', 'rome-fight-for-gold-eternal-empire', 'shadow-of-dominion', 'shoot-for-the-loot', 'space-bar', 'storm-of-seth', 'storm-of-seth-2-awakening', 'the-book-beyond-2', 'the-secret-of-amun-ra', 'ufc-gold-blitz-extreme', 'uncle-profit', 'upshot-prosperity-rising', 'vegas-gold', 'werewolf-cp-games', 'whitney-houston-slots', 'wild-fruit-super-wheel', 'wild-hour-league', 'wild-whopper', 'win-in-rome']);
 
 for (const [slug, presentation] of presentations) {
   assert.ok(presentation.items.length <= 4, `${slug}: rendered over four cards`);
@@ -110,7 +110,7 @@ for (const game of published) {
   assert.equal((html.match(/data-similar-play-slug=/g) ?? []).length, presentations.get(game.slug).items.length, `${game.slug}: rendered card count mismatch`);
   assert.ok(!html.includes('similarity-score'), `${game.slug}: similarity score rendered`);
 }
-assert.equal(renderedModules, 154, 'expected 154 rendered similar-play modules');
+assert.equal(renderedModules, 158, 'expected 158 rendered similar-play modules');
 
 const representativeHtml = await readFile(join(distGamesDirectory, 'big-bass-bonanza', 'index.html'), 'utf8');
 assert.ok(representativeHtml.indexOf('class="game-next-explore"') < representativeHtml.indexOf('class="game-similar-play"'), 'similar-play must belong to the shared next-explore section');
@@ -119,4 +119,4 @@ const styles = await readFile(fileURLToPath(new URL('../src/styles/global.css', 
 assert.match(styles, /\.similar-play-explore\{[^}]*min-height:44px/, 'Explore CTA must preserve a 44px touch target');
 assert.match(styles, /\.similar-play-grid>li>a:focus-visible[^}]*outline:/, 'similar-play links need a visible keyboard focus style');
 
-console.log('PASS: Similar play computed for 202 Games with stable sorting, exact reasons and mechanism URLs verified.');
+console.log('PASS: Similar play computed for 207 Games with stable sorting, exact reasons and mechanism URLs verified.');
