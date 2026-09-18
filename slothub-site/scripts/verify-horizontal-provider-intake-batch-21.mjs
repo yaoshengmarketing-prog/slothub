@@ -73,6 +73,6 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['Wishbone', 'Fortune Factory Studios', 'Gameburger Studios', 'Triple Edge Studios', 'SpinPlay Games']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`));
 }
-assert.match(map, /下一個橫向接續位置為候選地圖第 157 項 Aurum Signature Studios/);
+assert.match(map, /第二十一批完成 Wishbone、Fortune Factory Studios、Gameburger Studios、Triple Edge Studios 與 SpinPlay Games/);
 
 console.log('PASS: horizontal intake batch 21 published five identity-confirmed slot studios with one official game each while preserving variable layouts, missing RTP and source boundaries.');

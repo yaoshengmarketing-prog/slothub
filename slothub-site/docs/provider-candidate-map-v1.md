@@ -4,7 +4,7 @@
 >
 > 建立日期：2026-09-03
 >
-> 本輪更新：2026-09-19（橫向收錄第二十一批完成 Wishbone、Fortune Factory Studios、Gameburger Studios、Triple Edge Studios、SpinPlay Games 各一款；五款均有 Games Global 具名發行資料與可直接歸屬的官方圖片，未取得的 RTP 或統一玩法欄位維持缺值；候選總數仍為 222 家）
+> 本輪更新：2026-09-19（橫向收錄第二十二批完成 DELULU Gaming、ENJOY、WorldMatch、Caleta Gaming、Print Studios 各一款；Aurum Signature Studios 因缺少可直接歸屬的單款官方圖片、Fastspin 因尚未建立可核對的單款官方資料頁而保留待補；候選總數仍為 222 家）
 >
 > 用途：作為外部遊戲資料收集的 Provider 骨架與去重對照。這不是完整產業名錄，不授權一次建立所有 Provider 公開頁，也不改變 Schema、taxonomy、產品功能或既有發布標準。
 
@@ -308,14 +308,14 @@
 | 154 | Gameburger Studios | Games Global portfolio studio | 開發 | Slots | [Games Global products](https://www.gamesglobal.com/Products) | GG、官方作品署名 | 已收錄（1） |
 | 155 | Triple Edge Studios | Games Global portfolio studio | 開發 | Slots | [Games Global products](https://www.gamesglobal.com/Products) | GG、官方作品署名 | 已收錄（1） |
 | 156 | SpinPlay Games | Games Global portfolio studio | 開發 | Slots | [Games Global products](https://www.gamesglobal.com/Products) | GG、官方作品署名 | 已收錄（1） |
-| 157 | Aurum Signature Studios | Games Global portfolio studio | 開發 | Slots | [Games Global products](https://www.gamesglobal.com/Products) | GG、官方作品署名 | 未收錄 |
-| 158 | DELULU Gaming | Veritas Apex Ltd. | 開發 | Slots、Instant | [官方作品入口](https://www.delulugaming.com/) | SBC26、官方 | 未收錄 |
-| 159 | EnjoyGaming | EnjoyGaming Ltd. | 開發 | Slots、Crash、Multiplayer | [官方 Slots 目錄](https://enjoygaming.com/slot-games) | SBC26、官方 | 未收錄 |
-| 160 | Fastspin | Ample Global Co., Ltd. | 開發 | Slots | [官方品牌頁](https://www.fast-spin.com/about) | SBC26、官方 | 未收錄 |
-| 161 | WorldMatch | 獨立品牌 | 開發 | Slots、Table、Poker、Instant | [官方遊戲目錄](https://www.worldmatch.eu/games-archive/) | SBC26、官方 | 未收錄 |
-| 162 | Caleta Gaming | Caleta Holdings／Malta | 開發 | Slots、Video Bingo、Crash、Table、Keno | [官方遊戲目錄](https://www.caletagaming.com/our-games/) | SBC Rio 2026、官方 | 未收錄 |
+| 157 | Aurum Signature Studios | Games Global portfolio studio | 開發 | Slots | [Games Global products](https://www.gamesglobal.com/Products) | GG、官方作品署名；可確認作品發行，但本輪未取得可直接歸屬單款的官方封面，保留待補 | 未收錄 |
+| 158 | DELULU Gaming | Veritas Apex Ltd. | 開發 | Slots、Instant | [官方作品入口](https://www.delulugaming.com/) | SBC26、官方 | 已收錄（1） |
+| 159 | ENJOY | EnjoyGaming Ltd. | 開發 | Slots、Live Game Show | [官方 Slots 目錄](https://enjoygaming.com/slot-games) | SBC26、官方；Diamond Slam 作品頁可核對 | 已收錄（1） |
+| 160 | Fastspin | Ample Global Co., Ltd. | 開發 | Slots | [官方品牌頁](https://www.fast-spin.com/about) | SBC26、官方；官網目前僅能確認品牌身份，尚未建立可直接核對資料與圖片的單款官方入口，保留待補 | 未收錄 |
+| 161 | WorldMatch | 獨立品牌 | 開發 | Slots、Table、Poker、Instant | [官方遊戲目錄](https://www.worldmatch.eu/games-archive/) | SBC26、官方 | 已收錄（1） |
+| 162 | Caleta Gaming | Caleta Holdings／Malta | 開發 | Slots、Video Bingo、Crash、Table、Keno | [官方遊戲目錄](https://www.caletagaming.com/our-games/) | SBC Rio 2026、官方 | 已收錄（1） |
 | 163 | KISS Gaming | Choice Gaming 文件站對外署名 | 開發 | Slots、Crash、Instant、Virtual Live | [官方文件／遊戲入口](https://docs.choicegaming.com/) | SBC26、官方展會品牌頁；官方稱 60+ portfolio | 未收錄 |
-| 164 | Print Studios | 獨立品牌 | 開發 | Slots、Plinko | [官方遊戲目錄](https://www.printstudios.com/games) | STUD26、官方；官方稱作品由自有團隊製作，目錄可辨識 Uncle Profit 等作品 | 未收錄 |
+| 164 | Print Studios | 獨立品牌 | 開發 | Slots、Plinko | [官方遊戲目錄](https://www.printstudios.com/games) | STUD26、官方；官方稱作品由自有團隊製作，目錄可辨識 Uncle Profit 等作品 | 已收錄（1） |
 | 165 | Stormcraft Studios | Games Global 獨家合作 studio；未據此推定股權 | 開發 | Slots | [官方遊戲入口](https://stormcraftstudios.com/games/)、[Immortal Romance II 官方頁](https://stormcraftstudios.com/immortalromanceii/) | STUD26、官方；Immortal Romance II 可確認為 studio 作品 | 未收錄 |
 | 166 | PearFiction Studios | 曾透過 Leander、RNG Foundry／Microgaming 等分發；未據此推定股權 | 開發 | Slots | [官方遊戲目錄](https://pearfiction.com/games/)、[Chicago Gold 官方頁](https://pearfiction.com/games/chicago-gold/) | STUD26、官方；品牌歷史與作品入口可交叉確認 | 未收錄 |
 | 167 | Bulletproof Games | Bulletproof Games Ltd | 開發 | Slots | [官方遊戲目錄](https://bulletproofgames.co.uk/games/index.html) | STUD26、官方；目錄列 Midas Vs Medusa、Tiki Runner 系列等作品 | 未收錄 |
@@ -562,7 +562,7 @@
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
-Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至二十一批合計完成 105 家新 Provider 各一款，網站目前為 177 款 published Game、119 家 published Provider。第二十一批完成 Wishbone／Kingfisher、Fortune Factory Studios／UFC Gold Blitz Extreme、Gameburger Studios／Carnaval Drums、Triple Edge Studios／Goal Strike Rising Rewards 與 SpinPlay Games／3 Lucky Rainbows Action Boost；官方頁未提供的 RTP 或統一玩法基準維持缺值。後續沿用本文件，不另建平行管理系統。
+Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至二十二批合計完成 110 家新 Provider 各一款，網站目前為 182 款 published Game、124 家 published Provider。第二十二批完成 DELULU Gaming／Oh My Gods、ENJOY／Diamond Slam、WorldMatch／Space Bar、Caleta Gaming／Fate of Olympus 與 Print Studios／Uncle Profit；Aurum Signature Studios 因缺少可直接歸屬的單款官方圖片、Fastspin 因缺少可核對的單款官方資料頁而保留待補，官方未提供的數值維持缺值。後續沿用本文件，不另建平行管理系統。
 
 第七批接續紀錄：SPRIBE 目前的確認類型為 Crash／Table／Casual，因此未納入老虎機橫向收錄；Playtech 因缺少可辨識的作品圖持續保留待補；該批完成時的下一個主動接續品牌為 Wizard Games。Wizard Games 已於第八批完成；第八批完成時的下一個主動接續品牌維持 Aristocrat Gaming，現行游標以本節末尾的接續原則為準。
 
@@ -582,4 +582,4 @@ Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片
 | 12 | NetEnt | 5 | https://netent.com/games | 舊作資料入口分散；逐款確認可用頁後再處理 |
 | 13 | Hacksaw Gaming | 6 | https://www.hacksawgaming.com/games | 現有覆蓋最厚，仍可由 Games／Client Hub 接續 |
 
-接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 的這輪 20 家已由第十二至十五批完成，最後一批為 Atomic Slot Lab、Indigo Magic、Wild Streak Gaming、Spin Games 與 ORYX Gaming。第十六批自候選地圖接續並完成五家；Win Fast 因缺少可直接歸屬的具名作品證據而保留待補，Galaxy Gaming 因目前只確認 Table games 而跳過。第十七批完成 Reflex Gaming、Sega Sammy Creation、Ainsworth、Bang Bang Games 與 Crucible Gaming。第十八批完成 Digital Gaming Corp、DreamSpin、Everi、Fantasma Games 與 HITSqwad。第十九批完成 Lightning Box、Live 5、Pariplay、Rogue 與 WMG。第二十批完成 ALL FOR ONE Studios、Foxium、Just For The Win Studios、Northern Lights Gaming 與 Snowborn Games；Almond Gaming、Deep Stake Games 與 Nailed It! Games 的待補原因已保存。第二十一批完成 Wishbone、Fortune Factory Studios、Gameburger Studios、Triple Edge Studios 與 SpinPlay Games。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個橫向接續位置為候選地圖第 157 項 Aurum Signature Studios；每週廠商挖掘游標維持新的展會／合作名錄線索，三條隊列彼此不覆蓋。
+接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 的這輪 20 家已由第十二至十五批完成，最後一批為 Atomic Slot Lab、Indigo Magic、Wild Streak Gaming、Spin Games 與 ORYX Gaming。第十六批自候選地圖接續並完成五家；Win Fast 因缺少可直接歸屬的具名作品證據而保留待補，Galaxy Gaming 因目前只確認 Table games 而跳過。第十七批完成 Reflex Gaming、Sega Sammy Creation、Ainsworth、Bang Bang Games 與 Crucible Gaming。第十八批完成 Digital Gaming Corp、DreamSpin、Everi、Fantasma Games 與 HITSqwad。第十九批完成 Lightning Box、Live 5、Pariplay、Rogue 與 WMG。第二十批完成 ALL FOR ONE Studios、Foxium、Just For The Win Studios、Northern Lights Gaming 與 Snowborn Games；Almond Gaming、Deep Stake Games 與 Nailed It! Games 的待補原因已保存。第二十一批完成 Wishbone、Fortune Factory Studios、Gameburger Studios、Triple Edge Studios 與 SpinPlay Games。第二十二批完成 DELULU Gaming、ENJOY、WorldMatch、Caleta Gaming 與 Print Studios；Aurum Signature Studios 與 Fastspin 的待補原因已保存。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個橫向接續位置為候選地圖第 163 項 KISS Gaming；每週廠商挖掘游標維持新的展會／合作名錄線索，三條隊列彼此不覆蓋。
