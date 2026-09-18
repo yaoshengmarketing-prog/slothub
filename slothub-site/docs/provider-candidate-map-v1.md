@@ -256,13 +256,13 @@
 | 102 | OMNIPLAY | Galatic Events Corp. | 遊戲／服務 offering；**不計入開發品牌或 Slot 品牌候選** | Casino offering | [品牌入口](https://omniplay.mobi/)、[PAGCOR 服務／遊戲 offering](https://www.pagcor.ph/regulatory/cegs.php)、[PAGCOR 核准遊戲清單](https://www.pagcor.ph/regulatory/pdf/App%20Kits/OMNIPLAY.pdf) | 可確認對外服務品牌與核准 offering，但沒有足以把逐款作品署名為 OMNIPLAY 自行開發的證據 | 已收斂；新逐款開發署名出現前不重開 |
 | 103 | OptimoPlay | 獨立品牌 | 開發 | Crash、Mini games | [官方品牌頁](https://optimoplay.com/about) | ICE27、官方；未確認 Slots，不列入 Slot 家數 | 未收錄 |
 | 104 | Pateplay | Pate Play Ltd. | 開發、發行 | Slots、Live、Crash、Land-based | [官方產品入口](https://pateplay.com/about) | ICE26／ICE27、SBC26、官方 | 已收錄（1） |
-| 105 | RichyPlay | 原待查表記為 Ritchy Play，依官網更正 | 開發 | Slots、Live | [官方 Slots 目錄](https://richyplay.live/slots/) | ICE27、官方 | 未收錄 |
-| 106 | Thunderspin | Thunderspin Ltd. | 開發 | Slots | [官方遊戲目錄](https://thunderspin.com/games) | ICE26／ICE27、SBC26、官方；官網列 115+ developed | 未收錄 |
+| 105 | RichyPlay | 原待查表記為 Ritchy Play，依官網更正 | 開發 | Slots、Live | [官方 Slots 目錄](https://richyplay.live/slots/) | ICE27、官方 | 已收錄（1） |
+| 106 | Thunderspin | Thunderspin Ltd. | 開發 | Slots | [官方遊戲目錄](https://thunderspin.com/games) | ICE26／ICE27、SBC26、官方；官網列 115+ developed | 已收錄（1） |
 | 107 | Upgames | 2025 年自 Upgaming spin-off；兩品牌分開 | 開發 | Crash、Instant、Mini games | [官方遊戲目錄](https://upgames.com/games/) | ICE27、官方；未確認 Slots，不列入 Slot 家數 | 未收錄 |
-| 108 | Vivid Gaming | Vivid Gaming Ltd. | 開發 | Slots | [官方遊戲入口](https://vividgaming.com/) | ICE27、SBC26、官方；不與波蘭手機遊戲公司 Vivid Games S.A. 合併 | 未收錄 |
-| 109 | Wicked Games | Wicked Tech Malta Ltd. | 開發 | Slots、Live、Crash | [官方遊戲目錄](https://www.wicked.games/games/all) | ICE27、RX、官方 | 未收錄 |
+| 108 | Vivid Gaming | Vivid Gaming Ltd. | 開發 | Slots | [官方遊戲入口](https://vividgaming.com/) | ICE27、SBC26、官方；不與波蘭手機遊戲公司 Vivid Games S.A. 合併 | 已收錄（1） |
+| 109 | Wicked Games | Wicked Tech Malta Ltd. | 開發 | Slots、Live、Crash | [官方遊戲目錄](https://www.wicked.games/games/all) | ICE27、RX、官方 | 已收錄（1） |
 | 110 | Winfinity | 獨立 Live Casino 品牌 | 開發 | Live Casino、Game shows | [官方品牌頁](https://winfinity.live/) | ICE27、SBC26、官方；不與 NOVOMATIC 的 Winfinity Games 合併 | 未收錄 |
-| 111 | Winfinity Games | NOVOMATIC AG studio | 開發 | Slots、Land-based／Online | [NOVOMATIC studio 說明](https://www.novomatic.com/tech-heroes) | ICE26／ICE27、NOVOMATIC 官方型錄；與 Winfinity Live 分開 | 未收錄 |
+| 111 | Winfinity Games | NOVOMATIC AG studio | 開發 | Slots、Land-based／Online | [NOVOMATIC studio 說明](https://www.novomatic.com/tech-heroes) | ICE26／ICE27、NOVOMATIC 官方型錄；與 Winfinity Live 分開 | 已收錄（1） |
 | 112 | Atomic Slot Lab | Bragg Studios | 開發 | Slots | [官方 studio／作品入口](https://bragg.group/casino-games/atomic-slot-lab/egyptian-magic/) | BRAGG26 | 未收錄 |
 | 113 | Indigo Magic | Bragg Studios | 開發 | Slots | [官方 studio 頁](https://bragg.group/casino-games/indigo-magic/) | BRAGG26 | 未收錄 |
 | 114 | Wild Streak Gaming | Bragg Studios | 開發 | Slots | [Bragg studio 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26、LNW26 | 未收錄 |
@@ -582,4 +582,4 @@ Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片
 | 12 | NetEnt | 5 | https://netent.com/games | 舊作資料入口分散；逐款確認可用頁後再處理 |
 | 13 | Hacksaw Gaming | 6 | https://www.hacksawgaming.com/games | 現有覆蓋最厚，仍可由 Games／Client Hub 接續 |
 
-接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 隊列第十三批已完成 DYG、e-gaming、Kendoo、Million Games 與 Pateplay。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個主動接續品牌為 RichyPlay。每週廠商挖掘游標已改為新的展會／合作名錄線索，三條隊列彼此不覆蓋。
+接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 隊列第十四批已完成 RichyPlay、Thunderspin、Vivid Gaming、Wicked Games 與 Winfinity Games。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個主動接續品牌為 Atomic Slot Lab。每週廠商挖掘游標已改為新的展會／合作名錄線索，三條隊列彼此不覆蓋。
