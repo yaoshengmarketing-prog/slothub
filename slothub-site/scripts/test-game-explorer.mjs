@@ -24,7 +24,7 @@ const records = readdirSync(gamesDirectory)
     };
   });
 const games = records.filter((game) => game.status === 'published');
-assert.equal(games.length, 147, 'Explorer fixture must cover all 147 published games');
+assert.equal(games.length, 152, 'Explorer fixture must cover all 152 published games');
 
 const state = (patch = {}) => ({ ...emptyExplorerState(), ...patch });
 assert.equal(filterAndSortGames(games, state({ provider: 'pragmatic-play' })).length, 5);
@@ -88,7 +88,7 @@ assert.equal(filterAndSortGames(games, zeroState).length, 0, 'Recovery fixture m
 const recoveryOptions = zeroResultRecoveryOptions(games, zeroState);
 assert.deepEqual(recoveryOptions.map(({ field, value, count }) => ({ field, value, count })), [
   { field: 'mechanism', value: 'ways-to-win', count: 1 },
-  { field: 'feature', value: 'symbol-splitting', count: 28 },
+    { field: 'feature', value: 'symbol-splitting', count: 29 },
 ], 'Recovery options must remove exactly one condition and report the resulting real count');
 assert.ok(recoveryOptions.every((option) => filterAndSortGames(games, option.state).length === option.count && option.count > 0), 'Every recovery option must lead to its reported non-zero result');
 assert.deepEqual(zeroResultRecoveryOptions([], zeroState), [], 'A relaxation that remains at zero must not appear as a recovery option');

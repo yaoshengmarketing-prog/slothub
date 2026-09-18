@@ -268,13 +268,13 @@
 | 114 | Wild Streak Gaming | Bragg Studios | 開發 | Slots | [Bragg studio 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26、LNW26 | 已收錄（1） |
 | 115 | Spin Games | Bragg Studios | 開發 | Slots、Video Poker、Bingo、Keno | [Bragg studio 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26、LNW26；L&W 直接頁稱 150+ interactive games | 已收錄（1） |
 | 116 | ORYX Gaming | Bragg Gaming Group；平台與自有內容並存 | 開發、發行、聚合 | Slots、Table | [Bragg studio 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26；不把 ORYX Hub 的全部第三方內容當成 ORYX 自製 | 已收錄（1） |
-| 117 | GAMOMAT | Powered by Bragg 合作 studio | 開發 | Slots | [Bragg partner 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26 | 未收錄 |
-| 118 | Incredible Technologies | Powered by Bragg 合作 studio | 開發 | Slots、Land-based | [Bragg partner 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26 | 未收錄 |
-| 119 | King Show Games | Powered by Bragg 合作 studio | 開發 | Slots、Land-based／Online | [Bragg partner 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26 | 未收錄 |
-| 120 | Win Fast | Powered by Bragg 合作 studio | 開發 | Slots | [Bragg 2024 content presentation](https://playground.bragg.group/media/2024-10/bragg-g2e-contentpresentation-october2024-v2.pdf) | BRAGG26 | 未收錄 |
+| 117 | GAMOMAT | Powered by Bragg 合作 studio | 開發 | Slots | [Bragg partner 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26 | 已收錄（1） |
+| 118 | Incredible Technologies | Powered by Bragg 合作 studio | 開發 | Slots、Land-based | [Bragg partner 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26 | 已收錄（1） |
+| 119 | King Show Games | Powered by Bragg 合作 studio | 開發 | Slots、Land-based／Online | [Bragg partner 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26 | 已收錄（1） |
+| 120 | Win Fast | Powered by Bragg 合作 studio | 開發 | Slots | [Bragg 2024 content presentation](https://playground.bragg.group/media/2024-10/bragg-g2e-contentpresentation-october2024-v2.pdf) | BRAGG26；品牌身分已確認，但本輪仍缺少可直接歸屬的具名作品證據，保留待補 | 未收錄 |
 | 121 | Galaxy Gaming | Powered by Bragg 合作 studio | 開發 | Table games | [Bragg partner portfolio](https://playground.bragg.group/media/2024-10/bragg-g2e-contentpresentation-october2024-v2.pdf) | BRAGG26；未確認 Slots，不列入 Slot 家數 | 未收錄 |
-| 122 | Boomerang Studios | Powered by Bragg、亦由 L&W 分發 | 開發 | Slots | [Bragg partner 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26、LNW26 | 未收錄 |
-| 123 | Four Leaf Gaming | Powered by Bragg 合作 studio | 開發 | Slots | [Bragg 合作公告](https://investors.bragg.group/pr/news-details/2025/Bragg-Gaming-Expands-U-S--Content-Footprint-with-Fanatics-Casino-Tri-State-Launch/default.aspx) | BRAGG26 | 未收錄 |
+| 122 | Boomerang Studios | Powered by Bragg、亦由 L&W 分發 | 開發 | Slots | [Bragg partner 名錄](https://bragg.group/bragg-partner-logos/) | BRAGG26、LNW26 | 已收錄（1） |
+| 123 | Four Leaf Gaming | Powered by Bragg 合作 studio | 開發 | Slots | [Bragg 合作公告](https://investors.bragg.group/pr/news-details/2025/Bragg-Gaming-Expands-U-S--Content-Footprint-with-Fanatics-Casino-Tri-State-Launch/default.aspx) | BRAGG26 | 已收錄（1） |
 | 124 | Reflex Gaming | Powered by Bragg 合作 studio | 開發 | Slots、Land-based／Online | [Bragg 合作公告](https://investors.bragg.group/pr/news-details/2025/Bragg-Gaming-Expands-U-S--Content-Footprint-with-Fanatics-Casino-Tri-State-Launch/default.aspx) | BRAGG26 | 未收錄 |
 | 125 | Sega Sammy Creation | Powered by Bragg 合作 studio；SEGA SAMMY GROUP | 開發 | Slots、Land-based／Online | [Bragg 合作公告](https://investors.bragg.group/pr/news-details/2025/Bragg-Gaming-Expands-U-S--Content-Footprint-with-Fanatics-Casino-Tri-State-Launch/default.aspx) | BRAGG26 | 未收錄 |
 | 126 | Ainsworth | 獨立品牌 | 開發 | Slots、Land-based／Online | [L&W 官方作品目錄](https://igaming.lnw.com/) | LNW26 | 未收錄 |
@@ -520,9 +520,9 @@
 
 `CURRENT_SCOPE: 廠商盤點與分類`
 
-`CURRENT_GAME_COUNT: 127`
+`CURRENT_GAME_COUNT: 152`
 
-`CURRENT_PROVIDER_COUNT: 69`
+`CURRENT_PROVIDER_COUNT: 94`
 
 `FIRST_BATCH_CANDIDATE_BRAND_COUNT: 51`
 
@@ -546,7 +546,7 @@
 
 `TOTAL_SLOT_CAPABLE_BRAND_COUNT: 213`
 
-`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 144`
+`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 139`
 
 `REMAINING_RESEARCH_LEAD_COUNT: 0`
 
@@ -562,7 +562,7 @@
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
-Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至十三批合計完成 65 家新 Provider 各一款，網站目前為 137 款 published Game、79 家 published Provider。第十三批完成 DYG／Tale of Anubis、e-gaming／Spinning Wild 6、Kendoo／Diamond & Jokers、Million Games／Temple Treasure 與 Pateplay／100 Happy Seven；RTP 範圍、版本與局部 Feature 上限均保留原始基準，未改寫成主要 RTP 或整局 Max Win。後續沿用本文件，不另建平行管理系統。
+Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至十六批合計完成 80 家新 Provider 各一款，網站目前為 152 款 published Game、94 家 published Provider。第十六批完成 GAMOMAT／The Book Beyond 2、Incredible Technologies／Upshot Prosperity Rising、King Show Games／Fishing Bob 1024 Ways Hot Roll Jackpots、Boomerang Studios／3 Wonders - Luck of Stallion 與 Four Leaf Gaming／Push the Button；RTP 版本與官方原始波動度均按來源保存，未公開的最高倍數或賠付機制維持缺值。後續沿用本文件，不另建平行管理系統。
 
 第七批接續紀錄：SPRIBE 目前的確認類型為 Crash／Table／Casual，因此未納入老虎機橫向收錄；Playtech 因缺少可辨識的作品圖持續保留待補；該批完成時的下一個主動接續品牌為 Wizard Games。Wizard Games 已於第八批完成；第八批完成時的下一個主動接續品牌維持 Aristocrat Gaming，現行游標以本節末尾的接續原則為準。
 
@@ -582,4 +582,4 @@ Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片
 | 12 | NetEnt | 5 | https://netent.com/games | 舊作資料入口分散；逐款確認可用頁後再處理 |
 | 13 | Hacksaw Gaming | 6 | https://www.hacksawgaming.com/games | 現有覆蓋最厚，仍可由 Games／Client Hub 接續 |
 
-接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 的這輪 20 家已由第十二至十五批完成，最後一批為 Atomic Slot Lab、Indigo Magic、Wild Streak Gaming、Spin Games 與 ORYX Gaming。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個橫向接續位置回到候選地圖中尚未收錄且身分已確認的品牌；每週廠商挖掘游標維持新的展會／合作名錄線索，三條隊列彼此不覆蓋。
+接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；橫向未收錄 Provider 的這輪 20 家已由第十二至十五批完成，最後一批為 Atomic Slot Lab、Indigo Magic、Wild Streak Gaming、Spin Games 與 ORYX Gaming。第十六批自候選地圖接續並完成五家；Win Fast 因缺少可直接歸屬的具名作品證據而保留待補，Galaxy Gaming 因目前只確認 Table games 而跳過。AGS、Amigo Gaming、Galaxsys、JDB Gaming、KA Gaming 與 NetGame 的既有待補原因維持，不阻擋其他 Provider。下一個橫向接續位置為候選地圖第 124 項 Reflex Gaming；每週廠商挖掘游標維持新的展會／合作名錄線索，三條隊列彼此不覆蓋。
