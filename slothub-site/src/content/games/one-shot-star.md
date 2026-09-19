@@ -26,6 +26,7 @@ source: { label: Air Dice 官方 1 Shot Star 遊戲頁, url: https://airdice.com
 sources:
   - { label: Air Dice 官方遊戲頁（盤面、賠線、RTP、波動度、投注與功能）, url: https://airdice.com/games/1shotstar/, checkedAt: 2026-09-17 }
   - { label: Air Dice 官方 1 Shot Star 作品圖, url: https://airdice.com/wp-content/uploads/2024/11/1shotstar-share.jpg, checkedAt: 2026-09-17 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://demo.airdice.com/games/api/1ShotStar/demo/demo/","accessType":"direct-demo","presentation":"iframe"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

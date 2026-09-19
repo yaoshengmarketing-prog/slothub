@@ -28,6 +28,7 @@ sources:
   - { label: 1X2 Network 官方 3 Plucky Hens 遊戲頁（Studio、發布日、RTP、波動度、投注、最高倍數與功能）, url: https://www.1x2network.com/games/3-plucky-hens/, checkedAt: 2026-09-16 }
   - { label: 1X2 Network 官方 3 Plucky Hens Gamesheet, url: https://www.1x2network.com/wp-content/uploads/2025/02/3-Plucky-Hens-Gamesheet-2.pdf, checkedAt: 2026-09-16 }
   - { label: 1X2 Network 官方 3 Plucky Hens 主視覺, url: https://www.1x2network.com/wp-content/uploads/2025/02/feature_bg-768x432.png, checkedAt: 2026-09-16 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-16
 updatedAt: 2026-09-16
 ---

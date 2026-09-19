@@ -23,6 +23,7 @@ status: published
 source: { label: Naga Games 官方 God of Fortune 遊戲頁, url: https://nagagames.com/games/god-of-fortune/, checkedAt: 2026-09-19 }
 sources:
   - { label: Naga Games 官方遊戲頁（盤面、Ways、RTP、波動度與功能）, url: https://nagagames.com/games/god-of-fortune/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

@@ -18,6 +18,7 @@ source: { label: Northern Lights Gaming 官方 Bison Moon 遊戲頁, url: https:
 sources:
   - { label: Northern Lights Gaming 官方遊戲頁（作品身分、原始獎項標示與圖片）, url: https://ntlgaming.com/game/bison-moon/, checkedAt: 2026-09-19 }
   - { label: Games Global 官方發行資料（發行日、功能與最高倍數）, url: https://www.gamesglobal.com/Media/games-global-january-23-content, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

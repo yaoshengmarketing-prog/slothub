@@ -28,6 +28,7 @@ source: { label: Light & Wonder 官方 Stairway To Cash 頁, url: https://igamin
 sources:
   - { label: Light & Wonder 官方 Stairway To Cash 頁（Studio、RTP 版本、最高曝險、盤面、投注範圍、功能與 Game ID）, url: https://igaming.lnw.com/games/stairway-to-cash/, checkedAt: 2026-09-19 }
   - { label: LeoVegas 正式遊戲目錄 Stairway To Cash 主圖, url: https://media.leovegas.com/lv/games/72wbJ5jmG/wky4pFyMo75Ba5.jpg, checkedAt: 2026-09-19 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://igaming.lnw.com/games/stairway-to-cash/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

@@ -16,6 +16,7 @@ status: published
 source: { label: HungryBear Gaming 官方遊戲目錄, url: https://www.hungrybeargaming.com/, checkedAt: 2026-09-19 }
 sources:
   - { label: HungryBear Gaming 官方目錄（遊戲身份、RTP 與原廠波動度）, url: https://www.hungrybeargaming.com/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

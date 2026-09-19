@@ -24,6 +24,7 @@ status: published
 source: { label: Backseat Gaming 官方 Radiate 遊戲頁, url: https://backseatgaming.com/radiate/, checkedAt: 2026-09-19 }
 sources:
   - { label: Backseat Gaming 官方遊戲頁（盤面、RTP 版本、波動度、最高倍數與功能）, url: https://backseatgaming.com/radiate/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

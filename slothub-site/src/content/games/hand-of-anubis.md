@@ -19,6 +19,7 @@ source: { label: Hacksaw Gaming 官方遊戲庫, url: https://www.hacksawgaming.
 sources:
   - { label: Hacksaw Gaming 官方遊戲庫, url: https://www.hacksawgaming.com/games, checkedAt: 2026-08-28 }
   - { label: Hacksaw Gaming 官方發行摘要, url: https://www.hacksawgaming.com/news/new-game-release-april-summary, checkedAt: 2026-08-28 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-08-28
 updatedAt: 2026-08-28
 ---

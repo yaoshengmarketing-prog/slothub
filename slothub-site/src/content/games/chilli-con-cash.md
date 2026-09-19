@@ -23,6 +23,7 @@ status: published
 source: { label: Playzido 官方 Chilli Con Cash 遊戲頁, url: https://www.playzido.com/games/chilli-con-cash, checkedAt: 2026-09-19 }
 sources:
   - { label: Playzido 官方遊戲頁（Playzido 署名、RTP、賠線、Free Spins、功能與發布日期）, url: https://www.playzido.com/games/chilli-con-cash, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

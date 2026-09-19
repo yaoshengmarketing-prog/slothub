@@ -29,6 +29,7 @@ source: { label: Light & Wonder 官方 10,000 Bass Lightning Blitz 發行頁, ur
 sources:
   - { label: Light & Wonder 官方 10,000 Bass Lightning Blitz 發行頁（ReelPlay 署名、RTP 版本、軸數、Ways、Top Prize、投注範圍與功能）, url: https://igaming.lnw.com/games/10000-bass-lightning-blitz/, checkedAt: 2026-09-19 }
   - { label: Light & Wonder 官方遊戲畫面, url: https://sg-digital-stage.s3.eu-west-1.amazonaws.com/wp-content/uploads/2024/04/17120042/10000_Bass_LB_Screenshot_08-960x540.png, checkedAt: 2026-09-19 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://igaming.lnw.com/games/10000-bass-lightning-blitz/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

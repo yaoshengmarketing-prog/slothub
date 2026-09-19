@@ -16,6 +16,7 @@ source: { label: AceWin Gaming 官方遊戲目錄, url: https://www.acewin168.co
 sources:
   - { label: AceWin Gaming 官方遊戲目錄（作品身份、Slot 分類與遊戲識別）, url: https://www.acewin168.com/, checkedAt: 2026-09-19 }
   - { label: AceWin Gaming 官方 PirateRiches 遊戲主圖, url: https://www.acewin168.com/uploads/1789469594302-567880825.png, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

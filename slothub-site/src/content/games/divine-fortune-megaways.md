@@ -28,6 +28,7 @@ source: { label: NetEnt 官方 Divine Fortune Megaways 遊戲頁, url: https://n
 sources:
   - { label: "NetEnt 官方 Divine Fortune Megaways 遊戲頁（RTP、Max payout、動態盤面、Megaways、發行日與功能）", url: https://netent.com/games/divine-fortune-megaways, checkedAt: 2026-09-03 }
   - { label: "NetEnt 官方素材庫作品圖（未裁切、未加字）", url: https://fan-cdn.nolimitcity.com/divine_fortune_megaways_fansitethumb_512x512_04_09_2025_01_cee2ef97d4.png, checkedAt: 2026-09-03 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://netent.com/games/divine-fortune-megaways","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

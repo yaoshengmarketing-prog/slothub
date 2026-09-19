@@ -21,6 +21,7 @@ status: published
 source: { label: NowNow Gaming 官方 Shadow Treasure 遊戲頁, url: https://www.nownowgaming.com/partner-games/shadow-treasure-powered-by-hacksaw-openrgs, checkedAt: 2026-09-19 }
 sources:
   - { label: NowNow Gaming 官方遊戲頁（發布日期、盤面、機制範圍與最高倍數）, url: https://www.nownowgaming.com/partner-games/shadow-treasure-powered-by-hacksaw-openrgs, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

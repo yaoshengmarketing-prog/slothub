@@ -23,6 +23,7 @@ sources:
   - { label: "Big Time Gaming 官方 RTP 資料圖（一般模式與 Feature Drop 範圍）", url: https://images.squarespace-cdn.com/content/v1/60aedd95a74c4c4033f9d064/1633490806567-EUX0UD0A7EPEOT3S8RDU/ExtraChilli_GameStats_RTPUpdated.png, checkedAt: 2026-09-03 }
   - { label: "Big Time Gaming 官方 Ways 資料圖（117,649）", url: https://images.squarespace-cdn.com/content/v1/60aedd95a74c4c4033f9d064/1623301685371-DOBNGWT4FGXCY2S82RQW/ExtraChilli_GameStats_Ways.png, checkedAt: 2026-09-03 }
   - { label: "Big Time Gaming 官方作品圖（官方 1500×707 WebP 回應；未裁切、未加字）", url: "https://images.squarespace-cdn.com/content/v1/60aedd95a74c4c4033f9d064/1623907276259-UEJ8QOZKXND1KBD23Z62/banner_large_ExtraChilli_1600x755.jpg?format=1500w", checkedAt: 2026-09-03 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

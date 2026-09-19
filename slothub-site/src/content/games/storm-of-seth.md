@@ -26,6 +26,7 @@ image: { src: /assets/games/storm-of-seth.webp, alt: Storm of Seth 官方遊戲�
 status: published
 source: { label: ATG Games 官方繁中產品頁, url: https://atg-games.com/zh-tw/games/slot/storm-of-seth, checkedAt: 2026-08-28 }
 sources: [{ label: ATG Games 官方產品頁, url: https://www.atg-games.com/en/games/slot/storm-of-seth, checkedAt: 2026-08-28 }]
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-08-28
 updatedAt: 2026-08-28
 ---

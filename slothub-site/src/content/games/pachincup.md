@@ -28,6 +28,7 @@ status: published
 source: { label: PHOENIX 7 官方 PACHINCUP 遊戲頁, url: https://phoenix7.com/games/pachincup/, checkedAt: 2026-09-19 }
 sources:
   - { label: PHOENIX 7 官方遊戲頁（盤面、賠線、RTP、波動度、最高派彩、投注範圍與功能）, url: https://phoenix7.com/games/pachincup/, checkedAt: 2026-09-19 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"blocked","url":"https://phoenix7.com/games/pachincup/?play-demo=true","accessType":"official-game-page","presentation":"external","note":"Official page exposes the Demo, but the page is not a verified direct embeddable launcher."}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

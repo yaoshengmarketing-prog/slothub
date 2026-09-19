@@ -23,6 +23,7 @@ source: { label: Booming Games 官方 Gold Gold Gold Hold and Win 發布稿, url
 sources:
   - { label: "Booming Games 官方發布稿（發行日、5×3、25 paylines、2,000× 與功能）", url: https://booming-games.com/news/jxim9en1egtnixcj9s34fnft, checkedAt: 2026-09-03 }
   - { label: "Booming Games 官方發布圖（未裁切、未加字）", url: https://strapi-dev.booming-games.com/PR_2_1200x800_Gold_Gold_Gold_Hold_and_Win_8f424aaa39.png, checkedAt: 2026-09-03 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

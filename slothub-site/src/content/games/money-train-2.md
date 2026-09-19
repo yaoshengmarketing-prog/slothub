@@ -30,6 +30,7 @@ sources:
   - { label: "Relax Gaming 官方發布稿（發行日、50,000× stake、Respins、Multiplier 與 Money Cart）", url: https://www.relax-gaming.com/news/2020/08/relax-gaming-to-roll-out-biggest-release-of-the-year-with-money-train-2, checkedAt: 2026-09-16 }
   - { label: "Relax Gaming 官方訪談（5 軸、40 Paylines 與 Free Spins mechanic）", url: https://www.relax-gaming.com/news/2020/09/relax-gaming-player-critique-played-an-integral-role-in-money-train-sequel, checkedAt: 2026-09-16 }
   - { label: Relax Gaming 官方 Client Area 300×300 PNG（未裁切、未轉檔）, url: https://clientarea.relax-gaming.com/gameassets/moneytrain2/thumbnail1x/sMuvZNXzaeVpCRWHX9ws/Thumbnail_Money_Train_2_300x300.png, checkedAt: 2026-09-16 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.relax-gaming.com/products/casino/moneytrain2","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-16
 updatedAt: 2026-09-16
 ---

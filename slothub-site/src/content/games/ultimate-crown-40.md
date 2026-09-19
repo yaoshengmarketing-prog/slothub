@@ -32,6 +32,7 @@ sources:
   - { label: NetGame 官方 Ultimate Crown 40 遊戲頁, url: https://netgame.me/games/812, checkedAt: 2026-09-19 }
   - { label: NetGame 官方逐款 API（RTP、波動度、盤面、賠線、Max Win、功能與發行日）, url: https://netgame.me/api/games/812, checkedAt: 2026-09-19 }
   - { label: NetGame 官方 Ultimate Crown 40 遊戲主圖, url: https://ngstatic.com/icons/1100x360/812.jpg, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

@@ -21,6 +21,7 @@ source: { label: EGT Digital 官方 Book of Realm 遊戲頁, url: https://egt-di
 sources:
   - { label: EGT Digital 官方 Book of Realm 遊戲頁（盤面、固定賠線與功能）, url: https://egt-digital.com/game/book-of-realm/, checkedAt: 2026-09-19 }
   - { label: EGT Digital 官方 Book of Realm 遊戲主圖, url: https://egt-digital.com/wp-content/uploads/2024/07/book_of_realm_496x420.png, checkedAt: 2026-09-19 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://egt-digital.com/game/book-of-realm/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

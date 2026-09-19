@@ -25,6 +25,7 @@ source: { label: Triple Cherry 官方 Dragon’s Heirs 遊戲頁, url: https://w
 sources:
   - { label: Triple Cherry 官方 Dragon’s Heirs 遊戲頁（RTP 配置、盤面、Cluster、Max Multiplier 與功能）, url: https://www.3cherry.com/games/dragons-heirs/, checkedAt: 2026-09-16 }
   - { label: Triple Cherry 官方 Dragon’s Heirs 橫式作品圖（未裁切）, url: https://www.3cherry.com/wp-content/uploads/2026/07/1470x840_web.jpg, checkedAt: 2026-09-16 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.3cherry.com/dragons-heirs/","accessType":"official-game-page","presentation":"external","note":"Official product page contains the Demo entry; the product page is not embedded."}
 lastVerifiedAt: 2026-09-16
 updatedAt: 2026-09-16
 ---

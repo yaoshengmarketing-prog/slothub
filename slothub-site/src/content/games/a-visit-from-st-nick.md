@@ -19,6 +19,7 @@ status: published
 source: { label: High 5 Games 官方 A Visit from St. Nick 遊戲頁, url: https://www.high5games.com/games/game/a-visit-from-st-nick, checkedAt: 2026-09-19 }
 sources:
   - { label: High 5 Games 官方遊戲頁（類型、推出年份、盤面、Ways 與功能）, url: https://www.high5games.com/games/game/a-visit-from-st-nick, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

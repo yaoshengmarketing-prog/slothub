@@ -27,6 +27,7 @@ source: { label: Realistic Games 官方 Destination Atlantis 遊戲頁, url: htt
 sources:
   - { label: Realistic Games 官方 Destination Atlantis 遊戲頁（規格、RTP、波動度、最高倍數、盤面與功能）, url: https://www.realisticgames.co.uk/games/destination-atlantis/, checkedAt: 2026-09-19 }
   - { label: Lottomart 正式遊戲頁 Destination Atlantis 主圖, url: https://storage.googleapis.com/kickthe/assets/images/games/destination-atlantis-realistic/gb/gbp/tile_large.jpg, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

@@ -29,6 +29,7 @@ source: { label: Amusnet 官方 40 Golden Coins 遊戲頁, url: https://amusnet.
 sources:
   - { label: Amusnet 官方 40 Golden Coins 遊戲頁（Game ID、日期、盤面、賠線、RTP、波動度、最高標示與功能）, url: https://amusnet.com/games/online-casino/40-golden-coins, checkedAt: 2026-09-17 }
   - { label: Amusnet 官方 40 Golden Coins 遊戲圖片, url: https://backend.careers-amusnet.com/sites/default/files/games/468_3.webp, checkedAt: 2026-09-17 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"blocked","url":"https://amusnet.com/games/online-casino/40-golden-coins","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

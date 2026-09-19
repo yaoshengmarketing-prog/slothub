@@ -18,6 +18,7 @@ source: { label: Hacksaw Gaming 官方 Aloha Gaming studio 公告, url: https://
 sources:
   - { label: Hacksaw Gaming 官方 studio 公告（身份、首作、原始波動度與 BoosterBelt）, url: https://www.hacksawgaming.com/news/hacksaw-welcomes-aloha-gaming-as-new-partner-studio-on-openrgs, checkedAt: 2026-09-19 }
   - { label: Slingo 正式合作平台遊戲頁與圖片, url: https://www.slingo.com/en-ROW/slots/tikitopia-boosterbelt/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

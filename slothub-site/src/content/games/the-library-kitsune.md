@@ -16,6 +16,7 @@ source: { label: Hacksaw Gaming 官方 Kitsune studio 公告, url: https://www.h
 sources:
   - { label: Hacksaw Gaming 官方 studio 公告（Kitsune 身份與首作 The Library）, url: https://www.hacksawgaming.com/news/new-studio-launch-hacksaw-openrgs-welcomes-kitsune-gaming-studios, checkedAt: 2026-09-19 }
   - { label: Kitsune Studios 官方遊戲目錄與圖片, url: https://kitsunestudios.uk/kitsune-studios-games/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

@@ -13,6 +13,7 @@ source: { label: Bragg 官方 G2E 2024 內容型錄第 94 頁, url: https://play
 sources:
   - { label: Bragg 官方 G2E 2024 內容型錄第 94 頁（ORYX Gaming 品牌與作品畫面）, url: https://playground.bragg.group/media/2024-10/bragg-g2e-contentpresentation-october2024-v2.pdf, checkedAt: 2026-09-18 }
   - { label: Bragg 官方品牌整併說明（ORYX Gaming studio marquee 身分）, url: https://bragg.group/bragg-group-companies-oryx-gaming-spin-games-and-wild-streak-gaming-consolidate-under-single-brand/, checkedAt: 2026-09-18 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

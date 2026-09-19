@@ -20,6 +20,7 @@ source: { label: Bulgames 官方遊戲目錄, url: https://bulgames-bg.com/en/, 
 sources:
   - { label: Bulgames 官方目錄（盤面、固定賠線與功能）, url: https://bulgames-bg.com/en/, checkedAt: 2026-09-18 }
   - { label: Bulgames 官方 Winter Hills 作品圖, url: https://bulgames-bg.com/wp-content/uploads/2025/05/wh_icon_exact_big_2.png, checkedAt: 2026-09-18 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

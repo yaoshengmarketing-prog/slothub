@@ -22,6 +22,7 @@ status: published
 source: { label: Gaming Corps 官方 Raging Zeus 遊戲頁, url: https://gamingcorps.com/game/raging-zeus/, checkedAt: 2026-09-19 }
 sources:
   - { label: Gaming Corps 官方遊戲頁（Ways、RTP 配置、發行日期與功能）, url: https://gamingcorps.com/game/raging-zeus/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

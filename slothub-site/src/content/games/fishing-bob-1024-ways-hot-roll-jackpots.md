@@ -22,6 +22,7 @@ source: { label: Bragg 官方作品 roadmap, url: https://bragg.group/casino-gam
 sources:
   - { label: Bragg 官方作品 roadmap（Provider、RTP 版本、波動度、盤面與官方圖）, url: https://bragg.group/casino-games/roadmap/, checkedAt: 2026-09-19 }
   - { label: Bragg 官方 King Show Games 線上發行公告, url: https://bragg.group/bragg-gaming-to-bring-king-show-games-land-based-slots-to-online-players-in-the-u-s/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

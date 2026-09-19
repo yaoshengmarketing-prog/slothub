@@ -22,6 +22,7 @@ source: { label: Greentube 官方 Book of Ra Deluxe Win Ways 發布稿, url: htt
 sources:
   - { label: Greentube 官方發布稿（盤面、最高 Win Ways、Free Games 與版本條件）, url: https://www.greentube.com/popular-egyptian-slot-returns-win-ways-mechanic-book-ra-deluxe-win-ways/, checkedAt: 2026-09-17 }
   - { label: Greentube 官方 Book of Ra Deluxe Win Ways 作品圖, url: https://b2b-assets.greentube.com/wp-content/uploads/untitled-design-108.png, checkedAt: 2026-09-17 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

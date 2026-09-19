@@ -19,6 +19,7 @@ editorialFeatured: true
 status: published
 source: { label: Booming Games 官方發行資訊, url: https://booming-games.com/news/yahdelyjxgjdh26r9i2b3dcj, checkedAt: 2026-08-28 }
 sources: [{ label: Booming Games 官方發行資訊, url: https://booming-games.com/news/yahdelyjxgjdh26r9i2b3dcj, checkedAt: 2026-08-28 }]
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-08-28
 updatedAt: 2026-08-28
 ---

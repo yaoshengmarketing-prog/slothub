@@ -27,6 +27,7 @@ sources:
   - { label: 3 Oaks Gaming 官方 Sun of Egypt 4 遊戲頁（盤面、賠線、發布月份與功能）, url: https://3oaks.com/game/sun_of_egypt_4, checkedAt: 2026-09-16 }
   - { label: 3 Oaks Gaming 官方 Sun of Egypt 4 發布稿, url: https://3oaks.com/news/new-release-sun-of-egypt-4, checkedAt: 2026-09-16 }
   - { label: 3 Oaks Gaming 官方 Sun of Egypt 4 圖片, url: https://3oaks.com/media/thumbnails/public/sun_of_egypt_4/sun_of_egypt_4_banner_qvdmn_768x432.jpg, checkedAt: 2026-09-16 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-16
 updatedAt: 2026-09-16
 ---

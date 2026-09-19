@@ -28,6 +28,7 @@ source: { label: Tom Horn Gaming 官方 Book of Spells 遊戲頁, url: https://w
 sources:
   - { label: Tom Horn Gaming 官方 Book of Spells 遊戲頁（RTP、波動度、盤面、賠線、最高曝險與功能）, url: https://www.tomhorngaming.com/games/book-of-spells/, checkedAt: 2026-09-19 }
   - { label: Tom Horn Gaming 官方 Book of Spells 主圖, url: https://www.tomhorngaming.com/site/assets/files/3015/banner_627x1200.1170x658.jpg, checkedAt: 2026-09-19 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.tomhorngaming.com/games/book-of-spells/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

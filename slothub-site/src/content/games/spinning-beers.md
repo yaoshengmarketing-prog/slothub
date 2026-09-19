@@ -23,6 +23,7 @@ source: { label: Spinomenal 官方 Spinning Beers 遊戲頁, url: https://spinom
 sources:
   - { label: Spinomenal 官方遊戲頁（盤面、賠線、RTP 配置、Max Win 基準與功能）, url: https://spinomenal.com/portfolio/spinning-beers/, checkedAt: 2026-09-17 }
   - { label: Spinomenal 官方 Spinning Beers 作品圖, url: https://spinomenal.com/wp-content/uploads/2021/11/500_Round_SpinningBeers_EN.png, checkedAt: 2026-09-17 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

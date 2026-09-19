@@ -16,6 +16,7 @@ status: published
 source: { label: Light & Wonder 官方 Live 5 工作室頁, url: https://igaming.lnw.com/studios/live-5/, checkedAt: 2026-09-19 }
 sources:
   - { label: Light & Wonder 官方工作室頁（Provider、作品身份、Game ID、功能、原始獎項描述與圖片）, url: https://igaming.lnw.com/studios/live-5/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

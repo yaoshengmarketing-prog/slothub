@@ -26,6 +26,7 @@ sources:
   - { label: JILI Games 官方 Super Ace 遊戲頁（原廠波動度 LOW-MED、Paylines／1024 ways、Publish Time 2020.08）, url: "https://jiligames.com/PlusIntro/49?showGame=true", checkedAt: 2026-08-29 }
   - { label: JILI Games 官方 Super Ace 2 頁（原作繁中市場名稱與系列關係）, url: "https://jiligames.com/PlusIntro/542?showGame=true", checkedAt: 2026-08-29 }
   - { label: JILI Games 官方作品圖（原始 260×380 PNG；完整主視覺等比例置入 1200×750 PNG 中性背景，未裁切 Logo 或文字）, url: https://storage.googleapis.com/tada-cdn-asia/All-In-One/production/img/jiliPlusPlayer/games/7ycivbeSFZ2FzMIi4UfVi4vfmALw2iwP3gEaCsmO.png, checkedAt: 2026-08-29 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-08-29
 updatedAt: 2026-08-29
 ---

@@ -25,6 +25,7 @@ source: { label: Playson 官方 Flaming Bells 遊戲頁, url: https://playson.co
 sources:
   - { label: Playson 官方遊戲頁（發行日期、盤面、賠線與功能）, url: https://playson.com/game/flaming-bells, checkedAt: 2026-09-17 }
   - { label: SpinArena 的 Playson 遊戲身份縮圖（圖片）, url: "https://www.spinarena.net/casino/providers/playson/10797-flaming-bells%3A-hold-and-win?betLevel=0", checkedAt: 2026-09-17 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

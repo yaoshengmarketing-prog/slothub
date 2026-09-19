@@ -21,6 +21,7 @@ source: { label: Spin Games 官方 Triple Jewels Help Screen, url: https://helps
 sources:
   - { label: Spin Games 官方 Triple Jewels Help Screen（3×3、5 賠線、Wild、Scatter、Nudge 與 Jackpot 規則）, url: https://helpscreen-pagc.spingames.net/spin/TripleJewels_Slot.htm, checkedAt: 2026-09-18 }
   - { label: Bragg 官方 Connecticut 上線稿（Spin Games RGS 作品身分）, url: https://bragg.group/bragg-gaming-live-in-connecticut-with-launch-of-spin-games-rgs-featuring-popular-igaming-content/, checkedAt: 2026-09-18 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

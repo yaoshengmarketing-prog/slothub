@@ -30,6 +30,7 @@ sources:
   - { label: PG SOFT 官方 Fortune Rabbit 英文 Game Information, url: https://www.pgsoft.com/uploads/Games/Pdf/Fortune_Rabbit_Gameinformation_EN.pdf, checkedAt: 2026-09-03 }
   - { label: PG SOFT 官方 Fortune Rabbit 中文 Game Information（主圖為第一頁內嵌 1686×1192 PNG；未裁切、未轉檔）, url: https://www.pgsoft.com/uploads/Games/Pdf/Fortune_Rabbit_Gameinformation_ZH.pdf, checkedAt: 2026-09-03 }
   - { label: PG SOFT 官方 Fortune Rabbit 介紹, url: https://www.pgsoft.com/news/153/, checkedAt: 2026-09-03 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

@@ -30,6 +30,7 @@ source: { label: 1X2 Network 官方 X-Wild 遊戲頁, url: https://www.1x2networ
 sources:
   - { label: 1X2 Network 官方 X-Wild 遊戲頁（Studio、RTP、波動度、投注、最高倍數、盤面、賠線與功能）, url: https://www.1x2network.com/games/x-wild/, checkedAt: 2026-09-16 }
   - { label: 1X2 Network 官方 X-Wild 遊戲畫面, url: https://www.1x2network.com/wp-content/uploads/2022/09/Screenshot-2025-03-31-at-14.02.12.png, checkedAt: 2026-09-16 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-16
 updatedAt: 2026-09-16
 ---

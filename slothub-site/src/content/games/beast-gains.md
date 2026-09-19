@@ -24,6 +24,7 @@ source: { label: Relax Gaming 官方 Beast Gains 產品頁, url: https://www.rel
 sources:
   - { label: "Relax Gaming 官方 Beast Gains 產品頁（玩法、功能、投注與最高倍數）", url: https://www.relax-gaming.com/products/casino/beastgains, checkedAt: 2026-09-18 }
   - { label: Relax Gaming 官方 Client Area 600×600 PNG, url: https://clientarea.relax-gaming.com/gameassets/beastgains/thumbnail2x/Thumbnail_Beast_Gains_600x600.png, checkedAt: 2026-09-18 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.relax-gaming.com/products/casino/beastgains","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

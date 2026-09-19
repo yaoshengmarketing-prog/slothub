@@ -12,6 +12,7 @@ status: published
 source: { label: Red Desert Games 官方網站與作品輪播, url: https://reddesert.games/, checkedAt: 2026-09-19 }
 sources:
   - { label: Red Desert Games 官方網站（遊戲身份與作品圖片）, url: https://reddesert.games/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

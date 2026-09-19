@@ -23,6 +23,7 @@ source: { label: Octoplay 官方 2 Lucky Fellas Hold & Win 遊戲頁, url: https
 sources:
   - { label: Octoplay 官方 2 Lucky Fellas Hold & Win 遊戲頁（盤面、Max Win 與功能）, url: https://www.octoplay.com/games/2-lucky-fellas-hold-win, checkedAt: 2026-09-19 }
   - { label: Octoplay 官方 2 Lucky Fellas Hold & Win 遊戲主圖, url: https://framerusercontent.com/images/i21gaT445SCOwimPoVKwSpDX4.webp?width=1920&height=1080, checkedAt: 2026-09-19 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.octoplay.com/games/2-lucky-fellas-hold-win","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

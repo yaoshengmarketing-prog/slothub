@@ -24,6 +24,7 @@ source: { label: Relax Gaming 官方 Atlantis Crush 產品頁, url: https://www.
 sources:
   - { label: "Relax Gaming 官方 Atlantis Crush 產品頁（玩法、功能、投注與最高倍數）", url: https://www.relax-gaming.com/products/casino/atlantiscrush, checkedAt: 2026-09-17 }
   - { label: Relax Gaming 官方 Client Area 600×600 PNG, url: https://clientarea.relax-gaming.com/gameassets/atlantiscrush/thumbnail2x/AptSc9svCEaUuFDfXmEB/Thumbnail_Atlantis_Crush_600x600.png, checkedAt: 2026-09-17 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.relax-gaming.com/products/casino/atlantiscrush","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

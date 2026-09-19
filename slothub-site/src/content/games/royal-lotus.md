@@ -28,6 +28,7 @@ source: { label: Platipus Gaming 官方 Royal Lotus overview, url: https://plati
 sources:
   - { label: Platipus Gaming 官方 Royal Lotus overview（RTP、盤面、Ways、波動度、功能與 Game ID）, url: https://platipusgaming.cloud/marketing/royallotus_overview.pdf, checkedAt: 2026-09-19 }
   - { label: Platipus Gaming 官方 Royal Lotus 素材包, url: https://platipusgaming.cloud/royallotus/marketing/royallotus_marketing.zip, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

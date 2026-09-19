@@ -29,6 +29,7 @@ sources:
   - { label: "Relax Gaming 官方發布稿（高波動度、49,998.9× bet、Bonus symbols 與三種 Free Spins 選擇）", url: https://www.relax-gaming.com/news/2020/11/relax-gaming-and-casinogrounds-release-iron-bank, checkedAt: 2026-09-16 }
   - { label: "Relax Gaming 官方產品文章（6×4 與 4,096 Ways）", url: https://www.relax-gaming.com/news/2020/11/innovation-through-collaboration, checkedAt: 2026-09-16 }
   - { label: Relax Gaming 官方 Client Area 300×300 PNG（未裁切、未轉檔）, url: https://clientarea.relax-gaming.com/gameassets/ironbank/thumbnail1x/ygbrRXcz844svmMFWgNu/Thumb_IB_300x300.png, checkedAt: 2026-09-16 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.relax-gaming.com/products/casino/ironbank","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-16
 updatedAt: 2026-09-16
 ---

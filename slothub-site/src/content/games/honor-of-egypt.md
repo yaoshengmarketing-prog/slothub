@@ -27,6 +27,7 @@ source: { label: SpinOro 官方 Honor of Egypt 遊戲頁, url: https://www.spino
 sources:
   - { label: SpinOro 官方遊戲頁（盤面、賠線、RTP、波動度、Max Win 與功能）, url: https://www.spinoro.com/game/honor-of-egypt/, checkedAt: 2026-09-18 }
   - { label: SpinOro 官方 Honor of Egypt 作品圖, url: https://www.spinoro.com/wp-content/uploads/honor_of_egypt_1024x360.png.webp, checkedAt: 2026-09-18 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.spinoro.com/game/honor-of-egypt/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

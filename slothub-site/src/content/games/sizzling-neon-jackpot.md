@@ -22,6 +22,7 @@ source: { label: GoldenRace 官方 Sizzling Neon Jackpot 遊戲頁, url: https:/
 sources:
   - { label: GoldenRace 官方遊戲頁（RTP、原廠波動度、盤面、賠線與功能）, url: https://goldenrace.com/virtuals/slots/sizzling-neon-jackpot, checkedAt: 2026-09-18 }
   - { label: GoldenRace 官方 Sizzling Neon Jackpot 作品封面, url: https://goldenrace.com/s/g_spin/tb_600/tb600-26071454178402343430012.webp, checkedAt: 2026-09-18 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"blocked","url":"https://goldenrace.com/virtuals/slots/sizzling-neon-jackpot","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

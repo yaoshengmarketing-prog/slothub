@@ -16,6 +16,7 @@ source: { label: AGS 官方 Imperial Fortunes 遊戲頁, url: https://www.playag
 sources:
   - { label: AGS 官方 Imperial Fortunes 遊戲頁（身份與功能）, url: https://www.playags.com/directory/games/imperial-fortunes, checkedAt: 2026-09-19 }
   - { label: AGS 官方 Imperial Fortunes 遊戲標誌, url: https://cdn.sanity.io/images/0ii9y8xi/production/1488ddc6594b366e13b013c1c051fa1f512970da-676x500.png, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

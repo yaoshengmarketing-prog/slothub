@@ -25,6 +25,7 @@ sources:
   - { label: Swintt 官方遊戲頁（盤面、固定賠線、Max Win 與功能）, url: https://swintt.com/games/pyramid-of-light, checkedAt: 2026-09-17 }
   - { label: Swintt 官方 Game Sheet（Game ID、RTP 配置、原廠波動度與 Payout Mechanic 原文）, url: https://swintt.com/uploads/assets/games/gameSheets/Swintt_PyramidofLight_GameSheet.pdf, checkedAt: 2026-09-17 }
   - { label: Swintt 官方 Pyramid of Light 遊戲畫面, url: https://swintt.com/uploads/assets/games/gameplayScreenshots/1952801071_Big%20Wild%20Hit.jpg, checkedAt: 2026-09-17 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

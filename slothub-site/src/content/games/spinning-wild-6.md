@@ -24,6 +24,7 @@ source: { label: e-gaming 官方 Spinning Wild 6 遊戲頁, url: https://www.e-g
 sources:
   - { label: e-gaming 官方遊戲頁（盤面、賠線、RTP 範圍、原廠波動度與功能）, url: https://www.e-gaming.cz/en/games/spinning-wild-6, checkedAt: 2026-09-18 }
   - { label: e-gaming 官方 Spinning Wild 6 作品標誌, url: https://www.e-gaming.cz/uploads/image_Logo_be37021024.png, checkedAt: 2026-09-18 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

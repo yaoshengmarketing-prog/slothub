@@ -17,6 +17,7 @@ source: { label: JINX 官方 Dead Headz 發行公告, url: https://www.jinx-gami
 sources:
   - { label: JINX 官方發行公告（作品身份、發行日與 Shoot & Loot）, url: https://www.jinx-gaming.com/post/jinx-x-hacksaw-the-chaos-collab-begins, checkedAt: 2026-09-19 }
   - { label: JINX 官方遊戲目錄與圖片, url: https://www.jinx-gaming.com/games, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

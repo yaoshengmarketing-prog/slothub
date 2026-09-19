@@ -29,6 +29,7 @@ source: { label: Yggdrasil Gaming 官方 Vikings Go Berzerk 遊戲頁, url: http
 sources:
   - { label: "Yggdrasil Gaming 官方 Vikings Go Berzerk 遊戲頁（5×4、25 paylines、RTP、波動度、Max Win、功能與發行日）", url: https://yggdrasilgaming.com/games/vikings-go-berzerk, checkedAt: 2026-09-03 }
   - { label: "Yggdrasil Gaming 官方遊戲 Logo（原始 750×540 PNG；未裁切、未加字）", url: https://yggdrasilgaming.com/w/files/2016/11/Yggdrasil-VikingsGoBerzerk.png, checkedAt: 2026-09-03 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

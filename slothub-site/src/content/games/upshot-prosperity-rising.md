@@ -17,6 +17,7 @@ source: { label: Bragg 官方作品 roadmap, url: https://bragg.group/casino-gam
 sources:
   - { label: Bragg 官方作品 roadmap（Provider、RTP、波動度、盤面與官方圖）, url: https://bragg.group/casino-games/roadmap/, checkedAt: 2026-09-19 }
   - { label: Bragg 官方 2024 G2E 內容型錄（Incredible Technologies studio 與作品清單）, url: https://playground.bragg.group/media/2024-10/bragg-g2e-contentpresentation-october2024-v2.pdf, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

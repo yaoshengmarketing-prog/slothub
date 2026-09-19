@@ -20,6 +20,7 @@ source: { label: JILI Games 官方 Money Coming 遊戲頁, url: "https://jiligam
 sources:
   - { label: "JILI Games 官方 Money Coming 遊戲頁（MAX WIN、LOW-MED、Paylines 原欄位、Special Wheel 與 Lucky Wheel）", url: "https://jiligames.com/PlusIntro/51?showGame=true", checkedAt: 2026-09-03 }
   - { label: "JILI Games 官方頁面橫式作品背景（1600×640 JPEG；未裁切、未加字）", url: https://storage.googleapis.com/tada-cdn-asia/All-In-One/production/img/jiliPlusPlayer/games/BL2NJhyef9SbO0vKiz4BGrwME2Udfy8pzNGwP3pX.jpeg, checkedAt: 2026-09-03 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

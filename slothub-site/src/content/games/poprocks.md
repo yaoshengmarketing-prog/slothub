@@ -28,6 +28,7 @@ source: { label: AvatarUX 官方 PopRocks 遊戲頁, url: https://avatarux.com/g
 sources:
   - { label: AvatarUX 官方 PopRocks 遊戲頁（RTP、波動度、Win Potential、Ways、PopWins、Multiplier 與發行日）, url: https://avatarux.com/games/poprocks/, checkedAt: 2026-09-17 }
   - { label: AvatarUX 官方 PopRocks 遊戲圖片, url: https://avatarux.com/wp-content/uploads/2022/08/PopRocks_thumbnail_300x300px.jpg, checkedAt: 2026-09-17 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"blocked","url":"https://avatarux.com/games/poprocks/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

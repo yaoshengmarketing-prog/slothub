@@ -28,6 +28,7 @@ source: { label: Betsoft 官方 THE Game Show 遊戲頁, url: https://betsoft.co
 sources:
   - { label: Betsoft 官方 THE Game Show 遊戲頁（日期、RTP、波動度、Ways 與功能）, url: https://betsoft.com/games/the-game-show/, checkedAt: 2026-09-17 }
   - { label: Betsoft 官方 THE Game Show 遊戲圖片, url: https://betsoft.com/wp-content/uploads/2026/08/the-game-show-game-thumbnail.jpg, checkedAt: 2026-09-17 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"blocked","url":"https://betsoft.com/games/the-game-show/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

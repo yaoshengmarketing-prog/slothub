@@ -2,6 +2,15 @@ import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 const source = z.object({ label: z.string(), url: z.string().url(), checkedAt: z.coerce.date() });
 const media = z.object({ src: z.string(), alt: z.string(), sourceUrl: z.string().url(), retrievedAt: z.coerce.date() });
+const gameDemo = z.object({
+  status: z.enum(['available', 'login-required', 'access-restricted', 'not-verified']),
+  url: z.string().url().optional(),
+  accessType: z.enum(['direct-demo', 'official-game-page']).optional(),
+  presentation: z.enum(['external', 'iframe']).optional(),
+  iframeStatus: z.enum(['verified', 'blocked', 'not-tested']).default('not-tested'),
+  checkedAt: z.coerce.date(),
+  note: z.string().optional(),
+});
 const normalizedVolatility = z.enum(['low','medium','medium-high','high','very-high']);
 const winMechanism = z.enum(['paylines','ways-to-win','megaways','cluster-pays','pay-anywhere','other']);
 const feature = z.enum([
@@ -27,7 +36,7 @@ const games = defineCollection({ loader: glob({ pattern: '**/*.md', base: './src
   winMechanism: winMechanism.optional(), winCount: z.number().int().positive().optional(),
   paylines: z.string().optional(), features: z.array(feature).default([]), bonusFeatures: z.array(z.string()).default([]), bonusBuy: z.boolean().optional(),
   jackpotType: jackpotType.optional(), minBet: z.number().nonnegative().optional(), maxBet: z.number().positive().optional(), releaseDate: z.coerce.date().optional(), gameId: z.string().optional(),
-  sources: z.array(source).default([]), lastVerifiedAt: z.coerce.date().optional(),
+  sources: z.array(source).default([]), lastVerifiedAt: z.coerce.date().optional(), demo: gameDemo.optional(),
   image: media.optional(), editorialFeatured: z.boolean().default(false), status: z.enum(['draft','published']).default('draft'), source, updatedAt: z.coerce.date(),
 }) });
 const guides = defineCollection({ loader: glob({ pattern: '**/*.md', base: './src/content/guides' }), schema: z.object({

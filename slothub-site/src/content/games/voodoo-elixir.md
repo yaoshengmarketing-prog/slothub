@@ -28,6 +28,7 @@ source: { label: Mobilots 官方 Voodoo Elixir 詳情頁, url: https://www.mobil
 sources:
   - { label: Mobilots 官方 Voodoo Elixir 詳情頁（盤面、賠線、RTP、波動度、Max Win 與功能）, url: https://www.mobilots.com/details/178, checkedAt: 2026-09-19 }
   - { label: Mobilots 官方 Casino Games 目錄與遊戲圖片, url: https://www.mobilots.com/casinoGames, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

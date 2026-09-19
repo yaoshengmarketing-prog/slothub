@@ -25,6 +25,7 @@ status: published
 source: { label: Light & Wonder 官方 Prometheus Titan of Fire 遊戲頁, url: https://igaming.lnw.com/games/prometheus-titan-of-fire/, checkedAt: 2026-09-19 }
 sources:
   - { label: Light & Wonder 官方遊戲頁（Provider、版本、盤面、賠線、Top Prize、功能與圖片）, url: https://igaming.lnw.com/games/prometheus-titan-of-fire/, checkedAt: 2026-09-19 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://igaming.lnw.com/games/prometheus-titan-of-fire/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

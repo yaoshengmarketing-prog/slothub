@@ -26,6 +26,7 @@ sources:
   - { label: "Relax Gaming 官方發布稿（5×3、High、20,000× 原文、功能與發行日）", url: https://www.relax-gaming.com/news/2022/10/experience-the-roaring-20s-as-pigsby-returns-in-the-great-pigsby-megawaystm, checkedAt: 2026-09-03 }
   - { label: Relax Gaming 官方 The Great Pigsby 系列文章, url: https://www.relax-gaming.com/news/2024/12/relax-gaming-adds-dream-drop-excitement-to-the-great-pigsby, checkedAt: 2026-09-03 }
   - { label: Relax Gaming 官方 Client Area 600×600 PNG（未裁切、未轉檔）, url: https://clientarea.relax-gaming.com/gameassets/greatpigsbymegaways/thumbnail2x/5AMFvNnWB88Nd5QCfN8E/Thumbnail_The_Great_Pigsby_Megaways_600x600.png, checkedAt: 2026-09-03 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.relax-gaming.com/products/casino/greatpigsbymegaways","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

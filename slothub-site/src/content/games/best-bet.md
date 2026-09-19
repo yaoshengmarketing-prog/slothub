@@ -18,6 +18,7 @@ source: { label: Aristocrat Gaming 官方 Best Bet 遊戲頁, url: https://www.a
 sources:
   - { label: Aristocrat Gaming 官方 Best Bet 遊戲頁（系列、Cash-on-Reels、Hold & Spin、Free Games 與 Jackpot）, url: https://www.aristocratgaming.com/us/games/us-best-bet, checkedAt: 2026-09-17 }
   - { label: Aristocrat Gaming 官方 Best Bet 作品圖, url: "https://www.aristocratgaming.com/us/games/media_1a4d89e5186a27dd6a89fd5b236c3c82ec69413ba.avif?width=1200&format=pjpg&optimize=medium", checkedAt: 2026-09-17 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

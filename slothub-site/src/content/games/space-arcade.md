@@ -28,6 +28,7 @@ source: { label: Nolimit City 官方 Space Arcade 遊戲資料表, url: https://
 sources:
   - { label: Nolimit City 官方遊戲資料表（盤面、RTP、原廠波動度、最高倍數、投注範圍與功能）, url: https://static.nolimitcity.com/documents/spacearcade/Nolimit_City-Affiliate_Game_sheet_Slots_Space_Arcade.pdf, checkedAt: 2026-09-17 }
   - { label: Nolimit City 官方 Space Arcade 發布稿（發行日與 3×3／9 betlines）, url: https://www-test.nolimitcity.com/news/nolimit-city-turns-up-the-pace-with-the-launch-of-space-arcade.html, checkedAt: 2026-09-17 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

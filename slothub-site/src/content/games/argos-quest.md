@@ -23,6 +23,7 @@ status: published
 source: { label: Bragg 官方 Argos Quest 作品頁, url: https://bragg.group/casino-games/atomic-slot-lab/argos-quest/, checkedAt: 2026-09-18 }
 sources:
   - { label: Bragg 官方 Argos Quest 作品頁（盤面、Winways、RTP、波動度與功能）, url: https://bragg.group/casino-games/atomic-slot-lab/argos-quest/, checkedAt: 2026-09-18 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"blocked","url":"https://bragg.group/casino-games/atomic-slot-lab/argos-quest/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

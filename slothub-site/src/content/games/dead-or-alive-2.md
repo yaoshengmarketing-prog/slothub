@@ -28,6 +28,7 @@ source: { label: NetEnt 官方 Dead or Alive 2 遊戲頁, url: https://netent.co
 sources:
   - { label: "NetEnt 官方 Dead or Alive 2 遊戲頁（RTP、盤面、9 paylines、Feature buy-in 與兩種最高倍數語境）", url: https://netent.com/games/dead-or-alive-2, checkedAt: 2026-09-03 }
   - { label: NetEnt 官方頁載入的 Dead or Alive 2 原始 2560×820 splash poster（未裁切、未轉檔）, url: https://fan-cdn.nolimitcity.com/dead_or_alive_2_ne_fansite_splashpost_2560x820px_870a5e759f.jpg, checkedAt: 2026-09-03 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://netent.com/games/dead-or-alive-2","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

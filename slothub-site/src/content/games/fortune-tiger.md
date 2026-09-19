@@ -31,6 +31,7 @@ sources:
   - { label: PG SOFT 官方 Fortune Tiger 英文規則（主圖原始 1686×1192；等比縮放置中為 600×500 PNG，未裁切）, url: https://www.pgsoft.com/uploads/Games/Pdf/Fortune_Tiger_Gameinformation_EN.pdf, checkedAt: 2026-08-29 }
   - { label: PG SOFT 官方 Fortune Tiger 中文規則, url: https://www.pgsoft.com/uploads/Games/Pdf/Fortune_Tiger_Gameinformation_ZH.pdf, checkedAt: 2026-08-29 }
   - { label: PG SOFT 官方 Fortune Tiger 介紹, url: https://www.pgsoft.com/news/88/, checkedAt: 2026-08-29 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-08-29
 updatedAt: 2026-08-29
 ---

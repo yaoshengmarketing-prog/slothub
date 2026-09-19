@@ -24,6 +24,7 @@ status: published
 source: { label: Stormcraft Studios 官方 Thunderstruck Stormchaser 遊戲頁, url: https://stormcraftstudios.com/tssc/, checkedAt: 2026-09-19 }
 sources:
   - { label: Stormcraft Studios 官方遊戲頁（盤面、RTP、波動度、原廠最高獎項文字與功能）, url: https://stormcraftstudios.com/tssc/, checkedAt: 2026-09-19 }
+demo: {"status":"access-restricted","checkedAt":"2026-09-19","iframeStatus":"blocked","url":"https://stormcraftstudios.com/tssc/","note":"Saved source was access-restricted during the coverage audit."}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

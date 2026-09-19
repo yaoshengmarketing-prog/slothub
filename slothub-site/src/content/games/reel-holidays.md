@@ -26,6 +26,7 @@ source: { label: Jade Rabbit Studio 官方 Reel Holidays Game Sheet, url: https:
 sources:
   - { label: Jade Rabbit Studio 官方 Game Sheet（RTP、原廠波動度、盤面、賠線、Exposure 與功能）, url: https://jaderabbitstudio.eu/downloads/Reel_Holidays_Game_Sheet.pdf, checkedAt: 2026-09-19 }
   - { label: Jade Rabbit Studio 官方作品介紹, url: https://jaderabbitstudio.eu/reel-holidays/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested","accessType":"direct-demo"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

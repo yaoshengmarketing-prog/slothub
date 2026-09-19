@@ -19,6 +19,7 @@ source: { label: Mancala Gaming 官方精選遊戲目錄, url: https://mancalaga
 sources:
   - { label: Mancala Gaming 官方目錄（作品身份、RTP、原廠波動度、最高倍數與 Free Spins）, url: https://mancalagaming.com/, checkedAt: 2026-09-18 }
   - { label: Mancala Gaming 官方 Golden Fruit Vegas Classic 作品封面, url: https://prod.mancaka4ch.com/1788249367_15ba3d2dddefb6aa6fd4.webp, checkedAt: 2026-09-18 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

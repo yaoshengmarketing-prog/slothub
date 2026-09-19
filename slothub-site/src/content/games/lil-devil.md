@@ -25,6 +25,7 @@ sources:
   - { label: "Big Time Gaming 官方 Max Win 圖（100,504x Stake）", url: https://images.squarespace-cdn.com/content/v1/60aedd95a74c4c4033f9d064/1623292436675-AB2E5XMGYBKD2O5VABDZ/LilDevil_GameStats_MaxWin.png, checkedAt: 2026-09-03 }
   - { label: "Big Time Gaming 官方 RTP 圖（96.31–96.43% 範圍）", url: https://images.squarespace-cdn.com/content/v1/60aedd95a74c4c4033f9d064/1623292436680-F5WY9XGA7M92FOZ1YI44/LilDevil_GameStats_RTP.png, checkedAt: 2026-09-03 }
   - { label: "Big Time Gaming 官方作品圖（未裁切、未加字）", url: "https://images.squarespace-cdn.com/content/v1/60aedd95a74c4c4033f9d064/1623292412544-40GJPH9DO0E5CETCUVKH/banner_large_LilDevil_1600x755.jpg?format=1500w", checkedAt: 2026-09-03 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

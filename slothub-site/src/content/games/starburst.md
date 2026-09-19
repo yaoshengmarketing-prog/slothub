@@ -35,6 +35,7 @@ sources:
   - { label: NetEnt 官方歷史文章（96.09%、low-volatility 與 Win Both Ways；與現行 96.08% 有來源時期差異，不作 RTP variant）, url: https://old.netent.com/sv/4-favorite-netent-games-played-in-japan/, checkedAt: 2026-08-29 }
   - { label: NetEnt 官方 Starburst XXXtreme 發布稿（非數字續作證據）, url: https://old.netent.com/en/netent-ready-for-lift-off-as-it-launches-starburst-xxxtreme/, checkedAt: 2026-08-29 }
   - { label: NetEnt 官方作品圖（原始 512×512 PNG；未裁切、未轉檔）, url: https://fan-cdn.nolimitcity.com/Starburst_fansitethumb_512x512_04_09_2025_79a329f5be.png, checkedAt: 2026-08-29 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://netent.com/games/starburst","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-08-29
 updatedAt: 2026-08-29
 ---

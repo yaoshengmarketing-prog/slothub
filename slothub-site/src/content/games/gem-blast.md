@@ -24,6 +24,7 @@ source: { label: Endorphina 官方 Gem Blast 遊戲頁, url: https://endorphina.
 sources:
   - { label: Endorphina 官方 Gem Blast 遊戲頁（RTP、波動度、盤面、賠線與功能）, url: https://endorphina.com/games/gem-blast, checkedAt: 2026-09-17 }
   - { label: Endorphina 官方 Gem Blast 作品圖, url: https://endorphina.com/uploads/photos/loader-a4f43c7f38.jpg, checkedAt: 2026-09-17 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://endorphina.com/games/gem-blast/play","accessType":"direct-demo","presentation":"iframe"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

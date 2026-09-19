@@ -108,6 +108,21 @@ const quickStats = [
 ] as { label: string; value?: string; badge?: string; note: string; guidePlacement: GameDetailFieldPlacement }[];
 
 const unknown = '尚未核實';
+const demo = entry.data.demo;
+const demoIsIframe = demo?.status === 'available' && demo.presentation === 'iframe' && demo.iframeStatus === 'verified';
+const demoAccessLabel = demo?.accessType === 'direct-demo' ? '直接 Demo' : '官方遊戲頁';
+const demoDisplay = demo?.status === 'available'
+  ? demoIsIframe ? '已核實，可於站內查看' : '已核實官方入口'
+  : demo?.status === 'login-required'
+    ? '需登入廠商頁面'
+    : demo?.status === 'access-restricted'
+      ? '目前無法公開存取'
+      : '尚未核實官方 Demo';
+const demoNote = demo?.status === 'available'
+  ? `${demoAccessLabel}；核對 ${formatDate(demo.checkedAt)}。`
+  : demo
+    ? `核對 ${formatDate(demo.checkedAt)}；找不到精確入口不代表遊戲沒有 Demo。`
+    : '尚未完成 Demo 覆蓋核對。';
 const betRange = presentation.full.minBet !== undefined || presentation.full.maxBet !== undefined
   ? `${presentation.full.minBet !== undefined ? formatNumber(presentation.full.minBet) : unknown} ～ ${presentation.full.maxBet !== undefined ? formatNumber(presentation.full.maxBet) : unknown}`
   : undefined;
@@ -122,6 +137,7 @@ const fullSpecs = [
   { label: '投注範圍', value: betRange },
   { label: '發行日期', value: presentation.full.releaseDate ? formatDate(presentation.full.releaseDate) : undefined },
   { label: 'Game ID', value: presentation.full.gameId },
+  { label: '官方 Demo', value: demoDisplay, note: demoNote },
 ] as { label: string; value?: string; note?: string; guidePlacement?: GameDetailFieldPlacement }[];
 
 const featureGuideDirect = knowledgePresentation.featureGuides.direct;
@@ -200,6 +216,32 @@ const schema = {
       <dl>{quickStats.map((stat) => <div><dt>{stat.label}</dt><dd class={!stat.value ? 'is-unknown' : undefined}>{stat.value ?? unknown}{stat.badge && <small>{stat.badge}</small>}</dd><p>{stat.note}</p>{stat.value && knowledgePresentation.fieldGuides[stat.guidePlacement]?.map((match) => <a class="game-field-guide-link" href={match.guide.url} aria-label={`了解${stat.label}：${match.guide.title}`} data-guide-slug={match.guide.slug} data-guide-placement={stat.guidePlacement}>了解這項資料 →</a>)}</div>)}</dl>
     </section>
 
+    {demo?.status === 'available' && demo.url && <section class:list={['game-demo-access', demoIsIframe ? 'is-embedded' : 'is-external']} aria-labelledby="official-demo-title">
+      <div class="game-demo-copy">
+        <p class="eyebrow">OFFICIAL DEMO</p>
+        <h2 id="official-demo-title">官方 Demo</h2>
+        <p>{demoIsIframe
+          ? `由 ${provider?.data.name ?? entry.data.provider} 提供的官方測試內容，已實際確認可在本頁載入。`
+          : `由 ${provider?.data.name ?? entry.data.provider} 提供的官方遊戲頁，頁面內含 Demo 或測試入口。`}</p>
+        <dl>
+          <div><dt>入口類型</dt><dd>{demoAccessLabel}</dd></div>
+          <div><dt>最後核對</dt><dd>{formatDate(demo.checkedAt)}</dd></div>
+        </dl>
+      </div>
+      {demoIsIframe
+        ? <div class="game-demo-embed">
+            <div class="game-demo-frame"><iframe src={demo.url} title={`${displayName} 官方 Demo`} loading="lazy" allow="fullscreen; autoplay" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+            <p>若廠商調整了存取條件，可改用官方頁面開啟。</p>
+            <a class="button secondary" href={demo.url} target="_blank" rel="nofollow noopener noreferrer">另開官方 Demo ↗</a>
+          </div>
+        : <div class="game-demo-external">
+            <span aria-hidden="true">已核實</span>
+            <strong>官方遊戲頁與 Demo 入口</strong>
+            <p>這個入口由遊戲廠商維運，將在新分頁開啟。</p>
+            <a class="button primary" href={demo.url} target="_blank" rel="nofollow noopener noreferrer">開啟官方 Demo ↗</a>
+          </div>}
+    </section>}
+
     <section class="game-operation" aria-labelledby="operation-title">
       <div class="game-section-heading"><p class="eyebrow">HOW IT WORKS</p><div><h2 id="operation-title">這款怎麼運作</h2><p>先看一般得獎如何成立，再把盤面流程與各項功能分開閱讀。</p></div></div>
       <div class="game-operation-band">
@@ -275,6 +317,7 @@ const schema = {
       <ul>
         {sources.map((source) => <li><a href={source.url} rel="nofollow">{source.label} ↗</a><small>核對 {formatDate(source.checkedAt)}</small></li>)}
         {entry.data.image && <li><a href={entry.data.image.sourceUrl} rel="nofollow">圖片來源 ↗</a><small>取得 {formatDate(entry.data.image.retrievedAt)}</small></li>}
+        {demo?.status === 'available' && demo.url && <li><a href={demo.url} target="_blank" rel="nofollow noopener noreferrer">官方 Demo／測試頁 ↗</a><small>核對 {formatDate(demo.checkedAt)}</small></li>}
       </ul>
     </section>}
   </article>

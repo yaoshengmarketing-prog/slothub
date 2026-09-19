@@ -28,6 +28,7 @@ status: published
 source: { label: Koala Games 官方 Voltage Blitz Vortex 遊戲頁, url: https://koalagames.com/games/voltage-blitz-vortex/, checkedAt: 2026-09-19 }
 sources:
   - { label: Koala Games 官方遊戲頁（RTP 版本、波動度、最高倍數、賠線與功能）, url: https://koalagames.com/games/voltage-blitz-vortex/, checkedAt: 2026-09-19 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://koalagames.com/games/voltage-blitz-vortex/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

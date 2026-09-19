@@ -32,6 +32,7 @@ source: { label: NetEnt 官方 Divine Fortune 遊戲頁, url: https://netent.com
 sources:
   - { label: "NetEnt 官方 Divine Fortune 遊戲頁（RTP、Medium、Max payout、盤面、Paylines、發行日與功能）", url: https://netent.com/games/divine-fortune, checkedAt: 2026-09-03 }
   - { label: "NetEnt 官方素材庫作品圖（未裁切、未加字）", url: https://fan-cdn.nolimitcity.com/divine_fortune_fansitethumb_512x512_04_09_2025_01_8af5e68478.png, checkedAt: 2026-09-03 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://netent.com/games/divine-fortune","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

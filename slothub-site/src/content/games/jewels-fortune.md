@@ -23,6 +23,7 @@ source: { label: SYNOT Games 官方 Jewels Fortune 遊戲頁, url: https://www.s
 sources:
   - { label: SYNOT Games 官方 Jewels Fortune 遊戲頁（盤面、Ways、RTP 配置範圍、Max Win 與功能）, url: https://www.synotgames.com/games/jewels-fortune/, checkedAt: 2026-09-19 }
   - { label: SYNOT Games 官方 Jewels Fortune 遊戲畫面, url: https://www.synotgames.com/wp-content/uploads/2024/06/Jewels_Fortune_Reels-1536x864.jpg, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

@@ -20,6 +20,7 @@ source: { label: Zitro 官方 King Fu Frog 遊戲頁, url: https://zitrogames.co
 sources:
   - { label: Zitro 官方 King Fu Frog 遊戲頁（盤面、功能與 Jackpot 層級）, url: https://zitrogames.com/es/games/king-fu-frog-concept-prime/, checkedAt: 2026-09-19 }
   - { label: Zitro 官方 King Fu Frog 遊戲標誌, url: https://zitrogames.com/wp-content/uploads/2025/01/king-fu-frog.png, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

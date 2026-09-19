@@ -19,6 +19,7 @@ source: { label: AdvantPlay 官方遊戲目錄, url: https://advantplay.com/our-
 sources:
   - { label: AdvantPlay 官方遊戲目錄（作品身份、六軸、Scatter Bonus 與 RTP）, url: https://advantplay.com/our-games, checkedAt: 2026-09-19 }
   - { label: AdvantPlay 官方 Dragon Chi's Quest 2 遊戲主圖, url: https://advantplay.com/assets/thumbnails/webp/game-dragon-chis-quest-2-640.webp, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

@@ -26,6 +26,7 @@ source: { label: 7777 Gaming 官方 Cash Transporter 遊戲頁, url: https://777
 sources:
   - { label: 7777 Gaming 官方遊戲頁（可見欄位與結構化技術資料）, url: https://7777gaming.com/games/detail/cash-transporter, checkedAt: 2026-09-17 }
   - { label: 7777 Gaming 官方 Cash Transporter 作品圖, url: https://s.7777gaming.com/media/mediabank/images/2025/8/15/0b5bd87b2bcfec7e536e5b8a0d6ebc547cba2be7/media.jpg, checkedAt: 2026-09-17 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://7777gaming.com/games/cash-transporter/demo/lang/EN","accessType":"direct-demo","presentation":"iframe"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

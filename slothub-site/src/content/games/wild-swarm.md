@@ -29,6 +29,7 @@ sources:
   - { label: "Push Gaming 官方 Wild Swarm 遊戲頁（5×4、20 winlines、RTP、波動度與功能）", url: https://www.pushgaming.com/games/wild-swarm.html, checkedAt: 2026-09-03 }
   - { label: "Push Gaming 官方發布稿（正式身份、功能與發布日期）", url: https://www.pushgaming.com/blog/push-gaming-set-create-further-buzz-wild-swarm-release.html, checkedAt: 2026-09-03 }
   - { label: "Push Gaming 官方詳情頁背景（原始 1900×768 JPEG；未裁切、未加字）", url: https://www.pushgaming.com/uploads/wild-swarm-page-bg.jpg, checkedAt: 2026-09-03 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

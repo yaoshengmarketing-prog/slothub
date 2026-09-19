@@ -28,6 +28,7 @@ source: { label: REEVO 官方 Blue Beard's Buried Treasure 遊戲頁, url: https
 sources:
   - { label: REEVO 官方遊戲頁（日期、RTP 配置、盤面、賠線、波動度、最高倍數與功能）, url: https://reevotech.com/games/blue-beards-buried-treasure/, checkedAt: 2026-09-19 }
   - { label: REEVO 官方 Blue Beard's Buried Treasure 遊戲背景圖, url: https://reevotech.com/wp-content/uploads/2025/09/Blue-Beards-Buried-Treasure_Game-Details-Page_Background-scaled.jpg, checkedAt: 2026-09-19 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://reevotech.com/games/blue-beards-buried-treasure/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

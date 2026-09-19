@@ -29,6 +29,7 @@ sources:
   - { label: "Push Gaming 官方 Fat Rabbit 遊戲頁（5×5、50 paylines、RTP、波動度、功能與 Bonus Buy）", url: https://www.pushgaming.com/games/fat-rabbit.html, checkedAt: 2026-09-03 }
   - { label: "Push Gaming 官方發布稿（5 reels、5 rows、Free Games 與發布日期）", url: https://www.pushgaming.com/blog/push-gaming-brings-further-entertainment-mobile-new-game-fat-rabbit.html, checkedAt: 2026-09-03 }
   - { label: "Push Gaming 官方詳情頁背景（原始 1900×768 JPEG；未裁切、未加字）", url: https://www.pushgaming.com/uploads/fat-rabbit-page-bg.jpg, checkedAt: 2026-09-03 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

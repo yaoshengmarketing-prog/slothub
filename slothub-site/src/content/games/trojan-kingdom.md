@@ -25,6 +25,7 @@ source: { label: Just For The Win 官方 Trojan Kingdom 遊戲頁, url: https://
 sources:
   - { label: Just For The Win 官方遊戲頁（玩法、功能、獎項與官方遊戲畫面）, url: https://www.justforthewin.com/trojan-kingdom, checkedAt: 2026-09-19 }
   - { label: Games Global 官方發行資料（發行日、盤面、原廠波動度與最高倍數）, url: https://www.gamesglobal.com/Media/games-global-january-23-content, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

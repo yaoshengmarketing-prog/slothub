@@ -23,6 +23,7 @@ sources:
   - { label: KISS Gaming 官方 Jungle Treasure 遊戲頁（作品圖、RTP 與最高倍數）, url: https://www.kissgaming.me/games/slots/jungle-treasure, checkedAt: 2026-09-19 }
   - { label: KISS Gaming 官方發布內容（四軸、Respin 與 Progressive Jackpot）, url: https://www.linkedin.com/posts/kiss-gaming_at-kiss-gaming-we-develop-casino-game-development-activity-7482804768122327042-Frg_, checkedAt: 2026-09-19 }
   - { label: KISS Gaming 官方 Jungle Treasure 主圖, url: https://www.kissgaming.me/panel//uploads/game/07e5f276a22aeee7be1c653e9ac9a65b.png, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

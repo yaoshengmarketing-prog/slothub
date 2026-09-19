@@ -21,6 +21,7 @@ source: { label: Games Global 官方 Kings of Crystals II 發行資料, url: htt
 sources:
   - { label: Games Global 官方發行資料（工作室、盤面、最高倍數與功能）, url: https://www.gamesglobal.com/Media/Games_Global_ALL_FOR_ONE_Studios_reunite_legendary_monarchs_in_Kings_of_Crystals_II, checkedAt: 2026-09-19 }
   - { label: ALL FOR ONE Studios 官方作品目錄, url: https://allforonestudios.com/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

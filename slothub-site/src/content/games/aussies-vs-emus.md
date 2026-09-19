@@ -17,6 +17,7 @@ source: { label: Relax Gaming 官方 Aussies vs Emus 產品頁, url: https://www
 sources:
   - { label: "Relax Gaming 官方 Aussies vs Emus 產品頁（產品類型、玩法與投注範圍）", url: https://www.relax-gaming.com/products/casino/aussiesvsemus, checkedAt: 2026-09-17 }
   - { label: Relax Gaming 官方 Client Area 600×600 PNG, url: https://clientarea.relax-gaming.com/gameassets/aussiesvsemus/thumbnail2x/tvVeb5nxLRw24xkhncfL/Thumbnail_Aussies_VS_Emus_600x600.png, checkedAt: 2026-09-17 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.relax-gaming.com/products/casino/aussiesvsemus","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

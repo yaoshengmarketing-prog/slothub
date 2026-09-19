@@ -31,6 +31,7 @@ source: { label: Hacksaw Gaming 官方 Chaos Crew 2 遊戲頁, url: https://www.
 sources:
   - { label: "Hacksaw Gaming 官方 Chaos Crew 2 遊戲頁（5×5、19 Paylines、RTP、5/5、20,000× 與功能）", url: https://www.hacksawgaming.com/games/chaos-crew-2, checkedAt: 2026-09-03 }
   - { label: "Hacksaw Gaming 官方桌機作品圖（未裁切、未加字）", url: https://www-live.hacksawgaming.com/casino_thumbnails/1352_hero_Device_Desktop16x9.png, checkedAt: 2026-09-03 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

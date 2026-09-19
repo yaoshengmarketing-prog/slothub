@@ -25,6 +25,7 @@ source: { label: Quickspin 官方 Spinions Game Day 遊戲頁, url: https://quic
 sources:
   - { label: Quickspin 官方遊戲頁（RTP models、盤面、賠線、Buy feature 與功能）, url: https://quickspin.com/slots/spinions-game-day/, checkedAt: 2026-09-17 }
   - { label: Quickspin 官方 Spinions Game Day 作品圖, url: "https://quickspin.com/wp-content/uploads/2022/06/Spinions_GameDay_Quickspin.com_1300x520.png", checkedAt: 2026-09-17 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

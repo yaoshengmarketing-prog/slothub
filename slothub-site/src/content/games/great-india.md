@@ -17,6 +17,7 @@ source: { label: Betixon 官方 Great India 遊戲頁, url: https://www.betixon.
 sources:
   - { label: Betixon 官方 Great India 遊戲頁（Video Slots 與 Dynamic Ways）, url: https://www.betixon.com/great-india/, checkedAt: 2026-09-19 }
   - { label: Betixon 官方 Great India 遊戲圖片, url: https://www.betixon.com/wp-content/uploads/2021/05/Great-India_375x375.png, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

@@ -31,6 +31,7 @@ sources:
   - { label: "CQ9 Gaming 官方 Jump High 2 Guide（243 Ways、Free Game 選項、觸發與倍數規則）", url: https://site.cq9gaming.com/guides/179, checkedAt: 2026-09-03 }
   - { label: "CQ9 Gaming 官方遊戲資料（96.07 RTP、High、maximum_win 5000）", url: https://site.cq9gaming.com/en/games, checkedAt: 2026-09-03 }
   - { label: "CQ9 Gaming 官方遊戲背景（280×172 JPG；未裁切、未加字）", url: https://images.hfyali.com/cherry/background/ci5G2GQC.jpg, checkedAt: 2026-09-03 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

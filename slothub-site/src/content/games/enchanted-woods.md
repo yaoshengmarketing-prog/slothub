@@ -20,6 +20,7 @@ source: { label: CT Interactive 官方 Enchanted Woods 遊戲頁, url: https://w
 sources:
   - { label: CT Interactive 官方遊戲頁（發行日、原廠類型、盤面、賠付方式與最高獎項標示）, url: https://www.ct-interactive.com/games/games-library/enchanted-woods, checkedAt: 2026-09-17 }
   - { label: CT Interactive 官方 Enchanted Woods 作品圖, url: https://www.ct-interactive.com/assets/Uploads/products/EW_tabela.jpg, checkedAt: 2026-09-17 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.ct-interactive.com/games/games-library/enchanted-woods","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

@@ -28,6 +28,7 @@ source: { label: Barbara Bang 官方 Chinese Gold Hold and Spin game sheet, url:
 sources:
   - { label: Barbara Bang 官方 game sheet（盤面、Total RTP、Buy Feature RTP、波動度原文、Max Payout、投注範圍、功能與發行日）, url: https://promo-static.barbarabang.com/1007_Chinese_Gold_Hold_and_Spin_5a836d8bad.pdf, checkedAt: 2026-09-19 }
   - { label: Barbara Bang 官方 game sheet 第一頁遊戲畫面, url: https://promo-static.barbarabang.com/1007_Chinese_Gold_Hold_and_Spin_5a836d8bad.pdf, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

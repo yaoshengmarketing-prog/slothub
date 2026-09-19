@@ -33,6 +33,7 @@ sources:
   - { label: "AboutSlots Ancient Tumble 資料頁（二級來源；6×6、46,656 Ways、RTP 96.1%／94% 與 High 標示）", url: https://www.aboutslots.com/casino-slots/ancient-tumble, checkedAt: 2026-09-16 }
   - { label: "OLBG Ancient Tumble 資料頁（二級來源；6×6、46,656 Ways、RTP 96.1%／94% 與 Medium to High 標示）", url: https://www.olbg.com/slots/games/ancient-tumble, checkedAt: 2026-09-16 }
   - { label: Relax Gaming 官方 Client Area 600×600 PNG（未裁切、未轉檔）, url: https://clientarea.relax-gaming.com/gameassets/ancienttumble/thumbnail2x/V96xFQsTzTZV7FmCTBWb/Thumbnail_AncientTumble_600x600.png, checkedAt: 2026-09-16 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.relax-gaming.com/products/casino/ancienttumble","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-16
 updatedAt: 2026-09-16
 ---

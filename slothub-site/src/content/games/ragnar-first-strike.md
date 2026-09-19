@@ -25,6 +25,7 @@ status: published
 source: { label: Light & Wonder 官方 Ragnar First Strike 遊戲頁, url: https://igaming.lnw.com/games/ragnar-first-strike/, checkedAt: 2026-09-19 }
 sources:
   - { label: Light & Wonder 官方遊戲頁（Provider、RTP 版本、盤面、賠線、Top Prize 原文、功能與圖片）, url: https://igaming.lnw.com/games/ragnar-first-strike/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

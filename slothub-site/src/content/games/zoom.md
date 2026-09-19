@@ -26,6 +26,7 @@ source: { label: Thunderkick 官方 Zoom 遊戲頁, url: https://www.thunderkick
 sources:
   - { label: Thunderkick 官方 Zoom 遊戲頁（盤面、Pay Ways、RTP、波動度、Max exposure 與功能）, url: https://www.thunderkick.com/games/zoom/, checkedAt: 2026-09-16 }
   - { label: Thunderkick 官方 Zoom Banner（未裁切）, url: https://www.thunderkick.com/wp-content/uploads/2024/07/Banner_zoom.jpg, checkedAt: 2026-09-16 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-16
 updatedAt: 2026-09-16
 ---

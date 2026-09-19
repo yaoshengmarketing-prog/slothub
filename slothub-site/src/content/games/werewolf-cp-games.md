@@ -19,6 +19,7 @@ source: { label: CP.GAMES 官方 Werewolf 介紹, url: https://b2b.cp.games/, ch
 sources:
   - { label: CP.GAMES 官方首頁 Werewolf 介紹（盤面、功能與 up to 1500x）, url: https://b2b.cp.games/, checkedAt: 2026-09-18 }
   - { label: CP.GAMES 官方 Werewolf 作品圖, url: https://dzatvl71hbyae.cloudfront.net/uploads/game/20260602/fa77fe4fc4f360c7db71004e0a7580da.webp, checkedAt: 2026-09-18 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

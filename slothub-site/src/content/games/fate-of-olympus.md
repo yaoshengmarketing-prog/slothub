@@ -22,6 +22,7 @@ status: published
 source: { label: Caleta Gaming 官方 Fate of Olympus 遊戲頁, url: https://www.caletagaming.com/our-games/fate-of-olympus, checkedAt: 2026-09-19 }
 sources:
   - { label: Caleta Gaming 官方遊戲頁（RTP、波動度、最高倍數與功能）, url: https://www.caletagaming.com/our-games/fate-of-olympus, checkedAt: 2026-09-19 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.caletagaming.com/our-games/fate-of-olympus","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

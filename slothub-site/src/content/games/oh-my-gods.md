@@ -15,6 +15,7 @@ status: published
 source: { label: DELULU Gaming 官方 Oh My Gods 介紹, url: https://www.delulugaming.com/, checkedAt: 2026-09-19 }
 sources:
   - { label: DELULU Gaming 官方作品介紹（身份與功能）, url: https://www.delulugaming.com/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

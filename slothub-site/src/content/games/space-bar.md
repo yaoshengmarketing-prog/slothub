@@ -16,6 +16,7 @@ status: published
 source: { label: WorldMatch 官方 Space Bar 遊戲頁, url: https://www.worldmatch.eu/games/slot-machines/space-bar/, checkedAt: 2026-09-19 }
 sources:
   - { label: WorldMatch 官方遊戲頁（身份、原廠波動度與功能）, url: https://www.worldmatch.eu/games/slot-machines/space-bar/, checkedAt: 2026-09-19 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.worldmatch.eu/games/slot-machines/space-bar/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

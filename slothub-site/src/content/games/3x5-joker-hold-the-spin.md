@@ -26,6 +26,7 @@ source: { label: Gamzix 官方 3x5 Joker Hold The Spin 遊戲頁, url: https://g
 sources:
   - { label: Gamzix 官方遊戲頁（RTP 配置、盤面賠線、原廠波動度、最高倍數與功能規則）, url: https://gamzix.com/games/3x5-joker-hold-the-spin/, checkedAt: 2026-09-17 }
   - { label: Gamzix 官方 3x5 Joker Hold The Spin 作品封面, url: https://gorgeous-power-f21d21763f.media.strapiapp.com/900x1344_8_34c7422e6c.png, checkedAt: 2026-09-17 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"blocked","url":"https://gamzix.com/games/3x5-joker-hold-the-spin/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

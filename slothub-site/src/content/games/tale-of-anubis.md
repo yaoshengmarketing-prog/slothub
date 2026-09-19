@@ -18,6 +18,7 @@ source: { label: DYG 官方 Tale of Anubis 遊戲頁, url: https://www.dyg-games
 sources:
   - { label: DYG 官方遊戲頁（賠線與功能）, url: https://www.dyg-games.com/movie/tale-of-anubis/, checkedAt: 2026-09-18 }
   - { label: DYG 官方 Tale of Anubis 作品封面, url: https://www.dyg-games.com/wp-content/uploads/2025/06/Tale-of-Anubis-2-270x335.webp, checkedAt: 2026-09-18 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.dyg-games.com/movie/tale-of-anubis/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

@@ -24,6 +24,7 @@ source: { label: GameArt 官方 20 Hot Super Fruits 發布稿, url: https://game
 sources:
   - { label: GameArt 官方發布稿（盤面、賠線、Wild、Respins、Buy Feature 與最高倍數）, url: https://gameart.net/single-news/gamearts-newest-slot-20-hot-super-fruits/, checkedAt: 2026-09-17 }
   - { label: GameArt 官方 20 Hot Super Fruits 發布圖, url: https://gameart.net/wp-content/uploads/2024/03/20HSF_WebsiteNews_1270x398.jpg, checkedAt: 2026-09-17 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

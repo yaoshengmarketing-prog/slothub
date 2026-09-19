@@ -28,6 +28,7 @@ source: { label: Yggdrasil Gaming 官方 Golden Fish Tank 2 GigaBlox 遊戲頁, 
 sources:
   - { label: "Yggdrasil Gaming 官方 Golden Fish Tank 2 GigaBlox 遊戲頁（盤面、賠線、RTP、波動度、貨幣 Max Win、功能與日期）", url: https://yggdrasilgaming.com/games/golden-fish-tank-2-gigablox, checkedAt: 2026-09-03 }
   - { label: "Yggdrasil Gaming 官方遊戲 Logo（原始 750×540 PNG；未裁切、未加字）", url: https://yggdrasilgaming.com/w/files/2021/09/golden_fish_tank_2-Logo-Template-750x540px.png, checkedAt: 2026-09-03 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

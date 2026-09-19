@@ -17,6 +17,7 @@ status: published
 source: { label: Bragg 官方 Reflex Gaming 作品頁, url: https://bragg.group/casino-games/reflex-gaming/, checkedAt: 2026-09-19 }
 sources:
   - { label: Bragg 官方 Reflex Gaming 作品頁（作品歸屬、RTP 版本、波動度、盤面與圖片）, url: https://bragg.group/casino-games/reflex-gaming/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

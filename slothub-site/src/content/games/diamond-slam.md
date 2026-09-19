@@ -22,6 +22,7 @@ status: published
 source: { label: ENJOY 官方 Diamond Slam 遊戲頁, url: https://enjoygaming.com/game/diamond-slam, checkedAt: 2026-09-19 }
 sources:
   - { label: ENJOY 官方遊戲頁（盤面、賠線、最高獎項與功能）, url: https://enjoygaming.com/game/diamond-slam, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

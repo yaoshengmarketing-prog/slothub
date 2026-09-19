@@ -14,6 +14,7 @@ status: published
 source: { label: Light & Wonder 官方 Digital Gaming Corp 工作室頁, url: https://igaming.lnw.com/studios/digital-gaming-corp/, checkedAt: 2026-09-19 }
 sources:
   - { label: Light & Wonder 官方工作室頁（作品歸屬、功能與圖片）, url: https://igaming.lnw.com/studios/digital-gaming-corp/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

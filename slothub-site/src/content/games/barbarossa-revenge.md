@@ -32,6 +32,7 @@ source: { label: Peter & Sons 官方 Barbarossa Revenge 遊戲頁, url: https://
 sources:
   - { label: Peter & Sons 現行官方遊戲頁（RTP、原廠波動度、30,000x、盤面、Ways、Feature Buy-In 與功能）, url: https://peterandsonsgames.com/games/barbarossa-revenge, checkedAt: 2026-09-17 }
   - { label: Peter & Sons 官方 Barbarossa Revenge 作品縮圖, url: https://res.cloudinary.com/dvdvr52pj/image/upload/pas-media/Barbarossa-revenge_thumbnail-png.png, checkedAt: 2026-09-17 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://peterandsonsgames.com/games/barbarossa-revenge","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

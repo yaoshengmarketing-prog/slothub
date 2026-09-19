@@ -26,6 +26,7 @@ sources:
   - { label: Big Time Gaming 官方 Bonanza 遊戲頁, url: https://www.bigtimegaming.com/games/bonanza, checkedAt: 2026-08-29 }
   - { label: "Big Time Gaming 現行產品資料頁（official up to 117,649 ways；EUR Min/Max bet €0.20／€20.00）", url: https://beta.bigtimegaming.com/games/bonanza, checkedAt: 2026-08-29 }
   - { label: Big Time Gaming 官方橫式作品圖（原始 1600×755 JPEG；未裁切、未轉檔）, url: https://images.squarespace-cdn.com/content/v1/60aedd95a74c4c4033f9d064/1624241048032-Y1JGMZ3I0U9BM5DBV981/Bonanza_Rectangular_1600x755.jpg, checkedAt: 2026-08-29 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://beta.bigtimegaming.com/games/bonanza","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-08-29
 updatedAt: 2026-08-29
 ---

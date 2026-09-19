@@ -18,6 +18,7 @@ source: { label: Bluberi 官方 Shoot for the Loot 遊戲頁, url: https://blube
 sources:
   - { label: Bluberi 官方遊戲頁（市場類別、原廠波動度與功能）, url: https://bluberi.com/shoot-for-the-loot/, checkedAt: 2026-09-17 }
   - { label: Bluberi 官方 Shoot for the Loot 作品圖, url: https://bluberi.com/wp-content/uploads/2025/06/ShootForTheLoot-Logo.png, checkedAt: 2026-09-17 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

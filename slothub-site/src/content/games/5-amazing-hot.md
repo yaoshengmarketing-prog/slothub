@@ -21,6 +21,7 @@ source: { label: NOVOMATIC 2025 官方產品型錄第 67 頁, url: https://www.n
 sources:
   - { label: NOVOMATIC 官方型錄（Winfinity Games 歸屬、5 賠線、單線最高獎與波動度圖示）, url: https://www.novomatic.com/sites/default/files/2025-01/ProductCatalogue_ICE25_jan25_0.pdf, checkedAt: 2026-09-18 }
   - { label: NOVOMATIC 官方 Tech Heroes 工作室介紹, url: https://www.novomatic.com/en/tech-heroes, checkedAt: 2026-09-18 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

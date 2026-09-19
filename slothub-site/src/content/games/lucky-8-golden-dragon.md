@@ -26,6 +26,7 @@ status: published
 source: { label: Pixiu Gaming 官方 Lucky 8 Golden Dragon 遊戲頁, url: https://pixiugaming.com/games/lucky-8-golden-dragon/, checkedAt: 2026-09-19 }
 sources:
   - { label: Pixiu Gaming 官方遊戲頁（盤面、RTP 條件、波動度、最高倍數與功能）, url: https://pixiugaming.com/games/lucky-8-golden-dragon/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

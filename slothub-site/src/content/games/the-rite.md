@@ -23,6 +23,7 @@ source: { label: Mascot Gaming 官方 The Rite 遊戲頁, url: https://mascot.ga
 sources:
   - { label: Mascot Gaming 官方遊戲頁（盤面、賠線、原廠波動度、日期與功能）, url: https://mascot.games/rite/, checkedAt: 2026-09-18 }
   - { label: Mascot Gaming 官方 The Rite 遊戲主圖, url: https://mascot.games/images/game_rite.jpeg, checkedAt: 2026-09-18 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"blocked","url":"https://play.mascot.games/rite","accessType":"official-game-page","presentation":"external","note":"Official play page contains its own nested Demo, but the page is not used as a direct embedded launcher."}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

@@ -26,6 +26,7 @@ source: { label: Habanero 官方 Hot Hot Fruit 遊戲頁, url: https://habaneros
 sources:
   - { label: Habanero 官方 Hot Hot Fruit 遊戲頁（盤面、賠線、原廠波動度、RTP 約略版本、最高倍數、Game ID 與功能）, url: https://habanerosystems.com/games/sghothotfruit, checkedAt: 2026-09-17 }
   - { label: Habanero 官方 Hot Hot Fruit 作品圖, url: https://app-test.insvr.com/img/r/425/SGHotHotFruit_en.png, checkedAt: 2026-09-17 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"blocked","url":"https://habanerosystems.com/games/sghothotfruit","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

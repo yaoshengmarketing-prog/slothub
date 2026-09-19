@@ -15,6 +15,7 @@ source: { label: Aruze Gaming Global 官方 Loaded Up Riches Pots 遊戲頁, url
 sources:
   - { label: Aruze Gaming Global 官方遊戲頁（作品身份與四種 Free Games Feature）, url: https://aruzeglobal.com/game/loaded-up-riches-pots/, checkedAt: 2026-09-17 }
   - { label: Aruze Gaming Global 官方作品圖, url: https://s3-aruzeglobal-website-media-files-us-east-2.s3.us-east-2.amazonaws.com/wp-content/uploads/2026/09/04140405/Loaded-Up-Riches-Pots_Card.png, checkedAt: 2026-09-17 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

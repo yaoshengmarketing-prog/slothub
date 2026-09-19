@@ -26,6 +26,7 @@ status: published
 source: { label: FAZI 官方 Power of the Great 遊戲頁, url: https://www.fazicompany.com/game/power-of-the-great, checkedAt: 2026-09-19 }
 sources:
   - { label: FAZI 官方遊戲頁（盤面、RTP、波動度、最高倍數、賠線與功能）, url: https://www.fazicompany.com/game/power-of-the-great, checkedAt: 2026-09-19 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://onlinegamespromo.fazi.rs/Home/IntegrationGameLaunch?moneyType=0&gameName=PowerOfTheGreat&platform=desktop&languageCode=eng&currency=EUR","accessType":"direct-demo","presentation":"iframe"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

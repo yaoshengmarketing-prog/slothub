@@ -28,6 +28,7 @@ sources:
   - { label: "Push Gaming 官方 Jammin’ Jars 遊戲頁（8×8、功能、RTP、High、Highest Observed Win 與 Bonus Buy）", url: https://www.pushgaming.com/games/jammin-jars.html, checkedAt: 2026-09-03 }
   - { label: "Push Gaming 官方發布稿（Cascading Cluster Pays 與發布日期）", url: https://www.pushgaming.com/blog/push-gaming-get-groove-new-game-jammin-jars.html, checkedAt: 2026-09-03 }
   - { label: "Push Gaming 官方遊戲目錄圖（原始 1266×563 JPEG；未裁切、未加字）", url: https://www.pushgaming.com/uploads/Jammin-Jars_preview2020.jpg, checkedAt: 2026-09-03 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

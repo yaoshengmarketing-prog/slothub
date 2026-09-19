@@ -21,6 +21,7 @@ source: { label: Relax Gaming 官方 Banana Town 產品頁, url: https://www.rel
 sources:
   - { label: "Relax Gaming 官方 Banana Town 產品頁（玩法、RTP 版本與投注範圍）", url: https://www.relax-gaming.com/products/casino/bananatown, checkedAt: 2026-09-18 }
   - { label: Relax Gaming 官方 Client Area 600×600 PNG, url: https://clientarea.relax-gaming.com/gameassets/bananatown/thumbnail2x/EYUfqpQpQxXKRpYUs3NR/Thumbnail_Banana_Town_600x600.png, checkedAt: 2026-09-18 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.relax-gaming.com/products/casino/bananatown","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

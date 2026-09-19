@@ -21,6 +21,7 @@ source: { label: SmartSoft Gaming 官方 Power of Tiger 遊戲頁, url: https://
 sources:
   - { label: SmartSoft Gaming 官方遊戲頁（賠線、最高倍數與功能）, url: https://www.smartsoftgaming.com/games/power-of-tiger, checkedAt: 2026-09-19 }
   - { label: SmartSoft Gaming 官方 Power of Tiger 遊戲圖片, url: https://cdn.prod.website-files.com/68263adafcf8918559aaa083/69ef67639ed643e8a9e19288_493x617%20%2812%29.webp, checkedAt: 2026-09-19 }
+demo: {"status":"access-restricted","checkedAt":"2026-09-19","iframeStatus":"blocked","url":"https://eu-server.ssgportal.com/GameLauncher/Loader.aspx?GameCategory=Slots&GameName=PowerOfTiger&Token=DEMO&PortalName=demo","accessType":"direct-demo","note":"The launcher returned its outer document, but the embedded game negotiation failed during the browser review."}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

@@ -23,6 +23,7 @@ source: { label: Kendoo 官方 Diamond & Jokers 遊戲頁, url: https://kendoo.c
 sources:
   - { label: Kendoo 官方遊戲頁（盤面、賠線、功能、Bonus Buy 與 Jackpot 基準）, url: https://kendoo.com/games/diamond-and-jokers, checkedAt: 2026-09-18 }
   - { label: Kendoo 官方 Diamond & Jokers 遊戲主視覺, url: https://eu-west-2.graphassets.com/cm5nozsdr00h608l8gavz7aag/cmp6p1s3nvbo007lbfusn98lr, checkedAt: 2026-09-18 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"blocked","url":"https://kendoo.com/games/diamond-and-jokers","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

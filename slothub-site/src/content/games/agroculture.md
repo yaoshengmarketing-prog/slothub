@@ -33,6 +33,7 @@ sources:
   - { label: "SlotArk AgroCulture 資料頁（二級來源；RTP 96.1% 與 Medium-High 標示）", url: https://www.slotark.com/slots/agroculture/, checkedAt: 2026-09-16 }
   - { label: "Bonkku AgroCulture 資料頁（二級來源；RTP 96.1% 與 High 標示，保留波動度衝突）", url: https://bonkku.com/demos/agroculture/, checkedAt: 2026-09-16 }
   - { label: Relax Gaming 官方 Client Area 600×600 PNG（未裁切、未轉檔）, url: https://clientarea.relax-gaming.com/gameassets/agroculture/thumbnail2x/Thumbnail_AgroCulture_600x600.png, checkedAt: 2026-09-16 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.relax-gaming.com/products/casino/agroculture","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-16
 updatedAt: 2026-09-16
 ---

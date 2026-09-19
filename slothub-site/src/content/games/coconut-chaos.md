@@ -18,6 +18,7 @@ source: { label: Pineapple Play 官方遊戲目錄, url: https://www.pineapplepl
 sources:
   - { label: Pineapple Play 官方逐款頁（作品身份、圖片與原始波動度）, url: https://www.pineappleplay.com/games/coconut-chaos, checkedAt: 2026-09-19 }
   - { label: Hacksaw Gaming 官方 Pineapple Play studio 公告（首作身份）, url: https://www.hacksawgaming.com/news/new-studio-launch-hacksaw-gaming-welcomes-pineapple-play, checkedAt: 2026-09-19 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"blocked","url":"https://www.pineappleplay.com/games/coconut-chaos/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

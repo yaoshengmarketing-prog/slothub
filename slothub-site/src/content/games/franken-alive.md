@@ -28,6 +28,7 @@ status: published
 source: { label: Pascal Gaming 官方 Franken Alive 遊戲頁, url: https://pascalgaming.com/games/franken-alive, checkedAt: 2026-09-19 }
 sources:
   - { label: Pascal Gaming 官方遊戲頁（類型、盤面、RTP、波動度、最高倍數與功能）, url: https://pascalgaming.com/games/franken-alive, checkedAt: 2026-09-19 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://pascalgaming.com/games/franken-alive","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

@@ -22,6 +22,7 @@ source: { label: Evoplay 官方 Inner Fire 遊戲頁, url: https://evoplay.games
 sources:
   - { label: Evoplay 官方 Inner Fire 遊戲頁（RTP、原廠波動度、最高獎標籤、日期、賠線與功能）, url: https://evoplay.games/game/inner-fire/, checkedAt: 2026-09-17 }
   - { label: Evoplay 官方 Inner Fire 遊戲縮圖, url: https://evoplay.games/wp-content/uploads/2022/12/innerfire_270x270.jpg, checkedAt: 2026-09-17 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

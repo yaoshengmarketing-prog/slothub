@@ -24,6 +24,7 @@ status: published
 source: { label: Slotopia 官方 Reel Hit 遊戲頁, url: https://slotopia.games/game/reel-hit/, checkedAt: 2026-09-19 }
 sources:
   - { label: Slotopia 官方遊戲頁（盤面、賠線、RTP、原始最高獎項標示與功能）, url: https://slotopia.games/game/reel-hit/, checkedAt: 2026-09-19 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://demo.evoplay.games/demo/fullstate/html5/slotopia/reelhit","accessType":"direct-demo","presentation":"iframe"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

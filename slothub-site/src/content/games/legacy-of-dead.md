@@ -26,6 +26,7 @@ sources:
   - { label: Play’n GO 官方 Dead Series 說明, url: https://www.playngo.com/posts/why-is-the-dead-series-so-popular, checkedAt: 2026-08-29 }
   - { label: "Play’n GO 官方 Dead Series 文章（最高倍數另述 5,000× 及全 Expanding Symbols 條件 25,000×）", url: https://www.playngo.com/post/top-dead-series-slots-play-n-go, checkedAt: 2026-08-29 }
   - { label: Play’n GO 官方 Open Graph 作品圖（原始 CDN 輸出 500×350 WebP；官方 fill 輸出，未另行裁切或轉檔）, url: "https://static.wixstatic.com/media/47c2af_667385683f1e4438b985bed2b1fcc396~mv2.webp/v1/fill/w_500,h_350,al_c/47c2af_667385683f1e4438b985bed2b1fcc396~mv2.webp", checkedAt: 2026-08-29 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://asccw.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=legacyofdead&lang=en_GB&practice=1&channel=mobile&demo=2","accessType":"direct-demo","presentation":"iframe"}
 lastVerifiedAt: 2026-08-29
 updatedAt: 2026-08-29
 ---

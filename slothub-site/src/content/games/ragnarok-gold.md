@@ -26,6 +26,7 @@ editorialFeatured: true
 status: published
 source: { label: Slotmill 官方遊戲資料表, url: https://developer.slotmill.com/gamelist/, checkedAt: 2026-08-28 }
 sources: [{ label: Slotmill 官方遊戲資料表, url: https://developer.slotmill.com/gamelist/, checkedAt: 2026-08-28 }]
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-08-28
 updatedAt: 2026-08-28
 ---

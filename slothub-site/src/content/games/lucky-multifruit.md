@@ -27,6 +27,7 @@ source: { label: Trusty Gaming 官方 Lucky Multifruit 遊戲頁, url: https://t
 sources:
   - { label: Trusty Gaming 官方遊戲頁（RTP 版本、波動度、最高倍數、現行盤面、賠線與功能）, url: https://trustygaming.com/games/lucky-multifruit, checkedAt: 2026-09-19 }
   - { label: Trusty Gaming 官方發布稿（早期 5×3 描述，與現行逐款頁列數不同）, url: https://trustygaming.com/news/trusty-games-makes-a-debut-with-the-launch-of-lucky-multifruit-slot, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

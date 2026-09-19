@@ -27,6 +27,7 @@ source: { label: RichyPlay 官方 Cute Crush 遊戲頁, url: https://richyplay.l
 sources:
   - { label: RichyPlay 官方遊戲頁（盤面、機制、RTP、波動度、最高倍數與投注範圍）, url: https://richyplay.live/games/cute-crush, checkedAt: 2026-09-18 }
   - { label: RichyPlay 官方 Cute Crush 作品圖片, url: https://richyplay.live/game-thumbs/cute-crush.webp, checkedAt: 2026-09-18 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://richyplay.live/games/cute-crush","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

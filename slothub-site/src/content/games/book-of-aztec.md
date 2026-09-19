@@ -17,6 +17,7 @@ source: { label: AMATIC Industries 官方 Slot Games 目錄, url: https://www.am
 sources:
   - { label: AMATIC Industries 官方 Slot Games 目錄（作品名稱、發布日期與圖片）, url: https://www.amatic.com/products/slot-games, checkedAt: 2026-09-17 }
   - { label: AMATIC Industries 官方 Book Of Aztec 圖片, url: https://www.amatic.com/uploads/images/games_mini/boa_top_logo-min.jpg, checkedAt: 2026-09-17 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

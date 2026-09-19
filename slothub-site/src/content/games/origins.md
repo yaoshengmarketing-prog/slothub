@@ -26,6 +26,7 @@ source: { label: Stakelogic 官方 Origins 遊戲頁, url: https://stakelogic.co
 sources:
   - { label: Stakelogic 官方遊戲頁（盤面、Payways、RTP、原廠波動度、Max Multiplier 與功能）, url: https://stakelogic.com/en/slot/origins/, checkedAt: 2026-09-17 }
   - { label: Stakelogic 官方 Origins 作品圖, url: https://stakelogic.com/wp-content/uploads/2022/12/Game-Logo-800px.png, checkedAt: 2026-09-17 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://stakelogic.com/en/slot/origins/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

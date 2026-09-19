@@ -29,6 +29,7 @@ source: { label: 1spin4win 官方 Book of Armour 遊戲頁, url: https://www.1sp
 sources:
   - { label: 1spin4win 官方遊戲頁（盤面、Allways、RTP、原廠波動度、最高倍數、Game ID 與功能）, url: https://www.1spin4win.com/games/book-of-armour, checkedAt: 2026-09-18 }
   - { label: 1spin4win 官方 Book of Armour 作品封面, url: https://cdn.prod.website-files.com/6564ba01d62e911ee731b8fb/65f9a4bb213ac457a75dcd01_Book_of_Armour_680x846.webp, checkedAt: 2026-09-18 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"blocked","url":"https://www.1spin4win.com/games/book-of-armour","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

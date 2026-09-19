@@ -23,6 +23,7 @@ source: { label: ELK Studios 官方 Nitropolis 遊戲頁, url: https://www.elk-s
 sources:
   - { label: ELK Studios 官方 Nitropolis 遊戲頁（盤面、Ways 與功能）, url: https://www.elk-studios.com/games/nitropolis/, checkedAt: 2026-09-17 }
   - { label: ELK Studios 官方 Nitropolis 遊戲標誌圖, url: https://www.elk-studios.com/app/uploads/2020/10/nitropolis_logo.png, checkedAt: 2026-09-17 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

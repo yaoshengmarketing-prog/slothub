@@ -28,6 +28,7 @@ sources:
   - { label: Pragmatic Play 官方中文遊戲頁（文字記為 5×5，與英文官方來源衝突）, url: "https://www.pragmaticplay.com/zh/%E6%B8%B8%E6%88%8F/sweet-bonanza-1000/", checkedAt: 2026-08-29 }
   - { label: Pragmatic Play 官方發布稿（續作、6×5、25,000x）, url: https://www.pragmaticplay.com/en/news/pragmatic-play-sweetens-up-candyland-in-sweet-bonanza-1000/, checkedAt: 2026-08-29 }
   - { label: Pragmatic Play 官方作品圖（原始 339×180 PNG；未裁切、未轉檔）, url: https://www.pragmaticplay.com/wp-content/uploads/2024/05/Sweet-Bonanza-1000_339x180.png, checkedAt: 2026-08-29 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-08-29
 updatedAt: 2026-08-29
 ---

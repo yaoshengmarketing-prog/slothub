@@ -25,6 +25,7 @@ source: { label: BGaming 官方 Adventures 遊戲頁, url: https://bgaming.com/g
 sources:
   - { label: BGaming 官方 Adventures 遊戲頁（RTP、原廠波動度、日期、Cluster Pays、Max multiplier 與功能）, url: https://bgaming.com/games/adventures, checkedAt: 2026-09-16 }
   - { label: BGaming 官方 Adventures 作品圖（未裁切）, url: https://bgaming.com/wp-content/uploads/2025/04/6669c6f4ab1877ebc99b178f_Adventures_1020x1280-720x904.webp, checkedAt: 2026-09-16 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://bgaming.com/games/adventures","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-16
 updatedAt: 2026-09-16
 ---

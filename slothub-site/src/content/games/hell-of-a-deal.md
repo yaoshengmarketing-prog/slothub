@@ -26,6 +26,7 @@ source: { label: Light & Wonder 官方 Hell of a Deal 遊戲頁, url: https://ig
 sources:
   - { label: Light & Wonder 官方遊戲頁（Studio、RTP versions、盤面、Top Prize、投注範圍與功能）, url: https://igaming.lnw.com/games/hell-of-a-deal/, checkedAt: 2026-09-17 }
   - { label: Light & Wonder 官方 Hell of a Deal 作品圖, url: https://igaming.lnw.com/wp-content/uploads/2024/09/Hell-of-a-Deal-760-x-640.jpg, checkedAt: 2026-09-17 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://igaming.lnw.com/games/hell-of-a-deal/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

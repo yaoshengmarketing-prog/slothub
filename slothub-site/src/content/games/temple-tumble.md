@@ -24,6 +24,7 @@ sources:
   - { label: "Relax Gaming 官方 Temple Tumble 產品頁（6×6、46,656 ways、German RTP 90% 與 Game ID 原文）", url: https://www.relax-gaming.com/products/casino/templetumble, checkedAt: 2026-09-03 }
   - { label: Relax Gaming 官方 Temple Tumble 發布稿（Megaways、Cascading、Free Spins、Multiplier 與發行日）, url: https://www.relax-gaming.com/news/2019/01/relax-gaming-unveils-temple-tumble, checkedAt: 2026-09-03 }
   - { label: Relax Gaming 官方 Client Area 600×600 PNG（未裁切、未轉檔）, url: https://clientarea.relax-gaming.com/gameassets/templetumble/thumbnail2x/WH6ZbZZczeFSfeb75huV/thumbnail_Temple_Tumble_600x600.png, checkedAt: 2026-09-03 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.relax-gaming.com/products/casino/templetumble","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

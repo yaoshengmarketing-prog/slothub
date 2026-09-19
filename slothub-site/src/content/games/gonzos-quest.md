@@ -29,6 +29,7 @@ sources:
   - { label: NetEnt 官方 Gonzo 系列回顧, url: https://netent.com/posts/gonzo-the-quest-so-far, checkedAt: 2026-08-29 }
   - { label: NetEnt 官方 Gonzo’s Quest II 頁, url: https://netent.com/games/gonzo-s-quest-ii-return-to-el-dorado, checkedAt: 2026-08-29 }
   - { label: NetEnt 官方 CDN 橫幅（原始 2560×820 JPEG；未裁切、未轉檔）, url: https://fan-cdn.nolimitcity.com/gonzos_quest_ne_fansite_splashpost_2560x820px_f2768e9202.jpg, checkedAt: 2026-08-29 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://netent.com/games/gonzos-quest/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-08-29
 updatedAt: 2026-08-29
 ---

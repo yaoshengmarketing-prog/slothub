@@ -22,6 +22,7 @@ sources:
   - { label: CQ9 Gaming 官方 Jump High 英文品牌新聞, url: https://www.cq9gaming.com/news/detail/949, checkedAt: 2026-08-29 }
   - { label: CQ9 Gaming 官方遊戲目錄, url: https://site.cq9gaming.com/en/games, checkedAt: 2026-08-29 }
   - { label: CQ9 Gaming 官方目錄縮圖（原始 200×200 PNG；未裁切、未轉檔）, url: https://images.hfyali.com/cherry/icon/PCddPyrH.png, checkedAt: 2026-08-29 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested","note":"Saved URL opens a provider-wide Demo catalog rather than an exact Jump High destination."}
 lastVerifiedAt: 2026-08-29
 updatedAt: 2026-08-29
 ---

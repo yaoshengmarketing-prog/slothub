@@ -20,6 +20,7 @@ source: { label: Games Global 官方 UFC Gold Blitz Extreme 發行資料, url: h
 sources:
   - { label: Games Global 官方發行資料（工作室、最高倍數與功能）, url: https://www.gamesglobal.com/Media/games_global_and_fortune_factory_studios_deliver_a_knockout_with_UFC_Gold_Blitz_Extreme, checkedAt: 2026-09-19 }
   - { label: Fortune Factory Studios 官方網站, url: https://fortune-factory-studios.com/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

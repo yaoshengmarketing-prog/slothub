@@ -19,6 +19,7 @@ source: { label: Games Global 官方 Deep Stake 與 Texas Joker'Em 發表公告,
 sources:
   - { label: Games Global 官方 Texas Joker'Em 發表公告（遊戲身份、牌型流程、功能與 Jackpot）, url: https://www.gamesglobal.com/Media/games_global_expands_exclusive_studio_ecosystem_with_deep_stake, checkedAt: 2026-09-19 }
   - { label: Games Global 官方 Texas Joker'Em 遊戲主圖, url: https://cdne-clientzone-prod-westeurope-001-asbsg9hncsd5gvfk.a03.azurefd.net/public/games/TexasJokerEm/tile.webp, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

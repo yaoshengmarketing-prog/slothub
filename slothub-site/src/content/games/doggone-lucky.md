@@ -28,6 +28,7 @@ sources:
   - { label: Aspect Gaming 官方品牌與作品入口（品牌身份與 GLI 認證作品脈絡）, url: https://aspectgaming.com/, checkedAt: 2026-09-19 }
   - { label: Doggone Lucky 公開作品資料（盤面、賠線、RTP 與功能）, url: https://www.videoslot.com/aspect-gaming/doggone-lucky/, checkedAt: 2026-09-19 }
   - { label: KeyToCasinos Doggone Lucky 作品圖, url: https://www.keytocasinos.com/uploads/media/default/0001/33/thumb_32435_default_big.png, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

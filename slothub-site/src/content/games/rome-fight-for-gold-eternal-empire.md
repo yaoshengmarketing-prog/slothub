@@ -21,6 +21,7 @@ source: { label: Games Global 與 Foxium 官方發行資料, url: https://www.ga
 sources:
   - { label: Games Global 官方發行資料（工作室、盤面、最高倍數與功能）, url: https://www.gamesglobal.com/Media/Games_Global_Foxium_unveil_new_series_chapter_Rome_Fight_for_Gold_Eternal_Empire, checkedAt: 2026-09-19 }
   - { label: Foxium 官方遊戲目錄, url: https://www.foxium.com/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

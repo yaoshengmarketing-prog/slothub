@@ -20,6 +20,7 @@ sources:
   - { label: Games Global 官方產品目錄（作品與 Aurum Signature Studios 署名）, url: https://www.gamesglobal.com/Products, checkedAt: 2026-09-19 }
   - { label: Games Global 官方 Aurum 工作室公告（Maple Moolah 與 Mega Moolah 市場版本）, url: https://www.gamesglobal.com/Media/aurum-signature-studios-09-22, checkedAt: 2026-09-19 }
   - { label: Games Global 官方 Gold Factory Jackpots Maple Moolah 遊戲主圖, url: https://cdne-clientzone-prod-westeurope-001-asbsg9hncsd5gvfk.a03.azurefd.net/public/games/GoldFactoryJackpots/tile.webp, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

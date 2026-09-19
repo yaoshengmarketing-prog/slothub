@@ -26,6 +26,7 @@ source: { label: RubyPlay 官方 Book of 8 Riches 遊戲頁, url: https://rubypl
 sources:
   - { label: RubyPlay 官方遊戲頁（RTP、原廠波動度、Max Win、盤面、賠線與功能）, url: https://rubyplay.com/games/book-of-8-riches/, checkedAt: 2026-09-17 }
   - { label: RubyPlay 官方 Book of 8 Riches 作品圖, url: https://rubyplay.com/wp-content/uploads/2024/03/Book-of-8-Riches.png, checkedAt: 2026-09-17 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

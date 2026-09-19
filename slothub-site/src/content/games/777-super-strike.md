@@ -33,6 +33,7 @@ sources:
   - { label: Red Tiger 官方遊戲頁（主要顯示 RTP、Max Payout、盤面、Feature Buy 與功能）, url: https://redtiger.com/games/777-super-strike, checkedAt: 2026-09-17 }
   - { label: Red Tiger 官方 Factsheet（原廠 5/5 High、投注範圍與不同 Jackpot 設定 RTP options）, url: https://clientarea.evolution.com/red-tiger/wp-content/nfs-uploads/uploads/cdn/aba5af2aaa2fbfa13ed0ce4f4fa78fd5/777_Super_Strike_Factsheet_en.pdf, checkedAt: 2026-09-17 }
   - { label: Red Tiger 官方 777 Super Strike 作品圖, url: https://fan-cdn.nolimitcity.com/777_super_strike_icon5_a891a29373.png, checkedAt: 2026-09-17 }
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://redtiger.com/games/777-super-strike","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

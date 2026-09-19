@@ -33,6 +33,7 @@ sources:
   - { label: "Slotmill 官方 Developer Game List（日期、Game ID、投注範圍、盤面與 Bonus Buy=NO）", url: https://developer.slotmill.com/gamelist/, checkedAt: 2026-09-03 }
   - { label: "Slotmill 官方產品表 PDF", url: https://slotmill.com/wp-content/uploads/2020/12/product-sheet-Vegas-Gold-bm-updated.pdf, checkedAt: 2026-09-03 }
   - { label: "Slotmill CMS 官方作品圖（未裁切、未加字）", url: https://cms.slotmill.com/uploads/Vegas_Gold_Main_b51bd980f9.png, checkedAt: 2026-09-03 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

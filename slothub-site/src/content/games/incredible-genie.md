@@ -26,6 +26,7 @@ status: published
 source: { label: PopOK Gaming 官方 Incredible Genie 遊戲頁, url: https://www.popokgaming.com/products/games/slots/incredible-genie, checkedAt: 2026-09-19 }
 sources:
   - { label: PopOK Gaming 官方遊戲頁（盤面、Ways、RTP、最高倍數、投注範圍與功能）, url: https://www.popokgaming.com/products/games/slots/incredible-genie, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

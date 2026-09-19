@@ -26,6 +26,7 @@ source: { label: Thunderspin 官方 Book of Games 遊戲頁, url: https://thunde
 sources:
   - { label: Thunderspin 官方遊戲頁（日期、RTP、波動度、最高倍數、賠線與功能）, url: https://thunderspin.com/games/book-of-games, checkedAt: 2026-09-18 }
   - { label: Thunderspin 官方 Book of Games 宣傳素材, url: https://cms.thunderspin.com/assets/69c6e5b9-3e76-4486-abd5-468e4c4397f8, checkedAt: 2026-09-18 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

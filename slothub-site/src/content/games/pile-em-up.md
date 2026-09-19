@@ -25,6 +25,7 @@ status: published
 source: { label: Snowborn Games 官方 Pile’Em Up 遊戲頁, url: https://snowborngames.com/games/pileem-up/, checkedAt: 2026-09-19 }
 sources:
   - { label: Snowborn Games 官方遊戲頁（發行日、RTP、波動度、賠線、最高倍數、功能與圖片）, url: https://snowborngames.com/games/pileem-up/, checkedAt: 2026-09-19 }
+demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---
