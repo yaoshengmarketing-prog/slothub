@@ -55,14 +55,18 @@ const compare = await readFile(new URL('compare/index.html', root), 'utf8');
 const gameLibrary = await readFile(new URL('games/index.html', root), 'utf8');
 const search = await readFile(new URL('search/index.html', root), 'utf8');
 const middleware = await readFile(new URL('../functions/_middleware.js', import.meta.url), 'utf8');
+const approvedHomeTitle = '老虎機電子遊戲資料庫｜RTP、波動度、玩法與遊戲廠商｜Slot Hub';
+const approvedHomeDescription = 'Slot Hub 是老虎機電子遊戲資料庫，整理遊戲廠商、玩法、RTP、波動度、最高倍數、版本與資料來源；並收錄吃角子老虎機、角子機及拉霸機等相關名稱，可用時提供官方 Demo／試玩入口，以及搜尋、篩選與比較功能。';
 
 const checks = [
   [home.includes('content="noindex,nofollow"'), 'Homepage meta robots is not noindex,nofollow'],
   [!home.includes('rel="canonical"'), 'Preview must omit canonical'],
+  [home.includes(`<title>${approvedHomeTitle}</title>`), 'Homepage approved title has drifted'],
+  [home.includes(`<meta name="description" content="${approvedHomeDescription}">`), 'Homepage approved meta description has drifted'],
   [home.includes('property="og:title"'), 'Open Graph title is missing'],
   [home.includes('application/ld+json'), 'Structured data is missing'],
   [(home.match(/data-home-intent-route=/g) ?? []).length === 4, 'Homepage must expose all four find-game intents'],
-  [home.includes('<span class="keep">遊戲。</span>'), 'Homepage must keep the final semantic phrase together'],
+  [home.includes('<span class="keep">老虎機。</span>'), 'Homepage approved H1 must keep 老虎機 together'],
   [home.includes('data-home-beginner-guide') && home.includes('/guide/slot-beginners-guide/'), 'Homepage beginner entry is missing'],
   [!home.includes('data-guide-reading-summary="home"') && !home.includes('filter-console-v2'), 'Homepage must not duplicate the Guide library or full Explorer'],
   [!sitemap.includes('<url><loc>'), 'Preview sitemap must not publish formal URLs'],

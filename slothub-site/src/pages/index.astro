@@ -15,13 +15,15 @@ const intentRoutes = [
   { index: '03', title: '我記得功能或玩法', description: '先分清玩法、Feature 與資料，再用條件探索。', href: '/slots/', action: '理解玩法與資料' },
   { index: '04', title: '我想找類似玩法', description: '先選一款參考遊戲，再查看有明確共同點的玩法相近項目。', href: '/games/', action: '先選一款遊戲' },
 ] as const;
-const schema={'@context':'https://schema.org','@type':'WebSite',name:'Slot Hub',url:'https://www.slothub.com.tw/',inLanguage:'zh-Hant-TW'};
+const pageTitle = '老虎機電子遊戲資料庫｜RTP、波動度、玩法與遊戲廠商｜Slot Hub';
+const pageDescription = 'Slot Hub 是老虎機電子遊戲資料庫，整理遊戲廠商、玩法、RTP、波動度、最高倍數、版本與資料來源；並收錄吃角子老虎機、角子機及拉霸機等相關名稱，可用時提供官方 Demo／試玩入口，以及搜尋、篩選與比較功能。';
+const schema={'@context':'https://schema.org','@type':'WebSite',name:'Slot Hub',url:'https://www.slothub.com.tw/',description:pageDescription,inLanguage:'zh-Hant-TW'};
 ---
-<BaseLayout title="Slot Hub｜老虎機遊戲資料、搜尋與比較" description="搜尋老虎機與遊戲廠商，依 RTP、波動度及類型探索遊戲，最多比較三款遊戲。" schema={schema}>
+<BaseLayout title={pageTitle} description={pageDescription} schema={schema}>
   <section class="home-v3-stage shell">
     <div class="hero-kicker"><span>GAME DATA / KNOWLEDGE / DISCOVERY</span><i>資料持續核對</i></div>
     <div class="home-v3-head">
-      <div class="home-v3-copy"><p class="eyebrow">SLOT HUB</p><h1>用你記得的線索，<br/><em>找到並看懂<span class="keep">遊戲。</span></em></h1><p>搜尋名稱、從廠商開始，或先看懂某個玩法。Slot Hub 會保留來源、版本與未知欄位，不用排行榜替你猜答案。</p></div>
+      <div class="home-v3-copy"><p class="eyebrow">SLOT HUB</p><h1>用你記得的線索，<br/><em>找到並看懂<span class="keep">老虎機。</span></em></h1><p>搜尋名稱、從廠商開始，或先看懂某個玩法。Slot Hub 會保留來源、版本與未知欄位，不用排行榜替你猜答案。</p></div>
       <div class="home-v3-search" id="home-search"><SearchHub items={searchItems} compact client:load/><dl class="home-v3-counts"><div><dt>遊戲</dt><dd>{games.length}</dd></div><div><dt>廠商</dt><dd>{providerEntries.length}</dd></div><div><dt>教學</dt><dd>{guides.length}</dd></div></dl></div>
     </div>
   </section>
