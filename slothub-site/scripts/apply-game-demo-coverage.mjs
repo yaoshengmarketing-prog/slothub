@@ -15,7 +15,7 @@ function gameDemo(entry) {
   };
   if (entry.url) output.url = entry.url;
   if (entry.accessType) output.accessType = entry.accessType;
-  if (entry.status === 'available') output.presentation = entry.presentation ?? 'external';
+  if (entry.status === 'available') output.presentation = 'external';
   if (entry.note) output.note = entry.note;
   else if (entry.status === 'access-restricted') output.note = 'Saved source was access-restricted during the coverage audit.';
   return output;

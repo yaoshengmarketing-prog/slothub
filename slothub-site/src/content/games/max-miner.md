@@ -27,7 +27,7 @@ source: { label: GameBeat 官方 Max Miner 遊戲頁, url: https://gamebeat.com/
 sources:
   - { label: GameBeat 官方 Max Miner 遊戲頁（RTP、波動度、軸數、賠線、Max Win 與功能）, url: https://gamebeat.com/max-miner, checkedAt: 2026-09-19 }
   - { label: GameBeat 官方 Max Miner 遊戲主圖, url: https://static.tildacdn.net/tild6333-3637-4463-a138-356434323937/normal_1_1.jpg, checkedAt: 2026-09-19 }
-demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://avocado.prod.gamebeat.cloud/gamebeat/?home=https://prod.gamebeat.cloud&clientType=desktop&lang=en&game=max_miner","accessType":"direct-demo","presentation":"iframe"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://avocado.prod.gamebeat.cloud/gamebeat/?home=https://prod.gamebeat.cloud&clientType=desktop&lang=en&game=max_miner","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

@@ -31,11 +31,8 @@ for (const game of published) {
   if (demo.status === 'available' && (!demo.url || !['direct-demo', 'official-game-page'].includes(demo.accessType))) {
     throw new Error(`${game.slug}: available Demo requires an exact URL and access type`);
   }
-  if (demo.status === 'available' && !['external', 'iframe'].includes(demo.presentation)) {
-    throw new Error(`${game.slug}: available Demo requires a valid presentation`);
-  }
-  if (demo.presentation === 'iframe' && demo.iframeStatus !== 'verified') {
-    throw new Error(`${game.slug}: iframe presentation requires a verified browser result`);
+  if (demo.status === 'available' && demo.presentation !== 'external') {
+    throw new Error(`${game.slug}: available Demo must use the link-only external presentation`);
   }
   if (demo.status === 'not-verified' && demo.url) throw new Error(`${game.slug}: unverified Demo must not expose a URL`);
 }
@@ -48,7 +45,7 @@ for (const game of published) if (!reportSlugs.has(game.slug)) throw new Error(`
 
 for (const expected of [
   '官方 Demo',
-  '開啟官方 Demo ↗',
+  '前往官方 Demo 頁 ↗',
   '提供的官方',
   '尚未核實官方 Demo',
   'target="_blank"',
@@ -57,11 +54,12 @@ for (const expected of [
 ]) {
   if (!detailTemplate.includes(expected)) throw new Error(`Game detail missing Demo contract: ${expected}`);
 }
+if (/<iframe\b/i.test(detailTemplate)) throw new Error('Game detail must not embed third-party Demo content');
 
 const counts = Object.fromEntries([...allowedStatuses].map((status) => [status, published.filter((game) => game.data.demo.status === status).length]));
 const iframePublished = published.filter((game) => game.data.demo.presentation === 'iframe').length;
 const directDemo = published.filter((game) => game.data.demo.accessType === 'direct-demo' && game.data.demo.status === 'available').length;
 const officialGamePage = published.filter((game) => game.data.demo.accessType === 'official-game-page' && game.data.demo.status === 'available').length;
-if (iframePublished === 0) throw new Error('Manual browser review did not publish any verified iframe Demo');
+if (iframePublished !== 0) throw new Error(`Link-only policy violated by ${iframePublished} iframe Demo records`);
 console.log(JSON.stringify({ games: published.length, counts, directDemo, officialGamePage, iframePublished }, null, 2));
 console.log('Game Demo coverage verification passed.');

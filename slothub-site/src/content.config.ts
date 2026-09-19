@@ -6,7 +6,7 @@ const gameDemo = z.object({
   status: z.enum(['available', 'login-required', 'access-restricted', 'not-verified']),
   url: z.string().url().optional(),
   accessType: z.enum(['direct-demo', 'official-game-page']).optional(),
-  presentation: z.enum(['external', 'iframe']).optional(),
+  presentation: z.literal('external').optional(),
   iframeStatus: z.enum(['verified', 'blocked', 'not-tested']).default('not-tested'),
   checkedAt: z.coerce.date(),
   note: z.string().optional(),

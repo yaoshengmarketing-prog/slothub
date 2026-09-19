@@ -27,7 +27,7 @@ source: { label: Million Games 官方 Temple Treasure 遊戲頁, url: https://ww
 sources:
   - { label: Million Games 官方遊戲頁（日期、盤面、賠線、RTP 版本、原廠波動度、最高倍數與功能）, url: https://www.milliongames.com/games/temple-treasure, checkedAt: 2026-09-18 }
   - { label: Million Games 官方 Temple Treasure 遊戲畫面, url: https://cdn.prod.website-files.com/6506bdf6ab184afebbf63826/696a34f0da21037210b2b143_Banner%20mobile%20images%20%281%29.webp, checkedAt: 2026-09-18 }
-demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://go.rng691979.net/gamelauncher/play/DEMO/MLN_TEMPLE_TREASURE","accessType":"direct-demo","presentation":"iframe"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://go.rng691979.net/gamelauncher/play/DEMO/MLN_TEMPLE_TREASURE","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

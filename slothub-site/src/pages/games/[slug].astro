@@ -109,10 +109,9 @@ const quickStats = [
 
 const unknown = '尚未核實';
 const demo = entry.data.demo;
-const demoIsIframe = demo?.status === 'available' && demo.presentation === 'iframe' && demo.iframeStatus === 'verified';
-const demoAccessLabel = demo?.accessType === 'direct-demo' ? '直接 Demo' : '官方遊戲頁';
+const demoAccessLabel = demo?.accessType === 'direct-demo' ? '官方 Demo 頁' : '官方遊戲頁（含 Demo 入口）';
 const demoDisplay = demo?.status === 'available'
-  ? demoIsIframe ? '已核實，可於站內查看' : '已核實官方入口'
+  ? '已核實官方入口'
   : demo?.status === 'login-required'
     ? '需登入廠商頁面'
     : demo?.status === 'access-restricted'
@@ -216,30 +215,28 @@ const schema = {
       <dl>{quickStats.map((stat) => <div><dt>{stat.label}</dt><dd class={!stat.value ? 'is-unknown' : undefined}>{stat.value ?? unknown}{stat.badge && <small>{stat.badge}</small>}</dd><p>{stat.note}</p>{stat.value && knowledgePresentation.fieldGuides[stat.guidePlacement]?.map((match) => <a class="game-field-guide-link" href={match.guide.url} aria-label={`了解${stat.label}：${match.guide.title}`} data-guide-slug={match.guide.slug} data-guide-placement={stat.guidePlacement}>了解這項資料 →</a>)}</div>)}</dl>
     </section>
 
-    {demo?.status === 'available' && demo.url && <section class:list={['game-demo-access', demoIsIframe ? 'is-embedded' : 'is-external']} aria-labelledby="official-demo-title">
+    {demo?.status === 'available' && demo.url && <section class="game-demo-access" aria-labelledby="official-demo-title">
       <div class="game-demo-copy">
         <p class="eyebrow">OFFICIAL DEMO</p>
         <h2 id="official-demo-title">官方 Demo</h2>
-        <p>{demoIsIframe
-          ? `由 ${provider?.data.name ?? entry.data.provider} 提供的官方測試內容，已實際確認可在本頁載入。`
+        <p>{demo.accessType === 'direct-demo'
+          ? `由 ${provider?.data.name ?? entry.data.provider} 提供的官方 Demo 頁，將在新分頁開啟。`
           : `由 ${provider?.data.name ?? entry.data.provider} 提供的官方遊戲頁，頁面內含 Demo 或測試入口。`}</p>
         <dl>
           <div><dt>入口類型</dt><dd>{demoAccessLabel}</dd></div>
           <div><dt>最後核對</dt><dd>{formatDate(demo.checkedAt)}</dd></div>
         </dl>
       </div>
-      {demoIsIframe
-        ? <div class="game-demo-embed">
-            <div class="game-demo-frame"><iframe src={demo.url} title={`${displayName} 官方 Demo`} loading="lazy" allow="fullscreen; autoplay" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-            <p>若廠商調整了存取條件，可改用官方頁面開啟。</p>
-            <a class="button secondary" href={demo.url} target="_blank" rel="nofollow noopener noreferrer">另開官方 Demo ↗</a>
-          </div>
-        : <div class="game-demo-external">
-            <span aria-hidden="true">已核實</span>
-            <strong>官方遊戲頁與 Demo 入口</strong>
-            <p>這個入口由遊戲廠商維運，將在新分頁開啟。</p>
-            <a class="button primary" href={demo.url} target="_blank" rel="nofollow noopener noreferrer">開啟官方 Demo ↗</a>
-          </div>}
+      <div class="game-demo-external">
+        <span>已核實的官方來源</span>
+        <strong>{displayName}</strong>
+        <p>{demo.accessType === 'direct-demo'
+          ? '連結會前往廠商維運的正式 Demo 頁；實際可用範圍仍依廠商設定。'
+          : '連結會前往廠商的正式遊戲頁，再由頁面內的 Demo 或測試入口繼續。'}</p>
+        <a class="button primary" href={demo.url} target="_blank" rel="nofollow noopener noreferrer">
+          {demo.accessType === 'direct-demo' ? '前往官方 Demo 頁 ↗' : '前往官方遊戲頁 ↗'}
+        </a>
+      </div>
     </section>}
 
     <section class="game-operation" aria-labelledby="operation-title">

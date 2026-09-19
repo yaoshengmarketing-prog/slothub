@@ -24,7 +24,7 @@ source: { label: Onlyplay 官方 Tiger Jackpots 遊戲頁, url: https://www.only
 sources:
   - { label: Onlyplay 官方 Tiger Jackpots 遊戲頁（RTP、波動度、Max Win 與功能）, url: https://www.onlyplay.com/games/tiger-jackpots, checkedAt: 2026-09-19 }
   - { label: Onlyplay 官方 Tiger Jackpots 分享圖片, url: https://cms.onlyplay.com/media/seo-99eecaa17f8a4975e6c031d329f6c9982fc11aa5b27c02bd162e874719ebbe9c.png, checkedAt: 2026-09-19 }
-demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://int.onlyplay.net/integration/request_frame/?game=tigerjackpots","accessType":"direct-demo","presentation":"iframe"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://int.onlyplay.net/integration/request_frame/?game=tigerjackpots","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

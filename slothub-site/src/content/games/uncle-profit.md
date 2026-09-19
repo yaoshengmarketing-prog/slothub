@@ -21,7 +21,7 @@ status: published
 source: { label: Print Studios 官方 Uncle Profit 遊戲頁, url: https://www.printstudios.com/games/uncle-profit, checkedAt: 2026-09-19 }
 sources:
   - { label: Print Studios 官方遊戲頁（RTP、原廠波動度、最高倍數與功能）, url: https://www.printstudios.com/games/uncle-profit, checkedAt: 2026-09-19 }
-demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://d2drhksbtcqozo.cloudfront.net/casino/apex/layer/?gameid=uncleprofit&partnerid=1&channel=web&moneymode=fun&jurisdiction=MT&lang=en_GB&currency=EUR&&apex=1&gameurl=https%3A%2F%2Fd2drhksbtcqozo.cloudfront.net%2Fcasino%2Flauncher.html","accessType":"direct-demo","presentation":"iframe"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://d2drhksbtcqozo.cloudfront.net/casino/apex/layer/?gameid=uncleprofit&partnerid=1&channel=web&moneymode=fun&jurisdiction=MT&lang=en_GB&currency=EUR&&apex=1&gameurl=https%3A%2F%2Fd2drhksbtcqozo.cloudfront.net%2Fcasino%2Flauncher.html","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

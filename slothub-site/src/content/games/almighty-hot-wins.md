@@ -29,7 +29,7 @@ source: { label: FUGASO 官方 Almighty Hot Wins 遊戲頁, url: https://fugaso.
 sources:
   - { label: FUGASO 官方 Almighty Hot Wins 遊戲頁（日期、盤面、賠線、RTP、波動度與 Max Exposure）, url: https://fugaso.com/game/almighty-hot-wins, checkedAt: 2026-09-19 }
   - { label: FUGASO 官方 Almighty Hot Wins 遊戲圖示, url: https://api.fugaso.com/images/games/icon/2x/1719309874.png, checkedAt: 2026-09-19 }
-demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://gs.fugaso.com/fugaso-play/games/client/launch?operatorId=295617&userName=297921&password=00000&sessionId=297921&gameName=almightyhotwins&mode=demo&closeUrl=https://fugaso.com&responsibleGame=true","accessType":"direct-demo","presentation":"iframe"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://gs.fugaso.com/fugaso-play/games/client/launch?operatorId=295617&userName=297921&password=00000&sessionId=297921&gameName=almightyhotwins&mode=demo&closeUrl=https://fugaso.com&responsibleGame=true","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

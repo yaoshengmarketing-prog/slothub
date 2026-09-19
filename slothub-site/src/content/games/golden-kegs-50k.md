@@ -19,7 +19,7 @@ source: { label: Kalamba Games 官方 Golden Kegs 50K 遊戲頁, url: https://ka
 sources:
   - { label: Kalamba Games 官方遊戲頁（動態軸高、Cashpots、Free Spins、Buy Bonus 與 Game Code）, url: https://kalambagames.com/golden-kegs-50k/, checkedAt: 2026-09-17 }
   - { label: Kalamba Games 官方 Golden Kegs 50K 作品圖, url: https://kalambagames.com/wp-content/uploads/2024/08/golden-keg-50k-1200x630-1.jpg, checkedAt: 2026-09-17 }
-demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://kalamba-for-kl.integration.demo.kalambagames.com/games/url/?gameCode=goldenkegs50k&cageCode=FUN&currency=EUR","accessType":"direct-demo","presentation":"iframe"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://kalamba-for-kl.integration.demo.kalambagames.com/games/url/?gameCode=goldenkegs50k&cageCode=FUN&currency=EUR","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

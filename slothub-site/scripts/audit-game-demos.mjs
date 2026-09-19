@@ -301,7 +301,7 @@ for (const entry of entries) {
 
 // A browser review is deliberately separate from URL discovery. These saved
 // decisions are applied last so a future crawl cannot silently overwrite a
-// verified iframe result or promote a provider-wide lobby to a game Demo.
+// reviewed destination or promote a provider-wide lobby to a game Demo.
 for (const [slug, review] of Object.entries(manualReview.entries ?? {})) {
   const entry = entries.find((item) => item.slug === slug);
   if (!entry) throw new Error(`Manual Demo review references unknown Game: ${slug}`);
@@ -312,6 +312,12 @@ for (const [slug, review] of Object.entries(manualReview.entries ?? {})) {
     entry.presentation = undefined;
   }
   if (entry.status !== 'available') entry.presentation = undefined;
+}
+
+// Slot Hub publishes Demo coverage as exact outbound links only. Browser frame
+// findings remain audit evidence, but they never change the public presentation.
+for (const entry of entries) {
+  if (entry.status === 'available') entry.presentation = 'external';
 }
 
 const counts = Object.fromEntries([...new Set(entries.map((entry) => entry.status))].sort().map((status) => [status, entries.filter((entry) => entry.status === status).length]));
@@ -326,7 +332,7 @@ const report = {
   rules: {
     owner: 'Each Game record owns its public demo state; this report is operational QA only.',
     defaultPresentation: 'external',
-    iframePromotion: 'Only after a real browser confirms the exact official game URL loads cross-origin without authentication or breakage.',
+    linkOnlyPresentation: 'All verified Demo destinations open as exact official outbound links; third-party Demo content is never embedded.',
     unknownLabel: '尚未核實官方 Demo',
   },
   entries,

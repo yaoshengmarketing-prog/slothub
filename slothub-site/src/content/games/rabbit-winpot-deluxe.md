@@ -29,7 +29,7 @@ sources:
   - { label: ELA Games 官方 Rabbit Winpot Deluxe 遊戲頁（日期、RTP 範圍、波動度、賠線、貨幣 Max win、Bonus Buy 與功能）, url: https://www.elagames.com/games/rabbit-winpot-deluxe, checkedAt: 2026-09-16 }
   - { label: ELA Games 官方發布資料（3×1、1 Payline、RTP 範圍、Medium、1,210× Max win 與功能）, url: https://www.elagames.com/news/discover-ela-games-new-magical-world-with-rabbit-winpot-deluxe, checkedAt: 2026-09-16 }
   - { label: ELA Games 官方 Rabbit Winpot Deluxe 作品圖（1000×1000、未裁切）, url: https://cdn.prod.website-files.com/627a360c799876600d073b88/68404d89584f4685a25f65bb_1000x1000_rabbitwinpotdeluxe.avif, checkedAt: 2026-09-16 }
-demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://expo.elaapi.com/demo/ela_rabbit_winpot_deluxe","accessType":"direct-demo","presentation":"iframe"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://expo.elaapi.com/demo/ela_rabbit_winpot_deluxe","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-16
 updatedAt: 2026-09-16
 ---

@@ -22,18 +22,17 @@ Slot Hub 將 Demo 視為遊戲資料的一部分：讓讀者在理解名稱、�
 4. 中文名、英文名、別名與 Game ID 先對照現有 Game record，避免重複或把 Demo 掛錯遊戲。
 5. 找不到、衝突或遭阻擋時記錄狀態並繼續其他遊戲；Demo 缺值不阻擋遊戲發布。
 
-## iframe 與站外連結
+## 只使用官方站外連結
 
 - 先區分 `direct-demo` 與 `official-game-page`：前者是可直接啟動的測試內容，後者是含 Demo 入口的官方遊戲資料頁。
-- 官方遊戲頁一律以站外連結呈現，不把廠商產品頁誤稱為站內可玩 Demo。
-- 只有精確官方遊戲 URL 經真實瀏覽器確認可跨網域載入、無登入阻擋、核心操作可用，才可標記為 `iframe`。
-- 只看不到 `X-Frame-Options` 或 CSP，不足以證明可嵌入。
-- iframe 日後若啟用，仍須提供同一精確 URL 的站外備援入口；失效時降回站外連結，不更換成猜測網址。
+- 所有入口一律以站外連結呈現；Slot Hub 不嵌入第三方 Demo，也不把廠商產品頁誤稱為站內可玩 Demo。
+- `direct-demo` 的按鈕明確標示「前往官方 Demo 頁」；`official-game-page` 則標示「前往官方遊戲頁」。
+- 歷史瀏覽器測試可以保留為核對證據，但不得再改變公開呈現方式。
 
 ## 前台呈現
 
-- `direct-demo + iframe`：在「快速看懂」後顯示正式的「官方 Demo」資料模組，提供懶載入嵌入畫面、廠商身份、核對日期與站外備援連結。
-- `official-game-page + external`：同一位置顯示已核實官方入口與新分頁按鈕，不嵌入整個產品頁。
+- `direct-demo + external`：在「快速看懂」後顯示正式的「官方 Demo」資料模組，列出廠商身份、入口類型、核對日期及精確官方連結。
+- `official-game-page + external`：同一位置顯示已核實官方遊戲頁與新分頁按鈕。
 - 其他狀態：完整資料顯示可理解的狀態文字，不輸出 disabled 按鈕或假連結。
 - 不以 Demo 是否存在作推薦、排名或遊戲品質判斷。
 
@@ -45,4 +44,4 @@ Slot Hub 將 Demo 視為遊戲資料的一部分：讓讀者在理解名稱、�
 
 2026-09-19 以當時 257 款 published Games、199 家 Provider 及 496 個已保存來源頁完成一次覆蓋盤點。盤點輸出保存在 `data/game-demo-coverage.json`；Game frontmatter 是公開呈現的資料 owner，報告只作可重跑的營運 QA 與接續清單。
 
-2026-09-19 另對自動盤點找到的 82 個入口進行人工瀏覽器複核。複核證據保存於 `data/game-demo-manual-review.json`，本批現有遊戲不再由 Agent 重跑或改寫人工 iframe 結論；日後 Agent 只針對新增或明確需重新核對的遊戲接續。
+2026-09-19 另對自動盤點找到的 82 個入口進行人工瀏覽器複核。複核證據保存於 `data/game-demo-manual-review.json`。產品決策後，80 個已核實入口統一使用官方站外連結；日後 Agent 只針對新增或明確需重新核對的遊戲接續，不得重新啟用 iframe。

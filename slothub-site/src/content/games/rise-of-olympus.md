@@ -23,7 +23,7 @@ source: { label: Play’n GO 官方 Rise of Olympus 遊戲頁, url: https://www.
 sources:
   - { label: "Play’n GO 官方 Rise of Olympus 遊戲頁（Grid Slot、發行日、Round Multiplier、Hand of God、Free Spins 與 Clear the Grid Prize）", url: https://www.playngo.com/games/rise-of-olympus, checkedAt: 2026-09-03 }
   - { label: "Play’n GO 官方 Open Graph 作品圖（500×350 WebP；未另行裁切或加字）", url: "https://static.wixstatic.com/media/9710a8_82c60403324e4b77b0c77ae05d2260a0~mv2.webp/v1/fill/w_500,h_350,al_c/9710a8_82c60403324e4b77b0c77ae05d2260a0~mv2.webp", checkedAt: 2026-09-03 }
-demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://asccw.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=riseofolympus&lang=en_GB&practice=1&channel=mobile&demo=2","accessType":"direct-demo","presentation":"iframe"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://asccw.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=riseofolympus&lang=en_GB&practice=1&channel=mobile&demo=2","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

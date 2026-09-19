@@ -29,7 +29,7 @@ source: { label: BF Games 官方 Cave of Fortune 遊戲頁, url: https://bfgames
 sources:
   - { label: BF Games 官方遊戲頁（盤面、RTP 配置、波動度、最高倍數、投注與功能）, url: https://bfgames.com/games/cave-of-fortune/, checkedAt: 2026-09-17 }
   - { label: BF Games 官方 Cave of Fortune 作品圖, url: https://bfgames.com/wp-content/uploads/2022/08/cof_455x721.jpg, checkedAt: 2026-09-17 }
-demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://demo-vg.beefee.co.uk/gameserver-demo/run?gameId=cave-of-fortune&clientId=BFGames&device=mobile","accessType":"direct-demo","presentation":"iframe"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://demo-vg.beefee.co.uk/gameserver-demo/run?gameId=cave-of-fortune&clientId=BFGames&device=mobile","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

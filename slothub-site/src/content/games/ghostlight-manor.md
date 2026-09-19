@@ -27,7 +27,7 @@ source: { label: Playnetic 官方 Ghostlight Manor 遊戲頁, url: https://playn
 sources:
   - { label: Playnetic 官方遊戲頁（RTP、波動度、最高倍數、賠線與功能）, url: https://playnetic.com/game/ghostlight-manor, checkedAt: 2026-09-19 }
   - { label: Playnetic 官方 Ghostlight Manor 遊戲圖片, url: https://playnetic.com/wp-content/uploads/2025/04/Ghostlight_Manor_Web_Thumbnail_900x507px.jpg, checkedAt: 2026-09-19 }
-demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://games.demo.ap.playnetic.com/ghostlight-manor/?promo.noreal&cc=EUR&lobby.url=https://playnetic.com/our-games/","accessType":"direct-demo","presentation":"iframe"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"verified","url":"https://games.demo.ap.playnetic.com/ghostlight-manor/?promo.noreal&cc=EUR&lobby.url=https://playnetic.com/our-games/","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---
