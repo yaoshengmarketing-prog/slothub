@@ -20,7 +20,7 @@ const definitions = [...GUIDE_READING_PATHS, ...GUIDE_READING_EXTENSIONS];
 const sections = buildGuideReadingSections(published);
 const assigned = definitions.flatMap((section) => section.guideSlugs);
 
-assert.equal(GUIDE_READING_PATHS.length, 5, 'v1 must keep five primary reading paths');
+assert.equal(GUIDE_READING_PATHS.length, 6, 'the library must expose six primary reading paths after the risk-literacy migration');
 assert.equal(new Set(assigned).size, assigned.length, 'a Guide may only appear once in the reading library');
 assert.deepEqual([...assigned].sort(), published.map((guide) => guide.id).sort(), 'every published Guide must have one reading-path placement');
 for (const section of sections) {
@@ -51,14 +51,14 @@ for (const slug of assigned) {
   assert.ok(guideIndex.includes(`/guide/${slug}/`), `${slug} URL missing from Guide index`);
 }
 assert.equal((home.match(/data-guide-reading-route=/g) ?? []).length, 0);
-assert.equal((slots.match(/data-guide-reading-route=/g) ?? []).length, 5);
+assert.equal((slots.match(/data-guide-reading-route=/g) ?? []).length, 6);
 assert.equal((guideIndex.match(/data-guide-reading-slug=/g) ?? []).length, published.length);
 const readingAnchors = [
   ...(slots.match(/<a\b[^>]*data-guide-reading-route="[^"]+"[^>]*>/g) ?? []),
   ...(guideIndex.match(/<a\b[^>]*data-guide-reading-slug="[^"]+"[^>]*>/g) ?? []),
 ];
-assert.equal(readingAnchors.length, 5 + published.length);
+assert.equal(readingAnchors.length, 6 + published.length);
 for (const anchor of readingAnchors) assert.match(anchor, /\shref="[^"]+"/, 'reading-path anchors require real href destinations');
 assert.match(slots, /relationship-knowledge-grid/);
 
-console.log(`PASS: ${published.length} published Guides projected once across five reading paths and one extension; Guide index and Slots share exact anchors, while home points first-time users to the Beginners Guide.`);
+console.log(`PASS: ${published.length} published Guides projected once across six reading paths and one extension; Guide index and Slots share exact anchors, while home points first-time users to the Beginners Guide.`);

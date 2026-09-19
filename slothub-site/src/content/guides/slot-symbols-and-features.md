@@ -7,7 +7,7 @@ tags: [Wild, Scatter, Free Spins, Jackpot]
 relatedFeatures: [free-spins, wild, scatter, jackpot]
 status: published
 publishedAt: 2026-08-28
-updatedAt: 2026-08-30
+updatedAt: 2026-09-19
 ---
 
 Wild、Scatter、Free Spins 與 Jackpot 經常一起出現在遊戲規則中，但它們不是同一種功能：Wild 通常協助組成得獎組合，Scatter 常是觸發條件，Free Spins 是一段額外回合，Jackpot 則可能是遊戲中的獎項或功能名稱。
@@ -45,6 +45,8 @@ Wild 最常見的用途，是替代 Paytable 明列的符號，協助組成得�
 
 Wild 的存在不代表遊戲比較容易中獎；特殊 Wild 的醒目倍數，也不等於整款遊戲的最高倍數。
 
+**假想讀法：替代與加倍是兩件事。** 假設固定線遊戲要求最左側連續三軸出現 A，而且規則允許 Wild 替代 A，那麼 `A－Wild－A` 可以成立三個 A 的組合。若規則沒有另訂倍數，就不能看到 Wild 便再乘兩倍；也不能推定它能替代 Scatter 或 Bonus。
+
 ## Scatter：符號不等於 Scatter Pays
 
 Scatter 通常不要求落在傳統固定賠線上，但仍可能受到數量、轉輪、位置或模式限制。看到 Scatter 時，依序確認：
@@ -66,6 +68,8 @@ Scatter 通常不要求落在傳統固定賠線上，但仍可能受到數量、
 因此，有 Scatter 符號不能自動推導整款遊戲採 Scatter Pays；Scatter Pays 與 Pay Anywhere 也不能只因符號可在不同位置得獎，就自動視為同義詞。正式分類仍須核對個別遊戲的 Game Rules／Paytable，遊戲名稱含 `Scatter` 也不能取代規則證據。若要了解 Paylines、Ways、Megaways、Cluster Pays 與 Pay Anywhere 如何分辨，可閱讀[老虎機賠付機制怎麼看](/guide/slot-payout-mechanisms-explained/)。
 
 Scatter 也不一定只負責觸發功能。[Legacy of Dead](/games/legacy-of-dead/) 的官方頁說 Tomb Scatter 同時作為 Wild，三個以上可開啟 Free Spins。這是該款遊戲明載的雙重角色，不能反推所有 Scatter 都能替代一般符號。
+
+**假想讀法：同一盤面與跨轉收集不同。** 如果規則要求同一次旋轉出現三個 Scatter，上一轉兩個、這一轉一個不能自行合成三個。只有正式規則明訂跨轉收集，且遊戲確實保存進度，才能按該計數器理解。
 
 ## Free Spins：回合數要拆開讀
 
@@ -97,6 +101,8 @@ Free Spins 是一段額外遊戲回合，不代表固定獎金，也不代表較
 Free Spins 期間可能改變盤面、選出 Special Expanding Symbol、加入 Sticky Wild、累積 Multiplier，或使用不同的 Paytable。這些都是 Bonus 專屬條件，不代表 Base Game 也採相同規則。
 
 Free Spins 也不等於 Cascading 或 Bonus Buy。Cascading 描述得獎後符號如何更新，可另看[連鎖消除教學](/guide/slot-cascading-tumble-avalanche-explained/)；Bonus Buy 是進入部分獎勵功能的另一種入口，可另看[Bonus Buy 教學](/guide/slot-bonus-buy-explained/)。
+
+**假想讀法：增加回合不等於重加初始回合。** 假設本次旋轉扣除後剩餘六次，又依規則獲得額外五次，剩餘才是十一；不能把最初發放的十次再加回去。計數器是在旋轉前或後扣除，仍須核對個別規則。額外回合不保證派彩，也不能把已顯示的累計獎金重複相加。
 
 ## Jackpot：先確認有沒有足夠證據分類
 

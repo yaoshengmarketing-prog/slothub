@@ -5,7 +5,7 @@ export const GUIDE_READING_PATHS = [
     eyebrow: 'START HERE',
     title: '第一次使用',
     description: '先確認遊戲身份、欄位順序與常見術語，再進入個別數據。',
-    guideSlugs: ['slot-beginners-guide', 'slot-terms-glossary'],
+    guideSlugs: ['slot-beginners-guide', 'slot-screen-beginners-guide', 'slot-terms-glossary'],
   },
   {
     id: 'core-data',
@@ -13,7 +13,7 @@ export const GUIDE_READING_PATHS = [
     eyebrow: 'CORE DATA',
     title: '核心數據',
     description: '分開閱讀 RTP、波動度與最高倍數，避免把不同問題混成一個結論。',
-    guideSlugs: ['rtp-explained', 'volatility-explained', 'slot-max-win-explained'],
+    guideSlugs: ['rtp-explained', 'volatility-explained', 'slot-max-win-explained', 'slot-rng-explained'],
   },
   {
     id: 'mechanisms',
@@ -38,6 +38,9 @@ export const GUIDE_READING_PATHS = [
       'slot-multiplier-explained',
       'slot-cascading-tumble-avalanche-explained',
       'slot-bonus-buy-explained',
+      'slot-hold-and-win-explained',
+      'slot-jackpot-explained',
+      'slot-gamble-feature-explained',
     ],
   },
   {
@@ -46,14 +49,22 @@ export const GUIDE_READING_PATHS = [
     eyebrow: 'DATA LIMITS',
     title: '資料限制',
     description: '最後確認原廠值、統一顯示、缺值、版本、來源與可比較範圍。',
-    guideSlugs: ['slot-hub-data-methodology'],
+    guideSlugs: ['slot-hub-data-methodology', 'slot-demo-vs-real-money'],
+  },
+  {
+    id: 'risk-literacy',
+    index: '06',
+    eyebrow: 'RISK LITERACY',
+    title: '風險與判讀',
+    description: '辨認差一點、追輸與生活影響；理解風險，不把教學改寫成獲利策略。',
+    guideSlugs: ['slot-near-miss-explained', 'slot-chasing-losses', 'slot-gambling-harm-signs'],
   },
 ];
 
 export const GUIDE_READING_EXTENSIONS = [
   {
     id: 'other-game-types',
-    index: '06',
+    index: '07',
     eyebrow: 'OTHER GAME TYPES',
     title: '延伸類型',
     description: '捕魚機有不同的畫面、操作與資料閱讀方式，保留獨立入門內容。',

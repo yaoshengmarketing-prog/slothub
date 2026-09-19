@@ -147,7 +147,7 @@ const dataTopics = dataTopicDefinitions.flatMap((definition) => {
   </section>
 
   <section class="slots-hub-section slots-reading-section shell">
-    <header class="slots-hub-heading"><div><p class="eyebrow">GUIDE READING PATH</p><h2>需要完整脈絡時，依問題繼續讀</h2></div><p>五段閱讀路線與 Guide 總覽使用相同順序；也可以直接進入任何一篇需要的教學。</p></header>
+    <header class="slots-hub-heading"><div><p class="eyebrow">GUIDE READING PATH</p><h2>需要完整脈絡時，依問題繼續讀</h2></div><p>六段閱讀路線與 Guide 總覽使用相同順序；也可以直接進入任何一篇需要的教學。</p></header>
     <div class="guide-route-grid" data-guide-reading-summary="slots">{readingPaths.map((path) => <a class="guide-route-card" href={path.href} data-guide-reading-route={path.id}><span>{path.index} / {path.eyebrow}</span><strong>{path.title}</strong><p>{path.description}</p><b>{path.guides.length} 篇 Guide →</b></a>)}</div>
   </section>
 </BaseLayout>

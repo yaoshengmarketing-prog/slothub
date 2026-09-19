@@ -6,12 +6,18 @@ level: beginner
 tags: [Reels, Paylines, Ways, Cascades, Bonus Buy]
 status: published
 publishedAt: 2026-08-28
-updatedAt: 2026-08-28
+updatedAt: 2026-09-19
 ---
 
 ## Reels 與 Rows
 
-Reels 是直向轉輪數，Rows 是橫向列數。5×3 通常表示五個轉輪、三列符號。
+Reels 是直向轉輪數，Rows 是橫向列數。在一般矩形盤面裡，5×3 通常表示五個轉輪、每軸三個可見位置，共 15 個位置。「第 2 軸、第 1 列」則是左起第二軸的最上方位置；若遊戲另有編號方式，以其說明為準。
+
+每軸高度不一定相同。例如盤面高度是 2、3、4、3、2，就不能寫成固定 5×4。動態盤面、額外橫軸或特殊區域也要分別查規則；畫面邊緣露出的半個符號不一定是有效位置。
+
+盤面從 5×3 變成 5×4，是每軸增加一個位置，不是增加轉輪。一般模式與特殊功能的盤面可能不同，應分開閱讀。
+
+盤面尺寸也不是賠線或 Ways 數。只有規則明定五軸各三個位置都參與相鄰組合時，`3×3×3×3×3＝243` 才能用來說明五軸的位置組合數。不要只憑 5×3 就推定遊戲採 243 Ways，更不能只憑盤面大小推定中獎機率。詳細差異可閱讀[賠付機制教學](/guide/slot-payout-mechanisms-explained/)與[多路贏法教學](/guide/slot-ways-to-win-explained/)。
 
 ## Paylines 與 Ways
 
