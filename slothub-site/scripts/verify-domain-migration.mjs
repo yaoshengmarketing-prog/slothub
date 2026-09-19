@@ -10,6 +10,10 @@ import { onRequest } from '../functions/_middleware.js';
 
 const distRoot = new URL('../dist/', import.meta.url);
 const entries = Object.entries(LEGACY_WIX_REDIRECTS);
+const wranglerConfig = JSON.parse(await readFile(new URL('../wrangler.jsonc', import.meta.url), 'utf8'));
+
+assert.equal(wranglerConfig.vars?.PUBLIC_SITE_ENV, 'production', 'Pages production build must remain indexable after custom-domain cutover');
+assert.equal(wranglerConfig.env?.preview?.vars?.PUBLIC_SITE_ENV, 'preview', 'Pages preview branches must retain Preview safeguards');
 
 assert.equal(entries.length, 24, 'migration must preserve the 24 approved one-to-one redirects');
 assert.equal(LEGACY_WIX_UNMAPPED_PUBLIC_PATHS.length, 40, 'all 40 published URLs without an equivalent page must remain recorded');

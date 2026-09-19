@@ -1,6 +1,6 @@
 # Slot Hub Wix 內容與網域搬移 v1
 
-狀態：IMPLEMENTATION IN PROGRESS  
+狀態：READY FOR CLOUDFLARE DOMAIN ONBOARDING
 基準日期：2026-09-19  
 正式網址：`https://www.slothub.com.tw`
 
@@ -77,7 +77,7 @@ Multiplier 與 Megaways 舊文已有更完整的新站承接頁，只做 301，�
 1. 新內容、301 map、Preview 與 production candidate build 全部驗證。
 2. GitHub Actions 同時跑 Preview 與 production-readiness 兩種環境。
 3. Cloudflare zone 內完整複製 Wix 現有 DNS 記錄；不能只相信 quick scan，MX、DKIM、SPF、驗證 TXT 等須逐筆核對。
-4. Pages production build 設 `PUBLIC_SITE_ENV=production`，Preview 設 `preview`。
+4. Pages production build 透過版本控管的 `wrangler.jsonc` 設 `PUBLIC_SITE_ENV=production`，Preview branch 以 `env.preview` 覆寫為 `preview`；CI 另用明確環境值驗證兩種輸出。
 5. 從 Pages 的 Custom domains 流程加入 `slothub.com.tw` 與 `www.slothub.com.tw`；未切 NS 前 pending 屬正常現象，不可只手工加 CNAME。
 6. 確認 registrar 沒有舊 DNSSEC／DS；如有，須依 Cloudflare 指示處理後才能安全切換。
 
