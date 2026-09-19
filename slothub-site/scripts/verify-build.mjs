@@ -54,6 +54,7 @@ const guides = await readFile(new URL('guide/index.html', root), 'utf8');
 const compare = await readFile(new URL('compare/index.html', root), 'utf8');
 const gameLibrary = await readFile(new URL('games/index.html', root), 'utf8');
 const search = await readFile(new URL('search/index.html', root), 'utf8');
+const middleware = await readFile(new URL('../functions/_middleware.js', import.meta.url), 'utf8');
 
 const checks = [
   [home.includes('content="noindex,nofollow"'), 'Homepage meta robots is not noindex,nofollow'],
@@ -66,7 +67,8 @@ const checks = [
   [!home.includes('data-guide-reading-summary="home"') && !home.includes('filter-console-v2'), 'Homepage must not duplicate the Guide library or full Explorer'],
   [!sitemap.includes('<url><loc>'), 'Preview sitemap must not publish formal URLs'],
   [robots.includes('Allow: /') && !robots.includes('Disallow: /'), 'robots.txt must allow crawling for noindex discovery'],
-  [headers.includes('X-Robots-Tag: noindex, nofollow'), 'Cloudflare X-Robots-Tag safeguard is missing'],
+  [!headers.includes('X-Robots-Tag'), 'Static headers must not apply a production-wide noindex'],
+  [middleware.includes("hostname.endsWith('.pages.dev')") && middleware.includes("'noindex, nofollow'"), 'Cloudflare Preview X-Robots-Tag safeguard is missing'],
   [slots.includes('先分清主要賠付方式') && slots.includes('再看功能如何改變過程') && slots.includes('資料數字要連同基準一起讀'), 'Slot Hub v3 content sections are incomplete'],
   [!slots.includes('filter-console-v2') && !slots.includes('EDITOR\'S SELECTION') && !slots.includes('SLOT PROVIDERS'), 'Slot Hub must not duplicate the full Explorer, editorial list or Provider index'],
   [(slots.match(/href="\/games\/\?mechanism=/g) ?? []).length === 5, 'Slot Hub must expose five exact mechanism Explorer links'],

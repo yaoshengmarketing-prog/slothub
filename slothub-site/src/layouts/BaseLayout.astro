@@ -39,6 +39,7 @@ const isPreview = SITE.environment !== 'production';
     <meta name="description" content={description} />
     <meta name="robots" content={isPreview ? 'noindex,nofollow' : (robots ?? 'index,follow')} />
     {!isPreview && <link rel="canonical" href={canonical} />}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content={SITE.name} />
     <meta property="og:locale" content={SITE.locale} />
