@@ -77,10 +77,10 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['Prag by PopOK', 'Spearhead Studios', 'Barbara Bang', 'EGT Digital', 'NetGame Entertainment']) {
   assert.match(map, new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*已收錄（1）`));
 }
-for (const name of ['Realistic Games', 'AdvantPlay', 'Funky Games']) {
+for (const name of ['Funky Games']) {
   assert.match(map, new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*保留待補|${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*待確認`));
 }
-assert.match(map, /網站目前為 247 款 published Game、189 家 published Provider/);
-assert.match(map, /下一個橫向接續位置為主表第 138 項 Ricochet/);
+assert.match(map, /網站目前為 252 款 published Game、194 家 published Provider/);
+assert.match(map, /下一個橫向接續位置為主表第 191 項 Funky Games/);
 
 console.log('PASS: horizontal intake batch 34 added five traceable provider/game pairs, preserved source conflicts and unsupported values, recorded three evidence gaps, and advanced the cursor.');

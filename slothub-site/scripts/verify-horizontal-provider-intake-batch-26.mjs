@@ -75,7 +75,7 @@ for (const name of ['PopOK Gaming', 'PHOENIX 7', 'Naga Games', 'Gaming Corps', '
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`));
 }
 assert.match(map, /SYNOT Games.*圖片端點.*522.*保留待補/);
-assert.match(map, /AdvantPlay.*區域.*封鎖.*保留待補/);
+assert.match(map, /AdvantPlay[^\r\n]*Dragon Chi's Quest 2[^\r\n]*已收錄（1）/);
 assert.match(map, /下一個橫向接續位置.*候選地圖第 \d+ 項/);
 
 console.log('PASS: horizontal intake batch 26 published five first-party-source slot titles, preserved missing and multi-version values, and recorded deferred candidates without guessing.');

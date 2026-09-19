@@ -21,15 +21,15 @@ const bySlug = new Map(published.map((game) => [game.slug, game]));
 const has = (value) => value !== undefined && value !== null && value !== '' && (!Array.isArray(value) || value.length > 0);
 const coverage = (field) => published.filter((game) => has(game[field])).length;
 
-assert.equal(published.length, 247, 'expected 247 published Games');
+assert.equal(published.length, 252, 'expected 252 published Games');
 assert.deepEqual({
   releaseDate: coverage('releaseDate'), rtp: coverage('rtp'), rtpVariants: coverage('rtpVariants'),
   volatilityOriginal: coverage('volatilityOriginal'), volatilityNormalized: coverage('volatilityNormalized'),
   maxWinMultiplier: coverage('maxWinMultiplier'), maxWinLabelOriginal: coverage('maxWinLabelOriginal'),
   lastVerifiedAt: coverage('lastVerifiedAt'),
 }, {
-  releaseDate: 128, rtp: 120, rtpVariants: 101, volatilityOriginal: 142,
-  volatilityNormalized: 110, maxWinMultiplier: 135, maxWinLabelOriginal: 154, lastVerifiedAt: 247,
+  releaseDate: 130, rtp: 123, rtpVariants: 101, volatilityOriginal: 144,
+  volatilityNormalized: 112, maxWinMultiplier: 136, maxWinLabelOriginal: 155, lastVerifiedAt: 252,
 });
 
 assert.equal(bySlug.get('dead-or-alive-2').maxWinMultiplier, undefined);
@@ -92,4 +92,4 @@ assert.match(comparePage, /href="\/games\/"/);
 assert.match(styles, /\.compare-details summary\{[^}]*min-height:44px/);
 assert.match(styles, /@media\(forced-colors:active\)\{[^}]*\.compare-reading-note/);
 
-console.log('PASS: Compare v2 projected 247 Games with stable coverage, explicit missing states, semantic sections and no ranking output.');
+console.log('PASS: Compare v2 projected 252 Games with stable coverage, explicit missing states, semantic sections and no ranking output.');

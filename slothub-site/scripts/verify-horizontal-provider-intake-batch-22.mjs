@@ -76,7 +76,7 @@ for (const name of ['DELULU Gaming', 'ENJOY', 'WorldMatch', 'Caleta Gaming', 'Pr
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`));
 }
 assert.match(map, /Aurum Signature Studios .*已收錄（1）/);
-assert.match(map, /Fastspin .*尚未建立可直接核對資料與圖片的單款官方入口，保留待補/);
+assert.match(map, /Fastspin .*已收錄（1）/);
 assert.match(map, /第二十二批完成 DELULU Gaming、ENJOY、WorldMatch、Caleta Gaming 與 Print Studios/);
 
-console.log('PASS: horizontal intake batch 22 published five official-source slot titles, corrected the Fate of Olympus asset, preserved unsupported values as missing, retained Fastspin as deferred and allows the later verified Aurum intake.');
+console.log('PASS: horizontal intake batch 22 published five official-source slot titles, corrected the Fate of Olympus asset, preserved unsupported values as missing, and allows the later verified Fastspin and Aurum intakes.');

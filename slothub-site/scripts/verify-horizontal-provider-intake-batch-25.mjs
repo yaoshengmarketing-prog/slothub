@@ -70,7 +70,7 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['Red Desert Games', 'FAZI', '18Peaches', 'Apparat Gaming', 'Pascal Gaming']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`));
 }
-assert.match(map, /Realistic Games .*官方網域目前無法解析.*保留待補.*未收錄/);
+assert.match(map, /Realistic Games[^\r\n]*Destination Atlantis[^\r\n]*已收錄（1）/);
 assert.match(map, /下一個橫向接續位置.*候選地圖第 \d+ 項/);
 
 console.log('PASS: horizontal intake batch 25 published five first-party-source slot titles, preserved missing and multi-version values, and deferred inaccessible or non-slot candidates without guessing.');
