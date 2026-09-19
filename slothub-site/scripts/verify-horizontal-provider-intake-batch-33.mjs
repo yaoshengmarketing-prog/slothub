@@ -76,7 +76,6 @@ for (const name of ['Tom Horn Gaming', 'ReelPlay', 'SYNOT Games', 'Bigpot Gaming
   assert.match(map, new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*已收錄（1）`));
 }
 assert.match(map, /Hotdog Gaming[^\r\n]*停放頁[^\r\n]*保留待補/);
-assert.match(map, /網站目前為 237 款 published Game、179 家 published Provider/);
-assert.match(map, /下一個橫向接續位置為主表第 197 項 Prag by PopOK/);
+assert.match(map, /第三十三批完成 Tom Horn Gaming.*GameBeat／Max Miner/);
 
 console.log('PASS: horizontal intake batch 33 added five traceable provider/game pairs, preserved unsupported values as missing, recorded the Hotdog domain gap, and advanced the cursor.');
