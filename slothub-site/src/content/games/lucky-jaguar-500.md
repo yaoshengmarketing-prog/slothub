@@ -32,7 +32,7 @@ sources:
   - { label: TaDa Gaming 官方新聞稿（3x3、5 固定賠線、Lock & Respin 與 20,000x 上限）, url: https://tadagaming.com/fr-FR/news/content/312, checkedAt: 2026-09-17 }
   - { label: TaDa Gaming 官方 Game Sheet（Game ID、97.00% RTP 與 Med 波動度）, url: https://wbgame.tadagaming.com/All-In-One/production/file/tadaPlusPlayer/pdf/t9KAsfpQyMHTWY5f6OTU3sUedZqPejkSRNTrtKPO-10decdc9.pdf, checkedAt: 2026-09-17 }
   - { label: TaDa Gaming 官方 Lucky Jaguar 500 作品圖, url: https://wbgame.tadagaming.com/All-In-One/production/img/tadaPlusPlayer/games/TaDa_games_introImg_664_en-us-3c785e3f.webp, checkedAt: 2026-09-17 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://tadagaming.com/pt-BR/PlusIntro/LuckyJaguar500","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

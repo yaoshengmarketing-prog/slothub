@@ -24,7 +24,7 @@ source: { label: Wazdan 官方 Spectrum 遊戲頁, url: https://wazdan.com/games
 sources:
   - { label: Wazdan 官方遊戲頁（賠線、RTP、原廠波動度、Max Win、功能與發行日期）, url: https://wazdan.com/games/spectrum, checkedAt: 2026-09-17 }
   - { label: Wazdan 官方 Spectrum 作品圖, url: https://wazdan.com/wp-content/uploads/Spectrum_icon_600x450_webp90.webp, checkedAt: 2026-09-17 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://wazdan.com/games/spectrum","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

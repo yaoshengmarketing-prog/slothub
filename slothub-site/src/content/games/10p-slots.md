@@ -22,7 +22,7 @@ status: published
 source: { label: G.Games 官方 10P Slots 遊戲頁, url: https://g.games/10p-slots/, checkedAt: 2026-09-19 }
 sources:
   - { label: G.Games 官方遊戲頁（單賠線、RTP、原始波動度尺度、發行日期與原始 win 標示）, url: https://g.games/10p-slots/, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://games.gamevy.com/staging/classic-slots/index.html?env=test&platform=gamevy","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

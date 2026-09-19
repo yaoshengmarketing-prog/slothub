@@ -17,7 +17,7 @@ status: published
 source: { label: Bragg 官方 Reflex Gaming 作品頁, url: https://bragg.group/casino-games/reflex-gaming/, checkedAt: 2026-09-19 }
 sources:
   - { label: Bragg 官方 Reflex Gaming 作品頁（作品歸屬、RTP 版本、波動度、盤面與圖片）, url: https://bragg.group/casino-games/reflex-gaming/, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://play-prodcopy.oryxgaming.com/agg_plus_public/launch/wallets/OD1/games/REF_RDR_EU/open?cage=20&languageCode=ENG&lobbyUrl=https%3A%2F%2Fstagedemo.oryxgaming.com%2F&playMode=FUN&sessionId=eff447fed85d9eabae1eb55ef14dbf45&token=PLAY_NTRkNDdmMDctMmI0ZS00ZmIxLWE2ODgtMjgxODkyOWY1MjM5&username=OD1A00000091","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

@@ -25,7 +25,7 @@ source: { label: ApexWin 官方 Thief's Plan 遊戲頁, url: https://www.apex-wi
 sources:
   - { label: ApexWin 官方遊戲頁（RTP、原廠波動度、最高倍數、賠線與功能）, url: https://www.apex-win.com/en-US/Games/Intro/20250219120051298, checkedAt: 2026-09-18 }
   - { label: ApexWin 官方 Thief's Plan 作品封面, url: https://storage.apex-win.com/omp_ApexWin/WebGame/701a4d75d2acd59e27c30f3557e58df8.jpg, checkedAt: 2026-09-18 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.apex-win.com/en-US/Games/Intro/20250219120051298","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

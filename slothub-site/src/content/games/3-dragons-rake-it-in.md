@@ -21,7 +21,7 @@ source: { label: Red Rake Gaming 官方 3 Dragons Rake It In 發布稿, url: htt
 sources:
   - { label: Red Rake Gaming 官方發布稿（發行、盤面、賠線與功能）, url: https://www.redrakegaming.com/new/super-dragons-and-wins-3-dragons-rake-it-in-launches/, checkedAt: 2026-09-17 }
   - { label: Red Rake Gaming 官方 3 Dragons Rake It In 作品圖, url: https://staticwww.redrakegaming.com/img/news/20260611/main/3DRAGONS-EN.webp, checkedAt: 2026-09-17 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.redrakegaming.com/slots/dragons-3-rake-it-in/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

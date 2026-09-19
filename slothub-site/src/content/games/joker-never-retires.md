@@ -26,7 +26,7 @@ status: published
 source: { label: Bullshark Games 官方 Joker Never Retires 遊戲頁, url: https://bullsharkgames.io/games/joker-never-retires/, checkedAt: 2026-09-19 }
 sources:
   - { label: Bullshark Games 官方遊戲頁（盤面、賠線、RTP 版本、波動度、最高倍數與功能）, url: https://bullsharkgames.io/games/joker-never-retires/, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://bullsharkgames.io/games/joker-never-retires/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

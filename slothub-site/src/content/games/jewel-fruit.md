@@ -24,7 +24,7 @@ source: { label: Apollo Games 官方 Jewel Fruit 遊戲頁, url: https://www.apo
 sources:
   - { label: Apollo Games 官方遊戲頁（盤面、賠線、RTP 範圍、波動度、Max Win 與 Wild）, url: https://www.apollogames.com/games/jewel-fruit, checkedAt: 2026-09-17 }
   - { label: Apollo Games 官方 Jewel Fruit 遊戲畫面, url: https://www.apollogames.com/media/apollo/games/media/1653574123_jewelfruit-default-game-en.png, checkedAt: 2026-09-17 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.apollogames.com/games/jewel-fruit","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

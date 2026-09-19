@@ -18,7 +18,7 @@ source: { label: Light & Wonder 官方 Gaming Realms 工作室頁, url: https://
 sources:
   - { label: Light & Wonder 官方 Gaming Realms 工作室頁（遊戲身份、Game ID 與 Bonus Game 條件）, url: https://igaming.lnw.com/studios/gaming-realms/, checkedAt: 2026-09-19 }
   - { label: Light & Wonder 官方 Slingo Sweet Bonanza 遊戲主圖, url: https://sg-digital-stage.s3.eu-west-1.amazonaws.com/wp-content/uploads/2022/02/28095800/slingo-sweet-bonanza.jpg, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://gamingrealms.com/games/slingo-sweet-bonanza/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

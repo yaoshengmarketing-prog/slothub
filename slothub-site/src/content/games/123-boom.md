@@ -28,7 +28,7 @@ source: { label: 4ThePlayer 官方 123 BOOM! 遊戲頁, url: https://www.4thepla
 sources:
   - { label: 4ThePlayer 官方 123 BOOM! 遊戲頁（RTP、Ways、投注、最高倍數、波動度、發布日與功能）, url: https://www.4theplayer.com/games/123-boom/, checkedAt: 2026-09-16 }
   - { label: 4ThePlayer 官方 123 BOOM! 遊戲畫面, url: https://www.4theplayer.com/wp-content/uploads/2020/10/123-BOOM-Explosive-Wins-Sliding-WILDS.jpg, checkedAt: 2026-09-16 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.4theplayer.com/games/123-boom/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-16
 updatedAt: 2026-09-16
 ---

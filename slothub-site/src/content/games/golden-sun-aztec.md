@@ -24,7 +24,7 @@ source: { label: Funky Games 官方 Golden Sun Aztec 遊戲頁, url: https://fun
 sources:
   - { label: Funky Games 官方 Golden Sun Aztec 遊戲頁（GodziSlots 署名、RTP、波動度、最高標示與功能）, url: https://funkygames.io/games/1902637/, checkedAt: 2026-09-19 }
   - { label: Funky Games 官方 Golden Sun Aztec 遊戲圖片, url: https://funkyofficial-img.funkygames.io/game/en/1902637.webp, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"access-restricted","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://funkygames.io/games/1902637/","accessType":"official-game-page","note":"Saved source was access-restricted during the coverage audit."}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

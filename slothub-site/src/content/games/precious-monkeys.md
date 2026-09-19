@@ -24,7 +24,7 @@ status: published
 source: { label: RAW iGaming 官方 Precious Monkeys 遊戲頁, url: https://www.rawgroup.com/games/precious-monkeys, checkedAt: 2026-09-19 }
 sources:
   - { label: RAW iGaming 官方遊戲頁（RTP 版本、最高倍數、Engine、Game ID、投注範圍與功能）, url: https://www.rawgroup.com/games/precious-monkeys, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.rawgroup.com/games/precious-monkeys","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

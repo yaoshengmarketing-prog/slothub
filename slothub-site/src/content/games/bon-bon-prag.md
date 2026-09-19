@@ -31,7 +31,7 @@ source: { label: PopOK Gaming 官方 Bon Bon PRAG 遊戲頁, url: https://www.po
 sources:
   - { label: PopOK Gaming 官方 Bon Bon PRAG 遊戲頁（盤面、RTP、波動度、Max Win、投注範圍、功能與發行日）, url: https://www.popokgaming.com/products/games/slots/bon-bon-prag, checkedAt: 2026-09-19 }
   - { label: PopOK Gaming 官方 Bon Bon PRAG 遊戲主圖, url: https://stage-new.pokgaming.com/panel//uploads/game/572bc2214ea85628d06b0541d0a3aa63.jpg, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.popokgaming.com/products/games/slots/bon-bon-prag","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

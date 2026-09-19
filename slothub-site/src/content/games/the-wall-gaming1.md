@@ -26,7 +26,7 @@ status: published
 source: { label: GAMING1 官方 The Wall 遊戲頁, url: https://www.gaming1.com/en/games/game/details/d93ba6da-7f4e-b2a0-ff80-b1316a1b2be6, checkedAt: 2026-09-19 }
 sources:
   - { label: GAMING1 官方遊戲頁（盤面、Ways、RTP、波動度、投注範圍與功能）, url: https://www.gaming1.com/en/games/game/details/d93ba6da-7f4e-b2a0-ff80-b1316a1b2be6, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.gaming1.com/en/games/game/details/d93ba6da-7f4e-b2a0-ff80-b1316a1b2be6","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

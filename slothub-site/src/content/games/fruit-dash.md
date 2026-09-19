@@ -23,7 +23,7 @@ source: { label: 7Mojos 官方 Fruit Dash 遊戲頁, url: https://www.7mojos.com
 sources:
   - { label: 7Mojos 官方遊戲頁（RTP、原廠波動度、盤面與賠線）, url: https://www.7mojos.com/slots/fruit-dash, checkedAt: 2026-09-18 }
   - { label: 7Mojos 官方 Fruit Dash 作品封面, url: https://7mojos.com/uploads/media/cache/slot_gallery_thumbnail/images/fruitdash-6521638daebaa.png, checkedAt: 2026-09-18 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.7mojos.com/slots/fruit-dash","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

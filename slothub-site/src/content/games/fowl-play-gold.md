@@ -14,7 +14,7 @@ status: published
 source: { label: Light & Wonder 官方 WMG 工作室頁, url: https://igaming.lnw.com/studios/wmg/, checkedAt: 2026-09-19 }
 sources:
   - { label: Light & Wonder 官方工作室頁（Provider、作品身份、Game ID、功能與圖片）, url: https://igaming.lnw.com/studios/wmg/, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://wmgaming.it/en/fowl-play-gold-eng/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

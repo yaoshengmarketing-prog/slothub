@@ -27,7 +27,7 @@ source: { label: 18Peaches 官方 Money Tree Jackpot Hold and Win 遊戲頁, url
 sources:
   - { label: 18Peaches 官方遊戲頁（RTP、波動度、最高倍數與功能）, url: https://18peaches.com/games/money-tree-jackpot-hold-and-win, checkedAt: 2026-09-19 }
   - { label: 18Peaches 官方遊戲資料介面（盤面、投注範圍與功能）, url: https://api.18peaches.com/api/v1/games/money-tree-jackpot-hold-and-win, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://18peaches.com/games/money-tree-jackpot-hold-and-win","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

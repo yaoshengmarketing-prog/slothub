@@ -17,7 +17,7 @@ status: published
 source: { label: Bragg 官方 GAMOMAT 作品頁, url: https://bragg.group/casino-games/gamomat/, checkedAt: 2026-09-19 }
 sources:
   - { label: Bragg 官方 GAMOMAT 作品頁（RTP、波動度、盤面與官方圖）, url: https://bragg.group/casino-games/gamomat/, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://gamomat.com/games/the-book-beyond-2/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

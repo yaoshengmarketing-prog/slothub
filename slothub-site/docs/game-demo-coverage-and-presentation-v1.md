@@ -52,6 +52,6 @@ Slot Hub 將試玩／遊戲入口視為遊戲資料的一部分：讓讀者在�
 
 ## 本次全量基線
 
-2026-09-19 以當時 257 款 published Games、199 家 Provider 及 496 個已保存來源頁完成一次覆蓋盤點。盤點輸出保存在 `data/game-demo-coverage.json`；Game frontmatter 是公開呈現的資料 owner，報告只作可重跑的營運 QA 與接續清單。
+2026-09-19 以當時 257 款 published Games、199 家 Provider 及 546 個已保存來源頁完成一次覆蓋盤點。盤點輸出保存在 `data/game-demo-coverage.json`；Game frontmatter 是公開呈現的資料 owner，報告只作可重跑的營運 QA 與接續清單。
 
-2026-09-19 接續補查後共有 131 個可用入口：29 個官方直達 Demo、89 個官方遊戲頁及 13 個明確標示的同款平台頁；另有 124 個 `not-verified` 與 2 個 `access-restricted` 待接續。`data/game-demo-manual-review.json` 保存 74 筆明確的人工／瀏覽器覆核決策，其餘官方入口由來源頁與精確 URL 稽核建立；不得宣稱 131 筆都有獨立人工覆核紀錄。所有入口均使用站外連結，日後 Agent 只針對未完成、新增或明確需重新核對的遊戲接續，不得重新啟用 iframe。
+2026-09-19 完成第二輪剩餘清單補查及全量連線重驗後，共有 176 個可用入口：39 個官方直達 Demo、124 個官方遊戲頁及 13 個明確標示的同款平台頁；另有 78 個 `not-verified` 與 3 個 `access-restricted` 待接續。本輪研究提出的 51 個候選中，45 個通過精確目的地、唯一 URL、非通用大廳及實際可達性檢查；其餘因通用 `/demo` 路徑、連線失敗或 HTTP 403 保留為待查／受限，未勉強發布。`data/game-demo-manual-review.json` 保存 125 筆明確的人工／瀏覽器覆核決策，其餘官方入口由來源頁與精確 URL 稽核建立；不得宣稱 176 筆都有獨立人工覆核紀錄。所有入口均使用站外連結，日後 Agent 只針對未完成、新增或明確需重新核對的遊戲接續，不得重新啟用 iframe。

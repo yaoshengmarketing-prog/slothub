@@ -25,7 +25,7 @@ source: { label: Blueprint Gaming 官方 Eye of Horus 遊戲頁, url: https://bl
 sources:
   - { label: Blueprint Gaming 官方 Eye of Horus 遊戲頁（日期、賠線、RTP 版本、Game ID 與功能）, url: https://blueprintgaming.com/games/eye-of-horus, checkedAt: 2026-09-17 }
   - { label: Blueprint Gaming 官方 Eye of Horus 遊戲圖片, url: https://bpgwebsite.s3.eu-west-2.amazonaws.com/public/games/d8302265-5988-48e1-85d4-4115931605f9/1200x0/100125112451_Iu9pKMs4yl3QVDgDFKJr.jpg, checkedAt: 2026-09-17 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://blueprintgaming.com/games/eye-of-horus","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

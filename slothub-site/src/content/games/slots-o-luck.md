@@ -21,7 +21,7 @@ source: { label: Inspired Entertainment 官方 Slots O Luck 遊戲頁, url: http
 sources:
   - { label: Inspired Entertainment 官方遊戲頁（盤面、賠線、RTP 與作品身份）, url: https://inseinc.com/interactive/games/slots-o-luck/, checkedAt: 2026-09-17 }
   - { label: Inspired Entertainment 官方 Slots O Luck 手機作品圖, url: https://inseinc.com/wp-content/uploads/2021/03/Mobile-web-21.png, checkedAt: 2026-09-17 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://inseinc.com/interactive/games/slots-o-luck/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

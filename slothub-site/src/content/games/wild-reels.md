@@ -29,7 +29,7 @@ sources:
   - { label: Fantasma Games 現行 Wild Reels 遊戲頁（RTP、Medium 波動度、盤面、賠線、功能與發行日）, url: https://www.fantasmagames.com/game/wild-reels/, checkedAt: 2026-09-19 }
   - { label: EveryMatrix 歷史 Wild Reels game sheet（Low 波動度與 2018-09-24 發行日，與現行頁差異保留）, url: https://games.everymatrix.com/wp-content/uploads/2021/10/wild-reels_game-sheet-2.pdf, checkedAt: 2026-09-19 }
   - { label: Fantasma Games 官方 Wild Reels 遊戲標誌, url: https://www.fantasmagames.com/wp-content/uploads/2021/10/LOGO_text-1024x589.png, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.fantasmagames.com/game/wild-reels/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

@@ -23,7 +23,7 @@ status: published
 source: { label: Bulletproof Games 官方 7th Squadron DoubleMax 遊戲頁, url: https://bulletproofgames.co.uk/games/7th_squadron.html, checkedAt: 2026-09-19 }
 sources:
   - { label: Bulletproof Games 官方遊戲頁（盤面、Ways、RTP 版本、波動度、最高倍數與功能）, url: https://bulletproofgames.co.uk/games/7th_squadron.html, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://bulletproofgames.co.uk/games/7th_squadron.html","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

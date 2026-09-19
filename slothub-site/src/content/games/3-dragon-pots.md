@@ -27,7 +27,7 @@ source: { label: 1X2 Network 官方 3 Dragon Pots 遊戲頁, url: https://www.1x
 sources:
   - { label: 1X2 Network 官方 3 Dragon Pots 遊戲頁（Studio、發布日、RTP、波動度、投注、最高倍數與功能）, url: https://www.1x2network.com/games/3-dragon-pots/, checkedAt: 2026-09-16 }
   - { label: 1X2 Network 官方 3 Dragon Pots 遊戲畫面, url: https://www.1x2network.com/wp-content/uploads/2025/02/Screenshot-2025-03-21-at-13.25.33.png, checkedAt: 2026-09-16 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://gamelauncher-stage.1x2networkhub.com/playGame.html?platform=desktop&display=flash&lang=en&sessionID=EUR&playMode=fun&siteID=13&jurisdiction=com&realitycheck_uk_elapsed=0&realitycheck_uk_limit=0&clientID=221&end=true&gameID=8187","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-16
 updatedAt: 2026-09-16
 ---

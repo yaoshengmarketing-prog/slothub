@@ -27,7 +27,7 @@ source: { label: Wizard Games 官方 Sizzling Mystery 遊戲頁, url: https://wi
 sources:
   - { label: Wizard Games 官方遊戲頁（RTP 配置、波動度、盤面、Ways、投注與功能）, url: https://wizard.games/project/sizzling-mystery/, checkedAt: 2026-09-17 }
   - { label: Wizard Games 官方 Sizzling Mystery 作品圖, url: https://wizard.games/wp-content/uploads/2023/08/LinkedIn_link_post_size_1200x627_upcmn-2.jpg, checkedAt: 2026-09-17 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://wizard.games/project/sizzling-mystery/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

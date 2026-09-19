@@ -22,7 +22,7 @@ source: { label: CT Gaming 官方 Game for Tuna 遊戲頁, url: https://ctgaming
 sources:
   - { label: CT Gaming 官方遊戲頁（RTP 配置、波動度、盤面、賠線、Top Award 與功能）, url: https://ctgaming.com/products/games/new-game-57/, checkedAt: 2026-09-17 }
   - { label: CT Gaming 官方 Game for Tuna 作品圖, url: https://ctgaming.com/assets/Uploads/products/Game_for_Tuna_tabela.jpg, checkedAt: 2026-09-17 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://ct-interactive.com/games/games-library/game-for-tuna","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

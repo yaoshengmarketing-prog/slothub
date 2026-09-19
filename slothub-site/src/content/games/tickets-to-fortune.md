@@ -21,7 +21,7 @@ source: { label: Storm Gaming Technology 官方遊戲目錄, url: https://www.st
 sources:
   - { label: Storm Gaming Technology 官方遊戲目錄（盤面與賠線）, url: https://www.stormgamingtechnology.com/our-games, checkedAt: 2026-09-19 }
   - { label: Storm Gaming Technology 官方 Tickets To Fortune 圖片, url: https://static.wixstatic.com/media/b14b7f_b7d6cc2b7dd84b6b9988314af1b13b70~mv2.png/v1/crop/x_0,y_0,w_300,h_237/fill/w_420,h_332,al_c,lg_1,q_85,enc_avif,quality_auto/pinkcharacter_edited.png, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://api.titaniumrgs.com/demo/launch?country=GB&currency=GBP&gameId=2df79241-603b-43ae-b870-32811f1bbaec&language=en","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---
