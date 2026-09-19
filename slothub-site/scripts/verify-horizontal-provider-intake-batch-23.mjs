@@ -73,7 +73,7 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['Stormcraft Studios', 'PearFiction Studios', 'Bulletproof Games', 'HungryBear Gaming', 'Jade Rabbit Studio']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`));
 }
-assert.match(map, /KISS Gaming .*保留待補 .*未收錄/);
+assert.match(map, /KISS Gaming[^\r\n]*已收錄（1）/);
 assert.match(map, /第二十三批完成 Stormcraft Studios、PearFiction Studios、Bulletproof Games、HungryBear Gaming 與 Jade Rabbit Studio/);
 
-console.log('PASS: horizontal intake batch 23 published five official-source slot titles, preserved dynamic and multi-version source boundaries, and deferred KISS Gaming without guessing.');
+console.log('PASS: horizontal intake batch 23 published five official-source slot titles and preserved dynamic and multi-version source boundaries; the later KISS resolution remains recorded.');

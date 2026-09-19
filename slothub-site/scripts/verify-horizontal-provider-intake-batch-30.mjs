@@ -77,9 +77,10 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['Betixon', 'FUGASO', 'Mobilots', 'GodziSlots', 'BNG／Booongo']) {
   assert.match(map, new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*已收錄（1）`));
 }
-for (const name of ['Zerplaay Games', 'Clutch Gaming', 'Dragoon Soft', 'Leander Games']) {
+for (const name of ['Zerplaay Games', 'Dragoon Soft', 'Leander Games']) {
   assert.match(map, new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*保留待補`));
 }
+assert.match(map, /Clutch Gaming[^\r\n]*已收錄（1）/);
 assert.match(map, /Spearhead Studios[^\r\n]*已收錄（1）/);
 assert.match(map, /第一至三十批完成時的歷史基線為 222 款 published Game、164 家 published Provider/);
 assert.match(map, /第 30 批已依序實跑到 BNG／Booongo，完成五家並保存五家跳過原因/);

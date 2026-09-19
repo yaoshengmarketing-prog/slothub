@@ -81,10 +81,10 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['Fastspin', 'KA Gaming', 'Realistic Games', 'AceWin Gaming', 'AdvantPlay']) {
   assert.match(map, new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*已收錄（1）`));
 }
-for (const name of ['Ricochet', 'Almond Gaming', 'KISS Gaming', 'Nazionale Elettronica', 'Aspect Gaming', 'Galaxsys']) {
+for (const name of ['Almond Gaming', 'Hotdog Gaming', 'Win Fast', 'Ace Roll', 'Zerplaay Games']) {
   assert.match(map, new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*待補`));
 }
-assert.match(map, /網站目前為 252 款 published Game、194 家 published Provider/);
-assert.match(map, /下一個橫向接續位置為主表第 191 項 Funky Games/);
+assert.match(map, /網站目前為 257 款 published Game、199 家 published Provider/);
+assert.match(map, /下一個橫向接續位置為主表第 213 項 Dragoon Soft/);
 
 console.log('PASS: horizontal intake batch 36 added five traceable provider/game pairs, resolved four recorded evidence gaps, preserved unsupported values as missing, and advanced the cursor.');

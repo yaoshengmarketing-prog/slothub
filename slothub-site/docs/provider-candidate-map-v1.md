@@ -4,7 +4,7 @@
 >
 > 建立日期：2026-09-03
 >
-> 本輪更新：2026-09-19（橫向收錄第三十五批完成 Zitro、Gaming Realms、Nailed It! Games、Aurum Signature Studios、Deep Stake Games 各一款；候選總數仍為 227 家）
+> 本輪更新：2026-09-19（橫向收錄第三十七批完成 Funky Games、KISS Gaming、Aspect Gaming、Ricochet、Clutch Gaming 各一款；候選總數仍為 227 家）
 >
 > 用途：作為外部遊戲資料收集的 Provider 骨架與去重對照。這不是完整產業名錄，不授權一次建立所有 Provider 公開頁，也不改變 Schema、taxonomy、產品功能或既有發布標準。
 
@@ -289,7 +289,7 @@
 | 135 | Lightning Box | L&W OpenGaming partner | 開發 | Slots | [L&W studio 頁](https://igaming.lnw.com/studios/lightning-box-2/) | LNW26 | 已收錄（1） |
 | 136 | Live 5 | L&W OpenGaming partner | 開發 | Slots | [L&W partner roadmap](https://igaming.lnw.com/partner-roadmaps/?date=available) | LNW26 | 已收錄（1） |
 | 137 | Pariplay | Aristocrat Interactive；同時經 L&W 分發 | 開發、聚合 | Slots、Casino | [L&W partner roadmap](https://igaming.lnw.com/partner-roadmaps/?orderby=network-access) | LNW26；Fusion 聚合內容不得當成 Pariplay 自製 | 已收錄（1） |
-| 138 | Ricochet | L&W OpenGaming partner | 開發 | Slots | [L&W partner roadmap](https://igaming.lnw.com/partner-roadmaps/?orderby=network-access) | LNW26；本輪未取得可直接歸屬且資料足夠的具名作品頁，保留待查 | 未收錄 |
+| 138 | Ricochet | L&W OpenGaming partner | 開發 | Slots | [Light & Wonder 官方 Stairway To Cash 頁](https://igaming.lnw.com/games/stairway-to-cash/) | Stairway To Cash 已由 Light & Wonder 官方頁核對 Studio、四個 RTP 版本、最高曝險、盤面、投注範圍、功能與 Game ID；正式遊戲目錄圖另行保存 | 已收錄（1） |
 | 139 | Rogue | L&W OpenGaming partner | 開發 | Slots／Online casino content | [L&W partner roadmap](https://igaming.lnw.com/partner-roadmaps/?date=available) | LNW26 | 已收錄（1） |
 | 140 | WMG | L&W OpenGaming partner | 開發 | Slots、VLT | [L&W partner roadmap](https://igaming.lnw.com/partner-roadmaps/?orderby=network-access) | LNW26 | 已收錄（1） |
 | 141 | All For One Studios | Games Global exclusive studio | 開發 | Slots | [Games Global studios](https://www.gamesglobal.com/Studios) | GG、官方 | 已收錄（1） |
@@ -314,7 +314,7 @@
 | 160 | Fastspin | Ample Global Co., Ltd. | 開發 | Slots | [官方遊戲目錄](https://www.fast-spin.com/games) | SBC26、官方；Frosty and Flamy 已由官方目錄核對作品圖、RTP、波動度、15,625 Ways、功能購買與發行日期 | 已收錄（1） |
 | 161 | WorldMatch | 獨立品牌 | 開發 | Slots、Table、Poker、Instant | [官方遊戲目錄](https://www.worldmatch.eu/games-archive/) | SBC26、官方 | 已收錄（1） |
 | 162 | Caleta Gaming | Caleta Holdings／Malta | 開發 | Slots、Video Bingo、Crash、Table、Keno | [官方遊戲目錄](https://www.caletagaming.com/our-games/) | SBC Rio 2026、官方 | 已收錄（1） |
-| 163 | KISS Gaming | Choice Gaming 文件站對外署名 | 開發 | Slots、Crash、Instant、Virtual Live | [官方文件／遊戲入口](https://docs.choicegaming.com/) | SBC26、官方展會品牌頁；官方稱 60+ portfolio；本輪未建立可直接核對圖片與完整規格的單款官方頁面，保留待補 | 未收錄 |
+| 163 | KISS Gaming | 獨立對外品牌；Choice Gaming 生態合作 | 開發、平台 | Slots、Crash、Instant、Virtual Live | [官方 Slots 目錄](https://www.kissgaming.me/games/slots) | Jungle Treasure 已由官方逐款頁核對作品圖、97.29% RTP 與 2,000 倍上限，官方發布內容另支持四軸、Respin 與 Progressive Jackpot | 已收錄（1） |
 | 164 | Print Studios | 獨立品牌 | 開發 | Slots、Plinko | [官方遊戲目錄](https://www.printstudios.com/games) | STUD26、官方；官方稱作品由自有團隊製作，目錄可辨識 Uncle Profit 等作品 | 已收錄（1） |
 | 165 | Stormcraft Studios | Games Global 獨家合作 studio；未據此推定股權 | 開發 | Slots | [官方遊戲入口](https://stormcraftstudios.com/games/)、[Immortal Romance II 官方頁](https://stormcraftstudios.com/immortalromanceii/) | STUD26、官方；Thunderstruck Stormchaser 作品頁可核對 | 已收錄（1） |
 | 166 | PearFiction Studios | 曾透過 Leander、RNG Foundry／Microgaming 等分發；未據此推定股權 | 開發 | Slots | [官方遊戲目錄](https://pearfiction.com/games/)、[Chicago Gold 官方頁](https://pearfiction.com/games/chicago-gold/) | STUD26、官方；Cerberus Gold 作品頁可核對 | 已收錄（1） |
@@ -348,10 +348,10 @@
 | 185 | SYNOT Games | SYNOT Group | 開發、發行 | Slots、Land-based／Online | [官方 Slot 目錄](https://www.synotgames.com/game_type/slot/) | Jewels Fortune 已由官方單款頁核對盤面、Ways、RTP 配置範圍、Max Win、功能與圖片；平台與集團內容不混作單一作品品牌 | 已收錄（1） |
 | 186 | AceWin Gaming | ACEWIN | 開發 | Slots、Fishing、Arcade、Table | [官方遊戲目錄](https://www.acewin168.com/) | 官網以 Slot／Fishing／Arcade 等分類列出作品；PirateRiches 已由官方目錄核對 Slot 分類、遊戲識別與作品圖 | 已收錄（1） |
 | 187 | AdvantPlay | 獨立對外品牌 | 開發 | Slots、Instant／Originals | [官方品牌與遊戲目錄](https://advantplay.com/our-games) | 官網明示 B2B studio、60+ originals 與自製 slots；Dragon Chi's Quest 2 已核對 6 軸、Scatter Bonus、97.01% RTP 與官方作品圖 | 已收錄（1） |
-| 188 | Aspect Gaming | 獨立對外品牌 | 開發、平台 | Slots、Land-based／Social | [官方品牌與作品入口](https://aspectgaming.com/) | 官網明示作品改編自 GLI-certified slot machines | 未收錄 |
+| 188 | Aspect Gaming | 獨立對外品牌 | 開發、平台 | Slots、Land-based／Social | [官方品牌與作品入口](https://aspectgaming.com/) | 官網明示作品改編自 GLI-certified slot machines；Doggone Lucky 另以可追溯作品資料與商標關係核對 5×3、30 線、RTP、波動度、上限、功能與真實畫面 | 已收錄（1） |
 | 189 | Barbara Bang | 獨立對外品牌 | 開發 | Slots | [官方網站](https://barbarabang.com/) | Chinese Gold Hold and Spin 已由官方 game sheet 核對盤面、RTP、原廠波動度數值、Max Payout、投注範圍、功能、Game ID 與畫面 | 已收錄（1） |
 | 190 | Bigpot Gaming | Bigpot Gaming Limited | 開發 | Slots、Casual、Casino | [官方品牌與遊戲入口](https://www.bigpotgaming.com/home) | Mega Sevens 2 已由官方遊戲目錄、發布說明與圖片核對 1,024 Ways、7 FRAME FEATURE、Free Spin 與 7,777 倍上限 | 已收錄（1） |
-| 191 | Funky Games | GodziSlots 為官方 secondary brand，作品另以 `#GodziSlots` 署名 | 開發 | Slots、Instant、Crash、Table | [官方遊戲目錄](https://funkygames.io/games/) | 官網有可讀作品目錄並明示 200+ games；Aloha! Fruit Punch 與 3 Combo Mahjong 的現行逐款頁均明示 `#GodziSlots`，為避免與既有 GodziSlots 重複歸屬，Funky 自有署名作品仍待確認 | 未收錄 |
+| 191 | Funky Games | GodziSlots 為官方 secondary brand，作品依逐款署名分開 | 開發 | Slots、Instant、Crash、Table | [官方遊戲目錄](https://funkygames.io/games/) | Happy Hour Fruit Slot 已由官方目錄、逐款頁與官方 CDN 圖確認 Funky Games 自有作品身份；未公開的重要數據維持缺值，不與 GodziSlots 重複 | 已收錄（1） |
 | 192 | GameBeat | 獨立對外品牌 | 開發 | Slots | [官方品牌頁](https://gamebeat.com/about) | Max Miner 已由官方單款頁核對 RTP、波動度、軸數、賠線、Max Win、功能與圖片 | 已收錄（1） |
 | 193 | iMoon Games | iMoon B.V. | 開發、Provider | RNG、Crash、Instant | [官方品牌入口](https://imoon.com/)、[官方開發者文件](https://dev.imoon.com/) | 可確認遊戲 Provider 身份與 RNG／Crash／Instant 作品；目前未確認傳統 Slots，不列入 Slot 家數 | 未收錄 |
 | 194 | PHOENIX 7 | PHOENIX 7 Malta／Poland／Japan teams | 開發 | Slots、Instant | [官方遊戲目錄](https://phoenix7.com/games/) | 官網分列 Video Slots 與 Instant Games；第 26 批以 PACHINCUP 官方頁與圖片完成收錄 | 已收錄（1） |
@@ -383,7 +383,7 @@
 | 209 | Aloha Gaming | Hacksaw OpenRGS partner studio | 開發 | Slots | [OpenRGS studio 公告](https://www.hacksawgaming.com/news/hacksaw-welcomes-aloha-gaming-as-new-partner-studio-on-openrgs)、[合作平台作品頁](https://www.slingo.com/en-ROW/slots/tikitopia-boosterbelt/) | 官方公告確認 3D slot studio、首作 TikiTopia BoosterBelt、中等波動度與自有玩法；第 29 批以合作平台圖片完成收錄 | 已收錄（1） |
 | 210 | Koala Games | RubyPlay studio ecosystem；Alaok Games Ltd 為站點條款法人 | 開發 | Slots | [官方遊戲頁](https://koalagames.com/games/voltage-blitz-vortex/)、[RubyPlay studio 公告](https://rubyplay.com/news/rubyplay-launches-new-independent-studio-koala-games/) | 官網有逐款資料、圖片與規格；RubyPlay 公告確認獨立 studio 身份及首批三款作品；第 27 批以 Voltage Blitz Vortex 完成收錄 | 已收錄（1） |
 | 211 | Zerplaay Games | Hacksaw OpenRGS partner studio | 開發 | Slots | [OpenRGS studio 公告](https://www.hacksawgaming.com/news/hacksaw-openrgs-welcomes-zerplaay-games-as-new-partner-studio)、[July round-up](https://www.hacksawgaming.com/news/july-round-up) | 原公告只確認合作；後續官方發行預告已直接署名 Trevor Hunter。第 30 批仍未取得可直接歸屬的正式遊戲圖片，保留待補 | 未收錄 |
-| 212 | Clutch Gaming | Backseat Gaming 官網所列 exclusive brand；與 Backseat 作品分開署名 | 開發 | Slots | [Backseat 官方品牌／遊戲入口](https://backseatgaming.com/games/)、[授權合作方 Deadeye 頁](https://stake.com/casino/games/clutch-deadeye/) | 品牌與 Deadeye 署名可確認；第 30 批未取得可直接保存的品牌逐款圖片與完整規格，保留待補 | 未收錄 |
+| 212 | Clutch Gaming | Backseat Gaming 官網所列 exclusive brand；與 Backseat 作品分開署名 | 開發 | Slots | [Backseat 官方 Clutch 目錄](https://backseatgaming.com/games/?brand=clutch)、[官方 Deadeye 頁](https://backseatgaming.com/deadeye/) | Deadeye 已由官方逐款頁核對 5×5 盤面、96.33% RTP、Very High 波動度、20,000 倍上限、功能與作品圖 | 已收錄（1） |
 | 213 | Dragoon Soft | 獨立對外品牌 | 開發 | Slots、Fishing、Arcade | [官方網站](https://www.dragoonsoft.com/)、[正式供應商頁](https://www.gamingsoft.com/providers/dragoon-soft/) | 品牌及 Give You Money、Farm Family 等作品可確認；第 30 批缺少可直接歸屬的正式逐款圖片與資料頁，保留待補 | 未收錄 |
 
 本批淨新增 15 家，全部能確認 Slots 作品。原補充檔中的 OpenRGS 本身不計入品牌；Hacksaw Gaming 與 RubyPlay 已在主表，只補合作網路證據。Zerplaay Games、Clutch Gaming 及 Dragoon Soft 已取得品牌與作品雙重證據，不再列於待查。
@@ -443,8 +443,8 @@
 - 身分收斂輪確認 Leander Games、Mobilots、GodziSlots、Slotopia 與 BNG／Booongo：淨新增候選 **5 家**，均有 Slots 作品；OMNIPLAY 與 Yellow Orbit Gaming 不納入。
 - 全表合計去重後、已確認遊戲品牌：**227 家**。表內保留 OMNIPLAY 的研究 ID 102 供查核歷史，但它不在這個數字內。
 - 全表合計明確提供 Slots：**213 家**。Evolution 與 SPRIBE 仍不計入 Slot 品牌家數；Evolution 旗下具 Slot 品牌身份的 NetEnt、Red Tiger、Big Time Gaming、Nolimit City 各自統計。BRINO Games、EA Gaming、OptimoPlay、Upgames、Winfinity（live）、Galaxy Gaming、On Air Entertainment、Real Dealer Studios、Switch Studios、Playjeux Studios、SidePlay、iMoon Games 與 AD LUNAM 等保留為非 Slot 或目前未確認有傳統 Slots 的遊戲品牌。
-- Slot Hub 已收錄：**189 家**（全部有 Slots 或明確的 Slots hybrid 資料）。
-- 全表合計尚未收錄：**38 家**；其中尚未收錄、且目前可確認有 Slots 的品牌：**24 家**。
+- Slot Hub 已收錄：**194 家**（全部有 Slots 或明確的 Slots hybrid 資料）。
+- 全表合計尚未收錄：**33 家**；其中尚未收錄、且目前可確認有 Slots 的品牌：**19 家**。
 - 聚合、分發、展會與監管來源層只用於發現及交叉查找，不額外灌入品牌總數。除了既有 SOFTSWISS、Slotegrator、EveryMatrix、Hub88、Relax 聚合網路與 Games Global，本輪新增使用 SBC 官方展商內容、Bragg studio 網路、Light & Wonder partner roadmap 與 PAGCOR 核准資料。Relax 同時是開發品牌，所以只在品牌清單計數一次。
 - 只有 3 家在本輪取得可明確引用的完整目錄／作品集數量，另有 TaDa Gaming 的 60+ certified 子集合；其餘保持空白。這不代表沒有遊戲，只代表目前沒有取得可安全當作完整總數的公開值。
 
@@ -562,7 +562,7 @@
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
-Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至三十批完成時的歷史基線為 222 款 published Game、164 家 published Provider；第三十一批完成 AGS／Imperial Fortunes、NextSpin／Big CaiShen、NOVOMATIC Gaming／Book of Ra Magic Wheel、Octoplay／2 Lucky Fellas: Hold & Win 與 Onlyplay／Tiger Jackpots；第三十二批完成 Platipus Gaming／Royal Lotus、Playnetic／Ghostlight Manor、REEVO／Blue Beard's Buried Treasure、SmartSoft Gaming／Power of Tiger 與 Storm Gaming Technology／Tickets To Fortune；第三十三批完成 Tom Horn Gaming／Book of Spells、ReelPlay／10,000 Bass Lightning Blitz、SYNOT Games／Jewels Fortune、Bigpot Gaming／Mega Sevens 2 與 GameBeat／Max Miner；第三十四批完成 Prag by PopOK／Bon Bon PRAG、Spearhead Studios／Wild Reels、Barbara Bang／Chinese Gold Hold and Spin、EGT Digital／Book of Realm 與 NetGame Entertainment／Ultimate Crown 40；第三十五批完成 Zitro／King Fu Frog、Gaming Realms／Slingo Sweet Bonanza、Nailed It! Games／Big Buzz、Aurum Signature Studios／Gold Factory Jackpots Maple Moolah 與 Deep Stake Games／Texas Joker'Em；第三十六批完成 Fastspin／Frosty and Flamy、KA Gaming／Bonus Mania、Realistic Games／Destination Atlantis、AceWin Gaming／Pirate Riches 與 AdvantPlay／Dragon Chi's Quest 2，網站目前為 252 款 published Game、194 家 published Provider。Ricochet、Almond Gaming、KISS Gaming、Nazionale Elettronica、Aspect Gaming 與 Galaxsys 的既有單款圖、線上產品型態或可持續回讀缺口維持待補；沒有新證據時不重做。未取得的 RTP、波動度與最高倍數維持缺值，不採用一般評論站補值。後續沿用本文件，不另建平行管理系統。
+Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至三十批完成時的歷史基線為 222 款 published Game、164 家 published Provider；第三十一批完成 AGS／Imperial Fortunes、NextSpin／Big CaiShen、NOVOMATIC Gaming／Book of Ra Magic Wheel、Octoplay／2 Lucky Fellas: Hold & Win 與 Onlyplay／Tiger Jackpots；第三十二批完成 Platipus Gaming／Royal Lotus、Playnetic／Ghostlight Manor、REEVO／Blue Beard's Buried Treasure、SmartSoft Gaming／Power of Tiger 與 Storm Gaming Technology／Tickets To Fortune；第三十三批完成 Tom Horn Gaming／Book of Spells、ReelPlay／10,000 Bass Lightning Blitz、SYNOT Games／Jewels Fortune、Bigpot Gaming／Mega Sevens 2 與 GameBeat／Max Miner；第三十四批完成 Prag by PopOK／Bon Bon PRAG、Spearhead Studios／Wild Reels、Barbara Bang／Chinese Gold Hold and Spin、EGT Digital／Book of Realm 與 NetGame Entertainment／Ultimate Crown 40；第三十五批完成 Zitro／King Fu Frog、Gaming Realms／Slingo Sweet Bonanza、Nailed It! Games／Big Buzz、Aurum Signature Studios／Gold Factory Jackpots Maple Moolah 與 Deep Stake Games／Texas Joker'Em；第三十六批完成 Fastspin／Frosty and Flamy、KA Gaming／Bonus Mania、Realistic Games／Destination Atlantis、AceWin Gaming／Pirate Riches 與 AdvantPlay／Dragon Chi's Quest 2；第三十七批完成 Funky Games／Happy Hour Fruit Slot、KISS Gaming／Jungle Treasure、Aspect Gaming／Doggone Lucky、Ricochet／Stairway To Cash 與 Clutch Gaming／Deadeye，網站目前為 257 款 published Game、199 家 published Provider。Almond Gaming、Hotdog Gaming、Win Fast、Ace Roll 與 Zerplaay Games 等既有單款圖、線上產品型態或可持續回讀缺口維持待補；沒有新證據時不重做。未取得的 RTP、波動度與最高倍數維持缺值，不採用一般評論站補值。後續沿用本文件，不另建平行管理系統。
 
 第七批接續紀錄：SPRIBE 目前的確認類型為 Crash／Table／Casual，因此未納入老虎機橫向收錄；Playtech 因缺少可辨識的作品圖持續保留待補；AGS、Amigo Gaming 的既有待補原因維持。該批完成時的下一個主動接續品牌為 Wizard Games。Wizard Games 已於第八批完成；第八批完成時的下一個主動接續品牌維持 Aristocrat Gaming，現行游標以本節末尾的接續原則為準。
 
@@ -588,4 +588,4 @@ Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片
 
 第十六至二十八批的完成與待補原因維持原紀錄。第 29 批完成時，網站目前為 217 款 published Game、159 家 published Provider，下一個橫向接續位置為候選地圖第 211 項 Zerplaay Games；這是批次完成當下的歷史基線，現行總數與游標以下方接續原則為準。
 
-接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；第十六至二十九批的完成與待補原因維持原紀錄。第 30 批已依序實跑到 BNG／Booongo，完成五家並保存五家跳過原因；第 31 批由 AGS 接續，完成五家並保存 Amigo Gaming、JDB Gaming 與 Konami Gaming 的圖片待補原因；第 32 批由 Platipus Gaming 接續，完成五家並保存 Spadegaming 的單款證據待補原因；第 33 批由 Tom Horn Gaming 接續，完成五家並保存 Hotdog Gaming 現行網域停放、第一方頁與圖片無法持續回讀的待補原因；第 34 批由 Prag by PopOK 接續，完成五家並保存 Realistic Games、AdvantPlay 與 Funky Games 的待補原因；第 35 批完成 Zitro、Gaming Realms、Nailed It! Games、Aurum Signature Studios 與 Deep Stake Games；第 36 批完成 Fastspin、KA Gaming、Realistic Games、AceWin Gaming 與 AdvantPlay，並保存 Ricochet、Almond Gaming、KISS Gaming、Nazionale Elettronica、Aspect Gaming 與 Galaxsys 的待補原因。下一個橫向接續位置為主表第 191 項 Funky Games；已記錄的作品圖、品牌身份或單款證據缺口不重做，沒有新證據即跳至下一個未收錄 Slot 品牌；每週廠商挖掘游標維持新的展會／合作名錄線索，三條隊列彼此不覆蓋。
+接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；第十六至二十九批的完成與待補原因維持原紀錄。第 30 批已依序實跑到 BNG／Booongo，完成五家並保存五家跳過原因；第 31 批由 AGS 接續，完成五家並保存 Amigo Gaming、JDB Gaming 與 Konami Gaming 的圖片待補原因；第 32 批由 Platipus Gaming 接續，完成五家並保存 Spadegaming 的單款證據待補原因；第 33 批由 Tom Horn Gaming 接續，完成五家並保存 Hotdog Gaming 現行網域停放、第一方頁與圖片無法持續回讀的待補原因；第 34 批由 Prag by PopOK 接續，完成五家並保存 Realistic Games、AdvantPlay 與 Funky Games 的待補原因；第 35 批完成 Zitro、Gaming Realms、Nailed It! Games、Aurum Signature Studios 與 Deep Stake Games；第 36 批完成 Fastspin、KA Gaming、Realistic Games、AceWin Gaming 與 AdvantPlay；第 37 批完成 Funky Games、KISS Gaming、Aspect Gaming、Ricochet 與 Clutch Gaming，並維持 Almond Gaming、Hotdog Gaming、Win Fast、Ace Roll、Zerplaay Games 等既有證據缺口。下一個橫向接續位置為主表第 213 項 Dragoon Soft；已記錄的作品圖、品牌身份或單款證據缺口不重做，沒有新證據即跳至下一個未收錄 Slot 品牌；每週廠商挖掘游標維持新的展會／合作名錄線索，三條隊列彼此不覆蓋。
