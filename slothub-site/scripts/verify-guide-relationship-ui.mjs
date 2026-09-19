@@ -152,7 +152,7 @@ const gameDirectories = (await readdir(new URL('games/', root), { withFileTypes:
   .filter((entry) => entry.isDirectory())
   .map((entry) => entry.name)
   .sort();
-assert.equal(gameDirectories.length, 232, 'Game detail knowledge presentation must cover all 232 published Games');
+assert.equal(gameDirectories.length, 237, 'Game detail knowledge presentation must cover all 237 published Games');
 
 const renderedKnowledge = [];
 for (const slug of gameDirectories) {
@@ -165,30 +165,36 @@ for (const slug of gameDirectories) {
 
 const directItems = renderedKnowledge.filter((item) => item.placement !== 'feature-overflow');
 const overflowItems = renderedKnowledge.filter((item) => item.placement === 'feature-overflow');
-assert.equal(renderedKnowledge.length, 980, 'Expected all 980 unique Game → Guide relationships to remain visible');
-assert.equal(directItems.length, 968, 'Expected 968 relationships without expansion');
+assert.equal(renderedKnowledge.length, 1002, 'Expected all 1002 unique Game → Guide relationships to remain visible');
+assert.equal(directItems.length, 990, 'Expected 990 relationships without expansion');
 assert.equal(overflowItems.length, 12, 'Expected twelve relationships in the overflow area');
 
 const countPlacement = (placement) => renderedKnowledge.filter((item) => item.placement === placement).length;
 const countGuide = (guideSlug) => renderedKnowledge.filter((item) => item.guideSlug === guideSlug).length;
-assert.equal(countPlacement('core-mechanism'), 174, 'Mechanism contextual Guide count changed');
-assert.equal(countPlacement('core-rtp') + countPlacement('full-rtp-variants'), 139, 'RTP contextual Guide count changed');
-assert.equal(countPlacement('core-volatility') + countPlacement('full-volatility'), 136, 'Volatility contextual Guide count changed');
-assert.equal(countPlacement('core-max-win'), 126, 'Max Win contextual Guide count changed');
-assert.equal(countGuide('slot-multiplier-explained'), 117, 'Multiplier Feature Guide count changed');
-assert.equal(countGuide('slot-cascading-tumble-avalanche-explained'), 37, 'Cascading Feature Guide count changed');
+assert.equal(countPlacement('core-mechanism'), 179, 'Mechanism contextual Guide count changed');
+assert.equal(countPlacement('core-rtp') + countPlacement('full-rtp-variants'), 142, 'RTP contextual Guide count changed');
+assert.equal(countPlacement('core-volatility') + countPlacement('full-volatility'), 138, 'Volatility contextual Guide count changed');
+assert.equal(countPlacement('core-max-win'), 131, 'Max Win contextual Guide count changed');
+assert.equal(countGuide('slot-multiplier-explained'), 118, 'Multiplier Feature Guide count changed');
+assert.equal(countGuide('slot-cascading-tumble-avalanche-explained'), 38, 'Cascading Feature Guide count changed');
 assert.equal(countGuide(bonusBuyOwnerSlug), 60, 'Bonus Buy Feature Guide count changed');
 assert.equal(countGuide(bonusBuyGuidePublished ? 'slot-terms-glossary' : 'slot-bonus-buy-explained'), 0, 'Inactive Bonus Buy owner appeared in Game detail');
-assert.equal(countGuide('slot-symbols-and-features'), 191, 'Symbols Feature Guide count changed');
-assert.equal(countGuide('slot-ways-to-win-explained'), 44, 'Ways to Win Guide reverse relationship count changed');
-assert.equal(countGuide('slot-payout-mechanisms-explained'), 130, 'Payout overview relationship count must exclude the forty-four Ways Games');
+assert.equal(countGuide('slot-symbols-and-features'), 196, 'Symbols Feature Guide count changed');
+assert.equal(countGuide('slot-ways-to-win-explained'), 47, 'Ways to Win Guide reverse relationship count changed');
+assert.equal(countGuide('slot-payout-mechanisms-explained'), 132, 'Payout overview relationship count must exclude the forty-seven Ways Games');
 assert.ok(!renderedKnowledge.some((item) => item.gameSlug === 'super-ace' && item.guideSlug === 'slot-cascading-tumble-avalanche-explained'), 'Super Ace regained an invalid Cascading relationship');
 
-for (const slug of ['ancient-tumble', 'atlantis-crush', 'barbarossa-revenge', 'beast-gains', 'bonanza', 'dragons-heirs', 'gates-of-olympus-1000', 'jammin-jars', 'precious-monkeys', 'storm-of-seth-2-awakening', 'sun-wu-kong', 'thunderstruck-stormchaser']) {
+const expectedOverflowCounts = {
+  'ancient-tumble': 1, 'atlantis-crush': 1, 'barbarossa-revenge': 1, 'beast-gains': 1,
+  'bonanza': 1, 'dragons-heirs': 1, 'gates-of-olympus-1000': 1, 'jammin-jars': 1,
+  'precious-monkeys': 1, 'storm-of-seth-2-awakening': 1, 'sun-wu-kong': 1,
+  'thunderstruck-stormchaser': 1,
+};
+for (const [slug, expectedCount] of Object.entries(expectedOverflowCounts)) {
   const pageItems = overflowItems.filter((item) => item.gameSlug === slug);
-  assert.equal(pageItems.length, 1, `${slug}: expected one current overflow Guide`);
+  assert.equal(pageItems.length, expectedCount, `${slug}: overflow Guide count changed`);
   const html = await load(`games/${slug}/index.html`);
-  assert.match(html, /<details class="game-guide-overflow"><summary>查看更多相關教學（1）<\/summary>/, `${slug}: dynamic overflow summary missing`);
+  assert.match(html, new RegExp(`<details class="game-guide-overflow"><summary>查看更多相關教學（${expectedCount}）<\\/summary>`), `${slug}: dynamic overflow summary missing`);
 }
 for (const slug of gameDirectories.filter((gameSlug) => !overflowItems.some((item) => item.gameSlug === gameSlug))) {
   const html = await load(`games/${slug}/index.html`);
@@ -229,4 +235,4 @@ assert.match(globalCssSource, /\.game-field-guide-link\{[^}]*min-height:44px/, '
 assert.match(globalCssSource, /\.game-guide-overflow summary\{[^}]*min-height:44px/, 'Overflow summary must keep a 44px touch target');
 assert.match(globalCssSource, /game-guide-overflow summary:focus-visible/, 'Overflow summary focus style missing');
 
-console.log('Guide relationship UI, 980-entry Game detail presentation, generic overflow, independent Explorer URLs, Search intents and Preview safeguards verified.');
+console.log('Guide relationship UI, 1002-entry Game detail presentation, generic overflow, independent Explorer URLs, Search intents and Preview safeguards verified.');

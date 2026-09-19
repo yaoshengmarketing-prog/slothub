@@ -82,7 +82,7 @@ for (const name of ['Platipus Gaming', 'Playnetic', 'REEVO', 'SmartSoft Gaming',
   assert.match(map, new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*已收錄（1）`));
 }
 assert.match(map, /Spadegaming[^\r\n]*保留待補/);
-assert.match(map, /網站目前為 232 款 published Game、174 家 published Provider/);
-assert.match(map, /下一個橫向接續位置為主表第 86 項 Tom Horn Gaming/);
+assert.match(map, /第三十二批完成 Platipus Gaming[^\r\n]*Storm Gaming Technology[^\r\n]*第三十三批/);
+assert.match(map, /第 32 批由 Platipus Gaming 接續，完成五家並保存 Spadegaming/);
 
 console.log('PASS: horizontal intake batch 32 added five traceable provider/game pairs, preserved unsupported values as missing, recorded the Spadegaming evidence gap, and advanced the cursor.');

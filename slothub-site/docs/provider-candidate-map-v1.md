@@ -4,7 +4,7 @@
 >
 > 建立日期：2026-09-03
 >
-> 本輪更新：2026-09-19（橫向收錄第三十二批完成 Platipus Gaming、Playnetic、REEVO、SmartSoft Gaming、Storm Gaming Technology 各一款；Spadegaming 因尚未取得可直接歸屬的單款資料與圖片而保留待補；候選總數仍為 227 家）
+> 本輪更新：2026-09-19（橫向收錄第三十三批完成 Tom Horn Gaming、ReelPlay、SYNOT Games、Bigpot Gaming、GameBeat 各一款；Hotdog Gaming 現行官方網域已轉為停放頁而保留待補；候選總數仍為 227 家）
 >
 > 用途：作為外部遊戲資料收集的 Provider 骨架與去重對照。這不是完整產業名錄，不授權一次建立所有 Provider 公開頁，也不改變 Schema、taxonomy、產品功能或既有發布標準。
 
@@ -219,7 +219,7 @@
 | 83 | SmartSoft Gaming | SmartSoft | — | 開發 | Slots、Crash、Instant、Table | [官方遊戲目錄](https://www.smartsoftgaming.com/) | ICE26、ICE27、IGB26 | 已收錄（1） |
 | 84 | Spadegaming | Spade Gaming | — | 開發 | Slots、Fishing、Table | [官網](https://www.spadegaming.com/) | ICE26、ICE27 | 未收錄（官方品牌與類型可確認，但本輪尚未取得可直接歸屬且能支撐 Game detail 的單款資料與圖片，保留待補） |
 | 85 | Storm Gaming Technology | Storm Games | Storm Games Ltd | 開發 | Slots、Land-based | [官方遊戲入口](https://www.stormgamingtechnology.com/) | ICE26、ICE27、IGB26 | 已收錄（1） |
-| 86 | Tom Horn Gaming | Tom Horn | — | 開發 | Slots | [官方遊戲目錄](https://www.tomhorngaming.com/) | ICE26、ICE27 | 未收錄 |
+| 86 | Tom Horn Gaming | Tom Horn | — | 開發 | Slots | [官方遊戲目錄](https://www.tomhorngaming.com/) | Book of Spells 已由官方單款頁核對 RTP、波動度、盤面、賠線、最高曝險、功能與圖片 | 已收錄（1） |
 | 87 | Zitro | Zitro Digital、Zitro Games | Zitro Technologies, S.L.U. | 開發、發行 | Slots、Video Bingo、Land-based／Online | [官方產品入口](https://zitrogames.com/) | ICE26、ICE27 | 未收錄 |
 
 ### 2.5 共同探索補充：與第二批去重後新增
@@ -228,7 +228,7 @@
 
 | # | 遊戲品牌 | 別名／曾用名 | 直接母公司／集團 | 角色 | 遊戲類型 | 官網／遊戲目錄 | 來源證據 | 本站 |
 | ---: | --- | --- | --- | --- | --- | --- | --- | --- |
-| 88 | ReelPlay | Chance Interactive（2019 年改名） | — | 開發、發行支援 | Slots | [Relax 直接合作品牌頁](https://www.relax-gaming.com/partners/studio/reelplay)、[Light & Wonder 品牌頁](https://igaming.lnw.com/studios/reelplay/) | SUP26、RX、Light & Wonder | 未收錄 |
+| 88 | ReelPlay | Chance Interactive（2019 年改名） | — | 開發、發行支援 | Slots | [Relax 直接合作品牌頁](https://www.relax-gaming.com/partners/studio/reelplay)、[Light & Wonder 品牌頁](https://igaming.lnw.com/studios/reelplay/) | 10,000 Bass Lightning Blitz 已由 Light & Wonder 官方發行頁核對 ReelPlay 署名、RTP 版本、軸數、Ways、Top Prize、投注範圍、功能與圖片 | 已收錄（1） |
 | 89 | EGT Digital | — | Euro Games Technology | 開發、發行、平台 | Slots、Jackpot、Lottery、Sports betting | [官方遊戲目錄](https://egt-digital.com/casino/casino-games/) | SUP26、ICE26、IGB26 | 未收錄 |
 
 - ReelPlay 與 Relax Gaming 是合作／分發關係，不是 Relax Own Games，也未由現有一手資料證明為母子公司；保留獨立品牌。
@@ -345,18 +345,18 @@
 | 182 | Apparat Gaming | Apparat Gaming Services Ltd | 開發 | Slots | [官方 1024 Sevens 遊戲頁](https://www.apparatgaming.com/games/slot/1024-sevens/) | 1024 Sevens 已由官方單款頁核對盤面、Ways、RTP 範圍、波動度、最高曝險與功能 | 已收錄（1） |
 | 183 | Pascal Gaming | 獨立對外品牌 | 開發、平台 | Slots、Crash、Instant、Table | [官方 Franken Alive 遊戲頁](https://pascalgaming.com/games/franken-alive) | Franken Alive 已由官方單款頁核對類型、盤面、RTP、波動度、最高倍數、賠線、功能與主視覺 | 已收錄（1） |
 | 184 | PopOK Gaming | 獨立對外品牌 | 開發 | Slots、Casino | [官方品牌頁](https://www.popokgaming.com/about-us) | 官網明示 in-house iGaming content developer；第 26 批以 Incredible Genie 官方頁與圖片完成收錄 | 已收錄（1） |
-| 185 | SYNOT Games | SYNOT Group | 開發、發行 | Slots、Land-based／Online | [官方 Slot 目錄](https://www.synotgames.com/game_type/slot/) | 官網列 250+ games 並明示 SYNOT slots；平台與集團內容不混作單一作品品牌 | 未收錄 |
+| 185 | SYNOT Games | SYNOT Group | 開發、發行 | Slots、Land-based／Online | [官方 Slot 目錄](https://www.synotgames.com/game_type/slot/) | Jewels Fortune 已由官方單款頁核對盤面、Ways、RTP 配置範圍、Max Win、功能與圖片；平台與集團內容不混作單一作品品牌 | 已收錄（1） |
 | 186 | AceWin Gaming | ACEWIN | 開發 | Slots、Fishing、Arcade、Table | [官方遊戲目錄](https://www.acewin168.com/) | 官網以 Slot／Fishing／Arcade 等分類列出作品；PAGCOR 只作補充版本線索 | 未收錄 |
 | 187 | AdvantPlay | 獨立對外品牌 | 開發 | Slots、Instant／Originals | [官方品牌與遊戲目錄](https://advantplay.com/) | 官網明示 B2B studio、60+ originals 與自製 slots | 未收錄 |
 | 188 | Aspect Gaming | 獨立對外品牌 | 開發、平台 | Slots、Land-based／Social | [官方品牌與作品入口](https://aspectgaming.com/) | 官網明示作品改編自 GLI-certified slot machines | 未收錄 |
 | 189 | Barbara Bang | 獨立對外品牌 | 開發 | Slots | [官方公司頁](https://barbarabang.games/company) | 官網可確認 game studio 身份；官方合作發布提供逐款 slot 入口 | 未收錄 |
-| 190 | Bigpot Gaming | Bigpot Gaming Limited | 開發 | Slots、Casual、Casino | [官方品牌與遊戲入口](https://www.bigpotgaming.com/home) | 官網明示 60+ slot games，並分列 Bonus Buy、Free Spin、Jackpot 等功能 | 未收錄 |
+| 190 | Bigpot Gaming | Bigpot Gaming Limited | 開發 | Slots、Casual、Casino | [官方品牌與遊戲入口](https://www.bigpotgaming.com/home) | Mega Sevens 2 已由官方遊戲目錄、發布說明與圖片核對 1,024 Ways、7 FRAME FEATURE、Free Spin 與 7,777 倍上限 | 已收錄（1） |
 | 191 | Funky Games | GodziSlots 為官方 secondary brand，作品另以 `#GodziSlots` 署名 | 開發 | Slots、Instant、Crash、Table | [官方遊戲目錄](https://funkygames.io/games/) | 官網有可讀作品目錄並明示 200+ games；Funky Games 與 GodziSlots 分開保存作品署名，但母子品牌關係不改寫 | 未收錄 |
-| 192 | GameBeat | 獨立對外品牌 | 開發 | Slots | [官方品牌頁](https://gamebeat.com/about) | 官網明示 iGaming studio 與 casino slots；作品入口可回查署名內容 | 未收錄 |
+| 192 | GameBeat | 獨立對外品牌 | 開發 | Slots | [官方品牌頁](https://gamebeat.com/about) | Max Miner 已由官方單款頁核對 RTP、波動度、軸數、賠線、Max Win、功能與圖片 | 已收錄（1） |
 | 193 | iMoon Games | iMoon B.V. | 開發、Provider | RNG、Crash、Instant | [官方品牌入口](https://imoon.com/)、[官方開發者文件](https://dev.imoon.com/) | 可確認遊戲 Provider 身份與 RNG／Crash／Instant 作品；目前未確認傳統 Slots，不列入 Slot 家數 | 未收錄 |
 | 194 | PHOENIX 7 | PHOENIX 7 Malta／Poland／Japan teams | 開發 | Slots、Instant | [官方遊戲目錄](https://phoenix7.com/games/) | 官網分列 Video Slots 與 Instant Games；第 26 批以 PACHINCUP 官方頁與圖片完成收錄 | 已收錄（1） |
 | 195 | Naga Games | 獨立對外品牌 | 開發 | Slots | [官方遊戲目錄](https://nagagames.com/games/) | 官網明示目標為 slot game provider；第 26 批以 God of Fortune 官方頁與圖片完成收錄 | 已收錄（1） |
-| 196 | Hotdog Gaming | 獨立對外品牌 | 開發 | Slots | [官方作品例](https://hotdog-gaming.com/games-deep-sea.html) | 原廠頁直接標示 Video slot、盤面、RTP、波動度、Max Win 與版本日期 | 未收錄 |
+| 196 | Hotdog Gaming | 獨立對外品牌 | 開發 | Slots | [歷史官方作品入口](https://hotdog-gaming.com/games-deep-sea.html) | 搜尋索引保留 Deep Sea 的歷史單款規格，但 2026-09-19 實際開啟網域已轉為停放頁，無法取得可持續回讀的第一方頁與圖片；保留待補 | 未收錄 |
 | 197 | Prag by PopOK | PopOK Gaming 新 studio／子品牌 | 開發 | Slots | [官方 studio 公告](https://www.popokgaming.com/fr/news/popok-gaming-launches-prag-new-game-studio)、[官方作品頁](https://www.popokgaming.com/products/games/slots/bon-bon-prag) | 官方明示獨立對外 studio 名稱與首批作品，品牌關係保留為 PopOK 生態而不合併署名 | 未收錄 |
 | 198 | Playzido／Light & Wonder Spark | Light & Wonder 旗下內容創作平台；Playzido Ltd. | 開發、平台、分發 | Slots、Instant、Table | [官方品牌與作品目錄](https://www.playzido.com/games) | 官網明示 Playzido 現稱 Light & Wonder Spark；第 28 批只以 `By Playzido` 的 Chilli Con Cash 建立自有署名收錄，不把 partner studio 作品灌入 | 已收錄（1） |
 
@@ -444,7 +444,7 @@
 - 全表合計去重後、已確認遊戲品牌：**227 家**。表內保留 OMNIPLAY 的研究 ID 102 供查核歷史，但它不在這個數字內。
 - 全表合計明確提供 Slots：**213 家**。Evolution 與 SPRIBE 仍不計入 Slot 品牌家數；Evolution 旗下具 Slot 品牌身份的 NetEnt、Red Tiger、Big Time Gaming、Nolimit City 各自統計。BRINO Games、EA Gaming、OptimoPlay、Upgames、Winfinity（live）、Galaxy Gaming、On Air Entertainment、Real Dealer Studios、Switch Studios、Playjeux Studios、SidePlay、iMoon Games 與 AD LUNAM 等保留為非 Slot 或目前未確認有傳統 Slots 的遊戲品牌。
 - Slot Hub 已收錄：**174 家**（全部有 Slots 資料）。
-- 全表合計尚未收錄：**53 家**；其中尚未收錄、且目前可確認有 Slots 的品牌：**39 家**。
+- 全表合計尚未收錄：**48 家**；其中尚未收錄、且目前可確認有 Slots 的品牌：**34 家**。
 - 聚合、分發、展會與監管來源層只用於發現及交叉查找，不額外灌入品牌總數。除了既有 SOFTSWISS、Slotegrator、EveryMatrix、Hub88、Relax 聚合網路與 Games Global，本輪新增使用 SBC 官方展商內容、Bragg studio 網路、Light & Wonder partner roadmap 與 PAGCOR 核准資料。Relax 同時是開發品牌，所以只在品牌清單計數一次。
 - 只有 3 家在本輪取得可明確引用的完整目錄／作品集數量，另有 TaDa Gaming 的 60+ certified 子集合；其餘保持空白。這不代表沒有遊戲，只代表目前沒有取得可安全當作完整總數的公開值。
 
@@ -562,7 +562,7 @@
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
-Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至三十批完成時的歷史基線為 222 款 published Game、164 家 published Provider；第三十一批完成 AGS／Imperial Fortunes、NextSpin／Big CaiShen、NOVOMATIC Gaming／Book of Ra Magic Wheel、Octoplay／2 Lucky Fellas: Hold & Win 與 Onlyplay／Tiger Jackpots；第三十二批再完成 Platipus Gaming／Royal Lotus、Playnetic／Ghostlight Manor、REEVO／Blue Beard's Buried Treasure、SmartSoft Gaming／Power of Tiger 與 Storm Gaming Technology／Tickets To Fortune，網站目前為 232 款 published Game、174 家 published Provider。Amigo Gaming、JDB Gaming、Konami Gaming 與 Spadegaming 已取得品牌或作品線索，但缺可直接歸屬或足以支撐本站卡片及 Game detail 的正式單款資料／圖片，因此記錄後跳過。未取得的 RTP、波動度與最高倍數維持缺值，不採用一般評論站補值。後續沿用本文件，不另建平行管理系統。
+Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至三十批完成時的歷史基線為 222 款 published Game、164 家 published Provider；第三十一批完成 AGS／Imperial Fortunes、NextSpin／Big CaiShen、NOVOMATIC Gaming／Book of Ra Magic Wheel、Octoplay／2 Lucky Fellas: Hold & Win 與 Onlyplay／Tiger Jackpots；第三十二批完成 Platipus Gaming／Royal Lotus、Playnetic／Ghostlight Manor、REEVO／Blue Beard's Buried Treasure、SmartSoft Gaming／Power of Tiger 與 Storm Gaming Technology／Tickets To Fortune；第三十三批完成 Tom Horn Gaming／Book of Spells、ReelPlay／10,000 Bass Lightning Blitz、SYNOT Games／Jewels Fortune、Bigpot Gaming／Mega Sevens 2 與 GameBeat／Max Miner，網站目前為 237 款 published Game、179 家 published Provider。Amigo Gaming、JDB Gaming、Konami Gaming、Spadegaming 與 Hotdog Gaming 已取得品牌或歷史作品線索，但缺可持續回讀、可直接歸屬或足以支撐本站卡片及 Game detail 的正式單款資料／圖片，因此記錄後跳過。未取得的 RTP、波動度與最高倍數維持缺值，不採用一般評論站補值。後續沿用本文件，不另建平行管理系統。
 
 第七批接續紀錄：SPRIBE 目前的確認類型為 Crash／Table／Casual，因此未納入老虎機橫向收錄；Playtech 因缺少可辨識的作品圖持續保留待補；AGS、Amigo Gaming 的既有待補原因維持。該批完成時的下一個主動接續品牌為 Wizard Games。Wizard Games 已於第八批完成；第八批完成時的下一個主動接續品牌維持 Aristocrat Gaming，現行游標以本節末尾的接續原則為準。
 
@@ -588,4 +588,4 @@ Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片
 
 第十六至二十八批的完成與待補原因維持原紀錄。第 29 批完成時，網站目前為 217 款 published Game、159 家 published Provider，下一個橫向接續位置為候選地圖第 211 項 Zerplaay Games；這是批次完成當下的歷史基線，現行總數與游標以下方接續原則為準。
 
-接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；第十六至二十九批的完成與待補原因維持原紀錄。第 30 批已依序實跑到 BNG／Booongo，完成五家並保存五家跳過原因；第 31 批由 AGS 接續，完成五家並保存 Amigo Gaming、JDB Gaming 與 Konami Gaming 的圖片待補原因；第 32 批由 Platipus Gaming 接續，完成五家並保存 Spadegaming 的單款證據待補原因。下一個橫向接續位置為主表第 86 項 Tom Horn Gaming，已收錄項目直接跳過，證據不足則記錄後接續下一家；每週廠商挖掘游標維持新的展會／合作名錄線索，三條隊列彼此不覆蓋。
+接續原則：每家先建立完整目錄與去重結果，再逐款擷取；不能確認的入口或欄位保留待補，不將搜尋摘要變成正式資料。2026-09-16 直接檢查時，上表除 Yggdrasil 目錄逾時外均可達；Yggdrasil 保留於順序中但需排程重試，不阻擋其他 Provider。既有 Provider 深度收集隊列下一家仍為 ATG Games；第十六至二十九批的完成與待補原因維持原紀錄。第 30 批已依序實跑到 BNG／Booongo，完成五家並保存五家跳過原因；第 31 批由 AGS 接續，完成五家並保存 Amigo Gaming、JDB Gaming 與 Konami Gaming 的圖片待補原因；第 32 批由 Platipus Gaming 接續，完成五家並保存 Spadegaming 的單款證據待補原因；第 33 批由 Tom Horn Gaming 接續，完成五家並保存 Hotdog Gaming 現行網域停放、第一方頁與圖片無法持續回讀的待補原因。下一個橫向接續位置為主表第 197 項 Prag by PopOK，已收錄項目直接跳過，證據不足則記錄後接續下一家；每週廠商挖掘游標維持新的展會／合作名錄線索，三條隊列彼此不覆蓋。
