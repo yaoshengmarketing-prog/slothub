@@ -1,6 +1,6 @@
 # Slot Hub Wix 內容與網域搬移 v1
 
-狀態：READY FOR CLOUDFLARE DOMAIN ONBOARDING
+狀態：READY FOR NAMESERVER SWITCH
 基準日期：2026-09-19  
 正式網址：`https://www.slothub.com.tw`
 
@@ -76,23 +76,38 @@ Multiplier 與 Megaways 舊文已有更完整的新站承接頁，只做 301，�
 
 1. 新內容、301 map、Preview 與 production candidate build 全部驗證。
 2. GitHub Actions 同時跑 Preview 與 production-readiness 兩種環境。
-3. Cloudflare zone 內完整複製 Wix 現有 DNS 記錄；不能只相信 quick scan，MX、DKIM、SPF、驗證 TXT 等須逐筆核對。
+3. 已以公開 DNS 查詢核對 Wix 現況：apex 只有 Wix 的三筆 A 記錄，`www` 是 Wix CNAME；未查得 apex MX、TXT、AAAA、CAA 或父層 DS。Cloudflare quick scan 也回報 0 筆，沒有把無法證實的郵件或驗證記錄自行補入。
 4. Pages production build 透過版本控管的 `wrangler.jsonc` 設 `PUBLIC_SITE_ENV=production`，Preview branch 以 `env.preview` 覆寫為 `preview`；CI 另用明確環境值驗證兩種輸出。
-5. 從 Pages 的 Custom domains 流程加入 `slothub.com.tw` 與 `www.slothub.com.tw`；未切 NS 前 pending 屬正常現象，不可只手工加 CNAME。
-6. 確認 registrar 沒有舊 DNSSEC／DS；如有，須依 Cloudflare 指示處理後才能安全切換。
+5. 已從 Pages 的 Custom domains 流程加入 `www.slothub.com.tw`，狀態為等待 DNS 生效；Cloudflare pending zone 內已預建 apex 與 `www` 兩筆 proxied CNAME，均指向 `slothub-4cu.pages.dev`。
+6. 公開父層查詢已確認沒有 DS 記錄；切換名稱伺服器時仍應在 registrar 介面做最後複核，不能在舊 DNSSEC 仍啟用時切換。
+
+## Cloudflare 已完成的切換準備
+
+- Zone：`slothub.com.tw`，Free plan，狀態 pending；正式 DNS 仍由 Wix 名稱伺服器回答。
+- Bot Preference Sync：關閉，避免 Cloudflare 在未經本專案版本控管的情況下改寫 `robots.txt`。
+- Pages production 環境：`PUBLIC_SITE_ENV=production`；Preview 環境：`PUBLIC_SITE_ENV=preview`。
+- Pages Custom domain：`www.slothub.com.tw` 已建立，等待名稱伺服器切換後自動驗證與簽發憑證。
+- DNS：`@` 與 `www` 均為 proxied CNAME，目標 `slothub-4cu.pages.dev`，TTL Auto。
+- Apex 過渡規則：Cloudflare Single Redirect `Apex 轉向 www 正式網址` 已啟用；名稱伺服器剛切換、apex Pages domain 尚未完成驗證時，仍可把 `slothub.com.tw` 以 301 導至 `https://www.slothub.com.tw`，保留原路徑與 query string。apex Pages domain active 後須移除此過渡規則，讓版本控管的 middleware 直接處理舊路徑，避免 legacy URL 形成兩跳。
+- AI 搜尋／訓練預設選項未另作產品決策或變更；只有會改寫 `robots.txt` 的同步開關被停用。
 
 ## 使用者最後手動步驟
 
-使用者在網域註冊商把名稱伺服器改為 Cloudflare 指定的兩組 NS。此動作才會把正式流量從 Wix 切到 Cloudflare；在此之前不得把 Preview 說成正式上線。
+使用者在網域註冊商把目前的 `ns12.wixdns.net`、`ns13.wixdns.net` 替換為：
+
+- `moura.ns.cloudflare.com`
+- `shaz.ns.cloudflare.com`
+
+這是本輪唯一尚未執行、且必須由使用者完成的手動切換動作。此動作才會把正式流量從 Wix 切到 Cloudflare；在此之前不得把 Preview 說成正式上線。DNS 變更通常不是即時完成，最長應預留 24 小時；切換後須立即進行下列自動驗證與收尾。
 
 ## NS 切換後仍要執行的回讀
 
-- Cloudflare zone、SSL 與兩個 Custom domains 均為 active。
+- Cloudflare zone、SSL 與 `www` Custom domain 均為 active；新增並驗證 apex Pages custom domain，確認 middleware 可接收 apex request 後移除過渡 Single Redirect。
 - `http/https`、apex／www 最終只保留一個正式 URL。
 - 24 條舊 URL 都是單次 301，目的頁 200；40 條無等價頁不被導到首頁。
 - 正式內容頁 canonical、robots 與非空 sitemap 正確；pages.dev 仍 noindex。
 - Search、Explorer、Compare、Game、Provider 與 23 篇 Guide 回讀正常。
-- 原 DNS 中的郵件與驗證記錄仍可用。
+- 再次查詢 MX、TXT、AAAA 與 CAA；若 registrar 介面顯示先前未能從公開 DNS 看到的郵件或驗證記錄，先補回 Cloudflare 再繼續驗收。
 - GSC 提交新 sitemap；同網域換主機不使用 Change of Address。
 
 ## 已知限制
