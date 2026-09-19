@@ -25,7 +25,7 @@ source: { label: Wicked Games 官方作品目錄, url: https://www.wicked.games/
 sources:
   - { label: Wicked Games 官方作品目錄（日期、盤面、賠線、RTP、波動度與最高倍數）, url: https://www.wicked.games/games/all?1_game-type_equal=%5B%22Slot%22%5D, checkedAt: 2026-09-18 }
   - { label: Wicked Games 官方 Astro 作品圖片, url: https://cdn.prod.website-files.com/680a00e68141cc2033600a0e/6889e3c51670245c89a67f32_astro-slot-game-catalogue-image-wicked-games.webp, checkedAt: 2026-09-18 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.wicked.games/free-demo/astro","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

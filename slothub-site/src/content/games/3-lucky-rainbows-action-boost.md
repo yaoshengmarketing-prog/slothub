@@ -22,7 +22,7 @@ source: { label: Games Global 官方 3 Lucky Rainbows Action Boost 發行資料,
 sources:
   - { label: Games Global 官方發行資料（工作室、波動度、最高倍數與功能）, url: https://www.gamesglobal.com/Media/games_global_revisits_the_enchanted_forest_in_3_lucky_rainbows_action_boost, checkedAt: 2026-09-19 }
   - { label: SpinPlay Games 官方作品目錄, url: https://www.spinplaygames.com/our-games, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.spinplaygames.com/3luckyrainbowsactionboost","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

@@ -17,7 +17,7 @@ status: published
 source: { label: Hot Rise Games 官方 98 Bounty Hot 1 遊戲頁, url: https://hotrisegames.com/project/98-bounty-hot-1/, checkedAt: 2026-09-19 }
 sources:
   - { label: Hot Rise Games 官方遊戲頁（可變盤面、Ways、Free Spins 與 Hot 1 功能）, url: https://hotrisegames.com/project/98-bounty-hot-1/, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested","accessType":"direct-demo"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://play.hotrisegames.com/game/98-bounty-hot-1/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

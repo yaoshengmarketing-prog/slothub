@@ -17,7 +17,7 @@ status: published
 source: { label: Ainsworth 官方 Eagle Bucks 作品頁, url: https://www.agtslots.com/us/games/eagle-bucks, checkedAt: 2026-09-19 }
 sources:
   - { label: Ainsworth 官方 Eagle Bucks 作品頁（賠線、功能、機台與遊戲圖）, url: https://www.agtslots.com/us/games/eagle-bucks, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.agtslots.com/us/games/eagle-bucks","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

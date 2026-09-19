@@ -20,7 +20,7 @@ sources:
   - { label: KA Gaming 官方作品目錄（遊戲身份與 Slots 分類）, url: https://kaga88.com/index.html, checkedAt: 2026-09-19 }
   - { label: PAGCOR KA Gaming 核准遊戲清單（遊戲名稱、版本與 Slot 類型）, url: https://www.pagcor.ph/regulatory/pdf/App%20Kits/KA-GAMING.pdf, checkedAt: 2026-09-19 }
   - { label: SoftGamings KA Gaming 合作方遊戲頁與畫面（第四 Bonus Reel、倍數與 Respins）, url: https://www.softgamings.com/pt/sg-games/kaga-any/bonus-mania/, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.softgamings.com/pt/sg-games/kaga-any/bonus-mania/","accessType":"platform-game-page","platformName":"SoftGamings","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

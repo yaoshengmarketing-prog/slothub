@@ -19,7 +19,7 @@ source: { label: Bragg 官方作品 roadmap, url: https://bragg.group/casino-gam
 sources:
   - { label: Bragg 官方作品 roadmap（Provider、RTP 版本、波動度、盤面與官方圖）, url: https://bragg.group/casino-games/roadmap/, checkedAt: 2026-09-19 }
   - { label: Bragg 官方合作 studio 名錄（Four Leaf Gaming 品牌身分）, url: https://bragg.group/bragg-partner-logos/, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://playground.bragg.group/g/en/FOL_PTB/real","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

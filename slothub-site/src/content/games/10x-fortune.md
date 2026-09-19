@@ -17,7 +17,7 @@ status: published
 source: { label: Design Works Gaming 官方 10X Fortune 遊戲頁, url: https://designworksgaming.com/portfolio-item/10x-fortune/, checkedAt: 2026-09-19 }
 sources:
   - { label: Design Works Gaming 官方遊戲頁（賠線、Wild 乘數與 Bonus Games）, url: https://designworksgaming.com/portfolio-item/10x-fortune/, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://designworksgaming.com/portfolio-item/10x-fortune/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

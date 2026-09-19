@@ -18,7 +18,7 @@ source: { label: Games Global 官方 Goal Strike Rising Rewards 發行資料, ur
 sources:
   - { label: Games Global 官方發行資料（工作室、盤面與功能）, url: https://gamesglobal.com/Media/games_global_and_triple-edge_studios_score_a_winner_in_goal_strike_rising-rewards, checkedAt: 2026-09-19 }
   - { label: Triple Edge Studios 官方網站, url: https://triple-edge-studios.com/, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://gamesglobal.com/Media/games_global_and_triple_edge_studios_score_a_winner_in_goal_strike_rising-rewards","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

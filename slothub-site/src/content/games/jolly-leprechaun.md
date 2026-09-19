@@ -20,7 +20,7 @@ source: { label: Bragg 官方作品 roadmap, url: https://bragg.group/casino-gam
 sources:
   - { label: Bragg 官方作品 roadmap（Provider、RTP、波動度、盤面、功能與圖片）, url: https://bragg.group/casino-games/roadmap/, checkedAt: 2026-09-19 }
   - { label: Bragg 與 Sega Sammy Creation 官方授權公告, url: https://bragg.group/bragg-secures-exclusive-three-year-content-licensing-agreement-with-sega-sammy-creation/, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://playground.bragg.group/g/en/SEGA_JLP_EU/real","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

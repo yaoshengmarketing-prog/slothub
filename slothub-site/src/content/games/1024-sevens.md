@@ -29,7 +29,7 @@ status: published
 source: { label: Apparat Gaming 官方 1024 Sevens 遊戲頁, url: https://www.apparatgaming.com/games/slot/1024-sevens/, checkedAt: 2026-09-19 }
 sources:
   - { label: Apparat Gaming 官方遊戲頁（盤面、Ways、RTP 範圍、波動度、最高曝險與功能）, url: https://www.apparatgaming.com/games/slot/1024-sevens/, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.apparatgaming.com/games/slot/1024-sevens/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

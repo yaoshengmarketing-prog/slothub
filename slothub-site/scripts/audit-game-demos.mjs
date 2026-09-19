@@ -86,6 +86,22 @@ function isExactGameSubdomain(value = '', slug = '') {
   }
 }
 
+// Some providers use a generic launcher pathname and carry the exact game
+// identity only in a query parameter (for example, `?gameId=...`). The query
+// may waive the generic-path safeguard only when it contains this Game's
+// normalized slug; an arbitrary query string or provider-wide lobby cannot.
+function isExactGameQuery(value = '', slug = '') {
+  try {
+    const normalize = (input) => String(input).toLowerCase().replace(/[^a-z0-9]+/g, '');
+    const expected = normalize(slug);
+    if (!expected) return false;
+    return [...new URL(value).searchParams.values()]
+      .some((candidate) => normalize(candidate).includes(expected));
+  } catch {
+    return false;
+  }
+}
+
 function identifiesGame(value, game) {
   const haystack = decodeURIComponent(String(value ?? '')).toLowerCase().replace(/[^a-z0-9]+/g, ' ');
   const ignored = new Set(['slot', 'slots', 'game', 'games', 'hold', 'spin', 'wild', 'with', 'from', 'plus', 'super']);
@@ -348,7 +364,8 @@ for (const entry of entries) {
   const target = inspectionByUrl.get(entry.url);
   const sharedDestination = (reviewedAvailableUrlCounts.get(entry.url) ?? 0) > 1;
   const genericDestination = isGenericDestination(entry.url)
-    && !isExactGameSubdomain(entry.url, entry.slug);
+    && !isExactGameSubdomain(entry.url, entry.slug)
+    && !isExactGameQuery(entry.url, entry.slug);
   const missingPlatformEvidence = entry.accessType === 'platform-game-page'
     && (!entry.platformName || !entry.sameGameEvidence);
   const invalid = sharedDestination || genericDestination || missingPlatformEvidence || !target?.ok;

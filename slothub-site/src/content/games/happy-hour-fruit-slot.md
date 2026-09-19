@@ -17,7 +17,7 @@ source: { label: Funky Games 官方 Happy Hour Fruit Slot 頁, url: https://funk
 sources:
   - { label: Funky Games 官方 Happy Hour Fruit Slot 頁（作品身份與類型）, url: https://funkygames.io/games/60278, checkedAt: 2026-09-19 }
   - { label: Funky Games 官方 Happy Hour Fruit Slot 主圖, url: https://funkyofficial-img.funkygames.io/game/en/60278.webp, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://funkyofficial-api.funkygames.io/officialsite/api/demo?gameCode=60278&lang=en","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

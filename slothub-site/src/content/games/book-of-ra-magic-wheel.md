@@ -21,7 +21,7 @@ source: { label: NOVOMATIC 官方 Book of Ra Magic Wheel 遊戲頁, url: https:/
 sources:
   - { label: NOVOMATIC 官方 Book of Ra Magic Wheel 遊戲頁（盤面、賠線、波動度與功能）, url: https://www.novomatic.com/en/products/gaming/games/book-of-ra-magic-wheel, checkedAt: 2026-09-19 }
   - { label: NOVOMATIC 官方 Book of Ra Magic Wheel 遊戲主圖, url: https://www.novomatic.com/sites/default/files/styles/gallery_game_image/public/2025-01/xwRemi1Gmw4uthr.jpg?itok=RXCuW3iT, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.novomatic.com/en/products/gaming/games/book-of-ra-magic-wheel","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

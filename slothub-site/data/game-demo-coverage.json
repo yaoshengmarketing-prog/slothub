@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-19T09:01:02.245Z",
+  "generatedAt": "2026-09-19T10:05:47.838Z",
   "checkedAt": "2026-09-19",
   "gameCount": 257,
   "providerCount": 199,
-  "sourcePageCount": 546,
+  "sourcePageCount": 565,
   "counts": {
-    "access-restricted": 3,
-    "available": 176,
-    "not-verified": 78
+    "access-restricted": 2,
+    "available": 214,
+    "not-verified": 41
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -21,7 +21,10 @@
       "slug": "100-happy-seven",
       "name": "100 Happy Seven",
       "provider": "pateplay",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://pateplay.com/slots/100-happy-seven",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -35,7 +38,9 @@
           "finalUrl": "https://images.sigma.world/100-Happy-Seven.png",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Pateplay's exact page identifies 100 Happy Seven and matches the stored release, RTP, 100-payline and feature data.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "10000-bass-lightning-blitz",
@@ -65,10 +70,13 @@
       "slug": "1024-sevens",
       "name": "1024 Sevens",
       "provider": "apparat-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.apparatgaming.com/games/slot/1024-sevens/",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
-      "evidence": "Generic lobby or catalog destination is not publishable as a same-game link.",
+      "evidence": "Provider-level Demo or game catalog found; exact game URL is not verified.",
       "inspectedUrls": [
         {
           "requestedUrl": "https://www.apparatgaming.com/games/slot/1024-sevens/",
@@ -76,7 +84,7 @@
           "httpStatus": 200
         }
       ],
-      "sameGameEvidence": "Apparat Gaming's exact 1024 Sevens page exposes Play Demo and links this exact official game client.",
+      "sameGameEvidence": "Apparat Gaming's exact 1024 Sevens page identifies the game and exposes its Play Demo action.",
       "browserReviewedAt": "2026-09-19"
     },
     {
@@ -103,7 +111,10 @@
       "slug": "10x-fortune",
       "name": "10X Fortune",
       "provider": "design-works-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://designworksgaming.com/portfolio-item/10x-fortune/",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -112,7 +123,9 @@
           "finalUrl": "https://designworksgaming.com/portfolio-item/10x-fortune/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Design Works Gaming's exact page identifies 10X Fortune and documents its multiplier Wild and free-game mechanics.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "123-boom",
@@ -242,7 +255,10 @@
       "slug": "3-fortune-trees",
       "name": "3 Fortune Trees",
       "provider": "bng",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://kendoo.com/games/3-fortune-trees",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -261,13 +277,18 @@
           "finalUrl": "https://bng.games/media/public/3_fortune_trees/3_fortune_trees_banner_diimc.jpg",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Kendoo's exact page identifies 3 Fortune Trees, exposes Play Free Demo and matches its stored Hold & Win features.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "3-lucky-rainbows-action-boost",
       "name": "3 Lucky Rainbows Action Boost",
       "provider": "spinplay-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.spinplaygames.com/3luckyrainbowsactionboost",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -281,7 +302,9 @@
           "finalUrl": "https://www.spinplaygames.com/our-games",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "SpinPlay Games' exact page identifies 3 Lucky Rainbows Action Boost and documents the same Pot of Gold bonus features.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "3-plucky-hens",
@@ -317,7 +340,10 @@
       "slug": "3-wonders-luck-of-stallion",
       "name": "3 Wonders - Luck of Stallion",
       "provider": "boomerang-studios",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://playground.bragg.group/g/en/BOO_WLS/real",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -326,7 +352,9 @@
           "finalUrl": "https://bragg.group/casino-games/roadmap/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Bragg's official roadmap card identifies 3 Wonders: Luck of the Stallion, Boomerang and code BOO_WLS; Try The Game resolves to this client.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "3x5-joker-hold-the-spin",
@@ -466,8 +494,10 @@
       "slug": "98-bounty-hot-1",
       "name": "98 Bounty Hot 1",
       "provider": "hot-rise-games",
-      "status": "not-verified",
-      "accessType": "direct-demo",
+      "status": "available",
+      "url": "https://play.hotrisegames.com/game/98-bounty-hot-1/",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "evidence": "Exact destination returned HTTP 404 during verification.",
@@ -477,7 +507,9 @@
           "finalUrl": "https://hotrisegames.com/project/98-bounty-hot-1/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Hot Rise Games' exact official play page identifies 98 Bounty Hot 1 Free Demo and its expanding-reel features.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "a-visit-from-st-nick",
@@ -661,7 +693,10 @@
       "slug": "astro-wicked-games",
       "name": "Astro",
       "provider": "wicked-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.wicked.games/free-demo/astro",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -675,7 +710,9 @@
           "finalUrl": "https://cdn.prod.website-files.com/680a00e68141cc2033600a0e/6889e3c51670245c89a67f32_astro-slot-game-catalogue-image-wicked-games.webp",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Wicked Games' exact Astro page exposes this Play Demo target for the same 3x5 Cosmic Wild game.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "atlantis-crush",
@@ -777,7 +814,10 @@
       "slug": "avalanche-good-times",
       "name": "Avalanche",
       "provider": "good-times-studios",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://static-local.hacksawgaming.com/axe/2126/75c6757b-03e4-4bbe-8e77-f34e2def9852/index.html?env=https%3A%2F%2Frgs-hacksaw-fun-dev.hacksawgaming.com%2Fapi&gameid=2126&token=123",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -791,13 +831,18 @@
           "finalUrl": "https://www.hacksawgaming.com/news/hacksaw-openrgs-adds-good-times-studios-as-new-partner-studio",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Good Times Studios' exact Avalanche card maps Play for free to this Hacksaw OpenRGS game ID 2126 client.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "baby-blue",
       "name": "Baby Blue",
       "provider": "spinmatic",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://spinmatic.com/game/baby-blue",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -811,7 +856,9 @@
           "finalUrl": "https://spinmatic.com/s/game/tb_600/tb600-21111244163671796400591.jpg",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Spinmatic's exact page identifies Baby Blue and matches its stored layout, paylines, RTP and mechanics.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "bacon-bankroll",
@@ -985,7 +1032,10 @@
       "slug": "best-bet",
       "name": "Best Bet",
       "provider": "aristocrat-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.aristocratgaming.com/us/games/us-best-bet",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -999,7 +1049,9 @@
           "finalUrl": "https://www.aristocratgaming.com/us/games/media_1a4d89e5186a27dd6a89fd5b236c3c82ec69413ba.avif?width=1200&format=pjpg&optimize=medium",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Aristocrat Gaming's exact Best Bet page documents its Hold & Spin, Free Games and progressive features.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "big-bass-bonanza",
@@ -1035,7 +1087,10 @@
       "slug": "big-buzz",
       "name": "Big Buzz",
       "provider": "nailed-it-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://gamesglobal.com/Media/games_global_swarms_into_june_with_a_buzz_worthy_lineup_of_slot_games",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1049,7 +1104,9 @@
           "finalUrl": "https://cdne-clientzone-prod-westeurope-001-asbsg9hncsd5gvfk.a03.azurefd.net/public/games/BigBuzz/tile.webp",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Games Global's official release identifies Big Buzz by Nailed It! Games and documents its same-game features.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "big-caishen",
@@ -1081,7 +1138,10 @@
       "slug": "bison-moon",
       "name": "Bison Moon",
       "provider": "northern-lights-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://ntlgaming.com/game/bison-moon/",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1095,7 +1155,9 @@
           "finalUrl": "https://www.gamesglobal.com/Media/games-global-january-23-content",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Northern Lights Gaming's exact Bison Moon page matches its stored layout, paylines, RTP, Link & Win and Free Spins.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "blue-beards-buried-treasure",
@@ -1179,7 +1241,10 @@
       "slug": "bonus-mania",
       "name": "Bonus Mania",
       "provider": "ka-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.softgamings.com/pt/sg-games/kaga-any/bonus-mania/",
+      "accessType": "platform-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1198,7 +1263,10 @@
           "finalUrl": "https://www.softgamings.com/pt/sg-games/kaga-any/bonus-mania/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "platformName": "SoftGamings",
+      "sameGameEvidence": "SoftGamings' exact same-game page identifies Bonus Mania, attributes it to KA Gaming and lists matching RTP and bet data.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "book-of-8-riches",
@@ -1270,7 +1338,10 @@
       "slug": "book-of-games",
       "name": "Book of Games",
       "provider": "thunderspin",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://thunderspin.com/games/book-of-games",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1284,7 +1355,9 @@
           "finalUrl": "https://cms.thunderspin.com/assets/69c6e5b9-3e76-4486-abd5-468e4c4397f8",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "ThunderSpin's exact Book of Games page exposes Play Demo and matches its stored RTP and expanding-symbol free spins.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "book-of-ra-deluxe-win-ways",
@@ -1315,7 +1388,10 @@
       "slug": "book-of-ra-magic-wheel",
       "name": "Book of Ra™ Magic Wheel",
       "provider": "novomatic-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.novomatic.com/en/products/gaming/games/book-of-ra-magic-wheel",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1329,7 +1405,9 @@
           "finalUrl": "https://www.novomatic.com/sites/default/files/styles/gallery_game_image/public/2025-01/xwRemi1Gmw4uthr.jpg?itok=RXCuW3iT",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "NOVOMATIC's exact product page identifies Book of Ra Magic Wheel and documents the same reels, lines, free games and Magic Wheel.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "book-of-realm",
@@ -1421,7 +1499,10 @@
       "slug": "carnaval-drums",
       "name": "Carnaval Drums",
       "provider": "gameburger-studios",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://gamesglobal.com/Media/Games_Global_Gameburger_Studios_get_the_party_started_in_Carnaval_Drums",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1435,7 +1516,9 @@
           "finalUrl": "https://game-burger.net/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Games Global's dedicated Gameburger release identifies Carnaval Drums and documents its same-game features.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "cash-crew",
@@ -1511,7 +1594,10 @@
       "slug": "cerberus-gold",
       "name": "Cerberus Gold™ LockNWin™",
       "provider": "pearfiction-studios",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://pearfiction.com/games/cerberus-gold/",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1520,7 +1606,9 @@
           "finalUrl": "https://pearfiction.com/games/cerberus-gold/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "PearFiction's exact Cerberus Gold page identifies the game and provides matching specifications and features.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "chaos-crew-2",
@@ -1571,7 +1659,10 @@
       "slug": "chilihuahua",
       "name": "CHILIHUAHUA",
       "provider": "fa-chai-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://fachaigaming.com/en/games/slot/chilihuahua",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1590,13 +1681,18 @@
           "finalUrl": "https://fachaigaming.com/en/games/slot/chilihuahua",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Fa Chai Gaming's exact Chilihuahua page documents the same cascading chile mechanic and exposes Play Now.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "chilli-con-cash",
       "name": "Chilli Con Cash",
       "provider": "playzido",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.playzido.com/games/chilli-con-cash",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1605,7 +1701,9 @@
           "finalUrl": "https://www.playzido.com/games/chilli-con-cash",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Playzido's exact Chilli Con Cash page matches its launch date, RTP, paylines, free spins and Hot Chilli feature.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "chinese-gold-hold-and-spin",
@@ -1675,7 +1773,10 @@
       "slug": "dead-headz",
       "name": "Dead Headz",
       "provider": "jinx-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.jinx-gaming.com/dead-headz",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1689,7 +1790,9 @@
           "finalUrl": "https://www.jinx-gaming.com/post/jinx-x-hacksaw-the-chaos-collab-begins",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Jinx Gaming's exact Dead Headz page matches its Shoot & Loot mechanic, Wild multipliers, RTP, lines and maximum win.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "dead-or-alive-2",
@@ -1719,7 +1822,10 @@
       "slug": "deadeye",
       "name": "Deadeye",
       "provider": "clutch-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://backseatgaming.com/deadeye/",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1733,7 +1839,9 @@
           "finalUrl": "https://backseatgaming.com/wp-content/uploads/2026/06/536x238.jpg",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Backseat Gaming's exact page and first-party assets identify Clutch Gaming's Deadeye.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "densho",
@@ -1999,7 +2107,10 @@
       "slug": "eagle-bucks",
       "name": "Eagle Bucks",
       "provider": "ainsworth",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.agtslots.com/us/games/eagle-bucks",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2008,7 +2119,9 @@
           "finalUrl": "https://www.agtslots.com/us/games/eagle-bucks",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "AGS' exact Eagle Bucks page documents its expanding Eagle, Shield and free-games mechanics.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "enchanted-woods",
@@ -2142,7 +2255,10 @@
       "slug": "fire-stampede-dollars-and-dreams",
       "name": "Fire Stampede Dollars & Dreams™",
       "provider": "wild-streak-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://playground.bragg.group/g/en/WSG_FIS_DD_US-9_5_86/real",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2151,7 +2267,9 @@
           "finalUrl": "https://bragg.group/casino-games/wild-streak-gaming/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Bragg and Wild Streak's exact game card maps Try The Game to this same-game playground client.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "fish-tales-double-catch-max-scatter",
@@ -2177,7 +2295,10 @@
       "slug": "fishing-bob-1024-ways-hot-roll-jackpots",
       "name": "Fishing Bob 1024 Ways Hot Roll Jackpots",
       "provider": "king-show-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://playground.bragg.group/g/en/BGS_KSG_FHJ/real",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2191,7 +2312,9 @@
           "finalUrl": "https://bragg.group/casino-games/roadmap/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Bragg's exact roadmap card identifies Fishing Bob 1024 Ways Hot Roll Jackpots, King Show Games and code BGS_KSG_FHJ.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "flaming-bells-hold-and-win",
@@ -2579,7 +2702,10 @@
       "slug": "goal-strike-rising-rewards",
       "name": "Goal Strike Rising Rewards",
       "provider": "triple-edge-studios",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://gamesglobal.com/Media/games_global_and_triple_edge_studios_score_a_winner_in_goal_strike_rising-rewards",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2593,7 +2719,9 @@
           "finalUrl": "https://triple-edge-studios.com/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Games Global's dedicated Triple Edge release identifies Goal Strike Rising Rewards and documents its same-game mechanics.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "god-of-fortune-naga",
@@ -2720,7 +2848,10 @@
       "slug": "golden-fruit-vegas-classic",
       "name": "Golden Fruit Vegas Classic",
       "provider": "mancala-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://mancalagaming.com/golden-fruit-vegas-classic",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2734,7 +2865,9 @@
           "finalUrl": "https://prod.mancaka4ch.com/1788249367_15ba3d2dddefb6aa6fd4.webp",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Mancala Gaming's exact Golden Fruit Vegas Classic page identifies the game and its published specifications.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "golden-kegs-50k",
@@ -2916,7 +3049,10 @@
       "slug": "happy-hour-fruit-slot",
       "name": "Happy Hour Fruit Slot",
       "provider": "funky-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://funkyofficial-api.funkygames.io/officialsite/api/demo?gameCode=60278&lang=en",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2930,7 +3066,9 @@
           "finalUrl": "https://funkyofficial-img.funkygames.io/game/en/60278.webp",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Funky Games' exact Happy Hour Fruit Slot card maps game code 60278 to this launcher.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "hell-of-a-deal",
@@ -3199,7 +3337,10 @@
       "slug": "jolly-leprechaun",
       "name": "Jolly Leprechaun",
       "provider": "sega-sammy-creation",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://playground.bragg.group/g/en/SEGA_JLP_EU/real",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -3213,7 +3354,9 @@
           "finalUrl": "https://bragg.group/bragg-secures-exclusive-three-year-content-licensing-agreement-with-sega-sammy-creation/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Bragg's official card identifies Jolly Leprechaun and Sega Sammy Creation; Try The Game resolves to this exact client.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "jump-high-2",
@@ -3325,7 +3468,10 @@
       "slug": "kingdom-wardens",
       "name": "Kingdom Wardens",
       "provider": "vivid-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://vividgaming.com/game/KingdomWardens",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -3339,7 +3485,9 @@
           "finalUrl": "https://vividgaming.com/_nuxt/kingdom_wardens_400x600_en.DmRrfqrX.png",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Vivid Gaming's official catalog maps Kingdom Wardens to route KingdomWardens; the exact page contains the game client.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "kingfisher",
@@ -3687,7 +3835,10 @@
       "slug": "mega-sevens-2",
       "name": "Mega Sevens 2",
       "provider": "bigpot-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://free.bigpotgaming.com/office/SLOT/vsmegasevens2/?lang=en",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -3701,7 +3852,9 @@
           "finalUrl": "https://www.bigpotgaming.com/news/100",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "BigPot Gaming's official Mega Sevens 2 card and launcher configuration map vsmegasevens2 to this exact client.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "money-coming",
@@ -3811,7 +3964,10 @@
       "slug": "mortal-oath",
       "name": "Mortal Oath",
       "provider": "foxhound-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1844&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -3825,7 +3981,9 @@
           "finalUrl": "https://www.hacksawgaming.com/news/hacksaw-openrgs-adds-foxhound-games-as-new-partner-studio",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Foxhound's exact Mortal Oath page maps the game to Hacksaw game ID 1844 and this official demo launcher.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "nitropolis",
@@ -4022,10 +4180,11 @@
       "slug": "power-of-tiger",
       "name": "Power of Tiger",
       "provider": "smartsoft-gaming",
-      "status": "access-restricted",
-      "url": "https://eu-server.ssgportal.com/GameLauncher/Loader.aspx?GameCategory=Slots&GameName=PowerOfTiger&Token=DEMO&PortalName=demo",
-      "accessType": "direct-demo",
-      "iframeStatus": "blocked",
+      "status": "available",
+      "url": "https://www.smartsoftgaming.com/games/power-of-tiger",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "evidence": "Play Demo",
       "inspectedUrls": [
@@ -4040,7 +4199,7 @@
           "httpStatus": 200
         }
       ],
-      "note": "The launcher returned its outer document, but the embedded game negotiation failed during the browser review.",
+      "sameGameEvidence": "SmartSoft Gaming's exact Power of Tiger page identifies the game and exposes its Play Demo action; the page replaces the previously failing direct client.",
       "browserReviewedAt": "2026-09-19"
     },
     {
@@ -4086,7 +4245,10 @@
       "slug": "push-the-button",
       "name": "Push the Button",
       "provider": "four-leaf-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://playground.bragg.group/g/en/FOL_PTB/real",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -4100,7 +4262,9 @@
           "finalUrl": "https://bragg.group/bragg-partner-logos/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Bragg's official card identifies Push the Button and Four Leaf Gaming; Try The Game resolves to this exact client.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "pyramid-of-light",
@@ -4206,10 +4370,13 @@
       "slug": "ragnar-first-strike",
       "name": "Ragnar: First Strike",
       "provider": "hitsqwad",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://demo.playzido.com/?ccy=GBP&game=ragnar-first-strike-96&host=demo-host&language=en&mode=demoplay&token=token-gbp_user_577&variant=standard",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
-      "evidence": "Generic lobby or catalog destination is not publishable as a same-game link.",
+      "evidence": "Provider-level Demo or game catalog found; exact game URL is not verified.",
       "inspectedUrls": [
         {
           "requestedUrl": "https://igaming.lnw.com/games/ragnar-first-strike/",
@@ -4445,7 +4612,10 @@
       "slug": "royal-lotus",
       "name": "Royal Lotus",
       "provider": "platipus-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://prod2.platipusgaming.com/onlinecasino/GetGames/GetGameDemo?demo=true&gameconfig=royallotus&lang=EN&lobby=",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -4459,7 +4629,9 @@
           "finalUrl": "https://platipusgaming.cloud/royallotus/marketing/royallotus_marketing.zip",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Platipus Gaming's official endpoint maps gameconfig=royallotus to the live Royal Lotus client; the retired title is absent from the current catalog but the exact demo remains live.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "shadow-of-dominion",
@@ -5390,7 +5562,10 @@
       "slug": "tortuga-codex",
       "name": "Tortuga CodeX",
       "provider": "belatra-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://demo.bltr-static.com/belatra/demo?game=tortuga_codex",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -5409,7 +5584,9 @@
           "finalUrl": "https://belatragames.com/_next/image?url=https%3A%2F%2Fimgproxy.belatra.games%2FKLw7P-YG5FJLhbxx4zyMpXFKCxbK0TJu8YuPH-Klga0%2Fq%3A100%2Fw%3A1344%2Frt%3Afill%2FczM6Ly9iZWxhdHJhL21lZGlhL0dhbWUvaW1hZ2UvMTRhZGI2ZTgtYzA0ZC00Nzk0LTk5NTktNTY1NGJkMzEwNDA2L1RvcnR1Z2FfQ29kZXhfbWFpbi5qcGc.webp&w=1920&q=90",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Belatra's exact Tortuga CodeX page embeds this official same-game demo client.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "triple-jewels",
@@ -5954,7 +6131,8 @@
       "inspectedUrls": [
         {
           "requestedUrl": "https://bulgames-bg.com/en/",
-          "error": "The operation was aborted due to timeout"
+          "finalUrl": "https://bulgames-bg.com/en/",
+          "httpStatus": 200
         },
         {
           "requestedUrl": "https://bulgames-bg.com/wp-content/uploads/2025/05/wh_icon_exact_big_2.png",
@@ -5967,7 +6145,10 @@
       "slug": "x-wild",
       "name": "X-Wild",
       "provider": "1x2gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.1x2network.com/games/x-wild/",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -5981,7 +6162,9 @@
           "finalUrl": "https://www.1x2network.com/wp-content/uploads/2022/09/Screenshot-2025-03-31-at-14.02.12.png",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "1X2 Network's exact X-Wild page identifies the game and 1X2gaming studio and embeds its same-game fun-mode client.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "zoom",

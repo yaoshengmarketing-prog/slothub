@@ -20,7 +20,7 @@ source: { label: Games Global 官方 Big Buzz 發行稿, url: https://www.gamesg
 sources:
   - { label: Games Global 官方 Big Buzz 發行稿（發行日、功能與最高倍數）, url: https://www.gamesglobal.com/Media/games_global_swarms_into_june_with_a_buzz_worthy_lineup_of_slot_games, checkedAt: 2026-09-19 }
   - { label: Games Global 官方 Big Buzz 遊戲主圖, url: https://cdne-clientzone-prod-westeurope-001-asbsg9hncsd5gvfk.a03.azurefd.net/public/games/BigBuzz/tile.webp, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://gamesglobal.com/Media/games_global_swarms_into_june_with_a_buzz_worthy_lineup_of_slot_games","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

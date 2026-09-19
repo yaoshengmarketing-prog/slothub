@@ -24,7 +24,7 @@ source: { label: Backseat Gaming 官方 Deadeye 遊戲頁, url: https://backseat
 sources:
   - { label: Backseat Gaming 官方 Deadeye 遊戲頁（盤面、RTP、波動度、最高倍數與功能）, url: https://backseatgaming.com/deadeye/, checkedAt: 2026-09-19 }
   - { label: Backseat Gaming 官方 Deadeye 主圖, url: https://backseatgaming.com/wp-content/uploads/2026/06/536x238.jpg, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://backseatgaming.com/deadeye/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

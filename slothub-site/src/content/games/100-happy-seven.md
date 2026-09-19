@@ -26,7 +26,7 @@ source: { label: Pateplay 官方 100 Happy Seven 遊戲頁, url: https://patepla
 sources:
   - { label: Pateplay 官方遊戲頁（日期、盤面、賠線、RTP、最高倍數與功能）, url: https://pateplay.com/slots/100-happy-seven, checkedAt: 2026-09-18 }
   - { label: SiGMA 產業媒體 100 Happy Seven 作品圖片, url: https://images.sigma.world/100-Happy-Seven.png, checkedAt: 2026-09-18 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://pateplay.com/slots/100-happy-seven","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

@@ -17,7 +17,7 @@ status: published
 source: { label: Bragg 官方 Wild Streak Gaming 作品目錄, url: https://bragg.group/casino-games/wild-streak-gaming/, checkedAt: 2026-09-18 }
 sources:
   - { label: Bragg 官方 Wild Streak Gaming 作品目錄（RTP、波動度與盤面）, url: https://bragg.group/casino-games/wild-streak-gaming/, checkedAt: 2026-09-18 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://playground.bragg.group/g/en/WSG_FIS_DD_US-9_5_86/real","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

@@ -17,7 +17,7 @@ source: { label: Foxhound Games 官方遊戲目錄, url: https://foxhoundgames.c
 sources:
   - { label: Foxhound Games 官方遊戲目錄與圖片, url: https://foxhoundgames.com/games, checkedAt: 2026-09-19 }
   - { label: Hacksaw Gaming 官方 studio 公告（身份、首作與功能名稱）, url: https://www.hacksawgaming.com/news/hacksaw-openrgs-adds-foxhound-games-as-new-partner-studio, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://static-live.hacksawgaming.com/launcher/static-launcher.html?gameid=1844&channel=desktop&language=en&partner=bigwinboard&mode=demo&token=123","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

@@ -22,7 +22,7 @@ status: published
 source: { label: PearFiction Studios 官方 Cerberus Gold 遊戲頁, url: https://pearfiction.com/games/cerberus-gold/, checkedAt: 2026-09-19 }
 sources:
   - { label: PearFiction Studios 官方遊戲頁（盤面、Payways、RTP、波動度與功能）, url: https://pearfiction.com/games/cerberus-gold/, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://pearfiction.com/games/cerberus-gold/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

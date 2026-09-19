@@ -21,7 +21,7 @@ source: { label: Games Global 官方 Carnaval Drums 發行資料, url: https://g
 sources:
   - { label: Games Global 官方發行資料（工作室、盤面、賠線與功能）, url: https://gamesglobal.com/Media/Games_Global_Gameburger_Studios_get_the_party_started_in_Carnaval_Drums, checkedAt: 2026-09-19 }
   - { label: Gameburger Studios 官方網站, url: https://game-burger.net/, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://gamesglobal.com/Media/Games_Global_Gameburger_Studios_get_the_party_started_in_Carnaval_Drums","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

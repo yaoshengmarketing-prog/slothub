@@ -27,7 +27,7 @@ sources:
   - { label: BNG 官方 3 Fortune Trees 遊戲頁（盤面、賠線、Hold and Win、功能與 Jackpot 標示）, url: https://bng.games/game/3_fortune_trees/, checkedAt: 2026-09-19 }
   - { label: BNG 官方公開遊戲 API（發行日期、署名與圖片路徑）, url: https://bng.games/api/games, checkedAt: 2026-09-19 }
   - { label: BNG 官方 3 Fortune Trees 遊戲圖片, url: https://bng.games/media/public/3_fortune_trees/3_fortune_trees_banner_diimc.jpg, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://kendoo.com/games/3-fortune-trees","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

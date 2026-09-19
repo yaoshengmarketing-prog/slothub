@@ -23,7 +23,7 @@ sources:
   - { label: FA CHAI Gaming 官方遊戲目錄（RTP、原廠波動度、最高倍數與 Megaways）, url: https://fachaigaming.com/en/games, checkedAt: 2026-09-17 }
   - { label: FA CHAI Gaming 官方發布稿（Cascading、Wild、Feature Game Purchase 與最高倍數）, url: https://fachaigaming.com/en/news/game/chilihuahua, checkedAt: 2026-09-17 }
   - { label: FA CHAI Gaming 官方 CHILIHUAHUA 作品封面, url: https://fachaigaming.com/uploads/0a1822ab-2150-460b-88b2-aa2bbbb6b06c-22059_cover_en.webp, checkedAt: 2026-09-17 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://fachaigaming.com/en/games/slot/chilihuahua","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-17
 updatedAt: 2026-09-17
 ---

@@ -25,7 +25,7 @@ source: { label: Spinmatic 官方 Baby Blue 遊戲頁, url: https://spinmatic.co
 sources:
   - { label: Spinmatic 官方 Baby Blue 遊戲頁（RTP、原廠波動度、盤面、81 與功能原文）, url: https://spinmatic.com/game/baby-blue, checkedAt: 2026-09-16 }
   - { label: Spinmatic 官方 Baby Blue 作品圖（600×600、未裁切）, url: https://spinmatic.com/s/game/tb_600/tb600-21111244163671796400591.jpg, checkedAt: 2026-09-16 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://spinmatic.com/game/baby-blue","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-16
 updatedAt: 2026-09-16
 ---

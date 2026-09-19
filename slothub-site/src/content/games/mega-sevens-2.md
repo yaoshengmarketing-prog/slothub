@@ -22,7 +22,7 @@ source: { label: Bigpot Gaming 官方 Mega Sevens 2 發布說明, url: https://w
 sources:
   - { label: Bigpot Gaming 官方 Mega Sevens 2 發布說明（Ways、Scatter、Feature、Free Spin 與最高倍數）, url: https://www.bigpotgaming.com/news/100, checkedAt: 2026-09-19 }
   - { label: Bigpot Gaming 官方遊戲目錄與 Mega Sevens 2 封面, url: https://www.bigpotgaming.com/games, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://free.bigpotgaming.com/office/SLOT/vsmegasevens2/?lang=en","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

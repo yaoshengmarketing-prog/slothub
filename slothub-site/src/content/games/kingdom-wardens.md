@@ -16,7 +16,7 @@ source: { label: Vivid Gaming 官方遊戲目錄, url: https://vividgaming.com/g
 sources:
   - { label: Vivid Gaming 官方遊戲目錄（作品身分與 Buy Feature 標示）, url: https://vividgaming.com/games, checkedAt: 2026-09-18 }
   - { label: Vivid Gaming 官方 Kingdom Wardens 作品圖片, url: https://vividgaming.com/_nuxt/kingdom_wardens_400x600_en.DmRrfqrX.png, checkedAt: 2026-09-18 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://vividgaming.com/game/KingdomWardens","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

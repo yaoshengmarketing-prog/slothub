@@ -5,6 +5,7 @@ import { parse } from 'yaml';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const gameDirectory = path.join(root, 'src', 'content', 'games');
+const providerDirectory = path.join(root, 'src', 'content', 'providers');
 const detailTemplate = await readFile(path.join(root, 'src', 'pages', 'games', '[slug].astro'), 'utf8');
 const report = JSON.parse(await readFile(path.join(root, 'data', 'game-demo-coverage.json'), 'utf8'));
 
@@ -15,6 +16,12 @@ function frontmatter(raw, file) {
 }
 
 const files = (await readdir(gameDirectory)).filter((file) => file.endsWith('.md')).sort();
+const providerFiles = (await readdir(providerDirectory)).filter((file) => file.endsWith('.md')).sort();
+const publishedProviders = new Map();
+for (const file of providerFiles) {
+  const data = frontmatter(await readFile(path.join(providerDirectory, file), 'utf8'), file);
+  if (data.status === 'published') publishedProviders.set(file.slice(0, -3), data);
+}
 const published = [];
 for (const file of files) {
   const data = frontmatter(await readFile(path.join(gameDirectory, file), 'utf8'), file);
@@ -25,6 +32,9 @@ for (const file of files) {
 const allowedStatuses = new Set(['available', 'login-required', 'access-restricted', 'not-verified']);
 const allowedAccessTypes = new Set(['direct-demo', 'official-game-page', 'platform-game-page']);
 for (const game of published) {
+  const provider = publishedProviders.get(game.data.provider);
+  if (!provider) throw new Error(`${game.slug}: published Game requires a matching published Provider record`);
+  if (!provider.officialUrl?.trim()) throw new Error(`${game.slug}: Provider ${game.data.provider} requires an officialUrl`);
   const demo = game.data.demo;
   if (!demo) throw new Error(`${game.slug}: missing Demo coverage state`);
   if (!allowedStatuses.has(demo.status)) throw new Error(`${game.slug}: invalid Demo status ${demo.status}`);
