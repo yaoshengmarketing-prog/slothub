@@ -22,7 +22,7 @@ source: { label: JILI Games 官方 Golden Empire 遊戲頁, url: "https://jiliga
 sources:
   - { label: "JILI Games 官方 Golden Empire 遊戲頁（MAX WIN、LOW-MED、32,400 megaways、Feature 與 Publish Time）", url: "https://jiligames.com/PlusIntro/103?showGame=true", checkedAt: 2026-09-03 }
   - { label: "JILI Games 官方頁面橫式作品背景（1600×640 JPEG；未裁切、未加字）", url: https://storage.googleapis.com/tada-cdn-asia/All-In-One/production/img/jiliPlusPlayer/games/Gr2SZlPFNAXciokBFQR5VNzLuZhtCStJHt7Um2pw.jpeg, checkedAt: 2026-09-03 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://jiligames.com/PlusIntro/103?showGame=true","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

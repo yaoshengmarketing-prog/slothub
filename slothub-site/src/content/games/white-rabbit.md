@@ -24,7 +24,7 @@ sources:
   - { label: "Big Time Gaming 官方 Max Win 圖（17,420x Stake）", url: https://images.squarespace-cdn.com/content/v1/60aedd95a74c4c4033f9d064/1623302799958-HFE2B5HIP7IDN1NIB983/WhiteRabbit_GameStats_MaxWin.png, checkedAt: 2026-09-03 }
   - { label: "Big Time Gaming 官方 RTP 圖（Feature Drop 與非 Feature Drop 範圍）", url: https://images.squarespace-cdn.com/content/v1/60aedd95a74c4c4033f9d064/1623735126530-87AXQ7KA6M9SU0QRW27L/WhiteRabbit_GameStats_RTP.png, checkedAt: 2026-09-03 }
   - { label: "Big Time Gaming 官方作品圖（未裁切、未加字）", url: "https://images.squarespace-cdn.com/content/v1/60aedd95a74c4c4033f9d064/1623736045149-PCBXP2ZUU7WP5SEOQE2I/banner_large_WhiteRabbit_1600x755.jpg?format=1500w", checkedAt: 2026-09-03 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.bigtimegaming.com/games/white-rabbit","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

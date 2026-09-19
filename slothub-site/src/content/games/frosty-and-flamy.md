@@ -23,7 +23,7 @@ source: { label: Fastspin 官方遊戲目錄, url: https://www.fast-spin.com/gam
 sources:
   - { label: Fastspin 官方遊戲目錄（作品身份、RTP、波動度、15,625 Ways、功能購買與發行日期）, url: https://www.fast-spin.com/games, checkedAt: 2026-09-19 }
   - { label: Fastspin 官方 Frosty and Flamy 遊戲主圖, url: https://www.fast-spin.com/api//uploads/FS_332x460_S_SS_02_cn_59d7c9ba6e.jpg, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://demojoy.com/en/games/fastspin/frosty-and-flamy/","accessType":"platform-game-page","platformName":"DemoJoy","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

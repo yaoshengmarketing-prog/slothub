@@ -26,7 +26,7 @@ source: { label: NextSpin 官方 Big CaiShen 遊戲頁, url: https://nextspin.co
 sources:
   - { label: NextSpin 官方 Big CaiShen 遊戲頁（日期、Ways、RTP、波動度與功能）, url: https://nextspin.com/game-details?gameCode=sCaiShen, checkedAt: 2026-09-19 }
   - { label: NextSpin 官方 Big CaiShen 遊戲圖示, url: https://nextspin.com/static/images/gamepic/sCaiShen_255x255.png, checkedAt: 2026-09-19 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://demojoy.com/en/games/nextspin/big-caishen/","accessType":"platform-game-page","platformName":"DemoJoy","presentation":"external"}
 lastVerifiedAt: 2026-09-19
 updatedAt: 2026-09-19
 ---

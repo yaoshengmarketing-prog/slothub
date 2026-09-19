@@ -23,7 +23,7 @@ source: { label: Booming Games 官方 Ultra Buffalo Hold and Win 發布稿, url:
 sources:
   - { label: "Booming Games 官方發布稿（發行日、5×3、20 fixed paylines、5,000×、動態盤面與功能）", url: https://booming-games.com/news/f34aq09hi9887lp05sl0c77b, checkedAt: 2026-09-03 }
   - { label: "Booming Games 官方發布圖（未裁切、未加字）", url: https://strapi-dev.booming-games.com/2/PR_2_1200x800_68b39ed687.png, checkedAt: 2026-09-03 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://operator.play.booming-games.com/promotion/play/68773fa149726e55df72f3a6/desktop/website/en","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

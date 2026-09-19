@@ -28,7 +28,7 @@ sources:
   - { label: "CQ9 Gaming 官方 All Wilds Guide（40 Paylines、固定連線與 Free Game Wild 複製）", url: https://site.cq9gaming.com/guides/38, checkedAt: 2026-09-03 }
   - { label: "CQ9 Gaming 官方遊戲資料（96.03 RTP、High、maximum_win 3000）", url: https://site.cq9gaming.com/en/games, checkedAt: 2026-09-03 }
   - { label: "CQ9 Gaming 官方遊戲背景（280×172 JPG；未裁切、未加字）", url: https://images.hfyali.com/cherry/background/MKnWEjIW.jpg, checkedAt: 2026-09-03 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://demojoy.com/en/games/cq9/all-wilds/","accessType":"platform-game-page","platformName":"DemoJoy","presentation":"external"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

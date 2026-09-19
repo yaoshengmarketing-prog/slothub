@@ -109,14 +109,21 @@ const quickStats = [
 
 const unknown = '尚未核實';
 const demo = entry.data.demo;
-const demoAccessLabel = demo?.accessType === 'direct-demo' ? '官方 Demo 頁' : '官方遊戲頁（含 Demo 入口）';
+const isPlatformGamePage = demo?.accessType === 'platform-game-page';
+const demoAccessLabel = demo?.accessType === 'direct-demo'
+  ? '官方 Demo 頁'
+  : demo?.accessType === 'official-game-page'
+    ? '官方遊戲頁（含 Demo 入口）'
+    : demo?.accessType === 'platform-game-page'
+      ? '外部平台同款遊戲頁'
+      : undefined;
 const demoDisplay = demo?.status === 'available'
-  ? '已核實官方入口'
+  ? isPlatformGamePage ? '已核實同款平台頁' : '已核實官方入口'
   : demo?.status === 'login-required'
     ? '需登入廠商頁面'
     : demo?.status === 'access-restricted'
       ? '目前無法公開存取'
-      : '尚未核實官方 Demo';
+      : '尚未核實精確入口';
 const demoNote = demo?.status === 'available'
   ? `${demoAccessLabel}；核對 ${formatDate(demo.checkedAt)}。`
   : demo
@@ -136,7 +143,7 @@ const fullSpecs = [
   { label: '投注範圍', value: betRange },
   { label: '發行日期', value: presentation.full.releaseDate ? formatDate(presentation.full.releaseDate) : undefined },
   { label: 'Game ID', value: presentation.full.gameId },
-  { label: '官方 Demo', value: demoDisplay, note: demoNote },
+  { label: '試玩／遊戲入口', value: demoDisplay, note: demoNote },
 ] as { label: string; value?: string; note?: string; guidePlacement?: GameDetailFieldPlacement }[];
 
 const featureGuideDirect = knowledgePresentation.featureGuides.direct;
@@ -198,7 +205,16 @@ const schema = {
         <h1 class={titleSizeClass}>{titlePrefix}{titleTail && <span class="game-title-tail">{titleTail}</span>}</h1>
         {entry.data.displayNameZhHant && <p class="game-file-original">{originalName}</p>}
         <div class="game-file-meta">
-          {provider && <a href={providerUrl(entry.data.provider)}>{provider.data.name} ↗</a>}
+          {provider && <>
+            <a class="game-provider-hub-link" href={providerUrl(entry.data.provider)}>廠商資料：{provider.data.name}</a>
+            <a
+              class="game-provider-official-link"
+              href={provider.data.officialUrl}
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-label={`前往 ${provider.data.name} 官方網站（新分頁）`}
+            >廠商官網 ↗</a>
+          </>}
           {entry.data.seriesNameZhHant && <span>{entry.data.seriesNameZhHant}{entry.data.installment ? ` · 第 ${entry.data.installment} 代` : ''}</span>}
           {entry.data.lastVerifiedAt && <span>最後核對 {formatDate(entry.data.lastVerifiedAt)}</span>}
         </div>
@@ -215,11 +231,13 @@ const schema = {
       <dl>{quickStats.map((stat) => <div><dt>{stat.label}</dt><dd class={!stat.value ? 'is-unknown' : undefined}>{stat.value ?? unknown}{stat.badge && <small>{stat.badge}</small>}</dd><p>{stat.note}</p>{stat.value && knowledgePresentation.fieldGuides[stat.guidePlacement]?.map((match) => <a class="game-field-guide-link" href={match.guide.url} aria-label={`了解${stat.label}：${match.guide.title}`} data-guide-slug={match.guide.slug} data-guide-placement={stat.guidePlacement}>了解這項資料 →</a>)}</div>)}</dl>
     </section>
 
-    {demo?.status === 'available' && demo.url && <section class="game-demo-access" aria-labelledby="official-demo-title">
+    {demo?.status === 'available' && demo.url && <section class="game-demo-access" aria-labelledby="game-access-title">
       <div class="game-demo-copy">
-        <p class="eyebrow">OFFICIAL DEMO</p>
-        <h2 id="official-demo-title">官方 Demo</h2>
-        <p>{demo.accessType === 'direct-demo'
+        <p class="eyebrow">{isPlatformGamePage ? 'EXTERNAL GAME PAGE' : 'OFFICIAL DEMO'}</p>
+        <h2 id="game-access-title">{isPlatformGamePage ? '同款遊戲平台頁' : '官方 Demo'}</h2>
+        <p>{isPlatformGamePage
+          ? `已核對 ${demo.platformName} 上的同款 ${displayName} 遊戲頁；此頁不是 ${provider?.data.name ?? entry.data.provider} 官網，將在新分頁開啟。`
+          : demo.accessType === 'direct-demo'
           ? `由 ${provider?.data.name ?? entry.data.provider} 提供的官方 Demo 頁，將在新分頁開啟。`
           : `由 ${provider?.data.name ?? entry.data.provider} 提供的官方遊戲頁，頁面內含 Demo 或測試入口。`}</p>
         <dl>
@@ -228,13 +246,15 @@ const schema = {
         </dl>
       </div>
       <div class="game-demo-external">
-        <span>已核實的官方來源</span>
+        <span>{isPlatformGamePage ? '已核實的同款平台入口' : '已核實的官方來源'}</span>
         <strong>{displayName}</strong>
-        <p>{demo.accessType === 'direct-demo'
+        <p>{isPlatformGamePage
+          ? '連結會前往第三方平台上的同款遊戲頁；是否提供免費 Demo、是否需登入及可用地區，以該平台實際顯示為準。'
+          : demo.accessType === 'direct-demo'
           ? '連結會前往廠商維運的正式 Demo 頁；實際可用範圍仍依廠商設定。'
           : '連結會前往廠商的正式遊戲頁，再由頁面內的 Demo 或測試入口繼續。'}</p>
         <a class="button primary" href={demo.url} target="_blank" rel="nofollow noopener noreferrer">
-          {demo.accessType === 'direct-demo' ? '前往官方 Demo 頁 ↗' : '前往官方遊戲頁 ↗'}
+          {isPlatformGamePage ? '前往平台遊戲頁 ↗' : demo.accessType === 'direct-demo' ? '前往官方 Demo 頁 ↗' : '前往官方遊戲頁 ↗'}
         </a>
       </div>
     </section>}
@@ -314,7 +334,7 @@ const schema = {
       <ul>
         {sources.map((source) => <li><a href={source.url} rel="nofollow">{source.label} ↗</a><small>核對 {formatDate(source.checkedAt)}</small></li>)}
         {entry.data.image && <li><a href={entry.data.image.sourceUrl} rel="nofollow">圖片來源 ↗</a><small>取得 {formatDate(entry.data.image.retrievedAt)}</small></li>}
-        {demo?.status === 'available' && demo.url && <li><a href={demo.url} target="_blank" rel="nofollow noopener noreferrer">官方 Demo／測試頁 ↗</a><small>核對 {formatDate(demo.checkedAt)}</small></li>}
+        {demo?.status === 'available' && demo.url && <li><a href={demo.url} target="_blank" rel="nofollow noopener noreferrer">{isPlatformGamePage ? `${demo.platformName} 同款遊戲頁 ↗` : '官方 Demo／測試頁 ↗'}</a><small>核對 {formatDate(demo.checkedAt)}</small></li>}
       </ul>
     </section>}
   </article>

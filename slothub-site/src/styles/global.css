@@ -606,3 +606,7 @@ main :where(section[id],h2[id]){scroll-margin-top:84px}
   .site-footer{grid-template-columns:1fr;gap:26px}.site-footer-info{grid-column:auto}
 }
 @media(forced-colors:active){.search-page-v3 .search-hub,.search-results,.search-start-guide,.search-empty-state a,.tools-v3-list>a{border:1px solid CanvasText;box-shadow:none}.search-result-group>h2,.search-start-guide{background:Canvas;color:CanvasText}}
+
+/* Game identity keeps the Slot Hub Provider page and the external provider site distinct. */
+.game-file-meta a{display:inline-flex;min-height:44px;align-items:center}
+.game-file-meta .game-provider-official-link{border-color:#d8dde6;color:var(--signal)}

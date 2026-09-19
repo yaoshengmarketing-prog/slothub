@@ -25,7 +25,7 @@ sources:
   - { label: Pragmatic Play 官方 Gates of Olympus 發布稿（保存矛盾原文）, url: https://www.pragmaticplay.com/en/news/pragmatic-play-aims-for-the-heavens-in-gates-of-olympus/, checkedAt: 2026-08-29 }
   - { label: Pragmatic Play 官方 Gates of Olympus 系列證據, url: https://www.pragmaticplay.com/en/news/pragmatic-play-amps-up-win-potential-with-gates-of-olympus-super-scatter/, checkedAt: 2026-08-29 }
   - { label: Pragmatic Play 官方 Gates of Olympus 縮圖（原始 339×180；等比縮放置中為 600×500 PNG，未裁切）, url: https://www.pragmaticplay.com/wp-content/uploads/2021/02/GOOL_EN_339x180.png, checkedAt: 2026-08-29 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.pragmaticplay.com/en/games/gates-of-olympus/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-08-29
 updatedAt: 2026-08-29
 ---

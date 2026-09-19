@@ -5,7 +5,8 @@ const media = z.object({ src: z.string(), alt: z.string(), sourceUrl: z.string()
 const gameDemo = z.object({
   status: z.enum(['available', 'login-required', 'access-restricted', 'not-verified']),
   url: z.string().url().optional(),
-  accessType: z.enum(['direct-demo', 'official-game-page']).optional(),
+  accessType: z.enum(['direct-demo', 'official-game-page', 'platform-game-page']).optional(),
+  platformName: z.string().optional(),
   presentation: z.literal('external').optional(),
   iframeStatus: z.enum(['verified', 'blocked', 'not-tested']).default('not-tested'),
   checkedAt: z.coerce.date(),

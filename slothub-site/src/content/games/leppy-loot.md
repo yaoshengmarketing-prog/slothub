@@ -25,7 +25,7 @@ source: { label: KingMidas Games 官方 LEPPY LOOT 遊戲頁, url: https://kingm
 sources:
   - { label: KingMidas Games 官方遊戲頁（盤面、賠線、RTP、原廠波動度、最高倍數與功能）, url: https://kingmidasgames.com/games/leppy-loot, checkedAt: 2026-09-18 }
   - { label: KingMidas Games 官方 LEPPY LOOT 作品圖, url: https://publiccdn.kingdomhall729.com/Gameplay_Shorts/leppy-loot.webp, checkedAt: 2026-09-18 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://demojoy.com/en/games/kingmidas/leppy-loot/","accessType":"platform-game-page","platformName":"DemoJoy","presentation":"external"}
 lastVerifiedAt: 2026-09-18
 updatedAt: 2026-09-18
 ---

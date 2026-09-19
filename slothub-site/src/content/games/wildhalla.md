@@ -26,7 +26,7 @@ image: { src: /assets/games/wildhalla.jpg, alt: Wildhalla 官方遊戲主圖, so
 status: published
 source: { label: Slotmill 官方網站, url: https://www.slotmill.com/, checkedAt: 2026-08-28 }
 sources: [{ label: Slotmill 官方遊戲資料表, url: https://developer.slotmill.com/gamelist/, checkedAt: 2026-08-28 }]
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://wildhalla.slotmill.com/","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-08-28
 updatedAt: 2026-08-28
 ---

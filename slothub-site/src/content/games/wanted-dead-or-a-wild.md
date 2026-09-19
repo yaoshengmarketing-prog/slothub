@@ -31,7 +31,7 @@ source: { label: Hacksaw Gaming 官方 Wanted Dead or a Wild 遊戲頁, url: htt
 sources:
   - { label: Hacksaw Gaming 官方 Wanted Dead or a Wild 遊戲頁, url: https://www.hacksawgaming.com/games/wanted-dead-or-a-wild, checkedAt: 2026-08-29 }
   - { label: Hacksaw Gaming 官方桌機作品圖（原始 2616×1600 PNG；未裁切、未轉檔）, url: https://www-live.hacksawgaming.com/casino_thumbnails/1067_hero_DESKTOP.png, checkedAt: 2026-08-29 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.hacksawgaming.com/games/wanted-dead-or-a-wild","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-08-29
 updatedAt: 2026-08-29
 ---

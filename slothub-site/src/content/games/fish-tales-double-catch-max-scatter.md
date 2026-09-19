@@ -19,7 +19,7 @@ editorialFeatured: true
 status: published
 source: { label: Booming Games 官方發行資訊, url: https://booming-games.com/news/yahdelyjxgjdh26r9i2b3dcj, checkedAt: 2026-08-28 }
 sources: [{ label: Booming Games 官方發行資訊, url: https://booming-games.com/news/yahdelyjxgjdh26r9i2b3dcj, checkedAt: 2026-08-28 }]
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://operator.play.booming-games.com/promotion/play/696a52ef69fdac3416000011/desktop/website/en","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-08-28
 updatedAt: 2026-08-28
 ---

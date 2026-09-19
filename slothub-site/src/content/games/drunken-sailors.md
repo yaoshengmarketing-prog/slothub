@@ -35,7 +35,7 @@ sources:
   - { label: "Slotmill 官方 Developer Game List（日期、Game ID、投注範圍、盤面與 Fast Track）", url: https://developer.slotmill.com/gamelist/, checkedAt: 2026-09-03 }
   - { label: "Slotmill 官方產品表 PDF", url: https://slotmill.com/wp-content/uploads/2021/12/product-sheet-DS-BM-update.pdf, checkedAt: 2026-09-03 }
   - { label: "Slotmill CMS 官方作品圖（未裁切、未加字）", url: https://cms.slotmill.com/uploads/drunken_sailors_870x688_1_6e38c62d11.png, checkedAt: 2026-09-03 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://drunken-sailors.slotmill.com/","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

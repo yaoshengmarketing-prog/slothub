@@ -29,7 +29,7 @@ editorialFeatured: true
 status: published
 source: { label: ATG Games 官方繁中產品頁, url: https://www.atg-games.com/zh-tw/games/slot/storm-of-seth-2-awakening, checkedAt: 2026-08-28 }
 sources: [{ label: ATG Games 官方產品頁, url: https://www.atg-games.com/en/games/slot/storm-of-seth-2-awakening, checkedAt: 2026-08-28 }]
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.atg-games.com/games/slot/storm-of-seth-2-awakening","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-08-28
 updatedAt: 2026-08-28
 ---

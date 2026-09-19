@@ -27,7 +27,7 @@ source: { label: Yggdrasil Gaming 官方 Valley of the Gods 遊戲頁, url: http
 sources:
   - { label: "Yggdrasil Gaming 官方 Valley of the Gods 遊戲頁（ways、RTP、波動度、貨幣 Max Win、功能與日期）", url: https://yggdrasilgaming.com/games/valley-of-the-gods, checkedAt: 2026-09-03 }
   - { label: "Yggdrasil Gaming 官方遊戲 Logo（原始 750×540 PNG；未裁切、未加字）", url: https://yggdrasilgaming.com/w/files/2017/08/Yggdrasil-ValleyoftheGods.png, checkedAt: 2026-09-03 }
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://yggdrasilgaming.com/games/valley-of-the-gods","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

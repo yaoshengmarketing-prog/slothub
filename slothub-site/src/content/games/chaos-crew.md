@@ -23,7 +23,7 @@ editorialFeatured: true
 status: published
 source: { label: Hacksaw Gaming 官方遊戲頁, url: https://www.hacksawgaming.com/games/chaos-crew, checkedAt: 2026-08-28 }
 sources: [{ label: Hacksaw Gaming 官方遊戲頁, url: https://www.hacksawgaming.com/games/chaos-crew, checkedAt: 2026-08-28 }]
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.hacksawgaming.com/games/chaos-crew","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-08-28
 updatedAt: 2026-08-28
 ---

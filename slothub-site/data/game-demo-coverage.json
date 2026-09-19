@@ -1,20 +1,20 @@
 {
-  "version": 1,
-  "generatedAt": "2026-09-19T05:02:41.815Z",
+  "version": 2,
+  "generatedAt": "2026-09-19T08:32:16.156Z",
   "checkedAt": "2026-09-19",
   "gameCount": 257,
   "providerCount": 199,
-  "sourcePageCount": 496,
+  "sourcePageCount": 525,
   "counts": {
     "access-restricted": 2,
-    "available": 80,
-    "not-verified": 175
+    "available": 131,
+    "not-verified": 124
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
     "defaultPresentation": "external",
-    "unknownLabel": "尚未核實官方 Demo",
-    "linkOnlyPresentation": "All verified Demo destinations open as exact official outbound links; third-party Demo content is never embedded."
+    "linkOnlyPresentation": "Verified official destinations and explicitly labelled exact same-game platform pages open as outbound links; third-party content is never embedded.",
+    "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
     {
@@ -514,7 +514,10 @@
       "slug": "all-wilds",
       "name": "舞力全開",
       "provider": "cq9-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://demojoy.com/en/games/cq9/all-wilds/",
+      "accessType": "platform-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -533,7 +536,10 @@
           "finalUrl": "https://images.hfyali.com/cherry/background/MKnWEjIW.jpg",
           "httpStatus": 200
         }
-      ]
+      ],
+      "platformName": "DemoJoy",
+      "sameGameEvidence": "DemoJoy exact game page names All Wilds, attributes it to CQ9, and exposes the same-game Start demo action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "almighty-hot-wins",
@@ -957,7 +963,10 @@
       "slug": "big-bass-bonanza",
       "name": "瘋狂大鱸魚",
       "provider": "pragmatic-play",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/big-bass-bonanza/",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -976,7 +985,9 @@
           "finalUrl": "https://clienthub.pragmaticplay.com/wp-json/wp/v2/posts/11983",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Pragmatic Play page title and H1 identify Big Bass Bonanza and expose the official slot Demo page.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "big-buzz",
@@ -1002,7 +1013,10 @@
       "slug": "big-caishen",
       "name": "Big CaiShen",
       "provider": "nextspin",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://demojoy.com/en/games/nextspin/big-caishen/",
+      "accessType": "platform-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1016,7 +1030,10 @@
           "finalUrl": "https://nextspin.com/static/images/gamepic/sCaiShen_255x255.png",
           "httpStatus": 200
         }
-      ]
+      ],
+      "platformName": "DemoJoy",
+      "sameGameEvidence": "DemoJoy exact game page title identifies Big CaiShen, attributes it to Nextspin, and exposes the same-game Start demo action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "bison-moon",
@@ -1369,7 +1386,10 @@
       "slug": "cash-crew",
       "name": "Cash Crew",
       "provider": "hacksaw-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.hacksawgaming.com/games/cash-crew",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1378,7 +1398,9 @@
           "finalUrl": "https://www.hacksawgaming.com/games/cash-crew",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Hacksaw Gaming page identifies Cash Crew and exposes its Try it action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "cash-transporter",
@@ -1449,7 +1471,10 @@
       "slug": "chaos-crew-2",
       "name": "Chaos Crew 2",
       "provider": "hacksaw-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.hacksawgaming.com/games/chaos-crew-2",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1463,13 +1488,18 @@
           "finalUrl": "https://www-live.hacksawgaming.com/casino_thumbnails/1352_hero_Device_Desktop16x9.png",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Hacksaw Gaming page identifies Chaos Crew 2 and exposes its Try it action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "chaos-crew",
       "name": "Chaos Crew",
       "provider": "hacksaw-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.hacksawgaming.com/games/chaos-crew",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1478,7 +1508,9 @@
           "finalUrl": "https://www.hacksawgaming.com/games/chaos-crew",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Hacksaw Gaming page identifies Chaos Crew and exposes its Try it action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "chilihuahua",
@@ -1652,7 +1684,10 @@
       "slug": "densho",
       "name": "Densho",
       "provider": "hacksaw-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.hacksawgaming.com/games/densho",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1671,7 +1706,9 @@
           "finalUrl": "https://www-live.hacksawgaming.com/casino_thumbnails/1348_hero_Device_Desktop.png",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Hacksaw Gaming page identifies Densho and exposes its Try it action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "destination-atlantis",
@@ -1869,7 +1906,10 @@
       "slug": "drunken-sailors",
       "name": "Drunken Sailors",
       "provider": "slotmill",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://drunken-sailors.slotmill.com/",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1888,7 +1928,9 @@
           "finalUrl": "https://slotmill.com/wp-content/uploads/2021/12/product-sheet-DS-BM-update.pdf",
           "httpStatus": 404
         }
-      ]
+      ],
+      "sameGameEvidence": "Slotmill official game record maps Game ID drunken-sailors to this exact HTTP 200 Demo.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "eagle-bucks",
@@ -1933,7 +1975,10 @@
       "slug": "extra-chilli",
       "name": "Extra Chilli",
       "provider": "big-time-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.bigtimegaming.com/games/extra-chilli",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1952,7 +1997,9 @@
           "finalUrl": "https://images.squarespace-cdn.com/content/v1/60aedd95a74c4c4033f9d064/1633490806567-EUX0UD0A7EPEOT3S8RDU/ExtraChilli_GameStats_RTPUpdated.png",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Big Time Gaming official page title and H1 identify Extra Chilli and expose its Play Game entry.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "eye-of-horus",
@@ -1978,7 +2025,10 @@
       "slug": "fat-rabbit",
       "name": "Fat Rabbit",
       "provider": "push-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.pushgaming.com/games/fat-rabbit.html",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -1997,7 +2047,9 @@
           "finalUrl": "https://www.pushgaming.com/uploads/fat-rabbit-page-bg.jpg",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Push Gaming official page H1 identifies Fat Rabbit and provides the exact game's rules and specifications.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "fate-of-olympus",
@@ -2037,7 +2089,10 @@
       "slug": "fish-tales-double-catch-max-scatter",
       "name": "Fish Tales: Double Catch Max Scatter",
       "provider": "booming-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://operator.play.booming-games.com/promotion/play/696a52ef69fdac3416000011/desktop/website/en",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2046,7 +2101,9 @@
           "finalUrl": "https://booming-games.com/news/yahdelyjxgjdh26r9i2b3dcj",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Booming Games public games API maps ID 696a52ef69fdac3416000011 to Fish Tales: Double Catch Max Scatter and this exact official game-engine entry.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "fishing-bob-1024-ways-hot-roll-jackpots",
@@ -2092,7 +2149,10 @@
       "slug": "fortune-ox",
       "name": "十倍金牛",
       "provider": "pg-soft",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://demojoy.com/en/games/pg-soft/fortune-ox/",
+      "accessType": "platform-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2111,13 +2171,19 @@
           "finalUrl": "https://www.pgsoft.com/uploads/Games/Pdf/Fortune_OxGameinformation_ZH.pdf",
           "httpStatus": 200
         }
-      ]
+      ],
+      "platformName": "DemoJoy",
+      "sameGameEvidence": "DemoJoy page names Fortune Ox, attributes it to PG Soft, and exposes the exact same-game Start demo action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "fortune-paw",
       "name": "Fortune Paw",
       "provider": "booming-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://operator.play.booming-games.com/promotion/play/693c24bfd75340e1e800000c/desktop/demo-links/en",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2131,13 +2197,18 @@
           "finalUrl": "https://booming-games.com/games",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Booming Games official Fortune Paw release links its Play Fortune Paw Now action to this exact official Demo.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "fortune-rabbit",
       "name": "金錢兔",
       "provider": "pg-soft",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://demojoy.com/en/games/pg-soft/fortune-rabbit/",
+      "accessType": "platform-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2156,13 +2227,19 @@
           "finalUrl": "https://www.pgsoft.com/uploads/Games/Pdf/Fortune_Rabbit_Gameinformation_ZH.pdf",
           "httpStatus": 200
         }
-      ]
+      ],
+      "platformName": "DemoJoy",
+      "sameGameEvidence": "DemoJoy page names Fortune Rabbit, attributes it to PG Soft, and exposes the exact same-game Start demo action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "fortune-tiger",
       "name": "虎虎生財",
       "provider": "pg-soft",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://demojoy.com/en/games/pg-soft/fortune-tiger/",
+      "accessType": "platform-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2181,7 +2258,10 @@
           "finalUrl": "https://www.pgsoft.com/uploads/Games/Pdf/Fortune_Tiger_Gameinformation_ZH.pdf",
           "httpStatus": 200
         }
-      ]
+      ],
+      "platformName": "DemoJoy",
+      "sameGameEvidence": "DemoJoy page names Fortune Tiger, attributes it to PG Soft, and exposes the exact same-game Start demo action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "fowl-play-gold",
@@ -2240,7 +2320,10 @@
       "slug": "frosty-and-flamy",
       "name": "冰火奇緣",
       "provider": "fastspin",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://demojoy.com/en/games/fastspin/frosty-and-flamy/",
+      "accessType": "platform-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2254,7 +2337,10 @@
           "finalUrl": "https://www.fast-spin.com/api//uploads/FS_332x460_S_SS_02_cn_59d7c9ba6e.jpg",
           "httpStatus": 200
         }
-      ]
+      ],
+      "platformName": "DemoJoy",
+      "sameGameEvidence": "DemoJoy exact game page title identifies Frosty and Flamy, attributes it to FASTSPIN, and exposes the same-game Start demo action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "fruit-dash",
@@ -2300,7 +2386,10 @@
       "slug": "gates-of-olympus-1000",
       "name": "奧林匹斯之門 1000",
       "provider": "pragmatic-play",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/gates-of-olympus-1000/",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2319,13 +2408,18 @@
           "finalUrl": "https://www.pragmaticplay.com/en/news/zeus-strikes-mighty-multipliers-in-pragmatic-plays-latest-release-gates-of-olympus-1000/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Pragmatic Play page title and H1 identify Gates of Olympus 1000 and expose the official slot Demo page.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "gates-of-olympus",
       "name": "奧林匹斯之門",
       "provider": "pragmatic-play",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/gates-of-olympus/",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2344,7 +2438,9 @@
           "finalUrl": "https://www.pragmaticplay.com/en/news/pragmatic-play-aims-for-the-heavens-in-gates-of-olympus/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Pragmatic Play page title and H1 identify Gates of Olympus and expose the official slot Demo page.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "gem-blast",
@@ -2420,7 +2516,10 @@
       "slug": "god-of-fortune-naga",
       "name": "God of Fortune",
       "provider": "naga-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://demojoy.com/en/games/naga-games/god-of-fortune/",
+      "accessType": "platform-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2429,7 +2528,10 @@
           "finalUrl": "https://nagagames.com/games/god-of-fortune/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "platformName": "DemoJoy",
+      "sameGameEvidence": "DemoJoy exact game page title identifies God of Fortune, attributes it to Naga Games, and exposes the same-game Start demo action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "gold-factory-jackpots-maple-moolah",
@@ -2460,7 +2562,10 @@
       "slug": "gold-gold-gold-hold-and-win",
       "name": "Gold Gold Gold Hold and Win",
       "provider": "booming-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://operator.play.booming-games.com/promotion/play/67d9503160b217f36e5855de/desktop/website/en",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2474,13 +2579,18 @@
           "finalUrl": "https://strapi-dev.booming-games.com/PR_2_1200x800_Gold_Gold_Gold_Hold_and_Win_8f424aaa39.png",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Booming Games public games API maps ID 67d9503160b217f36e5855de to Gold Gold Gold Hold and Win and this exact official game-engine entry.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "golden-empire",
       "name": "Golden Empire",
       "provider": "jili-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://jiligames.com/PlusIntro/103?showGame=true",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2494,13 +2604,18 @@
           "finalUrl": "https://storage.googleapis.com/tada-cdn-asia/All-In-One/production/img/jiliPlusPlayer/games/Gr2SZlPFNAXciokBFQR5VNzLuZhtCStJHt7Um2pw.jpeg",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "JILI official page identifies Golden Empire and exposes the exact game's Play Now entry.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "golden-fish-tank-2-gigablox",
       "name": "Golden Fish Tank 2 Gigablox™",
       "provider": "yggdrasil-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://yggdrasilgaming.com/games/golden-fish-tank-2-gigablox",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2514,7 +2629,9 @@
           "finalUrl": "https://yggdrasilgaming.com/w/files/2021/09/golden_fish_tank_2-Logo-Template-750x540px.png",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Yggdrasil Gaming official page title and structured data identify Golden Fish Tank 2 GigaBlox.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "golden-fruit-vegas-classic",
@@ -2655,7 +2772,10 @@
       "slug": "greedy-for-gold-hold-and-win",
       "name": "Greedy for Gold: Hold and Win",
       "provider": "booming-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://operator.play.booming-games.com/promotion/play/698b3e222241b93857000021/desktop/website/en",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2669,13 +2789,18 @@
           "finalUrl": "https://booming-games.com/games",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Booming Games public games API maps ID 698b3e222241b93857000021 to Greedy for Gold: Hold and Win and this exact official game-engine entry.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "hand-of-anubis",
       "name": "Hand of Anubis",
       "provider": "hacksaw-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.olbg.com/slots/games/hand-anubis",
+      "accessType": "platform-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2689,7 +2814,10 @@
           "finalUrl": "https://www.hacksawgaming.com/news/new-game-release-april-summary",
           "httpStatus": 200
         }
-      ]
+      ],
+      "platformName": "OLBG",
+      "sameGameEvidence": "OLBG page names Hand of Anubis, attributes it to Hacksaw Gaming, and exposes the exact same-game Play Demo action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "happy-hour-fruit-slot",
@@ -2823,7 +2951,10 @@
       "slug": "inner-fire",
       "name": "Inner Fire",
       "provider": "evoplay",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://demojoy.com/en/games/evoplay/inner-fire/",
+      "accessType": "platform-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2837,7 +2968,10 @@
           "finalUrl": "https://evoplay.games/wp-content/uploads/2022/12/innerfire_270x270.jpg",
           "httpStatus": 200
         }
-      ]
+      ],
+      "platformName": "DemoJoy",
+      "sameGameEvidence": "DemoJoy exact game page title identifies Inner Fire, attributes it to EVOPLAY, and exposes the same-game Start demo action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "iron-bank",
@@ -2872,7 +3006,10 @@
       "slug": "jammin-jars",
       "name": "Jammin’ Jars",
       "provider": "push-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.pushgaming.com/games/jammin-jars.html",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2891,7 +3028,9 @@
           "finalUrl": "https://www.pushgaming.com/blog/push-gaming-get-groove-new-game-jammin-jars.html",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Push Gaming official page H1 identifies Jammin’ Jars and its 8x8 cascading slot rules.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "jewel-fruit",
@@ -2972,7 +3111,10 @@
       "slug": "jump-high-2",
       "name": "跳高高2",
       "provider": "cq9-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://site.cq9gaming.com/guides/179",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -2991,13 +3133,18 @@
           "finalUrl": "https://images.hfyali.com/cherry/background/ci5G2GQC.jpg",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "CQ9 official page H1 identifies Jump High 2 and documents its 243 Ways, Golden Ball and Free Game rules.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "jump-high",
       "name": "跳高高",
       "provider": "cq9-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://site.cq9gaming.com/guides/52",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "evidence": "《跳高高Jump High》",
@@ -3018,7 +3165,7 @@
           "httpStatus": 200
         }
       ],
-      "note": "Saved URL opens a provider-wide Demo catalog rather than an exact Jump High destination.",
+      "sameGameEvidence": "CQ9 official page H1 identifies Jump High and documents its 243 Ways, Golden Ball and multiplier rules.",
       "browserReviewedAt": "2026-09-19"
     },
     {
@@ -3160,7 +3307,10 @@
       "slug": "leppy-loot",
       "name": "LEPPY LOOT",
       "provider": "kingmidas-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://demojoy.com/en/games/kingmidas/leppy-loot/",
+      "accessType": "platform-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -3174,7 +3324,10 @@
           "finalUrl": "https://publiccdn.kingdomhall729.com/Gameplay_Shorts/leppy-loot.webp",
           "httpStatus": 200
         }
-      ]
+      ],
+      "platformName": "DemoJoy",
+      "sameGameEvidence": "DemoJoy exact game page title identifies LEPPY LOOT, attributes it to KINGMIDAS, and exposes the same-game Start demo action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "lightning-gorilla",
@@ -3199,7 +3352,10 @@
       "slug": "lil-devil",
       "name": "Lil Devil",
       "provider": "big-time-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.bigtimegaming.com/games/lil-devil",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -3218,7 +3374,9 @@
           "finalUrl": "https://images.squarespace-cdn.com/content/v1/60aedd95a74c4c4033f9d064/1623292436680-F5WY9XGA7M92FOZ1YI44/LilDevil_GameStats_RTP.png",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Big Time Gaming official page title and H1 identify Lil Devil and expose its Play Game entry.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "loaded-up-riches-pots",
@@ -3319,7 +3477,10 @@
       "slug": "mahjong-ways-2",
       "name": "麻將胡了2",
       "provider": "pg-soft",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://demojoy.com/en/games/pg-soft/mahjong-ways2/",
+      "accessType": "platform-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -3338,13 +3499,19 @@
           "finalUrl": "https://www.pgsoft.com/uploads/Games/Pdf/Mahjong_Ways_2_Gameinformation_ZH.pdf",
           "httpStatus": 200
         }
-      ]
+      ],
+      "platformName": "DemoJoy",
+      "sameGameEvidence": "DemoJoy page names Mahjong Ways 2, attributes it to PG Soft, and exposes the exact same-game Start demo action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "mahjong-ways",
       "name": "麻將胡了",
       "provider": "pg-soft",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://demojoy.com/en/games/pg-soft/mahjong-ways/",
+      "accessType": "platform-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -3363,7 +3530,10 @@
           "finalUrl": "https://www.pgsoft.com/uploads/Games/Pdf/MahjongWays_Gameinformation_ZH.pdf",
           "httpStatus": 200
         }
-      ]
+      ],
+      "platformName": "DemoJoy",
+      "sameGameEvidence": "DemoJoy page names Mahjong Ways, attributes it to PG Soft, and exposes the exact same-game Start demo action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "max-miner",
@@ -3414,7 +3584,10 @@
       "slug": "money-coming",
       "name": "Money Coming",
       "provider": "jili-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://jiligames.com/PlusIntro/51?showGame=true",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -3428,7 +3601,9 @@
           "finalUrl": "https://storage.googleapis.com/tada-cdn-asia/All-In-One/production/img/jiliPlusPlayer/games/BL2NJhyef9SbO0vKiz4BGrwME2Udfy8pzNGwP3pX.jpeg",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "JILI official page identifies Money Coming and exposes the exact game's Play Now entry.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "money-train-2",
@@ -3894,7 +4069,10 @@
       "slug": "ragnarok-gold",
       "name": "Ragnarök Gold",
       "provider": "slotmill",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://ragnarok-gold.slotmill.com/",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -3903,13 +4081,18 @@
           "finalUrl": "https://developer.slotmill.com/gamelist/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Slotmill official developer game list maps Ragnarök Gold and game ID ragnarok-gold to this exact HTTP 200 Demo.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "razor-shark",
       "name": "Razor Shark",
       "provider": "push-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.pushgaming.com/games/razor-shark.html",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -3928,7 +4111,9 @@
           "finalUrl": "https://www.pushgaming.com/blog/push-gaming-release-deep-sea-themed-slot-razor-shark.html",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Push Gaming official page H1 identifies Razor Shark and its Mystery Stacks and Razor Reveal features.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "reactoonz",
@@ -4116,7 +4301,10 @@
       "slug": "shadow-of-dominion",
       "name": "Shadow of Dominion",
       "provider": "slotmill",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://shadow-of-dominion.slotmill.com/",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -4125,7 +4313,9 @@
           "finalUrl": "https://developer.slotmill.com/gamelist/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Slotmill official game record maps Game ID shadow-of-dominion to this exact HTTP 200 Demo.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "shadow-treasure",
@@ -4310,7 +4500,10 @@
       "slug": "spinions-game-day",
       "name": "Spinions Game Day",
       "provider": "quickspin",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://demojoy.com/en/games/quickspin/spinions-game-day/",
+      "accessType": "platform-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -4324,7 +4517,10 @@
           "finalUrl": "https://quickspin.com/wp-content/uploads/2022/06/Spinions_GameDay_Quickspin.com_1300x520.png",
           "httpStatus": 200
         }
-      ]
+      ],
+      "platformName": "DemoJoy",
+      "sameGameEvidence": "DemoJoy exact game page title identifies Spinions Game Day, attributes it to Quickspin, and exposes the same-game Start demo action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "spinning-beers",
@@ -4421,7 +4617,10 @@
       "slug": "storm-of-seth-2-awakening",
       "name": "戰神賽特2－覺醒之力",
       "provider": "atg-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.atg-games.com/games/slot/storm-of-seth-2-awakening",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -4435,13 +4634,18 @@
           "finalUrl": "https://www.atg-games.com/zh-tw/games/slot/storm-of-seth-2-awakening",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "ATG official game page H1 identifies Storm Of Seth2 - Awakening and displays the exact game's Demo entry.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "storm-of-seth",
       "name": "戰神賽特",
       "provider": "atg-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.atg-games.com/games/slot/storm-of-seth",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -4455,7 +4659,9 @@
           "finalUrl": "https://atg-games.com/zh-tw/games/slot/storm-of-seth",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "ATG official game page H1 identifies Storm of Seth and displays the exact game's Demo entry.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "sun-of-egypt-4",
@@ -4486,7 +4692,10 @@
       "slug": "sun-wu-kong",
       "name": "Sun Wu Kong",
       "provider": "atg-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.atg-games.com/games/slot/son-go-ku",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -4500,13 +4709,18 @@
           "finalUrl": "https://www.atg-games.com/en/games?type=all",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "ATG official game page H1 identifies Sun Wu Kong and displays the exact game's Demo entry.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "super-ace",
       "name": "超級王牌",
       "provider": "jili-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://jiligames.com/PlusIntro/49?showGame=true",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -4525,7 +4739,9 @@
           "finalUrl": "https://storage.googleapis.com/tada-cdn-asia/All-In-One/production/img/jiliPlusPlayer/games/7ycivbeSFZ2FzMIi4UfVi4vfmALw2iwP3gEaCsmO.png",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "JILI official page identifies Super Ace and exposes the exact game's Play Now entry.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "super-cash-drop-deluxe",
@@ -4550,7 +4766,10 @@
       "slug": "sweet-bonanza-1000",
       "name": "甜入心扉 1000",
       "provider": "pragmatic-play",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/sweet-bonanza-1000/",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -4569,13 +4788,18 @@
           "finalUrl": "https://www.pragmaticplay.com/en/news/pragmatic-play-sweetens-up-candyland-in-sweet-bonanza-1000/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Pragmatic Play page title and H1 identify Sweet Bonanza 1000 and expose the official slot Demo page.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "sweet-bonanza",
       "name": "甜入心扉",
       "provider": "pragmatic-play",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/sweet-bonanza-slot/",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -4594,7 +4818,9 @@
           "finalUrl": "https://www.pragmaticplay.com/en/news/pragmatic-play-launches-sweet-bonanza/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Pragmatic Play page title and H1 identify Sweet Bonanza and expose the official slot Demo page.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "tale-of-anubis",
@@ -5057,7 +5283,10 @@
       "slug": "ultra-buffalo-hold-and-win",
       "name": "Ultra Buffalo Hold and Win",
       "provider": "booming-games",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://operator.play.booming-games.com/promotion/play/68773fa149726e55df72f3a6/desktop/website/en",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -5071,7 +5300,9 @@
           "finalUrl": "https://strapi-dev.booming-games.com/2/PR_2_1200x800_68b39ed687.png",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Booming Games public games API maps ID 68773fa149726e55df72f3a6 to Ultra Buffalo Hold and Win and this exact official game-engine entry.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "uncle-profit",
@@ -5117,7 +5348,10 @@
       "slug": "valley-of-the-gods",
       "name": "Valley Of The Gods",
       "provider": "yggdrasil-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://yggdrasilgaming.com/games/valley-of-the-gods",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -5131,13 +5365,18 @@
           "finalUrl": "https://yggdrasilgaming.com/w/files/2017/08/Yggdrasil-ValleyoftheGods.png",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Yggdrasil Gaming official page title and structured data identify Valley of the Gods.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "vegas-gold",
       "name": "Vegas Gold",
       "provider": "slotmill",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://vegas-gold.slotmill.com/",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -5156,13 +5395,18 @@
           "finalUrl": "https://slotmill.com/wp-content/uploads/2020/12/product-sheet-Vegas-Gold-bm-updated.pdf",
           "httpStatus": 404
         }
-      ]
+      ],
+      "sameGameEvidence": "Slotmill official game record maps Game ID vegas-gold to this exact HTTP 200 Demo.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "vikings-go-berzerk",
       "name": "Vikings Go Berzerk",
       "provider": "yggdrasil-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://yggdrasilgaming.com/games/vikings-go-berzerk",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -5176,7 +5420,9 @@
           "finalUrl": "https://yggdrasilgaming.com/w/files/2016/11/Yggdrasil-VikingsGoBerzerk.png",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Yggdrasil Gaming official page H1 identifies Vikings Go Berzerk and exposes its Play entry.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "voltage-blitz-vortex",
@@ -5221,7 +5467,10 @@
       "slug": "wanted-dead-or-a-wild",
       "name": "亡命狂野",
       "provider": "hacksaw-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.hacksawgaming.com/games/wanted-dead-or-a-wild",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -5235,7 +5484,9 @@
           "finalUrl": "https://www-live.hacksawgaming.com/casino_thumbnails/1067_hero_DESKTOP.png",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Hacksaw Gaming page identifies Wanted Dead or a Wild and exposes its Try it action.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "werewolf-cp-games",
@@ -5261,7 +5512,10 @@
       "slug": "white-rabbit",
       "name": "White Rabbit",
       "provider": "big-time-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.bigtimegaming.com/games/white-rabbit",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -5280,7 +5534,9 @@
           "finalUrl": "https://images.squarespace-cdn.com/content/v1/60aedd95a74c4c4033f9d064/1623735126530-87AXQ7KA6M9SU0QRW27L/WhiteRabbit_GameStats_RTP.png",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Big Time Gaming official page title and H1 identify White Rabbit and expose its Play Game entry.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "whitney-houston-slots",
@@ -5366,7 +5622,10 @@
       "slug": "wild-swarm",
       "name": "Wild Swarm",
       "provider": "push-gaming",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://www.pushgaming.com/games/wild-swarm.html",
+      "accessType": "official-game-page",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -5385,7 +5644,9 @@
           "finalUrl": "https://www.pushgaming.com/uploads/wild-swarm-page-bg.jpg",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Push Gaming official page H1 identifies Wild Swarm and its Hive and Swarm Mode features.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "wild-whopper",
@@ -5410,7 +5671,10 @@
       "slug": "wildhalla",
       "name": "Wildhalla",
       "provider": "slotmill",
-      "status": "not-verified",
+      "status": "available",
+      "url": "https://wildhalla.slotmill.com/",
+      "accessType": "direct-demo",
+      "presentation": "external",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-09-19",
       "inspectedUrls": [
@@ -5424,7 +5688,9 @@
           "finalUrl": "https://www.slotmill.com/",
           "httpStatus": 200
         }
-      ]
+      ],
+      "sameGameEvidence": "Slotmill official game record maps Game ID wildhalla to this exact HTTP 200 Demo.",
+      "browserReviewedAt": "2026-09-19"
     },
     {
       "slug": "win-in-rome",

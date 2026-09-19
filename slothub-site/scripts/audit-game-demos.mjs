@@ -73,6 +73,19 @@ function isGenericDestination(value = '') {
   }
 }
 
+// Some providers publish one game per dedicated subdomain (for example,
+// `wildhalla.slotmill.com/`). A root pathname is generic on a provider host,
+// but not when the first hostname label is the exact normalized game slug.
+function isExactGameSubdomain(value = '', slug = '') {
+  try {
+    const hostnameLabel = new URL(value).hostname.split('.')[0] ?? '';
+    const normalize = (input) => String(input).toLowerCase().replace(/[^a-z0-9]+/g, '');
+    return Boolean(slug) && normalize(hostnameLabel) === normalize(slug);
+  } catch {
+    return false;
+  }
+}
+
 function identifiesGame(value, game) {
   const haystack = decodeURIComponent(String(value ?? '')).toLowerCase().replace(/[^a-z0-9]+/g, ' ');
   const ignored = new Set(['slot', 'slots', 'game', 'games', 'hold', 'spin', 'wild', 'with', 'from', 'plus', 'super']);
@@ -159,6 +172,13 @@ for (const game of games) {
   if (provider?.officialUrl && urls.length === 0) urls.push(provider.officialUrl);
   for (const url of urls) if (!urlJobs.has(url)) urlJobs.set(url, null);
   game.auditUrls = urls;
+}
+
+// Manual browser reviews may add an exact third-party same-game destination.
+// Include those URLs in the same HTTP pass so reviewed platform fallbacks are
+// never published without a current reachability check.
+for (const review of Object.values(manualReview.entries ?? {})) {
+  if (review.url && !urlJobs.has(review.url)) urlJobs.set(review.url, null);
 }
 
 const uniqueUrls = [...urlJobs.keys()];
@@ -309,9 +329,45 @@ for (const [slug, review] of Object.entries(manualReview.entries ?? {})) {
   if (entry.status === 'not-verified') {
     entry.url = undefined;
     entry.accessType = undefined;
+    entry.platformName = undefined;
     entry.presentation = undefined;
   }
   if (entry.status !== 'available') entry.presentation = undefined;
+}
+
+// Apply the exact-destination safeguards again after manual review. Manual
+// evidence can widen source coverage, but it cannot bypass reachability,
+// unique-URL or non-generic-destination requirements.
+const reviewedAvailableUrlCounts = new Map();
+for (const entry of entries) {
+  if (entry.status !== 'available' || !entry.url) continue;
+  reviewedAvailableUrlCounts.set(entry.url, (reviewedAvailableUrlCounts.get(entry.url) ?? 0) + 1);
+}
+for (const entry of entries) {
+  if (entry.status !== 'available' || !entry.url) continue;
+  const target = inspectionByUrl.get(entry.url);
+  const sharedDestination = (reviewedAvailableUrlCounts.get(entry.url) ?? 0) > 1;
+  const genericDestination = isGenericDestination(entry.url)
+    && !isExactGameSubdomain(entry.url, entry.slug);
+  const missingPlatformEvidence = entry.accessType === 'platform-game-page'
+    && (!entry.platformName || !entry.sameGameEvidence);
+  const invalid = sharedDestination || genericDestination || missingPlatformEvidence || !target?.ok;
+  if (!invalid) continue;
+
+  entry.status = [401, 403, 429].includes(target?.httpStatus) ? 'access-restricted' : 'not-verified';
+  entry.presentation = undefined;
+  entry.evidence = sharedDestination
+    ? 'Destination is shared by multiple games; exact same-game URL is not verified.'
+    : genericDestination
+      ? 'Generic lobby or catalog destination is not publishable as a same-game link.'
+      : missingPlatformEvidence
+        ? 'Platform fallback is missing a platform name or exact same-game evidence.'
+        : `Exact destination could not be opened during verification: ${target?.httpStatus ?? target?.error ?? 'unknown error'}`;
+  if (entry.status === 'not-verified') {
+    entry.url = undefined;
+    entry.accessType = undefined;
+    entry.platformName = undefined;
+  }
 }
 
 // Slot Hub publishes Demo coverage as exact outbound links only. Browser frame
@@ -322,7 +378,7 @@ for (const entry of entries) {
 
 const counts = Object.fromEntries([...new Set(entries.map((entry) => entry.status))].sort().map((status) => [status, entries.filter((entry) => entry.status === status).length]));
 const report = {
-  version: 1,
+  version: 2,
   generatedAt: new Date().toISOString(),
   checkedAt,
   gameCount: entries.length,
@@ -332,8 +388,8 @@ const report = {
   rules: {
     owner: 'Each Game record owns its public demo state; this report is operational QA only.',
     defaultPresentation: 'external',
-    linkOnlyPresentation: 'All verified Demo destinations open as exact official outbound links; third-party Demo content is never embedded.',
-    unknownLabel: '尚未核實官方 Demo',
+    linkOnlyPresentation: 'Verified official destinations and explicitly labelled exact same-game platform pages open as outbound links; third-party content is never embedded.',
+    unknownLabel: '尚未核實精確入口',
   },
   entries,
 };

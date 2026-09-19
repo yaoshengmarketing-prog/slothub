@@ -17,7 +17,7 @@ releaseDate: 2026-06-25
 status: published
 source: { label: Booming Games 官方遊戲頁, url: https://booming-games.com/games, checkedAt: 2026-08-28 }
 sources: [{ label: Booming Games 官方遊戲發行資訊, url: https://booming-games.com/news/category/games, checkedAt: 2026-08-28 }]
-demo: {"status":"not-verified","checkedAt":"2026-09-19","iframeStatus":"not-tested"}
+demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://operator.play.booming-games.com/promotion/play/693c24bfd75340e1e800000c/desktop/demo-links/en","accessType":"direct-demo","presentation":"external"}
 lastVerifiedAt: 2026-08-28
 updatedAt: 2026-08-28
 ---
