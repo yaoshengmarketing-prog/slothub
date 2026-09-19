@@ -152,7 +152,7 @@ const gameDirectories = (await readdir(new URL('games/', root), { withFileTypes:
   .filter((entry) => entry.isDirectory())
   .map((entry) => entry.name)
   .sort();
-assert.equal(gameDirectories.length, 242, 'Game detail knowledge presentation must cover all 242 published Games');
+assert.equal(gameDirectories.length, 247, 'Game detail knowledge presentation must cover all 247 published Games');
 
 const renderedKnowledge = [];
 for (const slug of gameDirectories) {
@@ -165,8 +165,8 @@ for (const slug of gameDirectories) {
 
 const directItems = renderedKnowledge.filter((item) => item.placement !== 'feature-overflow');
 const overflowItems = renderedKnowledge.filter((item) => item.placement === 'feature-overflow');
-assert.equal(renderedKnowledge.length, 1027, 'Expected all 1027 unique Game → Guide relationships to remain visible');
-assert.equal(directItems.length, 1014, 'Expected 1014 relationships without expansion');
+assert.equal(renderedKnowledge.length, 1033, 'Expected all 1033 unique Game → Guide relationships to remain visible');
+assert.equal(directItems.length, 1020, 'Expected 1020 relationships without expansion');
 assert.equal(overflowItems.length, 13, 'Expected thirteen relationships in the overflow area');
 
 const countPlacement = (placement) => renderedKnowledge.filter((item) => item.placement === placement).length;
@@ -174,12 +174,12 @@ const countGuide = (guideSlug) => renderedKnowledge.filter((item) => item.guideS
 assert.equal(countPlacement('core-mechanism'), 183, 'Mechanism contextual Guide count changed');
 assert.equal(countPlacement('core-rtp') + countPlacement('full-rtp-variants'), 146, 'RTP contextual Guide count changed');
 assert.equal(countPlacement('core-volatility') + countPlacement('full-volatility'), 142, 'Volatility contextual Guide count changed');
-assert.equal(countPlacement('core-max-win'), 134, 'Max Win contextual Guide count changed');
-assert.equal(countGuide('slot-multiplier-explained'), 120, 'Multiplier Feature Guide count changed');
+assert.equal(countPlacement('core-max-win'), 135, 'Max Win contextual Guide count changed');
+assert.equal(countGuide('slot-multiplier-explained'), 121, 'Multiplier Feature Guide count changed');
 assert.equal(countGuide('slot-cascading-tumble-avalanche-explained'), 39, 'Cascading Feature Guide count changed');
 assert.equal(countGuide(bonusBuyOwnerSlug), 62, 'Bonus Buy Feature Guide count changed');
 assert.equal(countGuide(bonusBuyGuidePublished ? 'slot-terms-glossary' : 'slot-bonus-buy-explained'), 0, 'Inactive Bonus Buy owner appeared in Game detail');
-assert.equal(countGuide('slot-symbols-and-features'), 201, 'Symbols Feature Guide count changed');
+assert.equal(countGuide('slot-symbols-and-features'), 205, 'Symbols Feature Guide count changed');
 assert.equal(countGuide('slot-ways-to-win-explained'), 47, 'Ways to Win Guide reverse relationship count changed');
 assert.equal(countGuide('slot-payout-mechanisms-explained'), 136, 'Payout overview relationship count must exclude the forty-seven Ways Games');
 assert.ok(!renderedKnowledge.some((item) => item.gameSlug === 'super-ace' && item.guideSlug === 'slot-cascading-tumble-avalanche-explained'), 'Super Ace regained an invalid Cascading relationship');
@@ -236,4 +236,4 @@ assert.match(globalCssSource, /\.game-field-guide-link\{[^}]*min-height:44px/, '
 assert.match(globalCssSource, /\.game-guide-overflow summary\{[^}]*min-height:44px/, 'Overflow summary must keep a 44px touch target');
 assert.match(globalCssSource, /game-guide-overflow summary:focus-visible/, 'Overflow summary focus style missing');
 
-console.log('Guide relationship UI, 1027-entry Game detail presentation, generic overflow, independent Explorer URLs, Search intents and Preview safeguards verified.');
+console.log('Guide relationship UI, 1033-entry Game detail presentation, generic overflow, independent Explorer URLs, Search intents and Preview safeguards verified.');

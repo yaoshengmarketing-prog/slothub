@@ -80,7 +80,7 @@ for (const name of ['Prag by PopOK', 'Spearhead Studios', 'Barbara Bang', 'EGT D
 for (const name of ['Realistic Games', 'AdvantPlay', 'Funky Games']) {
   assert.match(map, new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*保留待補|${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*待確認`));
 }
-assert.match(map, /網站目前為 242 款 published Game、184 家 published Provider/);
-assert.match(map, /下一個橫向接續位置回到主表第 33 項 Playtech/);
+assert.match(map, /網站目前為 247 款 published Game、189 家 published Provider/);
+assert.match(map, /下一個橫向接續位置為主表第 138 項 Ricochet/);
 
 console.log('PASS: horizontal intake batch 34 added five traceable provider/game pairs, preserved source conflicts and unsupported values, recorded three evidence gaps, and advanced the cursor.');
