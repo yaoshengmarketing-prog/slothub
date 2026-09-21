@@ -4,7 +4,7 @@
 >
 > 建立日期：2026-09-03
 >
-> 本輪更新：2026-09-19（橫向收錄第三十七批完成 Funky Games、KISS Gaming、Aspect Gaming、Ricochet、Clutch Gaming 各一款；候選總數仍為 227 家）
+> 本輪更新：2026-09-22（每週廠商挖掘處理 10 條新展會／合作名錄線索；新增 5 家、確認 5 家重複；候選總數為 232 家）
 >
 > 用途：作為外部遊戲資料收集的 Provider 骨架與去重對照。這不是完整產業名錄，不授權一次建立所有 Provider 公開頁，也不改變 Schema、taxonomy、產品功能或既有發布標準。
 
@@ -441,10 +441,10 @@
 - 第五批由 OPEN26 補充與既有待查接續確認：淨新增候選 **15 家**，均可確認 Slots 作品；兩份內容相同的 OpenRGS 補充檔只作一份來源計算。
 - 第六批由 ADD26 補充首輪確認 9 家，再由排程接續小輪從 EveryMatrix 官方內容名錄確認 Spearhead Studios：累計淨新增候選 **10 家**，均可確認 Slots 作品；RAW Group／RAW iGaming 重跑為同一品牌，不重複計數。
 - 身分收斂輪確認 Leander Games、Mobilots、GodziSlots、Slotopia 與 BNG／Booongo：淨新增候選 **5 家**，均有 Slots 作品；OMNIPLAY 與 Yellow Orbit Gaming 不納入。
-- 全表合計去重後、已確認遊戲品牌：**227 家**。表內保留 OMNIPLAY 的研究 ID 102 供查核歷史，但它不在這個數字內。
-- 全表合計明確提供 Slots：**213 家**。Evolution 與 SPRIBE 仍不計入 Slot 品牌家數；Evolution 旗下具 Slot 品牌身份的 NetEnt、Red Tiger、Big Time Gaming、Nolimit City 各自統計。BRINO Games、EA Gaming、OptimoPlay、Upgames、Winfinity（live）、Galaxy Gaming、On Air Entertainment、Real Dealer Studios、Switch Studios、Playjeux Studios、SidePlay、iMoon Games 與 AD LUNAM 等保留為非 Slot 或目前未確認有傳統 Slots 的遊戲品牌。
+- 全表合計去重後、已確認遊戲品牌：**232 家**。表內保留 OMNIPLAY 的研究 ID 102 供查核歷史，但它不在這個數字內。
+- 全表合計明確提供 Slots：**218 家**。Evolution 與 SPRIBE 仍不計入 Slot 品牌家數；Evolution 旗下具 Slot 品牌身份的 NetEnt、Red Tiger、Big Time Gaming、Nolimit City 各自統計。BRINO Games、EA Gaming、OptimoPlay、Upgames、Winfinity（live）、Galaxy Gaming、On Air Entertainment、Real Dealer Studios、Switch Studios、Playjeux Studios、SidePlay、iMoon Games 與 AD LUNAM 等保留為非 Slot 或目前未確認有傳統 Slots 的遊戲品牌。
 - Slot Hub 已收錄：**194 家**（全部有 Slots 或明確的 Slots hybrid 資料）。
-- 全表合計尚未收錄：**33 家**；其中尚未收錄、且目前可確認有 Slots 的品牌：**19 家**。
+- 全表合計尚未收錄：**38 家**；其中尚未收錄、且目前可確認有 Slots 的品牌：**24 家**。
 - 聚合、分發、展會與監管來源層只用於發現及交叉查找，不額外灌入品牌總數。除了既有 SOFTSWISS、Slotegrator、EveryMatrix、Hub88、Relax 聚合網路與 Games Global，本輪新增使用 SBC 官方展商內容、Bragg studio 網路、Light & Wonder partner roadmap 與 PAGCOR 核准資料。Relax 同時是開發品牌，所以只在品牌清單計數一次。
 - 只有 3 家在本輪取得可明確引用的完整目錄／作品集數量，另有 TaDa Gaming 的 60+ certified 子集合；其餘保持空白。這不代表沒有遊戲，只代表目前沒有取得可安全當作完整總數的公開值。
 
@@ -467,7 +467,28 @@
 
 上一版的 6 條未決線索與額外的 AD LUNAM、BNG／Booongo 邊界均已處理。現在沒有需要沿舊證據反覆重跑的身分待查項目：能確認的已進主表；OMNIPLAY 已歸類為服務／遊戲 offering 而非已確認開發品牌；Yellow Orbit Gaming 已封存為未證實名稱。
 
-每週挖掘下一游標改為：**新的展會／合作名錄線索**。每次仍最多處理 10 條；先和 227 家正規名稱、別名、官網及品牌關係去重，再回到第一方來源確認。OMNIPLAY 與 Yellow Orbit Gaming 只有在出現新的逐款署名或正式品牌證據時才重開，不再占用例行游標。
+每週挖掘已由「新的展會／合作名錄線索」完成一輪；本輪結果與下一游標見 2.14。每次仍最多處理 10 條；先和現有正規名稱、別名、官網及品牌關係去重，再回到第一方來源確認。OMNIPLAY 與 Yellow Orbit Gaming 只有在出現新的逐款署名或正式品牌證據時才重開，不再占用例行游標。
+
+### 2.14 每週廠商挖掘紀錄（2026-09-22）
+
+本輪依游標交錯查核 ICE Barcelona 2027 官方展商／產品名錄、Microgaming 官方 studio 與新聞、EveryMatrix 官方 studio 名錄，以及 Bragg 官方 studio 頁。以下 10 條均先和既有候選的正規名稱、別名、官網與品牌關係去重；展會或聚合／RGS 名錄只作發現入口，新候選另以品牌官網或直接 studio owner 的官方資料及具名作品確認。
+
+| 線索 | 發現來源 | 品牌／作品證據 | 去重與處理結果 |
+| --- | --- | --- | --- |
+| Boldplay | [ICE 官方產品名錄](https://www.icegaming.com/exhibitor-product-listings/api-casino-games-integration) | [官方 Games 目錄](https://www.boldplay.com/games)列出 Gold Digger、Cakeshop Cascade、Brute Force 等 Slots；網站法律資訊使用 Univam Limited／Univam (Malta) Limited | **新增 229**；對外遊戲品牌為 Boldplay，`Boldplay Creative` 是其內容線，不另計一家 |
+| Red Papaya | [Microgaming 官方 studio 頁](https://microgaming.io/red-papaya/) | [Microgaming 官方 ICE 公告](https://microgaming.io/red-papaya-debuts-at-ice-2026/)與[Kong's Jungle Tower 發布頁](https://microgaming.io/kongs-jungle-tower-launch/)確認 studio 身份及具名 Slot 作品 | **新增 230**；記錄為 powered by Microgaming 的 studio，不把合作關係寫成另一個母公司結論 |
+| Jelly Entertainment | [EveryMatrix 官方 studio 名錄](https://everymatrix.com/games/) | [Jelly 官方 Slots 目錄](https://jellyentertainment.com/slots/)列出 CleoPatrick、Witches Go Wild、Midas Riches 等作品 | **新增 231**；EveryMatrix 的投資／RGS 分發關係另記，不與 EveryMatrix 合併 |
+| Powderkeg Studios | [EveryMatrix 官方 studio 名錄](https://everymatrix.com/games/) | [EveryMatrix 官方獎項公告](https://everymatrix.com/news/everymatrix-named-aggregator-of-the-year-at-casinobeats-game-developer-awards-2024/)確認 Supremeland Gaming 的 Powderkeg studio 及具名 Slot《Munition Mine》 | **新增 232**；保留 Supremeland Gaming 關係，不把 RGS／發行方計作同一品牌 |
+| Art of Spin | [ICE Barcelona 2027 官方展商名錄](https://www.icegaming.com/exhibitor-list?page=2) | [官方作品目錄](https://artofspin.com/)及[Joker's Fire Show 官方頁](https://artofspin.com/game/jokers-fire-show)確認 Slot provider 身份與逐款作品 | **新增 233**；Art of Spin Limited 為法律署名，不另計一家 |
+| 18Peaches | [ICE 官方展商頁](https://www.icegaming.com/exhibitors/18peaches)與[Hacker Crash Jackpot 產品頁](https://www.icegaming.com/exhibitor-product-listings/hacker-crash-jackpot) | 既有官方逐款頁與候選 ID 181 相同 | **重複**；補 ICE 2027 參展與具名產品證據，不新增計數 |
+| RubyPlay | [ICE 官方產品名錄](https://www.icegaming.com/exhibitor-product-listings/veliedge-a0tx) | 名錄的 Gummy Giga Match 與既有 RubyPlay 官方目錄、候選 ID 41 對得上 | **重複**；只補展會作品證據 |
+| Kendoo | [ICE 官方產品名錄](https://www.icegaming.com/exhibitor-product-listings/igaming-lottery) | 3 Fortune Trees、3 Gates of Pyramid 與既有候選 ID 100、官方目錄一致 | **重複**；只補展會作品證據 |
+| SYNOT Games | [ICE 官方產品名錄](https://www.icegaming.com/exhibitor-product-listings/igaming-lottery) | Age of Pyramids 的 SYNOT Games 署名與既有候選 ID 185 一致 | **重複**；只補展會作品證據 |
+| Wild Streak Gaming | [Bragg 官方 studio 頁](https://bragg.group/casino-games/wild-streak-gaming/) | 官方頁列出 Fire Stampede、Dragon Power、Temujin Treasures 等 Slots，與既有候選 ID 114 相同 | **重複**；補現行 studio／具名作品入口，不新增計數 |
+
+本輪合計：**處理 10 條；新增 5、重複 5、待查 0、失敗 0**。沒有用搜尋摘要、聚合商名單或單一展商名稱把品牌直接升格；新增五家均已有第一方品牌／studio 證據及具名 Slot 作品。
+
+下一游標：**ICE Barcelona 2027 展商名錄 A 段，從 Amatic Online／Amber Studios 接續；合作 studio 名錄由 EveryMatrix 的 Powderkeg Studios 之後接續**。下輪仍先去重；Amatic Online 是否只是 AMATIC Industries 的產品線、Amber Studios 的 Live Slots 是否屬本地定義的傳統 Slot 品牌，都必須先查清，不能預先計入。
 
 ## 3. 可持續使用的官方目錄
 
@@ -520,9 +541,9 @@
 
 `CURRENT_SCOPE: 廠商盤點與分類`
 
-`CURRENT_GAME_COUNT: 247`
+`CURRENT_GAME_COUNT: 257`
 
-`CURRENT_PROVIDER_COUNT: 189`
+`CURRENT_PROVIDER_COUNT: 199`
 
 `FIRST_BATCH_CANDIDATE_BRAND_COUNT: 51`
 
@@ -542,17 +563,17 @@
 
 `IDENTITY_CLOSURE_NET_NEW_BRAND_COUNT: 5`
 
-`TOTAL_CANDIDATE_BRAND_COUNT: 227`
+`TOTAL_CANDIDATE_BRAND_COUNT: 232`
 
-`TOTAL_SLOT_CAPABLE_BRAND_COUNT: 213`
+`TOTAL_SLOT_CAPABLE_BRAND_COUNT: 218`
 
 `TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 24`
 
 `REMAINING_RESEARCH_LEAD_COUNT: 0`
 
-`WEEKLY_DISCOVERY_CURSOR: 新的展會／合作名錄線索`
+`WEEKLY_DISCOVERY_CURSOR: ICE Barcelona 2027 展商名錄 A 段（Amatic Online／Amber Studios）；EveryMatrix 合作 studio 名錄（Powderkeg Studios 之後）`
 
-`NEXT_ALLOWED_ACTION: 依 2.13 從新的展會／合作名錄線索接續；先和 227 家候選去重，且不得使用 PAGCOR 或聚合商清單單獨升格為開發品牌`
+`NEXT_ALLOWED_ACTION: 依 2.14 從上述雙游標接續，最多處理 10 條；先和 232 家候選去重，且不得使用 PAGCOR、展商或聚合商清單單獨升格為開發品牌`
 
 `SCHEMA_CHANGE_ALLOWED: NO`
 
