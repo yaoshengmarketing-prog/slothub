@@ -13,6 +13,8 @@
 - 讓每個階段都有唯一狀態、固定出口、允許修改範圍及下一個可執行動作。
 - 保證未核准資料不會因建立檔案、Build 或 Preview 模擬而意外公開。
 
+Relax Gaming 的 intake manifest 另以 `importStatus`／`collectionOutcome` 記錄作業進度。Game frontmatter 的 `status: published` 表示該檔進入網站建置後會公開，不證明檔案已提交、Push 或部署。批次準備與本機驗證期間，manifest 應記為 `imported`；只有遊戲已在 `origin/main`，且對應部署完成並經線上回讀，才可把 manifest 改為 `published`。完整驗證會拒絕 manifest 中指向未提交遊戲的 `published` 標記。
+
 本工作流不授權：
 
 - 自行決定產品方向或改寫藍圖。

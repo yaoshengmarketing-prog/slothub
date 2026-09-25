@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-19T10:05:47.838Z",
-  "checkedAt": "2026-09-19",
-  "gameCount": 257,
+  "generatedAt": "2026-09-23T00:00:00.000Z",
+  "checkedAt": "2026-09-23",
+  "gameCount": 262,
   "providerCount": 199,
-  "sourcePageCount": 565,
+  "sourcePageCount": 575,
   "counts": {
     "access-restricted": 2,
-    "available": 214,
+    "available": 219,
     "not-verified": 41
   },
   "rules": {
@@ -6190,6 +6190,71 @@
       ],
       "sameGameEvidence": "Thunderkick's exact Zoom page exposes Play Game.",
       "browserReviewedAt": "2026-09-19"
+    },
+    {
+      "slug": "bill-and-coin",
+      "name": "Bill & Coin",
+      "provider": "relax-gaming",
+      "status": "available",
+      "url": "https://www.relax-gaming.com/products/casino/billandcoin",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-09-23",
+      "evidence": "Official Relax Gaming product page was opened and identifies Bill & Coin.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.relax-gaming.com/products/casino/billandcoin", "finalUrl": "https://www.relax-gaming.com/products/casino/billandcoin", "httpStatus": 200 }]
+    },
+    {
+      "slug": "bill-and-coin-2",
+      "name": "Bill & Coin 2",
+      "provider": "relax-gaming",
+      "status": "available",
+      "url": "https://www.relax-gaming.com/products/casino/billandcoin2",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-09-23",
+      "evidence": "Official Relax Gaming product page was opened and identifies Bill & Coin 2.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.relax-gaming.com/products/casino/billandcoin2", "finalUrl": "https://www.relax-gaming.com/products/casino/billandcoin2", "httpStatus": 200 }]
+    },
+    {
+      "slug": "bill-and-coin-2-dream-drop",
+      "name": "Bill & Coin 2 Dream Drop",
+      "provider": "relax-gaming",
+      "status": "available",
+      "url": "https://www.relax-gaming.com/products/casino/billandcoin2dd",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-09-23",
+      "evidence": "Official Relax Gaming product page was opened and identifies Bill & Coin 2 Dream Drop.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.relax-gaming.com/products/casino/billandcoin2dd", "finalUrl": "https://www.relax-gaming.com/products/casino/billandcoin2dd", "httpStatus": 200 }]
+    },
+    {
+      "slug": "bill-and-coin-dream-drop",
+      "name": "Bill & Coin Dream Drop",
+      "provider": "relax-gaming",
+      "status": "available",
+      "url": "https://www.relax-gaming.com/products/casino/billandcoindd",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-09-23",
+      "evidence": "Official Relax Gaming product page was opened and identifies Bill & Coin Dream Drop.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.relax-gaming.com/products/casino/billandcoindd", "finalUrl": "https://www.relax-gaming.com/products/casino/billandcoindd", "httpStatus": 200 }]
+    },
+    {
+      "slug": "blender-blitz",
+      "name": "Blender Blitz",
+      "provider": "relax-gaming",
+      "status": "available",
+      "url": "https://www.relax-gaming.com/products/casino/blenderblitz",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-09-23",
+      "evidence": "Official Relax Gaming product page was opened and identifies Blender Blitz.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.relax-gaming.com/products/casino/blenderblitz", "finalUrl": "https://www.relax-gaming.com/products/casino/blenderblitz", "httpStatus": 200 }]
     }
   ]
 }

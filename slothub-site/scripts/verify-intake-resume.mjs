@@ -139,6 +139,13 @@ try {
   const deduped = JSON.parse(await runNode(progressScript, [`--manifest=${manifestPath}`, '--list', '--limit=10']));
   assert.equal(new Set(deduped.map((entry) => entry.officialUrl)).size, deduped.length, 'queue must dedupe official URLs');
 
+  await assert.rejects(
+    runNode(progressScript, [`--manifest=${manifestPath}`, `--url=${retry.officialUrl}`, '--slug=retry-game', '--import-status=published']),
+    /cannot mark published before the Game is on origin\/main/,
+    'intake must reject a published marker for an unpushed Game',
+  );
+  assert.notEqual(JSON.parse(await readFile(manifestPath, 'utf8')).entries.find((entry) => entry.officialUrl === retry.officialUrl).importStatus, 'published');
+
   console.log('PASS: catalog entries survive missing images; intake resumes interrupted and failed work before pending items, writes progress per item, and completed reruns are deduplicated no-ops.');
 } finally {
   server.close();

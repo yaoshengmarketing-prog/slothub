@@ -1,4 +1,5 @@
 import { readFile, writeFile } from 'node:fs/promises';
+import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -39,6 +40,22 @@ if (args.list) {
 if (!args.url) throw new Error('Use --list or provide --url=<official product URL>.');
 const entry = manifest.entries.find((item) => item.officialUrl === args.url);
 if (!entry) throw new Error(`Catalog entry not found: ${args.url}`);
+if (args['import-status'] === 'published') {
+  const slug = String(args.slug || entry.existingSlug || '');
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) {
+    throw new Error('Published status requires a valid existing Game slug.');
+  }
+  const prefix = execFileSync('git', ['rev-parse', '--show-prefix'], { cwd: root, encoding: 'utf8' }).trim();
+  let committedGame;
+  try {
+    committedGame = execFileSync('git', ['show', `origin/main:${prefix}src/content/games/${slug}.md`], { cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
+  } catch {
+    throw new Error(`${slug}: cannot mark published before the Game is on origin/main.`);
+  }
+  if (!/^status: published\r?$/m.test(committedGame)) {
+    throw new Error(`${slug}: committed Game is not published.`);
+  }
+}
 
 if (args['detail-status']) entry.detailStatus = args['detail-status'];
 if (args['verified-at']) entry.verifiedAt = args['verified-at'];

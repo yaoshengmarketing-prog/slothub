@@ -1,6 +1,12 @@
 import assert from 'node:assert/strict';
+import { execFileSync } from 'node:child_process';
 import { readFile, stat } from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { parse } from 'yaml';
+
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const gitPrefix = execFileSync('git', ['rev-parse', '--show-prefix'], { cwd: root, encoding: 'utf8' }).trim();
 
 const readFrontmatter = async (url) => {
   const source = await readFile(url, 'utf8');
@@ -15,16 +21,28 @@ assert.equal(manifest.catalogSeenAt, '2026-09-20');
 assert.match(manifest.catalogSeenAtMeaning, /不代表任何單款內容已重新核對/);
 assert.equal(manifest.catalogEntryCount, 175);
 assert.equal(manifest.eligibleGameCount, 173);
-assert.equal(manifest.existingMatchCount, 16);
+assert.equal(manifest.existingMatchCount, 21);
 assert.equal(manifest.pendingDetailCount, 0);
 assert.equal(manifest.retryableDetailCount, 0);
-assert.equal(manifest.capturedNeedsReviewCount, 157);
+assert.equal(manifest.capturedNeedsReviewCount, 152);
 assert.equal(manifest.excludedCount, 2);
 assert.equal(manifest.detailCollection.capturedCount, 173);
 assert.equal(manifest.detailCollection.failedCount, 0);
 assert.equal(manifest.detailCollection.imageAvailableCount, 173);
 assert.equal(manifest.detailCollection.imageMissingCount, 0);
 assert.equal(new Set(manifest.entries.map((entry) => entry.officialUrl)).size, manifest.entries.length, 'duplicate official catalog URL');
+
+for (const entry of manifest.entries.filter((item) => item.importStatus === 'published')) {
+  assert.equal(entry.collectionOutcome, 'published', `${entry.officialName}: published outcome mismatch`);
+  assert.match(entry.existingSlug ?? '', /^[a-z0-9]+(?:-[a-z0-9]+)*$/, `${entry.officialName}: published Game slug missing`);
+  let committedGame;
+  try {
+    committedGame = execFileSync('git', ['show', `HEAD:${gitPrefix}src/content/games/${entry.existingSlug}.md`], { cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
+  } catch {
+    assert.fail(`${entry.officialName}: manifest says published before Game was committed`);
+  }
+  assert.match(committedGame, /^status: published\r?$/m, `${entry.officialName}: committed Game is not published`);
+}
 
 for (const entry of manifest.entries.filter((item) => item.eligibleForGameIntake !== false)) {
   assert.equal(entry.detailCapture?.status, 'captured', `${entry.officialName}: detail page not captured`);
