@@ -39,13 +39,13 @@ const [providerEntries, gameEntries] = await Promise.all([
 const providers = providerEntries.filter((entry) => entry.data.status === 'published');
 const games = gameEntries.filter((entry) => entry.data.status === 'published');
 assert.equal(providers.length, 199, 'expected 199 published Providers');
-assert.equal(games.length, 262, 'expected 262 published Games');
-assert.equal(new Set(games.map((game) => game.id)).size, 262, 'duplicate published Game slug');
+assert.equal(games.length, 267, 'expected 267 published Games');
+assert.equal(new Set(games.map((game) => game.id)).size, 267, 'duplicate published Game slug');
 assert.ok(games.every((game) => providers.some((provider) => provider.id === game.data.provider)), 'orphan canonical Provider');
 
 const index = buildProviderHubIndex(providerEntries, gameEntries, taxonomy);
 assert.equal(index.length, 199);
-assert.equal(index.reduce((total, provider) => total + provider.sampleSize, 0), 262, 'Provider N must sum to 262');
+assert.equal(index.reduce((total, provider) => total + provider.sampleSize, 0), 267, 'Provider N must sum to 267');
 assert.deepEqual(index.map((item) => item.provider.name), [...index.map((item) => item.provider.name)].sort((a, b) => a.localeCompare(b, 'zh-Hant-TW')), 'Provider index must use neutral name ordering');
 
 const expectedCounts = Object.fromEntries(providers.map((provider) => [
@@ -170,4 +170,4 @@ assert.match(providerCss, /\.provider-explorer-cta\{[^}]*text-align:center/, 'Pr
 assert.match(providerCss, /\.provider-detail-v2 a:focus-visible\{[^}]*outline:/, 'Provider focus-visible treatment missing');
 assert.ok(!providerTemplate.includes('client:'), 'Provider detail core content must not require client hydration');
 
-console.log('PASS: Provider Hub v2 projected 199 Providers and 262 Games with honest N states, fixed taxonomy order, exact Explorer URLs, field-presence coverage and no ranking output.');
+console.log('PASS: Provider Hub v2 projected 199 Providers and 267 Games with honest N states, fixed taxonomy order, exact Explorer URLs, field-presence coverage and no ranking output.');

@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-23T00:00:00.000Z",
-  "checkedAt": "2026-09-23",
-  "gameCount": 262,
+  "generatedAt": "2026-09-26T00:00:00.000Z",
+  "checkedAt": "2026-09-26",
+  "gameCount": 267,
   "providerCount": 199,
-  "sourcePageCount": 575,
+  "sourcePageCount": 585,
   "counts": {
     "access-restricted": 2,
-    "available": 219,
+    "available": 224,
     "not-verified": 41
   },
   "rules": {
@@ -6255,6 +6255,71 @@
       "checkedAt": "2026-09-23",
       "evidence": "Official Relax Gaming product page was opened and identifies Blender Blitz.",
       "inspectedUrls": [{ "requestedUrl": "https://www.relax-gaming.com/products/casino/blenderblitz", "finalUrl": "https://www.relax-gaming.com/products/casino/blenderblitz", "httpStatus": 200 }]
+    },
+    {
+      "slug": "bone-raiders",
+      "name": "Bone Raiders",
+      "provider": "relax-gaming",
+      "status": "available",
+      "url": "https://www.relax-gaming.com/products/casino/boneraiders",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-09-26",
+      "evidence": "Official Relax Gaming product page was opened and identifies Bone Raiders.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.relax-gaming.com/products/casino/boneraiders", "finalUrl": "https://www.relax-gaming.com/products/casino/boneraiders", "httpStatus": 200 }]
+    },
+    {
+      "slug": "bonsai-dragon-blitz",
+      "name": "Bonsai Dragon Blitz",
+      "provider": "relax-gaming",
+      "status": "available",
+      "url": "https://www.relax-gaming.com/products/casino/bonsaidragonblitz",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-09-26",
+      "evidence": "Official Relax Gaming product page was opened and identifies Bonsai Dragon Blitz.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.relax-gaming.com/products/casino/bonsaidragonblitz", "finalUrl": "https://www.relax-gaming.com/products/casino/bonsaidragonblitz", "httpStatus": 200 }]
+    },
+    {
+      "slug": "bonsai-dragon-blitz-dream-drop",
+      "name": "Bonsai Dragon Blitz Dream Drop",
+      "provider": "relax-gaming",
+      "status": "available",
+      "url": "https://www.relax-gaming.com/products/casino/bonsaidragonblitzdd",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-09-26",
+      "evidence": "Official Relax Gaming product page was opened and identifies Bonsai Dragon Blitz Dream Drop.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.relax-gaming.com/products/casino/bonsaidragonblitzdd", "finalUrl": "https://www.relax-gaming.com/products/casino/bonsaidragonblitzdd", "httpStatus": 200 }]
+    },
+    {
+      "slug": "book-of-99",
+      "name": "Book of 99",
+      "provider": "relax-gaming",
+      "status": "available",
+      "url": "https://www.relax-gaming.com/products/casino/bookof99",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-09-26",
+      "evidence": "Official Relax Gaming product page was opened and identifies Book of 99.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.relax-gaming.com/products/casino/bookof99", "finalUrl": "https://www.relax-gaming.com/products/casino/bookof99", "httpStatus": 200 }]
+    },
+    {
+      "slug": "book-of-power",
+      "name": "Book of Power",
+      "provider": "relax-gaming",
+      "status": "available",
+      "url": "https://www.relax-gaming.com/products/casino/bookofpower",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-09-26",
+      "evidence": "Official Relax Gaming product page was opened and identifies Book of Power.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.relax-gaming.com/products/casino/bookofpower", "finalUrl": "https://www.relax-gaming.com/products/casino/bookofpower", "httpStatus": 200 }]
     }
   ]
 }
