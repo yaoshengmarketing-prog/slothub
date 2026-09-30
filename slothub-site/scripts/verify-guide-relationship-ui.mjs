@@ -152,7 +152,7 @@ const gameDirectories = (await readdir(new URL('games/', root), { withFileTypes:
   .filter((entry) => entry.isDirectory())
   .map((entry) => entry.name)
   .sort();
-assert.equal(gameDirectories.length, 267, 'Game detail knowledge presentation must cover all 267 published Games');
+assert.equal(gameDirectories.length, 272, 'Game detail knowledge presentation must cover all 272 published Games');
 
 const renderedKnowledge = [];
 for (const slug of gameDirectories) {

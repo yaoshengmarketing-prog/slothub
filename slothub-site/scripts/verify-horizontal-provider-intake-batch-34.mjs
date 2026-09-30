@@ -78,7 +78,7 @@ for (const name of ['Prag by PopOK', 'Spearhead Studios', 'Barbara Bang', 'EGT D
   assert.match(map, new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*已收錄（1）`));
 }
 assert.match(map, /Funky Games[^\r\n]*已收錄（1）/);
-assert.match(map, /網站目前為 257 款 published Game、199 家 published Provider/);
+assert.match(map, /網站目前為 272 款 published Game、204 家 published Provider/);
 assert.match(map, /下一個橫向接續位置為主表第 213 項 Dragoon Soft/);
 
 console.log('PASS: horizontal intake batch 34 added five traceable provider/game pairs, preserved source conflicts and unsupported values, recorded three evidence gaps, and advanced the cursor.');
