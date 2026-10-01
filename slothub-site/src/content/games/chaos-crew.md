@@ -21,9 +21,9 @@ bonusBuy: true
 image: { src: /assets/games/chaos-crew.jpg, alt: Chaos Crew 官方遊戲主圖, sourceUrl: https://www-live.hacksawgaming.com/casino_thumbnails/1867.jpg, retrievedAt: 2026-08-28 }
 editorialFeatured: true
 status: published
-source: { label: Hacksaw Gaming 官方遊戲頁, url: https://www.hacksawgaming.com/games/chaos-crew, checkedAt: 2026-08-28 }
-sources: [{ label: Hacksaw Gaming 官方遊戲頁, url: https://www.hacksawgaming.com/games/chaos-crew, checkedAt: 2026-08-28 }]
-demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.hacksawgaming.com/games/chaos-crew","accessType":"official-game-page","presentation":"external"}
-lastVerifiedAt: 2026-08-28
-updatedAt: 2026-08-28
+source: { label: Hacksaw Gaming 官方產品頁（來源層級：官方產品頁；版本未公開；前言 15 線與 Game Data 19 線相衝，保留既有 19 線）, url: https://www.hacksawgaming.com/games/chaos-crew, checkedAt: 2026-10-01 }
+sources: [{ label: Hacksaw Gaming 官方產品頁（來源層級：官方產品頁；版本未公開；前言 15 線與 Game Data 19 線相衝，保留既有 19 線）, url: https://www.hacksawgaming.com/games/chaos-crew, checkedAt: 2026-10-01 }]
+demo: {"status":"available","checkedAt":"2026-10-01","iframeStatus":"not-tested","url":"https://www.hacksawgaming.com/games/chaos-crew","accessType":"official-game-page","presentation":"external"}
+lastVerifiedAt: 2026-10-01
+updatedAt: 2026-10-01
 ---
