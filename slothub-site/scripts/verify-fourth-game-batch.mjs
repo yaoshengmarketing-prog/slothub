@@ -115,7 +115,7 @@ if (!published) await assert.rejects(providerPage, { code: 'ENOENT' }, 'Relax Ga
 else {
   const html = await providerPage;
   assert.match(html, /Relax Gaming/);
-  assert.match(html, /Slot Hub 收錄 21 款/);
+  assert.match(html, /Slot Hub 收錄 26 款/);
   assert.match(html, /href="\/games\/\?provider=relax-gaming"/);
 }
 
