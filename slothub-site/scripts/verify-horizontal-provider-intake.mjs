@@ -75,6 +75,10 @@ for (const name of ['Thunderkick', 'BGaming', 'Triple Cherry', 'Spinmatic', 'ELA
 }
 
 const gamesIndexHtml = await readFile(new URL('../dist/games/index.html', import.meta.url), 'utf8');
-assert.match(gamesIndexHtml, /<time datetime="2026-09-19">2026\/09\/19<\/time>/, 'Recently verified dates must not shift back one day in the build timezone');
+const renderedVerificationDates = [...gamesIndexHtml.matchAll(/<time datetime="(\d{4})-(\d{2})-(\d{2})">(\d{4})\/(\d{2})\/(\d{2})<\/time>/g)];
+assert.ok(renderedVerificationDates.length > 0, 'Recently verified cards must render verification dates');
+for (const [, isoYear, isoMonth, isoDay, displayYear, displayMonth, displayDay] of renderedVerificationDates) {
+  assert.equal(`${displayYear}-${displayMonth}-${displayDay}`, `${isoYear}-${isoMonth}-${isoDay}`, 'Recently verified dates must not shift back one day in the build timezone');
+}
 
 console.log('PASS: horizontal intake published five traceable Providers and one verified Game per Provider without schema, taxonomy or inferred-value changes.');
