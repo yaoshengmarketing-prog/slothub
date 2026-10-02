@@ -40,9 +40,21 @@ assert.deepEqual(SIMILAR_PLAY_EXCLUDED_FEATURES, ['wild', 'scatter', 'other']);
 
 const presentations = new Map(published.map((game) => [game.slug, buildSimilarPlayPresentation(game.slug, records)]));
 const withResults = [...presentations.values()].filter((presentation) => presentation.items.length > 0);
-const zeroSlugs = [...presentations.entries()].filter(([, presentation]) => presentation.items.length === 0).map(([slug]) => slug).sort();
-assert.equal(withResults.length, 195, '195 Games should have similar-play results');
-assert.deepEqual(zeroSlugs, ['3-dragon-pots', '3-lucky-rainbows-action-boost', '3-plucky-hens', '3-wonders-luck-of-stallion', '9-masks-of-fire', 'atlantis-crush', 'avalanche-good-times', 'banana-town', 'banana-town-dream-drop', 'best-bet', 'big-buzz', 'bison-moon', 'book-of-aztec', 'chinese-gold-hold-and-spin', 'coconut-chaos', 'dead-headz', 'enchanted-woods', 'fate-of-olympus', 'fire-stampede-dollars-and-dreams', 'fowl-play-gold', 'goal-strike-rising-rewards', 'gold-factory-jackpots-maple-moolah', 'golden-fruit-vegas-classic', 'golden-sun-aztec', 'golden-ticket', 'happy-hour-fruit-slot', 'imperial-fortunes', 'jolly-leprechaun', 'jungle-treasure', 'king-fu-frog', 'kingdom-wardens', 'kingfisher', 'kings-of-crystals-ii', 'loaded-up-riches-pots', 'lucky-zodiac', 'money-coming', 'money-tree-jackpot-hold-and-win', 'mortal-oath', 'oh-my-gods', 'pirate-riches', 'precious-monkeys', 'push-the-button', 'pyramid-of-light', 'redbeards-ruby-fortune-map', 'rome-fight-for-gold-eternal-empire', 'shadow-of-dominion', 'shoot-for-the-loot', 'slingo-sweet-bonanza', 'space-bar', 'storm-of-seth', 'storm-of-seth-2-awakening', 'texas-joker-em', 'the-book-beyond-2', 'the-library-kitsune', 'the-secret-of-amun-ra', 'tiger-jackpots', 'tikitopia-boosterbelt', 'ufc-gold-blitz-extreme', 'uncle-profit', 'upshot-prosperity-rising', 'vegas-gold', 'werewolf-cp-games', 'whitney-houston-slots', 'wild-fruit-super-wheel', 'wild-hour-league', 'wild-whopper', 'win-in-rome']);
+const mechanismCounts = new Map();
+for (const game of published) {
+  if (game.winMechanism && game.winMechanism !== 'other') {
+    mechanismCounts.set(game.winMechanism, (mechanismCounts.get(game.winMechanism) ?? 0) + 1);
+  }
+}
+const expectedModuleSlugs = published
+  .filter((game) => mechanismCounts.get(game.winMechanism) > 1)
+  .map((game) => game.slug)
+  .sort();
+const moduleSlugs = [...presentations.entries()]
+  .filter(([, presentation]) => presentation.items.length > 0)
+  .map(([slug]) => slug)
+  .sort();
+assert.deepEqual(moduleSlugs, expectedModuleSlugs, 'every published game with another game sharing its primary mechanism should render similar play');
 
 for (const [slug, presentation] of presentations) {
   assert.ok(presentation.items.length <= 4, `${slug}: rendered over four cards`);
@@ -110,7 +122,7 @@ for (const game of published) {
   assert.equal((html.match(/data-similar-play-slug=/g) ?? []).length, presentations.get(game.slug).items.length, `${game.slug}: rendered card count mismatch`);
   assert.ok(!html.includes('similarity-score'), `${game.slug}: similarity score rendered`);
 }
-assert.equal(renderedModules, 195, 'expected 195 rendered similar-play modules');
+assert.equal(renderedModules, expectedModuleSlugs.length, 'rendered similar-play module count must match the eligible published-game relationship');
 
 const representativeHtml = await readFile(join(distGamesDirectory, 'big-bass-bonanza', 'index.html'), 'utf8');
 assert.ok(representativeHtml.indexOf('class="game-next-explore"') < representativeHtml.indexOf('class="game-similar-play"'), 'similar-play must belong to the shared next-explore section');
