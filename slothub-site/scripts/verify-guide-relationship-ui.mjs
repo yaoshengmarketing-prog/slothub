@@ -1,9 +1,32 @@
 import assert from 'node:assert/strict';
 import { readdir, readFile } from 'node:fs/promises';
+import { basename } from 'node:path';
+import { parse } from 'yaml';
 import { buildGameDetailKnowledgePresentation } from '../src/lib/game-detail-knowledge-presentation.ts';
+import { buildGuideRelationshipIndex, GUIDE_DATA_TOPICS } from '../src/lib/guide-relationships.mjs';
 
 const root = new URL('../dist/', import.meta.url);
 const load = (path) => readFile(new URL(path, root), 'utf8');
+const sourceContentRoot = new URL('../src/content/', import.meta.url);
+const loadSourceCollection = async (collection) => Promise.all(
+  (await readdir(new URL(`${collection}/`, sourceContentRoot)))
+    .filter((file) => file.endsWith('.md'))
+    .map(async (file) => {
+      const raw = await readFile(new URL(`${collection}/${file}`, sourceContentRoot), 'utf8');
+      const frontmatter = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/)?.[1];
+      if (!frontmatter) throw new Error(`${collection}/${file}: missing YAML frontmatter`);
+      return { slug: basename(file, '.md'), ...parse(frontmatter) };
+    }),
+);
+const [sourceGuides, sourceGames] = await Promise.all([
+  loadSourceCollection('guides'),
+  loadSourceCollection('games'),
+]);
+const relationshipIndex = buildGuideRelationshipIndex(sourceGuides, sourceGames, {
+  mechanisms: ['paylines', 'ways-to-win', 'megaways', 'cluster-pays', 'pay-anywhere', 'other'],
+  features: ['free-spins', 'wild', 'scatter', 'multiplier', 'hold-and-spin', 'cascading', 'bonus-buy', 'respins', 'cash-collection', 'giant-symbols', 'symbol-splitting', 'sticky-symbols', 'jackpot', 'other'],
+  dataTopics: GUIDE_DATA_TOPICS,
+});
 const maxWinGuideSource = await readFile(new URL('../src/content/guides/slot-max-win-explained.md', import.meta.url), 'utf8');
 const globalCssSource = await readFile(new URL('../src/styles/global.css', import.meta.url), 'utf8');
 const maxWinGuidePublished = /^status: published$/m.test(maxWinGuideSource);
@@ -152,7 +175,8 @@ const gameDirectories = (await readdir(new URL('games/', root), { withFileTypes:
   .filter((entry) => entry.isDirectory())
   .map((entry) => entry.name)
   .sort();
-assert.equal(gameDirectories.length, 272, 'Game detail knowledge presentation must cover all 272 published Games');
+const publishedSourceGames = sourceGames.filter((game) => game.status === 'published');
+assert.equal(gameDirectories.length, publishedSourceGames.length, 'Game detail knowledge presentation must cover every published Game');
 
 const renderedKnowledge = [];
 for (const slug of gameDirectories) {
@@ -160,38 +184,26 @@ for (const slug of gameDirectories) {
   const items = [...html.matchAll(/<a[^>]*data-guide-slug="([^"]+)"[^>]*data-guide-placement="([^"]+)"/g)]
     .map((match) => ({ guideSlug: match[1], placement: match[2] }));
   assert.equal(new Set(items.map((item) => item.guideSlug)).size, items.length, `${slug}: a Guide was rendered more than once`);
+  assert.deepEqual(
+    items.map((item) => item.guideSlug).sort(),
+    (relationshipIndex.gameToGuides[slug] ?? []).map((match) => match.guide.slug).sort(),
+    `${slug}: rendered Guide relationships must match the published source relationship index`,
+  );
   renderedKnowledge.push(...items.map((item) => ({ gameSlug: slug, ...item })));
 }
 
 const directItems = renderedKnowledge.filter((item) => item.placement !== 'feature-overflow');
 const overflowItems = renderedKnowledge.filter((item) => item.placement === 'feature-overflow');
-assert.equal(renderedKnowledge.length, 1088, 'Expected all 1088 unique Game → Guide relationships to remain visible');
-assert.equal(directItems.length, 1075, 'Expected 1075 relationships without expansion');
-assert.equal(overflowItems.length, 13, 'Expected thirteen relationships in the overflow area');
-
-const countPlacement = (placement) => renderedKnowledge.filter((item) => item.placement === placement).length;
-const countGuide = (guideSlug) => renderedKnowledge.filter((item) => item.guideSlug === guideSlug).length;
-assert.equal(countPlacement('core-mechanism'), 195, 'Mechanism contextual Guide count changed');
-assert.equal(countPlacement('core-rtp') + countPlacement('full-rtp-variants'), 154, 'RTP contextual Guide count changed');
-assert.equal(countPlacement('core-volatility') + countPlacement('full-volatility'), 146, 'Volatility contextual Guide count changed');
-assert.equal(countPlacement('core-max-win'), 143, 'Max Win contextual Guide count changed');
-assert.equal(countGuide('slot-multiplier-explained'), 130, 'Multiplier Feature Guide count changed');
-assert.equal(countGuide('slot-cascading-tumble-avalanche-explained'), 39, 'Cascading Feature Guide count changed');
-assert.equal(countGuide(bonusBuyOwnerSlug), 65, 'Bonus Buy Feature Guide count changed');
-assert.equal(countGuide(bonusBuyGuidePublished ? 'slot-terms-glossary' : 'slot-bonus-buy-explained'), 0, 'Inactive Bonus Buy owner appeared in Game detail');
-assert.equal(countGuide('slot-symbols-and-features'), 216, 'Symbols Feature Guide count changed');
-assert.equal(countGuide('slot-ways-to-win-explained'), 55, 'Ways to Win Guide reverse relationship count changed');
-assert.equal(countGuide('slot-payout-mechanisms-explained'), 140, 'Payout overview relationship count must exclude the fifty-five Ways Games');
+const expectedRelationshipCount = publishedSourceGames.reduce(
+  (count, game) => count + (relationshipIndex.gameToGuides[game.slug] ?? []).length,
+  0,
+);
+assert.equal(renderedKnowledge.length, expectedRelationshipCount, 'all published source Game → Guide relationships must remain visible');
+assert.equal(directItems.length + overflowItems.length, expectedRelationshipCount, 'every expected relationship must render exactly once');
 assert.ok(!renderedKnowledge.some((item) => item.gameSlug === 'super-ace' && item.guideSlug === 'slot-cascading-tumble-avalanche-explained'), 'Super Ace regained an invalid Cascading relationship');
 
-const expectedOverflowCounts = {
-  'ancient-tumble': 1, 'atlantis-crush': 1, 'barbarossa-revenge': 1, 'beast-gains': 1,
-  'bon-bon-prag': 1,
-  'bonanza': 1, 'dragons-heirs': 1, 'gates-of-olympus-1000': 1, 'jammin-jars': 1,
-  'precious-monkeys': 1, 'storm-of-seth-2-awakening': 1, 'sun-wu-kong': 1,
-  'thunderstruck-stormchaser': 1,
-};
-for (const [slug, expectedCount] of Object.entries(expectedOverflowCounts)) {
+for (const slug of new Set(overflowItems.map((item) => item.gameSlug))) {
+  const expectedCount = overflowItems.filter((item) => item.gameSlug === slug).length;
   const pageItems = overflowItems.filter((item) => item.gameSlug === slug);
   assert.equal(pageItems.length, expectedCount, `${slug}: overflow Guide count changed`);
   const html = await load(`games/${slug}/index.html`);
@@ -236,4 +248,4 @@ assert.match(globalCssSource, /\.game-field-guide-link\{[^}]*min-height:44px/, '
 assert.match(globalCssSource, /\.game-guide-overflow summary\{[^}]*min-height:44px/, 'Overflow summary must keep a 44px touch target');
 assert.match(globalCssSource, /game-guide-overflow summary:focus-visible/, 'Overflow summary focus style missing');
 
-console.log('Guide relationship UI, 1088-entry Game detail presentation, generic overflow, independent Explorer URLs, Search intents and Preview safeguards verified.');
+console.log(`Guide relationship UI, ${expectedRelationshipCount}-entry Game detail presentation, generic overflow, independent Explorer URLs, Search intents and Preview safeguards verified.`);

@@ -39,7 +39,6 @@ assert.deepEqual(SIMILAR_PLAY_DISTINCTIVE_FEATURES, [
 assert.deepEqual(SIMILAR_PLAY_EXCLUDED_FEATURES, ['wild', 'scatter', 'other']);
 
 const presentations = new Map(published.map((game) => [game.slug, buildSimilarPlayPresentation(game.slug, records)]));
-const withResults = [...presentations.values()].filter((presentation) => presentation.items.length > 0);
 const mechanismCounts = new Map();
 for (const game of published) {
   if (game.winMechanism && game.winMechanism !== 'other') {
