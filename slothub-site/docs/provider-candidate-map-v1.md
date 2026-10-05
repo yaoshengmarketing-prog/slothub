@@ -4,7 +4,7 @@
 >
 > 建立日期：2026-09-03
 >
-> 本輪更新：2026-09-29（每週廠商挖掘處理 10 條展會／合作名錄與衍生線索；新增 1 家、確認 5 家重複、排除 4 條非傳統 Slot 開發品牌；候選總數為 233 家）
+> 本輪更新：2026-10-06（每週廠商挖掘處理 10 條展會／合作名錄與衍生線索；新增 2 家、確認 6 家重複、待查 1 條、排除 1 條設備商線索；候選總數為 235 家）
 >
 > 用途：作為外部遊戲資料收集的 Provider 骨架與去重對照。這不是完整產業名錄，不授權一次建立所有 Provider 公開頁，也不改變 Schema、taxonomy、產品功能或既有發布標準。
 
@@ -441,10 +441,10 @@
 - 第五批由 OPEN26 補充與既有待查接續確認：淨新增候選 **15 家**，均可確認 Slots 作品；兩份內容相同的 OpenRGS 補充檔只作一份來源計算。
 - 第六批由 ADD26 補充首輪確認 9 家，再由排程接續小輪從 EveryMatrix 官方內容名錄確認 Spearhead Studios：累計淨新增候選 **10 家**，均可確認 Slots 作品；RAW Group／RAW iGaming 重跑為同一品牌，不重複計數。
 - 身分收斂輪確認 Leander Games、Mobilots、GodziSlots、Slotopia 與 BNG／Booongo：淨新增候選 **5 家**，均有 Slots 作品；OMNIPLAY 與 Yellow Orbit Gaming 不納入。
-- 全表合計去重後、已確認遊戲品牌：**233 家**。表內保留 OMNIPLAY 的研究 ID 102 供查核歷史，但它不在這個數字內。
-- 全表合計明確提供 Slots：**219 家**。Evolution 與 SPRIBE 仍不計入 Slot 品牌家數；Evolution 旗下具 Slot 品牌身份的 NetEnt、Red Tiger、Big Time Gaming、Nolimit City 各自統計。BRINO Games、EA Gaming、OptimoPlay、Upgames、Winfinity（live）、Galaxy Gaming、On Air Entertainment、Real Dealer Studios、Switch Studios、Playjeux Studios、SidePlay、iMoon Games 與 AD LUNAM 等保留為非 Slot 或目前未確認有傳統 Slots 的遊戲品牌。
+- 全表合計去重後、已確認遊戲品牌：**235 家**。表內保留 OMNIPLAY 的研究 ID 102 供查核歷史，但它不在這個數字內。
+- 全表合計明確提供 Slots：**221 家**。Evolution 與 SPRIBE 仍不計入 Slot 品牌家數；Evolution 旗下具 Slot 品牌身份的 NetEnt、Red Tiger、Big Time Gaming、Nolimit City 各自統計。BRINO Games、EA Gaming、OptimoPlay、Upgames、Winfinity（live）、Galaxy Gaming、On Air Entertainment、Real Dealer Studios、Switch Studios、Playjeux Studios、SidePlay、iMoon Games 與 AD LUNAM 等保留為非 Slot 或目前未確認有傳統 Slots 的遊戲品牌。
 - Slot Hub 已收錄：**194 家**（全部有 Slots 或明確的 Slots hybrid 資料）。
-- 全表合計尚未收錄：**39 家**；其中尚未收錄、且目前可確認有 Slots 的品牌：**25 家**。
+- 全表合計尚未收錄：**41 家**；其中尚未收錄、且目前可確認有 Slots 的品牌：**27 家**。
 - 聚合、分發、展會與監管來源層只用於發現及交叉查找，不額外灌入品牌總數。除了既有 SOFTSWISS、Slotegrator、EveryMatrix、Hub88、Relax 聚合網路與 Games Global，本輪新增使用 SBC 官方展商內容、Bragg studio 網路、Light & Wonder partner roadmap 與 PAGCOR 核准資料。Relax 同時是開發品牌，所以只在品牌清單計數一次。
 - 只有 3 家在本輪取得可明確引用的完整目錄／作品集數量，另有 TaDa Gaming 的 60+ certified 子集合；其餘保持空白。這不代表沒有遊戲，只代表目前沒有取得可安全當作完整總數的公開值。
 
@@ -467,7 +467,7 @@
 
 上一版的 6 條未決線索與額外的 AD LUNAM、BNG／Booongo 邊界均已處理。現在沒有需要沿舊證據反覆重跑的身分待查項目：能確認的已進主表；OMNIPLAY 已歸類為服務／遊戲 offering 而非已確認開發品牌；Yellow Orbit Gaming 已封存為未證實名稱。
 
-每週挖掘已由「新的展會／合作名錄線索」完成一輪；本輪結果與下一游標見 2.14。每次仍最多處理 10 條；先和現有正規名稱、別名、官網及品牌關係去重，再回到第一方來源確認。OMNIPLAY 與 Yellow Orbit Gaming 只有在出現新的逐款署名或正式品牌證據時才重開，不再占用例行游標。
+每週挖掘已由「新的展會／合作名錄線索」持續接續；最新結果與下一游標見 2.16。每次仍最多處理 10 條；先和現有正規名稱、別名、官網及品牌關係去重，再回到第一方來源確認。OMNIPLAY 與 Yellow Orbit Gaming 只有在出現新的逐款署名或正式品牌證據時才重開，不再占用例行游標。
 
 ### 2.14 每週廠商挖掘紀錄（2026-09-22）
 
@@ -510,6 +510,27 @@
 本輪合計：**處理 10 條；新增 1、重複 5、待查 0、失敗 0，另排除 4 條非傳統 Slot 開發品牌**。新增的 WILDCAT Gaming 同時有 AMATIC 關係證據、獨立品牌入口與具名作品；沒有以展商名稱或搜尋摘要單獨升格。
 
 下一游標：**ICE Barcelona 2027 展商名錄 A 段由 APOLLO GAMES 接續；EveryMatrix 本段在 TaDa Gaming 完成，下一輪改接另一份官方 RGS／合作 studio 名錄**。下輪最多仍處理 10 條，先對 233 家候選做正規名稱、別名、官網與品牌關係去重。
+
+### 2.16 每週廠商挖掘紀錄（2026-10-06）
+
+本輪從 2.15 的雙游標接續，先處理 ICE Barcelona 2027 官方展商名錄 A 段，再輪換至 Relax Gaming 的官方 Silver Bullet／Studio 名錄。展商與聚合目錄仍只作發現入口；新增品牌必須另有第一方品牌或合作證據及具名 Slot 作品，設備商與身份不足者不計入候選。
+
+| 線索 | 發現來源 | 品牌／作品與關係證據 | 去重與處理結果 |
+| --- | --- | --- | --- |
+| APOLLO GAMES | [ICE 官方展商頁](https://www.icegaming.com/exhibitors/apollo-games) | 官方展商身份與既有 Apollo Games 官網、具名 Slot 作品紀錄一致 | **重複**；併回候選 ID 56，本站已收錄，不新增計數 |
+| Aristocrat Gaming | [ICE 官方展商名錄](https://www.icegaming.com/exhibitor-list?page=2) | [Aristocrat 官方遊戲目錄](https://www.aristocratgaming.com/us/games)持續列出自有遊戲產品 | **重複**；併回候選 ID 57，本站已收錄，不新增計數 |
+| Arrow's Edge | [ICE 官方展商頁](https://www.icegaming.com/exhibitors/arrows-edge) | 本輪只取得展商身份；未取得可直接核實品牌官網、母公司關係與具名自有 Slot 的第一方頁 | **待查**；保留線索，不以展商名錄或第三方資料站單獨升格 |
+| Art of Spin | [ICE 官方展商名錄](https://www.icegaming.com/exhibitor-list?page=2) | [Art of Spin 官方網站](https://artofspin.com/)與既有品牌、作品紀錄一致 | **重複**；既有品牌已收錄，不新增計數 |
+| Aruze／AG2 | [ICE 官方展商名錄](https://www.icegaming.com/exhibitor-list?page=2) | [Aruze Gaming Global 官方網站](https://aruzeglobal.com/)確認 AG2／Aruze 品牌與遊戲入口 | **重複**；併回候選 ID 58，不把 AG2 另計一家 |
+| Astrosystems | [ICE 官方展商頁](https://www.icegaming.com/exhibitors/astrosystems) | 官方說明產品為 GBA GV1 bank note validator，並列 Microcoin／GBA 硬體品牌，沒有自有 Slot 作品 | **排除**；驗鈔／硬體設備商不納入遊戲品牌候選 |
+| Curious Games | [Relax Gaming 官方合作公告](https://www.relax-gaming.com/news/2026/03/curious-games-makes-igaming-debut-with-relax-gaming-silver-bullet-partnership) | [Command & Collect – Battlefield 官方產品頁](https://www.relax-gaming.com/products/casino/commandandcollectbattlefield)標示 Curious Games／Silver Bullet 且明示 video slot；[品牌官網](https://curiousgames.io/)可回讀 | **新增候選 ID 234**；類型為 Slot 開發品牌，合作／發行關係為 Relax Gaming Silver Bullet；本站尚未收錄 |
+| Trigger／Trigger Studios | [Relax Gaming 官方 Studio 頁](https://www.relax-gaming.com/partners/studio/trigger) | 現行頁面以 Trigger 為標題、內文使用 Trigger Studios；[Sticky Rabbit 官方產品頁](https://www.relax-gaming.com/products/casino/stickyrabbit)補足具名 video slot 證據 | **新增候選 ID 235**；正規名稱記 Trigger、別名 Trigger Studios；本站尚未收錄，不把合作關係誤寫為母公司，也不在缺少第一方證據時合併 Trigger Button |
+| Print Studios | [Relax Gaming 官方 Casino 目錄](https://www.relax-gaming.com/products/casino) | 現行 Studio 篩選與既有 Print Studios 品牌、作品及 Silver Bullet 關係一致 | **重複**；既有品牌已收錄，只補現行目錄證據 |
+| Four Leaf Gaming | [Relax Gaming 官方 Casino 目錄](https://www.relax-gaming.com/products/casino) | 現行 Studio 篩選與既有 Four Leaf Gaming 品牌、作品及 Silver Bullet 關係一致 | **重複**；既有品牌已收錄，只補現行目錄證據 |
+
+本輪合計：**處理 10 條；新增 2、重複 6、待查 1、失敗 0，另排除 1 條設備商線索**。Curious Games 與 Trigger Studios 均有官方合作身份及具名 Slot 作品；Arrow's Edge 仍缺第一方品牌／作品閉環，沒有硬升格。
+
+下一游標：**ICE Barcelona 2027 展商名錄 A 段由 Aviatrix 接續；RGS／合作 studio 輪由 Relax Gaming Silver Bullet 現行名錄的未去重夥伴接續**。下輪最多仍處理 10 條，先對 235 家候選做正規名稱、別名、官網與品牌關係去重；Arrow's Edge 保留於待查池，不重掃已完成的六個 ICE 線索。
 
 ## 3. 可持續使用的官方目錄
 
@@ -568,7 +589,7 @@
 
 `FIRST_BATCH_CANDIDATE_BRAND_COUNT: 51`
 
-`FIRST_BATCH_UNCOLLECTED_SLOT_BRAND_COUNT: 27`
+`FIRST_BATCH_UNCOLLECTED_SLOT_BRAND_COUNT: 26`
 
 `EXHIBITION_SECOND_BATCH_BRAND_COUNT: 36`
 
@@ -584,17 +605,17 @@
 
 `IDENTITY_CLOSURE_NET_NEW_BRAND_COUNT: 5`
 
-`TOTAL_CANDIDATE_BRAND_COUNT: 233`
+`TOTAL_CANDIDATE_BRAND_COUNT: 235`
 
-`TOTAL_SLOT_CAPABLE_BRAND_COUNT: 219`
+`TOTAL_SLOT_CAPABLE_BRAND_COUNT: 221`
 
-`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 25`
+`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 27`
 
-`REMAINING_RESEARCH_LEAD_COUNT: 0`
+`REMAINING_RESEARCH_LEAD_COUNT: 1`
 
-`WEEKLY_DISCOVERY_CURSOR: ICE Barcelona 2027 展商名錄 A 段（APOLLO GAMES 起）；EveryMatrix 本段已於 TaDa Gaming 完成，下輪輪換另一份官方 RGS／合作 studio 名錄`
+`WEEKLY_DISCOVERY_CURSOR: ICE Barcelona 2027 展商名錄 A 段（Aviatrix 起）；Relax Gaming Silver Bullet 現行名錄由未去重合作 studio 接續`
 
-`NEXT_ALLOWED_ACTION: 依 2.15 從上述游標接續，最多處理 10 條；先和 233 家候選去重，且不得使用 PAGCOR、展商或聚合商清單單獨升格為開發品牌`
+`NEXT_ALLOWED_ACTION: 依 2.16 從上述游標接續，最多處理 10 條；先和 235 家候選去重，且不得使用 PAGCOR、展商或聚合商清單單獨升格為開發品牌`
 
 `SCHEMA_CHANGE_ALLOWED: NO`
 
