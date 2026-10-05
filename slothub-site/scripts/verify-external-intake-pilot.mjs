@@ -17,7 +17,7 @@ const readFrontmatter = async (url) => {
 
 const manifest = JSON.parse(await readFile(new URL('../data/external-intake/relax-gaming-catalog.json', import.meta.url), 'utf8'));
 assert.equal(manifest.provider, 'relax-gaming');
-assert.equal(manifest.catalogSeenAt, '2026-09-27');
+assert.equal(manifest.catalogSeenAt, '2026-10-04');
 assert.match(manifest.catalogSeenAtMeaning, /不代表任何單款內容已重新核對/);
 assert.equal(manifest.catalogEntryCount, 175);
 assert.equal(manifest.eligibleGameCount, 173);
