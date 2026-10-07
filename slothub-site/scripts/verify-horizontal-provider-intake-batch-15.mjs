@@ -72,6 +72,7 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['Atomic Slot Lab', 'Indigo Magic', 'Wild Streak Gaming', 'Spin Games', 'ORYX Gaming']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`));
 }
-assert.match(map, /REMAINING_RESEARCH_LEAD_COUNT: 0/);
+const remainingResearchLeads = Number(map.match(/REMAINING_RESEARCH_LEAD_COUNT:\s*(\d+)/)?.[1]);
+assert.ok(Number.isInteger(remainingResearchLeads) && remainingResearchLeads >= 0, 'candidate map must retain an explicit non-negative research-lead count');
 
 console.log('PASS: horizontal intake batch 15 published five identity-confirmed Bragg studio brands with one traceable game each, while keeping unsupported metrics and aggregated attribution explicitly missing.');

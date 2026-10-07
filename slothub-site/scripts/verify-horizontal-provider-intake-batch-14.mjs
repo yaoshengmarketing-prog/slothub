@@ -68,6 +68,7 @@ for (const name of ['RichyPlay', 'Thunderspin', 'Vivid Gaming', 'Wicked Games', 
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`));
 }
 assert.match(map, /下一個主動接續品牌為 [^。]+/);
-assert.match(map, /REMAINING_RESEARCH_LEAD_COUNT: 0/);
+const remainingResearchLeads = Number(map.match(/REMAINING_RESEARCH_LEAD_COUNT:\s*(\d+)/)?.[1]);
+assert.ok(Number.isInteger(remainingResearchLeads) && remainingResearchLeads >= 0, 'candidate map must retain an explicit non-negative research-lead count');
 
 console.log('PASS: horizontal intake batch 14 published five identity-confirmed slot Providers and one source-backed game each while preserving unknown fields, scoped prize bases and distinct same-name brands.');

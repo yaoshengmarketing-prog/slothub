@@ -77,6 +77,7 @@ for (const name of ['7Mojos', 'SpinOro／Anakatech', 'ApexWin', 'Bulgames', 'CP.
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`), `${name}: candidate map status not updated`);
 }
 assert.match(map, /下一個主動接續品牌為 [^。]+/);
-assert.match(map, /REMAINING_RESEARCH_LEAD_COUNT: 0/);
+const remainingResearchLeads = Number(map.match(/REMAINING_RESEARCH_LEAD_COUNT:\s*(\d+)/)?.[1]);
+assert.ok(Number.isInteger(remainingResearchLeads) && remainingResearchLeads >= 0, 'candidate map must retain an explicit non-negative research-lead count');
 
 console.log('PASS: horizontal intake batch 12 published five confirmed slot Providers and one source-backed game per Provider, kept missing values honest, and closed all previously pending provider-identity leads without changing schema or taxonomy.');

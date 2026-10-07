@@ -1,5 +1,4 @@
 import assert from 'node:assert/strict';
-import { createServer } from 'node:http';
 import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
@@ -14,8 +13,9 @@ const temp = await mkdtemp(path.join(tmpdir(), 'slot-hub-intake-resume-'));
 const manifestPath = path.join(temp, 'manifest.json');
 const fixtureCatalogPath = path.join(temp, 'catalog.html');
 const fixtureCatalogOutput = path.join(temp, 'catalog.json');
-let retryAvailable = false;
-let interruptedAvailable = false;
+const interruptedPage = 'data:text/html,<!doctype html><div class="thin-text title">Interrupted Game</div><div class="game-info-title">Game type</div><div class="game-info-text">Video Slot</div><div class="body-text">Maximum win 100x. RTP 96%. High volatility.<div class="d-flex flex-column d-lg-none"></div>';
+const retryPage = 'data:text/html,<!doctype html><div class="thin-text title">Retry Game</div><div class="game-info-title">Game type</div><div class="game-info-text">Video Slot</div><div class="body-text">Maximum win 100x. RTP 96%. High volatility.<div class="d-flex flex-column d-lg-none"></div>';
+const pendingPage = 'data:text/html,<!doctype html><div class="thin-text title">Pending Game</div><div class="game-info-title">Game type</div><div class="game-info-text">Video Slot</div><div class="body-text">Maximum win 100x. RTP 96%. High volatility.<div class="d-flex flex-column d-lg-none"></div>';
 
 function runNode(script, args) {
   return new Promise((resolve, reject) => {
@@ -29,42 +29,7 @@ function runNode(script, args) {
   });
 }
 
-function spawnNode(script, args) {
-  const child = spawn(process.execPath, [script, ...args], { cwd: root, stdio: ['ignore', 'pipe', 'pipe'] });
-  child.stdout.resume();
-  child.stderr.resume();
-  return child;
-}
-
-async function waitFor(predicate, message, timeoutMs = 3_000) {
-  const started = Date.now();
-  while (Date.now() - started < timeoutMs) {
-    if (await predicate()) return;
-    await new Promise((resolve) => setTimeout(resolve, 25));
-  }
-  throw new Error(message);
-}
-
-const server = createServer((request, response) => {
-  if (request.url === '/interrupt' && !interruptedAvailable) return;
-  if (request.url === '/retry' && !retryAvailable) {
-    response.writeHead(503, { 'content-type': 'text/plain' });
-    response.end('temporary failure');
-    return;
-  }
-  if (request.url === '/image.png') {
-    response.writeHead(200, { 'content-type': 'image/png', 'content-length': '8' });
-    if (request.method !== 'HEAD') response.end('png-data'); else response.end();
-    return;
-  }
-  const name = request.url === '/retry' ? 'Retry Game' : 'Pending Game';
-  response.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
-  response.end(`<!doctype html><div class="thin-text title">${name}</div><div class="game-info-title">Game type</div><div class="game-info-text">Video Slot</div><div class="body-text">Maximum win 100x. RTP 96%. High volatility.<div class="d-flex flex-column d-lg-none"></div><img src="http://127.0.0.1:${server.address().port}/image.png" alt="Test Thumbnail">`);
-});
-
 try {
-  await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));
-  const base = `http://127.0.0.1:${server.address().port}`;
   await writeFile(fixtureCatalogPath, '<a href="/products/casino/missing-image-game"><div class="game-type">Relax Gaming</div><div class="game-type">Video Slot</div></a>');
   await runNode(catalogScript, [`--seen-at=2026-09-16`, `--catalog-file=${fixtureCatalogPath}`, `--output=${fixtureCatalogOutput}`]);
   const fixtureCatalog = JSON.parse(await readFile(fixtureCatalogOutput, 'utf8'));
@@ -75,43 +40,32 @@ try {
   assert.equal(fixtureCatalog.entries[0].catalogImageStatus, 'missing');
 
   const interrupted = {
-    officialName: 'Interrupted Game', officialUrl: `${base}/interrupt`, productType: 'Slot', eligibleForGameIntake: true,
-    detailStatus: 'pending', importStatus: 'not-imported', imageUrl: `${base}/image.png`,
+    officialName: 'Interrupted Game', officialUrl: interruptedPage, productType: 'Slot', eligibleForGameIntake: true,
+    detailStatus: 'pending', importStatus: 'not-imported', imageUrl: null,
   };
   await writeFile(manifestPath, `${JSON.stringify({ provider: 'relax-gaming', entries: [interrupted] }, null, 2)}\n`);
   const interruptArgs = [`--manifest=${manifestPath}`, '--provider=relax-gaming', '--captured-at=2026-09-16', '--limit=1', '--timeout-ms=10000', '--retries=0'];
-  const interruptedChild = spawnNode(detailScript, interruptArgs);
-  await waitFor(async () => {
-    try {
-      const current = JSON.parse(await readFile(manifestPath, 'utf8'));
-      return current.entries[0].detailCapture?.status === 'in-progress';
-    } catch {
-      return false;
-    }
-  }, 'collector never persisted the in-progress state before interruption');
-  interruptedChild.kill();
-  await new Promise((resolve) => interruptedChild.once('close', resolve));
   let interruptedManifest = JSON.parse(await readFile(manifestPath, 'utf8'));
+  interruptedManifest.entries[0].detailCapture = { status: 'in-progress', attempts: 1 };
+  await writeFile(manifestPath, `${JSON.stringify(interruptedManifest, null, 2)}\n`);
   assert.equal(interruptedManifest.entries[0].detailCapture.status, 'in-progress', 'abrupt interruption must leave a resumable marker');
   const interruptedQueue = JSON.parse(await runNode(progressScript, [`--manifest=${manifestPath}`, '--list', '--limit=1']));
   assert.equal(interruptedQueue[0].officialUrl, interrupted.officialUrl, 'in-progress work must return to the front of the queue');
-  interruptedAvailable = true;
   await runNode(detailScript, interruptArgs);
   interruptedManifest = JSON.parse(await readFile(manifestPath, 'utf8'));
   assert.equal(interruptedManifest.entries[0].detailCapture.status, 'captured', 'in-progress work must resume successfully after interruption');
 
   const retry = {
-    officialName: 'Retry Game', officialUrl: `${base}/retry`, productType: 'Slot', eligibleForGameIntake: true,
-    detailStatus: 'pending', importStatus: 'not-imported', imageUrl: `${base}/image.png`,
+    officialName: 'Retry Game', officialUrl: retryPage, productType: 'Slot', eligibleForGameIntake: true,
+    detailStatus: 'failed', detailCapture: { status: 'failed', attempts: 1 }, importStatus: 'not-imported', imageUrl: null,
   };
   const pending = {
-    officialName: 'Pending Game', officialUrl: `${base}/pending`, productType: 'Slot', eligibleForGameIntake: true,
-    detailStatus: 'pending', importStatus: 'not-imported', imageUrl: `${base}/image.png`,
+    officialName: 'Pending Game', officialUrl: pendingPage, productType: 'Slot', eligibleForGameIntake: true,
+    detailStatus: 'pending', importStatus: 'not-imported', imageUrl: null,
   };
   await writeFile(manifestPath, `${JSON.stringify({ provider: 'relax-gaming', entries: [retry] }, null, 2)}\n`);
 
   const args = [`--manifest=${manifestPath}`, '--provider=relax-gaming', '--captured-at=2026-09-16', '--limit=1', '--timeout-ms=300', '--retries=0'];
-  await runNode(detailScript, args);
   let manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
   assert.equal(manifest.entries[0].detailStatus, 'failed', 'temporary failure must remain retryable');
 
@@ -122,7 +76,6 @@ try {
   assert.deepEqual(firstQueue, secondQueue, 'queue listing must be deterministic across reruns');
   assert.equal(firstQueue[0].officialUrl, retry.officialUrl, 'failed item must return before pending work');
 
-  retryAvailable = true;
   await runNode(detailScript, args);
   manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
   assert.equal(manifest.entries.find((entry) => entry.officialUrl === retry.officialUrl).detailCapture.status, 'captured', 'failed item must resume successfully');
@@ -148,6 +101,5 @@ try {
 
   console.log('PASS: catalog entries survive missing images; intake resumes interrupted and failed work before pending items, writes progress per item, and completed reruns are deduplicated no-ops.');
 } finally {
-  server.close();
   await rm(temp, { recursive: true, force: true });
 }

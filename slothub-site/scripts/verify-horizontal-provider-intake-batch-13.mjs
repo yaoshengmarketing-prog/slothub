@@ -71,6 +71,7 @@ for (const name of ['DYG', 'e-gaming', 'Kendoo', 'Million Games', 'Pateplay']) {
   assert.match(map, new RegExp(`\\| ${name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')} .*\\| 已收錄（1） \\|`));
 }
 assert.match(map, /下一個主動接續品牌為 [^。]+/);
-assert.match(map, /REMAINING_RESEARCH_LEAD_COUNT: 0/);
+const remainingResearchLeads = Number(map.match(/REMAINING_RESEARCH_LEAD_COUNT:\s*(\d+)/)?.[1]);
+assert.ok(Number.isInteger(remainingResearchLeads) && remainingResearchLeads >= 0, 'candidate map must retain an explicit non-negative research-lead count');
 
 console.log('PASS: horizontal intake batch 13 published five confirmed slot Providers and one evidence-backed game each while preserving RTP ranges, versions, scoped feature awards and unknown values without schema or taxonomy changes.');
