@@ -601,9 +601,9 @@
 
 `CURRENT_SCOPE: 廠商盤點與分類`
 
-`CURRENT_GAME_COUNT: 257`
+`CURRENT_GAME_COUNT: 282`
 
-`CURRENT_PROVIDER_COUNT: 199`
+`CURRENT_PROVIDER_COUNT: 214`
 
 `FIRST_BATCH_CANDIDATE_BRAND_COUNT: 51`
 
@@ -631,15 +631,17 @@
 
 `REMAINING_RESEARCH_LEAD_COUNT: 1`
 
-`WEEKLY_DISCOVERY_CURSOR: 第 40 批 Bellot 補位後，ICE Barcelona 2027 展商名錄由 BEON Gaming 接續；Sapphire Gaming／Jupiter’s Choice 保留官方逐款頁與圖片待補`
+`WEEKLY_DISCOVERY_CURSOR: 第 41 批 Nucleus Gaming 補位後，ICE Barcelona 2027 展商名錄 F 段由 Fin by Intercom 接續；Sapphire Gaming／Jupiter’s Choice 與 BEON Gaming／Marshmallow King 保留證據衝突或缺口待補`
 
-`NEXT_ALLOWED_ACTION: 先完成第 40 批五款驗證與發布；下一批自 BEON Gaming 接續並和 238 家候選去重，且不得使用 PAGCOR、展商或聚合商清單單獨升格為開發品牌`
+`NEXT_ALLOWED_ACTION: 完成第 41 批五款的 CI、Cloudflare 部署及線上回讀後，由 Fin by Intercom 接續並和既有候選去重；不得使用 PAGCOR、展商或聚合商清單單獨升格為開發品牌`
 
 `SCHEMA_CHANGE_ALLOWED: NO`
 
 `TAXONOMY_CHANGE_ALLOWED: NO`
 
 `FORMAL_DOMAIN_CHANGE_ALLOWED: NO`
+
+第 41 批已驗證待發布：Betora Games／Hot Cash Fiesta、Felix Gaming／Wolf Gone Wild Hold And Win、Orbital Gaming／Santa Reels、DSTPLAY／Dreamy Cafe、Nucleus Gaming／Jester’s Coin；納入建置後為 282 款 published Game、214 家 published Provider。BEON Gaming／Marshmallow King 因官方目錄與單款路由的類別及上市狀態衝突而跳過；Gambee／Blazin Fury 20 只有多款目錄、Pixmove／The Red Widow 缺可歸屬正確作品圖、DVision Gaming 的精確資產入口受限，均不計入新增。下一個 ICE 展商名錄接續位置為 F 段 Felix Gaming 之後的 Fin by Intercom；逐家去重並只憑可追溯的官方單款資料收錄。
 
 ## 8. 外部目錄接續順序（2026-09-16）
 

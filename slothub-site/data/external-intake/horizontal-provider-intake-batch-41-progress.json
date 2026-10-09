@@ -1,0 +1,94 @@
+{
+  "batch": 41,
+  "recordedAt": "2026-10-10",
+  "state": "verified-ready-to-commit",
+  "publishedCount": 5,
+  "capturedCount": 5,
+  "records": [
+    {
+      "provider": "Betora Games",
+      "providerSlug": "betora-games",
+      "game": "Hot Cash Fiesta",
+      "gameSlug": "hot-cash-fiesta",
+      "catalogUrl": "https://betora.games/",
+      "gameUrl": "https://betora.games/games/hot-cash-fiesta",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Felix Gaming",
+      "providerSlug": "felix-gaming",
+      "game": "Wolf Gone Wild Hold And Win",
+      "gameSlug": "wolf-gone-wild-hold-and-win",
+      "catalogUrl": "https://felixgaming.com/our-games/",
+      "gameUrl": "https://felixgaming.com/games/wolf-gone-wild-hold-and-win/",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Orbital Gaming",
+      "providerSlug": "orbital-gaming",
+      "game": "Santa Reels",
+      "gameSlug": "santa-reels",
+      "catalogUrl": "https://orbitalgaming.com/games",
+      "gameUrl": "https://demo.orbitalgaming.com/orbital.santareelsclassic/",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "DSTPLAY",
+      "providerSlug": "dstplay",
+      "game": "Dreamy Cafe",
+      "gameSlug": "dreamy-cafe",
+      "catalogUrl": "https://www.dstplay.com/games",
+      "gameUrl": "https://dstplay.cc/demo/DreamyCafe?language=en",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Nucleus Gaming",
+      "providerSlug": "nucleus-gaming",
+      "game": "Jester’s Coin",
+      "gameSlug": "jesters-coin",
+      "catalogUrl": "https://nucleusgaming.com/games",
+      "gameUrl": "https://nucleusgaming.com/games/jesters-coin",
+      "status": "captured-pending-batch-verify"
+    }
+  ],
+  "discoveryAttempts": [
+    {
+      "provider": "BEON Gaming",
+      "game": "Marshmallow King",
+      "status": "skipped-conflicting-official-product-status",
+      "checkedAt": "2026-10-10",
+      "catalogUrl": "https://beongaming.com/",
+      "gameUrl": "https://beongaming.com/games/marshmallow-king",
+      "reason": "The official home and games catalog identify Marshmallow King as a live Slot, but the official single-game route's published client data labels it COMING SOON and Casual. Preserve this identity/status conflict; do not publish until BEON resolves the current product type and availability. The single-game route returns HTTP 200 but serves a generic SPA shell."
+    },
+    {
+      "provider": "Gambee",
+      "game": "Blazin Fury 20",
+      "status": "skipped-no-exact-single-game-page",
+      "checkedAt": "2026-10-10",
+      "catalogUrl": "https://www.gambeegaming.com/products/slot/games-addons/",
+      "reason": "Official catalogue and image identify the title, but no exact single-game page or Demo destination was verified; retain as a candidate without treating the multi-game catalogue as a Demo."
+    },
+    {
+      "provider": "Pixmove Games",
+      "game": "The Red Widow",
+      "status": "skipped-image-and-source-conflict",
+      "checkedAt": "2026-10-10",
+      "catalogUrl": "https://pixmove.com/",
+      "gameUrl": "https://nextralgaming.com/en/games/the-red-widow",
+      "reason": "Authorized partner identifies the game but supplied a mismatched image and conflicting maximum-win figures across pages; wait for attributable official artwork and version-specific data."
+    },
+    {
+      "provider": "DVision Gaming",
+      "game": "Cursed Codex",
+      "status": "skipped-access-restricted",
+      "checkedAt": "2026-10-10",
+      "catalogUrl": "https://dvisiongaming.com/",
+      "reason": "Official demo, sheet and artwork host returned HTTP 401; retry only when its game-specific assets are publicly accessible."
+    }
+  ],
+  "continuation": {
+    "cursor": "ICE Barcelona 2027 official exhibitor list F segment after Felix Gaming; resume at Fin by Intercom. Betora Games, DSTPLAY, Orbital Gaming and Nucleus Gaming were found through separately verified official catalogues.",
+    "rule": "Deduplicate first; capture one confirmed Slot per new Provider only after an exact official product page, attributable image, and truthful exact demo state are verified."
+  }
+}

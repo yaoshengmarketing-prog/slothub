@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-10T00:00:00.000Z",
   "checkedAt": "2026-10-10",
-  "gameCount": 277,
-  "providerCount": 209,
-  "sourcePageCount": 612,
+  "gameCount": 282,
+  "providerCount": 214,
+  "sourcePageCount": 627,
   "counts": {
     "access-restricted": 2,
-    "available": 233,
-    "not-verified": 42
+    "available": 237,
+    "not-verified": 43
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -2074,6 +2074,25 @@
       "browserReviewedAt": "2026-09-19"
     },
     {
+      "slug": "dreamy-cafe",
+      "name": "Dreamy Cafe",
+      "provider": "dstplay",
+      "status": "available",
+      "url": "https://dstplay.cc/demo/DreamyCafe?language=en",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-10",
+      "evidence": "DSTPLAY official catalogue labels Dreamy Cafe and links to this dedicated demo. The destination returned HTTP 200 with HTML title DREAMY CAFE.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://dstplay.cc/demo/DreamyCafe?language=en",
+          "finalUrl": "https://dstplay.cc/demo/DreamyCafe?language=en",
+          "httpStatus": 200
+        }
+      ]
+    },
+    {
       "slug": "drunken-sailors",
       "name": "Drunken Sailors",
       "provider": "slotmill",
@@ -3114,6 +3133,25 @@
         {
           "requestedUrl": "https://www.spinoro.com/wp-content/uploads/honor_of_egypt_1024x360.png.webp",
           "finalUrl": "https://www.spinoro.com/wp-content/uploads/honor_of_egypt_1024x360.png.webp",
+          "httpStatus": 200
+        }
+      ]
+    },
+    {
+      "slug": "hot-cash-fiesta",
+      "name": "Hot Cash Fiesta",
+      "provider": "betora-games",
+      "status": "available",
+      "url": "https://betora.games/games/hot-cash-fiesta?demo=desktop",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-10",
+      "evidence": "Official exact game page identifies Hot Cash Fiesta and exposes a Play demo action. The desktop-demo variant identifies the same game and links to Betora's hotcashfiesta launcher.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://betora.games/games/hot-cash-fiesta?demo=desktop",
+          "finalUrl": "https://betora.games/games/hot-cash-fiesta?demo=desktop",
           "httpStatus": 200
         }
       ]
@@ -4634,6 +4672,25 @@
       "browserReviewedAt": "2026-09-19"
     },
     {
+      "slug": "santa-reels",
+      "name": "Santa Reels",
+      "provider": "orbital-gaming",
+      "status": "available",
+      "url": "https://demo.orbitalgaming.com/orbital.santareelsclassic/",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-10",
+      "evidence": "Orbital Gaming's Slots catalogue identifies Santa Reels and carries its dedicated demo URL. Destination returned HTTP 200 with HTML title Santa Reels.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://demo.orbitalgaming.com/orbital.santareelsclassic/",
+          "finalUrl": "https://demo.orbitalgaming.com/orbital.santareelsclassic/",
+          "httpStatus": 200
+        }
+      ]
+    },
+    {
       "slug": "shadow-of-dominion",
       "name": "Shadow of Dominion",
       "provider": "slotmill",
@@ -6107,6 +6164,22 @@
       "browserReviewedAt": "2026-09-19"
     },
     {
+      "slug": "wolf-gone-wild-hold-and-win",
+      "name": "Wolf Gone Wild Hold And Win",
+      "provider": "felix-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-10",
+      "evidence": "Official exact game page identifies the title and rules, but no verified game-specific playable destination was found; the official game page is retained as source only, not advertised as a demo.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://felixgaming.com/games/wolf-gone-wild-hold-and-win/",
+          "finalUrl": "https://felixgaming.com/games/wolf-gone-wild-hold-and-win/",
+          "httpStatus": 200
+        }
+      ]
+    },
+    {
       "slug": "win-in-rome",
       "name": "Win In Rome",
       "provider": "live-5",
@@ -6447,6 +6520,19 @@
       "checkedAt": "2026-10-10",
       "evidence": "Bellot's exact Tomb of Treasures page identifies the game and exposes its play control; the official directory names the same title under Bellot.",
       "inspectedUrls": [{ "requestedUrl": "https://bellot.cz/en/games/tomb-of-treasures", "finalUrl": "https://bellot.cz/en/games/tomb-of-treasures", "httpStatus": 200 }, { "requestedUrl": "https://bellot.cz/onlinehry/Tomb_of_Treasures_900x600.png", "finalUrl": "https://bellot.cz/onlinehry/Tomb_of_Treasures_900x600.png", "httpStatus": 200 }]
+    },
+    {
+      "slug": "jesters-coin",
+      "name": "Jester’s Coin",
+      "provider": "nucleus-gaming",
+      "status": "available",
+      "url": "https://demo-ng.nucleusgaming.com/cwguestlogin.do?bankId=167&CDN=AUTO&lang=en&gameId=30481",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-10",
+      "evidence": "Nucleus Gaming's exact Jester’s Coin page embeds this dedicated official Play Demo URL; the destination returned HTTP 200 with title Jester's Coin.",
+      "inspectedUrls": [{ "requestedUrl": "https://nucleusgaming.com/games/jesters-coin", "finalUrl": "https://nucleusgaming.com/games/jesters-coin", "httpStatus": 200 }, { "requestedUrl": "https://demo-ng.nucleusgaming.com/cwguestlogin.do?bankId=167&CDN=AUTO&lang=en&gameId=30481", "finalUrl": "https://demo-ng.nucleusgaming.com/cwguestlogin.do?bankId=167&CDN=AUTO&lang=en&gameId=30481", "httpStatus": 200 }]
     }
   ]
 }
