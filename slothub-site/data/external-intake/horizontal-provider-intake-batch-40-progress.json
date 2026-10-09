@@ -1,0 +1,43 @@
+{
+  "batch": 40,
+  "recordedAt": "2026-10-10",
+  "state": "verified-ready-to-commit",
+  "publishedCount": 5,
+  "capturedCount": 5,
+  "records": [
+    { "provider": "Curious Games", "providerSlug": "curious-games", "game": "Command & Collect – Battlefield", "gameSlug": "command-collect-battlefield", "catalogUrl": "https://www.relax-gaming.com/products/casino", "gameUrl": "https://www.relax-gaming.com/products/casino/commandandcollectbattlefield", "status": "ready-for-verify" },
+    { "provider": "Trigger", "providerSlug": "trigger", "game": "Sticky Rabbit", "gameSlug": "sticky-rabbit", "catalogUrl": "https://www.relax-gaming.com/partners/studio/trigger", "gameUrl": "https://www.relax-gaming.com/products/casino/stickyrabbit", "status": "ready-for-verify" },
+    { "provider": "Electric Elephant", "providerSlug": "electric-elephant", "game": "Star Pops", "gameSlug": "star-pops", "catalogUrl": "https://www.eegames.co.uk/", "gameUrl": "https://www.relax-gaming.com/products/casino/starpops", "status": "ready-for-verify" },
+    { "provider": "Max Win Gaming", "providerSlug": "max-win-gaming", "game": "Golden Gods", "gameSlug": "golden-gods", "catalogUrl": "https://www.maxwingaming.com/", "gameUrl": "https://www.relax-gaming.com/products/casino/goldengods", "status": "ready-for-verify" },
+    { "provider": "Bellot", "providerSlug": "bellot", "game": "Tomb of Treasures", "gameSlug": "tomb-of-treasures-bellot", "catalogUrl": "https://bellot.cz/en/games", "gameUrl": "https://bellot.cz/en/games/tomb-of-treasures", "status": "ready-for-verify" }
+  ],
+  "next": {
+    "provider": "Sapphire Gaming",
+    "game": "Jupiter’s Choice",
+    "state": "blocked-missing-current-official-game-page-and-traceable-artwork",
+    "sourceUrl": "https://www.relax-gaming.com/news/2019/04/relax-gaming-signs-silver-bullet-partner-sapphire-gaming",
+    "note": "The official partnership announcement names Sapphire Gaming and its inaugural title, but the former product URL is no longer a retrievable official game page and no attributable official artwork was found. Do not use a news image or third-party artwork. Continue the ICE Barcelona 2027 A-segment after Aviatrix if no new first-party evidence emerges."
+  },
+  "discoveryAttempts": [
+    {
+      "recordedAt": "2026-10-09",
+      "provider": "B1",
+      "sourceUrl": "https://www.icegaming.com/exhibitor-list",
+      "status": "skipped-non-developer",
+      "reason": "B1's official site identifies it as an iGaming technology company for AI content and sports-data feeds; it provides no self-attributable traditional slot catalogue or exact game artwork.",
+      "officialUrl": "https://b1.global/"
+    },
+    {
+      "recordedAt": "2026-10-09",
+      "provider": "Belatra Games",
+      "sourceUrl": "https://www.icegaming.com/exhibitor-list",
+      "status": "skipped-duplicate-provider",
+      "reason": "Belatra is an existing Provider record with Tortuga CodeX already published; a second title cannot count toward the horizontal first-game-per-provider batch.",
+      "officialUrl": "https://belatragames.com/en/games"
+    }
+  ],
+  "continuation": {
+    "cursor": "ICE Barcelona 2027 official exhibitor list after Bellot; BEON Gaming is the next uncollected studio to screen after this batch publishes",
+    "rule": "Continue only with an uncollected studio that has an official catalogue, an exact single-game page, traceable official artwork, and a truthful exact demo status."
+  }
+}

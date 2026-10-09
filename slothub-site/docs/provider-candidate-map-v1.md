@@ -532,6 +532,24 @@
 
 下一游標：**ICE Barcelona 2027 展商名錄 A 段由 Aviatrix 接續；RGS／合作 studio 輪由 Relax Gaming Silver Bullet 現行名錄的未去重夥伴接續**。下輪最多仍處理 10 條，先對 235 家候選做正規名稱、別名、官網與品牌關係去重；Arrow's Edge 保留於待查池，不重掃已完成的六個 ICE 線索。
 
+### 2.17 每日橫向收錄接續（2026-10-08）
+
+本輪先完成 failed → pending → captured queue 檢查：Relax catalog 仍為 0 failed、0 pending、147 captured（僅待既有補查），因此沒有重跑已完成項目。依 2.16 的 Silver Bullet 游標，重新對既有 Provider、別名與作品 slug 去重，並只使用 Relax Gaming 的官方 studio／產品頁、各 studio 的官方網站與官方縮圖；所有公開入口都維持 external，未使用 iframe。
+
+| Provider | 官方身份／作品證據 | 本輪結果 |
+| --- | --- | --- |
+| Curious Games | [Relax Silver Bullet 合作公告](https://www.relax-gaming.com/news/2026/03/curious-games-makes-igaming-debut-with-relax-gaming-silver-bullet-partnership)、[Command & Collect – Battlefield 官方產品頁](https://www.relax-gaming.com/products/casino/commandandcollectbattlefield)與[品牌官網](https://curiousgames.io/) | **已收錄（1）**：Command & Collect – Battlefield；5×3、40 固定賠線與官方縮圖均可核對 |
+| Trigger／Trigger Studios | [Relax 官方 Studio 頁](https://www.relax-gaming.com/partners/studio/trigger)與[Sticky Rabbit 官方產品頁](https://www.relax-gaming.com/products/casino/stickyrabbit) | **已收錄（1）**：Sticky Rabbit；官方逐款頁與縮圖可核對，未公開的數值維持缺值 |
+| Electric Elephant | [官方網站](https://www.eegames.co.uk/)與[Star Pops 官方產品頁](https://www.relax-gaming.com/products/casino/starpops) | **已收錄（1）**：Star Pops；Cluster Pays、功能與官方縮圖可核對 |
+| Max Win Gaming | [官方遊戲目錄](https://www.maxwingaming.com/)與[Golden Gods 官方產品頁](https://www.relax-gaming.com/products/casino/goldengods) | **已收錄（1）**：Golden Gods；3,125 Ways／Collector、功能與官方縮圖可核對；60,000x 僅保留官方原文標籤 |
+| Storm Gaming | [Relax 官方 Ticket to Fortune 頁](https://www.relax-gaming.com/products/casino/tickettofortune) | **重複**；即 Storm Gaming Technology／Storm Games，本站已收錄 Tickets To Fortune，不另建 Provider 或以近似名重複計數 |
+
+本輪已保存 4 款可發布的新遊戲，但不以近似品牌重複資料湊足五款。下一個可補位線索是 Silver Bullet 的歷史 Sapphire Gaming／Jupiter’s Choice；Relax 的合作公告可回讀，但目前沒有現行可回讀的官方逐款頁或可直接歸屬的官方作品圖，先記為待補，不建立 Game record。若無新的一手逐款資料與安全官方圖片，繼續 ICE Barcelona 2027 A 段的下一個未去重展商。
+
+### 2.18 每日橫向收錄接續（2026-10-10）
+
+從 ICE Barcelona 2027 官方名錄的 Belatra 之後接續。B1 的第一方網站僅確認 AI 內容與體育數據服務，不升格為 Slot 開發商；Belatra 已有本站 Provider 與 Tortuga CodeX，去重後不計入第 40 批。[Bellot 官方線上遊戲目錄](https://bellot.cz/en/games)與[官方 Tomb of Treasures 單款頁](https://bellot.cz/en/games/tomb-of-treasures)確認其自製 Slot、5×3、25 線、認證 RTP 94.70%、原廠波動度 4/5、Wild／Scatter／Free Spins；[官方圖片](https://bellot.cz/onlinehry/Tomb_of_Treasures_900x600.png)可回讀。單款頁有 Play 控制項，因此公開入口記為官方單款頁、站外開啟。Bellot 作為第 40 批第五家新 Provider 保存；下一游標為 Bellot 後的 BEON Gaming，待本批驗證及發布完成後再接續。
+
 ## 3. 可持續使用的官方目錄
 
 | Provider | 目錄／資料入口 | 可承接內容 | 已知限制 |
@@ -605,17 +623,17 @@
 
 `IDENTITY_CLOSURE_NET_NEW_BRAND_COUNT: 5`
 
-`TOTAL_CANDIDATE_BRAND_COUNT: 235`
+`TOTAL_CANDIDATE_BRAND_COUNT: 238`
 
-`TOTAL_SLOT_CAPABLE_BRAND_COUNT: 221`
+`TOTAL_SLOT_CAPABLE_BRAND_COUNT: 224`
 
-`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 27`
+`TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 25`
 
 `REMAINING_RESEARCH_LEAD_COUNT: 1`
 
-`WEEKLY_DISCOVERY_CURSOR: ICE Barcelona 2027 展商名錄 A 段（Aviatrix 起）；Relax Gaming Silver Bullet 現行名錄由未去重合作 studio 接續`
+`WEEKLY_DISCOVERY_CURSOR: 第 40 批 Bellot 補位後，ICE Barcelona 2027 展商名錄由 BEON Gaming 接續；Sapphire Gaming／Jupiter’s Choice 保留官方逐款頁與圖片待補`
 
-`NEXT_ALLOWED_ACTION: 依 2.16 從上述游標接續，最多處理 10 條；先和 235 家候選去重，且不得使用 PAGCOR、展商或聚合商清單單獨升格為開發品牌`
+`NEXT_ALLOWED_ACTION: 先完成第 40 批五款驗證與發布；下一批自 BEON Gaming 接續並和 238 家候選去重，且不得使用 PAGCOR、展商或聚合商清單單獨升格為開發品牌`
 
 `SCHEMA_CHANGE_ALLOWED: NO`
 
@@ -625,7 +643,7 @@
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
-Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至三十批完成時的歷史基線為 222 款 published Game、164 家 published Provider；第三十一批完成 AGS／Imperial Fortunes、NextSpin／Big CaiShen、NOVOMATIC Gaming／Book of Ra Magic Wheel、Octoplay／2 Lucky Fellas: Hold & Win 與 Onlyplay／Tiger Jackpots；第三十二批完成 Platipus Gaming／Royal Lotus、Playnetic／Ghostlight Manor、REEVO／Blue Beard's Buried Treasure、SmartSoft Gaming／Power of Tiger 與 Storm Gaming Technology／Tickets To Fortune；第三十三批完成 Tom Horn Gaming／Book of Spells、ReelPlay／10,000 Bass Lightning Blitz、SYNOT Games／Jewels Fortune、Bigpot Gaming／Mega Sevens 2 與 GameBeat／Max Miner；第三十四批完成 Prag by PopOK／Bon Bon PRAG、Spearhead Studios／Wild Reels、Barbara Bang／Chinese Gold Hold and Spin、EGT Digital／Book of Realm 與 NetGame Entertainment／Ultimate Crown 40；第三十五批完成 Zitro／King Fu Frog、Gaming Realms／Slingo Sweet Bonanza、Nailed It! Games／Big Buzz、Aurum Signature Studios／Gold Factory Jackpots Maple Moolah 與 Deep Stake Games／Texas Joker'Em；第三十六批完成 Fastspin／Frosty and Flamy、KA Gaming／Bonus Mania、Realistic Games／Destination Atlantis、AceWin Gaming／Pirate Riches 與 AdvantPlay／Dragon Chi's Quest 2；第三十七批完成 Funky Games／Happy Hour Fruit Slot、KISS Gaming／Jungle Treasure、Aspect Gaming／Doggone Lucky、Ricochet／Stairway To Cash 與 Clutch Gaming／Deadeye；第三十八批完成 Boldplay／Gold Digger、Red Papaya／Kong’s Jungle Tower、Jelly Entertainment／Midas Riches、Art of Spin／Joker’s Fire Show 與 WILDCAT Gaming／Puffer Island，網站目前為 272 款 published Game、204 家 published Provider。Almond Gaming、Hotdog Gaming、Win Fast、Ace Roll 與 Zerplaay Games 等既有單款圖、線上產品型態或可持續回讀缺口維持待補；沒有新證據時不重做。未取得的 RTP、波動度與最高倍數維持缺值，不採用一般評論站補值。後續沿用本文件，不另建平行管理系統。
+Relax Gaming 已完成 175 筆目錄盤點、173 款 eligible 產品頁與圖片擷取；AgroCulture、Ancient Tumble、2026-09-17 的 Atlantis Crush、Attila The Hun、Aura God、Aussies vs Emus、Bacon Bankroll，以及 2026-09-18 的 Banana Town、Banana Town Dream Drop、Beast Gains、Beast Mode、Beellionaires Dream Drop 已由同一排程流程完成核對與匯入。這些 Relax 深度隊列收錄不改變橫向隊列的優先規則。橫向收錄第一至三十批完成時的歷史基線為 222 款 published Game、164 家 published Provider；第三十一批完成 AGS／Imperial Fortunes、NextSpin／Big CaiShen、NOVOMATIC Gaming／Book of Ra Magic Wheel、Octoplay／2 Lucky Fellas: Hold & Win 與 Onlyplay／Tiger Jackpots；第三十二批完成 Platipus Gaming／Royal Lotus、Playnetic／Ghostlight Manor、REEVO／Blue Beard's Buried Treasure、SmartSoft Gaming／Power of Tiger 與 Storm Gaming Technology／Tickets To Fortune；第三十三批完成 Tom Horn Gaming／Book of Spells、ReelPlay／10,000 Bass Lightning Blitz、SYNOT Games／Jewels Fortune、Bigpot Gaming／Mega Sevens 2 與 GameBeat／Max Miner；第三十四批完成 Prag by PopOK／Bon Bon PRAG、Spearhead Studios／Wild Reels、Barbara Bang／Chinese Gold Hold and Spin、EGT Digital／Book of Realm 與 NetGame Entertainment／Ultimate Crown 40；第三十五批完成 Zitro／King Fu Frog、Gaming Realms／Slingo Sweet Bonanza、Nailed It! Games／Big Buzz、Aurum Signature Studios／Gold Factory Jackpots Maple Moolah 與 Deep Stake Games／Texas Joker'Em；第三十六批完成 Fastspin／Frosty and Flamy、KA Gaming／Bonus Mania、Realistic Games／Destination Atlantis、AceWin Gaming／Pirate Riches 與 AdvantPlay／Dragon Chi's Quest 2；第三十七批完成 Funky Games／Happy Hour Fruit Slot、KISS Gaming／Jungle Treasure、Aspect Gaming／Doggone Lucky、Ricochet／Stairway To Cash 與 Clutch Gaming／Deadeye；第三十八批完成 Boldplay／Gold Digger、Red Papaya／Kong’s Jungle Tower、Jelly Entertainment／Midas Riches、Art of Spin／Joker’s Fire Show 與 WILDCAT Gaming／Puffer Island；舊的第 39 批 manifest 已被權威游標取代，因此第 40 批目前保存 Curious Games／Command & Collect – Battlefield、Trigger／Sticky Rabbit、Electric Elephant／Star Pops 與 Max Win Gaming／Golden Gods，以及 Bellot／Tomb of Treasures 五筆已通過本機驗證的成果，本批待發布資料納入建置時為 277 款 published Game、209 家 published Provider。Almond Gaming、Hotdog Gaming、Win Fast、Ace Roll 與 Zerplaay Games 等既有單款圖、線上產品型態或可持續回讀缺口維持待補；沒有新證據時不重做。未取得的 RTP、波動度與最高倍數維持缺值，不採用一般評論站補值。後續沿用本文件，不另建平行管理系統。
 
 第七批接續紀錄：SPRIBE 目前的確認類型為 Crash／Table／Casual，因此未納入老虎機橫向收錄；Playtech 因缺少可辨識的作品圖持續保留待補；AGS、Amigo Gaming 的既有待補原因維持。該批完成時的下一個主動接續品牌為 Wizard Games。Wizard Games 已於第八批完成；第八批完成時的下一個主動接續品牌維持 Aristocrat Gaming，現行游標以本節末尾的接續原則為準。
 

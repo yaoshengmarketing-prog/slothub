@@ -84,7 +84,7 @@ for (const name of ['Fastspin', 'KA Gaming', 'Realistic Games', 'AceWin Gaming',
 for (const name of ['Almond Gaming', 'Hotdog Gaming', 'Win Fast', 'Ace Roll', 'Zerplaay Games']) {
   assert.match(map, new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*待補`));
 }
-assert.match(map, /網站目前為 272 款 published Game、204 家 published Provider/);
+assert.match(map, /本批待發布資料納入建置時為 277 款 published Game、209 家 published Provider/);
 assert.match(map, /下一個橫向接續位置為主表第 213 項 Dragoon Soft/);
 
 console.log('PASS: horizontal intake batch 36 added five traceable provider/game pairs, resolved four recorded evidence gaps, preserved unsupported values as missing, and advanced the cursor.');

@@ -38,14 +38,14 @@ const [providerEntries, gameEntries] = await Promise.all([
 ]);
 const providers = providerEntries.filter((entry) => entry.data.status === 'published');
 const games = gameEntries.filter((entry) => entry.data.status === 'published');
-assert.equal(providers.length, 204, 'expected 204 published Providers');
-assert.equal(games.length, 272, 'expected 272 published Games');
-assert.equal(new Set(games.map((game) => game.id)).size, 272, 'duplicate published Game slug');
+assert.equal(providers.length, 209, 'expected 209 published Providers');
+assert.equal(games.length, 277, 'expected 277 published Games');
+assert.equal(new Set(games.map((game) => game.id)).size, 277, 'duplicate published Game slug');
 assert.ok(games.every((game) => providers.some((provider) => provider.id === game.data.provider)), 'orphan canonical Provider');
 
 const index = buildProviderHubIndex(providerEntries, gameEntries, taxonomy);
-assert.equal(index.length, 204);
-assert.equal(index.reduce((total, provider) => total + provider.sampleSize, 0), 272, 'Provider N must sum to 272');
+assert.equal(index.length, 209);
+assert.equal(index.reduce((total, provider) => total + provider.sampleSize, 0), 277, 'Provider N must sum to 277');
 assert.deepEqual(index.map((item) => item.provider.name), [...index.map((item) => item.provider.name)].sort((a, b) => a.localeCompare(b, 'zh-Hant-TW')), 'Provider index must use neutral name ordering');
 
 const expectedCounts = Object.fromEntries(providers.map((provider) => [
@@ -162,7 +162,7 @@ for (const forbidden of ['平均 RTP', '平均 Max Win', '平均波動度', '勝
   assert.ok(!providerTemplate.includes(forbidden), `forbidden Provider ranking output: ${forbidden}`);
 }
 
-assert.equal((indexHtml.match(/href="\/providers\/[a-z0-9-]+\/"/g) ?? []).length, 204, 'Provider index must contain 204 detail links');
+assert.equal((indexHtml.match(/href="\/providers\/[a-z0-9-]+\/"/g) ?? []).length, 209, 'Provider index must contain 209 detail links');
 assert.equal((indexHtml.match(/<a(?![^>]*href=)/g) ?? []).length, 0, 'Provider index has fake anchors');
 
 const providerCss = await readFile(fileURLToPath(new URL('../src/styles/global.css', import.meta.url)), 'utf8');
@@ -170,4 +170,4 @@ assert.match(providerCss, /\.provider-explorer-cta\{[^}]*text-align:center/, 'Pr
 assert.match(providerCss, /\.provider-detail-v2 a:focus-visible\{[^}]*outline:/, 'Provider focus-visible treatment missing');
 assert.ok(!providerTemplate.includes('client:'), 'Provider detail core content must not require client hydration');
 
-console.log('PASS: Provider Hub v2 projected 204 Providers and 272 Games with honest N states, fixed taxonomy order, exact Explorer URLs, field-presence coverage and no ranking output.');
+console.log('PASS: Provider Hub v2 projected 209 Providers and 277 Games with honest N states, fixed taxonomy order, exact Explorer URLs, field-presence coverage and no ranking output.');

@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-26T00:00:00.000Z",
-  "checkedAt": "2026-09-26",
-  "gameCount": 272,
-  "providerCount": 204,
-  "sourcePageCount": 597,
+  "generatedAt": "2026-10-10T00:00:00.000Z",
+  "checkedAt": "2026-10-10",
+  "gameCount": 277,
+  "providerCount": 209,
+  "sourcePageCount": 612,
   "counts": {
     "access-restricted": 2,
-    "available": 228,
+    "available": 233,
     "not-verified": 42
   },
   "rules": {
@@ -6382,6 +6382,71 @@
       "checkedAt": "2026-09-30",
       "evidence": "WILDCAT Gaming's official catalog exposes this exact Puffer Island freeplay client.",
       "inspectedUrls": [{ "requestedUrl": "https://wildcat-gaming.com/", "finalUrl": "https://wildcat-gaming.com/", "httpStatus": 200 }, { "requestedUrl": "https://staging-rent.amatic.com:10443/gmsl/wcg/wildcatgaming/pufferisland.html?hash=freeplay&curr=&config=1351", "finalUrl": "https://staging-rent.amatic.com:10443/gmsl/wcg/wildcatgaming/pufferisland.html?hash=freeplay&curr=&config=1351", "httpStatus": 200 }]
+    },
+    {
+      "slug": "command-collect-battlefield",
+      "name": "Command & Collect – Battlefield",
+      "provider": "curious-games",
+      "status": "available",
+      "url": "https://www.relax-gaming.com/products/casino/commandandcollectbattlefield",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-08",
+      "evidence": "Relax Gaming's exact official product page identifies Command & Collect – Battlefield as a Curious Games Silver Bullet Video Slot and exposes its Try Game action.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.relax-gaming.com/products/casino/commandandcollectbattlefield", "finalUrl": "https://www.relax-gaming.com/products/casino/commandandcollectbattlefield", "httpStatus": 200 }]
+    },
+    {
+      "slug": "sticky-rabbit",
+      "name": "Sticky Rabbit",
+      "provider": "trigger",
+      "status": "available",
+      "url": "https://www.relax-gaming.com/products/casino/stickyrabbit",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-08",
+      "evidence": "Relax Gaming's exact official product page identifies Sticky Rabbit as a Trigger Silver Bullet Video Slot and exposes its Try Game action.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.relax-gaming.com/products/casino/stickyrabbit", "finalUrl": "https://www.relax-gaming.com/products/casino/stickyrabbit", "httpStatus": 200 }]
+    },
+    {
+      "slug": "star-pops",
+      "name": "Star Pops",
+      "provider": "electric-elephant",
+      "status": "available",
+      "url": "https://www.relax-gaming.com/products/casino/starpops",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-08",
+      "evidence": "Relax Gaming's exact official product page identifies Star Pops as an Electric Elephant Silver Bullet Video Slot and exposes its Try Game action.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.relax-gaming.com/products/casino/starpops", "finalUrl": "https://www.relax-gaming.com/products/casino/starpops", "httpStatus": 200 }]
+    },
+    {
+      "slug": "golden-gods",
+      "name": "Golden Gods",
+      "provider": "max-win-gaming",
+      "status": "available",
+      "url": "https://www.relax-gaming.com/products/casino/goldengods",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-08",
+      "evidence": "Relax Gaming's exact official product page identifies Golden Gods as a Max Win Gaming Silver Bullet Video Slot and exposes its Try Game action.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.relax-gaming.com/products/casino/goldengods", "finalUrl": "https://www.relax-gaming.com/products/casino/goldengods", "httpStatus": 200 }]
+    },
+    {
+      "slug": "tomb-of-treasures-bellot",
+      "name": "Tomb of Treasures",
+      "provider": "bellot",
+      "status": "available",
+      "url": "https://bellot.cz/en/games/tomb-of-treasures",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-10",
+      "evidence": "Bellot's exact Tomb of Treasures page identifies the game and exposes its play control; the official directory names the same title under Bellot.",
+      "inspectedUrls": [{ "requestedUrl": "https://bellot.cz/en/games/tomb-of-treasures", "finalUrl": "https://bellot.cz/en/games/tomb-of-treasures", "httpStatus": 200 }, { "requestedUrl": "https://bellot.cz/onlinehry/Tomb_of_Treasures_900x600.png", "finalUrl": "https://bellot.cz/onlinehry/Tomb_of_Treasures_900x600.png", "httpStatus": 200 }]
     }
   ]
 }

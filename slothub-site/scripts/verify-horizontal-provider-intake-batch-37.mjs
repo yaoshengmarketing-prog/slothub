@@ -78,7 +78,7 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['Funky Games', 'KISS Gaming', 'Aspect Gaming', 'Ricochet', 'Clutch Gaming']) {
   assert.match(map, new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*已收錄（1）`));
 }
-assert.match(map, /網站目前為 272 款 published Game、204 家 published Provider/);
+assert.match(map, /本批待發布資料納入建置時為 277 款 published Game、209 家 published Provider/);
 assert.match(map, /下一個橫向接續位置為主表第 213 項 Dragoon Soft/);
 
 console.log('PASS: horizontal intake batch 37 added five traceable provider/game pairs, preserved unsupported values as missing, and advanced the cursor.');
