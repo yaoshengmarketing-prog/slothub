@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-10T00:00:00.000Z",
   "checkedAt": "2026-10-10",
-  "gameCount": 282,
-  "providerCount": 214,
-  "sourcePageCount": 627,
+  "gameCount": 287,
+  "providerCount": 219,
+  "sourcePageCount": 640,
   "counts": {
-    "access-restricted": 2,
-    "available": 237,
-    "not-verified": 43
+    "access-restricted": 3,
+    "available": 240,
+    "not-verified": 44
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -6533,6 +6533,65 @@
       "checkedAt": "2026-10-10",
       "evidence": "Nucleus Gaming's exact Jester’s Coin page embeds this dedicated official Play Demo URL; the destination returned HTTP 200 with title Jester's Coin.",
       "inspectedUrls": [{ "requestedUrl": "https://nucleusgaming.com/games/jesters-coin", "finalUrl": "https://nucleusgaming.com/games/jesters-coin", "httpStatus": 200 }, { "requestedUrl": "https://demo-ng.nucleusgaming.com/cwguestlogin.do?bankId=167&CDN=AUTO&lang=en&gameId=30481", "finalUrl": "https://demo-ng.nucleusgaming.com/cwguestlogin.do?bankId=167&CDN=AUTO&lang=en&gameId=30481", "httpStatus": 200 }]
+    },
+    {
+      "slug": "crown-power-up",
+      "name": "Crown Power-up",
+      "provider": "game2slot",
+      "status": "available",
+      "url": "https://www.game2slot.com/game/crown-power-up/demo",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-10",
+      "evidence": "Game2Slot's exact Crown Power-up product page links to its dedicated Play Now route; the route returned HTTP 200 and embedded game identity Crown Power-up with gameId 41.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.game2slot.com/game/crown-power-up", "finalUrl": "https://www.game2slot.com/game/crown-power-up", "httpStatus": 200 }, { "requestedUrl": "https://www.game2slot.com/game/crown-power-up/demo", "finalUrl": "https://www.game2slot.com/game/crown-power-up/demo", "httpStatus": 200 }]
+    },
+    {
+      "slug": "apex-dregs",
+      "name": "Apex Dregs",
+      "provider": "exco-game-studio",
+      "status": "available",
+      "url": "https://cdn-staging.exco.systems/excommunicado/apex-dregs/index.html?game=apex-dregs&se%5B%E2%80%A6%5Dstems&rgs=exco&wallet=demo&operator=demo&channel=desktop",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-10",
+      "evidence": "EXCO's official Apex Dregs card links directly to this title-specific demo; requested destination returned HTTP 200 with a 2,473-byte client shell. It is a game-specific launcher, not a generic lobby.",
+      "inspectedUrls": [{ "requestedUrl": "https://cdn-staging.exco.systems/excommunicado/apex-dregs/index.html?game=apex-dregs&se%5B%E2%80%A6%5Dstems&rgs=exco&wallet=demo&operator=demo&channel=desktop", "finalUrl": "https://cdn-staging.exco.systems/excommunicado/apex-dregs/index.html?game=apex-dregs&se%5B%E2%80%A6%5Dstems&rgs=exco&wallet=demo&operator=demo&channel=desktop", "httpStatus": 200 }]
+    },
+    {
+      "slug": "tree-of-fortune-knockout",
+      "name": "Tree of Fortune",
+      "provider": "knockout-labs",
+      "status": "access-restricted",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-10",
+      "evidence": "Official exact Tree of Fortune page identifies Knockout Labs and links to a game-specific Stake route, but that route returned HTTP 403 from this environment. No public playable destination is verified; do not surface the blocked URL as a demo.",
+      "inspectedUrls": [{ "requestedUrl": "https://knockoutlabs.io/games/tree-of-fortune", "finalUrl": "https://knockoutlabs.io/games/tree-of-fortune", "httpStatus": 200 }, { "requestedUrl": "https://stake.com/casino/games/knockoutlabs-tree-of-fortune", "finalUrl": "https://stake.com/casino/games/knockoutlabs-tree-of-fortune", "httpStatus": 403 }]
+    },
+    {
+      "slug": "chilli-inferno",
+      "name": "Chilli Inferno",
+      "provider": "oros-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-10",
+      "evidence": "OROS Gaming's exact Chilli Inferno product page was opened and supplies game identity and gameplay, but contains no verified single-game playable destination; no public demo URL is asserted.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.orosgaming.com/chilli-inferno", "finalUrl": "https://www.orosgaming.com/chilli-inferno", "httpStatus": 200 }]
+    },
+    {
+      "slug": "hades-3-pots",
+      "name": "Hades 3 Pots",
+      "provider": "clawbuster",
+      "status": "available",
+      "url": "https://casino-api-stage.clawbuster.com/v1/dev/testurl?game=HADES_POTS",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-10",
+      "evidence": "Clawbuster's official Hades 3 Pots exact game page links to the HADES_POTS dedicated demo endpoint; the destination returned HTTP 200 with a client game shell. The stable game-specific redirect URL is kept rather than its transient secret-bearing destination.",
+      "inspectedUrls": [{ "requestedUrl": "https://clawbuster.com/games/hades-3-pots.html", "finalUrl": "https://clawbuster.com/games/hades-3-pots.html", "httpStatus": 200 }, { "requestedUrl": "https://casino-api-stage.clawbuster.com/v1/dev/testurl?game=HADES_POTS", "finalUrl": "https://casino-api-stage.clawbuster.com/v1/dev/testurl?game=HADES_POTS", "httpStatus": 200 }]
     }
   ]
 }

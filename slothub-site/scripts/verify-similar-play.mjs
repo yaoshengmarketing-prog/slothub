@@ -31,7 +31,7 @@ const records = await Promise.all(files.map(async (file) => {
 }));
 
 const published = records.filter((game) => game.status === 'published');
-assert.equal(published.length, 282, 'expected 282 published Games');
+assert.equal(published.length, 287, 'expected 287 published Games');
 assert.deepEqual(SIMILAR_PLAY_DISTINCTIVE_FEATURES, [
   'cascading', 'bonus-buy', 'hold-and-spin', 'respins', 'cash-collection',
   'giant-symbols', 'sticky-symbols', 'symbol-splitting', 'jackpot',
@@ -130,4 +130,4 @@ const styles = await readFile(fileURLToPath(new URL('../src/styles/global.css', 
 assert.match(styles, /\.similar-play-explore\{[^}]*min-height:44px/, 'Explore CTA must preserve a 44px touch target');
 assert.match(styles, /\.similar-play-grid>li>a:focus-visible[^}]*outline:/, 'similar-play links need a visible keyboard focus style');
 
-console.log('PASS: Similar play computed for 282 Games with stable sorting, exact reasons and mechanism URLs verified.');
+console.log('PASS: Similar play computed for 287 Games with stable sorting, exact reasons and mechanism URLs verified.');

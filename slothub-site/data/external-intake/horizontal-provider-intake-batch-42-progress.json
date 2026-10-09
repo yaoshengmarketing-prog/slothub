@@ -1,0 +1,73 @@
+{
+  "batch": 42,
+  "recordedAt": "2026-10-10",
+  "state": "verified-ready-to-commit",
+  "publishedCount": 5,
+  "capturedCount": 5,
+  "records": [
+    {
+      "provider": "Game2Slot",
+      "providerSlug": "game2slot",
+      "game": "Crown Power-up",
+      "gameSlug": "crown-power-up",
+      "catalogUrl": "https://www.game2slot.com/",
+      "gameUrl": "https://www.game2slot.com/game/crown-power-up",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "EXCO Game Studio",
+      "providerSlug": "exco-game-studio",
+      "game": "Apex Dregs",
+      "gameSlug": "apex-dregs",
+      "catalogUrl": "https://exco.gg/",
+      "gameUrl": "https://gamma.app/docs/APEX-DREGS-Game-Sheet-toeqteb7p8nuaep",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Knockout Labs",
+      "providerSlug": "knockout-labs",
+      "game": "Tree of Fortune",
+      "gameSlug": "tree-of-fortune-knockout",
+      "catalogUrl": "https://knockoutlabs.io/games",
+      "gameUrl": "https://knockoutlabs.io/games/tree-of-fortune",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "OROS Gaming",
+      "providerSlug": "oros-gaming",
+      "game": "Chilli Inferno",
+      "gameSlug": "chilli-inferno",
+      "catalogUrl": "https://www.orosgaming.com/",
+      "gameUrl": "https://www.orosgaming.com/chilli-inferno",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Clawbuster",
+      "providerSlug": "clawbuster",
+      "game": "Hades 3 Pots",
+      "gameSlug": "hades-3-pots",
+      "catalogUrl": "https://clawbuster.com/games/",
+      "gameUrl": "https://clawbuster.com/games/hades-3-pots.html",
+      "status": "captured-pending-batch-verify"
+    }
+  ],
+  "discoveryAttempts": [
+    {
+      "provider": "Fin by Intercom",
+      "status": "skipped-not-slot-developer",
+      "checkedAt": "2026-10-10",
+      "reason": "Intercom's first-party documentation identifies Fin as a customer-service AI agent, not a Slot game developer; do not infer eligibility from exhibition membership."
+    },
+    {
+      "provider": "GameBit",
+      "status": "skipped-platform-not-attributable-slot-studio",
+      "checkedAt": "2026-10-10",
+      "catalogUrl": "https://www.gamebit.io/",
+      "reason": "Official site sells Web3 betting software and no attributable first-party Slot game catalog was confirmed."
+    }
+  ],
+  "continuation": {
+    "cursor": "ICE Barcelona 2027 official exhibitor list page 3 G segment after General Boost Studios; GameBridge samples and General Boost Studios lack a verifiable released single-game source. Clawbuster was confirmed through its official catalog. Continue the uncollected-provider discovery after this point.",
+    "rule": "Deduplicate first; one confirmed Slot per new Provider, with official single-game evidence, attributable image, and truthful exact demo state."
+  }
+}

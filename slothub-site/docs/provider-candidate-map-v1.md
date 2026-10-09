@@ -641,7 +641,9 @@
 
 `FORMAL_DOMAIN_CHANGE_ALLOWED: NO`
 
-第 41 批已驗證待發布：Betora Games／Hot Cash Fiesta、Felix Gaming／Wolf Gone Wild Hold And Win、Orbital Gaming／Santa Reels、DSTPLAY／Dreamy Cafe、Nucleus Gaming／Jester’s Coin；納入建置後為 282 款 published Game、214 家 published Provider。BEON Gaming／Marshmallow King 因官方目錄與單款路由的類別及上市狀態衝突而跳過；Gambee／Blazin Fury 20 只有多款目錄、Pixmove／The Red Widow 缺可歸屬正確作品圖、DVision Gaming 的精確資產入口受限，均不計入新增。下一個 ICE 展商名錄接續位置為 F 段 Felix Gaming 之後的 Fin by Intercom；逐家去重並只憑可追溯的官方單款資料收錄。
+第 41 批已發布：Betora Games／Hot Cash Fiesta、Felix Gaming／Wolf Gone Wild Hold And Win、Orbital Gaming／Santa Reels、DSTPLAY／Dreamy Cafe、Nucleus Gaming／Jester’s Coin；該批發布後為 282 款 published Game、214 家 published Provider。BEON Gaming／Marshmallow King 因官方目錄與單款路由的類別及上市狀態衝突而跳過；Gambee／Blazin Fury 20 只有多款目錄、Pixmove／The Red Widow 缺可歸屬正確作品圖、DVision Gaming 的精確資產入口受限，均不計入新增。
+
+第 42 批已擷取待發布：Game2Slot／Crown Power-up、EXCO Game Studio／Apex Dregs、Knockout Labs／Tree of Fortune、OROS Gaming／Chilli Inferno、Clawbuster／Hades 3 Pots；納入建置後為 287 款 published Game、219 家 published Provider。Knockout Labs 的官方單款頁提供第三方精確路由，但此環境回傳 403，故入口保留 access-restricted，不作可用試玩；OROS Gaming 的單款頁未提供核實的精確試玩，保留 not-verified。Fin by Intercom 是客服 AI、GameBit 是平台服務，不計為老虎機 Provider。下一個 ICE Barcelona 2027 官方展商名錄接續位置為 G 段 General Boost Studios 之後；GameBridge 與 General Boost Studios 尚缺已發布單款第一方來源，可跳至下一家，逐家去重。
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
