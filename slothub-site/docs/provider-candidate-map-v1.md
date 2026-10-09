@@ -643,7 +643,9 @@
 
 第 41 批已發布：Betora Games／Hot Cash Fiesta、Felix Gaming／Wolf Gone Wild Hold And Win、Orbital Gaming／Santa Reels、DSTPLAY／Dreamy Cafe、Nucleus Gaming／Jester’s Coin；該批發布後為 282 款 published Game、214 家 published Provider。BEON Gaming／Marshmallow King 因官方目錄與單款路由的類別及上市狀態衝突而跳過；Gambee／Blazin Fury 20 只有多款目錄、Pixmove／The Red Widow 缺可歸屬正確作品圖、DVision Gaming 的精確資產入口受限，均不計入新增。
 
-第 42 批已擷取待發布：Game2Slot／Crown Power-up、EXCO Game Studio／Apex Dregs、Knockout Labs／Tree of Fortune、OROS Gaming／Chilli Inferno、Clawbuster／Hades 3 Pots；納入建置後為 287 款 published Game、219 家 published Provider。Knockout Labs 的官方單款頁提供第三方精確路由，但此環境回傳 403，故入口保留 access-restricted，不作可用試玩；OROS Gaming 的單款頁未提供核實的精確試玩，保留 not-verified。Fin by Intercom 是客服 AI、GameBit 是平台服務，不計為老虎機 Provider。下一個 ICE Barcelona 2027 官方展商名錄接續位置為 G 段 General Boost Studios 之後；GameBridge 與 General Boost Studios 尚缺已發布單款第一方來源，可跳至下一家，逐家去重。
+第 42 批已發布：Game2Slot／Crown Power-up、EXCO Game Studio／Apex Dregs、Knockout Labs／Tree of Fortune、OROS Gaming／Chilli Inferno、Clawbuster／Hades 3 Pots；發布後為 287 款 published Game、219 家 published Provider。Knockout Labs 的官方單款頁提供第三方精確路由，但此環境回傳 403，故入口保留 access-restricted，不作可用試玩；OROS Gaming 的單款頁未提供核實的精確試玩，保留 not-verified。Fin by Intercom 是客服 AI、GameBit 是平台服務，不計為老虎機 Provider。下一個 ICE Barcelona 2027 官方展商名錄接續位置為 G 段 General Boost Studios 之後；GameBridge 與 General Boost Studios 尚缺已發布單款第一方來源，可跳至下一家，逐家去重。
+
+第 42 批已以 Commit c9f4744 發布並通過同 SHA CI、Cloudflare Pages 與線上回讀。第 43 批已擷取待發布：Notix.Studio／Las Vegas、Big Ducking Wings／Tales of Quacknarok、Arcane Aces／Coffee Cat、Giro Games／Midas Golden Era、KishtaLabs／David vs Goliath；納入建置後為 292 款 Game、224 家 Provider。Big Ducking Wings 與 Arcane Aces 為同一創作者的兩個官方品牌，各有獨立作品目錄與具名單款頁。Notix 的 JavaScript Demo 按鈕、Big Ducking Wings／Arcane Aces 的 Stake 發行敘述及 Giro 的頁內 Demo 說明都不構成已核對的可玩入口，保留 not-verified；KishtaLabs 官方連結的精確 Stake 同款頁雖可開啟，但顯示 Game not found，保留 access-restricted，不公開該連結。第 43 批仍須完整驗證、提交及部署回讀，才可算已發布。
 
 ## 8. 外部目錄接續順序（2026-09-16）
 

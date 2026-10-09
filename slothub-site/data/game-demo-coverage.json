@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-10T00:00:00.000Z",
   "checkedAt": "2026-10-10",
-  "gameCount": 287,
-  "providerCount": 219,
-  "sourcePageCount": 640,
+  "gameCount": 292,
+  "providerCount": 224,
+  "sourcePageCount": 649,
   "counts": {
-    "access-restricted": 3,
+    "access-restricted": 4,
     "available": 240,
-    "not-verified": 44
+    "not-verified": 48
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -6592,6 +6592,56 @@
       "checkedAt": "2026-10-10",
       "evidence": "Clawbuster's official Hades 3 Pots exact game page links to the HADES_POTS dedicated demo endpoint; the destination returned HTTP 200 with a client game shell. The stable game-specific redirect URL is kept rather than its transient secret-bearing destination.",
       "inspectedUrls": [{ "requestedUrl": "https://clawbuster.com/games/hades-3-pots.html", "finalUrl": "https://clawbuster.com/games/hades-3-pots.html", "httpStatus": 200 }, { "requestedUrl": "https://casino-api-stage.clawbuster.com/v1/dev/testurl?game=HADES_POTS", "finalUrl": "https://casino-api-stage.clawbuster.com/v1/dev/testurl?game=HADES_POTS", "httpStatus": 200 }]
+    },
+    {
+      "slug": "las-vegas-notix",
+      "name": "Las Vegas",
+      "provider": "notix-studio",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-10",
+      "evidence": "Notix's official Game Studio catalog identifies Las Vegas as a Notix.Studio Slot game and shows Play Demo and Game Details as JavaScript controls; no exact game-specific destination was verified, so no playable URL is asserted.",
+      "inspectedUrls": [{ "requestedUrl": "https://notix.games/en/game-studio", "finalUrl": "https://notix.games/en/game-studio", "httpStatus": 200 }]
+    },
+    {
+      "slug": "tales-of-quacknarok",
+      "name": "Tales of Quacknarok",
+      "provider": "big-ducking-wings",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-10",
+      "evidence": "Official exact game page identifies Big Ducking Wings, specs and a Stake-only release, but does not provide an exact playable URL; no game-specific destination has been verified.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.bigduckingwings.com/games/tales-of-quacknarok/", "finalUrl": "https://www.bigduckingwings.com/games/tales-of-quacknarok/", "httpStatus": 200 }]
+    },
+    {
+      "slug": "coffee-cat-arcane",
+      "name": "Coffee Cat",
+      "provider": "arcane-aces",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-10",
+      "evidence": "Official exact game page identifies Arcane Aces, specs and a Stake-only release, but does not provide an exact playable URL; no game-specific destination has been verified.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.bigduckingwings.com/games/coffee-cat/", "finalUrl": "https://www.bigduckingwings.com/games/coffee-cat/", "httpStatus": 200 }]
+    },
+    {
+      "slug": "midas-golden-era",
+      "name": "Midas Golden Era",
+      "provider": "giro-games",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-10",
+      "evidence": "Giro Games' exact official game page was opened. Its Play demo control navigates to an on-page description rather than a verified playable client; no demo URL is asserted.",
+      "inspectedUrls": [{ "requestedUrl": "https://girogames.com/games/midas-golden-era/", "finalUrl": "https://girogames.com/games/midas-golden-era/", "httpStatus": 200 }]
+    },
+    {
+      "slug": "david-vs-goliath-kishta",
+      "name": "David vs Goliath",
+      "provider": "kishta-labs",
+      "status": "access-restricted",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-10",
+      "evidence": "KishtaLabs' official exact game page links to the dedicated Stake David VS Goliath page. That destination opened with the correct title and provider but displayed Game not found, so it is not surfaced as a playable link.",
+      "inspectedUrls": [{ "requestedUrl": "https://kishtalabs.com/games/david-vs-goliath", "finalUrl": "https://kishtalabs.com/games/david-vs-goliath", "httpStatus": 200 }, { "requestedUrl": "https://stake.com/casino/games/kishtalabs-david-vs-goliath", "finalUrl": "https://stake.com/casino/games/kishtalabs-david-vs-goliath", "httpStatus": 200 }]
     }
   ]
 }

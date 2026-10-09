@@ -1,0 +1,58 @@
+{
+  "batch": 43,
+  "recordedAt": "2026-10-10",
+  "state": "verified-ready-to-commit",
+  "publishedCount": 5,
+  "capturedCount": 5,
+  "records": [
+    {
+      "provider": "Notix.Studio",
+      "providerSlug": "notix-studio",
+      "game": "Las Vegas",
+      "gameSlug": "las-vegas-notix",
+      "catalogUrl": "https://notix.games/en/game-studio",
+      "gameUrl": "https://notix.games/en/game-studio",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Big Ducking Wings",
+      "providerSlug": "big-ducking-wings",
+      "game": "Tales of Quacknarok",
+      "gameSlug": "tales-of-quacknarok",
+      "catalogUrl": "https://www.bigduckingwings.com/",
+      "gameUrl": "https://www.bigduckingwings.com/games/tales-of-quacknarok/",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Arcane Aces",
+      "providerSlug": "arcane-aces",
+      "game": "Coffee Cat",
+      "gameSlug": "coffee-cat-arcane",
+      "catalogUrl": "https://www.bigduckingwings.com/",
+      "gameUrl": "https://www.bigduckingwings.com/games/coffee-cat/",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Giro Games",
+      "providerSlug": "giro-games",
+      "game": "Midas Golden Era",
+      "gameSlug": "midas-golden-era",
+      "catalogUrl": "https://girogames.com/",
+      "gameUrl": "https://girogames.com/games/midas-golden-era/",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "KishtaLabs",
+      "providerSlug": "kishta-labs",
+      "game": "David vs Goliath",
+      "gameSlug": "david-vs-goliath-kishta",
+      "catalogUrl": "https://kishtalabs.com/",
+      "gameUrl": "https://kishtalabs.com/games/david-vs-goliath",
+      "status": "captured-pending-batch-verify"
+    }
+  ],
+  "continuation": {
+    "cursor": "Batch 43 has five captured games from Notix.Studio, Big Ducking Wings, its distinct Arcane Aces brand, Giro Games and KishtaLabs. Verify this batch, commit and publish if full checks pass; then resume uncollected-slot-Provider discovery after ICE Barcelona 2027 G segment General Boost Studios. First check failed → pending → captured intake queue and deduplicate.",
+    "rule": "One verified Slot per new Provider; preserve unknown values and only publish exact demo destinations that were actually opened."
+  }
+}
