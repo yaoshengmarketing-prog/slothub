@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-13T00:00:00.000Z",
+  "generatedAt": "2026-10-13T06:00:00.000Z",
   "checkedAt": "2026-10-13",
-  "gameCount": 297,
-  "providerCount": 229,
-  "sourcePageCount": 664,
+  "gameCount": 302,
+  "providerCount": 234,
+  "sourcePageCount": 679,
   "counts": {
     "access-restricted": 4,
-    "available": 243,
+    "available": 248,
     "not-verified": 50
   },
   "rules": {
@@ -6701,6 +6701,71 @@
       "checkedAt": "2026-10-13",
       "evidence": "Penguin King's official catalog identifies the exact title, provider and game artwork, but exposes no verified single-game playable destination; no public demo URL is asserted.",
       "inspectedUrls": [{ "requestedUrl": "https://www.penguinking.com/", "finalUrl": "https://www.penguinking.com/", "httpStatus": 200 }]
+    },
+    {
+      "slug": "egypt-king-multi",
+      "name": "Egypt King Multi™",
+      "provider": "psmplay",
+      "status": "available",
+      "url": "https://psmplay.com/game/egypt-king-multi/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-13",
+      "evidence": "PSMPlay's exact official Egypt King Multi product page identifies the title, 5×3 layout, 10 paylines and features, and exposes the exact public game entry. Slot Hub links to the official page externally and does not embed its client.",
+      "inspectedUrls": [{ "requestedUrl": "https://psmplay.com/game/egypt-king-multi/", "finalUrl": "https://psmplay.com/game/egypt-king-multi/", "httpStatus": 200 }, { "requestedUrl": "https://psmplay.com/new-game-out-now-egypt-king-multi/", "finalUrl": "https://psmplay.com/new-game-out-now-egypt-king-multi/", "httpStatus": 200 }]
+    },
+    {
+      "slug": "40-hot-fruits-jackpot-treasures",
+      "name": "40 HOT Fruits Jackpot Treasures",
+      "provider": "promatic-games",
+      "status": "available",
+      "url": "https://prod-pl-promatic-demo.promaticgames.com/?gameId=00010082&playerId=demo&clientPlatform=web&languageCode=en&casinoId=prod-pl-promatic-demo-1&isDemoPlay=true&clienttype=casino",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-13",
+      "evidence": "Promatic Games' exact official product page links this gameId 00010082 Demo. The stable official URL returned HTTP 200 and redirected to the same-game client; it is published only as an external link.",
+      "inspectedUrls": [{ "requestedUrl": "https://promaticgames.com/games/40-hot-fruits-jackpot-treasures/", "finalUrl": "https://promaticgames.com/games/40-hot-fruits-jackpot-treasures/", "httpStatus": 200 }, { "requestedUrl": "https://prod-pl-promatic-demo.promaticgames.com/?gameId=00010082&playerId=demo&clientPlatform=web&languageCode=en&casinoId=prod-pl-promatic-demo-1&isDemoPlay=true&clienttype=casino", "finalUrl": "https://prod-pl-promatic-demo.promaticgames.com/gamepro/00010082/?gameId=00010082&playerId=demo&clientPlatform=web&languageCode=en&casinoId=prod-pl-promatic-demo-1&isDemoPlay=true&clienttype=casino", "httpStatus": 200 }]
+    },
+    {
+      "slug": "16-royal-coins",
+      "name": "16 Royal Coins",
+      "provider": "popiplay",
+      "status": "available",
+      "url": "https://www.popiplay.com/16-royal-coins-brings-a-royal-twist-to-classic-slot-action/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-13",
+      "evidence": "Popiplay's exact official 16 Royal Coins release page identifies the title, 4×4 layout, 256 ways, Hold & Win, jackpots and maximum win. The exact official page returned HTTP 200 and is published as an external game entry.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.popiplay.com/16-royal-coins-brings-a-royal-twist-to-classic-slot-action/", "finalUrl": "https://www.popiplay.com/16-royal-coins-brings-a-royal-twist-to-classic-slot-action/", "httpStatus": 200 }, { "requestedUrl": "https://www.popiplay.com/wp-content/uploads/2026/09/16RoyalCoins_1960x1080.png", "finalUrl": "https://www.popiplay.com/wp-content/uploads/2026/09/16RoyalCoins_1960x1080.png", "httpStatus": 200 }]
+    },
+    {
+      "slug": "shogun-skylord-jade-empress",
+      "name": "Shogun Skylord: Jade Empress",
+      "provider": "just-slots",
+      "status": "available",
+      "url": "https://shogun-skylord-jade-empress-prod.justslots.io/?env=social",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-13",
+      "evidence": "Just Slots' exact official Shogun Skylord: Jade Empress page links this title-specific social Demo. The destination returned HTTP 200 and is published only as an external link.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.just-slots.com/game/shogun-skylord-jade-empress", "finalUrl": "https://www.just-slots.com/game/shogun-skylord-jade-empress", "httpStatus": 200 }, { "requestedUrl": "https://shogun-skylord-jade-empress-prod.justslots.io/?env=social", "finalUrl": "https://shogun-skylord-jade-empress-prod.justslots.io/?env=social", "httpStatus": 200 }]
+    },
+    {
+      "slug": "kongo-bongo",
+      "name": "Kongo Bongo™",
+      "provider": "supremeland-gaming",
+      "status": "available",
+      "url": "https://games.test.rgsmatrix.com/KongoBongo95/index.html?game=KongoBongo95&language=en&operator=TEST_LAB&aggregator=EVERYMATRIX&device=mobile&token=d840aa5d-da0a-43e2-88d1-a684d7963c3c%3D&operatorName=TEST_LAB",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-13",
+      "evidence": "Supremeland Gaming's exact official Kongo Bongo page links this KongoBongo95 Free Play client. The same-game destination returned HTTP 200 and is published only as an external link.",
+      "inspectedUrls": [{ "requestedUrl": "https://supremeland.io/games/kongo-bongo/", "finalUrl": "https://supremeland.io/games/kongo-bongo/", "httpStatus": 200 }, { "requestedUrl": "https://games.test.rgsmatrix.com/KongoBongo95/index.html?game=KongoBongo95&language=en&operator=TEST_LAB&aggregator=EVERYMATRIX&device=mobile&token=d840aa5d-da0a-43e2-88d1-a684d7963c3c%3D&operatorName=TEST_LAB", "finalUrl": "https://games.test.rgsmatrix.com/KongoBongo95/index.html?game=KongoBongo95&language=en&operator=TEST_LAB&aggregator=EVERYMATRIX&device=mobile&token=d840aa5d-da0a-43e2-88d1-a684d7963c3c%3D&operatorName=TEST_LAB", "httpStatus": 200 }]
     }
   ]
 }

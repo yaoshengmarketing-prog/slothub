@@ -1,0 +1,58 @@
+{
+  "batch": 45,
+  "recordedAt": "2026-10-13",
+  "state": "verified-ready-to-commit",
+  "publishedCount": 5,
+  "capturedCount": 5,
+  "records": [
+    {
+      "provider": "PSMPlay",
+      "providerSlug": "psmplay",
+      "game": "Egypt King Multi™",
+      "gameSlug": "egypt-king-multi",
+      "catalogUrl": "https://psmplay.com/games/",
+      "gameUrl": "https://psmplay.com/game/egypt-king-multi/",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Promatic Games",
+      "providerSlug": "promatic-games",
+      "game": "40 HOT Fruits Jackpot Treasures",
+      "gameSlug": "40-hot-fruits-jackpot-treasures",
+      "catalogUrl": "https://promaticgames.com/games/",
+      "gameUrl": "https://promaticgames.com/games/40-hot-fruits-jackpot-treasures/",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Popiplay",
+      "providerSlug": "popiplay",
+      "game": "16 Royal Coins",
+      "gameSlug": "16-royal-coins",
+      "catalogUrl": "https://www.popiplay.com/",
+      "gameUrl": "https://www.popiplay.com/16-royal-coins-brings-a-royal-twist-to-classic-slot-action/",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Just Slots",
+      "providerSlug": "just-slots",
+      "game": "Shogun Skylord: Jade Empress",
+      "gameSlug": "shogun-skylord-jade-empress",
+      "catalogUrl": "https://www.just-slots.com/games",
+      "gameUrl": "https://www.just-slots.com/game/shogun-skylord-jade-empress",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Supremeland Gaming",
+      "providerSlug": "supremeland-gaming",
+      "game": "Kongo Bongo™",
+      "gameSlug": "kongo-bongo",
+      "catalogUrl": "https://supremeland.io/games/",
+      "gameUrl": "https://supremeland.io/games/kongo-bongo/",
+      "status": "captured-pending-batch-verify"
+    }
+  ],
+  "continuation": {
+    "cursor": "Batch 45 has five captured games from PSMPlay, Promatic Games, Popiplay, Just Slots and Supremeland Gaming. Verify, commit and publish this batch; then resume official exhibitor and provider discovery after Supremeland Gaming in the S segment, deduplicating Provider aliases, parent groups, domains and existing Games first.",
+    "rule": "Capture one confirmed traditional Slot per new Provider only after an official catalogue or exact product page, attributable official artwork, and an actually checked exact Demo or game-page destination are saved."
+  }
+}

@@ -24,7 +24,7 @@ const records = readdirSync(gamesDirectory)
     };
   });
 const games = records.filter((game) => game.status === 'published');
-assert.equal(games.length, 297, 'Explorer fixture must cover all 297 published games');
+assert.equal(games.length, 302, 'Explorer fixture must cover all 302 published games');
 
 const state = (patch = {}) => ({ ...emptyExplorerState(), ...patch });
 assert.equal(filterAndSortGames(games, state({ provider: 'pragmatic-play' })).length, 5);
@@ -35,8 +35,8 @@ const cascadingGames = filterAndSortGames(games, state({ features: ['cascading']
 assert.equal(cascadingGames.length, 44, 'Cascading Explorer must return exactly 44 structurally tagged Games');
 assert.ok(!cascadingGames.some((game) => game.slug === 'super-ace'), 'Super Ace must not appear in the Cascading Explorer result');
 assert.equal(serializeExplorerState(state({ features: ['cascading'] })), 'features=cascading', 'Cascading Explorer must keep the exact structured URL query');
-assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild'] })).length, 110, 'Features must use AND');
-assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild', 'scatter'] })).length, 42, 'Three Features must use AND');
+assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild'] })).length, 112, 'Features must use AND');
+assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild', 'scatter'] })).length, 43, 'Three Features must use AND');
 assert.equal(filterAndSortGames(games, state({ provider: 'pg-soft', mechanism: 'ways-to-win', features: ['wild', 'cascading'], rtpMin: 96.5 })).length, 2, 'Cross-facet conditions must use AND');
 
 for (const [field, patch, missingSlug] of [

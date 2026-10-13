@@ -601,9 +601,9 @@
 
 `CURRENT_SCOPE: 廠商盤點與分類`
 
-`CURRENT_GAME_COUNT: 282`
+`CURRENT_GAME_COUNT: 302`
 
-`CURRENT_PROVIDER_COUNT: 214`
+`CURRENT_PROVIDER_COUNT: 234`
 
 `FIRST_BATCH_CANDIDATE_BRAND_COUNT: 51`
 
@@ -648,6 +648,8 @@
 第 42 批已以 Commit c9f4744 發布並通過同 SHA CI、Cloudflare Pages 與線上回讀。第 43 批已以 Commit cce7c07 發布並通過同 SHA CI、Cloudflare Pages 與線上回讀：Notix.Studio／Las Vegas、Big Ducking Wings／Tales of Quacknarok、Arcane Aces／Coffee Cat、Giro Games／Midas Golden Era、KishtaLabs／David vs Goliath；發布後為 292 款 Game、224 家 Provider。Big Ducking Wings 與 Arcane Aces 為同一創作者的兩個官方品牌，各有獨立作品目錄與具名單款頁。Notix 的 JavaScript Demo 按鈕、Big Ducking Wings／Arcane Aces 的 Stake 發行敘述及 Giro 的頁內 Demo 說明都不構成已核對的可玩入口，保留 not-verified；KishtaLabs 官方連結的精確 Stake 同款頁雖可開啟，但顯示 Game not found，保留 access-restricted，不公開該連結。
 
 第 44 批已擷取待驗證：Highlight Games／LALIGA GRAND CHANCE、ICONIC21／Huff House Bonanza 2、Interslot Interactive／Book of Thrones、Mad Badger Studio／TRØLLHEIM、Penguin King／The Fortune Eye: Hold & Win；納入建置後為 297 款 Game、229 家 Provider。Highlight Games 僅提供同款示範影片，Penguin King 官方遊戲卡未提供精確可玩入口，兩款維持 not-verified；其餘三款均保存實際核對的官方精確 Demo 並以 external 呈現。下一個橫向探索位置為 ICE Barcelona 2027 官方展商名錄 P 段 Penguin King 之後。
+
+第 44 批已以 Commit 5c909e0 發布並通過同 SHA CI、Cloudflare Pages 與線上回讀。第 45 批已擷取待驗證：PSMPlay／Egypt King Multi™、Promatic Games／40 HOT Fruits Jackpot Treasures、Popiplay／16 Royal Coins、Just Slots／Shogun Skylord: Jade Empress、Supremeland Gaming／Kongo Bongo™；納入建置後為 302 款 Game、234 家 Provider。PSMPlay 與 Popiplay 保存實際核對的官方精確單款頁，Promatic Games、Just Slots 與 Supremeland Gaming 保存實際開啟的官方精確 Demo；全部公開 presentation 維持 external。下一個橫向探索位置為 S 段 Supremeland Gaming 之後。
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
