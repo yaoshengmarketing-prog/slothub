@@ -24,7 +24,7 @@ const records = readdirSync(gamesDirectory)
     };
   });
 const games = records.filter((game) => game.status === 'published');
-assert.equal(games.length, 302, 'Explorer fixture must cover all 302 published games');
+assert.equal(games.length, 307, 'Explorer fixture must cover all 307 published games');
 
 const state = (patch = {}) => ({ ...emptyExplorerState(), ...patch });
 assert.equal(filterAndSortGames(games, state({ provider: 'pragmatic-play' })).length, 5);
@@ -32,11 +32,11 @@ assert.equal(filterAndSortGames(games, state({ mechanism: 'pay-anywhere' })).len
 assert.equal(filterAndSortGames(games, state({ provider: 'relax-gaming' })).length, 26);
 assert.equal(filterAndSortGames(games, state({ mechanism: 'megaways' })).length, 8);
 const cascadingGames = filterAndSortGames(games, state({ features: ['cascading'] }));
-assert.equal(cascadingGames.length, 44, 'Cascading Explorer must return exactly 44 structurally tagged Games');
+assert.equal(cascadingGames.length, 45, 'Cascading Explorer must return exactly 45 structurally tagged Games');
 assert.ok(!cascadingGames.some((game) => game.slug === 'super-ace'), 'Super Ace must not appear in the Cascading Explorer result');
 assert.equal(serializeExplorerState(state({ features: ['cascading'] })), 'features=cascading', 'Cascading Explorer must keep the exact structured URL query');
-assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild'] })).length, 112, 'Features must use AND');
-assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild', 'scatter'] })).length, 43, 'Three Features must use AND');
+assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild'] })).length, 114, 'Features must use AND');
+assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild', 'scatter'] })).length, 45, 'Three Features must use AND');
 assert.equal(filterAndSortGames(games, state({ provider: 'pg-soft', mechanism: 'ways-to-win', features: ['wild', 'cascading'], rtpMin: 96.5 })).length, 2, 'Cross-facet conditions must use AND');
 
 for (const [field, patch, missingSlug] of [

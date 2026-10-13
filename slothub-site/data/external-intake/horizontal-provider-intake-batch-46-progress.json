@@ -1,0 +1,71 @@
+{
+  "batch": 46,
+  "recordedAt": "2026-10-13",
+  "state": "verified-ready-to-commit",
+  "publishedCount": 5,
+  "capturedCount": 5,
+  "records": [
+    {
+      "provider": "Spadegaming",
+      "providerSlug": "spadegaming",
+      "game": "Juicy Market",
+      "gameSlug": "juicy-market",
+      "catalogUrl": "https://www.spadegaming.com/games",
+      "gameUrl": "https://www.spadegaming.com/game-detail/2026_Juicy_Market",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Yellow Bat",
+      "providerSlug": "yellow-bat",
+      "game": "Shake Rattle & Roll: Reyna Ahas",
+      "gameSlug": "shake-rattle-roll-reyna-ahas",
+      "catalogUrl": "https://www.yellowbat.com/games/",
+      "gameUrl": "https://www.yellowbat.com/games/shake-rattle-roll-reyna-ahas/",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "YGR Games",
+      "providerSlug": "ygr-games",
+      "game": "Golden Bay Sands",
+      "gameSlug": "golden-bay-sands",
+      "catalogUrl": "https://www.ygrgames.com/en/games?type=slot",
+      "gameUrl": "https://www.ygrgames.com/en/games/076",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "FBM",
+      "providerSlug": "fbm",
+      "game": "Oranges & Lions",
+      "gameSlug": "oranges-and-lions",
+      "catalogUrl": "https://fbmgaming.com/",
+      "gameUrl": "https://fbmgaming.com/games/Oranges-Lions/151",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "FG Game Studios",
+      "providerSlug": "fg-game-studios",
+      "game": "Buffalo Riches",
+      "gameSlug": "buffalo-riches",
+      "catalogUrl": "https://www.fgamestudios.com/projects",
+      "gameUrl": "https://www.fgamestudios.com/projects",
+      "status": "captured-pending-batch-verify"
+    }
+  ],
+  "discoveryAttempts": [
+    { "provider": "slotGPT", "status": "skipped", "reason": "Official site describes an AI slot generator rather than a stable studio-authored slot catalogue." },
+    { "provider": "Solidicon", "status": "skipped", "reason": "Current official catalogue exposes crash titles, not a confirmed traditional slot candidate." },
+    { "provider": "Swipe Games", "status": "skipped", "reason": "Official products use swipe and instant mechanics rather than a confirmed traditional slot." },
+    { "provider": "Tronius Gaming", "status": "skipped", "reason": "Official offering is electronic/live table gaming; no attributable traditional slot was confirmed." },
+    { "provider": "Upgames", "status": "skipped", "reason": "Official current products are crash and mini games; no traditional slot was confirmed." },
+    { "provider": "Winfinity", "status": "skipped", "reason": "Official current products are live and RNG table games; no traditional slot was confirmed." },
+    { "provider": "StylGame", "status": "skipped", "reason": "Official business is slot cabinets, chairs and accessories, not a game developer catalogue." },
+    { "provider": "Amigo Gaming", "status": "blocked", "reason": "Official product page confirms a slot catalogue but current previews are anonymous and cannot be attributed to an exact title." },
+    { "provider": "Galaxsys", "status": "blocked", "reason": "Exact official El Dorado data is available, but official artwork and Demo remained inaccessible with HTTP 403 on 2026-10-13." },
+    { "provider": "JDB Gaming", "status": "blocked", "reason": "Exact official BASTET page data is complete, but the official artwork remained inaccessible through CloudFront HTTP 403 on 2026-10-13." },
+    { "provider": "Playtech", "status": "blocked", "reason": "Exact official product page exists, but the available media image is a generic header rather than attributable game artwork." }
+  ],
+  "continuation": {
+    "cursor": "Batch 46 passed the full verification suite with five publishable games. Commit and publish this exact batch, then resume horizontal Provider discovery after FG Game Studios while deduplicating existing Providers and Games first.",
+    "rule": "Capture one confirmed traditional Slot per new Provider only after an official catalogue or exact product page, attributable official artwork, and an actually checked exact Demo or game-page destination are saved."
+  }
+}

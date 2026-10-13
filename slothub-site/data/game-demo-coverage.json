@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-13T06:00:00.000Z",
   "checkedAt": "2026-10-13",
-  "gameCount": 302,
-  "providerCount": 234,
-  "sourcePageCount": 679,
+  "gameCount": 307,
+  "providerCount": 239,
+  "sourcePageCount": 688,
   "counts": {
     "access-restricted": 4,
-    "available": 248,
-    "not-verified": 50
+    "available": 252,
+    "not-verified": 51
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -6766,6 +6766,68 @@
       "checkedAt": "2026-10-13",
       "evidence": "Supremeland Gaming's exact official Kongo Bongo page links this KongoBongo95 Free Play client. The same-game destination returned HTTP 200 and is published only as an external link.",
       "inspectedUrls": [{ "requestedUrl": "https://supremeland.io/games/kongo-bongo/", "finalUrl": "https://supremeland.io/games/kongo-bongo/", "httpStatus": 200 }, { "requestedUrl": "https://games.test.rgsmatrix.com/KongoBongo95/index.html?game=KongoBongo95&language=en&operator=TEST_LAB&aggregator=EVERYMATRIX&device=mobile&token=d840aa5d-da0a-43e2-88d1-a684d7963c3c%3D&operatorName=TEST_LAB", "finalUrl": "https://games.test.rgsmatrix.com/KongoBongo95/index.html?game=KongoBongo95&language=en&operator=TEST_LAB&aggregator=EVERYMATRIX&device=mobile&token=d840aa5d-da0a-43e2-88d1-a684d7963c3c%3D&operatorName=TEST_LAB", "httpStatus": 200 }]
+    },
+    {
+      "slug": "juicy-market",
+      "name": "Juicy Market",
+      "provider": "spadegaming",
+      "status": "available",
+      "url": "https://lobbyeur.sgplayfun.com/index.jsp?game=S-JM01&language=en_US&menumode=off&type=web",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-13",
+      "evidence": "Spadegaming's exact official Juicy Market page builds this title-specific Demo from official game code S-JM01. The destination redirected to the game client and returned HTTP 200; it is published only as an external link.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.spadegaming.com/game-detail/2026_Juicy_Market", "finalUrl": "https://www.spadegaming.com/game-detail/2026_Juicy_Market", "httpStatus": 200 }, { "requestedUrl": "https://lobbyeur.sgplayfun.com/index.jsp?game=S-JM01&language=en_US&menumode=off&type=web", "finalUrl": "https://lobbyeur.sgplayfun.com/touch/sgnew/index.jsp?game=S-JM01&language=en_US&menumode=off&type=web", "httpStatus": 200 }]
+    },
+    {
+      "slug": "shake-rattle-roll-reyna-ahas",
+      "name": "Shake Rattle & Roll: Reyna Ahas",
+      "provider": "yellow-bat",
+      "status": "available",
+      "url": "https://www.yellowbat.com/play-game/?id=1078",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-13",
+      "evidence": "Yellow Bat's exact official product page links game id 1078 to this same-title public Play page. The official destination redirected to /play-game/?id=1078 and returned HTTP 200; it is published only as an external link.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.yellowbat.com/games/shake-rattle-roll-reyna-ahas/", "finalUrl": "https://www.yellowbat.com/games/shake-rattle-roll-reyna-ahas/", "httpStatus": 200 }, { "requestedUrl": "https://www.yellowbat.com/games/?id=1078&page_id=4594", "finalUrl": "https://www.yellowbat.com/play-game/?id=1078", "httpStatus": 200 }]
+    },
+    {
+      "slug": "golden-bay-sands",
+      "name": "Golden Bay Sands",
+      "provider": "ygr-games",
+      "status": "available",
+      "url": "https://www.ygrgames.com/en/games/076",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-13",
+      "evidence": "YGR Games' exact official Golden Bay Sands page identifies the title, provider, 4x5 layout, 1024 ways and features. The exact official page returned HTTP 200 and is published as an external game entry.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.ygrgames.com/en/games/076", "finalUrl": "https://www.ygrgames.com/en/games/076", "httpStatus": 200 }, { "requestedUrl": "https://webapi.ygrgames.com/public/games/076/en/2ae84e2f-e4bd-4a8b-9ec2-d80c58428df5.png", "finalUrl": "https://webapi.ygrgames.com/public/games/076/en/2ae84e2f-e4bd-4a8b-9ec2-d80c58428df5.png", "httpStatus": 200 }]
+    },
+    {
+      "slug": "oranges-and-lions",
+      "name": "Oranges & Lions",
+      "provider": "fbm",
+      "status": "available",
+      "url": "https://fbmgaming.com/games/Oranges-Lions/151",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-13",
+      "evidence": "FBM's exact official product page identifies Oranges & Lions and returned HTTP 200. The linked official release supplies the 15-reel, 40-payline and feature details; the product page is published as an external game entry.",
+      "inspectedUrls": [{ "requestedUrl": "https://fbmgaming.com/games/Oranges-Lions/151", "finalUrl": "https://fbmgaming.com/games/Oranges-Lions/151", "httpStatus": 200 }, { "requestedUrl": "https://fbmgaming.com/news/FBM-launches-Oranges-Lions-to-make-casino-players-dance-to-the-sound-of-prizes-with-Fruity-Juicy-and-Zesty/266", "finalUrl": "https://fbmgaming.com/news/FBM-launches-Oranges-Lions-to-make-casino-players-dance-to-the-sound-of-prizes-with-Fruity-Juicy-and-Zesty/266", "httpStatus": 200 }]
+    },
+    {
+      "slug": "buffalo-riches",
+      "name": "Buffalo Riches",
+      "provider": "fg-game-studios",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-13",
+      "evidence": "FG Game Studios' official Projects catalogue identifies Buffalo Riches and its attributable artwork, but exposes no exact single-game playable destination; the generic catalogue is not asserted as a Demo.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.fgamestudios.com/projects", "finalUrl": "https://www.fgamestudios.com/projects", "httpStatus": 200 }, { "requestedUrl": "https://static.wixstatic.com/media/601b09_65353c41b7644b94925cb6f44f97af1e~mv2.png/v1/fill/w_674,h_1200,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/BuffaloRiches.png", "finalUrl": "https://static.wixstatic.com/media/601b09_65353c41b7644b94925cb6f44f97af1e~mv2.png/v1/fill/w_674,h_1200,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/BuffaloRiches.png", "httpStatus": 200 }]
     }
   ]
 }

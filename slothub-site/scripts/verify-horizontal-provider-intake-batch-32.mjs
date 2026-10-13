@@ -81,8 +81,12 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['Platipus Gaming', 'Playnetic', 'REEVO', 'SmartSoft Gaming', 'Storm Gaming Technology']) {
   assert.match(map, new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*已收錄（1）`));
 }
-assert.match(map, /Spadegaming[^\r\n]*保留待補/);
+assert.match(
+  map,
+  /Spadegaming[^\r\n]*(?:保留待補|已收錄（第 46 批：Juicy Market)/,
+  'Spadegaming must remain documented either as the original evidence gap or its later verified Batch 46 resolution',
+);
 assert.match(map, /第三十二批完成 Platipus Gaming[^\r\n]*Storm Gaming Technology[^\r\n]*第三十三批/);
 assert.match(map, /第 32 批由 Platipus Gaming 接續，完成五家並保存 Spadegaming/);
 
-console.log('PASS: horizontal intake batch 32 added five traceable provider/game pairs, preserved unsupported values as missing, recorded the Spadegaming evidence gap, and advanced the cursor.');
+console.log('PASS: horizontal intake batch 32 added five traceable provider/game pairs, preserved unsupported values as missing, retained the Spadegaming evidence-gap history (including a later verified resolution), and advanced the cursor.');

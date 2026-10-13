@@ -217,7 +217,7 @@
 | 81 | Playnetic | — | — | 開發 | Slots、Table | [官方遊戲目錄](https://playnetic.com/games/) | ICE26、ICE27 | 已收錄（1） |
 | 82 | REEVO | Reevo Tech | REEVO Malta Limited | 開發、聚合 | Slots、Table | [官方遊戲目錄](https://reevotech.com/games/) | ICE26、ICE27 | 已收錄（1） |
 | 83 | SmartSoft Gaming | SmartSoft | — | 開發 | Slots、Crash、Instant、Table | [官方遊戲目錄](https://www.smartsoftgaming.com/) | ICE26、ICE27、IGB26 | 已收錄（1） |
-| 84 | Spadegaming | Spade Gaming | — | 開發 | Slots、Fishing、Table | [官網](https://www.spadegaming.com/) | ICE26、ICE27 | 未收錄（官方品牌與類型可確認，但本輪尚未取得可直接歸屬且能支撐 Game detail 的單款資料與圖片，保留待補） |
+| 84 | Spadegaming | Spade Gaming | — | 開發 | Slots、Fishing、Table | [官網](https://www.spadegaming.com/) | ICE26、ICE27 | 已收錄（第 46 批：Juicy Market；官方逐款 API、圖片與精確 Demo 已核對） |
 | 85 | Storm Gaming Technology | Storm Games | Storm Games Ltd | 開發 | Slots、Land-based | [官方遊戲入口](https://www.stormgamingtechnology.com/) | ICE26、ICE27、IGB26 | 已收錄（1） |
 | 86 | Tom Horn Gaming | Tom Horn | — | 開發 | Slots | [官方遊戲目錄](https://www.tomhorngaming.com/) | Book of Spells 已由官方單款頁核對 RTP、波動度、盤面、賠線、最高曝險、功能與圖片 | 已收錄（1） |
 | 87 | Zitro | Zitro Digital、Zitro Games | Zitro Technologies, S.L.U. | 開發、發行 | Slots、Video Bingo、Land-based／Online | [官方產品入口](https://zitrogames.com/) | ICE26、ICE27；King Fu Frog 已由官方逐款頁核對 3×5 盤面、功能、Jackpot 層級與圖片 | 已收錄（1） |
@@ -601,9 +601,9 @@
 
 `CURRENT_SCOPE: 廠商盤點與分類`
 
-`CURRENT_GAME_COUNT: 302`
+`CURRENT_GAME_COUNT: 303`
 
-`CURRENT_PROVIDER_COUNT: 234`
+`CURRENT_PROVIDER_COUNT: 235`
 
 `FIRST_BATCH_CANDIDATE_BRAND_COUNT: 51`
 
@@ -650,6 +650,8 @@
 第 44 批已擷取待驗證：Highlight Games／LALIGA GRAND CHANCE、ICONIC21／Huff House Bonanza 2、Interslot Interactive／Book of Thrones、Mad Badger Studio／TRØLLHEIM、Penguin King／The Fortune Eye: Hold & Win；納入建置後為 297 款 Game、229 家 Provider。Highlight Games 僅提供同款示範影片，Penguin King 官方遊戲卡未提供精確可玩入口，兩款維持 not-verified；其餘三款均保存實際核對的官方精確 Demo 並以 external 呈現。下一個橫向探索位置為 ICE Barcelona 2027 官方展商名錄 P 段 Penguin King 之後。
 
 第 44 批已以 Commit 5c909e0 發布並通過同 SHA CI、Cloudflare Pages 與線上回讀。第 45 批已擷取待驗證：PSMPlay／Egypt King Multi™、Promatic Games／40 HOT Fruits Jackpot Treasures、Popiplay／16 Royal Coins、Just Slots／Shogun Skylord: Jade Empress、Supremeland Gaming／Kongo Bongo™；納入建置後為 302 款 Game、234 家 Provider。PSMPlay 與 Popiplay 保存實際核對的官方精確單款頁，Promatic Games、Just Slots 與 Supremeland Gaming 保存實際開啟的官方精確 Demo；全部公開 presentation 維持 external。下一個橫向探索位置為 S 段 Supremeland Gaming 之後。
+
+第 45 批已以 Commit 677f804 發布並通過同 SHA CI、Cloudflare Pages 與線上回讀。第 46 批已擷取 5 款：Spadegaming／Juicy Market、Yellow Bat／Shake Rattle & Roll: Reyna Ahas、YGR Games／Golden Bay Sands、FBM／Oranges & Lions、FG Game Studios／Buffalo Riches；五款皆已逐欄核對官方目錄或單款資料與官方圖片。前四款已核對精確外部入口；Buffalo Riches 官方未提供精確可玩入口，誠實標記為 not-verified，未以通用目錄冒充 Demo。納入建置後為 307 款 Game、239 家 Provider；第 46 批已達 5 款並進入完整驗證。
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
