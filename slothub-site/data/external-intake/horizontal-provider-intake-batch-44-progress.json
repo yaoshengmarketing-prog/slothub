@@ -1,0 +1,158 @@
+{
+  "batch": 44,
+  "recordedAt": "2026-10-11",
+  "state": "verified-ready-to-commit",
+  "publishedCount": 5,
+  "capturedCount": 5,
+  "records": [
+    {
+      "provider": "Highlight Games",
+      "providerSlug": "highlight-games",
+      "game": "LALIGA GRAND CHANCE",
+      "gameSlug": "laliga-grand-chance",
+      "catalogUrl": "https://highlight-games.com/our-games/",
+      "gameUrl": "https://highlight-games.com/our-games/slots/",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "ICONIC21",
+      "providerSlug": "iconic21",
+      "game": "Huff House Bonanza 2",
+      "gameSlug": "huff-house-bonanza-2",
+      "catalogUrl": "https://iconic21.com/portfolio/slots/",
+      "gameUrl": "https://iconic21.com/game/huff-house-bonanza-2/",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Interslot Interactive",
+      "providerSlug": "interslot-interactive",
+      "game": "Book of Thrones",
+      "gameSlug": "book-of-thrones-interslot",
+      "catalogUrl": "https://www.interslotinteractive.com/games/",
+      "gameUrl": "https://www.interslotinteractive.com/games/book-of-thrones/",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Mad Badger Studio",
+      "providerSlug": "mad-badger-studio",
+      "game": "TRØLLHEIM",
+      "gameSlug": "trollheim-mad-badger",
+      "catalogUrl": "https://www.madbadgerstudio.com/",
+      "gameUrl": "https://www.madbadgerstudio.com/",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Penguin King",
+      "providerSlug": "penguin-king",
+      "game": "The Fortune Eye: Hold & Win",
+      "gameSlug": "the-fortune-eye-hold-and-win",
+      "catalogUrl": "https://www.penguinking.com/",
+      "gameUrl": "https://www.penguinking.com/",
+      "status": "captured-pending-batch-verify"
+    }
+  ],
+  "discoveryAttempts": [
+    {
+      "provider": "Galaxy Gaming",
+      "status": "skipped-non-slot-provider",
+      "checkedAt": "2026-10-11",
+      "discoveryUrl": "https://www.icegaming.com/exhibitors/galaxy-gaming",
+      "reason": "The official ICE profile identifies Galaxy Gaming as a developer and distributor of table-game content and technology for land-based and digital casinos. It does not establish a self-attributable traditional Slot catalogue or exact Slot product, so it is not eligible for Slot Hub intake."
+    },
+    {
+      "provider": "Go Games",
+      "status": "skipped-insufficient-first-party-evidence",
+      "checkedAt": "2026-10-11",
+      "discoveryUrl": "https://www.icegaming.com/exhibitors/go-games",
+      "reason": "The official ICE profile only confirms an exhibitor name. No attributable official brand site, self-developed traditional Slot catalogue, exact game page, or safe official game artwork was available from the first-party profile; do not promote the exhibitor listing into a Provider record."
+    },
+    {
+      "provider": "Highlight Games",
+      "status": "captured",
+      "checkedAt": "2026-10-12",
+      "discoveryUrl": "https://www.icegaming.com/exhibitors/highlight-games",
+      "reason": "Official Highlight Games catalog and exact SLOTS page identify LALIGA GRAND CHANCE as an owned Slot title and supply attributable official artwork. The exact page only links a Vimeo demonstration video, not a playable destination, so demo status is truthfully not-verified."
+    },
+    {
+      "provider": "HISEE",
+      "status": "skipped-insufficient-first-party-evidence",
+      "checkedAt": "2026-10-13",
+      "discoveryUrl": "https://www.icegaming.com/exhibitors?page=3",
+      "reason": "The official ICE listing establishes only an exhibitor name and stand. Searches did not locate an attributable first-party Slot catalogue, exact Slot product page, or safe official game artwork, so the listing is not promoted to a Provider record."
+    },
+    {
+      "provider": "Holi.bet",
+      "status": "skipped-non-slot-provider",
+      "checkedAt": "2026-10-13",
+      "discoveryUrl": "https://holi.bet/",
+      "reason": "Holi's official site identifies it as a provider of live games and lists Holi Bac and Holi Roulette; it does not establish a traditional Slot catalogue or exact Slot product."
+    },
+    {
+      "provider": "Hub88 / Live88 / Odds88",
+      "status": "skipped-aggregator",
+      "checkedAt": "2026-10-13",
+      "discoveryUrl": "https://hub88.io/casino-game-suppliers/",
+      "reason": "Hub88's official documentation identifies it as an aggregation platform that distributes third-party suppliers' content. It is not used as a self-attributable Slot developer."
+    },
+    {
+      "provider": "HUIDU API",
+      "status": "skipped-aggregator",
+      "checkedAt": "2026-10-13",
+      "discoveryUrl": "https://api.huidu.io/en/hdapi",
+      "reason": "HUIDU's official API catalogue is a game-integration platform and its public Slots filter returned no games in this inspection; no self-developed, exact Slot product with attributable artwork was established."
+    },
+    {
+      "provider": "iBase Solution",
+      "status": "skipped-non-slot-provider",
+      "checkedAt": "2026-10-13",
+      "discoveryUrl": "https://www.ibasesolution.com/",
+      "reason": "iBase Solution's official site describes gaming hardware, cabinets and PC platforms, not a self-developed online Slot catalogue."
+    },
+    {
+      "provider": "ICONIC21",
+      "status": "captured",
+      "checkedAt": "2026-10-13",
+      "discoveryUrl": "https://www.icegaming.com/exhibitors/iconic21",
+      "reason": "ICONIC21's official Slots catalogue and exact Huff House Bonanza 2 page establish a self-attributable Slot, official artwork, 25,000x maximum and a stable official same-game Demo redirect."
+    },
+    {
+      "provider": "IDNPLAY",
+      "status": "skipped-insufficient-first-party-evidence",
+      "checkedAt": "2026-10-13",
+      "discoveryUrl": "https://www.idnplay.com/",
+      "reason": "IDNPLAY's official site claims a Slots product line, but its public page supplies no identifiable traditional Slot title, exact single-game page, attributable artwork, or verifiable same-game entry. Do not turn a generic product claim into a Game record."
+    },
+    {
+      "provider": "IGA Group",
+      "status": "skipped-non-slot-provider",
+      "checkedAt": "2026-10-13",
+      "discoveryUrl": "https://igagroup.com/about-us/",
+      "reason": "IGA Group's official materials describe iGaming advisory, licensing, corporate, tax and regulatory services, not self-developed Slot games."
+    },
+    {
+      "provider": "Interslot GmbH / Interslot Interactive",
+      "status": "captured",
+      "checkedAt": "2026-10-13",
+      "discoveryUrl": "https://www.icegaming.com/exhibitors/interslot-gmbh",
+      "reason": "The official Interslot Gaming Technology site directs its iGaming catalogue to Interslot Interactive. The official portfolio and exact Book of Thrones page establish a self-attributable Slot, artwork, detailed field evidence and a stable official same-game demo redirect."
+    },
+    {
+      "provider": "Mad Badger Studio",
+      "status": "captured",
+      "checkedAt": "2026-10-13",
+      "discoveryUrl": "https://www.madbadgerstudio.com/",
+      "reason": "Mad Badger Studio's official catalog identifies a self-developed Slot portfolio and TRØLLHEIM as a Hold & Win Video Slot, supplies official artwork and links a dedicated same-game Demo URL that returned HTTP 200."
+    },
+    {
+      "provider": "Penguin King",
+      "status": "captured",
+      "checkedAt": "2026-10-13",
+      "discoveryUrl": "https://www.icegaming.com/exhibitors/penguin-king",
+      "reason": "The official ICE profile and Penguin King catalog establish a self-developed iGaming brand and an exact named Slot card for The Fortune Eye: Hold & Win with official artwork. No exact playable destination was exposed, so Demo remains truthfully not-verified."
+    }
+  ],
+  "continuation": {
+    "cursor": "Batch 44 has five captured games from Highlight Games, ICONIC21, Interslot Interactive, Mad Badger Studio and Penguin King. Verify, commit and publish this batch; then resume ICE Barcelona 2027 official exhibitor discovery after Penguin King in the P segment. First run the Relax intake queue in failed -> pending -> captured order and deduplicate all Provider names, aliases, domains and existing Games.",
+    "rule": "Capture one confirmed traditional Slot per new Provider only after an official catalogue, exact product page, attributable artwork, and truthful exact Demo status are verified."
+  }
+}

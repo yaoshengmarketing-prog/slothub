@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-10T00:00:00.000Z",
-  "checkedAt": "2026-10-10",
-  "gameCount": 292,
-  "providerCount": 224,
-  "sourcePageCount": 649,
+  "generatedAt": "2026-10-13T00:00:00.000Z",
+  "checkedAt": "2026-10-13",
+  "gameCount": 297,
+  "providerCount": 229,
+  "sourcePageCount": 664,
   "counts": {
     "access-restricted": 4,
-    "available": 240,
-    "not-verified": 48
+    "available": 243,
+    "not-verified": 50
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -6642,6 +6642,65 @@
       "checkedAt": "2026-10-10",
       "evidence": "KishtaLabs' official exact game page links to the dedicated Stake David VS Goliath page. That destination opened with the correct title and provider but displayed Game not found, so it is not surfaced as a playable link.",
       "inspectedUrls": [{ "requestedUrl": "https://kishtalabs.com/games/david-vs-goliath", "finalUrl": "https://kishtalabs.com/games/david-vs-goliath", "httpStatus": 200 }, { "requestedUrl": "https://stake.com/casino/games/kishtalabs-david-vs-goliath", "finalUrl": "https://stake.com/casino/games/kishtalabs-david-vs-goliath", "httpStatus": 200 }]
+    },
+    {
+      "slug": "laliga-grand-chance",
+      "name": "LALIGA GRAND CHANCE",
+      "provider": "highlight-games",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-12",
+      "evidence": "Highlight Games' exact official SLOTS page identifies LALIGA GRAND CHANCE and links its same-game Vimeo demo video. The destination returned HTTP 200 but is a video, not a playable game client, so no playable URL is asserted.",
+      "inspectedUrls": [{ "requestedUrl": "https://highlight-games.com/our-games/slots/", "finalUrl": "https://highlight-games.com/our-games/slots/", "httpStatus": 200 }, { "requestedUrl": "https://vimeo.com/1215796070?share=copy&fl=sv&fe=ci", "finalUrl": "https://vimeo.com/1215796070?share=copy&fl=sv&fe=ci", "httpStatus": 200 }]
+    },
+    {
+      "slug": "huff-house-bonanza-2",
+      "name": "Huff House Bonanza 2",
+      "provider": "iconic21",
+      "status": "available",
+      "url": "https://demo.iconic-21.com/ld/01a0c7fc-83ac-d861-f474-5b0025ffac84",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-13",
+      "evidence": "ICONIC21's exact official Huff House Bonanza 2 page links its dedicated Demo Play URL. The stable official URL redirects through the provider's demo service to a same-game Huff House Bonanza 2 client; the stable redirect is retained rather than a transient token-bearing destination.",
+      "inspectedUrls": [{ "requestedUrl": "https://iconic21.com/game/huff-house-bonanza-2/", "finalUrl": "https://iconic21.com/game/huff-house-bonanza-2/", "httpStatus": 200 }, { "requestedUrl": "https://demo.iconic-21.com/ld/01a0c7fc-83ac-d861-f474-5b0025ffac84", "finalUrl": "https://demo.iconic-21.com/ld/01a0c7fc-83ac-d861-f474-5b0025ffac84", "httpStatus": 200 }]
+    },
+    {
+      "slug": "book-of-thrones-interslot",
+      "name": "Book of Thrones",
+      "provider": "interslot-interactive",
+      "status": "available",
+      "url": "https://staging.interslotinteractive.com/rgs/server/launch?game=2015&operator=1&token=120",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-13",
+      "evidence": "Interslot Interactive's exact Book of Thrones page identifies the title, specs and its Try demo control. The official stable launch URL returned HTTP 200 and redirects to the provider's dedicated demo client; the stable launch URL is retained rather than the token-bearing client destination.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.interslotinteractive.com/games/book-of-thrones/", "finalUrl": "https://www.interslotinteractive.com/games/book-of-thrones/", "httpStatus": 200 }, { "requestedUrl": "https://staging.interslotinteractive.com/rgs/server/launch?game=2015&operator=1&token=120", "finalUrl": "https://cdn.staging.interslotinteractive.com/assets/games/index.html?token=120&serverurl=https://staging.interslotinteractive.com/rgs/legacy/chance/", "httpStatus": 200 }]
+    },
+    {
+      "slug": "trollheim-mad-badger",
+      "name": "TRØLLHEIM",
+      "provider": "mad-badger-studio",
+      "status": "available",
+      "url": "https://controller.madbadgerstudio.com/madbadger/engine/EmbedGame/EmbedGame.php?exitGameButton=0&anon=1&mode=embedded&gameid=2956",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-13",
+      "evidence": "Mad Badger Studio's official catalog identifies TRØLLHEIM as a Hold & Win Video Slot and links this game-specific Demo URL. The destination returned HTTP 200 and is published only as an external link.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.madbadgerstudio.com/", "finalUrl": "https://www.madbadgerstudio.com/", "httpStatus": 200 }, { "requestedUrl": "https://controller.madbadgerstudio.com/madbadger/engine/EmbedGame/EmbedGame.php?exitGameButton=0&anon=1&mode=embedded&gameid=2956", "finalUrl": "https://controller.madbadgerstudio.com/madbadger/engine/EmbedGame/EmbedGame.php?exitGameButton=0&anon=1&mode=embedded&gameid=2956", "httpStatus": 200 }]
+    },
+    {
+      "slug": "the-fortune-eye-hold-and-win",
+      "name": "The Fortune Eye: Hold & Win",
+      "provider": "penguin-king",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-13",
+      "evidence": "Penguin King's official catalog identifies the exact title, provider and game artwork, but exposes no verified single-game playable destination; no public demo URL is asserted.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.penguinking.com/", "finalUrl": "https://www.penguinking.com/", "httpStatus": 200 }]
     }
   ]
 }
