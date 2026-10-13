@@ -1,0 +1,58 @@
+{
+  "batch": 47,
+  "recordedAt": "2026-10-14",
+  "state": "verified-ready-to-commit",
+  "publishedCount": 5,
+  "capturedCount": 5,
+  "records": [
+    {
+      "provider": "RSG",
+      "providerSlug": "rsg",
+      "game": "魔龍傳奇",
+      "gameSlug": "dragon-legend-rsg",
+      "catalogUrl": "https://www.rsg-games.com/zh-TW/games.html",
+      "gameUrl": "https://www.rsg-games.com/zh-TW/games_detail_119.html",
+      "status": "captured-awaiting-batch"
+    },
+    {
+      "provider": "Amigo Gaming",
+      "providerSlug": "amigo-gaming",
+      "game": "3 Fisher Cats",
+      "gameSlug": "3-fisher-cats",
+      "catalogUrl": "https://amigogaming.com/games",
+      "gameUrl": "https://amigogaming.com/games/3-fisher-cats",
+      "status": "captured-awaiting-batch"
+    },
+    {
+      "provider": "Twist Gaming",
+      "providerSlug": "twist-gaming",
+      "game": "Welcome To Miami",
+      "gameSlug": "welcome-to-miami",
+      "catalogUrl": "https://juiceplay.com/studios/twist",
+      "gameUrl": "https://juiceplay.com/games/twist-welcome-to-miami",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Massive Studios",
+      "providerSlug": "massive-studios",
+      "game": "Magic Stacks",
+      "gameSlug": "magic-stacks",
+      "catalogUrl": "https://juiceplay.com/studios/massive",
+      "gameUrl": "https://juiceplay.com/games/massive-magic-stacks",
+      "status": "captured-pending-batch-verify"
+    },
+    {
+      "provider": "Knucklehead Syndicate",
+      "providerSlug": "knucklehead-syndicate",
+      "game": "Knucklehead Brothers",
+      "gameSlug": "knucklehead-brothers",
+      "catalogUrl": "https://juiceplay.com/studios/knucklehead",
+      "gameUrl": "https://juiceplay.com/games/knucklehead-knucklehead-brothers",
+      "status": "captured-pending-batch-verify"
+    }
+  ],
+  "continuation": {
+    "cursor": "Batch 47 passed the full verification suite with five publishable games. Commit and publish this exact batch, then resume new-Provider discovery after the Juice studio identity group while deduplicating existing Providers and Games first.",
+    "rule": "Capture one confirmed traditional Slot per new Provider only after an official catalogue or exact product page, attributable official artwork, and an actually checked exact Demo or game-page destination are saved."
+  }
+}

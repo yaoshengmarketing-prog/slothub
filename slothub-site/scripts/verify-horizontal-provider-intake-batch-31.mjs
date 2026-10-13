@@ -77,9 +77,14 @@ const map = await readFile(new URL('../docs/provider-candidate-map-v1.md', impor
 for (const name of ['AGS', 'NextSpin', 'NOVOMATIC Gaming', 'Octoplay', 'Onlyplay']) {
   assert.match(map, new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*已收錄（1）`));
 }
-for (const name of ['Amigo Gaming', 'JDB Gaming', 'Konami Gaming']) {
+for (const name of ['JDB Gaming', 'Konami Gaming']) {
   assert.match(map, new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^\r\n]*(保留待|待可直接)`));
 }
+assert.match(
+  map,
+  /Amigo Gaming[^\r\n]*(?:保留待|待可直接|已收錄（第 47 批：3 Fisher Cats)/,
+  'Amigo Gaming should retain either the Batch 31 evidence gap or its later Batch 47 resolution',
+);
 assert.match(map, /第三十一批完成 AGS／Imperial Fortunes、NextSpin／Big CaiShen、NOVOMATIC Gaming／Book of Ra Magic Wheel、Octoplay／2 Lucky Fellas: Hold & Win 與 Onlyplay／Tiger Jackpots/);
 assert.match(map, /第 31 批由 AGS 接續，完成五家並保存 Amigo Gaming、JDB Gaming 與 Konami Gaming 的圖片待補原因/);
 

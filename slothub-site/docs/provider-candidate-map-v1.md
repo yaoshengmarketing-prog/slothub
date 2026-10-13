@@ -188,7 +188,7 @@
 | 52 | 7777 Gaming | 7777 | — | 開發 | Slots、Instant、Crash、Table | [官方 Slots 目錄](https://7777gaming.com/products/casino/slots) | ICE26、ICE27 | 已收錄（1） |
 | 53 | AGS | PlayAGS | PlayAGS, Inc. | 開發、發行 | Slots、Table | [官方遊戲目錄](https://www.playags.com/directory) | ICE26、ICE27 | 已收錄（1） |
 | 54 | Air Dice | Air Dice Group | — | 開發 | Slots、Table／策略型 money games | [官網](https://airdice.com/) | ICE26、ICE27 | 已收錄（1） |
-| 55 | Amigo Gaming | Amigo | Cloudbridge Ltd | 開發 | Slots | [官方產品目錄](https://product.amigogaming.com/) | ICE27 | 未收錄（公開頁僅有未具名 Product preview；保留待可直接歸屬的單款作品與圖片） |
+| 55 | Amigo Gaming | Amigo | Cloudbridge Ltd | 開發 | Slots | [官方產品目錄](https://amigogaming.com/games) | ICE27、官方 | 已收錄（第 47 批：3 Fisher Cats；官方單款頁、圖片、規格與精確入口已核對） |
 | 56 | Apollo Games | Apollo Soft | — | 開發 | Slots、Plinko、Land-based | [官網／遊戲入口](https://www.apollogames.com/) | ICE26、ICE27 | 已收錄（1） |
 | 57 | Aristocrat Gaming | Aristocrat | Aristocrat Leisure Limited | 開發、發行 | Slots、Table、Land-based | [官方遊戲目錄](https://www.aristocratgaming.com/us/games) | ICE26、ICE27 | 已收錄（1） |
 | 58 | Aruze Gaming Global | AG2、Aruze | — | 開發 | Slots、Electronic Table、Land-based | [官網](https://aruzeglobal.com/) | ICE26、ICE27 | 已收錄（1） |
@@ -652,6 +652,12 @@
 第 44 批已以 Commit 5c909e0 發布並通過同 SHA CI、Cloudflare Pages 與線上回讀。第 45 批已擷取待驗證：PSMPlay／Egypt King Multi™、Promatic Games／40 HOT Fruits Jackpot Treasures、Popiplay／16 Royal Coins、Just Slots／Shogun Skylord: Jade Empress、Supremeland Gaming／Kongo Bongo™；納入建置後為 302 款 Game、234 家 Provider。PSMPlay 與 Popiplay 保存實際核對的官方精確單款頁，Promatic Games、Just Slots 與 Supremeland Gaming 保存實際開啟的官方精確 Demo；全部公開 presentation 維持 external。下一個橫向探索位置為 S 段 Supremeland Gaming 之後。
 
 第 45 批已以 Commit 677f804 發布並通過同 SHA CI、Cloudflare Pages 與線上回讀。第 46 批已擷取 5 款：Spadegaming／Juicy Market、Yellow Bat／Shake Rattle & Roll: Reyna Ahas、YGR Games／Golden Bay Sands、FBM／Oranges & Lions、FG Game Studios／Buffalo Riches；五款皆已逐欄核對官方目錄或單款資料與官方圖片。前四款已核對精確外部入口；Buffalo Riches 官方未提供精確可玩入口，誠實標記為 not-verified，未以通用目錄冒充 Demo。納入建置後為 307 款 Game、239 家 Provider；第 46 批已達 5 款並進入完整驗證。
+
+第 46 批已以 Commit 56ef9f5 發布並通過同 SHA CI、Cloudflare Pages 與線上回讀。第 47 批收錄 RSG／《魔龍傳奇》：官方單款頁、官方圖片、20 線、最高 300X、2022.11 發行月份、消除／倍數／免費遊戲功能，以及 gameid 119 的精確官方免費試玩入口均已實際核對；因官方只提供月份，未補猜發行日期。
+
+第 47 批第 2 款已保存 Amigo Gaming／3 Fisher Cats。官方單款頁現可直接核對專屬圖片、5×3、30 線、Medium High、x6600、功能與 September 2026 發行月份，已關閉先前匿名 preview 的證據缺口。Play Demo 的 client URL 由工作階段動態產生，公開入口因此只使用穩定的官方單款頁並維持 external，不發布 iframe 或猜測 client URL。
+
+第 47 批再保存 Juice 旗下三個獨立署名 Slot Studio：Twist Gaming／Welcome To Miami、Massive Studios／Magic Stacks、Knucklehead Syndicate／Knucklehead Brothers。三家各有官方 Studio 目錄、精確單款頁與可歸屬圖片，並已實際開啟官方 title-specific Demo launcher；公開 presentation 全部維持 external。Welcome To Miami 另由官方發布稿核對 5×4、高波動、Weapon Pays、96.7%、20,000x 與五種 Bonus Buy；其餘兩款只保存官方已發布 RTP，不補猜盤面、波動度或最高倍數。第 47 批已達 5 款並進入完整驗證。
 
 ## 8. 外部目錄接續順序（2026-09-16）
 

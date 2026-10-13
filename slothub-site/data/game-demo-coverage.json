@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-13T06:00:00.000Z",
   "checkedAt": "2026-10-13",
-  "gameCount": 307,
-  "providerCount": 239,
-  "sourcePageCount": 688,
+  "gameCount": 312,
+  "providerCount": 244,
+  "sourcePageCount": 700,
   "counts": {
     "access-restricted": 4,
-    "available": 252,
+    "available": 257,
     "not-verified": 51
   },
   "rules": {
@@ -6828,6 +6828,71 @@
       "checkedAt": "2026-10-13",
       "evidence": "FG Game Studios' official Projects catalogue identifies Buffalo Riches and its attributable artwork, but exposes no exact single-game playable destination; the generic catalogue is not asserted as a Demo.",
       "inspectedUrls": [{ "requestedUrl": "https://www.fgamestudios.com/projects", "finalUrl": "https://www.fgamestudios.com/projects", "httpStatus": 200 }, { "requestedUrl": "https://static.wixstatic.com/media/601b09_65353c41b7644b94925cb6f44f97af1e~mv2.png/v1/fill/w_674,h_1200,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/BuffaloRiches.png", "finalUrl": "https://static.wixstatic.com/media/601b09_65353c41b7644b94925cb6f44f97af1e~mv2.png/v1/fill/w_674,h_1200,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/BuffaloRiches.png", "httpStatus": 200 }]
+    },
+    {
+      "slug": "dragon-legend-rsg",
+      "name": "魔龍傳奇",
+      "provider": "rsg",
+      "status": "available",
+      "url": "https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=119",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-14",
+      "evidence": "RSG's exact official 魔龍傳奇 page links gameid 119 to this title-specific free-play launcher. The launcher redirected to the RSG game client and returned HTTP 200; it is published only as an external link.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.rsg-games.com/zh-TW/games_detail_119.html", "finalUrl": "https://www.rsg-games.com/zh-TW/games_detail_119.html", "httpStatus": 200 }, { "requestedUrl": "https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=119", "finalUrl": "https://gameweb3.rsg-games.com/EnterGame2", "httpStatus": 200 }]
+    },
+    {
+      "slug": "3-fisher-cats",
+      "name": "3 Fisher Cats",
+      "provider": "amigo-gaming",
+      "status": "available",
+      "url": "https://amigogaming.com/games/3-fisher-cats",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "blocked",
+      "checkedAt": "2026-10-14",
+      "evidence": "Amigo Gaming's exact official 3 Fisher Cats page identifies the game, studio, specifications and attributable artwork and exposes a session-generated Play Demo. The stable exact product page returned HTTP 200 and is published externally; no iframe or ephemeral client URL is published.",
+      "inspectedUrls": [{ "requestedUrl": "https://amigogaming.com/games/3-fisher-cats", "finalUrl": "https://amigogaming.com/games/3-fisher-cats", "httpStatus": 200 }, { "requestedUrl": "https://amigogaming.com/storage/games/id/187/image_header/symbol_game-banner.webp", "finalUrl": "https://amigogaming.com/storage/games/id/187/image_header/symbol_game-banner.webp", "httpStatus": 200 }]
+    },
+    {
+      "slug": "welcome-to-miami",
+      "name": "Welcome To Miami",
+      "provider": "twist-gaming",
+      "status": "available",
+      "url": "https://affiliate.engine.io/v1/game/url/studio/twist/70-sta",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-14",
+      "evidence": "Juice's exact official Welcome To Miami page and public game snapshot identify the Twist Gaming title and stable Engine launcher route. The title-specific launcher redirected to the live game client and returned HTTP 200; it is published only as an external link.",
+      "inspectedUrls": [{ "requestedUrl": "https://juiceplay.com/games/twist-welcome-to-miami", "finalUrl": "https://juiceplay.com/games/twist-welcome-to-miami", "httpStatus": 200 }, { "requestedUrl": "https://affiliate.engine.io/v1/game/url/studio/twist/70-sta", "finalUrl": "https://twist.live.engine.io/70-sta/v10/", "httpStatus": 200 }]
+    },
+    {
+      "slug": "magic-stacks",
+      "name": "Magic Stacks",
+      "provider": "massive-studios",
+      "status": "available",
+      "url": "https://affiliate.engine.io/v1/game/url/juice/massive/magicstacks",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-14",
+      "evidence": "Juice's exact official Magic Stacks page and public game snapshot identify the Massive Studios title and stable Engine launcher route. The title-specific launcher redirected to the live game client and returned HTTP 200; it is published only as an external link.",
+      "inspectedUrls": [{ "requestedUrl": "https://juiceplay.com/games/massive-magic-stacks", "finalUrl": "https://juiceplay.com/games/massive-magic-stacks", "httpStatus": 200 }, { "requestedUrl": "https://affiliate.engine.io/v1/game/url/juice/massive/magicstacks", "finalUrl": "https://live.massivestudios.io/", "httpStatus": 200 }]
+    },
+    {
+      "slug": "knucklehead-brothers",
+      "name": "Knucklehead Brothers",
+      "provider": "knucklehead-syndicate",
+      "status": "available",
+      "url": "https://affiliate.engine.io/v1/game/url/juice/knucklehead/knuckleheadbrothers",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-14",
+      "evidence": "Juice's exact official Knucklehead Brothers page and public game snapshot identify the Knucklehead Syndicate title and stable Engine launcher route. The title-specific launcher redirected to the live game client and returned HTTP 200; it is published only as an external link.",
+      "inspectedUrls": [{ "requestedUrl": "https://juiceplay.com/games/knucklehead-knucklehead-brothers", "finalUrl": "https://juiceplay.com/games/knucklehead-knucklehead-brothers", "httpStatus": 200 }, { "requestedUrl": "https://affiliate.engine.io/v1/game/url/juice/knucklehead/knuckleheadbrothers", "finalUrl": "https://live.knuckleheadsyndicate.com/", "httpStatus": 200 }]
     }
   ]
 }
