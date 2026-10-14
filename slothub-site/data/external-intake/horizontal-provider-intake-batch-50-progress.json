@@ -1,15 +1,15 @@
 {
   "batch": 50,
   "recordedAt": "2026-10-14",
-  "state": "verified-ready-to-commit",
+  "state": "published",
   "publishedCount": 5,
   "capturedCount": 5,
   "records": [
-    { "provider": "Degen Lab", "providerSlug": "degen-lab", "game": "Elementals Journey", "gameSlug": "elementals-journey", "catalogUrl": "https://stake.com/casino/group/degen-lab", "gameUrl": "https://stake.com/casino/games/degenlab-elementals-journey", "status": "verified-ready-to-commit" },
-    { "provider": "Meta Gaming", "providerSlug": "meta-gaming", "game": "Coins and Cauldrons", "gameSlug": "coins-and-cauldrons", "catalogUrl": "https://stake.com/casino/group/meta-gaming", "gameUrl": "https://stake.com/casino/games/metagaming-coins-and-cauldrons", "status": "verified-ready-to-commit" },
-    { "provider": "Glass Cannon", "providerSlug": "glass-cannon", "game": "Skull Gates", "gameSlug": "skull-gates", "catalogUrl": "https://stake.com/casino/group/glass-cannon", "gameUrl": "https://stake.com/casino/games/glasscannon-skull-gates", "status": "verified-ready-to-commit" },
-    { "provider": "Partyhat Play", "providerSlug": "partyhat-play", "game": "Slime Wizard", "gameSlug": "slime-wizard", "catalogUrl": "https://stake.com/casino/group/partyhat-play", "gameUrl": "https://stake.com/casino/games/partyhatplay-slime-wizard", "status": "verified-ready-to-commit" },
-    { "provider": "Monolith", "providerSlug": "monolith", "game": "Soul Frontier", "gameSlug": "soul-frontier", "catalogUrl": "https://stake.com/casino/group/monolith", "gameUrl": "https://stake.com/casino/games/monolith-soul-frontier", "status": "verified-ready-to-commit" }
+    { "provider": "Degen Lab", "providerSlug": "degen-lab", "game": "Elementals Journey", "gameSlug": "elementals-journey", "catalogUrl": "https://stake.com/casino/group/degen-lab", "gameUrl": "https://stake.com/casino/games/degenlab-elementals-journey", "status": "published" },
+    { "provider": "Meta Gaming", "providerSlug": "meta-gaming", "game": "Coins and Cauldrons", "gameSlug": "coins-and-cauldrons", "catalogUrl": "https://stake.com/casino/group/meta-gaming", "gameUrl": "https://stake.com/casino/games/metagaming-coins-and-cauldrons", "status": "published" },
+    { "provider": "Glass Cannon", "providerSlug": "glass-cannon", "game": "Skull Gates", "gameSlug": "skull-gates", "catalogUrl": "https://stake.com/casino/group/glass-cannon", "gameUrl": "https://stake.com/casino/games/glasscannon-skull-gates", "status": "published" },
+    { "provider": "Partyhat Play", "providerSlug": "partyhat-play", "game": "Slime Wizard", "gameSlug": "slime-wizard", "catalogUrl": "https://stake.com/casino/group/partyhat-play", "gameUrl": "https://stake.com/casino/games/partyhatplay-slime-wizard", "status": "published" },
+    { "provider": "Monolith", "providerSlug": "monolith", "game": "Soul Frontier", "gameSlug": "soul-frontier", "catalogUrl": "https://stake.com/casino/group/monolith", "gameUrl": "https://stake.com/casino/games/monolith-soul-frontier", "status": "published" }
   ],
   "skipped": [
     { "provider": "Maverick Studios", "game": "Fatal Funfair", "status": "source-image-pending", "reason": "The exact page confirms title, provider, Slot classification and 96.70% RTP, but the same-page artwork could not yet be retrieved reliably; the candidate remains queued rather than using an unverified image." },

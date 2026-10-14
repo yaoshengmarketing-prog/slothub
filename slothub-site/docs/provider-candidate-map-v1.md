@@ -601,9 +601,9 @@
 
 `CURRENT_SCOPE: 廠商盤點與分類`
 
-`CURRENT_GAME_COUNT: 327`
+`CURRENT_GAME_COUNT: 332`
 
-`CURRENT_PROVIDER_COUNT: 259`
+`CURRENT_PROVIDER_COUNT: 264`
 
 `FIRST_BATCH_CANDIDATE_BRAND_COUNT: 51`
 
@@ -633,7 +633,7 @@
 
 `WEEKLY_DISCOVERY_CURSOR: 第 41 批 Nucleus Gaming 補位後，ICE Barcelona 2027 展商名錄 F 段由 Fin by Intercom 接續；Sapphire Gaming／Jupiter’s Choice 與 BEON Gaming／Marshmallow King 保留證據衝突或缺口待補`
 
-`NEXT_ALLOWED_ACTION: 完成第 50 批五款的 CI、Cloudflare 部署及線上回讀後，優先重試 Maverick Studios／Fatal Funfair 的精確作品圖，再由 Monolith／Soul Frontier 之後的未收錄 Slot 開發商接續`
+`NEXT_ALLOWED_ACTION: 完成第 51 批五款的 CI、Cloudflare 部署及線上回讀後，由 Black Coffee Studios／Clash of Titans 之後的未收錄 Slot 開發商接續；Heatcheck 為下一個已具精確同款頁與圖片的候選`
 
 `SCHEMA_CHANGE_ALLOWED: NO`
 
@@ -664,6 +664,8 @@
 第 48 批已以 Commit 431a5c1 發布並通過同 SHA GitHub Actions、Cloudflare Pages 與線上回讀。第 49 批已擷取 5 款新 Provider：Colorful Play／Graffiti Ways、Evoslot／Haunted Duels、Terminal Games／Moonshine、Phantom Interactive／Viking 1000、Creative City／Progressive Gates。五款均由 Stake 精確同款頁核對遊戲名、Provider、Slot 類型、可歸屬圖片與公開外部入口；前台只標示為 Stake 平台遊戲頁，不稱作官方直連 Demo。Viking 1000 同頁的投注上下限互相衝突，故兩欄都保留缺值；CrimsonClover／Luck Engine 因頁面分類為 Burst Game 不計入，Butter／Viking Roosh 1000 因區域限制與 Demo 啟動失敗改由較完整候選補位。納入建置後為 322 款 Game、254 家 Provider。
 
 第 49 批已以 Commit 0eebeb2 發布並通過同 SHA GitHub Actions、Cloudflare Pages 與線上回讀。第 50 批已擷取 5 款新 Provider：Degen Lab／Elementals Journey、Meta Gaming／Coins and Cauldrons、Glass Cannon／Skull Gates、Partyhat Play／Slime Wizard、Monolith／Soul Frontier。五款均以 Stake 工作室目錄、精確同款頁與可歸屬作品圖完成去重與逐欄核對；公開入口一律標示為 Stake 外部平台同款頁，不稱作官方直連 Demo。Elementals Journey、Coins and Cauldrons 與 Soul Frontier 對未取得的盤面、波動度或最高倍數維持缺值；Maverick Studios／Fatal Funfair 因精確作品圖暫時無法穩定取得保留至下一輪，Coreffect Interactive 的現行目錄明確為 Burst Games，不計入 Slot 新增。納入建置後為 327 款 Game、259 家 Provider。
+
+第 50 批已以 Commit 8a5e8ba 發布並通過同 SHA GitHub Actions、Cloudflare Pages 與線上回讀。第 51 批已擷取 5 款新 Provider：Maverick Studios／Fatal Funfair、Xposed Studios／Magic Mysteries、Butter／Coasters Joyride、Lucky Bastards Studio／Kash Smash、Black Coffee Studios／Clash of Titans。五款均以 Stake 工作室目錄、精確同款頁與可歸屬作品圖完成去重與逐欄核對；公開入口一律標示為 Stake 外部平台同款頁，不稱作官方直連 Demo。Fatal Funfair 先前缺少的精確作品圖已成功取得；前四款未取得可靠盤面、波動度與最高倍數，均維持缺值。Clash of Titans 則由同頁核對 5×5、19 線、96.50%、高波動、25,000x、投注範圍、發行日與功能。納入建置後為 332 款 Game、264 家 Provider。
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
