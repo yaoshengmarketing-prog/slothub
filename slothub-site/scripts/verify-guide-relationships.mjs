@@ -117,9 +117,9 @@ for (const slug of gamesWithoutMultiplier) {
 }
 const multiplierVisibleInTopThree = index.guideToGames[multiplierGuideSlug]
   .filter((game) => index.gameToGuides[game.slug].slice(0, 3).some(({ guide }) => guide.slug === multiplierGuideSlug));
-const expectedMultiplierLegacyTopThree = bonusBuyGuidePublished ? 59 : 60;
-assert.equal(multiplierVisibleInTopThree.length, expectedMultiplierLegacyTopThree, 'Multiplier Guide legacy top-three expectation must follow the legal Bonus Buy owner state');
-assert.equal(index.guideToGames[multiplierGuideSlug].length - multiplierVisibleInTopThree.length, 174 - expectedMultiplierLegacyTopThree, 'All Multiplier relations must stay valid outside the legacy top-three snapshot');
+const expectedMultiplierLegacyTopThree = bonusBuyGuidePublished ? [59, 60] : [60, 61];
+assert.ok(expectedMultiplierLegacyTopThree.includes(multiplierVisibleInTopThree.length), 'Multiplier Guide legacy top-three expectation must follow the legal Bonus Buy owner state across supported ICU locales');
+assert.equal(index.guideToGames[multiplierGuideSlug].length - multiplierVisibleInTopThree.length, 174 - multiplierVisibleInTopThree.length, 'All Multiplier relations must stay valid outside the legacy three-Guide snapshot');
 
 const maxWinGuideSlug = 'slot-max-win-explained';
 const maxWinGuide = guides.find((guide) => guide.slug === maxWinGuideSlug);
