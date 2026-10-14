@@ -1,0 +1,22 @@
+{
+  "batch": 53,
+  "recordedAt": "2026-10-14",
+  "state": "verified-ready-to-commit",
+  "publishedCount": 5,
+  "capturedCount": 5,
+  "records": [
+    { "provider": "18 Gaming", "providerSlug": "18-gaming", "game": "Sweet Stake", "gameSlug": "sweet-stake", "catalogUrl": "https://stake.com/casino/group/18-gaming", "gameUrl": "https://stake.com/casino/games/18gaming-sweet-stake", "status": "verified-ready-to-commit" },
+    { "provider": "Uppercut Gaming", "providerSlug": "uppercut-gaming", "game": "Experiment X", "gameSlug": "experiment-x", "catalogUrl": "https://stake.com/casino/group/uppercut-gaming", "gameUrl": "https://stake.com/casino/games/uppercut-experiment-x", "status": "verified-ready-to-commit" },
+    { "provider": "Sidequest Studios", "providerSlug": "sidequest-studios", "game": "Supersize", "gameSlug": "supersize", "catalogUrl": "https://stake.com/casino/group/sidequest-studios", "gameUrl": "https://stake.com/casino/games/sidequest-supersize", "status": "verified-ready-to-commit" },
+    { "provider": "Alpha Male Gaming", "providerSlug": "alpha-male-gaming", "game": "Bagged and Tagged", "gameSlug": "bagged-and-tagged", "catalogUrl": "https://stake.com/casino/group/alpha-male-gaming", "gameUrl": "https://stake.com/casino/games/alphamalegaming-bagged-and-tagged", "status": "verified-ready-to-commit" },
+    { "provider": "Pocket Play", "providerSlug": "pocket-play", "game": "Ghostblade", "gameSlug": "ghostblade", "catalogUrl": "https://stake.com/casino/group/pocket-play", "gameUrl": "https://stake.com/casino/games/pocket-ghostblade", "status": "verified-ready-to-commit" }
+  ],
+  "skipped": [
+    { "provider": "Mirror Image Gaming", "candidate": "Royal Drop", "reason": "non-slot-provider/candidate: the exact page identifies Burst Games and the provider group specializes in burst games rather than slots" },
+    { "provider": "Rubber Duck Gaming", "candidate": "Mega Multis", "reason": "unavailable-exact-page: the exact game route currently returns Game not found" }
+  ],
+  "continuation": {
+    "cursor": "After Batch 53's Stake Engine studio group ending with Pocket Play / Ghostblade, continue horizontally with the next uncollected Slot developer.",
+    "rule": "A batch may contain at most five new publishable games. If a candidate round ends with one to four publishable games, verify and publish that final partial batch instead of withholding it."
+  }
+}
