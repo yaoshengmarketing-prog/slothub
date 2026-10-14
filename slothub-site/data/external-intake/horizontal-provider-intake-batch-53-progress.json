@@ -1,15 +1,15 @@
 {
   "batch": 53,
   "recordedAt": "2026-10-14",
-  "state": "verified-ready-to-commit",
+  "state": "published",
   "publishedCount": 5,
   "capturedCount": 5,
   "records": [
-    { "provider": "18 Gaming", "providerSlug": "18-gaming", "game": "Sweet Stake", "gameSlug": "sweet-stake", "catalogUrl": "https://stake.com/casino/group/18-gaming", "gameUrl": "https://stake.com/casino/games/18gaming-sweet-stake", "status": "verified-ready-to-commit" },
-    { "provider": "Uppercut Gaming", "providerSlug": "uppercut-gaming", "game": "Experiment X", "gameSlug": "experiment-x", "catalogUrl": "https://stake.com/casino/group/uppercut-gaming", "gameUrl": "https://stake.com/casino/games/uppercut-experiment-x", "status": "verified-ready-to-commit" },
-    { "provider": "Sidequest Studios", "providerSlug": "sidequest-studios", "game": "Supersize", "gameSlug": "supersize", "catalogUrl": "https://stake.com/casino/group/sidequest-studios", "gameUrl": "https://stake.com/casino/games/sidequest-supersize", "status": "verified-ready-to-commit" },
-    { "provider": "Alpha Male Gaming", "providerSlug": "alpha-male-gaming", "game": "Bagged and Tagged", "gameSlug": "bagged-and-tagged", "catalogUrl": "https://stake.com/casino/group/alpha-male-gaming", "gameUrl": "https://stake.com/casino/games/alphamalegaming-bagged-and-tagged", "status": "verified-ready-to-commit" },
-    { "provider": "Pocket Play", "providerSlug": "pocket-play", "game": "Ghostblade", "gameSlug": "ghostblade", "catalogUrl": "https://stake.com/casino/group/pocket-play", "gameUrl": "https://stake.com/casino/games/pocket-ghostblade", "status": "verified-ready-to-commit" }
+    { "provider": "18 Gaming", "providerSlug": "18-gaming", "game": "Sweet Stake", "gameSlug": "sweet-stake", "catalogUrl": "https://stake.com/casino/group/18-gaming", "gameUrl": "https://stake.com/casino/games/18gaming-sweet-stake", "status": "published" },
+    { "provider": "Uppercut Gaming", "providerSlug": "uppercut-gaming", "game": "Experiment X", "gameSlug": "experiment-x", "catalogUrl": "https://stake.com/casino/group/uppercut-gaming", "gameUrl": "https://stake.com/casino/games/uppercut-experiment-x", "status": "published" },
+    { "provider": "Sidequest Studios", "providerSlug": "sidequest-studios", "game": "Supersize", "gameSlug": "supersize", "catalogUrl": "https://stake.com/casino/group/sidequest-studios", "gameUrl": "https://stake.com/casino/games/sidequest-supersize", "status": "published" },
+    { "provider": "Alpha Male Gaming", "providerSlug": "alpha-male-gaming", "game": "Bagged and Tagged", "gameSlug": "bagged-and-tagged", "catalogUrl": "https://stake.com/casino/group/alpha-male-gaming", "gameUrl": "https://stake.com/casino/games/alphamalegaming-bagged-and-tagged", "status": "published" },
+    { "provider": "Pocket Play", "providerSlug": "pocket-play", "game": "Ghostblade", "gameSlug": "ghostblade", "catalogUrl": "https://stake.com/casino/group/pocket-play", "gameUrl": "https://stake.com/casino/games/pocket-ghostblade", "status": "published" }
   ],
   "skipped": [
     { "provider": "Mirror Image Gaming", "candidate": "Royal Drop", "reason": "non-slot-provider/candidate: the exact page identifies Burst Games and the provider group specializes in burst games rather than slots" },
