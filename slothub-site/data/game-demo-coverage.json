@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 362,
-  "providerCount": 294,
-  "sourcePageCount": 850,
+  "gameCount": 367,
+  "providerCount": 299,
+  "sourcePageCount": 867,
   "counts": {
     "access-restricted": 4,
-    "available": 305,
-    "not-verified": 53
+    "available": 307,
+    "not-verified": 56
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -7458,6 +7458,97 @@
       "slug": "one-shot", "name": "One Shot", "provider": "pixelpanic", "status": "available", "url": "https://stake.com/casino/games/pixelpanic-one-shot", "accessType": "platform-game-page", "platformName": "Stake", "presentation": "external", "iframeStatus": "not-tested", "checkedAt": "2026-10-15",
       "evidence": "Stake's exact One Shot page visibly identifies the title and PixelPanic and supplies matching RTP, Bonus Buy, Cascading and artwork. It is labelled only as an external platform page.", "sameGameEvidence": "The exact destination visibly names One Shot and PixelPanic and matches the stored 96.02% RTP, feature tags and artwork.",
       "inspectedUrls": [{ "requestedUrl": "https://stake.com/casino/group/pixelpanic", "finalUrl": "https://stake.com/casino/group/pixelpanic", "httpStatus": 200 }, { "requestedUrl": "https://stake.com/casino/games/pixelpanic-one-shot", "finalUrl": "https://stake.com/casino/games/pixelpanic-one-shot", "httpStatus": 200 }, { "requestedUrl": "https://mediumrare.imgix.net/ef61eef00c313e5a5d9105ecfd28c2e1604cefc73fe55f231913c816e5ac0148?auto=format&fit=min&h=600&w=800", "finalUrl": "https://mediumrare.imgix.net/ef61eef00c313e5a5d9105ecfd28c2e1604cefc73fe55f231913c816e5ac0148?auto=format&fit=min&h=600&w=800", "httpStatus": 200 }], "browserReviewedAt": "2026-10-15"
+    },
+    {
+      "slug": "aztec-totem-poggiplay",
+      "name": "Aztec Totem",
+      "provider": "poggiplay",
+      "status": "not-verified",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-15",
+      "evidence": "PoggiPlay's exact Aztec Totem page visibly identifies the provider, title, Slot type, 2026-08-20 release date, 96.56% RTP, 5,000x maximum, game ID and Bonus/Buy Bonus features. Its Play Demo control did not expose a separate destination during this inspection.",
+      "sameGameEvidence": "The exact official page and its attributable operator-avatar artwork both name Aztec Totem; no Demo URL is claimed until an exact destination can be visibly checked.",
+      "inspectedUrls": [
+        { "requestedUrl": "https://poggiplay.com/games-list", "finalUrl": "https://poggiplay.com/games-list", "httpStatus": 200 },
+        { "requestedUrl": "https://poggiplay.com/aztectotem", "finalUrl": "https://poggiplay.com/aztectotem", "httpStatus": 200 },
+        { "requestedUrl": "https://drive.poggiplay.com/static/game/aztectotem/operatorAvatar/500x500.png", "finalUrl": "https://drive.poggiplay.com/static/game/aztectotem/operatorAvatar/500x500.png", "httpStatus": 200 }
+      ],
+      "browserReviewedAt": "2026-10-15"
+    },
+    {
+      "slug": "zappin-zeus-superbull-gaming",
+      "name": "Zappin Zeus",
+      "provider": "superbull-gaming",
+      "status": "available",
+      "url": "https://demo.royaledge.ventures/play?gameCode=SL_33_ZAPPIN_ZEUS",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-15",
+      "evidence": "SuperBull Gaming's exact Zappin Zeus page visibly identifies the title, provider, 3x3 slot layout, 96.61% RTP, Medium volatility, 1,636x Base maximum and feature set, and publishes this precise Demo URL.",
+      "sameGameEvidence": "The official exact page's Copy Demo Link target opened the Zappin Zeus game client, whose browser title names Zappin Zeus; its source page also has matching title artwork.",
+      "inspectedUrls": [
+        { "requestedUrl": "https://superbullgaming.com/games/", "finalUrl": "https://superbullgaming.com/games/", "httpStatus": 200 },
+        { "requestedUrl": "https://superbullgaming.com/games/zappin-zeus/", "finalUrl": "https://superbullgaming.com/games/zappin-zeus/", "httpStatus": 200 },
+        { "requestedUrl": "https://demo.royaledge.ventures/play?gameCode=SL_33_ZAPPIN_ZEUS", "finalUrl": "https://demo-gs-proxy.royaledge.ventures/sl_33_zappin_zeus/index.html", "httpStatus": 200 },
+        { "requestedUrl": "https://superbullgaming.com/wp-content/uploads/2026/07/zappin-zeus-thumbnail-1.webp", "finalUrl": "https://superbullgaming.com/wp-content/uploads/2026/07/zappin-zeus-thumbnail-1.webp", "httpStatus": 200 }
+      ],
+      "browserReviewedAt": "2026-10-15"
+    },
+    {
+      "slug": "boom-boom-gold-llama-games",
+      "name": "Boom Boom Gold",
+      "provider": "llama-games",
+      "status": "not-verified",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-15",
+      "evidence": "LLAMA Games' exact Boom Boom Gold page visibly identifies the provider, title, 5x3 slot layout, 20 paylines, 97.30% RTP, 1,500x maximum win, release date, features and a Play Demo control. The destination has not yet been opened.",
+      "sameGameEvidence": "The exact official page names Boom Boom Gold and contains its matching official logo and six named gameplay screenshots; no Demo URL is claimed until the destination is visibly checked.",
+      "inspectedUrls": [
+        { "requestedUrl": "https://www.llamagames.com/games", "finalUrl": "https://www.llamagames.com/games", "httpStatus": 200 },
+        { "requestedUrl": "https://www.llamagames.com/games/boom-boom-gold", "finalUrl": "https://www.llamagames.com/games/boom-boom-gold", "httpStatus": 200 },
+        { "requestedUrl": "https://www.llamagames.com/logos/Boom-Boom-Gold.png", "finalUrl": "https://www.llamagames.com/logos/Boom-Boom-Gold.png", "httpStatus": 200 }
+      ],
+      "browserReviewedAt": "2026-10-15"
+    },
+    {
+      "slug": "rust-and-riches-spinlab",
+      "name": "Rust And Riches",
+      "provider": "spinlab",
+      "status": "not-verified",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-15",
+      "evidence": "SpinLab's exact Rust And Riches page visibly identifies the title, provider, 5x5 layout, high volatility, 10,000x maximum win, bet range and feature descriptions. Its Play Demo control points to an external client, but that destination was not opened in this inspection.",
+      "sameGameEvidence": "The exact official page and its attributable cover image both name Rust And Riches; no external demo destination is claimed until its title and provider can be visibly checked.",
+      "inspectedUrls": [
+        { "requestedUrl": "https://playspinlab.com/games", "finalUrl": "https://playspinlab.com/games", "httpStatus": 200 },
+        { "requestedUrl": "https://playspinlab.com/games/rust-and-riches", "finalUrl": "https://playspinlab.com/games/rust-and-riches", "httpStatus": 200 },
+        { "requestedUrl": "https://s3.spinlab.games/1/4/rust_Cover_ccccae9991.png", "finalUrl": "https://s3.spinlab.games/1/4/rust_Cover_ccccae9991.png", "httpStatus": 200 }
+      ],
+      "browserReviewedAt": "2026-10-15"
+    },
+    {
+      "slug": "dragons-hoard-urgent-games",
+      "name": "Dragon's Hoard",
+      "provider": "urgent-games",
+      "status": "available",
+      "url": "https://urgent.games/DragonsHoard/?mode=offline&language=en",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-15",
+      "evidence": "Urgent Games' exact Dragon's Hoard page identifies the title, provider, 3x5 slot format, volatility, maximum win, paylines, release date and its public Play Now destination.",
+      "sameGameEvidence": "The official exact page visibly names Dragon's Hoard, shows the same game artwork and links the public offline client from its Play Now control.",
+      "inspectedUrls": [
+        { "requestedUrl": "https://www.urgentgames.com/games", "finalUrl": "https://www.urgentgames.com/games", "httpStatus": 200 },
+        { "requestedUrl": "https://www.urgentgames.com/game/dragons-hoard", "finalUrl": "https://www.urgentgames.com/game/dragons-hoard", "httpStatus": 200 },
+        { "requestedUrl": "https://urgent.games/DragonsHoard/?mode=offline&language=en", "finalUrl": "https://urgent.games/DragonsHoard/?mode=offline&language=en", "httpStatus": 200 },
+        { "requestedUrl": "https://cdn.sanity.io/images/8fyfvzll/production/3d6890eb246cf2bf5204b8ea0023541ffbdc5bc9-690x300.jpg", "finalUrl": "https://cdn.sanity.io/images/8fyfvzll/production/3d6890eb246cf2bf5204b8ea0023541ffbdc5bc9-690x300.jpg", "httpStatus": 200 }
+      ],
+      "browserReviewedAt": "2026-10-15"
     }
   ]
 }

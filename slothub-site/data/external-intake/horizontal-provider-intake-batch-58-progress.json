@@ -1,0 +1,97 @@
+{
+  "batch": 58,
+  "recordedAt": "2026-10-15",
+  "state": "verified-ready-to-commit",
+  "publishedCount": 0,
+  "capturedCount": 5,
+  "records": [
+    {
+      "provider": "Urgent Games",
+      "providerSlug": "urgent-games",
+      "game": "Dragon's Hoard",
+      "gameSlug": "dragons-hoard-urgent-games",
+      "catalogUrl": "https://www.urgentgames.com/games",
+      "gameUrl": "https://www.urgentgames.com/game/dragons-hoard",
+      "status": "verified-ready-to-commit"
+    },
+    {
+      "provider": "SpinLab",
+      "providerSlug": "spinlab",
+      "game": "Rust And Riches",
+      "gameSlug": "rust-and-riches-spinlab",
+      "catalogUrl": "https://playspinlab.com/games",
+      "gameUrl": "https://playspinlab.com/games/rust-and-riches",
+      "status": "verified-ready-to-commit"
+    },
+    {
+      "provider": "LLAMA Games",
+      "providerSlug": "llama-games",
+      "game": "Boom Boom Gold",
+      "gameSlug": "boom-boom-gold-llama-games",
+      "catalogUrl": "https://www.llamagames.com/games",
+      "gameUrl": "https://www.llamagames.com/games/boom-boom-gold",
+      "status": "verified-ready-to-commit"
+    },
+    {
+      "provider": "SuperBull Gaming",
+      "providerSlug": "superbull-gaming",
+      "game": "Zappin Zeus",
+      "gameSlug": "zappin-zeus-superbull-gaming",
+      "catalogUrl": "https://superbullgaming.com/games/",
+      "gameUrl": "https://superbullgaming.com/games/zappin-zeus/",
+      "status": "verified-ready-to-commit"
+    },
+    {
+      "provider": "PoggiPlay",
+      "providerSlug": "poggiplay",
+      "game": "Aztec Totem",
+      "gameSlug": "aztec-totem-poggiplay",
+      "catalogUrl": "https://poggiplay.com/games-list",
+      "gameUrl": "https://poggiplay.com/aztectotem",
+      "status": "verified-ready-to-commit"
+    }
+  ],
+  "discoveryAttempts": [
+    {
+      "provider": "VoltEnt",
+      "candidateGame": "25 Magic Plums",
+      "status": "skipped-insufficient-first-party-evidence",
+      "checkedAt": "2026-10-15",
+      "catalogUrl": "https://voltent.com/",
+      "reason": "VoltEnt's official catalogue identifies the developer, a Video Slots category, 25 Magic Plums and attributable catalogue artwork. Its public View more control did not expose a stable, exact single-game URL or independently addressable product page in this inspection, so the catalogue card is not promoted to a public Game record.",
+      "nextStep": "Retry only if VoltEnt exposes a stable exact product URL, or locate another uncollected developer with a first-party catalogue, exact product page and attributable artwork."
+    },
+    {
+      "provider": "Stake Engine candidate stream",
+      "status": "access-restricted",
+      "checkedAt": "2026-10-15",
+      "catalogUrl": "https://stake.com/casino/group/stake-engine",
+      "reason": "Direct public retrieval of Stake group and game pages returned a Cloudflare challenge in this environment. Search discovery results are retained only as leads and are not sufficient to create a Provider or Game record.",
+      "nextStep": "Resume from the next uncollected developer after PixelPanic / One Shot when exact Stake pages can be visibly opened and checked."
+    },
+    {
+      "provider": "ELK Studios",
+      "candidateGame": "Propaganda 2",
+      "status": "skipped-duplicate-provider",
+      "checkedAt": "2026-10-15",
+      "catalogUrl": "https://www.elk-studios.com/games/",
+      "gameUrl": "https://www.elk-studios.com/games/propaganda-2/",
+      "reason": "The official exact page, official artwork and direct demo were verified, but ELK Studios is already a published Provider with Nitropolis. The horizontal intake rule permits one first game per new Provider, so this candidate is not counted or added as a second ELK title.",
+      "nextStep": "Continue from the next uncollected Slot developer; reconsider only under an explicitly authorized existing-provider expansion."
+    },
+    {
+      "provider": "BEON Gaming",
+      "candidateGame": "Marshmallow King",
+      "status": "skipped-duplicate-provider",
+      "checkedAt": "2026-10-15",
+      "catalogUrl": "https://beongaming.com/games",
+      "gameUrl": "https://dakbq0i7nfzhg.cloudfront.net/stage/index.html?token=token143456&endpoint=https://test.rgs-platform.beongaming.com&device=mobile&gameName=marsh&lang=eng&operatorName=operator-demo",
+      "reason": "BEON's official catalogue visibly identifies Marshmallow King as a Slot and exposes its direct official demo, but the Provider and this exact game were already published in Batch 48.",
+      "nextStep": "Do not replay this published item; continue to an uncollected Slot developer."
+    }
+  ],
+  "continuation": {
+    "cursor": "Batch 58 reached its five-Provider cap: Urgent Games / Dragon's Hoard, SpinLab / Rust And Riches, LLAMA Games / Boom Boom Gold, SuperBull Gaming / Zappin Zeus and PoggiPlay / Aztec Totem. Full preview verification passed after catalog-growth fixtures were changed from historical totals to data-derived semantic assertions. Commit this scoped batch, fresh-fetch before normal push, then complete exact-SHA CI, deployment and online readback before marking published.",
+    "rule": "Capture one confirmed traditional Slot per new Provider only after a first-party catalogue, exact product page, attributable artwork, and truthful exact Demo status are verified. A batch may contain at most five new publishable games."
+  }
+}

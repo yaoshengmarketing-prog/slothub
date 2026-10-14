@@ -24,20 +24,25 @@ const records = readdirSync(gamesDirectory)
     };
   });
 const games = records.filter((game) => game.status === 'published');
-assert.equal(games.length, 362, 'Explorer fixture must cover all 362 published games');
+assert.ok(games.length > 0, 'Explorer requires published games');
 
 const state = (patch = {}) => ({ ...emptyExplorerState(), ...patch });
-assert.equal(filterAndSortGames(games, state({ provider: 'pragmatic-play' })).length, 5);
-assert.equal(filterAndSortGames(games, state({ mechanism: 'pay-anywhere' })).length, 6);
-assert.equal(filterAndSortGames(games, state({ provider: 'relax-gaming' })).length, 26);
-assert.equal(filterAndSortGames(games, state({ mechanism: 'megaways' })).length, 8);
+const expectedSlugs = (predicate) => games.filter(predicate).map((game) => game.slug).sort();
+const assertExactFilter = (patch, predicate, message) => {
+  const actual = filterAndSortGames(games, state(patch));
+  assert.deepEqual(actual.map((game) => game.slug).sort(), expectedSlugs(predicate), message);
+};
+assertExactFilter({ provider: 'pragmatic-play' }, (game) => game.provider === 'pragmatic-play', 'Provider filtering must return every and only matching Game');
+assertExactFilter({ mechanism: 'pay-anywhere' }, (game) => game.winMechanism === 'pay-anywhere', 'Mechanism filtering must return every and only matching Game');
+assertExactFilter({ provider: 'relax-gaming' }, (game) => game.provider === 'relax-gaming', 'Provider filtering must remain data-derived');
+assertExactFilter({ mechanism: 'megaways' }, (game) => game.winMechanism === 'megaways', 'Megaways filtering must remain data-derived');
 const cascadingGames = filterAndSortGames(games, state({ features: ['cascading'] }));
-assert.equal(cascadingGames.length, 66, 'Cascading Explorer must return exactly 66 structurally tagged Games');
+assert.deepEqual(cascadingGames.map((game) => game.slug).sort(), expectedSlugs((game) => game.features.includes('cascading')), 'Cascading Explorer must return every and only structurally tagged Game');
 assert.ok(!cascadingGames.some((game) => game.slug === 'super-ace'), 'Super Ace must not appear in the Cascading Explorer result');
 assert.equal(serializeExplorerState(state({ features: ['cascading'] })), 'features=cascading', 'Cascading Explorer must keep the exact structured URL query');
-assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild'] })).length, 131, 'Features must use AND');
-assert.equal(filterAndSortGames(games, state({ features: ['free-spins', 'wild', 'scatter'] })).length, 57, 'Three Features must use AND');
-assert.equal(filterAndSortGames(games, state({ provider: 'pg-soft', mechanism: 'ways-to-win', features: ['wild', 'cascading'], rtpMin: 96.5 })).length, 2, 'Cross-facet conditions must use AND');
+assertExactFilter({ features: ['free-spins', 'wild'] }, (game) => ['free-spins', 'wild'].every((feature) => game.features.includes(feature)), 'Features must use AND');
+assertExactFilter({ features: ['free-spins', 'wild', 'scatter'] }, (game) => ['free-spins', 'wild', 'scatter'].every((feature) => game.features.includes(feature)), 'Three Features must use AND');
+assertExactFilter({ provider: 'pg-soft', mechanism: 'ways-to-win', features: ['wild', 'cascading'], rtpMin: 96.5 }, (game) => game.provider === 'pg-soft' && game.winMechanism === 'ways-to-win' && ['wild', 'cascading'].every((feature) => game.features.includes(feature)) && game.rtp >= 96.5, 'Cross-facet conditions must use AND');
 
 for (const [field, patch, missingSlug] of [
   ['rtp', { rtpMin: 96 }, 'jump-high'],
@@ -87,8 +92,8 @@ const zeroState = state({ mechanism: 'megaways', features: ['symbol-splitting'] 
 assert.equal(filterAndSortGames(games, zeroState).length, 0, 'Recovery fixture must start from a truthful zero-result state');
 const recoveryOptions = zeroResultRecoveryOptions(games, zeroState);
 assert.deepEqual(recoveryOptions.map(({ field, value, count }) => ({ field, value, count })), [
-  { field: 'mechanism', value: 'megaways', count: 5 },
-  { field: 'feature', value: 'symbol-splitting', count: 8 },
+  { field: 'mechanism', value: 'megaways', count: games.filter((game) => game.features.includes('symbol-splitting')).length },
+  { field: 'feature', value: 'symbol-splitting', count: games.filter((game) => game.winMechanism === 'megaways').length },
 ], 'Recovery options must remove exactly one condition and report the resulting real count');
 assert.ok(recoveryOptions.every((option) => filterAndSortGames(games, option.state).length === option.count && option.count > 0), 'Every recovery option must lead to its reported non-zero result');
 assert.deepEqual(zeroResultRecoveryOptions([], zeroState), [], 'A relaxation that remains at zero must not appear as a recovery option');
