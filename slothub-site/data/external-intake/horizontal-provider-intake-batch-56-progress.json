@@ -1,0 +1,19 @@
+{
+  "batch": 56,
+  "recordedAt": "2026-10-15",
+  "state": "verified-ready-to-commit",
+  "publishedCount": 5,
+  "capturedCount": 5,
+  "records": [
+    { "provider": "Hit Engine", "providerSlug": "hit-engine", "game": "Meltdown", "gameSlug": "meltdown", "catalogUrl": "https://stake.com/casino/group/hit-engine", "gameUrl": "https://stake.com/casino/games/hitengine-meltdown", "status": "verified-ready-to-commit" },
+    { "provider": "Elevation", "providerSlug": "elevation", "game": "Ocean Surge", "gameSlug": "ocean-surge", "catalogUrl": "https://stake.com/casino/group/elevation", "gameUrl": "https://stake.com/casino/games/elevation-ocean-surge", "status": "verified-ready-to-commit" },
+    { "provider": "Rainfall Gaming", "providerSlug": "rainfall-gaming", "game": "Western Boost", "gameSlug": "western-boost", "catalogUrl": "https://stake.com/casino/group/rainfall-gaming", "gameUrl": "https://stake.com/casino/games/rainfallgaming-western-boost", "status": "verified-ready-to-commit" },
+    { "provider": "Incredible Gaming", "providerSlug": "incredible-gaming", "game": "Pirate Mayhem", "gameSlug": "pirate-mayhem", "catalogUrl": "https://stake.com/casino/group/incredible-gaming", "gameUrl": "https://stake.com/casino/games/incrediblegaming-pirate-mayhem", "status": "verified-ready-to-commit" },
+    { "provider": "Toucan Royale", "providerSlug": "toucan-royale", "game": "Candy Quake", "gameSlug": "candy-quake", "catalogUrl": "https://stake.com/casino/group/toucan-royale", "gameUrl": "https://stake.com/casino/games/toucanroyale-candy-quake", "status": "verified-ready-to-commit" }
+  ],
+  "skipped": [],
+  "continuation": {
+    "cursor": "After Batch 56 ending with Toucan Royale / Candy Quake, continue with Bad Decision Gaming / The Hollow Ritual and the next uncollected Slot developers.",
+    "rule": "A batch may contain at most five new publishable games. If a candidate round ends with one to four publishable games, verify and publish that final partial batch instead of withholding it."
+  }
+}
