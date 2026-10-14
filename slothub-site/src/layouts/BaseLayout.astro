@@ -24,7 +24,7 @@ const {
 } = Astro.props;
 
 const canonical = absoluteUrl(canonicalPath);
-const ogImage = absoluteUrl('/og-default.svg');
+const ogImage = absoluteUrl('/og-default.png');
 const schemas = Array.isArray(schema) ? schema : [schema];
 const isPreview = SITE.environment !== 'production';
 ---
@@ -47,6 +47,10 @@ const isPreview = SITE.environment !== 'production';
     <meta property="og:description" content={description} />
     {!isPreview && <meta property="og:url" content={canonical} />}
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:image" content={ogImage} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#6757d9" />
     {schemas.map((item) => <script type="application/ld+json" set:html={JSON.stringify(item)} />)}

@@ -3,7 +3,7 @@ export const SITE = {
   origin: 'https://www.slothub.com.tw',
   lang: 'zh-Hant-TW',
   locale: 'zh_TW',
-  description: 'Slot Hub 新站技術預覽環境，目前仍在建置中。',
+  description: 'Slot Hub 老虎機電子遊戲資料庫，整理遊戲廠商、玩法、RTP、波動度與資料來源。',
   environment: import.meta.env.PUBLIC_SITE_ENV ?? 'preview',
 } as const;
 
