@@ -9,6 +9,8 @@ provider: pragmatic-play
 primaryType: slots
 subtypes: [video-slots, cascading-reels]
 summary: Pragmatic Play 的 6×5 任意位置賠付老虎機，官方資料記錄 Tumbling、Scatter、免費旋轉與倍數符號。
+rtp: 96.51
+rtpVariants: [96.51, 96.48]
 volatility: high
 volatilityOriginal: high-volatility
 volatilityNormalized: high
@@ -30,7 +32,8 @@ sources:
   - { label: Pragmatic Play 官方 Sweet Bonanza 發布稿, url: https://www.pragmaticplay.com/en/news/pragmatic-play-launches-sweet-bonanza/, checkedAt: 2026-08-29 }
   - { label: Pragmatic Play 官方 Sweet Bonanza 系列證據, url: https://www.pragmaticplay.com/en/news/pragmatic-play-sweetens-up-candyland-in-sweet-bonanza-1000/, checkedAt: 2026-08-29 }
   - { label: Pragmatic Play 官方 Sweet Bonanza 縮圖（原始 339×180；等比縮放置中為 600×500 PNG，未裁切）, url: https://www.pragmaticplay.com/wp-content/uploads/2019/03/Sweet-Bonanza%E2%84%A2_Thumb_339x180-3.png, checkedAt: 2026-08-29 }
+  - { label: "YesPlay 代管的 Pragmatic Play Sweet Bonanza 遊戲規則 PDF（理論 RTP：96.51%；最低 RTP：96.48%）", url: https://yesplay.bet/assets/documents/pragmatic-play-Sweet-Bonanza-rules.pdf, checkedAt: 2026-10-15 }
 demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.pragmaticplay.com/en/games/sweet-bonanza-slot/","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-08-29
-updatedAt: 2026-08-29
+updatedAt: 2026-10-15
 ---

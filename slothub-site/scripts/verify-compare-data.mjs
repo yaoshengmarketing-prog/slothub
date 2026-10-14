@@ -28,7 +28,7 @@ assert.deepEqual({
   maxWinMultiplier: coverage('maxWinMultiplier'), maxWinLabelOriginal: coverage('maxWinLabelOriginal'),
   lastVerifiedAt: coverage('lastVerifiedAt'),
 }, {
-  releaseDate: 162, rtp: 195, rtpVariants: 166, volatilityOriginal: 189,
+  releaseDate: 162, rtp: 198, rtpVariants: 167, volatilityOriginal: 189,
   volatilityNormalized: 154, maxWinMultiplier: 192, maxWinLabelOriginal: 208, lastVerifiedAt: 362,
 });
 
