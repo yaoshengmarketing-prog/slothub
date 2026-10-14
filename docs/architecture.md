@@ -20,9 +20,10 @@ Provider records scale independently and support formal/brand names, aliases, pa
 ## URL and indexing
 
 - Every route uses a trailing slash.
-- Preview HTML and HTTP headers use `noindex,nofollow`.
+- Production (`https://www.slothub.com.tw/`, Cloudflare Pages) is indexable; `slothub.com.tw` 301-redirects to `www`.
+- Preview hosts (`*.pages.dev`) get `noindex,nofollow` in HTML and HTTP headers via `functions/_middleware.js`.
 - Preview omits canonical links and publishes an empty sitemap.
 - Production-mode builds use `https://www.slothub.com.tw/` canonical URLs.
 - `/compare/` and `/search/` use `noindex,follow` in production and never enter the sitemap.
 
-No DNS, Wix, custom-domain or redirect behavior is part of this phase.
+Legacy Wix URLs are 301-redirected by the Pages middleware using `src/lib/legacy-wix-routes.mjs`. DNS and custom-domain settings live in Cloudflare and are changed only with owner approval.

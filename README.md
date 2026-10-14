@@ -1,15 +1,16 @@
 # Slot Hub
 
-Slot Hub 的獨立重建專案。正式網站目前仍由 Wix 提供服務；本 Repository 只承載新站技術地基與 Cloudflare Pages 預覽環境。
+Slot Hub 正式網站的原始碼。正式站 `https://www.slothub.com.tw/` 已由本 Repository 透過 Cloudflare Pages（project `slothub`）提供服務，不再使用 Wix；`slothub.com.tw` 以 301 導向 `www`。
 
 第一版包含可操作的全站搜尋、遊戲探索器、最多三款的分享式比較，以及以 Content Collections 維護的遊戲、廠商與教學資料。
 
 ## 專案邊界
 
-- 不修改 Wix、`slothub.com.tw` DNS 或既有網址。
-- 不建立 301，不綁定正式網域。
-- 預覽環境預設 `noindex,nofollow`。
-- 暫時首頁不是正式首頁，也不包含未核准的品牌或遊戲事實。
+- 正式網域 `www.slothub.com.tw` 可被索引（HTML `index,follow`、canonical 指向 `https://www.slothub.com.tw/`、`/sitemap.xml` 列出正式網址）。
+- `/search/`、`/compare/` 與帶 query 的 `/games/` 為工具頁，回傳 `X-Robots-Tag: noindex, follow`。
+- `*.pages.dev` 預覽主機一律 `noindex,nofollow`（見 `slothub-site/functions/_middleware.js`）。
+- 舊 Wix 網址的 301 對照表在 `slothub-site/src/lib/legacy-wix-routes.mjs`。
+- DNS、Cloudflare 網域設定與索引政策的變更需經專案負責人核准。
 
 ## 本機開發
 
@@ -30,6 +31,6 @@ npm run verify
 | Build command | `npm run build` |
 | Build output directory | `dist` |
 | Node.js | `20` |
-| `PUBLIC_SITE_ENV` | `preview` |
+| `PUBLIC_SITE_ENV` | `production`（preview 分支為 `preview`，見 `slothub-site/wrangler.jsonc`） |
 
-正式切換前必須另案移除預覽索引保護並完成 DNS、canonical、redirect 與 Wix 遷移驗收。本次不執行這些動作。
+推送到 `main` 即部署正式站，請在推送前執行 `npm run verify`。

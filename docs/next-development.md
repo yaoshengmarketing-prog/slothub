@@ -6,16 +6,19 @@
 - Expand verified RTP variants, release dates and volatility fields.
 - Add fishing-game records before promoting the fishing explorer.
 - Add RTP expectation calculator after search, explorer and comparison feedback.
-- Import Wix/GSC URL inventory only in the later migration project; no redirects yet.
+- Keep the legacy Wix → new URL map (`slothub-site/src/lib/legacy-wix-routes.mjs`) up to date as GSC reports old URLs.
 
-## Formal launch checklist
+## Production status
 
-- Remove the Preview-only fixed `X-Robots-Tag: noindex, nofollow` header before the production domain is switched.
-- Change the HTML robots policy from Preview `noindex,nofollow` to the approved production policy.
-- Confirm production canonical URLs use `https://www.slothub.com.tw/` and never a `pages.dev` hostname.
-- Generate the production sitemap only after the final public URL set is approved.
-- Re-run build, internal-link, canonical, robots, sitemap and HTTP-header checks on the production candidate.
-- Do not change DNS, bind the production domain or enable redirects until the Wix URL inventory and migration map are approved.
+The site is live: `https://www.slothub.com.tw/` is served by Cloudflare Pages from this repository (`main`), and `slothub.com.tw` 301-redirects to `www`. Wix is no longer serving the site.
+
+Ongoing production checks after each deploy:
+
+- Production pages return `index,follow`; only `*.pages.dev` preview hosts are `noindex,nofollow`.
+- Canonical URLs use `https://www.slothub.com.tw/` and never a `pages.dev` hostname.
+- `/sitemap.xml` lists only approved public URLs.
+- Re-run build, internal-link, canonical, robots, sitemap and HTTP-header checks (`npm run verify`).
+- DNS, custom-domain and indexing-policy changes need owner approval.
 
 ## Provider backlog supplied by project owner
 
