@@ -1,0 +1,19 @@
+{
+  "batch": 55,
+  "recordedAt": "2026-10-15",
+  "state": "verified-ready-to-commit",
+  "publishedCount": 5,
+  "capturedCount": 5,
+  "records": [
+    { "provider": "Hyper Play", "providerSlug": "hyper-play", "game": "Maelstrom", "gameSlug": "maelstrom", "catalogUrl": "https://stake.com/casino/group/hyper-play", "gameUrl": "https://stake.com/casino/games/hyper-maelstrom", "status": "verified-ready-to-commit" },
+    { "provider": "GG Gaming", "providerSlug": "gg-gaming", "game": "Wheel of Wonders", "gameSlug": "wheel-of-wonders", "catalogUrl": "https://stake.com/casino/group/gg-gaming", "gameUrl": "https://stake.com/casino/games/gggaming-wheel-of-wonders", "status": "verified-ready-to-commit" },
+    { "provider": "Color Drop", "providerSlug": "color-drop", "game": "Hexfire", "gameSlug": "hexfire", "catalogUrl": "https://stake.com/casino/group/color-drop", "gameUrl": "https://stake.com/casino/games/colordrop-hexfire", "status": "verified-ready-to-commit" },
+    { "provider": "ionfall", "providerSlug": "ionfall", "game": "Bedrock", "gameSlug": "bedrock", "catalogUrl": "https://stake.com/casino/group/ionfall", "gameUrl": "https://stake.com/casino/games/ionfall-bedrock", "status": "verified-ready-to-commit" },
+    { "provider": "Crimson Clover", "providerSlug": "crimson-clover", "game": "Cluster Engine", "gameSlug": "cluster-engine", "catalogUrl": "https://stake.com/casino/group/crimson-clover", "gameUrl": "https://stake.com/casino/games/crimsonclover-cluster-engine", "status": "verified-ready-to-commit" }
+  ],
+  "skipped": [],
+  "continuation": {
+    "cursor": "After Batch 55's Stake Engine group ending with Crimson Clover / Cluster Engine, continue with the next uncollected Slot developer.",
+    "rule": "A batch may contain at most five new publishable games. If a candidate round ends with one to four publishable games, verify and publish that final partial batch instead of withholding it."
+  }
+}

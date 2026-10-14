@@ -601,9 +601,9 @@
 
 `CURRENT_SCOPE: 廠商盤點與分類`
 
-`CURRENT_GAME_COUNT: 347`
+`CURRENT_GAME_COUNT: 352`
 
-`CURRENT_PROVIDER_COUNT: 279`
+`CURRENT_PROVIDER_COUNT: 284`
 
 `FIRST_BATCH_CANDIDATE_BRAND_COUNT: 51`
 
@@ -623,9 +623,9 @@
 
 `IDENTITY_CLOSURE_NET_NEW_BRAND_COUNT: 5`
 
-`TOTAL_CANDIDATE_BRAND_COUNT: 238`
+`TOTAL_CANDIDATE_BRAND_COUNT: 243`
 
-`TOTAL_SLOT_CAPABLE_BRAND_COUNT: 224`
+`TOTAL_SLOT_CAPABLE_BRAND_COUNT: 229`
 
 `TOTAL_UNCOLLECTED_SLOT_BRAND_COUNT: 5`
 
@@ -633,7 +633,7 @@
 
 `WEEKLY_DISCOVERY_CURSOR: 第 41 批 Nucleus Gaming 補位後，ICE Barcelona 2027 展商名錄 F 段由 Fin by Intercom 接續；Sapphire Gaming／Jupiter’s Choice 與 BEON Gaming／Marshmallow King 保留證據衝突或缺口待補`
 
-`NEXT_ALLOWED_ACTION: 完成第 54 批最多五款的 CI、Cloudflare 部署及線上回讀後，由 Shady Lady／Laced 之後的未收錄 Slot 開發商接續；候選輪若只剩一至四款可發布成果，仍以尾批發布，不等待湊滿五款`
+`NEXT_ALLOWED_ACTION: 完成第 55 批最多五款的 CI、Cloudflare 部署及線上回讀後，由 Crimson Clover／Cluster Engine 之後的未收錄 Slot 開發商接續；候選輪若只剩一至四款可發布成果，仍以尾批發布，不等待湊滿五款`
 
 `SCHEMA_CHANGE_ALLOWED: NO`
 
@@ -667,7 +667,7 @@
 
 第 50 批已以 Commit 8a5e8ba 發布並通過同 SHA GitHub Actions、Cloudflare Pages 與線上回讀。第 51 批已擷取 5 款新 Provider：Maverick Studios／Fatal Funfair、Xposed Studios／Magic Mysteries、Butter／Coasters Joyride、Lucky Bastards Studio／Kash Smash、Black Coffee Studios／Clash of Titans。五款均以 Stake 工作室目錄、精確同款頁與可歸屬作品圖完成去重與逐欄核對；公開入口一律標示為 Stake 外部平台同款頁，不稱作官方直連 Demo。Fatal Funfair 先前缺少的精確作品圖已成功取得；前四款未取得可靠盤面、波動度與最高倍數，均維持缺值。Clash of Titans 則由同頁核對 5×5、19 線、96.50%、高波動、25,000x、投注範圍、發行日與功能。納入建置後為 332 款 Game、264 家 Provider。
 
-第 51 批已以 Commit 02bfda9 發布並通過同 SHA GitHub Actions、Cloudflare Pages 與線上回讀。第 52 批已以 Commit 59e57a8 發布並通過同 SHA GitHub Actions、Cloudflare Pages 與線上回讀，新增 Heatcheck／Crazy Cat Lady、AxisFrame Gaming／Mycelium Kingdom、Comeback／The Hermit、MadLab Gaming／The Last Contestant、Darkbyte／DJ Beat Drop。第 53 批已以 Commit 2d498bb 發布並通過同 SHA GitHub Actions、Cloudflare Pages 與線上回讀，新增 18 Gaming／Sweet Stake、Uppercut Gaming／Experiment X、Sidequest Studios／Supersize、Alpha Male Gaming／Bagged and Tagged、Pocket Play／Ghostblade。Experiment X 的投注上下限因同頁內文與表格衝突而保留缺值；Mirror Image Gaming／Royal Drop 因頁面歸屬 Burst Games 且非 Slot 候選而排除，Rubber Duck Gaming／Mega Multis 因精確頁目前顯示 Game not found 而跳過。第 54 批已擷取 Reload Gaming／Spinobi、Minty Fresh／Paint Jam、Daedalus／Cratos、Scatterbrain Games／Hellshot、Shady Lady／Laced；五款均以 Stake 工作室目錄、精確同款頁與可歸屬作品圖完成去重與逐欄核對，公開入口只標示為 Stake 外部平台同款頁，不稱作官方直連 Demo。納入建置後為 347 款 Game、279 家 Provider。
+第 51 批已以 Commit 02bfda9 發布並通過同 SHA GitHub Actions、Cloudflare Pages 與線上回讀。第 52 批已以 Commit 59e57a8 發布並通過同 SHA GitHub Actions、Cloudflare Pages 與線上回讀，新增 Heatcheck／Crazy Cat Lady、AxisFrame Gaming／Mycelium Kingdom、Comeback／The Hermit、MadLab Gaming／The Last Contestant、Darkbyte／DJ Beat Drop。第 53 批已以 Commit 2d498bb 發布並通過同 SHA GitHub Actions、Cloudflare Pages 與線上回讀，新增 18 Gaming／Sweet Stake、Uppercut Gaming／Experiment X、Sidequest Studios／Supersize、Alpha Male Gaming／Bagged and Tagged、Pocket Play／Ghostblade。Experiment X 的投注上下限因同頁內文與表格衝突而保留缺值；Mirror Image Gaming／Royal Drop 因頁面歸屬 Burst Games 且非 Slot 候選而排除，Rubber Duck Gaming／Mega Multis 因精確頁目前顯示 Game not found 而跳過。第 54 批已以 Commit dd4715c 發布並通過同 SHA GitHub Actions、Cloudflare Pages 與線上回讀，新增 Reload Gaming／Spinobi、Minty Fresh／Paint Jam、Daedalus／Cratos、Scatterbrain Games／Hellshot、Shady Lady／Laced。第 55 批已擷取 Hyper Play／Maelstrom、GG Gaming／Wheel of Wonders、Color Drop／Hexfire、ionfall／Bedrock、Crimson Clover／Cluster Engine；五款均以 Stake 工作室目錄、精確同款頁與可歸屬作品圖完成去重與逐欄核對，公開入口只標示為 Stake 外部平台同款頁，不稱作官方直連 Demo。未取得可靠盤面、波動度或最高倍數的三款保留缺值；納入建置後為 352 款 Game、284 家 Provider。
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
