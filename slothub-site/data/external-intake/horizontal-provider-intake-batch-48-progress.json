@@ -1,0 +1,75 @@
+{
+  "batch": 48,
+  "recordedAt": "2026-10-14",
+  "state": "verified-ready-to-commit",
+  "publishedCount": 5,
+  "capturedCount": 5,
+  "records": [
+    {
+      "provider": "BEON Gaming",
+      "providerSlug": "beon-gaming",
+      "game": "Marshmallow King",
+      "gameSlug": "marshmallow-king",
+      "catalogUrl": "https://beongaming.com/",
+      "gameUrl": "https://beongaming.com/",
+      "status": "verified-ready-to-commit"
+    },
+    {
+      "provider": "Paperclip Gaming",
+      "providerSlug": "paperclip-gaming",
+      "game": "Dragonspire",
+      "gameSlug": "dragonspire",
+      "catalogUrl": "https://paperclip-gaming.com/games",
+      "gameUrl": "https://paperclip-gaming.com/games/dragonspire",
+      "status": "verified-ready-to-commit"
+    },
+    {
+      "provider": "Titan Gaming",
+      "providerSlug": "titan-gaming",
+      "game": "Slash",
+      "gameSlug": "slash-titan",
+      "catalogUrl": "https://thetitangaming.com/games/",
+      "gameUrl": "https://thetitangaming.com/game/slash/",
+      "status": "verified-ready-to-commit"
+    },
+    {
+      "provider": "Donut Gaming",
+      "providerSlug": "donut-gaming",
+      "game": "Day Zero Outbreak",
+      "gameSlug": "day-zero-outbreak",
+      "catalogUrl": "https://donut.game/",
+      "gameUrl": "https://stake.com/casino/games/donutgaming-day-zero-outbreak",
+      "status": "verified-ready-to-commit"
+    },
+    {
+      "provider": "Valkyrie",
+      "providerSlug": "valkyrie",
+      "game": "Waylanders Forge",
+      "gameSlug": "waylanders-forge",
+      "catalogUrl": "https://stake.com/casino/group/valkyrie",
+      "gameUrl": "https://stake.com/casino/games/valkyrie-waylanders-forge",
+      "status": "verified-ready-to-commit"
+    }
+  ],
+  "skipped": [
+    {
+      "provider": "JDB Gaming",
+      "status": "source-access-restricted",
+      "reason": "The official catalogue remained region-blocked with HTTP 403 in this environment, so no title was promoted from search snippets or unofficial mirrors."
+    },
+    {
+      "provider": "Galaxsys",
+      "status": "source-access-restricted",
+      "reason": "Official product imagery and PDF access were intercepted by a Cloudflare challenge; no third-party image was substituted."
+    },
+    {
+      "provider": "Playtech",
+      "status": "image-not-attributable",
+      "reason": "The available official material did not provide a reusable, clearly attributable single-game image for the selected title."
+    }
+  ],
+  "continuation": {
+    "cursor": "After Batch 48's Stake Engine studio group ending with Valkyrie / Waylanders Forge, continue horizontally with the next uncollected Slot developer that has a first-party catalogue, attributable artwork and a verifiable exact game identity. Do not re-run JDB Gaming, Galaxsys or Playtech unless their recorded evidence gap changes.",
+    "rule": "A batch may contain at most five new publishable games. If a candidate round ends with one to four publishable games, verify and publish that final partial batch instead of withholding it."
+  }
+}

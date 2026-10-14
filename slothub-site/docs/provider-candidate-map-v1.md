@@ -601,9 +601,9 @@
 
 `CURRENT_SCOPE: 廠商盤點與分類`
 
-`CURRENT_GAME_COUNT: 303`
+`CURRENT_GAME_COUNT: 317`
 
-`CURRENT_PROVIDER_COUNT: 235`
+`CURRENT_PROVIDER_COUNT: 249`
 
 `FIRST_BATCH_CANDIDATE_BRAND_COUNT: 51`
 
@@ -633,7 +633,7 @@
 
 `WEEKLY_DISCOVERY_CURSOR: 第 41 批 Nucleus Gaming 補位後，ICE Barcelona 2027 展商名錄 F 段由 Fin by Intercom 接續；Sapphire Gaming／Jupiter’s Choice 與 BEON Gaming／Marshmallow King 保留證據衝突或缺口待補`
 
-`NEXT_ALLOWED_ACTION: 完成第 41 批五款的 CI、Cloudflare 部署及線上回讀後，由 Fin by Intercom 接續並和既有候選去重；不得使用 PAGCOR、展商或聚合商清單單獨升格為開發品牌`
+`NEXT_ALLOWED_ACTION: 完成第 48 批五款的 CI、Cloudflare 部署及線上回讀後，由 Valkyrie／Waylanders Forge 之後的未收錄 Slot 開發商接續；JDB Gaming、Galaxsys 與 Playtech 只有在既有證據缺口改變時才重試`
 
 `SCHEMA_CHANGE_ALLOWED: NO`
 
@@ -658,6 +658,8 @@
 第 47 批第 2 款已保存 Amigo Gaming／3 Fisher Cats。官方單款頁現可直接核對專屬圖片、5×3、30 線、Medium High、x6600、功能與 September 2026 發行月份，已關閉先前匿名 preview 的證據缺口。Play Demo 的 client URL 由工作階段動態產生，公開入口因此只使用穩定的官方單款頁並維持 external，不發布 iframe 或猜測 client URL。
 
 第 47 批再保存 Juice 旗下三個獨立署名 Slot Studio：Twist Gaming／Welcome To Miami、Massive Studios／Magic Stacks、Knucklehead Syndicate／Knucklehead Brothers。三家各有官方 Studio 目錄、精確單款頁與可歸屬圖片，並已實際開啟官方 title-specific Demo launcher；公開 presentation 全部維持 external。Welcome To Miami 另由官方發布稿核對 5×4、高波動、Weapon Pays、96.7%、20,000x 與五種 Bonus Buy；其餘兩款只保存官方已發布 RTP，不補猜盤面、波動度或最高倍數。第 47 批已達 5 款並進入完整驗證。
+
+第 48 批已擷取 5 款新 Provider：BEON Gaming／Marshmallow King、Paperclip Gaming／Dragonspire、Titan Gaming／Slash、Donut Gaming／Day Zero Outbreak、Valkyrie／Waylanders Forge。五款均已核對官方目錄或精確單款頁與可歸屬作品圖；Marshmallow King 保存實際回應 200 的官方精確試玩，Day Zero Outbreak 與 Waylanders Forge 則明確標示為 Stake 外部平台同款頁，不冒充官方直連 Demo。Dragonspire 與 Slash 未取得可驗證的精確入口，維持 not-verified。Day Zero Outbreak 的 Stake 同頁對波動度敘述與規格表互相衝突，因此不寫入波動度欄位。納入建置後為 317 款 Game、249 家 Provider；完整驗證已通過。JDB Gaming、Galaxsys 與 Playtech 分別因區域封鎖、Cloudflare 資產挑戰或缺可歸屬單款圖而跳過，不以非官方資料硬補。
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
