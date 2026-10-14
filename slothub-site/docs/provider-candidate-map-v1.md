@@ -601,9 +601,9 @@
 
 `CURRENT_SCOPE: 廠商盤點與分類`
 
-`CURRENT_GAME_COUNT: 317`
+`CURRENT_GAME_COUNT: 322`
 
-`CURRENT_PROVIDER_COUNT: 249`
+`CURRENT_PROVIDER_COUNT: 254`
 
 `FIRST_BATCH_CANDIDATE_BRAND_COUNT: 51`
 
@@ -633,7 +633,7 @@
 
 `WEEKLY_DISCOVERY_CURSOR: 第 41 批 Nucleus Gaming 補位後，ICE Barcelona 2027 展商名錄 F 段由 Fin by Intercom 接續；Sapphire Gaming／Jupiter’s Choice 與 BEON Gaming／Marshmallow King 保留證據衝突或缺口待補`
 
-`NEXT_ALLOWED_ACTION: 完成第 48 批五款的 CI、Cloudflare 部署及線上回讀後，由 Valkyrie／Waylanders Forge 之後的未收錄 Slot 開發商接續；JDB Gaming、Galaxsys 與 Playtech 只有在既有證據缺口改變時才重試`
+`NEXT_ALLOWED_ACTION: 完成第 49 批五款的 CI、Cloudflare 部署及線上回讀後，由 Creative City／Progressive Gates 之後的未收錄 Slot 開發商接續；目前優先線索為 Degen Lab／Elementals Journey 與 Meta Gaming／Coins and Cauldrons`
 
 `SCHEMA_CHANGE_ALLOWED: NO`
 
@@ -660,6 +660,8 @@
 第 47 批再保存 Juice 旗下三個獨立署名 Slot Studio：Twist Gaming／Welcome To Miami、Massive Studios／Magic Stacks、Knucklehead Syndicate／Knucklehead Brothers。三家各有官方 Studio 目錄、精確單款頁與可歸屬圖片，並已實際開啟官方 title-specific Demo launcher；公開 presentation 全部維持 external。Welcome To Miami 另由官方發布稿核對 5×4、高波動、Weapon Pays、96.7%、20,000x 與五種 Bonus Buy；其餘兩款只保存官方已發布 RTP，不補猜盤面、波動度或最高倍數。第 47 批已達 5 款並進入完整驗證。
 
 第 48 批已擷取 5 款新 Provider：BEON Gaming／Marshmallow King、Paperclip Gaming／Dragonspire、Titan Gaming／Slash、Donut Gaming／Day Zero Outbreak、Valkyrie／Waylanders Forge。五款均已核對官方目錄或精確單款頁與可歸屬作品圖；Marshmallow King 保存實際回應 200 的官方精確試玩，Day Zero Outbreak 與 Waylanders Forge 則明確標示為 Stake 外部平台同款頁，不冒充官方直連 Demo。Dragonspire 與 Slash 未取得可驗證的精確入口，維持 not-verified。Day Zero Outbreak 的 Stake 同頁對波動度敘述與規格表互相衝突，因此不寫入波動度欄位。納入建置後為 317 款 Game、249 家 Provider；完整驗證已通過。JDB Gaming、Galaxsys 與 Playtech 分別因區域封鎖、Cloudflare 資產挑戰或缺可歸屬單款圖而跳過，不以非官方資料硬補。
+
+第 48 批已以 Commit 431a5c1 發布並通過同 SHA GitHub Actions、Cloudflare Pages 與線上回讀。第 49 批已擷取 5 款新 Provider：Colorful Play／Graffiti Ways、Evoslot／Haunted Duels、Terminal Games／Moonshine、Phantom Interactive／Viking 1000、Creative City／Progressive Gates。五款均由 Stake 精確同款頁核對遊戲名、Provider、Slot 類型、可歸屬圖片與公開外部入口；前台只標示為 Stake 平台遊戲頁，不稱作官方直連 Demo。Viking 1000 同頁的投注上下限互相衝突，故兩欄都保留缺值；CrimsonClover／Luck Engine 因頁面分類為 Burst Game 不計入，Butter／Viking Roosh 1000 因區域限制與 Demo 啟動失敗改由較完整候選補位。納入建置後為 322 款 Game、254 家 Provider。
 
 ## 8. 外部目錄接續順序（2026-09-16）
 
