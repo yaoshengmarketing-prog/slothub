@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 357,
-  "providerCount": 289,
-  "sourcePageCount": 835,
+  "gameCount": 362,
+  "providerCount": 294,
+  "sourcePageCount": 850,
   "counts": {
     "access-restricted": 4,
-    "available": 300,
+    "available": 305,
     "not-verified": 53
   },
   "rules": {
@@ -7433,6 +7433,31 @@
       "slug": "candy-quake", "name": "Candy Quake", "provider": "toucan-royale", "status": "available", "url": "https://stake.com/casino/games/toucanroyale-candy-quake", "accessType": "platform-game-page", "platformName": "Stake", "presentation": "external", "iframeStatus": "not-tested", "checkedAt": "2026-10-15",
       "evidence": "Stake's exact Candy Quake page visibly identifies the title and Toucan Royale and supplies matching RTP, Cascading tag and artwork. It is labelled only as an external platform page.", "sameGameEvidence": "The exact destination visibly names Candy Quake and Toucan Royale and matches the stored 95.52% RTP, Cascading tag and artwork.",
       "inspectedUrls": [{ "requestedUrl": "https://stake.com/casino/group/toucan-royale", "finalUrl": "https://stake.com/casino/group/toucan-royale", "httpStatus": 200 }, { "requestedUrl": "https://stake.com/casino/games/toucanroyale-candy-quake", "finalUrl": "https://stake.com/casino/games/toucanroyale-candy-quake", "httpStatus": 200 }, { "requestedUrl": "https://mediumrare.imgix.net/43d0945ca590deaa46ab6bc3cdb01942e27c1152b75573ea9506c5d14cb759e7?auto=format&fit=min&h=600&w=800", "finalUrl": "https://mediumrare.imgix.net/43d0945ca590deaa46ab6bc3cdb01942e27c1152b75573ea9506c5d14cb759e7?auto=format&fit=min&h=600&w=800", "httpStatus": 200 }], "browserReviewedAt": "2026-10-15"
+    },
+    {
+      "slug": "the-hollow-ritual", "name": "The Hollow Ritual", "provider": "bad-decision-gaming", "status": "available", "url": "https://stake.com/casino/games/baddecisiongaming-the-hollow-ritual", "accessType": "platform-game-page", "platformName": "Stake", "presentation": "external", "iframeStatus": "not-tested", "checkedAt": "2026-10-15",
+      "evidence": "Stake's exact The Hollow Ritual page visibly identifies the title and Bad Decision Gaming and supplies matching RTP, Slot classification and artwork. It is labelled only as an external platform page.", "sameGameEvidence": "The exact destination visibly names The Hollow Ritual and Bad Decision Gaming and matches the stored 96.70% RTP and artwork.",
+      "inspectedUrls": [{ "requestedUrl": "https://stake.com/casino/group/bad-decision-gaming", "finalUrl": "https://stake.com/casino/group/bad-decision-gaming", "httpStatus": 200 }, { "requestedUrl": "https://stake.com/casino/games/baddecisiongaming-the-hollow-ritual", "finalUrl": "https://stake.com/casino/games/baddecisiongaming-the-hollow-ritual", "httpStatus": 200 }, { "requestedUrl": "https://mediumrare.imgix.net/c4d4ea8673d03da23356c42317272bc740c8cb05b228e256f3e9d83089229388?auto=format&fit=min&h=600&w=800", "finalUrl": "https://mediumrare.imgix.net/c4d4ea8673d03da23356c42317272bc740c8cb05b228e256f3e9d83089229388?auto=format&fit=min&h=600&w=800", "httpStatus": 200 }], "browserReviewedAt": "2026-10-15"
+    },
+    {
+      "slug": "blocky-bay", "name": "Blocky Bay", "provider": "true-labs", "status": "available", "url": "https://stake.com/casino/games/truelabs-blocky-bay", "accessType": "platform-game-page", "platformName": "Stake", "presentation": "external", "iframeStatus": "not-tested", "checkedAt": "2026-10-15",
+      "evidence": "Stake's exact Blocky Bay page visibly identifies the title and True Labs and supplies matching RTP, Bonus Buy, Cascading and artwork. It is labelled only as an external platform page.", "sameGameEvidence": "The exact destination visibly names Blocky Bay and True Labs and matches the stored 96.07% RTP, feature tags and artwork.",
+      "inspectedUrls": [{ "requestedUrl": "https://stake.com/casino/group/true-labs", "finalUrl": "https://stake.com/casino/group/true-labs", "httpStatus": 200 }, { "requestedUrl": "https://stake.com/casino/games/truelabs-blocky-bay", "finalUrl": "https://stake.com/casino/games/truelabs-blocky-bay", "httpStatus": 200 }, { "requestedUrl": "https://mediumrare.imgix.net/7dfd06803433c58ad1b99b8c544e8dd81bf8c2514dd4e2ec657a66976177c69d?auto=format&fit=min&h=600&w=800", "finalUrl": "https://mediumrare.imgix.net/7dfd06803433c58ad1b99b8c544e8dd81bf8c2514dd4e2ec657a66976177c69d?auto=format&fit=min&h=600&w=800", "httpStatus": 200 }], "browserReviewedAt": "2026-10-15"
+    },
+    {
+      "slug": "dead-by-dusk", "name": "Dead by Dusk", "provider": "high-noon-studios", "status": "available", "url": "https://stake.com/casino/games/highnoonstudios-dead-by-dusk", "accessType": "platform-game-page", "platformName": "Stake", "presentation": "external", "iframeStatus": "not-tested", "checkedAt": "2026-10-15",
+      "evidence": "Stake's exact Dead by Dusk page visibly identifies the title and High Noon Studios, supplies the full specification table and same-game artwork. It is labelled only as an external platform page.", "sameGameEvidence": "The exact destination visibly names Dead by Dusk and High Noon Studios and matches the stored 5x5 layout, 25 paylines, 96.48% RTP, 15,000x maximum and artwork.",
+      "inspectedUrls": [{ "requestedUrl": "https://stake.com/casino/group/high-noon-studios", "finalUrl": "https://stake.com/casino/group/high-noon-studios", "httpStatus": 200 }, { "requestedUrl": "https://stake.com/casino/games/highnoonstudios-dead-by-dusk", "finalUrl": "https://stake.com/casino/games/highnoonstudios-dead-by-dusk", "httpStatus": 200 }, { "requestedUrl": "https://mediumrare.imgix.net/b5afc9d037fef7c0f00103509773d07bbabbfe115830270e3be9b205bf7f85ee?auto=format&fit=min&h=600&w=800", "finalUrl": "https://mediumrare.imgix.net/b5afc9d037fef7c0f00103509773d07bbabbfe115830270e3be9b205bf7f85ee?auto=format&fit=min&h=600&w=800", "httpStatus": 200 }], "browserReviewedAt": "2026-10-15"
+    },
+    {
+      "slug": "druids-brew-2", "name": "Druids Brew 2", "provider": "ornate-square", "status": "available", "url": "https://stake.com/casino/games/ornatesquare-druids-brew-2", "accessType": "platform-game-page", "platformName": "Stake", "presentation": "external", "iframeStatus": "not-tested", "checkedAt": "2026-10-15",
+      "evidence": "Stake's exact Druids Brew 2 page visibly identifies the title and Ornate Square and supplies matching RTP, Bonus Buy, Slot classification and artwork. It is labelled only as an external platform page.", "sameGameEvidence": "The exact destination visibly names Druids Brew 2 and Ornate Square and matches the stored 96.70% RTP, feature tag and artwork.",
+      "inspectedUrls": [{ "requestedUrl": "https://stake.com/casino/group/ornate-square", "finalUrl": "https://stake.com/casino/group/ornate-square", "httpStatus": 200 }, { "requestedUrl": "https://stake.com/casino/games/ornatesquare-druids-brew-2", "finalUrl": "https://stake.com/casino/games/ornatesquare-druids-brew-2", "httpStatus": 200 }, { "requestedUrl": "https://mediumrare.imgix.net/5f3a629739d663a8345169cce95c6f461ceb2dba71a142ea95fc053f274169b2?auto=format&fit=min&h=600&w=800", "finalUrl": "https://mediumrare.imgix.net/5f3a629739d663a8345169cce95c6f461ceb2dba71a142ea95fc053f274169b2?auto=format&fit=min&h=600&w=800", "httpStatus": 200 }], "browserReviewedAt": "2026-10-15"
+    },
+    {
+      "slug": "one-shot", "name": "One Shot", "provider": "pixelpanic", "status": "available", "url": "https://stake.com/casino/games/pixelpanic-one-shot", "accessType": "platform-game-page", "platformName": "Stake", "presentation": "external", "iframeStatus": "not-tested", "checkedAt": "2026-10-15",
+      "evidence": "Stake's exact One Shot page visibly identifies the title and PixelPanic and supplies matching RTP, Bonus Buy, Cascading and artwork. It is labelled only as an external platform page.", "sameGameEvidence": "The exact destination visibly names One Shot and PixelPanic and matches the stored 96.02% RTP, feature tags and artwork.",
+      "inspectedUrls": [{ "requestedUrl": "https://stake.com/casino/group/pixelpanic", "finalUrl": "https://stake.com/casino/group/pixelpanic", "httpStatus": 200 }, { "requestedUrl": "https://stake.com/casino/games/pixelpanic-one-shot", "finalUrl": "https://stake.com/casino/games/pixelpanic-one-shot", "httpStatus": 200 }, { "requestedUrl": "https://mediumrare.imgix.net/ef61eef00c313e5a5d9105ecfd28c2e1604cefc73fe55f231913c816e5ac0148?auto=format&fit=min&h=600&w=800", "finalUrl": "https://mediumrare.imgix.net/ef61eef00c313e5a5d9105ecfd28c2e1604cefc73fe55f231913c816e5ac0148?auto=format&fit=min&h=600&w=800", "httpStatus": 200 }], "browserReviewedAt": "2026-10-15"
     }
   ]
 }

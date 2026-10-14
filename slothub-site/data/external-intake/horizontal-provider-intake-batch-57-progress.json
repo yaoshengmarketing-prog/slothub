@@ -1,0 +1,19 @@
+{
+  "batch": 57,
+  "recordedAt": "2026-10-15",
+  "state": "verified-ready-to-commit",
+  "publishedCount": 5,
+  "capturedCount": 5,
+  "records": [
+    { "provider": "Bad Decision Gaming", "providerSlug": "bad-decision-gaming", "game": "The Hollow Ritual", "gameSlug": "the-hollow-ritual", "catalogUrl": "https://stake.com/casino/group/bad-decision-gaming", "gameUrl": "https://stake.com/casino/games/baddecisiongaming-the-hollow-ritual", "status": "verified-ready-to-commit" },
+    { "provider": "True Labs", "providerSlug": "true-labs", "game": "Blocky Bay", "gameSlug": "blocky-bay", "catalogUrl": "https://stake.com/casino/group/true-labs", "gameUrl": "https://stake.com/casino/games/truelabs-blocky-bay", "status": "verified-ready-to-commit" },
+    { "provider": "High Noon Studios", "providerSlug": "high-noon-studios", "game": "Dead by Dusk", "gameSlug": "dead-by-dusk", "catalogUrl": "https://stake.com/casino/group/high-noon-studios", "gameUrl": "https://stake.com/casino/games/highnoonstudios-dead-by-dusk", "status": "verified-ready-to-commit" },
+    { "provider": "Ornate Square", "providerSlug": "ornate-square", "game": "Druids Brew 2", "gameSlug": "druids-brew-2", "catalogUrl": "https://stake.com/casino/group/ornate-square", "gameUrl": "https://stake.com/casino/games/ornatesquare-druids-brew-2", "status": "verified-ready-to-commit" },
+    { "provider": "PixelPanic", "providerSlug": "pixelpanic", "game": "One Shot", "gameSlug": "one-shot", "catalogUrl": "https://stake.com/casino/group/pixelpanic", "gameUrl": "https://stake.com/casino/games/pixelpanic-one-shot", "status": "verified-ready-to-commit" }
+  ],
+  "skipped": [],
+  "continuation": {
+    "cursor": "After Batch 57 ending with PixelPanic / One Shot, continue with the next uncollected Slot developer.",
+    "rule": "A batch may contain at most five new publishable games. If a candidate round ends with one to four publishable games, verify and publish that final partial batch instead of withholding it."
+  }
+}
