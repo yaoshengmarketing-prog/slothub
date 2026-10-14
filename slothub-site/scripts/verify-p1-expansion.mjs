@@ -31,7 +31,7 @@ const [games, guides, gamesIndexSource, payoutSource, gamesIndexHtml, guideIndex
 
 const publishedGames = games.filter((game) => game.status === 'published');
 const publishedGuides = guides.filter((guide) => guide.status === 'published');
-assert.equal(publishedGames.length, 322, 'P1 expansion must use the current 322 published Games');
+assert.equal(publishedGames.length, 327, 'P1 expansion must use the current 327 published Games');
 assert.ok(publishedGuides.length >= 14, 'the two P1 Guides must remain published as the library grows');
 
 const waysGuide = guides.find((guide) => guide.slug === 'slot-ways-to-win-explained');
