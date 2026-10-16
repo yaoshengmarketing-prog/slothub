@@ -3,7 +3,8 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { basename } from 'node:path';
 import { parse } from 'yaml';
 import {
-  emptyExplorerState, filterAndSortGames, parseExplorerState, serializeExplorerState, zeroResultRecoveryOptions,
+  emptyExplorerState, filterAndSortGames, paginateExplorerResults, parseExplorerState,
+  serializeExplorerState, visibleExplorerPages, zeroResultRecoveryOptions,
 } from '../src/lib/game-explorer-state.mjs';
 
 const gamesDirectory = new URL('../src/content/games/', import.meta.url);
@@ -87,6 +88,21 @@ assert.equal(query, 'q=%E8%B3%BD%E7%89%B9&provider=atg-games&type=slots&subtype=
 assert.deepEqual(parseExplorerState(query, games), parseExplorerState(serializeExplorerState(parseExplorerState(query, games)), games), 'URL state must be idempotent');
 assert.equal(serializeExplorerState(emptyExplorerState()), '', 'Clear state must produce a clean /games/ URL');
 assert.equal(parseExplorerState('?sort=relevance&provider=unknown&features=unknown&rtp-min=99', games).sort, 'name-asc', 'Invalid query values must be ignored');
+const catalog = filterAndSortGames(games, state({ primaryType: 'slots' }));
+const firstPage = paginateExplorerResults(catalog, 1);
+const secondPage = paginateExplorerResults(catalog, 2);
+assert.equal(firstPage.shown.length, 24, 'The first page must render at most 24 cards');
+assert.equal(secondPage.shown.length, 24, 'A filtered second page must also render at most 24 cards');
+assert.notDeepEqual(firstPage.shown.map((game) => game.slug), secondPage.shown.map((game) => game.slug), 'Adjacent pages must show different games');
+assert.equal(firstPage.totalPages, Math.ceil(catalog.length / 24));
+assert.equal(serializeExplorerState(state({ primaryType: 'slots', page: 2 })), 'type=slots&page=2');
+assert.equal(parseExplorerState('?type=slots&page=2', games).page, 2);
+assert.equal(parseExplorerState('?page=0&page=-2', games).page, 1, 'Invalid pages must fall back to page one');
+assert.equal(parseExplorerState('?page=999999999999999999999', games).page, 1, 'Unsafe page numbers must be rejected');
+assert.equal(paginateExplorerResults(catalog, 999).page, firstPage.totalPages, 'A stale page must clamp to the final page');
+assert.equal(paginateExplorerResults([], 9).page, 1, 'Zero results must stay on page one');
+assert.deepEqual(visibleExplorerPages(2, 16), [1, 2, 3, 4, null, 16]);
+assert.deepEqual(visibleExplorerPages(16, 16), [1, null, 14, 15, 16]);
 
 const zeroState = state({ mechanism: 'megaways', features: ['symbol-splitting'] });
 assert.equal(filterAndSortGames(games, zeroState).length, 0, 'Recovery fixture must start from a truthful zero-result state');

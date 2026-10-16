@@ -3,11 +3,12 @@ import { rankSearch } from './search.js';
 export const RTP_THRESHOLDS = [96, 96.2, 96.5];
 export const MAX_WIN_THRESHOLDS = [5000, 10000, 25000];
 export const SORT_VALUES = ['relevance', 'name-asc', 'rtp-desc', 'rtp-asc', 'max-win-desc', 'max-win-asc'];
+export const EXPLORER_PAGE_SIZE = 24;
 
 export function emptyExplorerState() {
   return {
     q: '', provider: '', primaryType: '', subtype: '', mechanism: '', features: [],
-    rtpMin: undefined, volatility: '', maxWinMin: undefined, sort: 'name-asc',
+    rtpMin: undefined, volatility: '', maxWinMin: undefined, sort: 'name-asc', page: 1,
   };
 }
 
@@ -42,6 +43,7 @@ export function parseExplorerState(input, games) {
   const features = [...new Set(rawFeatures)].filter((feature) => options.features.has(feature));
   const requestedSort = params.getAll('sort').find((value) => SORT_VALUES.includes(value) && (value !== 'relevance' || q));
   const defaultSort = q ? 'relevance' : 'name-asc';
+  const rawPage = params.getAll('page').find((value) => /^[1-9]\d*$/.test(value) && Number.isSafeInteger(Number(value)));
 
   return {
     q,
@@ -54,6 +56,7 @@ export function parseExplorerState(input, games) {
     volatility: firstValid(params, 'volatility', options.volatilities),
     maxWinMin: firstNumber(params, 'max-win-min', MAX_WIN_THRESHOLDS),
     sort: requestedSort ?? defaultSort,
+    page: rawPage ? Number(rawPage) : 1,
   };
 }
 
@@ -71,7 +74,24 @@ export function serializeExplorerState(state) {
   if (MAX_WIN_THRESHOLDS.includes(state.maxWinMin)) params.set('max-win-min', String(state.maxWinMin));
   const defaultSort = q ? 'relevance' : 'name-asc';
   if (SORT_VALUES.includes(state.sort) && state.sort !== defaultSort) params.set('sort', state.sort);
+  if (Number.isSafeInteger(state.page) && state.page > 1) params.set('page', String(state.page));
   return params.toString();
+}
+
+export function paginateExplorerResults(results, requestedPage, pageSize = EXPLORER_PAGE_SIZE) {
+  const totalPages = Math.max(1, Math.ceil(results.length / pageSize));
+  const page = Number.isSafeInteger(requestedPage) ? Math.min(Math.max(requestedPage, 1), totalPages) : 1;
+  const start = (page - 1) * pageSize;
+  return { page, totalPages, start, shown: results.slice(start, start + pageSize) };
+}
+
+export function visibleExplorerPages(page, totalPages) {
+  const pages = new Set([1, totalPages]);
+  for (let offset = -2; offset <= 2; offset += 1) {
+    if (page + offset >= 1 && page + offset <= totalPages) pages.add(page + offset);
+  }
+  const sorted = [...pages].sort((a, b) => a - b);
+  return sorted.flatMap((value, index) => index > 0 && value - sorted[index - 1] > 1 ? [null, value] : [value]);
 }
 
 const nameCompare = (a, b) => a.name.localeCompare(b.name, 'zh-Hant-TW') || a.originalName.localeCompare(b.originalName, 'en') || a.slug.localeCompare(b.slug, 'en');
