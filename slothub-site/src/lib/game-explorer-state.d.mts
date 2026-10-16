@@ -12,11 +12,13 @@ export type ExplorerState = {
   volatility: string;
   maxWinMin?: number;
   sort: ExplorerSort;
+  page: number;
 };
 
 export const RTP_THRESHOLDS: number[];
 export const MAX_WIN_THRESHOLDS: number[];
 export const SORT_VALUES: ExplorerSort[];
+export const EXPLORER_PAGE_SIZE: number;
 export function emptyExplorerState(): ExplorerState;
 export function explorerOptions(games: GameCatalogItem[]): {
   providers: Set<string>; primaryTypes: Set<string>; subtypes: Set<string>;
@@ -25,6 +27,8 @@ export function explorerOptions(games: GameCatalogItem[]): {
 export function parseExplorerState(input: string | URLSearchParams, games: GameCatalogItem[]): ExplorerState;
 export function serializeExplorerState(state: ExplorerState): string;
 export function filterAndSortGames(games: GameCatalogItem[], state: ExplorerState): GameCatalogItem[];
+export function paginateExplorerResults(results: GameCatalogItem[], requestedPage: number, pageSize?: number): { page: number; totalPages: number; start: number; shown: GameCatalogItem[] };
+export function visibleExplorerPages(page: number, totalPages: number): Array<number | null>;
 export function hasExplorerFilters(state: ExplorerState): boolean;
 export function featureResultCount(games: GameCatalogItem[], state: ExplorerState, feature: string): number;
 export type ZeroResultRecoveryOption = {

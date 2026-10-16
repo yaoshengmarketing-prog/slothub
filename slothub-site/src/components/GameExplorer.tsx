@@ -2,7 +2,8 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import type { GameCatalogItem } from '../lib/game-catalog';
 import {
   emptyExplorerState, explorerOptions, featureResultCount, filterAndSortGames, hasExplorerFilters,
-  MAX_WIN_THRESHOLDS, parseExplorerState, RTP_THRESHOLDS, zeroResultRecoveryOptions, type ExplorerState,
+  MAX_WIN_THRESHOLDS, paginateExplorerResults, parseExplorerState, RTP_THRESHOLDS,
+  visibleExplorerPages, zeroResultRecoveryOptions, type ExplorerState,
 } from '../lib/game-explorer-state.mjs';
 import { gamesIndexUrl } from '../lib/urls';
 import { COMPARE_STORAGE_KEY, normalizeCompareSlugs, readStoredCompare, writeCanonicalHistory } from '../lib/core-flow-state.mjs';
@@ -57,7 +58,8 @@ export default function GameExplorer({ games, initialLimit, urlState = false, ha
     if (!urlState) return;
     const readUrl = () => {
       if (replaceTimer.current) clearTimeout(replaceTimer.current);
-      const next = parseExplorerState(location.search, games);
+      const parsed = parseExplorerState(location.search, games);
+      const next = { ...parsed, page: paginateExplorerResults(filterAndSortGames(games, parsed), parsed.page).page };
       setState(next);
       writeCanonicalHistory(window, gamesIndexUrl(next), 'replace');
     };
@@ -79,7 +81,8 @@ export default function GameExplorer({ games, initialLimit, urlState = false, ha
   const primaryFeatures = PRIMARY_FEATURES.filter((feature) => options.features.has(feature));
   const advancedFeatures = availableFeatures.filter((feature) => !PRIMARY_FEATURES.includes(feature));
   const hasFilters = hasExplorerFilters(state);
-  const shown = initialLimit && !hasFilters ? filtered.slice(0, initialLimit) : filtered;
+  const pagination = paginateExplorerResults(filtered, state.page);
+  const shown = urlState ? pagination.shown : initialLimit && !hasFilters ? filtered.slice(0, initialLimit) : filtered;
   const hasNumericFilter = state.rtpMin !== undefined || Boolean(state.volatility) || state.maxWinMin !== undefined;
   const advancedActive = Boolean(state.rtpMin !== undefined || state.volatility || state.maxWinMin !== undefined || state.subtype || advancedFeatures.some((feature) => state.features.includes(feature)));
   const activeGuideLinks = relationshipLinks.filter((link) =>
@@ -120,7 +123,7 @@ export default function GameExplorer({ games, initialLimit, urlState = false, ha
   }, [resultAnchor, urlReady]);
 
   const update = (patch: Partial<ExplorerState>, historyMode: 'push' | 'replace-debounced' = 'push') => {
-    const next = { ...state, ...patch };
+    const next = { ...state, ...patch, page: 1 };
     if (patch.q !== undefined) {
       if (!state.q && patch.q && state.sort === 'name-asc') next.sort = 'relevance';
       if (state.q && !patch.q && state.sort === 'relevance') next.sort = 'name-asc';
@@ -152,6 +155,17 @@ export default function GameExplorer({ games, initialLimit, urlState = false, ha
     cancelPendingReplace();
     if (urlState && urlReady) writeCanonicalHistory(window, gamesIndexUrl(state), 'push');
   };
+  const goToPage = (event: { preventDefault: () => void }, page: number) => {
+    event.preventDefault();
+    cancelPendingReplace();
+    const next = { ...state, page };
+    setState(next);
+    writeCanonicalHistory(window, gamesIndexUrl(next), 'push');
+    requestAnimationFrame(() => {
+      resultHeadingRef.current?.focus({ preventScroll: true });
+      resultHeadingRef.current?.scrollIntoView({ block: 'start' });
+    });
+  };
   const handoffState = handoffDefaults.primaryType && !state.primaryType ? { ...state, primaryType: handoffDefaults.primaryType } : state;
 
   return <div className={`explorer explorer-v2 ${urlState && !urlReady ? 'url-state-loading' : ''}`}>
@@ -176,7 +190,7 @@ export default function GameExplorer({ games, initialLimit, urlState = false, ha
       </details>
     </div>
 
-    <div className="result-heading explorer-result-heading" id={resultAnchor} ref={resultHeadingRef} tabIndex={resultAnchor ? -1 : undefined}><div><strong>{filtered.length}</strong><span>款符合目前條件</span>{hasNumericFilter && <small>數值條件只包含已取得該欄位的遊戲</small>}</div>{hasFilters && <button type="button" className="clear-filters" onClick={clear}>清除全部條件</button>}{activeFilterLabels.length > 0 && <ul className="explorer-active-filters" aria-label="已套用條件">{activeFilterLabels.map((label) => <li key={label}>{label}</li>)}</ul>}</div>
+    <div className="result-heading explorer-result-heading" id={resultAnchor} ref={resultHeadingRef} tabIndex={resultAnchor ? -1 : undefined}><div><strong>{filtered.length}</strong><span>款符合目前條件</span>{urlState && filtered.length > 0 && <small>第 {pagination.page} 頁／共 {pagination.totalPages} 頁，顯示第 {pagination.start + 1}–{pagination.start + shown.length} 款</small>}{hasNumericFilter && <small>數值條件只包含已取得該欄位的遊戲</small>}</div>{hasFilters && <button type="button" className="clear-filters" onClick={clear}>清除全部條件</button>}{activeFilterLabels.length > 0 && <ul className="explorer-active-filters" aria-label="已套用條件">{activeFilterLabels.map((label) => <li key={label}>{label}</li>)}</ul>}</div>
     {activeGuideLinks.length > 0 && <aside className="explorer-guide-links" aria-label="目前條件的相關教學">
       <span>看懂目前條件</span>
       <div>{activeGuideLinks.map((link) => <a key={`${link.type}-${link.value}`} href={link.guideUrl}><b>{link.label}</b><small>{link.guideTitle}</small><i>閱讀 →</i></a>)}</div>
@@ -191,6 +205,19 @@ export default function GameExplorer({ games, initialLimit, urlState = false, ha
       ].filter(Boolean) as { label: string; value: string; note?: string }[];
       return <article className="game-card" key={game.slug}><a className="game-art" href={game.url} aria-label={`查看 ${game.name}`} onClick={flushPendingQuery}>{game.image ? <img src={game.image.src} alt={game.image.alt} loading="lazy" /> : <b>{game.name.slice(0, 1)}</b>}<small>{game.providerName}</small></a><div className="game-card-body"><p>{game.providerName}</p><h3><a href={game.url} onClick={flushPendingQuery}>{game.name}</a>{game.displayNameZhHant && <small>{game.originalName}</small>}</h3>{metrics.length > 0 && <dl className="game-metrics">{metrics.map((metric) => <div key={metric.label}><dt>{metric.label}</dt><dd>{metric.value}{metric.note && <small>{metric.note}</small>}</dd></div>)}</dl>}{game.mechanismLabel && <div className="game-mechanism"><span>賠付機制</span><b>{game.mechanismLabel}</b></div>}<button className={compare.selected.includes(game.slug) ? 'compare-add active' : 'compare-add'} onClick={() => compare.toggle(game.slug)} disabled={!compare.selected.includes(game.slug) && compare.selected.length >= 3}>{compare.selected.includes(game.slug) ? '✓ 已加入比較' : '＋ 加入比較'}</button></div></article>;
     })}</div>
+    {urlState && filtered.length > 0 && <div className="explorer-pagination">
+      <p>顯示第 {pagination.start + 1}–{pagination.start + shown.length} 款，共 {filtered.length} 款</p>
+      {pagination.totalPages > 1 && <nav aria-label="遊戲結果分頁">
+        <span className="explorer-page-summary">第 {pagination.page} 頁／共 {pagination.totalPages} 頁</span>
+        <div className="explorer-page-links">
+          {pagination.page > 1 ? <a href={gamesIndexUrl({ ...state, page: pagination.page - 1 })} onClick={(event) => goToPage(event, pagination.page - 1)}>上一頁</a> : <span aria-disabled="true">上一頁</span>}
+          {visibleExplorerPages(pagination.page, pagination.totalPages).map((page, index) => page === null
+            ? <span className="explorer-page-gap" aria-hidden="true" key={`gap-${index}`}>…</span>
+            : <a className="explorer-page-number" href={gamesIndexUrl({ ...state, page })} aria-label={`第 ${page} 頁`} aria-current={page === pagination.page ? 'page' : undefined} key={page} onClick={(event) => goToPage(event, page)}>{page}</a>)}
+          {pagination.page < pagination.totalPages ? <a href={gamesIndexUrl({ ...state, page: pagination.page + 1 })} onClick={(event) => goToPage(event, pagination.page + 1)}>下一頁</a> : <span aria-disabled="true">下一頁</span>}
+        </div>
+      </nav>}
+    </div>}
     {!shown.length && <div className="empty-result"><strong>沒有符合這組條件的遊戲</strong><p>{recoveryOptions.length > 0 ? '目前條件組合沒有結果；可以先移除一項條件，再查看實際可用結果。' : '目前沒有能以單一條件調整恢復的結果；可以清除全部條件重新開始。'}</p>{recoveryOptions.length > 0 && <ul className="explorer-recovery-list" aria-label="可移除的條件">{recoveryOptions.map((option) => <li key={`${option.field}-${option.value}`}><button type="button" className="button secondary" onClick={() => update(option.state)}>移除「{recoveryLabel(option)}」— 可查看 {option.count} 款</button></li>)}</ul>}<button type="button" className="button secondary" onClick={clear}>清除全部條件</button></div>}
     {compare.selected.length > 0 && <CompareTray games={games} selected={compare.selected} remove={compare.remove} clear={compare.clear} />}
   </div>;
