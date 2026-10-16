@@ -1,9 +1,11 @@
 {
   "batch": 58,
   "recordedAt": "2026-10-15",
-  "state": "verified-ready-to-commit",
-  "publishedCount": 0,
+  "state": "published",
+  "publishedCount": 5,
   "capturedCount": 5,
+  "publishedCommit": "88e0b69c06a3b1d71ca694dd0fb6895fbaaace7a",
+  "deploymentId": "eb9125f0-847b-44a6-88ce-48fcbe446bb7",
   "records": [
     {
       "provider": "Urgent Games",
@@ -12,7 +14,7 @@
       "gameSlug": "dragons-hoard-urgent-games",
       "catalogUrl": "https://www.urgentgames.com/games",
       "gameUrl": "https://www.urgentgames.com/game/dragons-hoard",
-      "status": "verified-ready-to-commit"
+      "status": "published"
     },
     {
       "provider": "SpinLab",
@@ -21,7 +23,7 @@
       "gameSlug": "rust-and-riches-spinlab",
       "catalogUrl": "https://playspinlab.com/games",
       "gameUrl": "https://playspinlab.com/games/rust-and-riches",
-      "status": "verified-ready-to-commit"
+      "status": "published"
     },
     {
       "provider": "LLAMA Games",
@@ -30,7 +32,7 @@
       "gameSlug": "boom-boom-gold-llama-games",
       "catalogUrl": "https://www.llamagames.com/games",
       "gameUrl": "https://www.llamagames.com/games/boom-boom-gold",
-      "status": "verified-ready-to-commit"
+      "status": "published"
     },
     {
       "provider": "SuperBull Gaming",
@@ -39,7 +41,7 @@
       "gameSlug": "zappin-zeus-superbull-gaming",
       "catalogUrl": "https://superbullgaming.com/games/",
       "gameUrl": "https://superbullgaming.com/games/zappin-zeus/",
-      "status": "verified-ready-to-commit"
+      "status": "published"
     },
     {
       "provider": "PoggiPlay",
@@ -48,7 +50,7 @@
       "gameSlug": "aztec-totem-poggiplay",
       "catalogUrl": "https://poggiplay.com/games-list",
       "gameUrl": "https://poggiplay.com/aztectotem",
-      "status": "verified-ready-to-commit"
+      "status": "published"
     }
   ],
   "discoveryAttempts": [
@@ -91,7 +93,7 @@
     }
   ],
   "continuation": {
-    "cursor": "Batch 58 reached its five-Provider cap: Urgent Games / Dragon's Hoard, SpinLab / Rust And Riches, LLAMA Games / Boom Boom Gold, SuperBull Gaming / Zappin Zeus and PoggiPlay / Aztec Totem. Full preview verification passed after catalog-growth fixtures were changed from historical totals to data-derived semantic assertions. Commit this scoped batch, fresh-fetch before normal push, then complete exact-SHA CI, deployment and online readback before marking published.",
+    "cursor": "Batch 58 is published and confirmed online. Continue horizontal discovery after PoggiPlay / Aztec Totem with the next uncollected Slot developer; do not reprocess the five Batch 58 games or the recorded excluded candidates.",
     "rule": "Capture one confirmed traditional Slot per new Provider only after a first-party catalogue, exact product page, attributable artwork, and truthful exact Demo status are verified. A batch may contain at most five new publishable games."
   }
 }
