@@ -1,9 +1,9 @@
 {
   "batch": 61,
   "recordedAt": "2026-10-18",
-  "state": "validated-awaiting-commit",
+  "state": "published",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "records": [
     {
       "provider": "APEX SLOTS",
@@ -12,7 +12,7 @@
       "gameSlug": "enchanted-moon-apex-slots",
       "catalogUrl": "https://apexslots.eu/",
       "gameUrl": "https://apexslots.eu/games/enchanted-moon/",
-      "status": "captured",
+      "status": "published",
       "note": "Official portfolio links to the named promotional demo. Demo says 15,000x max in all modes; it is play money only."
     },
     {
@@ -22,7 +22,7 @@
       "gameSlug": "ratz-n-reels-pigoo-games",
       "catalogUrl": "https://pigoo.games/",
       "gameUrl": "https://pigoo.games/games/ratz-n-reels/",
-      "status": "captured",
+      "status": "published",
       "note": "Official exact page confirms 6x5 cascading slot and explicit sample-round demo; no production RTP inferred."
     },
     {
@@ -32,7 +32,7 @@
       "gameSlug": "mega-mine-bonanza-games-inc",
       "catalogUrl": "https://gamesinc.co.uk/games",
       "gameUrl": "https://gamesinc.co.uk/games/mega-mine-bonanza",
-      "status": "captured",
+      "status": "published",
       "note": "Official catalogue and game sheet verified, including three distinct RTP versions. Demo control is behind an age confirmation; no age assertion made."
     },
     {
@@ -42,7 +42,7 @@
       "gameSlug": "tuna-overload-spinberry",
       "catalogUrl": "https://spinberry.com/pages/games.html",
       "gameUrl": "https://spinberry.com/pages/game.html?game=Tuna%20Overload",
-      "status": "captured",
+      "status": "published",
       "note": "Official exact game page and artwork verified. The official DEMO link opens a game-specific dynamically generated demo session."
     },
     {
@@ -52,7 +52,7 @@
       "gameSlug": "sugar-papi-zinzin-studios",
       "catalogUrl": "https://zinzinstudios.com/",
       "gameUrl": "https://zinzinstudios.com/games/sugar-papi/",
-      "status": "captured",
+      "status": "published",
       "note": "Official exact slot art/design page and direct play-money demo verified. The 200x figure is a fixed jackpot and is not promoted to max win."
     }
   ],
@@ -71,11 +71,20 @@
     }
   ],
   "continuation": {
-    "cursor": "Batch 61 has 5/5 validated; commit and publish before continuing after ZinZin Studios / Sugar Papi.",
+    "cursor": "Batch 61 published and checked; continue after ZinZin Studios / Sugar Papi.",
     "rule": "One confirmed Slot per previously uncollected provider; save evidence and proceed to full validation once 5 games are captured."
   },
   "validation": {
     "status": "passed-full-preview-verify-and-diff-check",
     "checkedAt": "2026-10-18"
+  },
+  "publication": {
+    "commit": "1eb0c6318432c4e56f4e900ccd71f5b2ed4a8a40",
+    "ciRun": "39117163258",
+    "ci": "success",
+    "deploymentId": "28d9f04e-6c6c-46f7-86cd-a6667627fc18",
+    "deployment": "success",
+    "url": "https://28d9f04e.slothub-4cu.pages.dev",
+    "readback": "passed: search, explorer, compare, provider, details, exact game links, images, source, preview headers and sitemap"
   }
 }

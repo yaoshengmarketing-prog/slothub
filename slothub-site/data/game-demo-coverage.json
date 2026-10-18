@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 382,
-  "providerCount": 314,
+  "gameCount": 387,
+  "providerCount": 319,
   "sourcePageCount": 867,
   "counts": {
     "access-restricted": 4,
-    "available": 322,
-    "not-verified": 56
+    "available": 323,
+    "not-verified": 60
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -7924,6 +7924,98 @@
         {
           "requestedUrl": "https://zinzinstudios.com/sugar-papi/",
           "finalUrl": "https://zinzinstudios.com/sugar-papi/",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "le-bonbon-wonwon-games",
+      "name": "Le BonBon",
+      "provider": "WonWon Games",
+      "status": "available",
+      "url": "https://www.wonwongames.com/en/game/3050/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "Official exact product page names provider and game; PLAY DEMO opened game-specific UAT session.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.wonwongames.com/en/game/3050/",
+          "finalUrl": "https://www.wonwongames.com/en/game/3050/",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "outlaws-fortune-static-studio",
+      "name": "Outlaw's Fortune",
+      "provider": "static-studio",
+      "status": "not-verified",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "Official game page links only generic Stake home pages; exact playable game destination not verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://staticstudio.gg/outlaws-fortune.html",
+          "finalUrl": "https://staticstudio.gg/outlaws-fortune.html",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "blazing-wild-hot-777-sunflower",
+      "name": "Blazing Wild Hot 777",
+      "provider": "sunflower-gaming",
+      "status": "not-verified",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "Official exact page presents age confirmation and demo availability checking; no playable game entry verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://sunflowergamingllc.com/games/blazing-wild-hot-777",
+          "finalUrl": "https://sunflowergamingllc.com/games/blazing-wild-hot-777",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "shamrock-link-reel-lucky",
+      "name": "Shamrock Link",
+      "provider": "reel-lucky-gaming",
+      "status": "not-verified",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "Official game-specific demo wrapper opens but game client remains blank/loading; not asserted playable.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://reelluckygaming.com/play/shamrock-link",
+          "finalUrl": "https://reelluckygaming.com/play/shamrock-link",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "dazed-and-confused-byteclimbers",
+      "name": "Dazed & Confused",
+      "provider": "byteclimbers",
+      "status": "not-verified",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "Official lobby opens a game-specific temporary session; persistent entry without session remains unverified, and lobby is not presented as exact link.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.byteclimbers.com/demo",
+          "finalUrl": "https://www.byteclimbers.com/demo",
           "httpStatus": 200
         }
       ],
