@@ -1,0 +1,72 @@
+{
+  "batch": 60,
+  "recordedAt": "2026-10-18",
+  "state": "validated-awaiting-commit",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "records": [
+    {
+      "provider": "Legacy Gaming",
+      "providerSlug": "legacy-gaming",
+      "game": "Chicxulub",
+      "gameSlug": "chicxulub-legacy-gaming",
+      "catalogUrl": "https://legacygaming.online/games",
+      "gameUrl": "https://legacygaming.online/games/chicxulub",
+      "status": "captured",
+      "note": "Official catalogue and exact game page verified; Stake exact same-game entry matches 96.70% RTP and game artwork. Base 1,024 ways is not promoted to fixed count because wild multipliers can change ways."
+    },
+    {
+      "provider": "RTP Labs",
+      "providerSlug": "rtp-labs",
+      "game": "Rug Dealer",
+      "gameSlug": "rug-dealer-rtp-labs",
+      "catalogUrl": "https://rtplabs.com/",
+      "gameUrl": "https://stake.com/casino/games/rtplabs-rug-dealer",
+      "status": "captured",
+      "note": "Official catalogue and artwork match the exact Stake slot page. Platform RTP was not treated as a verified official figure."
+    },
+    {
+      "provider": "Vantareel Studios",
+      "providerSlug": "vantareel-studios",
+      "game": "Rift Riot",
+      "gameSlug": "rift-riot-vantareel-studios",
+      "catalogUrl": "https://vantareelstudios.com/",
+      "gameUrl": "https://vantareelstudios.com/rift-riot",
+      "status": "captured",
+      "note": "Official portfolio and exact slot page verified; official play-money preview opens with in-browser simulator. RTP omitted because the official page describes a simulated tolerance."
+    },
+    {
+      "provider": "Wiener Games",
+      "providerSlug": "wiener-games",
+      "game": "Coins of Thor Hold & Win",
+      "gameSlug": "coins-of-thor-wiener-games",
+      "catalogUrl": "https://www.wienergames.com/games.html",
+      "gameUrl": "https://www.wienergames.com/games/coins-of-thor.html",
+      "status": "captured",
+      "note": "Wiener official exact page identifies Fantasma Games as publishing partner and opens the matching demo. Search-indexed prior official text showed RTP 96.1%, while the current page shows 96.46% / 94.24%; RTP omitted pending version reconciliation."
+    },
+    {
+      "provider": "Lucky Pixel",
+      "providerSlug": "lucky-pixel",
+      "game": "Odin's Blessing",
+      "gameSlug": "odins-blessing-lucky-pixel",
+      "catalogUrl": "https://lucky-pixel.com/",
+      "gameUrl": "https://lucky-pixel.com/games/odins-blessing/",
+      "status": "captured",
+      "note": "Official game sheet verified; demo button reaches age-confirmation dialog; official RTP applies to all seven modes. Base-mode volatility is Extreme and differs by mode."
+    }
+  ],
+  "discoveryAttempts": [],
+  "continuation": {
+    "cursor": "Batch 60: 5 captured and validated; commit and publish before continuing after Lucky Pixel / Odin’s Blessing.",
+    "rule": "One confirmed Slot per previously uncollected provider; save evidence and proceed to full validation once 5 games are captured."
+  },
+  "validation": {
+    "status": "passed",
+    "checkedAt": "2026-10-18",
+    "checks": [
+      "ASTRO_TELEMETRY_DISABLED=1 PUBLIC_SITE_ENV=preview npm run verify",
+      "git diff --check"
+    ]
+  }
+}

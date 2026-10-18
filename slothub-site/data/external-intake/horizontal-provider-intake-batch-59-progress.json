@@ -1,9 +1,9 @@
 {
   "batch": 59,
   "recordedAt": "2026-10-17",
-  "state": "validated-awaiting-commit",
+  "state": "published",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "records": [
     {
       "provider": "ICIQ",
@@ -12,7 +12,7 @@
       "gameSlug": "double-barrel-iciq",
       "catalogUrl": "https://www.iciq.com/games",
       "gameUrl": "https://www.iciq.com/games/double-barrel",
-      "status": "captured",
+      "status": "published",
       "note": "First-party game page and exact Stake same-game page verified; official sample SVG is a placeholder, so the visually checked Stake same-game image is attributed to Stake. Official release date differs from a non-official source and is omitted pending clarification."
     },
     {
@@ -22,7 +22,7 @@
       "gameSlug": "brains-and-beakers-keyturn-gaming",
       "catalogUrl": "https://keyturngaming.com/games",
       "gameUrl": "https://keyturngaming.com/games/brains-and-beakers",
-      "status": "captured",
+      "status": "published",
       "note": "Official product page and exact Stake game page verified, artwork matches. Official product page states 96% RTP; Stake lists 96.20%. RTP left blank pending clarification. Max win is 10,000x in Rip Spins and 5,000x in other modes."
     },
     {
@@ -32,7 +32,7 @@
       "gameSlug": "graveyard-shift-catnip",
       "catalogUrl": "https://www.catnipstudios.co.uk/#games",
       "gameUrl": "https://stake.com/casino/games/catnipstudios-graveyard-shift",
-      "status": "captured",
+      "status": "published",
       "note": "Official catalogue lists the Slot, artwork and direct exact Stake link. Stake page confirms same name, provider, Slot, and Bonus Buy; no numerical fields taken from the platform."
     },
     {
@@ -42,7 +42,7 @@
       "gameSlug": "nadir-virtual-gold",
       "catalogUrl": "https://virtualgoldstudios.com/games",
       "gameUrl": "https://virtualgoldstudios.com/",
-      "status": "captured",
+      "status": "published",
       "note": "Official page identifies the slot, 6x6 layout, 96.5% RTP, 25,000x and mechanics; the exact Stake page confirms title, provider, Slot and matching RTP. Official artwork downloaded and visually checked."
     },
     {
@@ -52,7 +52,7 @@
       "gameSlug": "hoard-awakened-broke-by-design",
       "catalogUrl": "https://bbdgaming.com/#games",
       "gameUrl": "https://stake.com/casino/games/brokebydesign-hoard-awakened",
-      "status": "captured",
+      "status": "published",
       "note": "Studio official catalogue, game detail and exact Stake page identify the same title and studio. Official scene art retrieved and visually checked; numerical fields not verified by the studio remain empty."
     }
   ],
@@ -100,13 +100,15 @@
     }
   ],
   "continuation": {
-    "cursor": "Batch 59 has 5/5 captured and passed full preview verification; complete scoped commit, push, CI, deployment and live readback before continuing.",
+    "cursor": "Batch 59 published and read back. Continue with the next uncollected provider after Broke By Design / Hoard Awakened.",
     "rule": "Capture one confirmed traditional Slot per new Provider only after a first-party catalogue, exact product page, attributable artwork, and truthful exact Demo status are verified. A batch may contain at most five new publishable games."
   },
   "validation": {
-    "status": "passed",
+    "status": "passed-ci-deploy-and-online-readback",
     "checkedAt": "2026-10-18",
     "command": "ASTRO_TELEMETRY_DISABLED=1 PUBLIC_SITE_ENV=preview npm run verify",
-    "note": "Full preview verification passed for 372 games and 304 providers; git diff --check follows before staging."
-  }
+    "note": "Full preview verification, GitHub Actions exact SHA, Cloudflare Pages exact SHA, game/provider/image/demo/source readback and preview robots/canonical/sitemap checks passed. Search, Explorer and Compare contain the new game data; browser verified Explorer and Compare behavior."
+  },
+  "publishedCommit": "fa9e1203b26ba7e24fe05a0d8e8aeaa32054f960",
+  "deploymentId": "24fa23cd-84bb-478a-bbee-2d4d90045c31"
 }

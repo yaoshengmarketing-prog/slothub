@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 372,
-  "providerCount": 304,
+  "gameCount": 377,
+  "providerCount": 309,
   "sourcePageCount": 867,
   "counts": {
     "access-restricted": 4,
-    "available": 312,
+    "available": 317,
     "not-verified": 56
   },
   "rules": {
@@ -7705,6 +7705,125 @@
         {
           "requestedUrl": "https://bbdgaming.com/art/hoard-scene.webp",
           "finalUrl": "https://bbdgaming.com/art/hoard-scene.webp",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "chicxulub-legacy-gaming",
+      "name": "Chicxulub",
+      "provider": "legacy-gaming",
+      "status": "available",
+      "url": "https://stake.com/casino/games/legacygaming-chicxulub",
+      "accessType": "platform-game-page",
+      "platformName": "Stake",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "Legacy Gaming official game page identifies CHICXULUB, its slot mechanics and official art; the exact Stake page names the same game and studio.",
+      "sameGameEvidence": "Stake identifies Chicxulub and Legacy Gaming, lists Slots, and matches the official artwork and 96.70% RTP.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://legacygaming.online/games/chicxulub",
+          "finalUrl": "https://legacygaming.online/games/chicxulub",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://stake.com/casino/games/legacygaming-chicxulub",
+          "finalUrl": "https://stake.com/zh/casino/games/legacygaming-chicxulub",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://legacygaming.online/assets/chicxulub-art.jpg",
+          "finalUrl": "https://legacygaming.online/assets/chicxulub-art.jpg",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "rug-dealer-rtp-labs",
+      "name": "Rug Dealer",
+      "provider": "RTP Labs",
+      "status": "available",
+      "url": "https://stake.com/casino/games/rtplabs-rug-dealer",
+      "accessType": "platform-game-page",
+      "platformName": "Stake",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "Official RTP Labs catalogue lists Rug Dealer; Stake exact page identifies the game and provider as a slot.",
+      "sameGameEvidence": "Official and Stake images show the identical Rug Dealer artwork and RTP Labs name.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://rtplabs.com/",
+          "finalUrl": "https://rtplabs.com/",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://stake.com/casino/games/rtplabs-rug-dealer",
+          "finalUrl": "https://stake.com/casino/games/rtplabs-rug-dealer",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "rift-riot-vantareel-studios",
+      "name": "Rift Riot",
+      "provider": "Vantareel Studios",
+      "status": "available",
+      "url": "https://vantareelstudios.com/rift-riot",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "Official exact game page names the title and developer and starts an official play-money demo using an in-browser simulator.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://vantareelstudios.com/rift-riot",
+          "finalUrl": "https://vantareelstudios.com/rift-riot",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "coins-of-thor-wiener-games",
+      "name": "Coins of Thor Hold & Win",
+      "provider": "Wiener Games",
+      "status": "available",
+      "url": "https://www.wienergames.com/games/coins-of-thor.html",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "Official exact slot page identifies Wiener Games and partner Fantasma Games and opens the matching Fantasma demo.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.wienergames.com/games/coins-of-thor.html",
+          "finalUrl": "https://www.wienergames.com/games/coins-of-thor.html",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "odins-blessing-lucky-pixel",
+      "name": "Odin's Blessing",
+      "provider": "Lucky Pixel",
+      "status": "available",
+      "url": "https://lucky-pixel.com/games/odins-blessing/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "Official exact game sheet names the title and developer and provides a demo button; demo launch is age-gated.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://lucky-pixel.com/games/odins-blessing/",
+          "finalUrl": "https://lucky-pixel.com/games/odins-blessing/",
           "httpStatus": 200
         }
       ],
