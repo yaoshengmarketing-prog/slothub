@@ -32,7 +32,12 @@ Relax Gaming 的 intake manifest 另以 `importStatus`／`collectionOutcome` 記
 6. `status: draft` 是資料發布隔離，不是工作流狀態的替代品。
 7. 任一階段發現非預期檔案、遠端新 Commit、身份衝突，或重大且尚未解決、會影響身份、核心數值、Provider、系列或發布可靠性的來源衝突時，立即停止跨階段操作並回報。可以判讀、完整保存且不影響核心資料的來源差異，可以留在同一階段繼續處理。
 8. 每款 published Game 必須對應一個 published Provider record，讓使用者一定能從 Game detail 前往站內廠商頁；無法確認 Provider 身份的遊戲不得發布。
-9. 每個 published Provider 必須有可追溯的 `officialUrl`，作為「廠商官網」入口。Provider 官方網站與單款 Demo 是兩份不同資料，不得互相代替。
+9. 每個 published Provider 必須有可追溯的 `officialUrl`，作為「廠商官網」入口（規則 2026-10-18）：
+   - 優先使用工作室自有、經核實的官方網站（回應 200、明確是該工作室本身的公司或遊戲網站，且列出相符作品）。
+   - 只在 Stake 發行的 Stake Engine 工作室，若找不到自有網站，可使用 Stake 工作室目錄頁 `https://stake.com/casino/group/<studio>`；不得使用 Stake 其他路徑。
+   - 其他娛樂城／營運商頁面、聯盟行銷網站，以及帶註冊推廣碼、存款紅利或 rakeback 推廣的網站，一律不得作為 `officialUrl`。
+   - `npm run verify:provider-official-urls` 會阻擋不符規則的網址。
+   Provider 官方網站與單款 Demo 是兩份不同資料，不得互相代替。
 10. Demo／官方單款遊戲頁／第三方同款頁屬獨立的可選補充；只有核實精確單款目的地才加入。找不到時保留真實缺值或狀態，不得拿 Provider 首頁、通用大廳或搜尋頁補成 Demo。
 
 ## 3. 固定狀態與權限
