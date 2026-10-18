@@ -1,0 +1,112 @@
+{
+  "batch": 59,
+  "recordedAt": "2026-10-17",
+  "state": "validated-awaiting-commit",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "records": [
+    {
+      "provider": "ICIQ",
+      "providerSlug": "iciq",
+      "game": "Double Barrel",
+      "gameSlug": "double-barrel-iciq",
+      "catalogUrl": "https://www.iciq.com/games",
+      "gameUrl": "https://www.iciq.com/games/double-barrel",
+      "status": "captured",
+      "note": "First-party game page and exact Stake same-game page verified; official sample SVG is a placeholder, so the visually checked Stake same-game image is attributed to Stake. Official release date differs from a non-official source and is omitted pending clarification."
+    },
+    {
+      "provider": "KeyTurn Gaming",
+      "providerSlug": "keyturn-gaming",
+      "game": "Brains and Beakers",
+      "gameSlug": "brains-and-beakers-keyturn-gaming",
+      "catalogUrl": "https://keyturngaming.com/games",
+      "gameUrl": "https://keyturngaming.com/games/brains-and-beakers",
+      "status": "captured",
+      "note": "Official product page and exact Stake game page verified, artwork matches. Official product page states 96% RTP; Stake lists 96.20%. RTP left blank pending clarification. Max win is 10,000x in Rip Spins and 5,000x in other modes."
+    },
+    {
+      "provider": "Catnip Studios",
+      "providerSlug": "catnip-studios",
+      "game": "Graveyard Shift",
+      "gameSlug": "graveyard-shift-catnip",
+      "catalogUrl": "https://www.catnipstudios.co.uk/#games",
+      "gameUrl": "https://stake.com/casino/games/catnipstudios-graveyard-shift",
+      "status": "captured",
+      "note": "Official catalogue lists the Slot, artwork and direct exact Stake link. Stake page confirms same name, provider, Slot, and Bonus Buy; no numerical fields taken from the platform."
+    },
+    {
+      "provider": "Virtual Gold Studios",
+      "providerSlug": "virtual-gold-studios",
+      "game": "Nadir",
+      "gameSlug": "nadir-virtual-gold",
+      "catalogUrl": "https://virtualgoldstudios.com/games",
+      "gameUrl": "https://virtualgoldstudios.com/",
+      "status": "captured",
+      "note": "Official page identifies the slot, 6x6 layout, 96.5% RTP, 25,000x and mechanics; the exact Stake page confirms title, provider, Slot and matching RTP. Official artwork downloaded and visually checked."
+    },
+    {
+      "provider": "Broke By Design",
+      "providerSlug": "broke-by-design",
+      "game": "Hoard Awakened",
+      "gameSlug": "hoard-awakened-broke-by-design",
+      "catalogUrl": "https://bbdgaming.com/#games",
+      "gameUrl": "https://stake.com/casino/games/brokebydesign-hoard-awakened",
+      "status": "captured",
+      "note": "Studio official catalogue, game detail and exact Stake page identify the same title and studio. Official scene art retrieved and visually checked; numerical fields not verified by the studio remain empty."
+    }
+  ],
+  "discoveryAttempts": [
+    {
+      "provider": "JDB Gaming",
+      "candidateGame": "BASTET",
+      "status": "source-image-access-restricted",
+      "checkedAt": "2026-10-17",
+      "catalogUrl": "https://www.jdbgaming.com/en/games/slot",
+      "gameUrl": "https://www.jdbgaming.com/en/games/slot/bastet",
+      "reason": "The official JDB Slot catalogue and exact BASTET page are publicly indexed and identify BASTET as a Slot, including its game features and 6×5 layout. In this intake environment, direct retrieval of the exact official page returned only a short non-content response, so a stable attributable official artwork asset could not be independently retrieved and checked. The candidate is not promoted to a public Game record without that image verification.",
+      "nextStep": "Retry only when the exact official page and attributable artwork can be directly retrieved; otherwise continue with the next uncollected Provider candidate."
+    },
+    {
+      "provider": "Wiener Games",
+      "candidateGame": "Midas Hype House",
+      "status": "skipped-provider-identity-conflict",
+      "checkedAt": "2026-10-18",
+      "catalogUrl": "https://www.wienergames.com/games.html",
+      "gameUrl": "https://www.wienergames.com/games/midas-hype-house.html",
+      "conflictingSourceUrl": "https://www.fantasmagames.com/",
+      "reason": "Wiener Games identifies itself as the developer and Fantasma Games as distributor on its exact product page, whereas the Fantasma Games official catalogue identifies Fantasma Games as the developer of Midas Hype House. This unresolved first-party attribution conflict prevents assigning this game to a new Provider.",
+      "nextStep": "Seek first-party clarification of the actual developer before reconsidering; continue with a different uncollected Provider."
+    },
+    {
+      "provider": "Keyframe Gaming",
+      "candidateGame": "Hyper Monkey",
+      "status": "skipped-insufficient-provider-official-site",
+      "checkedAt": "2026-10-18",
+      "catalogUrl": "https://stake.com/casino/group/keyframe-gaming",
+      "gameUrl": "https://stake.com/casino/games/keyframe-hyper-monkey",
+      "reason": "Stake rendered a one-game catalogue and exact page identifying Keyframe Gaming, Hyper Monkey and Slot, but a traceable developer-owned official website or official single-game product page was not established. The platform listing cannot be labelled the developer official website.",
+      "nextStep": "Reconsider after locating a traceable developer-owned site and product evidence; continue with a different new Provider."
+    },
+    {
+      "provider": "Static Studio",
+      "candidateGame": "Outlaw's Fortune",
+      "status": "source-identity-not-corroborated",
+      "checkedAt": "2026-10-18",
+      "catalogUrl": "https://staticstudio.gg/",
+      "gameUrl": "https://staticstudio.gg/outlaws-fortune.html",
+      "reason": "The purported official site says the title is live on Stake, but its play link resolves to the Stake homepage, and the tested Stake provider group does not find Static Studio. Actual release and identity need corroboration before promotion.",
+      "nextStep": "Find a traceable direct same-game platform page or another first-party confirmation and verify the artwork before considering capture."
+    }
+  ],
+  "continuation": {
+    "cursor": "Batch 59 has 5/5 captured and passed full preview verification; complete scoped commit, push, CI, deployment and live readback before continuing.",
+    "rule": "Capture one confirmed traditional Slot per new Provider only after a first-party catalogue, exact product page, attributable artwork, and truthful exact Demo status are verified. A batch may contain at most five new publishable games."
+  },
+  "validation": {
+    "status": "passed",
+    "checkedAt": "2026-10-18",
+    "command": "ASTRO_TELEMETRY_DISABLED=1 PUBLIC_SITE_ENV=preview npm run verify",
+    "note": "Full preview verification passed for 372 games and 304 providers; git diff --check follows before staging."
+  }
+}

@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 367,
-  "providerCount": 299,
+  "gameCount": 372,
+  "providerCount": 304,
   "sourcePageCount": 867,
   "counts": {
     "access-restricted": 4,
-    "available": 307,
+    "available": 312,
     "not-verified": 56
   },
   "rules": {
@@ -7549,6 +7549,166 @@
         { "requestedUrl": "https://cdn.sanity.io/images/8fyfvzll/production/3d6890eb246cf2bf5204b8ea0023541ffbdc5bc9-690x300.jpg", "finalUrl": "https://cdn.sanity.io/images/8fyfvzll/production/3d6890eb246cf2bf5204b8ea0023541ffbdc5bc9-690x300.jpg", "httpStatus": 200 }
       ],
       "browserReviewedAt": "2026-10-15"
+    },
+    {
+      "slug": "double-barrel-iciq",
+      "name": "Double Barrel",
+      "provider": "iciq",
+      "status": "available",
+      "url": "https://stake.com/casino/games/iciq-double-barrel",
+      "accessType": "platform-game-page",
+      "platformName": "Stake",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "ICIQ exact official page identifies the title, provider and Stake link; Stake exact page visibly identifies both and launches the same game.",
+      "sameGameEvidence": "Stake names Double Barrel and ICIQ and shows 96% RTP and a game launcher with 25,000x, matching the official page.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.iciq.com/games/double-barrel",
+          "finalUrl": "https://www.iciq.com/games/double-barrel",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://stake.com/casino/games/iciq-double-barrel",
+          "finalUrl": "https://stake.com/zh/casino/games/iciq-double-barrel",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://mediumrare.imgix.net/82305e0b07f8a5cfe8fcd2975d5cba64864f391381011113f3c876a3e5e02d94?w=300&h=400&fit=min&auto=format",
+          "finalUrl": "https://mediumrare.imgix.net/82305e0b07f8a5cfe8fcd2975d5cba64864f391381011113f3c876a3e5e02d94?w=300&h=400&fit=min&auto=format",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "brains-and-beakers-keyturn-gaming",
+      "name": "Brains and Beakers",
+      "provider": "keyturn-gaming",
+      "status": "available",
+      "url": "https://stake.com/casino/games/keyturngaming-brains-and-beakers",
+      "accessType": "platform-game-page",
+      "platformName": "Stake",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "KeyTurn official exact product page identifies the title, developer, mechanics and artwork. Stake exact game page identifies the same title and provider.",
+      "sameGameEvidence": "Both exact pages show Brains and Beakers, KeyTurn Gaming and matching artwork; Stake lists it under Slots.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://keyturngaming.com/games/brains-and-beakers",
+          "finalUrl": "https://keyturngaming.com/games/brains-and-beakers",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://stake.com/casino/games/keyturngaming-brains-and-beakers",
+          "finalUrl": "https://stake.com/zh/casino/games/keyturngaming-brains-and-beakers",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://keyturngaming.com/games/brains-and-beakers/tile.png",
+          "finalUrl": "https://keyturngaming.com/games/brains-and-beakers/tile.png",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "graveyard-shift-catnip",
+      "name": "Graveyard Shift",
+      "provider": "catnip-studios",
+      "status": "available",
+      "url": "https://stake.com/casino/games/catnipstudios-graveyard-shift",
+      "accessType": "platform-game-page",
+      "platformName": "Stake",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "Catnip Studios official catalogue lists Graveyard Shift under Slots and directly links to the exact Stake page.",
+      "sameGameEvidence": "The exact Stake page names Graveyard Shift and Catnip Studios and categorizes it as Slots, matching the official catalogue entry.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.catnipstudios.co.uk/",
+          "finalUrl": "https://www.catnipstudios.co.uk/",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://stake.com/casino/games/catnipstudios-graveyard-shift",
+          "finalUrl": "https://stake.com/zh/casino/games/catnipstudios-graveyard-shift",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://www.catnipstudios.co.uk/assets/images/graveyard-shift.png",
+          "finalUrl": "https://www.catnipstudios.co.uk/assets/images/graveyard-shift.png",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "nadir-virtual-gold",
+      "name": "Nadir",
+      "provider": "virtual-gold-studios",
+      "status": "available",
+      "url": "https://stake.com/casino/games/virtualgoldstudios-nadir",
+      "accessType": "platform-game-page",
+      "platformName": "Stake",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "The official Virtual Gold Studios homepage names Nadir and describes its slot format, mechanics, image and RTP; the Stake exact page identifies the same studio and title.",
+      "sameGameEvidence": "Stake identifies Nadir and Virtual Gold Studios, categorizes it as Slots, and lists 96.50% RTP matching the official studio page.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://virtualgoldstudios.com/",
+          "finalUrl": "https://virtualgoldstudios.com/",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://stake.com/casino/games/virtualgoldstudios-nadir",
+          "finalUrl": "https://stake.com/zh/casino/games/virtualgoldstudios-nadir",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://virtualgoldstudios.com/assets/nadir.png",
+          "finalUrl": "https://virtualgoldstudios.com/assets/nadir.png",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "hoard-awakened-broke-by-design",
+      "name": "Hoard Awakened",
+      "provider": "broke-by-design",
+      "status": "available",
+      "url": "https://stake.com/casino/games/brokebydesign-hoard-awakened",
+      "accessType": "platform-game-page",
+      "platformName": "Stake",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "Broke By Design official catalogue and game details identify its first released game and link directly to the exact Stake page.",
+      "sameGameEvidence": "The linked Stake page identifies Hoard Awakened and Broke by Design, and categorizes it as Slots.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bbdgaming.com/",
+          "finalUrl": "https://bbdgaming.com/",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://stake.com/casino/games/brokebydesign-hoard-awakened",
+          "finalUrl": "https://stake.com/zh/casino/games/brokebydesign-hoard-awakened",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://bbdgaming.com/art/hoard-scene.webp",
+          "finalUrl": "https://bbdgaming.com/art/hoard-scene.webp",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
     }
   ]
 }
