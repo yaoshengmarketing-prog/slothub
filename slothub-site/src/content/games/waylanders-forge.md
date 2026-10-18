@@ -26,10 +26,11 @@ editorialFeatured: false
 status: published
 source: { label: Stake 精確 Waylanders Forge 同款頁, url: https://stake.com/casino/games/valkyrie-waylanders-forge, checkedAt: 2026-10-14 }
 sources:
-  - { label: Stake 官方 Valkyrie 工作室目錄, url: https://stake.com/casino/group/valkyrie, checkedAt: 2026-10-14 }
+  - { label: Valkyrie Studio 官方 Waylanders Forge 遊戲頁（6x4、4096、High 波動度、最高 80,085x）, url: https://valkyriestudio.gg/game/waylanders-forge, checkedAt: 2026-10-18 }
+  - { label: Valkyrie 官方網站（Provider 身份）, url: https://valkyriestudio.gg/, checkedAt: 2026-10-18 }
   - { label: Stake 精確 Waylanders Forge 同款頁（盤面、玩法、RTP、波動度、最高倍數與功能）, url: https://stake.com/casino/games/valkyrie-waylanders-forge, checkedAt: 2026-10-14 }
   - { label: Stake Engine 官方 Waylanders Forge 作品圖, url: https://studio.engine.io/api/asset/image/019c9895-cf20-725e-8fdb-c47989b2fed3, checkedAt: 2026-10-14 }
 demo: { status: available, checkedAt: 2026-10-14, iframeStatus: not-tested, url: https://stake.com/casino/games/valkyrie-waylanders-forge, accessType: platform-game-page, platformName: Stake, presentation: external, note: "This is a verified exact same-game Stake platform page, not an official Valkyrie direct Demo." }
 lastVerifiedAt: 2026-10-14
-updatedAt: 2026-10-14
+updatedAt: 2026-10-18
 ---

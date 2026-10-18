@@ -9,9 +9,9 @@ serviceMarkets: []
 marketTags: [international, online]
 languages: [English]
 gameTypes: [slots]
-summary: High Noon Studios 是透過 Stake Engine 發行老虎機的工作室；Stake 工作室目錄與 Dead by Dusk 精確同款頁確認其 Provider 身分及作品。
-officialUrl: https://stake.com/casino/group/high-noon-studios
+summary: High Noon Studios 是透過 Stake Engine 發行老虎機的工作室；官方網站列出 Dead by Dusk 等作品與規格。
+officialUrl: https://highnoonstudios.io/
 status: published
-source: { label: Stake High Noon Studios 工作室目錄, url: https://stake.com/casino/group/high-noon-studios, checkedAt: 2026-10-15 }
-updatedAt: 2026-10-15
+source: { label: High Noon Studios 官方網站, url: https://highnoonstudios.io/, checkedAt: 2026-10-18 }
+updatedAt: 2026-10-18
 ---

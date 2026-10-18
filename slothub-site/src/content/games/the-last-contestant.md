@@ -27,10 +27,10 @@ editorialFeatured: false
 status: published
 source: { label: Stake 精確 The Last Contestant 同款頁, url: https://stake.com/casino/games/madlabgaming-the-last-contestant, checkedAt: 2026-10-14 }
 sources:
-  - { label: Stake 官方 MadLab Gaming 工作室目錄, url: https://stake.com/casino/group/madlab-gaming, checkedAt: 2026-10-14 }
+  - { label: MadLab Gaming 官方網站（Provider 身份）, url: https://madlab-gaming.com/, checkedAt: 2026-10-18 }
   - { label: Stake 精確 The Last Contestant 同款頁（盤面、線數、RTP、波動度、最高倍數、投注範圍與功能）, url: https://stake.com/casino/games/madlabgaming-the-last-contestant, checkedAt: 2026-10-14 }
   - { label: Stake Engine 官方 The Last Contestant 作品圖, url: "https://mediumrare.imgix.net/f53d938fbca7aba0f3547b0c25199f3aba0978b18348eb7d60ff6570c1df8f63?auto=format&fit=min&h=600&w=800", checkedAt: 2026-10-14 }
 demo: { status: available, checkedAt: 2026-10-14, iframeStatus: not-tested, url: https://stake.com/casino/games/madlabgaming-the-last-contestant, accessType: platform-game-page, platformName: Stake, presentation: external, note: "This is a verified exact same-game Stake platform page, not an official MadLab Gaming direct Demo." }
 lastVerifiedAt: 2026-10-14
-updatedAt: 2026-10-14
+updatedAt: 2026-10-18
 ---

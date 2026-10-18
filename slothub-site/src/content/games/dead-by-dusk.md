@@ -28,10 +28,11 @@ editorialFeatured: false
 status: published
 source: { label: Stake 精確 Dead by Dusk 同款頁, url: https://stake.com/casino/games/highnoonstudios-dead-by-dusk, checkedAt: 2026-10-15 }
 sources:
-  - { label: Stake High Noon Studios 工作室目錄, url: https://stake.com/casino/group/high-noon-studios, checkedAt: 2026-10-15 }
+  - { label: High Noon Studios 官方 Dead by Dusk 遊戲頁（5x5、25 線、High 波動度、最高 15,000x、投注範圍）, url: https://highnoonstudios.io/games/dead-by-dusk, checkedAt: 2026-10-18 }
+  - { label: High Noon Studios 官方網站（Provider 身份）, url: https://highnoonstudios.io/, checkedAt: 2026-10-18 }
   - { label: Stake 精確 Dead by Dusk 同款頁（發行日、盤面、線數、RTP、波動度、最高倍數、投注範圍與功能）, url: https://stake.com/casino/games/highnoonstudios-dead-by-dusk, checkedAt: 2026-10-15 }
   - { label: Stake Engine Dead by Dusk 作品圖, url: "https://mediumrare.imgix.net/b5afc9d037fef7c0f00103509773d07bbabbfe115830270e3be9b205bf7f85ee?auto=format&fit=min&h=600&w=800", checkedAt: 2026-10-15 }
 demo: { status: available, checkedAt: 2026-10-15, iframeStatus: not-tested, url: https://stake.com/casino/games/highnoonstudios-dead-by-dusk, accessType: platform-game-page, platformName: Stake, presentation: external, note: "Verified exact same-game Stake platform page; not an official High Noon Studios direct Demo." }
 lastVerifiedAt: 2026-10-15
-updatedAt: 2026-10-15
+updatedAt: 2026-10-18
 ---
