@@ -11,7 +11,7 @@ Slot Hub 將試玩／遊戲入口視為遊戲資料的一部分：讓讀者在�
 後續 Agent 處理任何一款遊戲時，必須把以下三件事分開，不得互相代替：
 
 1. 每款 published Game 都必須對應一個既有的站內 Provider record，前台因此一定能連到 Slot Hub 的廠商頁；沒有可確認的廠商身份時，該 Game 不應發布。
-2. 每個 published Provider 都必須保存可追溯的 `officialUrl`，Game detail 一定保留「廠商官網」入口。這只證明廠商身份及官方網站，不等於該款遊戲的 Demo。
+2. 每個 published Provider 都必須保存可追溯的 `officialUrl`，Game detail 一定保留「廠商官網」入口。`officialUrl` 優先使用工作室自有並經核實的官方網站；只在 Stake 發行的 Stake Engine 工作室若無自有網站，可使用 `https://stake.com/casino/group/<studio>`；聯盟行銷或推廣碼網站不得使用（規則 2026-10-18，詳見 `game-intake-workflow-v1.md` 第 9 條）。這只證明廠商身份及官方網站，不等於該款遊戲的 Demo。
 3. 單款 Demo／官方遊戲頁／第三方同款頁是額外的可選資料。只有核實到精確單款目的地時才加入；目前找不到時保留 `not-verified` 或其他真實狀態，但站內廠商頁與廠商官網仍照常顯示。
 
 因此，Agent 的固定順序是：先核對 Game → Provider 身份，再核對 Provider 官方網站，最後獨立查找單款 Demo。不得以「有廠商官網」推論「有 Demo」，也不得因 Demo 缺失而省略或改寫廠商資訊。
