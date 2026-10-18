@@ -1,9 +1,9 @@
 {
   "batch": 62,
   "recordedAt": "2026-10-18",
-  "state": "validated-awaiting-commit",
+  "state": "published",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "records": [
     {
       "provider": "WonWon Games",
@@ -12,7 +12,7 @@
       "gameSlug": "le-bonbon-wonwon-games",
       "catalogUrl": "https://www.wonwongames.com/en/",
       "gameUrl": "https://www.wonwongames.com/en/game/3050/",
-      "status": "captured",
+      "status": "published",
       "note": "Official catalogue 96.82% conflicts with detail 96.78%; RTP omitted pending clarification. Exact game demo opens UAT session."
     },
     {
@@ -22,7 +22,7 @@
       "gameSlug": "outlaws-fortune-static-studio",
       "catalogUrl": "https://staticstudio.gg/",
       "gameUrl": "https://staticstudio.gg/outlaws-fortune.html",
-      "status": "captured",
+      "status": "published",
       "note": "Exact game rules verified; generic Stake home link is not asserted as game entry. RTP is base mode; other modes differ."
     },
     {
@@ -32,7 +32,7 @@
       "gameSlug": "blazing-wild-hot-777-sunflower",
       "catalogUrl": "https://sunflowergamingllc.com/games",
       "gameUrl": "https://sunflowergamingllc.com/games/blazing-wild-hot-777",
-      "status": "captured",
+      "status": "published",
       "note": "Official exact game and slot identity verified; demo checking behind age confirmation. 600x is symbol payout not max win."
     },
     {
@@ -42,7 +42,7 @@
       "gameSlug": "shamrock-link-reel-lucky",
       "catalogUrl": "https://reelluckygaming.com/games",
       "gameUrl": "https://reelluckygaming.com/games/shamrock-link",
-      "status": "captured",
+      "status": "published",
       "note": "Official game page confirms slot and metrics. Demo wrapper remained loading; do not claim verified playable entry."
     },
     {
@@ -52,17 +52,26 @@
       "gameSlug": "dazed-and-confused-byteclimbers",
       "catalogUrl": "https://www.byteclimbers.com/",
       "gameUrl": "https://www.byteclimbers.com/demo",
-      "status": "captured",
+      "status": "published",
       "note": "Official 14-title catalogue and pay-anywhere demo confirm game; session URL is temporary and lobby is not a single-game destination."
     }
   ],
   "discoveryAttempts": [],
   "continuation": {
-    "cursor": "Batch 62 has 5/5 validated; commit and publish before continuing.",
+    "cursor": "Batch 62 published and checked; 20 new games completed in this run. Continue after ByteClimbers / Dazed & Confused.",
     "rule": "One verified slot per previously uncollected provider; publish immediately at five."
   },
   "validation": {
     "status": "passed-full-preview-verify-and-diff-check",
     "checkedAt": "2026-10-18"
+  },
+  "publication": {
+    "commit": "6fd9dfb3dbee998baf976d61d585e61b5c7edc41",
+    "ciRun": "39117490448",
+    "ci": "success",
+    "deploymentId": "bdeea2e2-7d77-4cbf-b2a4-2420bbd01c0e",
+    "deployment": "success",
+    "url": "https://bdeea2e2.slothub-4cu.pages.dev",
+    "readback": "passed: all five search, explorer, compare, provider, game details, images, sources, demo states, preview headers and sitemap"
   }
 }

@@ -7,7 +7,10 @@ provider: wiener-games
 primaryType: slots
 subtypes: [video-slots]
 summary: Wiener Games 製作的北歐主題老虎機，包含 Hold & Win、免費旋轉與固定獎池功能。
-rtpVariants: []
+rtp: 96.1
+rtpVariants: [96.1]
+maxWinMultiplier: 2000
+maxWinLabelOriginal: "2,000×"
 volatilityOriginal: High
 volatilityNormalized: high
 reels: "5"
@@ -22,6 +25,7 @@ editorialFeatured: false
 status: published
 source: { label: Wiener Games 官方 Coins of Thor 單款頁, url: https://www.wienergames.com/games/coins-of-thor.html, checkedAt: 2026-10-18 }
 sources:
+  - { label: Fantasma Games 發行方官方遊戲資料（RTP 與最高贏分）, url: https://www.fantasmagames.com/coins-of-thor-client/, checkedAt: 2026-10-18 }
   - { label: Wiener Games 官方遊戲目錄, url: https://www.wienergames.com/games.html, checkedAt: 2026-10-18 }
   - { label: Wiener Games 官方 Coins of Thor 單款頁及試玩, url: https://www.wienergames.com/games/coins-of-thor.html, checkedAt: 2026-10-18 }
   - { label: Wiener Games 官方 Coins of Thor 作品圖, url: https://www.wienergames.com/assets/opt/games/coins-of-thor-card-720.webp, checkedAt: 2026-10-18 }

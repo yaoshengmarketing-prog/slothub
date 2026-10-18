@@ -24,8 +24,9 @@ source: { label: Reel Lucky Gaming 官方 Shamrock Link 單款頁, url: https://
 sources:
   - { label: Reel Lucky Gaming 官方遊戲目錄, url: https://reelluckygaming.com/games, checkedAt: 2026-10-18 }
   - { label: Reel Lucky Gaming 官方單款遊戲頁, url: https://reelluckygaming.com/games/shamrock-link, checkedAt: 2026-10-18 }
+  - { label: Reel Lucky Gaming 官方新聞標題另列 96.9% 與四層頭獎，與單款頁不同，待釐清版本, url: https://reelluckygaming.com/news, checkedAt: 2026-10-18 }
   - { label: Reel Lucky Gaming 官方遊戲圖, url: https://reelluckygaming.com/images/games/shamrock-link/card.png, checkedAt: 2026-10-18 }
-demo: { status: not-verified, checkedAt: 2026-10-18, iframeStatus: not-tested, presentation: external, note: "官方試玩頁目前停在載入畫面，尚未核實遊戲可正常啟動。" }
+demo: { status: available, checkedAt: 2026-10-18, iframeStatus: not-tested, url: https://reelluckygaming.com/play/shamrock-link, accessType: official-game-page, presentation: external, note: "官方試玩頁已顯示同款遊戲的年齡確認；使用者需自行確認符合所在地年齡規定。" }
 lastVerifiedAt: 2026-10-18
 updatedAt: 2026-10-18
 ---

@@ -7,7 +7,8 @@ provider: spinberry
 primaryType: slots
 subtypes: [video-slots]
 summary: Spinberry 的捕鮪魚主題老虎機，漁夫符號可收集鮪魚倍數，並有免費旋轉。
-rtpVariants: []
+rtp: 93.25
+rtpVariants: [93.25]
 features: [free-spins, multiplier]
 bonusFeatures: [Reel Em In, Big Tuna Mode]
 image: { src: /assets/games/tuna-overload-spinberry.webp, alt: Spinberry 官方 Tuna Overload 遊戲圖, sourceUrl: https://spinberry.com/images/games/TunaOverload/TO_logo.webp, retrievedAt: 2026-10-18 }
@@ -15,6 +16,7 @@ editorialFeatured: false
 status: published
 source: { label: Spinberry 官方 Tuna Overload 單款頁, url: "https://spinberry.com/pages/game.html?game=Tuna%20Overload", checkedAt: 2026-10-18 }
 sources:
+  - { label: LiveBet 平台同款資料（RTP 93.25%，版本可能不同）, url: https://www.livebet.com/casino/slots/spinberry/tuna-overload, checkedAt: 2026-10-18 }
   - { label: Spinberry 官方遊戲目錄, url: https://spinberry.com/pages/games.html, checkedAt: 2026-10-18 }
   - { label: Spinberry 官方 Tuna Overload 單款頁及試玩入口, url: "https://spinberry.com/pages/game.html?game=Tuna%20Overload", checkedAt: 2026-10-18 }
   - { label: Spinberry 官方 Tuna Overload 作品圖, url: https://spinberry.com/images/games/TunaOverload/TO_logo.webp, checkedAt: 2026-10-18 }

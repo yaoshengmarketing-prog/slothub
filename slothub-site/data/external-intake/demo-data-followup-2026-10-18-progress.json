@@ -1,0 +1,184 @@
+{
+  "task": "Follow-up on 20 games: exact demo and missing data",
+  "recordedAt": "2026-10-18",
+  "state": "ready-for-validation",
+  "records": [
+    {
+      "game": "Shamrock Link",
+      "slug": "shamrock-link-reel-lucky",
+      "demo": "available",
+      "url": "https://reelluckygaming.com/play/shamrock-link",
+      "evidence": "Official exact demo page embeds Shamrock Link from the linked game client, which loaded an age-confirmation prompt; no age assertion made.",
+      "conflict": "Game page says 95.89% and 3-tier jackpot; studio news headline says 96.9% and 4-tier progressive. Retained existing value; pending version clarification.",
+      "next": "publish after validation",
+      "demoStatus": "available",
+      "demoUrl": "https://reelluckygaming.com/play/shamrock-link",
+      "review": "已查閱今日稍早逐款入口核對紀錄；本次讀取工具未能重開，保留原紀錄，不聲稱本次重新打開成功。"
+    },
+    {
+      "game": "Blazing Wild Hot 777",
+      "slug": "blazing-wild-hot-777-sunflower",
+      "demo": "not-verified",
+      "evidence": "官方頁確認同款但按鈕仍在檢查；Stake 單款頁經網路讀取可見同名及 Sunflower Gaming、RTP 96%，實際瀏覽器遇到 403。",
+      "data": "以 Stake 平台同款頁補入 RTP 96%，註明來源；SlotCatalog 搜尋結果列 790x，但實際頁面讀取失敗，暫不採用。",
+      "sources": [
+        "https://sunflowergamingllc.com/games/blazing-wild-hot-777",
+        "https://stake.com/casino/games/sunflowergaming-blazing-wild-hot-777",
+        "https://slotcatalog.com/en/slots/blazing-wild-hot-777"
+      ],
+      "next": "稍後以可存取環境重查同款入口與最高贏分",
+      "demoStatus": "not-verified",
+      "review": "已於本次重新讀取單款來源；此前已核對遊戲入口。"
+    },
+    {
+      "game": "Graveyard Shift",
+      "slug": "graveyard-shift-catnip",
+      "data": "RTP 96.5%",
+      "source": "https://stake.com/casino/games/catnipstudios-graveyard-shift",
+      "evidence": "Stake 平台同款頁 RTP（平台資料，版本可能不同）",
+      "conflict": "",
+      "next": "publish after validation",
+      "demoStatus": "available",
+      "demoUrl": "https://stake.com/casino/games/catnipstudios-graveyard-shift",
+      "review": "已於本次重新讀取單款來源；此前已核對遊戲入口。"
+    },
+    {
+      "game": "Hoard Awakened",
+      "slug": "hoard-awakened-broke-by-design",
+      "data": "RTP 96.5%",
+      "source": "https://stake.com/casino/games/brokebydesign-hoard-awakened",
+      "evidence": "Stake 平台同款頁 RTP（平台資料，版本可能不同）",
+      "conflict": "",
+      "next": "publish after validation",
+      "demoStatus": "available",
+      "demoUrl": "https://stake.com/casino/games/brokebydesign-hoard-awakened",
+      "review": "已於本次重新讀取單款來源；此前已核對遊戲入口。"
+    },
+    {
+      "game": "Rug Dealer",
+      "slug": "rug-dealer-rtp-labs",
+      "data": "RTP 96.5%",
+      "source": "https://stake.com/casino/games/rtplabs-rug-dealer",
+      "evidence": "Stake 平台同款頁 RTP（平台資料，版本可能不同）",
+      "conflict": "",
+      "next": "publish after validation",
+      "demoStatus": "available",
+      "demoUrl": "https://stake.com/casino/games/rtplabs-rug-dealer",
+      "review": "已於本次重新讀取單款來源；此前已核對遊戲入口。"
+    },
+    {
+      "game": "Coins of Thor Hold & Win",
+      "slug": "coins-of-thor-wiener-games",
+      "data": "RTP 96.1%",
+      "source": "https://www.fantasmagames.com/coins-of-thor-client/",
+      "evidence": "Fantasma Games 發行方官方遊戲資料（RTP 與最高贏分）",
+      "conflict": "",
+      "next": "publish after validation",
+      "demoStatus": "available",
+      "demoUrl": "https://www.wienergames.com/games/coins-of-thor.html",
+      "review": "已查閱今日稍早逐款入口核對紀錄；本次讀取工具未能重開，保留原紀錄，不聲稱本次重新打開成功。"
+    },
+    {
+      "game": "Tuna Overload",
+      "slug": "tuna-overload-spinberry",
+      "data": "RTP 93.25%",
+      "source": "https://www.livebet.com/casino/slots/spinberry/tuna-overload",
+      "evidence": "LiveBet 平台同款資料（RTP 93.25%，版本可能不同）",
+      "conflict": "LiveBet 列最高 1000x，Slots Temple 同頁混載 450x 和 1000x；未填最高贏分，待官方確認。",
+      "next": "publish after validation",
+      "demoStatus": "available",
+      "demoUrl": "https://spinberry.com/pages/game.html?game=Tuna%20Overload",
+      "review": "兩個網站 RTP 一致為 93.25%；最高贏分出現 450x 與 1000x 矛盾，保留空值。"
+    },
+    {
+      "game": "Double Barrel",
+      "slug": "double-barrel-iciq",
+      "demoStatus": "available",
+      "demoUrl": "https://stake.com/casino/games/iciq-double-barrel",
+      "review": "已於本次重新讀取單款來源；此前已核對遊戲入口。"
+    },
+    {
+      "game": "Brains and Beakers",
+      "slug": "brains-and-beakers-keyturn-gaming",
+      "demoStatus": "available",
+      "demoUrl": "https://stake.com/casino/games/keyturngaming-brains-and-beakers",
+      "review": "官方 96% 與平台 96.20% 衝突，保留空值；平台入口於本次重讀時受限，沿用今天稍早核對紀錄。"
+    },
+    {
+      "game": "Nadir",
+      "slug": "nadir-virtual-gold",
+      "demoStatus": "available",
+      "demoUrl": "https://stake.com/casino/games/virtualgoldstudios-nadir",
+      "review": "已於本次重新讀取單款來源；此前已核對遊戲入口。"
+    },
+    {
+      "game": "Chicxulub",
+      "slug": "chicxulub-legacy-gaming",
+      "demoStatus": "available",
+      "demoUrl": "https://stake.com/casino/games/legacygaming-chicxulub",
+      "review": "已查閱今日稍早逐款入口核對紀錄；本次讀取工具未能重開，保留原紀錄，不聲稱本次重新打開成功。"
+    },
+    {
+      "game": "Rift Riot",
+      "slug": "rift-riot-vantareel-studios",
+      "demoStatus": "available",
+      "demoUrl": "https://vantareelstudios.com/rift-riot",
+      "review": "已查閱今日稍早逐款入口核對紀錄；本次讀取工具未能重開，保留原紀錄，不聲稱本次重新打開成功。"
+    },
+    {
+      "game": "Odin's Blessing",
+      "slug": "odins-blessing-lucky-pixel",
+      "demoStatus": "available",
+      "demoUrl": "https://lucky-pixel.com/games/odins-blessing/",
+      "review": "已於本次重新讀取單款來源；此前已核對遊戲入口。"
+    },
+    {
+      "game": "Enchanted Moon",
+      "slug": "enchanted-moon-apex-slots",
+      "demoStatus": "available",
+      "demoUrl": "https://apexslots.eu/games/enchanted-moon/",
+      "review": "已查閱今日稍早逐款入口核對紀錄；本次讀取工具未能重開，保留原紀錄，不聲稱本次重新打開成功。"
+    },
+    {
+      "game": "Ratz’n’Reels",
+      "slug": "ratz-n-reels-pigoo-games",
+      "demoStatus": "available",
+      "demoUrl": "https://pigoo.games/games/ratz-n-reels/",
+      "review": "已查閱今日稍早逐款入口核對紀錄；本次讀取工具未能重開，保留原紀錄，不聲稱本次重新打開成功。"
+    },
+    {
+      "game": "Mega Mine Bonanza",
+      "slug": "mega-mine-bonanza-games-inc",
+      "demoStatus": "available",
+      "demoUrl": "https://gamesinc.co.uk/games/mega-mine-bonanza",
+      "review": "已於本次重新讀取單款來源；此前已核對遊戲入口。"
+    },
+    {
+      "game": "Sugar Papi",
+      "slug": "sugar-papi-zinzin-studios",
+      "demoStatus": "available",
+      "demoUrl": "https://zinzinstudios.com/sugar-papi/",
+      "review": "已查閱今日稍早逐款入口核對紀錄；本次讀取工具未能重開，保留原紀錄，不聲稱本次重新打開成功。"
+    },
+    {
+      "game": "Le BonBon",
+      "slug": "le-bonbon-wonwon-games",
+      "demoStatus": "available",
+      "demoUrl": "https://www.wonwongames.com/en/game/3050/",
+      "review": "官方目錄與單款頁 RTP 互相矛盾，保留空值。"
+    },
+    {
+      "game": "Outlaw's Fortune",
+      "slug": "outlaws-fortune-static-studio",
+      "demoStatus": "not-verified",
+      "review": "官方單款頁僅導向 Stake 首頁；搜尋同款平台頁未找到可核對入口。"
+    },
+    {
+      "game": "Dazed & Confused",
+      "slug": "dazed-and-confused-byteclimbers",
+      "demoStatus": "not-verified",
+      "review": "官方大廳同款可啟動，但單款 URL 綁定動態工作階段；固定頁未建立工作階段，尚不能認定穩定入口。"
+    }
+  ],
+  "cursor": "20 款入口資料均已核對現存紀錄；三款尚無可確認的穩定入口。"
+}
