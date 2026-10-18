@@ -1,0 +1,81 @@
+{
+  "batch": 61,
+  "recordedAt": "2026-10-18",
+  "state": "validated-awaiting-commit",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "records": [
+    {
+      "provider": "APEX SLOTS",
+      "providerSlug": "apex-slots",
+      "game": "Enchanted Moon",
+      "gameSlug": "enchanted-moon-apex-slots",
+      "catalogUrl": "https://apexslots.eu/",
+      "gameUrl": "https://apexslots.eu/games/enchanted-moon/",
+      "status": "captured",
+      "note": "Official portfolio links to the named promotional demo. Demo says 15,000x max in all modes; it is play money only."
+    },
+    {
+      "provider": "Pigoo Games",
+      "providerSlug": "pigoo-games",
+      "game": "Ratz’n’Reels",
+      "gameSlug": "ratz-n-reels-pigoo-games",
+      "catalogUrl": "https://pigoo.games/",
+      "gameUrl": "https://pigoo.games/games/ratz-n-reels/",
+      "status": "captured",
+      "note": "Official exact page confirms 6x5 cascading slot and explicit sample-round demo; no production RTP inferred."
+    },
+    {
+      "provider": "Games Inc.",
+      "providerSlug": "games-inc",
+      "game": "Mega Mine Bonanza",
+      "gameSlug": "mega-mine-bonanza-games-inc",
+      "catalogUrl": "https://gamesinc.co.uk/games",
+      "gameUrl": "https://gamesinc.co.uk/games/mega-mine-bonanza",
+      "status": "captured",
+      "note": "Official catalogue and game sheet verified, including three distinct RTP versions. Demo control is behind an age confirmation; no age assertion made."
+    },
+    {
+      "provider": "Spinberry",
+      "providerSlug": "spinberry",
+      "game": "Tuna Overload",
+      "gameSlug": "tuna-overload-spinberry",
+      "catalogUrl": "https://spinberry.com/pages/games.html",
+      "gameUrl": "https://spinberry.com/pages/game.html?game=Tuna%20Overload",
+      "status": "captured",
+      "note": "Official exact game page and artwork verified. The official DEMO link opens a game-specific dynamically generated demo session."
+    },
+    {
+      "provider": "ZinZin Studios",
+      "providerSlug": "zinzin-studios",
+      "game": "Sugar Papi",
+      "gameSlug": "sugar-papi-zinzin-studios",
+      "catalogUrl": "https://zinzinstudios.com/",
+      "gameUrl": "https://zinzinstudios.com/games/sugar-papi/",
+      "status": "captured",
+      "note": "Official exact slot art/design page and direct play-money demo verified. The 200x figure is a fixed jackpot and is not promoted to max win."
+    }
+  ],
+  "discoveryAttempts": [
+    {
+      "candidate": "Pigoo Games / Night Courier",
+      "status": "deferred",
+      "reason": "Demo uses route events and combinations; whether it is a slot is not sufficiently clear, so Ratz’n’Reels was selected instead."
+    },
+    {
+      "candidate": "Appy Gaming / RabRage",
+      "status": "deferred",
+      "reason": "Official page says pending Stake approval; its demo is not yet open. Recheck after release.",
+      "url": "https://appygaming.com/rabrage",
+      "checkedAt": "2026-10-18"
+    }
+  ],
+  "continuation": {
+    "cursor": "Batch 61 has 5/5 validated; commit and publish before continuing after ZinZin Studios / Sugar Papi.",
+    "rule": "One confirmed Slot per previously uncollected provider; save evidence and proceed to full validation once 5 games are captured."
+  },
+  "validation": {
+    "status": "passed-full-preview-verify-and-diff-check",
+    "checkedAt": "2026-10-18"
+  }
+}

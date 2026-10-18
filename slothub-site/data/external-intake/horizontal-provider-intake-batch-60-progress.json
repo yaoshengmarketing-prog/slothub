@@ -1,9 +1,9 @@
 {
   "batch": 60,
   "recordedAt": "2026-10-18",
-  "state": "validated-awaiting-commit",
+  "state": "published",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "records": [
     {
       "provider": "Legacy Gaming",
@@ -58,7 +58,7 @@
   ],
   "discoveryAttempts": [],
   "continuation": {
-    "cursor": "Batch 60: 5 captured and validated; commit and publish before continuing after Lucky Pixel / Odin’s Blessing.",
+    "cursor": "Batch 60 published and verified. Continue after Lucky Pixel / Odin’s Blessing with first-party candidates APEX SLOTS, Pigoo Games and others.",
     "rule": "One confirmed Slot per previously uncollected provider; save evidence and proceed to full validation once 5 games are captured."
   },
   "validation": {
@@ -67,6 +67,21 @@
     "checks": [
       "ASTRO_TELEMETRY_DISABLED=1 PUBLIC_SITE_ENV=preview npm run verify",
       "git diff --check"
+    ]
+  },
+  "publication": {
+    "commit": "db0aef1a250717a8195e8bc2c83de24cda949537",
+    "githubActionsRun": "39116528170",
+    "githubActions": "success",
+    "deploymentId": "6f0bdfa5-3f14-428d-955b-037c9d3fdc51",
+    "deploymentUrl": "https://6f0bdfa5.slothub-4cu.pages.dev",
+    "deployment": "success",
+    "liveReadback": "passed",
+    "checkedAt": "2026-10-18",
+    "checks": [
+      "Search, Explorer, Compare, Provider and Game detail",
+      "demo links, images and sources",
+      "noindex, X-Robots-Tag, no canonical, empty sitemap"
     ]
   }
 }

@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 377,
-  "providerCount": 309,
+  "gameCount": 382,
+  "providerCount": 314,
   "sourcePageCount": 867,
   "counts": {
     "access-restricted": 4,
-    "available": 317,
+    "available": 322,
     "not-verified": 56
   },
   "rules": {
@@ -7824,6 +7824,106 @@
         {
           "requestedUrl": "https://lucky-pixel.com/games/odins-blessing/",
           "finalUrl": "https://lucky-pixel.com/games/odins-blessing/",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "enchanted-moon-apex-slots",
+      "name": "Enchanted Moon",
+      "provider": "APEX SLOTS",
+      "status": "available",
+      "url": "https://apexslots.eu/games/enchanted-moon/",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "Official portfolio links to this exact playable promotional demo, whose opening screen names APEX SLOTS and ENCHANTED MOON.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://apexslots.eu/games/enchanted-moon/",
+          "finalUrl": "https://apexslots.eu/games/enchanted-moon/",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "ratz-n-reels-pigoo-games",
+      "name": "Ratz’n’Reels",
+      "provider": "Pigoo Games",
+      "status": "available",
+      "url": "https://pigoo.games/games/ratz-n-reels/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "Official exact page names game and provider and offers a playable virtual-balance demonstration, explicitly based on sample rounds.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://pigoo.games/games/ratz-n-reels/",
+          "finalUrl": "https://pigoo.games/games/ratz-n-reels/",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "mega-mine-bonanza-games-inc",
+      "name": "Mega Mine Bonanza",
+      "provider": "Games Inc.",
+      "status": "available",
+      "url": "https://gamesinc.co.uk/games/mega-mine-bonanza",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "Official exact page names the slot and studio and provides a Play Demo control; website shows an age confirmation gate.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://gamesinc.co.uk/games/mega-mine-bonanza",
+          "finalUrl": "https://gamesinc.co.uk/games/mega-mine-bonanza",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "tuna-overload-spinberry",
+      "name": "Tuna Overload",
+      "provider": "Spinberry",
+      "status": "available",
+      "url": "https://spinberry.com/pages/game.html?game=Tuna%20Overload",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "Official exact game page names Tuna Overload and Spinberry; its DEMO link opened a matching Tuna Overload provider demo with a session-generated URL.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://spinberry.com/pages/game.html?game=Tuna%20Overload",
+          "finalUrl": "https://spinberry.com/pages/game.html?game=Tuna%20Overload",
+          "httpStatus": 200
+        }
+      ],
+      "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "sugar-papi-zinzin-studios",
+      "name": "Sugar Papi",
+      "provider": "ZinZin Studios",
+      "status": "available",
+      "url": "https://zinzinstudios.com/sugar-papi/",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-18",
+      "evidence": "Official portfolio exact page identifies the studio and slot and links directly to a playable virtual-balance Sugar Papi demo.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://zinzinstudios.com/sugar-papi/",
+          "finalUrl": "https://zinzinstudios.com/sugar-papi/",
           "httpStatus": 200
         }
       ],
