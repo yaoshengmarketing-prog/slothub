@@ -17,10 +17,10 @@ editorialFeatured: false
 status: published
 source: { label: Stake 精確 Crazy Cat Lady 同款頁, url: https://stake.com/casino/games/heatcheck-crazy-cat-lady, checkedAt: 2026-10-14 }
 sources:
-  - { label: Stake 官方 Heatcheck 工作室目錄, url: https://stake.com/casino/group/heatcheck, checkedAt: 2026-10-14 }
+  - { label: Heatcheck 官方網站（Provider 身份）, url: https://heatcheck.fun/, checkedAt: 2026-10-18 }
   - { label: Stake 精確 Crazy Cat Lady 同款頁（身份、類型、RTP 與 Bonus Buy）, url: https://stake.com/casino/games/heatcheck-crazy-cat-lady, checkedAt: 2026-10-14 }
   - { label: Stake Engine 官方 Crazy Cat Lady 作品圖, url: "https://mediumrare.imgix.net/a27b2c880beec2f93097bd45e79050b13c8729d70b3f33ad277692daf397182e?auto=format&fit=min&h=600&w=800", checkedAt: 2026-10-14 }
 demo: { status: available, checkedAt: 2026-10-14, iframeStatus: not-tested, url: https://stake.com/casino/games/heatcheck-crazy-cat-lady, accessType: platform-game-page, platformName: Stake, presentation: external, note: "This is a verified exact same-game Stake platform page, not an official Heatcheck direct Demo." }
 lastVerifiedAt: 2026-10-14
-updatedAt: 2026-10-14
+updatedAt: 2026-10-18
 ---

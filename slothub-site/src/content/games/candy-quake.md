@@ -15,10 +15,10 @@ editorialFeatured: false
 status: published
 source: { label: Stake 精確 Candy Quake 同款頁, url: https://stake.com/casino/games/toucanroyale-candy-quake, checkedAt: 2026-10-15 }
 sources:
-  - { label: Stake Toucan Royale 工作室目錄, url: https://stake.com/casino/group/toucan-royale, checkedAt: 2026-10-15 }
+  - { label: Toucan Royale 官方網站（Provider 身份）, url: https://toucanroyale.com/, checkedAt: 2026-10-18 }
   - { label: Stake 精確 Candy Quake 同款頁（身份、RTP、功能標籤與入口）, url: https://stake.com/casino/games/toucanroyale-candy-quake, checkedAt: 2026-10-15 }
   - { label: Stake Candy Quake 同款作品圖, url: "https://mediumrare.imgix.net/43d0945ca590deaa46ab6bc3cdb01942e27c1152b75573ea9506c5d14cb759e7?auto=format&fit=min&h=600&w=800", checkedAt: 2026-10-15 }
 demo: { status: available, checkedAt: 2026-10-15, iframeStatus: not-tested, url: https://stake.com/casino/games/toucanroyale-candy-quake, accessType: platform-game-page, platformName: Stake, presentation: external, note: "Verified exact same-game Stake platform page; not an official Toucan Royale direct Demo." }
 lastVerifiedAt: 2026-10-15
-updatedAt: 2026-10-15
+updatedAt: 2026-10-18
 ---

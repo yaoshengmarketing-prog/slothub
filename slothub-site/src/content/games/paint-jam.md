@@ -17,10 +17,10 @@ editorialFeatured: false
 status: published
 source: { label: Stake 精確 Paint Jam 同款頁, url: https://stake.com/casino/games/mintyfresh-paint-jam, checkedAt: 2026-10-14 }
 sources:
-  - { label: Stake 官方 Minty Fresh 工作室目錄, url: https://stake.com/casino/group/minty-fresh, checkedAt: 2026-10-14 }
+  - { label: Minty Fresh 官方網站（Provider 身份）, url: https://mintyfresh.studio/, checkedAt: 2026-10-18 }
   - { label: Stake 精確 Paint Jam 同款頁（身份、類型、RTP、Cascading 與 Bonus Buy）, url: https://stake.com/casino/games/mintyfresh-paint-jam, checkedAt: 2026-10-14 }
   - { label: Stake Engine 官方 Paint Jam 作品圖, url: "https://mediumrare.imgix.net/4f9a6c7ed3e9198f4ede0eb16fd99129f525ef3c8b7ec94f7af6d1c39f388f82?auto=format&fit=min&h=600&w=800", checkedAt: 2026-10-14 }
 demo: { status: available, checkedAt: 2026-10-14, iframeStatus: not-tested, url: https://stake.com/casino/games/mintyfresh-paint-jam, accessType: platform-game-page, platformName: Stake, presentation: external, note: "This is a verified exact same-game Stake platform page, not an official Minty Fresh direct Demo." }
 lastVerifiedAt: 2026-10-14
-updatedAt: 2026-10-14
+updatedAt: 2026-10-18
 ---

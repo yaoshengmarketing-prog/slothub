@@ -9,9 +9,9 @@ serviceMarkets: []
 marketTags: [international, online]
 languages: [English]
 gameTypes: [slots]
-summary: Valkyrie 是透過 Stake Engine 發行作品的線上老虎機工作室；Stake 的工作室目錄與逐款頁提供可追溯的作品身份、規格、功能及同款遊戲入口。
-officialUrl: https://stake.com/casino/group/valkyrie
+summary: Valkyrie 是透過 Stake Engine 發行作品的線上老虎機工作室；官方網站 Valkyrie Studio 列出 Waylanders Forge 等作品與規格。
+officialUrl: https://valkyriestudio.gg/
 status: published
-source: { label: Stake 官方 Valkyrie 工作室目錄, url: https://stake.com/casino/group/valkyrie, checkedAt: 2026-10-14 }
-updatedAt: 2026-10-14
+source: { label: Valkyrie 官方網站, url: https://valkyriestudio.gg/, checkedAt: 2026-10-18 }
+updatedAt: 2026-10-18
 ---

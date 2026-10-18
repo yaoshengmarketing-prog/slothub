@@ -9,9 +9,9 @@ serviceMarkets: []
 marketTags: [international, online]
 languages: [English]
 gameTypes: [slots]
-summary: Shady Lady 是專注 Slots 的線上遊戲工作室；Stake 的工作室目錄與精確單款頁確認 Laced 的身份、完整規格、功能與圖片。
-officialUrl: https://stake.com/casino/group/shady-lady
+summary: Shady Lady 是專注 Slots 的線上遊戲工作室；官方網站列出 Laced 等作品，並提供試玩、Game Sheet 與行銷素材。
+officialUrl: https://shadylady.io/
 status: published
-source: { label: Stake 官方 Shady Lady 工作室目錄, url: https://stake.com/casino/group/shady-lady, checkedAt: 2026-10-14 }
-updatedAt: 2026-10-14
+source: { label: Shady Lady 官方網站, url: https://shadylady.io/, checkedAt: 2026-10-18 }
+updatedAt: 2026-10-18
 ---

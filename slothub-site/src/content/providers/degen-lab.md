@@ -9,9 +9,9 @@ serviceMarkets: []
 marketTags: [international, online]
 languages: [English]
 gameTypes: [slots]
-summary: Degen Lab 是透過 Stake Engine 發行作品的線上遊戲工作室；Stake 的工作室目錄確認其產品包含老虎機與 Burst Games，並逐款列出 Elementals Journey 等作品。
-officialUrl: https://stake.com/casino/group/degen-lab
+summary: Degen Lab 是透過 Stake Engine 發行作品的線上遊戲工作室；官方網站列出其老虎機與 Dice、Keno、Plinko 等作品，包括 Elementals Journey。
+officialUrl: https://degen-lab.com/
 status: published
-source: { label: Stake 官方 Degen Lab 工作室目錄, url: https://stake.com/casino/group/degen-lab, checkedAt: 2026-10-14 }
-updatedAt: 2026-10-14
+source: { label: Degen Lab 官方網站, url: https://degen-lab.com/, checkedAt: 2026-10-18 }
+updatedAt: 2026-10-18
 ---
