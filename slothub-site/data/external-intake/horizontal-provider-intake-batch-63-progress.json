@@ -1,0 +1,197 @@
+{
+  "batch": 63,
+  "recordedAt": "2026-10-19",
+  "state": "captured-awaiting-publication",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "records": [
+    {
+      "provider": "Welix Studios",
+      "providerSlug": "welix-studios",
+      "game": "BONBON RIOT",
+      "gameSlug": "bonbon-riot-welix",
+      "catalogUrl": "https://www.welixstudios.com/",
+      "gameUrl": "https://www.welixstudios.com/games/bonbon-riot/",
+      "status": "captured",
+      "note": "On 2026-10-19 the official portfolio lists BONBON RIOT, SKETCHBOOK and TRASH TV. The pre-capture search mistakenly excluded Game Markdown. A subsequent parsed-frontmatter exact comparison across all local Game and Provider Markdown covered name, originalName, displayNameZhHant, brandName, provider, aliases and gameId against these three titles, BONBON RIOT's page slug and Welix Studios / Welix Studios AB; only the newly saved records matched. The portfolio did not establish a separate canonical game ID or Chinese alias, so neither is assumed. Exact game and official share image were retrieved and visually inspected. The professional official page says no games can be played there; exact entry remains not-verified."
+    },
+    {
+      "provider": "Nocturn Play",
+      "providerSlug": "nocturn-play",
+      "game": "Black Jaguar Temple",
+      "gameSlug": "black-jaguar-temple-nocturn",
+      "catalogUrl": "https://nocturnplay.com/",
+      "gameUrl": "https://nocturnplay.com/games/jaguar-noir/",
+      "status": "captured",
+      "note": "Official portfolio lists 38 mixed-type titles; parsed-frontmatter exact comparison of all 38 names, the known jaguar-noir page slug and Nocturn Play against local Game and Provider names, original and Traditional Chinese names, aliases, provider and gameId found no matches. Official page confirms a cluster Slot and gameplay. Browser opened the exact free-play button and saw the named entry screen; stable official game page saved as external. Official screenshot download was interrupted and the invalid partial file was removed; image remains absent, not a publication blocker."
+    },
+    {
+      "provider": "Ovryx Gaming",
+      "providerSlug": "ovryx-gaming",
+      "game": "Lucky Knight",
+      "gameSlug": "lucky-knight-ovryx",
+      "catalogUrl": "https://ovryxgaming.com/games",
+      "gameUrl": "https://ovryxgaming.com/games/lucky-knight",
+      "status": "captured",
+      "note": "Official catalog contains 31 cards including one coming-soon title; parsed frontmatter comparison of every card name, Lucky Knight page slug and provider name across Game and Provider names, original and Traditional Chinese names, aliases, provider and gameId found no matches. Official exact page establishes a 5x4 Slot and its published specifications. Official game-specific character asset was downloaded and visually inspected. The exact demo browser review terminated at its task cost limit without a finding; the entry remains unverified."
+    },
+    {
+      "provider": "NullByte Studios",
+      "providerSlug": "nullbyte-studios",
+      "game": "Cyber Grid",
+      "gameSlug": "cyber-grid-nullbyte",
+      "catalogUrl": "https://www.nullbytestudios.com/",
+      "status": "captured",
+      "note": "Official catalog lists six named titles, including Cyber Grid with Slot specifications and top-played status; the page was retrieved directly with HTTP 200 after sandbox DNS failed. Parsed exact comparison of all six titles and provider name against existing local Game and Provider names, aliases and gameId found no match. A different Nocturn Play catalog also contains a Neon Ronin with different described artwork and mechanics; their identity is unresolved and neither Neon Ronin is being imported. Cyber Grid has no attributable image or verified exact demo; neither absence blocks capture."
+    },
+    {
+      "provider": "Terra Gaming",
+      "providerSlug": "terra-gaming",
+      "game": "Frozen Fortune",
+      "gameSlug": "frozen-fortune-terra",
+      "catalogUrl": "https://playterra.games/",
+      "status": "captured",
+      "note": "Official portfolio identifies five released Slots. Parsed frontmatter comparison of all five titles, Frozen Fortune's normalized title and Terra Gaming against local Game and Provider names, original and Traditional Chinese names, aliases, provider and gameId found no match. Official portfolio supplies the 5x3 layout, 20 lines and RTP; its game-specific artwork was retrieved and visually inspected. The maximum is not converted to a bet multiple without an explicit basis. The exact same-game entry remains unverified."
+    }
+  ],
+  "discoveryAttempts": [
+    {
+      "provider": "Northstar Gaming",
+      "candidateGame": "Quickdraw Coyote",
+      "status": "source-and-platform-access-restricted",
+      "checkedAt": "2026-10-19",
+      "catalogUrl": "https://northstargaming.gg/",
+      "gameUrl": "https://stake.com/casino/games/northstargaming-quickdraw-coyote",
+      "reason": "The studio catalogue identifies one released title, but provides no separate first-party game page; its exact Stake game link returned a Cloudflare 403 challenge in this environment. A cached page is not a substitute for a current direct same-game and attributable-artwork check.",
+      "nextStep": "Retry the exact game and artwork when direct access is available; continue to the next uncollected Provider."
+    },
+    {
+      "provider": "3One Studios",
+      "candidateGame": "Forbidden Lecture",
+      "status": "official-game-page-access-restricted",
+      "checkedAt": "2026-10-19",
+      "catalogUrl": "https://3onestudios.com/",
+      "gameUrl": "https://3onestudios.com/games/forbidden-lecture/",
+      "reason": "The indexed portfolio describes a live cascading title, but the exact first-party page returned a Vercel security checkpoint and HTTP 429. Its game details, asset attribution and actual entry could not be checked directly.",
+      "nextStep": "Retry the exact page and artwork when access is restored; continue with another Provider."
+    },
+    {
+      "provider": "DARKFRAME",
+      "candidateGame": "Celestia",
+      "status": "catalog-incomplete",
+      "checkedAt": "2026-10-19",
+      "catalogUrl": "https://darkframegaming.com/",
+      "gameUrl": "https://darkframegaming.com/games/celestia.html",
+      "reason": "The directly retrieved official portfolio lists four games and the exact Celestia page identifies a Slot and its own character artwork. Independent discovery sources list additional DARKFRAME games; the official portfolio alone therefore cannot establish a complete current catalog for required deduplication, and direct Stake group access is restricted. The generic group URL is not an exact demo entry.",
+      "nextStep": "Establish the complete current official or authorized publisher catalog and deduplicate it before capture; continue with another Provider."
+    },
+    {
+      "provider": "NullByte Studios",
+      "candidateGame": "Cyber Grid",
+      "status": "captured",
+      "checkedAt": "2026-10-19",
+      "catalogUrl": "https://www.nullbytestudios.com/",
+      "reason": "After the sandbox DNS failure, direct official access returned HTTP 200. All six catalog names and the provider name were compared against parsed local Game and Provider records with no match. The official portfolio supplies Cyber Grid's identity and Slot specifications. A separate same-name Neon Ronin in Nocturn Play's catalog has different descriptions and remains unresolved; neither Neon Ronin is imported. Artwork and an exact demo remain missing but are not blockers.",
+      "nextStep": "Do not reimport Cyber Grid. Investigate the Neon Ronin identity only if later considering that game; continue to another uncollected Provider."
+    },
+    {
+      "provider": "Royal Ace Group",
+      "candidateGame": "ROADMAN",
+      "status": "not-yet-released",
+      "checkedAt": "2026-10-19",
+      "catalogUrl": "https://www.royalacegroup.com/",
+      "reason": "The studio portfolio identifies ROADMAN as submitted and launch-ready, not released; the other three titles remain in development or in the lab. Its demo is private until launch.",
+      "nextStep": "Reconsider after a verifiable release and complete catalog check; continue with a different Provider."
+    },
+    {
+      "provider": "Mutant Labs",
+      "candidateGame": "MultiMines",
+      "status": "excluded-non-slot-mechanics",
+      "checkedAt": "2026-10-19",
+      "catalogUrl": "https://www.mutantlabs.gg/games",
+      "gameUrl": "https://www.mutantlabs.gg/games/multimines",
+      "reason": "The portfolio lists one live title. Despite a generic slot label, its exact product page explicitly describes no reels or paylines and a player-selected mines reveal; it is not a confirmed Slot under this intake scope.",
+      "nextStep": "Reconsider the Provider only when a separately identifiable released Slot appears; continue with another Provider."
+    },
+    {
+      "provider": "Welix Studios",
+      "candidateGame": "BONBON RIOT",
+      "status": "captured",
+      "checkedAt": "2026-10-19",
+      "catalogUrl": "https://www.welixstudios.com/",
+      "gameUrl": "https://www.welixstudios.com/games/bonbon-riot/",
+      "reason": "The official three-title portfolio and exact Slot page were checked. A subsequent parsed-frontmatter comparison checked the three portfolio names, known page slug and studio names against local Game and Provider names, aliases and gameId; only the new records matched. No separate canonical game ID or Chinese alias was established. The official artwork was retrieved and visually inspected. The official site says no games can be played there; an exact accessible same-game platform entry was not established.",
+      "nextStep": "Do not reimport the captured title; verify any newly discovered alias or ID before publication and continue with another uncollected Provider."
+    },
+    {
+      "provider": "Cotton Balls",
+      "candidateGame": "Arcade Club",
+      "status": "insufficient-game-detail-and-access-restricted",
+      "checkedAt": "2026-10-19",
+      "catalogUrl": "https://cottonballs.online/games",
+      "gameUrl": "https://stake.com/casino/games/cottonballs-arcade-club",
+      "reason": "The studio lists five released titles and links Arcade Club to Stake, but its own catalog only supplies a brief theme description. The exact platform page returned HTTP 403 in this environment, preventing current game-detail and exact-entry verification.",
+      "nextStep": "Retry the exact game and attributable artwork when direct access is restored, or find fuller first-party game details; continue to another Provider."
+    },
+    {
+      "provider": "Vibrant Labs",
+      "candidateGame": "Shady Carnival",
+      "status": "official-access-restricted",
+      "checkedAt": "2026-10-19",
+      "catalogUrl": "https://vibrantlabs.org/",
+      "gameUrl": "https://vibrantlabs.org/games/shady-carnival/",
+      "reason": "The source presents an age-verification gate; direct retrieval failed TLS hostname verification and the official home page returned 403 in the browsing service. The current catalog, artwork and Demo could not be safely checked directly.",
+      "nextStep": "Retry with normal certificate validation when the official site and catalog are accessible; do not bypass the age gate or TLS validation."
+    },
+    {
+      "provider": "Nocturn Play",
+      "candidateGame": "Black Jaguar Temple",
+      "status": "captured",
+      "checkedAt": "2026-10-19",
+      "catalogUrl": "https://nocturnplay.com/",
+      "gameUrl": "https://nocturnplay.com/games/jaguar-noir/",
+      "demoCandidateUrl": "https://nocturnplay.com/play/api/free/jaguar-noir?currency=USD&lang=en",
+      "reason": "The official 38-title mixed-type catalog was compared against local Game and Provider fields; the exact page confirms the cluster Slot and the browser displayed its named free-play entry. Official screenshot transfer failed, so no image is saved; the entry remains eligible without artwork.",
+      "nextStep": "Continue with the next uncollected Provider; optional official image may be retried without blocking this game."
+    },
+    {
+      "provider": "Slot Studio",
+      "status": "insufficient-game-identity",
+      "checkedAt": "2026-10-19",
+      "catalogUrl": "https://slotstudio.io/",
+      "reason": "The official site says its Slot titles are shown privately and does not identify a released individual Slot in the public catalog.",
+      "nextStep": "Reconsider after a released exact Slot and attributable provider identity can be checked publicly; continue to another Provider."
+    },
+    {
+      "provider": "Alwa Studios",
+      "status": "not-yet-released",
+      "checkedAt": "2026-10-19",
+      "catalogUrl": "https://alwastudios.com/",
+      "reason": "The official studio homepage states four titles are in production and first releases are planned for 2027.",
+      "nextStep": "Reconsider when a released Slot and its identity are verifiable; continue to another Provider."
+    },
+    {
+      "provider": "Appy Gaming",
+      "candidateGame": "RabRage",
+      "status": "not-yet-released",
+      "checkedAt": "2026-10-19",
+      "catalogUrl": "https://appygaming.com/games",
+      "reason": "The official catalog identifies RabRage as coming soon to Stake; remaining titles are in production.",
+      "nextStep": "Reconsider once release is confirmed; continue to another Provider."
+    },
+    {
+      "provider": "Ovryx Gaming",
+      "candidateGame": "Lucky Knight",
+      "status": "captured",
+      "checkedAt": "2026-10-19",
+      "catalogUrl": "https://ovryxgaming.com/games",
+      "gameUrl": "https://ovryxgaming.com/games/lucky-knight",
+      "reason": "All 31 official catalog card names, the known game page slug and provider name were checked against parsed local Game and Provider fields with no matches. The official game specifications and game-specific image were checked. The exact demo browser review reached its task cost limit without a finding, so the entry remains unverified.",
+      "nextStep": "Do not reimport; follow up the exact demo entry if it becomes verifiable and continue to another Provider."
+    }
+  ],
+  "continuation": {
+    "cursor": "Terra Gaming / Frozen Fortune captured as fifth game. The earlier sandbox verification failed to create subst S:; on 2026-10-19 a properly authorized full preview npm run verify succeeded with 392 Games and 749 built pages. This manifest change must itself be followed by the full verification before publication. Ovryx exact demo browser review ended at its task cost limit without a finding; InOut catalog review remains incomplete. After successful publication continue the next uncollected Provider.",
+    "rule": "One confirmed Slot per previously uncollected Provider; preserve gaps and publish at five, or a documented exhausted-candidate final short batch."
+  }
+}

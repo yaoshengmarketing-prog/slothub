@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 387,
-  "providerCount": 319,
+  "gameCount": 392,
+  "providerCount": 324,
   "sourcePageCount": 867,
   "counts": {
     "access-restricted": 4,
-    "available": 324,
-    "not-verified": 59
+    "available": 325,
+    "not-verified": 63
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,39 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "frozen-fortune-terra",
+      "name": "Frozen Fortune",
+      "provider": "terra-gaming",
+      "status": "not-verified",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-19",
+      "evidence": "Official portfolio links to platforms but an exact same-game entry has not been opened and verified.",
+      "inspectedUrls": [{ "requestedUrl": "https://playterra.games/", "finalUrl": "https://playterra.games/", "httpStatus": 200 }]
+    },
+    {
+      "slug": "cyber-grid-nullbyte",
+      "name": "Cyber Grid",
+      "provider": "nullbyte-studios",
+      "status": "not-verified",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-19",
+      "evidence": "Official portfolio identifies Cyber Grid and its Slot specifications but does not provide a verified exact game entry.",
+      "inspectedUrls": [{ "requestedUrl": "https://www.nullbytestudios.com/", "finalUrl": "https://www.nullbytestudios.com/", "httpStatus": 200 }]
+    },
+    {
+      "slug": "lucky-knight-ovryx",
+      "name": "Lucky Knight",
+      "provider": "ovryx-gaming",
+      "status": "not-verified",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-19",
+      "evidence": "Official single-game page has a demo button, but its actual entry has not yet been verified.",
+      "inspectedUrls": [{ "requestedUrl": "https://ovryxgaming.com/games/lucky-knight", "finalUrl": "https://ovryxgaming.com/games/lucky-knight", "httpStatus": 200 }]
+    },
     {
       "slug": "100-happy-seven",
       "name": "100 Happy Seven",
@@ -8009,6 +8042,40 @@
       "browserReviewedAt": "2026-10-18",
       "url": "https://reelluckygaming.com/play/shamrock-link",
       "accessType": "official-game-page"
+    },
+    {
+      "slug": "black-jaguar-temple-nocturn",
+      "name": "Black Jaguar Temple",
+      "provider": "nocturn-play",
+      "status": "available",
+      "url": "https://nocturnplay.com/games/jaguar-noir/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-19",
+      "sameGameEvidence": "Official game page identifies the title and Nocturn Play; the exact free-play button opened the named game's entry screen in a browser. The stable official game page is used rather than the temporary session URL.",
+      "inspectedUrls": [
+        { "requestedUrl": "https://nocturnplay.com/games/jaguar-noir/", "httpStatus": 200 },
+        { "requestedUrl": "https://nocturnplay.com/play/api/free/jaguar-noir?lang=en&currency=USD", "httpStatus": 200 }
+      ],
+      "browserReviewedAt": "2026-10-19"
+    },
+    {
+      "slug": "bonbon-riot-welix",
+      "name": "BONBON RIOT",
+      "provider": "welix-studios",
+      "status": "not-verified",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-19",
+      "evidence": "The official single-game page states that no games can be played on the professional site; an exact accessible same-game platform entry was not established.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.welixstudios.com/games/bonbon-riot/",
+          "finalUrl": "https://www.welixstudios.com/games/bonbon-riot/",
+          "httpStatus": 200
+        }
+      ]
     },
     {
       "slug": "dazed-and-confused-byteclimbers",
