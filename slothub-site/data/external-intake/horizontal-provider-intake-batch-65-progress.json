@@ -1,0 +1,74 @@
+{
+  "batch": 65,
+  "recordedAt": "2026-10-19",
+  "state": "captured-awaiting-verification",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "records": [
+    {
+      "provider": "Nexo Games",
+      "providerSlug": "nexo-games",
+      "game": "300 Guardians Extreme",
+      "gameSlug": "300-guardians-extreme-nexo",
+      "catalogUrl": "https://stake.com/casino/group/nexo-games",
+      "gameUrl": "https://stake.com/casino/games/nexogames-300-guardians-extreme",
+      "status": "captured",
+      "note": "The actual Stake publisher page listed both games, 300 Guardians Extreme and Grave Voltage; both names and publisher were checked against existing Game and Provider content. SlotShop identifies this slot and publisher and supplies the exact artwork, which was visually inspected. The exact Stake single-game page visibly identified title and publisher; it is an external platform page, not a studio-direct demo. Unsupported math fields remain missing."
+    },
+    {
+      "provider": "THUGGER",
+      "providerSlug": "thugger",
+      "game": "Backstreets: Clutch",
+      "gameSlug": "backstreets-clutch-thugger",
+      "catalogUrl": "https://stake.com/casino/group/thugger",
+      "gameUrl": "https://stake.com/casino/games/thugger-backstreets-clutch",
+      "status": "captured",
+      "note": "The Stake publisher page displayed all 21 games: Fruits and Berries, Backstreets: Clutch, Beach Party, Fried Chicken, Juicy Steaks 50K, Surf n Turf, Grubs and Co., Backstreets: Egypt, Crooked Carnival, Backstreets: Most Wanted, Gemstone Hustlers, The Conjurers, Ghost Gang, Backstreets: Chapter Two, Backstreets: Chapter One, Cowboy Crew, Gravediggers, Disco Grubs, Ghost Gang: Underground, Grubs, Backstreets: Asia. SlotShop's 26-title portfolio includes additional Surf N Turf 2, Evil Spirits, NEXT STEP, Risk It Biscuit, Backstreet Spirits; all names and publisher checked against Game/Provider content. The exact game page identifies title, provider and slot; the SlotShop image was visually inspected. Platform page is external, not studio-direct demo."
+    },
+    {
+      "provider": "Rattlebolt Games",
+      "providerSlug": "rattlebolt-games",
+      "game": "Gold Mine Mega Wins",
+      "gameSlug": "gold-mine-mega-wins-rattlebolt",
+      "catalogUrl": "https://stake.com/casino/group/rattlebolt-games",
+      "gameUrl": "https://stake.com/casino/games/rattleboltgames-gold-mine-mega-wins",
+      "status": "captured",
+      "note": "Stake's publisher catalogue has one title, Gold Mine Mega Wins; both game and publisher were checked against existing content. Stake's actual single-game page identifies title, publisher and slot; its public result labels the title Only on Stake and Stake Engine. No verified standalone studio site or official artwork was found; the platform-published listing is attributed explicitly and image and numerical fields are left missing. The same-game platform entrance was opened and is external."
+    },
+    {
+      "provider": "Skyridge Studio",
+      "providerSlug": "skyridge-studio",
+      "game": "Lolo Lagoon",
+      "gameSlug": "lolo-lagoon-skyridge",
+      "catalogUrl": "https://stake.com/casino/group/skyridge-studio",
+      "gameUrl": "https://stake.com/casino/games/skyridgestudio-lolo-lagoon",
+      "status": "captured",
+      "note": "Stake's publisher catalogue has one title, Lolo Lagoon; both game and publisher were checked against existing content. Stake's actual single-game page identifies title, publisher and slot. No verified standalone studio site or official artwork was found; the platform-published listing is attributed explicitly and image and numerical fields are left missing. The same-game platform entrance was opened and is external."
+    },
+    {
+      "provider": "Scanline Studios",
+      "providerSlug": "scanline-studios",
+      "game": "Neon Kaiten Ghost Town",
+      "gameSlug": "neon-kaiten-ghost-town-scanline",
+      "catalogUrl": "https://stake.com/casino/group/scanline-studios",
+      "gameUrl": "https://stake.com/casino/games/scanlinestudios-neon-kaiten-ghost-town",
+      "status": "captured",
+      "note": "Stake's publisher catalogue listed all five games: Neon Kaiten Ghost Town, Blindfold Bash, Ship It, Only Flans and Bad Copy; these names and publisher were checked against existing content. Stake's actual single-game page identifies title, publisher and slot. No verified standalone studio site or official artwork was found; the platform-published listing is attributed explicitly and image and numerical fields are left missing. The same-game platform entrance was opened and is external."
+    }
+  ],
+  "discoveryAttempts": [],
+  "continuation": {
+    "cursor": "Scanline Studios / Neon Kaiten Ghost Town captured as the fifth eligible Game.",
+    "rule": "Immediately perform full verification and publish this five-game batch, then continue with the next uncollected Provider."
+  },
+  "priorBatch": {
+    "batch": 64,
+    "commit": "6bce12bd8a76081b5d88a99edcee62db4850e14d",
+    "ciRun": "39246160287",
+    "ci": "success",
+    "deploymentId": "83a422a0-55b4-442b-9706-bee8f3d894b2",
+    "deployment": "success",
+    "url": "https://83a422a0.slothub-4cu.pages.dev",
+    "readback": "Five detail and provider pages, exact external platform entrances, sources, five images, Search, Compare and exact Explorer results checked; preview noindex, X-Robots-Tag, no canonical or iframe, and empty sitemap checked."
+  }
+}
