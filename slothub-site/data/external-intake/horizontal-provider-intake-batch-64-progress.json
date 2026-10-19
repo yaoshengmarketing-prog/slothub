@@ -1,0 +1,85 @@
+{
+  "batch": 64,
+  "recordedAt": "2026-10-19",
+  "state": "captured-awaiting-verification",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "records": [
+    {
+      "provider": "Hardhaus Studios",
+      "providerSlug": "hardhaus-studios",
+      "game": "Bloodbath",
+      "gameSlug": "bloodbath-hardhaus",
+      "catalogUrl": "https://stake.com/casino/group/hardhaus-studios",
+      "gameUrl": "https://stake.com/casino/games/hardhausstudios-bloodbath",
+      "status": "captured",
+      "note": "The actual Stake publisher page listed all six games: Norse Wilds, Dynamite Berries, Bloodbath, NIX, Golden Hearts, and Dark Treasures; these names and the publisher were compared against existing Game/Provider content. SlotShop identifies Bloodbath as a slot made by it and published under Hardhaus Studios; its exact game image was visually inspected. The exact Stake game page was opened in the browser and visibly identified both title and publisher; it is recorded as a platform-game-page, not a studio-direct demo. Stake's published game page states 96.5% RTP, cascading and Bonus Buy."
+    },
+    {
+      "provider": "Project Panic",
+      "providerSlug": "project-panic",
+      "game": "Gobbler",
+      "gameSlug": "gobbler-project-panic",
+      "catalogUrl": "https://stake.com/casino/group/project-panic",
+      "gameUrl": "https://stake.com/casino/games/projectpanic-gobbler",
+      "status": "captured",
+      "note": "The actual Stake publisher page listed five games: Death Date, The Dead Drop: Quarantine, The Dead Drop, Gobbler and Slimed; these names and the publisher were compared against existing Game and Provider content. SlotShop identifies Gobbler as a slot made by it and published under Project Panic; its exact artwork was visually inspected. The exact Stake game page was opened and visibly identified title and publisher. The platform page is not described as a studio-direct demo; unsupported math fields remain missing."
+    },
+    {
+      "provider": "Fortune Studios",
+      "providerSlug": "fortune-studios",
+      "game": "Fallen Crown",
+      "gameSlug": "fallen-crown-fortune",
+      "catalogUrl": "https://stake.com/casino/group/fortune-studios",
+      "gameUrl": "https://stake.com/casino/games/fortunestudios-fallen-crown",
+      "status": "captured",
+      "note": "The actual Stake publisher page listed both games, Fallen Crown and Super Samurai; both names and the publisher were checked against existing Game and Provider content. SlotShop identifies Fallen Crown as a slot made by it and published under Fortune Studios; its exact artwork was visually inspected. The exact Stake game page was opened and visibly identified title and publisher. The platform page is not a studio-direct demo; unsupported math fields remain missing."
+    },
+    {
+      "provider": "Energi",
+      "providerSlug": "energi",
+      "game": "Giggle Ghouls",
+      "gameSlug": "giggle-ghouls-energi",
+      "catalogUrl": "https://stake.com/casino/group/energi",
+      "gameUrl": "https://stake.com/casino/games/energi-giggle-ghouls",
+      "status": "captured",
+      "note": "The actual Stake publisher page listed three games: Shadow Alley, Dr. Clanker and Giggle Ghouls; these names and the publisher were compared against existing Game/Provider content. SlotShop identifies Giggle Ghouls as a slot made by it and published under ENERGI; its exact artwork was visually inspected. The exact Stake game page was opened and visibly identified title and publisher. This platform page is not a studio-direct demo; unsupported math fields remain missing."
+    },
+    {
+      "provider": "Hexaspin Studios",
+      "providerSlug": "hexaspin-studios",
+      "game": "Permafrost",
+      "gameSlug": "permafrost-hexaspin",
+      "catalogUrl": "https://stake.com/casino/group/hexaspin-studios",
+      "gameUrl": "https://stake.com/casino/games/hexaspinstudios-permafrost",
+      "status": "captured",
+      "note": "The actual Stake publisher page listed exactly one game, Permafrost; its name and publisher were checked against existing Game and Provider content. SlotShop identifies the title and publisher and supplies its exact artwork, which was visually inspected. The exact Stake single-game page was opened and visibly identified both title and publisher. This is an external platform page, not a studio-direct demo; unsupported math fields remain missing."
+    }
+  ],
+  "discoveryAttempts": [
+    {
+      "provider": "PACT Gaming",
+      "candidateGame": "Reef Claim",
+      "checkedAt": "2026-10-19",
+      "catalogUrl": "https://pact-gaming.com/",
+      "catalogDataUrl": "https://pact-gaming.com/js/games.js",
+      "status": "release-identity-unresolved",
+      "reason": "The studio site claims Reef Claim is released exclusively on Stake, but an actual Stake search for Reef Claim returned eleven other Reef-named games and no exact Reef Claim. This is a source discrepancy, not conclusive proof the title does not exist. Three draft files were preserved in node_modules/.slot-hub-pact-review, removed from the publish batch, and are not counted as a new Game.",
+      "nextStep": "Resolve the current title and exclusive release using a verifiable exact platform listing or other authoritative evidence before restoring; continue with a different Provider."
+    }
+  ],
+  "continuation": {
+    "cursor": "Hexaspin Studios / Permafrost captured as the fifth eligible Game; PACT / Reef Claim remains quarantined pending identity resolution.",
+    "rule": "Immediately perform full verification and publish this five-game batch, then continue with the next uncollected Provider."
+  },
+  "priorBatch": {
+    "batch": 63,
+    "commit": "1e161283de8038e6759a4639fc334806e6fb2521",
+    "ciRun": "39244643026",
+    "ci": "success",
+    "deploymentId": "cb53e4d8-7597-4ce6-8d67-02a7e4804ab8",
+    "deployment": "success",
+    "url": "https://cb53e4d8.slothub-4cu.pages.dev",
+    "readback": "Five detail and provider pages, sources, three available images, Search, Compare and exact Explorer results checked; preview noindex, X-Robots-Tag, no canonical or iframe, and empty sitemap checked. Two images and four exact demo entries remain missing and are not claimed available."
+  }
+}
