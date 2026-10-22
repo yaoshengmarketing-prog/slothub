@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 407,
-  "providerCount": 339,
-  "sourcePageCount": 867,
+  "gameCount": 412,
+  "providerCount": 344,
+  "sourcePageCount": 879,
   "counts": {
     "access-restricted": 4,
-    "available": 340,
-    "not-verified": 63
+    "available": 344,
+    "not-verified": 64
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,43 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "shadow-monk-auravex", "name": "Shadow Monk", "provider": "auravex", "status": "available", "url": "https://stake.com/casino/games/auravex-shadow-monk", "accessType": "platform-game-page", "platformName": "Stake", "presentation": "external", "iframeStatus": "not-tested", "checkedAt": "2026-10-22",
+      "sameGameEvidence": "Stake exact single-game page identifies Shadow Monk and Auravex and labels it Slots and Stake Engine.",
+      "inspectedUrls": [{ "requestedUrl": "https://stake.com/casino/games/auravex-shadow-monk", "finalUrl": "https://stake.com/casino/games/auravex-shadow-monk", "httpStatus": 200 }]
+    },
+    {
+      "slug": "lab-breach-sunnie-gaming", "name": "Lab Breach", "provider": "sunnie-gaming", "status": "available", "url": "https://stake.com/casino/games/sunniegaming-lab-breach", "accessType": "platform-game-page", "platformName": "Stake", "presentation": "external", "iframeStatus": "not-tested", "checkedAt": "2026-10-22",
+      "sameGameEvidence": "Stake exact single-game page identifies Lab Breach and Sunnie Gaming and labels it Slots and Stake Engine.",
+      "inspectedUrls": [{ "requestedUrl": "https://stake.com/casino/games/sunniegaming-lab-breach", "finalUrl": "https://stake.com/casino/games/sunniegaming-lab-breach", "httpStatus": 200 }]
+    },
+    {
+      "slug": "slow-burn-chatty-games", "name": "Slow Burn", "provider": "chatty-games", "status": "available", "url": "https://stake.com/casino/games/chattygames-slow-burn", "accessType": "platform-game-page", "platformName": "Stake", "presentation": "external", "iframeStatus": "not-tested", "checkedAt": "2026-10-22",
+      "sameGameEvidence": "Stake exact single-game page identifies Slow Burn and Chatty Games and labels it Slots and Stake Engine.",
+      "inspectedUrls": [{ "requestedUrl": "https://stake.com/casino/games/chattygames-slow-burn", "finalUrl": "https://stake.com/casino/games/chattygames-slow-burn", "httpStatus": 200 }]
+    },
+    {
+      "slug": "goblin-knight-blackout", "name": "Goblin Knight", "provider": "blackout", "status": "available", "url": "https://stake.com/casino/games/blackout-goblin-knight", "accessType": "platform-game-page", "platformName": "Stake", "presentation": "external", "iframeStatus": "not-tested", "checkedAt": "2026-10-22",
+      "sameGameEvidence": "Stake exact single-game page identifies Goblin Knight and Blackout and labels it Slots and Stake Engine.",
+      "inspectedUrls": [{ "requestedUrl": "https://stake.com/casino/games/blackout-goblin-knight", "finalUrl": "https://stake.com/casino/games/blackout-goblin-knight", "httpStatus": 200 }]
+    },
+    {
+      "slug": "fruit-love-fever-inout-games",
+      "name": "Fruit Love Fever",
+      "provider": "inout-games",
+      "status": "not-verified",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-22",
+      "evidence": "InOut Games' exact official product page and public game record identify Fruit Love Fever as a released slot and return a session-generated demo URL. The generated destination was not opened in this run, so no unstable URL is exposed as a verified public entry.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.inout.games/en/game/fruit-love-fever",
+          "finalUrl": "https://www.inout.games/en/game/fruit-love-fever",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "starshell-finale-ggapps",
       "name": "Starshell Finale",

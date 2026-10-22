@@ -1,0 +1,53 @@
+{
+  "batch": 67,
+  "recordedAt": "2026-10-22T00:00:00+08:00",
+  "state": "captured-awaiting-verification",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "records": [
+    {
+      "provider": "InOut Games",
+      "providerSlug": "inout-games",
+      "game": "Fruit Love Fever",
+      "gameSlug": "fruit-love-fever-inout-games",
+      "gameId": "814cd4f0-2d28-4488-905b-cadaf9a732c8",
+      "catalogUrl": "https://www.inout.games/en/games",
+      "gameUrl": "https://www.inout.games/en/game/fruit-love-fever",
+      "status": "captured",
+      "note": "The complete public InOut catalog returned 77 items in two authenticated-anonymous API pages (50 then 27; final next=null). All titles, the provider name, the official game ID, and known aliases were checked against Game and Provider Markdown. Fruit Love Fever is the selected first eligible Slot: its exact official record calls it a slot, marks it released, supplies 95% RTP, 09.06.2026 release day, Bonus Buy wording and official artwork. A generated demo destination exists but was not opened; the public record truthfully remains not-verified rather than exposing a session URL."
+    },
+    { "provider": "Auravex", "providerSlug": "auravex", "game": "Shadow Monk", "gameSlug": "shadow-monk-auravex", "catalogUrl": "https://stake.com/casino/group/auravex", "gameUrl": "https://stake.com/casino/games/auravex-shadow-monk", "status": "captured", "note": "Stake provider catalogue lists Auravex titles. The exact single-game page identifies Shadow Monk and Auravex, labels it Slots and Stake Engine, and reports 96% RTP." },
+    { "provider": "Sunnie Gaming", "providerSlug": "sunnie-gaming", "game": "Lab Breach", "gameSlug": "lab-breach-sunnie-gaming", "catalogUrl": "https://stake.com/casino/group/sunnie-gaming", "gameUrl": "https://stake.com/casino/games/sunniegaming-lab-breach", "status": "captured", "note": "Stake exact single-game page identifies Lab Breach and Sunnie Gaming, labels it Slots and Stake Engine, and reports 96.7% RTP; the provider website was also checked." },
+    { "provider": "Chatty Games", "providerSlug": "chatty-games", "game": "Slow Burn", "gameSlug": "slow-burn-chatty-games", "catalogUrl": "https://stake.com/casino/group/chatty-games", "gameUrl": "https://stake.com/casino/games/chattygames-slow-burn", "status": "captured", "note": "Stake provider catalogue lists 21 Chatty Games titles. Its exact Slow Burn page identifies the title/provider, labels Slots and Stake Engine, and reports 96.5% RTP; Chatty's official legal page identifies it as the studio behind its Stake slots." },
+    { "provider": "Blackout", "providerSlug": "blackout", "game": "Goblin Knight", "gameSlug": "goblin-knight-blackout", "catalogUrl": "https://stake.com/casino/group/blackout", "gameUrl": "https://stake.com/casino/games/blackout-goblin-knight", "status": "captured", "note": "Stake provider catalogue lists five Blackout titles. The exact single-game page identifies Goblin Knight and Blackout, labels it Slots and Stake Engine, and reports 96% RTP." }
+  ],
+  "discoveryAttempts": [
+    {
+      "provider": "InOut Games",
+      "catalogUrl": "https://www.inout.games/en/games",
+      "checkedAt": "2026-10-20",
+      "status": "catalog-complete-one-captured",
+      "observedOrder": ["Mine Slot Halloween", "Rump And Halloween", "Aztec Totem", "Zeus Flip", "MegaBlock Empire", "KO Million", "Tower Dash", "Dragon Pots", "Rump And Friends", "Joker's Clash", "Royal Drop", "Wheel Out", "Frog Jump", "Ice Fish", "Fruit Love Fever", "Drop The Billionare", "Penalty Nations Cup", "Frog Road", "Twist San Quentin", "Jumper", "Chicken Road 2.0", "Joker Pyre", "Chicken Road", "Chicken Coin", "Chicken Road Bonus", "Mine Slot", "Plinko AZTEC", "Twist", "Penalty Unlimited", "Chicken Road 2 Bonus", "Squid Gamebler", "MegaBlock", "Chicken Road Vegas", "Forest Arrow", "Chicken Banana", "Chicken Shoot", "Mine Slot 2", "Avia Fly 2", "Diver", "Plinko 1000", "Chicken Road Gold", "Mines", "Wheel", "Lucky Mines", "Pengu Sport", "Sugar Daddy", "Avia Fly", "Rabbit Road", "Chicken Road Ice", "Fish Road", "Cricket Road", "Crash", "Tower", "Joker Poker", "Roulette", "BalloniX", "Chicken Royal", "Chicken Road Race", "Topo Mole", "Hamster Run", "Double Online", "Hot Mines", "CoinFlip", "Stairs", "Limbo", "Bubbles", "Chicken vs Zombies", "Robo Dice", "Hilo Joker", "Fish Boom", "Twist X-mas", "Cryptos", "Rock Paper Scissors", "Goblin Tower", "Triple", "Sweet Keno", "Jogo Do Bicho"],
+      "catalogPagination": { "source": "https://inout.games/api/client/v1/games/?page=1", "pageOne": { "returned": 50, "next": "limit=50&offset=50&page=1" }, "pageTwo": { "returned": 27, "next": null }, "total": 77, "checkedAt": "2026-10-22" },
+      "reason": "The official dynamic catalog is now complete. The full title sequence, provider, and Fruit Love Fever official ID were compared against all current Game and Provider Markdown. The only literal title collision is Aztec Totem, already a PoggiPlay record; it is retained as an unprocessed InOut identity review rather than treated as a duplicate. Fruit Love Fever was individually validated and captured. Every other title is explicitly retained as unprocessed for later exact product-page, Slot-identity, source, image and demo review; no missing evidence is inferred and the wider cursor is not exhausted.",
+      "candidateScreening": [
+        { "game": "Mine Slot Halloween", "slug": "mine-slot-halloween", "status": "deferred-source-insufficient", "checkedAt": "2026-10-22", "reason": "Official record confirms release, 96% RTP, Bonus Buy and Extra Chance, but its prose calls it a game and does not independently establish Slot classification beyond the title." },
+        { "game": "Mine Slot", "slug": "mine-slot", "status": "deferred-source-insufficient", "checkedAt": "2026-10-22", "reason": "Official record confirms release and 96% RTP, but contains no independent Slot classification beyond the title." },
+        { "game": "Mine Slot 2", "slug": "mine-slot-2", "status": "source-conflict-or-missing", "checkedAt": "2026-10-22", "reason": "The catalog lists the title but the exact official record query returned no game object; do not infer identity or release state." },
+        { "game": "Joker Pyre", "slug": "joker-pyre", "status": "deferred-source-insufficient", "checkedAt": "2026-10-22", "reason": "Official record confirms release, 96% RTP and Hold & Win wording, but does not explicitly classify the product as a Slot." }
+      ],
+      "nextStep": "Continue the retained InOut list after Fruit Love Fever by opening exact official product records and select only a released Slot with sufficient first-party identity and artwork; save each exclusion or capture immediately. Do not treat the 76 unprocessed titles as excluded or the overall provider cursor as exhausted."
+    },
+    {
+      "provider": "Static Studio / Virtual Gold Studios / KeyTurn Gaming",
+      "status": "already-collected",
+      "checkedAt": "2026-10-20",
+      "reason": "Search leads matched existing Game and Provider Markdown: Outlaw's Fortune, Nadir, and Brains and Beakers respectively. These are not new games for this batch.",
+      "nextStep": "Do not reimport these providers; continue with an uncollected provider."
+    }
+  ],
+  "continuation": {
+    "cursor": "Batch 67 now holds its five-record limit: InOut/Fruit Love Fever, Auravex/Shadow Monk, Sunnie Gaming/Lab Breach, Chatty Games/Slow Burn, and Blackout/Goblin Knight. InOut's full 77-title catalog remains retained for later source triage. Batch 66 fifth game GGApps / Starshell Finale was already deployed; its local deployment receipt is untracked and must not be staged.",
+    "rule": "Run the full prescribed verification, commit only Batch 67 paths, fast-forward publish only if origin/main is unchanged, then verify CI, Cloudflare deployment, and all online routes before starting Batch 68."
+  }
+}
