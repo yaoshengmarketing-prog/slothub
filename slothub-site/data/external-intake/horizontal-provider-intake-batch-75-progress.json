@@ -1,0 +1,133 @@
+{
+  "batch": 75,
+  "recordedAt": "2026-10-26T18:22:14.313Z",
+  "state": "imported-awaiting-full-verification",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "records": [
+    {
+      "provider": "Big Daddy Gaming",
+      "providerSlug": "big-daddy-gaming",
+      "game": "Redneck Dynamite",
+      "gameSlug": "redneck-dynamite-big-daddy",
+      "catalogIndex": 3,
+      "catalogTotal": 4,
+      "officialPage": "https://bigdaddygaming.com/",
+      "note": "Last of four named public homepage entries; exact official card and artwork, no exact Demo.",
+      "status": "imported",
+      "dedup": {
+        "gameMarkdownCount": 447,
+        "matchCount": 0,
+        "fields": "all Game and Provider Markdown: provider, English name, Chinese name, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": "https://bigdaddygaming.com/",
+      "remainingCursor": "4/4"
+    },
+    {
+      "provider": "Win Fast",
+      "providerSlug": "win-fast",
+      "game": "Oiran Hearts",
+      "gameSlug": "oiran-hearts-win-fast",
+      "catalogIndex": 7,
+      "catalogTotal": 36,
+      "officialPage": "https://win-fast.games/oiran-hearts/",
+      "note": "Official Video Slot, 7x7 Cluster Pays; DEMO has exact game code but placeholder token, withheld.",
+      "status": "imported",
+      "dedup": {
+        "gameMarkdownCount": 447,
+        "matchCount": 0,
+        "fields": "all Game and Provider Markdown: provider, English name, Chinese name, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": "https://win-fast.games/",
+      "remainingCursor": "8/36"
+    },
+    {
+      "provider": "Playzia",
+      "providerSlug": "playzia",
+      "game": "Hot Spin Fiesta",
+      "gameSlug": "hot-spin-fiesta-playzia",
+      "catalogIndex": 3,
+      "catalogTotal": 60,
+      "officialPage": "https://www.playzia.com/games/hot-spin-fiesta/",
+      "note": "Official 5x6 Slot and exact game artwork; precise 96 version demo HTTP 200.",
+      "status": "imported",
+      "dedup": {
+        "gameMarkdownCount": 447,
+        "matchCount": 0,
+        "fields": "all Game and Provider Markdown: provider, English name, Chinese name, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": [
+        "https://www.playzia.com/games/",
+        "https://www.playzia.com/games/page/2/",
+        "https://www.playzia.com/games/page/3/",
+        "https://www.playzia.com/games/page/4/"
+      ],
+      "remainingCursor": "4/60"
+    },
+    {
+      "provider": "TrueLab",
+      "providerSlug": "truelab",
+      "game": "Happy Prison",
+      "gameSlug": "happy-prison-truelab",
+      "catalogIndex": 16,
+      "catalogTotal": 66,
+      "officialPage": "https://truelab.games/games/happy-prison",
+      "note": "Official exact Modern Slot; Play target HTTP 200 with matching title. Hero preview inspected; unrelated recommended-card image rejected.",
+      "status": "imported",
+      "dedup": {
+        "gameMarkdownCount": 447,
+        "matchCount": 0,
+        "fields": "all Game and Provider Markdown: provider, English name, Chinese name, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": "https://truelab.games/games",
+      "remainingCursor": "17/66"
+    },
+    {
+      "provider": "Zillion Games",
+      "providerSlug": "zillion-games",
+      "game": "Electro strike",
+      "gameSlug": "electro-strike-zillion",
+      "catalogIndex": 10,
+      "catalogTotal": 83,
+      "officialPage": "https://zillion.games/games/electro-strike/",
+      "note": "Index 9 Hot girls:Wheel of passion status differs across official page snapshots; deferred for recheck. Electro exact official page and artwork, demo HTTP 400.",
+      "status": "imported",
+      "dedup": {
+        "gameMarkdownCount": 447,
+        "matchCount": 0,
+        "fields": "all Game and Provider Markdown: provider, English name, Chinese name, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": [
+        "https://zillion.games/games/",
+        "https://zillion.games/games/page/2/",
+        "https://zillion.games/games/page/3/",
+        "https://zillion.games/games/page/4/",
+        "https://zillion.games/games/page/5/",
+        "https://zillion.games/games/page/6/"
+      ],
+      "remainingCursor": "11/83"
+    }
+  ],
+  "exclusions": [
+    {
+      "provider": "Zillion Games",
+      "catalogIndices": [
+        9
+      ],
+      "games": [
+        "Hot girls:Wheel of passion"
+      ],
+      "status": "deferred-status-conflict",
+      "reason": "Official exact page was labelled New in one crawl, while another official page listing omitted the release marker; verify current catalog availability before use."
+    }
+  ],
+  "continuation": {
+    "cursor": "Big Daddy 3/4 (homepage roster exhausted); Win Fast 7/36; Playzia 3/60; TrueLab 16/66; Zillion 10/83 after deferred 9. Full ordered catalog retained in batch 72.",
+    "next": "Full preview verify and diff check, explicit stage, commit, normal push, exact-SHA Actions and Pages, full live readback; then continue safe eligible candidates if resources allow."
+  }
+}

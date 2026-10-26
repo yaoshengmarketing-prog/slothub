@@ -1,9 +1,9 @@
 {
   "batch": 74,
   "recordedAt": "2026-10-26T18:15:25.026Z",
-  "state": "imported-awaiting-full-verification",
+  "state": "published-and-readback-verified",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "records": [
     {
       "provider": "Big Daddy Gaming",
@@ -14,7 +14,7 @@
       "catalogTotal": 4,
       "officialPage": "https://bigdaddygaming.com/",
       "note": "Official homepage exact card and artwork; no exact Demo.",
-      "status": "imported",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 442,
         "matchCount": 0,
@@ -33,7 +33,7 @@
       "catalogTotal": 36,
       "officialPage": "https://win-fast.games/star-treasure/",
       "note": "Index 5 Wild West Angel Rodeo deferred: official page DEMO and artwork carry old Wild West Angel identity. Star Treasure category Video Slot; page text conflicts 25 paylines vs Cluster Pays, mechanism omitted.",
-      "status": "imported",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 442,
         "matchCount": 0,
@@ -52,7 +52,7 @@
       "catalogTotal": 60,
       "officialPage": "https://www.playzia.com/games/crystal-rush/",
       "note": "Official exact 7x7 game page, artwork and 94-code Demo HTTP 200; four RTP variants retained.",
-      "status": "imported",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 442,
         "matchCount": 0,
@@ -76,7 +76,7 @@
       "catalogTotal": 66,
       "officialPage": "https://truelab.games/games/red-hot-50",
       "note": "Index 14 Hi-Lo excluded as non-Slot. Official exact Classic slot, variable 10-50 lines, precise Play target HTTP 200.",
-      "status": "imported",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 442,
         "matchCount": 0,
@@ -95,7 +95,7 @@
       "catalogTotal": 83,
       "officialPage": "https://zillion.games/games/train-of-fortune/",
       "note": "Index 7 3 Dragon’s pots deferred for identity conflict with existing 3 Dragon Pots, another provider. Official exact Train page and art; Demo HTTP 400.",
-      "status": "imported",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 442,
         "matchCount": 0,
@@ -151,5 +151,16 @@
   "continuation": {
     "cursor": "Big Daddy 2/4; Win Fast 6/36 after conflict at 5; Playzia 2/60; TrueLab 15/66 after Hi-Lo 14 excluded; Zillion 8/83 after near-name conflict at 7. Full ordered catalog saved in batch 72.",
     "next": "Full preview verify and diff check, explicit stage, commit, normal push, exact-SHA Actions and Pages, full live readback; then next five."
+  },
+  "publication": {
+    "commitSha": "8cb53de6fbecde35c766cfc40f9bfae15c164cbf",
+    "actionsRun": "https://github.com/yaoshengmarketing-prog/slothub/actions/runs/40376379111",
+    "actionsConclusion": "success",
+    "pagesCommitSha": "8cb53de6fbecde35c766cfc40f9bfae15c164cbf",
+    "pagesDeploymentId": "60ba1621-81cd-4cbf-99fc-91417f721683",
+    "pagesUrl": "https://60ba1621.slothub-4cu.pages.dev",
+    "pagesStage": "deploy/success",
+    "readback": "five Games, five Provider pages, five images, sources, two exact demos, Search, Explorer, Compare, noindex, X-Robots-Tag, empty sitemap, no canonical passed",
+    "readbackAt": "2026-10-26T18:19:18.6178456Z"
   }
 }

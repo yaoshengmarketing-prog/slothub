@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 447,
+  "gameCount": 452,
   "providerCount": 369,
-  "sourcePageCount": 908,
+  "sourcePageCount": 915,
   "counts": {
     "access-restricted": 4,
-    "available": 359,
-    "not-verified": 84
+    "available": 361,
+    "not-verified": 87
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,11 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {"slug":"redneck-dynamite-big-daddy","name":"Redneck Dynamite","provider":"big-daddy-gaming","status":"not-verified","evidence":"Official named homepage card has no exact playable entry.","inspectedUrls":[{"requestedUrl":"https://bigdaddygaming.com/","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
+    {"slug":"oiran-hearts-win-fast","name":"Oiran Hearts","provider":"win-fast","status":"not-verified","evidence":"Official DEMO target contains exact game code but token=token placeholder, so playable destination remains unverified.","inspectedUrls":[{"requestedUrl":"https://win-fast.games/oiran-hearts/","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
+    {"slug":"hot-spin-fiesta-playzia","name":"Hot Spin Fiesta","provider":"playzia","status":"available","url":"https://playzia.prod-1.atmt-e-1.com/demo/playzia-061-96","accessType":"direct-demo","evidence":"Official exact page embedded playzia-061-96 returned HTTP 200.","inspectedUrls":[{"requestedUrl":"https://www.playzia.com/games/hot-spin-fiesta/","httpStatus":200},{"requestedUrl":"https://playzia.prod-1.atmt-e-1.com/demo/playzia-061-96","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
+    {"slug":"happy-prison-truelab","name":"Happy Prison","provider":"truelab","status":"available","url":"https://launcher.truelab.games/play/happy-prison-96","accessType":"direct-demo","evidence":"Official exact page Play URL HTTP 200 with Happy Prison title.","inspectedUrls":[{"requestedUrl":"https://truelab.games/games/happy-prison","httpStatus":200},{"requestedUrl":"https://launcher.truelab.games/play/happy-prison-96","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
+    {"slug":"electro-strike-zillion","name":"Electro strike","provider":"zillion-games","status":"not-verified","evidence":"Official exact page demo target returned HTTP 400.","inspectedUrls":[{"requestedUrl":"https://zillion.games/games/electro-strike/","httpStatus":200},{"requestedUrl":"https://zilliongames.io/demo?casinoId=lobby&game=electro&locale=en","httpStatus":400}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
     {"slug":"legacy-of-desperados-big-daddy","name":"Legacy of Desperados","provider":"big-daddy-gaming","status":"not-verified","evidence":"Official named homepage card has no exact playable entry.","inspectedUrls":[{"requestedUrl":"https://bigdaddygaming.com/","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
     {"slug":"star-treasure-win-fast","name":"Star Treasure","provider":"win-fast","status":"not-verified","evidence":"Exact page DEMO target has malformed token; precise playable entry not confirmed.","inspectedUrls":[{"requestedUrl":"https://win-fast.games/star-treasure/","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
     {"slug":"crystal-rush-playzia","name":"Crystal Rush","provider":"playzia","status":"available","url":"https://playzia.prod-1.atmt-e-1.com/demo/playzia-063-94","accessType":"direct-demo","evidence":"Exact official page embedded demo playzia-063-94 returned HTTP 200.","inspectedUrls":[{"requestedUrl":"https://www.playzia.com/games/crystal-rush/","httpStatus":200},{"requestedUrl":"https://playzia.prod-1.atmt-e-1.com/demo/playzia-063-94","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
