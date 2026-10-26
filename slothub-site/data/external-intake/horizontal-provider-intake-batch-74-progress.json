@@ -1,0 +1,155 @@
+{
+  "batch": 74,
+  "recordedAt": "2026-10-26T18:15:25.026Z",
+  "state": "imported-awaiting-full-verification",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "records": [
+    {
+      "provider": "Big Daddy Gaming",
+      "providerSlug": "big-daddy-gaming",
+      "game": "Legacy of Desperados",
+      "gameSlug": "legacy-of-desperados-big-daddy",
+      "catalogIndex": 2,
+      "catalogTotal": 4,
+      "officialPage": "https://bigdaddygaming.com/",
+      "note": "Official homepage exact card and artwork; no exact Demo.",
+      "status": "imported",
+      "dedup": {
+        "gameMarkdownCount": 442,
+        "matchCount": 0,
+        "fields": "all Game and Provider Markdown: provider, English name, Chinese name, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": "https://bigdaddygaming.com/",
+      "remainingCursor": "3/4"
+    },
+    {
+      "provider": "Win Fast",
+      "providerSlug": "win-fast",
+      "game": "Star Treasure",
+      "gameSlug": "star-treasure-win-fast",
+      "catalogIndex": 6,
+      "catalogTotal": 36,
+      "officialPage": "https://win-fast.games/star-treasure/",
+      "note": "Index 5 Wild West Angel Rodeo deferred: official page DEMO and artwork carry old Wild West Angel identity. Star Treasure category Video Slot; page text conflicts 25 paylines vs Cluster Pays, mechanism omitted.",
+      "status": "imported",
+      "dedup": {
+        "gameMarkdownCount": 442,
+        "matchCount": 0,
+        "fields": "all Game and Provider Markdown: provider, English name, Chinese name, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": "https://win-fast.games/",
+      "remainingCursor": "7/36"
+    },
+    {
+      "provider": "Playzia",
+      "providerSlug": "playzia",
+      "game": "Crystal Rush",
+      "gameSlug": "crystal-rush-playzia",
+      "catalogIndex": 2,
+      "catalogTotal": 60,
+      "officialPage": "https://www.playzia.com/games/crystal-rush/",
+      "note": "Official exact 7x7 game page, artwork and 94-code Demo HTTP 200; four RTP variants retained.",
+      "status": "imported",
+      "dedup": {
+        "gameMarkdownCount": 442,
+        "matchCount": 0,
+        "fields": "all Game and Provider Markdown: provider, English name, Chinese name, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": [
+        "https://www.playzia.com/games/",
+        "https://www.playzia.com/games/page/2/",
+        "https://www.playzia.com/games/page/3/",
+        "https://www.playzia.com/games/page/4/"
+      ],
+      "remainingCursor": "3/60"
+    },
+    {
+      "provider": "TrueLab",
+      "providerSlug": "truelab",
+      "game": "Red Hot 50",
+      "gameSlug": "red-hot-50-truelab",
+      "catalogIndex": 15,
+      "catalogTotal": 66,
+      "officialPage": "https://truelab.games/games/red-hot-50",
+      "note": "Index 14 Hi-Lo excluded as non-Slot. Official exact Classic slot, variable 10-50 lines, precise Play target HTTP 200.",
+      "status": "imported",
+      "dedup": {
+        "gameMarkdownCount": 442,
+        "matchCount": 0,
+        "fields": "all Game and Provider Markdown: provider, English name, Chinese name, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": "https://truelab.games/games",
+      "remainingCursor": "16/66"
+    },
+    {
+      "provider": "Zillion Games",
+      "providerSlug": "zillion-games",
+      "game": "Train of fortune",
+      "gameSlug": "train-of-fortune-zillion",
+      "catalogIndex": 8,
+      "catalogTotal": 83,
+      "officialPage": "https://zillion.games/games/train-of-fortune/",
+      "note": "Index 7 3 Dragon’s pots deferred for identity conflict with existing 3 Dragon Pots, another provider. Official exact Train page and art; Demo HTTP 400.",
+      "status": "imported",
+      "dedup": {
+        "gameMarkdownCount": 442,
+        "matchCount": 0,
+        "fields": "all Game and Provider Markdown: provider, English name, Chinese name, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": [
+        "https://zillion.games/games/",
+        "https://zillion.games/games/page/2/",
+        "https://zillion.games/games/page/3/",
+        "https://zillion.games/games/page/4/",
+        "https://zillion.games/games/page/5/",
+        "https://zillion.games/games/page/6/"
+      ],
+      "remainingCursor": "9/83"
+    }
+  ],
+  "exclusions": [
+    {
+      "provider": "Win Fast",
+      "catalogIndices": [
+        5
+      ],
+      "games": [
+        "Wild West Angel Rodeo"
+      ],
+      "status": "deferred-source-conflict",
+      "reason": "Official exact page artwork shows Wild West Angel and DEMO links old WNF_WILD_WEST_ANGEL as well as GMT_WILD_WEST_ANGEL_RODEO; no clear same-game artwork."
+    },
+    {
+      "provider": "TrueLab",
+      "catalogIndices": [
+        14
+      ],
+      "games": [
+        "Hi-Lo"
+      ],
+      "status": "excluded-non-slot",
+      "reason": "Official catalog category Hi-Lo; not a Slot."
+    },
+    {
+      "provider": "Zillion Games",
+      "catalogIndices": [
+        7
+      ],
+      "games": [
+        "3 Dragon’s pots"
+      ],
+      "status": "deferred-identity-conflict",
+      "reason": "Published 3 Dragon Pots from Prospect Gaming exists; near-identical English names and different provider, needs identity disambiguation."
+    }
+  ],
+  "continuation": {
+    "cursor": "Big Daddy 2/4; Win Fast 6/36 after conflict at 5; Playzia 2/60; TrueLab 15/66 after Hi-Lo 14 excluded; Zillion 8/83 after near-name conflict at 7. Full ordered catalog saved in batch 72.",
+    "next": "Full preview verify and diff check, explicit stage, commit, normal push, exact-SHA Actions and Pages, full live readback; then next five."
+  }
+}

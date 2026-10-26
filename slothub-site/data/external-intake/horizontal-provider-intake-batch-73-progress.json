@@ -1,9 +1,9 @@
 {
   "batch": 73,
   "recordedAt": "2026-10-26T18:04:23.415Z",
-  "state": "captured-awaiting-validation",
+  "state": "published-and-readback-verified",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "records": [
     {
       "provider": "Big Daddy Gaming",
@@ -14,7 +14,7 @@
       "catalogTotal": 4,
       "officialPage": "https://bigdaddygaming.com/",
       "note": "Second of four public homepage entries. Official card says 8+ matching symbols pay Scatter rewards, Free Spins, up-to-500x feature multiplier; no whole-game max win inferred. Official card image visually inspected. No exact demo.",
-      "status": "captured",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 437,
         "matchCount": 0,
@@ -33,7 +33,7 @@
       "catalogTotal": 36,
       "officialPage": "https://win-fast.games/mummy-princess/",
       "note": "Catalog index 2 Dragons Pot and index 3 Beyond Dice were opened and official category is Instant-Win Game, excluded as non-Slots. Index 4 Mummy Princess official category Video Slot, 6x5 cluster pays. Official DEMO links WNF_WILD_WEST_ANGEL, so not published as Mummy demo. Official art visually inspected.",
-      "status": "captured",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 437,
         "matchCount": 0,
@@ -52,7 +52,7 @@
       "catalogTotal": 60,
       "officialPage": "https://www.playzia.com/games/lucky-totems/",
       "note": "Second of 60 distinct official archive game paths. Exact 94% version demo iframe target returned HTTP 200; four RTP variants retained, no default assumed. Max Win 5000 lacks unit.",
-      "status": "captured",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 437,
         "matchCount": 0,
@@ -76,7 +76,7 @@
       "catalogTotal": 66,
       "officialPage": "https://truelab.games/games/hot-heist",
       "note": "Backfilled public catalog index 12 after Energy True Blitz index 13; official exact page gives 10 paylines, 96% RTP, 10000x, Pick & Click, Bonus Buy. Official Play target returned HTTP 200 with Hot Heist title. 3x5 orientation left unnormalized.",
-      "status": "captured",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 437,
         "matchCount": 0,
@@ -95,7 +95,7 @@
       "catalogTotal": 83,
       "officialPage": "https://zillion.games/games/golden-zombies/",
       "note": "Catalog index 0-4 are marked Coming Soon on first page; index 5 Zombie Wheel published in batch 72. Golden Zombies is next released title at index 6. Official page disagrees on Wild vs Scatter Free Spins trigger, so trigger left unspecified. Official demo HTTP 400, Max Win 1675 has no unit.",
-      "status": "captured",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 437,
         "matchCount": 0,
@@ -143,5 +143,16 @@
   "continuation": {
     "cursor": "Big Daddy 1/4; Win Fast 4/36 after Instant-Win exclusions 2-3; Playzia 1/60; TrueLab backfill 12/66; Zillion 6/83 after Coming Soon 0-4 and published 5. Full catalog order retained in batch 72 manifest.",
     "next": "Complete full preview verification, explicit commit, normal push, same-SHA CI/Pages, five-game online readback; then continue next five."
+  },
+  "publication": {
+    "actionsRun": "https://github.com/yaoshengmarketing-prog/slothub/actions/runs/40374790407",
+    "readback": "five Games, five Provider pages, five images, sources, two exact demos, Search, Explorer, Compare, noindex, X-Robots-Tag, empty sitemap, no canonical passed",
+    "readbackAt": "2026-10-26T18:09:31.3405815Z",
+    "pagesStage": "deploy/success",
+    "commitSha": "ac510c055dd2c4c14a88d071feba9bc5967166b4",
+    "pagesUrl": "https://be6b4546.slothub-4cu.pages.dev",
+    "actionsConclusion": "success",
+    "pagesCommitSha": "ac510c055dd2c4c14a88d071feba9bc5967166b4",
+    "pagesDeploymentId": "be6b4546-8c07-4a52-8156-6ad921aea03e"
   }
 }
