@@ -1,0 +1,190 @@
+{
+  "batch": 68,
+  "recordedAt": "2026-10-26T21:41:57+08:00",
+  "state": "imported",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "records": [
+    {
+      "provider": "Zerplaay Games",
+      "providerSlug": "zerplaay-games",
+      "game": "Trevor Hunter",
+      "gameSlug": "trevor-hunter-zerplaay-games",
+      "catalogUrl": "https://zerplaay.com/assets/index-DD30v6UJ.js",
+      "status": "captured",
+      "note": "Official catalog bundle lists four titles in order: Trevor Hunter (slot, live), Jet Bark (slot, live), Space Fart Jump (crash, certification), Chihuahuas VS Goblins (slot, certification). One game per new provider: Trevor Hunter selected. Searched all Game and Provider Markdown for Zerplaay, Trevor Hunter, Jet Bark and known game ID 2324; no matches. No Chinese title or alias was established. Official release roundup confirms title and studio; official artwork was saved and inspected. The staging token demo was not opened and remains not-verified."
+    },
+    {
+      "provider": "razr.gg / RAZR Gaming",
+      "providerSlug": "razr-gaming",
+      "game": "Toxic Mix",
+      "gameSlug": "toxic-mix-razr-gaming",
+      "catalogUrl": "https://www.razr.gg/",
+      "gameUrl": "https://www.razr.gg/games/toxic-mix",
+      "status": "captured",
+      "note": "Official eight-title catalog in displayed order: live Toxic Mix, Whale Wash, Raccoon Raid: Outlaw, Raccoon Raid: Wanted, Raccoon Raid: Midnight Stash; coming soon Hercules of Olympus, Chicken Chase, Lalisa Cash Drop. Searched all Game and Provider Markdown for provider names and each title; no matches. Official exact page retrieved HTTP 200 and identifies Toxic Mix as live, 6x5, 96.67% RTP and 25000x. No game ID or Chinese name established. No verified playable entry; official title artwork downloaded and visually inspected."
+    },
+    {
+      "provider": "Lucky Lunar Studio",
+      "providerSlug": "lucky-lunar-studio",
+      "game": "Bouncy Bonnie",
+      "gameSlug": "bouncy-bonnie-lucky-lunar",
+      "catalogUrl": "https://gamingrealms.com/games/",
+      "catalogFilter": {
+        "action": "filter_games",
+        "category": "lucky-lunar-studio",
+        "method": "POST",
+        "endpoint": "https://gamingrealms.com/wp-admin/admin-ajax.php"
+      },
+      "catalogOrder": [
+        "Cash Vortex Lock & Slingo",
+        "Bouncy Bonnie",
+        "Cash Vortex",
+        "Chilli Libre",
+        "Rise of Aztec Lock & Slingo"
+      ],
+      "gameUrl": "https://gamingrealms.com/games/bouncy-bonnie/",
+      "status": "captured",
+      "note": "Official studio filter returned five titles in order; searched all Game/Provider Markdown for all five titles, studio name, aliases and known Bouncy Bonnie game ID slots-bouncybonnie-94 with no matches. Exact page names Lucky Lunar, calls game a slot, and reports RTP 94.07%, max 3000x and Medium High volatility. Official art visually inspected. Exact official demo returned HTTP 200 and is external."
+    },
+    {
+      "provider": "3One Studios",
+      "providerSlug": "3one-studios",
+      "game": "Forbidden Lecture",
+      "gameSlug": "forbidden-lecture-3one-studios",
+      "catalogUrl": "https://www.3onestudios.com/",
+      "catalogOrder": [
+        "Cyber West (404 Labs; not 3One)",
+        "Forbidden Lecture",
+        "Blast Off",
+        "Flappy Plinko",
+        "Neon Crate"
+      ],
+      "gameUrl": "https://www.3onestudios.com/games/forbidden-lecture/",
+      "status": "captured",
+      "note": "Official homepage states five live titles and explicitly credits Cyber West to sister studio 404 Labs, so it was not attributed to 3One. Full names and provider searched across Game/Provider Markdown; no match, no known ID or Chinese alias. Exact first-party page HTTP 200 identifies 7x7 slot, 90.1% RTP, 2500x, high volatility, cascades and free spins. Official art visually inspected; precise playable page not verified."
+    },
+    {
+      "provider": "7Rings Gaming",
+      "providerSlug": "7rings-gaming",
+      "game": "Multi Bandit",
+      "gameSlug": "multi-bandit-7rings",
+      "gameId": "islx-slot-machine",
+      "catalogUrl": "https://plsite.7ring.games/api/games",
+      "catalogMethod": "POST",
+      "catalogRequest": {
+        "isOnlyVisible": true,
+        "size": 100
+      },
+      "catalogTotal": 31,
+      "catalogOrderGameIds": ["f-louvre", "slot-machine", "egypt-dark-stories", "flasher", "mayan-apocalypso", "barn-51", "bar-of-fate", "train-to-hell", "snackjack", "dragons", "book-of-wild-west", "necro-party", "egypt-apocalypto", "dead-gun", "magic-boost", "wild-bite", "sweet-tooth", "snake-world", "zombie-bite", "snake-cave", "gems", "triumph", "wild-monkey", "bloodsuckers", "vikings", "crazy-shark", "god-shot", "pirates", "troy", "jusic-shoots", "mafia"],
+      "gameUrl": "https://plsite.7ring.games/api/game/islx-slot-machine",
+      "status": "captured",
+      "note": "Official API returned all 31 visible titles, total=31. Searched Game/Provider Markdown for provider, normalized titles, aliases and official ID; generic stem collisions Dragons/Gems/Vikings/Troy require separate identity if later selected; Multi Bandit and official ID have no match. English official translation lists Slot, 96% RTP, medium volatility, 10000x, 2026-10-15 release; isPlayable=true, isDraft=false. Official PNG visually inspected. Demo session not verified."
+    }
+  ],
+  "discoveryAttempts": [
+    {
+      "provider": "Banana Studios",
+      "game": "Pumpkin Hex",
+      "catalogUrl": "https://bananastudios.io/",
+      "status": "source-access-restricted",
+      "checkedAt": "2026-10-26",
+      "reason": "The prior DNS failure is no longer the immediate blocker, but direct HTTPS access remains unusable as evidence: terminal retrieval was rejected with TLS hostname validation error SEC_E_WRONG_PRINCIPAL, and a separate browser navigation returned net::ERR_CERT_COMMON_NAME_INVALID. On 2026-10-25 the independent web reader also rejected the official URL as inaccessible. The safety interstitial was not bypassed. Do not infer Slot identity, release state, image attribution, fields, or a Demo from the retained lead. On 2026-10-26 the independent web reader again reported the studio domain inaccessible. Stake studio directory https://stake.com/casino/group/banana-studios was readable as a two-week-old cached snapshot listing seven games but not Pumpkin Hex; opening https://stake.com/ja/casino/games/bananastudios-pumpkin-hex returned cache miss. Search results are discovery leads only and do not establish an opened exact page or a complete current catalog.",
+      "nextStep": "Retry the current official catalog and exact Pumpkin Hex page, or an actually opened qualifying exact platform page; complete catalog and full Markdown title, Chinese-title, alias, provider and known-ID deduplication before capture. Continue other documented uncollected providers without claiming exhaustion."
+    },
+    {
+      "provider": "Lucky Iron Games",
+      "game": "Toxic West",
+      "status": "source-access-restricted",
+      "checkedAt": "2026-10-22",
+      "reason": "The exact third-party single-game page previously redirected or restricted access. No retrievable first-party exact page is saved for this candidate.",
+      "nextStep": "Do not capture from a catalog, search, or redirected URL; resume only with an accessible exact first-party page or an actually opened qualifying platform-game page."
+    },
+    {
+      "provider": "NoCap Labs",
+      "game": "CHUCK",
+      "status": "source-access-restricted",
+      "checkedAt": "2026-10-22",
+      "reason": "The exact third-party single-game page previously redirected or restricted access. The required identity and same-game evidence could not be retained.",
+      "nextStep": "Recheck only an exact accessible page; otherwise advance to another uncollected Provider."
+    },
+    {
+      "provider": "Obscure Studio",
+      "game": "Bomb Squad",
+      "status": "source-access-restricted",
+      "checkedAt": "2026-10-22",
+      "reason": "The exact third-party single-game page previously redirected or restricted access. No qualifying source was available for capture.",
+      "nextStep": "Recheck only an exact accessible page; otherwise advance to another uncollected Provider."
+    },
+    {
+      "provider": "Zerplaay Games",
+      "game": "Trevor Hunter",
+      "status": "catalog-complete-one-captured",
+      "checkedAt": "2026-10-26",
+      "catalogCursor": "provider-candidate-map-v1.md research ID 211; previously deferred candidate revisited on new evidence",
+      "catalogUrl": "https://www.zerplaay.com/",
+      "reason": "Official site now responds HTTP 200 and its public bundle provides the four-title ordered catalog, classification and status; Trevor Hunter selected. No published image or unverified staging demo.",
+      "nextStep": "Continue next uncollected provider; do not recapture Jet Bark while prioritizing one game per provider."
+    },
+    {
+      "provider": "razr.gg / RAZR Gaming",
+      "game": "Toxic Mix",
+      "catalogUrl": "https://www.razr.gg/",
+      "checkedAt": "2026-10-26",
+      "status": "catalog-complete-one-captured",
+      "reason": "Official catalog contains five live and three coming-soon titles; Toxic Mix selected with exact official game page and full name/provider Markdown search.",
+      "nextStep": "Continue to next uncollected provider."
+    },
+    {
+      "provider": "Lucky Lunar Studio",
+      "game": "Bouncy Bonnie",
+      "catalogUrl": "https://gamingrealms.com/games/",
+      "gameUrl": "https://gamingrealms.com/games/bouncy-bonnie/",
+      "status": "catalog-complete-one-captured",
+      "checkedAt": "2026-10-26",
+      "reason": "Official catalog filter for lucky-lunar-studio yielded five titles and Bouncy Bonnie exact page plus direct demo passed.",
+      "nextStep": "Continue next uncollected Provider."
+    },
+    {
+      "provider": "Appy Gaming",
+      "game": "RabRage",
+      "catalogUrl": "https://appygaming.com/",
+      "status": "not-released",
+      "checkedAt": "2026-10-26",
+      "reason": "Official site describes its only named game RabRage as coming soon to Stake; no release established.",
+      "nextStep": "Recheck on evidence of release; do not capture now."
+    },
+    {
+      "provider": "Spinning Whale",
+      "game": "888 Dragon's Fortune Hold'n'Win",
+      "catalogUrl": "https://www.evolution.com/news/evolution-launches-spinning-whale-a-new-us-focused-slots-studio",
+      "status": "pending-catalog-and-official-url",
+      "checkedAt": "2026-10-26",
+      "reason": "Evolution official announcement names the studio and debut Slot; complete catalog, suitable studio official URL, dedup and exact page remain unchecked.",
+      "nextStep": "Find official studio/catalog and verify first release and dedup."
+    },
+    {
+      "provider": "3One Studios",
+      "game": "Forbidden Lecture",
+      "catalogUrl": "https://www.3onestudios.com/",
+      "status": "catalog-complete-one-captured",
+      "checkedAt": "2026-10-26",
+      "reason": "Five-title live catalog reviewed with Cyber West attributed to 404 Labs; Forbidden Lecture exact official page and image verified.",
+      "nextStep": "Continue next uncollected provider."
+    },
+    {
+      "provider": "7Rings Gaming",
+      "game": "Multi Bandit",
+      "status": "catalog-complete-one-captured",
+      "checkedAt": "2026-10-26",
+      "catalogUrl": "https://plsite.7ring.games/api/games",
+      "reason": "Official visible catalog 31/31 retrieved from first-party API. Selected Multi Bandit after Markdown dedup and exact official game/translation data review.",
+      "nextStep": "Run full batch verification, exact stage, publish and online readback."
+    }
+  ],
+  "continuation": {
+    "cursor": "Batch 68 holds five captured games; verify and publish this batch before further discovery. Next new-provider cursor resumes after 7Rings, with Spinning Whale deferred until released and Appy RabRage still coming soon.",
+    "rule": "A batch remains unpublished until it has five captured games, or until a fully documented candidate sweep reaches an exact exhausted cursor with only excluded or inaccessible candidates; then run the complete verification and publication loop."
+  }
+}

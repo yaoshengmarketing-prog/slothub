@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 412,
-  "providerCount": 344,
+  "gameCount": 417,
+  "providerCount": 349,
   "sourcePageCount": 879,
   "counts": {
     "access-restricted": 4,
-    "available": 344,
-    "not-verified": 64
+    "available": 345,
+    "not-verified": 68
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,11 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {"slug":"multi-bandit-7rings","name":"Multi Bandit","provider":"7rings-gaming","status":"not-verified","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-26","evidence":"Official catalog marks game playable but dynamic session destination was not opened; no stable public Demo URL verified.","inspectedUrls":[{"requestedUrl":"https://7ringsgaming.com/","finalUrl":"https://7ringsgaming.com/","httpStatus":200}]},
+    {"slug":"forbidden-lecture-3one-studios","name":"Forbidden Lecture","provider":"3one-studios","status":"not-verified","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-26","evidence":"Official exact product page retrieved but its outbound platform game destination was not verified.","inspectedUrls":[{"requestedUrl":"https://www.3onestudios.com/games/forbidden-lecture/","finalUrl":"https://www.3onestudios.com/games/forbidden-lecture/","httpStatus":200}]},
+    {"slug":"bouncy-bonnie-lucky-lunar","name":"Bouncy Bonnie","provider":"lucky-lunar-studio","status":"available","url":"https://alchemy.gamingrealms.net/rgs/loadgame.html?gameMode=DEMO&gameId=slots-bouncybonnie-94","accessType":"direct-demo","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-26","evidence":"Official Lucky Lunar catalog filter lists Bouncy Bonnie with this exact Demo URL; direct request returned HTTP 200.","inspectedUrls":[{"requestedUrl":"https://alchemy.gamingrealms.net/rgs/loadgame.html?gameMode=DEMO&gameId=slots-bouncybonnie-94","finalUrl":"https://alchemy.gamingrealms.net/rgs/loadgame.html?gameMode=DEMO&gameId=slots-bouncybonnie-94","httpStatus":200}]},
+    {"slug":"toxic-mix-razr-gaming","name":"Toxic Mix","provider":"razr-gaming","status":"not-verified","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-26","evidence":"Official exact game information page was retrieved but no exact playable entry was verified.","inspectedUrls":[{"requestedUrl":"https://www.razr.gg/games/toxic-mix","finalUrl":"https://www.razr.gg/games/toxic-mix","httpStatus":200}]},
+    {"slug":"trevor-hunter-zerplaay-games","name":"Trevor Hunter","provider":"zerplaay-games","status":"not-verified","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-26","evidence":"Official catalog includes a staging demo URL with a token; no stable exact destination was opened and verified.","inspectedUrls":[{"requestedUrl":"https://zerplaay.com/","finalUrl":"https://zerplaay.com/","httpStatus":200}]},
     {
       "slug": "shadow-monk-auravex", "name": "Shadow Monk", "provider": "auravex", "status": "available", "url": "https://stake.com/casino/games/auravex-shadow-monk", "accessType": "platform-game-page", "platformName": "Stake", "presentation": "external", "iframeStatus": "not-tested", "checkedAt": "2026-10-22",
       "sameGameEvidence": "Stake exact single-game page identifies Shadow Monk and Auravex and labels it Slots and Stake Engine.",
