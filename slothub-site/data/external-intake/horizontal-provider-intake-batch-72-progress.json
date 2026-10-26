@@ -1,9 +1,9 @@
 {
   "batch": 72,
   "recordedAt": "2026-10-26T17:53:08.226Z",
-  "state": "captured-awaiting-validation",
+  "state": "published-and-readback-verified",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "records": [
     {
       "provider": "Big Daddy Gaming",
@@ -31,7 +31,7 @@
         {
           "index": 0,
           "name": "BONBON BOOM!",
-          "status": "captured"
+          "status": "published"
         },
         {
           "index": 1,
@@ -48,7 +48,8 @@
           "name": "Redneck Dynamite",
           "status": "deferred-after-first-provider-game"
         }
-      ]
+      ],
+      "status": "published"
     },
     {
       "provider": "Win Fast",
@@ -113,7 +114,7 @@
         {
           "index": 1,
           "name": "ALMIGHTY GODDESS ZERA",
-          "status": "captured"
+          "status": "published"
         },
         {
           "index": 2,
@@ -285,7 +286,8 @@
           "name": "MILLION TREE",
           "status": "deferred-after-first-provider-game"
         }
-      ]
+      ],
+      "status": "published"
     },
     {
       "provider": "Playzia",
@@ -374,7 +376,7 @@
         {
           "index": 0,
           "name": "crazy-chilli-jackpots",
-          "status": "captured"
+          "status": "published"
         },
         {
           "index": 1,
@@ -671,7 +673,8 @@
           "name": "safari-kingdom",
           "status": "deferred-after-first-provider-game"
         }
-      ]
+      ],
+      "status": "published"
     },
     {
       "provider": "TrueLab",
@@ -894,7 +897,7 @@
         {
           "index": 13,
           "name": "Energy True Blitz",
-          "status": "captured"
+          "status": "published"
         },
         {
           "index": 14,
@@ -1156,7 +1159,8 @@
           "name": "Book of truth",
           "status": "deferred-after-first-provider-game"
         }
-      ]
+      ],
+      "status": "published"
     },
     {
       "provider": "Zillion Games",
@@ -1295,7 +1299,7 @@
         {
           "index": 5,
           "name": "zombie-wheel",
-          "status": "captured"
+          "status": "published"
         },
         {
           "index": 6,
@@ -1682,7 +1686,8 @@
           "name": "fruit-5-lines",
           "status": "deferred-after-first-provider-game"
         }
-      ]
+      ],
+      "status": "published"
     }
   ],
   "discoveryAttempts": [
@@ -1710,5 +1715,16 @@
   "continuation": {
     "cursor": "Batch 72 selected public catalog index: Big Daddy 0/4, Win Fast 1/36, Playzia 0/60, TrueLab 13/66, Zillion 5/83. Resume deferred catalog items after this batch is fully verified and published.",
     "rule": "At most five new Games per batch; full preview verify, explicit stage, single commit, normal push, same-SHA CI and Pages readback."
+  },
+  "publication": {
+    "pagesStage": "deploy/success",
+    "readbackAt": "2026-10-26T18:00:17.2057908Z",
+    "commitSha": "5cc583b708ef5ba457932a0fb85114bd3bc688cb",
+    "pagesDeploymentId": "0041b9c4-720c-4ddc-a75e-f64c206a3a09",
+    "readback": "five Games, five Providers, five images, sources, two precise demos, Search, Explorer, Compare, noindex, X-Robots-Tag, empty sitemap, no canonical passed",
+    "pagesUrl": "https://0041b9c4.slothub-4cu.pages.dev",
+    "actionsRun": "https://github.com/yaoshengmarketing-prog/slothub/actions/runs/40373127094",
+    "pagesCommitSha": "5cc583b708ef5ba457932a0fb85114bd3bc688cb",
+    "actionsConclusion": "success"
   }
 }

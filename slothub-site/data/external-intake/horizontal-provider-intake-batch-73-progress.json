@@ -1,0 +1,147 @@
+{
+  "batch": 73,
+  "recordedAt": "2026-10-26T18:04:23.415Z",
+  "state": "captured-awaiting-validation",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "records": [
+    {
+      "provider": "Big Daddy Gaming",
+      "providerSlug": "big-daddy-gaming",
+      "game": "Going Ape",
+      "gameSlug": "going-ape-big-daddy",
+      "catalogIndex": 1,
+      "catalogTotal": 4,
+      "officialPage": "https://bigdaddygaming.com/",
+      "note": "Second of four public homepage entries. Official card says 8+ matching symbols pay Scatter rewards, Free Spins, up-to-500x feature multiplier; no whole-game max win inferred. Official card image visually inspected. No exact demo.",
+      "status": "captured",
+      "dedup": {
+        "gameMarkdownCount": 437,
+        "matchCount": 0,
+        "fields": "provider, English and Chinese names, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": "https://bigdaddygaming.com/",
+      "remainingCursor": "2/4"
+    },
+    {
+      "provider": "Win Fast",
+      "providerSlug": "win-fast",
+      "game": "Mummy Princess",
+      "gameSlug": "mummy-princess-win-fast",
+      "catalogIndex": 4,
+      "catalogTotal": 36,
+      "officialPage": "https://win-fast.games/mummy-princess/",
+      "note": "Catalog index 2 Dragons Pot and index 3 Beyond Dice were opened and official category is Instant-Win Game, excluded as non-Slots. Index 4 Mummy Princess official category Video Slot, 6x5 cluster pays. Official DEMO links WNF_WILD_WEST_ANGEL, so not published as Mummy demo. Official art visually inspected.",
+      "status": "captured",
+      "dedup": {
+        "gameMarkdownCount": 437,
+        "matchCount": 0,
+        "fields": "provider, English and Chinese names, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": "https://win-fast.games/",
+      "remainingCursor": "5/36"
+    },
+    {
+      "provider": "Playzia",
+      "providerSlug": "playzia",
+      "game": "Lucky Totems",
+      "gameSlug": "lucky-totems-playzia",
+      "catalogIndex": 1,
+      "catalogTotal": 60,
+      "officialPage": "https://www.playzia.com/games/lucky-totems/",
+      "note": "Second of 60 distinct official archive game paths. Exact 94% version demo iframe target returned HTTP 200; four RTP variants retained, no default assumed. Max Win 5000 lacks unit.",
+      "status": "captured",
+      "dedup": {
+        "gameMarkdownCount": 437,
+        "matchCount": 0,
+        "fields": "provider, English and Chinese names, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": [
+        "https://www.playzia.com/games/",
+        "https://www.playzia.com/games/page/2/",
+        "https://www.playzia.com/games/page/3/",
+        "https://www.playzia.com/games/page/4/"
+      ],
+      "remainingCursor": "2/60"
+    },
+    {
+      "provider": "TrueLab",
+      "providerSlug": "truelab",
+      "game": "Hot Heist",
+      "gameSlug": "hot-heist-truelab",
+      "catalogIndex": 12,
+      "catalogTotal": 66,
+      "officialPage": "https://truelab.games/games/hot-heist",
+      "note": "Backfilled public catalog index 12 after Energy True Blitz index 13; official exact page gives 10 paylines, 96% RTP, 10000x, Pick & Click, Bonus Buy. Official Play target returned HTTP 200 with Hot Heist title. 3x5 orientation left unnormalized.",
+      "status": "captured",
+      "dedup": {
+        "gameMarkdownCount": 437,
+        "matchCount": 0,
+        "fields": "provider, English and Chinese names, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": "https://truelab.games/games",
+      "remainingCursor": "13/66"
+    },
+    {
+      "provider": "Zillion Games",
+      "providerSlug": "zillion-games",
+      "game": "Golden Zombies",
+      "gameSlug": "golden-zombies-zillion",
+      "catalogIndex": 6,
+      "catalogTotal": 83,
+      "officialPage": "https://zillion.games/games/golden-zombies/",
+      "note": "Catalog index 0-4 are marked Coming Soon on first page; index 5 Zombie Wheel published in batch 72. Golden Zombies is next released title at index 6. Official page disagrees on Wild vs Scatter Free Spins trigger, so trigger left unspecified. Official demo HTTP 400, Max Win 1675 has no unit.",
+      "status": "captured",
+      "dedup": {
+        "gameMarkdownCount": 437,
+        "matchCount": 0,
+        "fields": "provider, English and Chinese names, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": [
+        "https://zillion.games/games/",
+        "https://zillion.games/games/page/2/",
+        "https://zillion.games/games/page/3/",
+        "https://zillion.games/games/page/4/",
+        "https://zillion.games/games/page/5/",
+        "https://zillion.games/games/page/6/"
+      ],
+      "remainingCursor": "7/83"
+    }
+  ],
+  "exclusions": [
+    {
+      "provider": "Win Fast",
+      "catalogIndices": [
+        2,
+        3
+      ],
+      "games": [
+        "Dragon’s Pot",
+        "Beyond Dice"
+      ],
+      "status": "excluded-non-slot",
+      "reason": "Opened both official pages; Category is Instant-Win Game, not Video Slot."
+    },
+    {
+      "provider": "Zillion Games",
+      "catalogIndices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "status": "deferred-coming-soon",
+      "reason": "First five official catalog cards marked Coming Soon."
+    }
+  ],
+  "continuation": {
+    "cursor": "Big Daddy 1/4; Win Fast 4/36 after Instant-Win exclusions 2-3; Playzia 1/60; TrueLab backfill 12/66; Zillion 6/83 after Coming Soon 0-4 and published 5. Full catalog order retained in batch 72 manifest.",
+    "next": "Complete full preview verification, explicit commit, normal push, same-SHA CI/Pages, five-game online readback; then continue next five."
+  }
+}

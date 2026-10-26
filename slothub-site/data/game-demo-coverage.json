@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 437,
+  "gameCount": 442,
   "providerCount": 369,
-  "sourcePageCount": 890,
+  "sourcePageCount": 901,
   "counts": {
     "access-restricted": 4,
-    "available": 355,
-    "not-verified": 78
+    "available": 357,
+    "not-verified": 81
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,11 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {"slug":"going-ape-big-daddy","name":"Going Ape","provider":"big-daddy-gaming","status":"not-verified","evidence":"Official homepage exact Going Ape card has no precise playable destination.","inspectedUrls":[{"requestedUrl":"https://bigdaddygaming.com/","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
+    {"slug":"mummy-princess-win-fast","name":"Mummy Princess","provider":"win-fast","status":"not-verified","evidence":"Official Mummy Princess DEMO button targets WNF_WILD_WEST_ANGEL, a different game.","inspectedUrls":[{"requestedUrl":"https://win-fast.games/mummy-princess/","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
+    {"slug":"lucky-totems-playzia","name":"Lucky Totems","provider":"playzia","status":"available","url":"https://playzia.prod-1.atmt-e-1.com/demo/playzia-062-94","accessType":"direct-demo","evidence":"Official exact Lucky Totems page iframe data-src playzia-062-94 returned HTTP 200.","inspectedUrls":[{"requestedUrl":"https://www.playzia.com/games/lucky-totems/","httpStatus":200},{"requestedUrl":"https://playzia.prod-1.atmt-e-1.com/demo/playzia-062-94","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
+    {"slug":"hot-heist-truelab","name":"Hot Heist","provider":"truelab","status":"available","url":"https://launcher.truelab.games/play/hot-heist-96","accessType":"direct-demo","evidence":"Official exact Hot Heist page Play destination HTTP 200 with Hot Heist HTML title.","inspectedUrls":[{"requestedUrl":"https://truelab.games/games/hot-heist","httpStatus":200},{"requestedUrl":"https://launcher.truelab.games/play/hot-heist-96","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
+    {"slug":"golden-zombies-zillion","name":"Golden Zombies","provider":"zillion-games","status":"not-verified","evidence":"Official exact game page demo target returned HTTP 400.","inspectedUrls":[{"requestedUrl":"https://zillion.games/games/golden-zombies/","httpStatus":200},{"requestedUrl":"https://zilliongames.io/demo?casinoId=lobby&game=goldenZombies&locale=en","httpStatus":400}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
     {"slug":"bonbon-boom-big-daddy","name":"BONBON BOOM!","provider":"big-daddy-gaming","status":"not-verified","evidence":"Official homepage displays exact game identity and art, but no exact playable entry.","inspectedUrls":[{"requestedUrl":"https://bigdaddygaming.com/","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
     {"slug":"almighty-goddess-zera-win-fast","name":"Almighty Goddess ZERA","provider":"win-fast","status":"not-verified","evidence":"Official exact page DEMO target contains GMT_STAR_TREASURE gameCode, so is not a ZERA entry.","inspectedUrls":[{"requestedUrl":"https://win-fast.games/almighty-goddess-zera/","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
     {"slug":"crazy-chilli-jackpots-playzia","name":"Crazy Chilli Jackpots","provider":"playzia","status":"available","url":"https://playzia.prod-1.atmt-e-1.com/demo/playzia-065-96","accessType":"direct-demo","evidence":"Exact official game page iframe data-src playzia-065-96 returned HTTP 200.","inspectedUrls":[{"requestedUrl":"https://www.playzia.com/games/crazy-chilli-jackpots/","httpStatus":200},{"requestedUrl":"https://playzia.prod-1.atmt-e-1.com/demo/playzia-065-96","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
