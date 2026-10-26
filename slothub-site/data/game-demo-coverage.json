@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 417,
-  "providerCount": 349,
+  "gameCount": 422,
+  "providerCount": 354,
   "sourcePageCount": 879,
   "counts": {
     "access-restricted": 4,
-    "available": 345,
-    "not-verified": 68
+    "available": 347,
+    "not-verified": 71
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,11 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {"slug":"gummy-guns-unwanted","name":"Gummy Guns","provider":"unwanted-games","status":"available","url":"https://gummy-guns.client.unwantedgames.com/api/demo?key=uwg-play-test","accessType":"direct-demo","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-26","evidence":"Official exact Gummy Guns page directly links the stable Demo API. Its redirect created a temporary session, and the final page returned HTTP 200 with title Gummy Guns; the temporary token is not retained.","inspectedUrls":[{"requestedUrl":"https://www.unwantedgames.com/games/gummy-guns","finalUrl":"https://www.unwantedgames.com/games/gummy-guns","httpStatus":200},{"requestedUrl":"https://gummy-guns.client.unwantedgames.com/api/demo?key=uwg-play-test","httpStatus":302}]},
+    {"slug":"banana-heist-happy-duck","name":"Banana Heist","provider":"happy-duck","status":"not-verified","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-26","evidence":"Official exact product page is available but no precise playable entry was established.","inspectedUrls":[{"requestedUrl":"https://happyduck.io/portfolio/banana-heist/","finalUrl":"https://happyduck.io/portfolio/banana-heist/","httpStatus":200}]},
+    {"slug":"peep-the-pope-slightly-edgy","name":"Peep the Pope","provider":"slightly-edgy-studios","status":"not-verified","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-26","evidence":"The official exact game page has product facts but no precise playable destination verified.","inspectedUrls":[{"requestedUrl":"https://slightlyedgystudios.com/portfolio/peep-the-pope/","finalUrl":"https://slightlyedgystudios.com/portfolio/peep-the-pope/","httpStatus":200}]},
+    {"slug":"laurels-of-olympus-soko","name":"Laurels of Olympus","provider":"soko-games","status":"available","url":"https://rgs-laurels-of-olympus.soko.games/","accessType":"direct-demo","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-26","evidence":"First-party game catalog provides the exact RGS link; it responded HTTP 200 and its HTML title is Laurels Of Olympus.","inspectedUrls":[{"requestedUrl":"https://rgs-laurels-of-olympus.soko.games/","finalUrl":"https://rgs-laurels-of-olympus.soko.games/","httpStatus":200}]},
+    {"slug":"hamsterpunk-halloween-riddec","name":"Hamsterpunk Halloween","provider":"riddec-games","status":"not-verified","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-26","evidence":"Official exact page has a Play Demo control, but its dynamic precise destination was not opened and verified.","inspectedUrls":[{"requestedUrl":"https://riddecgames.com/games/hamsterpunk-halloween","finalUrl":"https://riddecgames.com/games/hamsterpunk-halloween","httpStatus":200}]},
     {"slug":"multi-bandit-7rings","name":"Multi Bandit","provider":"7rings-gaming","status":"not-verified","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-26","evidence":"Official catalog marks game playable but dynamic session destination was not opened; no stable public Demo URL verified.","inspectedUrls":[{"requestedUrl":"https://7ringsgaming.com/","finalUrl":"https://7ringsgaming.com/","httpStatus":200}]},
     {"slug":"forbidden-lecture-3one-studios","name":"Forbidden Lecture","provider":"3one-studios","status":"not-verified","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-26","evidence":"Official exact product page retrieved but its outbound platform game destination was not verified.","inspectedUrls":[{"requestedUrl":"https://www.3onestudios.com/games/forbidden-lecture/","finalUrl":"https://www.3onestudios.com/games/forbidden-lecture/","httpStatus":200}]},
     {"slug":"bouncy-bonnie-lucky-lunar","name":"Bouncy Bonnie","provider":"lucky-lunar-studio","status":"available","url":"https://alchemy.gamingrealms.net/rgs/loadgame.html?gameMode=DEMO&gameId=slots-bouncybonnie-94","accessType":"direct-demo","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-26","evidence":"Official Lucky Lunar catalog filter lists Bouncy Bonnie with this exact Demo URL; direct request returned HTTP 200.","inspectedUrls":[{"requestedUrl":"https://alchemy.gamingrealms.net/rgs/loadgame.html?gameMode=DEMO&gameId=slots-bouncybonnie-94","finalUrl":"https://alchemy.gamingrealms.net/rgs/loadgame.html?gameMode=DEMO&gameId=slots-bouncybonnie-94","httpStatus":200}]},
