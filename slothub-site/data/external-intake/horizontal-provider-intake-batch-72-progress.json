@@ -1,0 +1,1714 @@
+{
+  "batch": 72,
+  "recordedAt": "2026-10-26T17:53:08.226Z",
+  "state": "captured-awaiting-validation",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "records": [
+    {
+      "provider": "Big Daddy Gaming",
+      "providerSlug": "big-daddy-gaming",
+      "game": "BONBON BOOM!",
+      "gameSlug": "bonbon-boom-big-daddy",
+      "catalogUrl": "https://bigdaddygaming.com/",
+      "catalogOrderNames": [
+        "BONBON BOOM!",
+        "Going Ape",
+        "Legacy of Desperados",
+        "Redneck Dynamite"
+      ],
+      "selectedCatalogIndex": 0,
+      "note": "Four names are the full public homepage roster, not necessarily the global catalog. Search of all existing Game and Provider Markdown found no Big Daddy record or selected exact name. Official image inspected; no exact demo.",
+      "catalogTotal": 4,
+      "dedupScope": {
+        "gameMarkdownCount": 432,
+        "providerMarkdownCount": 364,
+        "fields": "Provider, English/Chinese name, aliases, known Game ID, filename",
+        "selectedExactMatchCount": 0,
+        "providerExistingCount": 0
+      },
+      "catalogDecisions": [
+        {
+          "index": 0,
+          "name": "BONBON BOOM!",
+          "status": "captured"
+        },
+        {
+          "index": 1,
+          "name": "Going Ape",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 2,
+          "name": "Legacy of Desperados",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 3,
+          "name": "Redneck Dynamite",
+          "status": "deferred-after-first-provider-game"
+        }
+      ]
+    },
+    {
+      "provider": "Win Fast",
+      "providerSlug": "win-fast",
+      "game": "Almighty Goddess ZERA",
+      "gameSlug": "almighty-goddess-zera-win-fast",
+      "catalogUrl": "https://win-fast.games/",
+      "catalogOrderNames": [
+        "HIKARU SUPER LIVE BAZOOKA",
+        "ALMIGHTY GODDESS ZERA",
+        "DRAGON’S POT",
+        "BEYOND DICE",
+        "MUMMY PRINCESS",
+        "WILD WEST ANGEL RODEO",
+        "STAR TREASURE",
+        "OIRAN HEARTS",
+        "VIRUS MANIA",
+        "TREASURE LABYRINTH",
+        "EGG HUSTLER",
+        "DREAMS OF GOLD JACKPOT",
+        "MIGHTY WINS",
+        "GIANT KING",
+        "HAWAIIAN DREAM GOLD",
+        "BATTLE DWARF 2",
+        "TEAM WIN FAST",
+        "WILD WEST ANGEL",
+        "AZTEC-X",
+        "HAWAIIAN DREAM JACKPOT",
+        "SWORD OF FORTUNE",
+        "DRAGON’S WIN MULTIPLIER",
+        "HAWAIIAN DREAM BOOST",
+        "OIRAN DREAM XMAS",
+        "HAWAIIAN DIVA",
+        "PYRAMID RISING X33",
+        "HAWAIIAN DREAM",
+        "HAWAIIAN DREAM XMAS",
+        "OIRAN DREAM",
+        "DREAMS OF GOLD",
+        "DREAMS OF GOLD DELIGHT",
+        "RAIGEKI RISING X30",
+        "ENGEKI RISING X50",
+        "BATTLE DWARF",
+        "BATTLE DWARF XMAS",
+        "MILLION TREE"
+      ],
+      "selectedCatalogIndex": 1,
+      "note": "36 names from official GAMES block, UK CERTIFIED block omitted as duplicates. All existing Markdown searched; selected exact name and Provider absent. ZERA page demo wrongly carries GMT_STAR_TREASURE gameCode; left unverified.",
+      "catalogTotal": 36,
+      "dedupScope": {
+        "gameMarkdownCount": 432,
+        "providerMarkdownCount": 364,
+        "fields": "Provider, English/Chinese name, aliases, known Game ID, filename",
+        "selectedExactMatchCount": 0,
+        "providerExistingCount": 0
+      },
+      "catalogDecisions": [
+        {
+          "index": 0,
+          "name": "HIKARU SUPER LIVE BAZOOKA",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 1,
+          "name": "ALMIGHTY GODDESS ZERA",
+          "status": "captured"
+        },
+        {
+          "index": 2,
+          "name": "DRAGON’S POT",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 3,
+          "name": "BEYOND DICE",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 4,
+          "name": "MUMMY PRINCESS",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 5,
+          "name": "WILD WEST ANGEL RODEO",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 6,
+          "name": "STAR TREASURE",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 7,
+          "name": "OIRAN HEARTS",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 8,
+          "name": "VIRUS MANIA",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 9,
+          "name": "TREASURE LABYRINTH",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 10,
+          "name": "EGG HUSTLER",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 11,
+          "name": "DREAMS OF GOLD JACKPOT",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 12,
+          "name": "MIGHTY WINS",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 13,
+          "name": "GIANT KING",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 14,
+          "name": "HAWAIIAN DREAM GOLD",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 15,
+          "name": "BATTLE DWARF 2",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 16,
+          "name": "TEAM WIN FAST",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 17,
+          "name": "WILD WEST ANGEL",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 18,
+          "name": "AZTEC-X",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 19,
+          "name": "HAWAIIAN DREAM JACKPOT",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 20,
+          "name": "SWORD OF FORTUNE",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 21,
+          "name": "DRAGON’S WIN MULTIPLIER",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 22,
+          "name": "HAWAIIAN DREAM BOOST",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 23,
+          "name": "OIRAN DREAM XMAS",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 24,
+          "name": "HAWAIIAN DIVA",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 25,
+          "name": "PYRAMID RISING X33",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 26,
+          "name": "HAWAIIAN DREAM",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 27,
+          "name": "HAWAIIAN DREAM XMAS",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 28,
+          "name": "OIRAN DREAM",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 29,
+          "name": "DREAMS OF GOLD",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 30,
+          "name": "DREAMS OF GOLD DELIGHT",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 31,
+          "name": "RAIGEKI RISING X30",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 32,
+          "name": "ENGEKI RISING X50",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 33,
+          "name": "BATTLE DWARF",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 34,
+          "name": "BATTLE DWARF XMAS",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 35,
+          "name": "MILLION TREE",
+          "status": "deferred-after-first-provider-game"
+        }
+      ]
+    },
+    {
+      "provider": "Playzia",
+      "providerSlug": "playzia",
+      "game": "Crazy Chilli Jackpots",
+      "gameSlug": "crazy-chilli-jackpots-playzia",
+      "catalogUrls": [
+        "https://www.playzia.com/games/",
+        "https://www.playzia.com/games/page/2/",
+        "https://www.playzia.com/games/page/3/",
+        "https://www.playzia.com/games/page/4/"
+      ],
+      "catalogOrderSlugs": [
+        "crazy-chilli-jackpots",
+        "lucky-totems",
+        "crystal-rush",
+        "hot-spin-fiesta",
+        "freedom-frenzy",
+        "love-island-hold-the-love",
+        "fruity-fiesta",
+        "goal-rush-deluxe",
+        "raiders-of-valhalla-megaways-slot-game-playzia",
+        "all-men-are-brothers",
+        "the-great-fishing-adventure-bonanza",
+        "greek-goddess-siege-of-olympus-megaways",
+        "not-yet-another-irish-game",
+        "fire-horse-fortune",
+        "bills-bucks-bonanza",
+        "tomb-of-luxor",
+        "trans-santas-sack",
+        "sweet-candy-fortune-bonanza",
+        "playzia-coin-flip",
+        "velvet-riches",
+        "lollipop-loot-slot-game-playzia",
+        "playzia-plinko-game-playzia",
+        "zombie-the-apocalypse",
+        "playzia-magic-7",
+        "american-party-riches",
+        "love-island-instant-match",
+        "playzia-wheel",
+        "grand-ocean-megaways",
+        "fortune-dragon-riches",
+        "lucky-aces",
+        "love-island-love-in-a-spin",
+        "wild-tigers-bounty",
+        "piggy-clusters",
+        "billionaire-buffalo",
+        "red-envelope-riches",
+        "medusas-mystic-reels-megaways",
+        "zeus-thunderstrike-slot-game-playzia",
+        "t-rex-treasure-hunt-megaways-slots-game-playzia",
+        "dwarves-treasure-race-slot-game-playzia",
+        "knights-the-siege-slot-machine-playzia",
+        "the-blazing-fruit-7s-slot-machine-game-playzia",
+        "wanted-los-desesperados-slot-demo-free-spins-playzia",
+        "fight-or-die-crew-slot-demo-free-spins-playzia",
+        "jokers-dice-3x3-slot-demo-free-spins-playzia",
+        "billionaire-rhino-slot-demo-free-spins-playzia",
+        "volcanic-coins",
+        "santas-reels",
+        "cosmos-cash",
+        "billionaire-wolf",
+        "caishens-coins",
+        "raul-the-vampire",
+        "aztec-prosperity",
+        "sweet-candy-fortune",
+        "the-great-fishing-adventure",
+        "crazy-chilli-party",
+        "book-of-alexandria",
+        "billionaire-bison",
+        "la-copa-grande",
+        "tale-of-the-red-dragon",
+        "safari-kingdom"
+      ],
+      "selectedCatalogIndex": 0,
+      "note": "60 distinct game paths across four official archive pages, excluding repeated feed and celtic-riches navigation paths. Selected exact title and Provider absent from all existing Markdown. Multi-RTP variants preserved; max win 500 lacks unit. Exact official 96% demo iframe target returned 200.",
+      "catalogTotal": 60,
+      "dedupScope": {
+        "gameMarkdownCount": 432,
+        "providerMarkdownCount": 364,
+        "fields": "Provider, English/Chinese name, aliases, known Game ID, filename",
+        "selectedExactMatchCount": 0,
+        "providerExistingCount": 0
+      },
+      "catalogDecisions": [
+        {
+          "index": 0,
+          "name": "crazy-chilli-jackpots",
+          "status": "captured"
+        },
+        {
+          "index": 1,
+          "name": "lucky-totems",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 2,
+          "name": "crystal-rush",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 3,
+          "name": "hot-spin-fiesta",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 4,
+          "name": "freedom-frenzy",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 5,
+          "name": "love-island-hold-the-love",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 6,
+          "name": "fruity-fiesta",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 7,
+          "name": "goal-rush-deluxe",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 8,
+          "name": "raiders-of-valhalla-megaways-slot-game-playzia",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 9,
+          "name": "all-men-are-brothers",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 10,
+          "name": "the-great-fishing-adventure-bonanza",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 11,
+          "name": "greek-goddess-siege-of-olympus-megaways",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 12,
+          "name": "not-yet-another-irish-game",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 13,
+          "name": "fire-horse-fortune",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 14,
+          "name": "bills-bucks-bonanza",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 15,
+          "name": "tomb-of-luxor",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 16,
+          "name": "trans-santas-sack",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 17,
+          "name": "sweet-candy-fortune-bonanza",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 18,
+          "name": "playzia-coin-flip",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 19,
+          "name": "velvet-riches",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 20,
+          "name": "lollipop-loot-slot-game-playzia",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 21,
+          "name": "playzia-plinko-game-playzia",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 22,
+          "name": "zombie-the-apocalypse",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 23,
+          "name": "playzia-magic-7",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 24,
+          "name": "american-party-riches",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 25,
+          "name": "love-island-instant-match",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 26,
+          "name": "playzia-wheel",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 27,
+          "name": "grand-ocean-megaways",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 28,
+          "name": "fortune-dragon-riches",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 29,
+          "name": "lucky-aces",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 30,
+          "name": "love-island-love-in-a-spin",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 31,
+          "name": "wild-tigers-bounty",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 32,
+          "name": "piggy-clusters",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 33,
+          "name": "billionaire-buffalo",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 34,
+          "name": "red-envelope-riches",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 35,
+          "name": "medusas-mystic-reels-megaways",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 36,
+          "name": "zeus-thunderstrike-slot-game-playzia",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 37,
+          "name": "t-rex-treasure-hunt-megaways-slots-game-playzia",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 38,
+          "name": "dwarves-treasure-race-slot-game-playzia",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 39,
+          "name": "knights-the-siege-slot-machine-playzia",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 40,
+          "name": "the-blazing-fruit-7s-slot-machine-game-playzia",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 41,
+          "name": "wanted-los-desesperados-slot-demo-free-spins-playzia",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 42,
+          "name": "fight-or-die-crew-slot-demo-free-spins-playzia",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 43,
+          "name": "jokers-dice-3x3-slot-demo-free-spins-playzia",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 44,
+          "name": "billionaire-rhino-slot-demo-free-spins-playzia",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 45,
+          "name": "volcanic-coins",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 46,
+          "name": "santas-reels",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 47,
+          "name": "cosmos-cash",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 48,
+          "name": "billionaire-wolf",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 49,
+          "name": "caishens-coins",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 50,
+          "name": "raul-the-vampire",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 51,
+          "name": "aztec-prosperity",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 52,
+          "name": "sweet-candy-fortune",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 53,
+          "name": "the-great-fishing-adventure",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 54,
+          "name": "crazy-chilli-party",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 55,
+          "name": "book-of-alexandria",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 56,
+          "name": "billionaire-bison",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 57,
+          "name": "la-copa-grande",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 58,
+          "name": "tale-of-the-red-dragon",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 59,
+          "name": "safari-kingdom",
+          "status": "deferred-after-first-provider-game"
+        }
+      ]
+    },
+    {
+      "provider": "TrueLab",
+      "providerSlug": "truelab",
+      "game": "Energy True Blitz",
+      "gameSlug": "energy-true-blitz-truelab",
+      "catalogUrl": "https://truelab.games/games",
+      "catalogOrderNames": [
+        "Undead Farm",
+        "Only Spins",
+        "Vituss Britva 2: Phoenix Reborn",
+        "Royal Rage",
+        "True Crown Slot",
+        "Jacka Beer",
+        "Book of Aferist",
+        "True Golden Slot",
+        "Papich Hunt",
+        "Saloon Gang",
+        "Dr. Rock & Garage Solo",
+        "Dr. Rock & the Riff Reactor 2",
+        "Hot Heist",
+        "Energy True Blitz",
+        "Hi-Lo",
+        "Red Hot 50",
+        "Happy Prison",
+        "Egg Inc.",
+        "Plinko",
+        "Monkey Money",
+        "Dr. Luck Golden Rock",
+        "Succubus Sins",
+        "Fruity Park",
+        "Cat Waifu",
+        "Riches Digger",
+        "Frosty Rage",
+        "Hot Christmas Slot",
+        "Phil Memecity",
+        "Dr. Rock & Frozen Monkey",
+        "Abyss of Glory",
+        "Greedy Piggy",
+        "Vituss Britva God of Random",
+        "Hellevator",
+        "Lofi The Yeti",
+        "Dr. Rock & Creepy Monster",
+        "Hold My Beer",
+        "Skyborn",
+        "Storm VS Fire",
+        "Book of Odin",
+        "Clusterf**k",
+        "Fish Fever",
+        "Fruits of Horus",
+        "Lord & Lyu: Rise of the Legion",
+        "Bison Storm",
+        "Dragon's Call",
+        "Gates of Santa",
+        "Red Hot 100",
+        "Arctic Spin",
+        "Wild Pumpkins Deluxe",
+        "Battle Rage",
+        "Hot Hamster",
+        "Fishy Business",
+        "100 True Slot",
+        "Hot Money Slot",
+        "Hot Devil Slot",
+        "Mystic Charms",
+        "Most Wanted",
+        "Book of Huli",
+        "Dr. Rock & the Riff Reactor",
+        "Aloha Fruit Bonanza",
+        "Guns, Love & Therapy",
+        "Sunstrike Supernova",
+        "Ultra Hot Reels",
+        "European Roulette",
+        "American Roulette",
+        "Book of truth"
+      ],
+      "catalogOrderSlugs": [
+        "undead-farm",
+        "only-spins",
+        "vituss-britva-2",
+        "royal-rage",
+        "true-crown-slot",
+        "jacka-beer",
+        "book-of-aferist",
+        "true-golden-slot",
+        "papich-hunt",
+        "saloon-gang",
+        "dr-rock-garage-solo",
+        "riff-reactor-2",
+        "hot-heist",
+        "energy-true-blitz",
+        "hi-lo",
+        "red-hot-50",
+        "happy-prison",
+        "egg-inc",
+        "plinko",
+        "monkey-money",
+        "dr-luck-golden-rock",
+        "succubus-sins",
+        "fruity-park",
+        "cat-waifu",
+        "riches-digger",
+        "frosty-rage",
+        "hot-christmas-slot",
+        "phil-memecity",
+        "dr-rock-frozen-monkey",
+        "abyss-of-glory",
+        "greedy-piggy",
+        "vituss-britva",
+        "hellevator",
+        "lofi",
+        "dr-rock-creepy-monster",
+        "hold-my-beer",
+        "skyborn",
+        "storm-vs-fire",
+        "book-of-odin",
+        "clusterfk",
+        "fish-fever",
+        "fruits-of-horus",
+        "rise-of-the-legion",
+        "bison-storm",
+        "dragons-call",
+        "gates-of-santa",
+        "red-hot-100",
+        "arctic-spin-slot",
+        "wild-pumpkins-deluxe",
+        "battle-rage",
+        "hot-hamster-slot",
+        "fishy-business",
+        "100-true-slot",
+        "hot-money-slot",
+        "hot-devil-slot",
+        "mystic-charms",
+        "most-wanted",
+        "book-of-huli",
+        "riff-reactor",
+        "aloha-fruitbonanza",
+        "gunslovetherapy",
+        "sunstrike-supernova",
+        "ultra-hot-reels",
+        "european-roulette",
+        "american-roulette",
+        "book-of-truth"
+      ],
+      "selectedCatalogIndex": 13,
+      "note": "66 named official cards include non-Slot titles; Provider and selected exact Game absent from existing Markdown. Official page gives 4×6 and 4096 ways without explaining direction; no reels/rows field asserted. Exact first-party launcher returned 200 with game title.",
+      "catalogTotal": 66,
+      "dedupScope": {
+        "gameMarkdownCount": 432,
+        "providerMarkdownCount": 364,
+        "fields": "Provider, English/Chinese name, aliases, known Game ID, filename",
+        "selectedExactMatchCount": 0,
+        "providerExistingCount": 0
+      },
+      "catalogDecisions": [
+        {
+          "index": 0,
+          "name": "Undead Farm",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 1,
+          "name": "Only Spins",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 2,
+          "name": "Vituss Britva 2: Phoenix Reborn",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 3,
+          "name": "Royal Rage",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 4,
+          "name": "True Crown Slot",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 5,
+          "name": "Jacka Beer",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 6,
+          "name": "Book of Aferist",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 7,
+          "name": "True Golden Slot",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 8,
+          "name": "Papich Hunt",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 9,
+          "name": "Saloon Gang",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 10,
+          "name": "Dr. Rock & Garage Solo",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 11,
+          "name": "Dr. Rock & the Riff Reactor 2",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 12,
+          "name": "Hot Heist",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 13,
+          "name": "Energy True Blitz",
+          "status": "captured"
+        },
+        {
+          "index": 14,
+          "name": "Hi-Lo",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 15,
+          "name": "Red Hot 50",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 16,
+          "name": "Happy Prison",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 17,
+          "name": "Egg Inc.",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 18,
+          "name": "Plinko",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 19,
+          "name": "Monkey Money",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 20,
+          "name": "Dr. Luck Golden Rock",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 21,
+          "name": "Succubus Sins",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 22,
+          "name": "Fruity Park",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 23,
+          "name": "Cat Waifu",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 24,
+          "name": "Riches Digger",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 25,
+          "name": "Frosty Rage",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 26,
+          "name": "Hot Christmas Slot",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 27,
+          "name": "Phil Memecity",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 28,
+          "name": "Dr. Rock & Frozen Monkey",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 29,
+          "name": "Abyss of Glory",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 30,
+          "name": "Greedy Piggy",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 31,
+          "name": "Vituss Britva God of Random",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 32,
+          "name": "Hellevator",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 33,
+          "name": "Lofi The Yeti",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 34,
+          "name": "Dr. Rock & Creepy Monster",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 35,
+          "name": "Hold My Beer",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 36,
+          "name": "Skyborn",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 37,
+          "name": "Storm VS Fire",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 38,
+          "name": "Book of Odin",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 39,
+          "name": "Clusterf**k",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 40,
+          "name": "Fish Fever",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 41,
+          "name": "Fruits of Horus",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 42,
+          "name": "Lord & Lyu: Rise of the Legion",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 43,
+          "name": "Bison Storm",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 44,
+          "name": "Dragon's Call",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 45,
+          "name": "Gates of Santa",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 46,
+          "name": "Red Hot 100",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 47,
+          "name": "Arctic Spin",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 48,
+          "name": "Wild Pumpkins Deluxe",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 49,
+          "name": "Battle Rage",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 50,
+          "name": "Hot Hamster",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 51,
+          "name": "Fishy Business",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 52,
+          "name": "100 True Slot",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 53,
+          "name": "Hot Money Slot",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 54,
+          "name": "Hot Devil Slot",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 55,
+          "name": "Mystic Charms",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 56,
+          "name": "Most Wanted",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 57,
+          "name": "Book of Huli",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 58,
+          "name": "Dr. Rock & the Riff Reactor",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 59,
+          "name": "Aloha Fruit Bonanza",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 60,
+          "name": "Guns, Love & Therapy",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 61,
+          "name": "Sunstrike Supernova",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 62,
+          "name": "Ultra Hot Reels",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 63,
+          "name": "European Roulette",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 64,
+          "name": "American Roulette",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 65,
+          "name": "Book of truth",
+          "status": "deferred-after-first-provider-game"
+        }
+      ]
+    },
+    {
+      "provider": "Zillion Games",
+      "providerSlug": "zillion-games",
+      "game": "Zombie Wheel",
+      "gameSlug": "zombie-wheel-zillion",
+      "catalogUrls": [
+        "https://zillion.games/games/",
+        "https://zillion.games/games/page/2/",
+        "https://zillion.games/games/page/3/",
+        "https://zillion.games/games/page/4/",
+        "https://zillion.games/games/page/5/",
+        "https://zillion.games/games/page/6/"
+      ],
+      "catalogOrderSlugs": [
+        "3-dragons-secrets",
+        "electro-strike-2",
+        "train-of-fortune-2",
+        "hot-chicks-party",
+        "zombie-shooter",
+        "zombie-wheel",
+        "golden-zombies",
+        "3-dragons-pots",
+        "train-of-fortune",
+        "hot-girls-wheel-of-passion",
+        "electro-strike",
+        "3-crown-coins-deluxe",
+        "book-of-magic",
+        "wild-egyptian-buffalo",
+        "joker-crazy-wheel",
+        "3-crown-coins",
+        "book-of-the-cleo",
+        "3-buffalos-fireshoe",
+        "book-of-the-egyptian-buffalo",
+        "wolfs-moon3",
+        "the-mad-fisherman",
+        "bookofpyramid",
+        "pharaohs-secret",
+        "golden-lion-wild-savanna",
+        "book-of-the-golden-buffalo",
+        "wolf-moon-2",
+        "golden-lionwheel-of-fortune",
+        "3-joker-tricks",
+        "easter-bunny-treasures-slot",
+        "3-magic-chests",
+        "leprechauns-secret",
+        "book-of-the-aztecs-legend",
+        "mexican-ways",
+        "wild-cock",
+        "book-of-the-golden-lion",
+        "firejoker777",
+        "xmas-dwarfs",
+        "fire-chilli",
+        "bullies-shooters",
+        "cyber-dragon",
+        "skull-carnival",
+        "cluster-gems",
+        "candy-stash-deluxe",
+        "magic-treasures",
+        "royal-crown-777",
+        "wild-shooter",
+        "pharaons-sun",
+        "dynamite-dwarfs",
+        "book-of-valkyrie",
+        "firestorm-joker",
+        "gems-sky",
+        "zeus-treasures",
+        "royal-crown-fruits",
+        "book-of-the-golden-dragon",
+        "golden-dragon-deluxe",
+        "snow-wolf-saga",
+        "storm-fruits-2",
+        "egypts-moon",
+        "buffalos-sun-3",
+        "muertos-fortuna",
+        "miners-fortune",
+        "storm-fruits",
+        "aztecs-legends-2",
+        "buffalos-sun-2",
+        "cute-dragon",
+        "wolfs-moon",
+        "egypt-sun-deluxe",
+        "zeus-fortune",
+        "book-of-valhalla",
+        "snow-dragon",
+        "jasmines-treasures",
+        "egypts-sun",
+        "buffalos-sun",
+        "storm-joker",
+        "aztecs-legend",
+        "golden-dragon",
+        "book-of-spells",
+        "candy-stash",
+        "sharks-bay",
+        "cleos-secrets",
+        "eagles-gold",
+        "leprechauns-gold",
+        "fruit-5-lines"
+      ],
+      "selectedCatalogIndex": 5,
+      "note": "83 distinct product paths found on six official pages, including coming-soon entries; repeated footer links removed. Provider and selected exact title absent from all existing Markdown. Official demo returned 400, Max Win 1000 lacks unit; both omitted.",
+      "catalogTotal": 83,
+      "dedupScope": {
+        "gameMarkdownCount": 432,
+        "providerMarkdownCount": 364,
+        "fields": "Provider, English/Chinese name, aliases, known Game ID, filename",
+        "selectedExactMatchCount": 0,
+        "providerExistingCount": 0
+      },
+      "catalogDecisions": [
+        {
+          "index": 0,
+          "name": "3-dragons-secrets",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 1,
+          "name": "electro-strike-2",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 2,
+          "name": "train-of-fortune-2",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 3,
+          "name": "hot-chicks-party",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 4,
+          "name": "zombie-shooter",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 5,
+          "name": "zombie-wheel",
+          "status": "captured"
+        },
+        {
+          "index": 6,
+          "name": "golden-zombies",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 7,
+          "name": "3-dragons-pots",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 8,
+          "name": "train-of-fortune",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 9,
+          "name": "hot-girls-wheel-of-passion",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 10,
+          "name": "electro-strike",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 11,
+          "name": "3-crown-coins-deluxe",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 12,
+          "name": "book-of-magic",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 13,
+          "name": "wild-egyptian-buffalo",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 14,
+          "name": "joker-crazy-wheel",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 15,
+          "name": "3-crown-coins",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 16,
+          "name": "book-of-the-cleo",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 17,
+          "name": "3-buffalos-fireshoe",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 18,
+          "name": "book-of-the-egyptian-buffalo",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 19,
+          "name": "wolfs-moon3",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 20,
+          "name": "the-mad-fisherman",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 21,
+          "name": "bookofpyramid",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 22,
+          "name": "pharaohs-secret",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 23,
+          "name": "golden-lion-wild-savanna",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 24,
+          "name": "book-of-the-golden-buffalo",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 25,
+          "name": "wolf-moon-2",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 26,
+          "name": "golden-lionwheel-of-fortune",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 27,
+          "name": "3-joker-tricks",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 28,
+          "name": "easter-bunny-treasures-slot",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 29,
+          "name": "3-magic-chests",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 30,
+          "name": "leprechauns-secret",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 31,
+          "name": "book-of-the-aztecs-legend",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 32,
+          "name": "mexican-ways",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 33,
+          "name": "wild-cock",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 34,
+          "name": "book-of-the-golden-lion",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 35,
+          "name": "firejoker777",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 36,
+          "name": "xmas-dwarfs",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 37,
+          "name": "fire-chilli",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 38,
+          "name": "bullies-shooters",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 39,
+          "name": "cyber-dragon",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 40,
+          "name": "skull-carnival",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 41,
+          "name": "cluster-gems",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 42,
+          "name": "candy-stash-deluxe",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 43,
+          "name": "magic-treasures",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 44,
+          "name": "royal-crown-777",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 45,
+          "name": "wild-shooter",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 46,
+          "name": "pharaons-sun",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 47,
+          "name": "dynamite-dwarfs",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 48,
+          "name": "book-of-valkyrie",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 49,
+          "name": "firestorm-joker",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 50,
+          "name": "gems-sky",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 51,
+          "name": "zeus-treasures",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 52,
+          "name": "royal-crown-fruits",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 53,
+          "name": "book-of-the-golden-dragon",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 54,
+          "name": "golden-dragon-deluxe",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 55,
+          "name": "snow-wolf-saga",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 56,
+          "name": "storm-fruits-2",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 57,
+          "name": "egypts-moon",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 58,
+          "name": "buffalos-sun-3",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 59,
+          "name": "muertos-fortuna",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 60,
+          "name": "miners-fortune",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 61,
+          "name": "storm-fruits",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 62,
+          "name": "aztecs-legends-2",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 63,
+          "name": "buffalos-sun-2",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 64,
+          "name": "cute-dragon",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 65,
+          "name": "wolfs-moon",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 66,
+          "name": "egypt-sun-deluxe",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 67,
+          "name": "zeus-fortune",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 68,
+          "name": "book-of-valhalla",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 69,
+          "name": "snow-dragon",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 70,
+          "name": "jasmines-treasures",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 71,
+          "name": "egypts-sun",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 72,
+          "name": "buffalos-sun",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 73,
+          "name": "storm-joker",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 74,
+          "name": "aztecs-legend",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 75,
+          "name": "golden-dragon",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 76,
+          "name": "book-of-spells",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 77,
+          "name": "candy-stash",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 78,
+          "name": "sharks-bay",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 79,
+          "name": "cleos-secrets",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 80,
+          "name": "eagles-gold",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 81,
+          "name": "leprechauns-gold",
+          "status": "deferred-after-first-provider-game"
+        },
+        {
+          "index": 82,
+          "name": "fruit-5-lines",
+          "status": "deferred-after-first-provider-game"
+        }
+      ]
+    }
+  ],
+  "discoveryAttempts": [
+    {
+      "candidate": "JDB Gaming BASTET",
+      "status": "deferred-catalog-api",
+      "reason": "Official exact Slot page was accessible but full Slot catalog rendered as a client template; no complete directory order established."
+    },
+    {
+      "candidate": "Galaxsys El Dorado",
+      "status": "deferred-access-restricted",
+      "reason": "Official full catalog endpoint returned HTTP 403."
+    },
+    {
+      "candidate": "Win Fast ZERA demo",
+      "status": "excluded-wrong-game",
+      "reason": "DEMO button on official ZERA page embeds gameCode GMT_STAR_TREASURE."
+    },
+    {
+      "candidate": "Zillion Zombie Wheel demo",
+      "status": "excluded-http-400",
+      "reason": "Official exact demo URL responded HTTP 400."
+    }
+  ],
+  "continuation": {
+    "cursor": "Batch 72 selected public catalog index: Big Daddy 0/4, Win Fast 1/36, Playzia 0/60, TrueLab 13/66, Zillion 5/83. Resume deferred catalog items after this batch is fully verified and published.",
+    "rule": "At most five new Games per batch; full preview verify, explicit stage, single commit, normal push, same-SHA CI and Pages readback."
+  }
+}
