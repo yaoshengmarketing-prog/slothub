@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 452,
+  "gameCount": 457,
   "providerCount": 369,
-  "sourcePageCount": 915,
+  "sourcePageCount": 922,
   "counts": {
     "access-restricted": 4,
-    "available": 361,
-    "not-verified": 87
+    "available": 363,
+    "not-verified": 90
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,11 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {"slug":"virus-mania-win-fast","name":"Virus Mania","provider":"win-fast","status":"not-verified","evidence":"Official DEMO target has exact game code but placeholder token; precise playable entry not confirmed.","inspectedUrls":[{"requestedUrl":"https://win-fast.games/virus-mania/","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
+    {"slug":"treasure-labyrinth-win-fast","name":"Treasure Labyrinth","provider":"win-fast","status":"not-verified","evidence":"Official DEMO target has exact game code but placeholder token; precise playable entry not confirmed.","inspectedUrls":[{"requestedUrl":"https://win-fast.games/treasure-labyrinth/","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
+    {"slug":"freedom-frenzy-playzia","name":"Freedom Frenzy","provider":"playzia","status":"available","url":"https://playzia.prod-1.atmt-e-1.com/demo/playzia-ffy","accessType":"direct-demo","evidence":"Official exact page embedded playzia-ffy returned HTTP 200.","inspectedUrls":[{"requestedUrl":"https://www.playzia.com/games/freedom-frenzy/","httpStatus":200},{"requestedUrl":"https://playzia.prod-1.atmt-e-1.com/demo/playzia-ffy","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
+    {"slug":"egg-inc-truelab","name":"Egg Inc.","provider":"truelab","status":"available","url":"https://launcher.truelab.games/play/egg-inc-96","accessType":"direct-demo","evidence":"Official exact page Play URL HTTP 200 with Egg Inc. title.","inspectedUrls":[{"requestedUrl":"https://truelab.games/games/egg-inc","httpStatus":200},{"requestedUrl":"https://launcher.truelab.games/play/egg-inc-96","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
+    {"slug":"3-crown-coins-deluxe-zillion","name":"3 Crown coins deluxe","provider":"zillion-games","status":"not-verified","evidence":"Official exact page demo target returned HTTP 400.","inspectedUrls":[{"requestedUrl":"https://zillion.games/games/3-crown-coins-deluxe/","httpStatus":200},{"requestedUrl":"https://zilliongames.io/demo?casinoId=lobby&game=threeCoins&locale=en","httpStatus":400}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
     {"slug":"redneck-dynamite-big-daddy","name":"Redneck Dynamite","provider":"big-daddy-gaming","status":"not-verified","evidence":"Official named homepage card has no exact playable entry.","inspectedUrls":[{"requestedUrl":"https://bigdaddygaming.com/","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
     {"slug":"oiran-hearts-win-fast","name":"Oiran Hearts","provider":"win-fast","status":"not-verified","evidence":"Official DEMO target contains exact game code but token=token placeholder, so playable destination remains unverified.","inspectedUrls":[{"requestedUrl":"https://win-fast.games/oiran-hearts/","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
     {"slug":"hot-spin-fiesta-playzia","name":"Hot Spin Fiesta","provider":"playzia","status":"available","url":"https://playzia.prod-1.atmt-e-1.com/demo/playzia-061-96","accessType":"direct-demo","evidence":"Official exact page embedded playzia-061-96 returned HTTP 200.","inspectedUrls":[{"requestedUrl":"https://www.playzia.com/games/hot-spin-fiesta/","httpStatus":200},{"requestedUrl":"https://playzia.prod-1.atmt-e-1.com/demo/playzia-061-96","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},

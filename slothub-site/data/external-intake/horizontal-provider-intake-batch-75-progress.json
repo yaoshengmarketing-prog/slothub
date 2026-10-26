@@ -1,9 +1,9 @@
 {
   "batch": 75,
   "recordedAt": "2026-10-26T18:22:14.313Z",
-  "state": "imported-awaiting-full-verification",
+  "state": "published-and-readback-verified",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "records": [
     {
       "provider": "Big Daddy Gaming",
@@ -14,7 +14,7 @@
       "catalogTotal": 4,
       "officialPage": "https://bigdaddygaming.com/",
       "note": "Last of four named public homepage entries; exact official card and artwork, no exact Demo.",
-      "status": "imported",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 447,
         "matchCount": 0,
@@ -33,7 +33,7 @@
       "catalogTotal": 36,
       "officialPage": "https://win-fast.games/oiran-hearts/",
       "note": "Official Video Slot, 7x7 Cluster Pays; DEMO has exact game code but placeholder token, withheld.",
-      "status": "imported",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 447,
         "matchCount": 0,
@@ -52,7 +52,7 @@
       "catalogTotal": 60,
       "officialPage": "https://www.playzia.com/games/hot-spin-fiesta/",
       "note": "Official 5x6 Slot and exact game artwork; precise 96 version demo HTTP 200.",
-      "status": "imported",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 447,
         "matchCount": 0,
@@ -76,7 +76,7 @@
       "catalogTotal": 66,
       "officialPage": "https://truelab.games/games/happy-prison",
       "note": "Official exact Modern Slot; Play target HTTP 200 with matching title. Hero preview inspected; unrelated recommended-card image rejected.",
-      "status": "imported",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 447,
         "matchCount": 0,
@@ -95,7 +95,7 @@
       "catalogTotal": 83,
       "officialPage": "https://zillion.games/games/electro-strike/",
       "note": "Index 9 Hot girls:Wheel of passion status differs across official page snapshots; deferred for recheck. Electro exact official page and artwork, demo HTTP 400.",
-      "status": "imported",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 447,
         "matchCount": 0,
@@ -129,5 +129,16 @@
   "continuation": {
     "cursor": "Big Daddy 3/4 (homepage roster exhausted); Win Fast 7/36; Playzia 3/60; TrueLab 16/66; Zillion 10/83 after deferred 9. Full ordered catalog retained in batch 72.",
     "next": "Full preview verify and diff check, explicit stage, commit, normal push, exact-SHA Actions and Pages, full live readback; then continue safe eligible candidates if resources allow."
+  },
+  "publication": {
+    "commitSha": "61b50b679e7ac5cc2e2bd82d09099e3db1a4584e",
+    "actionsRun": "https://github.com/yaoshengmarketing-prog/slothub/actions/runs/40377382835",
+    "actionsConclusion": "success",
+    "pagesCommitSha": "61b50b679e7ac5cc2e2bd82d09099e3db1a4584e",
+    "pagesDeploymentId": "2854d0be-2999-493e-960d-76b028d9c953",
+    "pagesUrl": "https://2854d0be.slothub-4cu.pages.dev",
+    "pagesStage": "deploy/success",
+    "readback": "five Games, five Provider pages, five images, sources, two exact demos, Search, Explorer, Compare, noindex, X-Robots-Tag, empty sitemap, no canonical passed",
+    "readbackAt": "2026-10-26T18:26:11.3099708Z"
   }
 }

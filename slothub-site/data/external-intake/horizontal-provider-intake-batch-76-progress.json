@@ -1,0 +1,121 @@
+{
+  "batch": 76,
+  "recordedAt": "2026-10-26T18:28:17.182Z",
+  "state": "imported-awaiting-full-verification",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "records": [
+    {
+      "provider": "Win Fast",
+      "providerSlug": "win-fast",
+      "game": "Virus Mania",
+      "gameSlug": "virus-mania-win-fast",
+      "catalogIndex": 8,
+      "catalogTotal": 36,
+      "officialPage": "https://win-fast.games/virus-mania/",
+      "note": "Official Video Slot 6x5 Cluster Pays; exact image inspected; DEMO token is placeholder.",
+      "status": "imported",
+      "dedup": {
+        "gameMarkdownCount": 452,
+        "matchCount": 0,
+        "fields": "all Game and Provider Markdown: provider, English name, Chinese name, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": "https://win-fast.games/",
+      "remainingCursor": "9/36"
+    },
+    {
+      "provider": "Win Fast",
+      "providerSlug": "win-fast",
+      "game": "Treasure Labyrinth",
+      "gameSlug": "treasure-labyrinth-win-fast",
+      "catalogIndex": 9,
+      "catalogTotal": 36,
+      "officialPage": "https://win-fast.games/treasure-labyrinth/",
+      "note": "Official Video Slot 7x7 Cluster Pays; exact image inspected; DEMO token is placeholder.",
+      "status": "imported",
+      "dedup": {
+        "gameMarkdownCount": 452,
+        "matchCount": 0,
+        "fields": "all Game and Provider Markdown: provider, English name, Chinese name, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": "https://win-fast.games/",
+      "remainingCursor": "10/36"
+    },
+    {
+      "provider": "Playzia",
+      "providerSlug": "playzia",
+      "game": "Freedom Frenzy",
+      "gameSlug": "freedom-frenzy-playzia",
+      "catalogIndex": 4,
+      "catalogTotal": 60,
+      "officialPage": "https://www.playzia.com/games/freedom-frenzy/",
+      "note": "Official 10 fixed paylines, 3x4x3 layout kept unnormalized; exact page demo HTTP 200.",
+      "status": "imported",
+      "dedup": {
+        "gameMarkdownCount": 452,
+        "matchCount": 0,
+        "fields": "all Game and Provider Markdown: provider, English name, Chinese name, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": [
+        "https://www.playzia.com/games/",
+        "https://www.playzia.com/games/page/2/",
+        "https://www.playzia.com/games/page/3/",
+        "https://www.playzia.com/games/page/4/"
+      ],
+      "remainingCursor": "5/60"
+    },
+    {
+      "provider": "TrueLab",
+      "providerSlug": "truelab",
+      "game": "Egg Inc.",
+      "gameSlug": "egg-inc-truelab",
+      "catalogIndex": 17,
+      "catalogTotal": 66,
+      "officialPage": "https://truelab.games/games/egg-inc",
+      "note": "Official Modern slot, 10 lines and exact product screenshot; Play title matches and HTTP 200.",
+      "status": "imported",
+      "dedup": {
+        "gameMarkdownCount": 452,
+        "matchCount": 0,
+        "fields": "all Game and Provider Markdown: provider, English name, Chinese name, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": "https://truelab.games/games",
+      "remainingCursor": "18/66"
+    },
+    {
+      "provider": "Zillion Games",
+      "providerSlug": "zillion-games",
+      "game": "3 Crown coins deluxe",
+      "gameSlug": "3-crown-coins-deluxe-zillion",
+      "catalogIndex": 11,
+      "catalogTotal": 83,
+      "officialPage": "https://zillion.games/games/3-crown-coins-deluxe/",
+      "note": "Official exact product and artwork; Max Win 6000 has no unit and demo HTTP 400.",
+      "status": "imported",
+      "dedup": {
+        "gameMarkdownCount": 452,
+        "matchCount": 0,
+        "fields": "all Game and Provider Markdown: provider, English name, Chinese name, aliases, known Game ID and filename"
+      },
+      "catalogManifestRef": "data/external-intake/horizontal-provider-intake-batch-72-progress.json",
+      "catalogSource": [
+        "https://zillion.games/games/",
+        "https://zillion.games/games/page/2/",
+        "https://zillion.games/games/page/3/",
+        "https://zillion.games/games/page/4/",
+        "https://zillion.games/games/page/5/",
+        "https://zillion.games/games/page/6/"
+      ],
+      "remainingCursor": "12/83"
+    }
+  ],
+  "exclusions": [],
+  "continuation": {
+    "cursor": "Big Daddy public homepage roster 4/4 exhausted; Win Fast 9/36; Playzia 4/60; TrueLab 17/66; Zillion 11/83 with index 9 status deferred. Full ordered catalog saved in batch 72.",
+    "next": "Full preview verify, explicit commit, normal push, same-SHA CI/Pages, online readback; then continue available eligible candidates."
+  }
+}
