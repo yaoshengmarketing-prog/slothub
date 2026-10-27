@@ -34,6 +34,19 @@ const isPreview = SITE.environment !== 'production';
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {!isPreview && <script is:inline>
+      // Preview deployments may use production builds; collect only on the live host.
+      if (location.hostname === 'www.slothub.com.tw') {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { window.dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-PJG5Z9S5P2');
+        const tag = document.createElement('script');
+        tag.async = true;
+        tag.src = 'https://www.googletagmanager.com/gtag/js?id=G-PJG5Z9S5P2';
+        document.head.appendChild(tag);
+      }
+    </script>}
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
