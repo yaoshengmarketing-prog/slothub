@@ -8,6 +8,8 @@ import { buildGameDetailKnowledgePresentation, loadGuideRelationshipIndex, relat
 import { buildSimilarPlayPresentation } from '../../lib/similar-play.mjs';
 import { buildGameDetailPresentation } from '../../lib/game-detail-presentation.mjs';
 import { loadPublishedDataMethodologyEntry } from '../../lib/data-methodology';
+import { projectGameEvidence } from '../../lib/game-metric-evidence.mjs';
+import MetricEvidenceSummary from '../../components/MetricEvidenceSummary.astro';
 
 export async function getStaticPaths() {
   const games = (await getCollection('games')).filter((game) => game.data.status === 'published');
@@ -36,6 +38,8 @@ const displayName = entry.data.displayNameZhHant ?? entry.data.originalName ?? e
 const originalName = entry.data.originalName ?? entry.data.name;
 const normalizedVolatility = entry.data.volatilityNormalized ?? entry.data.volatility;
 const presentation = buildGameDetailPresentation(entry.data);
+const metricEvidence = projectGameEvidence(entry.id, entry.data.metricEvidenceIds);
+const featureStatements = metricEvidence.filter((evidence) => evidence.metricKey === 'feature-statement');
 const titleCharacters = Array.from(displayName);
 const titlePrefix = titleCharacters.length > 4 ? titleCharacters.slice(0, -2).join('') : displayName;
 const titleTail = titleCharacters.length > 4 ? titleCharacters.slice(-2).join('') : '';
@@ -277,6 +281,14 @@ const schema = {
           {presentation.operation.ruleNotes.length > 0 && <details class="game-rule-notes"><summary>查看已記錄的功能規則（{presentation.operation.ruleNotes.length}）</summary><ul>{presentation.operation.ruleNotes.map((note: string) => <li>{note}</li>)}</ul></details>}
         </section>
       </div>
+      {featureStatements.length > 0 && <div class="game-feature-statements" aria-label="來源公布的功能差異">
+        {featureStatements.map((evidence) => <section data-feature-group={evidence.groupId}>
+          <h3>{evidence.label}</h3>
+          <p>{evidence.value}</p>
+          <p class="feature-limitation">{evidence.limitation}</p>
+          <MetricEvidenceSummary evidence={evidence} />
+        </section>)}
+      </div>}
     </section>
 
     <section class="game-data-section" aria-labelledby="full-data-title">
@@ -332,6 +344,7 @@ const schema = {
     {(sources.length > 0 || entry.data.lastVerifiedAt || entry.data.image) && <section class="game-sources" aria-labelledby="source-title">
       <div><p class="eyebrow">SOURCES & TRUST</p><h2 id="source-title">資料來源與可信度</h2>{entry.data.lastVerifiedAt && <p>最後核對日期 <strong>{formatDate(entry.data.lastVerifiedAt)}</strong></p>}{dataMethodology && <a class="data-methodology-link" href={dataMethodology.url} data-methodology-entry="game-detail">了解 Slot Hub 如何整理資料 →</a>}</div>
       <ul>
+        {metricEvidence.map((evidence) => <li><MetricEvidenceSummary evidence={evidence} record /></li>)}
         {sources.map((source) => <li><a href={source.url} rel="nofollow">{source.label} ↗</a><small>核對 {formatDate(source.checkedAt)}</small></li>)}
         {entry.data.image && <li><a href={entry.data.image.sourceUrl} rel="nofollow">圖片來源 ↗</a><small>取得 {formatDate(entry.data.image.retrievedAt)}</small></li>}
         {demo?.status === 'available' && demo.url && <li><a href={demo.url} target="_blank" rel="nofollow noopener noreferrer">{isPlatformGamePage ? `${demo.platformName} 同款遊戲頁 ↗` : '官方 Demo／測試頁 ↗'}</a><small>核對 {formatDate(demo.checkedAt)}</small></li>}
@@ -339,3 +352,35 @@ const schema = {
     </section>}
   </article>
 </BaseLayout>
+
+<script>
+  const revealEvidence = () => {
+    const id = location.hash.slice(1);
+    if (!id.startsWith('evidence-')) return;
+    const record = document.getElementById(id);
+    if (record instanceof HTMLDetailsElement) {
+      record.open = true;
+      requestAnimationFrame(() => record.scrollIntoView({ block: 'start' }));
+    }
+  };
+  revealEvidence();
+  addEventListener('hashchange', revealEvidence);
+  addEventListener('click', (event) => {
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const link = event.target instanceof Element ? event.target.closest('a[href]') : null;
+    if (!(link instanceof HTMLAnchorElement) || link.target || link.hasAttribute('download')) return;
+    const url = new URL(link.href);
+    // Clicking the current fragment again does not fire hashchange.
+    if (url.origin === location.origin && url.pathname === location.pathname && url.search === location.search && url.hash === location.hash) {
+      revealEvidence();
+    }
+  });
+</script>
+
+<style is:global>
+  .game-feature-statements{display:grid;gap:24px;margin-top:28px}
+  .game-feature-statements section{min-width:0;padding-top:22px;border-top:1px solid var(--navy);scroll-margin-top:100px}
+  .game-feature-statements h3{margin:0;font-size:1.05rem}
+  .game-feature-statements p{max-width:75ch;line-height:1.7;overflow-wrap:anywhere}
+  .feature-limitation{font-size:.85rem;color:var(--muted)}
+</style>

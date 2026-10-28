@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "sourceDocuments": [
+    {
+      "id": "hacksaw-densho-product-20261015",
+      "publisher": "Hacksaw Gaming",
+      "publisherRole": "provider",
+      "url": "https://www.hacksawgaming.com/games/densho",
+      "title": "Densho",
+      "retrievedAt": "2026-10-15",
+      "documentVersion": null,
+      "documentDate": null
+    }
+  ],
+  "metricEvidence": [
+    {
+      "id": "densho-bonushunt-20261015",
+      "gameSlug": "densho",
+      "metricKey": "feature-statement",
+      "groupId": "densho-bonushunt-cost-effect",
+      "sourceDocumentId": "hacksaw-densho-product-20261015",
+      "sourceLocation": "FEATURES → BonusHunt FeatureSpins, first paragraph",
+      "checkedAt": "2026-10-15",
+      "generationMethod": "unspecified",
+      "originalLabel": "BonusHunt FeatureSpins™",
+      "originalValue": {
+        "cost": "3 times your stake",
+        "effect": "5x enhanced odds"
+      },
+      "parsedValues": {
+        "costMultiplier": 3,
+        "costBasisOriginal": "stake",
+        "relativeChanceMultiplier": 5
+      },
+      "definition": {
+        "event": "triggering a bonus game",
+        "costComposition": null,
+        "comparisonBaseline": null
+      },
+      "mode": null,
+      "market": null,
+      "configurationId": null,
+      "unknownFields": [
+        "costComposition",
+        "comparisonBaseline",
+        "modeConfiguration",
+        "market",
+        "documentVersion"
+      ],
+      "displayLabel": "BonusHunt FeatureSpins",
+      "displayValue": "原廠標示費用為 stake 的 3 倍，Bonus 觸發機會為 5 倍。",
+      "limitation": "所查頁面未完整說明費用是否包含原投注、機會倍數的比較基準，以及版本／市場適用關係；不換算總扣款、絕對機率或划算程度。"
+    },
+    {
+      "id": "densho-symbol-guarantee-20261015",
+      "gameSlug": "densho",
+      "metricKey": "feature-statement",
+      "groupId": "densho-symbol-cost-effect",
+      "sourceDocumentId": "hacksaw-densho-product-20261015",
+      "sourceLocation": "FEATURES → BonusHunt FeatureSpins, second paragraph",
+      "checkedAt": "2026-10-15",
+      "generationMethod": "unspecified",
+      "originalLabel": null,
+      "originalValue": {
+        "cost": "50x the bet",
+        "effect": "at least two Densho symbols landing in the base game"
+      },
+      "parsedValues": {
+        "costMultiplier": 50,
+        "costBasisOriginal": "bet",
+        "minimumSymbolCount": 2
+      },
+      "definition": {
+        "guarantee": "at least two Densho symbols",
+        "context": "base game",
+        "costComposition": null
+      },
+      "mode": null,
+      "market": null,
+      "configurationId": null,
+      "unknownFields": [
+        "formalModeName",
+        "costComposition",
+        "modeConfiguration",
+        "market",
+        "documentVersion"
+      ],
+      "displayLabel": "另一項付費功能說明",
+      "displayValue": "原廠標示支付 bet 的 50 倍，保證在基本遊戲中出現至少兩個 Densho 符號。",
+      "limitation": "所查原廠段落未另列正式模式名稱；費用構成與版本／市場關係未完整說明。符號保證不等於派彩或淨贏保證。"
+    }
+  ],
+  "adoption": [
+    {
+      "evidenceId": "densho-bonushunt-20261015",
+      "contentChecked": true,
+      "definitionStatus": "partial",
+      "scopeStatus": "partial",
+      "displayUse": "attributed-feature",
+      "allowedUses": [
+        "detail-with-limitation",
+        "guide:slot-bonus-buy-explained"
+      ],
+      "reason": "成本與效果成組呈現；來源不足以支持總扣款或成本效益換算。2026-10-27 限定授權 slot-bonus-buy-explained 具名案例沿用同一證據與限制，不擴充至付費方案比較或其他全站用途。"
+    },
+    {
+      "evidenceId": "densho-symbol-guarantee-20261015",
+      "contentChecked": true,
+      "definitionStatus": "partial",
+      "scopeStatus": "partial",
+      "displayUse": "attributed-feature",
+      "allowedUses": [
+        "detail-with-limitation",
+        "guide:slot-bonus-buy-explained"
+      ],
+      "reason": "保留基本遊戲情境；不自行命名模式或宣稱派彩保證。2026-10-27 限定授權 slot-bonus-buy-explained 具名案例沿用同一證據與限制，不擴充至付費方案比較或其他全站用途。"
+    }
+  ]
+}
