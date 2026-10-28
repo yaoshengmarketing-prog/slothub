@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 457,
+  "gameCount": 462,
   "providerCount": 369,
-  "sourcePageCount": 922,
+  "sourcePageCount": 937,
   "counts": {
     "access-restricted": 4,
-    "available": 363,
+    "available": 368,
     "not-verified": 90
   },
   "rules": {
@@ -17,6 +17,11 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {"slug":"thunder-hammer-rsg","name":"雷神之錘","provider":"rsg","status":"available","url":"https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=112","accessType":"direct-demo","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-28","evidence":"RSG exact official page links gameid 112 to this title-specific free-play launcher; the launcher redirected to the RSG game client and returned HTTP 200.","inspectedUrls":[{"requestedUrl":"https://www.rsg-games.com/zh-TW/games_detail_112.html","httpStatus":200},{"requestedUrl":"https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=112","httpStatus":200}]},
+    {"slug":"thunder-hammer-2-thunderstorm-rsg","name":"雷神之錘 II 雷霆風暴","provider":"rsg","status":"available","url":"https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=129","accessType":"direct-demo","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-28","evidence":"RSG exact official page links gameid 129 to this title-specific free-play launcher; the launcher redirected to the RSG game client and returned HTTP 200.","inspectedUrls":[{"requestedUrl":"https://www.rsg-games.com/zh-TW/games_detail_129.html","httpStatus":200},{"requestedUrl":"https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=129","httpStatus":200}]},
+    {"slug":"rich-mahjong-rsg","name":"麻將發了","provider":"rsg","status":"available","url":"https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=117","accessType":"direct-demo","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-28","evidence":"RSG exact official page links gameid 117 to this title-specific free-play launcher; the launcher redirected to the RSG game client and returned HTTP 200.","inspectedUrls":[{"requestedUrl":"https://www.rsg-games.com/zh-TW/games_detail_117.html","httpStatus":200},{"requestedUrl":"https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=117","httpStatus":200}]},
+    {"slug":"rich-mahjong-2-rsg","name":"麻將發了2","provider":"rsg","status":"available","url":"https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=118","accessType":"direct-demo","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-28","evidence":"RSG exact official page links gameid 118 to this title-specific free-play launcher; the launcher redirected to the RSG game client and returned HTTP 200.","inspectedUrls":[{"requestedUrl":"https://www.rsg-games.com/zh-TW/games_detail_118.html","httpStatus":200},{"requestedUrl":"https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=118","httpStatus":200}]},
+    {"slug":"caishen-coming-rsg","name":"有請財神","provider":"rsg","status":"available","url":"https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=120","accessType":"direct-demo","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-28","evidence":"RSG exact official page links gameid 120 to this title-specific free-play launcher; the launcher redirected to the RSG game client and returned HTTP 200.","inspectedUrls":[{"requestedUrl":"https://www.rsg-games.com/zh-TW/games_detail_120.html","httpStatus":200},{"requestedUrl":"https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=120","httpStatus":200}]},
     {"slug":"virus-mania-win-fast","name":"Virus Mania","provider":"win-fast","status":"not-verified","evidence":"Official DEMO target has exact game code but placeholder token; precise playable entry not confirmed.","inspectedUrls":[{"requestedUrl":"https://win-fast.games/virus-mania/","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
     {"slug":"treasure-labyrinth-win-fast","name":"Treasure Labyrinth","provider":"win-fast","status":"not-verified","evidence":"Official DEMO target has exact game code but placeholder token; precise playable entry not confirmed.","inspectedUrls":[{"requestedUrl":"https://win-fast.games/treasure-labyrinth/","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},
     {"slug":"freedom-frenzy-playzia","name":"Freedom Frenzy","provider":"playzia","status":"available","url":"https://playzia.prod-1.atmt-e-1.com/demo/playzia-ffy","accessType":"direct-demo","evidence":"Official exact page embedded playzia-ffy returned HTTP 200.","inspectedUrls":[{"requestedUrl":"https://www.playzia.com/games/freedom-frenzy/","httpStatus":200},{"requestedUrl":"https://playzia.prod-1.atmt-e-1.com/demo/playzia-ffy","httpStatus":200}],"presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-27"},

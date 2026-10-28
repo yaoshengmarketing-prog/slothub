@@ -1,0 +1,30 @@
+{
+  "batch": 77,
+  "recordedAt": "2026-10-28T02:20:00+08:00",
+  "state": "imported-awaiting-full-verification",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "selection": {
+    "priority": "User-authorized Taiwan casino catalogue signal; operator listings are discovery-only and never substitute for first-party evidence.",
+    "signalSources": [
+      "https://www.88win.com.tw/about",
+      "https://3a66.com.tw/"
+    ],
+    "provider": "RSG",
+    "officialCatalog": "https://www.rsg-games.com/zh-TW/games.html"
+  },
+  "records": [
+    { "game": "雷神之錘", "gameSlug": "thunder-hammer-rsg", "gameId": "112", "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_112.html", "demo": "https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=112", "status": "imported" },
+    { "game": "雷神之錘 II 雷霆風暴", "gameSlug": "thunder-hammer-2-thunderstorm-rsg", "gameId": "129", "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_129.html", "demo": "https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=129", "status": "imported" },
+    { "game": "麻將發了", "gameSlug": "rich-mahjong-rsg", "gameId": "117", "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_117.html", "demo": "https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=117", "status": "imported" },
+    { "game": "麻將發了2", "gameSlug": "rich-mahjong-2-rsg", "gameId": "118", "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_118.html", "demo": "https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=118", "status": "imported" },
+    { "game": "有請財神", "gameSlug": "caishen-coming-rsg", "gameId": "120", "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_120.html", "demo": "https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=120", "status": "imported" }
+  ],
+  "dedup": {
+    "scope": "All Game and Provider Markdown: provider, Chinese name, aliases, known Game ID and filename",
+    "result": "No matches before capture."
+  },
+  "continuation": {
+    "next": "Run full preview verification, stage only Batch 77 Games/images/manifest, then commit and publish through the normal same-SHA CI, Pages, and online-readback loop."
+  }
+}
