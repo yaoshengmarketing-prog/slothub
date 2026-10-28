@@ -153,7 +153,7 @@ Slotmill 的官方遊戲資料表則把 [Ragnarök Gold](/games/ragnarok-gold/)�
 <section data-evidence-id="densho-symbol-guarantee-20261015" aria-labelledby="bonus-buy-densho-symbols">
   <h4 id="bonus-buy-densho-symbols">保證符號：Densho</h4>
   <p>原廠標示支付 bet 的 50 倍，保證在基本遊戲中出現至少兩個 Densho 符號。</p>
-  <p>保證範圍是基本遊戲中的符號條件，不能據此寫成保證進入 Free Spins。第二項沒有自行指定正式模式名稱；費用構成與版本／市場關係未完整說明。符號保證不等於派彩或淨贏保證。</p>
+  <p>保證範圍是基本遊戲中的符號條件，不能據此寫成保證進入 Free Spins。所查原廠段落未另列正式模式名稱；費用構成與版本／市場關係未完整說明。符號保證不等於派彩或淨贏保證。</p>
   <p><a href="/games/densho/#evidence-densho-symbol-guarantee-20261015">查看 Densho 這項符號保證的說明與限制</a> · <a href="https://www.hacksawgaming.com/games/densho">查看 Hacksaw Gaming 原廠說明</a>（BonusHunt FeatureSpins 第二段）。</p>
 </section>
 
