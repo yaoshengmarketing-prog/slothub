@@ -15,9 +15,9 @@ Bonus Buy、Feature Buy 或 Buy Free Games，通常是用規則指定的成本�
 
 <figure class="guide-knowledge-diagram guide-knowledge-diagram--sequence" aria-labelledby="bonus-buy-diagram-title">
   <figcaption id="bonus-buy-diagram-title">
-    <span class="guide-knowledge-diagram__eyebrow">閱讀順序</span>
+    <span class="guide-knowledge-diagram__eyebrow">直接購買功能的閱讀順序</span>
     <strong>Bonus Buy 買的是入口，不是結果</strong>
-    <span>先核對成本基準，再確認進入什麼功能；實際結果仍由該功能的正式規則決定。</span>
+    <span>本圖說明直接購買功能：先核對成本基準，再確認進入什麼功能；實際結果仍由該功能的正式規則決定。</span>
   </figcaption>
   <ol class="guide-knowledge-diagram__steps">
     <li>
@@ -110,7 +110,56 @@ Bonus Buy 是一種 **Feature**。它不會取代遊戲原本的 Paylines、Ways
 
 Slotmill 的官方遊戲資料表則把 [Ragnarök Gold](/games/ragnarok-gold/)、[Shadow of Dominion](/games/shadow-of-dominion/) 與 [Wildhalla](/games/wildhalla/) 的 Bonus buy 欄標成 `Fast Track`。Slotmill 對 Fast Track 的官方說明是直接進入 Bonus features，但公開逐款資料沒有列出這三款各自的價格與功能內容，所以不能替它們補上常見的 `100×` 或其他推測值。
 
-## Ante Bet、Boost+ 與 Enhanced Bet 不一定是 Bonus Buy
+## 付費後，改變的是哪一件事？
+
+閱讀付費功能時，先看支付後會發生什麼。同一款遊戲可能同時提供不同選項，不能只看按鈕名稱或價格判斷。
+
+<table class="bonus-buy-reading-effects" role="table" aria-label="付費功能的三種閱讀角度">
+  <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">閱讀角度</th><th scope="col" role="columnheader">支付後改變什麼</th><th scope="col" role="columnheader">還要確認什麼</th></tr></thead>
+  <tbody role="rowgroup">
+    <tr role="row">
+      <th scope="row" role="rowheader">直接進入功能</th>
+      <td role="cell"><span class="bonus-buy-reading-effects__label" aria-hidden="true">支付後改變什麼</span>啟動指定的 Free Spins 或 Bonus</td>
+      <td role="cell"><span class="bonus-buy-reading-effects__label" aria-hidden="true">還要確認什麼</span>進入哪個功能、起始回合與條件</td>
+    </tr>
+    <tr role="row">
+      <th scope="row" role="rowheader">加價改變機會</th>
+      <td role="cell"><span class="bonus-buy-reading-effects__label" aria-hidden="true">支付後改變什麼</span>某個事件的觸發機會改變，未承諾這次一定觸發</td>
+      <td role="cell"><span class="bonus-buy-reading-effects__label" aria-hidden="true">還要確認什麼</span>事件定義、比較基準；機會倍數不能直接當成絕對機率</td>
+    </tr>
+    <tr role="row">
+      <th scope="row" role="rowheader">保證符號或起始狀態</th>
+      <td role="cell"><span class="bonus-buy-reading-effects__label" aria-hidden="true">支付後改變什麼</span>指定符號出現，或功能以指定條件開始</td>
+      <td role="cell"><span class="bonus-buy-reading-effects__label" aria-hidden="true">還要確認什麼</span>保證涵蓋哪個遊戲階段與條件；不能延伸成派彩或淨贏保證</td>
+    </tr>
+  </tbody>
+</table>
+
+這三個角度可以重疊。例如，直接進入某個功能時，也可能附帶指定起始狀態。因此，要逐一看選項，不能替整款遊戲只貼上一種標籤。以下符號案例只示範來源明載的符號保證，不推測其他起始條件。
+
+### 兩款遊戲，三個實例
+
+#### 直接進入功能：Gates of Olympus 1000
+
+前面提到的 [Gates of Olympus 1000](/games/gates-of-olympus-1000/)，官方以 `100x the player's bet` 說明直接啟動 Free Spins bonus round 的成本，並描述該功能以 15 Free Games 開始。這裡應一起讀「投注基準、功能入口與起始回合」；起始回合數不是回收金額。[查看 Pragmatic Play 原廠說明](https://www.pragmaticplay.com/en/games/gates-of-olympus-1000/)。
+
+<section data-evidence-id="densho-bonushunt-20261015" aria-labelledby="bonus-buy-densho-chance">
+  <h4 id="bonus-buy-densho-chance">加價改變機會：Densho</h4>
+  <p>原廠標示費用為 stake 的 3 倍，Bonus 觸發機會為 5 倍。</p>
+  <p>這項 BonusHunt FeatureSpins 說明的是觸發機會，並未承諾這次一定進入 Bonus。所查頁面未完整說明費用是否包含原投注、機會倍數的比較基準，以及版本／市場適用關係；不換算總扣款、絕對機率或划算程度。</p>
+  <p><a href="/games/densho/#evidence-densho-bonushunt-20261015">查看 Densho 這項付費功能的說明與限制</a> · <a href="https://www.hacksawgaming.com/games/densho">查看 Hacksaw Gaming 原廠說明</a>（BonusHunt FeatureSpins 第一段）。</p>
+</section>
+
+<section data-evidence-id="densho-symbol-guarantee-20261015" aria-labelledby="bonus-buy-densho-symbols">
+  <h4 id="bonus-buy-densho-symbols">保證符號：Densho</h4>
+  <p>原廠標示支付 bet 的 50 倍，保證在基本遊戲中出現至少兩個 Densho 符號。</p>
+  <p>保證範圍是基本遊戲中的符號條件，不能據此寫成保證進入 Free Spins。第二項沒有自行指定正式模式名稱；費用構成與版本／市場關係未完整說明。符號保證不等於派彩或淨贏保證。</p>
+  <p><a href="/games/densho/#evidence-densho-symbol-guarantee-20261015">查看 Densho 這項符號保證的說明與限制</a> · <a href="https://www.hacksawgaming.com/games/densho">查看 Hacksaw Gaming 原廠說明</a>（BonusHunt FeatureSpins 第二段）。</p>
+</section>
+
+[並排查閱這兩款遊戲的玩法與基本資料](/compare/?games=gates-of-olympus-1000,densho)。比較頁提供已收錄的玩法、規格及功能標記；付費選項的成本、效果與未知條件，請回到上述案例、單款資料與原廠來源閱讀。
+
+### Ante Bet、Boost+ 與 Enhanced Bet 要按個別規則閱讀
 
 這些模式通常會改變當前投注、提高某個功能的觸發機會，或加入額外條件；它們和「支付一筆指定成本後直接進入 Bonus」不一定相同。
 
@@ -151,7 +200,7 @@ RTP 是長期理論回報比例，不是購買功能的回本預測。需要分�
 看到購買功能時，依序確認：
 
 1. 原廠完整名稱是 Bonus Buy、Feature Buy、Buy Free Games，還是其他名稱？
-2. 它是否真的直接進入 Feature，還是只提高觸發機會？
+2. 它是直接進入 Feature、改變觸發機會，還是保證符號或起始狀態？保證範圍到哪裡？
 3. 價格乘的是 `stake`、`bet amount`、`player's bet`、`your bet` 或其他基準？
 4. 購買後進入哪個功能？是固定入口、隨機入口，還是可選多種方案？
 5. 初始回合與後續 retrigger 規則為何？
@@ -165,6 +214,7 @@ RTP 是長期理論回報比例，不是購買功能的回本預測。需要分�
 
 ## 官方資料來源
 
+- [Hacksaw Gaming：Densho](https://www.hacksawgaming.com/games/densho)：BonusHunt FeatureSpins 下的兩組成本與效果說明；各自的未知條件見文中案例與單款來源紀錄。
 - [Big Time Gaming：Bonanza](https://beta.bigtimegaming.com/games/bonanza)：`90x your stake`、12 Free Spins。
 - [Pragmatic Play：Gates of Olympus 1000](https://www.pragmaticplay.com/en/games/gates-of-olympus-1000/)：`100x the player's bet`、15 Free Games bonus round。
 - [Booming Games：Fish Tales: Double Catch Max Scatter](https://booming-games.com/news/yahdelyjxgjdh26r9i2b3dcj?t=Booming+Games+releases+Fish+Tales%3A+Double+Catch+Max+Scatter)：`Bonus Buy`、`Gold Bonus Buy`、`Mystery Bonus` 三個購買入口，以及 `75x`、`150x`、`250x bet amount`。

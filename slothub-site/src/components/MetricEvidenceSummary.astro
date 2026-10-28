@@ -1,0 +1,27 @@
+---
+import type { projectGameEvidence } from '../lib/game-metric-evidence.mjs';
+interface Props {
+  evidence: ReturnType<typeof projectGameEvidence>[number];
+  record?: boolean;
+}
+const { evidence, record = false } = Astro.props;
+---
+<details class="metric-evidence-summary" id={record ? `evidence-${evidence.id}` : undefined} data-evidence-id={evidence.id}>
+  <summary>{record ? `${evidence.label}｜逐項來源紀錄` : '查看定義與來源'}</summary>
+  <div class="metric-evidence-body">
+    <p><strong>來源：</strong>{evidence.source.publisher}〈{evidence.source.title}〉；{evidence.source.location}。</p>
+    <p><strong>原始標籤與說法：</strong>{evidence.originalLabel ?? '該段未另列正式模式名稱'}；{typeof evidence.originalValue === 'string' ? evidence.originalValue : Object.values(evidence.originalValue).join('；')}。</p>
+    <p><strong>解讀限制：</strong>{evidence.scopeNote || evidence.limitation}</p>
+    <p><strong>核對日期：</strong>{evidence.checkedAt}。文件版本：{evidence.source.documentVersion ?? '未取得'}。數字產生方式：未說明。</p>
+    <a href={evidence.source.url} target="_blank" rel="nofollow noopener noreferrer">查看原廠來源（新分頁）</a>
+    {!record && <a href={evidence.sourceHref}>查看完整來源紀錄</a>}
+  </div>
+</details>
+<style>
+  .metric-evidence-summary{min-width:0;font-size:.85rem;line-height:1.65;scroll-margin-top:100px}
+  summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:750;color:inherit}
+  summary:focus-visible,a:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+  .metric-evidence-body{padding:8px 0 16px;overflow-wrap:anywhere}
+  .metric-evidence-body p{margin:0 0 12px;font-size:inherit;color:inherit}
+  a{display:inline-flex;align-items:center;min-height:44px;margin-right:16px;color:inherit;text-decoration:underline}
+</style>

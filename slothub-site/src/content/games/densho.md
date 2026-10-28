@@ -22,6 +22,7 @@ paylines: 10 Paylines
 features: [free-spins, wild, multiplier, bonus-buy]
 bonusFeatures: [Wild Multiplier Reels, Progression Trackers, Free Spins, Super Free Spins, BonusHunt FeatureSpins]
 bonusBuy: true
+metricEvidenceIds: [densho-bonushunt-20261015, densho-symbol-guarantee-20261015]
 releaseDate: 2023-09-07
 image: { src: /assets/games/densho.png, alt: Densho 官方桌機作品圖, sourceUrl: https://www-live.hacksawgaming.com/casino_thumbnails/1348_hero_Device_Desktop.png, retrievedAt: 2026-09-03 }
 editorialFeatured: false
