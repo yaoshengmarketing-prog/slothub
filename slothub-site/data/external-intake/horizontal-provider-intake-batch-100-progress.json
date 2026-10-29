@@ -1,0 +1,22 @@
+{
+  "batch": 100,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "imported-awaiting-full-verification",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI Games official catalog after batch 99.",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English and Chinese names, aliases and gameId; five names and JILI IDs 581, 563, 547, 526 and 541 were absent from published Games.",
+  "records": [
+    { "order": 49, "gameId": "581", "name": "20 Blazing Clover", "slug": "20-blazing-clover", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/581?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 50, "gameId": "563", "name": "3 Lucky Baozhu", "slug": "3-lucky-baozhu", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/563?showGame=false", "demoStatus": "official-game-page", "fieldConflict": "Feature text says 243 Ways; Paylines field says 50 Lines. Structured paylines left missing." },
+    { "order": 51, "gameId": "547", "name": "3 Coin Golden OX", "slug": "3-coin-golden-ox", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/547?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 52, "gameId": "526", "name": "10 Sparkling Crown", "slug": "10-sparkling-crown", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/526?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 53, "gameId": "541", "name": "Money Pot DELUXE", "slug": "money-pot-deluxe", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/541?showGame=false", "demoStatus": "official-game-page" }
+  ],
+  "pendingBeforeCursor": "Orders 37-39, 41-43, 45 and 47 still need individual type classification; previous classification conflicts and cross-brand duplicate remain held.",
+  "nextCursor": "JILI official catalog order 37 of 277; finish skipped entries, then continue at order 54.",
+  "checkedAt": "2026-10-29"
+}
