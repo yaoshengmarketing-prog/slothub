@@ -1,22 +1,29 @@
 {
   "batch": 99,
   "recordedAt": "2026-10-29T00:00:00+08:00",
-  "state": "imported-awaiting-full-verification",
+  "state": "published-and-verified-live",
   "batchSize": 5,
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "Continue approved JILI Games official catalog after batch 98.",
   "catalog": "https://jiligames.com/games?showSlotGames=true",
   "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
   "dedupScope": "All Game Markdown filenames, Provider, English and Chinese names, aliases and gameId; five names and JILI IDs 573, 545, 505, 586, 622 were absent from published Games.",
   "records": [
-    { "order": 36, "gameId": "573", "name": "Fortune Coins 2", "slug": "fortune-coins-2", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/573?showGame=false", "demoStatus": "official-game-page" },
-    { "order": 40, "gameId": "545", "name": "Clover Coins 3x3", "slug": "clover-coins-3x3", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/545?showGame=false", "demoStatus": "official-game-page" },
-    { "order": 44, "gameId": "505", "name": "3 Witch's Lamp", "slug": "3-witchs-lamp", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/505?showGame=false", "demoStatus": "official-game-page", "fieldConflict": "Features says 50 Lines; Paylines field says 10 LINES. Structured paylines left missing." },
-    { "order": 46, "gameId": "586", "name": "Party Ape", "slug": "party-ape", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/586?showGame=false", "demoStatus": "official-game-page" },
-    { "order": 48, "gameId": "622", "name": "3 Coin Wild Tiger", "slug": "3-coin-wild-tiger", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/622?showGame=false", "demoStatus": "official-game-page" }
+    { "order": 36, "gameId": "573", "name": "Fortune Coins 2", "slug": "fortune-coins-2", "status": "published-live-verified", "officialPage": "https://jiligames.com/PlusIntro/573?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 40, "gameId": "545", "name": "Clover Coins 3x3", "slug": "clover-coins-3x3", "status": "published-live-verified", "officialPage": "https://jiligames.com/PlusIntro/545?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 44, "gameId": "505", "name": "3 Witch's Lamp", "slug": "3-witchs-lamp", "status": "published-live-verified", "officialPage": "https://jiligames.com/PlusIntro/505?showGame=false", "demoStatus": "official-game-page", "fieldConflict": "Features says 50 Lines; Paylines field says 10 LINES. Structured paylines left missing." },
+    { "order": 46, "gameId": "586", "name": "Party Ape", "slug": "party-ape", "status": "published-live-verified", "officialPage": "https://jiligames.com/PlusIntro/586?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 48, "gameId": "622", "name": "3 Coin Wild Tiger", "slug": "3-coin-wild-tiger", "status": "published-live-verified", "officialPage": "https://jiligames.com/PlusIntro/622?showGame=false", "demoStatus": "official-game-page" }
   ],
   "heldClassification": "Orders 7, 17, 19-20, 22-24, 26 and 35: official type says Slot, but title/features indicate Cash Out, Crash, Mines, Roulette or casino Big/Small play. Hold pending human product classification; not counted as exhausted or published.",
   "nextCursor": "JILI official catalog order 37 of 277; classify 37-39 and 41-43, 45, 47 before continuing at 49.",
-  "checkedAt": "2026-10-29"
+  "checkedAt": "2026-10-29",
+  "publication": {
+    "sha": "444028b0ee5de690877a652be832390ace07d682",
+    "githubActionsRun": 40871195050,
+    "cloudflareDeployment": "7852fee9-ef15-41c0-8ff4-3cd7512caa94",
+    "liveUrl": "https://7852fee9.slothub-4cu.pages.dev",
+    "liveReadback": "Five Game details, sources, official game-page entries, images, Search, Explorer, Compare, Provider, nofollow, noindex header, absent canonical and empty sitemap verified."
+  }
 }
