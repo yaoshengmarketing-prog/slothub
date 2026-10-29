@@ -24,7 +24,7 @@ const first = CASCADING_FRAMES[0];
           </g>)}
         </g>
       </svg>
-      <figcaption>本例只把「同一橫列三個同形符號」設為有效組合，所有補入符號皆已預設；不代表個別遊戲的判定規則。</figcaption>
+      <figcaption>示例判定：同一橫列三個同形符號；補入符號皆已預設。</figcaption>
     </figure>
     <div class="cascade-explanation">
       <ol class="cascade-steps" aria-label="連鎖消除的四個步驟">
@@ -138,7 +138,7 @@ const first = CASCADING_FRAMES[0];
   .cascade-board :global(.symbol-triangle) { fill: var(--navy); }
   .cascade-board :global(.symbol-diamond) { fill: var(--sky); stroke: var(--navy); stroke-width: 2; }
   figcaption { max-width: 360px; margin: 14px auto 0; color: var(--muted); font-size: .76rem; line-height: 1.65; }
-  .cascade-explanation { min-width: 0; }
+  .cascade-explanation { display: flex; flex-direction: column; min-width: 0; }
   .cascade-steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 0; margin: 0; list-style: none; }
   .cascade-steps li { display: flex; align-items: center; gap: 7px; min-width: 0; padding: 10px 8px; border: 1px solid #d8dde6; border-radius: 8px; font-size: .8rem; font-weight: 750; line-height: 1.5; }
   .cascade-steps li[aria-current="step"] { border-color: var(--navy); background: var(--navy); color: white; }
@@ -157,7 +157,7 @@ const first = CASCADING_FRAMES[0];
   .cascade-static { margin-top: 20px; padding-top: 15px; border-top: 1px solid #d8dde6; font-size: .8rem; line-height: 1.7; }
   .cascade-static summary { cursor: pointer; font-weight: 750; }
   .cascade-motion-note, .cascade-no-script { color: var(--muted); font-size: .78rem; line-height: 1.65; }
-  @media(max-width:620px) { .cascade-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; } .cascade-board { max-width: 280px; } .cascade-current { min-height: 0; } .cascade-steps li { font-size: .75rem; padding: 9px 6px; } .cascade-controls button { padding-inline: 12px; } }
+  @media(max-width:620px) { .cascade-layout { grid-template-columns: minmax(0, 1fr); gap: 16px; } .cascade-board { max-width: 280px; } .cascade-current { min-height: 0; } .cascade-steps li { font-size: .75rem; padding: 9px 6px; } .cascade-controls { order: -1; margin-bottom: 18px; } .cascade-controls button { padding-inline: 12px; } }
   @media(prefers-reduced-motion:reduce) { .cascade-board :global(.cascade-token) { transition: none; } }
   @media(forced-colors:active) { .cascade-demo, .cascade-cell, .cascade-steps li, .cascade-controls button, .cascade-outcome { border-color: CanvasText; background: Canvas; color: CanvasText; } .cascade-cell { fill: Canvas; stroke: CanvasText; } .cascade-board :global(.cascade-mark) { stroke: transparent; } .cascade-board :global(.cascade-token[data-marked="true"] .cascade-mark), .cascade-board :global(.cascade-token[data-added="true"] .cascade-mark) { fill: Canvas; stroke: Highlight; } .cascade-board :global(.symbol-circle), .cascade-board :global(.symbol-square), .cascade-board :global(.symbol-triangle), .cascade-board :global(.symbol-diamond) { fill: CanvasText; stroke: CanvasText; } }
 </style>
