@@ -1,20 +1,20 @@
 {
   "batch": 95,
   "recordedAt": "2026-10-29T00:00:00+08:00",
-  "state": "imported-awaiting-full-verification",
+  "state": "published-and-verified-live",
   "batchSize": 5,
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "JILI Games catalog after completed RSG intake; JILI is a common Taiwan operator provider and approved by the user.",
   "catalog": "https://jiligames.com/games?showSlotGames=true",
   "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
   "dedupScope": "All src/content/games Markdown filenames and frontmatter names, aliases, provider and gameId; existing JILI Games entries are Super Ace, Golden Empire and Money Coming. Storm of Seth 2: Awakening is an ATG Games title and is distinct by provider and official ID.",
   "records": [
-    { "order": 5, "gameId": "709", "name": "Lucky Caramelo", "slug": "lucky-caramelo", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/709?showGame=false", "demoStatus": "official-game-page" },
-    { "order": 6, "gameId": "705", "name": "Storm of Seth 2", "slug": "storm-of-seth-2-jili", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/705?showGame=false", "demoStatus": "official-game-page" },
-    { "order": 9, "gameId": "636", "name": "Joker Coins Expanded", "slug": "joker-coins-expanded", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/636?showGame=false", "demoStatus": "official-game-page" },
-    { "order": 10, "gameId": "635", "name": "Joker's Fortune", "slug": "jokers-fortune", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/635?showGame=false", "demoStatus": "official-game-page" },
-    { "order": 11, "gameId": "621", "name": "Crown of Fortune", "slug": "crown-of-fortune-jili", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/621?showGame=false", "demoStatus": "official-game-page" }
+    { "order": 5, "gameId": "709", "name": "Lucky Caramelo", "slug": "lucky-caramelo", "status": "published-live-verified", "officialPage": "https://jiligames.com/PlusIntro/709?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 6, "gameId": "705", "name": "Storm of Seth 2", "slug": "storm-of-seth-2-jili", "status": "published-live-verified", "officialPage": "https://jiligames.com/PlusIntro/705?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 9, "gameId": "636", "name": "Joker Coins Expanded", "slug": "joker-coins-expanded", "status": "published-live-verified", "officialPage": "https://jiligames.com/PlusIntro/636?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 10, "gameId": "635", "name": "Joker's Fortune", "slug": "jokers-fortune", "status": "published-live-verified", "officialPage": "https://jiligames.com/PlusIntro/635?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 11, "gameId": "621", "name": "Crown of Fortune", "slug": "crown-of-fortune-jili", "status": "published-live-verified", "officialPage": "https://jiligames.com/PlusIntro/621?showGame=false", "demoStatus": "official-game-page" }
   ],
   "excludedBeforeCursor": [
     { "order": 1, "name": "Chicken Dash Jackpot", "reason": "not individually checked; do not count as exhausted", "next": "Open Game Info and classify" },
@@ -25,5 +25,12 @@
     { "order": 8, "name": "Speed Andar Bahar", "reason": "not individually checked; do not count as exhausted", "next": "Open Game Info and classify" }
   ],
   "nextCursor": "JILI official catalog order 1 of 277; check skipped orders 1-3, 7-8, then continue from order 12; do not claim catalog exhaustion.",
-  "checkedAt": "2026-10-29"
+  "checkedAt": "2026-10-29",
+  "publication": {
+    "sha": "93e51dd669a15e2dced82ad96aa7e8792336c474",
+    "githubActionsRun": 40867399893,
+    "cloudflareDeployment": "8234e4ca-a62f-482b-8275-91eab05bece8",
+    "liveUrl": "https://8234e4ca.slothub-4cu.pages.dev",
+    "liveReadback": "Five Game details, official source and game-page entries, official images, Search, Explorer, Compare, Provider, outbound nofollow, X-Robots-Tag noindex, empty sitemap and absent canonical verified."
+  }
 }
