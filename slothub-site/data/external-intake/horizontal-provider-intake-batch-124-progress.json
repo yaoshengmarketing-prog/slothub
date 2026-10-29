@@ -1,0 +1,32 @@
+{
+  "batch": 124,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Resume first uncollected provider JDB Gaming from official catalog",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown filenames and content, Provider, English/Chinese names, aliases and known IDs; no Magic Ace or JDB 14088 hit. Magic Ace Wild Lock is a distinct official JDB catalog title.",
+  "records": [
+    {
+      "order": 11,
+      "name": "Magic Ace",
+      "slug": "magic-ace-jdb",
+      "provider": "jdb-gaming",
+      "status": "imported-pending-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/magic-ace",
+      "officialFacts": "Slot, RTP 96.47%, MEDIUM, 2100X, 1024 Ways, cascading reels, Joker Wilds, free spins, feature buy and extra bet; official Play href mType=14088 but Game ID is not explicitly labeled",
+      "image": {
+        "sourcePage": "https://www.spigo.com/games/jdb/magic-ace",
+        "sourceUrl": "https://assets.socino.com/game/magic-ace-66e93a311c73e24c12d4150e/magic-ace-thumb-en.webp",
+        "sha256": "d481b35ffb179909324468a3acf1169fbffe55003a0b8894c84a828ac5a945ba",
+        "visualCheck": "512x384 WebP visibly MAGIC ACE, jester and 2100X; browser comparison found same red-curtain/blue-star composition as JDB card art. Third-party platform artwork is attributed as such."
+      },
+      "demo": "JDB Play href redirected to age-gated homepage and was not published as direct Demo; Spigo exact same-game page identifies Magic Ace and JDB and is classified platform-game-page."
+    }
+  ],
+  "nextCursor": "JDB catalog card 12 PIGGY BANK, after returning to adopted uncollected-Provider-first cursor.",
+  "publication": null
+}

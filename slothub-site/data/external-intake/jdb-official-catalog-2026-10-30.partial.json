@@ -1,0 +1,183 @@
+{
+  "provider": "JDB Gaming",
+  "catalogUrl": "https://www.jdbgaming.com/en/games/slot",
+  "checkedAt": "2026-10-30",
+  "state": "catalog-complete-first-game-imported",
+  "browserRunId": "65885236-5fc5-4d53-a2c1-50b08c796da8",
+  "browserObservation": "46 lazy-loaded Slot cards; first 10 exact detail pages returned HTTP 200 in Browser Use cloud browser. Local direct request returned 403 Access Denied and official location-restriction page.",
+  "observedTotal": 46,
+  "capturedItems": 46,
+  "continuationSource": {
+    "catalog": "https://www.jdbgaming.com/en/games/slot",
+    "browserRunId": "32e1672e-d81f-45e3-9afd-cebea6ab8f8c",
+    "observedAt": "2026-10-30",
+    "scope": "Official catalog cards 11-46 in displayed order; individual exact pages and images remain unverified except card 11"
+  },
+  "continuationCards": [
+    "11|MAGIC ACE|magic-ace",
+    "12|PIGGY BANK|piggy-bank",
+    "13|FRUITY BONANZA COMBO|fruity-bonanza-combo",
+    "14|FRUITY BONANZA|fruity-bonanza",
+    "15|BULL TREASURE X-HUGE™|bull-treasure",
+    "16|SUPER NIUBI FORTUNE X-HUGE™|super-niubi-fortune-x-huge",
+    "17|SUPER NIUBI DELUXE|super-niubi-deluxe",
+    "18|GOLDEN GOAL|golden-goal",
+    "19|MONEY TREE - HYPER WILD|money-tree-hyper-wild",
+    "20|SAMBA JEWEL|samba-jewel",
+    "21|LUCKY PEARL|lucky-pearl",
+    "22|MAYA GOLD CRAZY|maya-gold-crazy",
+    "23|FISHIN' FEVER X-HUGE™|fishin-fever-x-huge",
+    "24|BLOSSOM OF WEALTH|blossom-of-wealth",
+    "25|TRUMP CARD|trump-card",
+    "26|RAGNAROK : THOR VS LOKI|ragnarok-thor-vs-loki",
+    "27|OLYMPIG|olympig",
+    "28|LUCKY ELEPHANT X-HUGE™|lucky-elephant-x-huge",
+    "29|FORTUNE JEWEL|fortune-jewel",
+    "30|KOI TRIO|koi-trio",
+    "31|POP POP CANDY 1000|pop-pop-candy-1000",
+    "32|OPEN SESAME MEGA|open-sesame-mega",
+    "33|OPEN SESAME|open-sesame",
+    "34|OPEN SESAME Ⅱ|open-sesame-ii",
+    "35|BIRDS PARTY|birds-party",
+    "36|BOOK OF MYSTERY|book-of-mystery",
+    "37|KONG|kong",
+    "38|MONEYBAGS MAN 2|moneybags-man-2",
+    "39|MONEYBAGS MAN|moneybags-man",
+    "40|GLAMOROUS GIRL|glamorous-girl",
+    "41|ELEMENTAL LINK FIRE|elemental-link-fire",
+    "42|CAISHEN COMING|caishen-coming",
+    "43|FORTUNE NEKO|fortune-neko",
+    "44|WINNING MASK|winning-mask",
+    "45|PROSPERITY TIGER|prosperity-tiger",
+    "46|MJOLNIR|mjolnir"
+  ],
+  "card11Evidence": {
+    "name": "MAGIC ACE",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/magic-ace",
+    "slotIdentity": "Page title Magic ACE-Slot-JDB Gaming; body Magic Ace by JDB; # SLOT and Game Type SLOT",
+    "officialDetailImage": "https://www.jdbgaming.com/upload_image/games/games_709ebd5afb9a5f8b14ae34bd5db3d278.jpg",
+    "officialCardImage": "https://www.jdbgaming.com/upload_image/gamesCoverOne/gamesCoverOne_f9261a520c5d6a1a97dd2484b6e0e2a3.jpg",
+    "playHrefAttribute": "lang=en&gameType=0&mType=14088",
+    "directImageRetrieval": "2026-10-30 elevated GET returned HTTP 200 text/html, title 403 Access Denied - JDB Gaming; no official image bytes locally",
+    "partnerPage": "https://www.spigo.com/games/jdb/magic-ace",
+    "partnerImage": "https://assets.socino.com/game/magic-ace-66e93a311c73e24c12d4150e/magic-ace-thumb-en.webp",
+    "partnerImageSha256": "d481b35ffb179909324468a3acf1169fbffe55003a0b8894c84a828ac5a945ba",
+    "partnerAttribution": "Spigo exact page names Magic Ace and JDB; downloaded 512x384 WebP is visibly Magic Ace and shares JDB official card's red-curtain/blue-star composition; Browser Use visual check dfcbddbd-e7ee-4cfd-8335-339396d55739",
+    "decision": "imported-pending-publication"
+  },
+  "items": [
+    {
+      "order": 1,
+      "name": "CYBER BOUNTY WILD LOCK",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/cyber-bounty-wild-lock",
+      "decision": "pending-individual-evidence",
+      "dedup": {
+        "scope": "All Game Markdown names and aliases across Providers; JDB Provider absent",
+        "hits": [],
+        "checkedAt": "2026-10-30"
+      }
+    },
+    {
+      "order": 2,
+      "name": "TREASURE BOWL X-HUGE™",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/treasure-bowl-x-huge",
+      "decision": "pending-individual-evidence",
+      "dedup": {
+        "scope": "All Game Markdown names and aliases across Providers; JDB Provider absent",
+        "hits": [],
+        "checkedAt": "2026-10-30"
+      }
+    },
+    {
+      "order": 3,
+      "name": "VOYAGE OF BLAST RAIDER X-LOCK™",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/voyage-of-blast-raider-x-lock",
+      "decision": "pending-individual-evidence",
+      "dedup": {
+        "scope": "All Game Markdown names and aliases across Providers; JDB Provider absent",
+        "hits": [],
+        "checkedAt": "2026-10-30"
+      }
+    },
+    {
+      "order": 4,
+      "name": "PINATA BON",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/pinata-bon",
+      "decision": "pending-individual-evidence",
+      "dedup": {
+        "scope": "All Game Markdown names and aliases across Providers; JDB Provider absent",
+        "hits": [],
+        "checkedAt": "2026-10-30"
+      }
+    },
+    {
+      "order": 5,
+      "name": "THE GOLDEN MARKHOR",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/the-golden-markhor",
+      "decision": "pending-individual-evidence",
+      "dedup": {
+        "scope": "All Game Markdown names and aliases across Providers; JDB Provider absent",
+        "hits": [],
+        "checkedAt": "2026-10-30"
+      }
+    },
+    {
+      "order": 6,
+      "name": "VOYAGE OF DARING QUEEN X-LOCK™",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/voyage-of-daring-queen-x-lock",
+      "decision": "pending-individual-evidence",
+      "dedup": {
+        "scope": "All Game Markdown names and aliases across Providers; JDB Provider absent",
+        "hits": [],
+        "checkedAt": "2026-10-30"
+      }
+    },
+    {
+      "order": 7,
+      "name": "VOYAGE OF CRYO GUNNER X-LOCK™",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/voyage-of-cryo-gunner-x-lock",
+      "decision": "pending-individual-evidence",
+      "dedup": {
+        "scope": "All Game Markdown names and aliases across Providers; JDB Provider absent",
+        "hits": [],
+        "checkedAt": "2026-10-30"
+      }
+    },
+    {
+      "order": 8,
+      "name": "BASTET",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/bastet",
+      "decision": "pending-individual-evidence",
+      "dedup": {
+        "scope": "All Game Markdown names and aliases across Providers; JDB Provider absent",
+        "hits": [],
+        "checkedAt": "2026-10-30"
+      }
+    },
+    {
+      "order": 9,
+      "name": "CYBER BOUNTY 4096",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/cyber-bounty-4096",
+      "decision": "pending-individual-evidence",
+      "dedup": {
+        "scope": "All Game Markdown names and aliases across Providers; JDB Provider absent",
+        "hits": [],
+        "checkedAt": "2026-10-30"
+      }
+    },
+    {
+      "order": 10,
+      "name": "MAGIC ACE WILD LOCK",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/magic-ace-wild-lock",
+      "decision": "pending-individual-evidence",
+      "dedup": {
+        "scope": "All Game Markdown names and aliases across Providers; JDB Provider absent",
+        "hits": [],
+        "checkedAt": "2026-10-30"
+      }
+    }
+  ],
+  "nextCursor": "Catalog positions 1-46 enumerated; card 11 MAGIC ACE imported with verified same-game Spigo image. Next individual JDB candidate is card 12 PIGGY BANK, subject to the adopted uncollected-Provider-first queue. No full-directory Markdown dedup has been completed for cards 12-46.",
+  "nextStep": "After MAGIC ACE single-game publication loop, continue the adopted uncollected-Provider cursor; if JDB depth is next authorized queue, inspect card 12 PIGGY BANK using exact first-party page, full dedup, attributable image and Demo check.",
+  "publishedCount": 0
+}
