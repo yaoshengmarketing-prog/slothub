@@ -1,0 +1,89 @@
+{
+  "batch": 86,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "full-verify-passed-awaiting-publication",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "RSG official catalog following Taiwan operator common provider discovery.",
+  "catalog": "https://www.rsg-games.com/zh-TW/games.html",
+  "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown checked by RSG Provider, Chinese name, English alias, gameId and filename before capture; 龍王2 is a separate ID/name and was not treated as duplicate of 龍王.",
+  "records": [
+    {
+      "order": 48,
+      "provider": "RSG",
+      "name": "龍王",
+      "gameId": "30",
+      "slug": "dragon-king-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_30.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=30&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 49,
+      "provider": "RSG",
+      "name": "提金派對",
+      "gameId": "31",
+      "slug": "tiki-party-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_31.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=31&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 50,
+      "provider": "RSG",
+      "name": "礦工哥布林",
+      "gameId": "32",
+      "slug": "goblin-miner-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_32.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=32&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 51,
+      "provider": "RSG",
+      "name": "幸運拉霸",
+      "gameId": "33",
+      "slug": "lucky-bar-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_33.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=33&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 52,
+      "provider": "RSG",
+      "name": "非洲",
+      "gameId": "34",
+      "slug": "africa-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_34.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=34&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    }
+  ],
+  "nextCursor": "RSG official catalog order 53 gameid 35 巫師商店; 37 pending Slot after this batch."
+}

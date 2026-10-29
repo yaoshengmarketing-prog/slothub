@@ -413,7 +413,7 @@
     },
     {
       "order": 43,
-      "status": "captured-batch-85",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_26.html",
       "nameZhHant": "泰好運",
       "gameId": "26",
@@ -424,7 +424,7 @@
     },
     {
       "order": 44,
-      "status": "captured-batch-85",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_27.html",
       "nameZhHant": "財神到",
       "gameId": "27",
@@ -435,7 +435,7 @@
     },
     {
       "order": 45,
-      "status": "captured-batch-85",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_28.html",
       "nameZhHant": "行運一條龍",
       "gameId": "28",
@@ -446,7 +446,7 @@
     },
     {
       "order": 46,
-      "status": "captured-batch-85",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_29.html",
       "nameZhHant": "HUSA",
       "gameId": "29",
@@ -457,7 +457,7 @@
     },
     {
       "order": 47,
-      "status": "captured-batch-85",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_3.html",
       "nameZhHant": "皇家777",
       "gameId": "3",
@@ -468,48 +468,58 @@
     },
     {
       "order": 48,
-      "status": "pending",
+      "status": "captured-batch-86",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_30.html",
       "nameZhHant": "龍王",
       "gameId": "30",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "dragon-king-rsg",
+      "decision": "Official exact page confirms Slot identity, rule and max multiplier; direct demo visually opened to reels/spin."
     },
     {
       "order": 49,
-      "status": "pending",
+      "status": "captured-batch-86",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_31.html",
       "nameZhHant": "提金派對",
       "gameId": "31",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "tiki-party-rsg",
+      "decision": "Official exact page confirms Slot identity, rule and max multiplier; direct demo visually opened to reels/spin."
     },
     {
       "order": 50,
-      "status": "pending",
+      "status": "captured-batch-86",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_32.html",
       "nameZhHant": "礦工哥布林",
       "gameId": "32",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "goblin-miner-rsg",
+      "decision": "Official exact page confirms Slot identity, rule and max multiplier; direct demo visually opened to reels/spin."
     },
     {
       "order": 51,
-      "status": "pending",
+      "status": "captured-batch-86",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_33.html",
       "nameZhHant": "幸運拉霸",
       "gameId": "33",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "lucky-bar-rsg",
+      "decision": "Official exact page confirms Slot identity, rule and max multiplier; direct demo visually opened to reels/spin."
     },
     {
       "order": 52,
-      "status": "pending",
+      "status": "captured-batch-86",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_34.html",
       "nameZhHant": "非洲",
       "gameId": "34",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "africa-rsg",
+      "decision": "Official exact page confirms Slot identity, rule and max multiplier; direct demo visually opened to reels/spin."
     },
     {
       "order": 53,
@@ -850,5 +860,5 @@
   "pendingAtSnapshot": 62,
   "checkedAt": "2026-10-29",
   "slotCount": 87,
-  "cursor": "Catalog order 47, gameid 3; next order 48 gameid 30 龍王"
+  "cursor": "Catalog order 52, gameid 34; next order 53 gameid 35 巫師商店"
 }
