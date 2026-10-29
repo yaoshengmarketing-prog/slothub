@@ -1,10 +1,10 @@
 {
   "batch": 136,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 23",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Fishin' Fever X-Huge™",
       "slug": "fishin-fever-x-huge-jdb",
       "provider": "jdb-gaming",
-      "status": "imported-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/fishin-fever-x-huge",
       "officialFacts": "Official direct browser detail: Slot, RTP 96.47%, LOW volatility, Maximum Win 1800X, 1 Line, release year 2025; X-Huge Giant Symbol, Two-Stage Free Game, Feature Buy with guaranteed WILD triple-line combo, Extra Bet.",
       "sourceConflict": "Slots Launch overview describes 5-reel/3-row multiple paylines and X-Huge Jackpot, unsupported by official one-line specification and official features. Published game uses official fields only.",
@@ -29,5 +29,14 @@
     }
   ],
   "nextCursor": "JDB catalog card 24 BLOSSOM OF WEALTH",
-  "publication": null
+  "publication": {
+    "commit": "2a7f5c48b5e81f74084110342b8a5eab990cbdd6",
+    "githubRun": 40944809301,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "38201f70-41fc-46e7-889e-b6e62cd49c13",
+    "cloudflareUrl": "https://38201f70.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, image and sitemap HTTP 200; official and exact Slots Launch platform URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
