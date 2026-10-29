@@ -1,0 +1,26 @@
+{
+  "batch": 102,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "imported-awaiting-full-verification",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI Games official catalog after batch 101.",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English and Chinese names, aliases and gameId; JILI IDs 447, 605, 408, 543 and 518 had no matching published Game by provider/name/ID.",
+  "records": [
+    { "order": 61, "gameId": "447", "name": "Crystal 777 DELUXE", "slug": "crystal-777-deluxe", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/447?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 63, "gameId": "605", "name": "Jackpot Joker FEVER", "slug": "jackpot-joker-fever", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/605?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 66, "gameId": "408", "name": "Safari King", "slug": "safari-king", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/408?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 69, "gameId": "543", "name": "Money Coming 2", "slug": "money-coming-2", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/543?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 70, "gameId": "518", "name": "Circus Joker 4096", "slug": "circus-joker-4096", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/518?showGame=false", "demoStatus": "official-game-page" }
+  ],
+  "excludedNonSlot": [
+    { "order": 56, "gameId": "736", "reason": "JILI Game Info type Fish and Arcade" },
+    { "order": 59, "gameId": "667", "reason": "JILI Game Info type Fish and Arcade" }
+  ],
+  "heldClassification": { "order": 58, "gameId": "604", "reason": "JILI type says Slot but Drop Ball gameplay describes predicting ball landing in betting zones; hold for human classification." },
+  "nextCursor": "JILI official catalog order 62 of 277; check skipped 62, 64-65, 67-68, then continue at 71.",
+  "checkedAt": "2026-10-29"
+}
