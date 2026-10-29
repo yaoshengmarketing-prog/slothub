@@ -1,0 +1,23 @@
+{
+  "batch": 97,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "imported-awaiting-full-verification",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI Games official catalog after batch 96.",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English name, Chinese name, aliases and gameId; JILI ID 664 Lucky Jaguar 500 matched published TaDa Gaming record by both English name and ID and was excluded without altering the existing record. IDs 812, 623, 598, 597 and 594 are new distinct titles in this batch.",
+  "records": [
+    { "order": 18, "gameId": "812", "name": "Fortune Gems Legend", "slug": "fortune-gems-legend", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/812?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 25, "gameId": "623", "name": "Coin of Lightning", "slug": "coin-of-lightning", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/623?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 27, "gameId": "598", "name": "Lucky Macaw", "slug": "lucky-macaw", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/598?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 28, "gameId": "597", "name": "Supernova", "slug": "supernova-jili", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/597?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 29, "gameId": "594", "name": "Fortune Hook Boom", "slug": "fortune-hook-boom", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/594?showGame=false", "demoStatus": "official-game-page" }
+  ],
+  "excludedDuplicate": { "order": 21, "gameId": "664", "name": "Lucky Jaguar 500", "reason": "Published TaDa Gaming Lucky Jaguar 500 has the same English name and gameId 664; preserve existing record and hold cross-brand ownership." },
+  "pendingBeforeCursor": "Official catalog orders 17, 19-20, 22-24 and 26 have not been individually classified; order 7 Cash balloon remains a Slot-label/crash-description conflict. These are not exhausted.",
+  "nextCursor": "JILI official catalog order 17 of 277; check skipped pending entries, then continue from order 30.",
+  "checkedAt": "2026-10-29"
+}
