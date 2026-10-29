@@ -4,7 +4,7 @@
   "checkedAt": "2026-10-29",
   "scope": "ALL GAMES in source order; catalogType 1 is a discovery hint only; each Slot requires individual Game Info classification",
   "itemCount": 277,
-  "cursor": "Batch 115 captured orders 200,201,205,208,210; orders 202-204,206,207,209 excluded as non-Slot with official types. Next order 211.",
+  "cursor": "Batch 116 captured orders 211-213,215,217; orders 214,216 excluded as non-Slot with official types. Next order 218.",
   "items": [
     {
       "decision": "excluded-non-slot",
@@ -1791,7 +1791,7 @@
       "name": "Thor X"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "230",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 211,
@@ -1799,7 +1799,7 @@
       "name": "Cricket Sah 75"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "126",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 212,
@@ -1807,7 +1807,7 @@
       "name": "Bone Fortune"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "108",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 213,
@@ -1815,15 +1815,16 @@
       "name": "Magic Lamp"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "148",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 214,
       "catalogType": "5",
-      "name": "Bingo Carnaval"
+      "name": "Bingo Carnaval",
+      "reason": "Official Bingo"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "40",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 215,
@@ -1831,15 +1832,16 @@
       "name": "Crazy FaFaFa"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "42",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 216,
       "catalogType": "3",
-      "name": "Dinosaur Tycoon"
+      "name": "Dinosaur Tycoon",
+      "reason": "Official Fishing"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "101",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 217,

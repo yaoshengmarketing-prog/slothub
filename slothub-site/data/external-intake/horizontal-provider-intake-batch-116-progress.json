@@ -1,0 +1,73 @@
+{
+  "batch": 116,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "verified-pending-publication",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI official catalog after batch 115",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and Game ID. No same JILI records for IDs 230,126,108,40,101; same JILI IDs and names absent from existing Game Markdown; RSG MEDUSA is a separate Provider and game.",
+  "records": [
+    {
+      "order": 211,
+      "gameId": "230",
+      "name": "Cricket Sah 75",
+      "slug": "cricket-sah-75-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/230?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 212,
+      "gameId": "126",
+      "name": "Bone Fortune",
+      "slug": "bone-fortune-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/126?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 213,
+      "gameId": "108",
+      "name": "Magic Lamp",
+      "slug": "magic-lamp-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/108?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 215,
+      "gameId": "40",
+      "name": "Crazy FaFaFa",
+      "slug": "crazy-fafafa-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/40?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 217,
+      "gameId": "101",
+      "name": "MEDUSA",
+      "slug": "medusa-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/101?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "excluded": [
+    {
+      "order": 214,
+      "gameId": "148",
+      "reason": "Official Bingo"
+    },
+    {
+      "order": 216,
+      "gameId": "42",
+      "reason": "Official Fishing"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 218 of 277.",
+  "checkedAt": "2026-10-30"
+}
