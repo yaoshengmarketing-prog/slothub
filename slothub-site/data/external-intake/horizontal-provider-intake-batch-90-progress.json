@@ -1,0 +1,98 @@
+{
+  "batch": 90,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "captured-awaiting-full-verify",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "RSG official catalog following Taiwan operator common provider discovery.",
+  "catalog": "https://www.rsg-games.com/zh-TW/games.html",
+  "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown checked by RSG Provider, Chinese name, English alias, gameId and filename before capture; IDs 49, 5, 50, 51, 53 absent.",
+  "excluded": [
+    {
+      "order": 71,
+      "gameId": "5001",
+      "name": "皇冠5PK",
+      "reason": "Official detail labels 老虎機, but 5PK/card branding suggests poker; TryGame showed Connection failed. Slot gameplay not established; first-party rules or human taxonomy decision needed.",
+      "status": "source-conflict-hold"
+    }
+  ],
+  "records": [
+    {
+      "order": 68,
+      "provider": "RSG",
+      "name": "海神",
+      "gameId": "49",
+      "slug": "poseidon-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_49.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=49&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 69,
+      "provider": "RSG",
+      "name": "金雞報喜",
+      "gameId": "5",
+      "slug": "gold-chicken-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_5.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=5&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 70,
+      "provider": "RSG",
+      "name": "跳跳獅",
+      "gameId": "50",
+      "slug": "dancing-lion-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_50.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=50&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 72,
+      "provider": "RSG",
+      "name": "美杜莎",
+      "gameId": "51",
+      "slug": "medusa-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_51.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=51&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 73,
+      "provider": "RSG",
+      "name": "霓虹圓",
+      "gameId": "53",
+      "slug": "neon-circle-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_53.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=53&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    }
+  ],
+  "nextCursor": "RSG official catalog order 74 gameid 56 西部牛仔; 16 pending Slot and one classification hold after this batch."
+}

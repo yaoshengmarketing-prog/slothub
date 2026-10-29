@@ -633,7 +633,7 @@
     },
     {
       "order": 63,
-      "status": "captured-batch-89",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_44.html",
       "nameZhHant": "七起來",
       "gameId": "44",
@@ -644,7 +644,7 @@
     },
     {
       "order": 64,
-      "status": "captured-batch-89",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_45.html",
       "nameZhHant": "女忍者",
       "gameId": "45",
@@ -655,7 +655,7 @@
     },
     {
       "order": 65,
-      "status": "captured-batch-89",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_46.html",
       "nameZhHant": "忍者",
       "gameId": "46",
@@ -666,7 +666,7 @@
     },
     {
       "order": 66,
-      "status": "captured-batch-89",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_47.html",
       "nameZhHant": "果凍27",
       "gameId": "47",
@@ -677,7 +677,7 @@
     },
     {
       "order": 67,
-      "status": "captured-batch-89",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_48.html",
       "nameZhHant": "暴怒棕熊",
       "gameId": "48",
@@ -688,57 +688,69 @@
     },
     {
       "order": 68,
-      "status": "pending",
+      "status": "captured-batch-90",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_49.html",
       "nameZhHant": "海神",
       "gameId": "49",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "poseidon-rsg",
+      "decision": "Official game page, slot type, metrics, image and playable demo visually checked 2026-10-29."
     },
     {
       "order": 69,
-      "status": "pending",
+      "status": "captured-batch-90",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_5.html",
       "nameZhHant": "金雞報喜",
       "gameId": "5",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "gold-chicken-rsg",
+      "decision": "Official game page, slot type, metrics, image and playable demo visually checked 2026-10-29."
     },
     {
       "order": 70,
-      "status": "pending",
+      "status": "captured-batch-90",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_50.html",
       "nameZhHant": "跳跳獅",
       "gameId": "50",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "dancing-lion-rsg",
+      "decision": "Official game page, slot type, metrics, image and playable demo visually checked 2026-10-29."
     },
     {
       "order": 71,
-      "status": "pending",
+      "status": "source-conflict-hold",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_5001.html",
       "nameZhHant": "皇冠5PK",
       "gameId": "5001",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "decision": "Official detail labels 老虎機 but 5PK/card branding suggests poker; TryGame displayed Connection failed, so Slot gameplay cannot be verified. Hold pending first-party rules or human taxonomy decision; do not count as publishable Slot.",
+      "checkedAt": "2026-10-29"
     },
     {
       "order": 72,
-      "status": "pending",
+      "status": "captured-batch-90",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_51.html",
       "nameZhHant": "美杜莎",
       "gameId": "51",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "medusa-rsg",
+      "decision": "Official game page, slot type, metrics, image and playable demo visually checked 2026-10-29."
     },
     {
       "order": 73,
-      "status": "pending",
+      "status": "captured-batch-90",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_53.html",
       "nameZhHant": "霓虹圓",
       "gameId": "53",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "neon-circle-rsg",
+      "decision": "Official game page, slot type, metrics, image and playable demo visually checked 2026-10-29."
     },
     {
       "order": 74,
@@ -890,5 +902,5 @@
   "pendingAtSnapshot": 62,
   "checkedAt": "2026-10-29",
   "slotCount": 87,
-  "cursor": "Catalog order 67, gameid 48; next order 68 gameid 49 海神"
+  "cursor": "Catalog order 73, gameid 53; next order 74 gameid 56 西部牛仔"
 }
