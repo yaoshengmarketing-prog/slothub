@@ -4,7 +4,7 @@
   "checkedAt": "2026-10-29",
   "scope": "ALL GAMES in source order; catalogType 1 is a discovery hint only; each Slot requires individual Game Info classification",
   "itemCount": 277,
-  "cursor": "Batch 108 captured orders 116,118,120-121,124; 117 and 123 excluded by official non-Slot type; 119 and 122 held for Slot-label/dice or turret conflict. Next order 125.",
+  "cursor": "Batch 109 captured orders 126-130; order 125 excluded official Table and Card/Baccarat. Next order 131.",
   "items": [
     {
       "decision": "excluded-non-slot",
@@ -1052,15 +1052,16 @@
       "name": "The Pig House"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "262",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 125,
       "catalogType": "2",
-      "name": "Speed Baccarat"
+      "name": "Speed Baccarat",
+      "reason": "Official Game Info type Table and Card; Baccarat."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-109",
       "gameId": "299",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 126,
@@ -1068,7 +1069,7 @@
       "name": "Witches Night"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-109",
       "gameId": "399",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 127,
@@ -1076,7 +1077,7 @@
       "name": "3 Coin Treasures"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-109",
       "gameId": "300",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 128,
@@ -1084,7 +1085,7 @@
       "name": "Fortune Gems 3"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-109",
       "gameId": "301",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 129,
@@ -1092,7 +1093,7 @@
       "name": "Jackpot Joker"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-109",
       "gameId": "252",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 130,
