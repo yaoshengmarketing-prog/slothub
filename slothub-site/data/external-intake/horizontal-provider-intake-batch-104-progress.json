@@ -1,0 +1,95 @@
+{
+  "batch": 104,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "verified-pending-publication",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI official catalog after batch 103",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and gameId; no existing JILI same-game record for IDs 461,472,523,409,517. Fortune Coins 2 is a distinct sequel.",
+  "records": [
+    {
+      "order": 78,
+      "gameId": "461",
+      "name": "Pirate Queen 2",
+      "slug": "pirate-queen-2",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/461?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 80,
+      "gameId": "472",
+      "name": "3 Coin Treasures 2",
+      "slug": "3-coin-treasures-2",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/472?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 81,
+      "gameId": "523",
+      "name": "Fortune Coins",
+      "slug": "fortune-coins",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/523?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 82,
+      "gameId": "409",
+      "name": "Super Ace Joker",
+      "slug": "super-ace-joker",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/409?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 86,
+      "gameId": "517",
+      "name": "Roma X Deluxe",
+      "slug": "roma-x-deluxe",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/517?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "heldClassification": [
+    {
+      "order": 75,
+      "gameId": "554",
+      "reason": "Official Slot label, reward modes and zero paylines; reel/slot play unproven"
+    },
+    {
+      "order": 76,
+      "gameId": "479",
+      "reason": "Official Slot label but dice-color betting"
+    },
+    {
+      "order": 79,
+      "gameId": "419",
+      "reason": "Official Slot label but football team outcome betting"
+    }
+  ],
+  "excludedNonSlot": [
+    {
+      "order": 83,
+      "gameId": "327",
+      "reason": "Official Crash"
+    },
+    {
+      "order": 84,
+      "gameId": "274",
+      "reason": "Official Bingo"
+    },
+    {
+      "order": 85,
+      "gameId": "273",
+      "reason": "Official Bingo"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 87 of 277.",
+  "checkedAt": "2026-10-29"
+}
