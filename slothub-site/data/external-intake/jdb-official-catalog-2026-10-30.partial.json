@@ -2,7 +2,7 @@
   "provider": "JDB Gaming",
   "catalogUrl": "https://www.jdbgaming.com/en/games/slot",
   "checkedAt": "2026-10-30",
-  "state": "catalog-complete-first-game-imported",
+  "state": "catalog-complete-first-game-published",
   "browserRunId": "65885236-5fc5-4d53-a2c1-50b08c796da8",
   "browserObservation": "46 lazy-loaded Slot cards; first 10 exact detail pages returned HTTP 200 in Browser Use cloud browser. Local direct request returned 403 Access Denied and official location-restriction page.",
   "observedTotal": 46,
@@ -63,6 +63,16 @@
     "partnerImage": "https://assets.socino.com/game/magic-ace-66e93a311c73e24c12d4150e/magic-ace-thumb-en.webp",
     "partnerImageSha256": "d481b35ffb179909324468a3acf1169fbffe55003a0b8894c84a828ac5a945ba",
     "partnerAttribution": "Spigo exact page names Magic Ace and JDB; downloaded 512x384 WebP is visibly Magic Ace and shares JDB official card's red-curtain/blue-star composition; Browser Use visual check dfcbddbd-e7ee-4cfd-8335-339396d55739",
+    "decision": "published-live-verified"
+  },
+  "card12Evidence": {
+    "name": "PIGGY BANK",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/piggy-bank",
+    "officialFacts": "Slot; low volatility; 1 Line; up to 13000X; Feature Buy, Bonus Wheels and Respins",
+    "partnerPage": "https://www.spigo.com/games/jdb/piggy-bank",
+    "partnerImage": "https://assets.socino.com/game/piggy-bank-66e939e91c73e24c12d3f04c/piggy-bank-thumb-en.webp",
+    "partnerImageSha256": "0b0a4e9f33e0b18c749e8e4e0dbb9daba52101438a282a32a8a71f6464ceb3c9",
+    "partnerAttribution": "Spigo exact page names Piggy Bank and JDB; visually inspected valid WebP names Piggy Bank and 13000X, matching JDB official page",
     "decision": "imported-pending-publication"
   },
   "items": [
@@ -177,7 +187,7 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; card 11 MAGIC ACE imported with verified same-game Spigo image. Next individual JDB candidate is card 12 PIGGY BANK, subject to the adopted uncollected-Provider-first queue. No full-directory Markdown dedup has been completed for cards 12-46.",
-  "nextStep": "After MAGIC ACE single-game publication loop, continue the adopted uncollected-Provider cursor; if JDB depth is next authorized queue, inspect card 12 PIGGY BANK using exact first-party page, full dedup, attributable image and Demo check.",
-  "publishedCount": 0
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11 MAGIC ACE and 12 PIGGY BANK imported. Next individual candidate is card 13 FRUITY BONANZA COMBO. No full-directory Markdown dedup has been completed for cards 13-46.",
+  "nextStep": "After PIGGY BANK single-game publication loop, continue documented JDB catalog at card 13, preserving exact first-party page, full dedup, attributable image and Demo checks.",
+  "publishedCount": 1
 }

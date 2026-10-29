@@ -1,0 +1,32 @@
+{
+  "batch": 125,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog after first verified JDB publication",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown files and content, Provider, English/Chinese names, aliases and known IDs; no existing Piggy Bank record. Piggy Bank TapTap is a distinct arcade title and was not conflated.",
+  "records": [
+    {
+      "order": 12,
+      "name": "Piggy Bank",
+      "slug": "piggy-bank-jdb",
+      "provider": "jdb-gaming",
+      "status": "imported-pending-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/piggy-bank",
+      "officialFacts": "Slot, low volatility, 1 Line, maximum 13000X, number symbols on R1-R3, Feature Buy, Bonus Wheels and Respins; no unsupported RTP or Game ID recorded",
+      "image": {
+        "sourcePage": "https://www.spigo.com/games/jdb/piggy-bank",
+        "sourceUrl": "https://assets.socino.com/game/piggy-bank-66e939e91c73e24c12d3f04c/piggy-bank-thumb-en.webp",
+        "sha256": "0b0a4e9f33e0b18c749e8e4e0dbb9daba52101438a282a32a8a71f6464ceb3c9",
+        "visualCheck": "Downloaded valid WebP; visibly PIGGY BANK, golden pig and 13000X; exact Spigo page names Piggy Bank and JDB. Third-party platform artwork attributed as such."
+      },
+      "demo": "Spigo exact same-game page identifies Piggy Bank and JDB and is classified platform-game-page; no direct official Demo asserted."
+    }
+  ],
+  "nextCursor": "JDB catalog card 13 FRUITY BONANZA COMBO",
+  "publication": null
+}
