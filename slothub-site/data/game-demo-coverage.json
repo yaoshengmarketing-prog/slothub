@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 703,
+  "gameCount": 704,
   "providerCount": 371,
-  "sourcePageCount": 1272,
+  "sourcePageCount": 1274,
   "counts": {
     "access-restricted": 4,
-    "available": 608,
+    "available": 609,
     "not-verified": 91
   },
   "rules": {
@@ -17,6 +17,38 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fortune-jewel-jdb",
+      "name": "Fortune Jewel",
+      "provider": "jdb-gaming",
+      "status": "available",
+      "url": "https://slotslaunch.com/jdb-gaming/fortune-jewel",
+      "accessType": "platform-game-page",
+      "platformName": "Slots Launch",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "Slots Launch exact page and image identify Fortune Jewel and JDB Gaming; official English/CN detail supplies math and mechanisms.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/fortune-jewel",
+          "httpStatus": 200,
+          "notes": "Official direct browser inspection run ab0298cc-7ea1-4d63-940e-bbaf3f232728"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/cn/games/slot/fortune-jewel",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/fortune-jewel",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://assets.slotslaunch.com/31102/fortune-jewel.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "lucky-elephant-x-huge-jdb",
       "name": "Lucky Elephant X-Huge™",

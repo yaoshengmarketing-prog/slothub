@@ -1,10 +1,10 @@
 {
   "batch": 141,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 28",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Lucky Elephant X-Huge™",
       "slug": "lucky-elephant-x-huge-jdb",
       "provider": "jdb-gaming",
-      "status": "imported-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/lucky-elephant-x-huge",
       "officialFacts": "Official direct browser detail: Slot, RTP 96.47%, LOW volatility, Maximum Win 1800X, official Lines/Ways field exactly 1 Way, release year 2025; feature/intro calls it a one-line format, X-Huge giant symbol instant win, two-level Free Game, Feature Buy unlocks 3-reel WILD combo.",
       "wordingNote": "Official specification says 1 Way while introduction says one-line; both quoted without normalizing the specification field.",
@@ -29,5 +29,14 @@
     }
   ],
   "nextCursor": "JDB catalog card 29 FORTUNE JEWEL",
-  "publication": null
+  "publication": {
+    "commit": "1880b7978eb7bb33c4a0360699f79d9f79557e06",
+    "githubRun": 40948294158,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "07543f3d-83c6-439c-8fc1-516f74ea87ca",
+    "cloudflareUrl": "https://07543f3d.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, image and sitemap HTTP 200; official and exact Slots Launch platform URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

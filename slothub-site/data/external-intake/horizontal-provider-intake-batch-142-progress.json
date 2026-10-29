@@ -1,0 +1,33 @@
+{
+  "batch": 142,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 29",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; no Fortune Jewel or 幸运宝石 record.",
+  "records": [
+    {
+      "order": 29,
+      "name": "Fortune Jewel",
+      "slug": "fortune-jewel-jdb",
+      "provider": "jdb-gaming",
+      "status": "imported-pending-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/fortune-jewel",
+      "officialFacts": "Official direct browser and indexed CN detail: Slot, RTP 96%, MEDIUM volatility, Maximum Win 775X, 5 Lines, release year 2024; multiplier wheel applies to screen win, BOOST RESPIN, EXTRA BET guarantees multiplier at least 2X.",
+      "sourceConflict": "Slots Launch calls volatility Low-Medium or Low and Aztec theme, while official page labels MEDIUM and wealth/mythology; published game uses official data. Partner page release date is in 2024, consistent at year level.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/fortune-jewel",
+        "sourceUrl": "https://assets.slotslaunch.com/31102/fortune-jewel.jpg",
+        "sha256": "3a40567f3b6b04219f7a107b71a09e2957820a3de3173daf44bea1e7423f108a",
+        "visualCheck": "Slots Launch exact page identifies Fortune Jewel by JDB Gaming; downloaded valid JPEG visibly displays FORTUNE JEWEL title and gem artwork."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 30 KOI TRIO",
+  "publication": null
+}
