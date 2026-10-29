@@ -1,0 +1,32 @@
+{
+  "batch": 133,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 20",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown names and aliases; Samba Jewel and official Chinese 宝石嘉年华 absent.",
+  "records": [
+    {
+      "order": 20,
+      "name": "Samba Jewel",
+      "slug": "samba-jewel-jdb",
+      "provider": "jdb-gaming",
+      "status": "imported-pending-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/samba-jewel",
+      "officialFacts": "Official direct browser and PT exact page: Slot, RTP 96.05%, LOW volatility, Maximum Win 775X, 5 Lines, Release Year 2026; line win random multiplier up to 30X, Extra Bet guarantees at least 2X on wins, stacked Wilds can cover reels.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/samba-jewel",
+        "sourceUrl": "https://assets.slotslaunch.com/108680/samba-jewel.jpg",
+        "sha256": "2c1e77fa390b92cba278216d1894a4897783e00e5b8ddce8af961e21e42b2c9f",
+        "visualCheck": "Slots Launch exact page identifies Samba Jewel and JDB Gaming; downloaded valid JPEG visibly displays SAMBA JEWEL title with carnival cat/jewel artwork."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 21 LUCKY PEARL",
+  "publication": null
+}
