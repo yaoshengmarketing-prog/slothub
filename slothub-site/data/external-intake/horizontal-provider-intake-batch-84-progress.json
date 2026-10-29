@@ -1,0 +1,89 @@
+{
+  "batch": 84,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "full-verify-passed-awaiting-publication",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "RSG official catalog following Taiwan operator common provider discovery.",
+  "catalog": "https://www.rsg-games.com/zh-TW/games.html",
+  "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown checked by RSG Provider, Chinese name, English alias, gameId and filename before capture; IDs 2, 2001, 21, 23, 25 absent.",
+  "records": [
+    {
+      "order": 38,
+      "provider": "RSG",
+      "name": "魔法石",
+      "gameId": "2",
+      "slug": "magic-gem-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_2.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=2&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 39,
+      "provider": "RSG",
+      "name": "能量外星人",
+      "gameId": "2001",
+      "slug": "energy-alien-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_2001.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=2001&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 40,
+      "provider": "RSG",
+      "name": "72變",
+      "gameId": "21",
+      "slug": "seventy-two-changes-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_21.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=21&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 41,
+      "provider": "RSG",
+      "name": "人魚傳說",
+      "gameId": "23",
+      "slug": "mermaid-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_23.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=23&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 42,
+      "provider": "RSG",
+      "name": "竹林熊貓",
+      "gameId": "25",
+      "slug": "wild-panda-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_25.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=25&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    }
+  ],
+  "nextCursor": "RSG official catalog order 43 gameid 26 泰好運; 47 pending Slot after this batch."
+}
