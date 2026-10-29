@@ -1,0 +1,32 @@
+{
+  "batch": 128,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 15",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown files and content, Provider, English/Chinese names and aliases; no existing Bull Treasure record. Distinct from other JDB X-Huge titles.",
+  "records": [
+    {
+      "order": 15,
+      "name": "Bull Treasure X-Huge",
+      "slug": "bull-treasure-x-huge-jdb",
+      "provider": "jdb-gaming",
+      "status": "imported-pending-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
+      "officialFacts": "Slot; jungle/Billy the Bull; medium volatility; 5 Lines; max win 2500X; random or Feature Buy Bull Flip; 3 Wilds trigger Bull Mega Flip. No RTP or unverified 3x3 geometry recorded.",
+      "image": {
+        "sourcePage": "https://www.retrobet.com/games/all/jdb",
+        "sourceUrl": "https://netcontent.cc/retrobet/i/s6/jdb/BullTreasure.webp",
+        "sha256": "b121103cb217cf2e34efb93a46d8b4097cc50cf3c899809a41d62dc5f546a2b7",
+        "visualCheck": "Retrobet JDB catalog search index displays Bull Treasure X-Huge; downloaded valid 429x575 WebP visibly prints BULL TREASURE X-HUGE and JDB. Catalog direct GET returned 403; image GET succeeded. Third-party source attributed as such."
+      },
+      "demo": "not-verified; official Play destination not validated; Spigo shorter-title page uses conflicting feature terminology and is not assumed same version"
+    }
+  ],
+  "nextCursor": "JDB catalog card 16 SUPER NIUBI FORTUNE X-HUGE",
+  "publication": null
+}
