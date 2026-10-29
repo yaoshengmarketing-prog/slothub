@@ -1,0 +1,32 @@
+{
+  "batch": 127,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 14",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown files and content, Provider, English/Chinese names and aliases; no existing Fruity Bonanza record. Fruity Bonanza Combo is a distinct adjacent JDB title.",
+  "records": [
+    {
+      "order": 14,
+      "name": "Fruity Bonanza",
+      "slug": "fruity-bonanza-jdb",
+      "provider": "jdb-gaming",
+      "status": "imported-pending-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/fruity-bonanza",
+      "officialFacts": "Slot; six reels with variable 5-6-6-6-6-5 rows; cascading, Golden Symbols to Wild, Free Spins, six Diamonds Hold & Spin, Feature Buy; medium volatility. No ambiguous numeric jackpot/max win field recorded.",
+      "image": {
+        "sourcePage": "https://www.spigo.com/games/jdb/fruity-bonanza",
+        "sourceUrl": "https://assets.socino.com/game/fruity-bonanza-66e93a7d1c73e24c12d434e6/fruity-bonanza-thumb-en.webp",
+        "sha256": "4f16b0ce6f72b645f1f3a11f0887ae399b197e544705e0af1624dd0513142a3d",
+        "visualCheck": "Downloaded valid WebP and visually inspected exact FRUITY BONANZA title; Spigo exact page title and body identify JDB. Third-party artwork attributed as such."
+      },
+      "demo": "Spigo exact same-game page identifies Fruity Bonanza and JDB and is classified platform-game-page; no direct official Demo asserted."
+    }
+  ],
+  "nextCursor": "JDB catalog card 15 BULL TREASURE X-HUGE",
+  "publication": null
+}
