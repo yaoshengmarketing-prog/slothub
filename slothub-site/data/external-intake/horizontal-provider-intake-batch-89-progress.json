@@ -1,0 +1,89 @@
+{
+  "batch": 89,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "captured-awaiting-full-verify",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "RSG official catalog following Taiwan operator common provider discovery.",
+  "catalog": "https://www.rsg-games.com/zh-TW/games.html",
+  "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown checked by RSG Provider, Chinese name, English alias, gameId and filename before capture; IDs 44–48 absent.",
+  "records": [
+    {
+      "order": 63,
+      "provider": "RSG",
+      "name": "七起來",
+      "gameId": "44",
+      "slug": "sevens-high-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_44.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=44&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 64,
+      "provider": "RSG",
+      "name": "女忍者",
+      "gameId": "45",
+      "slug": "kunoichi-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_45.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=45&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 65,
+      "provider": "RSG",
+      "name": "忍者",
+      "gameId": "46",
+      "slug": "ninja-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_46.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=46&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 66,
+      "provider": "RSG",
+      "name": "果凍27",
+      "gameId": "47",
+      "slug": "jelly-27-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_47.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=47&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 67,
+      "provider": "RSG",
+      "name": "暴怒棕熊",
+      "gameId": "48",
+      "slug": "angry-bear-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_48.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=48&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    }
+  ],
+  "nextCursor": "RSG official catalog order 68 gameid 49 海神; 22 pending Slot after this batch."
+}
