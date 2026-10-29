@@ -1,0 +1,32 @@
+{
+  "batch": 146,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 33",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; no Open Sesame or 芝麻开门 record before this intake.",
+  "records": [
+    {
+      "order": 33,
+      "name": "Open Sesame",
+      "slug": "open-sesame-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/open-sesame",
+      "officialFacts": "Official English/CN detail: Slot, RTP 96.25%, MEDIUM volatility, Maximum Win 1200X, 243 Ways, release year 2016; three OPEN SESAME signs trigger lucky draw for free-game multipliers/rounds, accumulating coordination.",
+      "sourceConflict": "CasinoRating says up to 20 free spins, which official page does not quantify. Browser static text says demo temporarily unavailable while dynamic post-verification page advertises PLAY FOR FREE; actual play not tested. No demo availability claim published.",
+      "image": {
+        "sourcePage": "https://www.casinorating.com/games/jdb-gaming/slots/open-sesame",
+        "sourceUrl": "https://www.casinorating.com/media/game_screenshot/0005/40/thumb_439488_game_screenshot_standart.jpg",
+        "sha256": "8dfcec412899101427c0f586d963063f8aa3f72a37d24f4dd4083c5e608c08ad",
+        "visualCheck": "CasinoRating exact page identifies Open Sesame by JDB Gaming; downloaded valid 790x572 JPEG visibly shows Open Sesame logo and 5x3 in-game reels. Official image URL locally returned HTML challenge and was not used."
+      },
+      "demo": "Not verified: static third-party page says temporarily unavailable, dynamic browser page advertises PLAY FOR FREE; no verified game launch destination."
+    }
+  ],
+  "nextCursor": "JDB catalog card 34 OPEN SESAME Ⅱ"
+}

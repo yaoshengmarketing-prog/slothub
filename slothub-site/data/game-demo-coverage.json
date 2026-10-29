@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 707,
+  "gameCount": 708,
   "providerCount": 371,
-  "sourcePageCount": 1280,
+  "sourcePageCount": 1282,
   "counts": {
     "access-restricted": 4,
     "available": 612,
-    "not-verified": 91
+    "not-verified": 92
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,35 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "open-sesame-jdb",
+      "name": "Open Sesame",
+      "provider": "jdb-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "presentation": "external",
+      "note": "CasinoRating static and dynamic demo states conflict; neither official Play nor third-party game launch independently verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/open-sesame",
+          "httpStatus": 200,
+          "notes": "Official Browser Use direct inspection runs ab0298cc-7ea1-4d63-940e-bbaf3f232728 and 9a0d2b62-2d6b-4717-968f-bdc211ec1324"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/cn/games/slot/open-sesame",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://www.casinorating.com/games/jdb-gaming/slots/open-sesame",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://www.casinorating.com/media/game_screenshot/0005/40/thumb_439488_game_screenshot_standart.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "open-sesame-mega-jdb",
       "name": "Open Sesame Mega",

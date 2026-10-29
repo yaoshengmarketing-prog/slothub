@@ -1,10 +1,10 @@
 {
   "batch": 145,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 32",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Open Sesame Mega",
       "slug": "open-sesame-mega-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/open-sesame-mega",
       "officialFacts": "Official English/CN detail: Slot, RTP 96.5%, no volatility shown, Maximum Win 5000X, 64~117,649 ways, release year 2023; Cash Symbol treasure chests, Split Way divides 1-2 reels, MAX Way expands combinations.",
       "sourceConflict": "Slots Launch calls medium volatility, 5x4 reels and lists expanding Wilds, Open Sesame doors and Free Spins, none confirmed by current official page. Published page omits volatility and partner-only features.",
@@ -28,5 +28,15 @@
       "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
     }
   ],
-  "nextCursor": "JDB catalog card 33 OPEN SESAME"
+  "nextCursor": "JDB catalog card 33 OPEN SESAME",
+  "publication": {
+    "commit": "c99897704bd1f1bf0e45b7ba8db3eb5080541413",
+    "githubRun": 40951265691,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "e9f23a01-6dd6-4f19-90df-d0940cf3c4de",
+    "cloudflareUrl": "https://e9f23a01.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, image and sitemap HTTP 200; official and exact Slots Launch platform URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

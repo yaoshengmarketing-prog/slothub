@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-32 imported. Next individual candidate is card 33 OPEN SESAME. Cards 1-10 and 33-46 remain.",
-  "nextStep": "After card 32 publication loop, continue card 33 using official details ledger, exact image and Demo checks.",
-  "publishedCount": 21,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-33 imported. Next individual candidate is card 34 OPEN SESAME Ⅱ. Cards 1-10 and 34-46 remain.",
+  "nextStep": "After card 33 publication loop, continue card 34 using official details ledger, exact image and Demo checks.",
+  "publishedCount": 22,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -459,6 +459,20 @@
     "partnerAttribution": "Exact Slots Launch page identifies Open Sesame Mega by JDB Gaming; downloaded valid 500x333 JPEG visibly displays OPEN SESAME MEGA title and cave artwork.",
     "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
     "dedup": "All Game Markdown and Provider name/alias fields; no Open Sesame Mega or 芝麻开门Mega record before this intake.",
+    "decision": "published-live-verified"
+  },
+  "card33Evidence": {
+    "name": "OPEN SESAME",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/open-sesame",
+    "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/open-sesame",
+    "officialFacts": "Official English/CN detail: Slot, RTP 96.25%, MEDIUM volatility, Maximum Win 1200X, 243 Ways, release year 2016; three OPEN SESAME signs trigger lucky draw for free-game multipliers/rounds, accumulating coordination.",
+    "sourceConflict": "CasinoRating says up to 20 free spins, which official page does not quantify. Browser static text says demo temporarily unavailable while dynamic post-verification page advertises PLAY FOR FREE; actual play not tested. No demo availability claim published.",
+    "partnerPage": "https://www.casinorating.com/games/jdb-gaming/slots/open-sesame",
+    "partnerImage": "https://www.casinorating.com/media/game_screenshot/0005/40/thumb_439488_game_screenshot_standart.jpg",
+    "partnerImageSha256": "8dfcec412899101427c0f586d963063f8aa3f72a37d24f4dd4083c5e608c08ad",
+    "partnerAttribution": "CasinoRating exact page identifies Open Sesame by JDB Gaming; downloaded valid 790x572 JPEG visibly shows Open Sesame logo and 5x3 in-game reels. Official image URL locally returned HTML challenge and was not used.",
+    "demo": "Not verified: static third-party page says temporarily unavailable, dynamic browser page advertises PLAY FOR FREE; no verified game launch destination.",
+    "dedup": "All Game Markdown and Provider name/alias fields; no Open Sesame or 芝麻开门 record before this intake.",
     "decision": "captured-awaiting-publication"
   }
 }
