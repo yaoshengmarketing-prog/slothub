@@ -1,0 +1,236 @@
+{
+  "ruleBasis": "https://github.com/yaoshengmarketing-prog/slothub/blob/1e314894559fc1eaf266a5d2dab2fe850bbfd4c4/reviews/game-media-pilot-20261029/RULES-game-media.md",
+  "sources": [
+    {
+      "id": "hacksaw-densho",
+      "publisher": "Hacksaw Gaming",
+      "url": "https://www.hacksawgaming.com/games/densho"
+    },
+    {
+      "id": "push-razor",
+      "publisher": "Push Gaming",
+      "url": "https://www.pushgaming.com/games/razor-shark.html"
+    },
+    {
+      "id": "slot-gods-densho",
+      "publisher": "Slot Gods",
+      "url": "https://vimeo.com/860852013"
+    },
+    {
+      "id": "push-razor-vimeo",
+      "publisher": "Push Gaming",
+      "url": "https://vimeo.com/494271522"
+    }
+  ],
+  "usageBases": [
+    {
+      "id": "hacksaw-image-pending",
+      "status": "unknown",
+      "allowedUses": [],
+      "checkedAt": "2026-10-29",
+      "evidenceUrls": [
+        "https://www.hacksawgaming.com/games/densho",
+        "https://www.hacksawgaming.com/"
+      ],
+      "note": "Official source confirmed; reviewed pages state all rights reserved and do not provide a public reuse grant for this image. No applicable permission record found in the bounded repository lookup. Withheld from the new public media section; existing Game cover unchanged.",
+      "nextStep": "Supply an applicable media-kit term or permission record for this exact use."
+    },
+    {
+      "id": "push-image-pending",
+      "status": "unknown",
+      "allowedUses": [],
+      "checkedAt": "2026-10-29",
+      "evidenceUrls": [
+        "https://www.pushgaming.com/games/razor-shark.html"
+      ],
+      "note": "Official feature-image identity confirmed; public image reuse basis not established by the product page. Withheld from public media output; no new public image file.",
+      "nextStep": "Supply applicable public media terms or permission for the feature-symbol image."
+    },
+    {
+      "id": "vimeo-source-link",
+      "status": "confirmed",
+      "allowedUses": [
+        "external"
+      ],
+      "checkedAt": "2026-10-29",
+      "evidenceUrls": [
+        "https://vimeo.com/legal"
+      ],
+      "note": "Attributed link to the original public video page; no video, thumbnail or player copied. Vimeo Terms sections 2 and 6.1 cover viewing publicly enabled content. This records the source-link method, not a separate image/video reproduction license."
+    },
+    {
+      "id": "vimeo-enabled-player",
+      "status": "confirmed",
+      "allowedUses": [
+        "click-to-load",
+        "external"
+      ],
+      "checkedAt": "2026-10-29",
+      "evidenceUrls": [
+        "https://vimeo.com/legal",
+        "https://help.vimeo.com/hc/en-us/articles/12426259908881-How-to-embed-my-video",
+        "https://vimeo.com/494271522"
+      ],
+      "note": "Vimeo Terms sections 2 and 6.1 permit the supplied embeddable player subject to uploader access settings. Official Push Gaming uploader and supplied embed were checked in the pilot; no download, rehost or removal of player branding. Applies only while source/embed access remains enabled, not to standalone image reproduction."
+    }
+  ],
+  "items": [
+    {
+      "id": "densho-board",
+      "gameSlug": "densho",
+      "kind": "image",
+      "imageType": "完整盤面圖",
+      "title": "Densho 原廠裝置合成盤面圖",
+      "alt": "原廠裝置合成圖中的 Densho 5×4 盤面",
+      "src": "https://www-live.hacksawgaming.com/casino_thumbnails/1348_hero_Device_Desktop.png",
+      "sourceId": "hacksaw-densho",
+      "usageBasisId": "hacksaw-image-pending",
+      "presentation": "image",
+      "official": true,
+      "enabled": true,
+      "purpose": "辨認盤面、主要符號與下方操作列的位置。",
+      "scopeNote": "原廠裝置合成圖；來源未註明版本。不要求所有細字可讀。",
+      "mode": null,
+      "version": null,
+      "checks": {
+        "content": {
+          "status": "verified",
+          "checkedAt": "2026-10-29",
+          "scope": "accepted local pilot record",
+          "note": "Actual observed frames only; not a continuous process review."
+        },
+        "sourcePlayback": {
+          "status": "not-tested",
+          "checkedAt": null,
+          "scope": "Vimeo source page",
+          "note": "Retains prior actual playback record, not a new date refresh."
+        },
+        "embed": {
+          "status": "not-tested",
+          "checkedAt": null,
+          "scope": "local pilot only",
+          "note": "Preview domain playback requires a separate current test."
+        }
+      }
+    },
+    {
+      "id": "densho-free-spins-video",
+      "gameSlug": "densho",
+      "kind": "video",
+      "title": "Densho｜Free Spins 玩法紀錄",
+      "sourceId": "slot-gods-densho",
+      "usageBasisId": "vimeo-source-link",
+      "presentation": "external",
+      "url": "https://vimeo.com/860852013",
+      "official": false,
+      "enabled": true,
+      "purpose": "辨認已觀察的 Free Spins 角色列、倍數標記與盤面狀態。",
+      "scopeNote": "僅限已觀察畫面，不延伸為完整流程解說；不採用影片描述中的 RTP。",
+      "mode": "Free Spins",
+      "version": null,
+      "checks": {
+        "content": {
+          "status": "verified",
+          "checkedAt": "2026-10-29",
+          "scope": "accepted local pilot record",
+          "note": "Actual observed frames only; not a continuous process review."
+        },
+        "sourcePlayback": {
+          "status": "verified",
+          "checkedAt": "2026-10-29",
+          "scope": "Vimeo source page",
+          "note": "Retains prior actual playback record, not a new date refresh."
+        },
+        "embed": {
+          "status": "not-tested",
+          "checkedAt": null,
+          "scope": "local pilot only",
+          "note": "Preview domain playback requires a separate current test."
+        }
+      }
+    },
+    {
+      "id": "razor-feature-symbol",
+      "gameSlug": "razor-shark",
+      "kind": "image",
+      "imageType": "功能符號圖",
+      "title": "Razor Reveal｜金色鯊魚功能符號",
+      "alt": "Razor Reveal 金色鯊魚功能符號原廠圖",
+      "src": "https://www.pushgaming.com/uploads/NewGamePages2020/RazorShark/Razor-Reveal-min.png",
+      "sourceId": "push-razor",
+      "usageBasisId": "push-image-pending",
+      "presentation": "image",
+      "official": true,
+      "enabled": true,
+      "purpose": "辨認 Razor Reveal 的金色鯊魚符號外觀。",
+      "scopeNote": "來源未註明版本。",
+      "mode": "Razor Reveal",
+      "version": null,
+      "checks": {
+        "content": {
+          "status": "verified",
+          "checkedAt": "2026-10-29",
+          "scope": "accepted local pilot record",
+          "note": "Actual observed frames only; not a continuous process review."
+        },
+        "sourcePlayback": {
+          "status": "not-tested",
+          "checkedAt": null,
+          "scope": "Vimeo source page",
+          "note": "Retains prior actual playback record, not a new date refresh."
+        },
+        "embed": {
+          "status": "not-tested",
+          "checkedAt": null,
+          "scope": "local pilot only",
+          "note": "Preview domain playback requires a separate current test."
+        }
+      }
+    },
+    {
+      "id": "razor-reveal-video",
+      "gameSlug": "razor-shark",
+      "kind": "video",
+      "title": "Razor Reveal｜原廠功能展示",
+      "sourceId": "push-razor-vimeo",
+      "usageBasisId": "vimeo-enabled-player",
+      "presentation": "click-to-load",
+      "url": "https://vimeo.com/494271522",
+      "videoId": "494271522",
+      "official": true,
+      "enabled": true,
+      "purpose": "辨認已觀察的金色鯊魚與倍數金幣畫面。",
+      "scopeNote": "不以抽樣紀錄推定完整揭示動作已核實，也不代表功能發生頻率。",
+      "mode": "Razor Reveal",
+      "version": null,
+      "checks": {
+        "content": {
+          "status": "verified",
+          "checkedAt": "2026-10-29",
+          "scope": "accepted local pilot record",
+          "note": "Actual observed frames only; not a continuous process review."
+        },
+        "sourcePlayback": {
+          "status": "verified",
+          "checkedAt": "2026-10-29",
+          "scope": "Vimeo source page",
+          "note": "Retains prior actual playback record, not a new date refresh."
+        },
+        "embed": {
+          "status": "verified",
+          "checkedAt": "2026-10-29",
+          "scope": "local pilot only",
+          "note": "Preview domain playback requires a separate current test."
+        }
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "gameSlug": "razor-shark",
+      "kind": "base-game-board",
+      "status": "missing",
+      "note": "Feature symbol and video do not fill the complete base-game board image gap. Do not expand image search in this batch."
+    }
+  ]
+}

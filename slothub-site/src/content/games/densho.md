@@ -33,6 +33,7 @@ sources:
   - { label: "Hacksaw Gaming 官方 2023 年 9 月發布回顧（發行日與 Wild Multiplier Reels）", url: https://www.hacksawgaming.com/news/september-game-release-round-up, checkedAt: 2026-09-03 }
   - { label: "Hacksaw Gaming 官方桌機作品圖（未裁切、未加字）", url: https://www-live.hacksawgaming.com/casino_thumbnails/1348_hero_Device_Desktop.png, checkedAt: 2026-09-03 }
 demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.hacksawgaming.com/games/densho","accessType":"official-game-page","presentation":"external"}
+mediaIds: [densho-board, densho-free-spins-video]
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---

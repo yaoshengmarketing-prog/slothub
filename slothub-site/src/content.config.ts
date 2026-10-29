@@ -37,6 +37,7 @@ const games = defineCollection({ loader: glob({ pattern: '**/*.md', base: './src
   winMechanism: winMechanism.optional(), winCount: z.number().int().positive().optional(),
   paylines: z.string().optional(), features: z.array(feature).default([]), bonusFeatures: z.array(z.string()).default([]), bonusBuy: z.boolean().optional(),
   jackpotType: jackpotType.optional(), minBet: z.number().nonnegative().optional(), maxBet: z.number().positive().optional(), releaseDate: z.coerce.date().optional(), gameId: z.string().optional(),
+  mediaIds: z.array(z.string().min(1)).default([]),
   metricEvidenceIds: z.array(z.string().min(1)).default([]),
   sources: z.array(source).default([]), lastVerifiedAt: z.coerce.date().optional(), demo: gameDemo.optional(),
   image: media.optional(), editorialFeatured: z.boolean().default(false), status: z.enum(['draft','published']).default('draft'), source, updatedAt: z.coerce.date(),
