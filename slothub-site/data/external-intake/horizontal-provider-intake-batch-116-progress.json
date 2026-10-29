@@ -1,10 +1,10 @@
 {
   "batch": 116,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "verified-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 5,
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "Continue approved JILI official catalog after batch 115",
   "catalog": "https://jiligames.com/games?showSlotGames=true",
   "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
@@ -15,7 +15,7 @@
       "gameId": "230",
       "name": "Cricket Sah 75",
       "slug": "cricket-sah-75-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/230?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -24,7 +24,7 @@
       "gameId": "126",
       "name": "Bone Fortune",
       "slug": "bone-fortune-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/126?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -33,7 +33,7 @@
       "gameId": "108",
       "name": "Magic Lamp",
       "slug": "magic-lamp-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/108?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -42,7 +42,7 @@
       "gameId": "40",
       "name": "Crazy FaFaFa",
       "slug": "crazy-fafafa-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/40?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -51,7 +51,7 @@
       "gameId": "101",
       "name": "MEDUSA",
       "slug": "medusa-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/101?showGame=false",
       "demoStatus": "official-game-page"
     }
@@ -69,5 +69,15 @@
     }
   ],
   "nextCursor": "JILI official catalog order 218 of 277.",
-  "checkedAt": "2026-10-30"
+  "checkedAt": "2026-10-30",
+  "publication": {
+    "commit": "56fbf5ff1df1b15ec16c9ee0056372444f8ce94d",
+    "githubActionsRun": 40908900707,
+    "githubActionsConclusion": "success",
+    "cloudflareDeploymentId": "2bd47308-a75c-4fc8-9218-918e74cca1d0",
+    "cloudflareUrl": "https://2bd47308.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Five detail pages, five PNGs, Search, Explorer, Compare, Provider, nofollow, noindex, X-Robots-Tag, empty sitemap and no canonical passed",
+    "checkedAt": "2026-10-30"
+  }
 }
