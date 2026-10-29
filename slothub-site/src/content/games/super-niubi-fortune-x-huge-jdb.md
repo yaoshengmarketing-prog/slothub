@@ -5,8 +5,11 @@ relatedGames: []
 provider: jdb-gaming
 primaryType: slots
 subtypes: [video-slots]
-summary: JDB Gaming 官方單款頁確認 Super Niubi Fortune X-Huge 是 Super Niubi 系列的高波動 Slot，以同色牛符號連線、金牛收集觸發 Respin 與 X-Huge 巨型軸為特色。官方列出綠牛 28 倍、紅牛 58 倍、金牛 88 倍的單項獎勵，未將它們標為整款最高倍數。
-volatilityOriginal: HIGH
+summary: JDB Gaming 官方單款頁確認 Super Niubi Fortune X-Huge 是 Super Niubi 系列 Slot，以同色牛符號連線、金牛收集觸發 Respin 與 X-Huge 巨型軸為特色。官方規格列 RTP 96.46%、最高 264 倍、1 線；介紹文字稱高波動，但同頁規格表標示 SUPER LOW，兩者衝突，故不填單一波動值。綠牛 28 倍、紅牛 58 倍、金牛 88 倍是單項獎勵，並非整款最高倍數。
+rtp: 96.46
+maxWinMultiplier: 264
+maxWinLabelOriginal: "Maximum Win 264X"
+paylines: 1 Line
 bonusFeatures: [Treasure Collector, Respins, Multipliers, Giant Symbols]
 image: { src: /assets/games/super-niubi-fortune-x-huge-jdb.jpg, alt: Slots Launch 所標示 JDB Super Niubi Fortune X-Huge 的同款遊戲圖, sourceUrl: "https://assets.slotslaunch.com/107954/super-niubi-fortune-x-huge.jpg", retrievedAt: 2026-10-30 }
 editorialFeatured: false

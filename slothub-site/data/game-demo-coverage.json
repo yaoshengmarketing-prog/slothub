@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 692,
+  "gameCount": 693,
   "providerCount": 371,
-  "sourcePageCount": 1251,
+  "sourcePageCount": 1253,
   "counts": {
     "access-restricted": 4,
-    "available": 597,
+    "available": 598,
     "not-verified": 91
   },
   "rules": {
@@ -17,6 +17,39 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "golden-goal-jdb",
+      "name": "Golden Goal",
+      "provider": "jdb-gaming",
+      "status": "available",
+      "url": "https://slotslaunch.com/jdb-gaming/golden-goal",
+      "accessType": "platform-game-page",
+      "platformName": "Slots Launch",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "Slots Launch exact page and image identify Golden Goal and JDB Gaming; official English/Chinese pages establish 1 Line, 88X, RTP and volatility.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/golden-goal",
+          "httpStatus": 200,
+          "notes": "Official direct browser inspection run 8e0b7242-f02c-40e1-a2f8-6498411f5400"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/cn/games/slot/golden-goal",
+          "httpStatus": 200,
+          "notes": "Official Chinese indexed specification"
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/golden-goal",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://assets.slotslaunch.com/109307/golden-goal.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "super-niubi-deluxe-jdb",
       "name": "Super Niubi Deluxe",

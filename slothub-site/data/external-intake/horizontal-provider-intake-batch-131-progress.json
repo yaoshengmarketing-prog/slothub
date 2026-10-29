@@ -1,0 +1,32 @@
+{
+  "batch": 131,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 18",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown names and aliases; Golden Goal and official Chinese title 金射門 absent.",
+  "records": [
+    {
+      "order": 18,
+      "name": "Golden Goal",
+      "slug": "golden-goal-jdb",
+      "provider": "jdb-gaming",
+      "status": "imported-pending-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/golden-goal",
+      "officialFacts": "Football Slot; official specification RTP 96.46%, SUPER LOW volatility, Maximum Win 88X, 1 Line, Release Year 2026; any line of three icons awards 8x or more, identical Green/Red/Gold Balls award 28x/58x/88x.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/golden-goal",
+        "sourceUrl": "https://assets.slotslaunch.com/109307/golden-goal.jpg",
+        "sha256": "1f8eade7ac29ed21d4352e264a0b37400ffd6bf7f39d92a379c667a5665c3605",
+        "visualCheck": "Slots Launch exact page identifies Golden Goal and JDB Gaming; downloaded valid JPEG visibly displays GOLDEN GOAL football artwork."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; classified platform-game-page external, playable status not asserted."
+    }
+  ],
+  "nextCursor": "JDB catalog card 19 MONEY TREE - HYPER WILD",
+  "publication": null
+}

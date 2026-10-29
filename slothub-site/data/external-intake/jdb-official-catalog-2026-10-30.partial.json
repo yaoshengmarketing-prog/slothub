@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-17 imported. Next individual candidate is card 18 GOLDEN GOAL. Cards 1-10 and 18-46 remain to inspect fully.",
-  "nextStep": "After card 17 publication loop, continue card 18 GOLDEN GOAL with exact official facts, dedup, attributable image and Demo checks.",
-  "publishedCount": 6,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-18 imported. Next individual candidate is card 19 MONEY TREE - HYPER WILD. Cards 1-10 and 19-46 remain to inspect fully.",
+  "nextStep": "After card 18 publication loop, continue card 19 using official details ledger, exact image and Demo checks.",
+  "publishedCount": 7,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -226,15 +226,16 @@
     "name": "SUPER NIUBI FORTUNE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/super-niubi-fortune-x-huge",
     "officialNews": "https://www.jdbgaming.com/en/news/games/n-super-niubi-fortune-x-huge",
-    "officialFacts": "High-volatility Slot; Super Niubi sequel; same-color Green/Red/Gold Bull symbol rewards 28x/58x/88x (not overall max win); Gold Bulls collect to random Respin, guaranteed win during Respin, extra multipliers, X-Huge giant reel during Respin. Official page does not state RTP, overall max win, or release date.",
-    "sourceConflict": "Official page last sentence says Super Niubi Deluxe: X-Huge, inconsistent with page title and news; treated as editorial typo, not alternate identity.",
+    "officialFacts": "Browser Use direct official specification: RTP 96.46%, Maximum Win 264X, 1 Line, Release Year 2026, volatility specification SUPER LOW; Game Introduction says high-volatility, so public record omits a single volatilityOriginal value. Same-color Green/Red/Gold Bull symbol rewards 28x/58x/88x, not overall max.",
+    "sourceConflict": "Official introduction says high-volatility but same-page specification says SUPER LOW; preserve both and do not select one as definitive.",
     "partnerPage": "https://slotslaunch.com/jdb-gaming/super-niubi-fortune-x-huge",
     "partnerImage": "https://assets.slotslaunch.com/107954/super-niubi-fortune-x-huge.jpg",
     "partnerImageSha256": "84dd608b986517ad40223e7051344b5f13b19aa0a17bdddeedf32d33a65839e0",
     "partnerAttribution": "Slots Launch exact page names Super Niubi Fortune X-Huge and JDB Gaming; downloaded valid JPEG visibly displays SUPER NIUBI FORTUNE X-HUGE title and bull artwork.",
     "demo": "Third-party exact same-game Slots Launch page; visitor play limit/login may apply; external platform-game-page only.",
     "dedup": "Full src/content/games and providers name/alias search found no existing record.",
-    "decision": "published-live-verified"
+    "decision": "published-live-verified",
+    "officialSpecificationCorrection": "Official Browser Use run 8e0b7242-f02c-40e1-a2f8-6498411f5400 observed RTP 96.46%, SUPER LOW specification, Maximum Win 264X, 1 Line, release year 2026; introduction says high-volatility. Public record correction to be included in next game commit."
   },
   "card17Evidence": {
     "name": "SUPER NIUBI DELUXE",
@@ -248,6 +249,19 @@
     "partnerAttribution": "Slots Launch exact page names Super Niubi Deluxe by JDB Gaming; downloaded valid JPEG visibly displays SUPER NIUBI DELUXE title and three bull-head symbols.",
     "demo": "Exact third-party Slots Launch page names title and JDB; classified external platform-game-page, not official Demo; guest play limit/login may apply.",
     "dedup": "Full Game/Provider name and alias search found related Super Niubi Fortune X-Huge but no Super Niubi Deluxe record; distinct official titles.",
+    "decision": "published-live-verified"
+  },
+  "card18Evidence": {
+    "name": "GOLDEN GOAL",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/golden-goal",
+    "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/golden-goal",
+    "officialFacts": "Football Slot; official specification RTP 96.46%, SUPER LOW volatility, Maximum Win 88X, 1 Line, Release Year 2026; any line of three icons awards 8x or more, identical Green/Red/Gold Balls award 28x/58x/88x.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming/golden-goal",
+    "partnerImage": "https://assets.slotslaunch.com/109307/golden-goal.jpg",
+    "partnerImageSha256": "1f8eade7ac29ed21d4352e264a0b37400ffd6bf7f39d92a379c667a5665c3605",
+    "partnerAttribution": "Slots Launch exact page identifies Golden Goal and JDB Gaming; downloaded valid JPEG visibly displays GOLDEN GOAL football artwork.",
+    "demo": "Exact third-party Slots Launch page identifies game and JDB; classified platform-game-page external, playable status not asserted.",
+    "dedup": "Full Game Markdown and Provider search for Golden Goal and 金射門/金射门 found no prior record.",
     "decision": "imported-pending-publication"
   }
 }
