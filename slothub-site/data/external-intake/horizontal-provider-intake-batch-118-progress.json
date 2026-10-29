@@ -1,0 +1,73 @@
+{
+  "batch": 118,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "verified-pending-publication",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI official catalog after batch 117",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and Game ID. No same JILI records for IDs 110,109,134,45,116; same JILI IDs and exact titles absent from existing Game Markdown; Fortune Gems and Golden Bank sequels are distinct records.",
+  "records": [
+    {
+      "order": 230,
+      "gameId": "110",
+      "name": "Ali Baba",
+      "slug": "ali-baba-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/110?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 232,
+      "gameId": "109",
+      "name": "Fortune Gems",
+      "slug": "fortune-gems-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/109?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 234,
+      "gameId": "134",
+      "name": "Mega Ace",
+      "slug": "mega-ace-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/134?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 235,
+      "gameId": "45",
+      "name": "Golden Bank",
+      "slug": "golden-bank-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/45?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 236,
+      "gameId": "116",
+      "name": "Happy Taxi",
+      "slug": "happy-taxi-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/116?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "excluded": [
+    {
+      "order": 231,
+      "gameId": "147",
+      "reason": "Official Bingo"
+    },
+    {
+      "order": 233,
+      "gameId": "151",
+      "reason": "Official Bingo"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 237 of 277.",
+  "checkedAt": "2026-10-30"
+}
