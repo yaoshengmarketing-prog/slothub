@@ -1,0 +1,33 @@
+{
+  "batch": 141,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 28",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; no Lucky Elephant X-Huge or 财富之象 record.",
+  "records": [
+    {
+      "order": 28,
+      "name": "Lucky Elephant X-Huge™",
+      "slug": "lucky-elephant-x-huge-jdb",
+      "provider": "jdb-gaming",
+      "status": "imported-pending-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/lucky-elephant-x-huge",
+      "officialFacts": "Official direct browser detail: Slot, RTP 96.47%, LOW volatility, Maximum Win 1800X, official Lines/Ways field exactly 1 Way, release year 2025; feature/intro calls it a one-line format, X-Huge giant symbol instant win, two-level Free Game, Feature Buy unlocks 3-reel WILD combo.",
+      "wordingNote": "Official specification says 1 Way while introduction says one-line; both quoted without normalizing the specification field.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/lucky-elephant-x-huge",
+        "sourceUrl": "https://assets.slotslaunch.com/37514/lucky-elephant-x-huge.jpg",
+        "sha256": "f6ada8f5f55db9cf7145b81ccdd0a1b96501c58eeedb832818e3909b8c045249",
+        "visualCheck": "Slots Launch exact page identifies Lucky Elephant X-Huge by JDB Gaming; downloaded valid JPEG visibly displays LUCKY ELEPHANT X-HUGE title and elephant artwork."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 29 FORTUNE JEWEL",
+  "publication": null
+}

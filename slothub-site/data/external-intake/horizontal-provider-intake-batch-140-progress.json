@@ -1,10 +1,10 @@
 {
   "batch": 140,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 27",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Olympig",
       "slug": "olympig-jdb",
       "provider": "jdb-gaming",
-      "status": "imported-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/olympig",
       "officialFacts": "Official direct browser detail: Slot, RTP 96.65%, MEDIUM volatility in specification, Maximum Win 1750X in specification, 27 Ways, release year 2025; Multiplier Wilds, Lucky Full Screen, Thunder/Super Thunder Bonus, Feature Buy and Extra Bet. Official CN detail calls it 雷霆神猪.",
       "officialConflict": "Official JDB 2025-07-10 English launch news says high-volatility action and win potential up to 15000X, contradicting current JDB game detail specification MEDIUM and 1750X. Structured volatilityOriginal and maxWinMultiplier omitted; both values and source URLs disclosed in summary and this manifest. News direct open region-blocked, search-index excerpt retained.",
@@ -29,5 +29,14 @@
     }
   ],
   "nextCursor": "JDB catalog card 28 LUCKY ELEPHANT X-HUGE™",
-  "publication": null
+  "publication": {
+    "commit": "3cadcbdaf385b06f7033c0f5e576f9efe2814c1f",
+    "githubRun": 40947693233,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "b932a114-0717-4732-a03b-b26ec2c3d3cf",
+    "cloudflareUrl": "https://b932a114.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, image and sitemap HTTP 200; official and exact Slots Launch platform URLs and explicit official data conflict present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
