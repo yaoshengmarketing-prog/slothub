@@ -1,0 +1,98 @@
+{
+  "batch": 80,
+  "recordedAt": "2026-10-29T15:17:00+08:00",
+  "state": "captured-awaiting-verification",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "RSG official catalog following Taiwan casino-common provider request; operator sites are discovery signals only.",
+  "catalog": "https://www.rsg-games.com/zh-TW/games.html",
+  "dedupScope": "Before each import, searched all Game and Provider Markdown for provider, Chinese name, aliases, Game ID and filename; none matched.",
+  "records": [
+    {
+      "order": 1,
+      "provider": "RSG",
+      "name": "五龍爭霸",
+      "gameId": "19",
+      "slug": "five-dragons-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_19.html",
+      "officialImage": "https://www.rsg-games.com/assets/images/games/19/slot-5Dragons-rsg-detail-banner-desktop-bg.webp",
+      "imageInspection": "Official page image downloaded and visually checked against title theme.",
+      "demo": {
+        "url": "https://www.rsg-games.com/zh-TW/games_detail_19.html",
+        "accessType": "official-game-page",
+        "presentation": "external"
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured-awaiting-publication"
+    },
+    {
+      "order": 2,
+      "provider": "RSG",
+      "name": "開心農場",
+      "gameId": "111",
+      "slug": "happy-farm-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_111.html",
+      "officialImage": "https://www.rsg-games.com/assets/images/games/111/slot-HappyFarm-rsg-detail-banner-desktop-bg.webp",
+      "imageInspection": "Official page image downloaded and visually checked against title theme.",
+      "demo": {
+        "url": "https://www.rsg-games.com/zh-TW/games_detail_111.html",
+        "accessType": "official-game-page",
+        "presentation": "external"
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured-awaiting-publication"
+    },
+    {
+      "order": 3,
+      "provider": "RSG",
+      "name": "戰神呂布",
+      "gameId": "121",
+      "slug": "legend-of-lu-bu-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_121.html",
+      "officialImage": "https://www.rsg-games.com/assets/images/games/121/slot-LegendofLuBu-rsg-detail-banner-desktop-bg.webp",
+      "imageInspection": "Official page image downloaded and visually checked against title theme.",
+      "demo": {
+        "url": "https://www.rsg-games.com/zh-TW/games_detail_121.html",
+        "accessType": "official-game-page",
+        "presentation": "external"
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured-awaiting-publication"
+    },
+    {
+      "order": 4,
+      "provider": "RSG",
+      "name": "侏羅紀寶藏",
+      "gameId": "123",
+      "slug": "jurassic-treasure-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_123.html",
+      "officialImage": "https://www.rsg-games.com/assets/images/games/123/slot-JurassicTreasure-rsg-detail-banner-desktop-bg.webp",
+      "imageInspection": "Official page image downloaded and visually checked against title theme.",
+      "demo": {
+        "url": "https://www.rsg-games.com/zh-TW/games_detail_123.html",
+        "accessType": "official-game-page",
+        "presentation": "external"
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured-awaiting-publication"
+    },
+    {
+      "order": 5,
+      "provider": "RSG",
+      "name": "法老王",
+      "gameId": "6",
+      "slug": "pharaoh-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_6.html",
+      "officialImage": "https://www.rsg-games.com/assets/images/games/6/slot-Pharaoh-rsg-detail-banner-desktop-bg.webp",
+      "imageInspection": "Official page image downloaded and visually checked against title theme.",
+      "demo": {
+        "url": "https://www.rsg-games.com/zh-TW/games_detail_6.html",
+        "accessType": "official-game-page",
+        "presentation": "external"
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured-awaiting-publication"
+    }
+  ],
+  "nextCursor": "RSG official catalog item 法老王 II / gameid 82, after 法老王 / gameid 6; continue same dedup and source checks."
+}

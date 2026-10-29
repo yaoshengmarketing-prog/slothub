@@ -1,9 +1,9 @@
 {
   "batch": 79,
   "recordedAt": "2026-10-29T15:10:00+08:00",
-  "state": "captured-awaiting-verification",
+  "state": "published-and-verified-live",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "RSG official catalog following Taiwan casino-common provider request; operator sites are discovery signals only.",
   "catalog": "https://www.rsg-games.com/zh-TW/games.html",
   "dedupScope": "Before each import, searched all Game and Provider Markdown for provider, Chinese name, aliases, Game ID and filename; none matched.",
@@ -23,7 +23,7 @@
         "presentation": "external"
       },
       "checkedAt": "2026-10-29",
-      "status": "captured-awaiting-publication"
+      "status": "published-live-verified"
     },
     {
       "order": 2,
@@ -40,7 +40,7 @@
         "presentation": "external"
       },
       "checkedAt": "2026-10-29",
-      "status": "captured-awaiting-publication"
+      "status": "published-live-verified"
     },
     {
       "order": 3,
@@ -57,7 +57,7 @@
         "presentation": "external"
       },
       "checkedAt": "2026-10-29",
-      "status": "captured-awaiting-publication"
+      "status": "published-live-verified"
     },
     {
       "order": 4,
@@ -74,7 +74,7 @@
         "presentation": "external"
       },
       "checkedAt": "2026-10-29",
-      "status": "captured-awaiting-publication"
+      "status": "published-live-verified"
     },
     {
       "order": 5,
@@ -91,8 +91,9 @@
         "presentation": "external"
       },
       "checkedAt": "2026-10-29",
-      "status": "captured-awaiting-publication"
+      "status": "published-live-verified"
     }
   ],
+  "publication": {"sha":"409c43b39cbae6b0405e12739c68ce5aff58e2d8","githubActionsRun":40833798522,"cloudflareDeployment":"006f2bc8-b5a3-4452-89d9-1257dd16d367","liveReadback":"Five Games in Search, Explorer, Compare, Provider and details; official images, source and external entry present; X-Robots-Tag/noindex, empty sitemap and no canonical confirmed."},
   "nextCursor": "RSG official catalog item 五龍爭霸 / gameid 19, after 迦羅寶石4 / gameid 125; continue same dedup and source checks."
 }
