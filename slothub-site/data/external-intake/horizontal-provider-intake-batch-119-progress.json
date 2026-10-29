@@ -1,0 +1,118 @@
+{
+  "batch": 119,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "verified-pending-publication",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI official catalog after batch 118",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and Game ID. No same JILI records for IDs 76,102,30,106,17; same JILI IDs and exact titles absent from existing Game Markdown; Money Coming already published and skipped.",
+  "records": [
+    {
+      "order": 237,
+      "gameId": "76",
+      "name": "Party Night",
+      "slug": "party-night-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/76?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 240,
+      "gameId": "102",
+      "name": "ROMA X",
+      "slug": "roma-x-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/102?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 248,
+      "gameId": "30",
+      "name": "Bubble Beauty",
+      "slug": "bubble-beauty-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/30?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 249,
+      "gameId": "106",
+      "name": "TWIN WINS",
+      "slug": "twin-wins-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/106?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 252,
+      "gameId": "17",
+      "name": "Shanghai Beauty",
+      "slug": "shanghai-beauty-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/17?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "excluded": [
+    {
+      "order": 238,
+      "gameId": "111",
+      "reason": "Official Table and Card"
+    },
+    {
+      "order": 239,
+      "gameId": "113",
+      "reason": "Official Table and Card"
+    },
+    {
+      "order": 241,
+      "gameId": "71",
+      "reason": "Official Fish and Arcade"
+    },
+    {
+      "order": 242,
+      "gameId": "82",
+      "reason": "Official Fish and Arcade"
+    },
+    {
+      "order": 243,
+      "gameId": "159",
+      "reason": "Official Table and Card"
+    },
+    {
+      "order": 244,
+      "gameId": "51",
+      "reason": "Duplicate existing JILI Money Coming Game record"
+    },
+    {
+      "order": 245,
+      "gameId": "152",
+      "reason": "Official Table and Card"
+    },
+    {
+      "order": 246,
+      "gameId": "60",
+      "reason": "Official Fish and Arcade"
+    },
+    {
+      "order": 247,
+      "gameId": "122",
+      "reason": "Official Bingo"
+    },
+    {
+      "order": 250,
+      "gameId": "119",
+      "reason": "Official Fish and Arcade"
+    },
+    {
+      "order": 251,
+      "gameId": "20",
+      "reason": "Official Fish and Arcade"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 253 of 277.",
+  "checkedAt": "2026-10-30"
+}

@@ -4,7 +4,7 @@
   "checkedAt": "2026-10-29",
   "scope": "ALL GAMES in source order; catalogType 1 is a discovery hint only; each Slot requires individual Game Info classification",
   "itemCount": 277,
-  "cursor": "Batch 118 captured orders 230,232,234-236; orders 231,233 excluded as official Bingo. Next order 237; prior order 223 remains source-conflict-held.",
+  "cursor": "Batch 119 captured orders 237,240,248,249,252; order 244 duplicate existing JILI Game; orders 238,239,241-243,245-247,250,251 excluded official non-Slot. Next order 253; order 223 remains source-conflict-held.",
   "items": [
     {
       "decision": "excluded-non-slot",
@@ -2010,7 +2010,7 @@
       "name": "Happy Taxi"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "76",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 237,
@@ -2018,23 +2018,25 @@
       "name": "Party Night"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "111",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 238,
       "catalogType": "2",
-      "name": "Number King"
+      "name": "Number King",
+      "reason": "Official Table and Card"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "113",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 239,
       "catalogType": "2",
-      "name": "POKER KING"
+      "name": "POKER KING",
+      "reason": "Official Table and Card"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "102",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 240,
@@ -2042,63 +2044,70 @@
       "name": "ROMA X"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "71",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 241,
       "catalogType": "3",
-      "name": "Boom Legend"
+      "name": "Boom Legend",
+      "reason": "Official Fish and Arcade"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "82",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 242,
       "catalogType": "3",
-      "name": "Happy Fishing"
+      "name": "Happy Fishing",
+      "reason": "Official Fish and Arcade"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "159",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 243,
       "catalogType": "2",
-      "name": "TeenPatti Joker"
+      "name": "TeenPatti Joker",
+      "reason": "Official Table and Card"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-duplicate",
       "gameId": "51",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 244,
       "catalogType": "1",
-      "name": "Money Coming"
+      "name": "Money Coming",
+      "reason": "Duplicate existing JILI Money Coming Game record"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "152",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 245,
       "catalogType": "2",
-      "name": "Baccarat"
+      "name": "Baccarat",
+      "reason": "Official Table and Card"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "60",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 246,
       "catalogType": "3",
-      "name": "Dragon Fortune"
+      "name": "Dragon Fortune",
+      "reason": "Official Fish and Arcade"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "122",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 247,
       "catalogType": "5",
-      "name": "iRich Bingo"
+      "name": "iRich Bingo",
+      "reason": "Official Bingo"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "30",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 248,
@@ -2106,7 +2115,7 @@
       "name": "Bubble Beauty"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "106",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 249,
@@ -2114,23 +2123,25 @@
       "name": "TWIN WINS"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "119",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 250,
       "catalogType": "3",
-      "name": "All-Star Fishing"
+      "name": "All-Star Fishing",
+      "reason": "Official Fish and Arcade"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "20",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 251,
       "catalogType": "3",
-      "name": "Bombing Fish"
+      "name": "Bombing Fish",
+      "reason": "Official Fish and Arcade"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "17",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 252,
