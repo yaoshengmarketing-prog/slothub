@@ -1,0 +1,89 @@
+{
+  "batch": 92,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "captured-awaiting-full-verify",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "RSG official catalog following Taiwan operator common provider discovery.",
+  "catalog": "https://www.rsg-games.com/zh-TW/games.html",
+  "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown checked by RSG Provider, Chinese name, English alias, gameId and filename before capture; IDs 65, 66, 68, 7, 70 absent. ID 68 is an official distinct Gold edition from published ID 35.",
+  "records": [
+    {
+      "order": 79,
+      "provider": "RSG",
+      "name": "太極",
+      "gameId": "65",
+      "slug": "tai-chi-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_65.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=65&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 80,
+      "provider": "RSG",
+      "name": "金色幸運草",
+      "gameId": "66",
+      "slug": "golden-leaf-clover-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_66.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=66&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 81,
+      "provider": "RSG",
+      "name": "巫師商店黃金版",
+      "gameId": "68",
+      "slug": "wizard-store-gold-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_68.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=68&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 82,
+      "provider": "RSG",
+      "name": "阿里巴巴",
+      "gameId": "7",
+      "slug": "alibaba-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_7.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=7&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 83,
+      "provider": "RSG",
+      "name": "鼠來寶",
+      "gameId": "70",
+      "slug": "rats-money-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_70.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=70&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    }
+  ],
+  "nextCursor": "RSG official catalog order 84 gameid 72 潑水節; 6 pending Slot and one classification hold after this batch."
+}

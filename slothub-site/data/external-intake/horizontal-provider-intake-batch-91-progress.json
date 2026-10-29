@@ -1,9 +1,9 @@
 {
   "batch": 91,
   "recordedAt": "2026-10-29T00:00:00+08:00",
-  "state": "captured-awaiting-full-verify",
+  "state": "published-and-verified-live",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "RSG official catalog following Taiwan operator common provider discovery.",
   "catalog": "https://www.rsg-games.com/zh-TW/games.html",
   "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
@@ -22,7 +22,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 75,
@@ -37,7 +37,7 @@
         "visualResult": "TryGame displayed Code 56 disconnected/re-login error; official single-game page only."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 76,
@@ -52,7 +52,7 @@
         "visualResult": "TryGame remained on bamboo curtain without visible reels; official single-game page only."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 77,
@@ -67,7 +67,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 78,
@@ -82,8 +82,14 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     }
   ],
-  "nextCursor": "RSG official catalog order 79 gameid 65 太極; 11 pending Slot and one classification hold after this batch."
+  "nextCursor": "RSG official catalog order 79 gameid 65 太極; 11 pending Slot and one classification hold after this batch.",
+  "publication": {
+    "sha": "a94d3e8c7a96f602ea4d317f44282b09bde6bcb4",
+    "githubActionsRun": 40854392244,
+    "cloudflareDeployment": "b9b4d768-3b21-497e-a96b-04b58ef28959",
+    "liveReadback": "All five game details and images, Search, Explorer, Compare, Provider, official sources, correctly classified demo links, noindex headers and empty sitemap verified at exact SHA deployment."
+  }
 }
