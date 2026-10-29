@@ -1,10 +1,10 @@
 {
   "batch": 103,
   "recordedAt": "2026-10-29T00:00:00+08:00",
-  "state": "verified-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 5,
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "Continue approved JILI official catalog after batch 102",
   "catalog": "https://jiligames.com/games?showSlotGames=true",
   "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
@@ -15,7 +15,7 @@
       "gameId": "504",
       "name": "Crazy777 2",
       "slug": "crazy777-2",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/504?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -24,7 +24,7 @@
       "gameId": "542",
       "name": "Super Ace 2",
       "slug": "super-ace-2",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/542?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -33,7 +33,7 @@
       "gameId": "424",
       "name": "Golden Empire 2",
       "slug": "golden-empire-2",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/424?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -42,7 +42,7 @@
       "gameId": "394",
       "name": "Sweet Magic",
       "slug": "sweet-magic",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/394?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -51,7 +51,7 @@
       "gameId": "463",
       "name": "3 LUCKY LION",
       "slug": "3-lucky-lion",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/463?showGame=false",
       "demoStatus": "official-game-page"
     }
@@ -86,5 +86,12 @@
     }
   ],
   "nextCursor": "JILI official catalog order 75 of 277; check skipped 75-76 then 78.",
-  "checkedAt": "2026-10-29"
+  "checkedAt": "2026-10-29",
+  "publication": {
+    "sha": "14200efaaf9019289922ffde963e67dee8a244b4",
+    "githubActionsRun": 40876556840,
+    "cloudflareDeployment": "e9406c92-6e2c-46e2-ace7-472a7e3f26da",
+    "liveUrl": "https://e9406c92.slothub-4cu.pages.dev",
+    "liveReadback": "Five Game details, sources, official game-page entries, images, Search, Explorer, Compare, Provider, nofollow, noindex header, absent canonical and empty sitemap verified."
+  }
 }
