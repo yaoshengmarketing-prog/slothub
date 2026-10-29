@@ -1,0 +1,71 @@
+{
+  "batch": 122,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "verified-pending-publication",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Finish approved JILI official catalog after batch 121",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and Game ID. No same JILI records for IDs 37,26,13,14,6; numeric IDs in RSG are separate Providers.",
+  "records": [
+    {
+      "order": 265,
+      "gameId": "37",
+      "name": "Night City",
+      "slug": "night-city-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/37?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 266,
+      "gameId": "26",
+      "name": "Hawaii Beauty",
+      "slug": "hawaii-beauty-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/26?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 267,
+      "gameId": "13",
+      "name": "Lucky Ball",
+      "slug": "lucky-ball-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/13?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 268,
+      "gameId": "14",
+      "name": "HYPER BURST",
+      "slug": "hyper-burst-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/14?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 269,
+      "gameId": "6",
+      "name": "Fortune tree",
+      "slug": "fortune-tree-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/6?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "fieldConflict": [
+    {
+      "order": 269,
+      "gameId": "6",
+      "field": "paylines",
+      "officialField": "30",
+      "officialDescription": "20 paylines",
+      "resolution": "Omitted value; retained official source and noted conflict in Game summary."
+    }
+  ],
+  "nextCursor": "JILI official catalog order 270 of 277.",
+  "checkedAt": "2026-10-30"
+}
