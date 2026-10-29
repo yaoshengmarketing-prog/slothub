@@ -1,0 +1,68 @@
+{
+  "batch": 121,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "verified-pending-publication",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI official catalog after batch 120",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and Game ID. No same JILI records for IDs 48,91,21,43,23; same JILI IDs and exact titles absent from existing Game Markdown; numeric IDs in other Providers are separate games.",
+  "records": [
+    {
+      "order": 259,
+      "gameId": "48",
+      "name": "Lucky Goldbricks",
+      "slug": "lucky-goldbricks-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/48?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 261,
+      "gameId": "91",
+      "name": "Lucky Coming",
+      "slug": "lucky-coming-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/91?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 262,
+      "gameId": "21",
+      "name": "FA FA FA",
+      "slug": "fa-fa-fa-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/21?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 263,
+      "gameId": "43",
+      "name": "XIYANGYANG",
+      "slug": "xiyangyang-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/43?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 264,
+      "gameId": "23",
+      "name": "Candy Baby",
+      "slug": "candy-baby-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/23?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "excluded": [
+    {
+      "order": 260,
+      "gameId": "123",
+      "reason": "Official Table and Card"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 265 of 277.",
+  "checkedAt": "2026-10-30"
+}
