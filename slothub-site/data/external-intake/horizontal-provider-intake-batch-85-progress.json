@@ -1,0 +1,89 @@
+{
+  "batch": 85,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "full-verify-passed-awaiting-publication",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "RSG official catalog following Taiwan operator common provider discovery.",
+  "catalog": "https://www.rsg-games.com/zh-TW/games.html",
+  "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown checked by RSG Provider, Chinese name, English alias, gameId and filename before capture; IDs 26, 27, 28, 29, 3 absent.",
+  "records": [
+    {
+      "order": 43,
+      "provider": "RSG",
+      "name": "泰好運",
+      "gameId": "26",
+      "slug": "lucky-thailand-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_26.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=26&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 44,
+      "provider": "RSG",
+      "name": "財神到",
+      "gameId": "27",
+      "slug": "god-of-wealth-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_27.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=27&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 45,
+      "provider": "RSG",
+      "name": "行運一條龍",
+      "gameId": "28",
+      "slug": "lucky-dragon-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_28.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=28&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 46,
+      "provider": "RSG",
+      "name": "HUSA",
+      "gameId": "29",
+      "slug": "husa-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_29.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=29&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 47,
+      "provider": "RSG",
+      "name": "皇家777",
+      "gameId": "3",
+      "slug": "royal-777-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_3.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=3&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    }
+  ],
+  "nextCursor": "RSG official catalog order 48 gameid 30 龍王; 42 pending Slot after this batch."
+}

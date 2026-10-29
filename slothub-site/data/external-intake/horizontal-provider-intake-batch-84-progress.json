@@ -1,9 +1,9 @@
 {
   "batch": 84,
   "recordedAt": "2026-10-29T00:00:00+08:00",
-  "state": "full-verify-passed-awaiting-publication",
+  "state": "published-and-verified-live",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "RSG official catalog following Taiwan operator common provider discovery.",
   "catalog": "https://www.rsg-games.com/zh-TW/games.html",
   "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
@@ -22,7 +22,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 39,
@@ -37,7 +37,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 40,
@@ -52,7 +52,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 41,
@@ -67,7 +67,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 42,
@@ -82,8 +82,14 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     }
   ],
-  "nextCursor": "RSG official catalog order 43 gameid 26 泰好運; 47 pending Slot after this batch."
+  "nextCursor": "RSG official catalog order 43 gameid 26 泰好運; 47 pending Slot after this batch.",
+  "publication": {
+    "sha": "89c1f8e634ab0e9d14a964196ea08401257ced73",
+    "githubActionsRun": 40847309063,
+    "cloudflareDeployment": "98f768b5-e854-4971-80fc-b555e37ccb5c",
+    "liveReadback": "Five slugs found in Search, Explorer, Compare and RSG Provider; details, source and playable demo links present. X-Robots-Tag noindex,nofollow, empty sitemap, no canonical."
+  }
 }
