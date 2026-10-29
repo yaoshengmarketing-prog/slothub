@@ -1,9 +1,9 @@
 {
   "batch": 87,
   "recordedAt": "2026-10-29T00:00:00+08:00",
-  "state": "full-verify-passed-awaiting-publication",
+  "state": "published-and-verified-live",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "RSG official catalog following Taiwan operator common provider discovery.",
   "catalog": "https://www.rsg-games.com/zh-TW/games.html",
   "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
@@ -22,7 +22,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 54,
@@ -37,7 +37,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 55,
@@ -52,7 +52,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 56,
@@ -67,7 +67,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 57,
@@ -82,8 +82,14 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     }
   ],
-  "nextCursor": "RSG official catalog order 58 gameid 4 慾望城市; 32 pending Slot after this batch."
+  "nextCursor": "RSG official catalog order 58 gameid 4 慾望城市; 32 pending Slot after this batch.",
+  "publication": {
+    "sha": "19c002a99246d80f74df6859f33cfbb2e83b1ad8",
+    "githubActionsRun": 40850076087,
+    "cloudflareDeployment": "2c5dd0fb-39d4-4a1b-a192-bc1bf526ebb1",
+    "liveReadback": "All five game details, Search, Explorer, Compare, Provider, official source, images, demo links, noindex headers and empty sitemap verified at exact SHA deployment."
+  }
 }

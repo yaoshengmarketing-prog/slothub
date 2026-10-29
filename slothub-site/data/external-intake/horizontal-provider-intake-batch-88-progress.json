@@ -1,0 +1,89 @@
+{
+  "batch": 88,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "captured-awaiting-full-verify",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "RSG official catalog following Taiwan operator common provider discovery.",
+  "catalog": "https://www.rsg-games.com/zh-TW/games.html",
+  "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown checked by RSG Provider, Chinese name, English alias, gameId and filename before capture; IDs 4, 40–43 absent.",
+  "records": [
+    {
+      "order": 58,
+      "provider": "RSG",
+      "name": "慾望城市",
+      "gameId": "4",
+      "slug": "love-city-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_4.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=4&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 59,
+      "provider": "RSG",
+      "name": "福娃發發",
+      "gameId": "40",
+      "slug": "fu-wa-fa-fa-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_40.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/zh-TW/games_detail_40.html",
+        "accessType": "official-game-page",
+        "visualResult": "TryGame loaded to 100%, then Code 59 login verification failure; official single-game page only."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 60,
+      "provider": "RSG",
+      "name": "泰山",
+      "gameId": "41",
+      "slug": "tarzan-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_41.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=41&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 61,
+      "provider": "RSG",
+      "name": "墨西哥辣椒",
+      "gameId": "42",
+      "slug": "jalapeno-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_42.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=42&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 62,
+      "provider": "RSG",
+      "name": "金豬爆吉",
+      "gameId": "43",
+      "slug": "piggy-punch-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_43.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=43&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    }
+  ],
+  "nextCursor": "RSG official catalog order 63 gameid 44 七起來; 27 pending Slot after this batch."
+}
