@@ -1,20 +1,20 @@
 {
   "batch": 96,
   "recordedAt": "2026-10-29T00:00:00+08:00",
-  "state": "imported-awaiting-full-verification",
+  "state": "published-and-verified-live",
   "batchSize": 5,
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "Continue approved JILI Games official catalog in source order after batch 95.",
   "catalog": "https://jiligames.com/games?showSlotGames=true",
   "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
   "dedupScope": "All Game Markdown filenames, Provider, English name, Chinese name, aliases and gameId; JILI IDs 595, 540, 539, 515 and 448 were absent before this batch.",
   "records": [
-    { "order": 12, "gameId": "595", "name": "Dice & Drop", "slug": "dice-and-drop", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/595?showGame=false", "demoStatus": "official-game-page" },
-    { "order": 13, "gameId": "540", "name": "Fortune Gems 500", "slug": "fortune-gems-500", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/540?showGame=false", "demoStatus": "official-game-page" },
-    { "order": 14, "gameId": "539", "name": "Super Ace SPEED", "slug": "super-ace-speed", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/539?showGame=false", "demoStatus": "official-game-page" },
-    { "order": 15, "gameId": "515", "name": "Thor Dice", "slug": "thor-dice", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/515?showGame=false", "demoStatus": "official-game-page" },
-    { "order": 16, "gameId": "448", "name": "Rapid Gems 777", "slug": "rapid-gems-777", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/448?showGame=false", "demoStatus": "official-game-page" }
+    { "order": 12, "gameId": "595", "name": "Dice & Drop", "slug": "dice-and-drop", "status": "published-live-verified", "officialPage": "https://jiligames.com/PlusIntro/595?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 13, "gameId": "540", "name": "Fortune Gems 500", "slug": "fortune-gems-500", "status": "published-live-verified", "officialPage": "https://jiligames.com/PlusIntro/540?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 14, "gameId": "539", "name": "Super Ace SPEED", "slug": "super-ace-speed", "status": "published-live-verified", "officialPage": "https://jiligames.com/PlusIntro/539?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 15, "gameId": "515", "name": "Thor Dice", "slug": "thor-dice", "status": "published-live-verified", "officialPage": "https://jiligames.com/PlusIntro/515?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 16, "gameId": "448", "name": "Rapid Gems 777", "slug": "rapid-gems-777", "status": "published-live-verified", "officialPage": "https://jiligames.com/PlusIntro/448?showGame=false", "demoStatus": "official-game-page" }
   ],
   "exclusions": [
     { "order": 1, "gameId": "794", "reason": "JILI Game Info type Casino" },
@@ -25,5 +25,12 @@
     { "order": 8, "gameId": "652", "reason": "JILI Game Info type Table and Card" }
   ],
   "nextCursor": "JILI official catalog order 17 of 277; continue individual Game Info classification and dedup. Order 7 remains held for classification review.",
-  "checkedAt": "2026-10-29"
+  "checkedAt": "2026-10-29",
+  "publication": {
+    "sha": "98ec017b4ce6cc31022e978f53dbe5b9e82e014f",
+    "githubActionsRun": 40868410683,
+    "cloudflareDeployment": "cb108794-0000-4f41-b94c-f23874c8d21a",
+    "liveUrl": "https://cb108794.slothub-4cu.pages.dev",
+    "liveReadback": "Five Game details, sources, official game-page entries, images, Search, Explorer, Compare, Provider, nofollow, noindex header, absent canonical and empty sitemap verified."
+  }
 }
