@@ -1,10 +1,10 @@
 {
   "batch": 106,
   "recordedAt": "2026-10-29T00:00:00+08:00",
-  "state": "verified-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 5,
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "Continue approved JILI official catalog after batch 105",
   "catalog": "https://jiligames.com/games?showSlotGames=true",
   "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
@@ -15,7 +15,7 @@
       "gameId": "422",
       "name": "Fruity Wheel",
       "slug": "fruity-wheel",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/422?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -24,7 +24,7 @@
       "gameId": "421",
       "name": "Lucky Jaguar",
       "slug": "lucky-jaguar",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/421?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -33,7 +33,7 @@
       "gameId": "374",
       "name": "Lucky Doggy",
       "slug": "lucky-doggy",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/374?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -42,7 +42,7 @@
       "gameId": "376",
       "name": "Shōgun",
       "slug": "shogun",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/376?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -51,7 +51,7 @@
       "gameId": "379",
       "name": "Money Pot",
       "slug": "money-pot",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/379?showGame=false",
       "demoStatus": "official-game-page"
     }
@@ -76,5 +76,12 @@
     }
   ],
   "nextCursor": "JILI official catalog order 104 of 277.",
-  "checkedAt": "2026-10-29"
+  "checkedAt": "2026-10-29",
+  "publication": {
+    "sha": "7b37bb1f89d1f084337c940bceb5fda86be92858",
+    "githubActionsRun": 40884147221,
+    "cloudflareDeployment": "f15ca9c6-c2d6-4fd9-9638-28a9fc81cb98",
+    "liveUrl": "https://f15ca9c6.slothub-4cu.pages.dev",
+    "liveReadback": "Five Game details, sources, official game-page entries, images, Search, Explorer, Compare, Provider, nofollow, noindex header, absent canonical and empty sitemap verified."
+  }
 }
