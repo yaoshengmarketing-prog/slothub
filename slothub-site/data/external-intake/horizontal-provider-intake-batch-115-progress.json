@@ -1,0 +1,93 @@
+{
+  "batch": 115,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "verified-pending-publication",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI official catalog after batch 114",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and Game ID. No same JILI records for IDs 136,144,135,38,130; all five exact English names absent from existing Game Markdown.",
+  "records": [
+    {
+      "order": 200,
+      "gameId": "136",
+      "name": "SAMBA",
+      "slug": "samba-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/136?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 201,
+      "gameId": "144",
+      "name": "JILI CAISHEN",
+      "slug": "jili-caishen",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/144?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 205,
+      "gameId": "135",
+      "name": "Mayan Empire",
+      "slug": "mayan-empire-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/135?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 208,
+      "gameId": "38",
+      "name": "Fengshen",
+      "slug": "fengshen-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/38?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 210,
+      "gameId": "130",
+      "name": "Thor X",
+      "slug": "thor-x-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/130?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "excluded": [
+    {
+      "order": 202,
+      "gameId": "72",
+      "reason": "Official Table and Card"
+    },
+    {
+      "order": 203,
+      "gameId": "179",
+      "reason": "Official Fish and Arcade"
+    },
+    {
+      "order": 204,
+      "gameId": "150",
+      "reason": "Official Bingo"
+    },
+    {
+      "order": 206,
+      "gameId": "46",
+      "reason": "Official Fish and Arcade"
+    },
+    {
+      "order": 207,
+      "gameId": "132",
+      "reason": "Official Indian Poker"
+    },
+    {
+      "order": 209,
+      "gameId": "174",
+      "reason": "Official Bingo"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 211 of 277.",
+  "checkedAt": "2026-10-29"
+}
