@@ -1,0 +1,68 @@
+{
+  "batch": 120,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "verified-pending-publication",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI official catalog after batch 119",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and Game ID. No same JILI records for IDs 58,85,2,33,27; same JILI IDs and exact titles absent from existing Game Markdown; matching numeric IDs in other Providers are separate games.",
+  "records": [
+    {
+      "order": 254,
+      "gameId": "58",
+      "name": "Golden Queen",
+      "slug": "golden-queen-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/58?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 255,
+      "gameId": "85",
+      "name": "Pharaoh Treasure",
+      "slug": "pharaoh-treasure-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/85?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 256,
+      "gameId": "2",
+      "name": "Chin Shi Huang",
+      "slug": "chin-shi-huang-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/2?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 257,
+      "gameId": "33",
+      "name": "Fortune Pig",
+      "slug": "fortune-pig-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/33?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 258,
+      "gameId": "27",
+      "name": "Speed 777",
+      "slug": "speed-777-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/27?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "excluded": [
+    {
+      "order": 253,
+      "gameId": "143",
+      "reason": "Official Bingo"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 259 of 277.",
+  "checkedAt": "2026-10-30"
+}

@@ -4,7 +4,7 @@
   "checkedAt": "2026-10-29",
   "scope": "ALL GAMES in source order; catalogType 1 is a discovery hint only; each Slot requires individual Game Info classification",
   "itemCount": 277,
-  "cursor": "Batch 119 captured orders 237,240,248,249,252; order 244 duplicate existing JILI Game; orders 238,239,241-243,245-247,250,251 excluded official non-Slot. Next order 253; order 223 remains source-conflict-held.",
+  "cursor": "Batch 120 captured orders 254-258; order 253 excluded as official Bingo. Next order 259; prior order 223 remains source-conflict-held.",
   "items": [
     {
       "decision": "excluded-non-slot",
@@ -2149,15 +2149,16 @@
       "name": "Shanghai Beauty"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "143",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 253,
       "catalogType": "5",
-      "name": "Bonus Bingo"
+      "name": "Bonus Bingo",
+      "reason": "Official Bingo"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "58",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 254,
@@ -2165,7 +2166,7 @@
       "name": "Golden Queen"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "85",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 255,
@@ -2173,7 +2174,7 @@
       "name": "Pharaoh Treasure"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "2",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 256,
@@ -2181,7 +2182,7 @@
       "name": "Chin Shi Huang"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "33",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 257,
@@ -2189,7 +2190,7 @@
       "name": "Fortune Pig"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "27",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 258,
