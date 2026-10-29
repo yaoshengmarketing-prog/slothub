@@ -1,0 +1,59 @@
+{
+  "batch": 94,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "captured-awaiting-full-verify",
+  "batchSize": 1,
+  "finalUnderFive": true,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "RSG official catalog following Taiwan operator common provider discovery.",
+  "catalog": "https://www.rsg-games.com/zh-TW/games.html",
+  "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown checked by RSG Provider, Chinese name, English alias, gameId and filename; ID 90 absent.",
+  "records": [
+    {
+      "order": 89,
+      "provider": "RSG",
+      "name": "龍行天下",
+      "gameId": "90",
+      "slug": "dragon-fight-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_90.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=90&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    }
+  ],
+  "exhaustion": {
+    "exactCursor": "RSG official catalog order 89 of 89, gameid 90 龍行天下; no subsequent item in dated 2026-10-29 first-party catalog snapshot.",
+    "catalogItems": 89,
+    "nonSlotItems": 2,
+    "publishedOrCapturedSlotItems": 86,
+    "heldItems": 1,
+    "remainingSafePublishableCandidates": 0,
+    "exclusions": [
+      {
+        "order": 71,
+        "gameId": "5001",
+        "name": "皇冠5PK",
+        "reason": "Official detail labels 老虎機 but 5PK/card branding suggests poker; TryGame displayed Connection failed. Slot gameplay cannot be verified. First-party rules or human taxonomy decision needed; not counted as Slot publication."
+      },
+      {
+        "order": 9,
+        "gameId": "3002",
+        "name": "福娃捕魚",
+        "reason": "Official catalog categorizes this as fishing, not Slot."
+      },
+      {
+        "order": 10,
+        "gameId": "3001",
+        "name": "八爪天下海霸王",
+        "reason": "Official catalog categorizes this as fishing, not Slot."
+      }
+    ]
+  },
+  "nextCursor": "RSG dated official catalog snapshot exhausted at order 89; resume with new dated first-party catalog refresh or human decision on order 71 gameid 5001."
+}

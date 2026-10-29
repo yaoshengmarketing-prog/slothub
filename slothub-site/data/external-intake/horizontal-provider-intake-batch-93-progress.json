@@ -1,9 +1,9 @@
 {
   "batch": 93,
   "recordedAt": "2026-10-29T00:00:00+08:00",
-  "state": "captured-awaiting-full-verify",
+  "state": "published-and-verified-live",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "RSG official catalog following Taiwan operator common provider discovery.",
   "catalog": "https://www.rsg-games.com/zh-TW/games.html",
   "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
@@ -22,7 +22,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 85,
@@ -37,7 +37,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 86,
@@ -52,7 +52,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 87,
@@ -67,7 +67,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 88,
@@ -82,8 +82,14 @@
         "visualResult": "TryGame displayed Code 56 disconnected/re-login error; official single-game page only."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     }
   ],
-  "nextCursor": "RSG official catalog order 89 gameid 90 龍行天下; one pending Slot and one classification hold after this batch."
+  "nextCursor": "RSG official catalog order 89 gameid 90 龍行天下; one pending Slot and one classification hold after this batch.",
+  "publication": {
+    "sha": "fe9886463c2e0703b83f7acaef72088b6a364e4e",
+    "githubActionsRun": 40856181437,
+    "cloudflareDeployment": "a79994cd-faea-4b28-b87c-e2fe4774a35e",
+    "liveReadback": "All five game details and images, Search, Explorer, Compare, Provider, official sources, correctly classified demo links, noindex headers and empty sitemap verified at exact SHA deployment."
+  }
 }

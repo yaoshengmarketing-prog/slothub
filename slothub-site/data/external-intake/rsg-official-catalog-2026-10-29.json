@@ -864,7 +864,7 @@
     },
     {
       "order": 84,
-      "status": "captured-batch-93",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_72.html",
       "nameZhHant": "潑水節",
       "gameId": "72",
@@ -875,7 +875,7 @@
     },
     {
       "order": 85,
-      "status": "captured-batch-93",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_73.html",
       "nameZhHant": "精靈射手",
       "gameId": "73",
@@ -886,7 +886,7 @@
     },
     {
       "order": 86,
-      "status": "captured-batch-93",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_75.html",
       "nameZhHant": "黃金摔角手",
       "gameId": "75",
@@ -897,7 +897,7 @@
     },
     {
       "order": 87,
-      "status": "captured-batch-93",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_76.html",
       "nameZhHant": "小熊王國",
       "gameId": "76",
@@ -908,7 +908,7 @@
     },
     {
       "order": 88,
-      "status": "captured-batch-93",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_78.html",
       "nameZhHant": "皇家7777",
       "gameId": "78",
@@ -919,12 +919,14 @@
     },
     {
       "order": 89,
-      "status": "pending",
+      "status": "captured-batch-94",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_90.html",
       "nameZhHant": "龍行天下",
       "gameId": "90",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "dragon-fight-rsg",
+      "decision": "Official game page, Slot type, metrics, image and playable demo visually checked 2026-10-29."
     }
   ],
   "catalogUrl": "https://www.rsg-games.com/zh-TW/games.html",
@@ -932,5 +934,5 @@
   "pendingAtSnapshot": 62,
   "checkedAt": "2026-10-29",
   "slotCount": 87,
-  "cursor": "Catalog order 88, gameid 78; next order 89 gameid 90 龍行天下"
+  "cursor": "Catalog order 89 of 89, gameid 90; dated snapshot exhausted; order 71 gameid 5001 remains classification hold"
 }
