@@ -1,10 +1,10 @@
 {
   "batch": 119,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "verified-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 5,
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "Continue approved JILI official catalog after batch 118",
   "catalog": "https://jiligames.com/games?showSlotGames=true",
   "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
@@ -15,7 +15,7 @@
       "gameId": "76",
       "name": "Party Night",
       "slug": "party-night-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/76?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -24,7 +24,7 @@
       "gameId": "102",
       "name": "ROMA X",
       "slug": "roma-x-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/102?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -33,7 +33,7 @@
       "gameId": "30",
       "name": "Bubble Beauty",
       "slug": "bubble-beauty-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/30?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -42,7 +42,7 @@
       "gameId": "106",
       "name": "TWIN WINS",
       "slug": "twin-wins-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/106?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -51,7 +51,7 @@
       "gameId": "17",
       "name": "Shanghai Beauty",
       "slug": "shanghai-beauty-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/17?showGame=false",
       "demoStatus": "official-game-page"
     }
@@ -114,5 +114,15 @@
     }
   ],
   "nextCursor": "JILI official catalog order 253 of 277.",
-  "checkedAt": "2026-10-30"
+  "checkedAt": "2026-10-30",
+  "publication": {
+    "commit": "3223a4ec784d2a14f498b38d9e51d6cd919497b2",
+    "githubActionsRun": 40913724370,
+    "githubActionsConclusion": "success",
+    "cloudflareDeploymentId": "2feeded6-c255-4be0-b6a0-0fd186b1ba37",
+    "cloudflareUrl": "https://2feeded6.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Five detail pages, five PNGs, Search, Explorer, Compare, Provider, nofollow, noindex, X-Robots-Tag, empty sitemap and no canonical passed",
+    "checkedAt": "2026-10-30"
+  }
 }
