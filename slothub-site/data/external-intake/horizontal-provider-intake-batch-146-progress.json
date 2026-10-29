@@ -1,10 +1,10 @@
 {
   "batch": 146,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 33",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Open Sesame",
       "slug": "open-sesame-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/open-sesame",
       "officialFacts": "Official English/CN detail: Slot, RTP 96.25%, MEDIUM volatility, Maximum Win 1200X, 243 Ways, release year 2016; three OPEN SESAME signs trigger lucky draw for free-game multipliers/rounds, accumulating coordination.",
       "sourceConflict": "CasinoRating says up to 20 free spins, which official page does not quantify. Browser static text says demo temporarily unavailable while dynamic post-verification page advertises PLAY FOR FREE; actual play not tested. No demo availability claim published.",
@@ -28,5 +28,15 @@
       "demo": "Not verified: static third-party page says temporarily unavailable, dynamic browser page advertises PLAY FOR FREE; no verified game launch destination."
     }
   ],
-  "nextCursor": "JDB catalog card 34 OPEN SESAME Ⅱ"
+  "nextCursor": "JDB catalog card 34 OPEN SESAME Ⅱ",
+  "publication": {
+    "commit": "2d22b2c765565d5937be9419c1c74a264b7b10e6",
+    "githubRun": 40952359839,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "fecea06c-83d4-4eec-9063-45e5e3040277",
+    "cloudflareUrl": "https://fecea06c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, image and sitemap HTTP 200; official and exact CasinoRating source URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 708,
+  "gameCount": 709,
   "providerCount": 371,
-  "sourcePageCount": 1282,
+  "sourcePageCount": 1284,
   "counts": {
     "access-restricted": 4,
-    "available": 612,
+    "available": 613,
     "not-verified": 92
   },
   "rules": {
@@ -17,6 +17,38 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "open-sesame-ii-jdb",
+      "name": "Open Sesame Ⅱ",
+      "provider": "jdb-gaming",
+      "status": "available",
+      "url": "https://slotslaunch.com/jdb-gaming/open-sesame-ii",
+      "accessType": "platform-game-page",
+      "platformName": "Slots Launch",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "Slots Launch exact page and image identify Open Sesame II and JDB Gaming; official detail supplies current specs, release year and mechanisms.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/open-sesame-ii",
+          "httpStatus": 200,
+          "notes": "Official Browser Use direct inspection run ab0298cc-7ea1-4d63-940e-bbaf3f232728"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/cn/games/slot/open-sesame-ii",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/open-sesame-ii",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://assets.slotslaunch.com/29534/open-sesame-ii.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "open-sesame-jdb",
       "name": "Open Sesame",

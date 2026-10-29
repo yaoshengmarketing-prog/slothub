@@ -1,0 +1,32 @@
+{
+  "batch": 147,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 34",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; no Open Sesame II or 芝麻开门Ⅱ record before this intake.",
+  "records": [
+    {
+      "order": 34,
+      "name": "Open Sesame Ⅱ",
+      "slug": "open-sesame-ii-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/open-sesame-ii",
+      "officialFacts": "Official English detail: Slot, RTP 95.87%, HIGH volatility, Maximum Win 2000X, 243 Ways, release year 2016; Mysterious Treasure Box lucky draw gives extra multipliers/spins, free-game randomly accumulating images.",
+      "sourceConflict": "Slots Launch release date 2022 conflicts with official 2016; partner-only Wild Multiplier, 3-scatter Free Spins, progressive jackpot and other mechanisms not used.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/open-sesame-ii",
+        "sourceUrl": "https://assets.slotslaunch.com/29534/open-sesame-ii.jpg",
+        "sha256": "1176925ce1850cb9163c1816a912e494c345b1efec6846a143a81e6cc2ea682a",
+        "visualCheck": "Exact Slots Launch page identifies Open Sesame II by JDB Gaming; downloaded valid 600x400 JPEG visibly displays OPEN SESAME II title and cave artwork."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 35 BIRDS PARTY"
+}
