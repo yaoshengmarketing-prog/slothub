@@ -1,10 +1,10 @@
 {
   "batch": 105,
   "recordedAt": "2026-10-29T00:00:00+08:00",
-  "state": "verified-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 5,
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "Continue approved JILI official catalog after batch 104",
   "catalog": "https://jiligames.com/games?showSlotGames=true",
   "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
@@ -15,7 +15,7 @@
       "gameId": "485",
       "name": "3 Coin Wild Horse",
       "slug": "3-coin-wild-horse",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/485?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -24,7 +24,7 @@
       "gameId": "392",
       "name": "Coin Tree",
       "slug": "coin-tree",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/392?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -33,7 +33,7 @@
       "gameId": "377",
       "name": "Safari Mystery",
       "slug": "safari-mystery",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/377?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -42,7 +42,7 @@
       "gameId": "307",
       "name": "Treasure Quest",
       "slug": "treasure-quest",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/307?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -51,7 +51,7 @@
       "gameId": "378",
       "name": "Golden Bank 2",
       "slug": "golden-bank-2",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/378?showGame=false",
       "demoStatus": "official-game-page"
     }
@@ -79,5 +79,12 @@
     }
   ],
   "nextCursor": "JILI official catalog order 96 of 277.",
-  "checkedAt": "2026-10-29"
+  "checkedAt": "2026-10-29",
+  "publication": {
+    "sha": "484be957d0594ba5fe499a15a8f8e3f6836bce94",
+    "githubActionsRun": 40883129429,
+    "cloudflareDeployment": "24fdc2f8-c2de-4da3-bb5b-1490c04f49e1",
+    "liveUrl": "https://24fdc2f8.slothub-4cu.pages.dev",
+    "liveReadback": "Five Game details, sources, official game-page entries, images, Search, Explorer, Compare, Provider, nofollow, noindex header, absent canonical and empty sitemap verified."
+  }
 }
