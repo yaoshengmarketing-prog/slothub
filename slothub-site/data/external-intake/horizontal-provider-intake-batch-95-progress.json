@@ -1,0 +1,29 @@
+{
+  "batch": 95,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "imported-awaiting-full-verification",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "JILI Games catalog after completed RSG intake; JILI is a common Taiwan operator provider and approved by the user.",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All src/content/games Markdown filenames and frontmatter names, aliases, provider and gameId; existing JILI Games entries are Super Ace, Golden Empire and Money Coming. Storm of Seth 2: Awakening is an ATG Games title and is distinct by provider and official ID.",
+  "records": [
+    { "order": 5, "gameId": "709", "name": "Lucky Caramelo", "slug": "lucky-caramelo", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/709?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 6, "gameId": "705", "name": "Storm of Seth 2", "slug": "storm-of-seth-2-jili", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/705?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 9, "gameId": "636", "name": "Joker Coins Expanded", "slug": "joker-coins-expanded", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/636?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 10, "gameId": "635", "name": "Joker's Fortune", "slug": "jokers-fortune", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/635?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 11, "gameId": "621", "name": "Crown of Fortune", "slug": "crown-of-fortune-jili", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/621?showGame=false", "demoStatus": "official-game-page" }
+  ],
+  "excludedBeforeCursor": [
+    { "order": 1, "name": "Chicken Dash Jackpot", "reason": "not individually checked; do not count as exhausted", "next": "Open Game Info and classify" },
+    { "order": 2, "name": "Jackpot Football", "reason": "not individually checked; do not count as exhausted", "next": "Open Game Info and classify" },
+    { "order": 3, "name": "Plinko Football", "reason": "not individually checked; do not count as exhausted", "next": "Open Game Info and classify" },
+    { "order": 4, "name": "Grand Golden Treasure", "reason": "official Game Info says Crash, not Slot", "next": "exclude" },
+    { "order": 7, "name": "Cash balloon", "reason": "official type says Slot but description is cash-out crash gameplay; classification conflict", "next": "hold for classification review" },
+    { "order": 8, "name": "Speed Andar Bahar", "reason": "not individually checked; do not count as exhausted", "next": "Open Game Info and classify" }
+  ],
+  "nextCursor": "JILI official catalog order 1 of 277; check skipped orders 1-3, 7-8, then continue from order 12; do not claim catalog exhaustion.",
+  "checkedAt": "2026-10-29"
+}
