@@ -1,0 +1,66 @@
+{
+  "version": "game-media-pilot-20261029-review-v1",
+  "baseMainSHA": "444028b0ee5de690877a652be832390ace07d682",
+  "purpose": "Two Game media local snapshots for review only; do not merge directly",
+  "preview": {
+    "url": null,
+    "status": "not-deployed",
+    "note": "GitHub HTML source and saved screenshots are review evidence, not a hosted interactive preview"
+  },
+  "personallyConfirmed": [
+    "Three requested HTML files and linked local images/styles exist",
+    "Densho is a device-composited game-screen image; Razor Shark is a feature symbol, not a complete board",
+    "Media section is after quick data and before independent Demo and operation text",
+    "Original image/view links and source/publisher labels are preserved",
+    "Razor iframe insertion is click-triggered with autoplay=0 and a permanent external fallback"
+  ],
+  "executorRecordsOnly": {
+    "file": "review/preview-results.json",
+    "reportedWidths": [
+      1440,
+      390,
+      320
+    ],
+    "reportedChecks": [
+      "no overflow",
+      "image dialog and Escape",
+      "no autoplay",
+      "independent external Demo"
+    ],
+    "limitation": "Historical executor results; no current browser rerun or original source-tree hash binding"
+  },
+  "notConfirmed": [
+    "Complete video content and same-game on-screen sequence",
+    "Useful timestamps",
+    "Actual embedded playback; oEmbed or iframe presence is insufficient",
+    "Current live desktop/mobile interaction retest; browser policy blocked file protocol",
+    "Adequate Densho small-text readability after mobile zoom",
+    "Conditional omission and null-safe initialization when no media exists"
+  ],
+  "reviewNotes": [
+    "Keep current layout; do not redesign homepage",
+    "Razor feature illustration does not complete actual game-board coverage",
+    "The no-material omission requirement is not demonstrated by hard-coded HTML; script directly dereferences .gm",
+    "Vimeo connection-security restriction remains an executor report; not bypassed"
+  ],
+  "packaging": {
+    "changes": "Only the two base stylesheet links changed to assets/site-base.css; public stylesheet URL references normalized to absolute URLs. All other original material content is retained.",
+    "baseStyleSource": "https://www.slothub.com.tw/_astro/BaseLayout.BBmYTUBJ.css",
+    "externalDependencies": "Fonts, original site navigation/runtime scripts and source/video services still require network access. This is a local snapshot, not full application integration."
+  },
+  "deploymentSafety": {
+    "productionBranch": "main",
+    "artifactRootOutsideBuild": "reviews/game-media-pilot-20261029",
+    "commitPrefix": "[CF-Pages-Skip]",
+    "configChanges": false,
+    "manualDeployment": false
+  },
+  "privacy": "Existing repository is private; reviewer GPT needs an authorized GitHub connection. Do not make repository public or upload credentials.",
+  "authorization": {
+    "commitReviewBranch": true,
+    "pushReviewBranch": true,
+    "draftPR": true,
+    "mergeMain": false,
+    "deploy": false
+  }
+}
