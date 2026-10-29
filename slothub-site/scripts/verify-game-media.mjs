@@ -4,6 +4,7 @@ import { parse } from 'yaml';
 import { projectGameMedia, vimeoPlayerUrl } from '../src/lib/game-media.mjs';
 
 const registry = JSON.parse(await readFile(new URL('../data/game-media.json', import.meta.url), 'utf8'));
+const isProduction = process.env.PUBLIC_SITE_ENV === 'production';
 const gameDir = new URL('../src/content/games/', import.meta.url);
 const games = await Promise.all((await readdir(gameDir)).filter(f => f.endsWith('.md')).map(async file => ({
   slug: file.slice(0, -3), data: parse((await readFile(new URL(file, gameDir), 'utf8')).match(/^---\r?\n([\s\S]*?)\r?\n---/)[1]),
@@ -57,13 +58,41 @@ if (process.argv.includes('--built')) {
     assert.doesNotMatch(module, /<iframe\b/, `${slug}: must not create player before click`);
     assert.equal((module.match(/class="gm-image"/g) ?? []).length,
       expected.filter(item => item.kind === 'image').length, `${slug}: public image adoption mismatch`);
+    for (const item of expected) {
+      assert.ok(module.includes(item.title), `${slug}: approved media title missing`);
+      assert.ok(module.includes(item.purpose), `${slug}: media purpose differs from adoption`);
+      if (item.kind === 'video') assert.ok(module.includes(`href="${item.url}"`), `${slug}: external fallback missing`);
+      if (item.playerUrl) assert.ok(module.includes(`data-player-url="${item.playerUrl.replaceAll('&', '&amp;')}"`), `${slug}: approved player URL mismatch`);
+    }
+    assert.equal((module.match(/class="gm-load"/g) ?? []).length,
+      expected.filter(item => item.playerUrl).length, `${slug}: incorrect player controls`);
     if (module) {
       assert.ok(html.indexOf('game-quick-read') < html.indexOf('data-game-media'));
       assert.ok(html.indexOf('data-game-media') < html.indexOf('game-demo-access'));
       assert.match(html, /AddCompareButton/);
-      assert.match(html, /content="noindex,nofollow"/);
-      assert.doesNotMatch(html, /rel="canonical"/);
+      if (isProduction) {
+        assert.match(html, /name="robots" content="index,follow"/, `${slug}: production Game indexing changed`);
+        assert.ok(html.includes(`rel="canonical" href="https://www.slothub.com.tw/games/${slug}/"`), `${slug}: production canonical missing`);
+      } else {
+        assert.match(html, /name="robots" content="noindex,nofollow"/, `${slug}: preview noindex missing`);
+        assert.doesNotMatch(html, /rel="canonical"/, `${slug}: preview must omit canonical`);
+      }
     }
   }
+  // Check public artifacts, not only visible markup: local fixtures and withheld
+  // image records must not leak via JS, JSON, CSS, or another generated page.
+  async function verifyPublicFiles(directory) {
+    for (const item of await readdir(directory, { withFileTypes: true })) {
+      assert.notEqual(item.name, '__media-test', 'Local test image directory leaked');
+      const url = new URL(item.name + (item.isDirectory() ? '/' : ''), directory);
+      if (item.isDirectory()) await verifyPublicFiles(url);
+      else if (/\.(html|js|mjs|json|css|txt|xml)$/.test(item.name)) {
+        const text = await readFile(url, 'utf8');
+        assert.doesNotMatch(text, /__media-test|game-media-fixture-original|LOCAL TEST ONLY|hacksaw-image-pending|push-image-pending|Razor-Reveal-min\.png/,
+          `${url.pathname}: private media or fixture data leaked`);
+      }
+    }
+  }
+  await verifyPublicFiles(new URL('../dist/', import.meta.url));
 }
-console.log(`PASS: optional Game media ownership, usage isolation, independent checks, data-driven player, fallback and ${process.argv.includes('--built') ? 'built output' : 'projection'} verified.`);
+console.log(`PASS: optional Game media ownership, usage isolation, independent checks, data-driven player, fallback and ${process.argv.includes('--built') ? (isProduction ? 'production' : 'preview') + ' built output' : 'projection'} verified.`);

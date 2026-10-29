@@ -25,7 +25,7 @@ const videos = items.filter(item => item.kind === 'video');
       <small>{item.official ? '原廠功能展示' : '第三方玩法紀錄 · 僅站外觀看'}</small>
       <h3>{item.title}</h3><p>{item.purpose}</p>
       {item.scopeNote && <small>{item.scopeNote}</small>}
-      {item.playerUrl && <><button type="button" class="gm-load" data-player-url={item.playerUrl} data-player-title={item.title}>載入原廠播放器</button><div class="gm-frame" hidden></div><small class="gm-playback-note" aria-live="polite"></small></>}
+      {item.playerUrl && <><button type="button" class="gm-load" data-player-url={item.playerUrl} data-player-title={item.title} aria-expanded="false" aria-controls={`gm-player-${item.id}`}>載入原廠播放器</button><div id={`gm-player-${item.id}`} class="gm-frame" hidden></div><small class="gm-playback-note" aria-live="polite"></small></>}
       <div class="gm-links"><a href={item.url} target="_blank" rel="nofollow noopener noreferrer">到 Vimeo 查看{item.official ? '原廠影片' : '第三方紀錄'}</a></div>
       <small>來源：{item.source.publisher} · 內容核對：{item.checkedAt}</small>
     </div>)}
@@ -51,18 +51,31 @@ const videos = items.filter(item => item.kind === 'video');
     gm.querySelectorAll<HTMLButtonElement>('.gm-load').forEach(button => {
       const frame = button.parentElement?.querySelector<HTMLElement>('.gm-frame');
       const note = button.parentElement?.querySelector<HTMLElement>('.gm-playback-note');
+      const external = button.parentElement?.querySelector<HTMLAnchorElement>('.gm-links a');
       if (!frame) return;
+      const collapse = (returnFocus = true) => {
+        frame.querySelector('iframe')?.remove();
+        frame.hidden = true;
+        button.setAttribute('aria-expanded', 'false');
+        button.textContent = '載入原廠播放器';
+        if (note) note.textContent = '播放器已收起，仍可使用下方來源連結觀看。';
+        if (returnFocus) button.focus({ preventScroll: true });
+      };
+      external?.addEventListener('click', () => {
+        if (frame.querySelector('iframe')) collapse(false);
+      });
       button.addEventListener('click', () => {
-        if (frame.querySelector('iframe')) return;
+        if (frame.querySelector('iframe')) { collapse(); return; }
         const url = new URL(button.dataset.playerUrl!);
         if (url.origin !== 'https://player.vimeo.com' || !/^\/video\/\d+$/.test(url.pathname)) return;
         const player = document.createElement('iframe');
         player.src = url.href; player.title = button.dataset.playerTitle ?? '遊戲功能展示';
         player.allow = 'fullscreen; picture-in-picture'; player.allowFullscreen = true;
-        player.addEventListener('error', () => { frame.hidden = true; player.remove(); if (note) note.textContent = '播放器暫時無法載入，請使用下方站外連結。'; });
-        frame.append(player); frame.hidden = false; button.disabled = true;
-        button.textContent = '播放器已載入';
-        if (note) note.textContent = '若無法播放，請使用下方站外連結。';
+        frame.append(player); frame.hidden = false;
+        button.setAttribute('aria-expanded', 'true');
+        button.textContent = '收起播放器';
+        // Requesting an iframe does not establish player readiness or playback.
+        if (note) note.textContent = '已要求開啟外部播放器，本站尚未確認影片可播放。若未顯示或無回應，可收起播放器或使用下方來源連結。';
       });
     });
   });
