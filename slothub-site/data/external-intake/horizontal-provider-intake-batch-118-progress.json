@@ -1,10 +1,10 @@
 {
   "batch": 118,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "verified-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 5,
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "Continue approved JILI official catalog after batch 117",
   "catalog": "https://jiligames.com/games?showSlotGames=true",
   "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
@@ -15,7 +15,7 @@
       "gameId": "110",
       "name": "Ali Baba",
       "slug": "ali-baba-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/110?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -24,7 +24,7 @@
       "gameId": "109",
       "name": "Fortune Gems",
       "slug": "fortune-gems-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/109?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -33,7 +33,7 @@
       "gameId": "134",
       "name": "Mega Ace",
       "slug": "mega-ace-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/134?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -42,7 +42,7 @@
       "gameId": "45",
       "name": "Golden Bank",
       "slug": "golden-bank-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/45?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -51,7 +51,7 @@
       "gameId": "116",
       "name": "Happy Taxi",
       "slug": "happy-taxi-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/116?showGame=false",
       "demoStatus": "official-game-page"
     }
@@ -69,5 +69,15 @@
     }
   ],
   "nextCursor": "JILI official catalog order 237 of 277.",
-  "checkedAt": "2026-10-30"
+  "checkedAt": "2026-10-30",
+  "publication": {
+    "commit": "408177703eff490d7a20c7fc645bb96eec75ded6",
+    "githubActionsRun": 40912303119,
+    "githubActionsConclusion": "success",
+    "cloudflareDeploymentId": "88e47e5c-dc65-4fd2-81ed-6db99fca631b",
+    "cloudflareUrl": "https://88e47e5c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Five detail pages, five PNGs, Search, Explorer, Compare, Provider, nofollow, noindex, X-Robots-Tag, empty sitemap and no canonical passed",
+    "checkedAt": "2026-10-30"
+  }
 }
