@@ -1,10 +1,10 @@
 {
   "batch": 131,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 18",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Golden Goal",
       "slug": "golden-goal-jdb",
       "provider": "jdb-gaming",
-      "status": "imported-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/golden-goal",
       "officialFacts": "Football Slot; official specification RTP 96.46%, SUPER LOW volatility, Maximum Win 88X, 1 Line, Release Year 2026; any line of three icons awards 8x or more, identical Green/Red/Gold Balls award 28x/58x/88x.",
       "image": {
@@ -28,5 +28,14 @@
     }
   ],
   "nextCursor": "JDB catalog card 19 MONEY TREE - HYPER WILD",
-  "publication": null
+  "publication": {
+    "commit": "6504931cbe0c992dc3536a0275095cdbd3dc6414",
+    "githubRun": 40941464645,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "43e63fbe-56eb-432f-8b8e-b98ef8bced17",
+    "cloudflareUrl": "https://43e63fbe.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Golden Goal Game, Provider, Search, Games Explorer, Compare, image and sitemap HTTP 200; official and exact platform URLs present; image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap. Same deployment also confirms corrected Super Niubi Fortune RTP 96.46 and max 264.",
+    "checkedAt": "2026-10-30"
+  }
 }

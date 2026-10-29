@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 693,
+  "gameCount": 694,
   "providerCount": 371,
-  "sourcePageCount": 1253,
+  "sourcePageCount": 1254,
   "counts": {
     "access-restricted": 4,
-    "available": 598,
+    "available": 599,
     "not-verified": 91
   },
   "rules": {
@@ -17,6 +17,34 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "money-tree-hyper-wild-jdb",
+      "name": "Money Tree - Hyper Wild",
+      "provider": "jdb-gaming",
+      "status": "available",
+      "url": "https://slotslaunch.com/jdb-gaming/money-tree-hyper-wild",
+      "accessType": "platform-game-page",
+      "platformName": "Slots Launch",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "Slots Launch exact JDB page uses colon punctuation for Money Tree Hyper Wild; downloaded image visibly displays same unique title. Official page supplies all math and mechanism fields.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/money-tree-hyper-wild",
+          "httpStatus": 200,
+          "notes": "Official direct browser inspection run 8e0b7242-f02c-40e1-a2f8-6498411f5400"
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/money-tree-hyper-wild",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://assets.slotslaunch.com/108859/money-tree-hyper-wild.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "golden-goal-jdb",
       "name": "Golden Goal",

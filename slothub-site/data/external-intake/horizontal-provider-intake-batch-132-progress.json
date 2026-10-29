@@ -1,0 +1,32 @@
+{
+  "batch": 132,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 19",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown names and aliases; Money Tree Hyper Wild and punctuation variant absent.",
+  "records": [
+    {
+      "order": 19,
+      "name": "Money Tree - Hyper Wild",
+      "slug": "money-tree-hyper-wild-jdb",
+      "provider": "jdb-gaming",
+      "status": "imported-pending-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/money-tree-hyper-wild",
+      "officialFacts": "Official direct browser specification: Slot, RTP 96.95%, MEDIUM volatility, Maximum Win 1300X, 243 Ways, Release Year 2026; Wilds move upward after each spin, form 2x2/3x3 Hyper Wild with 2x/10x multiplier; Money Tree Treasure Collector randomly triggers Super Bonus with 12 lucky bags and 3 matching rewards.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/money-tree-hyper-wild",
+        "sourceUrl": "https://assets.slotslaunch.com/108859/money-tree-hyper-wild.jpg",
+        "sha256": "2bee9746ab85dd4a6059bdc7a3aeacf73e5efaabad0ce8a3888a16112b076647",
+        "visualCheck": "Slots Launch exact JDB page uses Money Tree: Hyper Wild punctuation; downloaded valid JPEG visibly displays MONEY TREE HYPER WILD and matching tree artwork."
+      },
+      "demo": "Exact third-party Slots Launch page names game and JDB; classified external platform-game-page, not official Demo; guest limit/login may apply."
+    }
+  ],
+  "nextCursor": "JDB catalog card 20 SAMBA JEWEL",
+  "publication": null
+}
