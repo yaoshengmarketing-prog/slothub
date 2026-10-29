@@ -1,0 +1,83 @@
+{
+  "batch": 105,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "verified-pending-publication",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI official catalog after batch 104",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and gameId; no existing JILI same-game record for IDs 485,392,377,307,378.",
+  "records": [
+    {
+      "order": 87,
+      "gameId": "485",
+      "name": "3 Coin Wild Horse",
+      "slug": "3-coin-wild-horse",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/485?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 90,
+      "gameId": "392",
+      "name": "Coin Tree",
+      "slug": "coin-tree",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/392?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 91,
+      "gameId": "377",
+      "name": "Safari Mystery",
+      "slug": "safari-mystery",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/377?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 92,
+      "gameId": "307",
+      "name": "Treasure Quest",
+      "slug": "treasure-quest",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/307?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 95,
+      "gameId": "378",
+      "name": "Golden Bank 2",
+      "slug": "golden-bank-2",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/378?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "excludedNonSlot": [
+    {
+      "gameId": "473",
+      "order": 88,
+      "reason": "Official Crash"
+    },
+    {
+      "gameId": "459",
+      "order": 89,
+      "reason": "Official Crash"
+    },
+    {
+      "gameId": "441",
+      "order": 93,
+      "reason": "Official Crash"
+    },
+    {
+      "gameId": "442",
+      "order": 94,
+      "reason": "Official Bingo"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 96 of 277.",
+  "checkedAt": "2026-10-29"
+}

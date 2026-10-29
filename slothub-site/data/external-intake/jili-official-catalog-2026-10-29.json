@@ -4,7 +4,7 @@
   "checkedAt": "2026-10-29",
   "scope": "ALL GAMES in source order; catalogType 1 is a discovery hint only; each Slot requires individual Game Info classification",
   "itemCount": 277,
-  "cursor": "Batch 104 captured orders 78,80-82,86; 75-76 and 79 held for Slot-label/play conflict; 83-85 excluded non-Slot. Next order 87.",
+  "cursor": "Batch 105 captured orders 87,90-92,95; orders 88-89 and 93-94 excluded by individual official non-Slot type. Next order 96.",
   "items": [
     {
       "decision": "excluded-non-slot",
@@ -730,7 +730,7 @@
       "name": "Roma X Deluxe"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-105",
       "gameId": "485",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 87,
@@ -738,23 +738,25 @@
       "name": "3 Coin Wild Horse"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "473",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 88,
       "catalogType": "7",
-      "name": "Cricket War"
+      "name": "Cricket War",
+      "reason": "Official Game Info type Crash."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "459",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 89,
       "catalogType": "7",
-      "name": "Crash Touchdown"
+      "name": "Crash Touchdown",
+      "reason": "Official Game Info type Crash."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-105",
       "gameId": "392",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 90,
@@ -762,7 +764,7 @@
       "name": "Coin Tree"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-105",
       "gameId": "377",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 91,
@@ -770,7 +772,7 @@
       "name": "Safari Mystery"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-105",
       "gameId": "307",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 92,
@@ -778,23 +780,25 @@
       "name": "Treasure Quest"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "441",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 93,
       "catalogType": "7",
-      "name": "Fortune Gems Scratch"
+      "name": "Fortune Gems Scratch",
+      "reason": "Official Game Info type Crash."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "442",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 94,
       "catalogType": "5",
-      "name": "Go For Champion"
+      "name": "Go For Champion",
+      "reason": "Official Game Info type Bingo."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-105",
       "gameId": "378",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 95,
