@@ -4,39 +4,43 @@
   "checkedAt": "2026-10-29",
   "scope": "ALL GAMES in source order; catalogType 1 is a discovery hint only; each Slot requires individual Game Info classification",
   "itemCount": 277,
-  "cursor": "First five individually verified Slot entries captured; continue at official catalog order 1 and traverse exclusions and captured records in source order",
+  "cursor": "Orders 1-16 assessed except order 7 Cash balloon classification conflict; batch 96 captured orders 12-16. Continue at order 17.",
   "items": [
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "794",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 1,
       "catalogType": "7",
-      "name": "Chicken Dash Jackpot"
+      "name": "Chicken Dash Jackpot",
+      "reason": "official Casino"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "737",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 2,
       "catalogType": "7",
-      "name": "Jackpot Football"
+      "name": "Jackpot Football",
+      "reason": "official Crash"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "731",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 3,
       "catalogType": "7",
-      "name": "Plinko Football"
+      "name": "Plinko Football",
+      "reason": "official Crash"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "719",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 4,
       "catalogType": "7",
-      "name": "Grand Golden Treasure"
+      "name": "Grand Golden Treasure",
+      "reason": "official Crash"
     },
     {
       "decision": "captured-batch-95",
@@ -63,12 +67,13 @@
       "name": "Cash balloon"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "652",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 8,
       "catalogType": "2",
-      "name": "Speed Andar Bahar"
+      "name": "Speed Andar Bahar",
+      "reason": "official Table and Card"
     },
     {
       "decision": "captured-batch-95",
@@ -95,7 +100,7 @@
       "name": "Crown of Fortune"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-96",
       "gameId": "595",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 12,
@@ -103,7 +108,7 @@
       "name": "Dice & Drop"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-96",
       "gameId": "540",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 13,
@@ -111,7 +116,7 @@
       "name": "Fortune Gems 500"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-96",
       "gameId": "539",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 14,
@@ -119,7 +124,7 @@
       "name": "Super Ace SPEED"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-96",
       "gameId": "515",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 15,
@@ -127,7 +132,7 @@
       "name": "Thor Dice"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-96",
       "gameId": "448",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 16,
