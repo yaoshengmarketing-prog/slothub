@@ -1,10 +1,10 @@
 {
   "batch": 114,
   "recordedAt": "2026-10-29T00:00:00+08:00",
-  "state": "verified-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 5,
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "Continue approved JILI official catalog after batch 113",
   "catalog": "https://jiligames.com/games?showSlotGames=true",
   "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
@@ -15,7 +15,7 @@
       "gameId": "145",
       "name": "Neko Fortune",
       "slug": "neko-fortune",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/145?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -24,7 +24,7 @@
       "gameId": "146",
       "name": "World Cup",
       "slug": "world-cup-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/146?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -33,7 +33,7 @@
       "gameId": "166",
       "name": "WILD RACER",
       "slug": "wild-racer",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/166?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -42,7 +42,7 @@
       "gameId": "100",
       "name": "Super Rich",
       "slug": "super-rich-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/100?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -51,7 +51,7 @@
       "gameId": "142",
       "name": "Bonus Hunter",
       "slug": "bonus-hunter-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/142?showGame=false",
       "demoStatus": "official-game-page"
     }
@@ -94,5 +94,13 @@
     }
   ],
   "nextCursor": "JILI official catalog order 200 of 277.",
-  "checkedAt": "2026-10-29"
+  "checkedAt": "2026-10-29",
+  "publication": {
+    "sha": "2f0c96f57673a2afbf57e5a33d691be4f1f7cea5",
+    "githubActionsRun": 40904230772,
+    "githubActionsStatus": "success",
+    "cloudflareDeployment": "88bb1c89-108d-4e6a-9a2f-de15c4b35f84",
+    "liveUrl": "https://88bb1c89.slothub-4cu.pages.dev",
+    "liveReadback": "Five exact Game detail pages and PNG images HTTP 200; all five visible in Search, Explorer, Compare and JILI Provider; official source and game-page URLs present; outbound nofollow; X-Robots-Tag noindex,nofollow; no canonical; empty sitemap."
+  }
 }
