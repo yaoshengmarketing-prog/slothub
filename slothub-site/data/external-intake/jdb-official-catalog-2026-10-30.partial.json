@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-16 imported. Next individual candidate is card 17 SUPER NIUBI DELUXE. No full-directory Markdown dedup has been completed for cards 17-46.",
-  "nextStep": "After card 16 single-game publication loop, continue card 17 with exact official facts, dedup, attributable image and Demo checks.",
-  "publishedCount": 5,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-17 imported. Next individual candidate is card 18 GOLDEN GOAL. Cards 1-10 and 18-46 remain to inspect fully.",
+  "nextStep": "After card 17 publication loop, continue card 18 GOLDEN GOAL with exact official facts, dedup, attributable image and Demo checks.",
+  "publishedCount": 6,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -234,6 +234,20 @@
     "partnerAttribution": "Slots Launch exact page names Super Niubi Fortune X-Huge and JDB Gaming; downloaded valid JPEG visibly displays SUPER NIUBI FORTUNE X-HUGE title and bull artwork.",
     "demo": "Third-party exact same-game Slots Launch page; visitor play limit/login may apply; external platform-game-page only.",
     "dedup": "Full src/content/games and providers name/alias search found no existing record.",
+    "decision": "published-live-verified"
+  },
+  "card17Evidence": {
+    "name": "SUPER NIUBI DELUXE",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/super-niubi-deluxe",
+    "officialSpanishPage": "https://www.jdbgaming.com/es/games/slot/super-niubi-deluxe?lang=es-ES",
+    "officialFacts": "Official English exact page: single-reel slot, 1x3 reels, upgraded Mix and Match, up to 888X. Official Spanish same-game specification: RTP 96.5%, LOW volatility, max win 888X, 1 Line, release year 2020.",
+    "sourceConflict": "Slots Launch exact third-party page describes 5 reels, Wilds, Scatters, Free Spins and cascades, conflicting with official 1x3 single-reel; none of those third-party mechanics adopted.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming/super-niubi-deluxe",
+    "partnerImage": "https://assets.slotslaunch.com/29549/super-niubi-deluxe.jpg",
+    "partnerImageSha256": "795feebf2591eb353ea5afa5f87fcbc20eb694f40a4c83f3900a07b7c7425cfa",
+    "partnerAttribution": "Slots Launch exact page names Super Niubi Deluxe by JDB Gaming; downloaded valid JPEG visibly displays SUPER NIUBI DELUXE title and three bull-head symbols.",
+    "demo": "Exact third-party Slots Launch page names title and JDB; classified external platform-game-page, not official Demo; guest play limit/login may apply.",
+    "dedup": "Full Game/Provider name and alias search found related Super Niubi Fortune X-Huge but no Super Niubi Deluxe record; distinct official titles.",
     "decision": "imported-pending-publication"
   }
 }

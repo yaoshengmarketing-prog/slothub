@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 691,
+  "gameCount": 692,
   "providerCount": 371,
-  "sourcePageCount": 1249,
+  "sourcePageCount": 1251,
   "counts": {
     "access-restricted": 4,
-    "available": 596,
+    "available": 597,
     "not-verified": 91
   },
   "rules": {
@@ -17,6 +17,39 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "super-niubi-deluxe-jdb",
+      "name": "Super Niubi Deluxe",
+      "provider": "jdb-gaming",
+      "status": "available",
+      "url": "https://slotslaunch.com/jdb-gaming/super-niubi-deluxe",
+      "accessType": "platform-game-page",
+      "platformName": "Slots Launch",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "Slots Launch exact page and image identify Super Niubi Deluxe and JDB Gaming; its gameplay text conflicts with official 1x3 specification and is not used for math/feature fields.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/super-niubi-deluxe",
+          "httpStatus": 403,
+          "notes": "Direct web open was redirected to JDB location block; official page content obtained via search-index cache"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/es/games/slot/super-niubi-deluxe?lang=es-ES",
+          "httpStatus": 200,
+          "notes": "Official indexed specification via web cache"
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/super-niubi-deluxe",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://assets.slotslaunch.com/29549/super-niubi-deluxe.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "super-niubi-fortune-x-huge-jdb",
       "name": "Super Niubi Fortune X-Huge",
