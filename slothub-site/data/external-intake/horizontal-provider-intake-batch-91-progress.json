@@ -1,0 +1,89 @@
+{
+  "batch": 91,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "captured-awaiting-full-verify",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "RSG official catalog following Taiwan operator common provider discovery.",
+  "catalog": "https://www.rsg-games.com/zh-TW/games.html",
+  "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown checked by RSG Provider, Chinese name, English alias, gameId and filename before capture; IDs 56, 58–61 absent.",
+  "records": [
+    {
+      "order": 74,
+      "provider": "RSG",
+      "name": "西部牛仔",
+      "gameId": "56",
+      "slug": "cowboy-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_56.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=56&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 75,
+      "provider": "RSG",
+      "name": "賣火柴的小女孩",
+      "gameId": "58",
+      "slug": "little-match-girl-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_58.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/zh-TW/games_detail_58.html",
+        "accessType": "official-game-page",
+        "visualResult": "TryGame displayed Code 56 disconnected/re-login error; official single-game page only."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 76,
+      "provider": "RSG",
+      "name": "秘林熊貓",
+      "gameId": "59",
+      "slug": "mystery-panda-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_59.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/zh-TW/games_detail_59.html",
+        "accessType": "official-game-page",
+        "visualResult": "TryGame remained on bamboo curtain without visible reels; official single-game page only."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 77,
+      "provider": "RSG",
+      "name": "嘻哈金剛",
+      "gameId": "60",
+      "slug": "hip-hop-monkey-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_60.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=60&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 78,
+      "provider": "RSG",
+      "name": "黃金之書",
+      "gameId": "61",
+      "slug": "book-of-gold-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_61.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=61&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    }
+  ],
+  "nextCursor": "RSG official catalog order 79 gameid 65 太極; 11 pending Slot and one classification hold after this batch."
+}

@@ -688,7 +688,7 @@
     },
     {
       "order": 68,
-      "status": "captured-batch-90",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_49.html",
       "nameZhHant": "海神",
       "gameId": "49",
@@ -699,7 +699,7 @@
     },
     {
       "order": 69,
-      "status": "captured-batch-90",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_5.html",
       "nameZhHant": "金雞報喜",
       "gameId": "5",
@@ -710,7 +710,7 @@
     },
     {
       "order": 70,
-      "status": "captured-batch-90",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_50.html",
       "nameZhHant": "跳跳獅",
       "gameId": "50",
@@ -732,7 +732,7 @@
     },
     {
       "order": 72,
-      "status": "captured-batch-90",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_51.html",
       "nameZhHant": "美杜莎",
       "gameId": "51",
@@ -743,7 +743,7 @@
     },
     {
       "order": 73,
-      "status": "captured-batch-90",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_53.html",
       "nameZhHant": "霓虹圓",
       "gameId": "53",
@@ -754,48 +754,58 @@
     },
     {
       "order": 74,
-      "status": "pending",
+      "status": "captured-batch-91",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_56.html",
       "nameZhHant": "西部牛仔",
       "gameId": "56",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "cowboy-rsg",
+      "decision": "Official game page, slot type, metrics and image checked; demo visual result recorded separately 2026-10-29."
     },
     {
       "order": 75,
-      "status": "pending",
+      "status": "captured-batch-91",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_58.html",
       "nameZhHant": "賣火柴的小女孩",
       "gameId": "58",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "little-match-girl-rsg",
+      "decision": "Official game page, slot type, metrics and image checked; demo visual result recorded separately 2026-10-29."
     },
     {
       "order": 76,
-      "status": "pending",
+      "status": "captured-batch-91",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_59.html",
       "nameZhHant": "秘林熊貓",
       "gameId": "59",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "mystery-panda-rsg",
+      "decision": "Official game page, slot type, metrics and image checked; demo visual result recorded separately 2026-10-29."
     },
     {
       "order": 77,
-      "status": "pending",
+      "status": "captured-batch-91",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_60.html",
       "nameZhHant": "嘻哈金剛",
       "gameId": "60",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "hip-hop-monkey-rsg",
+      "decision": "Official game page, slot type, metrics and image checked; demo visual result recorded separately 2026-10-29."
     },
     {
       "order": 78,
-      "status": "pending",
+      "status": "captured-batch-91",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_61.html",
       "nameZhHant": "黃金之書",
       "gameId": "61",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "book-of-gold-rsg",
+      "decision": "Official game page, slot type, metrics and image checked; demo visual result recorded separately 2026-10-29."
     },
     {
       "order": 79,
@@ -902,5 +912,5 @@
   "pendingAtSnapshot": 62,
   "checkedAt": "2026-10-29",
   "slotCount": 87,
-  "cursor": "Catalog order 73, gameid 53; next order 74 gameid 56 西部牛仔"
+  "cursor": "Catalog order 78, gameid 61; next order 79 gameid 65 太極"
 }
