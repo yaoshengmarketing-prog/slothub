@@ -1,0 +1,100 @@
+{
+  "batch": 107,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "verified-pending-publication",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI official catalog after batch 106",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and gameId; no JILI same-game records for IDs 372,324,400,375,264. Existing Poseidon by RSG is a different provider/title record; JILI uses separate poseidon-jili slug.",
+  "records": [
+    {
+      "order": 104,
+      "gameId": "372",
+      "name": "3 Pot Dragons",
+      "slug": "3-pot-dragons",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/372?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 105,
+      "gameId": "324",
+      "name": "Nightfall Hunting",
+      "slug": "nightfall-hunting",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/324?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 109,
+      "gameId": "400",
+      "name": "3 Lucky Piggy",
+      "slug": "3-lucky-piggy",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/400?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 110,
+      "gameId": "375",
+      "name": "Poseidon",
+      "slug": "poseidon-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/375?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 115,
+      "gameId": "264",
+      "name": "Egypt's Glow",
+      "slug": "egypts-glow",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/264?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "excludedNonSlot": [
+    {
+      "order": 108,
+      "gameId": "272",
+      "reason": "Official Crash/Keno"
+    },
+    {
+      "order": 111,
+      "gameId": "469",
+      "reason": "Official Crash"
+    },
+    {
+      "order": 112,
+      "gameId": "440",
+      "reason": "Official Bingo"
+    },
+    {
+      "order": 114,
+      "gameId": "439",
+      "reason": "Official Bingo/scratch ticket"
+    }
+  ],
+  "heldClassification": [
+    {
+      "order": 106,
+      "gameId": "305",
+      "reason": "Official Slot label but cockfighting betting"
+    },
+    {
+      "order": 107,
+      "gameId": "427",
+      "reason": "Official Slot label but dice betting"
+    },
+    {
+      "order": 113,
+      "gameId": "397",
+      "reason": "Official Slot label but six-dice betting"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 116 of 277.",
+  "checkedAt": "2026-10-29"
+}
