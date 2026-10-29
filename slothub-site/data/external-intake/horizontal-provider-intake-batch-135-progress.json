@@ -1,10 +1,10 @@
 {
   "batch": 135,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 22",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Maya Gold Crazy",
       "slug": "maya-gold-crazy-jdb",
       "provider": "jdb-gaming",
-      "status": "imported-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/maya-gold-crazy",
       "officialFacts": "Official direct browser detail: Slot, RTP 95.9%, HIGH volatility, Maximum Win 6000X, 243~7776 Ways, release year 2021; Gold Symbols become Wilds after elimination, UFO sends Golden Symbols to 1-3 reels in Free Spins, multiplier increases with cascading removals.",
       "sourceConflict": "Slots Launch page shows release year 2022 and describes circa 96% RTP; HUIDU and LiveBet call volatility Medium while official game specification says HIGH. Published page uses exact official math and avoids release year.",
@@ -29,5 +29,14 @@
     }
   ],
   "nextCursor": "JDB catalog card 23 FISHIN' FEVER X-HUGE™",
-  "publication": null
+  "publication": {
+    "commit": "304ca1edca4979a5e3efbae1315fb64ead40ce01",
+    "githubRun": 40944234428,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "0aa2d38c-ff57-4fdc-87fe-ad97ea7b2cdd",
+    "cloudflareUrl": "https://0aa2d38c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, image and sitemap HTTP 200; official and exact Slots Launch platform URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

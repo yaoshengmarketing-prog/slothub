@@ -1,0 +1,33 @@
+{
+  "batch": 136,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 23",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown names and aliases; Fishin' Fever X-Huge and official Chinese 王牌钓手 absent.",
+  "records": [
+    {
+      "order": 23,
+      "name": "Fishin' Fever X-Huge™",
+      "slug": "fishin-fever-x-huge-jdb",
+      "provider": "jdb-gaming",
+      "status": "imported-pending-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/fishin-fever-x-huge",
+      "officialFacts": "Official direct browser detail: Slot, RTP 96.47%, LOW volatility, Maximum Win 1800X, 1 Line, release year 2025; X-Huge Giant Symbol, Two-Stage Free Game, Feature Buy with guaranteed WILD triple-line combo, Extra Bet.",
+      "sourceConflict": "Slots Launch overview describes 5-reel/3-row multiple paylines and X-Huge Jackpot, unsupported by official one-line specification and official features. Published game uses official fields only.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/fishin-fever-x-huge",
+        "sourceUrl": "https://assets.slotslaunch.com/35259/fishin-fever-x-huge.jpg",
+        "sha256": "d0faa5714bd0bbf1afe5d14f700f7b81fcbb7921f7caceb2b1d283a13dd11568",
+        "visualCheck": "Slots Launch exact page identifies Fishin' Fever X-Huge by JDB Gaming; downloaded valid JPEG visibly displays Fishin' Fever X-HUGE title and fish artwork."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 24 BLOSSOM OF WEALTH",
+  "publication": null
+}
