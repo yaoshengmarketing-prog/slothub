@@ -1,0 +1,33 @@
+{
+  "batch": 138,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 25",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; no exact Trump Card record.",
+  "records": [
+    {
+      "order": 25,
+      "name": "Trump Card",
+      "slug": "trump-card-jdb",
+      "provider": "jdb-gaming",
+      "status": "imported-pending-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/trump-card",
+      "officialFacts": "Official direct browser detail: Slot, RTP 96.98%, LOW volatility, Maximum Win 1190X, 1024 Ways, release year 2022; all-match TRUMP CARD and multiple awards. Official CN page calls game 王牌.",
+      "sourceConflict": "Slots Launch overview calls it political satire, 25 paylines, free spins, jackpot and progressive jackpot while exact image shows a magician and official page says 1024 Ways with no such features; published page uses official data only. Some third-party sites list RTP 96% or low-medium volatility instead of exact official 96.98%/LOW.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/trump-card",
+        "sourceUrl": "https://assets.slotslaunch.com/29555/trump-card.jpg",
+        "sha256": "e02f74160b8927499913ba4934717850aa5e3287402e0614bf7cba3d61d9b001",
+        "visualCheck": "Slots Launch exact page identifies Trump Card by JDB Gaming; downloaded valid JPEG visibly displays TRUMP CARD title and magician/card artwork."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 26 RAGNAROK : THOR VS LOKI",
+  "publication": null
+}

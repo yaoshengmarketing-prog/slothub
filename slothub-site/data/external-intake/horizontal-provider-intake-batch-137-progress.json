@@ -1,10 +1,10 @@
 {
   "batch": 137,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 24",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Blossom of Wealth",
       "slug": "blossom-of-wealth-jdb",
       "provider": "jdb-gaming",
-      "status": "imported-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/blossom-of-wealth",
       "officialFacts": "Official direct browser and indexed CN detail: Slot, RTP 96%, LOW volatility, Maximum Win 15000X, 243 Ways, release year 2024; up to 100 Free Spins, bonus multiplier increases per Free Spin, Feature Buy; three or more king-of-flowers trigger bonus.",
       "sourceConflict": "Slots Launch lists Release Date 2022 while official CN/EN page lists release year 2024; some other third-party pages list 2021. Published page omits release year and adopts official features/math; partner overview unsupported expanding Wild and multi-level bonus were excluded.",
@@ -29,5 +29,14 @@
     }
   ],
   "nextCursor": "JDB catalog card 25 TRUMP CARD",
-  "publication": null
+  "publication": {
+    "commit": "fd6346b69313eda72040e9c23f2c19d674cc3ef2",
+    "githubRun": 40945409241,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "d569bffb-1aa9-4bf1-9a89-36d13a76a7ed",
+    "cloudflareUrl": "https://d569bffb.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, image and sitemap HTTP 200; official and exact Slots Launch platform URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

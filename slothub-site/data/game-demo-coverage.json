@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 699,
+  "gameCount": 700,
   "providerCount": 371,
-  "sourcePageCount": 1264,
+  "sourcePageCount": 1266,
   "counts": {
     "access-restricted": 4,
-    "available": 604,
+    "available": 605,
     "not-verified": 91
   },
   "rules": {
@@ -17,6 +17,38 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "trump-card-jdb",
+      "name": "Trump Card",
+      "provider": "jdb-gaming",
+      "status": "available",
+      "url": "https://slotslaunch.com/jdb-gaming/trump-card",
+      "accessType": "platform-game-page",
+      "platformName": "Slots Launch",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "Slots Launch exact page and image identify Trump Card and JDB Gaming; official detail supplies math and mechanisms.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/trump-card",
+          "httpStatus": 200,
+          "notes": "Official direct browser inspection run 8e0b7242-f02c-40e1-a2f8-6498411f5400"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/cn/games/slot/trump-card",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/trump-card",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://assets.slotslaunch.com/29555/trump-card.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "blossom-of-wealth-jdb",
       "name": "Blossom of Wealth",
