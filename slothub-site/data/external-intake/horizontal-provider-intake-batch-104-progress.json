@@ -1,10 +1,10 @@
 {
   "batch": 104,
   "recordedAt": "2026-10-29T00:00:00+08:00",
-  "state": "verified-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 5,
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "Continue approved JILI official catalog after batch 103",
   "catalog": "https://jiligames.com/games?showSlotGames=true",
   "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
@@ -15,7 +15,7 @@
       "gameId": "461",
       "name": "Pirate Queen 2",
       "slug": "pirate-queen-2",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/461?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -24,7 +24,7 @@
       "gameId": "472",
       "name": "3 Coin Treasures 2",
       "slug": "3-coin-treasures-2",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/472?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -33,7 +33,7 @@
       "gameId": "523",
       "name": "Fortune Coins",
       "slug": "fortune-coins",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/523?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -42,7 +42,7 @@
       "gameId": "409",
       "name": "Super Ace Joker",
       "slug": "super-ace-joker",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/409?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -51,7 +51,7 @@
       "gameId": "517",
       "name": "Roma X Deluxe",
       "slug": "roma-x-deluxe",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/517?showGame=false",
       "demoStatus": "official-game-page"
     }
@@ -91,5 +91,12 @@
     }
   ],
   "nextCursor": "JILI official catalog order 87 of 277.",
-  "checkedAt": "2026-10-29"
+  "checkedAt": "2026-10-29",
+  "publication": {
+    "sha": "bd05e9e149fafef9c328f2d7641ebab13f33dfc6",
+    "githubActionsRun": 40877853564,
+    "cloudflareDeployment": "255f2e77-1b28-485a-9374-3ca6045bb778",
+    "liveUrl": "https://255f2e77.slothub-4cu.pages.dev",
+    "liveReadback": "Five Game details, sources, official game-page entries, images, Search, Explorer, Compare, Provider, nofollow, noindex header, absent canonical and empty sitemap verified."
+  }
 }
