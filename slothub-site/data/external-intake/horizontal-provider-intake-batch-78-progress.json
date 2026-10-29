@@ -1,0 +1,52 @@
+{
+  "batch": 78,
+  "recordedAt": "2026-10-29T15:03:00+08:00",
+  "state": "verified-awaiting-publication",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "providerCursor": {
+    "map": "docs/provider-candidate-map-v1.md",
+    "start": "213 Dragoon Soft",
+    "result": "New first-party catalog evidence is now available; earlier image/data blocker is superseded for this candidate only."
+  },
+  "records": [
+    {
+      "provider": "Dragoon Soft",
+      "providerSlug": "dragoon-soft",
+      "officialCatalog": "https://www.dragoonsoft.com/",
+      "game": "Farm Family",
+      "displayNameZhHant": "蔬香人家",
+      "gameId": "3051",
+      "catalogEvidence": "Official public application data marks ID 3051 active, type 3; the same official UI labels its Slot category as DS000009 / Slot.",
+      "officialImage": "https://www.dragoonsoft.com/img/3051_ourgames_en.8a87fdb7.jpg",
+      "localImage": "public/assets/games/farm-family-dragoon-soft.jpg",
+      "imageInspection": "Downloaded from the official site and visually inspected: Farm Family title with rabbit and carrots.",
+      "demo": "http://dsdemo.cc/3051/en_us",
+      "demoEvidence": "Official front-end St(gameId, lang) helper constructs this exact URL; checked 2026-10-28 and it returned HTTP 200 after redirect to the Farm Family guest demo session.",
+        "status": "imported-awaiting-batch",
+      "dedup": {
+        "required": "Search all existing Game and Provider Markdown by Provider, English name, Chinese name, aliases, Game ID and filename before creating the record.",
+        "completed": true,
+        "result": "No matches outside this Batch 78 manifest."
+      }
+    },
+    {"provider":"RSG","game":"狗來富","gameId":"122","slug":"good-fortune-dog-rsg","officialPage":"https://www.rsg-games.com/zh-TW/games_detail_122.html","checkedAt":"2026-10-29","dedup":"All Game and Provider Markdown searched by Chinese title and RSG Game ID; no match before import.","image":"missing; official image not yet extracted","demo":"official-game-page","status":"imported-awaiting-verification"},
+    {"provider":"RSG","game":"勇闖黃金城","gameId":"116","slug":"golden-city-adventure-rsg","officialPage":"https://www.rsg-games.com/zh-TW/games_detail_116.html","checkedAt":"2026-10-29","dedup":"All Game and Provider Markdown searched by Chinese title and RSG Game ID; no match before import.","image":"missing; official image not yet extracted","demo":"official-game-page","status":"imported-awaiting-verification"},
+    {"provider":"RSG","game":"超級王牌2","gameId":"128","slug":"super-ace-2-rsg","officialPage":"https://www.rsg-games.com/zh-TW/games_detail_128.html","checkedAt":"2026-10-29","dedup":"All Game and Provider Markdown searched by Chinese title and RSG Game ID; no match before import.","image":"missing; official image not yet extracted","demo":"official-game-page","status":"imported-awaiting-verification"},
+    {"provider":"RSG","game":"皇家金象","gameId":"137","slug":"royal-golden-elephant-rsg","officialPage":"https://www.rsg-games.com/zh-TW/games_detail_137.html","checkedAt":"2026-10-29","dedup":"All Game and Provider Markdown searched by Chinese title and RSG Game ID; no match before import.","image":"missing; official image not yet extracted","demo":"official-game-page","status":"imported-awaiting-verification"}
+  ],
+  "exclusions": [
+    {
+      "provider": "Relax Gaming",
+      "games": ["Bounty County", "Camelot Cash"],
+      "reason": "Intake queue returned captured items; per queue rules they were not rerun."
+    },
+    {
+      "provider": "JDB Gaming",
+      "reason": "Existing regional-access and attributable-image blocker remains; no new first-party evidence this run."
+    }
+  ],
+  "continuation": {
+    "next": "Batch 78 has five imported Games: one Dragoon Soft and four RSG. RSG candidates were prioritized from the official catalog after the user requested Taiwan casino-common titles; names and provider-specific IDs were searched across all Game and Provider Markdown before import. The first four RSG titles have exact official single-game pages and optional images remain missing. The full preview verify passed with the mapped drive on 2026-10-29. Next: git diff --check, stage only these records and this manifest, commit, push, confirm exact-SHA CI and Cloudflare Pages deployment, then read live pages. Continue the official RSG catalog cursor at 賞金獵人 / gameid 131 for the requested twenty-game collection. If verification or publication fails, preserve files and stop publication; do not rerun captured items."
+  }
+}
