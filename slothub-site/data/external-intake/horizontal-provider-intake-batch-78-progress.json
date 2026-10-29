@@ -23,22 +23,77 @@
       "imageInspection": "Downloaded from the official site and visually inspected: Farm Family title with rabbit and carrots.",
       "demo": "http://dsdemo.cc/3051/en_us",
       "demoEvidence": "Official front-end St(gameId, lang) helper constructs this exact URL; checked 2026-10-28 and it returned HTTP 200 after redirect to the Farm Family guest demo session.",
-        "status": "published-live-verified",
+      "status": "published-live-verified",
       "dedup": {
         "required": "Search all existing Game and Provider Markdown by Provider, English name, Chinese name, aliases, Game ID and filename before creating the record.",
         "completed": true,
         "result": "No matches outside this Batch 78 manifest."
       }
     },
-    {"provider":"RSG","game":"狗來富","gameId":"122","slug":"good-fortune-dog-rsg","officialPage":"https://www.rsg-games.com/zh-TW/games_detail_122.html","checkedAt":"2026-10-29","dedup":"All Game and Provider Markdown searched by Chinese title and RSG Game ID; no match before import.","image":"missing; official image not yet extracted","demo":"official-game-page","status":"published-live-verified"},
-    {"provider":"RSG","game":"勇闖黃金城","gameId":"116","slug":"golden-city-adventure-rsg","officialPage":"https://www.rsg-games.com/zh-TW/games_detail_116.html","checkedAt":"2026-10-29","dedup":"All Game and Provider Markdown searched by Chinese title and RSG Game ID; no match before import.","image":"missing; official image not yet extracted","demo":"official-game-page","status":"published-live-verified"},
-    {"provider":"RSG","game":"超級王牌2","gameId":"128","slug":"super-ace-2-rsg","officialPage":"https://www.rsg-games.com/zh-TW/games_detail_128.html","checkedAt":"2026-10-29","dedup":"All Game and Provider Markdown searched by Chinese title and RSG Game ID; no match before import.","image":"missing; official image not yet extracted","demo":"official-game-page","status":"published-live-verified"},
-    {"provider":"RSG","game":"皇家金象","gameId":"137","slug":"royal-golden-elephant-rsg","officialPage":"https://www.rsg-games.com/zh-TW/games_detail_137.html","checkedAt":"2026-10-29","dedup":"All Game and Provider Markdown searched by Chinese title and RSG Game ID; no match before import.","image":"missing; official image not yet extracted","demo":"official-game-page","status":"published-live-verified"}
+    {
+      "provider": "RSG",
+      "game": "狗來富",
+      "gameId": "122",
+      "slug": "good-fortune-dog-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_122.html",
+      "checkedAt": "2026-10-29",
+      "dedup": "All Game and Provider Markdown searched by Chinese title and RSG Game ID; no match before import.",
+      "image": "https://www.rsg-games.com/assets/images/games/122/slot-LuckyDog-rsg-detail-banner-desktop-bg.webp",
+      "demo": "official-game-page",
+      "status": "published-live-verified",
+      "localImage": "public/assets/games/good-fortune-dog-rsg.webp",
+      "imageInspection": "Downloaded from official single-game page and visually inspected on 2026-10-29."
+    },
+    {
+      "provider": "RSG",
+      "game": "勇闖黃金城",
+      "gameId": "116",
+      "slug": "golden-city-adventure-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_116.html",
+      "checkedAt": "2026-10-29",
+      "dedup": "All Game and Provider Markdown searched by Chinese title and RSG Game ID; no match before import.",
+      "image": "https://www.rsg-games.com/assets/images/games/116/slot-FortuneofAztecs-rsg-detail-banner-desktop-bg.webp",
+      "demo": "official-game-page",
+      "status": "published-live-verified",
+      "localImage": "public/assets/games/golden-city-adventure-rsg.webp",
+      "imageInspection": "Downloaded from official single-game page and visually inspected on 2026-10-29."
+    },
+    {
+      "provider": "RSG",
+      "game": "超級王牌2",
+      "gameId": "128",
+      "slug": "super-ace-2-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_128.html",
+      "checkedAt": "2026-10-29",
+      "dedup": "All Game and Provider Markdown searched by Chinese title and RSG Game ID; no match before import.",
+      "image": "https://www.rsg-games.com/assets/images/games/128/slot-SuperAce2-rsg-detail-banner-desktop-bg.webp",
+      "demo": "official-game-page",
+      "status": "published-live-verified",
+      "localImage": "public/assets/games/super-ace-2-rsg.webp",
+      "imageInspection": "Downloaded from official single-game page and visually inspected on 2026-10-29."
+    },
+    {
+      "provider": "RSG",
+      "game": "皇家金象",
+      "gameId": "137",
+      "slug": "royal-golden-elephant-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_137.html",
+      "checkedAt": "2026-10-29",
+      "dedup": "All Game and Provider Markdown searched by Chinese title and RSG Game ID; no match before import.",
+      "image": "https://www.rsg-games.com/assets/images/games/137/slot-RoyalGanesha-rsg-detail-banner-desktop-bg.webp",
+      "demo": "official-game-page",
+      "status": "published-live-verified",
+      "localImage": "public/assets/games/royal-golden-elephant-rsg.webp",
+      "imageInspection": "Downloaded from official single-game page and visually inspected on 2026-10-29."
+    }
   ],
   "exclusions": [
     {
       "provider": "Relax Gaming",
-      "games": ["Bounty County", "Camelot Cash"],
+      "games": [
+        "Bounty County",
+        "Camelot Cash"
+      ],
       "reason": "Intake queue returned captured items; per queue rules they were not rerun."
     },
     {
@@ -47,6 +102,6 @@
     }
   ],
   "continuation": {
-    "next": "Batch 78 five Games published at 60338bf341c430aeb4c8dcbc866bbf25026b33e6; GitHub Actions run 40833143762 succeeded, and Cloudflare Pages deployment 24a14bb3-e711-49fb-a2bc-11cd5ed7e1ab succeeded with the same SHA. Hash-specific pages.dev Search, Explorer, Compare, both Providers, five Game details, Demo/source links, official image, robots header, noindex, no canonical and empty sitemap were read back successfully. Continue the official RSG catalog cursor at 賞金獵人 / gameid 131; do not rerun this batch."
+    "next": "Batch 78 five Games published at 60338bf341c430aeb4c8dcbc866bbf25026b33e6; GitHub Actions run 40833143762 succeeded, and Cloudflare Pages deployment 24a14bb3-e711-49fb-a2bc-11cd5ed7e1ab succeeded with the same SHA. Hash-specific pages.dev Search, Explorer, Compare, both Providers, five Game details, Demo/source links, official image, robots header, noindex, no canonical and empty sitemap were read back successfully. Continue the official RSG catalog cursor at 賞金獵人 / gameid 131; do not rerun this batch. Four RSG titles published without images in the original SHA now have verified official images in the follow-up receipt commit."
   }
 }

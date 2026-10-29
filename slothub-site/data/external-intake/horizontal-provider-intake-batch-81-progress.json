@@ -1,9 +1,9 @@
 {
   "batch": 81,
   "recordedAt": "2026-10-29T15:25:00+08:00",
-  "state": "captured-awaiting-verification",
+  "state": "published-and-verified-live",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "RSG official catalog following Taiwan casino-common provider request; operator sites are discovery signals only.",
   "catalog": "https://www.rsg-games.com/zh-TW/games.html",
   "dedupScope": "Before each import, searched all Game and Provider Markdown for provider, Chinese and English names, aliases, Game ID and filename; none matched.",
@@ -23,7 +23,7 @@
         "presentation": "external"
       },
       "checkedAt": "2026-10-29",
-      "status": "captured-awaiting-publication"
+      "status": "published-live-verified"
     },
     {
       "order": 2,
@@ -40,7 +40,7 @@
         "presentation": "external"
       },
       "checkedAt": "2026-10-29",
-      "status": "captured-awaiting-publication"
+      "status": "published-live-verified"
     },
     {
       "order": 3,
@@ -57,7 +57,7 @@
         "presentation": "external"
       },
       "checkedAt": "2026-10-29",
-      "status": "captured-awaiting-publication"
+      "status": "published-live-verified"
     },
     {
       "order": 4,
@@ -74,7 +74,7 @@
         "presentation": "external"
       },
       "checkedAt": "2026-10-29",
-      "status": "captured-awaiting-publication"
+      "status": "published-live-verified"
     },
     {
       "order": 5,
@@ -91,8 +91,9 @@
         "presentation": "external"
       },
       "checkedAt": "2026-10-29",
-      "status": "captured-awaiting-publication"
+      "status": "published-live-verified"
     }
   ],
-  "nextCursor": "RSG official catalog item 泰有錢 / gameid 1, after 龍王2 / gameid 81; this twenty-game request ends at batch 81 if publication and live readback succeed."
+  "publication": {"sha":"5692316d718242a1f98adca70c4eda45bb4ecf8a","githubActionsRun":40834888979,"cloudflareDeployment":"b2db07ad-725a-4c0e-a84c-2d45e1c3fe77","liveReadback":"Five Games in Search, Explorer, Compare, Provider and details; official images, source and external entry present; X-Robots-Tag/noindex, empty sitemap and no canonical confirmed."},
+  "nextCursor": "RSG official catalog item 泰有錢 / gameid 1, after 龍王2 / gameid 81; twenty new Games were published across batches 78–81 in this request."
 }
