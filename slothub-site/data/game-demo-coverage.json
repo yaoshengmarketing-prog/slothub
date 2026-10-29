@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 537,
+  "gameCount": 542,
   "providerCount": 370,
-  "sourcePageCount": 1088,
+  "sourcePageCount": 1098,
   "counts": {
     "access-restricted": 4,
-    "available": 443,
+    "available": 448,
     "not-verified": 90
   },
   "rules": {
@@ -17,6 +17,11 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+{"slug":"songkran-rsg","name":"潑水節","provider":"rsg","status":"available","url":"https://www.rsg-games.com/TryGame?gameid=72&lang=zh-TW","accessType":"direct-demo","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-29","evidence":"RSG official page links the exact game; opened TryGame in a browser and visually confirmed 潑水節 reels and spin control.","inspectedUrls":[{"requestedUrl":"https://www.rsg-games.com/zh-TW/games_detail_72.html","httpStatus":200},{"requestedUrl":"https://www.rsg-games.com/TryGame?gameid=72&lang=zh-TW","visualResult":"playable-reels"}]},
+{"slug":"elf-archer-rsg","name":"精靈射手","provider":"rsg","status":"available","url":"https://www.rsg-games.com/TryGame?gameid=73&lang=zh-TW","accessType":"direct-demo","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-29","evidence":"RSG official page links the exact game; opened TryGame in a browser and visually confirmed 精靈射手 reels and spin control.","inspectedUrls":[{"requestedUrl":"https://www.rsg-games.com/zh-TW/games_detail_73.html","httpStatus":200},{"requestedUrl":"https://www.rsg-games.com/TryGame?gameid=73&lang=zh-TW","visualResult":"playable-reels"}]},
+{"slug":"luchadors-rsg","name":"黃金摔角手","provider":"rsg","status":"available","url":"https://www.rsg-games.com/TryGame?gameid=75&lang=zh-TW","accessType":"direct-demo","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-29","evidence":"RSG official page links the exact game; opened TryGame in a browser and visually confirmed 黃金摔角手 reels and spin control.","inspectedUrls":[{"requestedUrl":"https://www.rsg-games.com/zh-TW/games_detail_75.html","httpStatus":200},{"requestedUrl":"https://www.rsg-games.com/TryGame?gameid=75&lang=zh-TW","visualResult":"playable-reels"}]},
+{"slug":"bear-kingdom-rsg","name":"小熊王國","provider":"rsg","status":"available","url":"https://www.rsg-games.com/TryGame?gameid=76&lang=zh-TW","accessType":"direct-demo","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-29","evidence":"RSG official page links the exact game; opened TryGame in a browser and visually confirmed 小熊王國 reels and spin control.","inspectedUrls":[{"requestedUrl":"https://www.rsg-games.com/zh-TW/games_detail_76.html","httpStatus":200},{"requestedUrl":"https://www.rsg-games.com/TryGame?gameid=76&lang=zh-TW","visualResult":"playable-reels"}]},
+{"slug":"royal-7777-rsg","name":"皇家7777","provider":"rsg","status":"available","url":"https://www.rsg-games.com/zh-TW/games_detail_78.html","accessType":"official-game-page","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-29","evidence":"RSG exact official game page verified; TryGame displayed Code 56 disconnected/re-login error. Official game page only, not claimed playable.","inspectedUrls":[{"requestedUrl":"https://www.rsg-games.com/zh-TW/games_detail_78.html","httpStatus":200},{"requestedUrl":"https://www.rsg-games.com/TryGame?gameid=78&lang=zh-TW","visualResult":"code-56-disconnected"}]},
 {"slug":"tai-chi-rsg","name":"太極","provider":"rsg","status":"available","url":"https://www.rsg-games.com/TryGame?gameid=65&lang=zh-TW","accessType":"direct-demo","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-29","evidence":"RSG official page links the exact game; opened TryGame in a browser and visually confirmed 太極 reels and spin control.","inspectedUrls":[{"requestedUrl":"https://www.rsg-games.com/zh-TW/games_detail_65.html","httpStatus":200},{"requestedUrl":"https://www.rsg-games.com/TryGame?gameid=65&lang=zh-TW","visualResult":"playable-reels"}]},
 {"slug":"golden-leaf-clover-rsg","name":"金色幸運草","provider":"rsg","status":"available","url":"https://www.rsg-games.com/TryGame?gameid=66&lang=zh-TW","accessType":"direct-demo","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-29","evidence":"RSG official page links the exact game; opened TryGame in a browser and visually confirmed 金色幸運草 reels and spin control.","inspectedUrls":[{"requestedUrl":"https://www.rsg-games.com/zh-TW/games_detail_66.html","httpStatus":200},{"requestedUrl":"https://www.rsg-games.com/TryGame?gameid=66&lang=zh-TW","visualResult":"playable-reels"}]},
 {"slug":"wizard-store-gold-rsg","name":"巫師商店黃金版","provider":"rsg","status":"available","url":"https://www.rsg-games.com/TryGame?gameid=68&lang=zh-TW","accessType":"direct-demo","presentation":"external","iframeStatus":"not-tested","checkedAt":"2026-10-29","evidence":"RSG official page links the exact game; opened TryGame in a browser and visually confirmed 巫師商店黃金版 reels and spin control.","inspectedUrls":[{"requestedUrl":"https://www.rsg-games.com/zh-TW/games_detail_68.html","httpStatus":200},{"requestedUrl":"https://www.rsg-games.com/TryGame?gameid=68&lang=zh-TW","visualResult":"playable-reels"}]},

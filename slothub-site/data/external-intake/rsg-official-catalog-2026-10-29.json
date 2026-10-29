@@ -809,7 +809,7 @@
     },
     {
       "order": 79,
-      "status": "captured-batch-92",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_65.html",
       "nameZhHant": "太極",
       "gameId": "65",
@@ -820,7 +820,7 @@
     },
     {
       "order": 80,
-      "status": "captured-batch-92",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_66.html",
       "nameZhHant": "金色幸運草",
       "gameId": "66",
@@ -831,7 +831,7 @@
     },
     {
       "order": 81,
-      "status": "captured-batch-92",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_68.html",
       "nameZhHant": "巫師商店黃金版",
       "gameId": "68",
@@ -842,7 +842,7 @@
     },
     {
       "order": 82,
-      "status": "captured-batch-92",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_7.html",
       "nameZhHant": "阿里巴巴",
       "gameId": "7",
@@ -853,7 +853,7 @@
     },
     {
       "order": 83,
-      "status": "captured-batch-92",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_70.html",
       "nameZhHant": "鼠來寶",
       "gameId": "70",
@@ -864,48 +864,58 @@
     },
     {
       "order": 84,
-      "status": "pending",
+      "status": "captured-batch-93",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_72.html",
       "nameZhHant": "潑水節",
       "gameId": "72",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "songkran-rsg",
+      "decision": "Official game page, slot type, metrics and image checked; demo visual result recorded separately 2026-10-29."
     },
     {
       "order": 85,
-      "status": "pending",
+      "status": "captured-batch-93",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_73.html",
       "nameZhHant": "精靈射手",
       "gameId": "73",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "elf-archer-rsg",
+      "decision": "Official game page, slot type, metrics and image checked; demo visual result recorded separately 2026-10-29."
     },
     {
       "order": 86,
-      "status": "pending",
+      "status": "captured-batch-93",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_75.html",
       "nameZhHant": "黃金摔角手",
       "gameId": "75",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "luchadors-rsg",
+      "decision": "Official game page, slot type, metrics and image checked; demo visual result recorded separately 2026-10-29."
     },
     {
       "order": 87,
-      "status": "pending",
+      "status": "captured-batch-93",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_76.html",
       "nameZhHant": "小熊王國",
       "gameId": "76",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "bear-kingdom-rsg",
+      "decision": "Official game page, slot type, metrics and image checked; demo visual result recorded separately 2026-10-29."
     },
     {
       "order": 88,
-      "status": "pending",
+      "status": "captured-batch-93",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_78.html",
       "nameZhHant": "皇家7777",
       "gameId": "78",
       "category": "slots",
-      "existingSlug": null
+      "existingSlug": null,
+      "newSlug": "royal-7777-rsg",
+      "decision": "Official game page, slot type, metrics and image checked; demo visual result recorded separately 2026-10-29."
     },
     {
       "order": 89,
@@ -922,5 +932,5 @@
   "pendingAtSnapshot": 62,
   "checkedAt": "2026-10-29",
   "slotCount": 87,
-  "cursor": "Catalog order 83, gameid 70; next order 84 gameid 72 潑水節"
+  "cursor": "Catalog order 88, gameid 78; next order 89 gameid 90 龍行天下"
 }

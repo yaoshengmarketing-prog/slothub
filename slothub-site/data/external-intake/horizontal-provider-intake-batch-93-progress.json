@@ -1,0 +1,89 @@
+{
+  "batch": 93,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "captured-awaiting-full-verify",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "RSG official catalog following Taiwan operator common provider discovery.",
+  "catalog": "https://www.rsg-games.com/zh-TW/games.html",
+  "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown checked by RSG Provider, Chinese name, English alias, gameId and filename before capture; IDs 72, 73, 75, 76, 78 absent.",
+  "records": [
+    {
+      "order": 84,
+      "provider": "RSG",
+      "name": "潑水節",
+      "gameId": "72",
+      "slug": "songkran-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_72.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=72&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 85,
+      "provider": "RSG",
+      "name": "精靈射手",
+      "gameId": "73",
+      "slug": "elf-archer-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_73.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=73&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 86,
+      "provider": "RSG",
+      "name": "黃金摔角手",
+      "gameId": "75",
+      "slug": "luchadors-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_75.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=75&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 87,
+      "provider": "RSG",
+      "name": "小熊王國",
+      "gameId": "76",
+      "slug": "bear-kingdom-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_76.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=76&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 88,
+      "provider": "RSG",
+      "name": "皇家7777",
+      "gameId": "78",
+      "slug": "royal-7777-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_78.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/zh-TW/games_detail_78.html",
+        "accessType": "official-game-page",
+        "visualResult": "TryGame displayed Code 56 disconnected/re-login error; official single-game page only."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    }
+  ],
+  "nextCursor": "RSG official catalog order 89 gameid 90 龍行天下; one pending Slot and one classification hold after this batch."
+}
