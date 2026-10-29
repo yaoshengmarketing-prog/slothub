@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 704,
+  "gameCount": 705,
   "providerCount": 371,
-  "sourcePageCount": 1274,
+  "sourcePageCount": 1276,
   "counts": {
     "access-restricted": 4,
-    "available": 609,
+    "available": 610,
     "not-verified": 91
   },
   "rules": {
@@ -17,6 +17,38 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "koi-trio-jdb",
+      "name": "Koi Trio",
+      "provider": "jdb-gaming",
+      "status": "available",
+      "url": "https://slotslaunch.com/jdb-gaming/koi-trio",
+      "accessType": "platform-game-page",
+      "platformName": "Slots Launch",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "Slots Launch exact page and image identify Koi Trio and JDB Gaming; official English/CN detail supplies RTP 97% and mechanisms.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/koi-trio",
+          "httpStatus": 200,
+          "notes": "Official Browser Use direct inspection run ab0298cc-7ea1-4d63-940e-bbaf3f232728"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/cn/games/slot/koi-trio",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/koi-trio",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://assets.slotslaunch.com/36072/koi-trio.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "fortune-jewel-jdb",
       "name": "Fortune Jewel",

@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-29 imported. Next individual candidate is card 30 KOI TRIO. Cards 1-10 and 30-46 remain to inspect fully.",
-  "nextStep": "After card 29 publication loop, continue card 30 using official details ledger, exact image and Demo checks.",
-  "publishedCount": 18,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-30 imported. Next individual candidate is card 31 POP POP CANDY 1000. Cards 1-10 and 31-46 remain.",
+  "nextStep": "After card 30 publication loop, continue card 31 using official details ledger, exact image and Demo checks.",
+  "publishedCount": 19,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -416,6 +416,21 @@
     "partnerAttribution": "Slots Launch exact page identifies Fortune Jewel by JDB Gaming; downloaded valid JPEG visibly displays FORTUNE JEWEL title and gem artwork.",
     "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
     "dedup": "Full Game Markdown and Provider name/alias search found no Fortune Jewel or official Chinese 幸运宝石 record.",
-    "decision": "imported-pending-publication"
+    "decision": "published-live-verified"
+  },
+  "card30Evidence": {
+    "name": "KOI TRIO",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/koi-trio",
+    "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/koi-trio",
+    "officialEnglishNews": "https://www.jdbgaming.com/en/news/games/n-koi-trio",
+    "officialFacts": "Official English/CN detail: Slot, RTP 97%, HIGH volatility, Maximum Win 1800X, 243 Ways, release year 2025; three accumulator mechanisms Winnings Upgrade, Spin & Hold and Roulette Expansion with seven combinations; three Feature Buy options and Grand Roulette.",
+    "sourceConflict": "Slots Launch overview calls RTP approximately 96% and mentions unsupported free-spin features. Published page uses official RTP 97% and official mechanisms.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming/koi-trio",
+    "partnerImage": "https://assets.slotslaunch.com/36072/koi-trio.jpg",
+    "partnerImageSha256": "8f281728aec1fbbd143b464d077e15f56599d430d32e3d0dd4195d164fd9d6ea",
+    "partnerAttribution": "Exact Slots Launch page identifies Koi Trio by JDB Gaming; downloaded valid JPEG visibly displays KOI TRIO title and three carp.",
+    "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
+    "dedup": "All Game Markdown and Provider name/alias fields; no Koi Trio or 三鲤聚财 record before this intake.",
+    "decision": "captured-awaiting-publication"
   }
 }
