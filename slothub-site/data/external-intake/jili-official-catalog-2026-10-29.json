@@ -4,7 +4,7 @@
   "checkedAt": "2026-10-29",
   "scope": "ALL GAMES in source order; catalogType 1 is a discovery hint only; each Slot requires individual Game Info classification",
   "itemCount": 277,
-  "cursor": "Batch 100 captured official catalog orders 49-53; skipped orders 37-39,41-43,45,47 remain pending individual classification; previous conflict holds preserved. Continue at order 37 then 54.",
+  "cursor": "Orders 37-39,41-43,45 individually checked and excluded as official Crash; order 47 captured. Batch 101 captured orders 47,54-55,57,60. Next check 56,58-59 then 61.",
   "items": [
     {
       "decision": "excluded-non-slot",
@@ -309,28 +309,31 @@
       "name": "Fortune Coins 2"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "474",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 37,
       "catalogType": "7",
-      "name": "Amar Akbar Anthony"
+      "name": "Amar Akbar Anthony",
+      "reason": "JILI individual Game Info explicitly classifies this title as Crash, not Slot."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "748",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 38,
       "catalogType": "7",
-      "name": "Chicken Dash 10000"
+      "name": "Chicken Dash 10000",
+      "reason": "JILI individual Game Info explicitly classifies this title as Crash, not Slot."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "626",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 39,
       "catalogType": "7",
-      "name": "Golden Treasure Lightning"
+      "name": "Golden Treasure Lightning",
+      "reason": "JILI individual Game Info explicitly classifies this title as Crash, not Slot."
     },
     {
       "decision": "captured-batch-99",
@@ -341,28 +344,31 @@
       "name": "Clover Coins 3x3"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "645",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 41,
       "catalogType": "7",
-      "name": "Cash Stack"
+      "name": "Cash Stack",
+      "reason": "JILI individual Game Info explicitly classifies this title as Crash, not Slot."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "633",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 42,
       "catalogType": "7",
-      "name": "Gallina Fortunata"
+      "name": "Gallina Fortunata",
+      "reason": "JILI individual Game Info explicitly classifies this title as Crash, not Slot."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "571",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 43,
       "catalogType": "7",
-      "name": "Royal Quest"
+      "name": "Royal Quest",
+      "reason": "JILI individual Game Info explicitly classifies this title as Crash, not Slot."
     },
     {
       "decision": "captured-batch-99",
@@ -373,12 +379,13 @@
       "name": "3 Witch's Lamp"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "698",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 45,
       "catalogType": "7",
-      "name": "Frog Dash"
+      "name": "Frog Dash",
+      "reason": "JILI individual Game Info explicitly classifies this title as Crash, not Slot."
     },
     {
       "decision": "captured-batch-99",
@@ -389,7 +396,7 @@
       "name": "Party Ape"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-101",
       "gameId": "536",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 47,
@@ -445,7 +452,7 @@
       "name": "Money Pot DELUXE"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-101",
       "gameId": "495",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 54,
@@ -453,7 +460,7 @@
       "name": "Boxing King Title Match"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-101",
       "gameId": "529",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 55,
@@ -469,7 +476,7 @@
       "name": "Jackpot Fishing 2"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-101",
       "gameId": "637",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 57,
@@ -493,7 +500,7 @@
       "name": "Circus Jackpot"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-101",
       "gameId": "583",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 60,

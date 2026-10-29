@@ -1,0 +1,30 @@
+{
+  "batch": 101,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "imported-awaiting-full-verification",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI Games official catalog after batch 100.",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English and Chinese names, aliases and gameId; JILI IDs 536, 495, 529, 637 and 583 had no matching published Game by provider/name/ID.",
+  "records": [
+    { "order": 47, "gameId": "536", "name": "Lucky Jaguar 2", "slug": "lucky-jaguar-2", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/536?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 54, "gameId": "495", "name": "Boxing King Title Match", "slug": "boxing-king-title-match", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/495?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 55, "gameId": "529", "name": "Joker Coins", "slug": "joker-coins", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/529?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 57, "gameId": "637", "name": "ROMA X 10000", "slug": "roma-x-10000", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/637?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 60, "gameId": "583", "name": "Cash Coin", "slug": "cash-coin", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/583?showGame=false", "demoStatus": "official-game-page" }
+  ],
+  "excludedNonSlot": [
+    { "order": 37, "gameId": "474", "reason": "JILI Game Info type Crash" },
+    { "order": 38, "gameId": "748", "reason": "JILI Game Info type Crash" },
+    { "order": 39, "gameId": "626", "reason": "JILI Game Info type Crash" },
+    { "order": 41, "gameId": "645", "reason": "JILI Game Info type Crash" },
+    { "order": 42, "gameId": "633", "reason": "JILI Game Info type Crash" },
+    { "order": 43, "gameId": "571", "reason": "JILI Game Info type Crash" },
+    { "order": 45, "gameId": "698", "reason": "JILI Game Info type Crash" }
+  ],
+  "nextCursor": "JILI official catalog order 56 of 277; check skipped 56 and 58-59, then continue at 61.",
+  "checkedAt": "2026-10-29"
+}
