@@ -1,0 +1,98 @@
+{
+  "batch": 114,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "verified-pending-publication",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI official catalog after batch 113",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and Game ID. No same JILI records for IDs 145,146,166,100,142; all five exact English names absent from existing Game Markdown.",
+  "records": [
+    {
+      "order": 192,
+      "gameId": "145",
+      "name": "Neko Fortune",
+      "slug": "neko-fortune",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/145?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 193,
+      "gameId": "146",
+      "name": "World Cup",
+      "slug": "world-cup-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/146?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 194,
+      "gameId": "166",
+      "name": "WILD RACER",
+      "slug": "wild-racer",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/166?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 198,
+      "gameId": "100",
+      "name": "Super Rich",
+      "slug": "super-rich-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/100?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 199,
+      "gameId": "142",
+      "name": "Bonus Hunter",
+      "slug": "bonus-hunter-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/142?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "excluded": [
+    {
+      "order": 188,
+      "gameId": "114",
+      "reason": "Official Casino roulette"
+    },
+    {
+      "order": 189,
+      "gameId": "177",
+      "reason": "Official Bingo"
+    },
+    {
+      "order": 190,
+      "gameId": "173",
+      "reason": "Official Bingo"
+    },
+    {
+      "order": 191,
+      "gameId": "182",
+      "reason": "Official Table and Card"
+    },
+    {
+      "order": 195,
+      "gameId": "200",
+      "reason": "Official Fish and Arcade scratch card"
+    },
+    {
+      "order": 196,
+      "gameId": "160",
+      "reason": "Official Indian Poker"
+    },
+    {
+      "order": 197,
+      "gameId": "178",
+      "reason": "Official Bingo"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 200 of 277.",
+  "checkedAt": "2026-10-29"
+}

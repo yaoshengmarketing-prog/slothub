@@ -1,0 +1,25 @@
+---
+name: Bonus Hunter
+aliases: []
+relatedGames: []
+provider: jili-games
+primaryType: slots
+subtypes: [video-slots]
+summary: JILI 官方將 Bonus Hunter 列為 Slot，標示 1,024 Ways、最高 2,000 倍，並介紹 Golden Frame Wild、免費遊戲與倍數。
+volatilityOriginal: MED
+maxWinMultiplier: 2000
+maxWinLabelOriginal: "MAX WIN: 2000X"
+paylines: "Official field label Paylines; value 1,024 ways"
+bonusFeatures: ["Publish Time: 2022.09"]
+gameId: "142"
+image: { src: /assets/games/bonus-hunter-jili.png, alt: JILI 官方 Bonus Hunter 作品圖, sourceUrl: "https://wbgame.jlfafafa3.com/All-In-One/production/img/jiliPlusPlayer/games/sGwnH7w0dmV98sYjXkGjH20zhziGYkiWqD3pvICz.png", retrievedAt: 2026-10-29 }
+editorialFeatured: false
+status: published
+source: { label: JILI 官方 Bonus Hunter 遊戲頁, url: "https://jiligames.com/PlusIntro/142?showGame=false", checkedAt: 2026-10-29 }
+sources:
+  - { label: JILI 官方 Bonus Hunter Game Info（類型與欄位）, url: "https://jiligames.com/PlusIntro/142?showGame=false", checkedAt: 2026-10-29 }
+  - { label: JILI 官方目錄作品圖, url: "https://wbgame.jlfafafa3.com/All-In-One/production/img/jiliPlusPlayer/games/sGwnH7w0dmV98sYjXkGjH20zhziGYkiWqD3pvICz.png", checkedAt: 2026-10-29 }
+demo: { status: available, checkedAt: 2026-10-29, iframeStatus: not-tested, url: "https://jiligames.com/PlusIntro/142?showGame=true", accessType: official-game-page, presentation: external }
+lastVerifiedAt: 2026-10-29
+updatedAt: 2026-10-29
+---
