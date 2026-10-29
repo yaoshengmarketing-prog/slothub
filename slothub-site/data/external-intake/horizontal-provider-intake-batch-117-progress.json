@@ -1,0 +1,98 @@
+{
+  "batch": 117,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "verified-pending-publication",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI official catalog after batch 116",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and Game ID. No same JILI records for IDs 87,16,35,137,36; same JILI IDs and names absent from existing Game Markdown; game IDs in other Providers do not identify the same game.",
+  "records": [
+    {
+      "order": 219,
+      "gameId": "87",
+      "name": "Book of Gold",
+      "slug": "book-of-gold-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/87?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 220,
+      "gameId": "16",
+      "name": "Jungle King",
+      "slug": "jungle-king-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/16?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 225,
+      "gameId": "35",
+      "name": "Crazy 777",
+      "slug": "crazy-777-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/35?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 226,
+      "gameId": "137",
+      "name": "Gold Rush",
+      "slug": "gold-rush-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/137?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 229,
+      "gameId": "36",
+      "name": "Bao boon chin",
+      "slug": "bao-boon-chin-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/36?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "excluded": [
+    {
+      "order": 218,
+      "gameId": "92",
+      "reason": "Official Fish and Arcade"
+    },
+    {
+      "order": 221,
+      "gameId": "139",
+      "reason": "Official Bingo"
+    },
+    {
+      "order": 222,
+      "gameId": "149",
+      "reason": "Official Bingo"
+    },
+    {
+      "order": 223,
+      "gameId": "4",
+      "reason": "Official MAX WIN field 2000x conflicts with description 500x; hold for source reconciliation"
+    },
+    {
+      "order": 224,
+      "gameId": "153",
+      "reason": "Official Fish and Arcade"
+    },
+    {
+      "order": 227,
+      "gameId": "125",
+      "reason": "Official Table and Card"
+    },
+    {
+      "order": 228,
+      "gameId": "124",
+      "reason": "Official Table and Card"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 230 of 277.",
+  "checkedAt": "2026-10-30"
+}

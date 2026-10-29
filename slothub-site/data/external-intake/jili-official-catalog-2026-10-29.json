@@ -4,7 +4,7 @@
   "checkedAt": "2026-10-29",
   "scope": "ALL GAMES in source order; catalogType 1 is a discovery hint only; each Slot requires individual Game Info classification",
   "itemCount": 277,
-  "cursor": "Batch 116 captured orders 211-213,215,217; orders 214,216 excluded as non-Slot with official types. Next order 218.",
+  "cursor": "Batch 117 captured orders 219,220,225,226,229; orders 218,221,222,224,227,228 excluded as non-Slot; order 223 held for official source conflict. Next order 230.",
   "items": [
     {
       "decision": "excluded-non-slot",
@@ -1849,15 +1849,16 @@
       "name": "MEDUSA"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "92",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 218,
       "catalogType": "3",
-      "name": "Crazy Hunter"
+      "name": "Crazy Hunter",
+      "reason": "Official Fish and Arcade"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "87",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 219,
@@ -1865,7 +1866,7 @@
       "name": "Book of Gold"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "16",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 220,
@@ -1873,39 +1874,43 @@
       "name": "Jungle King"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "139",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 221,
       "catalogType": "5",
-      "name": "Fortune Bingo"
+      "name": "Fortune Bingo",
+      "reason": "Official Bingo"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "149",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 222,
       "catalogType": "5",
-      "name": "CALACA BINGO"
+      "name": "CALACA BINGO",
+      "reason": "Official Bingo"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "source-conflict-held",
       "gameId": "4",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 223,
       "catalogType": "1",
-      "name": "God Of Martial"
+      "name": "God Of Martial",
+      "reason": "Official MAX WIN field 2000x conflicts with description 500x; hold for source reconciliation"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "153",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 224,
       "catalogType": "3",
-      "name": "Crazy Pusher"
+      "name": "Crazy Pusher",
+      "reason": "Official Fish and Arcade"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "35",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 225,
@@ -1913,7 +1918,7 @@
       "name": "Crazy 777"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "137",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 226,
@@ -1921,23 +1926,25 @@
       "name": "Gold Rush"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "125",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 227,
       "catalogType": "2",
-      "name": "Sic Bo"
+      "name": "Sic Bo",
+      "reason": "Official Table and Card"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "124",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 228,
       "catalogType": "2",
-      "name": "7 up 7 down"
+      "name": "7 up 7 down",
+      "reason": "Official Table and Card"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "36",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 229,
