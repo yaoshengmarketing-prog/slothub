@@ -1,6 +1,6 @@
 {
-  "version": "game-media-pilot-20261029-review-v1",
-  "note": "Hashes bind packaged files, not historical browser PASS. Manifest excludes itself.",
+  "version": "game-media-pilot-20261029-review-v2",
+  "note": "Current files bound by Git LF-normalized text SHA256; PNG bytes unchanged. Excludes manifest itself. Historical screenshot/test provenance remains as noted in acceptance summary.",
   "files": [
     {
       "path": "assets/densho.png",
@@ -19,28 +19,33 @@
     },
     {
       "path": "densho.html",
-      "bytes": 61859,
-      "sha256": "63f50e7e8e57902c914f6f06fba76c9b38b6fd27f6ac4f0e59c34c1fe2074aab"
+      "bytes": 61286,
+      "sha256": "4517d86b56de4881a5cd272a823c84d94c9d190e187f981dcb87583853f6cb89"
     },
     {
       "path": "materials.html",
-      "bytes": 2395,
-      "sha256": "5bf55ad7d5d4215e7b259bced8408204349d75ccc9bf61d636c9af93df1fdd2f"
+      "bytes": 2678,
+      "sha256": "38bfd5c32bfc542a44d507ea2423225069f2e51fc672b134674f497fe321364c"
     },
     {
       "path": "materials.json",
-      "bytes": 3485,
-      "sha256": "e28865b28e4054a74cabf57cb9c3c99c83f6bd1636426d1b14e20d08ffbac158"
+      "bytes": 3941,
+      "sha256": "f8f2eaef6ac29146559be0c12b472afc66cd553f34994cba2052f11c7db73ef9"
     },
     {
       "path": "media.css",
-      "bytes": 2113,
-      "sha256": "a4502300e60900287329f3c30209bbb60426a76121c468999820c9249e55fe29"
+      "bytes": 2436,
+      "sha256": "525cf6788df12a1453b863d3602c6cb2b6b1a2dcd54ef747e90675dde8f3f2cc"
+    },
+    {
+      "path": "media.js",
+      "bytes": 2264,
+      "sha256": "2e9fa233d8440f4e6488b37b5263ceecb97accb14bf03f72b9720bad83d091a3"
     },
     {
       "path": "razor-shark.html",
-      "bytes": 55752,
-      "sha256": "37306d2b37aba6b026c1b2959332d0ac2cbc35416cb2c1f74c8e9914f763be41"
+      "bytes": 55102,
+      "sha256": "099b4430a1d01238a6b32b26577471c2e5b4887750b6f55f5ce0a5e9ef6b2bfe"
     },
     {
       "path": "review/494271522-oembed.json",
@@ -54,8 +59,13 @@
     },
     {
       "path": "review/acceptance-summary.json",
-      "bytes": 3050,
-      "sha256": "acd0711333cec00f6794aa7b00f7355d9c04befb921bd62d3bf1d3895d6c894c"
+      "bytes": 7699,
+      "sha256": "aa73df4cdf0934791bc05418ff25711c0e4e98f28b4b2a4467f63c6301f1aa25"
+    },
+    {
+      "path": "review/browser-results.json",
+      "bytes": 6780,
+      "sha256": "87f7c51800ab845e1e8d0161f48b7917c8108bd76b2d18afc007529f93a7a3bb"
     },
     {
       "path": "review/densho-1440.png",
@@ -91,6 +101,16 @@
       "path": "review/razor-shark-390.png",
       "bytes": 121246,
       "sha256": "bd97bb476afc2345c5f1b2fd73ad4354f8fadc118fe7d9f5649d63e5fd4e6cc0"
+    },
+    {
+      "path": "review/serve-preview.mjs",
+      "bytes": 1932,
+      "sha256": "e3c82e2c9bc84eac05e8079bd0a3e9c8fb86951605bf34516323f8f3ac08a5a2"
+    },
+    {
+      "path": "review/verify-pilot.mjs",
+      "bytes": 2026,
+      "sha256": "93d9f04782b0e64f89610b58a1a616d0e889ba126b5052c61d4bdabbd474d1ab"
     }
   ]
 }

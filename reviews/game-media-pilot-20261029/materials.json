@@ -18,16 +18,19 @@
       "publisher": "Slot Gods",
       "duration": 86,
       "official": false,
-      "videoNote": "來源將本片標為 Free Spins 紀錄，可作查看該功能畫面的線索；本輪尚無法播放核對過程與有用時間點。",
+      "videoNote": "已觀看 Free Spins 中整列角色符號與倍數標記、旋轉後盤面變化；第三方紀錄不代表常見結果或觸發頻率。",
       "embedMode": "external-only",
-      "warning": "第三方影片描述中的 RTP 與原廠公布值不同；本試點不採用該數字，也不把影片結果視為機率。",
+      "warning": "影片描述中的 RTP 與原廠公布值不同，不採用該數字。來源初次顯示安全連線檢查，頁面自行完成後可播放；沒有手動處理驗證。",
       "imageVisuallyVerified": true,
       "videoMetadataVerified": true,
-      "videoPlaybackVerified": false,
-      "embedStatus": "source-oEmbed-available; actual player blocked by connection-security restriction",
+      "videoPlaybackVerified": true,
+      "embedStatus": "not-tested-this-round; intentionally no embedded player",
       "timestamps": [],
       "sameGameEvidence": "Vimeo original page and oEmbed identify Densho / Hacksaw Gaming and publisher Slot Gods; gameplay sequence cannot yet be independently verified.",
-      "adoption": "image accepted for local preview; video retained with explicit playback and timestamp gaps"
+      "adoption": "image adopted; third-party video adopted as external-only viewing; no probability evidence",
+      "videoContentViewed": true,
+      "viewingScope": "Direct visual observation of sampled frames while real browser playback progressed; not a continuous human frame-by-frame review",
+      "sourcePlayback": "passed in this browser on 2026-10-29"
     },
     {
       "slug": "razor-shark",
@@ -44,16 +47,19 @@
       "publisher": "Push Gaming",
       "duration": 15,
       "official": true,
-      "videoNote": "原廠單款頁將本片放在 Razor Reveal 段落，可用來定位該功能的官方展示；本輪播放受限，尚未核對動作與時間點。",
-      "embedMode": "candidate-click-to-test",
-      "warning": "來源提供嵌入碼；本環境播放器回報連線安全限制，尚未通過可播放驗收。可試載播放器或改至來源觀看。",
+      "videoNote": "原廠單款頁對應 Razor Reveal；實際播放看見金色鯊魚轉為倍數金幣的揭示畫面。",
+      "embedMode": "click-to-load",
+      "warning": "本次瀏覽器實際播放通過，不保證所有瀏覽器／網路可播放；永久保留來源站連結。",
       "imageVisuallyVerified": true,
       "videoMetadataVerified": true,
-      "videoPlaybackVerified": false,
-      "embedStatus": "source-oEmbed-available; actual player blocked by connection-security restriction",
+      "videoPlaybackVerified": true,
+      "embedStatus": "passed actual playback to ended in local HTTP preview; autoplay disabled",
       "timestamps": [],
       "sameGameEvidence": "Exact official Razor Shark page binds data-video-id 494271522 to Razor Reveal; Vimeo author Push Gaming matches official publisher.",
-      "adoption": "image accepted for local preview; video retained with explicit playback and timestamp gaps"
+      "adoption": "feature-symbol image adopted (not full board); official feature video click-to-load with permanent external fallback",
+      "videoContentViewed": true,
+      "viewingScope": "Direct visual observation of sampled frames while real browser playback progressed; not a continuous human frame-by-frame review",
+      "sourcePlayback": "passed in this browser on 2026-10-29"
     }
   ]
 }
