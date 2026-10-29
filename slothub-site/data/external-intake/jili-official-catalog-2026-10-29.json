@@ -4,7 +4,7 @@
   "checkedAt": "2026-10-29",
   "scope": "ALL GAMES in source order; catalogType 1 is a discovery hint only; each Slot requires individual Game Info classification",
   "itemCount": 277,
-  "cursor": "Batch 112 captured orders 158,159,163,165,173; orders 156-157,160-162,164,166-172 excluded as non-Slot with official types. Next order 174.",
+  "cursor": "Batch 113 captured orders 174,182,184,186,187; orders 175-181,183,185 excluded as non-Slot with official types. Next order 188.",
   "items": [
     {
       "decision": "excluded-non-slot",
@@ -1473,7 +1473,7 @@
       "name": "Sweet land"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "164",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 174,
@@ -1481,63 +1481,70 @@
       "name": "Pirate Queen"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "254",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 175,
       "catalogType": "7",
-      "name": "Mines Gold"
+      "name": "Mines Gold",
+      "reason": "Official Crash"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "236",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 176,
       "catalogType": "7",
-      "name": "Wheel"
+      "name": "Wheel",
+      "reason": "Official Crash"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "235",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 177,
       "catalogType": "7",
-      "name": "Limbo"
+      "name": "Limbo",
+      "reason": "Official Crash"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "224",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 178,
       "catalogType": "7",
-      "name": "Go Rush"
+      "name": "Go Rush",
+      "reason": "Official Crash"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "232",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 179,
       "catalogType": "7",
-      "name": "Tower"
+      "name": "Tower",
+      "reason": "Official Crash"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "233",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 180,
       "catalogType": "7",
-      "name": "HILO"
+      "name": "HILO",
+      "reason": "Official Crash"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "161",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 181,
       "catalogType": "6",
-      "name": "TeenPatti 20-20"
+      "name": "TeenPatti 20-20",
+      "reason": "Official Indian Poker"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "181",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 182,
@@ -1545,15 +1552,16 @@
       "name": "WILD ACE"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "231",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 183,
       "catalogType": "6",
-      "name": "Caribbean Stud Poker"
+      "name": "Caribbean Stud Poker",
+      "reason": "Official Indian Poker"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "176",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 184,
@@ -1561,15 +1569,16 @@
       "name": "Master Tiger"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "212",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 185,
       "catalogType": "3",
-      "name": "Dinosaur Tycoon II"
+      "name": "Dinosaur Tycoon II",
+      "reason": "Official Fishing"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "183",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 186,
@@ -1577,7 +1586,7 @@
       "name": "GOLDEN JOKER"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "77",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 187,

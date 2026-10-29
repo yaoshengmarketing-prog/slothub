@@ -1,0 +1,115 @@
+{
+  "batch": 113,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "verified-pending-publication",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI official catalog after batch 112",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and Game ID. Pirate Queen ID 164 differs from Pirate Queen 2 ID 461; Boxing King ID 77 differs from Boxing King Title Match ID 495. No same JILI records for IDs 164,181,176,183,77.",
+  "records": [
+    {
+      "order": 174,
+      "gameId": "164",
+      "name": "Pirate Queen",
+      "slug": "pirate-queen-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/164?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 182,
+      "gameId": "181",
+      "name": "WILD ACE",
+      "slug": "wild-ace-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/181?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 184,
+      "gameId": "176",
+      "name": "Master Tiger",
+      "slug": "master-tiger",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/176?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 186,
+      "gameId": "183",
+      "name": "GOLDEN JOKER",
+      "slug": "golden-joker-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/183?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 187,
+      "gameId": "77",
+      "name": "Boxing King",
+      "slug": "boxing-king-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/77?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "excluded": [
+    {
+      "order": 175,
+      "gameId": "254",
+      "reason": "Official Crash"
+    },
+    {
+      "order": 176,
+      "gameId": "236",
+      "reason": "Official Crash"
+    },
+    {
+      "order": 177,
+      "gameId": "235",
+      "reason": "Official Crash"
+    },
+    {
+      "order": 178,
+      "gameId": "224",
+      "reason": "Official Crash"
+    },
+    {
+      "order": 179,
+      "gameId": "232",
+      "reason": "Official Crash"
+    },
+    {
+      "order": 180,
+      "gameId": "233",
+      "reason": "Official Crash"
+    },
+    {
+      "order": 181,
+      "gameId": "161",
+      "reason": "Official Indian Poker"
+    },
+    {
+      "order": 183,
+      "gameId": "231",
+      "reason": "Official Indian Poker"
+    },
+    {
+      "order": 185,
+      "gameId": "212",
+      "reason": "Official Fishing"
+    }
+  ],
+  "fieldGaps": [
+    {
+      "order": 187,
+      "field": "Paylines",
+      "reason": "Official field says 88 paylines while description says 88 ways; omitted pending mode reconciliation"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 188 of 277.",
+  "checkedAt": "2026-10-29"
+}
