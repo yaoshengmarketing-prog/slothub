@@ -1,10 +1,10 @@
 {
   "batch": 110,
   "recordedAt": "2026-10-29T00:00:00+08:00",
-  "state": "verified-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 5,
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "Continue approved JILI official catalog after batch 109",
   "catalog": "https://jiligames.com/games?showSlotGames=true",
   "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
@@ -15,7 +15,7 @@
       "gameId": "258",
       "name": "Devil Fire 2",
       "slug": "devil-fire-2",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/258?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -24,7 +24,7 @@
       "gameId": "171",
       "name": "Sin City",
       "slug": "sin-city-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/171?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -33,7 +33,7 @@
       "gameId": "223",
       "name": "Fortune Gems 2",
       "slug": "fortune-gems-2",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/223?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -42,7 +42,7 @@
       "gameId": "115",
       "name": "Agent Ace",
       "slug": "agent-ace",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/115?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -51,7 +51,7 @@
       "gameId": "208",
       "name": "Trial of Phoenix",
       "slug": "trial-of-phoenix",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/208?showGame=false",
       "demoStatus": "official-game-page"
     }
@@ -119,5 +119,13 @@
     }
   ],
   "nextCursor": "JILI official catalog order 148 of 277.",
-  "checkedAt": "2026-10-29"
+  "checkedAt": "2026-10-29",
+  "publication": {
+    "sha": "58c2f9ec08a9310cd2ecaf2901db0d4652f49909",
+    "githubActionsRun": 40893259099,
+    "githubActionsStatus": "success",
+    "cloudflareDeployment": "36490ac5-e110-4efd-9afb-fe7fece0c124",
+    "liveUrl": "https://36490ac5.slothub-4cu.pages.dev",
+    "liveReadback": "Five exact Game detail pages and PNG images HTTP 200; all five visible in Search, Explorer, Compare and JILI Provider; official source and game-page URLs present; outbound nofollow; X-Robots-Tag noindex,nofollow; no canonical; empty sitemap."
+  }
 }
