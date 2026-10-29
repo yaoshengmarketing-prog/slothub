@@ -1,0 +1,33 @@
+{
+  "batch": 139,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 26",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; no Ragnarok Thor vs Loki record.",
+  "records": [
+    {
+      "order": 26,
+      "name": "Ragnarok: Thor vs Loki",
+      "slug": "ragnarok-thor-vs-loki-jdb",
+      "provider": "jdb-gaming",
+      "status": "imported-pending-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/ragnarok-thor-vs-loki",
+      "officialFacts": "Official direct browser detail: Slot, RTP 96.18%, SUPER HIGH volatility specification, Maximum Win 15000X, 15 Lines, release year 2025; feature says player chooses between two distinct volatility levels. Introduction says wins up to 15000X.",
+      "sourceConflict": "Slots Launch overview says 20 paylines and claims Wild Storm, Battle Spins and Rune Collection unsupported by official detail. Published page uses exact 15 Lines and only official feature. Official SUPER HIGH specification and selectable volatility levels are distinct claims, preserved separately.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/ragnarok-thor-vs-loki",
+        "sourceUrl": "https://assets.slotslaunch.com/36860/ragnarok-thor-vs-loki.jpg",
+        "sha256": "323b83004aceac42bb0d4ef84d49aefb81824522598cd6d222120997ea0ae0d9",
+        "visualCheck": "Slots Launch exact page identifies Ragnarok: Thor vs Loki by JDB Gaming; downloaded valid JPEG visibly displays Ragnarok Thor vs Loki title and two opposed characters."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 27 OLYMPIG",
+  "publication": null
+}

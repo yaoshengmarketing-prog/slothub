@@ -1,10 +1,10 @@
 {
   "batch": 138,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 25",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Trump Card",
       "slug": "trump-card-jdb",
       "provider": "jdb-gaming",
-      "status": "imported-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/trump-card",
       "officialFacts": "Official direct browser detail: Slot, RTP 96.98%, LOW volatility, Maximum Win 1190X, 1024 Ways, release year 2022; all-match TRUMP CARD and multiple awards. Official CN page calls game 王牌.",
       "sourceConflict": "Slots Launch overview calls it political satire, 25 paylines, free spins, jackpot and progressive jackpot while exact image shows a magician and official page says 1024 Ways with no such features; published page uses official data only. Some third-party sites list RTP 96% or low-medium volatility instead of exact official 96.98%/LOW.",
@@ -29,5 +29,14 @@
     }
   ],
   "nextCursor": "JDB catalog card 26 RAGNAROK : THOR VS LOKI",
-  "publication": null
+  "publication": {
+    "commit": "2be8bd56741b76dfa2d0a1501b7b673726debbb2",
+    "githubRun": 40946175103,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "efc25722-de00-43c1-8d17-65a2a9df74a1",
+    "cloudflareUrl": "https://efc25722.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, image and sitemap HTTP 200; official and exact Slots Launch platform URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
