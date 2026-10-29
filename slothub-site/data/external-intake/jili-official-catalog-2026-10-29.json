@@ -4,7 +4,7 @@
   "checkedAt": "2026-10-29",
   "scope": "ALL GAMES in source order; catalogType 1 is a discovery hint only; each Slot requires individual Game Info classification",
   "itemCount": 277,
-  "cursor": "Batch 110 captured orders 131,132,134,139,147; orders 133,135-138,140-146 excluded with reasons. Next order 148.",
+  "cursor": "Batch 111 captured orders 148,150,153-155; orders 149,151-152 held for identity/source conflict with reasons. Next order 156.",
   "items": [
     {
       "decision": "excluded-non-slot",
@@ -1249,7 +1249,7 @@
       "name": "Trial of Phoenix"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "228",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 148,
@@ -1257,15 +1257,16 @@
       "name": "Arena Fighter"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "held-source-conflict",
       "gameId": "226",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 149,
       "catalogType": "1",
-      "name": "Witches Night"
+      "name": "Witches Night",
+      "reason": "Identity conflict: JILI Witches Night ID 226 shares exact name with published JILI Witches Night ID 299; requires distinct-version evidence before inclusion"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "214",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 150,
@@ -1273,23 +1274,25 @@
       "name": "King Arthur"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "held-source-conflict",
       "gameId": "239",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 151,
       "catalogType": "1",
-      "name": "Dabanggg"
+      "name": "Dabanggg",
+      "reason": "Official Dabanggg page conflicts on MAX WIN: field 2000x versus description 5000x; hold this candidate pending source reconciliation"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "held-source-conflict",
       "gameId": "238",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 152,
       "catalogType": "1",
-      "name": "Bangla Beauty"
+      "name": "Bangla Beauty",
+      "reason": "Official Bangla Beauty page labels Slot but description describes a competitive poker game; hold classification pending source reconciliation"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "225",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 153,
@@ -1297,7 +1300,7 @@
       "name": "Cricket King 18"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "9",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 154,
@@ -1305,7 +1308,7 @@
       "name": "War Of Dragons"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "5",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 155,
