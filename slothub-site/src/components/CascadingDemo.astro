@@ -1,0 +1,163 @@
+---
+import { CASCADING_FRAMES, CASCADING_STEPS, describeBoard } from '../lib/cascading-demo.mjs';
+const first = CASCADING_FRAMES[0];
+---
+<section class="cascade-demo" id="cascading-demo" aria-labelledby="cascading-demo-title" data-cascading-demo data-frame="0" data-playing="false">
+  <header class="cascade-heading">
+    <h3 id="cascading-demo-title">連鎖消除：盤面怎麼接著變？</h3>
+    <p>看一組符號移除後，盤面如何補位並再次判定。</p>
+    <p class="cascade-disclaimer">本站概念示意，非特定遊戲實際畫面；本例採向下補位。</p>
+  </header>
+  <div class="cascade-layout">
+    <figure class="cascade-figure">
+      <svg class="cascade-board" viewBox="0 0 300 300" role="img" aria-labelledby="cascade-board-title cascade-board-description">
+        <title id="cascade-board-title">幾何符號固定示例盤面</title>
+        <desc id="cascade-board-description">{describeBoard(first)}</desc>
+        {Array.from({ length: 9 }, (_, cell) => <rect x={(cell % 3) * 100 + 4} y={Math.floor(cell / 3) * 100 + 4} width="92" height="92" rx="12" class="cascade-cell" />)}
+        <g data-tokens aria-hidden="true">
+          {first.tokens.map((item) => <g data-token={item.id} data-shape={item.shape} data-marked={first.marked.includes(item.id) ? 'true' : 'false'} class="cascade-token" transform={`translate(${(item.cell % 3) * 100},${Math.floor(item.cell / 3) * 100})`}>
+            <rect class="cascade-mark" x="9" y="9" width="82" height="82" rx="9" />
+            {item.shape === 'circle' && <circle class="symbol-circle" cx="50" cy="50" r="23" />}
+            {item.shape === 'square' && <rect class="symbol-square" x="28" y="28" width="44" height="44" rx="3" />}
+            {item.shape === 'triangle' && <path class="symbol-triangle" d="M50 24 77 73H23Z" />}
+            {item.shape === 'diamond' && <path class="symbol-diamond" d="m50 20 28 30-28 30-28-30Z" />}
+          </g>)}
+        </g>
+      </svg>
+      <figcaption>本例只把「同一橫列三個同形符號」設為有效組合，所有補入符號皆已預設；不代表個別遊戲的判定規則。</figcaption>
+    </figure>
+    <div class="cascade-explanation">
+      <ol class="cascade-steps" aria-label="連鎖消除的四個步驟">
+        {CASCADING_STEPS.map((label, index) => <li aria-current={index === 0 ? 'step' : undefined} data-step={index}><span aria-hidden="true">{index + 1}</span>{label}</li>)}
+      </ol>
+      <div class="cascade-current" role="status" aria-live="polite" aria-atomic="true">
+        <p class="cascade-position">第 1 輪 · {CASCADING_STEPS[0]}</p>
+        <p class="cascade-text">{first.text}</p>
+        <p class="cascade-outcome" hidden></p>
+      </div>
+      <div class="cascade-controls" role="group" aria-label="操作固定示例" hidden>
+        <button type="button" data-action="next">下一步</button>
+        <button type="button" data-action="play" aria-pressed="false">播放一次</button>
+        <button type="button" data-action="reset">重設</button>
+      </div>
+      <p class="cascade-motion-note" hidden>已依減少動態效果設定關閉位移動畫；仍可用「下一步」逐步查看。</p>
+      <details class="cascade-static">
+        <summary>四步驟與繼續／停止的說明</summary>
+        <p>先標示有效組合，再移除符號、補入空位並重新判定。新盤面仍有有效組合就回到第 2 步繼續；沒有新組合便停止。</p>
+      </details>
+      <noscript><p class="cascade-no-script">目前顯示固定示例的第一個盤面。可展開上方四步驟說明，或使用原有的教學與遊戲探索連結。</p></noscript>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { CASCADING_FRAMES, CASCADING_STEPS, describeBoard, createCascadingController } from '../lib/cascading-demo.mjs';
+  const NS = 'http://www.w3.org/2000/svg';
+  const shapes: Record<string, [string, Record<string, string>]> = {
+    circle: ['circle', { cx: '50', cy: '50', r: '23' }],
+    square: ['rect', { x: '28', y: '28', width: '44', height: '44', rx: '3' }],
+    triangle: ['path', { d: 'M50 24 77 73H23Z' }],
+    diamond: ['path', { d: 'm50 20 28 30-28 30-28-30Z' }],
+  };
+  document.querySelectorAll<HTMLElement>('[data-cascading-demo]').forEach((root) => {
+    if (root.dataset.ready) return;
+    const tokens = root.querySelector<SVGGElement>('[data-tokens]');
+    const controls = root.querySelector<HTMLElement>('.cascade-controls');
+    const next = root.querySelector<HTMLButtonElement>('[data-action="next"]');
+    const play = root.querySelector<HTMLButtonElement>('[data-action="play"]');
+    const reset = root.querySelector<HTMLButtonElement>('[data-action="reset"]');
+    if (!tokens || !controls || !next || !play || !reset) return;
+    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const motionNote = root.querySelector<HTMLElement>('.cascade-motion-note')!;
+    const syncMotion = () => { motionNote.hidden = !motion.matches; };
+    motion.addEventListener('change', syncMotion);
+    syncMotion();
+    const controller = createCascadingController({ onChange: ({ index, playing, frame }) => {
+      root.dataset.frame = String(index);
+      root.dataset.playing = String(playing);
+      const ids = new Set(frame.tokens.map((item) => item.id));
+      tokens.querySelectorAll<SVGGElement>('[data-token]').forEach((node) => { if (!ids.has(node.dataset.token!)) node.remove(); });
+      frame.tokens.forEach((item) => {
+        let group = tokens.querySelector<SVGGElement>(`[data-token="${item.id}"]`);
+        if (!group) {
+          group = document.createElementNS(NS, 'g');
+          group.dataset.token = item.id;
+          group.dataset.shape = item.shape;
+          group.classList.add('cascade-token');
+          const mark = document.createElementNS(NS, 'rect');
+          Object.entries({ x: '9', y: '9', width: '82', height: '82', rx: '9', class: 'cascade-mark' }).forEach(([key, value]) => mark.setAttribute(key, value));
+          const [tag, attributes] = shapes[item.shape];
+          const symbol = document.createElementNS(NS, tag);
+          symbol.classList.add(`symbol-${item.shape}`);
+          Object.entries(attributes).forEach(([key, value]) => symbol.setAttribute(key, value));
+          group.append(mark, symbol);
+          tokens.append(group);
+        }
+        group.setAttribute('transform', `translate(${(item.cell % 3) * 100},${Math.floor(item.cell / 3) * 100})`);
+        group.dataset.marked = String(frame.marked.includes(item.id));
+        group.dataset.added = String(frame.added.includes(item.id));
+      });
+      root.querySelector('#cascade-board-description')!.textContent = describeBoard(frame);
+      root.querySelectorAll<HTMLElement>('[data-step]').forEach((item) => {
+        if (Number(item.dataset.step) === frame.step) item.setAttribute('aria-current', 'step');
+        else item.removeAttribute('aria-current');
+      });
+      root.querySelector('.cascade-position')!.textContent = `第 ${frame.round} 輪 · ${CASCADING_STEPS[frame.step]}`;
+      root.querySelector('.cascade-text')!.textContent = frame.text;
+      const outcome = root.querySelector<HTMLElement>('.cascade-outcome')!;
+      outcome.hidden = !frame.outcome;
+      outcome.textContent = frame.outcome === 'continue' ? '繼續：下一步回到符號移除。' : frame.outcome === 'stop' ? '本次示例已結束。可以重設，或再播放一次。' : '';
+      next.setAttribute('aria-disabled', String(index === CASCADING_FRAMES.length - 1));
+      play.setAttribute('aria-pressed', String(playing));
+      play.textContent = playing ? '暫停' : index > 0 && index < CASCADING_FRAMES.length - 1 ? '繼續播放' : '播放一次';
+    } });
+    next.addEventListener('click', () => controller.next());
+    play.addEventListener('click', () => { if (root.dataset.playing === 'true') controller.pause(); else controller.start(); });
+    reset.addEventListener('click', () => controller.reset());
+    document.addEventListener('visibilitychange', () => { if (document.hidden) controller.pause(); });
+    root.dataset.ready = 'true';
+    controls.hidden = false;
+  });
+</script>
+
+<style>
+  .cascade-demo { margin-top: 28px; padding: clamp(18px, 3vw, 32px); border: 1px solid #d8dde6; border-radius: 17px; background: white; color: var(--navy); scroll-margin-top: 90px; }
+  .cascade-heading h3 { margin: 0; font: 850 clamp(1.3rem, 2.2vw, 1.8rem)/1.35 "Aptos Display", "Noto Sans TC", sans-serif; }
+  .cascade-heading p { margin: 10px 0 0; line-height: 1.65; }
+  .cascade-disclaimer { padding-left: 12px; border-left: 3px solid var(--signal); color: var(--muted); font-size: .8rem; }
+  .cascade-layout { display: grid; grid-template-columns: minmax(220px, .85fr) minmax(0, 1.15fr); gap: clamp(24px, 4vw, 50px); align-items: start; margin-top: 28px; }
+  .cascade-figure { min-width: 0; margin: 0; }
+  .cascade-board { display: block; width: 100%; max-width: 330px; height: auto; margin: auto; overflow: hidden; }
+  .cascade-cell { fill: #eef1f6; stroke: #d8dde6; }
+  .cascade-board :global(.cascade-token) { transition: transform 280ms ease-out; }
+  .cascade-board :global(.cascade-mark) { fill: none; stroke: transparent; stroke-width: 3; }
+  .cascade-board :global(.cascade-token[data-marked="true"] .cascade-mark) { fill: #fff0e8; stroke: var(--navy); }
+  .cascade-board :global(.cascade-token[data-added="true"] .cascade-mark) { stroke: var(--navy); stroke-dasharray: 5 4; }
+  .cascade-board :global(.symbol-circle) { fill: var(--signal); stroke: var(--navy); stroke-width: 2; }
+  .cascade-board :global(.symbol-square) { fill: var(--lime); stroke: var(--navy); stroke-width: 2; }
+  .cascade-board :global(.symbol-triangle) { fill: var(--navy); }
+  .cascade-board :global(.symbol-diamond) { fill: var(--sky); stroke: var(--navy); stroke-width: 2; }
+  figcaption { max-width: 360px; margin: 14px auto 0; color: var(--muted); font-size: .76rem; line-height: 1.65; }
+  .cascade-explanation { min-width: 0; }
+  .cascade-steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 0; margin: 0; list-style: none; }
+  .cascade-steps li { display: flex; align-items: center; gap: 7px; min-width: 0; padding: 10px 8px; border: 1px solid #d8dde6; border-radius: 8px; font-size: .8rem; font-weight: 750; line-height: 1.5; }
+  .cascade-steps li[aria-current="step"] { border-color: var(--navy); background: var(--navy); color: white; }
+  .cascade-steps span { flex-shrink: 0; display: grid; place-items: center; width: 21px; height: 21px; border-radius: 50%; background: var(--soft); color: var(--navy); font-size: .7rem; }
+  .cascade-current { min-height: 132px; padding: 22px 0 10px; }
+  .cascade-position { margin: 0; font-size: .78rem; font-weight: 850; }
+  .cascade-text { margin: 10px 0; font-size: 1rem; line-height: 1.7; }
+  .cascade-outcome { margin: 10px 0; padding: 10px 12px; border-left: 3px solid var(--navy); background: var(--sky); font-size: .8rem; line-height: 1.65; }
+  .cascade-controls { display: flex; flex-wrap: wrap; gap: 8px; }
+  .cascade-controls[hidden], .cascade-outcome[hidden], .cascade-motion-note[hidden] { display: none; }
+  .cascade-controls button { min-height: 44px; padding: 10px 14px; border: 1px solid var(--navy); border-radius: 8px; background: white; color: var(--navy); font: inherit; font-size: .85rem; font-weight: 750; line-height: 1.4; cursor: pointer; }
+  .cascade-controls button:first-child { background: var(--navy); color: white; }
+  .cascade-controls button[aria-disabled="true"] { background: var(--soft); border-style: dashed; color: var(--muted); cursor: default; }
+  .cascade-controls button:hover { border-color: var(--signal); }
+  .cascade-controls button:focus-visible, summary:focus-visible { outline: 3px solid var(--signal); outline-offset: 4px; }
+  .cascade-static { margin-top: 20px; padding-top: 15px; border-top: 1px solid #d8dde6; font-size: .8rem; line-height: 1.7; }
+  .cascade-static summary { cursor: pointer; font-weight: 750; }
+  .cascade-motion-note, .cascade-no-script { color: var(--muted); font-size: .78rem; line-height: 1.65; }
+  @media(max-width:620px) { .cascade-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; } .cascade-board { max-width: 280px; } .cascade-current { min-height: 0; } .cascade-steps li { font-size: .75rem; padding: 9px 6px; } .cascade-controls button { padding-inline: 12px; } }
+  @media(prefers-reduced-motion:reduce) { .cascade-board :global(.cascade-token) { transition: none; } }
+  @media(forced-colors:active) { .cascade-demo, .cascade-cell, .cascade-steps li, .cascade-controls button, .cascade-outcome { border-color: CanvasText; background: Canvas; color: CanvasText; } .cascade-cell { fill: Canvas; stroke: CanvasText; } .cascade-board :global(.cascade-mark) { stroke: transparent; } .cascade-board :global(.cascade-token[data-marked="true"] .cascade-mark), .cascade-board :global(.cascade-token[data-added="true"] .cascade-mark) { fill: Canvas; stroke: Highlight; } .cascade-board :global(.symbol-circle), .cascade-board :global(.symbol-square), .cascade-board :global(.symbol-triangle), .cascade-board :global(.symbol-diamond) { fill: CanvasText; stroke: CanvasText; } }
+</style>
