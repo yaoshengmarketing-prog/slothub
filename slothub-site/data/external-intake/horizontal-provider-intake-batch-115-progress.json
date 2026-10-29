@@ -1,10 +1,10 @@
 {
   "batch": 115,
   "recordedAt": "2026-10-29T00:00:00+08:00",
-  "state": "verified-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 5,
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "Continue approved JILI official catalog after batch 114",
   "catalog": "https://jiligames.com/games?showSlotGames=true",
   "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
@@ -15,7 +15,7 @@
       "gameId": "136",
       "name": "SAMBA",
       "slug": "samba-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/136?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -24,7 +24,7 @@
       "gameId": "144",
       "name": "JILI CAISHEN",
       "slug": "jili-caishen",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/144?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -33,7 +33,7 @@
       "gameId": "135",
       "name": "Mayan Empire",
       "slug": "mayan-empire-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/135?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -42,7 +42,7 @@
       "gameId": "38",
       "name": "Fengshen",
       "slug": "fengshen-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/38?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -51,7 +51,7 @@
       "gameId": "130",
       "name": "Thor X",
       "slug": "thor-x-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/130?showGame=false",
       "demoStatus": "official-game-page"
     }
@@ -89,5 +89,15 @@
     }
   ],
   "nextCursor": "JILI official catalog order 211 of 277.",
-  "checkedAt": "2026-10-29"
+  "checkedAt": "2026-10-29",
+  "publication": {
+    "commit": "9767b247a19038cade6e9b3a56522cb162a9bb76",
+    "githubActionsRun": 40907192101,
+    "githubActionsConclusion": "success",
+    "cloudflareDeploymentId": "bdb8e06f-0a40-412f-98fe-d7e1707542f6",
+    "cloudflareUrl": "https://bdb8e06f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Five detail pages, five PNGs, Search, Explorer, Compare, Provider, nofollow, noindex, X-Robots-Tag, empty sitemap and no canonical passed",
+    "checkedAt": "2026-10-30"
+  }
 }
