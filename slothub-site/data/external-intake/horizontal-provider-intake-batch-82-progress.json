@@ -1,0 +1,89 @@
+{
+  "batch": 82,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "full-verify-passed-awaiting-publication",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Taiwan operator 88WIN publicly lists RSG; RSG official catalog and exact game pages are first-party evidence.",
+  "catalog": "https://www.rsg-games.com/zh-TW/games.html",
+  "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
+  "dedupScope": "All published Game Markdown checked by RSG Provider, Chinese name, English aliases, gameId and filenames before capture; IDs 133, 1, 10, 11 and 12 were absent.",
+  "records": [
+    {
+      "order": 11,
+      "provider": "RSG",
+      "name": "諸神之戰：雷神VS戰神",
+      "gameId": "133",
+      "slug": "gods-of-war-thor-vs-seth-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_133.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=133&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 29,
+      "provider": "RSG",
+      "name": "泰有錢",
+      "gameId": "1",
+      "slug": "fortune-thai-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_1.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/zh-TW/games_detail_1.html",
+        "accessType": "official-game-page",
+        "visualResult": "TryGame displayed Code 56 disconnected/login error; official game page fallback, not playable."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 30,
+      "provider": "RSG",
+      "name": "動物叢林",
+      "gameId": "10",
+      "slug": "jungle-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_10.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=10&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 31,
+      "provider": "RSG",
+      "name": "虎克船長",
+      "gameId": "11",
+      "slug": "captain-hook-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_11.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=11&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 32,
+      "provider": "RSG",
+      "name": "野蠻遊戲",
+      "gameId": "12",
+      "slug": "huca-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_12.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/zh-TW/games_detail_12.html",
+        "accessType": "official-game-page",
+        "visualResult": "TryGame displayed Code 56 disconnected/login error; official game page fallback, not playable."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    }
+  ],
+  "nextCursor": "RSG official catalog order 33 gameid 14 甜蜜糖果; 57 pending Slot after this batch."
+}
