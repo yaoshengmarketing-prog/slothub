@@ -93,7 +93,7 @@
     "partnerImage": "https://assets.socino.com/game/fruity-bonanza-66e93a7d1c73e24c12d434e6/fruity-bonanza-thumb-en.webp",
     "partnerImageSha256": "4f16b0ce6f72b645f1f3a11f0887ae399b197e544705e0af1624dd0513142a3d",
     "partnerAttribution": "Spigo exact page title says Play Fruity Bonanza slot by JDB; visually inspected valid WebP names the exact game",
-    "decision": "imported-pending-publication"
+    "decision": "published-live-verified"
   },
   "items": [
     {
@@ -207,7 +207,19 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-14 imported. Next individual candidate is card 15 BULL TREASURE X-HUGE. No full-directory Markdown dedup has been completed for cards 15-46.",
-  "nextStep": "After FRUITY BONANZA single-game publication loop, continue documented JDB catalog at card 15 with exact first-party page, full dedup, attributable image and Demo checks.",
-  "publishedCount": 3
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-15 imported. Next individual candidate is card 16 SUPER NIUBI FORTUNE X-HUGE. No full-directory Markdown dedup has been completed for cards 16-46.",
+  "nextStep": "After BULL TREASURE X-HUGE single-game publication loop, continue documented JDB catalog at card 16 with exact first-party page, full dedup, attributable image and Demo checks.",
+  "publishedCount": 4,
+  "card15Evidence": {
+    "name": "BULL TREASURE X-HUGE™",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
+    "officialFacts": "Slot; jungle/Billy the Bull; medium volatility; 5 Lines; max win 2500X; random or Feature Buy Bull Flip; 3 Wilds trigger Bull Mega Flip. No RTP or unverified 3x3 geometry recorded.",
+    "imageSourcePage": "https://www.retrobet.com/games/all/jdb",
+    "imageSourceUrl": "https://netcontent.cc/retrobet/i/s6/jdb/BullTreasure.webp",
+    "imageSha256": "b121103cb217cf2e34efb93a46d8b4097cc50cf3c899809a41d62dc5f546a2b7",
+    "imageAttribution": "Retrobet JDB catalog search index displays Bull Treasure X-Huge; downloaded valid 429x575 WebP visibly prints BULL TREASURE X-HUGE and JDB. Catalog direct GET returned 403; image GET succeeded. Third-party source attributed as such.",
+    "demoDecision": "not-verified; official Play destination not validated; Spigo shorter-title page uses conflicting feature terminology and is not assumed same version",
+    "dedup": "All src/content/games and providers searched for Bull Treasure and Chinese variants; no existing record",
+    "decision": "imported-pending-publication"
+  }
 }
