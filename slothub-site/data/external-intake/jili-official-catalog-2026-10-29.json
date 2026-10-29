@@ -4,7 +4,7 @@
   "checkedAt": "2026-10-29",
   "scope": "ALL GAMES in source order; catalogType 1 is a discovery hint only; each Slot requires individual Game Info classification",
   "itemCount": 277,
-  "cursor": "Batch 105 captured orders 87,90-92,95; orders 88-89 and 93-94 excluded by individual official non-Slot type. Next order 96.",
+  "cursor": "Batch 106 captured orders 96-97,100-101,103; orders 98-99 excluded official non-Slot and 102 held for Slot-label/betting conflict. Next order 104.",
   "items": [
     {
       "decision": "excluded-non-slot",
@@ -806,7 +806,7 @@
       "name": "Golden Bank 2"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-106",
       "gameId": "422",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 96,
@@ -814,7 +814,7 @@
       "name": "Fruity Wheel"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-106",
       "gameId": "421",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 97,
@@ -822,23 +822,25 @@
       "name": "Lucky Jaguar"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "404",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 98,
       "catalogType": "6",
-      "name": "Ultimate Texas Hold'em"
+      "name": "Ultimate Texas Hold'em",
+      "reason": "Official Game Info type Indian Poker."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "436",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 99,
       "catalogType": "3",
-      "name": "Fortune Roulette"
+      "name": "Fortune Roulette",
+      "reason": "Official Game Info type Fishing; Roulette description confirms non-Slot."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-106",
       "gameId": "374",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 100,
@@ -846,7 +848,7 @@
       "name": "Lucky Doggy"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-106",
       "gameId": "376",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 101,
@@ -854,15 +856,16 @@
       "name": "Shōgun"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "held-classification-conflict",
       "gameId": "462",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 102,
       "catalogType": "",
-      "name": "Cricket Roulette"
+      "name": "Cricket Roulette",
+      "reason": "Official type Slot but description says Cricket Roulette is team-and-odds betting with zero paylines; human classification required."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-106",
       "gameId": "379",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 103,

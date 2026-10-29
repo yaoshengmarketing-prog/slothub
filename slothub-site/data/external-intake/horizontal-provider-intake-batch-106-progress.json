@@ -1,0 +1,80 @@
+{
+  "batch": 106,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "verified-pending-publication",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI official catalog after batch 105",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and gameId; no existing JILI same-game record for IDs 422,421,374,376,379. Lucky Jaguar 2 and Lucky Jaguar 500 and Money Pot DELUXE are distinct titled releases.",
+  "records": [
+    {
+      "order": 96,
+      "gameId": "422",
+      "name": "Fruity Wheel",
+      "slug": "fruity-wheel",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/422?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 97,
+      "gameId": "421",
+      "name": "Lucky Jaguar",
+      "slug": "lucky-jaguar",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/421?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 100,
+      "gameId": "374",
+      "name": "Lucky Doggy",
+      "slug": "lucky-doggy",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/374?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 101,
+      "gameId": "376",
+      "name": "Shōgun",
+      "slug": "shogun",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/376?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 103,
+      "gameId": "379",
+      "name": "Money Pot",
+      "slug": "money-pot",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/379?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "excludedNonSlot": [
+    {
+      "order": 98,
+      "reason": "Official Indian Poker",
+      "gameId": "404"
+    },
+    {
+      "order": 99,
+      "reason": "Official Fishing/Roulette",
+      "gameId": "436"
+    }
+  ],
+  "heldClassification": [
+    {
+      "order": 102,
+      "reason": "Official Slot label but cricket team-and-odds betting",
+      "gameId": "462"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 104 of 277.",
+  "checkedAt": "2026-10-29"
+}
