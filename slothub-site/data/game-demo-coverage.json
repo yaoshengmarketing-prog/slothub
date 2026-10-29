@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 688,
+  "gameCount": 689,
   "providerCount": 371,
-  "sourcePageCount": 1245,
+  "sourcePageCount": 1246,
   "counts": {
     "access-restricted": 4,
-    "available": 594,
+    "available": 595,
     "not-verified": 90
   },
   "rules": {
@@ -17,6 +17,29 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fruity-bonanza-jdb",
+      "name": "Fruity Bonanza",
+      "provider": "jdb-gaming",
+      "status": "available",
+      "url": "https://www.spigo.com/games/jdb/fruity-bonanza",
+      "accessType": "platform-game-page",
+      "platformName": "Spigo",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "Spigo exact page title is Play Fruity Bonanza slot by JDB and body names both; downloaded thumbnail visibly names Fruity Bonanza. This is a same-game platform page, not an official direct Demo.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/fruity-bonanza",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://www.spigo.com/games/jdb/fruity-bonanza",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "fruity-bonanza-combo-jdb",
       "name": "Fruity Bonanza Combo",
