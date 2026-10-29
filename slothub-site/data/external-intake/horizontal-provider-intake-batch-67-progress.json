@@ -1,9 +1,9 @@
 {
   "batch": 67,
   "recordedAt": "2026-10-22T00:00:00+08:00",
-  "state": "captured-awaiting-verification",
+  "state": "published",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "records": [
     {
       "provider": "InOut Games",
@@ -47,7 +47,13 @@
     }
   ],
   "continuation": {
-    "cursor": "Batch 67 now holds its five-record limit: InOut/Fruit Love Fever, Auravex/Shadow Monk, Sunnie Gaming/Lab Breach, Chatty Games/Slow Burn, and Blackout/Goblin Knight. InOut's full 77-title catalog remains retained for later source triage. Batch 66 fifth game GGApps / Starshell Finale was already deployed; its local deployment receipt is untracked and must not be staged.",
-    "rule": "Run the full prescribed verification, commit only Batch 67 paths, fast-forward publish only if origin/main is unchanged, then verify CI, Cloudflare deployment, and all online routes before starting Batch 68."
+    "cursor": "Batch 67 published: InOut/Fruit Love Fever, Auravex/Shadow Monk, Sunnie Gaming/Lab Breach, Chatty Games/Slow Burn, and Blackout/Goblin Knight. InOut's full 77-title catalog remains retained for later source triage.",
+    "rule": "Deployment closure is recorded below; do not recapture or republish these five games."
+  },
+  "deployment": {
+    "commit": "90c32c562c6a2160d7815b5174bcd5e5c2888e4c",
+    "githubActions": { "runId": 39772081171, "status": "success", "checkedAt": "2026-10-22" },
+    "cloudflarePages": { "deploymentId": "60817cc4-48c3-44a0-b256-697b956b2801", "status": "success", "url": "https://60817cc4.slothub-4cu.pages.dev/", "commit": "90c32c562c6a2160d7815b5174bcd5e5c2888e4c", "checkedAt": "2026-10-22" },
+    "onlineReadback": { "search": "ok", "gameDetails": ["fruit-love-fever-inout-games", "shadow-monk-auravex", "lab-breach-sunnie-gaming", "slow-burn-chatty-games", "goblin-knight-blackout"], "provider": "auravex", "compare": "ok", "image": "ok", "previewGuards": { "metaRobots": "noindex,nofollow", "xRobotsTag": "noindex, nofollow", "canonical": "absent", "sitemap": "empty" } }
   }
 }

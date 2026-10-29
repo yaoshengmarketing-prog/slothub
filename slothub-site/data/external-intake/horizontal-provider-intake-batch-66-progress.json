@@ -1,9 +1,9 @@
 {
   "batch": 66,
   "recordedAt": "2026-10-19",
-  "state": "captured-awaiting-verification",
+  "state": "published-and-readback-verified",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "records": [
     {
       "provider": "Taptic",
@@ -12,7 +12,7 @@
       "gameSlug": "sunforge-relics-taptic",
       "catalogUrl": "https://stake.com/casino/group/taptic",
       "gameUrl": "https://stake.com/casino/games/taptic-sunforge-relics",
-      "status": "captured",
+      "status": "published",
       "note": "The actual Stake publisher catalogue listed five titles: Sunforge Relics, Mystic Lagoon, Tumble Wheels, Ancient Clusters, World Cup Matchday. All names and publisher were checked against existing content. The exact Stake single-game page visibly identified the title, provider and slot. No verified standalone studio site or official artwork was found; the platform-published listing is attributed explicitly, with image and numerical fields left missing. The same-game platform entrance was opened and is external."
     },
     {
@@ -22,7 +22,7 @@
       "gameSlug": "bad-bears-lunch-money",
       "catalogUrl": "https://stake.com/casino/group/lunch-money",
       "gameUrl": "https://stake.com/casino/games/lunchmoney-bad-bears",
-      "status": "captured",
+      "status": "published",
       "note": "Stake's publisher catalogue listed its one title, Bad Bears; the game and publisher were checked against existing content. The exact Stake single-game page visibly identified title, publisher and slot. No verified standalone studio site or official artwork was found; the platform listing is attributed explicitly and image and numerical fields are left missing. The same-game platform entrance was opened and is external."
     },
     {
@@ -32,7 +32,7 @@
       "gameSlug": "mayan-games-lega",
       "catalogUrl": "https://stake.com/casino/group/lega-game",
       "gameUrl": "https://stake.com/casino/games/legagame-mayan-games",
-      "status": "captured",
+      "status": "published",
       "note": "Stake's publisher catalogue listed ten titles: Cat Alone, Mines 2, Mayan Games, Cemetery Gates, Plinko 2: Hellowin, Keno Matches, Merge Rush, Plinko 2, Keno 2, Mayan Cup. All names and publisher were checked against existing content; the chosen title is identified as a slot on the exact game page. No verified standalone studio site or official artwork was found; the platform listing is attributed explicitly and image and numerical fields are left missing. The same-game platform entrance was opened and is external."
     },
     {
@@ -42,7 +42,7 @@
       "gameSlug": "runebound-knight",
       "catalogUrl": "https://stake.com/casino/group/knight",
       "gameUrl": "https://stake.com/casino/games/knight-runebound",
-      "status": "captured",
+      "status": "published",
       "note": "Stake's publisher catalogue lists one title, Runebound; the title and exact publisher were checked against existing content. The exact Stake single-game page was opened and visibly identifies the title, publisher and Slots category. No verified standalone studio site or official artwork was found; platform listing is attributed explicitly and image and numerical fields are left missing. The same-game platform entrance is external."
     },
     {
@@ -52,14 +52,14 @@
       "gameSlug": "starshell-finale-ggapps",
       "catalogUrl": "https://stake.com/casino/group/ggapps",
       "gameUrl": "https://stake.com/casino/games/ggapps-starshell-finale",
-      "status": "captured",
+      "status": "published",
       "note": "Stake's publisher catalogue lists five titles, Tropic Crown, Neon Tide Heist, Floodlight Fortune, Starshell Finale and Override: Rogue AI; all titles and provider were checked against existing content. The exact Stake single-game page was opened and visibly identifies title, publisher and slot. No verified standalone studio site or official artwork was found; platform listing is attributed explicitly and image and numerical fields are left missing. The same-game platform entrance is external."
     }
   ],
   "discoveryAttempts": [],
   "continuation": {
-    "cursor": "GGApps / Starshell Finale captured as the fifth eligible Game.",
-    "rule": "Immediately perform full verification and publish this five-game batch."
+    "cursor": "Batch 66 published; continue at the next adopted uncollected Provider without recapturing these five games.",
+    "rule": "Deployment closure is recorded below; do not rerun completed published items."
   },
   "priorBatch": {
     "batch": 65,
@@ -70,5 +70,16 @@
     "deployment": "success",
     "url": "https://4565b589.slothub-4cu.pages.dev",
     "readback": "Five detail and provider pages, exact external platform entrances, sources, two available images, Search, Compare and exact Explorer results checked; preview noindex, X-Robots-Tag, no canonical or iframe, and empty sitemap checked. Three images remain missing. A YAML quoting error was repaired and the entire verification rerun passed before publishing."
+  },
+  "publication": {
+    "commitSha": "c87e918dc5280766cd5af41450ffcdfa54273a1d",
+    "actionsRun": "https://github.com/yaoshengmarketing-prog/slothub/actions/runs/39248136659",
+    "actionsConclusion": "success",
+    "pagesCommitSha": "c87e918dc5280766cd5af41450ffcdfa54273a1d",
+    "pagesDeploymentId": "e6044608-4440-4ee6-9e39-185babac7a65",
+    "pagesUrl": "https://e6044608.slothub-4cu.pages.dev/",
+    "pagesStage": "deploy/success",
+    "readback": "Game and Provider pages, catalog data, external entry links, missing-image fallbacks, Explorer, Compare, and preview indexing guards passed.",
+    "readbackAt": "2026-10-19"
   }
 }

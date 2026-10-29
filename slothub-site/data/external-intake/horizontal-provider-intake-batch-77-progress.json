@@ -1,9 +1,9 @@
 {
   "batch": 77,
   "recordedAt": "2026-10-28T02:20:00+08:00",
-  "state": "imported-awaiting-full-verification",
+  "state": "published-and-readback-verified",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "selection": {
     "priority": "User-authorized Taiwan casino catalogue signal; operator listings are discovery-only and never substitute for first-party evidence.",
     "signalSources": [
@@ -14,17 +14,17 @@
     "officialCatalog": "https://www.rsg-games.com/zh-TW/games.html"
   },
   "records": [
-    { "game": "雷神之錘", "gameSlug": "thunder-hammer-rsg", "gameId": "112", "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_112.html", "demo": "https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=112", "status": "imported" },
-    { "game": "雷神之錘 II 雷霆風暴", "gameSlug": "thunder-hammer-2-thunderstorm-rsg", "gameId": "129", "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_129.html", "demo": "https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=129", "status": "imported" },
-    { "game": "麻將發了", "gameSlug": "rich-mahjong-rsg", "gameId": "117", "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_117.html", "demo": "https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=117", "status": "imported" },
-    { "game": "麻將發了2", "gameSlug": "rich-mahjong-2-rsg", "gameId": "118", "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_118.html", "demo": "https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=118", "status": "imported" },
-    { "game": "有請財神", "gameSlug": "caishen-coming-rsg", "gameId": "120", "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_120.html", "demo": "https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=120", "status": "imported" }
+    { "game": "雷神之錘", "gameSlug": "thunder-hammer-rsg", "gameId": "112", "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_112.html", "demo": "https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=112", "status": "published" },
+    { "game": "雷神之錘 II 雷霆風暴", "gameSlug": "thunder-hammer-2-thunderstorm-rsg", "gameId": "129", "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_129.html", "demo": "https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=129", "status": "published" },
+    { "game": "麻將發了", "gameSlug": "rich-mahjong-rsg", "gameId": "117", "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_117.html", "demo": "https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=117", "status": "published" },
+    { "game": "麻將發了2", "gameSlug": "rich-mahjong-2-rsg", "gameId": "118", "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_118.html", "demo": "https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=118", "status": "published" },
+    { "game": "有請財神", "gameSlug": "caishen-coming-rsg", "gameId": "120", "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_120.html", "demo": "https://www.rsg-games.com/TryGame?lang=zh-TW&gameid=120", "status": "published" }
   ],
   "dedup": {
     "scope": "All Game and Provider Markdown: provider, Chinese name, aliases, known Game ID and filename",
     "result": "No matches before capture."
   },
   "continuation": {
-    "next": "Run full preview verification, stage only Batch 77 Games/images/manifest, then commit and publish through the normal same-SHA CI, Pages, and online-readback loop."
+    "next": "Batch 77 published: commit ebb0e2503b3812961d48dba218421d231b670b6a; GitHub Actions 40700591028 success; Cloudflare Pages production deployment 6ea73835-1d6e-4565-ab45-fbbcd0442f5c success with matching commit SHA. Online HTTP readback on 2026-10-28 confirmed the five Game routes, RSG Provider, Search, Explorer, Compare and image route are HTTP 200 with noindex,nofollow headers, no canonical, and empty sitemap. Keep this local receipt update for the next verified batch only."
   }
 }

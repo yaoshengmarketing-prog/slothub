@@ -1,9 +1,9 @@
 {
   "batch": 76,
   "recordedAt": "2026-10-26T18:28:17.182Z",
-  "state": "imported-awaiting-full-verification",
+  "state": "published-and-readback-verified",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "records": [
     {
       "provider": "Win Fast",
@@ -14,7 +14,7 @@
       "catalogTotal": 36,
       "officialPage": "https://win-fast.games/virus-mania/",
       "note": "Official Video Slot 6x5 Cluster Pays; exact image inspected; DEMO token is placeholder.",
-      "status": "imported",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 452,
         "matchCount": 0,
@@ -33,7 +33,7 @@
       "catalogTotal": 36,
       "officialPage": "https://win-fast.games/treasure-labyrinth/",
       "note": "Official Video Slot 7x7 Cluster Pays; exact image inspected; DEMO token is placeholder.",
-      "status": "imported",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 452,
         "matchCount": 0,
@@ -52,7 +52,7 @@
       "catalogTotal": 60,
       "officialPage": "https://www.playzia.com/games/freedom-frenzy/",
       "note": "Official 10 fixed paylines, 3x4x3 layout kept unnormalized; exact page demo HTTP 200.",
-      "status": "imported",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 452,
         "matchCount": 0,
@@ -76,7 +76,7 @@
       "catalogTotal": 66,
       "officialPage": "https://truelab.games/games/egg-inc",
       "note": "Official Modern slot, 10 lines and exact product screenshot; Play title matches and HTTP 200.",
-      "status": "imported",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 452,
         "matchCount": 0,
@@ -95,7 +95,7 @@
       "catalogTotal": 83,
       "officialPage": "https://zillion.games/games/3-crown-coins-deluxe/",
       "note": "Official exact product and artwork; Max Win 6000 has no unit and demo HTTP 400.",
-      "status": "imported",
+      "status": "published",
       "dedup": {
         "gameMarkdownCount": 452,
         "matchCount": 0,
@@ -117,5 +117,16 @@
   "continuation": {
     "cursor": "Big Daddy public homepage roster 4/4 exhausted; Win Fast 9/36; Playzia 4/60; TrueLab 17/66; Zillion 11/83 with index 9 status deferred. Full ordered catalog saved in batch 72.",
     "next": "Full preview verify, explicit commit, normal push, same-SHA CI/Pages, online readback; then continue available eligible candidates."
+  },
+  "publication": {
+    "commitSha": "ab6729b39e6370a43861eebf20108e28d9feb225",
+    "actionsRun": "https://github.com/yaoshengmarketing-prog/slothub/actions/runs/40378268325",
+    "actionsConclusion": "success",
+    "pagesCommitSha": "ab6729b39e6370a43861eebf20108e28d9feb225",
+    "pagesDeploymentId": "485b648a-7892-46a4-bb98-176c7cdbb6d5",
+    "pagesUrl": "https://485b648a.slothub-4cu.pages.dev",
+    "pagesStage": "deploy/success",
+    "readback": "five Games, four Provider pages, five images, sources, two exact demos, Search, Explorer, Compare, noindex, X-Robots-Tag, empty sitemap, no canonical passed",
+    "readbackAt": "2026-10-26T18:32:14.7914557Z"
   }
 }

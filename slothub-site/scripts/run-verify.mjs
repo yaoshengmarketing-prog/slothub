@@ -1,15 +1,16 @@
 import { spawnSync } from 'node:child_process';
 import { existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 
-const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
-const args = ['run', 'verify:all'];
+const directRunner = fileURLToPath(new URL('./run-package-script.mjs', import.meta.url));
+const args = [directRunner, 'verify:all'];
 
 function run(cwd, env) {
-  return spawnSync(npm, args, {
+  return spawnSync(process.execPath, args, {
     cwd,
     env,
     stdio: 'inherit',
-    shell: process.platform === 'win32',
+    shell: false,
   });
 }
 
