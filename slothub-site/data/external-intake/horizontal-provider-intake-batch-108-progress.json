@@ -1,0 +1,90 @@
+{
+  "batch": 108,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "verified-pending-publication",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI official catalog after batch 107",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and gameId; no JILI same-game records for IDs 240,403,302,180,263. Super Ace/2, Money Coming/2 and Egypt themed titles are distinct releases.",
+  "records": [
+    {
+      "order": 116,
+      "gameId": "240",
+      "name": "Party Star",
+      "slug": "party-star",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/240?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 118,
+      "gameId": "403",
+      "name": "Super Ace Deluxe",
+      "slug": "super-ace-deluxe",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/403?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 120,
+      "gameId": "302",
+      "name": "Money Coming Expand Bets",
+      "slug": "money-coming-expand-bets",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/302?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 121,
+      "gameId": "180",
+      "name": "Legacy of Egypt",
+      "slug": "legacy-of-egypt",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/180?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 124,
+      "gameId": "263",
+      "name": "The Pig House",
+      "slug": "the-pig-house",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/263?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "excludedNonSlot": [
+    {
+      "reason": "Official Fish and Arcade",
+      "gameId": "464",
+      "order": 117
+    },
+    {
+      "reason": "Official Crash",
+      "gameId": "407",
+      "order": 123
+    }
+  ],
+  "heldClassification": [
+    {
+      "reason": "Official Slot label but dice betting",
+      "gameId": "389",
+      "order": 119
+    },
+    {
+      "reason": "Official Slot label but turret shooting",
+      "gameId": "420",
+      "order": 122
+    }
+  ],
+  "fieldConflict": {
+    "reason": "Official feature says 243 Ways while Paylines field says 0; kept paylines missing.",
+    "gameId": "263",
+    "order": 124
+  },
+  "nextCursor": "JILI official catalog order 125 of 277.",
+  "checkedAt": "2026-10-29"
+}

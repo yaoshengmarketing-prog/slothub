@@ -4,7 +4,7 @@
   "checkedAt": "2026-10-29",
   "scope": "ALL GAMES in source order; catalogType 1 is a discovery hint only; each Slot requires individual Game Info classification",
   "itemCount": 277,
-  "cursor": "Batch 107 captured orders 104-105,109-110,115; 106-107 and 113 held for Slot-label/dice or battle betting conflict; 108,111-112,114 excluded official non-Slot. Next order 116.",
+  "cursor": "Batch 108 captured orders 116,118,120-121,124; 117 and 123 excluded by official non-Slot type; 119 and 122 held for Slot-label/dice or turret conflict. Next order 125.",
   "items": [
     {
       "decision": "excluded-non-slot",
@@ -976,7 +976,7 @@
       "name": "Egypt's Glow"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-108",
       "gameId": "240",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 116,
@@ -984,15 +984,16 @@
       "name": "Party Star"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "464",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 117,
       "catalogType": "3",
-      "name": "Fortune King Jackpot"
+      "name": "Fortune King Jackpot",
+      "reason": "Official Game Info type Fish and Arcade."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-108",
       "gameId": "403",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 118,
@@ -1000,15 +1001,16 @@
       "name": "Super Ace Deluxe"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "held-classification-conflict",
       "gameId": "389",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 119,
       "catalogType": "1",
-      "name": "Fish Prawn Crab"
+      "name": "Fish Prawn Crab",
+      "reason": "Official Slot label but Fish Prawn Crab describes dice-outcome betting, zero paylines."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-108",
       "gameId": "302",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 120,
@@ -1016,7 +1018,7 @@
       "name": "Money Coming Expand Bets"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-108",
       "gameId": "180",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 121,
@@ -1024,23 +1026,25 @@
       "name": "Legacy of Egypt"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "held-classification-conflict",
       "gameId": "420",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 122,
       "catalogType": "1",
-      "name": "Crazy Hunter 2"
+      "name": "Crazy Hunter 2",
+      "reason": "Official Slot label but Crazy Hunter 2 describes turret shooting gameplay, zero paylines."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "407",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 123,
       "catalogType": "7",
-      "name": "Crash Goal"
+      "name": "Crash Goal",
+      "reason": "Official Game Info type Crash."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-108",
       "gameId": "263",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 124,
