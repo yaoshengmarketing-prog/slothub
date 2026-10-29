@@ -1,0 +1,86 @@
+---
+interface Props { items: any[] }
+const { items } = Astro.props;
+const images = items.filter(item => item.kind === 'image');
+const videos = items.filter(item => item.kind === 'video');
+---
+{items.length > 0 && <section class:list={['gm', { 'gm-image-only': videos.length === 0 }]} aria-labelledby="gm-title" data-game-media>
+  <h2 id="gm-title">遊戲畫面與影片</h2>
+  <div class="gm-grid">
+    {images.map(item => <figure>
+      <button type="button" class="gm-image" data-image-id={item.id} data-image-type={item.imageType} aria-label={`放大${item.title}`}><img src={item.src} alt={item.alt} loading="lazy" /></button>
+      <figcaption>
+        <strong>{item.title}</strong>
+        <small>{item.imageType}{item.imageType !== '完整盤面圖' && ' · 非完整盤面'}</small>
+        <p>{item.purpose}</p>
+        {item.scopeNote && <small>{item.scopeNote}</small>}
+        <a href={item.source.url} target="_blank" rel="nofollow noopener noreferrer">來源：{item.source.publisher}</a>
+        <small>內容核對：{item.checkedAt}</small>
+      </figcaption>
+      <dialog aria-label={`${item.title}放大`} data-dialog-id={item.id}>
+        <button type="button" class="gm-close">關閉圖片</button><img src={item.src} alt={item.alt} loading="lazy" />
+      </dialog>
+    </figure>)}
+    {videos.map(item => <div class="gm-video">
+      <small>{item.official ? '原廠功能展示' : '第三方玩法紀錄 · 僅站外觀看'}</small>
+      <h3>{item.title}</h3><p>{item.purpose}</p>
+      {item.scopeNote && <small>{item.scopeNote}</small>}
+      {item.playerUrl && <><button type="button" class="gm-load" data-player-url={item.playerUrl} data-player-title={item.title} aria-expanded="false" aria-controls={`gm-player-${item.id}`}>載入原廠播放器</button><div id={`gm-player-${item.id}`} class="gm-frame" hidden></div><small class="gm-playback-note" aria-live="polite"></small></>}
+      <div class="gm-links"><a href={item.url} target="_blank" rel="nofollow noopener noreferrer">到 Vimeo 查看{item.official ? '原廠影片' : '第三方紀錄'}</a></div>
+      <small>來源：{item.source.publisher} · 內容核對：{item.checkedAt}</small>
+    </div>)}
+  </div>
+  <p class="gm-note">影音用來辨認畫面與玩法，不作 RTP 或機率證據。官方 Demo 保持獨立站外入口。</p>
+</section>}
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-game-media]').forEach(gm => {
+    gm.querySelectorAll<HTMLButtonElement>('.gm-image').forEach(button => {
+      const dialog = [...gm.querySelectorAll<HTMLDialogElement>('dialog')].find(item => item.dataset.dialogId === button.dataset.imageId);
+      const close = dialog?.querySelector<HTMLButtonElement>('.gm-close');
+      if (!dialog || !close) return;
+      button.addEventListener('click', () => { if (!dialog.open) dialog.showModal(); close.focus(); });
+      close.addEventListener('click', () => dialog.close());
+      dialog.addEventListener('keydown', event => { if (event.key === 'Tab') { event.preventDefault(); close.focus(); } });
+      dialog.addEventListener('close', () => { if (button.isConnected) button.focus({ preventScroll: true }); });
+      dialog.addEventListener('click', event => {
+        const box = dialog.getBoundingClientRect();
+        if (event.target === dialog && (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom)) dialog.close();
+      });
+    });
+    gm.querySelectorAll<HTMLButtonElement>('.gm-load').forEach(button => {
+      const frame = button.parentElement?.querySelector<HTMLElement>('.gm-frame');
+      const note = button.parentElement?.querySelector<HTMLElement>('.gm-playback-note');
+      const external = button.parentElement?.querySelector<HTMLAnchorElement>('.gm-links a');
+      if (!frame) return;
+      const collapse = (returnFocus = true) => {
+        frame.querySelector('iframe')?.remove();
+        frame.hidden = true;
+        button.setAttribute('aria-expanded', 'false');
+        button.textContent = '載入原廠播放器';
+        if (note) note.textContent = '播放器已收起，仍可使用下方來源連結觀看。';
+        if (returnFocus) button.focus({ preventScroll: true });
+      };
+      external?.addEventListener('click', () => {
+        if (frame.querySelector('iframe')) collapse(false);
+      });
+      button.addEventListener('click', () => {
+        if (frame.querySelector('iframe')) { collapse(); return; }
+        const url = new URL(button.dataset.playerUrl!);
+        if (url.origin !== 'https://player.vimeo.com' || !/^\/video\/\d+$/.test(url.pathname)) return;
+        const player = document.createElement('iframe');
+        player.src = url.href; player.title = button.dataset.playerTitle ?? '遊戲功能展示';
+        player.allow = 'fullscreen; picture-in-picture'; player.allowFullscreen = true;
+        frame.append(player); frame.hidden = false;
+        button.setAttribute('aria-expanded', 'true');
+        button.textContent = '收起播放器';
+        // Requesting an iframe does not establish player readiness or playback.
+        if (note) note.textContent = '已要求開啟外部播放器，本站尚未確認影片可播放。若未顯示或無回應，可收起播放器或使用下方來源連結。';
+      });
+    });
+  });
+</script>
+
+<style>
+  .gm{margin:38px 0;padding:28px 0;border-top:1px solid var(--navy);border-bottom:1px solid #d8dce4;scroll-margin-top:100px}.gm h2{font-size:1.6rem;margin:0 0 20px}.gm p{line-height:1.65}.gm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:28px;align-items:start}.gm-image-only .gm-grid{grid-template-columns:1fr}.gm figure{margin:0}.gm-image{display:flex;box-sizing:border-box;width:100%;min-height:220px;align-items:center;justify-content:center;background:#f3f4f7;border:1px solid #d6dbe4;border-radius:12px;padding:20px;cursor:zoom-in}.gm-image img{max-width:100%;max-height:330px;object-fit:contain}.gm-image[data-image-type="功能符號圖"] img{max-height:210px}.gm figcaption{margin-top:12px;font-size:.9rem;line-height:1.6}.gm small{display:block;color:var(--muted);line-height:1.6;margin:8px 0}.gm a{color:inherit;text-decoration:underline;text-underline-offset:3px}.gm a,.gm button{min-height:44px}.gm-video{min-width:0;border-left:3px solid #bbc4d7;padding-left:20px}.gm h3{font-size:1.05rem;margin:8px 0}.gm-load{font:inherit;background:var(--navy);color:white;border:0;border-radius:8px;padding:12px 16px;cursor:pointer}.gm-load:disabled{cursor:default}.gm-frame{margin-top:16px;aspect-ratio:1/1.7;max-height:480px}.gm-frame :global(iframe){width:100%;height:100%;border:0}.gm-note{font-size:.85rem;color:var(--muted)}.gm-links{display:flex;gap:20px;flex-wrap:wrap;margin-top:16px}.gm dialog{box-sizing:border-box;width:max-content;max-width:95vw;border:0;border-radius:12px;padding:20px}.gm dialog::backdrop{background:#111b30c9}.gm dialog img{display:block;width:auto;max-width:100%;max-height:80vh;height:auto;object-fit:contain}.gm-close{display:block;margin-left:auto;padding:10px;font:inherit}.gm :focus-visible{outline:3px solid var(--signal);outline-offset:4px}@media(max-width:640px){.gm{padding:22px 0}.gm-grid{grid-template-columns:1fr;gap:24px}.gm-video{padding:18px 0 0;border-left:0;border-top:1px solid #d8dce4}.gm-image{min-height:180px;padding:12px}.gm h2{font-size:1.4rem}.gm dialog{padding:8px;max-width:98vw}.gm dialog img{max-width:calc(98vw - 16px)}}
+</style>

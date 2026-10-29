@@ -10,6 +10,8 @@ import { buildGameDetailPresentation } from '../../lib/game-detail-presentation.
 import { loadPublishedDataMethodologyEntry } from '../../lib/data-methodology';
 import { projectGameEvidence } from '../../lib/game-metric-evidence.mjs';
 import MetricEvidenceSummary from '../../components/MetricEvidenceSummary.astro';
+import GameMedia from '../../components/GameMedia.astro';
+import { projectGameMedia } from '../../lib/game-media.mjs';
 
 export async function getStaticPaths() {
   const games = (await getCollection('games')).filter((game) => game.data.status === 'published');
@@ -38,6 +40,7 @@ const displayName = entry.data.displayNameZhHant ?? entry.data.originalName ?? e
 const originalName = entry.data.originalName ?? entry.data.name;
 const normalizedVolatility = entry.data.volatilityNormalized ?? entry.data.volatility;
 const presentation = buildGameDetailPresentation(entry.data);
+const mediaItems = projectGameMedia(entry.id, entry.data.mediaIds, undefined, { localTest: import.meta.env.DEV && import.meta.env.SLOTHUB_MEDIA_LOCAL_TEST === '1' });
 const metricEvidence = projectGameEvidence(entry.id, entry.data.metricEvidenceIds);
 const featureStatements = metricEvidence.filter((evidence) => evidence.metricKey === 'feature-statement');
 const titleCharacters = Array.from(displayName);
@@ -234,6 +237,8 @@ const schema = {
       <div class="game-quick-heading"><p class="eyebrow">AT A GLANCE</p><h2 id="quick-read-title">快速看懂</h2></div>
       <dl>{quickStats.map((stat) => <div><dt>{stat.label}</dt><dd class={!stat.value ? 'is-unknown' : undefined}>{stat.value ?? unknown}{stat.badge && <small>{stat.badge}</small>}</dd><p>{stat.note}</p>{stat.value && knowledgePresentation.fieldGuides[stat.guidePlacement]?.map((match) => <a class="game-field-guide-link" href={match.guide.url} aria-label={`了解${stat.label}：${match.guide.title}`} data-guide-slug={match.guide.slug} data-guide-placement={stat.guidePlacement}>了解這項資料 →</a>)}</div>)}</dl>
     </section>
+
+    <GameMedia items={mediaItems} />
 
     {demo?.status === 'available' && demo.url && <section class="game-demo-access" aria-labelledby="game-access-title">
       <div class="game-demo-copy">

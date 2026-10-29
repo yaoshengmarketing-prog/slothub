@@ -28,6 +28,7 @@ sources:
   - { label: "Push Gaming 官方發布稿（Razor Reveal、Free Spins、Increasing Multiplier 與發布日期）", url: https://www.pushgaming.com/blog/push-gaming-release-deep-sea-themed-slot-razor-shark.html, checkedAt: 2026-09-03 }
   - { label: "Push Gaming 官方遊戲目錄圖（原始 1266×451 JPEG；未裁切、未加字）", url: https://www.pushgaming.com/uploads/razor-shark/razor-shark_preview1.jpg, checkedAt: 2026-09-03 }
 demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.pushgaming.com/games/razor-shark.html","accessType":"official-game-page","presentation":"external"}
+mediaIds: [razor-feature-symbol, razor-reveal-video]
 lastVerifiedAt: 2026-09-03
 updatedAt: 2026-09-03
 ---
