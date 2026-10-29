@@ -1,11 +1,11 @@
 {
   "batch": 123,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "verified-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 2,
   "finalUnderFive": true,
   "capturedCount": 2,
-  "publishedCount": 0,
+  "publishedCount": 2,
   "priority": "Complete safely eligible JILI games in official catalog snapshot after batch 122",
   "catalog": "https://jiligames.com/games?showSlotGames=true",
   "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
@@ -16,7 +16,7 @@
       "gameId": "44",
       "name": "DIAMOND PARTY",
       "slug": "diamond-party-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/44?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -25,7 +25,7 @@
       "gameId": "696",
       "name": "Fortune Garuda 500",
       "slug": "fortune-garuda-500-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/696?showGame=false",
       "demoStatus": "official-game-page"
     }
@@ -239,5 +239,15 @@
   ],
   "exhaustion": "All catalog orders 1-277 examined in saved snapshot; orders 271-276 excluded as non-Slot; order 7 and 25 pre-existing holds require human classification, identity or source decisions. No further safely eligible JILI Slot in this snapshot.",
   "nextCursor": "JILI official catalog order 278 of 277 (snapshot exhausted for safely eligible candidates).",
-  "checkedAt": "2026-10-30"
+  "checkedAt": "2026-10-30",
+  "publication": {
+    "commit": "911f6e308e4a63bd5d2ec1d26f5e932e733ca49f",
+    "githubRun": 40922210332,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "c19ba6e3-c6ae-41ac-903a-0e919a851d4f",
+    "cloudflareUrl": "https://c19ba6e3.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Two detail pages, images, Search, Explorer, Compare, Provider, official game entry, nofollow, noindex, X-Robots-Tag, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
