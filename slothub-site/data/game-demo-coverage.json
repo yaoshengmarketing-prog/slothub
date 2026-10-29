@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 701,
+  "gameCount": 702,
   "providerCount": 371,
-  "sourcePageCount": 1268,
+  "sourcePageCount": 1270,
   "counts": {
     "access-restricted": 4,
-    "available": 606,
+    "available": 607,
     "not-verified": 91
   },
   "rules": {
@@ -17,6 +17,43 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "olympig-jdb",
+      "name": "Olympig",
+      "provider": "jdb-gaming",
+      "status": "available",
+      "url": "https://slotslaunch.com/jdb-gaming/olympig",
+      "accessType": "platform-game-page",
+      "platformName": "Slots Launch",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "Slots Launch exact page and image identify Olympig and JDB Gaming; official detail supplies RTP, 27 Ways and features. Conflicting official volatility/max win left out of structured fields.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/olympig",
+          "httpStatus": 200,
+          "notes": "Official direct browser inspection run ab0298cc-7ea1-4d63-940e-bbaf3f232728"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/cn/games/slot/olympig",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/news/games/n-olympig",
+          "httpStatus": 403,
+          "notes": "Direct location block; official search-index excerpt records conflicting 15000X and high-volatility claims."
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/olympig",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://assets.slotslaunch.com/37256/olympig.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "ragnarok-thor-vs-loki-jdb",
       "name": "Ragnarok: Thor vs Loki",
