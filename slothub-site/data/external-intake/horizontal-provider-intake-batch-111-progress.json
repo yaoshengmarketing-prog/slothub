@@ -1,0 +1,106 @@
+{
+  "batch": 111,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 5,
+  "priority": "Continue approved JILI official catalog after batch 110",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and Game ID. Witches Night ID 226 shares the published JILI title but differs from ID 299, held pending version identity; no same JILI records for IDs 228,214,225,9,5.",
+  "records": [
+    {
+      "order": 148,
+      "gameId": "228",
+      "name": "Arena Fighter",
+      "slug": "arena-fighter",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/228?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 150,
+      "gameId": "214",
+      "name": "King Arthur",
+      "slug": "king-arthur-jili",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/214?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 153,
+      "gameId": "225",
+      "name": "Cricket King 18",
+      "slug": "cricket-king-18",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/225?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 154,
+      "gameId": "9",
+      "name": "War Of Dragons",
+      "slug": "war-of-dragons",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/9?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 155,
+      "gameId": "5",
+      "name": "Hot Chilli",
+      "slug": "hot-chilli-jili",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/5?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "held": [
+    {
+      "order": 149,
+      "gameId": "226",
+      "reason": "Identity conflict: JILI Witches Night ID 226 shares exact name with published JILI Witches Night ID 299; requires distinct-version evidence before inclusion",
+      "nextStep": "Recheck official version/classification evidence before any new Game record"
+    },
+    {
+      "order": 151,
+      "gameId": "239",
+      "reason": "Official Dabanggg page conflicts on MAX WIN: field 2000x versus description 5000x; hold this candidate pending source reconciliation",
+      "nextStep": "Recheck official version/classification evidence before any new Game record"
+    },
+    {
+      "order": 152,
+      "gameId": "238",
+      "reason": "Official Bangla Beauty page labels Slot but description describes a competitive poker game; hold classification pending source reconciliation",
+      "nextStep": "Recheck official version/classification evidence before any new Game record"
+    }
+  ],
+  "fieldConflicts": [
+    {
+      "order": 148,
+      "field": "Paylines",
+      "reason": "Official field 0 conflicts with feature text 243 ways; field omitted"
+    },
+    {
+      "order": 150,
+      "field": "Paylines",
+      "reason": "Official field 88 Lines conflicts with feature text 20LINE; field omitted"
+    },
+    {
+      "order": 153,
+      "field": "Paylines",
+      "reason": "Official field Cascading Reels is not a numeric payline count; field omitted"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 156 of 277.",
+  "checkedAt": "2026-10-29",
+  "publication": {
+    "sha": "5b14d07193a3e1d3fbbcc2c6306461e964a1b798",
+    "githubActionsRun": 40895420040,
+    "githubActionsStatus": "success",
+    "cloudflareDeployment": "a3f1fe9c-87db-4b41-91a1-d57d25a6beaa",
+    "liveUrl": "https://a3f1fe9c.slothub-4cu.pages.dev",
+    "liveReadback": "Five exact Game detail pages and PNG images HTTP 200; all five visible in Search, Explorer, Compare and JILI Provider; official source and game-page URLs present; outbound nofollow; X-Robots-Tag noindex,nofollow; no canonical; empty sitemap."
+  }
+}

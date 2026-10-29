@@ -1,10 +1,10 @@
 {
   "batch": 108,
   "recordedAt": "2026-10-29T00:00:00+08:00",
-  "state": "verified-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 5,
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "Continue approved JILI official catalog after batch 107",
   "catalog": "https://jiligames.com/games?showSlotGames=true",
   "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
@@ -15,7 +15,7 @@
       "gameId": "240",
       "name": "Party Star",
       "slug": "party-star",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/240?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -24,7 +24,7 @@
       "gameId": "403",
       "name": "Super Ace Deluxe",
       "slug": "super-ace-deluxe",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/403?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -33,7 +33,7 @@
       "gameId": "302",
       "name": "Money Coming Expand Bets",
       "slug": "money-coming-expand-bets",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/302?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -42,7 +42,7 @@
       "gameId": "180",
       "name": "Legacy of Egypt",
       "slug": "legacy-of-egypt",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/180?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -51,7 +51,7 @@
       "gameId": "263",
       "name": "The Pig House",
       "slug": "the-pig-house",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/263?showGame=false",
       "demoStatus": "official-game-page"
     }
@@ -86,5 +86,12 @@
     "order": 124
   },
   "nextCursor": "JILI official catalog order 125 of 277.",
-  "checkedAt": "2026-10-29"
+  "checkedAt": "2026-10-29",
+  "publication": {
+    "sha": "902e3db5d0b7811496d18d1d09302e7165a437e8",
+    "githubActionsRun": 40886626457,
+    "cloudflareDeployment": "c9d2d612-9d1b-4b19-8479-7d93ced3b011",
+    "liveUrl": "https://c9d2d612.slothub-4cu.pages.dev",
+    "liveReadback": "Five Game details, sources, official game-page entries, images, Search, Explorer, Compare, Provider, nofollow, noindex header, absent canonical and empty sitemap verified."
+  }
 }

@@ -1,0 +1,76 @@
+{
+  "batch": 109,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 5,
+  "priority": "Continue approved JILI official catalog after batch 108",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and gameId. JILI ID 399 3 Coin Treasures differs from Prag by PopOK ID 399 Bon Bon Prag by provider/title; JILI sequel 3 Coin Treasures 2 differs by title/ID. No same JILI record for IDs 299,399,300,301,252.",
+  "records": [
+    {
+      "order": 126,
+      "gameId": "299",
+      "name": "Witches Night",
+      "slug": "witches-night",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/299?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 127,
+      "gameId": "399",
+      "name": "3 Coin Treasures",
+      "slug": "3-coin-treasures",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/399?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 128,
+      "gameId": "300",
+      "name": "Fortune Gems 3",
+      "slug": "fortune-gems-3",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/300?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 129,
+      "gameId": "301",
+      "name": "Jackpot Joker",
+      "slug": "jackpot-joker",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/301?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 130,
+      "gameId": "252",
+      "name": "Zeus",
+      "slug": "zeus-jili",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/252?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "excludedNonSlot": [
+    {
+      "order": 125,
+      "gameId": "262",
+      "reason": "Official Table and Card/Baccarat"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 131 of 277.",
+  "checkedAt": "2026-10-29",
+  "publication": {
+    "sha": "9fa60f5a11d0e448e7edfb14e2393eb88f3bb16d",
+    "githubActionsRun": 40890646864,
+    "githubActionsStatus": "success",
+    "cloudflareDeployment": "8ae5c95f-3ae7-46fa-87d3-7d28ea5e2ad0",
+    "liveUrl": "https://8ae5c95f.slothub-4cu.pages.dev",
+    "liveReadback": "Five exact Game detail pages and PNG images HTTP 200; all five visible in Search, Explorer, Compare and JILI Provider; official source and game-page URLs present; outbound nofollow; X-Robots-Tag noindex,nofollow; no canonical; empty sitemap."
+  }
+}

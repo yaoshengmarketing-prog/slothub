@@ -1,0 +1,131 @@
+{
+  "batch": 110,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 5,
+  "priority": "Continue approved JILI official catalog after batch 109",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and Game ID. JILI Super Ace ID 49 and Golden Empire ID 103 already published; other provider Game IDs do not imply the same game. No same JILI records for IDs 258,171,223,115,208.",
+  "records": [
+    {
+      "order": 131,
+      "gameId": "258",
+      "name": "Devil Fire 2",
+      "slug": "devil-fire-2",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/258?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 132,
+      "gameId": "171",
+      "name": "Sin City",
+      "slug": "sin-city-jili",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/171?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 134,
+      "gameId": "223",
+      "name": "Fortune Gems 2",
+      "slug": "fortune-gems-2",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/223?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 139,
+      "gameId": "115",
+      "name": "Agent Ace",
+      "slug": "agent-ace",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/115?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 147,
+      "gameId": "208",
+      "name": "Trial of Phoenix",
+      "slug": "trial-of-phoenix",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/208?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "excluded": [
+    {
+      "order": 133,
+      "gameId": "49",
+      "reason": "Existing JILI Super Ace ID 49"
+    },
+    {
+      "order": 135,
+      "gameId": "229",
+      "reason": "Official Casino"
+    },
+    {
+      "order": 136,
+      "gameId": "197",
+      "reason": "Official Crash"
+    },
+    {
+      "order": 137,
+      "gameId": "103",
+      "reason": "Existing JILI Golden Empire ID 103"
+    },
+    {
+      "order": 138,
+      "gameId": "289",
+      "reason": "Official Fishing"
+    },
+    {
+      "order": 140,
+      "gameId": "32",
+      "reason": "Official Fishing"
+    },
+    {
+      "order": 141,
+      "gameId": "261",
+      "reason": "Official Crash"
+    },
+    {
+      "order": 142,
+      "gameId": "195",
+      "reason": "Official Crash"
+    },
+    {
+      "order": 143,
+      "gameId": "74",
+      "reason": "Official Fish and Arcade"
+    },
+    {
+      "order": 144,
+      "gameId": "112",
+      "reason": "Official Crash"
+    },
+    {
+      "order": 145,
+      "gameId": "118",
+      "reason": "Official Crash"
+    },
+    {
+      "order": 146,
+      "gameId": "199",
+      "reason": "Official Indian Poker"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 148 of 277.",
+  "checkedAt": "2026-10-29",
+  "publication": {
+    "sha": "58c2f9ec08a9310cd2ecaf2901db0d4652f49909",
+    "githubActionsRun": 40893259099,
+    "githubActionsStatus": "success",
+    "cloudflareDeployment": "36490ac5-e110-4efd-9afb-fe7fece0c124",
+    "liveUrl": "https://36490ac5.slothub-4cu.pages.dev",
+    "liveReadback": "Five exact Game detail pages and PNG images HTTP 200; all five visible in Search, Explorer, Compare and JILI Provider; official source and game-page URLs present; outbound nofollow; X-Robots-Tag noindex,nofollow; no canonical; empty sitemap."
+  }
+}

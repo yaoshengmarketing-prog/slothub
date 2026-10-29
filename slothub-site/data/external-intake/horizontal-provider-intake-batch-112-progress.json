@@ -1,0 +1,148 @@
+{
+  "batch": 112,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 5,
+  "priority": "Continue approved JILI official catalog after batch 111",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and Game ID. Devil Fire ID 193 is distinct from published Devil Fire 2 ID 258 and Devil Fire Twins ID 593; no same JILI records for IDs 209,303,193,191,198.",
+  "records": [
+    {
+      "order": 158,
+      "gameId": "209",
+      "name": "Aztec Priestess",
+      "slug": "aztec-priestess",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/209?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 159,
+      "gameId": "303",
+      "name": "Fortune Monkey",
+      "slug": "fortune-monkey",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/303?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 163,
+      "gameId": "193",
+      "name": "Devil Fire",
+      "slug": "devil-fire-jili",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/193?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 165,
+      "gameId": "191",
+      "name": "Golden Temple",
+      "slug": "golden-temple-jili",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/191?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 173,
+      "gameId": "198",
+      "name": "Sweet land",
+      "slug": "sweet-land-jili",
+      "status": "published-live-verified",
+      "officialPage": "https://jiligames.com/PlusIntro/198?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "excluded": [
+    {
+      "order": 156,
+      "gameId": "1",
+      "reason": "Official Fishing"
+    },
+    {
+      "order": 157,
+      "gameId": "297",
+      "reason": "Official Table and Card lottery"
+    },
+    {
+      "order": 160,
+      "gameId": "211",
+      "reason": "Official Indian Poker"
+    },
+    {
+      "order": 161,
+      "gameId": "221",
+      "reason": "Official Indian Poker"
+    },
+    {
+      "order": 162,
+      "gameId": "163",
+      "reason": "Official Indian Poker"
+    },
+    {
+      "order": 164,
+      "gameId": "217",
+      "reason": "Official Bingo"
+    },
+    {
+      "order": 166,
+      "gameId": "204",
+      "reason": "Official Table and Card"
+    },
+    {
+      "order": 167,
+      "gameId": "220",
+      "reason": "Official Indian Poker"
+    },
+    {
+      "order": 168,
+      "gameId": "242",
+      "reason": "Official Crash"
+    },
+    {
+      "order": 169,
+      "gameId": "216",
+      "reason": "Official Bingo"
+    },
+    {
+      "order": 170,
+      "gameId": "172",
+      "reason": "Official Bingo"
+    },
+    {
+      "order": 171,
+      "gameId": "219",
+      "reason": "Official Indian Poker"
+    },
+    {
+      "order": 172,
+      "gameId": "241",
+      "reason": "Official Crash"
+    }
+  ],
+  "fieldGaps": [
+    {
+      "order": 158,
+      "field": "Paylines",
+      "reason": "Official field dash; omitted"
+    },
+    {
+      "order": 165,
+      "field": "Paylines",
+      "reason": "Official field dash; omitted"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 174 of 277.",
+  "checkedAt": "2026-10-29",
+  "publication": {
+    "sha": "d2d99f3ef00e4ccd8a312d4ee3a12b72d82684bd",
+    "githubActionsRun": 40897364087,
+    "githubActionsStatus": "success",
+    "cloudflareDeployment": "68ca1f20-c15b-4355-a667-e387d5308897",
+    "liveUrl": "https://68ca1f20.slothub-4cu.pages.dev",
+    "liveReadback": "Five exact Game detail pages and PNG images HTTP 200; all five visible in Search, Explorer, Compare and JILI Provider; official source and game-page URLs present; outbound nofollow; X-Robots-Tag noindex,nofollow; no canonical; empty sitemap."
+  }
+}
