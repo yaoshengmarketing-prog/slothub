@@ -1,0 +1,89 @@
+{
+  "batch": 87,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "full-verify-passed-awaiting-publication",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "RSG official catalog following Taiwan operator common provider discovery.",
+  "catalog": "https://www.rsg-games.com/zh-TW/games.html",
+  "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown checked by RSG Provider, Chinese name, English alias, gameId and filename before capture; IDs 35–39 absent.",
+  "records": [
+    {
+      "order": 53,
+      "provider": "RSG",
+      "name": "巫師商店",
+      "gameId": "35",
+      "slug": "wizard-store-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_35.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=35&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 54,
+      "provider": "RSG",
+      "name": "家犬先生",
+      "gameId": "36",
+      "slug": "mr-doggy-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_36.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=36&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 55,
+      "provider": "RSG",
+      "name": "迪斯可之夜",
+      "gameId": "37",
+      "slug": "disco-night-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_37.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=37&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 56,
+      "provider": "RSG",
+      "name": "農場夜驚魂",
+      "gameId": "38",
+      "slug": "horror-nights-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_38.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=38&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 57,
+      "provider": "RSG",
+      "name": "武媚娘",
+      "gameId": "39",
+      "slug": "china-empress-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_39.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=39&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    }
+  ],
+  "nextCursor": "RSG official catalog order 58 gameid 4 慾望城市; 32 pending Slot after this batch."
+}
