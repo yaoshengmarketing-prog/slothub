@@ -4,7 +4,7 @@
   "checkedAt": "2026-10-29",
   "scope": "ALL GAMES in source order; catalogType 1 is a discovery hint only; each Slot requires individual Game Info classification",
   "itemCount": 277,
-  "cursor": "Orders 56 and 59 individually excluded as Fish and Arcade; order 58 Drop Ball held for Slot-label/ball-betting conflict. Batch 102 captured orders 61,63,66,69-70. Next check 62,64-65,67-68 then 71.",
+  "cursor": "Batch 103 captured orders 71-74 and 77; orders 62,64-65 held for type/play conflict, 67-68 excluded non-Slot. Next check 75-76, then 78.",
   "items": [
     {
       "decision": "excluded-non-slot",
@@ -519,12 +519,13 @@
       "name": "Crystal 777 DELUXE"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "held-classification-conflict",
       "gameId": "690",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 62,
       "catalogType": "",
-      "name": "Chicken Dash"
+      "name": "Chicken Dash",
+      "reason": "Official Slot label but Chicken Dash uses escalating difficulty and risk, no reels; human classification required."
     },
     {
       "decision": "captured-batch-102",
@@ -535,20 +536,22 @@
       "name": "Jackpot Joker FEVER"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "held-classification-conflict",
       "gameId": "551",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 64,
       "catalogType": "",
-      "name": "Plinko of Mine"
+      "name": "Plinko of Mine",
+      "reason": "Official Slot label but Plinko of Mine is drop-ball pinball; human classification required."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "held-classification-conflict",
       "gameId": "512",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 65,
       "catalogType": "",
-      "name": "Crash Puck"
+      "name": "Crash Puck",
+      "reason": "Official Slot label but Crash Puck describes a cash-out Crash game; human classification required."
     },
     {
       "decision": "captured-batch-102",
@@ -559,20 +562,22 @@
       "name": "Safari King"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "531",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 67,
       "catalogType": "3",
-      "name": "FORTUNE ZOMBIE"
+      "name": "FORTUNE ZOMBIE",
+      "reason": "Official Game Info type Fish and Arcade."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "546",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 68,
       "catalogType": "7",
-      "name": "Mines Grand"
+      "name": "Mines Grand",
+      "reason": "Official Game Info type Crash."
     },
     {
       "decision": "captured-batch-102",
@@ -591,7 +596,7 @@
       "name": "Circus Joker 4096"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-103",
       "gameId": "504",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 71,
@@ -599,7 +604,7 @@
       "name": "Crazy777 2"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-103",
       "gameId": "542",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 72,
@@ -607,7 +612,7 @@
       "name": "Super Ace 2"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-103",
       "gameId": "424",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 73,
@@ -615,7 +620,7 @@
       "name": "Golden Empire 2"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-103",
       "gameId": "394",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 74,
@@ -639,7 +644,7 @@
       "name": "Color Game"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-103",
       "gameId": "463",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 77,

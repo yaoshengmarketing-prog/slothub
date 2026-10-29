@@ -1,0 +1,90 @@
+{
+  "batch": 103,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "verified-pending-publication",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI official catalog after batch 102",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All published Game Markdown filenames, Provider, English and Chinese names, aliases and gameId; no exact same-game match for JILI IDs 504,542,424,394,463.",
+  "records": [
+    {
+      "order": 71,
+      "gameId": "504",
+      "name": "Crazy777 2",
+      "slug": "crazy777-2",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/504?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 72,
+      "gameId": "542",
+      "name": "Super Ace 2",
+      "slug": "super-ace-2",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/542?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 73,
+      "gameId": "424",
+      "name": "Golden Empire 2",
+      "slug": "golden-empire-2",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/424?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 74,
+      "gameId": "394",
+      "name": "Sweet Magic",
+      "slug": "sweet-magic",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/394?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 77,
+      "gameId": "463",
+      "name": "3 LUCKY LION",
+      "slug": "3-lucky-lion",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/463?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "heldClassification": [
+    {
+      "order": 62,
+      "gameId": "690",
+      "reason": "Official Slot but risk-level Dash gameplay, no reels"
+    },
+    {
+      "order": 64,
+      "gameId": "551",
+      "reason": "Official Slot but Plinko drop-ball gameplay"
+    },
+    {
+      "order": 65,
+      "gameId": "512",
+      "reason": "Official Slot but Crash cash-out gameplay"
+    }
+  ],
+  "excludedNonSlot": [
+    {
+      "order": 67,
+      "gameId": "531",
+      "reason": "Official Fish and Arcade"
+    },
+    {
+      "order": 68,
+      "gameId": "546",
+      "reason": "Official Crash"
+    }
+  ],
+  "nextCursor": "JILI official catalog order 75 of 277; check skipped 75-76 then 78.",
+  "checkedAt": "2026-10-29"
+}
