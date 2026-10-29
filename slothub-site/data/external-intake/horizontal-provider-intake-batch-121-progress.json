@@ -1,10 +1,10 @@
 {
   "batch": 121,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "verified-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 5,
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "Continue approved JILI official catalog after batch 120",
   "catalog": "https://jiligames.com/games?showSlotGames=true",
   "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
@@ -15,7 +15,7 @@
       "gameId": "48",
       "name": "Lucky Goldbricks",
       "slug": "lucky-goldbricks-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/48?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -24,7 +24,7 @@
       "gameId": "91",
       "name": "Lucky Coming",
       "slug": "lucky-coming-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/91?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -33,7 +33,7 @@
       "gameId": "21",
       "name": "FA FA FA",
       "slug": "fa-fa-fa-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/21?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -42,7 +42,7 @@
       "gameId": "43",
       "name": "XIYANGYANG",
       "slug": "xiyangyang-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/43?showGame=false",
       "demoStatus": "official-game-page"
     },
@@ -51,7 +51,7 @@
       "gameId": "23",
       "name": "Candy Baby",
       "slug": "candy-baby-jili",
-      "status": "verified-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://jiligames.com/PlusIntro/23?showGame=false",
       "demoStatus": "official-game-page"
     }
@@ -64,5 +64,15 @@
     }
   ],
   "nextCursor": "JILI official catalog order 265 of 277.",
-  "checkedAt": "2026-10-30"
+  "checkedAt": "2026-10-30",
+  "publication": {
+    "commit": "ccce0f01e5d01499f6b2370e8a0f8eeef32e0d1a",
+    "githubRun": 40919676467,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "fffeb6a5-9f63-4971-95cd-f045ff402866",
+    "cloudflareUrl": "https://fffeb6a5.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Five detail pages, images, Search, Explorer, Compare, Provider, official game entry, nofollow, noindex, X-Robots-Tag, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
