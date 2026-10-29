@@ -1,6 +1,7 @@
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { extname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { findUnqualifiedOutboundLinks } from './outbound-links.mjs';
 
 const distDir = fileURLToPath(new URL('../dist/', import.meta.url));
 
@@ -21,10 +22,14 @@ function targetFor(href) {
 }
 
 const failures = [];
+const nofollowFailures = [];
 const htmlFiles = walk(distDir).filter((path) => path.endsWith('.html'));
 
 for (const file of htmlFiles) {
   const html = readFileSync(file, 'utf8');
+  for (const anchor of findUnqualifiedOutboundLinks(html)) {
+    nofollowFailures.push(`${relative(distDir, file)} -> ${anchor.slice(0, 240)}`);
+  }
   const hrefs = [...html.matchAll(/\bhref=["']([^"']+)["']/g)].map((match) => match[1]);
 
   for (const href of hrefs) {
@@ -41,4 +46,11 @@ if (failures.length > 0) {
   process.exit(1);
 }
 
+if (nofollowFailures.length > 0) {
+  console.error(`Outbound nofollow check failed (${nofollowFailures.length}):`);
+  nofollowFailures.forEach((failure) => console.error(`- ${failure}`));
+  process.exit(1);
+}
+
 console.log(`Internal link check: PASS (${htmlFiles.length} HTML files)`);
+console.log('Outbound nofollow check: PASS');
