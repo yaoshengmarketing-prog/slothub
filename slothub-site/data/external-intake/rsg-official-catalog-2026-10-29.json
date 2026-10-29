@@ -919,7 +919,7 @@
     },
     {
       "order": 89,
-      "status": "captured-batch-94",
+      "status": "published-live-verified",
       "detailUrl": "https://www.rsg-games.com/zh-TW/games_detail_90.html",
       "nameZhHant": "龍行天下",
       "gameId": "90",
@@ -934,5 +934,6 @@
   "pendingAtSnapshot": 62,
   "checkedAt": "2026-10-29",
   "slotCount": 87,
-  "cursor": "Catalog order 89 of 89, gameid 90; dated snapshot exhausted; order 71 gameid 5001 remains classification hold"
+  "cursor": "Catalog order 89 of 89, gameid 90; snapshot exhausted; 86 Slot published, 1 classification hold (order 71 gameid 5001), 2 fishing excluded",
+  "finalDisposition": "2026-10-29: 89 first-party catalog cards; 86 Slot games live verified, 1 classification hold, 2 fishing excluded; no remaining safe candidate in this dated snapshot."
 }

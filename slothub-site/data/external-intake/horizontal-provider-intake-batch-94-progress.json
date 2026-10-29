@@ -1,11 +1,11 @@
 {
   "batch": 94,
   "recordedAt": "2026-10-29T00:00:00+08:00",
-  "state": "captured-awaiting-full-verify",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "finalUnderFive": true,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "RSG official catalog following Taiwan operator common provider discovery.",
   "catalog": "https://www.rsg-games.com/zh-TW/games.html",
   "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
@@ -24,7 +24,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     }
   ],
   "exhaustion": {
@@ -55,5 +55,11 @@
       }
     ]
   },
-  "nextCursor": "RSG dated official catalog snapshot exhausted at order 89; resume with new dated first-party catalog refresh or human decision on order 71 gameid 5001."
+  "nextCursor": "RSG dated official catalog snapshot exhausted at order 89; resume with new dated first-party catalog refresh or human decision on order 71 gameid 5001.",
+  "publication": {
+    "sha": "2f9f47243aa8a47ac25f715a0e88e62d6759cdd1",
+    "githubActionsRun": 40857066540,
+    "cloudflareDeployment": "94015bb3-8582-4895-9903-396409c27776",
+    "liveReadback": "Dragon Fight detail and image, Search, Explorer, Compare, Provider, official source, playable demo link, noindex header and empty sitemap verified at exact SHA deployment."
+  }
 }
