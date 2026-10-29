@@ -1,10 +1,10 @@
 {
   "batch": 128,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 15",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Bull Treasure X-Huge",
       "slug": "bull-treasure-x-huge-jdb",
       "provider": "jdb-gaming",
-      "status": "imported-pending-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
       "officialFacts": "Slot; jungle/Billy the Bull; medium volatility; 5 Lines; max win 2500X; random or Feature Buy Bull Flip; 3 Wilds trigger Bull Mega Flip. No RTP or unverified 3x3 geometry recorded.",
       "image": {
@@ -28,5 +28,14 @@
     }
   ],
   "nextCursor": "JDB catalog card 16 SUPER NIUBI FORTUNE X-HUGE",
-  "publication": null
+  "publication": {
+    "commit": "7f419b4a5e6ea60f2bc1cba1fb24271aa46b98ae",
+    "githubRun": 40935981780,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "38f3221d-de04-4b94-a833-268d1376616b",
+    "cloudflareUrl": "https://38f3221d.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, image and sitemap HTTP 200; official and image-source URLs present; image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

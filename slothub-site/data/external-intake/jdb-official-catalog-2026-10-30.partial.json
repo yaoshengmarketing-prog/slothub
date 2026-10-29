@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-15 imported. Next individual candidate is card 16 SUPER NIUBI FORTUNE X-HUGE. No full-directory Markdown dedup has been completed for cards 16-46.",
-  "nextStep": "After BULL TREASURE X-HUGE single-game publication loop, continue documented JDB catalog at card 16 with exact first-party page, full dedup, attributable image and Demo checks.",
-  "publishedCount": 4,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-16 imported. Next individual candidate is card 17 SUPER NIUBI DELUXE. No full-directory Markdown dedup has been completed for cards 17-46.",
+  "nextStep": "After card 16 single-game publication loop, continue card 17 with exact official facts, dedup, attributable image and Demo checks.",
+  "publishedCount": 5,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -220,6 +220,20 @@
     "imageAttribution": "Retrobet JDB catalog search index displays Bull Treasure X-Huge; downloaded valid 429x575 WebP visibly prints BULL TREASURE X-HUGE and JDB. Catalog direct GET returned 403; image GET succeeded. Third-party source attributed as such.",
     "demoDecision": "not-verified; official Play destination not validated; Spigo shorter-title page uses conflicting feature terminology and is not assumed same version",
     "dedup": "All src/content/games and providers searched for Bull Treasure and Chinese variants; no existing record",
+    "decision": "published-live-verified"
+  },
+  "card16Evidence": {
+    "name": "SUPER NIUBI FORTUNE X-HUGE™",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/super-niubi-fortune-x-huge",
+    "officialNews": "https://www.jdbgaming.com/en/news/games/n-super-niubi-fortune-x-huge",
+    "officialFacts": "High-volatility Slot; Super Niubi sequel; same-color Green/Red/Gold Bull symbol rewards 28x/58x/88x (not overall max win); Gold Bulls collect to random Respin, guaranteed win during Respin, extra multipliers, X-Huge giant reel during Respin. Official page does not state RTP, overall max win, or release date.",
+    "sourceConflict": "Official page last sentence says Super Niubi Deluxe: X-Huge, inconsistent with page title and news; treated as editorial typo, not alternate identity.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming/super-niubi-fortune-x-huge",
+    "partnerImage": "https://assets.slotslaunch.com/107954/super-niubi-fortune-x-huge.jpg",
+    "partnerImageSha256": "84dd608b986517ad40223e7051344b5f13b19aa0a17bdddeedf32d33a65839e0",
+    "partnerAttribution": "Slots Launch exact page names Super Niubi Fortune X-Huge and JDB Gaming; downloaded valid JPEG visibly displays SUPER NIUBI FORTUNE X-HUGE title and bull artwork.",
+    "demo": "Third-party exact same-game Slots Launch page; visitor play limit/login may apply; external platform-game-page only.",
+    "dedup": "Full src/content/games and providers name/alias search found no existing record.",
     "decision": "imported-pending-publication"
   }
 }

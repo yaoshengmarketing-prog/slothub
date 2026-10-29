@@ -1,0 +1,33 @@
+{
+  "batch": 129,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 16",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown names and aliases; no existing Super Niubi Fortune X-Huge record; distinct from Super Niubi Deluxe.",
+  "records": [
+    {
+      "order": 16,
+      "name": "Super Niubi Fortune X-Huge",
+      "slug": "super-niubi-fortune-x-huge-jdb",
+      "provider": "jdb-gaming",
+      "status": "imported-pending-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/super-niubi-fortune-x-huge",
+      "officialFacts": "High-volatility Slot; Super Niubi sequel; same-color Green/Red/Gold Bull symbol rewards 28x/58x/88x (not overall max win); Gold Bulls collect to random Respin, guaranteed win during Respin, extra multipliers, X-Huge giant reel during Respin. Official page does not state RTP, overall max win, or release date.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/super-niubi-fortune-x-huge",
+        "sourceUrl": "https://assets.slotslaunch.com/107954/super-niubi-fortune-x-huge.jpg",
+        "sha256": "84dd608b986517ad40223e7051344b5f13b19aa0a17bdddeedf32d33a65839e0",
+        "visualCheck": "Slots Launch exact page names Super Niubi Fortune X-Huge and JDB Gaming; downloaded valid JPEG visibly displays SUPER NIUBI FORTUNE X-HUGE title and bull artwork."
+      },
+      "demo": "Third-party exact same-game Slots Launch page; visitor play limit/login may apply; external platform-game-page only.",
+      "sourceConflict": "Official page last sentence says Super Niubi Deluxe: X-Huge, inconsistent with page title and news; treated as editorial typo, not alternate identity."
+    }
+  ],
+  "nextCursor": "JDB catalog card 17 SUPER NIUBI DELUXE",
+  "publication": null
+}
