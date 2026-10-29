@@ -4,7 +4,7 @@
   "checkedAt": "2026-10-29",
   "scope": "ALL GAMES in source order; catalogType 1 is a discovery hint only; each Slot requires individual Game Info classification",
   "itemCount": 277,
-  "cursor": "Batch 98 captured official catalog orders 30-34; pending earlier orders 17,19-20,22-24,26 and held order 7 remain; continue at order 17 then order 35.",
+  "cursor": "Batch 99 captured orders 36,40,44,46,48; previously skipped orders 17,19-20,22-24,26 and order 35 reviewed as type Slot but gameplay conflict and held, alongside order 7. Continue at order 37 then order 49.",
   "items": [
     {
       "decision": "excluded-non-slot",
@@ -140,12 +140,13 @@
       "name": "Rapid Gems 777"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "hold-classification-conflict",
       "gameId": "813",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 17,
       "catalogType": "",
-      "name": "Crash Cricket Legend"
+      "name": "Crash Cricket Legend",
+      "reason": "Official type says Slot but title/features describe Crash, Mines, Roulette or Big/Small casino play; requires human classification decision before Slot intake."
     },
     {
       "decision": "captured-batch-97",
@@ -156,20 +157,22 @@
       "name": "Fortune Gems Legend"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "hold-classification-conflict",
       "gameId": "786",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 19,
       "catalogType": "",
-      "name": "Football Golden Cup"
+      "name": "Football Golden Cup",
+      "reason": "Official type says Slot but title/features describe Crash, Mines, Roulette or Big/Small casino play; requires human classification decision before Slot intake."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "hold-classification-conflict",
       "gameId": "665",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 20,
       "catalogType": "",
-      "name": "Mines football"
+      "name": "Mines football",
+      "reason": "Official type says Slot but title/features describe Crash, Mines, Roulette or Big/Small casino play; requires human classification decision before Slot intake."
     },
     {
       "decision": "duplicate-existing",
@@ -181,28 +184,31 @@
       "reason": "Same English name and gameId 664 as published TaDa Gaming Lucky Jaguar 500; preserve existing record and hold cross-brand ownership."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "hold-classification-conflict",
       "gameId": "662",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 22,
       "catalogType": "",
-      "name": "Crash Trader"
+      "name": "Crash Trader",
+      "reason": "Official type says Slot but title/features describe Crash, Mines, Roulette or Big/Small casino play; requires human classification decision before Slot intake."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "hold-classification-conflict",
       "gameId": "653",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 23,
       "catalogType": "",
-      "name": "Crash Fruit"
+      "name": "Crash Fruit",
+      "reason": "Official type says Slot but title/features describe Crash, Mines, Roulette or Big/Small casino play; requires human classification decision before Slot intake."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "hold-classification-conflict",
       "gameId": "624",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 24,
       "catalogType": "",
-      "name": "Lucky Roulette"
+      "name": "Lucky Roulette",
+      "reason": "Official type says Slot but title/features describe Crash, Mines, Roulette or Big/Small casino play; requires human classification decision before Slot intake."
     },
     {
       "decision": "captured-batch-97",
@@ -213,12 +219,13 @@
       "name": "Coin of Lightning"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "hold-classification-conflict",
       "gameId": "613",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 26,
       "catalogType": "",
-      "name": "Mines Cricket"
+      "name": "Mines Cricket",
+      "reason": "Official type says Slot but title/features describe Crash, Mines, Roulette or Big/Small casino play; requires human classification decision before Slot intake."
     },
     {
       "decision": "captured-batch-97",
@@ -285,15 +292,16 @@
       "name": "3 Super Ace"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "hold-classification-conflict",
       "gameId": "524",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 35,
       "catalogType": "1",
-      "name": "Big Small Casino Royale"
+      "name": "Big Small Casino Royale",
+      "reason": "Official type says Slot but title/features describe Crash, Mines, Roulette or Big/Small casino play; requires human classification decision before Slot intake."
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-99",
       "gameId": "573",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 36,
@@ -325,7 +333,7 @@
       "name": "Golden Treasure Lightning"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-99",
       "gameId": "545",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 40,
@@ -357,7 +365,7 @@
       "name": "Royal Quest"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-99",
       "gameId": "505",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 44,
@@ -373,7 +381,7 @@
       "name": "Frog Dash"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-99",
       "gameId": "586",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 46,
@@ -389,7 +397,7 @@
       "name": "Lucky Jaguar 2"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-batch-99",
       "gameId": "622",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 48,
