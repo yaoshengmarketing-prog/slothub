@@ -1,0 +1,22 @@
+{
+  "batch": 98,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "imported-awaiting-full-verification",
+  "batchSize": 5,
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "Continue approved JILI Games official catalog after batch 97.",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English and Chinese names, aliases and gameId; five titles at JILI official catalog orders 30-34 were absent from published Games.",
+  "records": [
+    { "order": 30, "gameId": "593", "name": "Devil Fire Twins", "slug": "devil-fire-twins", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/593?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 31, "gameId": "591", "name": "100 Blazing Clover", "slug": "100-blazing-clover", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/591?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 32, "gameId": "590", "name": "Clover Coins 4x4", "slug": "clover-coins-4x4", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/590?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 33, "gameId": "589", "name": "40 Sparkling Crown", "slug": "40-sparkling-crown", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/589?showGame=false", "demoStatus": "official-game-page" },
+    { "order": 34, "gameId": "588", "name": "3 Super Ace", "slug": "3-super-ace", "status": "imported", "officialPage": "https://jiligames.com/PlusIntro/588?showGame=false", "demoStatus": "official-game-page" }
+  ],
+  "pendingBeforeCursor": "Orders 17, 19-20, 22-24 and 26 still need individual type classification; order 7 Cash balloon remains held for conflicting official Slot label and cash-out gameplay description.",
+  "nextCursor": "JILI official catalog order 17 of 277; finish skipped items, then continue at order 35.",
+  "checkedAt": "2026-10-29"
+}
