@@ -4,7 +4,7 @@
   "checkedAt": "2026-10-29",
   "scope": "ALL GAMES in source order; catalogType 1 is a discovery hint only; each Slot requires individual Game Info classification",
   "itemCount": 277,
-  "cursor": "Batch 109 captured orders 126-130; order 125 excluded official Table and Card/Baccarat. Next order 131.",
+  "cursor": "Batch 110 captured orders 131,132,134,139,147; orders 133,135-138,140-146 excluded with reasons. Next order 148.",
   "items": [
     {
       "decision": "excluded-non-slot",
@@ -1101,7 +1101,7 @@
       "name": "Zeus"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "258",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 131,
@@ -1109,7 +1109,7 @@
       "name": "Devil Fire 2"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "171",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 132,
@@ -1117,15 +1117,16 @@
       "name": "Sin City"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-duplicate",
       "gameId": "49",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 133,
       "catalogType": "1",
-      "name": "Super Ace"
+      "name": "Super Ace",
+      "reason": "Existing JILI Super Ace ID 49"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "223",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 134,
@@ -1133,39 +1134,43 @@
       "name": "Fortune Gems 2"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "229",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 135,
       "catalogType": "7",
-      "name": "Mines"
+      "name": "Mines",
+      "reason": "Official Casino"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "197",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 136,
       "catalogType": "7",
-      "name": "Color Game"
+      "name": "Color Game",
+      "reason": "Official Crash"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-duplicate",
       "gameId": "103",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 137,
       "catalogType": "1",
-      "name": "Golden Empire"
+      "name": "Golden Empire",
+      "reason": "Existing JILI Golden Empire ID 103"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "289",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 138,
       "catalogType": "3",
-      "name": "Ocean King Jackpot"
+      "name": "Ocean King Jackpot",
+      "reason": "Official Fishing"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "115",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 139,
@@ -1173,63 +1178,70 @@
       "name": "Agent Ace"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "32",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 140,
       "catalogType": "3",
-      "name": "Jackpot Fishing"
+      "name": "Jackpot Fishing",
+      "reason": "Official Fishing"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "261",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 141,
       "catalogType": "7",
-      "name": "Crash Bonus"
+      "name": "Crash Bonus",
+      "reason": "Official Crash"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "195",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 142,
       "catalogType": "7",
-      "name": "Pearls of Bingo"
+      "name": "Pearls of Bingo",
+      "reason": "Official Crash"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "74",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 143,
       "catalogType": "3",
-      "name": "Mega Fishing"
+      "name": "Mega Fishing",
+      "reason": "Official Fish and Arcade"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "112",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 144,
       "catalogType": "7",
-      "name": "Journey West M"
+      "name": "Journey West M",
+      "reason": "Official Crash"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "118",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 145,
       "catalogType": "7",
-      "name": "Big Small"
+      "name": "Big Small",
+      "reason": "Official Crash"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "excluded-non-slot",
       "gameId": "199",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 146,
       "catalogType": "6",
-      "name": "Tongits Go"
+      "name": "Tongits Go",
+      "reason": "Official Indian Poker"
     },
     {
-      "decision": "pending-individual-check",
+      "decision": "captured-pending-publication",
       "gameId": "208",
       "officialPage": "https://jiligames.com/PlusIntro/=false",
       "order": 147,
