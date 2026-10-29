@@ -1,0 +1,33 @@
+{
+  "batch": 135,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 22",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown names and aliases; Maya Gold Crazy absent.",
+  "records": [
+    {
+      "order": 22,
+      "name": "Maya Gold Crazy",
+      "slug": "maya-gold-crazy-jdb",
+      "provider": "jdb-gaming",
+      "status": "imported-pending-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/maya-gold-crazy",
+      "officialFacts": "Official direct browser detail: Slot, RTP 95.9%, HIGH volatility, Maximum Win 6000X, 243~7776 Ways, release year 2021; Gold Symbols become Wilds after elimination, UFO sends Golden Symbols to 1-3 reels in Free Spins, multiplier increases with cascading removals.",
+      "sourceConflict": "Slots Launch page shows release year 2022 and describes circa 96% RTP; HUIDU and LiveBet call volatility Medium while official game specification says HIGH. Published page uses exact official math and avoids release year.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/maya-gold-crazy",
+        "sourceUrl": "https://assets.slotslaunch.com/29523/maya-gold-crazy.jpg",
+        "sha256": "32c62facd1192b7986021f44ae39c96726adaadbf8f8d3559ecedeca3054231a",
+        "visualCheck": "Slots Launch exact page identifies Maya Gold Crazy by JDB Gaming; downloaded valid JPEG visibly displays MAYA GOLD CRAZY title and UFO artwork."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 23 FISHIN' FEVER X-HUGE™",
+  "publication": null
+}
