@@ -1,0 +1,32 @@
+{
+  "batch": 126,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 13",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown files and content, Provider, English/Chinese names and aliases; no existing Fruity Bonanza Combo record. Distinct from adjacent Fruity Bonanza title.",
+  "records": [
+    {
+      "order": 13,
+      "name": "Fruity Bonanza Combo",
+      "slug": "fruity-bonanza-combo-jdb",
+      "provider": "jdb-gaming",
+      "status": "imported-pending-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/fruity-bonanza-combo",
+      "officialFacts": "Slot; Golden Frame Symbols turn Wild after elimination; collection can trigger random features; six Diamonds trigger Star Diamond Respin; Feature Buy. No unsupported numeric math fields recorded.",
+      "image": {
+        "sourcePage": "https://www.spigo.com/games/jdb/fruity-bonanza-combo",
+        "sourceUrl": "https://assets.socino.com/game/fruity-bonanza-combo-67ea8ccc873e33bb86802bce/fruity-bonanza-combo-thumb-en.webp",
+        "sha256": "cca02b40d5c7cbae90b02fe437c3cff534a9d3a8718adb175529b0d5eadc625c",
+        "visualCheck": "Downloaded valid WebP and visually inspected exact FRUITY BONANZA COMBO title; Spigo exact page names JDB. Third-party artwork attributed as such."
+      },
+      "demo": "Spigo exact same-game page identifies Fruity Bonanza Combo and JDB and is classified platform-game-page; no direct official Demo asserted."
+    }
+  ],
+  "nextCursor": "JDB catalog card 14 FRUITY BONANZA",
+  "publication": null
+}
