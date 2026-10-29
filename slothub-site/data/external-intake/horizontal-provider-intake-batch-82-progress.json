@@ -1,9 +1,9 @@
 {
   "batch": 82,
   "recordedAt": "2026-10-29T00:00:00+08:00",
-  "state": "full-verify-passed-awaiting-publication",
+  "state": "published-and-verified-live",
   "capturedCount": 5,
-  "publishedCount": 0,
+  "publishedCount": 5,
   "priority": "Taiwan operator 88WIN publicly lists RSG; RSG official catalog and exact game pages are first-party evidence.",
   "catalog": "https://www.rsg-games.com/zh-TW/games.html",
   "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
@@ -22,7 +22,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 29,
@@ -37,7 +37,7 @@
         "visualResult": "TryGame displayed Code 56 disconnected/login error; official game page fallback, not playable."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 30,
@@ -52,7 +52,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 31,
@@ -67,7 +67,7 @@
         "visualResult": "Playable reels and spin control visibly opened in browser."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     },
     {
       "order": 32,
@@ -82,8 +82,14 @@
         "visualResult": "TryGame displayed Code 56 disconnected/login error; official game page fallback, not playable."
       },
       "checkedAt": "2026-10-29",
-      "status": "captured"
+      "status": "published-live-verified"
     }
   ],
-  "nextCursor": "RSG official catalog order 33 gameid 14 甜蜜糖果; 57 pending Slot after this batch."
+  "nextCursor": "RSG official catalog order 33 gameid 14 甜蜜糖果; 57 pending Slot after this batch.",
+  "publication": {
+    "sha": "eb08434ba9f65f5abd79907493413cd6c5456a4e",
+    "githubActionsRun": 40845568430,
+    "cloudflareDeployment": "338d881d-b96e-4bc3-a500-d78cc49c2345",
+    "liveReadback": "Five slugs found in Search, Explorer, Compare and RSG Provider; detail, images, source and demo/page links present. X-Robots-Tag noindex,nofollow, empty sitemap, no canonical."
+  }
 }

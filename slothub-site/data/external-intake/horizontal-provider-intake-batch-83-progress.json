@@ -1,0 +1,89 @@
+{
+  "batch": 83,
+  "recordedAt": "2026-10-29T00:00:00+08:00",
+  "state": "full-verify-passed-awaiting-publication",
+  "capturedCount": 5,
+  "publishedCount": 0,
+  "priority": "RSG official catalog following Taiwan operator common provider discovery.",
+  "catalog": "https://www.rsg-games.com/zh-TW/games.html",
+  "catalogSnapshot": "data/external-intake/rsg-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown checked by RSG Provider, Chinese name, English alias, gameId and filename before capture; IDs 14–18 absent.",
+  "records": [
+    {
+      "order": 33,
+      "provider": "RSG",
+      "name": "甜蜜糖果",
+      "gameId": "14",
+      "slug": "sweet-candy-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_14.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=14&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 34,
+      "provider": "RSG",
+      "name": "烈焰轉輪",
+      "gameId": "15",
+      "slug": "fire-spin-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_15.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=15&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 35,
+      "provider": "RSG",
+      "name": "大力水手",
+      "gameId": "16",
+      "slug": "popeye-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_16.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=16&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 36,
+      "provider": "RSG",
+      "name": "瘋狂博士",
+      "gameId": "17",
+      "slug": "crazy-doctor-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_17.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=17&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    },
+    {
+      "order": 37,
+      "provider": "RSG",
+      "name": "永不停止",
+      "gameId": "18",
+      "slug": "nonstop-rsg",
+      "officialPage": "https://www.rsg-games.com/zh-TW/games_detail_18.html",
+      "demo": {
+        "url": "https://www.rsg-games.com/TryGame?gameid=18&lang=zh-TW",
+        "accessType": "direct-demo",
+        "visualResult": "Playable reels and spin control visibly opened in browser."
+      },
+      "checkedAt": "2026-10-29",
+      "status": "captured"
+    }
+  ],
+  "nextCursor": "RSG official catalog order 38 gameid 2 魔法石; 52 pending Slot after this batch."
+}
