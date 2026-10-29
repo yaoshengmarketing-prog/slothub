@@ -1,0 +1,243 @@
+{
+  "batch": 123,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "verified-pending-publication",
+  "batchSize": 2,
+  "finalUnderFive": true,
+  "capturedCount": 2,
+  "publishedCount": 0,
+  "priority": "Complete safely eligible JILI games in official catalog snapshot after batch 122",
+  "catalog": "https://jiligames.com/games?showSlotGames=true",
+  "catalogSnapshot": "data/external-intake/jili-official-catalog-2026-10-29.json",
+  "dedupScope": "All Game Markdown filenames, Provider, English/Chinese names, aliases and Game ID. No same JILI records for IDs 44 and 696; numeric ID 44 in RSG is separate Provider.",
+  "records": [
+    {
+      "order": 270,
+      "gameId": "44",
+      "name": "DIAMOND PARTY",
+      "slug": "diamond-party-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/44?showGame=false",
+      "demoStatus": "official-game-page"
+    },
+    {
+      "order": 277,
+      "gameId": "696",
+      "name": "Fortune Garuda 500",
+      "slug": "fortune-garuda-500-jili",
+      "status": "verified-pending-publication",
+      "officialPage": "https://jiligames.com/PlusIntro/696?showGame=false",
+      "demoStatus": "official-game-page"
+    }
+  ],
+  "excluded": [
+    {
+      "order": 7,
+      "gameId": "695",
+      "name": "Cash balloon",
+      "reason": "Official Slot label conflicts with crash-style Cash Out gameplay and 0 paylines; human classification required."
+    },
+    {
+      "order": 271,
+      "gameId": "78",
+      "name": "SECRET TREASURE",
+      "reason": "Official Type of game: Fish and Arcade"
+    },
+    {
+      "order": 272,
+      "gameId": "75",
+      "name": "AK47",
+      "reason": "Official Type of game: Table and Card"
+    },
+    {
+      "order": 273,
+      "gameId": "79",
+      "name": "ANDAR BAHAR",
+      "reason": "Official Type of game: Table and Card"
+    },
+    {
+      "order": 274,
+      "gameId": "253",
+      "name": "Video Poker",
+      "reason": "Official Type of game: Indian Poker"
+    },
+    {
+      "order": 275,
+      "gameId": "94",
+      "name": "Rummy",
+      "reason": "Official Type of game: Table and Card"
+    },
+    {
+      "order": 276,
+      "gameId": "127",
+      "name": "Callbreak",
+      "reason": "Official Type of game: Table and Card"
+    }
+  ],
+  "preExistingHeldCount": 25,
+  "preExistingHeld": [
+    {
+      "order": 17,
+      "gameId": "813",
+      "name": "Crash Cricket Legend",
+      "reason": "Official type says Slot but title/features describe Crash, Mines, Roulette or Big/Small casino play; requires human classification decision before Slot intake."
+    },
+    {
+      "order": 19,
+      "gameId": "786",
+      "name": "Football Golden Cup",
+      "reason": "Official type says Slot but title/features describe Crash, Mines, Roulette or Big/Small casino play; requires human classification decision before Slot intake."
+    },
+    {
+      "order": 20,
+      "gameId": "665",
+      "name": "Mines football",
+      "reason": "Official type says Slot but title/features describe Crash, Mines, Roulette or Big/Small casino play; requires human classification decision before Slot intake."
+    },
+    {
+      "order": 22,
+      "gameId": "662",
+      "name": "Crash Trader",
+      "reason": "Official type says Slot but title/features describe Crash, Mines, Roulette or Big/Small casino play; requires human classification decision before Slot intake."
+    },
+    {
+      "order": 23,
+      "gameId": "653",
+      "name": "Crash Fruit",
+      "reason": "Official type says Slot but title/features describe Crash, Mines, Roulette or Big/Small casino play; requires human classification decision before Slot intake."
+    },
+    {
+      "order": 24,
+      "gameId": "624",
+      "name": "Lucky Roulette",
+      "reason": "Official type says Slot but title/features describe Crash, Mines, Roulette or Big/Small casino play; requires human classification decision before Slot intake."
+    },
+    {
+      "order": 26,
+      "gameId": "613",
+      "name": "Mines Cricket",
+      "reason": "Official type says Slot but title/features describe Crash, Mines, Roulette or Big/Small casino play; requires human classification decision before Slot intake."
+    },
+    {
+      "order": 35,
+      "gameId": "524",
+      "name": "Big Small Casino Royale",
+      "reason": "Official type says Slot but title/features describe Crash, Mines, Roulette or Big/Small casino play; requires human classification decision before Slot intake."
+    },
+    {
+      "order": 58,
+      "gameId": "604",
+      "name": "Drop Ball",
+      "reason": "JILI type says Slot but Drop Ball gameplay describes predicting ball landing in betting zones; hold for human classification."
+    },
+    {
+      "order": 62,
+      "gameId": "690",
+      "name": "Chicken Dash",
+      "reason": "Official Slot label but Chicken Dash uses escalating difficulty and risk, no reels; human classification required."
+    },
+    {
+      "order": 64,
+      "gameId": "551",
+      "name": "Plinko of Mine",
+      "reason": "Official Slot label but Plinko of Mine is drop-ball pinball; human classification required."
+    },
+    {
+      "order": 65,
+      "gameId": "512",
+      "name": "Crash Puck",
+      "reason": "Official Slot label but Crash Puck describes a cash-out Crash game; human classification required."
+    },
+    {
+      "order": 75,
+      "gameId": "554",
+      "name": "Golden Treasure",
+      "reason": "Official Slot label but zero paylines and reward-mode description do not establish reel/slot play."
+    },
+    {
+      "order": 76,
+      "gameId": "479",
+      "name": "Color Game",
+      "reason": "Official Slot label but dice-color betting gameplay, no reel evidence."
+    },
+    {
+      "order": 79,
+      "gameId": "419",
+      "name": "Penalty Kicks",
+      "reason": "Official Slot label but football team outcome betting gameplay."
+    },
+    {
+      "order": 102,
+      "gameId": "462",
+      "name": "Cricket Roulette",
+      "reason": "Official type Slot but description says Cricket Roulette is team-and-odds betting with zero paylines; human classification required."
+    },
+    {
+      "order": 106,
+      "gameId": "305",
+      "name": "Super E-Sabong",
+      "reason": "Official Slot label but cockfighting winner/health betting, zero paylines."
+    },
+    {
+      "order": 107,
+      "gameId": "427",
+      "name": "Thai Hilo",
+      "reason": "Official Slot label but Thai dice outcome betting, zero paylines."
+    },
+    {
+      "order": 113,
+      "gameId": "397",
+      "name": "Jhandi Munda",
+      "reason": "Official Slot label but six-dice outcome betting, zero paylines."
+    },
+    {
+      "order": 119,
+      "gameId": "389",
+      "name": "Fish Prawn Crab",
+      "reason": "Official Slot label but Fish Prawn Crab describes dice-outcome betting, zero paylines."
+    },
+    {
+      "order": 122,
+      "gameId": "420",
+      "name": "Crazy Hunter 2",
+      "reason": "Official Slot label but Crazy Hunter 2 describes turret shooting gameplay, zero paylines."
+    },
+    {
+      "order": 149,
+      "gameId": "226",
+      "name": "Witches Night",
+      "reason": "Identity conflict: JILI Witches Night ID 226 shares exact name with published JILI Witches Night ID 299; requires distinct-version evidence before inclusion"
+    },
+    {
+      "order": 151,
+      "gameId": "239",
+      "name": "Dabanggg",
+      "reason": "Official Dabanggg page conflicts on MAX WIN: field 2000x versus description 5000x; hold this candidate pending source reconciliation"
+    },
+    {
+      "order": 152,
+      "gameId": "238",
+      "name": "Bangla Beauty",
+      "reason": "Official Bangla Beauty page labels Slot but description describes a competitive poker game; hold classification pending source reconciliation"
+    },
+    {
+      "order": 223,
+      "gameId": "4",
+      "name": "God Of Martial",
+      "reason": "Official MAX WIN field 2000x conflicts with description 500x; hold for source reconciliation"
+    }
+  ],
+  "fieldConflict": [
+    {
+      "order": 277,
+      "gameId": "696",
+      "field": "paylines",
+      "officialField": "1",
+      "officialDescription": "5 lines",
+      "resolution": "Omitted value; retained official source and noted conflict in Game summary."
+    }
+  ],
+  "exhaustion": "All catalog orders 1-277 examined in saved snapshot; orders 271-276 excluded as non-Slot; order 7 and 25 pre-existing holds require human classification, identity or source decisions. No further safely eligible JILI Slot in this snapshot.",
+  "nextCursor": "JILI official catalog order 278 of 277 (snapshot exhausted for safely eligible candidates).",
+  "checkedAt": "2026-10-30"
+}
