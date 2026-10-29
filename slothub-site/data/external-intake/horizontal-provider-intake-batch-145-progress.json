@@ -1,0 +1,32 @@
+{
+  "batch": 145,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 32",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; no Open Sesame Mega or 芝麻开门Mega record before this intake.",
+  "records": [
+    {
+      "order": 32,
+      "name": "Open Sesame Mega",
+      "slug": "open-sesame-mega-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/open-sesame-mega",
+      "officialFacts": "Official English/CN detail: Slot, RTP 96.5%, no volatility shown, Maximum Win 5000X, 64~117,649 ways, release year 2023; Cash Symbol treasure chests, Split Way divides 1-2 reels, MAX Way expands combinations.",
+      "sourceConflict": "Slots Launch calls medium volatility, 5x4 reels and lists expanding Wilds, Open Sesame doors and Free Spins, none confirmed by current official page. Published page omits volatility and partner-only features.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/open-sesame-mega",
+        "sourceUrl": "https://assets.slotslaunch.com/17470/open-sesame-mega.jpg",
+        "sha256": "cfbe7a230b2e8d6879bf836de8fa29723d00f97a56d921f70afbfa950bc5aaf6",
+        "visualCheck": "Exact Slots Launch page identifies Open Sesame Mega by JDB Gaming; downloaded valid 500x333 JPEG visibly displays OPEN SESAME MEGA title and cave artwork."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 33 OPEN SESAME"
+}

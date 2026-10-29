@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 706,
+  "gameCount": 707,
   "providerCount": 371,
-  "sourcePageCount": 1278,
+  "sourcePageCount": 1280,
   "counts": {
     "access-restricted": 4,
-    "available": 611,
+    "available": 612,
     "not-verified": 91
   },
   "rules": {
@@ -17,6 +17,38 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "open-sesame-mega-jdb",
+      "name": "Open Sesame Mega",
+      "provider": "jdb-gaming",
+      "status": "available",
+      "url": "https://slotslaunch.com/jdb-gaming/open-sesame-mega",
+      "accessType": "platform-game-page",
+      "platformName": "Slots Launch",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "Slots Launch exact page and image identify Open Sesame Mega and JDB Gaming; official English/CN detail supplies current math and features.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/open-sesame-mega",
+          "httpStatus": 200,
+          "notes": "Official Browser Use direct inspection runs ab0298cc-7ea1-4d63-940e-bbaf3f232728 and a677a3c7-08cf-44ad-a773-b4babea32ba0"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/cn/games/slot/open-sesame-mega",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/open-sesame-mega",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://assets.slotslaunch.com/17470/open-sesame-mega.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "pop-pop-candy-1000-jdb",
       "name": "Pop Pop Candy 1000",
