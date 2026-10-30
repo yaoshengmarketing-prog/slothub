@@ -1,0 +1,32 @@
+{
+  "batch": 192,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Golden Eggs / 賺金蛋 (67) absent before intake.",
+  "records": [
+    {
+      "name": "Golden Eggs",
+      "slug": "golden-eggs-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "67",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/ko/news/detail/207",
+      "officialFacts": "CQ9 Slot catalog ID 67: RTP 96.91%, Low volatility, overall maximum_win 4000. Catalog description and exact official news describe 3-5 Easter egg Scatters triggering a feature and up to 3000x for that Golden Eggs feature; preserve scope distinction from overall 4000x.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/beik3Nk3.jpg",
+        "localPath": "public/assets/games/golden-eggs-cq9.jpg",
+        "sha256": "1b1a980641ce173ca32b1c5ba96d3c95f9e7abd2a7a9c74570579208d022addc",
+        "visualCheck": "Official 67 maps to red-gold egg pattern background; icon VGzJfXLS.png visibly spells Golden Eggs."
+      },
+      "demo": "US New York browser: historical official-news guest /67/ HTTP 404; bare current /h5/67/ HTTP 200 loading only; current /h5/67/?language=en&token=guest HTTP 200 exact Golden Eggs reels/Scatter symbols and controls without login. Direct Demo available externally; no spin, bet or login."
+    }
+  ],
+  "nextCursor": "After Golden Eggs live closure, continue next uncollected CQ9 Slot; preserve Sung Wukong/Sugar Combo metric conflict queue."
+}

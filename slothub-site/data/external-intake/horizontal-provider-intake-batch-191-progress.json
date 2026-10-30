@@ -1,10 +1,10 @@
 {
   "batch": 191,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "mirror-mirror-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "228",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialNews": "https://www.cq9gaming.com/ko/news/detail/206",
       "officialFacts": "CQ9 Slot catalog ID 228: RTP 96.10%, Medium volatility, maximum_win 4000. Exact official news describes icon elimination, increasing main-game multiplier, Magic Mirror on reels 2-4, Free Games and Golden Apple buy feature. Catalog describes up to x99 Free Games multiplier; do not conflate feature multiplier with overall max win.",
@@ -28,5 +28,15 @@
       "demo": "US New York browser: historical official-news guest /228/ HTTP 404; bare current /h5/228/ HTTP 200 intro/reels but no controls; current /h5/228/?language=en&token=guest HTTP 200 exact MirrorMirror title, reels and controls without login. Direct Demo available externally; no spin, bet or login."
     }
   ],
-  "nextCursor": "After Mirror Mirror live closure, continue next uncollected CQ9 Slot; preserve Sung Wukong/Sugar Combo metric conflict queue."
+  "nextCursor": "Mirror Mirror 228 live verified; current guest query renders reels and Buy Feature controls, historical news guest path 404. Continue Golden Eggs 67: official catalog/news/detail/207 and exact image/icon checked; US browser guest check pending.",
+  "publication": {
+    "commit": "bc38605123e3c4d4f48ed0028b0d87108de03280",
+    "githubRun": 41023809171,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "b18a815d-7869-496d-b430-5ad1e8ed2063",
+    "cloudflareUrl": "https://b18a815d.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official news/catalog and RTP/max present; verified guest Demo link present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

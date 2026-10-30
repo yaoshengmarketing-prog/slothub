@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 753,
+  "gameCount": 754,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 636,
+    "available": 637,
     "not-verified": 113
   },
   "rules": {
@@ -17,6 +17,57 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "golden-eggs-cq9",
+      "name": "Golden Eggs",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official news/detail/207 identifies Golden Eggs and embeds historical ID 67 guest URL, which is HTTP 404. Same-browser US New York read-only check: current /h5/67/ with language=en and token=guest HTTP 200, generic Welcome title, exact Golden Eggs board/reels, Scatter eggs, menu/spin/plus/minus controls and readouts without login. Bare /h5/67/ HTTP 200 but CQ9 splash/loading only after 40 seconds. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card 67; overall maximum_win 4000"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/ko/news/detail/207",
+          "httpStatus": 200,
+          "notes": "Exact Golden Eggs news; feature jackpot 3000x and historical guest link"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/67/?language=en&token=guest",
+          "httpStatus": 404,
+          "notes": "Historical official-news guest URL 404; not a 403"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/67/",
+          "httpStatus": 200,
+          "notes": "US New York browser generic Welcome title; splash/loading only after 40 seconds"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/67/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser generic Welcome title; exact Golden Eggs reels, Scatter symbols and controls without login; no gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/beik3Nk3.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped red-gold egg background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/VGzJfXLS.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Golden Eggs"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/67/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official news/detail/207 identifies Golden Eggs and embeds historical ID 67 guest URL, which is HTTP 404. Same-browser US New York read-only check: current /h5/67/ with language=en and token=guest HTTP 200, generic Welcome title, exact Golden Eggs board/reels, Scatter eggs, menu/spin/plus/minus controls and readouts without login. Bare /h5/67/ HTTP 200 but CQ9 splash/loading only after 40 seconds. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "mirror-mirror-cq9",
       "name": "Mirror Mirror",
