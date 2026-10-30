@@ -1,10 +1,10 @@
 {
   "batch": 188,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "monster-hunter-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "GB2",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialNews": "https://www.cq9gaming.com/ko/news/detail/187",
       "officialFacts": "CQ9 Slot catalog ID GB2: RTP 96.08%, Low volatility, maximum_win 600. Exact official news describes three Bonus symbols, three skill choices, and up to 200x in the bonus game; this is narrower than catalog overall 600x.",
@@ -28,5 +28,15 @@
       "demo": "Official news guest URL GB2: US New York browser HTTP 200, unchanged URL, exact Monster Hunter title, rendered reels and balance/bet/line UI without login. Catalog URL remains loading shell. Direct Demo available externally; no spin, bet or login action."
     }
   ],
-  "nextCursor": "After Monster Hunter live closure, continue next uncollected CQ9 Slot; preserve Sung Wukong/Sugar Combo metric conflict queue."
+  "nextCursor": "Monster Hunter GB2 live verified. Continue Aladdin's lamp 177: official catalog/news/detail/190, RTP 96.19%, Medium, maximum_win 2000; exact image/icon checked; US browser guest check pending.",
+  "publication": {
+    "commit": "ceb0b0bc67027e77bf12e0fcce875e9464f1b705",
+    "githubRun": 41020004898,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "2d8c4fc0-aa10-4c57-9a13-33fc0d7afcc1",
+    "cloudflareUrl": "https://2d8c4fc0.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official news/catalog and RTP/max present; verified guest Demo link present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

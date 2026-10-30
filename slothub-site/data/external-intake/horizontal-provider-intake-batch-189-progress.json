@@ -1,0 +1,32 @@
+{
+  "batch": 189,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Aladdin's lamp / 小伙與神燈 (177) absent before intake.",
+  "records": [
+    {
+      "name": "Aladdin's lamp",
+      "slug": "aladdins-lamp-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "177",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/ko/news/detail/190",
+      "officialFacts": "CQ9 Slot catalog ID 177: RTP 96.19%, Medium volatility, maximum_win 2000. Exact official news describes six lamps triggering free games, more lamps increasing free games, and special Wild transformation.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/fm8hrjGo.jpg",
+        "localPath": "public/assets/games/aladdins-lamp-cq9.jpg",
+        "sha256": "59af5b916a79b33fbc685bafafeb52296aaaf0f134a85c1df504aafdceb1e9c6",
+        "visualCheck": "Official 177 maps to bright magical background; icon 5Hu1PvAX.png visibly spells Aladdin's lamp."
+      },
+      "demo": "US New York browser: historical official-news guest URL HTTP 404; bare current /h5/177/ HTTP 200 loading/blank only; current /h5/177/?language=en&token=guest HTTP 200 with exact Aladdin 5x3 reels and controls without login. Direct Demo available externally; no spin, bet or login."
+    }
+  ],
+  "nextCursor": "After Aladdin's lamp live closure, continue next uncollected CQ9 Slot; preserve Sung Wukong/Sugar Combo metric conflict queue."
+}
