@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 835,
+  "gameCount": 836,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 116
+    "not-verified": 117
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,32 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "flaming-three-kingdoms-atg",
+      "name": "Flaming Three Kingdoms",
+      "provider": "atg-games",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "ATG exact page and title icon identify Flaming Three Kingdoms despite scarlet-three-kingdoms URL. Official page states RTP 96.89%, Advanced volatility and maximum 51,000x. The page prints Demo text but no exact playable destination and load result was verified; not-verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.atg-games.com/en/games?type=all",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card links to exact Game Info"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/games/slot/scarlet-three-kingdoms",
+          "httpStatus": 200,
+          "notes": "Exact official page title Flaming Three Kingdoms, metrics and features; Demo destination not confirmed"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/_ipx/f_webp/scarlet-three-kingdoms/en/game_icon.png",
+          "httpStatus": 200,
+          "notes": "Valid WebP displaying Flaming Three Kingdoms title; SHA256 411975dbc1b6fe54e1fc01a914386a0cf1c5d3b592a643ba21103f5d518f2e37"
+        }
+      ]
+    },
     {
       "slug": "tiger-girl-atg",
       "name": "Tiger Girl",
