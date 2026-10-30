@@ -1,0 +1,43 @@
+{
+  "batch": 190,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 original Football Fever (GB9) absent. Existing Football Fever M (GB13) is a distinct official game and linked as a related variant.",
+  "records": [
+    {
+      "name": "Football Fever",
+      "slug": "football-fever-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "GB9",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/ko/news/detail/204",
+      "officialFacts": "CQ9 Slot catalog ID GB9: RTP 96.08%, High volatility, maximum_win 15000 and official description states 243 ways. Exact official news describes football stars plus Wild trigger, Gold Ball Free Games/multiplier and Buy Feature; related GB13 is mobile version.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/0gjLPUsk.jpg",
+        "localPath": "public/assets/games/football-fever-cq9.jpg",
+        "sha256": "4ad370725b9957c003eac00f1795672b998dcb0cf856747bd691a328be4ee13c",
+        "visualCheck": "Official GB9 maps to football stadium background; icon zTm76n4G.png visibly spells Football Fever and 15000x."
+      },
+      "demo": "US New York browser: official GB9 guest HTTP 200, exact Football Fever title, 243 Ways, reels and control UI rendered without login; bare catalog /h5/GB9/ HTTP 200 but loading only after 40+ sec. Direct Demo available externally; no spin, bet or login."
+    }
+  ],
+  "nextCursor": "Rerun full verify under 737076a with Football Fever GB9, then exact-path stage/commit, normal push, same-SHA CI/Cloudflare success and seven-route live readback.",
+  "syncHistory": {
+    "observedAt": "2026-10-30T15:43:00+08:00",
+    "localHead": "c2a132c3301ac5c4998774bb047e4138d50708e3",
+    "remoteMain": "737076a7b712572cd6ab3dd18fafe3fdbf0eaccc",
+    "remoteCommits": 4,
+    "reason": "origin/main advanced by PR #13 after Aladdin single-game closure and before Football Fever commit. Worktree AGENTS.md requires stopping cross-stage operations on unexpected remote commit. Remote changed package.json, game detail template and diagram link components/verification; no Football Fever content paths overlap, but full verification must run again after reconciliation.",
+    "localEvidence": "GB9 official catalog/news identity, 243 Ways, RTP 96.08%, High, maximum_win 15000, image SHA256 4ad370725b9957c003eac00f1795672b998dcb0cf856747bd691a328be4ee13c, exact US guest Demo reels/controls verified. Full node scripts/run-verify.mjs passed locally for 752 Games before remote advance. No commit or push for GB9.",
+    "nextAction": "In the same fixed worktree, reacquire exclusive lock; inspect remote PR #13 and reconcile origin/main with local uncommitted Football Fever/Aladdin closure changes, rerun full verify under merged HEAD, explicit-path stage, one normal commit and push, same-SHA GitHub Actions/Cloudflare success, immutable seven-route readback and image SHA. Then continue next uncollected CQ9 Slot.",
+    "resolvedAt": "2026-10-30T00:00:00+08:00",
+    "resolution": "Fetched and fast-forwarded fixed worktree to 737076a after confirming only diagram-link code paths changed; local CQ9 files remained intact. node scripts/run-verify.mjs passed under merged HEAD for 752 Games. PR #13 GitHub Actions run 41021688464 completed success, including npm run verify on Linux."
+  }
+}

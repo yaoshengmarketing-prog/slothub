@@ -3,7 +3,7 @@ name: Football Fever M
 originalName: Football Fever M
 displayNameZhHant: 直式足球狂熱
 aliases: [直式足球狂熱, 直式足球狂热, Football Fever Mobile]
-relatedGames: []
+relatedGames: [football-fever-cq9]
 provider: cq9-gaming
 primaryType: slots
 subtypes: [video-slots]

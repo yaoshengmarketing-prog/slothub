@@ -1,10 +1,10 @@
 {
   "batch": 189,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "aladdins-lamp-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "177",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialNews": "https://www.cq9gaming.com/ko/news/detail/190",
       "officialFacts": "CQ9 Slot catalog ID 177: RTP 96.19%, Medium volatility, maximum_win 2000. Exact official news describes six lamps triggering free games, more lamps increasing free games, and special Wild transformation.",
@@ -28,5 +28,15 @@
       "demo": "US New York browser: historical official-news guest URL HTTP 404; bare current /h5/177/ HTTP 200 loading/blank only; current /h5/177/?language=en&token=guest HTTP 200 with exact Aladdin 5x3 reels and controls without login. Direct Demo available externally; no spin, bet or login."
     }
   ],
-  "nextCursor": "After Aladdin's lamp live closure, continue next uncollected CQ9 Slot; preserve Sung Wukong/Sugar Combo metric conflict queue."
+  "nextCursor": "Aladdin's lamp 177 live verified; current guest query route renders reels; historical news guest path 404. Continue Football Fever GB9: official article/detail/204 and exact image/icon checked; US browser guest check pending.",
+  "publication": {
+    "commit": "c2a132c3301ac5c4998774bb047e4138d50708e3",
+    "githubRun": 41021167181,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "70ee7977-30eb-4a42-a518-a70f6d29eb2e",
+    "cloudflareUrl": "https://70ee7977.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official news/catalog and RTP/max present; verified current guest Demo link present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

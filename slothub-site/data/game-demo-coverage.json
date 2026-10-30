@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 751,
+  "gameCount": 752,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 634,
+    "available": 635,
     "not-verified": 113
   },
   "rules": {
@@ -17,6 +17,52 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "football-fever-cq9",
+      "name": "Football Fever",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official news/detail/204 identifies original Football Fever and embeds exact GB9 guest URL. Same-browser US New York read-only check: guest URL HTTP 200, final URL unchanged, exact Football Fever title, 243 Ways branding, reels and control/readout UI without login. Bare /h5/GB9/ HTTP 200 with exact title but remained splash/loading canvas after 40+ seconds. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card GB9; 243 Ways and metrics"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/ko/news/detail/204",
+          "httpStatus": 200,
+          "notes": "Exact original Football Fever news; guest link and feature buy"
+        },
+        {
+          "requestedUrl": "https://web-gb.cqgame.games/h5/GB9/",
+          "httpStatus": 200,
+          "notes": "US New York exact title, splash/loading canvas only after 40+ seconds"
+        },
+        {
+          "requestedUrl": "https://web-gb.cqgame.games/h5/GB9/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York exact title, 243 Ways branding, reels and controls rendered; no login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/0gjLPUsk.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped football stadium background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/zTm76n4G.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Football Fever and 15000x"
+        }
+      ],
+      "url": "https://web-gb.cqgame.games/h5/GB9/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official news/detail/204 identifies original Football Fever and embeds exact GB9 guest URL. Same-browser US New York read-only check: guest URL HTTP 200, final URL unchanged, exact Football Fever title, 243 Ways branding, reels and control/readout UI without login. Bare /h5/GB9/ HTTP 200 with exact title but remained splash/loading canvas after 40+ seconds. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "aladdins-lamp-cq9",
       "name": "Aladdin's lamp",
