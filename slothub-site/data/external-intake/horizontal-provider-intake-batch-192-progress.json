@@ -1,10 +1,10 @@
 {
   "batch": 192,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "golden-eggs-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "67",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialNews": "https://www.cq9gaming.com/ko/news/detail/207",
       "officialFacts": "CQ9 Slot catalog ID 67: RTP 96.91%, Low volatility, overall maximum_win 4000. Catalog description and exact official news describe 3-5 Easter egg Scatters triggering a feature and up to 3000x for that Golden Eggs feature; preserve scope distinction from overall 4000x.",
@@ -28,5 +28,15 @@
       "demo": "US New York browser: historical official-news guest /67/ HTTP 404; bare current /h5/67/ HTTP 200 loading only; current /h5/67/?language=en&token=guest HTTP 200 exact Golden Eggs reels/Scatter symbols and controls without login. Direct Demo available externally; no spin, bet or login."
     }
   ],
-  "nextCursor": "After Golden Eggs live closure, continue next uncollected CQ9 Slot; preserve Sung Wukong/Sugar Combo metric conflict queue."
+  "nextCursor": "Golden Eggs 67 live verified; current guest query renders reels and Scatter controls, historical news guest path 404. Overall catalog maximum_win 4000 remains distinct from 3000x Golden Eggs feature. Continue CQ9 Night City 229, separate from JILI same-name title; exact catalog image/icon checked and US browser guest check pending.",
+  "publication": {
+    "commit": "1b3354f61258cce2bc608020cb08587f61e21be0",
+    "githubRun": 41024588324,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "b78acb8a-95a4-49a7-96e8-aeb09de8eaea",
+    "cloudflareUrl": "https://b78acb8a.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official news/catalog and RTP/max present; verified guest Demo link present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

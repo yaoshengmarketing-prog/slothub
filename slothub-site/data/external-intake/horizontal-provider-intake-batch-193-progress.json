@@ -1,0 +1,31 @@
+{
+  "batch": 193,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked. Existing Night City is JILI (official JILI ID 37); CQ9 Night City is distinct Provider cq9-gaming, official CQ9 ID 229, unique slug and exact official image/icon.",
+  "records": [
+    {
+      "name": "Night City",
+      "slug": "night-city-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "229",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 229: RTP 96.16%, High volatility, overall maximum_win 80000. Official description details eight matching symbols, 30 eliminations up to 4000x local multiplier, Sapphire up to 50x, Golden Diamond up to 10x, Free Games, Double Chance and Buy Feature. JILI same-name ID 37 is separate.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/IPlhyTgF.jpg",
+        "localPath": "public/assets/games/night-city-cq9.jpg",
+        "sha256": "e995769cbd3af176e7d5e23604f4147313d58a6e547298d0897608cf03ed83d8",
+        "visualCheck": "Official 229 maps to neon city background; icon jfVswt3J.png visibly spells Night City with gem artwork, distinct from JILI image."
+      },
+      "demo": "US New York browser: exact CQ9 ID 229 bare current /h5/229/ HTTP 200 splash/reel art only; current guest-query HTTP 200 exact Night City title, 6x6 reels and Buy Feature/Double Chance controls without login. Direct Demo available externally; no spin, bet or login."
+    }
+  ],
+  "nextCursor": "After CQ9 Night City live closure, continue next uncollected CQ9 Slot; preserve Sung Wukong/Sugar Combo metric conflict queue."
+}

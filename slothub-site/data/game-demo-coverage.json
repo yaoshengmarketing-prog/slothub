@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 754,
+  "gameCount": 755,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 637,
+    "available": 638,
     "not-verified": 113
   },
   "rules": {
@@ -17,6 +17,47 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "night-city-cq9",
+      "name": "Night City",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Night City ID 229 and exact h5c.cqgame.games domain, distinct from JILI Night City ID 37. Same-browser US New York read-only check: current guest query HTTP 200, final URL unchanged, exact Night City title, actual 6x6 reels plus Buy Feature, Double Chance, menu/spin/plus/minus controls without login. Bare /h5/229/ HTTP 200, exact title and splash/reel art but no controls after allowed wait. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog card ID 229; distinct from JILI Night City ID 37; full features and metrics"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/229/",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Night City title; splash/reel artwork without controls"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/229/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Night City title; 6x6 reels and Buy Feature/Double Chance/spin/menu controls without login; no gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/IPlhyTgF.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped neon city background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/jfVswt3J.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Night City, distinct from JILI image"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/229/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Night City ID 229 and exact h5c.cqgame.games domain, distinct from JILI Night City ID 37. Same-browser US New York read-only check: current guest query HTTP 200, final URL unchanged, exact Night City title, actual 6x6 reels plus Buy Feature, Double Chance, menu/spin/plus/minus controls without login. Bare /h5/229/ HTTP 200, exact title and splash/reel art but no controls after allowed wait. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "golden-eggs-cq9",
       "name": "Golden Eggs",
