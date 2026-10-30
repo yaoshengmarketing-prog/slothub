@@ -1,10 +1,10 @@
 {
   "batch": 172,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "CQ9 official Slot catalog continuation, second newest uncollected card",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "lucky-bats-jp-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "1010",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "Official Slot card, ID 1010, RTP 96.17%, High volatility; maximum_win N/A. Description mentions Dragon Gate, up to 100 Free Games, and up to 50X total-bet score; 50X not treated as global maximum win.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "Official modal had no directly verified playable href; status not-verified."
     }
   ],
-  "nextCursor": "After Lucky Bats JP live closure, continue CQ9 Slot cards Sung Wukong (ID 253) and Go Fishing (ID 246), then refresh official candidate queue."
+  "nextCursor": "Lucky Bats JP live verified; Sung Wukong ID 253 has unresolved official volatility conflict, so continue at Go Fishing ID 246.",
+  "publication": {
+    "commit": "0bfee8f4735451146e96087672d6f1e6caea958a",
+    "githubRun": 41002633889,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "ae195567-44cb-4ce0-997a-449120abaa00",
+    "cloudflareUrl": "https://ae195567.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG image and sitemap HTTP 200; official catalog, RTP and traditional Chinese name present; live image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

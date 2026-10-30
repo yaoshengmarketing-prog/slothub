@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 734,
+  "gameCount": 735,
   "providerCount": 371,
-  "sourcePageCount": 1336,
+  "sourcePageCount": 1339,
   "counts": {
     "access-restricted": 4,
     "available": 630,
-    "not-verified": 100
+    "not-verified": 101
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "go-fishing-cq9",
+      "name": "Go Fishing",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "Official CQ9 Slot catalog identifies game ID 246, while the exact-title official news calls Go Fishing a Slot; the catalog modal did not expose a verified playable href.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot card and modal, game ID 246"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/795",
+          "httpStatus": 200,
+          "notes": "Official exact-title Slot news"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/Ls6RTmor.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/UYOm1DZx.png",
+          "httpStatus": 200,
+          "notes": "Official title icon, visually checked"
+        }
+      ]
+    },
     {
       "slug": "lucky-bats-jp-cq9",
       "name": "Lucky Bats JP",
