@@ -1,10 +1,10 @@
 {
   "batch": 226,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "vampire-kiss-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "3",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 3: RTP 96.01%, Medium volatility, overall maximum_win 1500. Vague 1000x promotional phrase not equated to max; US guest canvas labels 40 LINES.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/3/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 40 LINES, 5x3 reels and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Vampire Kiss live closure, continue next uncollected CQ9 Slot from Rave Jump 7, So Sweet 8, Zhong Kui 9, US guest checks pending. Fruit King 1 and Mr. Rich 5 held; Hot DJ GB5, OrientalBeauty202 and prior conflicts remain review queue."
+  "nextCursor": "Vampire Kiss 3 live verified; continue Rave Jump 7.",
+  "publication": {
+    "commit": "1f7efc0414af5b2bcd506c96540546810f10dd77",
+    "githubRun": 41056010142,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "70ce98fc-bc0f-4786-ab11-0cfa96aa8208",
+    "cloudflareUrl": "https://70ce98fc.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

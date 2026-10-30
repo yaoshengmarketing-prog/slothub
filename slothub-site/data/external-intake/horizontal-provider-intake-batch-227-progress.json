@@ -1,0 +1,31 @@
+{
+  "batch": 227,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Rave Jump / 跳起来 (7) absent, distinct from Rave Jump Mobile 109.",
+  "records": [
+    {
+      "name": "Rave Jump",
+      "slug": "rave-jump-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "7",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 7: RTP 96.18%, High volatility, overall maximum_win 3000; stacked Golden Ball symbols determine Free Game multiplier. US guest canvas labels 243 WAYS.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/QJus5E8b.jpg",
+        "localPath": "public/assets/games/rave-jump-cq9.jpg",
+        "sha256": "4871a98681fcab059d284e3d772fe78f8d48a8bc852649a864b6bf2eae0019b2",
+        "visualCheck": "Official ID 7 maps to nightclub stage background; matching icon spells Rave Jump."
+      },
+      "demo": "US New York browser guest-query /h5/7/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 243 WAYS, 5x3 reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Rave Jump live closure, continue So Sweet 8 then Zhong Kui 9, both US guest Demo visually verified. Hold official conflicts in review queue."
+}

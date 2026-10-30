@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 788,
+  "gameCount": 789,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 670,
+    "available": 671,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "rave-jump-cq9",
+      "name": "Rave Jump",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Rave Jump ID 7, RTP 96.18%, High volatility, overall 3000x maximum, stacked Golden Ball symbols determining Free Game multiplier by count. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, RAVE JUMP branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 7, metrics and Golden Ball feature"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/7/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser RAVE JUMP, 243 WAYS, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/QJus5E8b.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped nightclub stage background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/20x1jSLJ.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Rave Jump"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/7/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Rave Jump ID 7, RTP 96.18%, High volatility, overall 3000x maximum, stacked Golden Ball symbols determining Free Game multiplier by count. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, RAVE JUMP branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "vampire-kiss-cq9",
       "name": "Vampire Kiss",
