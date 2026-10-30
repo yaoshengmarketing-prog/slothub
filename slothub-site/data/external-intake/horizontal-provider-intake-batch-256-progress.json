@@ -1,10 +1,10 @@
 {
   "batch": 256,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "fortune-totem-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "148",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 148: RTP 96.10%, High volatility, overall maximum_win 8000; five SC icons award ten free games and up to 50x bonus, full-reel WILD locked until free-game end. US guest canvas labels 243 WAY.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US browser guest-query /h5/148/?language=en&token=guest HTTP 200 with exact FORTUNE TOTEM branding, 5x3 reels, 243 WAY and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Fortune Totem live closure, continue Shou-Xin ID150, The Beast War ID57 and Gu Gu Gu 2 ID58 (US guest Demos verified exact title/lines/5x3; official images/icons downloaded and visually checked). Held source conflicts remain."
+  "nextCursor": "Fortune Totem 148 live verified; continue Shou-Xin 150.",
+  "publication": {
+    "commit": "f39de068cb9847a76a22cb06d7b31dd6db4688c9",
+    "githubRun": 41072494036,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "92f032ab-cfda-41a8-93ed-3946fc844e37",
+    "cloudflareUrl": "https://92f032ab.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
