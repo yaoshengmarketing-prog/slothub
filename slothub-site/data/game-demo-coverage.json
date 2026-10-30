@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 824,
+  "gameCount": 825,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 706,
+    "available": 707,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fa-cai-shen-cq9",
+      "name": "Fa Cai Shen",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fa Cai Shen ID 69, RTP 96.07%, High volatility, overall 3000x maximum, specified symbol retriggering free games and random WILD multiplier up to 27x. US browser read-only guest Demo: browser page title Welcome but exact FA CAI SHEN visible in game canvas, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 69, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/69/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser page title Welcome, but canvas rendered FA CAI SHEN branding, 5x3 reels, 243 WAYS and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/Tjb3kd7J.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped red traditional pattern background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/dYSFNGvb.png",
+          "httpStatus": 200,
+          "notes": "Official Fa Cai Shen title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/69/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fa Cai Shen ID 69, RTP 96.07%, High volatility, overall 3000x maximum, specified symbol retriggering free games and random WILD multiplier up to 27x. US browser read-only guest Demo: browser page title Welcome but exact FA CAI SHEN visible in game canvas, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "wukong-and-peaches-cq9",
       "name": "Wukong & Peaches",

@@ -1,10 +1,10 @@
 {
   "batch": 262,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "wukong-and-peaches-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "68",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 68: RTP 96.91%, High volatility, overall maximum_win 8000; peach icon in free game can add escalating bonus multiplier. US guest canvas labels 243 ways.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US browser guest-query /h5/68/?language=en&token=guest HTTP 200 with Wukong Peaches canvas logo (ampersand absent), 5x3 reels, 243 ways and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Wukong & Peaches live closure, continue Fa Cai Shen ID69, Wanbao Dino ID70 and Happy Rich Year ID72 (US exact guest Demos verified; official images/icons downloaded and visually checked). Held source conflicts remain."
+  "nextCursor": "Wukong & Peaches 68 live verified; continue Fa Cai Shen 69.",
+  "publication": {
+    "commit": "bbd2319d37b8fa96317dfb94b1fc20ff2920f63c",
+    "githubRun": 41075905564,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "36ad2c1c-eff9-491f-b35c-e8be11523992",
+    "cloudflareUrl": "https://36ad2c1c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

@@ -1,0 +1,31 @@
+{
+  "batch": 263,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Fa Cai Shen / 发财神 (69) absent and distinct from Fa Cai Shen2 ID160.",
+  "records": [
+    {
+      "name": "Fa Cai Shen",
+      "slug": "fa-cai-shen-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "69",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 69: RTP 96.07%, High volatility, overall maximum_win 3000; free-game retrigger and random WILD multiplier up to 27x. US guest canvas labels 243 WAYS.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/Tjb3kd7J.jpg",
+        "localPath": "public/assets/games/fa-cai-shen-cq9.jpg",
+        "sha256": "68bfb32b67ef3801ff5406e0ae68adf8eb771efae0eaff36f481fa5643df6761",
+        "visualCheck": "Official ID 69 maps to red traditional pattern background; matching fortune deity title icon spells Fa Cai Shen."
+      },
+      "demo": "US browser guest-query /h5/69/?language=en&token=guest HTTP 200 with Welcome page title but exact FA CAI SHEN canvas branding, 5x3 reels, 243 WAYS and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Fa Cai Shen live closure, continue Wanbao Dino ID70 and Happy Rich Year ID72 (US guest Demos verified; official images/icons downloaded and visually checked), then Treasure Bowl ID74. Held source conflicts remain."
+}
