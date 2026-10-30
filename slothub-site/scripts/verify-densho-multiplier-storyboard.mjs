@@ -13,16 +13,27 @@ assert.ok(!evidence.metricEvidence.some((item) => item.id === record.id), 'New r
 assert.equal(record.checkedAt, '2026-10-30');
 assert.equal(record.sourceLocation, 'FEATURES → Wild Multiplier Reels，最後一段（同一得獎組合的倍數加總）');
 assert.equal(record.excerpt, 'same winning combination, their respective values are summed before a payout calculation.');
-assert.equal(project('densho', game, 'preview').source.url, 'https://www.hacksawgaming.com/games/densho');
-for (const [slug, data, environment] of [
-  ['razor-shark', game, 'preview'], ['jump-high', game, 'preview'],
-  ['densho', { ...game, status: 'draft' }, 'preview'],
-  ['densho', { ...game, primaryType: 'table-games' }, 'preview'],
-  ['densho', {}, 'preview'], ['densho', game, 'production'], ['densho', game, undefined],
-]) assert.equal(project(slug, data, environment), null, `${slug}/${data.status}/${environment}: isolated preview`);
-assert.equal(project('densho', game, 'preview', { ...record, gameSlug: 'razor-shark' }), null);
-assert.equal(project('densho', game, 'preview', { ...record, adoption: 'unknown' }), null);
-assert.throws(() => project('densho', game, 'preview', record, []), /missing source document/);
+assert.equal(record.adoption, 'densho-game-page-approved', 'This record is approved only for the Densho game page');
+for (const environment of ['preview', 'production']) {
+  assert.equal(project('densho', game, environment).source.url, 'https://www.hacksawgaming.com/games/densho');
+  for (const [slug, data] of [
+    ['razor-shark', game], ['jump-high', game], ['gonzos-quest', game],
+    ['densho', { ...game, status: 'draft' }], ['densho', { ...game, status: 'unknown' }],
+    ['densho', { ...game, primaryType: 'table-games' }], ['densho', {}],
+  ]) assert.equal(project(slug, data, environment), null, `${slug}/${data.status}/${environment}: isolated Densho adoption`);
+  assert.equal(project('densho', game, environment, { ...record, gameSlug: 'razor-shark' }), null);
+  for (const adoption of ['unknown', 'unapproved', 'disabled', '', null, undefined]) {
+    assert.equal(project('densho', game, environment, { ...record, adoption }), null, `${adoption}/${environment}: unapproved records stay hidden`);
+  }
+  const previewOnly = project('densho', game, environment, { ...record, adoption: 'preview-only' });
+  assert.equal(Boolean(previewOnly), environment === 'preview', 'Preview-only records never reach production');
+  assert.throws(() => project('densho', game, environment, record, []), /missing source document/);
+}
+for (const environment of [undefined, null, '', 'staging', 'unknown']) {
+  for (const adoption of [record.adoption, 'preview-only']) {
+    assert.equal(project('densho', game, environment, { ...record, adoption }), null, `${adoption}/${environment}: unknown environments fail closed`);
+  }
+}
 assert.deepEqual(evidence, original, 'Shared source and older evidence must not mutate');
 const site = fileURLToPath(new URL('../', import.meta.url));
 const component = await readFile(join(site, 'src/components/DenshoMultiplierStoryboard.astro'), 'utf8');
@@ -30,15 +41,16 @@ assert.ok(!/<(?:script|img|image|iframe|text)\b/.test(component), 'No scripts, c
 assert.ok(!/\sclient:|\son\w+\s*=|(?:^|[;{])\s*(?:animation|transition)\s*:/i.test(component), 'Understanding must not depend on interaction or motion');
 
 if (process.argv.includes('--built')) {
-  const environment = process.env.PUBLIC_SITE_ENV ?? 'preview';
+  const environment = process.env.PUBLIC_SITE_ENV;
+  assert.ok(['preview', 'production'].includes(environment), 'Built verification requires an explicit supported environment');
   const walk = async (directory) => (await Promise.all((await readdir(directory, { withFileTypes: true })).map(async (entry) => entry.isDirectory() ? walk(join(directory, entry.name)) : [join(directory, entry.name)]))).flat();
   const files = (await walk(join(site, 'dist'))).filter((file) => file.endsWith('.html'));
   let outputs = 0;
   for (const file of files) {
     const html = await readFile(file, 'utf8');
     const blocks = [...html.matchAll(/<section\b[^>]*\bdata-densho-storyboard\b[^>]*>([\s\S]*?)<\/section>/g)];
-    const expected = environment === 'preview' && file === join(site, 'dist/games/densho/index.html');
-    assert.equal(blocks.length, expected ? 1 : 0, `${file}: only Densho preview may output this rule`);
+    const expected = file === join(site, 'dist/games/densho/index.html');
+    assert.equal(blocks.length, expected ? 1 : 0, `${file}: only the approved Densho game page may output this rule`);
     assert.equal((html.match(/class="densho-storyboard"/g) ?? []).length, expected ? 1 : 0, `${file}: no empty block`);
     if (!expected) continue;
     outputs++;
@@ -67,7 +79,7 @@ if (process.argv.includes('--built')) {
     assert.ok(html.includes('evidence-densho-bonushunt-20261015') && html.includes('evidence-densho-symbol-guarantee-20261015'));
     assert.ok(html.includes('data-game-diagram-links') && html.includes('vimeo.com/860852013') && html.includes('官方 Demo'));
   }
-  assert.equal(outputs, environment === 'preview' ? 1 : 0);
+  assert.equal(outputs, 1, 'Both supported environments must contain one complete Densho storyboard');
   console.log(`PASS: ${environment} built isolation across ${files.length} HTML pages; storyboard outputs=${outputs}; relationships, source and original Densho content intact.`);
 }
 console.log('PASS: Densho rule provenance, ownership/status/environment boundaries and static accessible content.');
