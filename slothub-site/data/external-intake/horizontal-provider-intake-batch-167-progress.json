@@ -1,10 +1,10 @@
 {
   "batch": 167,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 8",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "BASTET",
       "slug": "bastet-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/bastet",
       "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/bastet",
       "officialFacts": "JDB official English/CN detail: RTP 96.5%, MEDIUM volatility, Maximum Win 17000X, 6×5 layout, year 2026; 8+ matching symbols, cascades, 2X-500X additive multiplier symbols, 4+ Scatter 15 Free Games, up to 30, Feature Buy and Extra Bet doubles trigger probability.",
@@ -33,5 +33,15 @@
       "demo": "Exact third-party Slots Launch page identifies Bastet and JDB; external platform-game-page only, not official Demo; art on partner uses conflicting 5000X."
     }
   ],
-  "nextCursor": "JDB catalog card 9 CYBER BOUNTY 4096"
+  "nextCursor": "JDB catalog card 9 CYBER BOUNTY 4096",
+  "publication": {
+    "commit": "b83de9912c4ff24b3306b7b299715d8996dc6dfc",
+    "githubRun": 40985908949,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "f6791711-1d98-4871-967d-ae6a59ecfa0f",
+    "cloudflareUrl": "https://f6791711.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPEG image and sitemap HTTP 200; official and official English and Chinese URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

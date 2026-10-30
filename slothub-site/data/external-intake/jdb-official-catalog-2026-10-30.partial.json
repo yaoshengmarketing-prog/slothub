@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 and 1-8 imported. Next individual candidate is card 9 CYBER BOUNTY 4096. Cards 9-10 remain.",
-  "nextStep": "After card 8 publication loop, continue card 9 Cyber Bounty 4096 from JDB official ledger; verify version distinct from Cyber Bounty WILD LOCK.",
-  "publishedCount": 43,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 and 1-9 imported. Next individual candidate is card 10 MAGIC ACE WILD LOCK. Card 10 remains.",
+  "nextStep": "After card 9 publication loop, continue card 10 Magic Ace WILD LOCK from JDB official ledger and verify distinction from Magic Ace base.",
+  "publishedCount": 44,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -788,6 +788,22 @@
     "imageAttribution": "Official JDB detail art retrieved as valid JPEG and visually inspected: Bastet cat goddess with Egyptian setting, same character as official card and partner thumbnail, without partner’s contradictory 5000X label.",
     "demo": "Exact third-party Slots Launch page identifies Bastet and JDB; external platform-game-page only, not official Demo; art on partner uses conflicting 5000X.",
     "dedup": "All Game Markdown and Provider name/alias fields; Bastet/戰神芭絲特 absent before intake. Earlier batch 46/59/72 exclusions were due inaccessible official art, resolved via verified first-party detail image.",
+    "decision": "published-live-verified"
+  },
+  "card9Evidence": {
+    "name": "CYBER BOUNTY 4096",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/cyber-bounty-4096",
+    "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/cyber-bounty-4096",
+    "officialNews": "https://www.jdbgaming.com/en/news/games/n-cyber-bounty-4096",
+    "officialFacts": "JDB official English/CN detail: RTP 96.36%, HIGH volatility, Maximum Win 10000X, 3600 Ways, year 2026; cascading wins, Golden Symbols on reels 3-4 become Wilds, multiplier wheel up to X1024 in base and X4096 with Extra Bet, Feature Buy. Multiplier wheel cap is not maximum total win.",
+    "sourceConflict": "Slots Launch says generic All Ways; precise 3600 Ways and numerical mechanics taken from JDB official. WILD LOCK is a distinct JDB sequel and not conflated.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming/cyber-bounty-4096",
+    "partnerImage": "https://assets.slotslaunch.com/111853/cyber-bounty-4096.jpg",
+    "partnerImageSha256": "29f7025c4358fde04f50c8d6a159873885547085b95010890a0eed58d68ca74a",
+    "partnerImageMime": "image/webp",
+    "partnerAttribution": "Exact Slots Launch page identifies Cyber Bounty 4096 by JDB; valid downloaded WebP (despite .jpg URL) visibly displays CYBER BOUNTY 4096 and 10000X, distinct from WILD LOCK.",
+    "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
+    "dedup": "All Game Markdown and Provider name/alias fields; Cyber Bounty 4096 absent before intake, distinct from published Cyber Bounty WILD LOCK (separate official cards, different mechanics and max wins).",
     "decision": "captured-awaiting-publication"
   }
 }

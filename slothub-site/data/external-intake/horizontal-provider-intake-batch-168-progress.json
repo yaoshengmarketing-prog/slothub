@@ -1,0 +1,36 @@
+{
+  "batch": 168,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 9",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; Cyber Bounty 4096 absent before intake, distinct from published Cyber Bounty WILD LOCK (separate official cards, different mechanics and max wins).",
+  "records": [
+    {
+      "order": 9,
+      "name": "CYBER BOUNTY 4096",
+      "slug": "cyber-bounty-4096-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/cyber-bounty-4096",
+      "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/cyber-bounty-4096",
+      "officialNews": "https://www.jdbgaming.com/en/news/games/n-cyber-bounty-4096",
+      "officialFacts": "JDB official English/CN detail: RTP 96.36%, HIGH volatility, Maximum Win 10000X, 3600 Ways, year 2026; cascading wins, Golden Symbols on reels 3-4 become Wilds, multiplier wheel up to X1024 in base and X4096 with Extra Bet, Feature Buy. Multiplier wheel cap is not maximum total win.",
+      "sourceConflict": "Slots Launch says generic All Ways; precise 3600 Ways and numerical mechanics taken from JDB official. WILD LOCK is a distinct JDB sequel and not conflated.",
+      "partnerPage": "https://slotslaunch.com/jdb-gaming/cyber-bounty-4096",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/cyber-bounty-4096",
+        "sourceUrl": "https://assets.slotslaunch.com/111853/cyber-bounty-4096.jpg",
+        "sha256": "29f7025c4358fde04f50c8d6a159873885547085b95010890a0eed58d68ca74a",
+        "actualMime": "image/webp",
+        "visualCheck": "Exact Slots Launch page identifies Cyber Bounty 4096 by JDB; valid downloaded WebP (despite .jpg URL) visibly displays CYBER BOUNTY 4096 and 10000X, distinct from WILD LOCK."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 10 MAGIC ACE WILD LOCK"
+}
