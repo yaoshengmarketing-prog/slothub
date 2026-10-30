@@ -1,0 +1,42 @@
+{
+  "batch": 185,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Lucky Tigers / 多虎多財 (226) absent before intake.",
+  "records": [
+    {
+      "name": "Lucky Tigers",
+      "slug": "lucky-tigers-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "226",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/news/detail/200",
+      "officialFacts": "CQ9 Slot catalog ID 226: RTP 96.14%, High volatility, maximum_win 4000. Exact official news describes firecrackers on reels 1/3/5 triggering Free Games and tiger multipliers.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/Ef3tXsvb.jpg",
+        "localPath": "public/assets/games/lucky-tigers-cq9.jpg",
+        "sha256": "528c43fd085d3353b372a714e4378bbe00830c1851d81c42659aa987e8bf65ef",
+        "visualCheck": "Official 226 maps to festive background; icon HZMTD7vZ.png visibly spells Lucky Tigers."
+      },
+      "demo": "US New York read-only browser: official news guest URL ID 226 HTTP 404; current /h5/226/ HTTP 200 with exact title and loading artwork, but no playable controls after 40+ seconds. Not-verified Demo; no 403, spin, bet or login."
+    }
+  ],
+  "nextCursor": "Lucky Tigers 226 live verified; old official-news guest URL HTTP 404, current catalog game URL HTTP 200, playable Demo not verified. Continue Acrobatics 223, official news/detail/198 and mapped image checked, same guest 404/current URL 200 distinction. Preserve two metric-conflict items.",
+  "publication": {
+    "commit": "4023a9a1b428114dec5cd16f4e1d28d2692f9806",
+    "githubRun": 41018206163,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "a3c493b7-66db-4e97-86f7-7cce429f738d",
+    "cloudflareUrl": "https://a3c493b7.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official news/catalog and RTP/max present; stale 404 guest Demo absent; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

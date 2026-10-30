@@ -1,0 +1,42 @@
+{
+  "batch": 186,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Acrobatics / 百戲 (223) absent before intake.",
+  "records": [
+    {
+      "name": "Acrobatics",
+      "slug": "acrobatics-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "223",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/news/detail/198",
+      "officialFacts": "CQ9 Slot catalog ID 223: RTP 96.16%, Low volatility, maximum_win 3000. Exact official news describes copied symbols on reels 2-4, second scoring chance and Free Games.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/pfYFfy4d.jpg",
+        "localPath": "public/assets/games/acrobatics-cq9.jpg",
+        "sha256": "de82549011f355cf0ea6ec5e2e6c6c2064e1f251f6e8a1c8b9eded72811feb6c",
+        "visualCheck": "Official 223 maps to theater stage background; icon md8hnuwC.png visibly spells Acrobatics."
+      },
+      "demo": "US New York read-only browser: official news guest URL ID 223 HTTP 404; current /h5/223/ HTTP 200 with exact title and loading artwork, but no playable controls after 40+ seconds. Not-verified Demo; no 403, spin, bet or login."
+    }
+  ],
+  "nextCursor": "Acrobatics 223 live verified, US egress guest 404/current loading 200. Continue King of Atlantis 211, official news/detail/184 and mapped image checked, guest Demo read-only browser pending. Then continue remaining CQ9 catalog.",
+  "publication": {
+    "commit": "2acfe3a4bc0bd46afb9197cc346f633ce31f7914",
+    "githubRun": 41018682695,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "486afd63-3e46-46ff-a58d-c5bdcbf600fa",
+    "cloudflareUrl": "https://486afd63.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official news/catalog and RTP/max present; stale 404 guest Demo absent; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "batch": 182,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Complete CQ9 official Slot catalog one verified game at a time",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Hero of the 3 Kingdoms - Cao Cao / 三國英雄－曹操 (GB15) absent before intake.",
+  "records": [
+    {
+      "name": "Hero of the 3 Kingdoms - Cao Cao",
+      "slug": "hero-of-the-3-kingdoms-cao-cao-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "GB15",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/news/detail/217",
+      "officialFacts": "CQ9 Slot catalog ID GB15: RTP 96.20%, High volatility, maximum_win 2000. Exact official news describes giant symbols on reels 2-4 and Big Prize icons on these reels in Free Games.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/QbnVuwjv.jpg",
+        "localPath": "public/assets/games/hero-of-the-3-kingdoms-cao-cao-cq9.jpg",
+        "sha256": "98736df5e1410ef5183e3a3540483843705c4aae548c855c3a4b5f0f397bda48",
+        "visualCheck": "Official GB15 maps to ancient battle backdrop; mapped icon si8PrkM2.png visibly spells Hero of the 3 Kingdoms Cao Cao."
+      },
+      "demo": "Official news guest URL HTTP 200 and exact document title. US New York read-only browser exact game page HTTP 200, correct title, loading canvas without playable controls after about 30 seconds. Demo not-verified; no 403/404, spin, bet or login."
+    }
+  ],
+  "nextCursor": "GB15 live verified. Continue Myeong-ryang (GB12): official news/detail/210 and mapped image checked; US New York exact game URL HTTP 200 but loading canvas without playable controls, so Demo not-verified. Then continue remaining CQ9 Slot catalog; retain Sung Wukong/Sugar Combo conflicts.",
+  "publication": {
+    "commit": "4aa96c388bf7c283212a32182381a7874be3be5d",
+    "githubRun": 41016257065,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "742efda7-6ca3-4bef-89b8-9bd2f26642d8",
+    "cloudflareUrl": "https://742efda7.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official news/catalog and RTP/max present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "batch": 183,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Myeong-ryang / 鳴梁 (GB12) absent before intake.",
+  "records": [
+    {
+      "name": "Myeong-ryang",
+      "slug": "myeong-ryang-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "GB12",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/news/detail/210",
+      "officialFacts": "CQ9 Slot catalog ID GB12: RTP 96.08%, High volatility, maximum_win 2000. Exact official news describes soldiers becoming sticky Wilds in Free Games.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/p73wDkGP.jpg",
+        "localPath": "public/assets/games/myeong-ryang-cq9.jpg",
+        "sha256": "62cdc48c34500b70229fcde0c345d2f24a2024649971cb6206aa95c37eb100c5",
+        "visualCheck": "Official GB12 maps to purple battle backdrop; mapped icon j9RylNhV.png visibly spells Myeong-ryang."
+      },
+      "demo": "Official news guest URL HTTP 200 and exact document title. US New York read-only browser exact game page HTTP 200, title Myeong Ryang, loading canvas without playable controls after about 15 seconds. Demo not-verified; no 403/404, spin, bet or login."
+    }
+  ],
+  "nextCursor": "GB12 live verified. Continue Football Fever M (GB13), exact official news/detail/211 and mapped image checked; guest Demo being independently tested. Then continue remaining CQ9 catalog, preserving Sung Wukong/Sugar Combo conflicts.",
+  "publication": {
+    "commit": "2e532c5aab379c960335843de036035fcac944c1",
+    "githubRun": 41016620451,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "805bf6ef-99c6-430e-a21c-afe791f30665",
+    "cloudflareUrl": "https://805bf6ef.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official news/catalog and RTP/max present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

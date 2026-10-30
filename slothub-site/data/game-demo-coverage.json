@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 741,
+  "gameCount": 750,
   "providerCount": 371,
-  "sourcePageCount": 1358,
+  "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 630,
-    "not-verified": 107
+    "available": 633,
+    "not-verified": 113
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,394 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "monster-hunter-cq9",
+      "name": "Monster Hunter",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official news/detail/187 embeds exact GB2 guest URL. Same-browser US New York egress: guest URL HTTP 200, final URL unchanged, exact Monster Hunter title, rendered reel board, balance, bet and line UI without login. No spin, bet or login action. General catalog /h5/GB2/ remained loading-logo shell after approximately 22 seconds.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card GB2"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/ko/news/detail/187",
+          "httpStatus": 200,
+          "notes": "Exact Monster Hunter news; links GB2 guest URL"
+        },
+        {
+          "requestedUrl": "https://web-gb.cqgame.games/h5/GB2/",
+          "httpStatus": 200,
+          "notes": "US New York HTTP 200, exact title but loading-logo shell after approximately 22 seconds"
+        },
+        {
+          "requestedUrl": "https://web-gb.cqgame.games/h5/GB2/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York HTTP 200, exact title, reels and balance/bet/line UI rendered; no login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/CThiZgNI.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped forest background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/Eg2S3rBT.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Monster Hunter"
+        }
+      ],
+      "url": "https://web-gb.cqgame.games/h5/GB2/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official news/detail/187 embeds exact GB2 guest URL. Same-browser US New York egress: guest URL HTTP 200, final URL unchanged, exact Monster Hunter title, rendered reel board, balance, bet and line UI without login. No spin, bet or login action. General catalog /h5/GB2/ remained loading-logo shell after approximately 22 seconds.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "king-of-atlantis-cq9",
+      "name": "King of Atlantis",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "US New York same-browser read-only verification: official news guest ID 211 returns HTTP 404; current /h5/211/ HTTP 200 with generic Welcome title, black CQ9 loading canvas and Atlantis-specific assets, but no reels or usable controls after 30+ seconds. No 403 or login; Demo not-verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card 211"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/pt-BR/news/detail/184",
+          "httpStatus": 200,
+          "notes": "Exact King of Atlantis news and historical guest link"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/211/?language=en&token=guest",
+          "notes": "Historical official-news guest URL HTTP 404; not a 403",
+          "httpStatus": 404
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/211/",
+          "notes": "US browser HTTP 200, generic Welcome title, Atlantis asset loading canvas without playable controls after 30+ seconds",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/cdYQlKaE.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped undersea background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/AK9ebmsy.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells King of Atlantis"
+        }
+      ],
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "acrobatics-cq9",
+      "name": "Acrobatics",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "US New York same-browser read-only verification: official news guest URL for ID 223 returns HTTP 404; current catalog /h5/223/ returns HTTP 200, exact game title and canvas artwork, but remains a loading shell without reels or usable controls after about 45 seconds. No 403 or login; Demo not-verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card 223"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/198",
+          "httpStatus": 200,
+          "notes": "Exact Acrobatics news; links historical guest URL"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/223/?language=en&token=guest",
+          "httpStatus": 404,
+          "notes": "Historical official-news guest URL returns HTTP 404; not a 403"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/223/",
+          "httpStatus": 200,
+          "notes": "US New York browser HTTP 200, exact game title, loading canvas after about 45 seconds without playable reels/controls"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/pfYFfy4d.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped stage background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/md8hnuwC.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Acrobatics"
+        }
+      ],
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "lucky-tigers-cq9",
+      "name": "Lucky Tigers",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "US New York same-browser read-only verification: official news guest URL for ID 226 returns HTTP 404; current catalog /h5/226/ returns HTTP 200, exact game title and canvas artwork, but remains a loading shell without reels or usable controls after about 40 seconds. No 403 or login; Demo not-verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card 226"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/200",
+          "httpStatus": 200,
+          "notes": "Exact Lucky Tigers news; links historical guest URL"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/226/?language=en&token=guest",
+          "httpStatus": 404,
+          "notes": "Historical official-news guest URL returns HTTP 404; not a 403"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/226/",
+          "httpStatus": 200,
+          "notes": "US New York browser HTTP 200, exact game title, loading canvas after about 40 seconds without playable reels/controls"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/Ef3tXsvb.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/HZMTD7vZ.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Lucky Tigers"
+        }
+      ],
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "football-fever-m-cq9",
+      "name": "Football Fever M",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official news/detail/211 embeds exact GB13 guest URL. Same-browser US egress read-only inspection: guest URL HTTP 200, final URL unchanged, exact Football Fever M title and visible reels, spin and stake controls after about 8 seconds, without login, 403, 404 or resource error. No spin, bet or login action. Catalog URL /h5/GB13/ remained a loading canvas after about 20 seconds.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card GB13"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/211",
+          "httpStatus": 200,
+          "notes": "Exact Football Fever M news; links GB13 guest URL"
+        },
+        {
+          "requestedUrl": "https://web-gb.cqgame.games/h5/GB13/",
+          "httpStatus": 200,
+          "notes": "US egress HTTP 200, exact title but only loading canvas after about 20 seconds"
+        },
+        {
+          "requestedUrl": "https://web-gb.cqgame.games/h5/GB13/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US egress HTTP 200, exact title, reels and spin/stake controls visible; no login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/m7mKKyzy.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped football stadium background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/zp9NNvGL.png",
+          "httpStatus": 200,
+          "notes": "Official mapped Football Fever title icon, visually checked"
+        }
+      ],
+      "url": "https://web-gb.cqgame.games/h5/GB13/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official news/detail/211 embeds exact GB13 guest URL. Same-browser US egress read-only inspection: guest URL HTTP 200, final URL unchanged, exact Football Fever M title and visible reels, spin and stake controls after about 8 seconds, without login, 403, 404 or resource error. No spin, bet or login action. Catalog URL /h5/GB13/ remained a loading canvas after about 20 seconds.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "myeong-ryang-cq9",
+      "name": "Myeong-ryang",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "Official CQ9 catalog and exact news identify GB12. Same-browser US New York egress: exact game URL HTTP 200, title Myeong Ryang and loading canvas but no playable controls after approximately 15 seconds. Official guest URL returned HTTP 200 in document request; ready Demo remains unverified. No 403 or 404 observed.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card GB12"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/210",
+          "httpStatus": 200,
+          "notes": "Exact Myeong-ryang news; links GB12 guest URL"
+        },
+        {
+          "requestedUrl": "https://web-gb.cqgame.games/h5/GB12/",
+          "httpStatus": 200,
+          "notes": "US-egress HTTP 200; title Myeong Ryang, loading canvas without ready controls after about 15 seconds"
+        },
+        {
+          "requestedUrl": "https://web-gb.cqgame.games/h5/GB12/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "Official news guest URL HTTP 200, exact title via document fetch; playable controls not verified"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/p73wDkGP.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/j9RylNhV.png",
+          "httpStatus": 200,
+          "notes": "Official title icon, visibly says Myeong-ryang"
+        }
+      ]
+    },
+    {
+      "slug": "hero-of-the-3-kingdoms-cao-cao-cq9",
+      "name": "Hero of the 3 Kingdoms - Cao Cao",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "Official CQ9 catalog and exact news identify GB15. Same-browser US New York egress: exact game URL HTTP 200 with correct title and loading canvas, but no playable controls after approximately 30 seconds. Official guest URL also returned HTTP 200 in document request; ready Demo remains unverified. No 403 or 404 observed.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card GB15"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/217",
+          "httpStatus": 200,
+          "notes": "Exact Cao Cao news; links GB15 guest URL"
+        },
+        {
+          "requestedUrl": "https://web-gb.cqgame.games/h5/GB15/",
+          "httpStatus": 200,
+          "notes": "US-egress HTTP 200; correct title, loading canvas, no ready controls after about 30 seconds"
+        },
+        {
+          "requestedUrl": "https://web-gb.cqgame.games/h5/GB15/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "Official news guest URL HTTP 200 and exact title via document fetch; playable controls not verified"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/QbnVuwjv.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/si8PrkM2.png",
+          "httpStatus": 200,
+          "notes": "Official title icon, visibly says Hero of the 3 Kingdoms Cao Cao"
+        }
+      ]
+    },
+    {
+      "slug": "baseball-fever-cq9",
+      "name": "Baseball Fever",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "US-egress read-only browser: official CQ9 news guest URL for Baseball Fever ID 230 returns HTTP 404; catalog /h5/230/ returns HTTP 200 and shows exact title/artwork/loading reels but no usable controls. No 403 or geo block observed; ready Demo state not verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card ID 230"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/212",
+          "httpStatus": 200,
+          "notes": "Official exact-title news and guest game link"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/230/",
+          "httpStatus": 200,
+          "notes": "US-egress browser HTTP 200, exact title/artwork/loading reels visible; usable controls not reached"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/230/?language=en&token=guest",
+          "httpStatus": 404,
+          "notes": "US-egress browser HTTP 404, historical guest link embedded in official news; not a 403/geo block"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/TMo6fwJE.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/1zBo9gh3.png",
+          "httpStatus": 200,
+          "notes": "Official title icon, visually checked"
+        }
+      ]
+    },
+    {
+      "slug": "treasure-pirate-cq9",
+      "name": "Treasure Pirate",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official news/detail/221 embeds the exact guest-demo URL for ID 242. Official catalog, client document title, title icon and rendered reels identify Treasure Pirate; read-only browser in US egress reached the game screen without login or 403.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card, ID 242"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/221",
+          "httpStatus": 200,
+          "notes": "Official pirate news links exact ID 242 guest client"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/242/",
+          "httpStatus": 200,
+          "notes": "Official exact-title client; canvas/assets load, ready Demo state not confirmed"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/3zPmHs6X.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/7SAqzloT.png",
+          "httpStatus": 200,
+          "notes": "Official title icon, visually checked"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/242/?language=en&token=guest",
+          "finalUrl": "https://h5c.cqgame.games/h5/242/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US egress verified with ipinfo.io/json; reels and controls visible; no spin, bet or login"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/242/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official news/detail/221 embeds the exact guest-demo URL for ID 242. Official catalog, client document title, title icon and rendered reels identify Treasure Pirate; read-only browser in US egress reached the game screen without login or 403.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "the-chicken-house-cq9",
       "name": "The Chicken House",
