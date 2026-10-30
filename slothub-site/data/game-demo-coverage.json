@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 795,
+  "gameCount": 796,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 677,
+    "available": 678,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fire-chibi-cq9",
+      "name": "Fire Chibi",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fire Chibi ID 33, RTP 96.13%, High volatility, overall 4000x maximum and locking WILD ship symbols; description 1500x is a local perk. US New York browser read-only guest Demo: HTTP 200, matching Fire Chibi branding, 60 LINES, 5x4 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 33, metrics and WILD ship description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/33/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Fire Chibi branding, 60 LINES, 5x4 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/S6OqOkZB.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped burning ships background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/uxeVBYcn.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Fire Chibi"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/33/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fire Chibi ID 33, RTP 96.13%, High volatility, overall 4000x maximum and locking WILD ship symbols; description 1500x is a local perk. US New York browser read-only guest Demo: HTTP 200, matching Fire Chibi branding, 60 LINES, 5x4 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "god-of-war-cq9",
       "name": "God of War",

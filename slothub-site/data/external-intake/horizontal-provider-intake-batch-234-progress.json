@@ -1,0 +1,31 @@
+{
+  "batch": 234,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Fire Chibi / 火烧连环船 (33) absent.",
+  "records": [
+    {
+      "name": "Fire Chibi",
+      "slug": "fire-chibi-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "33",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 33: RTP 96.13%, High volatility, overall maximum_win 4000; WILD ship icons lock on reels; description 1500x is a local perk. US guest canvas labels 60 LINES.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/S6OqOkZB.jpg",
+        "localPath": "public/assets/games/fire-chibi-cq9.jpg",
+        "sha256": "badbfb466ad7cbcd1f33006364c73c180cddefd678930b930fd36aaa5faba978",
+        "visualCheck": "Official ID 33 maps to burning ships background; matching title icon spells Fire Chibi."
+      },
+      "demo": "US New York browser guest-query /h5/33/?language=en&token=guest HTTP 200, exact Fire Chibi branding, 60 LINES, 5x4 reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Fire Chibi live closure, continue All Wilds ID38 and Apsaras ID39 with official image/icon and US guest Demo checks. Held source conflicts remain."
+}

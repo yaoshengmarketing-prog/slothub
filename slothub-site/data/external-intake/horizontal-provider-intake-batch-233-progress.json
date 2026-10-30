@@ -1,10 +1,10 @@
 {
   "batch": 233,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "god-of-war-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "31",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 31: RTP 96.10%, Medium volatility, overall maximum_win 3000; Free Games let player choose one of five symbols to appear on reels. US guest canvas labels 243 WAYS.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/31/?language=en&token=guest HTTP 200, exact God of War branding, 243 WAYS, 5x3 reels and controls without login after intro splash. No gameplay action."
     }
   ],
-  "nextCursor": "After God of War live closure, continue Fire Chibi ID33 (US guest Demo already verified; official image/icon downloaded and visually checked), then All Wilds ID38. Held max-win conflict queue persists."
+  "nextCursor": "God of War 31 live verified; continue Fire Chibi 33.",
+  "publication": {
+    "commit": "c045fbb2454c17ac96306397ebb8beb2b78ee77e",
+    "githubRun": 41059397500,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "a29b6ca6-5510-45e4-a33e-c40fcec975d1",
+    "cloudflareUrl": "https://a29b6ca6.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
