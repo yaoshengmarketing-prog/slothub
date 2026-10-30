@@ -1,0 +1,31 @@
+{
+  "batch": 256,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Fortune Totem / 有如神柱 (148) absent.",
+  "records": [
+    {
+      "name": "Fortune Totem",
+      "slug": "fortune-totem-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "148",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 148: RTP 96.10%, High volatility, overall maximum_win 8000; five SC icons award ten free games and up to 50x bonus, full-reel WILD locked until free-game end. US guest canvas labels 243 WAY.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/M2YMGaXy.jpg",
+        "localPath": "public/assets/games/fortune-totem-cq9.jpg",
+        "sha256": "a18067cfdf6b93efedbd9c7c092c6a89bc64a5e513f9c801499c69e544bfaba4",
+        "visualCheck": "Official ID 148 maps to gold sunrise background; matching totem title icon spells Fortune Totem."
+      },
+      "demo": "US browser guest-query /h5/148/?language=en&token=guest HTTP 200 with exact FORTUNE TOTEM branding, 5x3 reels, 243 WAY and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Fortune Totem live closure, continue Shou-Xin ID150, The Beast War ID57 and Gu Gu Gu 2 ID58 (US guest Demos verified exact title/lines/5x3; official images/icons downloaded and visually checked). Held source conflicts remain."
+}

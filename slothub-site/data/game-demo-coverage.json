@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 817,
+  "gameCount": 818,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 699,
+    "available": 700,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fortune-totem-cq9",
+      "name": "Fortune Totem",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fortune Totem ID 148, RTP 96.10%, High volatility, overall 8000x maximum, five SC icons awarding ten free games and up to 50x bonus and full-reel WILD locked through free games. US browser read-only guest Demo: HTTP 200 matching FORTUNE TOTEM branding, 5x3 reels, 243 WAY and controls with demo credit without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 148, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/148/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered FORTUNE TOTEM branding, 5x3 reels, 243 WAY and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/M2YMGaXy.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped gold sunrise background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/wTXE7f95.png",
+          "httpStatus": 200,
+          "notes": "Official totem title icon spells Fortune Totem"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/148/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fortune Totem ID 148, RTP 96.10%, High volatility, overall 8000x maximum, five SC icons awarding ten free games and up to 50x bonus and full-reel WILD locked through free games. US browser read-only guest Demo: HTTP 200 matching FORTUNE TOTEM branding, 5x3 reels, 243 WAY and controls with demo credit without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "funny-alpaca-cq9",
       "name": "Funny Alpaca",
