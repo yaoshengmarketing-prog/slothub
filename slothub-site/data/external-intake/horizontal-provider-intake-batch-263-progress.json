@@ -1,10 +1,10 @@
 {
   "batch": 263,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "fa-cai-shen-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "69",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 69: RTP 96.07%, High volatility, overall maximum_win 3000; free-game retrigger and random WILD multiplier up to 27x. US guest canvas labels 243 WAYS.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US browser guest-query /h5/69/?language=en&token=guest HTTP 200 with Welcome page title but exact FA CAI SHEN canvas branding, 5x3 reels, 243 WAYS and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Fa Cai Shen live closure, continue Wanbao Dino ID70 and Happy Rich Year ID72 (US guest Demos verified; official images/icons downloaded and visually checked), then Treasure Bowl ID74. Held source conflicts remain."
+  "nextCursor": "Fa Cai Shen 69 live verified; continue Wanbao Dino 70.",
+  "publication": {
+    "commit": "dc5931f404d2bc9bd26b38d36df239f30afcceea",
+    "githubRun": 41076775899,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "54342487-4df1-44cc-ab34-7a90309aea0f",
+    "cloudflareUrl": "https://54342487.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

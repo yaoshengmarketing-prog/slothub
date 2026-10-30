@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 825,
+  "gameCount": 826,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 707,
+    "available": 708,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wanbao-dino-cq9",
+      "name": "Wanbao Dino",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Wanbao Dino ID 70, RTP 96.07%, High volatility, overall 3000x maximum, volcano free games, up to 300x local rewards, WILD conversion and doubled score. US browser read-only guest Demo: exact WANBAO DINO canvas, 5x3 reels, 25 LINES and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 70, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/70/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered exact WANBAO DINO canvas, 5x3 reels, 25 LINES and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/ueiElkvB.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped dinosaur and volcano background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/iSYzExKo.png",
+          "httpStatus": 200,
+          "notes": "Official Wanbao Dino title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/70/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Wanbao Dino ID 70, RTP 96.07%, High volatility, overall 3000x maximum, volcano free games, up to 300x local rewards, WILD conversion and doubled score. US browser read-only guest Demo: exact WANBAO DINO canvas, 5x3 reels, 25 LINES and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "fa-cai-shen-cq9",
       "name": "Fa Cai Shen",

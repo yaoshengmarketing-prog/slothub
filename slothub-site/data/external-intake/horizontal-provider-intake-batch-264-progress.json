@@ -1,0 +1,31 @@
+{
+  "batch": 264,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Wanbao Dino / 万饱龙 (70) absent.",
+  "records": [
+    {
+      "name": "Wanbao Dino",
+      "slug": "wanbao-dino-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "70",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 70: RTP 96.07%, High volatility, overall maximum_win 3000; volcano free games, up to 300x local reward, WILD conversion and doubled score. US guest canvas labels 25 LINES.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/ueiElkvB.jpg",
+        "localPath": "public/assets/games/wanbao-dino-cq9.jpg",
+        "sha256": "a9f9d8dd7722004793408701428dc98e9a09510e81c1fc01a651ccc812955805",
+        "visualCheck": "Official ID 70 maps to dinosaur volcano background; matching title icon spells Wanbao Dino."
+      },
+      "demo": "US browser guest-query /h5/70/?language=en&token=guest HTTP 200 with exact WANBAO DINO canvas, 5x3 reels, 25 LINES and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Wanbao Dino live closure, continue Happy Rich Year ID72 (US exact guest Demo verified; official image/icon downloaded and visually checked), then Treasure Bowl ID74. Held source conflicts remain."
+}
