@@ -1,10 +1,10 @@
 {
   "batch": 211,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "muaythai-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "201",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 201: RTP 96.10%, Medium volatility, overall maximum_win 3000. Description says player chooses Free Games and big-prize icons; after entering chosen game big-prize icons become uniform. US guest canvas shows 243 Ways.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser: guest-query /h5/201/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; MUAY THAI/243 Ways branding, reels and controls after about 40 seconds without login. No spin, bet or login action."
     }
   ],
-  "nextCursor": "After MuayThai live closure, continue DiscoNight 205 (US guest Demo verified). RaveHigh 203 official catalog maximum 3000x conflicts with description 10000x; Kronos 154 geometry disagreement remains in review queue."
+  "nextCursor": "MuayThai 201 live verified with official Free Game/icon choice and US guest 243 Ways canvas. Continue DiscoNight 205.",
+  "publication": {
+    "commit": "eaba923d50367470dee099a64b351c25a06c2088",
+    "githubRun": 41048190260,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "8cdfea80-4169-4796-9973-115aaa12cba2",
+    "cloudflareUrl": "https://8cdfea80.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

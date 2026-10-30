@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 773,
+  "gameCount": 774,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 655,
+    "available": 656,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "disconight-cq9",
+      "name": "DiscoNight",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies DiscoNight ID 205, exact domain, RTP 96.18%, High volatility, overall 5000x maximum and Golden Diamond Free Game multiplier locally up to 150x. US New York browser read-only check: current guest-query /h5/205/?language=en&token=guest HTTP 200, final URL unchanged, title Disco Night, DISCO NIGHT/243WAYS branding, five reels and visible BUY FEATURE/other controls after about 40 seconds without login. No spin, bet, feature buy or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 205, metrics and Golden Diamond Free Game multiplier"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/205/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser title Disco Night; DISCO NIGHT/243WAYS reels and BUY FEATURE control without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/hHHxPmdg.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped disco stage background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/jR7hDhP5.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells DISCO NIGHT"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/205/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies DiscoNight ID 205, exact domain, RTP 96.18%, High volatility, overall 5000x maximum and Golden Diamond Free Game multiplier locally up to 150x. US New York browser read-only check: current guest-query /h5/205/?language=en&token=guest HTTP 200, final URL unchanged, title Disco Night, DISCO NIGHT/243WAYS branding, five reels and visible BUY FEATURE/other controls after about 40 seconds without login. No spin, bet, feature buy or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "muaythai-cq9",
       "name": "MuayThai",

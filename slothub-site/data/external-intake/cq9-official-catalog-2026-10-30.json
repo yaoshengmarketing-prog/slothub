@@ -4,8 +4,8 @@
   "checkedAt": "2026-10-30",
   "catalogCount": 141,
   "slotCount": 122,
-  "capturedCountThisRun": 42,
-  "publishedCountThisRun": 41,
+  "capturedCountThisRun": 43,
+  "publishedCountThisRun": 42,
   "reviewQueue": [
     {
       "name": "Sung Wukong",
@@ -21,6 +21,11 @@
       "name": "Kronos",
       "gameId": "154",
       "reason": "Official catalog description calls it a 4x3 reel; read-only US guest canvas was reported as five columns. Omit definitive reel geometry pending source reconciliation. Overall catalog maximum 3000x and promotional 1000x remain separately scoped."
+    },
+    {
+      "name": "RaveHigh",
+      "gameId": "203",
+      "reason": "Official catalog maximum_win is 3000x but the same catalog description claims overall maximum prize 10000x. Hold until authoritative source reconciliation; do not publish either as certain."
     }
   ],
   "existingAtStart": [
@@ -30,7 +35,6 @@
   ],
   "intakeState": "in-progress",
   "nextCandidateOrder": [
-    "MuayThai",
     "DiscoNight",
     "Kronos"
   ],
