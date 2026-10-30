@@ -1,10 +1,10 @@
 {
   "batch": 200,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "hercules-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "161",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 161: RTP 95.94%, High volatility, overall maximum_win 3000. Official description says any win triggers symbol elimination and Golden Fist icons award 250x total bet; local award is distinct from overall catalog maximum.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser: current guest-query /h5/161/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; exact Hercules branding, reels and controls without login. No spin, bet or login action."
     }
   ],
-  "nextCursor": "After Hercules live closure, reconcile Kronos 154 official description 4x3 reel wording against US browser visual report of five columns, then continue next uncollected official CQ9 Slot. Do not infer reel geometry."
+  "nextCursor": "Hercules 161 live verified with catalog overall 3000x distinct from Golden Fist 250x. Continue Pyramid Raider 112; US guest Demo verified.",
+  "publication": {
+    "commit": "65e27adc8fdebc960771ea228a209a4d6cd95487",
+    "githubRun": 41042260679,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "781bfffe-0166-4dc6-a5bf-ed27964a101e",
+    "cloudflareUrl": "https://781bfffe.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

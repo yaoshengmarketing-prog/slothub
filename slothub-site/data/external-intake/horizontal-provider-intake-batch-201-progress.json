@@ -1,0 +1,31 @@
+{
+  "batch": 201,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Pyramid Raider / 盜法老墓 (112) absent before intake.",
+  "records": [
+    {
+      "name": "Pyramid Raider",
+      "slug": "pyramid-raider-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "112",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 112: RTP 96.06%, Medium volatility, overall maximum_win 3000. Official description says 7776 Ways and variable reel dimensions from 3x5 to 6x5.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/ZzbGXF4R.jpg",
+        "localPath": "public/assets/games/pyramid-raider-cq9.jpg",
+        "sha256": "ee5311b55a4869ac7dd79f15f6bbfe82f8f220156b3cb00aab7c1d6a6d118b8c",
+        "visualCheck": "Official 112 maps to Egyptian ruin background; official icon qkTykFxR.png says Spanish Asaltante de Pirámide, consistent with game theme. US guest canvas visibly says Pyramid Raider."
+      },
+      "demo": "US New York browser: current guest-query /h5/112/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; exact Pyramid Raider branding, Egyptian reels and controls without login. No spin, bet or login action."
+    }
+  ],
+  "nextCursor": "After Pyramid Raider live closure, continue Fly Out 111 or Flying Cai Shen 113; both US guest Demos independently verified. Kronos 154 reel geometry wording remains in review queue."
+}

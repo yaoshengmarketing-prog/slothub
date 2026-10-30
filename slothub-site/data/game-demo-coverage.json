@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 762,
+  "gameCount": 763,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 644,
+    "available": 645,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "pyramid-raider-cq9",
+      "name": "Pyramid Raider",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Pyramid Raider ID 112, exact domain, RTP 96.06%, Medium volatility, overall 3000x maximum, 7776 Ways and variable 3x5 to 6x5 reels. Official mapped title icon is Spanish localized Asaltante de Pirámide. US New York browser read-only check: current guest-query /h5/112/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, Pyramid Raider branding, Egyptian reels and controls without login. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 112, metrics and variable reels"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/112/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; matching Pyramid Raider reels and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/ZzbGXF4R.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped Egyptian temple background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/qkTykFxR.png",
+          "httpStatus": 200,
+          "notes": "Official mapped Spanish localized title icon Asaltante de Pirámide"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/112/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Pyramid Raider ID 112, exact domain, RTP 96.06%, Medium volatility, overall 3000x maximum, 7776 Ways and variable 3x5 to 6x5 reels. Official mapped title icon is Spanish localized Asaltante de Pirámide. US New York browser read-only check: current guest-query /h5/112/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, Pyramid Raider branding, Egyptian reels and controls without login. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "hercules-cq9",
       "name": "Hercules",
