@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 821,
+  "gameCount": 822,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 703,
+    "available": 704,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "zeus-cq9",
+      "name": "Zeus",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Zeus ID 64, RTP 96.18%, Medium volatility, overall 3000x maximum, 243 ways, stacked WILDs in base game and one to nine random WILDs with retrigger in free games. US browser read-only guest Demo: browser page title Welcome but exact ZEUS visible in game canvas, 5x3 reels, 243WAYS and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 64, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/64/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser page title Welcome, but canvas rendered ZEUS branding, 5x3 reels, 243WAYS and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/GkFAfMmm.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped golden temple background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/GnXe0qaD.png",
+          "httpStatus": 200,
+          "notes": "Official Zeus title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/64/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Zeus ID 64, RTP 96.18%, Medium volatility, overall 3000x maximum, 243 ways, stacked WILDs in base game and one to nine random WILDs with retrigger in free games. US browser read-only guest Demo: browser page title Welcome but exact ZEUS visible in game canvas, 5x3 reels, 243WAYS and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "gu-gu-gu-2-cq9",
       "name": "Gu Gu Gu 2",

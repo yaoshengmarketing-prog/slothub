@@ -1,10 +1,10 @@
 {
   "batch": 259,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "gu-gu-gu-2-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "58",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 58: RTP 95.97%, High volatility, overall maximum_win 8000; WILD extra 5x payout, third-reel re-spin facilitates free games. US guest canvas labels 15 Lines.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US browser guest-query /h5/58/?language=en&token=guest HTTP 200 with Welcome page title but exact Gu Gu Gu 2 canvas branding, 5x3 reels, 15 Lines and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Gu Gu Gu 2 live closure, continue Zeus ID64, Fire 777 ID66 and Wukong & Peaches ID68 (US exact guest Demos verified); fetch/visual-check official assets next. Held Kronos ID154 geometry conflict remains."
+  "nextCursor": "Gu Gu Gu 2 58 live verified; continue Zeus 64.",
+  "publication": {
+    "commit": "b0539d964106d64a16f2d86efdeca95403ddc63a",
+    "githubRun": 41074249726,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "bbbb28c9-c76e-4bfa-aa3e-21c4c1abfd26",
+    "cloudflareUrl": "https://bbbb28c9.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
