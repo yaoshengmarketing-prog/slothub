@@ -1,10 +1,10 @@
 {
   "batch": 231,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "888-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "20",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 20: RTP 95.91%, Medium volatility, overall maximum_win 800; feature bonus chooses among adjacent dollar symbols on reels 2 to 4. US guest canvas labels 10 LINES.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/20/?language=en&token=guest HTTP 200, 888 branding, 10 LINES, 5x3 reels and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After 888 live closure, continue 777 ID21 and WaterWorld ID23 after official facts, visuals and exact guest Demo check. Held reviewQueue conflicts remain."
+  "nextCursor": "888 20 live verified; continue WaterWorld 29.",
+  "publication": {
+    "commit": "2520fa82dc6f221243097a8cbf083bc42842791d",
+    "githubRun": 41058376249,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "58dc967f-fb07-4ded-9090-d06577207cda",
+    "cloudflareUrl": "https://58dc967f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

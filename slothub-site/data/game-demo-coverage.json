@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 793,
+  "gameCount": 794,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 675,
+    "available": 676,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "waterworld-cq9",
+      "name": "WaterWorld",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies WaterWorld ID 29, RTP 96.18%, Low volatility, overall 3000x maximum and elimination of scoring combinations. US New York browser read-only guest Demo: HTTP 200, matching WaterWorld branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 29, metrics and elimination description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/29/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact WaterWorld branding, 243 WAYS, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/h92ReAhu.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped blue underwater background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/GfVEmotT.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells WaterWorld"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/29/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies WaterWorld ID 29, RTP 96.18%, Low volatility, overall 3000x maximum and elimination of scoring combinations. US New York browser read-only guest Demo: HTTP 200, matching WaterWorld branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "888-cq9",
       "name": "888",
