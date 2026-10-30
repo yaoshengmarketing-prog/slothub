@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-39 imported. Next individual candidate is card 40 GLAMOROUS GIRL. Cards 1-10 and 40-46 remain.",
-  "nextStep": "After card 39 publication loop, continue card 40 GLAMOROUS GIRL using official details ledger, exact image and Demo checks.",
-  "publishedCount": 28,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-40 imported. Next individual candidate is card 41 ELEMENTAL LINK FIRE. Cards 1-10 and 41-46 remain.",
+  "nextStep": "After card 40 publication loop, continue card 41 ELEMENTAL LINK FIRE using official details ledger, exact image and Demo checks.",
+  "publishedCount": 29,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -561,6 +561,21 @@
     "partnerAttribution": "Exact Slots Launch page identifies base Moneybags Man by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays MONEYBAGS MAN title without sequel marker.",
     "demo": "Exact third-party Slots Launch page identifies base game and JDB; external platform-game-page only, not official Demo.",
     "dedup": "All Game Markdown and Provider name/alias fields; base Moneybags Man/富豪哥 absent before intake; distinct from already published Moneybags Man 2/富豪哥2.",
+    "decision": "published-live-verified"
+  },
+  "card40Evidence": {
+    "name": "GLAMOROUS GIRL",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/glamorous-girl",
+    "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/glamorous-girl",
+    "officialFacts": "Official English/CN detail: Slot, RTP 95.8%, SUPER HIGH volatility, Maximum Win 3600X, 25 Lines, release year 2021; blue diamond Wild pays 5X and Beauty three lines trigger Free Games with multipliers.",
+    "sourceConflict": "Slots Launch reports Medium volatility and 2022 release versus official SUPER HIGH and 2021; partner-only Fashion Frenzy and Scatter claims excluded. Official data takes precedence.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming/glamorous-girl",
+    "partnerImage": "https://assets.slotslaunch.com/29505/glamorous-girl.jpg",
+    "partnerImageSha256": "b4c6d931570c8e710dccf971ff968677cce57d1592571b5948d8dee6939ab830",
+    "partnerImageMime": "image/webp",
+    "partnerAttribution": "Exact Slots Launch page identifies Glamorous Girl by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays GLAMOROUS GIRL title.",
+    "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
+    "dedup": "All Game Markdown and Provider name/alias fields; Glamorous Girl/白富美 absent before intake.",
     "decision": "captured-awaiting-publication"
   }
 }

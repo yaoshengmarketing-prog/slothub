@@ -1,0 +1,33 @@
+{
+  "batch": 153,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 40",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; Glamorous Girl/白富美 absent before intake.",
+  "records": [
+    {
+      "order": 40,
+      "name": "Glamorous Girl",
+      "slug": "glamorous-girl-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/glamorous-girl",
+      "officialFacts": "Official English/CN detail: Slot, RTP 95.8%, SUPER HIGH volatility, Maximum Win 3600X, 25 Lines, release year 2021; blue diamond Wild pays 5X and Beauty three lines trigger Free Games with multipliers.",
+      "sourceConflict": "Slots Launch reports Medium volatility and 2022 release versus official SUPER HIGH and 2021; partner-only Fashion Frenzy and Scatter claims excluded. Official data takes precedence.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/glamorous-girl",
+        "sourceUrl": "https://assets.slotslaunch.com/29505/glamorous-girl.jpg",
+        "sha256": "b4c6d931570c8e710dccf971ff968677cce57d1592571b5948d8dee6939ab830",
+        "actualMime": "image/webp",
+        "visualCheck": "Exact Slots Launch page identifies Glamorous Girl by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays GLAMOROUS GIRL title."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 41 ELEMENTAL LINK FIRE"
+}

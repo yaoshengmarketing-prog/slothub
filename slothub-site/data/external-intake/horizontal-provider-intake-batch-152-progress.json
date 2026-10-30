@@ -1,10 +1,10 @@
 {
   "batch": 152,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 39",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Moneybags Man",
       "slug": "moneybags-man-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/moneybags-man",
       "officialFacts": "Official English/CN detail: Slot, RTP 96.17%, MEDIUM volatility, Maximum Win 4100X, 243 Ways, release year 2020; free-game reward multipliers grow with added Free Games.",
       "sourceConflict": "Slots Launch base-title JDB page says 2022 versus official 2020 and rounds RTP to 96%; partner-only Moneybag Scatters, Wild Multipliers and Random Cash Prize Drops excluded.",
@@ -29,5 +29,15 @@
       "demo": "Exact third-party Slots Launch page identifies base game and JDB; external platform-game-page only, not official Demo."
     }
   ],
-  "nextCursor": "JDB catalog card 40 GLAMOROUS GIRL"
+  "nextCursor": "JDB catalog card 40 GLAMOROUS GIRL",
+  "publication": {
+    "commit": "d72a61c6c588326400b2f7724ddfc6ebd55b7adf",
+    "githubRun": 40979231655,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "51c59cdf-e4cb-4f3d-ae0a-ebfbec6fd940",
+    "cloudflareUrl": "https://51c59cdf.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, WebP image and sitemap HTTP 200; official and exact Slots Launch platform URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
