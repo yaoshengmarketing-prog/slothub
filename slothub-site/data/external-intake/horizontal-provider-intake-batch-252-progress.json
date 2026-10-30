@@ -1,0 +1,41 @@
+{
+  "batch": 252,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Fa Cai Fu Wa / 发财福娃 (143) absent.",
+  "records": [
+    {
+      "name": "Fa Cai Fu Wa",
+      "slug": "fa-cai-fu-wa-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "143",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 143: RTP 96.09%, Low volatility, overall maximum_win 3000; three free-game rounds, locked WILDs and prize above 1000x. US guest canvas labels 243 WAY.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/AaRKa391.jpg",
+        "localPath": "public/assets/games/fa-cai-fu-wa-cq9.jpg",
+        "sha256": "186e069bdeddf7d250a8015b97f0676ae14d129413ca9ee923a03a370ede6dfc",
+        "visualCheck": "Official ID 143 maps to gold radial background; matching baby title icon spells Fa Cai Fu Wa."
+      },
+      "demo": "US New York browser guest-query /h5/143/?language=en&token=guest HTTP 200 after black loading canvas with exact Fa Cai Fu Wa branding, 5x3 reels, 243 WAY and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Fa Cai Fu Wa 143 live verified; continue Sky Lanterns 146.",
+  "publication": {
+    "commit": "7e974c1edeee1bd938a574766b6125822400af03",
+    "githubRun": 41070216142,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "cb9c7ec0-c91d-4031-b3a2-1e955758950a",
+    "cloudflareUrl": "https://cb9c7ec0.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

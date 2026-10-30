@@ -1,0 +1,41 @@
+{
+  "batch": 213,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 All Star Team / 世界杯全明星 (98) absent before intake.",
+  "records": [
+    {
+      "name": "All Star Team",
+      "slug": "all-star-team-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "98",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 98: RTP 96.09%, Medium volatility, overall maximum_win 3000, classic 243 Ways; teammate and Free Game round selection, winning-line random multiplier locally up to 30x in Free Game.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/FHq1qiM5.jpg",
+        "localPath": "public/assets/games/all-star-team-cq9.jpg",
+        "sha256": "4826deedf1cce072b5ce10657a15c0cd62848d75a5a23bfc22f55b7bbda0a362",
+        "visualCheck": "Official ID 98 maps to stadium background; matching icon visibly spells All Star Team."
+      },
+      "demo": "US New York browser guest-query /h5/98/?language=en&token=guest HTTP 200, final URL unchanged; matching All Star Team branding, 5x3 reels and controls after about 40 seconds without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "All Star Team 98 live verified; continue Jump Higher Mobile 108.",
+  "publication": {
+    "commit": "c8a6fbb3577141e024448dd1a93266445ab0c506",
+    "githubRun": 41049239989,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "87046839-4cf7-4b84-ad4d-ae11c2e1e684",
+    "cloudflareUrl": "https://87046839.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "batch": 254,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Flower Fortunes / 花开富贵 (147) absent.",
+  "records": [
+    {
+      "name": "Flower Fortunes",
+      "slug": "flower-fortunes-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "147",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 147: RTP 96.00%, High volatility, overall maximum_win 4000; multiple WILDs can raise scoring multiplier, description mentions up to 1000x. US guest canvas labels 25 LINE.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/yfQAvFVz.jpg",
+        "localPath": "public/assets/games/flower-fortunes-cq9.jpg",
+        "sha256": "531085084c050b08070c77473e1261eefddaf11ed74497da6e78e3e8649a5b4a",
+        "visualCheck": "Official ID 147 maps to orange landscape background; matching flower title icon spells Flower Fortunes."
+      },
+      "demo": "US browser guest-query /h5/147/?language=en&token=guest HTTP 200 with exact Flower Fortunes branding, 5x3 reels, 25 LINE and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Flower Fortunes 147 live verified; continue Funny Alpaca 54.",
+  "publication": {
+    "commit": "fddefa99264d78c9f5e4943e38fe13ae2e046a78",
+    "githubRun": 41071399624,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "bdc8e76f-db8c-4d12-a390-58a6adb6c2cd",
+    "cloudflareUrl": "https://bdc8e76f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

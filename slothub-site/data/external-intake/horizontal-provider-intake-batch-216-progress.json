@@ -1,0 +1,41 @@
+{
+  "batch": 216,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Disco Night M / 直式蹦迪 (137) absent before intake.",
+  "records": [
+    {
+      "name": "Disco Night M",
+      "slug": "disco-night-m-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "137",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 137: RTP 96.18%, High volatility, overall maximum_win 5000; portrait layout, Golden Diamond triggers Free Games and sets local multiplier up to 150x. US guest canvas labels 243 Ways.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/AJmwRaYQ.jpg",
+        "localPath": "public/assets/games/disco-night-m-cq9.jpg",
+        "sha256": "8cada9b960e4a2cd62d3ebca07cc9b6d5bb91cf5031c4f1b17c7ba0bc56142c1",
+        "visualCheck": "Official ID 137 maps to disco lights background; matching icon spells Disco Night."
+      },
+      "demo": "US New York browser guest-query /h5/137/?language=en&token=guest HTTP 200, unchanged final URL, title Disco Night M; exact branding, 243 Ways, reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Disco Night M 137 live verified; continue Wolf Disco 183.",
+  "publication": {
+    "commit": "19dd17c0fa8b034bc65d6ad17e62004b7a0e377d",
+    "githubRun": 41050760091,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "c9324610-8978-4873-85c1-81563b68741d",
+    "cloudflareUrl": "https://c9324610.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

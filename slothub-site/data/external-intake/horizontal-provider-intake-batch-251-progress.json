@@ -1,0 +1,41 @@
+{
+  "batch": 251,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Hephaestus / 火神 (142) absent.",
+  "records": [
+    {
+      "name": "Hephaestus",
+      "slug": "hephaestus-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "142",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 142: RTP 96.07%, High volatility, overall maximum_win 4000; Super WILD burns icons into WILD fireballs, description mentions 3000x prize. US guest canvas labels 243 WAYS.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/RK31YwtL.jpg",
+        "localPath": "public/assets/games/hephaestus-cq9.jpg",
+        "sha256": "d94c2da0ba97cf45d3f97ae717a6e848e9c2c40e618532e3893c45541de989a1",
+        "visualCheck": "Official ID 142 maps to gold fire background; matching title icon spells Hephaestus."
+      },
+      "demo": "US New York browser guest-query /h5/142/?language=en&token=guest HTTP 200 with exact Hephaestus branding, 5x3 reels, 243 WAYS and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Hephaestus 142 live verified; continue Fa Cai Fu Wa 143.",
+  "publication": {
+    "commit": "524b5ab253a900801ce0e732cfe77ef7c18fd516",
+    "githubRun": 41069376745,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "6c6d8ea5-7c42-4db0-8767-8fd9fa972fb9",
+    "cloudflareUrl": "https://6c6d8ea5.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

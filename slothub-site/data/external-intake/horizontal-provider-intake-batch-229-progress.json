@@ -1,0 +1,41 @@
+{
+  "batch": 229,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Zhong Kui / 钟馗运财 (9) absent before intake.",
+  "records": [
+    {
+      "name": "Zhong Kui",
+      "slug": "zhong-kui-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "9",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 9: RTP 96.10%, High volatility, overall maximum_win 5000; only high-paying symbols during Free Games. US guest canvas labels 243 WAYS.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/EWIa7udg.jpg",
+        "localPath": "public/assets/games/zhong-kui-cq9.jpg",
+        "sha256": "e6b95cef8670442081678d7fdfe979d38035db9f181baba9bce257d2a23415c6",
+        "visualCheck": "Official ID 9 maps to fiery mountain background; matching icon spells Zhong Kui."
+      },
+      "demo": "US New York browser guest-query /h5/9/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 243 WAYS, 5x3 reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Zhong Kui 9 live verified; continue Lucky Bats 10.",
+  "publication": {
+    "commit": "cd33db6c4ecaa696a003f907686a733058268096",
+    "githubRun": 41057417456,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "0fc7db9b-c256-4fc2-8bb8-62c836b2d90f",
+    "cloudflareUrl": "https://0fc7db9b.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "batch": 246,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Fire Chibi M / 直式火烧连环船 (139) absent.",
+  "records": [
+    {
+      "name": "Fire Chibi M",
+      "slug": "fire-chibi-m-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "139",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 139: RTP 96.13%, High volatility, overall maximum_win 6000; locked WILDs and up to 1500x local perks. US guest canvas labels 60 Lines.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/lmNMVKZy.jpg",
+        "localPath": "public/assets/games/fire-chibi-m-cq9.jpg",
+        "sha256": "6c582a7ec9f43e5f801bb658aa42d2a3badacdd032292e25fb5b1852d2dd92f2",
+        "visualCheck": "Official ID 139 maps to red ships battle background; matching title icon spells Fire Chibi M."
+      },
+      "demo": "US New York browser guest-query /h5/139/?language=en&token=guest HTTP 200 with exact Fire Chibi M branding, portrait 5x4 reels, 60 Lines and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Fire Chibi M 139 live verified; continue Fire Chibi 2 140.",
+  "publication": {
+    "commit": "a9e287409e45b494f4c1626238ada46a7fb1e040",
+    "githubRun": 41066586699,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "1806cc9d-57fc-4a19-a5d0-82a194ff5526",
+    "cloudflareUrl": "https://1806cc9d.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

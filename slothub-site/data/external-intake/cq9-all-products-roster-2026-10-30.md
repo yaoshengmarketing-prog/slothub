@@ -2,7 +2,7 @@
 
 核對日期：2026-10-30。來源：[CQ9 官方遊戲目錄](https://site.cq9gaming.com/en/games)；完整逐款來源網址、圖片網址與原始敘述保存在 [`cq9-official-catalog-2026-10-30.json`](./cq9-official-catalog-2026-10-30.json)。
 
-官方目錄共 141 個產品：Slot（官方 type=1）122 款，其他官方類型共 19 款（type=2 六款、type=3 三款、type=4 十款）。本清單列出全部 141 個不重複 Game ID。Slot Hub 目前已有 31 款 CQ9 Slot 詳細頁，其餘 91 款 Slot 待逐款查核、配圖、驗證與發布；非 Slot 產品先保留完整官方名單與數值，不混入 Slot 新增數。141 款皆保存官方圖示及背景圖 URL；2026-10-30 逐一讀取全部 141 張背景圖、141 張圖示和 141 個遊戲入口，結果與 SHA256 見 [`cq9-all-product-asset-audit-2026-10-30.json`](./cq9-all-product-asset-audit-2026-10-30.json)。全部圖檔格式有效、入口 HTTP 200；其中 102 個入口仍顯示通用 Welcome 標題，HTTP 200 不等於 Demo 可玩。官網未列的 RTP、波動或最高倍數維持缺值，不做推算。目錄數值是 CQ9 官方當日快照，不表示所有款式已完成本站收錄或 Demo 核對。
+官方目錄共 141 個產品：Slot（官方 type=1）122 款，其他官方類型共 19 款（type=2 六款、type=3 三款、type=4 十款）。本清單列出全部 141 個不重複 Game ID。Slot Hub 目前已有 102 款 CQ9 Slot 詳細頁，其餘 20 款 Slot 待逐款查核、配圖、驗證與發布；非 Slot 產品先保留完整官方名單與數值，不混入 Slot 新增數。141 款皆保存官方圖示及背景圖 URL；2026-10-30 逐一讀取全部 141 張背景圖、141 張圖示和 141 個遊戲入口，結果與 SHA256 見 [`cq9-all-product-asset-audit-2026-10-30.json`](./cq9-all-product-asset-audit-2026-10-30.json)。全部圖檔格式有效、入口 HTTP 200；其中 102 個入口仍顯示通用 Welcome 標題，HTTP 200 不等於 Demo 可玩。官網未列的 RTP、波動或最高倍數維持缺值，不做推算。目錄數值是 CQ9 官方當日快照，不表示所有款式已完成本站收錄或 Demo 核對。
 
 官方目錄的 `nameTw` 若是「API處尚未建立遊戲.」，本表改列 `nameCn` 作原文參考；繁中正式名稱仍須逐款核對。最高倍數 `N/A` 維持官方缺值，不做推算。
 
@@ -11,100 +11,100 @@
 | 官方序 | Game ID | 英文名稱 | 官方中文名稱／原文 | RTP | 波動 | 最高倍數 | 本站狀態 |
 | ---: | --- | --- | --- | ---: | --- | ---: | --- |
 | 1 | 1 | Fruit King | 钻石水果王 | 96.26% | Low | 2500× | 待逐款收錄 |
-| 2 | 3 | Vampire Kiss | 血之吻 | 96.01% | Medium | 1500× | 待逐款收錄 |
+| 2 | 3 | Vampire Kiss | 血之吻 | 96.01% | Medium | 1500× | [已收錄](../../src/content/games/vampire-kiss-cq9.md) |
 | 3 | 5 | Mr. Rich | 金大款 | 96.00% | High | 3000× | 待逐款收錄 |
-| 4 | 7 | Rave Jump | 跳起来 | 96.18% | High | 3000× | 待逐款收錄 |
-| 5 | 8 | So Sweet | 甜蜜蜜 | 96.11% | High | 6000× | 待逐款收錄 |
-| 6 | 9 | Zhong Kui | 钟馗运财 | 96.10% | High | 5000× | 待逐款收錄 |
-| 7 | 10 | Lucky Bats | 五福临门 | 96.02% | Low | 3000× | 待逐款收錄 |
+| 4 | 7 | Rave Jump | 跳起来 | 96.18% | High | 3000× | [已收錄](../../src/content/games/rave-jump-cq9.md) |
+| 5 | 8 | So Sweet | 甜蜜蜜 | 96.11% | High | 6000× | [已收錄](../../src/content/games/so-sweet-cq9.md) |
+| 6 | 9 | Zhong Kui | 钟馗运财 | 96.10% | High | 5000× | [已收錄](../../src/content/games/zhong-kui-cq9.md) |
+| 7 | 10 | Lucky Bats | 五福临门 | 96.02% | Low | 3000× | [已收錄](../../src/content/games/lucky-bats-cq9.md) |
 | 8 | 15 | GuGuGu | 金鸡报喜 | 96.13% | Low | 6000× | 待逐款收錄 |
 | 9 | 16 | Super5 | 五行 | 96.21% | High | 3000× | 待逐款收錄 |
 | 10 | 17 | Great Lion | 祥狮献瑞 | 96.02% | Medium | 800× | 待逐款收錄 |
 | 11 | 19 | Hot Spin | 风火轮 | 96.17% | Low | 500× | 待逐款收錄 |
-| 12 | 20 | 888 | 发发发 | 95.91% | Medium | 800× | 待逐款收錄 |
+| 12 | 20 | 888 | 发发发 | 95.91% | Medium | 800× | [已收錄](../../src/content/games/888-cq9.md) |
 | 13 | 24 | Rave Jump2 | 跳起来2 | 96.17% | Low | 500× | 待逐款收錄 |
 | 14 | 26 | 777 | 777 | 96.11% | High | 2000× | 待逐款收錄 |
-| 15 | 29 | WaterWorld | 水世界 | 96.18% | Low | 3000× | 待逐款收錄 |
-| 16 | 31 | God of War | 武圣 | 96.10% | Medium | 3000× | 待逐款收錄 |
-| 17 | 33 | Fire Chibi | 火烧连环船 | 96.13% | High | 4000× | 待逐款收錄 |
+| 15 | 29 | WaterWorld | 水世界 | 96.18% | Low | 3000× | [已收錄](../../src/content/games/waterworld-cq9.md) |
+| 16 | 31 | God of War | 武圣 | 96.10% | Medium | 3000× | [已收錄](../../src/content/games/god-of-war-cq9.md) |
+| 17 | 33 | Fire Chibi | 火烧连环船 | 96.13% | High | 4000× | [已收錄](../../src/content/games/fire-chibi-cq9.md) |
 | 18 | 38 | All Wilds | 舞力全开 | 96.03% | High | 3000× | [已收錄](../../src/content/games/all-wilds.md) |
-| 19 | 39 | Apsaras | 飞天 | 96.03% | High | 6000× | 待逐款收錄 |
+| 19 | 39 | Apsaras | 飞天 | 96.03% | High | 6000× | [已收錄](../../src/content/games/apsaras-cq9.md) |
 | 20 | 121 | Rave Jump 2 M | 直式跳起来2 | 96.17% | Low | 500× | 待逐款收錄 |
-| 21 | 123 | Lucky Bats M | 直式五福临门 | 96.02% | Low | 3000× | 待逐款收錄 |
-| 22 | 124 | Invincible Elephant | 锁象无敌 | 96% | High | 5000× | 待逐款收錄 |
-| 23 | 127 | God of War M | 直式武圣 | 96.10% | Medium | 3000× | 待逐款收錄 |
+| 21 | 123 | Lucky Bats M | 直式五福临门 | 96.02% | Low | 3000× | [已收錄](../../src/content/games/lucky-bats-m-cq9.md) |
+| 22 | 124 | Invincible Elephant | 锁象无敌 | 96% | High | 5000× | [已收錄](../../src/content/games/invincible-elephant-cq9.md) |
+| 23 | 127 | God of War M | 直式武圣 | 96.10% | Medium | 3000× | [已收錄](../../src/content/games/god-of-war-m-cq9.md) |
 | 24 | 128 | Wheel Money | 转大钱 | 97.00% | High | 900× | 待逐款收錄 |
-| 25 | 129 | Gu Gu Gu 2 M | 直式金鸡报囍2 | 95.97% | High | 8000× | 待逐款收錄 |
-| 26 | 130 | Gold Stealer | 偷金妹子 | 96.15% | Medium | 1000× | 待逐款收錄 |
-| 27 | 131 | Fa Cai Shen M | 直式发财神 | 96.07% | High | 3000× | 待逐款收錄 |
-| 28 | 133 | Good Fortune M | 直式鸿福齐天 | 96.19% | Medium | 3000× | 待逐款收錄 |
-| 29 | 42 | Sherlock Holmes | 福尔摩斯 | 96.11% | Medium | 3000× | 待逐款收錄 |
-| 30 | 135 | Gu Gu Gu M | 直式金鸡报喜 | 96.13% | High | 6000× | 待逐款收錄 |
-| 31 | 138 | Move n' Jump | 跳过来 | 96.18% | High | 6000× | 待逐款收錄 |
-| 32 | 139 | Fire Chibi M | 直式火烧连环船 | 96.13% | High | 6000× | 待逐款收錄 |
-| 33 | 140 | Fire Chibi 2 | 火烧连环船2 | 96.00% | High | 5000× | 待逐款收錄 |
-| 34 | 46 | Wolf Moon | 狼月 | 96.27% | Medium | 3000× | 待逐款收錄 |
-| 35 | 50 | Good Fortune | 鸿福齐天 | 96.19% | Medium | 3000× | 待逐款收錄 |
-| 36 | 141 | Xmas | 圣诞来啦 | 97.50% | Medium | 10000× | 待逐款收錄 |
-| 37 | 142 | Hephaestus | 火神 | 96.07% | High | 4000× | 待逐款收錄 |
+| 25 | 129 | Gu Gu Gu 2 M | 直式金鸡报囍2 | 95.97% | High | 8000× | [已收錄](../../src/content/games/gu-gu-gu-2-m-cq9.md) |
+| 26 | 130 | Gold Stealer | 偷金妹子 | 96.15% | Medium | 1000× | [已收錄](../../src/content/games/gold-stealer-cq9.md) |
+| 27 | 131 | Fa Cai Shen M | 直式发财神 | 96.07% | High | 3000× | [已收錄](../../src/content/games/fa-cai-shen-m-cq9.md) |
+| 28 | 133 | Good Fortune M | 直式鸿福齐天 | 96.19% | Medium | 3000× | [已收錄](../../src/content/games/good-fortune-m-cq9.md) |
+| 29 | 42 | Sherlock Holmes | 福尔摩斯 | 96.11% | Medium | 3000× | [已收錄](../../src/content/games/sherlock-holmes-cq9.md) |
+| 30 | 135 | Gu Gu Gu M | 直式金鸡报喜 | 96.13% | High | 6000× | [已收錄](../../src/content/games/gu-gu-gu-m-cq9.md) |
+| 31 | 138 | Move n' Jump | 跳过来 | 96.18% | High | 6000× | [已收錄](../../src/content/games/move-n-jump-cq9.md) |
+| 32 | 139 | Fire Chibi M | 直式火烧连环船 | 96.13% | High | 6000× | [已收錄](../../src/content/games/fire-chibi-m-cq9.md) |
+| 33 | 140 | Fire Chibi 2 | 火烧连环船2 | 96.00% | High | 5000× | [已收錄](../../src/content/games/fire-chibi-2-cq9.md) |
+| 34 | 46 | Wolf Moon | 狼月 | 96.27% | Medium | 3000× | [已收錄](../../src/content/games/wolf-moon-cq9.md) |
+| 35 | 50 | Good Fortune | 鸿福齐天 | 96.19% | Medium | 3000× | [已收錄](../../src/content/games/good-fortune-cq9.md) |
+| 36 | 141 | Xmas | 圣诞来啦 | 97.50% | Medium | 10000× | [已收錄](../../src/content/games/xmas-cq9.md) |
+| 37 | 142 | Hephaestus | 火神 | 96.07% | High | 4000× | [已收錄](../../src/content/games/hephaestus-cq9.md) |
 | 38 | 52 | Jump High | 跳高高 | 96.18% | High | 5000× | [已收錄](../../src/content/games/jump-high.md) |
-| 39 | 143 | Fa Cai Fu Wa | 发财福娃 | 96.09% | Low | 3000× | 待逐款收錄 |
-| 40 | 146 | Sky Lanterns | 九连宝灯 | 96.01% | High | 3000× | 待逐款收錄 |
-| 41 | 147 | Flower Fortunes | 花开富贵 | 96.00% | High | 4000× | 待逐款收錄 |
-| 42 | 54 | Funny Alpaca | 火草泥马 | 96.07% | High | 8000× | 待逐款收錄 |
-| 43 | 99 | Jump Higher | 跳更高 | 96.18% | High | 5000× | 待逐款收錄 |
-| 44 | 148 | Fortune Totem | 有如神柱 | 96.10% | High | 8000× | 待逐款收錄 |
-| 45 | 150 | Shou-Xin | 寿星大发 | 96.14% | High | 3000× | 待逐款收錄 |
-| 46 | 57 | The Beast War | 神兽争霸 | 95.99% | Medium | 1000× | 待逐款收錄 |
-| 47 | 58 | Gu Gu Gu 2 | 金鸡报囍2 | 95.97% | High | 8000× | 待逐款收錄 |
+| 39 | 143 | Fa Cai Fu Wa | 发财福娃 | 96.09% | Low | 3000× | [已收錄](../../src/content/games/fa-cai-fu-wa-cq9.md) |
+| 40 | 146 | Sky Lanterns | 九连宝灯 | 96.01% | High | 3000× | [已收錄](../../src/content/games/sky-lanterns-cq9.md) |
+| 41 | 147 | Flower Fortunes | 花开富贵 | 96.00% | High | 4000× | [已收錄](../../src/content/games/flower-fortunes-cq9.md) |
+| 42 | 54 | Funny Alpaca | 火草泥马 | 96.07% | High | 8000× | [已收錄](../../src/content/games/funny-alpaca-cq9.md) |
+| 43 | 99 | Jump Higher | 跳更高 | 96.18% | High | 5000× | [已收錄](../../src/content/games/jump-higher-cq9.md) |
+| 44 | 148 | Fortune Totem | 有如神柱 | 96.10% | High | 8000× | [已收錄](../../src/content/games/fortune-totem-cq9.md) |
+| 45 | 150 | Shou-Xin | 寿星大发 | 96.14% | High | 3000× | [已收錄](../../src/content/games/shou-xin-cq9.md) |
+| 46 | 57 | The Beast War | 神兽争霸 | 95.99% | Medium | 1000× | [已收錄](../../src/content/games/the-beast-war-cq9.md) |
+| 47 | 58 | Gu Gu Gu 2 | 金鸡报囍2 | 95.97% | High | 8000× | [已收錄](../../src/content/games/gu-gu-gu-2-cq9.md) |
 | 50 | 152 | Double Fly | 双飞 | 96.14% | High | 6000× | [已收錄](../../src/content/games/double-fly-cq9.md) |
 | 51 | 153 | Six Candy | 六颗糖 | 96.14% | High | 2000× | [已收錄](../../src/content/games/six-candy-cq9.md) |
 | 52 | 154 | Kronos | 宙斯他爹 | 96.00% | Medium | 3000× | 待逐款收錄 |
-| 53 | 64 | Zeus | 宙斯 | 96.18% | Medium | 3000× | 待逐款收錄 |
-| 54 | 66 | Fire 777 | 火爆777 | 97.02% | Medium | 3000× | 待逐款收錄 |
+| 53 | 64 | Zeus | 宙斯 | 96.18% | Medium | 3000× | [已收錄](../../src/content/games/zeus-cq9.md) |
+| 54 | 66 | Fire 777 | 火爆777 | 97.02% | Medium | 3000× | [已收錄](../../src/content/games/fire-777-cq9.md) |
 | 55 | 67 | Golden Eggs | 赚金蛋 | 96.91% | Low | 4000× | [已收錄](../../src/content/games/golden-eggs-cq9.md) |
-| 56 | 68 | Wukong & Peaches | 悟空偷桃 | 96.91% | High | 8000× | 待逐款收錄 |
-| 57 | 69 | Fa Cai Shen | 发财神 | 96.07% | High | 3000× | 待逐款收錄 |
-| 58 | 70 | Wanbao Dino | 万饱龙 | 96.07% | High | 3000× | 待逐款收錄 |
-| 59 | 72 | Happy Rich Year | 好运年年 | 96.06% | Medium | 3000× | 待逐款收錄 |
-| 60 | 74 | Treasure Bowl | 聚宝盆 | 96.06% | Medium | 3000× | 待逐款收錄 |
-| 61 | 78 | Apollo | 阿波罗 | 96.13% | Medium | 3000× | 待逐款收錄 |
-| 62 | 79 | Chameleon | 变色龙 | 96.13% | Medium | 5000× | 待逐款收錄 |
+| 56 | 68 | Wukong & Peaches | 悟空偷桃 | 96.91% | High | 8000× | [已收錄](../../src/content/games/wukong-and-peaches-cq9.md) |
+| 57 | 69 | Fa Cai Shen | 发财神 | 96.07% | High | 3000× | [已收錄](../../src/content/games/fa-cai-shen-cq9.md) |
+| 58 | 70 | Wanbao Dino | 万饱龙 | 96.07% | High | 3000× | [已收錄](../../src/content/games/wanbao-dino-cq9.md) |
+| 59 | 72 | Happy Rich Year | 好运年年 | 96.06% | Medium | 3000× | [已收錄](../../src/content/games/happy-rich-year-cq9.md) |
+| 60 | 74 | Treasure Bowl | 聚宝盆 | 96.06% | Medium | 3000× | [已收錄](../../src/content/games/treasure-bowl-cq9.md) |
+| 61 | 78 | Apollo | 阿波罗 | 96.13% | Medium | 3000× | [已收錄](../../src/content/games/apollo-cq9.md) |
+| 62 | 79 | Chameleon | 变色龙 | 96.13% | Medium | 5000× | [已收錄](../../src/content/games/chameleon-cq9.md) |
 | 63 | 83 | Fire Queen | 火之女王 | 96.02% | High | 3000× | 待逐款收錄 |
 | 64 | 89 | Thor | 雷神 | 95.96% | High | 5000× | 待逐款收錄 |
 | 65 | 105 | Jumping Mobile | 单手跳高高 | 96.18% | High | 5000× | 待逐款收錄 |
-| 66 | 157 | 5 Boxing | 五形拳 | 96.18% | Medium | 5000× | 待逐款收錄 |
-| 67 | 160 | Fa Cai Shen2 | 发财神2 | 96.19% | High | 3000× | 待逐款收錄 |
-| 68 | 161 | Hercules | 大力神 | 95.94% | High | 3000× | 待逐款收錄 |
-| 69 | 111 | Fly Out | 飞起来 | 96.18% | High | 3000× | 待逐款收錄 |
-| 70 | 112 | Pyramid Raider | 盗法老墓 | 96.06% | Medium | 3000× | 待逐款收錄 |
-| 71 | 113 | Flying Cai Shen | 飞天财神 | 96.04% | Medium | 3000× | 待逐款收錄 |
-| 72 | 115 | Snow Queen | 冰雪女王 | 96.06% | High | 6000× | 待逐款收錄 |
-| 73 | 116 | Wonderland | 梦游仙境 | 96.09% | Medium | 3000× | 待逐款收錄 |
-| 74 | 117 | 5 God beasts | 东方神起 | 96.04% | Low | 3000× | 待逐款收錄 |
-| 75 | 118 | SkrSkr | 老司机 | 96.00% | High | 12150× | 待逐款收錄 |
+| 66 | 157 | 5 Boxing | 五形拳 | 96.18% | Medium | 5000× | [已收錄](../../src/content/games/5-boxing-cq9.md) |
+| 67 | 160 | Fa Cai Shen2 | 发财神2 | 96.19% | High | 3000× | [已收錄](../../src/content/games/fa-cai-shen-2-cq9.md) |
+| 68 | 161 | Hercules | 大力神 | 95.94% | High | 3000× | [已收錄](../../src/content/games/hercules-cq9.md) |
+| 69 | 111 | Fly Out | 飞起来 | 96.18% | High | 3000× | [已收錄](../../src/content/games/fly-out-cq9.md) |
+| 70 | 112 | Pyramid Raider | 盗法老墓 | 96.06% | Medium | 3000× | [已收錄](../../src/content/games/pyramid-raider-cq9.md) |
+| 71 | 113 | Flying Cai Shen | 飞天财神 | 96.04% | Medium | 3000× | [已收錄](../../src/content/games/flying-cai-shen-cq9.md) |
+| 72 | 115 | Snow Queen | 冰雪女王 | 96.06% | High | 6000× | [已收錄](../../src/content/games/snow-queen-cq9.md) |
+| 73 | 116 | Wonderland | 梦游仙境 | 96.09% | Medium | 3000× | [已收錄](../../src/content/games/wonderland-cq9.md) |
+| 74 | 117 | 5 God beasts | 东方神起 | 96.04% | Low | 3000× | [已收錄](../../src/content/games/5-god-beasts-cq9.md) |
+| 75 | 118 | SkrSkr | 老司机 | 96.00% | High | 12150× | [已收錄](../../src/content/games/skrskr-cq9.md) |
 | 77 | 179 | Jump High 2 | 跳高高2 | 96.07% | High | 5000× | [已收錄](../../src/content/games/jump-high-2.md) |
-| 78 | 180 | Gu Gu Gu 3 | 金鸡报囍3 | 96.04% | High | 4000× | 待逐款收錄 |
-| 79 | 173 | 6 Toros | 666 | 96.06% | Medium | 7000× | 待逐款收錄 |
-| 80 | 182 | Thor 2 | 雷神2 | 96.19% | High | 3000× | 待逐款收錄 |
-| 81 | 201 | MuayThai | 拳霸 | 96.10% | Medium | 3000× | 待逐款收錄 |
+| 78 | 180 | Gu Gu Gu 3 | 金鸡报囍3 | 96.04% | High | 4000× | [已收錄](../../src/content/games/gu-gu-gu-3-cq9.md) |
+| 79 | 173 | 6 Toros | 666 | 96.06% | Medium | 7000× | [已收錄](../../src/content/games/6-toros-cq9.md) |
+| 80 | 182 | Thor 2 | 雷神2 | 96.19% | High | 3000× | [已收錄](../../src/content/games/thor-2-cq9.md) |
+| 81 | 201 | MuayThai | 拳霸 | 96.10% | Medium | 3000× | [已收錄](../../src/content/games/muaythai-cq9.md) |
 | 82 | 202 | OrientalBeauty | 舞媚娘 | 96.11% | High | 6000× | 待逐款收錄 |
 | 83 | 203 | RaveHigh | 嗨起来 | 96.18% | High | 3000× | 待逐款收錄 |
-| 84 | 205 | DiscoNight | 蹦迪 | 96.18% | High | 5000× | 待逐款收錄 |
+| 84 | 205 | DiscoNight | 蹦迪 | 96.18% | High | 5000× | [已收錄](../../src/content/games/disconight-cq9.md) |
 | 86 | 1010 | Lucky Bats JP | 五福临门JP | 96.17% | High | 未列 | [已收錄](../../src/content/games/lucky-bats-jp-cq9.md) |
 | 87 | 1074 | Treasure Bowl JP | 聚宝盆JP | 96.02% | Medium | 未列 | [已收錄](../../src/content/games/treasure-bowl-jp-cq9.md) |
-| 88 | 98 | All Star Team | 世界杯全明星 | 96.09% | Medium | 3000× | 待逐款收錄 |
+| 88 | 98 | All Star Team | 世界杯全明星 | 96.09% | Medium | 3000× | [已收錄](../../src/content/games/all-star-team-cq9.md) |
 | 89 | 125 | Zeus M | 直式宙斯 | 96.18% | Medium | 3000× | 待逐款收錄 |
-| 90 | 108 | Jump Higher Mobile | 直式跳更高 | 96.18% | High | 5000× | 待逐款收錄 |
-| 91 | 109 | Rave Jump Mobile | 单手跳起来 | 96.18% | High | 3000× | 待逐款收錄 |
-| 92 | 137 | Disco Night M | 直式蹦迪 | 96.18% | High | 5000× | 待逐款收錄 |
-| 93 | 183 | Wolf Disco | 野狼Disco | 96.16% | High | 6000× | 待逐款收錄 |
-| 95 | 187 | Wing Chun | 咏春 | 96.08% | Medium | 3000× | 待逐款收錄 |
-| 96 | 188 | Cricket Fever | 板球狂热 | 95.97% | High | 5000× | 待逐款收錄 |
-| 97 | 185 | Dragon Ball | 龙珠 | 96.06% | High | 3000× | 待逐款收錄 |
-| 99 | 186 | Fire Queen 2 | 火之女王2 | 96.14% | High | 4000× | 待逐款收錄 |
-| 102 | 206 | Sweet POP | 甜蜜暴击 | 96.15% | High | 3000× | 待逐款收錄 |
-| 103 | 208 | Money Tree | 金钱树 | 96.15% | Low | 2000× | 待逐款收錄 |
+| 90 | 108 | Jump Higher Mobile | 直式跳更高 | 96.18% | High | 5000× | [已收錄](../../src/content/games/jump-higher-mobile-cq9.md) |
+| 91 | 109 | Rave Jump Mobile | 单手跳起来 | 96.18% | High | 3000× | [已收錄](../../src/content/games/rave-jump-mobile-cq9.md) |
+| 92 | 137 | Disco Night M | 直式蹦迪 | 96.18% | High | 5000× | [已收錄](../../src/content/games/disco-night-m-cq9.md) |
+| 93 | 183 | Wolf Disco | 野狼Disco | 96.16% | High | 6000× | [已收錄](../../src/content/games/wolf-disco-cq9.md) |
+| 95 | 187 | Wing Chun | 咏春 | 96.08% | Medium | 3000× | [已收錄](../../src/content/games/wing-chun-cq9.md) |
+| 96 | 188 | Cricket Fever | 板球狂热 | 95.97% | High | 5000× | [已收錄](../../src/content/games/cricket-fever-cq9.md) |
+| 97 | 185 | Dragon Ball | 龙珠 | 96.06% | High | 3000× | [已收錄](../../src/content/games/dragon-ball-cq9.md) |
+| 99 | 186 | Fire Queen 2 | 火之女王2 | 96.14% | High | 4000× | [已收錄](../../src/content/games/fire-queen-2-cq9.md) |
+| 102 | 206 | Sweet POP | 甜蜜暴击 | 96.15% | High | 3000× | [已收錄](../../src/content/games/sweet-pop-cq9.md) |
+| 103 | 208 | Money Tree | 金钱树 | 96.15% | Low | 2000× | [已收錄](../../src/content/games/money-tree-cq9.md) |
 | 106 | 211 | King of Atlantis | 海王 | 96.17% | High | 10000× | [已收錄](../../src/content/games/king-of-atlantis-cq9.md) |
 | 108 | GB2 | Monster Hunter | 怪兽猎人 | 96.08% | Low | 600× | [已收錄](../../src/content/games/monster-hunter-cq9.md) |
 | 110 | 177 | Aladdin's lamp | 小伙与神灯 | 96.19% | Medium | 2000× | [已收錄](../../src/content/games/aladdins-lamp-cq9.md) |
@@ -113,7 +113,7 @@
 | 114 | 223 | Acrobatics | 百戏 | 96.16% | Low | 3000× | [已收錄](../../src/content/games/acrobatics-cq9.md) |
 | 116 | 226 | Lucky Tigers | 多虎多财 | 96.14% | High | 4000× | [已收錄](../../src/content/games/lucky-tigers-cq9.md) |
 | 117 | 225 | Mr. Miser | 财迷小妖 | 96.12% | High | 3000× | [已收錄](../../src/content/games/mr-miser-cq9.md) |
-| 120 | 227 | 888 Cai Shen | 发发发财神 | 96.14% | High | 12000× | 待逐款收錄 |
+| 120 | 227 | 888 Cai Shen | 发发发财神 | 96.14% | High | 12000× | [已收錄](../../src/content/games/888-cai-shen-cq9.md) |
 | 121 | GB9 | Football Fever | 足球狂热 | 96.08% | High | 15000× | [已收錄](../../src/content/games/football-fever-cq9.md) |
 | 122 | 228 | Mirror Mirror | 魔镜魔镜 | 96.10% | Medium | 4000× | [已收錄](../../src/content/games/mirror-mirror-cq9.md) |
 | 123 | 229 | Night City | 不夜城 | 96.16% | High | 80000× | [已收錄](../../src/content/games/night-city-cq9.md) |

@@ -1,0 +1,41 @@
+{
+  "batch": 218,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Wing Chun / 咏春 (187) absent before intake.",
+  "records": [
+    {
+      "name": "Wing Chun",
+      "slug": "wing-chun-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "187",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 187: RTP 96.08%, Medium volatility, overall maximum_win 3000; three or more Scatter symbols award local 100x. US guest canvas labels 243ways.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/EOYTlZGf.jpg",
+        "localPath": "public/assets/games/wing-chun-cq9.jpg",
+        "sha256": "b0e789bf26ea12e4924224a3fcfe409a36dedf7a466342478ea074a0aec1189f",
+        "visualCheck": "Official ID 187 maps to martial arts courtyard background; matching icon spells Wing Chun."
+      },
+      "demo": "US New York browser guest-query /h5/187/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 243ways, 5x3 reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Wing Chun 187 live verified; continue Cricket Fever 188.",
+  "publication": {
+    "commit": "e207eb17631f084186ad1b92750d41a0f22cbd78",
+    "githubRun": 41051666270,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "f41fe286-1992-46e1-9f9f-330750081c16",
+    "cloudflareUrl": "https://f41fe286.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

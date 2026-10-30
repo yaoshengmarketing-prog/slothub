@@ -1,0 +1,41 @@
+{
+  "batch": 224,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 888 Cai Shen / 发发发财神 (227) absent before intake.",
+  "records": [
+    {
+      "name": "888 Cai Shen",
+      "slug": "888-cai-shen-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "227",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 227: RTP 96.14%, High volatility, overall maximum_win 12000; variable reel heights 2-6 and up to 7776 ways, Free Game Wild reel with local 512x reward. US guest canvas labels RICH WAYS and BUY FEATURE, buy not tested.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/mQnBGezQ.jpg",
+        "localPath": "public/assets/games/888-cai-shen-cq9.jpg",
+        "sha256": "63d7e4d119ad86d068453bce9ec779273de5663f9d090898bf101cbd5d30f275",
+        "visualCheck": "Official ID 227 maps to golden Cai Shen background; matching icon spells 888 Cai Shen."
+      },
+      "demo": "US New York browser guest-query /h5/227/?language=en&token=guest HTTP 200, unchanged final URL, title 888 Cai Shen; RICH WAYS, 5x5 visible grid, controls and BUY FEATURE button without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "888 Cai Shen 227 live verified; continue Jump Higher 99 distinct from Jump Higher Mobile 108.",
+  "publication": {
+    "commit": "23f349e94052d2a7218e863ccf75aeb274117ee8",
+    "githubRun": 41055150655,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "970d1fb3-294d-4e09-b34f-07604c3501d0",
+    "cloudflareUrl": "https://970d1fb3.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

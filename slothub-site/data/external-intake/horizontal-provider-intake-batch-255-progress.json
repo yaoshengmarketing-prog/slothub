@@ -1,0 +1,41 @@
+{
+  "batch": 255,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Funny Alpaca / 火草泥马 (54) absent.",
+  "records": [
+    {
+      "name": "Funny Alpaca",
+      "slug": "funny-alpaca-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "54",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 54: RTP 96.07%, High volatility, overall maximum_win 8000; five SC icons in a row can award up to 50x total bet score and up to 50 free games. US guest canvas labels 5 LINES.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/Seq2xci1.jpg",
+        "localPath": "public/assets/games/funny-alpaca-cq9.jpg",
+        "sha256": "93f6a3e7dbd4ef03cb4c5c014ca78c584db9dfe25c6752faedb83fc425f3f0b2",
+        "visualCheck": "Official ID 54 maps to night street background; matching alpaca title icon spells Funny Alpaca."
+      },
+      "demo": "US browser guest-query /h5/54/?language=en&token=guest HTTP 200 with exact FUNNY ALPACA branding, 5x3 reels, 5 LINES and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Funny Alpaca 54 live verified; continue Fortune Totem 148.",
+  "publication": {
+    "commit": "962434ebed250196739e190c210b3213df802c8a",
+    "githubRun": 41071757473,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "00a6bbdd-f72f-4986-815c-5e2b0cfa12c1",
+    "cloudflareUrl": "https://00a6bbdd.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "batch": 267,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Apollo / 阿波罗 (78) absent.",
+  "records": [
+    {
+      "name": "Apollo",
+      "slug": "apollo-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "78",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 78: RTP 96.13%, Medium volatility, overall maximum_win 3000; five shield icons can award 100 free games, stacked symbols and two-way scoring. US guest canvas labels 40 LINES.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/l2kFkneI.jpg",
+        "localPath": "public/assets/games/apollo-cq9.jpg",
+        "sha256": "811c489bbad0156db42d3b4986776afa6149debf2ca81d84649f418a84ca199d",
+        "visualCheck": "Official ID 78 maps to golden sky background; matching title icon spells Apollo."
+      },
+      "demo": "US browser guest-query /h5/78/?language=en&token=guest HTTP 200 with exact APOLLO canvas, 5x3 reels, 40 LINES and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Apollo 78 live verified; continue Chameleon 79.",
+  "publication": {
+    "commit": "67302873893dce28c3f68c7c13a5d07576bd3f67",
+    "githubRun": 41079296010,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "eadeb9c2-6fae-4695-8b65-22233170a99f",
+    "cloudflareUrl": "https://eadeb9c2.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

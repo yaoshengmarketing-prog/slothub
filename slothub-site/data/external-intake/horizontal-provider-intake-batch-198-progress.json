@@ -1,10 +1,10 @@
 {
   "batch": 198,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "fa-cai-shen-2-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "160",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 160: RTP 96.19%, High volatility, overall maximum_win 3000. Official description states reel extension and says reel size upgrade chance relates to bet size; no numeric trigger probability is given.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser: current guest-query /h5/160/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; exact Fa Cai Shen2 branding, reels and controls without login. No spin, bet or login action."
     }
   ],
-  "nextCursor": "After Fa Cai Shen2 live closure, continue 5 Boxing 157 or Hercules 161. Both US guest Demos verified; catalog overall maxima must remain distinct from promotional local awards."
+  "nextCursor": "Fa Cai Shen2 160 live verified with official reel extension details and US guest Demo. Continue 5 Boxing 157.",
+  "publication": {
+    "commit": "62c1d1af77bc22405f3e67c0d306280e14ad2ea9",
+    "githubRun": 41028765523,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "5a587f97-718e-4ba8-9ade-0eac4857bd53",
+    "cloudflareUrl": "https://5a587f97.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

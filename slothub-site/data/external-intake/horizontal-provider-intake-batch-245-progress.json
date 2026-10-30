@@ -1,0 +1,41 @@
+{
+  "batch": 245,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Move n' Jump / 跳过来 (138) absent.",
+  "records": [
+    {
+      "name": "Move n' Jump",
+      "slug": "move-n-jump-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "138",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 138: RTP 96.18%, High volatility, overall maximum_win 6000; reel exchanges and Golden Ball Free Games. US guest canvas labels 243 WAYS.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/MN36xTTs.jpg",
+        "localPath": "public/assets/games/move-n-jump-cq9.jpg",
+        "sha256": "497ddb1776074d61dbfa79aa9f53a8b12917ba743cc94b18558c47fd3215b28f",
+        "visualCheck": "Official ID 138 maps to blue dance stage background; matching title icon spells Move n Jump."
+      },
+      "demo": "US New York browser guest-query /h5/138/?language=en&token=guest HTTP 200 after initial black loading canvas, exact Move n' Jump branding, 243 WAYS, 5x3 reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Move n Jump 138 live verified; continue Fire Chibi M 139.",
+  "publication": {
+    "commit": "0f6efae62277427f911a0566850d5f62a2f30ed8",
+    "githubRun": 41066057095,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "bc1a627b-0f12-4a8e-bcbc-0e11fd206132",
+    "cloudflareUrl": "https://bc1a627b.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

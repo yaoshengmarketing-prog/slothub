@@ -1,0 +1,41 @@
+{
+  "batch": 260,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Zeus / 宙斯 (64) absent and distinct from Zeus M ID125.",
+  "records": [
+    {
+      "name": "Zeus",
+      "slug": "zeus-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "64",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 64: RTP 96.18%, Medium volatility, overall maximum_win 3000; 243 ways, stacked WILDs, free games with one to nine random WILDs and retrigger. US guest canvas labels 243WAYS.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/GkFAfMmm.jpg",
+        "localPath": "public/assets/games/zeus-cq9.jpg",
+        "sha256": "9381f4f4ba31c3d736a69824784b51e9764dcb0ce6375321185cbea37a15e98a",
+        "visualCheck": "Official ID 64 maps to gold temple background; matching deity title icon spells ZEUS."
+      },
+      "demo": "US browser guest-query /h5/64/?language=en&token=guest HTTP 200 with Welcome page title but exact ZEUS canvas branding, 5x3 reels, 243WAYS and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Zeus 64 live verified; continue Fire 777 66.",
+  "publication": {
+    "commit": "4000242fa61c1cec237ef5891f4ebe62590b9e86",
+    "githubRun": 41074764087,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "3de6bd82-a69a-4080-8192-b7b6f9bb645f",
+    "cloudflareUrl": "https://3de6bd82.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

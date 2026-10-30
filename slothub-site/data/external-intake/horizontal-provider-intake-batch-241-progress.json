@@ -1,0 +1,41 @@
+{
+  "batch": 241,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Fa Cai Shen M / 直式发财神 (131) absent.",
+  "records": [
+    {
+      "name": "Fa Cai Shen M",
+      "slug": "fa-cai-shen-m-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "131",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 131: RTP 96.07%, High volatility, overall maximum_win 3000; designated symbol retriggers Free Games and Treasure Bowl WILD has random local multiplier up to 27x. US guest canvas labels 243 Ways.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/vToXiVvp.jpg",
+        "localPath": "public/assets/games/fa-cai-shen-m-cq9.jpg",
+        "sha256": "92331ab0982546e8c41fe7ca4f30be7623df2c0040f5f7fb81e7183262af14c0",
+        "visualCheck": "Official ID 131 maps to wealth god golden glow background; matching title icon spells Fa Cai Shen M."
+      },
+      "demo": "US New York browser guest-query /h5/131/?language=en&token=guest HTTP 200, exact Fa Cai Shen M branding, 243 Ways, 5x3 portrait reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Fa Cai Shen M 131 live verified; continue Good Fortune M 133.",
+  "publication": {
+    "commit": "ddb4ee88215e34d20d801b98b64cb2898910ef30",
+    "githubRun": 41063570924,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "5ff64690-d043-47bb-b8eb-5f48d6b37802",
+    "cloudflareUrl": "https://5ff64690.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

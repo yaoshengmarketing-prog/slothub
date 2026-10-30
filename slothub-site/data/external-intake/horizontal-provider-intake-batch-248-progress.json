@@ -1,0 +1,41 @@
+{
+  "batch": 248,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Wolf Moon / 狼月 (46) absent.",
+  "records": [
+    {
+      "name": "Wolf Moon",
+      "slug": "wolf-moon-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "46",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 46: RTP 96.27%, Medium volatility, overall maximum_win 3000; free games and high score icon can upgrade to WILD. US guest canvas labels 40 LINES.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/OLlzM8C2.jpg",
+        "localPath": "public/assets/games/wolf-moon-cq9.jpg",
+        "sha256": "2b7c3ddd1b1a84378f4a25bf32217367e2c1153ad89da808d5e2b42dc6dd5fcd",
+        "visualCheck": "Official ID 46 maps to night forest background; matching title icon spells Wolf Moon."
+      },
+      "demo": "US New York browser guest-query /h5/46/?language=en&token=guest HTTP 200 with exact Wolf Moon branding, 5x3 reels, 40 LINES and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Wolf Moon 46 live verified; continue Good Fortune 50.",
+  "publication": {
+    "commit": "d91fdf68609fa89b8eb1ed8d98112bb27453d4f3",
+    "githubRun": 41067733600,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "00f78aab-245e-44ce-8836-b70b3656d7e9",
+    "cloudflareUrl": "https://00f78aab.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

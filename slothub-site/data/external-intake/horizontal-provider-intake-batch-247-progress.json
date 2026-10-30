@@ -1,0 +1,41 @@
+{
+  "batch": 247,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Fire Chibi 2 / 火烧连环船2 (140) absent.",
+  "records": [
+    {
+      "name": "Fire Chibi 2",
+      "slug": "fire-chibi-2-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "140",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 140: RTP 96.00%, High volatility, overall maximum_win 5000; locked WILDs in free games and up to 4000x local rewards. US guest canvas labels 243 WAY.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/v8Afdru0.jpg",
+        "localPath": "public/assets/games/fire-chibi-2-cq9.jpg",
+        "sha256": "c6faf2df8e5af153ff805fae1fa68a7b0dd1e1ae62e910b29bcf2d8589801f9a",
+        "visualCheck": "Official ID 140 maps to battle ships background; matching title icon spells Fire Chibi 2."
+      },
+      "demo": "US New York browser guest-query /h5/140/?language=en&token=guest HTTP 200 with exact Fire Chibi 2 branding, 5x3 reels, 243 WAY and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Fire Chibi 2 140 live verified; continue Wolf Moon 46.",
+  "publication": {
+    "commit": "61ba3db550171ca7a2c520e08a2374f18b60f783",
+    "githubRun": 41067165095,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "48942106-4e41-4390-935d-b8c99fa08714",
+    "cloudflareUrl": "https://48942106.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "batch": 243,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Sherlock Holmes / 福尔摩斯 (42) absent.",
+  "records": [
+    {
+      "name": "Sherlock Holmes",
+      "slug": "sherlock-holmes-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "42",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 42: RTP 96.11%, Medium volatility, overall maximum_win 3000; five Free Game modes and local reward up to 30x. US guest canvas labels 243 Ways.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/QxSleZ5Y.jpg",
+        "localPath": "public/assets/games/sherlock-holmes-cq9.jpg",
+        "sha256": "90140ff90ca94ec4d8f36388f9ab11ddd36401720f2ce89ef479bec4e62bcc89",
+        "visualCheck": "Official ID 42 maps to detective study/fireplace background; matching title icon spells Sherlock Holmes."
+      },
+      "demo": "US New York browser guest-query /h5/42/?language=en&token=guest HTTP 200, exact Sherlock Holmes branding, 243 Ways, 5x3 reels and controls without login. Visible 3 WAY control not operated; no gameplay action."
+    }
+  ],
+  "nextCursor": "Sherlock Holmes 42 live verified; continue Gu Gu Gu M 135.",
+  "publication": {
+    "commit": "5d5e540cc6b47c3ceac4d859825e0c5a09b0aed3",
+    "githubRun": 41064801361,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "e30bc747-fb33-479b-a6a7-dffe8775640d",
+    "cloudflareUrl": "https://e30bc747.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

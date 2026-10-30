@@ -1,0 +1,41 @@
+{
+  "batch": 205,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Wonderland / 夢遊仙境 (116) absent before intake.",
+  "records": [
+    {
+      "name": "Wonderland",
+      "slug": "wonderland-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "116",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 116: RTP 96.09%, Medium volatility, overall maximum_win 3000. Description states 243 Ways and five specified symbols expand upward during Free Games, substituting for a basic symbol.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/L3fYzQIv.jpg",
+        "localPath": "public/assets/games/wonderland-cq9.jpg",
+        "sha256": "25ff1e23a00aeecb1e84a795d23c4e21a0854789a84ba9bfce13742877d8204c",
+        "visualCheck": "Official 116 maps to fantasy forest background; icon ZcsPXlbg.png visibly spells Wonderland."
+      },
+      "demo": "US New York browser: guest-query /h5/116/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; Wonderland/243 Ways branding, 5x3 reels and controls after 40 seconds without login. No spin, bet or login action."
+    }
+  ],
+  "nextCursor": "Wonderland 116 live verified with official 243 Ways and US guest game canvas. Continue 5 God beasts 117.",
+  "publication": {
+    "commit": "44a84c78823473a3d36dcf35ea5753bb19560c1d",
+    "githubRun": 41044821321,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "4b0100e8-cf3e-4dcd-af64-6cbabe9d336a",
+    "cloudflareUrl": "https://4b0100e8.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

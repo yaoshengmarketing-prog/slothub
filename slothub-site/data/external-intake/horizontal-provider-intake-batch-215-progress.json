@@ -1,0 +1,41 @@
+{
+  "batch": 215,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Rave Jump Mobile / 单手跳起来 (109) absent before intake.",
+  "records": [
+    {
+      "name": "Rave Jump Mobile",
+      "slug": "rave-jump-mobile-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "109",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 109: RTP 96.18%, High volatility, overall maximum_win 3000; portrait nightclub design and stacked Golden Ball symbols. US guest canvas visibly labels 243 Ways.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/WXcoZ52v.jpg",
+        "localPath": "public/assets/games/rave-jump-mobile-cq9.jpg",
+        "sha256": "05c6ac282562608a6232ff3457d5ee3d60ce350c5485e79aa07577d50c3e411b",
+        "visualCheck": "Official ID 109 maps to nightclub stage background; matching icon spells Rave Jump."
+      },
+      "demo": "US New York browser guest-query /h5/109/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 243 Ways, reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Rave Jump Mobile 109 live verified; continue Disco Night M 137.",
+  "publication": {
+    "commit": "46204bbc15594a8cf09c8181920c8331c62d9eac",
+    "githubRun": 41050404950,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "e2a7eed8-1641-4de0-b51f-82a77d126462",
+    "cloudflareUrl": "https://e2a7eed8.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

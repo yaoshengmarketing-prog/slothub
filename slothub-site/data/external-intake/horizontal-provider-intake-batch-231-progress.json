@@ -1,0 +1,41 @@
+{
+  "batch": 231,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 888 / 发发发 (20) absent and distinct from 888 Cai Shen 227.",
+  "records": [
+    {
+      "name": "888",
+      "slug": "888-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "20",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 20: RTP 95.91%, Medium volatility, overall maximum_win 800; feature bonus chooses among adjacent dollar symbols on reels 2 to 4. US guest canvas labels 10 LINES.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/tmH1TZ9G.jpg",
+        "localPath": "public/assets/games/888-cq9.jpg",
+        "sha256": "8bd7f5d9987c9be9ffbf1279990355db09b476209ebe42ad65619915e00836ca",
+        "visualCheck": "Official ID 20 maps to fireworks city background; matching title icon spells 888."
+      },
+      "demo": "US New York browser guest-query /h5/20/?language=en&token=guest HTTP 200, 888 branding, 10 LINES, 5x3 reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "888 20 live verified; continue WaterWorld 29.",
+  "publication": {
+    "commit": "2520fa82dc6f221243097a8cbf083bc42842791d",
+    "githubRun": 41058376249,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "58dc967f-fb07-4ded-9090-d06577207cda",
+    "cloudflareUrl": "https://58dc967f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

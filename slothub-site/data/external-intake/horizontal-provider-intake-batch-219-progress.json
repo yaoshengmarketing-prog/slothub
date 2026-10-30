@@ -1,0 +1,41 @@
+{
+  "batch": 219,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Cricket Fever / 板球狂热 (188) absent before intake.",
+  "records": [
+    {
+      "name": "Cricket Fever",
+      "slug": "cricket-fever-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "188",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 188: RTP 95.97%, High volatility, overall maximum_win 5000; Free Games may retrigger. US guest canvas labels 243 Ways.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/qvHFwkE8.jpg",
+        "localPath": "public/assets/games/cricket-fever-cq9.jpg",
+        "sha256": "87ff33f63c26a36966d1d01dbe9f640cc4213080c1c5701209d48728ff2d6bc2",
+        "visualCheck": "Official ID 188 maps to cricket stadium background; matching icon spells Cricket Fever."
+      },
+      "demo": "US New York browser guest-query /h5/188/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 243 Ways, 5x3 reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Cricket Fever 188 live verified; continue Dragon Ball 185.",
+  "publication": {
+    "commit": "8b8a5b08f9e33dcdb9bd761265cbc21041305a76",
+    "githubRun": 41052077418,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "cf5b1225-e850-4d90-a985-90e675b86898",
+    "cloudflareUrl": "https://cf5b1225.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

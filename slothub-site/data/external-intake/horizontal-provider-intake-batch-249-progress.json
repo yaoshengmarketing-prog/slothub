@@ -1,0 +1,41 @@
+{
+  "batch": 249,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Good Fortune / 鸿福齐天 (50) absent and distinct from Good Fortune M ID133.",
+  "records": [
+    {
+      "name": "Good Fortune",
+      "slug": "good-fortune-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "50",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 50: RTP 96.19%, Medium volatility, overall maximum_win 3000; bet selection upgrades symbols, free games, stacked high pay symbols. US guest canvas labels 243 WAYS.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/n1ioRev0.jpg",
+        "localPath": "public/assets/games/good-fortune-cq9.jpg",
+        "sha256": "88234305c1f41e96ead448541d31483d5589c017827c628d22d2d434e83a5d8a",
+        "visualCheck": "Official ID 50 maps to red gold traditional background; matching title icon spells Good Fortune."
+      },
+      "demo": "US New York browser guest-query /h5/50/?language=en&token=guest HTTP 200 with exact Good Fortune branding, 5x3 reels, 243 WAYS and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Good Fortune 50 live verified; continue Xmas 141.",
+  "publication": {
+    "commit": "df30b1147f5ee7ff713b7ced2ac6923940c24ca9",
+    "githubRun": 41068259674,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "575236e8-2e39-485b-be7e-b48135648473",
+    "cloudflareUrl": "https://575236e8.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

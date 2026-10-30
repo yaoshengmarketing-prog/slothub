@@ -1,0 +1,41 @@
+{
+  "batch": 238,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 God of War M / 直式武圣 (127) absent, distinct from God of War 31.",
+  "records": [
+    {
+      "name": "God of War M",
+      "slug": "god-of-war-m-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "127",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 127: RTP 96.10%, Medium volatility, overall maximum_win 3000; Free Games let player choose one of five symbols to appear on reels. US guest canvas labels 243 Ways.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/vt5wDTRE.jpg",
+        "localPath": "public/assets/games/god-of-war-m-cq9.jpg",
+        "sha256": "a9f85038fae3c004cbd90c6531021f6e78d7e4855239e69ef4cf84a1fa431ee5",
+        "visualCheck": "Official ID 127 maps to sunset battlefield background; matching title icon spells God of War M."
+      },
+      "demo": "US New York browser guest-query /h5/127/?language=en&token=guest HTTP 200, exact God of War M branding, 243 Ways, 5x3 reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "God of War M 127 live verified; continue Gu Gu Gu 2 M 129.",
+  "publication": {
+    "commit": "76c59834332ba206b345b1f3e7a825ac169ba4e3",
+    "githubRun": 41061973777,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "c92080e1-2d4d-4b76-aa03-96cbc395e604",
+    "cloudflareUrl": "https://c92080e1.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

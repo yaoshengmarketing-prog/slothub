@@ -4,8 +4,8 @@
   "checkedAt": "2026-10-30",
   "catalogCount": 141,
   "slotCount": 122,
-  "capturedCountThisRun": 29,
-  "publishedCountThisRun": 28,
+  "capturedCountThisRun": 100,
+  "publishedCountThisRun": 99,
   "reviewQueue": [
     {
       "name": "Sung Wukong",
@@ -16,6 +16,71 @@
       "name": "Sugar Combo",
       "gameId": "CP2",
       "reason": "Official catalog lists High volatility, but English news/detail/963 and Chinese news/detail/962 state Medium volatility. Hold core metric for source reconciliation."
+    },
+    {
+      "name": "Kronos",
+      "gameId": "154",
+      "reason": "Official catalog description calls it a 4x3 reel; read-only US guest canvas was reported as five columns. Omit definitive reel geometry pending source reconciliation. Overall catalog maximum 3000x and promotional 1000x remain separately scoped."
+    },
+    {
+      "name": "RaveHigh",
+      "gameId": "203",
+      "reason": "Official catalog maximum_win is 3000x but the same catalog description claims overall maximum prize 10000x. Hold until authoritative source reconciliation; do not publish either as certain."
+    },
+    {
+      "name": "Zeus M",
+      "gameId": "125",
+      "reason": "US New York guest Demo /h5/125/ HTTP 200 but remained blurred splash/loading after 40 seconds; no readable branding, reels or controls. Recheck before available Demo claim or publication."
+    },
+    {
+      "name": "Hot DJ",
+      "gameId": "GB5",
+      "reason": "Official icon visibly says 20000X but official catalog maximumWin is 13000; exact US New York guest /h5/GB5/?language=en&token=guest returned 404. Hold core max-win conflict and Demo claim until authoritative reconciliation."
+    },
+    {
+      "name": "OrientalBeauty",
+      "gameId": "202",
+      "reason": "Official catalog maximumWin is 6000x while same official catalog description calls 4000x grand prize; hold core max-win conflict despite visually rendered US guest Demo."
+    },
+    {
+      "name": "Fruit King",
+      "gameId": "1",
+      "reason": "Official catalog maximumWin is 2500x, but same catalog description promotes 5000x jackpot. Hold core maximum conflict despite visually loaded US guest Demo."
+    },
+    {
+      "name": "Mr. Rich",
+      "gameId": "5",
+      "reason": "Official ID5 icon visually spells a Chinese title unlike catalog Mr. Rich / 金大款; catalog max3000 vs description 1500x tops perks. Hold identity/maximum wording until authoritative reconciliation despite visually loaded US guest Demo."
+    },
+    {
+      "name": "Super5",
+      "gameId": "16",
+      "reason": "Official catalog maximumWin 3000x while same description says 5000x grand prize. Hold core max-win conflict despite visually loaded US guest Demo."
+    },
+    {
+      "name": "Great Lion",
+      "gameId": "17",
+      "reason": "Official catalog maximumWin 800x while same description says 4000x perks at max. Hold core max-win conflict despite visually loaded US guest Demo."
+    },
+    {
+      "name": "Hot Spin",
+      "gameId": "19",
+      "reason": "Official catalog maximumWin 500x while same description claims chance to win 4000x high reward. Hold core max-win conflict pending authoritative reconciliation."
+    },
+    {
+      "name": "Rave Jump2",
+      "gameId": "24",
+      "reason": "Official catalog maximumWin 500x while same description claims maximum 10000x prize. Hold core max-win conflict pending authoritative reconciliation."
+    },
+    {
+      "name": "777",
+      "gameId": "26",
+      "reason": "Official catalog maximumWin 2000x while same description says diamond WILD 10000 prize; core max-win interpretation unresolved."
+    },
+    {
+      "name": "Wheel Money",
+      "gameId": "128",
+      "reason": "Official description calls this a classic 3*1 reel, but US guest canvas visibly renders a 3x3 symbol window with 1 Line. Hold exact geometry interpretation before detailed page."
     }
   ],
   "existingAtStart": [
@@ -25,10 +90,9 @@
   ],
   "intakeState": "in-progress",
   "nextCandidateOrder": [
-    "Fa Cai Shen2",
-    "5 Boxing",
-    "Hercules",
-    "Kronos"
+    "Fire Queen",
+    "Thor",
+    "Jumping Mobile"
   ],
   "slotItems": [
     {
@@ -2297,6 +2361,6 @@
     }
   ],
   "inventoryState": "all-141-official-products-captured",
-  "sitePublishedSlotCount": 21,
-  "remainingSlotCount": 101
+  "sitePublishedSlotCount": 103,
+  "remainingSlotCount": 19
 }

@@ -1,0 +1,41 @@
+{
+  "batch": 217,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Wolf Disco / 野狼Disco (183) absent before intake.",
+  "records": [
+    {
+      "name": "Wolf Disco",
+      "slug": "wolf-disco-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "183",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 183: RTP 96.16%, High volatility, overall maximum_win 6000; retro 1980s disco theme. US guest canvas visibly labels 243 Ways. No unverified reward feature asserted.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/r3tXqed6.jpg",
+        "localPath": "public/assets/games/wolf-disco-cq9.jpg",
+        "sha256": "4efd1ec672bb17697d2377b9feb12e23d39191a1e65b4bf1829caec4992d8cdb",
+        "visualCheck": "Official ID 183 maps to blue neon brick wall background; matching icon spells Wolf Disco."
+      },
+      "demo": "US New York browser guest-query /h5/183/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 243 Ways, reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Wolf Disco 183 live verified; continue Wing Chun 187.",
+  "publication": {
+    "commit": "b6b4f02c321c17e3d10e3b35addf5ed6308ba431",
+    "githubRun": 41051173299,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "4033b330-07f2-4fb1-9339-12c7c3cb74c9",
+    "cloudflareUrl": "https://4033b330.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

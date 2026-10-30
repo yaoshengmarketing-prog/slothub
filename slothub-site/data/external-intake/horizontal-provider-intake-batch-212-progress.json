@@ -1,0 +1,41 @@
+{
+  "batch": 212,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 DiscoNight / 蹦迪 (205) absent before intake.",
+  "records": [
+    {
+      "name": "DiscoNight",
+      "slug": "disconight-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "205",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 205: RTP 96.18%, High volatility, overall maximum_win 5000. Golden Diamond triggers and determines Free Game count; multiplier rises each Free Game spin up to local 150x. US guest canvas labels 243WAYS and BUY FEATURE, not asserted as a tested purchase function.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/hHHxPmdg.jpg",
+        "localPath": "public/assets/games/disconight-cq9.jpg",
+        "sha256": "e28e43fb56584c05d9319f9d1a29e69ee79372bf439e59ea4c675b8d1a0aa377",
+        "visualCheck": "Official 205 maps to disco stage background; icon jR7hDhP5.png visibly spells DISCO NIGHT over golden diamond."
+      },
+      "demo": "US New York browser: guest-query /h5/205/?language=en&token=guest HTTP 200, unchanged final URL, title Disco Night; DISCO NIGHT/243WAYS branding, five reels and BUY FEATURE control after about 40 seconds without login. No spin, bet, buy or login action."
+    }
+  ],
+  "nextCursor": "DiscoNight 205 live verified; continue All Star Team 98.",
+  "publication": {
+    "commit": "3f70d885eb69f483f5d86381af316174abe9ab9c",
+    "githubRun": 41048631083,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "c9b70213-6aa7-4c94-ad72-d3d629458e1e",
+    "cloudflareUrl": "https://c9b70213.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

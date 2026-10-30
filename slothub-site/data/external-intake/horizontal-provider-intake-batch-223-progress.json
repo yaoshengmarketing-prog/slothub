@@ -1,0 +1,41 @@
+{
+  "batch": 223,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Money Tree / 金钱树 (208) absent before intake.",
+  "records": [
+    {
+      "name": "Money Tree",
+      "slug": "money-tree-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "208",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 208: RTP 96.15%, Low volatility, overall maximum_win 2000; five paylines and chance to trigger re-spin continuing until win. US guest canvas labels 5Lines.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/PSJAPlR5.jpg",
+        "localPath": "public/assets/games/money-tree-cq9.jpg",
+        "sha256": "a627a30601b30cf18f41b904674bd198536de29fb311a729590375d28dde30bb",
+        "visualCheck": "Official ID 208 maps to green tree leaves background; matching icon spells Money Tree."
+      },
+      "demo": "US New York browser guest-query /h5/208/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 5Lines, 3x3 reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "Money Tree 208 live verified; skip existing Acrobatics 223 and Lucky Tigers 226, hold Hot DJ GB5; continue 888 Cai Shen 227.",
+  "publication": {
+    "commit": "e1480b4b01ca8cd33e68224caa20bd280cbf7696",
+    "githubRun": 41053917362,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "4631db2d-0cd1-434a-ad85-8251f611df54",
+    "cloudflareUrl": "https://4631db2d.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

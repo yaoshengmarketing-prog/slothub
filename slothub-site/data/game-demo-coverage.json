@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 760,
+  "gameCount": 831,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 642,
+    "available": 713,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,2562 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fire-queen-cq9",
+      "name": "Fire Queen",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fire Queen ID 83, RTP 96.02%, High volatility, overall 3000x maximum, and explicitly 3x3 reels with 5 lines, stacked WILD and full-reel matching-symbol free-game trigger. US browser read-only guest Demo: exact FIRE QUEEN canvas, 3x3 reels, 5 LINES and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 83, metrics, 3x3/5-line geometry and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/83/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered exact FIRE QUEEN canvas, 3x3 reels, 5 LINES and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/90FuSiLf.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped fiery canyon background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/okYFfluF.png",
+          "httpStatus": 200,
+          "notes": "Official Fire Queen title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/83/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fire Queen ID 83, RTP 96.02%, High volatility, overall 3000x maximum, and explicitly 3x3 reels with 5 lines, stacked WILD and full-reel matching-symbol free-game trigger. US browser read-only guest Demo: exact FIRE QUEEN canvas, 3x3 reels, 5 LINES and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "chameleon-cq9",
+      "name": "Chameleon",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Chameleon ID 79, RTP 96.13%, Medium volatility, overall 5000x maximum, high payout symbols matching in free games. US browser read-only guest Demo: exact CHAMELEON canvas, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 79, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/79/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered exact CHAMELEON canvas, 5x3 reels, 243 WAYS and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/I0hId8i0.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped green forest background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/FFRRdPcq.png",
+          "httpStatus": 200,
+          "notes": "Official Chameleon title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/79/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Chameleon ID 79, RTP 96.13%, Medium volatility, overall 5000x maximum, high payout symbols matching in free games. US browser read-only guest Demo: exact CHAMELEON canvas, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "apollo-cq9",
+      "name": "Apollo",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Apollo ID 78, RTP 96.13%, Medium volatility, overall 3000x maximum, five shield icons awarding 100 free games, stacked symbols and two-way scoring. US browser read-only guest Demo: exact APOLLO canvas, 5x3 reels, 40 LINES and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 78, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/78/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered exact APOLLO canvas, 5x3 reels, 40 LINES and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/l2kFkneI.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped gold sky background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/t04iYWeL.png",
+          "httpStatus": 200,
+          "notes": "Official Apollo title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/78/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Apollo ID 78, RTP 96.13%, Medium volatility, overall 3000x maximum, five shield icons awarding 100 free games, stacked symbols and two-way scoring. US browser read-only guest Demo: exact APOLLO canvas, 5x3 reels, 40 LINES and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "treasure-bowl-cq9",
+      "name": "Treasure Bowl",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Treasure Bowl ID 74, RTP 96.06%, Medium volatility, overall 3000x maximum, eight free games, 50x local reward and 5x extra WILD bonus. US browser read-only guest Demo: exact TREASURE BOWL canvas, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 74, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/74/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered exact TREASURE BOWL canvas, 5x3 reels, 243 WAYS and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/pcl6XiVe.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped red pattern background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/ESogCyv6.png",
+          "httpStatus": 200,
+          "notes": "Official Treasure Bowl title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/74/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Treasure Bowl ID 74, RTP 96.06%, Medium volatility, overall 3000x maximum, eight free games, 50x local reward and 5x extra WILD bonus. US browser read-only guest Demo: exact TREASURE BOWL canvas, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "happy-rich-year-cq9",
+      "name": "Happy Rich Year",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Happy Rich Year ID 72, RTP 96.06%, Medium volatility, overall 3000x maximum, blessing double score, lantern up to 100x local reward and triple connected-symbol score in free games. US browser read-only guest Demo: exact HAPPY RICH YEAR canvas, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 72, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/72/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered exact HAPPY RICH YEAR canvas, 5x3 reels, 243 WAYS and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/ETNkVGQl.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped new year background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/GIrO0snQ.png",
+          "httpStatus": 200,
+          "notes": "Official Happy Rich Year title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/72/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Happy Rich Year ID 72, RTP 96.06%, Medium volatility, overall 3000x maximum, blessing double score, lantern up to 100x local reward and triple connected-symbol score in free games. US browser read-only guest Demo: exact HAPPY RICH YEAR canvas, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "wanbao-dino-cq9",
+      "name": "Wanbao Dino",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Wanbao Dino ID 70, RTP 96.07%, High volatility, overall 3000x maximum, volcano free games, up to 300x local rewards, WILD conversion and doubled score. US browser read-only guest Demo: exact WANBAO DINO canvas, 5x3 reels, 25 LINES and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 70, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/70/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered exact WANBAO DINO canvas, 5x3 reels, 25 LINES and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/ueiElkvB.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped dinosaur and volcano background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/iSYzExKo.png",
+          "httpStatus": 200,
+          "notes": "Official Wanbao Dino title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/70/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Wanbao Dino ID 70, RTP 96.07%, High volatility, overall 3000x maximum, volcano free games, up to 300x local rewards, WILD conversion and doubled score. US browser read-only guest Demo: exact WANBAO DINO canvas, 5x3 reels, 25 LINES and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "fa-cai-shen-cq9",
+      "name": "Fa Cai Shen",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fa Cai Shen ID 69, RTP 96.07%, High volatility, overall 3000x maximum, specified symbol retriggering free games and random WILD multiplier up to 27x. US browser read-only guest Demo: browser page title Welcome but exact FA CAI SHEN visible in game canvas, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 69, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/69/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser page title Welcome, but canvas rendered FA CAI SHEN branding, 5x3 reels, 243 WAYS and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/Tjb3kd7J.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped red traditional pattern background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/dYSFNGvb.png",
+          "httpStatus": 200,
+          "notes": "Official Fa Cai Shen title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/69/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fa Cai Shen ID 69, RTP 96.07%, High volatility, overall 3000x maximum, specified symbol retriggering free games and random WILD multiplier up to 27x. US browser read-only guest Demo: browser page title Welcome but exact FA CAI SHEN visible in game canvas, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "wukong-and-peaches-cq9",
+      "name": "Wukong & Peaches",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Wukong & Peaches ID 68, RTP 96.91%, High volatility, overall 8000x maximum, peach icons adding bonus multiplier in free games. US browser read-only guest Demo: canvas logo Wukong Peaches omits ampersand but matches official game/icon, 5x3 reels, 243 ways and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 68, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/68/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered Wukong Peaches logo, 5x3 reels, 243 ways and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/FXYcOAAT.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped peach-blossom bridge background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/G72CaDlv.png",
+          "httpStatus": 200,
+          "notes": "Official Wukong & Peaches title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/68/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Wukong & Peaches ID 68, RTP 96.91%, High volatility, overall 8000x maximum, peach icons adding bonus multiplier in free games. US browser read-only guest Demo: canvas logo Wukong Peaches omits ampersand but matches official game/icon, 5x3 reels, 243 ways and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "fire-777-cq9",
+      "name": "Fire 777",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fire 777 ID 66, RTP 97.02%, Medium volatility, overall 3000x maximum, FG high-point bonus and more than 500x payouts. US browser read-only guest Demo: browser page title Welcome but exact FIRE777 visible in game canvas, 5x3 reels, 20 LINES, Lucky Game panel and controls without login. No spin, bet or login; panel behavior not inferred.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 66, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/66/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser page title Welcome, but canvas rendered FIRE777 branding, 5x3 reels, 20 LINES, Lucky Game panel and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/R3XT1APq.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped red and blue fire background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/6KyGSa7t.png",
+          "httpStatus": 200,
+          "notes": "Official Fire 777 title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/66/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fire 777 ID 66, RTP 97.02%, Medium volatility, overall 3000x maximum, FG high-point bonus and more than 500x payouts. US browser read-only guest Demo: browser page title Welcome but exact FIRE777 visible in game canvas, 5x3 reels, 20 LINES, Lucky Game panel and controls without login. No spin, bet or login; panel behavior not inferred.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "zeus-cq9",
+      "name": "Zeus",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Zeus ID 64, RTP 96.18%, Medium volatility, overall 3000x maximum, 243 ways, stacked WILDs in base game and one to nine random WILDs with retrigger in free games. US browser read-only guest Demo: browser page title Welcome but exact ZEUS visible in game canvas, 5x3 reels, 243WAYS and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 64, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/64/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser page title Welcome, but canvas rendered ZEUS branding, 5x3 reels, 243WAYS and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/GkFAfMmm.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped golden temple background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/GnXe0qaD.png",
+          "httpStatus": 200,
+          "notes": "Official Zeus title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/64/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Zeus ID 64, RTP 96.18%, Medium volatility, overall 3000x maximum, 243 ways, stacked WILDs in base game and one to nine random WILDs with retrigger in free games. US browser read-only guest Demo: browser page title Welcome but exact ZEUS visible in game canvas, 5x3 reels, 243WAYS and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "gu-gu-gu-2-cq9",
+      "name": "Gu Gu Gu 2",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Gu Gu Gu 2 ID 58, RTP 95.97%, High volatility, overall 8000x maximum, WILD extra 5x payout and third-reel re-spin helping entry to free games. US browser read-only guest Demo: browser page title Welcome but exact Gu Gu Gu 2 visible in game canvas, 5x3 reels, 15 Lines and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 58, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/58/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser page title Welcome, but canvas rendered Gu Gu Gu 2 branding, 5x3 reels, 15 Lines and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/QwvpOpr4.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped gold old town background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/eQUTVWwM.png",
+          "httpStatus": 200,
+          "notes": "Official rooster Gu Gu Gu 2 title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/58/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Gu Gu Gu 2 ID 58, RTP 95.97%, High volatility, overall 8000x maximum, WILD extra 5x payout and third-reel re-spin helping entry to free games. US browser read-only guest Demo: browser page title Welcome but exact Gu Gu Gu 2 visible in game canvas, 5x3 reels, 15 Lines and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "the-beast-war-cq9",
+      "name": "The Beast War",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies The Beast War ID 57, RTP 95.99%, Medium volatility, overall 1000x maximum, choosing free-game rounds and patron saint, giant and stacked icons. US browser read-only guest Demo: browser page title Welcome but exact The Beast War visible in game canvas, 5x3 reels, 40 Lines and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 57, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/57/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser page title Welcome, but canvas rendered The Beast War branding, 5x3 reels, 40 Lines and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/JmiPiByg.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped purple star field background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/3xReDmGC.png",
+          "httpStatus": 200,
+          "notes": "Official The Beast War title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/57/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies The Beast War ID 57, RTP 95.99%, Medium volatility, overall 1000x maximum, choosing free-game rounds and patron saint, giant and stacked icons. US browser read-only guest Demo: browser page title Welcome but exact The Beast War visible in game canvas, 5x3 reels, 40 Lines and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "shou-xin-cq9",
+      "name": "Shou-Xin",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Shou-Xin ID 150, RTP 96.14%, High volatility, overall 3000x maximum, free-game multiplier roulette up to 64x and FG icons on reels two through four awarding 2x bet score and free games. US browser read-only guest Demo: browser page title Welcome but exact Shou-Xin visible in game canvas, 5x3 reels, 25 Lines and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 150, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/150/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser page title Welcome, but canvas rendered Shou-Xin branding, 5x3 reels, 25 Lines and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/T3TJDfMI.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped fantasy mountain background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/scwq2K9q.png",
+          "httpStatus": 200,
+          "notes": "Official Shou-Xin title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/150/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Shou-Xin ID 150, RTP 96.14%, High volatility, overall 3000x maximum, free-game multiplier roulette up to 64x and FG icons on reels two through four awarding 2x bet score and free games. US browser read-only guest Demo: browser page title Welcome but exact Shou-Xin visible in game canvas, 5x3 reels, 25 Lines and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "fortune-totem-cq9",
+      "name": "Fortune Totem",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fortune Totem ID 148, RTP 96.10%, High volatility, overall 8000x maximum, five SC icons awarding ten free games and up to 50x bonus and full-reel WILD locked through free games. US browser read-only guest Demo: HTTP 200 matching FORTUNE TOTEM branding, 5x3 reels, 243 WAY and controls with demo credit without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 148, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/148/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered FORTUNE TOTEM branding, 5x3 reels, 243 WAY and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/M2YMGaXy.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped gold sunrise background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/wTXE7f95.png",
+          "httpStatus": 200,
+          "notes": "Official totem title icon spells Fortune Totem"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/148/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fortune Totem ID 148, RTP 96.10%, High volatility, overall 8000x maximum, five SC icons awarding ten free games and up to 50x bonus and full-reel WILD locked through free games. US browser read-only guest Demo: HTTP 200 matching FORTUNE TOTEM branding, 5x3 reels, 243 WAY and controls with demo credit without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "funny-alpaca-cq9",
+      "name": "Funny Alpaca",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Funny Alpaca ID 54, RTP 96.07%, High volatility, overall 8000x maximum, five SC icons in a row awarding up to 50x total bet score and up to 50 free games. US browser read-only guest Demo: HTTP 200 matching FUNNY ALPACA branding, 5x3 reels, 5 LINES and controls with demo credit without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 54, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/54/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered FUNNY ALPACA branding, 5x3 reels, 5 LINES and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/Seq2xci1.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped night street background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/CCUV6GQb.png",
+          "httpStatus": 200,
+          "notes": "Official alpaca title icon spells Funny Alpaca"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/54/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Funny Alpaca ID 54, RTP 96.07%, High volatility, overall 8000x maximum, five SC icons in a row awarding up to 50x total bet score and up to 50 free games. US browser read-only guest Demo: HTTP 200 matching FUNNY ALPACA branding, 5x3 reels, 5 LINES and controls with demo credit without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "flower-fortunes-cq9",
+      "name": "Flower Fortunes",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Flower Fortunes ID 147, RTP 96.00%, High volatility, overall 4000x maximum, multiple WILDs improving the scoring multiplier and description up to 1000x. US browser read-only guest Demo: HTTP 200 matching Flower Fortunes branding, 5x3 reels, 25 LINE and controls with demo credit without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 147, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/147/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered Flower Fortunes branding, 5x3 reels, 25 LINE and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/yfQAvFVz.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped orange landscape background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/3is7ZyOl.png",
+          "httpStatus": 200,
+          "notes": "Official flower title icon spells Flower Fortunes"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/147/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Flower Fortunes ID 147, RTP 96.00%, High volatility, overall 4000x maximum, multiple WILDs improving the scoring multiplier and description up to 1000x. US browser read-only guest Demo: HTTP 200 matching Flower Fortunes branding, 5x3 reels, 25 LINE and controls with demo credit without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "sky-lanterns-cq9",
+      "name": "Sky Lanterns",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Sky Lanterns ID 146, RTP 96.01%, High volatility, overall 3000x maximum, WILD icons covering reels and description reward up to 1600x. US New York browser read-only guest Demo: initial black canvas then HTTP 200 matching Sky Lanterns branding, 5x3 reels, 50 Lines and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 146, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/146/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser black loading canvas settled to Sky Lanterns branding, 5x3 reels, 50 Lines and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/zdNYdfkK.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped mountain night sky background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/AUN4LME1.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Sky Lanterns"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/146/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Sky Lanterns ID 146, RTP 96.01%, High volatility, overall 3000x maximum, WILD icons covering reels and description reward up to 1600x. US New York browser read-only guest Demo: initial black canvas then HTTP 200 matching Sky Lanterns branding, 5x3 reels, 50 Lines and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "fa-cai-fu-wa-cq9",
+      "name": "Fa Cai Fu Wa",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fa Cai Fu Wa ID 143, RTP 96.09%, Low volatility, overall 3000x maximum, three rounds of free games, locked WILDs and prize above 1000x. US New York browser read-only guest Demo: initial black canvas then HTTP 200 matching Fa Cai Fu Wa branding, 5x3 reels, 243 WAY and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 143, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/143/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser black loading canvas settled to Fa Cai Fu Wa branding, 5x3 reels, 243 WAY and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/AaRKa391.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped gold radial background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/CMDpUcV7.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Fa Cai Fu Wa"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/143/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fa Cai Fu Wa ID 143, RTP 96.09%, Low volatility, overall 3000x maximum, three rounds of free games, locked WILDs and prize above 1000x. US New York browser read-only guest Demo: initial black canvas then HTTP 200 matching Fa Cai Fu Wa branding, 5x3 reels, 243 WAY and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "hephaestus-cq9",
+      "name": "Hephaestus",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Hephaestus ID 142, RTP 96.07%, High volatility, overall 4000x maximum, Super WILD randomly burning symbols into WILD fireballs; description mentions 3000x prize. US New York browser read-only guest Demo: HTTP 200 matching Hephaestus branding, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 142, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/142/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser rendered Hephaestus branding, 5x3 reels, 243 WAYS and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/RK31YwtL.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped gold fire background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/31qyLrb2.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Hephaestus"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/142/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Hephaestus ID 142, RTP 96.07%, High volatility, overall 4000x maximum, Super WILD randomly burning symbols into WILD fireballs; description mentions 3000x prize. US New York browser read-only guest Demo: HTTP 200 matching Hephaestus branding, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "xmas-cq9",
+      "name": "Xmas",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Xmas ID 141, RTP 97.50%, Medium volatility, overall 10000x maximum, elimination-style levels, specified icons triggering free games and 1-5x multiplier chance. US New York browser read-only guest Demo: HTTP 200 matching Xmas branding, portrait Start/Auto 1/Auto 2 and bet controls without login. No conventional reel geometry or Ways/Lines label confirmed. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 141, metrics and elimination-style feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/141/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser rendered Xmas branding, Start, Auto 1, Auto 2 and bet controls without login; no reel geometry assumed"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/UoLLhdBD.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped winter village background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/CpEzUjEd.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Xmas"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/141/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Xmas ID 141, RTP 97.50%, Medium volatility, overall 10000x maximum, elimination-style levels, specified icons triggering free games and 1-5x multiplier chance. US New York browser read-only guest Demo: HTTP 200 matching Xmas branding, portrait Start/Auto 1/Auto 2 and bet controls without login. No conventional reel geometry or Ways/Lines label confirmed. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "good-fortune-cq9",
+      "name": "Good Fortune",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Good Fortune ID 50, RTP 96.19%, Medium volatility, overall 3000x maximum, bet selection upgrading symbols, free games and stacked high pay symbols. US New York browser read-only guest Demo: HTTP 200 matching Good Fortune branding, 5x3 reels, 243 WAYS, multiplier choices and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 50, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/50/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser rendered Good Fortune branding, 5x3 reels, 243 WAYS and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/n1ioRev0.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped red and gold background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/uMhLNEp6.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Good Fortune"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/50/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Good Fortune ID 50, RTP 96.19%, Medium volatility, overall 3000x maximum, bet selection upgrading symbols, free games and stacked high pay symbols. US New York browser read-only guest Demo: HTTP 200 matching Good Fortune branding, 5x3 reels, 243 WAYS, multiplier choices and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "wolf-moon-cq9",
+      "name": "Wolf Moon",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Wolf Moon ID 46, RTP 96.27%, Medium volatility, overall 3000x maximum, free games and upgrading high score icons to WILD. US New York browser read-only guest Demo: HTTP 200 matching Wolf Moon branding, 5x3 reels, 40 LINES, EXTRA PLAY button and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 46, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/46/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser rendered Wolf Moon branding, 5x3 reels, 40 LINES and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/OLlzM8C2.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped night forest background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/OIPQMNEH.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Wolf Moon"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/46/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Wolf Moon ID 46, RTP 96.27%, Medium volatility, overall 3000x maximum, free games and upgrading high score icons to WILD. US New York browser read-only guest Demo: HTTP 200 matching Wolf Moon branding, 5x3 reels, 40 LINES, EXTRA PLAY button and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "fire-chibi-2-cq9",
+      "name": "Fire Chibi 2",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fire Chibi 2 ID 140, RTP 96.00%, High volatility, overall 5000x maximum, and locked WILDs in free games with up to 4000x rewards. US New York browser read-only guest Demo: HTTP 200 matching Fire Chibi 2 branding, 5x3 reels, 243 WAY and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 140, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/140/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser rendered Fire Chibi 2 branding, 5x3 reels, 243 WAY and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/v8Afdru0.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped battle ships background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/zeAzPHVB.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Fire Chibi 2"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/140/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fire Chibi 2 ID 140, RTP 96.00%, High volatility, overall 5000x maximum, and locked WILDs in free games with up to 4000x rewards. US New York browser read-only guest Demo: HTTP 200 matching Fire Chibi 2 branding, 5x3 reels, 243 WAY and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "fire-chibi-m-cq9",
+      "name": "Fire Chibi M",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fire Chibi M ID 139, RTP 96.13%, High volatility, overall 6000x maximum and locked WILDs with up to 1500x perks. US New York browser read-only guest Demo: HTTP 200 matching Fire Chibi M branding, portrait 5x4 reels, 60 Lines and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 139, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/139/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser rendered Fire Chibi M branding, portrait 5x4 reels, 60 Lines and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/lmNMVKZy.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped red battle ships background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/2ydsCVXV.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Fire Chibi M"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/139/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fire Chibi M ID 139, RTP 96.13%, High volatility, overall 6000x maximum and locked WILDs with up to 1500x perks. US New York browser read-only guest Demo: HTTP 200 matching Fire Chibi M branding, portrait 5x4 reels, 60 Lines and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "move-n-jump-cq9",
+      "name": "Move n' Jump",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Move n' Jump ID 138, RTP 96.18%, High volatility, overall 6000x maximum, reel exchanges and Golden Ball Free Games. US New York browser read-only guest Demo: initial black loading canvas, then HTTP 200 matching Move n' Jump branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 138, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/138/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser black loading canvas settled to Move n Jump branding, 243 WAYS, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/MN36xTTs.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped blue dance stage background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/NMA5c7qp.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Move n Jump"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/138/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Move n' Jump ID 138, RTP 96.18%, High volatility, overall 6000x maximum, reel exchanges and Golden Ball Free Games. US New York browser read-only guest Demo: initial black loading canvas, then HTTP 200 matching Move n' Jump branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "gu-gu-gu-m-cq9",
+      "name": "Gu Gu Gu M",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Gu Gu Gu M ID 135, RTP 96.13%, High volatility, overall 6000x maximum, up to 100 Free Games and a local 5x line payout on golden egg. US New York browser read-only guest Demo: initial transient Connect Error, same URL retried, HTTP 200 matching Gu Gu Gu M branding, 15 Lines, 5x3 portrait reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 135, metrics and Free Games description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/135/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser first Connect Error, same URL retried; Gu Gu Gu M branding, 15 Lines, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/xaggl9HH.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped moonlit pagodas background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/OccXMvsd.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Gu Gu Gu M"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/135/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Gu Gu Gu M ID 135, RTP 96.13%, High volatility, overall 6000x maximum, up to 100 Free Games and a local 5x line payout on golden egg. US New York browser read-only guest Demo: initial transient Connect Error, same URL retried, HTTP 200 matching Gu Gu Gu M branding, 15 Lines, 5x3 portrait reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "sherlock-holmes-cq9",
+      "name": "Sherlock Holmes",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Sherlock Holmes ID 42, RTP 96.11%, Medium volatility, overall 3000x maximum, five Free Game modes and a local reward up to 30x. US New York browser read-only guest Demo: HTTP 200, matching Sherlock Holmes branding, 243 Ways, 5x3 reels and controls without login; visible 3 WAY control not operated. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 42, metrics and five Free Game modes"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/42/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Sherlock Holmes branding, 243 Ways, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/QxSleZ5Y.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped detective study/fireplace background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/17tEE26p.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Sherlock Holmes"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/42/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Sherlock Holmes ID 42, RTP 96.11%, Medium volatility, overall 3000x maximum, five Free Game modes and a local reward up to 30x. US New York browser read-only guest Demo: HTTP 200, matching Sherlock Holmes branding, 243 Ways, 5x3 reels and controls without login; visible 3 WAY control not operated. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "good-fortune-m-cq9",
+      "name": "Good Fortune M",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Good Fortune M ID 133, RTP 96.19%, Medium volatility, overall 3000x maximum, portrait design, firecracker-themed Free Games and stacked high-paying symbols. US New York browser read-only guest Demo: HTTP 200, matching Good Fortune M branding, 243 Ways, 5x3 portrait reels and controls without login after splash. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 133, metrics and Free Games description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/133/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Good Fortune M branding, 243 Ways, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/mK4Mq44T.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped red fortune motif background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/Muuo7IQ4.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Good Fortune M"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/133/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Good Fortune M ID 133, RTP 96.19%, Medium volatility, overall 3000x maximum, portrait design, firecracker-themed Free Games and stacked high-paying symbols. US New York browser read-only guest Demo: HTTP 200, matching Good Fortune M branding, 243 Ways, 5x3 portrait reels and controls without login after splash. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "fa-cai-shen-m-cq9",
+      "name": "Fa Cai Shen M",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fa Cai Shen M ID 131, RTP 96.07%, High volatility, overall 3000x maximum, a designated symbol that retriggers Free Games and Treasure Bowl WILD with random local multiplier up to 27x. US New York browser read-only guest Demo: HTTP 200, matching Fa Cai Shen M branding, 243 Ways, 5x3 portrait reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 131, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/131/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Fa Cai Shen M branding, 243 Ways, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/vToXiVvp.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped wealth god golden glow background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/vIhTvyji.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Fa Cai Shen M"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/131/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fa Cai Shen M ID 131, RTP 96.07%, High volatility, overall 3000x maximum, a designated symbol that retriggers Free Games and Treasure Bowl WILD with random local multiplier up to 27x. US New York browser read-only guest Demo: HTTP 200, matching Fa Cai Shen M branding, 243 Ways, 5x3 portrait reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "gold-stealer-cq9",
+      "name": "Gold Stealer",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Gold Stealer ID 130, RTP 96.15%, Medium volatility, overall 1000x maximum, 25 Free Games, a local 25x prize and random full-reel WILD. US New York browser read-only guest Demo: HTTP 200, matching Gold Stealer branding, 40 LINES, 5x4 landscape reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 130, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/130/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Gold Stealer branding, 40 LINES, 5x4 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/K9hp2Kqo.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped gold vault background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/2LfJumfY.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Gold Stealer"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/130/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Gold Stealer ID 130, RTP 96.15%, Medium volatility, overall 1000x maximum, 25 Free Games, a local 25x prize and random full-reel WILD. US New York browser read-only guest Demo: HTTP 200, matching Gold Stealer branding, 40 LINES, 5x4 landscape reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "gu-gu-gu-2-m-cq9",
+      "name": "Gu Gu Gu 2 M",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Gu Gu Gu 2 M ID 129, RTP 95.97%, High volatility, overall 8000x maximum, local WILD 5x reward and a potential reel-3 respin when two Free Game symbols appear. US New York browser read-only guest Demo: HTTP 200, matching Gu Gu Gu 2 M branding, 15 Lines, 5x3 portrait reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 129, metrics and WILD/respin description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/129/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Gu Gu Gu 2 M branding, 15 Lines, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/NOYiyKv8.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped sunset pagodas background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/hXsF4prq.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Gu Gu Gu 2 M"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/129/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Gu Gu Gu 2 M ID 129, RTP 95.97%, High volatility, overall 8000x maximum, local WILD 5x reward and a potential reel-3 respin when two Free Game symbols appear. US New York browser read-only guest Demo: HTTP 200, matching Gu Gu Gu 2 M branding, 15 Lines, 5x3 portrait reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "god-of-war-m-cq9",
+      "name": "God of War M",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies God of War M ID 127, distinct from God of War ID31; RTP 96.10%, Medium volatility, overall 3000x maximum, and five-symbol choice in Free Games. US New York browser read-only guest Demo: HTTP 200, matching God of War M branding, 243 Ways, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 127, metrics and Free Games description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/127/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact God of War M branding, 243 Ways, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/vt5wDTRE.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped sunset battlefield background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/8MFGZdVV.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells God of War M"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/127/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies God of War M ID 127, distinct from God of War ID31; RTP 96.10%, Medium volatility, overall 3000x maximum, and five-symbol choice in Free Games. US New York browser read-only guest Demo: HTTP 200, matching God of War M branding, 243 Ways, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "lucky-bats-m-cq9",
+      "name": "Lucky Bats M",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Lucky Bats M ID 123, distinct from Lucky Bats ID10 and Lucky Bats JP ID1010; RTP 96.02%, Low volatility, overall 3000x maximum, 10 Free Games, local 50x reward and stacked symbols. US New York browser read-only guest Demo: HTTP 200, matching Lucky Bats M branding, 243 Ways, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 123, metrics and Free Games description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/123/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Lucky Bats M branding, 243 Ways, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/Gzvf70Sp.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped red/purple lucky motif background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/J1Nzx0J1.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Lucky Bats M"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/123/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Lucky Bats M ID 123, distinct from Lucky Bats ID10 and Lucky Bats JP ID1010; RTP 96.02%, Low volatility, overall 3000x maximum, 10 Free Games, local 50x reward and stacked symbols. US New York browser read-only guest Demo: HTTP 200, matching Lucky Bats M branding, 243 Ways, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "invincible-elephant-cq9",
+      "name": "Invincible Elephant",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Invincible Elephant ID 124, RTP 96%, High volatility, overall 5000x maximum, 50 lines, roulette awards 9-40 Free Games, sticky WILD symbols during Free Games. US New York browser read-only guest Demo: HTTP 200, matching INVINCIBLE ELEPHANT branding, 50 Lines, 5x4 reels and controls without login after initial splash. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 124, metrics and Free Games description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/124/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Invincible Elephant branding, 50 Lines, 5x4 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/q4VlXJ9G.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped golden elephant background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/sOuNJHuS.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Invincible Elephant"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/124/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Invincible Elephant ID 124, RTP 96%, High volatility, overall 5000x maximum, 50 lines, roulette awards 9-40 Free Games, sticky WILD symbols during Free Games. US New York browser read-only guest Demo: HTTP 200, matching INVINCIBLE ELEPHANT branding, 50 Lines, 5x4 reels and controls without login after initial splash. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "apsaras-cq9",
+      "name": "Apsaras",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Apsaras ID 39, RTP 96.03%, High volatility, overall 6000x maximum and Free Games Reel Move. US New York browser read-only guest Demo: HTTP 200, matching APSARAS branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 39, metrics and Reel Move description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/39/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Apsaras branding, 243 WAYS, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/QlIJp5Av.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped purple stone wall background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/HEu1Pcbb.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Apsaras"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/39/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Apsaras ID 39, RTP 96.03%, High volatility, overall 6000x maximum and Free Games Reel Move. US New York browser read-only guest Demo: HTTP 200, matching APSARAS branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "fire-chibi-cq9",
+      "name": "Fire Chibi",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fire Chibi ID 33, RTP 96.13%, High volatility, overall 4000x maximum and locking WILD ship symbols; description 1500x is a local perk. US New York browser read-only guest Demo: HTTP 200, matching Fire Chibi branding, 60 LINES, 5x4 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 33, metrics and WILD ship description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/33/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Fire Chibi branding, 60 LINES, 5x4 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/S6OqOkZB.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped burning ships background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/uxeVBYcn.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Fire Chibi"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/33/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fire Chibi ID 33, RTP 96.13%, High volatility, overall 4000x maximum and locking WILD ship symbols; description 1500x is a local perk. US New York browser read-only guest Demo: HTTP 200, matching Fire Chibi branding, 60 LINES, 5x4 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "god-of-war-cq9",
+      "name": "God of War",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies God of War ID 31, RTP 96.10%, Medium volatility, overall 3000x maximum and five-symbol choice in Free Games. US New York browser read-only guest Demo: HTTP 200, matching God of War branding, 243 WAYS, 5x3 reels and controls without login after initial intro splash. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 31, metrics and Free Games description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/31/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact God of War branding, 243 WAYS, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/7fpjEFNC.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped ancient battlefield background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/XdsdCyXK.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells God of War"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/31/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies God of War ID 31, RTP 96.10%, Medium volatility, overall 3000x maximum and five-symbol choice in Free Games. US New York browser read-only guest Demo: HTTP 200, matching God of War branding, 243 WAYS, 5x3 reels and controls without login after initial intro splash. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "waterworld-cq9",
+      "name": "WaterWorld",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies WaterWorld ID 29, RTP 96.18%, Low volatility, overall 3000x maximum and elimination of scoring combinations. US New York browser read-only guest Demo: HTTP 200, matching WaterWorld branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 29, metrics and elimination description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/29/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact WaterWorld branding, 243 WAYS, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/h92ReAhu.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped blue underwater background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/GfVEmotT.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells WaterWorld"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/29/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies WaterWorld ID 29, RTP 96.18%, Low volatility, overall 3000x maximum and elimination of scoring combinations. US New York browser read-only guest Demo: HTTP 200, matching WaterWorld branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "888-cq9",
+      "name": "888",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies 888 ID 20, distinct from 888 Cai Shen ID 227; RTP 95.91%, Medium volatility, 800x maximum, and bonus choice among adjacent dollar symbols on reels 2 to 4. US New York browser read-only guest Demo: HTTP 200, 888 branding, 10 LINES, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 20, metrics and bonus description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/20/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser 888, 10 LINES, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/tmH1TZ9G.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped fireworks city background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/AVVZZDTL.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells 888"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/20/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies 888 ID 20, distinct from 888 Cai Shen ID 227; RTP 95.91%, Medium volatility, 800x maximum, and bonus choice among adjacent dollar symbols on reels 2 to 4. US New York browser read-only guest Demo: HTTP 200, 888 branding, 10 LINES, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "lucky-bats-cq9",
+      "name": "Lucky Bats",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Lucky Bats ID 10 (distinct from Lucky Bats JP 1010), RTP 96.02%, Low volatility, overall 3000x maximum, 243 Ways, stacked symbols and high-paying-only symbols during Free Games. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Lucky Bats branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 10, metrics and stacked symbols"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/10/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Lucky Bats, 243 WAYS, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/S4auUPEU.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped oriental lucky pattern background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/0s2JAojt.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Lucky Bats"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/10/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Lucky Bats ID 10 (distinct from Lucky Bats JP 1010), RTP 96.02%, Low volatility, overall 3000x maximum, 243 Ways, stacked symbols and high-paying-only symbols during Free Games. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Lucky Bats branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "zhong-kui-cq9",
+      "name": "Zhong Kui",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Zhong Kui ID 9, RTP 96.10%, High volatility, overall 5000x maximum; only high-paying symbols appear on reels during Free Games. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, ZHONG KUI branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 9, metrics and Free Game symbol set"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/9/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser ZHONG KUI, 243 WAYS, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/EWIa7udg.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped fiery mountain background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/Qp8HJX37.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Zhong Kui"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/9/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Zhong Kui ID 9, RTP 96.10%, High volatility, overall 5000x maximum; only high-paying symbols appear on reels during Free Games. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, ZHONG KUI branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "so-sweet-cq9",
+      "name": "So Sweet",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies So Sweet ID 8, RTP 96.11%, High volatility, overall 6000x maximum and local 3x multiplier on winning combinations during Free Games. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, SO SWEET branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 8, metrics and Free Game multiplier"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/8/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser SO SWEET, 243 WAYS, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/EC8cj2jl.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped candy land background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/l2pXvnE2.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells So Sweet"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/8/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies So Sweet ID 8, RTP 96.11%, High volatility, overall 6000x maximum and local 3x multiplier on winning combinations during Free Games. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, SO SWEET branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "rave-jump-cq9",
+      "name": "Rave Jump",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Rave Jump ID 7, RTP 96.18%, High volatility, overall 3000x maximum, stacked Golden Ball symbols determining Free Game multiplier by count. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, RAVE JUMP branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 7, metrics and Golden Ball feature"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/7/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser RAVE JUMP, 243 WAYS, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/QJus5E8b.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped nightclub stage background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/20x1jSLJ.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Rave Jump"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/7/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Rave Jump ID 7, RTP 96.18%, High volatility, overall 3000x maximum, stacked Golden Ball symbols determining Free Game multiplier by count. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, RAVE JUMP branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "vampire-kiss-cq9",
+      "name": "Vampire Kiss",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Vampire Kiss ID 3, RTP 96.01%, Medium volatility, overall 1500x maximum; descriptive 1000x promotional wording has no defined trigger and is not equated to overall max. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, VAMPIRE KISS branding, 40 LINES, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 3 and metrics; vague 1000x prose qualified"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/3/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact VAMPIRE KISS, 40 LINES, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/6RzKqKmN.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped moonlit cemetery background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/j6yXzx7I.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Vampire Kiss"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/3/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Vampire Kiss ID 3, RTP 96.01%, Medium volatility, overall 1500x maximum; descriptive 1000x promotional wording has no defined trigger and is not equated to overall max. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, VAMPIRE KISS branding, 40 LINES, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "jump-higher-cq9",
+      "name": "Jump Higher",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Jump Higher ID 99 (distinct from Jump Higher Mobile 108), RTP 96.18%, High volatility, overall 5000x maximum, reel-selective Respin and rising Free Game random multiplier. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, JUMP HIGHER 243 WAYS branding, five reels with RESPIN labels and TRY THE RESPIN FEATURE modal. No modal click, spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 99, metrics and Respin description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/99/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser JUMP HIGHER 243 WAYS, five reels, RESPIN labels and untouched feature modal"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/jIlFq0qY.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped nightclub brick wall background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/jbrmZ3l9.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Jump Higher"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/99/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Jump Higher ID 99 (distinct from Jump Higher Mobile 108), RTP 96.18%, High volatility, overall 5000x maximum, reel-selective Respin and rising Free Game random multiplier. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, JUMP HIGHER 243 WAYS branding, five reels with RESPIN labels and TRY THE RESPIN FEATURE modal. No modal click, spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "888-cai-shen-cq9",
+      "name": "888 Cai Shen",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies 888 Cai Shen ID 227, RTP 96.14%, High volatility, overall 12000x maximum, variable reel heights 2-6, up to 7776 ways, Wild reel during Free Games and local 512x reward. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, title 888 Cai Shen, RICH WAYS branding, 5x5 visible grid, controls and BUY FEATURE button without login. No spin, bet, buy or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 227, metrics and variable-height ways description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/227/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser title 888 Cai Shen, RICH WAYS, 5x5 visible grid, controls and BUY FEATURE button without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/mQnBGezQ.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped golden Cai Shen background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/LwhKroKO.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells 888 Cai Shen"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/227/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies 888 Cai Shen ID 227, RTP 96.14%, High volatility, overall 12000x maximum, variable reel heights 2-6, up to 7776 ways, Wild reel during Free Games and local 512x reward. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, title 888 Cai Shen, RICH WAYS branding, 5x5 visible grid, controls and BUY FEATURE button without login. No spin, bet, buy or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "money-tree-cq9",
+      "name": "Money Tree",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Money Tree ID 208, RTP 96.15%, Low volatility, overall 2000x maximum, five paylines and chance to trigger re-spin continuing until a win. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Money Tree title, 5Lines, 3x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 208, metrics and Respin description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/208/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser title Money Tree, 5Lines, 3x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/PSJAPlR5.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped green tree background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/JOeIAmue.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Money Tree"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/208/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Money Tree ID 208, RTP 96.15%, Low volatility, overall 2000x maximum, five paylines and chance to trigger re-spin continuing until a win. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Money Tree title, 5Lines, 3x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "sweet-pop-cq9",
+      "name": "Sweet POP",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Sweet POP ID 206, RTP 96.15%, High volatility, overall 3000x maximum, portrait elimination game with any eight matching symbols triggering drop and random Free Game multiplier symbols. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Sweet POP ANY8 branding, 6x6 symbol grid and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 206, metrics and elimination feature"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/206/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Sweet POP ANY8, 6x6 grid and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/qy1DQK2l.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped candy rainbow background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/ghppFsDy.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Sweet POP"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/206/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Sweet POP ID 206, RTP 96.15%, High volatility, overall 3000x maximum, portrait elimination game with any eight matching symbols triggering drop and random Free Game multiplier symbols. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Sweet POP ANY8 branding, 6x6 symbol grid and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "fire-queen-2-cq9",
+      "name": "Fire Queen 2",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fire Queen 2 ID 186, RTP 96.14%, High volatility, overall 4000x maximum, five paylines, stacked symbols and locking/accumulating Free Game multipliers. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, FIRE QUEEN 2, 5 LINES, 3x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 186, metrics and features"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/186/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser FIRE QUEEN 2, 5 LINES, 3x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/FulPiR5e.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped fire background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/ukH8rpTT.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Fire Queen 2"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/186/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fire Queen 2 ID 186, RTP 96.14%, High volatility, overall 4000x maximum, five paylines, stacked symbols and locking/accumulating Free Game multipliers. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, FIRE QUEEN 2, 5 LINES, 3x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "dragon-ball-cq9",
+      "name": "Dragon Ball",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Dragon Ball ID 185, RTP 96.06%, High volatility, overall 3000x maximum, portrait 576 Ways, three Dragon Balls reel/Scatter upgrade and doubled Free Game Wild multipliers with local 125x. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Dragon Ball title, 576 Ways, portrait five-column reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 185, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/185/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Dragon Ball title, 576 Ways, portrait reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/o1wEKe6Q.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped green burst background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/9J3DkTve.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Dragon Ball"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/185/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Dragon Ball ID 185, RTP 96.06%, High volatility, overall 3000x maximum, portrait 576 Ways, three Dragon Balls reel/Scatter upgrade and doubled Free Game Wild multipliers with local 125x. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Dragon Ball title, 576 Ways, portrait five-column reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "cricket-fever-cq9",
+      "name": "Cricket Fever",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Cricket Fever ID 188, RTP 95.97%, High volatility, overall 5000x maximum and Free Game retrigger. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Cricket Fever 243 Ways branding, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 188, metrics and Free Game retrigger"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/188/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Cricket Fever branding, 243 Ways, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/qvHFwkE8.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped cricket stadium background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/5FmroacQ.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Cricket Fever"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/188/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Cricket Fever ID 188, RTP 95.97%, High volatility, overall 5000x maximum and Free Game retrigger. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Cricket Fever 243 Ways branding, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "wing-chun-cq9",
+      "name": "Wing Chun",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Wing Chun ID 187, RTP 96.08%, Medium volatility, overall 3000x maximum and local 100x award for three or more Scatters. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Wing Chun 243ways branding, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 187, metrics and scatter condition"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/187/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Wing Chun branding, 243ways, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/EOYTlZGf.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped martial arts courtyard background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/SRoNUPP6.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Wing Chun"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/187/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Wing Chun ID 187, RTP 96.08%, Medium volatility, overall 3000x maximum and local 100x award for three or more Scatters. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Wing Chun 243ways branding, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "wolf-disco-cq9",
+      "name": "Wolf Disco",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Wolf Disco ID 183, RTP 96.16%, High volatility and overall 6000x maximum; official theme description only. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, matching Wolf Disco branding, 243 Ways, reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 183 and metrics"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/183/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact branding, 243 Ways, reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/r3tXqed6.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped blue neon brick wall background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/0gSkYuoB.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Wolf Disco"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/183/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Wolf Disco ID 183, RTP 96.16%, High volatility and overall 6000x maximum; official theme description only. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, matching Wolf Disco branding, 243 Ways, reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "disco-night-m-cq9",
+      "name": "Disco Night M",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Disco Night M ID 137, RTP 96.18%, High volatility, overall 5000x maximum, portrait layout and Golden Diamond Free Games multiplier locally up to 150x. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, title Disco Night M, matching branding, 243 Ways, reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 137, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/137/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser title Disco Night M, exact branding, 243 Ways, reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/AJmwRaYQ.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped disco lights background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/EYe9gKUL.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Disco Night"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/137/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Disco Night M ID 137, RTP 96.18%, High volatility, overall 5000x maximum, portrait layout and Golden Diamond Free Games multiplier locally up to 150x. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, title Disco Night M, matching branding, 243 Ways, reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "rave-jump-mobile-cq9",
+      "name": "Rave Jump Mobile",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Rave Jump Mobile ID 109, RTP 96.18%, High volatility, overall 3000x maximum, portrait nightclub game with stacked Golden Ball symbols. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, matching Rave Jump Mobile branding, 243 Ways, reels and controls after about 40 seconds without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 109, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/109/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact brand, 243 Ways, reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/WXcoZ52v.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped nightclub stage background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/FTOgWQxD.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Rave Jump"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/109/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Rave Jump Mobile ID 109, RTP 96.18%, High volatility, overall 3000x maximum, portrait nightclub game with stacked Golden Ball symbols. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, matching Rave Jump Mobile branding, 243 Ways, reels and controls after about 40 seconds without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "jump-higher-mobile-cq9",
+      "name": "Jump Higher Mobile",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Jump Higher Mobile ID 108, RTP 96.18%, High volatility, overall 5000x maximum, portrait Respin selectable reels and Free Game doubling multiplier with local 150x. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, matching Jump Higher Mobile and 243 Ways branding, reels and controls behind TRY THE RESPIN FEATURE modal after about 40 seconds. Modal not clicked; no spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 108, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/108/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser matching brand, 243 Ways, reels and Respin instructional modal without login or gameplay"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/mbGQPEum.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped neon dance setting background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/kbjO17xw.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Jump Higher Mobile and RESPIN"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/108/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Jump Higher Mobile ID 108, RTP 96.18%, High volatility, overall 5000x maximum, portrait Respin selectable reels and Free Game doubling multiplier with local 150x. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, matching Jump Higher Mobile and 243 Ways branding, reels and controls behind TRY THE RESPIN FEATURE modal after about 40 seconds. Modal not clicked; no spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "all-star-team-cq9",
+      "name": "All Star Team",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies All Star Team ID 98, RTP 96.09%, Medium volatility, overall 3000x maximum and 243 Ways with teammate/Free Game round selection and local random winning-line multiplier up to 30x. US New York browser read-only guest Demo: HTTP 200, unchanged final URL; matching All Star Team branding, 5x3 reels and controls after about 40 seconds, no login. No spin, bet, feature selection or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 98, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/98/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser matching brand, 5x3 reels and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/FHq1qiM5.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped stadium background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/Okh58PC3.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells All Star Team"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/98/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies All Star Team ID 98, RTP 96.09%, Medium volatility, overall 3000x maximum and 243 Ways with teammate/Free Game round selection and local random winning-line multiplier up to 30x. US New York browser read-only guest Demo: HTTP 200, unchanged final URL; matching All Star Team branding, 5x3 reels and controls after about 40 seconds, no login. No spin, bet, feature selection or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "disconight-cq9",
+      "name": "DiscoNight",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies DiscoNight ID 205, exact domain, RTP 96.18%, High volatility, overall 5000x maximum and Golden Diamond Free Game multiplier locally up to 150x. US New York browser read-only check: current guest-query /h5/205/?language=en&token=guest HTTP 200, final URL unchanged, title Disco Night, DISCO NIGHT/243WAYS branding, five reels and visible BUY FEATURE/other controls after about 40 seconds without login. No spin, bet, feature buy or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 205, metrics and Golden Diamond Free Game multiplier"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/205/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser title Disco Night; DISCO NIGHT/243WAYS reels and BUY FEATURE control without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/hHHxPmdg.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped disco stage background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/jR7hDhP5.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells DISCO NIGHT"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/205/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies DiscoNight ID 205, exact domain, RTP 96.18%, High volatility, overall 5000x maximum and Golden Diamond Free Game multiplier locally up to 150x. US New York browser read-only check: current guest-query /h5/205/?language=en&token=guest HTTP 200, final URL unchanged, title Disco Night, DISCO NIGHT/243WAYS branding, five reels and visible BUY FEATURE/other controls after about 40 seconds without login. No spin, bet, feature buy or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "muaythai-cq9",
+      "name": "MuayThai",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies MuayThai ID 201, exact domain, RTP 96.10%, Medium volatility, overall 3000x maximum and choice of Free Games and big-prize icons. US New York browser read-only check: current guest-query /h5/201/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, MUAY THAI/243 Ways branding, five reels and controls after about 40 seconds without login. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 201, metrics and Free Game choice"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/201/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; MUAY THAI/243 Ways reels and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/pOO2rrfE.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped golden burst background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/fJKqA2ev.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells MUAY THAI"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/201/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies MuayThai ID 201, exact domain, RTP 96.10%, Medium volatility, overall 3000x maximum and choice of Free Games and big-prize icons. US New York browser read-only check: current guest-query /h5/201/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, MUAY THAI/243 Ways branding, five reels and controls after about 40 seconds without login. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "thor-2-cq9",
+      "name": "Thor 2",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Thor 2 ID 182, exact domain, RTP 96.19%, High volatility, overall 3000x maximum, Wild-triggered five Free Games and buy option. US New York browser read-only check: current guest-query /h5/182/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, THOR 2/243 WAYS branding, five reels, BUY FEATURE and other controls after about 40 seconds without login. No spin, bet, feature buy or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 182, metrics, Wild-triggered Free Games and buy option"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/182/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; THOR 2/243 WAYS reels and BUY FEATURE control without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/RWIIRjvJ.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped lightning beam background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/wlUmyslm.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells THOR 2"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/182/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Thor 2 ID 182, exact domain, RTP 96.19%, High volatility, overall 3000x maximum, Wild-triggered five Free Games and buy option. US New York browser read-only check: current guest-query /h5/182/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, THOR 2/243 WAYS branding, five reels, BUY FEATURE and other controls after about 40 seconds without login. No spin, bet, feature buy or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "6-toros-cq9",
+      "name": "6 Toros",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies 6 Toros ID 173, exact domain, RTP 96.06%, Medium volatility, overall 7000x maximum and six-symbol cascading mechanic with a scoped 100x Free Game multiplier. US New York browser read-only check: current guest-query /h5/173/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, 6 Toros branding, reel/grid area and START/AUTO/menu controls after about 40 seconds without login. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 173, metrics, six-symbol elimination and Free Game multiplier"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/173/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; 6 Toros grid and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/W83Ldtqf.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped green symbol grid background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/R52AT7g9.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells 6 Toros"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/173/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies 6 Toros ID 173, exact domain, RTP 96.06%, Medium volatility, overall 7000x maximum and six-symbol cascading mechanic with a scoped 100x Free Game multiplier. US New York browser read-only check: current guest-query /h5/173/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, 6 Toros branding, reel/grid area and START/AUTO/menu controls after about 40 seconds without login. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "gu-gu-gu-3-cq9",
+      "name": "Gu Gu Gu 3",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Gu Gu Gu 3 ID 180, exact domain, RTP 96.04%, High volatility, overall 4000x maximum and Golden Egg local multiplier up to 200x. US New York browser read-only check: current guest-query /h5/180/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, Gu Gu Gu 3/243 WAYS branding, reels and RESPIN controls after about 40 seconds without login. TRY THE RESPIN FEATURE overlay was left intact; no spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 180, metrics and Golden Egg award"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/180/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; Gu Gu Gu 3/243 WAYS reels and RESPIN controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/LGpFkoBP.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped pond landscape background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/C7xS5WMw.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Gu Gu Gu 3"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/180/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Gu Gu Gu 3 ID 180, exact domain, RTP 96.04%, High volatility, overall 4000x maximum and Golden Egg local multiplier up to 200x. US New York browser read-only check: current guest-query /h5/180/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, Gu Gu Gu 3/243 WAYS branding, reels and RESPIN controls after about 40 seconds without login. TRY THE RESPIN FEATURE overlay was left intact; no spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "skrskr-cq9",
+      "name": "SkrSkr",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies SkrSkr ID 118, exact domain, RTP 96.00%, High volatility, overall 12150x maximum and Wild/SC/Turbo Wild features. US New York browser read-only check: current guest-query /h5/118/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, SkrSkr/243 WAYS branding, five reels and controls after about 40 seconds without login. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 118, metrics and Wild/SC/Turbo Wild facts"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/118/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; SkrSkr/243 WAYS reels and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/WG9rBv4v.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped race-track background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/gSA0sJWW.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells SkrSkr"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/118/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies SkrSkr ID 118, exact domain, RTP 96.00%, High volatility, overall 12150x maximum and Wild/SC/Turbo Wild features. US New York browser read-only check: current guest-query /h5/118/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, SkrSkr/243 WAYS branding, five reels and controls after about 40 seconds without login. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "5-god-beasts-cq9",
+      "name": "5 God beasts",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies 5 God beasts ID 117, exact domain, RTP 96.04%, Low volatility, overall 3000x maximum and 243 Ways with Wild level-up and Free Game expanding symbols. US New York browser read-only check: current guest-query /h5/117/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, 5 God Beasts/243 Ways branding, 5x3 reels and controls after 40 seconds without login. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 117, 243 Ways, Wild level-up and other metrics"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/117/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; 5 God Beasts/243 Ways reels and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/txbQzOrK.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped blue starry background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/NRqQo6b0.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells 5 God Beasts"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/117/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies 5 God beasts ID 117, exact domain, RTP 96.04%, Low volatility, overall 3000x maximum and 243 Ways with Wild level-up and Free Game expanding symbols. US New York browser read-only check: current guest-query /h5/117/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, 5 God Beasts/243 Ways branding, 5x3 reels and controls after 40 seconds without login. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "wonderland-cq9",
+      "name": "Wonderland",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Wonderland ID 116, exact domain, RTP 96.09%, Medium volatility, overall 3000x maximum and 243 Ways with Free Game expanding symbols. US New York browser read-only check: current guest-query /h5/116/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, Wonderland/243 Ways branding, 5x3 reels and controls after 40 seconds without login. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 116, 243 Ways and Free Game expanding symbols"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/116/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; Wonderland/243 Ways reels and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/L3fYzQIv.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped fantasy forest background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/ZcsPXlbg.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Wonderland"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/116/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Wonderland ID 116, exact domain, RTP 96.09%, Medium volatility, overall 3000x maximum and 243 Ways with Free Game expanding symbols. US New York browser read-only check: current guest-query /h5/116/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, Wonderland/243 Ways branding, 5x3 reels and controls after 40 seconds without login. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "snow-queen-cq9",
+      "name": "Snow Queen",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Snow Queen ID 115, exact domain, RTP 96.06%, High volatility, overall 6000x maximum and 3x3/5-line Wild and Free Game mechanics. US New York browser read-only check: current guest-query /h5/115/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, Snow Queen/5Lines branding, 3x3 reels and controls after 40 seconds without login. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 115, 3x3/5-line layout and other metrics"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/115/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; Snow Queen/5Lines 3x3 canvas and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/jcKoeAkm.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped icy castle background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/zaG4epx7.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Snow Queen"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/115/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Snow Queen ID 115, exact domain, RTP 96.06%, High volatility, overall 6000x maximum and 3x3/5-line Wild and Free Game mechanics. US New York browser read-only check: current guest-query /h5/115/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, Snow Queen/5Lines branding, 3x3 reels and controls after 40 seconds without login. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "flying-cai-shen-cq9",
+      "name": "Flying Cai Shen",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Flying Cai Shen ID 113, exact domain, RTP 96.04%, Medium volatility, overall 3000x maximum, reel extension and three-level upgrade mechanics. US New York browser read-only check: current guest-query /h5/113/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, matching Flying Cai Shen branding, reels, Reel Ways/LEVEL 1 display and controls within about 42 seconds without login. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 113, metrics, reel extension and Free Game facts"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/113/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; matching Flying Cai Shen reels and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/bWw8Gc1D.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped golden light background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/RXsH0LQ7.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Flying Cai Shen"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/113/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Flying Cai Shen ID 113, exact domain, RTP 96.04%, Medium volatility, overall 3000x maximum, reel extension and three-level upgrade mechanics. US New York browser read-only check: current guest-query /h5/113/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, matching Flying Cai Shen branding, reels, Reel Ways/LEVEL 1 display and controls within about 42 seconds without login. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "fly-out-cq9",
+      "name": "Fly Out",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fly Out ID 111, exact domain, RTP 96.18%, High volatility, overall 3000x maximum, respin and Golden Ball Free Game mechanics with a scoped local 72x multiplier. US New York browser read-only check: current guest-query /h5/111/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, matching Fly Out branding, reels, RESPIN labels and controls within about 42 seconds without login. Informational overlay was not dismissed; no spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 111, metrics, Respin and Free Game facts"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/111/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; matching Fly Out reels and RESPIN controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/hZDNRBVe.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped stage lights background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/7MT32Iqd.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Fly Out"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/111/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fly Out ID 111, exact domain, RTP 96.18%, High volatility, overall 3000x maximum, respin and Golden Ball Free Game mechanics with a scoped local 72x multiplier. US New York browser read-only check: current guest-query /h5/111/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, matching Fly Out branding, reels, RESPIN labels and controls within about 42 seconds without login. Informational overlay was not dismissed; no spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "pyramid-raider-cq9",
+      "name": "Pyramid Raider",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Pyramid Raider ID 112, exact domain, RTP 96.06%, Medium volatility, overall 3000x maximum, 7776 Ways and variable 3x5 to 6x5 reels. Official mapped title icon is Spanish localized Asaltante de Pirámide. US New York browser read-only check: current guest-query /h5/112/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, Pyramid Raider branding, Egyptian reels and controls without login. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 112, metrics and variable reels"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/112/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; matching Pyramid Raider reels and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/ZzbGXF4R.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped Egyptian temple background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/qkTykFxR.png",
+          "httpStatus": 200,
+          "notes": "Official mapped Spanish localized title icon Asaltante de Pirámide"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/112/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Pyramid Raider ID 112, exact domain, RTP 96.06%, Medium volatility, overall 3000x maximum, 7776 Ways and variable 3x5 to 6x5 reels. Official mapped title icon is Spanish localized Asaltante de Pirámide. US New York browser read-only check: current guest-query /h5/112/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, Pyramid Raider branding, Egyptian reels and controls without login. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "hercules-cq9",
+      "name": "Hercules",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Hercules ID 161, exact domain, RTP 95.94%, High volatility, overall 3000x maximum and scoped Golden Fist 250x reward. US New York browser read-only check: current guest-query /h5/161/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, matching Hercules branding, reels and controls without login. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 161, metrics, elimination and Golden Fist reward"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/161/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; matching Hercules reels and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/7oMeVNlc.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped golden burst background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/zIALpKwM.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Hercules"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/161/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Hercules ID 161, exact domain, RTP 95.94%, High volatility, overall 3000x maximum and scoped Golden Fist 250x reward. US New York browser read-only check: current guest-query /h5/161/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, matching Hercules branding, reels and controls without login. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "5-boxing-cq9",
+      "name": "5 Boxing",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies 5 Boxing ID 157, exact domain, RTP 96.18%, Medium volatility, overall 5000x maximum and scoped 4000x promotional prize. US New York browser read-only check: current guest-query /h5/157/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, matching 5 Boxing branding, reels and controls without login. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 157, metrics and Free Game icon conversion"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/157/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; matching 5 Boxing reels and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/eTOkDbGh.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped martial arts hall background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/4aI0yoPF.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells 5 Boxing"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/157/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies 5 Boxing ID 157, exact domain, RTP 96.18%, Medium volatility, overall 5000x maximum and scoped 4000x promotional prize. US New York browser read-only check: current guest-query /h5/157/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, matching 5 Boxing branding, reels and controls without login. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "fa-cai-shen-2-cq9",
       "name": "Fa Cai Shen2",
