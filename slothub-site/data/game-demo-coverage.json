@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 810,
+  "gameCount": 811,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 692,
+    "available": 693,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "good-fortune-cq9",
+      "name": "Good Fortune",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Good Fortune ID 50, RTP 96.19%, Medium volatility, overall 3000x maximum, bet selection upgrading symbols, free games and stacked high pay symbols. US New York browser read-only guest Demo: HTTP 200 matching Good Fortune branding, 5x3 reels, 243 WAYS, multiplier choices and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 50, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/50/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser rendered Good Fortune branding, 5x3 reels, 243 WAYS and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/n1ioRev0.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped red and gold background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/uMhLNEp6.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Good Fortune"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/50/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Good Fortune ID 50, RTP 96.19%, Medium volatility, overall 3000x maximum, bet selection upgrading symbols, free games and stacked high pay symbols. US New York browser read-only guest Demo: HTTP 200 matching Good Fortune branding, 5x3 reels, 243 WAYS, multiplier choices and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "wolf-moon-cq9",
       "name": "Wolf Moon",

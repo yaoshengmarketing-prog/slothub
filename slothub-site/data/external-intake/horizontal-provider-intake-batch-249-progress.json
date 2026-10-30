@@ -1,0 +1,31 @@
+{
+  "batch": 249,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Good Fortune / 鸿福齐天 (50) absent and distinct from Good Fortune M ID133.",
+  "records": [
+    {
+      "name": "Good Fortune",
+      "slug": "good-fortune-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "50",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 50: RTP 96.19%, Medium volatility, overall maximum_win 3000; bet selection upgrades symbols, free games, stacked high pay symbols. US guest canvas labels 243 WAYS.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/n1ioRev0.jpg",
+        "localPath": "public/assets/games/good-fortune-cq9.jpg",
+        "sha256": "88234305c1f41e96ead448541d31483d5589c017827c628d22d2d434e83a5d8a",
+        "visualCheck": "Official ID 50 maps to red gold traditional background; matching title icon spells Good Fortune."
+      },
+      "demo": "US New York browser guest-query /h5/50/?language=en&token=guest HTTP 200 with exact Good Fortune branding, 5x3 reels, 243 WAYS and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Good Fortune live closure, continue Xmas ID141, Hephaestus ID142, Fa Cai Fu Wa ID143 and Sky Lanterns ID146 (US guest Demos verified; official images/icons downloaded and visually checked). Held source conflicts remain."
+}

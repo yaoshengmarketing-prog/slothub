@@ -1,10 +1,10 @@
 {
   "batch": 248,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "wolf-moon-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "46",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 46: RTP 96.27%, Medium volatility, overall maximum_win 3000; free games and high score icon can upgrade to WILD. US guest canvas labels 40 LINES.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/46/?language=en&token=guest HTTP 200 with exact Wolf Moon branding, 5x3 reels, 40 LINES and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Wolf Moon live closure, continue Good Fortune ID50 and Xmas ID141 (US guest Demos verified; official images/icons downloaded and visually checked), then Hephaestus ID142. Held source conflicts remain."
+  "nextCursor": "Wolf Moon 46 live verified; continue Good Fortune 50.",
+  "publication": {
+    "commit": "d91fdf68609fa89b8eb1ed8d98112bb27453d4f3",
+    "githubRun": 41067733600,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "00f78aab-245e-44ce-8836-b70b3656d7e9",
+    "cloudflareUrl": "https://00f78aab.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
