@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 808,
+  "gameCount": 809,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 690,
+    "available": 691,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fire-chibi-2-cq9",
+      "name": "Fire Chibi 2",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fire Chibi 2 ID 140, RTP 96.00%, High volatility, overall 5000x maximum, and locked WILDs in free games with up to 4000x rewards. US New York browser read-only guest Demo: HTTP 200 matching Fire Chibi 2 branding, 5x3 reels, 243 WAY and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 140, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/140/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser rendered Fire Chibi 2 branding, 5x3 reels, 243 WAY and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/v8Afdru0.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped battle ships background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/zeAzPHVB.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Fire Chibi 2"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/140/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fire Chibi 2 ID 140, RTP 96.00%, High volatility, overall 5000x maximum, and locked WILDs in free games with up to 4000x rewards. US New York browser read-only guest Demo: HTTP 200 matching Fire Chibi 2 branding, 5x3 reels, 243 WAY and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "fire-chibi-m-cq9",
       "name": "Fire Chibi M",
