@@ -1,0 +1,31 @@
+{
+  "batch": 238,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 God of War M / 直式武圣 (127) absent, distinct from God of War 31.",
+  "records": [
+    {
+      "name": "God of War M",
+      "slug": "god-of-war-m-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "127",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 127: RTP 96.10%, Medium volatility, overall maximum_win 3000; Free Games let player choose one of five symbols to appear on reels. US guest canvas labels 243 Ways.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/vt5wDTRE.jpg",
+        "localPath": "public/assets/games/god-of-war-m-cq9.jpg",
+        "sha256": "a9f85038fae3c004cbd90c6531021f6e78d7e4855239e69ef4cf84a1fa431ee5",
+        "visualCheck": "Official ID 127 maps to sunset battlefield background; matching title icon spells God of War M."
+      },
+      "demo": "US New York browser guest-query /h5/127/?language=en&token=guest HTTP 200, exact God of War M branding, 243 Ways, 5x3 reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After God of War M live closure, continue Gu Gu Gu 2 M ID129 and Gold Stealer ID130 if US guest Demo verifies; Wheel Money ID128 held for geometry interpretation."
+}

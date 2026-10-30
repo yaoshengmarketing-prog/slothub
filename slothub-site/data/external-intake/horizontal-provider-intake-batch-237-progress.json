@@ -1,10 +1,10 @@
 {
   "batch": 237,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "lucky-bats-m-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "123",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 123: RTP 96.02%, Low volatility, overall maximum_win 3000; 10 Free Games, local 50x reward, stacked high-paying symbols. US guest canvas labels 243 Ways.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/123/?language=en&token=guest HTTP 200, exact Lucky Bats M branding, 243 Ways, 5x3 reels and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Lucky Bats M live closure, continue God of War M ID127 (US guest Demo verified; official image/icon downloaded and visually checked). Wheel Money ID128 held for official 3*1 vs rendered 3x3 geometry interpretation."
+  "nextCursor": "Lucky Bats M 123 live verified; continue God of War M 127.",
+  "publication": {
+    "commit": "5e5bd0823a7f567ebbba74479973348b3a31c2f3",
+    "githubRun": 41061465411,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "366e4b7c-9f59-4d6b-8901-6de4e4d99468",
+    "cloudflareUrl": "https://366e4b7c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
