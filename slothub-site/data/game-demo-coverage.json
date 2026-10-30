@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 832,
+  "gameCount": 833,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 714,
+    "available": 715,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "jumping-mobile-cq9",
+      "name": "Jumping Mobile",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Jumping Mobile ID 105, RTP 96.18%, High volatility, overall 5000x maximum, portrait layout and an Extra Random Multiplier up to 150x in free games. US browser fresh-tab read-only guest Demo: exact JUMPING MOBILE portrait canvas, 5x3 reels, 243 WAYS and controls without login. Earlier reused-tab Connect Error was transient. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 105, metrics, portrait design and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/105/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US fresh browser tab rendered exact JUMPING MOBILE portrait canvas, 5x3 reels, 243 WAYS and controls without login; prior reused-tab Connect Error transient"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/SrsBNYRk.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped brick wall background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/zY84kunx.png",
+          "httpStatus": 200,
+          "notes": "Official Jumping Mobile title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/105/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Jumping Mobile ID 105, RTP 96.18%, High volatility, overall 5000x maximum, portrait layout and an Extra Random Multiplier up to 150x in free games. US browser fresh-tab read-only guest Demo: exact JUMPING MOBILE portrait canvas, 5x3 reels, 243 WAYS and controls without login. Earlier reused-tab Connect Error was transient. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "thor-cq9",
       "name": "Thor",

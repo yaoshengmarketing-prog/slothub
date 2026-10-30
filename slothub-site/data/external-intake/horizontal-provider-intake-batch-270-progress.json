@@ -1,10 +1,10 @@
 {
   "batch": 270,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "thor-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "89",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 89: RTP 95.96%, High volatility, overall maximum_win 5000; WILD combination triggered free games and SCATTER rewards in free games. US guest canvas labels 243 WAYS.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US browser guest-query /h5/89/?language=en&token=guest HTTP 200 with exact THOR canvas, 5x3 reels, 243 WAYS and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Thor live closure, continue Jumping Mobile ID105 (US exact guest Demo verified; official image/icon downloaded and visually checked), then inspect remaining held source conflicts individually."
+  "nextCursor": "Thor 89 live verified; continue Jumping Mobile 105.",
+  "publication": {
+    "commit": "9cea1270135f58e799ee51a62f6596fc10be3939",
+    "githubRun": 41081823448,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "3889ffc0-c704-4a36-aa93-75e59e2342ab",
+    "cloudflareUrl": "https://3889ffc0.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
