@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 745,
+  "gameCount": 746,
   "providerCount": 371,
-  "sourcePageCount": 1379,
+  "sourcePageCount": 1385,
   "counts": {
     "access-restricted": 4,
-    "available": 631,
+    "available": 632,
     "not-verified": 110
   },
   "rules": {
@@ -17,6 +17,52 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "football-fever-m-cq9",
+      "name": "Football Fever M",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official news/detail/211 embeds exact GB13 guest URL. Same-browser US egress read-only inspection: guest URL HTTP 200, final URL unchanged, exact Football Fever M title and visible reels, spin and stake controls after about 8 seconds, without login, 403, 404 or resource error. No spin, bet or login action. Catalog URL /h5/GB13/ remained a loading canvas after about 20 seconds.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card GB13"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/211",
+          "httpStatus": 200,
+          "notes": "Exact Football Fever M news; links GB13 guest URL"
+        },
+        {
+          "requestedUrl": "https://web-gb.cqgame.games/h5/GB13/",
+          "httpStatus": 200,
+          "notes": "US egress HTTP 200, exact title but only loading canvas after about 20 seconds"
+        },
+        {
+          "requestedUrl": "https://web-gb.cqgame.games/h5/GB13/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US egress HTTP 200, exact title, reels and spin/stake controls visible; no login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/m7mKKyzy.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped football stadium background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/zp9NNvGL.png",
+          "httpStatus": 200,
+          "notes": "Official mapped Football Fever title icon, visually checked"
+        }
+      ],
+      "url": "https://web-gb.cqgame.games/h5/GB13/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official news/detail/211 embeds exact GB13 guest URL. Same-browser US egress read-only inspection: guest URL HTTP 200, final URL unchanged, exact Football Fever M title and visible reels, spin and stake controls after about 8 seconds, without login, 403, 404 or resource error. No spin, bet or login action. Catalog URL /h5/GB13/ remained a loading canvas after about 20 seconds.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "myeong-ryang-cq9",
       "name": "Myeong-ryang",

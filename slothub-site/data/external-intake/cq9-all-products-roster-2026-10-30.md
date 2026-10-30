@@ -2,7 +2,7 @@
 
 核對日期：2026-10-30。來源：[CQ9 官方遊戲目錄](https://site.cq9gaming.com/en/games)；完整逐款來源網址、圖片網址與原始敘述保存在 [`cq9-official-catalog-2026-10-30.json`](./cq9-official-catalog-2026-10-30.json)。
 
-官方目錄共 141 個產品：Slot（官方 type=1）122 款，其他官方類型共 19 款（type=2 六款、type=3 三款、type=4 十款）。本清單列出全部 141 個不重複 Game ID。Slot Hub 目前已有 16 款 CQ9 Slot 詳細頁，其餘 106 款 Slot 待逐款查核、配圖、驗證與發布；非 Slot 產品先保留完整官方名單與數值，不混入 Slot 新增數。141 款皆保存官方圖示及背景圖 URL；官網未列的 RTP、波動或最高倍數維持缺值，不做推算。目錄數值是 CQ9 官方當日快照，不表示所有款式已完成本站收錄或 Demo 核對。
+官方目錄共 141 個產品：Slot（官方 type=1）122 款，其他官方類型共 19 款（type=2 六款、type=3 三款、type=4 十款）。本清單列出全部 141 個不重複 Game ID。Slot Hub 目前已有 17 款 CQ9 Slot 詳細頁，其餘 105 款 Slot 待逐款查核、配圖、驗證與發布；非 Slot 產品先保留完整官方名單與數值，不混入 Slot 新增數。141 款皆保存官方圖示及背景圖 URL；官網未列的 RTP、波動或最高倍數維持缺值，不做推算。目錄數值是 CQ9 官方當日快照，不表示所有款式已完成本站收錄或 Demo 核對。
 
 官方目錄的 `nameTw` 若是「API處尚未建立遊戲.」，本表改列 `nameCn` 作原文參考；繁中正式名稱仍須逐款核對。最高倍數 `N/A` 維持官方缺值，不做推算。
 
@@ -117,7 +117,7 @@
 | 121 | GB9 | Football Fever | 足球狂热 | 96.08% | High | 15000× | 待逐款收錄 |
 | 122 | 228 | Mirror Mirror | 魔镜魔镜 | 96.10% | Medium | 4000× | 待逐款收錄 |
 | 123 | 229 | Night City | 不夜城 | 96.16% | High | 80000× | 待逐款收錄 |
-| 124 | GB12 | Myeong-ryang | 鸣梁 | 96.08% | High | 2000× | 待逐款收錄 |
+| 124 | GB12 | Myeong-ryang | 鸣梁 | 96.08% | High | 2000× | [已收錄](../../src/content/games/myeong-ryang-cq9.md) |
 | 125 | 230 | Baseball Fever | 棒球狂热 | 96.09% | High | 10000× | [已收錄](../../src/content/games/baseball-fever-cq9.md) |
 | 126 | GB13 | Football Fever M | 直式足球狂热 | 96.08% | High | 15000× | 待逐款收錄 |
 | 127 | 241 | The Chicken House | 咕咕鸡 | 96.09% | High | 10000× | [已收錄](../../src/content/games/the-chicken-house-cq9.md) |
