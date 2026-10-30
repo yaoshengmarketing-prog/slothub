@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 723,
+  "gameCount": 724,
   "providerCount": 371,
-  "sourcePageCount": 1312,
+  "sourcePageCount": 1314,
   "counts": {
     "access-restricted": 4,
-    "available": 624,
+    "available": 625,
     "not-verified": 95
   },
   "rules": {
@@ -17,6 +17,38 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "voyage-of-blast-raider-x-lock-jdb",
+      "name": "Voyage of Blast Raider X-Lock™",
+      "provider": "jdb-gaming",
+      "status": "available",
+      "url": "https://slotslaunch.com/jdb-gaming/voyage-of-blast-raider-x-lock",
+      "accessType": "platform-game-page",
+      "platformName": "Slots Launch",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "Slots Launch exact page and image identify Voyage of Blast Raider X-Lock and JDB Gaming; official English/CN detail supplies math and mechanisms.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/voyage-of-blast-raider-x-lock",
+          "httpStatus": 200,
+          "notes": "Official JDB browser detail ledger and current web-indexed detail"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/cn/games/slot/voyage-of-blast-raider-x-lock",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/voyage-of-blast-raider-x-lock",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://assets.slotslaunch.com/106879/voyage-of-blast-raider-x-lock.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "treasure-bowl-x-huge-jdb",
       "name": "Treasure Bowl X-Huge™",

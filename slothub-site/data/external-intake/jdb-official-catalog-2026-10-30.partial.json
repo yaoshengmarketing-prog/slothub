@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 and 1-2 imported. Next individual candidate is card 3 VOYAGE OF BLAST RAIDER X-LOCK™. Cards 3-10 remain.",
-  "nextStep": "After card 2 publication loop, continue card 3 VOYAGE OF BLAST RAIDER X-LOCK™ using official details ledger, exact image and Demo checks.",
-  "publishedCount": 37,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 and 1-3 imported. Next individual candidate is card 4 PINATA BON. Cards 4-10 remain.",
+  "nextStep": "After card 3 publication loop, continue card 4 PINATA BON with exact official-versus-partner name and image checks.",
+  "publishedCount": 38,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -696,6 +696,21 @@
     "imageAttribution": "Official JDB Chinese X-Huge page OG image retrieved via Google Translate image proxy because direct JDB image bytes geo-block in this environment; JPEG visually shows matching gold bowl artwork. It is first-party image tied to exact X-Huge page.",
     "demo": "not-verified; exact X-Huge partner page 404, old Treasure Bowl page conflicts on layout and year, official Play destination untested.",
     "dedup": "All Game Markdown and Provider name/alias fields; Treasure Bowl X-Huge / 聚寶盆 X-Huge absent before intake. Old Treasure Bowl page not treated as an exact upgraded-version demo.",
+    "decision": "published-live-verified"
+  },
+  "card3Evidence": {
+    "name": "VOYAGE OF BLAST RAIDER X-LOCK™",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/voyage-of-blast-raider-x-lock",
+    "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/voyage-of-blast-raider-x-lock",
+    "officialFacts": "Official English/CN detail: Slot, RTP 96.42%, LOW volatility, Maximum Win 1500X, 243 Ways, release year 2026; Otter X-Lock collects coins, dual pot Hold & Spin, three Feature Buy choices and Unlock/Add/Double Coin effects.",
+    "sourceConflict": "Slots Launch identifies same title/provider/year and only generic All Ways; exact 243 Ways and mechanics are from JDB official.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming/voyage-of-blast-raider-x-lock",
+    "partnerImage": "https://assets.slotslaunch.com/106879/voyage-of-blast-raider-x-lock.jpg",
+    "partnerImageSha256": "983e3f7905e2c82e868716f0df96dc821e1575f8021242a5614d4b9d6c0c6586",
+    "partnerImageMime": "image/webp",
+    "partnerAttribution": "Exact Slots Launch page identifies Voyage of Blast Raider X-Lock by JDB Gaming; valid downloaded WebP (despite .jpg URL) visibly displays full VOYAGE OF BLAST RAIDER X-LOCK title and otter.",
+    "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
+    "dedup": "All Game Markdown and Provider name/alias fields; Voyage of Blast Raider X-Lock absent before intake, distinct from other Voyage series members.",
     "decision": "captured-awaiting-publication"
   }
 }

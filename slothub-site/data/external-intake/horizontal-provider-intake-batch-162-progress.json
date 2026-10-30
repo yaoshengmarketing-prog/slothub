@@ -1,0 +1,33 @@
+{
+  "batch": 162,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 3",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; Voyage of Blast Raider X-Lock absent before intake, distinct from other Voyage series members.",
+  "records": [
+    {
+      "order": 3,
+      "name": "Voyage of Blast Raider X-Lock™",
+      "slug": "voyage-of-blast-raider-x-lock-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/voyage-of-blast-raider-x-lock",
+      "officialFacts": "Official English/CN detail: Slot, RTP 96.42%, LOW volatility, Maximum Win 1500X, 243 Ways, release year 2026; Otter X-Lock collects coins, dual pot Hold & Spin, three Feature Buy choices and Unlock/Add/Double Coin effects.",
+      "sourceConflict": "Slots Launch identifies same title/provider/year and only generic All Ways; exact 243 Ways and mechanics are from JDB official.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/voyage-of-blast-raider-x-lock",
+        "sourceUrl": "https://assets.slotslaunch.com/106879/voyage-of-blast-raider-x-lock.jpg",
+        "sha256": "983e3f7905e2c82e868716f0df96dc821e1575f8021242a5614d4b9d6c0c6586",
+        "actualMime": "image/webp",
+        "visualCheck": "Exact Slots Launch page identifies Voyage of Blast Raider X-Lock by JDB Gaming; valid downloaded WebP (despite .jpg URL) visibly displays full VOYAGE OF BLAST RAIDER X-LOCK title and otter."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 4 PINATA BON"
+}

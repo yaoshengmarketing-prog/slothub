@@ -1,10 +1,10 @@
 {
   "batch": 161,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 2",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Treasure Bowl X-Huge™",
       "slug": "treasure-bowl-x-huge-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/treasure-bowl-x-huge",
       "officialFacts": "Official English/CN detail: Slot, RTP 96.47%, LOW volatility, Maximum Win 1800X, 1 Line, release year 2019; X-Huge Giant Symbol, Feature Buy three-Wild connections, Extrabet Free Game trigger boost.",
       "sourceConflict": "Slots Launch exact X-Huge URL 404; older Treasure Bowl page says 25 paylines and 2023, unlike official upgraded version 1 Line and 2019; not used as exact demo or image source. SlotCatalog old-name page mentions X-Huge but cannot prove same upgraded version.",
@@ -30,5 +30,15 @@
       "demo": "not-verified; exact X-Huge partner page 404, old Treasure Bowl page conflicts on layout and year, official Play destination untested."
     }
   ],
-  "nextCursor": "JDB catalog card 3 VOYAGE OF BLAST RAIDER X-LOCK™"
+  "nextCursor": "JDB catalog card 3 VOYAGE OF BLAST RAIDER X-LOCK™",
+  "publication": {
+    "commit": "a27e805fb899f2033f85dc5a589c6a1147a46294",
+    "githubRun": 40983076036,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "acfa3cc1-7992-4d97-b9df-9723b2a3f43a",
+    "cloudflareUrl": "https://acfa3cc1.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPEG image and sitemap HTTP 200; official and official English and Chinese URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
