@@ -1,0 +1,31 @@
+{
+  "batch": 239,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Gu Gu Gu 2 M / 直式金鸡报囍2 (129) absent.",
+  "records": [
+    {
+      "name": "Gu Gu Gu 2 M",
+      "slug": "gu-gu-gu-2-m-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "129",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 129: RTP 95.97%, High volatility, overall maximum_win 8000; local WILD 5x reward and potential reel-3 respin after two Free Game symbols. US guest canvas labels 15 Lines.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/NOYiyKv8.jpg",
+        "localPath": "public/assets/games/gu-gu-gu-2-m-cq9.jpg",
+        "sha256": "8141551963362d00d5aa6d64c69b3f453033b949e9bcc4b6b3da898ad94fac0b",
+        "visualCheck": "Official ID 129 maps to sunset pagodas background; matching title icon spells Gu Gu Gu 2 M."
+      },
+      "demo": "US New York browser guest-query /h5/129/?language=en&token=guest HTTP 200, exact Gu Gu Gu 2 M branding, 15 Lines, 5x3 portrait reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Gu Gu Gu 2 M live closure, continue Gold Stealer ID130 and Fa Cai Shen M ID131 (US guest Demos verified; official images/icons downloaded and visually checked). Held source conflicts remain."
+}

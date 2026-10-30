@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 800,
+  "gameCount": 801,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 682,
+    "available": 683,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gu-gu-gu-2-m-cq9",
+      "name": "Gu Gu Gu 2 M",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Gu Gu Gu 2 M ID 129, RTP 95.97%, High volatility, overall 8000x maximum, local WILD 5x reward and a potential reel-3 respin when two Free Game symbols appear. US New York browser read-only guest Demo: HTTP 200, matching Gu Gu Gu 2 M branding, 15 Lines, 5x3 portrait reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 129, metrics and WILD/respin description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/129/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Gu Gu Gu 2 M branding, 15 Lines, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/NOYiyKv8.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped sunset pagodas background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/hXsF4prq.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Gu Gu Gu 2 M"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/129/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Gu Gu Gu 2 M ID 129, RTP 95.97%, High volatility, overall 8000x maximum, local WILD 5x reward and a potential reel-3 respin when two Free Game symbols appear. US New York browser read-only guest Demo: HTTP 200, matching Gu Gu Gu 2 M branding, 15 Lines, 5x3 portrait reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "god-of-war-m-cq9",
       "name": "God of War M",

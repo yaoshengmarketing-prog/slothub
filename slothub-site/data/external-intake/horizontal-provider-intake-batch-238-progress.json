@@ -1,10 +1,10 @@
 {
   "batch": 238,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "god-of-war-m-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "127",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 127: RTP 96.10%, Medium volatility, overall maximum_win 3000; Free Games let player choose one of five symbols to appear on reels. US guest canvas labels 243 Ways.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/127/?language=en&token=guest HTTP 200, exact God of War M branding, 243 Ways, 5x3 reels and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After God of War M live closure, continue Gu Gu Gu 2 M ID129 and Gold Stealer ID130 if US guest Demo verifies; Wheel Money ID128 held for geometry interpretation."
+  "nextCursor": "God of War M 127 live verified; continue Gu Gu Gu 2 M 129.",
+  "publication": {
+    "commit": "76c59834332ba206b345b1f3e7a825ac169ba4e3",
+    "githubRun": 41061973777,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "c92080e1-2d4d-4b76-aa03-96cbc395e604",
+    "cloudflareUrl": "https://c92080e1.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
