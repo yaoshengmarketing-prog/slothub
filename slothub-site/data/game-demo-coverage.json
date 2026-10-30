@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 733,
+  "gameCount": 734,
   "providerCount": 371,
-  "sourcePageCount": 1334,
+  "sourcePageCount": 1336,
   "counts": {
     "access-restricted": 4,
     "available": 630,
-    "not-verified": 99
+    "not-verified": 100
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,32 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "lucky-bats-jp-cq9",
+      "name": "Lucky Bats JP",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "Official CQ9 Slot catalog modal identifies game ID 1010, but does not expose an independently verified playable href; no generic lobby or catalog substituted.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot card and modal, game ID 1010"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/IZCHs2VZ.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/B8QtA1mp.png",
+          "httpStatus": 200,
+          "notes": "Official title icon, visually checked"
+        }
+      ]
+    },
     {
       "slug": "treasure-bowl-jp-cq9",
       "name": "Treasure Bowl JP",
