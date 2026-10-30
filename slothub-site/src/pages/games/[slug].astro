@@ -13,6 +13,7 @@ import MetricEvidenceSummary from '../../components/MetricEvidenceSummary.astro'
 import GameMedia from '../../components/GameMedia.astro';
 import { projectGameMedia } from '../../lib/game-media.mjs';
 import GameDiagramLinks from '../../components/GameDiagramLinks.astro';
+import DenshoMultiplierStoryboard from '../../components/DenshoMultiplierStoryboard.astro';
 
 export async function getStaticPaths() {
   const games = (await getCollection('games')).filter((game) => game.data.status === 'published');
@@ -287,6 +288,7 @@ const schema = {
           {presentation.operation.ruleNotes.length > 0 && <details class="game-rule-notes"><summary>查看已記錄的功能規則（{presentation.operation.ruleNotes.length}）</summary><ul>{presentation.operation.ruleNotes.map((note: string) => <li>{note}</li>)}</ul></details>}
         </section>
       </div>
+      <DenshoMultiplierStoryboard gameSlug={entry.id} status={entry.data.status} primaryType={entry.data.primaryType} />
       <GameDiagramLinks game={entry.data} />
       {featureStatements.length > 0 && <div class="game-feature-statements" aria-label="來源公布的功能差異">
         {featureStatements.map((evidence) => <section data-feature-group={evidence.groupId}>

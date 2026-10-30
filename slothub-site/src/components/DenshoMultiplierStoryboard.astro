@@ -1,0 +1,118 @@
+---
+import { SITE } from '../consts';
+import { projectDenshoMultiplierStoryboard } from '../lib/densho-multiplier-storyboard.mjs';
+interface Props { gameSlug: string; status: string; primaryType: string }
+const { gameSlug, status, primaryType } = Astro.props;
+const story = projectDenshoMultiplierStoryboard(gameSlug, { status, primaryType }, SITE.environment);
+const symbols = ['A', 'B'];
+---
+{story && <section class="densho-storyboard" id="densho-multiplier-storyboard" aria-labelledby="densho-storyboard-title" data-densho-storyboard data-rule-id={story.id}>
+  <header class="story-heading">
+    <h3 id="densho-storyboard-title">{story.title}</h3>
+    <p>先辨認同一組合的相關符號，再看各自倍數如何加總。三格是解釋順序，並非遊戲動畫時序。</p>
+  </header>
+  <ol class="story-grid" role="list">
+    <li data-story-panel="group">
+      <h4><span aria-hidden="true">①</span> 先看同一組合</h4>
+      <div class="story-diagram">
+        <div class="combination-frame" data-combination-frame>
+          <p class="combination-label">同一得獎組合中的相關符號</p>
+          <div class="symbol-pair">
+            {symbols.map((code) => <div class:list={['symbol-tile', `symbol-${code.toLowerCase()}`]} data-symbol-code={code}><span>Densho 符號</span><strong>{code}</strong></div>)}
+          </div>
+        </div>
+      </div>
+      <p class="story-caption">抽出已參與同一得獎組合的相關符號；兩個方塊本身不是成立得獎的示範。</p>
+    </li>
+    <li data-story-panel="mapping">
+      <h4><span aria-hidden="true">②</span> 辨認各自倍數</h4>
+      <div class="story-diagram">
+        <div class="mapping-pair">
+          {symbols.map((code) => <div class="mapping-strand" data-mapping={code}>
+            <div class:list={['symbol-tile', `symbol-${code.toLowerCase()}`]} data-symbol-code={code}><span>Densho 符號</span><strong>{code}</strong></div>
+            <svg class="down-arrow" viewBox="0 0 100 40" aria-hidden="true" focusable="false"><path d="M50 2V33m-6-6 6 6 6-6" /></svg>
+            <div class:list={['value-chip', `symbol-${code.toLowerCase()}`]} data-multiplier-code={code}>{code} 的倍數</div>
+          </div>)}
+        </div>
+      </div>
+      <p class="story-caption">A、B 各有自己的倍數值；左邊對應 A，右邊對應 B。</p>
+    </li>
+    <li data-story-panel="sum">
+      <h4><span aria-hidden="true">③</span> 倍數先相加</h4>
+      <div class="story-diagram sum-diagram">
+        <div class="sum-inputs">
+          {symbols.map((code) => <div class:list={['value-chip', `symbol-${code.toLowerCase()}`]} data-sum-input={code}>{code} 的倍數</div>)}
+          <span class="sum-operator" data-sum-operator aria-hidden="true">＋</span>
+        </div>
+        <svg class="merge-arrows" viewBox="0 0 300 82" preserveAspectRatio="none" aria-hidden="true" focusable="false" data-merge-arrows>
+          <path d="M66 1V22L150 50M234 1V22L150 50M150 50V75m-7-7 7 7 7-7" />
+        </svg>
+        <div class="sum-result" data-sum-result><span>合併結果</span><strong>這兩個倍數的加總</strong></div>
+        <svg class="down-arrow calculation-arrow" viewBox="0 0 100 40" aria-hidden="true" focusable="false"><path d="M50 2V33m-6-6 6 6 6-6" /></svg>
+        <div class="calculation-target" data-calculation-target>該組合的派彩計算</div>
+      </div>
+      <p class="story-caption">{story.rule}</p>
+    </li>
+  </ol>
+  <p class="story-notice">本站規則示意，非實際遊玩截圖；圖以兩個相關符號為例，代號與排列僅用來說明關係。</p>
+  <p class="story-aliases">A、B 為本圖代號，不是原廠正式符號名稱或種類。</p>
+  <footer class="story-source" data-rule-evidence={story.id}>
+    <div class="source-line"><a href={story.source.url} target="_blank" rel="nofollow noopener noreferrer">{story.source.publisher} 原廠規則</a><span>本項核對：<time datetime={story.checkedAt}>{story.checkedAt}</time></span></div>
+    <details>
+      <summary>查看原文與適用範圍</summary>
+      <p>{story.sourceLocation}</p>
+      <blockquote lang="en">{story.excerpt}</blockquote>
+      <p>{story.scope}</p>
+      <p>所查頁面未註明版本與市場對照；本圖不補填適用設定。</p>
+    </details>
+  </footer>
+</section>}
+
+<style>
+  .densho-storyboard { margin-top: 28px; padding-top: 24px; border-top: 1px solid #d8dde6; color: var(--navy); scroll-margin-top: 94px; }
+  .story-heading h3 { margin: 0; font-size: clamp(1.35rem, 2.3vw, 1.7rem); line-height: 1.35; letter-spacing: -.025em; }
+  .story-heading > p { max-width: 70ch; margin: 10px 0 20px; color: var(--muted); font-size: .9rem; line-height: 1.75; }
+  .story-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 0; margin: 0; list-style: none; border: 1px solid #d8dde6; border-radius: 12px; overflow: hidden; background: #fff; }
+  .story-grid > li { min-width: 0; padding: 20px; border-right: 1px solid #d8dde6; }
+  .story-grid > li:last-child { border-right: 0; }
+  h4 { display: flex; align-items: baseline; gap: 8px; margin: 0; font-size: 1.02rem; line-height: 1.5; }
+  h4 > span { color: var(--muted); font-size: .9rem; }
+  .story-diagram { display: flex; flex-direction: column; justify-content: center; min-height: 282px; margin-block: 14px; }
+  .combination-frame { padding: 16px 12px; border: 2px solid var(--navy); border-radius: 10px; }
+  .combination-label { margin: 0 0 16px; text-align: center; font-size: .82rem; font-weight: 750; line-height: 1.6; }
+  .symbol-pair, .mapping-pair, .sum-inputs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 12%; width: 100%; }
+  .symbol-tile { display: flex; min-width: 0; min-height: 88px; flex-direction: column; align-items: center; justify-content: center; gap: 5px; padding: 8px 3px; background: #f7f9fc; border-radius: 5px; }
+  .symbol-tile span { font-size: .8rem; line-height: 1.5; }
+  .symbol-tile strong { font-size: 1.8rem; line-height: 1; }
+  .symbol-a { border: 2px solid var(--navy); }
+  .symbol-b { border: 4px double var(--navy); }
+  .mapping-strand { display: grid; min-width: 0; }
+  .down-arrow { display: block; width: 100%; height: 40px; }
+  svg path { fill: none; stroke: var(--navy); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+  .value-chip { display: grid; min-height: 46px; align-items: center; padding: 8px 2px; text-align: center; font-size: .88rem; font-weight: 750; line-height: 1.5; border-radius: 5px; }
+  .sum-inputs { position: relative; }
+  .sum-operator { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.5rem; font-weight: 800; line-height: 1; }
+  .merge-arrows { display: block; width: 100%; height: 76px; }
+  .sum-result { padding: 10px 4px; text-align: center; color: white; background: var(--navy); border-radius: 6px; }
+  .sum-result span { display: block; margin-bottom: 4px; font-size: .76rem; }
+  .sum-result strong { font-size: .95rem; line-height: 1.5; }
+  .calculation-arrow { height: 34px; }
+  .calculation-target { padding: 10px 4px; border: 1px solid var(--navy); border-radius: 6px; text-align: center; font-size: .9rem; font-weight: 750; line-height: 1.6; }
+  .story-caption { margin: 0; font-size: .88rem; line-height: 1.8; }
+  .story-notice { margin: 14px 0 0; color: var(--muted); font-size: .84rem; line-height: 1.75; }
+  .story-aliases { margin: 4px 0 12px; color: var(--muted); font-size: .84rem; line-height: 1.75; }
+  .story-source { padding-top: 10px; border-top: 1px solid #e2e6ec; font-size: .86rem; line-height: 1.75; }
+  .source-line { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 18px; }
+  .source-line a { display: inline-flex; align-items: center; min-height: 44px; color: var(--navy); font-weight: 750; text-decoration: underline; text-underline-offset: 4px; }
+  a:focus-visible, summary:focus-visible { outline: 3px solid var(--signal); outline-offset: 3px; }
+  summary { width: fit-content; padding-block: 8px; cursor: pointer; font-weight: 750; }
+  details p { margin: 8px 0; }
+  blockquote { margin: 12px 0; padding-left: 12px; border-left: 2px solid #d8dde6; overflow-wrap: anywhere; }
+  @media (max-width: 900px) {
+    .story-grid { grid-template-columns: minmax(0, 1fr); }
+    .story-grid > li { padding: 18px 16px; border-right: 0; border-bottom: 1px solid #d8dde6; }
+    .story-grid > li:last-child { border-bottom: 0; }
+    .story-diagram { min-height: 0; max-width: 360px; width: 100%; margin: 20px auto; }
+    .combination-frame { padding: 18px 14px; }
+  }
+</style>
