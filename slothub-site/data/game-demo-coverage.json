@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 711,
+  "gameCount": 712,
   "providerCount": 371,
-  "sourcePageCount": 1288,
+  "sourcePageCount": 1290,
   "counts": {
     "access-restricted": 4,
-    "available": 614,
+    "available": 615,
     "not-verified": 93
   },
   "rules": {
@@ -17,6 +17,38 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "kong-jdb",
+      "name": "Kong",
+      "provider": "jdb-gaming",
+      "status": "available",
+      "url": "https://slotslaunch.com/jdb-gaming/kong",
+      "accessType": "platform-game-page",
+      "platformName": "Slots Launch",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "Slots Launch exact page and image identify Kong and JDB Gaming; official English/CN detail supplies current math and mechanisms.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/kong",
+          "httpStatus": 200,
+          "notes": "Official Browser Use direct inspection runs 8c2b9487-f70f-4b83-be00-6e8056deeea3 and a4d1424b-e240-4383-9ad6-64784ad5427f"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/cn/games/slot/kong",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/kong",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://assets.slotslaunch.com/29516/kong.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "book-of-mystery-jdb",
       "name": "Book of Mystery",

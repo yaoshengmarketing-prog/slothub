@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-36 imported. Next individual candidate is card 37 KONG. Cards 1-10 and 37-46 remain.",
-  "nextStep": "After card 36 publication loop, continue card 37 KONG using official details ledger, exact image and Demo checks.",
-  "publishedCount": 25,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-37 imported. Next individual candidate is card 38 MONEYBAGS MAN 2. Cards 1-10 and 38-46 remain.",
+  "nextStep": "After card 37 publication loop, continue card 38 MONEYBAGS MAN 2 using official details ledger, exact image and Demo checks.",
+  "publishedCount": 26,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -516,6 +516,21 @@
     "partnerAttribution": "Exact Slots Launch page identifies Book of Mystery by JDB Gaming; downloaded valid 600x400 WebP (despite .jpg URL) visibly displays BOOK OF MYSTERY title and character with golden book.",
     "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
     "dedup": "All Game Markdown and Provider name/alias fields; no Book of Mystery or 神秘之书 record before this intake.",
+    "decision": "published-live-verified"
+  },
+  "card37Evidence": {
+    "name": "KONG",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/kong",
+    "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/kong",
+    "officialFacts": "Official English/CN detail: Slot, RTP 95.89%, LOW volatility, Maximum Win 16800X, 243 Ways, release year 2020; Kong Wild, 10 volcano motifs in Free Game for up to 72X, volcano reward up to 16800X.",
+    "sourceConflict": "Slots Launch same-title JDB page says 2022 versus official 2020 and claims uncorroborated progressive jackpot/scatter/bonus mechanics. Published game uses official values only.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming/kong",
+    "partnerImage": "https://assets.slotslaunch.com/29516/kong.jpg",
+    "partnerImageSha256": "4c89af71b9b7022fdc962ac93dec887b012442f3f32a8d0a07fbbf1aca6e6d7a",
+    "partnerImageMime": "image/webp",
+    "partnerAttribution": "Exact Slots Launch page identifies Kong by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays KONG, gorilla, and 16800X matching official max win.",
+    "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
+    "dedup": "All Game Markdown and Provider name/alias fields; no exact Kong/金刚 JDB record before this intake.",
     "decision": "captured-awaiting-publication"
   }
 }

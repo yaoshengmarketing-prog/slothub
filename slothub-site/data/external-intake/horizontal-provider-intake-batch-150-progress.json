@@ -1,0 +1,33 @@
+{
+  "batch": 150,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 37",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; no exact Kong/金刚 JDB record before this intake.",
+  "records": [
+    {
+      "order": 37,
+      "name": "Kong",
+      "slug": "kong-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/kong",
+      "officialFacts": "Official English/CN detail: Slot, RTP 95.89%, LOW volatility, Maximum Win 16800X, 243 Ways, release year 2020; Kong Wild, 10 volcano motifs in Free Game for up to 72X, volcano reward up to 16800X.",
+      "sourceConflict": "Slots Launch same-title JDB page says 2022 versus official 2020 and claims uncorroborated progressive jackpot/scatter/bonus mechanics. Published game uses official values only.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/kong",
+        "sourceUrl": "https://assets.slotslaunch.com/29516/kong.jpg",
+        "sha256": "4c89af71b9b7022fdc962ac93dec887b012442f3f32a8d0a07fbbf1aca6e6d7a",
+        "actualMime": "image/webp",
+        "visualCheck": "Exact Slots Launch page identifies Kong by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays KONG, gorilla, and 16800X matching official max win."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 38 MONEYBAGS MAN 2"
+}

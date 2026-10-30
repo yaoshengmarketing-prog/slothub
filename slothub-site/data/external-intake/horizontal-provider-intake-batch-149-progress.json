@@ -1,10 +1,10 @@
 {
   "batch": 149,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 36",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Book of Mystery",
       "slug": "book-of-mystery-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/book-of-mystery",
       "officialFacts": "Official English/CN detail: Slot, RTP 96.42%, SUPER HIGH volatility, Maximum Win 5000X, 10 Lines, release year 2022; golden-book WILD, up to 100 Free Spins, random Mystery expansion/full-screen 5000X.",
       "sourceConflict": "Slots Launch says medium-to-high volatility versus official SUPER HIGH; its approximately 96% RTP is rounded. Partner-only three-book scatter/retrigger details excluded.",
@@ -29,5 +29,15 @@
       "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
     }
   ],
-  "nextCursor": "JDB catalog card 37 KONG"
+  "nextCursor": "JDB catalog card 37 KONG",
+  "publication": {
+    "commit": "9bc5ce0ed2abf70fa7d3c79ae0b4658fc80c8b89",
+    "githubRun": 40977571484,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "893c21ec-d266-46b3-a6d3-b8b30db69603",
+    "cloudflareUrl": "https://893c21ec.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, WebP image and sitemap HTTP 200; official and exact Slots Launch platform URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
