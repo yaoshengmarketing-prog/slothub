@@ -1,10 +1,10 @@
 {
   "batch": 244,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "gu-gu-gu-m-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "135",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 135: RTP 96.13%, High volatility, overall maximum_win 6000; up to 100 Free Games and local 5x line payout on golden egg. US guest canvas labels 15 Lines.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/135/?language=en&token=guest first showed transient Connect Error; same URL retry HTTP 200, exact Gu Gu Gu M branding, 15 Lines, 5x3 portrait reels and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Gu Gu Gu M live closure, continue Move n Jump ID138, Fire Chibi M ID139 and Fire Chibi 2 ID140 (US guest Demos verified; official images/icons downloaded and visually checked). Held source conflicts remain."
+  "nextCursor": "Gu Gu Gu M 135 live verified; continue Move n Jump 138.",
+  "publication": {
+    "commit": "6be357795d26c368ed7e608aedbd0c42514a2b4e",
+    "githubRun": 41065503908,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "3e06ac0f-e3a7-4f33-b1e2-1a4dd59846ae",
+    "cloudflareUrl": "https://3e06ac0f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
