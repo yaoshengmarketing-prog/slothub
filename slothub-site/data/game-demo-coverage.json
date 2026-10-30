@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 742,
+  "gameCount": 743,
   "providerCount": 371,
-  "sourcePageCount": 1363,
+  "sourcePageCount": 1367,
   "counts": {
     "access-restricted": 4,
     "available": 631,
-    "not-verified": 107
+    "not-verified": 108
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,47 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "baseball-fever-cq9",
+      "name": "Baseball Fever",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "US-egress read-only browser: official CQ9 news guest URL for Baseball Fever ID 230 returns HTTP 404; catalog /h5/230/ returns HTTP 200 and shows exact title/artwork/loading reels but no usable controls. No 403 or geo block observed; ready Demo state not verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card ID 230"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/212",
+          "httpStatus": 200,
+          "notes": "Official exact-title news and guest game link"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/230/",
+          "httpStatus": 200,
+          "notes": "US-egress browser HTTP 200, exact title/artwork/loading reels visible; usable controls not reached"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/230/?language=en&token=guest",
+          "httpStatus": 404,
+          "notes": "US-egress browser HTTP 404, historical guest link embedded in official news; not a 403/geo block"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/TMo6fwJE.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/1zBo9gh3.png",
+          "httpStatus": 200,
+          "notes": "Official title icon, visually checked"
+        }
+      ]
+    },
     {
       "slug": "treasure-pirate-cq9",
       "name": "Treasure Pirate",

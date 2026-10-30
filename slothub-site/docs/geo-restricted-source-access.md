@@ -7,6 +7,7 @@
 1. 先讀 repo `AGENTS.md`、`docs/game-intake-workflow-v1.md`、`docs/game-demo-coverage-and-presentation-v1.md`，沿用既有去重、來源品質、圖片與發布閉環規則。
 2. 先以目前網路開啟**確切官方 URL**。保存請求網址、時間、工具／瀏覽器、HTTP 狀態、實際內容類型、頁面標題、可見畫面與是否有重新導向。某些限制頁會回 HTTP 200，但內容是「403 Access Denied」HTML；須檢查內文與圖片位元組，不能只看狀態碼。
 3. 官方網站、產品目錄或圖片打不開，表示**當前出口可能無法存取**，不表示該官方來源不可信、遊戲不存在或目錄已查完。先按下列順序重試；各地區結果分開記錄。不要從搜尋摘要或第三方頁面推斷官方目錄的完整數量。
+4. **404 與 403 分開處理。**舊官方新聞的 Demo URL 若回 404，不能推定是 IP 限制；對照當前官方目錄的確切遊戲 URL、頁面標題與載入狀態，保存兩個 URL 各自的結果。新入口只顯示載入畫面時仍不得標為可用 Demo。
 
 ## 地區切換順序
 
@@ -31,3 +32,4 @@
 
 - 2026-10-30 JDB 官方 Slot 目錄在唯讀雲端瀏覽器顯示 46 張卡片，當地直連官方圖片曾回傳 HTTP 200、`text/html` 的「403 Access Denied」頁；部分確切官方圖片透過 Google Translate 公開圖片代理取得，並以官方映射與視覺／雜湊核對。來源與方法見 `data/external-intake/jdb-official-catalog-2026-10-30.partial.json`。
 - 2026-10-30 CQ9 官方目錄 `https://site.cq9gaming.com/en/games` 在目前網路回 HTTP 200；唯讀瀏覽器確認共 141 個產品、122 款 Slot。精確的 Treasure Pirate（ID 242）入口 `https://h5c.cqgame.games/h5/242/` 回 HTTP 200，標題與 CQ9 畫面載入；228 個觀察到的資源回應全為 200／304，未見 403 或登入要求。第一次檢查沒有顯示出口地區，故不能把該次當成美國出口證據。第二次以官方新聞所連的 `https://h5c.cqgame.games/h5/242/?language=en&token=guest` 核對，唯讀瀏覽器看到遊戲滾輪、控制區與起始畫面，未見登入、403、重新導向或資源失敗；同一次瀏覽器開啟 `https://ipinfo.io/json` 顯示出口為美國紐約。這證明**該次**美國出口可用，不保證未來或其他瀏覽器執行環境相同。沒有進行旋轉、下注或登入。CQ9 完整目錄快照見 `data/external-intake/cq9-official-catalog-2026-10-30.json`。
+- 2026-10-30 CQ9 官方 Baseball Fever 新聞 `https://www.cq9gaming.com/news/detail/212` 所連舊 guest 路徑 `/230/?language=en&token=guest` 在美國紐約出口回 HTTP 404；當前官方目錄所連 `/h5/230/` 回 HTTP 200，顯示確切標題、圖片與載入中的滾輪，但未見可操作控制。兩者都未出現 403；Demo 維持 `not-verified`。這是過期路徑與載入驗證缺口的實例，不應誤記成地區封鎖。

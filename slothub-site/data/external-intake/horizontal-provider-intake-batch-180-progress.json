@@ -1,10 +1,10 @@
 {
   "batch": 180,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete all CQ9 official Slot entries, starting with the exact ID 242 pirate title discrepancy",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "treasure-pirate-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "242",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialNews": "https://www.cq9gaming.com/news/detail/221",
       "officialFacts": "Official CQ9 Slot ID 242, RTP 96.12%, High volatility, maximum_win 10000. Official news uses reversed English name Pirate Treasure but its exact guest-game href is /h5/242/; official client title and title icon identify Treasure Pirate. Five Money symbols left-right, pirate captain collects Money values in Free Games, silver coin local bonus multiplier.",
@@ -28,5 +28,15 @@
       "demo": "Official news/detail/221 embeds exact /h5/242/?language=en&token=guest. Read-only US egress browser reached recognizable Treasure Pirate reels and controls without login, 403, redirect or failed resources; no spin or betting action. Status available, direct-demo, external."
     }
   ],
-  "nextCursor": "After Treasure Pirate live closure, continue official CQ9 Slot catalog at Baseball Fever (ID 230), then other deduplicated official entries. Keep Sung Wukong and Sugar Combo official-source conflicts queued."
+  "nextCursor": "Treasure Pirate live verified, including direct official guest Demo in US egress; continue CQ9 Slot catalog at Baseball Fever (ID 230).",
+  "publication": {
+    "commit": "76f5a4420d49c163cedb7df867ce3a268c1e0b32",
+    "githubRun": 41012780191,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "ff395676-0b6f-4b0c-a077-58ea39f4ce84",
+    "cloudflareUrl": "https://ff395676.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG image and sitemap HTTP 200; official news/catalog and exact Demo link, RTP and maximum win present; live image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
