@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 811,
+  "gameCount": 812,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 693,
+    "available": 694,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "xmas-cq9",
+      "name": "Xmas",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Xmas ID 141, RTP 97.50%, Medium volatility, overall 10000x maximum, elimination-style levels, specified icons triggering free games and 1-5x multiplier chance. US New York browser read-only guest Demo: HTTP 200 matching Xmas branding, portrait Start/Auto 1/Auto 2 and bet controls without login. No conventional reel geometry or Ways/Lines label confirmed. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 141, metrics and elimination-style feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/141/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser rendered Xmas branding, Start, Auto 1, Auto 2 and bet controls without login; no reel geometry assumed"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/UoLLhdBD.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped winter village background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/CpEzUjEd.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Xmas"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/141/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Xmas ID 141, RTP 97.50%, Medium volatility, overall 10000x maximum, elimination-style levels, specified icons triggering free games and 1-5x multiplier chance. US New York browser read-only guest Demo: HTTP 200 matching Xmas branding, portrait Start/Auto 1/Auto 2 and bet controls without login. No conventional reel geometry or Ways/Lines label confirmed. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "good-fortune-cq9",
       "name": "Good Fortune",

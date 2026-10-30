@@ -1,10 +1,10 @@
 {
   "batch": 249,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "good-fortune-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "50",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 50: RTP 96.19%, Medium volatility, overall maximum_win 3000; bet selection upgrades symbols, free games, stacked high pay symbols. US guest canvas labels 243 WAYS.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/50/?language=en&token=guest HTTP 200 with exact Good Fortune branding, 5x3 reels, 243 WAYS and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Good Fortune live closure, continue Xmas ID141, Hephaestus ID142, Fa Cai Fu Wa ID143 and Sky Lanterns ID146 (US guest Demos verified; official images/icons downloaded and visually checked). Held source conflicts remain."
+  "nextCursor": "Good Fortune 50 live verified; continue Xmas 141.",
+  "publication": {
+    "commit": "df30b1147f5ee7ff713b7ced2ac6923940c24ca9",
+    "githubRun": 41068259674,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "575236e8-2e39-485b-be7e-b48135648473",
+    "cloudflareUrl": "https://575236e8.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
