@@ -1,0 +1,31 @@
+{
+  "batch": 197,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Double Fly / 雙飛 (152) absent before intake.",
+  "records": [
+    {
+      "name": "Double Fly",
+      "slug": "double-fly-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "152",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 152: RTP 96.14%, High volatility, overall maximum_win 6000. Description says more than four Free Game icons yield a random multiplier up to 12x, Swap reorders reels for the highest score and promotes a 3000x prize; promo value is distinct from overall catalog maximum.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/JRIZWiDR.jpg",
+        "localPath": "public/assets/games/double-fly-cq9.jpg",
+        "sha256": "4c3bd54a26e2d0376d5b39991738e66587a175a5bc81701a8264332f705aa772",
+        "visualCheck": "Official 152 maps to purple and blue background; icon H1Mjnq2a.png visibly spells Double Fly over two peacocks."
+      },
+      "demo": "US New York browser: current guest-query /h5/152/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; exact Double Fly branding, reels and controls within 35 seconds without login. No spin, bet or login action."
+    }
+  ],
+  "nextCursor": "After Double Fly live closure, continue Kronos 154: catalog overall maximum 3000x vs description 1000x promotional prize; US guest Demo reels and controls independently verified."
+}

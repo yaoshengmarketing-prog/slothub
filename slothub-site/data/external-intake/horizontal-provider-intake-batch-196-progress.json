@@ -1,10 +1,10 @@
 {
   "batch": 196,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "six-candy-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "153",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 153: RTP 96.14%, High volatility, overall maximum_win 2000. Official description says six or more Scatter symbols may trigger Free Games and the bonus multiplier reaches 15x; feature multiplier is distinct from overall maximum.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser: current guest-query /h5/153/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; exact Six Candy candy reels and controls within 35 seconds without login. No spin, bet or login action."
     }
   ],
-  "nextCursor": "After Six Candy live closure, reconcile Double Fly 152 and Kronos 154 local feature awards against overall catalog maximum; both guest Demos independently verified in US browser."
+  "nextCursor": "Six Candy 153 live verified. Continue Double Fly 152 using catalog overall 6000x and description promotional 3000x separately; US guest reels and controls verified.",
+  "publication": {
+    "commit": "f5b9d71d02da3e9e45164e214729f71487abbf08",
+    "githubRun": 41027697513,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "f4b7c1e4-f23e-4b8e-acee-b2dc0671f15a",
+    "cloudflareUrl": "https://f4b7c1e4.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
