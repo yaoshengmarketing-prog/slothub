@@ -1,10 +1,10 @@
 {
   "batch": 275,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue ATG Games official Slot catalog after Flaming Three Kingdoms live closure",
   "catalog": "https://www.atg-games.com/en/games?type=all",
   "dedupScope": "All Game Markdown names, aliases, filenames and Provider; ATG Vampire absent and distinct from CQ9 Vampire Kiss and other Provider vampire-themed games.",
@@ -21,7 +21,7 @@
       "name": "Vampire",
       "slug": "vampire-atg",
       "provider": "atg-games",
-      "status": "imported-awaiting-live-closure",
+      "status": "published-live-verified",
       "officialPage": "https://www.atg-games.com/games/slot/vampire",
       "officialFacts": "2026-08-18 release; five reels, 40 left-to-right paylines; RTP 96.1%; Medium volatility; Winning ratio x60000; 3/4/5 Scatters award 5/10/15 Free Games, Lucky Moment, free-game multiplier selection and JP Jackpot.",
       "image": {
@@ -33,5 +33,15 @@
       "demo": "Exact official page and catalog expose no verified playable same-game destination in this check; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After Vampire same-SHA CI, Cloudflare and seven-route live readback, continue official ATG Jinlian, then Froststorm Hunter and remaining Slot cards. Wuxia remains an exact source-conflict hold."
+  "nextCursor": "After Vampire same-SHA CI, Cloudflare and seven-route live readback, continue official ATG Jinlian, then Froststorm Hunter and remaining Slot cards. Wuxia remains an exact source-conflict hold.",
+  "publication": {
+    "commit": "5a71b81881d0bd62463d1ae4d2c5689696f43678",
+    "githubRun": 41108897262,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "de5643fa-c580-4364-96e5-d9ee9aaad9dd",
+    "cloudflareUrl": "https://de5643fa.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, WebP and sitemap HTTP 200; Provider lists game, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }

@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 837,
+  "gameCount": 838,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 118
+    "not-verified": 119
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,32 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "jinlian-atg",
+      "name": "Jinlian",
+      "provider": "atg-games",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "ATG official exact Jinlian page confirms 2026-09-08 release, five reels, 40 left-to-right paylines, RTP 96.38%, Advanced volatility and Winning ratio x1000. Exact game-specific playable Demo destination and load were not verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.atg-games.com/en/games?type=all",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card links to exact Jinlian Game Info"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/games/slot/jinlian",
+          "httpStatus": 200,
+          "notes": "Official exact game page with identity, date, paylines, math and mechanics; no verified Demo"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/_ipx/f_webp/jinlian/en/game_icon.png",
+          "httpStatus": 200,
+          "notes": "Valid visually checked Jinlian title WebP, SHA256 ccff77925e607a00fe292312e4cba38f87aa84aa153d904e0c100ef4389c2346"
+        }
+      ]
+    },
     {
       "slug": "vampire-atg",
       "name": "Vampire",
