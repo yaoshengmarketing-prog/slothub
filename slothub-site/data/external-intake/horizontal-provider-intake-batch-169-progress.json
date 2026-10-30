@@ -1,10 +1,10 @@
 {
   "batch": 169,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete documented JDB official catalog at card 10",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "MAGIC ACE WILD LOCK",
       "slug": "magic-ace-wild-lock-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/magic-ace-wild-lock",
       "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/magic-ace-wild-lock",
       "officialFacts": "JDB official English/CN detail: RTP 96.33%, MEDIUM volatility, Maximum Win 2600X, 1024 Ways, year 2024; cascades, golden symbols become Joker Wilds, Super Joker locks for three games, base multiplier wheel 1X-5X and Free Games 2X-10X, Feature Buy and Extra Bet.",
@@ -31,5 +31,15 @@
       "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
     }
   ],
-  "nextCursor": "All 46 official JDB Slot cards imported; verify card 10 CI, Cloudflare and live readback, then close final catalog record."
+  "nextCursor": "All 46 observed official JDB Slot cards published and live verified; no unprocessed card remains in this snapshot.",
+  "publication": {
+    "commit": "88f232c72ea9ff8c24629b8048f57debe2729517",
+    "githubRun": 40986697800,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "35faad01-63f5-4cc0-88f8-71b6bd979a24",
+    "cloudflareUrl": "https://35faad01.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, WebP image and sitemap HTTP 200; official and exact third-party sources, RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

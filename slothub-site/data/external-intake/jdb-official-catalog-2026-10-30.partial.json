@@ -2,7 +2,7 @@
   "provider": "JDB Gaming",
   "catalogUrl": "https://www.jdbgaming.com/en/games/slot",
   "checkedAt": "2026-10-30",
-  "state": "catalog-complete-first-game-published",
+  "state": "all-46-official-slot-cards-live-verified",
   "browserRunId": "65885236-5fc5-4d53-a2c1-50b08c796da8",
   "browserObservation": "46 lazy-loaded Slot cards; first 10 exact detail pages returned HTTP 200 in Browser Use cloud browser. Local direct request returned 403 Access Denied and official location-restriction page.",
   "observedTotal": 46,
@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated and imported; card 10 awaits CI, Cloudflare and full live readback. No catalog candidates remain.",
-  "nextStep": "Verify card 10 exact SHA in Actions and Cloudflare, run full live readback, mark 46/46 and publish final closure metadata.",
-  "publishedCount": 45,
+  "nextCursor": "All 46 observed official JDB Slot catalog cards published and live verified on 2026-10-30; no unprocessed card in snapshot.",
+  "nextStep": "At next run, refresh the official JDB Slot catalog for newly added cards and deduplicate against these 46; revisit documented missing/conflicting math only when reliable exact-game source evidence becomes available.",
+  "publishedCount": 46,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -819,6 +819,70 @@
     "partnerAttribution": "Exact Slots Launch page identifies Magic Ace Wild Lock by JDB; valid downloaded WebP (despite .jpg URL) visibly displays MAGIC ACE WILD LOCK, not the base title.",
     "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
     "dedup": "All Game Markdown and Provider name/alias fields; Magic Ace WILD LOCK absent before intake, distinct from published Magic Ace base. Prior batch 124 explicitly noted separate official catalog title.",
-    "decision": "captured-awaiting-publication"
+    "decision": "published-live-verified"
+  },
+  "completenessAudit": {
+    "checkedAt": "2026-10-30",
+    "expectedOfficialSlotCards": 46,
+    "uniqueJdbGameRecords": 46,
+    "missingCards": [],
+    "duplicateOfficialSlugs": [],
+    "missingLocalImages": [],
+    "unfilledMathFields": [
+      {
+        "slug": "bull-treasure-x-huge-jdb",
+        "fields": [
+          "rtp"
+        ],
+        "reason": "Official detail does not publish RTP; third-party figures differ."
+      },
+      {
+        "slug": "fruity-bonanza-combo-jdb",
+        "fields": [
+          "rtp",
+          "volatilityOriginal",
+          "maxWinMultiplier"
+        ],
+        "reason": "Official detail omits these values; third-party numerical claims conflict."
+      },
+      {
+        "slug": "fruity-bonanza-jdb",
+        "fields": [
+          "rtp",
+          "maxWinMultiplier"
+        ],
+        "reason": "Official detail omits these values; third-party numerical claims differ."
+      },
+      {
+        "slug": "olympig-jdb",
+        "fields": [
+          "volatilityOriginal",
+          "maxWinMultiplier"
+        ],
+        "reason": "Official specification and official announcement directly conflict; discrepancy disclosed on Game."
+      },
+      {
+        "slug": "open-sesame-mega-jdb",
+        "fields": [
+          "volatilityOriginal"
+        ],
+        "reason": "Official detail does not state volatility."
+      },
+      {
+        "slug": "piggy-bank-jdb",
+        "fields": [
+          "rtp"
+        ],
+        "reason": "Official detail does not state RTP."
+      },
+      {
+        "slug": "super-niubi-fortune-x-huge-jdb",
+        "fields": [
+          "volatilityOriginal"
+        ],
+        "reason": "Official introduction and official specification directly conflict; discrepancy disclosed on Game."
+      }
+    ],
+    "policy": "Unknown or conflicting numbers remain unfilled; no number inferred from unreliable or different-version sources."
   }
 }
