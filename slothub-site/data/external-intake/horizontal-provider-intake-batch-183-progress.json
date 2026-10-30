@@ -1,0 +1,32 @@
+{
+  "batch": 183,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Myeong-ryang / 鳴梁 (GB12) absent before intake.",
+  "records": [
+    {
+      "name": "Myeong-ryang",
+      "slug": "myeong-ryang-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "GB12",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/news/detail/210",
+      "officialFacts": "CQ9 Slot catalog ID GB12: RTP 96.08%, High volatility, maximum_win 2000. Exact official news describes soldiers becoming sticky Wilds in Free Games.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/p73wDkGP.jpg",
+        "localPath": "public/assets/games/myeong-ryang-cq9.jpg",
+        "sha256": "62cdc48c34500b70229fcde0c345d2f24a2024649971cb6206aa95c37eb100c5",
+        "visualCheck": "Official GB12 maps to purple battle backdrop; mapped icon j9RylNhV.png visibly spells Myeong-ryang."
+      },
+      "demo": "Official news guest URL HTTP 200 and exact document title. US New York read-only browser exact game page HTTP 200, title Myeong Ryang, loading canvas without playable controls after about 15 seconds. Demo not-verified; no 403/404, spin, bet or login."
+    }
+  ],
+  "nextCursor": "After GB12 live closure, continue next uncollected CQ9 Slot, checking current catalog IDs, exact news, data, image, and Demo. Preserve Sung Wukong (253) and Sugar Combo (CP2) official metric conflict queue."
+}
