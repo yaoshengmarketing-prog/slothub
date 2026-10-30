@@ -4,8 +4,8 @@
   "checkedAt": "2026-10-30",
   "catalogCount": 141,
   "slotCount": 122,
-  "capturedCountThisRun": 37,
-  "publishedCountThisRun": 36,
+  "capturedCountThisRun": 38,
+  "publishedCountThisRun": 37,
   "reviewQueue": [
     {
       "name": "Sung Wukong",
@@ -16,6 +16,11 @@
       "name": "Sugar Combo",
       "gameId": "CP2",
       "reason": "Official catalog lists High volatility, but English news/detail/963 and Chinese news/detail/962 state Medium volatility. Hold core metric for source reconciliation."
+    },
+    {
+      "name": "Kronos",
+      "gameId": "154",
+      "reason": "Official catalog description calls it a 4x3 reel; read-only US guest canvas was reported as five columns. Omit definitive reel geometry pending source reconciliation. Overall catalog maximum 3000x and promotional 1000x remain separately scoped."
     }
   ],
   "existingAtStart": [
@@ -25,7 +30,9 @@
   ],
   "intakeState": "in-progress",
   "nextCandidateOrder": [
-    "5 God beasts",
+    "SkrSkr",
+    "Gu Gu Gu 3",
+    "6 Toros",
     "Kronos"
   ],
   "slotItems": [

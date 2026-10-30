@@ -1,0 +1,31 @@
+{
+  "batch": 207,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 SkrSkr / 老司機 (118) absent before intake.",
+  "records": [
+    {
+      "name": "SkrSkr",
+      "slug": "skrskr-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "118",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 118: RTP 96.00%, High volatility, overall maximum_win 12150. Description states Wild doubles score on scoring line, five SC icons may grant Free Games and 200x award, and Turbo Wild activates Wild reel.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/WG9rBv4v.jpg",
+        "localPath": "public/assets/games/skrskr-cq9.jpg",
+        "sha256": "e07e3b130bd7a0581491a9de5d01c0fe3f3250b5cd5ab7cec4f0d3f273ae1751",
+        "visualCheck": "Official 118 maps to race-track background; icon gSA0sJWW.png visibly spells SkrSkr over car illustration."
+      },
+      "demo": "US New York browser: guest-query /h5/118/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; SkrSkr/243 WAYS branding, five reels and controls after about 40 seconds without login. No spin, bet or login action."
+    }
+  ],
+  "nextCursor": "After SkrSkr live closure, continue Gu Gu Gu 3 180 and 6 Toros 173, both US guest Demos verified. Kronos 154 geometry disagreement held for source review."
+}
