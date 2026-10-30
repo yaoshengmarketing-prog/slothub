@@ -1,10 +1,10 @@
 {
   "batch": 203,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "flying-cai-shen-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "113",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 113: RTP 96.04%, Medium volatility, overall maximum_win 3000. Description states reel extension, three-level upgrade and Free Game choice of reel size and round count; no trigger probabilities are given.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser: current guest-query /h5/113/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; Flying Cai Shen branding, Reel Ways, LEVEL 1, reels and controls after about 42 seconds without login. No spin, bet or login action."
     }
   ],
-  "nextCursor": "After Flying Cai Shen live closure, reconcile Kronos 154 4x3 official description vs five-column visual report; then continue other uncollected CQ9 Slots. Do not infer missing reel geometry."
+  "nextCursor": "Flying Cai Shen 113 live verified; continue Snow Queen 115, whose official 3x3/5-line layout and US guest canvas match.",
+  "publication": {
+    "commit": "d8a69b071c33ae2dab46001a192f6e5211af3532",
+    "githubRun": 41043690811,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "0be65d24-ef05-4266-a660-0be9f9db0ee1",
+    "cloudflareUrl": "https://0be65d24.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

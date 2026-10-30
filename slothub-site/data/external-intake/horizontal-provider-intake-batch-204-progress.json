@@ -1,0 +1,31 @@
+{
+  "batch": 204,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Snow Queen / 冰雪女王 (115) absent before intake.",
+  "records": [
+    {
+      "name": "Snow Queen",
+      "slug": "snow-queen-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "115",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 115: RTP 96.06%, High volatility, overall maximum_win 6000. Description states 3x3 reels, 5 lines, stacking Wild, full-reel single-symbol Free Game trigger and symbol-count reward mechanic.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/jcKoeAkm.jpg",
+        "localPath": "public/assets/games/snow-queen-cq9.jpg",
+        "sha256": "866807fc69f51e6ed99d649a96aa1bd373e945dbc8b80a2956a0a35b3a523a12",
+        "visualCheck": "Official 115 maps to icy castle background; icon zaG4epx7.png visibly spells Snow Queen."
+      },
+      "demo": "US New York browser: guest-query /h5/115/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; Snow Queen/5Lines branding, 3x3 reels and controls after 40 seconds without login. No spin, bet or login action."
+    }
+  ],
+  "nextCursor": "After Snow Queen live closure, continue Wonderland 116 and 5 God beasts 117; both exact US guest Demos independently verified. Kronos 154 geometry discrepancy remains in review queue."
+}
