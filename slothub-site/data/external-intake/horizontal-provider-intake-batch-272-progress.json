@@ -1,10 +1,10 @@
 {
   "batch": 272,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Resume existing-provider ATG Games depth cursor after CQ9 17-item source-quality hold and complete JDB 46-card catalog",
   "catalog": "https://www.atg-games.com/en/games?type=all",
   "catalogAudit": "Official catalog lists 12 Slot cards: Storm of Seth 2: Awakening, Elder God Baphomet, Tiger Girl, Storm of Seth, Flaming Three Kingdoms, Wuxia, Sun Wu Kong, Vampire, Jinlian, Winter Hunter, Triple Fortune, Bubble Gum. Existing ATG Games pages: Storm of Seth 2: Awakening, Storm of Seth, Sun Wu Kong. Nine remain in catalog order before this capture.",
@@ -14,7 +14,7 @@
       "name": "Elder God Baphomet",
       "slug": "elder-god-baphomet",
       "provider": "atg-games",
-      "status": "imported-awaiting-live-closure",
+      "status": "published-live-verified",
       "officialPage": "https://www.atg-games.com/games/slot/elder-god-baphomet",
       "officialFacts": "2026-05-26 release; 5x5 Cluster Pays; five or more horizontally/vertically connected symbols; RTP 96.35%; Advanced volatility; Winning ratio x65536; random multipliers, giant symbols, free games, buy features and JP mini-game.",
       "image": {
@@ -26,5 +26,15 @@
       "demo": "Exact official game page has no game-specific Demo control in the current catalog or page; not-verified, checked 2026-10-31. Provider homepage not substituted."
     }
   ],
-  "nextCursor": "After same-SHA CI, Cloudflare and full live readback of Elder God Baphomet, continue ATG catalog card 3 Tiger Girl; then Flaming Three Kingdoms, Wuxia and remaining cards, with individual dedup and source checks. CQ9 17 conflict holds remain documented separately."
+  "nextCursor": "After same-SHA CI, Cloudflare and full live readback of Elder God Baphomet, continue ATG catalog card 3 Tiger Girl; then Flaming Three Kingdoms, Wuxia and remaining cards, with individual dedup and source checks. CQ9 17 conflict holds remain documented separately.",
+  "publication": {
+    "commit": "26abd02820fd8ae3005e61ebb5f99101bdd87078",
+    "githubRun": 41106103349,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "a305e7c3-dcc3-4bb6-a28e-cb2afa12f040",
+    "cloudflareUrl": "https://a305e7c3.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, WebP and sitemap HTTP 200; Provider lists game, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }

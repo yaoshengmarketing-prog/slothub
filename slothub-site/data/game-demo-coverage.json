@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 834,
+  "gameCount": 835,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 115
+    "not-verified": 116
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,32 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "tiger-girl-atg",
+      "name": "Tiger Girl",
+      "provider": "atg-games",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "ATG exact Tiger Girl page identifies the 2026-06-30 release, 6x5 cascading Pay Anywhere game, RTP 96.89%, Advanced volatility and Winning ratio x81000. No exact game-specific Demo control was verified in the official catalog or page; Provider homepage is not substituted.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.atg-games.com/en/games?type=all",
+          "httpStatus": 200,
+          "notes": "Official Slot card names Tiger Girl and links to exact Game Info"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/games/slot/tiger-girl",
+          "httpStatus": 200,
+          "notes": "Exact official page with identity, release, metrics and mechanics; no verified Demo control"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/_ipx/f_webp/tiger-girl/en/game_icon.png",
+          "httpStatus": 200,
+          "notes": "Valid visually checked title WebP, SHA256 a04fffb0b09336f2a937381b4b07185cb17e1a28d875bfc92e0ba742af6db3cc"
+        }
+      ]
+    },
     {
       "slug": "elder-god-baphomet",
       "name": "Elder God Baphomet",
