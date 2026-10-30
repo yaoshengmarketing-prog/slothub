@@ -1,10 +1,10 @@
 {
   "batch": 159,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 46",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Mjolnir",
       "slug": "mjolnir-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/mjolnir",
       "officialFacts": "Official EN detail browser ledger and CN detail: Slot, RTP 96%, HIGH volatility, Maximum Win 2000X, 243 Ways, release year 2023; feature buy, lightning Wild, Thunder Strike and Free Games per-elimination multiplier up to 8X distinct from total max.",
       "sourceConflict": "Slots Launch exact JDB Mjolnir page describes 25 paylines versus official 243 Ways and partner-only Thor Lightning Bonus; official data takes precedence. Current web fetch of official English page redirected to geographic block, but prior Browser Use detail ledger captured specification and Chinese page corroborates game/features.",
@@ -29,5 +29,15 @@
       "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
     }
   ],
-  "nextCursor": "JDB catalog card 1 CYBER BOUNTY WILD LOCK"
+  "nextCursor": "JDB catalog card 1 CYBER BOUNTY WILD LOCK",
+  "publication": {
+    "commit": "e0e8d35bf3c7be04a297148907f7c53411b223ab",
+    "githubRun": 40982196465,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "99830618-6152-4037-8046-dd35c31e4a6e",
+    "cloudflareUrl": "https://99830618.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, WebP image and sitemap HTTP 200; official and exact Slots Launch platform URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

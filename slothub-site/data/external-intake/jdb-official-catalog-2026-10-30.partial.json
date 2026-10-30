@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 imported. Next individual candidate is card 1 CYBER BOUNTY WILD LOCK. Cards 1-10 remain.",
-  "nextStep": "After card 46 publication loop, continue card 1 CYBER BOUNTY WILD LOCK using official details ledger, exact image and Demo checks.",
-  "publishedCount": 35,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 and 1 imported. Next individual candidate is card 2 TREASURE BOWL X-HUGE™. Cards 2-10 remain.",
+  "nextStep": "After card 1 publication loop, continue card 2 TREASURE BOWL X-HUGE™ using official details ledger, exact image and Demo checks.",
+  "publishedCount": 36,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -665,6 +665,21 @@
     "partnerAttribution": "Exact Slots Launch page identifies Mjolnir by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays MJOLNIR title and Thor hammer.",
     "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
     "dedup": "All Game Markdown and Provider names/aliases: JDB Mjolnir absent; RSG Thunder Hammer shares Chinese alias but is different provider and game, not a duplicate.",
+    "decision": "published-live-verified"
+  },
+  "card1Evidence": {
+    "name": "CYBER BOUNTY WILD LOCK",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/cyber-bounty-wild-lock",
+    "officialChineseCatalog": "https://www.jdbgaming.com/cn/games",
+    "officialFacts": "Official EN detail and CN catalog: Slot, RTP 96.5%, MEDIUM volatility, Maximum Win 15000X, 3600 Ways, release year 2026; WILD LOCK 3 rounds/spins, cascading wins, Golden Symbols to WILD/WILD LOCK, base multiplier X1024 and Extra Bet X4096, Feature Buy.",
+    "sourceConflict": "Official feature label says three rounds and introduction says three spins; source wording preserved as three uses, without inventing a time model. Multiplier X4096 is distinct from maximum total win 15000X.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming/cyber-bounty-wild-lock",
+    "partnerImage": "https://assets.slotslaunch.com/114461/cyber-bounty-wild-lock.jpg",
+    "partnerImageSha256": "9a01c802eafa91abfd8571573e86fd7208b43e25830a82a5b1e77142d2c5e7e3",
+    "partnerImageMime": "image/webp",
+    "partnerAttribution": "Exact Slots Launch page identifies Cyber Bounty WILD LOCK by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays full CYBER BOUNTY WILD LOCK title and 15000X.",
+    "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
+    "dedup": "All Game Markdown and Provider name/alias fields; Cyber Bounty WILD LOCK absent before intake, distinct from Cyber Bounty 4096 card 9.",
     "decision": "captured-awaiting-publication"
   }
 }

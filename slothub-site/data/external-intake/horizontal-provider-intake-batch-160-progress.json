@@ -1,0 +1,33 @@
+{
+  "batch": 160,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 1",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; Cyber Bounty WILD LOCK absent before intake, distinct from Cyber Bounty 4096 card 9.",
+  "records": [
+    {
+      "order": 1,
+      "name": "Cyber Bounty WILD LOCK",
+      "slug": "cyber-bounty-wild-lock-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/cyber-bounty-wild-lock",
+      "officialFacts": "Official EN detail and CN catalog: Slot, RTP 96.5%, MEDIUM volatility, Maximum Win 15000X, 3600 Ways, release year 2026; WILD LOCK 3 rounds/spins, cascading wins, Golden Symbols to WILD/WILD LOCK, base multiplier X1024 and Extra Bet X4096, Feature Buy.",
+      "sourceConflict": "Official feature label says three rounds and introduction says three spins; source wording preserved as three uses, without inventing a time model. Multiplier X4096 is distinct from maximum total win 15000X.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/cyber-bounty-wild-lock",
+        "sourceUrl": "https://assets.slotslaunch.com/114461/cyber-bounty-wild-lock.jpg",
+        "sha256": "9a01c802eafa91abfd8571573e86fd7208b43e25830a82a5b1e77142d2c5e7e3",
+        "actualMime": "image/webp",
+        "visualCheck": "Exact Slots Launch page identifies Cyber Bounty WILD LOCK by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays full CYBER BOUNTY WILD LOCK title and 15000X."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 2 TREASURE BOWL X-HUGE™"
+}
