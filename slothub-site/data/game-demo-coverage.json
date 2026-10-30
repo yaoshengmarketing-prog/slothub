@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 743,
+  "gameCount": 744,
   "providerCount": 371,
-  "sourcePageCount": 1367,
+  "sourcePageCount": 1373,
   "counts": {
     "access-restricted": 4,
     "available": 631,
-    "not-verified": 108
+    "not-verified": 109
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,47 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "hero-of-the-3-kingdoms-cao-cao-cq9",
+      "name": "Hero of the 3 Kingdoms - Cao Cao",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "Official CQ9 catalog and exact news identify GB15. Same-browser US New York egress: exact game URL HTTP 200 with correct title and loading canvas, but no playable controls after approximately 30 seconds. Official guest URL also returned HTTP 200 in document request; ready Demo remains unverified. No 403 or 404 observed.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card GB15"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/217",
+          "httpStatus": 200,
+          "notes": "Exact Cao Cao news; links GB15 guest URL"
+        },
+        {
+          "requestedUrl": "https://web-gb.cqgame.games/h5/GB15/",
+          "httpStatus": 200,
+          "notes": "US-egress HTTP 200; correct title, loading canvas, no ready controls after about 30 seconds"
+        },
+        {
+          "requestedUrl": "https://web-gb.cqgame.games/h5/GB15/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "Official news guest URL HTTP 200 and exact title via document fetch; playable controls not verified"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/QbnVuwjv.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/si8PrkM2.png",
+          "httpStatus": 200,
+          "notes": "Official title icon, visibly says Hero of the 3 Kingdoms Cao Cao"
+        }
+      ]
+    },
     {
       "slug": "baseball-fever-cq9",
       "name": "Baseball Fever",
