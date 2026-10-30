@@ -1,10 +1,10 @@
 {
   "batch": 230,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "lucky-bats-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "10",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 10: RTP 96.02%, Low volatility, overall maximum_win 3000; 243 Ways, stacked symbols and only high-paying symbols during Free Games. US guest canvas labels 243 WAYS.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/10/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 243 WAYS, 5x3 reels and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Lucky Bats live closure, continue 888 ID20 if US guest Demo verifies; Hot Spin19, Rave Jump2 24, Super5 16 and Great Lion 17 held for official max conflicts. Previous review queue persists."
+  "nextCursor": "Lucky Bats 10 live verified; continue 888 20.",
+  "publication": {
+    "commit": "33a4439c21d48d52db49407044819837e7b4bea6",
+    "githubRun": 41057845201,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "1edada7e-f368-47f9-87ae-b524f1d316bd",
+    "cloudflareUrl": "https://1edada7e.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

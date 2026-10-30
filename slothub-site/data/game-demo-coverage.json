@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 792,
+  "gameCount": 793,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 674,
+    "available": 675,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "888-cq9",
+      "name": "888",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies 888 ID 20, distinct from 888 Cai Shen ID 227; RTP 95.91%, Medium volatility, 800x maximum, and bonus choice among adjacent dollar symbols on reels 2 to 4. US New York browser read-only guest Demo: HTTP 200, 888 branding, 10 LINES, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 20, metrics and bonus description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/20/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser 888, 10 LINES, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/tmH1TZ9G.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped fireworks city background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/AVVZZDTL.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells 888"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/20/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies 888 ID 20, distinct from 888 Cai Shen ID 227; RTP 95.91%, Medium volatility, 800x maximum, and bonus choice among adjacent dollar symbols on reels 2 to 4. US New York browser read-only guest Demo: HTTP 200, 888 branding, 10 LINES, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "lucky-bats-cq9",
       "name": "Lucky Bats",
