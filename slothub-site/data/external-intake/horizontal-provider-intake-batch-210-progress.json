@@ -1,10 +1,10 @@
 {
   "batch": 210,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "thor-2-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "182",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 182: RTP 96.19%, High volatility, overall maximum_win 3000. Wild on designated combinations grants five Free Games; base game allows buying five Free Games. US guest canvas visibly labels 243 WAYS and BUY FEATURE.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser: guest-query /h5/182/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; THOR 2/243 WAYS branding, reels and BUY FEATURE control after about 40 seconds without login. No spin, bet, buy or login action."
     }
   ],
-  "nextCursor": "After Thor 2 live closure, continue MuayThai 201 or DiscoNight 205, both US guest Demos verified. Kronos 154 geometry disagreement held for source review."
+  "nextCursor": "Thor 2 182 live verified with official five Free Games buy option and US guest 243 WAYS/BUY FEATURE canvas. Continue MuayThai 201.",
+  "publication": {
+    "commit": "89d8a012e265f4ad4c46e74c5966aafb78177d2d",
+    "githubRun": 41047783076,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "bba92501-7fa3-4d82-aa29-2264ae2016ff",
+    "cloudflareUrl": "https://bba92501.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

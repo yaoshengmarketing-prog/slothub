@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 772,
+  "gameCount": 773,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 654,
+    "available": 655,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "muaythai-cq9",
+      "name": "MuayThai",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies MuayThai ID 201, exact domain, RTP 96.10%, Medium volatility, overall 3000x maximum and choice of Free Games and big-prize icons. US New York browser read-only check: current guest-query /h5/201/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, MUAY THAI/243 Ways branding, five reels and controls after about 40 seconds without login. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 201, metrics and Free Game choice"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/201/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; MUAY THAI/243 Ways reels and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/pOO2rrfE.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped golden burst background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/fJKqA2ev.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells MUAY THAI"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/201/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies MuayThai ID 201, exact domain, RTP 96.10%, Medium volatility, overall 3000x maximum and choice of Free Games and big-prize icons. US New York browser read-only check: current guest-query /h5/201/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, MUAY THAI/243 Ways branding, five reels and controls after about 40 seconds without login. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "thor-2-cq9",
       "name": "Thor 2",
