@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 741,
+  "gameCount": 742,
   "providerCount": 371,
-  "sourcePageCount": 1358,
+  "sourcePageCount": 1363,
   "counts": {
     "access-restricted": 4,
-    "available": 630,
+    "available": 631,
     "not-verified": 107
   },
   "rules": {
@@ -17,6 +17,53 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "treasure-pirate-cq9",
+      "name": "Treasure Pirate",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official news/detail/221 embeds the exact guest-demo URL for ID 242. Official catalog, client document title, title icon and rendered reels identify Treasure Pirate; read-only browser in US egress reached the game screen without login or 403.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card, ID 242"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/221",
+          "httpStatus": 200,
+          "notes": "Official pirate news links exact ID 242 guest client"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/242/",
+          "httpStatus": 200,
+          "notes": "Official exact-title client; canvas/assets load, ready Demo state not confirmed"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/3zPmHs6X.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/7SAqzloT.png",
+          "httpStatus": 200,
+          "notes": "Official title icon, visually checked"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/242/?language=en&token=guest",
+          "finalUrl": "https://h5c.cqgame.games/h5/242/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US egress verified with ipinfo.io/json; reels and controls visible; no spin, bet or login"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/242/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official news/detail/221 embeds the exact guest-demo URL for ID 242. Official catalog, client document title, title icon and rendered reels identify Treasure Pirate; read-only browser in US egress reached the game screen without login or 403.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "the-chicken-house-cq9",
       "name": "The Chicken House",

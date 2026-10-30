@@ -30,4 +30,4 @@
 ## 已知實例
 
 - 2026-10-30 JDB 官方 Slot 目錄在唯讀雲端瀏覽器顯示 46 張卡片，當地直連官方圖片曾回傳 HTTP 200、`text/html` 的「403 Access Denied」頁；部分確切官方圖片透過 Google Translate 公開圖片代理取得，並以官方映射與視覺／雜湊核對。來源與方法見 `data/external-intake/jdb-official-catalog-2026-10-30.partial.json`。
-- 2026-10-30 CQ9 官方目錄 `https://site.cq9gaming.com/en/games` 在目前網路回 HTTP 200；唯讀瀏覽器確認共 141 個產品、122 款 Slot。精確的 Treasure Pirate（ID 242）入口 `https://h5c.cqgame.games/h5/242/` 回 HTTP 200，標題與 CQ9 畫面載入；228 個觀察到的資源回應全為 200／304，未見 403 或登入要求。畫面仍停在載入／開場，未證明可完整操作，且瀏覽器沒有顯示公開 IP 或地區；不得聲稱本次已切換美國 IP。CQ9 完整目錄快照見 `data/external-intake/cq9-official-catalog-2026-10-30.json`。
+- 2026-10-30 CQ9 官方目錄 `https://site.cq9gaming.com/en/games` 在目前網路回 HTTP 200；唯讀瀏覽器確認共 141 個產品、122 款 Slot。精確的 Treasure Pirate（ID 242）入口 `https://h5c.cqgame.games/h5/242/` 回 HTTP 200，標題與 CQ9 畫面載入；228 個觀察到的資源回應全為 200／304，未見 403 或登入要求。第一次檢查沒有顯示出口地區，故不能把該次當成美國出口證據。第二次以官方新聞所連的 `https://h5c.cqgame.games/h5/242/?language=en&token=guest` 核對，唯讀瀏覽器看到遊戲滾輪、控制區與起始畫面，未見登入、403、重新導向或資源失敗；同一次瀏覽器開啟 `https://ipinfo.io/json` 顯示出口為美國紐約。這證明**該次**美國出口可用，不保證未來或其他瀏覽器執行環境相同。沒有進行旋轉、下注或登入。CQ9 完整目錄快照見 `data/external-intake/cq9-official-catalog-2026-10-30.json`。

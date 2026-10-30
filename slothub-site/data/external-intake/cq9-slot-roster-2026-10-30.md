@@ -2,7 +2,7 @@
 
 核對日期：2026-10-30。來源：[CQ9 官方遊戲目錄](https://site.cq9gaming.com/en/games)；完整逐款來源網址、圖片網址與原始敘述保存在 [`cq9-official-catalog-2026-10-30.json`](./cq9-official-catalog-2026-10-30.json)。
 
-官方目錄共 141 個產品，其中 Slot（官方 type=1）122 款。本清單按官方目錄順序列出全部 122 款；目前站內已有 13 款 CQ9 Game，其餘 109 款待逐款查核、配圖、驗證與發布。目錄數值是 CQ9 官方當日快照，不表示所有款式已完成本站收錄或 Demo 核對。
+官方目錄共 141 個產品，其中 Slot（官方 type=1）122 款。本清單按官方目錄順序列出全部 122 款；目前站內已有 14 款 CQ9 Game，其餘 108 款待逐款查核、配圖、驗證與發布。目錄數值是 CQ9 官方當日快照，不表示所有款式已完成本站收錄或 Demo 核對。
 
 官方目錄的 `nameTw` 若是「API處尚未建立遊戲.」，本表改列 `nameCn` 作原文參考；繁中正式名稱仍須逐款核對。最高倍數 `N/A` 維持官方缺值，不做推算。
 
@@ -120,7 +120,7 @@
 | 126 | GB13 | Football Fever M | 直式足球狂热 | 96.08% | High | 15000× | 待逐款收錄 |
 | 127 | 241 | The Chicken House | 咕咕鸡 | 96.09% | High | 10000× | [已收錄](../../src/content/games/the-chicken-house-cq9.md) |
 | 128 | GB15 | Hero of the 3 Kingdoms - Cao Cao | 三国英雄-曹操 | 96.20% | High | 2000× | 待逐款收錄 |
-| 130 | 242 | Treasure Pirate | 海盗寻宝 | 96.12% | High | 10000× | 待逐款收錄 |
+| 130 | 242 | Treasure Pirate | 海盗寻宝 | 96.12% | High | 10000× | [已收錄](../../src/content/games/treasure-pirate-cq9.md) |
 | 131 | 243 | Mafia | 黑手党 | 96.10% | High | 12000× | [已收錄](../../src/content/games/mafia-cq9.md) |
 | 132 | 246 | Go Fishing | 钓鱼趣 | 96.06% | High | 15000× | [已收錄](../../src/content/games/go-fishing-cq9.md) |
 | 133 | 158 | Black Wukong | 黑悟空 | 95.97% | High | 5000× | [已收錄](../../src/content/games/black-wukong-cq9.md) |
@@ -135,6 +135,7 @@
 
 - Sung Wukong（253）：官方目錄與官方新聞的波動、重轉滾輪位置互相矛盾。
 - Sugar Combo（CP2）：官方目錄列 High，官方英／中文新聞列 Medium。
-- Treasure Pirate（242）：官方目錄正式名稱與精確遊戲客戶端標題一致；目錄敘述中的 Pirate Treasure 字序不同。後續仍須核對官方單款新聞及標題圖。
 
-以上只影響對應款式的待查欄位與發布判定，不影響 122 款官方 Slot 名單完整性。
+Treasure Pirate（242）的官方新聞雖使用 Pirate Treasure 字序，但新聞連結的精確 ID 242 遊戲客戶端標題與官方標題圖均為 Treasure Pirate；身份已核對。
+
+以上待釐清數值不影響 122 款官方 Slot 名單完整性。

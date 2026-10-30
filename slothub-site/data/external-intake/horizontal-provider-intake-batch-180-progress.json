@@ -1,0 +1,32 @@
+{
+  "batch": 180,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete all CQ9 official Slot entries, starting with the exact ID 242 pirate title discrepancy",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Treasure Pirate / 海盜尋寶 / Pirate Treasure (ID 242) absent. Official news links game ID 242 and official client/title icon both spell Treasure Pirate.",
+  "records": [
+    {
+      "name": "Treasure Pirate",
+      "slug": "treasure-pirate-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "242",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/news/detail/221",
+      "officialFacts": "Official CQ9 Slot ID 242, RTP 96.12%, High volatility, maximum_win 10000. Official news uses reversed English name Pirate Treasure but its exact guest-game href is /h5/242/; official client title and title icon identify Treasure Pirate. Five Money symbols left-right, pirate captain collects Money values in Free Games, silver coin local bonus multiplier.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/3zPmHs6X.jpg",
+        "localPath": "public/assets/games/treasure-pirate-cq9.jpg",
+        "sha256": "2f1a7c12bd9f5e6534c9affacfc05f157a4d264aeeb2cfe56cf88c2f2e5b29b1",
+        "visualCheck": "Official ID 242 maps to blue ocean treasure-map background; official icon 7SAqzloT.png visibly spells Treasure Pirate."
+      },
+      "demo": "Official news/detail/221 embeds exact /h5/242/?language=en&token=guest. Read-only US egress browser reached recognizable Treasure Pirate reels and controls without login, 403, redirect or failed resources; no spin or betting action. Status available, direct-demo, external."
+    }
+  ],
+  "nextCursor": "After Treasure Pirate live closure, continue official CQ9 Slot catalog at Baseball Fever (ID 230), then other deduplicated official entries. Keep Sung Wukong and Sugar Combo official-source conflicts queued."
+}
