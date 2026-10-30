@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 820,
+  "gameCount": 821,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 702,
+    "available": 703,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gu-gu-gu-2-cq9",
+      "name": "Gu Gu Gu 2",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Gu Gu Gu 2 ID 58, RTP 95.97%, High volatility, overall 8000x maximum, WILD extra 5x payout and third-reel re-spin helping entry to free games. US browser read-only guest Demo: browser page title Welcome but exact Gu Gu Gu 2 visible in game canvas, 5x3 reels, 15 Lines and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 58, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/58/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser page title Welcome, but canvas rendered Gu Gu Gu 2 branding, 5x3 reels, 15 Lines and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/QwvpOpr4.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped gold old town background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/eQUTVWwM.png",
+          "httpStatus": 200,
+          "notes": "Official rooster Gu Gu Gu 2 title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/58/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Gu Gu Gu 2 ID 58, RTP 95.97%, High volatility, overall 8000x maximum, WILD extra 5x payout and third-reel re-spin helping entry to free games. US browser read-only guest Demo: browser page title Welcome but exact Gu Gu Gu 2 visible in game canvas, 5x3 reels, 15 Lines and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "the-beast-war-cq9",
       "name": "The Beast War",

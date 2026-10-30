@@ -1,10 +1,10 @@
 {
   "batch": 258,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "the-beast-war-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "57",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 57: RTP 95.99%, Medium volatility, overall maximum_win 1000; choose free-game rounds and patron saint, giant and stacked icons. US guest canvas labels 40 Lines.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US browser guest-query /h5/57/?language=en&token=guest HTTP 200 with Welcome page title but exact The Beast War canvas branding, 5x3 reels, 40 Lines and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After The Beast War live closure, continue Gu Gu Gu 2 ID58 (US guest Demo verified; official image/icon downloaded and visually checked), then Zeus ID64, Fire 777 ID66 and Wukong & Peaches ID68 (US exact guest Demos verified). Held Kronos ID154 geometry conflict remains."
+  "nextCursor": "The Beast War 57 live verified; continue Gu Gu Gu 2 58.",
+  "publication": {
+    "commit": "22a16e67d82483d8ae79ffc512b435d965fef844",
+    "githubRun": 41073642267,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "7955a6a4-d6c5-42b9-9b11-7643152014a4",
+    "cloudflareUrl": "https://7955a6a4.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
