@@ -1,0 +1,32 @@
+{
+  "batch": 175,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "CQ9 official Slot catalog continuation with first-party exact-title news",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Wizard's Wizard / 狂野巫師 (game ID CP3) absent before intake. Distinct from RSG Wizard Store games.",
+  "records": [
+    {
+      "name": "Wizard's Wizard",
+      "slug": "wizards-wizard-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "CP3",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/news/detail/1352",
+      "officialFacts": "Official CQ9 Slot catalog: CP3, RTP 97.09%, High volatility, global maximum 15000x. Catalog and official news identify Any 8 cascading mechanic; catalog states four Magic Orbs with up to 500x local multiplier, Free Games up to 100 and Feature Buy.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/Y3ZQrRHe.jpg",
+        "localPath": "public/assets/games/wizards-wizard-cq9.png",
+        "sha256": "b25744d8fdd16d3754f44abd54e0863a2987c5f6613c96f7ad4dc154ba5db101",
+        "visualCheck": "Official CP3 maps to purple/orange magic-themed background; exact official icon yzBPlGMB.png visibly spells WIZARDS WIZARD. Source URL ends .jpg but returns image/png, so local file uses .png."
+      },
+      "demo": "Official catalog modal did not expose independently verified playable href; status not-verified."
+    }
+  ],
+  "nextCursor": "After Wizard's Wizard live closure, continue official CQ9 Slot catalog; inspect Mahjong Break (CP1) official description title inconsistency before importing. Retain Sung Wukong source-conflict review queue."
+}
