@@ -1,0 +1,33 @@
+{
+  "batch": 158,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 45",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; Prosperity Tiger/虎福生豐 absent before intake.",
+  "records": [
+    {
+      "order": 45,
+      "name": "Prosperity Tiger",
+      "slug": "prosperity-tiger-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/prosperity-tiger",
+      "officialFacts": "Official English/CN detail: Slot, RTP 96.02%, MEDIUM volatility, Maximum Win 3500X, 243 Ways, release year 2021; Golden Tiger Wild and up to 100 extra Free Games.",
+      "sourceConflict": "Slots Launch exact same-game JDB page reports 2022 release versus official 2021; partner-only Scatter and multiplier details excluded.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/prosperity-tiger",
+        "sourceUrl": "https://assets.slotslaunch.com/29539/prosperity-tiger.jpg",
+        "sha256": "1081bf6b4db6a54a10a250cc469733495d03a377ae9e6787351e9391d6f76b63",
+        "actualMime": "image/webp",
+        "visualCheck": "Exact Slots Launch page identifies Prosperity Tiger by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays PROSPERITY TIGER title."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 46 MJOLNIR"
+}

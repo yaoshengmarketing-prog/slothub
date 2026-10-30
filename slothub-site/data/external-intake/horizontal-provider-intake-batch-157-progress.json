@@ -1,10 +1,10 @@
 {
   "batch": 157,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 44",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Winning Mask",
       "slug": "winning-mask-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/winning-mask",
       "officialFacts": "Official English detail and browser ledger: Slot, RTP 96.04%, MEDIUM volatility, Maximum Win 5500X, 1024 Ways, release year 2016; free game session up to 150 times, Mask Reel Bonus maximum 200X.",
       "sourceConflict": "Slots Launch exact URL 404. CasinoRating says up to 10 free spins versus official up to 150; partner claim excluded. Chinese alias corroborated by secondary icasino.tw; direct official Chinese detail unavailable to web tool. CasinoRating static content says demo temporarily unavailable; no playable-demo claim.",
@@ -29,5 +29,15 @@
       "demo": "not-verified; CasinoRating static unavailable message and dynamic Play for free control conflict; no launch attempt."
     }
   ],
-  "nextCursor": "JDB catalog card 45 PROSPERITY TIGER"
+  "nextCursor": "JDB catalog card 45 PROSPERITY TIGER",
+  "publication": {
+    "commit": "0c04a420e3d66263c802f875fe43341761d5a781",
+    "githubRun": 40981605600,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "031fadca-9647-4695-a68c-55a7c5577236",
+    "cloudflareUrl": "https://031fadca.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPEG image and sitemap HTTP 200; official and exact CasinoRating source URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

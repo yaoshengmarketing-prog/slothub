@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 719,
+  "gameCount": 720,
   "providerCount": 371,
-  "sourcePageCount": 1304,
+  "sourcePageCount": 1306,
   "counts": {
     "access-restricted": 4,
-    "available": 621,
+    "available": 622,
     "not-verified": 94
   },
   "rules": {
@@ -17,6 +17,38 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "prosperity-tiger-jdb",
+      "name": "Prosperity Tiger",
+      "provider": "jdb-gaming",
+      "status": "available",
+      "url": "https://slotslaunch.com/jdb-gaming/prosperity-tiger",
+      "accessType": "platform-game-page",
+      "platformName": "Slots Launch",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "Slots Launch exact page and image identify Prosperity Tiger and JDB Gaming; official English/CN detail supplies math and mechanisms.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/prosperity-tiger",
+          "httpStatus": 200,
+          "notes": "Official JDB detail ledger and web-indexed detail"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/cn/games/slot/prosperity-tiger",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/prosperity-tiger",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://assets.slotslaunch.com/29539/prosperity-tiger.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "winning-mask-jdb",
       "name": "Winning Mask",
