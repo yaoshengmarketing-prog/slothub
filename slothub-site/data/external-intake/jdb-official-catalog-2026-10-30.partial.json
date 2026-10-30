@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-37 imported. Next individual candidate is card 38 MONEYBAGS MAN 2. Cards 1-10 and 38-46 remain.",
-  "nextStep": "After card 37 publication loop, continue card 38 MONEYBAGS MAN 2 using official details ledger, exact image and Demo checks.",
-  "publishedCount": 26,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-38 imported. Next individual candidate is card 39 MONEYBAGS MAN. Cards 1-10 and 39-46 remain.",
+  "nextStep": "After card 38 publication loop, continue card 39 MONEYBAGS MAN using official details ledger, exact image and Demo checks.",
+  "publishedCount": 27,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -531,6 +531,21 @@
     "partnerAttribution": "Exact Slots Launch page identifies Kong by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays KONG, gorilla, and 16800X matching official max win.",
     "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
     "dedup": "All Game Markdown and Provider name/alias fields; no exact Kong/金刚 JDB record before this intake.",
+    "decision": "published-live-verified"
+  },
+  "card38Evidence": {
+    "name": "MONEYBAGS MAN 2",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/moneybags-man-2",
+    "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/moneybags-man-2",
+    "officialFacts": "Official English/CN detail: Slot, RTP 95.92%, MEDIUM volatility, Maximum Win 20000X, 243 Ways, release year 2024; Feature Buy, free-game multipliers double/upgrade each game and consecutive grand prizes.",
+    "sourceConflict": "Slots Launch same-title JDB page says RTP 96.19% and June 2, 2022 versus official 95.92% and 2024, and describes fixed paylines rather than 243 Ways. Published game uses official data.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming/moneybags-man-2",
+    "partnerImage": "https://assets.slotslaunch.com/29530/moneybags-man-2.jpg",
+    "partnerImageSha256": "32d0ac793924e4e1293ec4dd8222d45333f8a46c7ae6039d723f24549f789be3",
+    "partnerImageMime": "image/webp",
+    "partnerAttribution": "Exact Slots Launch page identifies Moneybags Man 2 by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays MONEYBAGS MAN 2 title and 20000X matching official max win.",
+    "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
+    "dedup": "All Game Markdown and Provider name/alias fields; no exact Moneybags Man 2/富豪哥2 record before this intake; base Moneybags Man is distinct card 39.",
     "decision": "captured-awaiting-publication"
   }
 }

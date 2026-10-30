@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 712,
+  "gameCount": 713,
   "providerCount": 371,
-  "sourcePageCount": 1290,
+  "sourcePageCount": 1292,
   "counts": {
     "access-restricted": 4,
-    "available": 615,
+    "available": 616,
     "not-verified": 93
   },
   "rules": {
@@ -17,6 +17,38 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "moneybags-man-2-jdb",
+      "name": "Moneybags Man 2",
+      "provider": "jdb-gaming",
+      "status": "available",
+      "url": "https://slotslaunch.com/jdb-gaming/moneybags-man-2",
+      "accessType": "platform-game-page",
+      "platformName": "Slots Launch",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "Slots Launch exact page, structured JDB provider attribution and image identify Moneybags Man 2; official English/CN detail supplies math and current mechanisms.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/moneybags-man-2",
+          "httpStatus": 200,
+          "notes": "Official Browser Use direct inspection runs 8c2b9487-f70f-4b83-be00-6e8056deeea3 and 321121f4-c630-4582-8fa7-fdb1acc1f0ef"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/cn/games/slot/moneybags-man-2",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/moneybags-man-2",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://assets.slotslaunch.com/29530/moneybags-man-2.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "kong-jdb",
       "name": "Kong",

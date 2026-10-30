@@ -1,10 +1,10 @@
 {
   "batch": 150,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 37",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Kong",
       "slug": "kong-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/kong",
       "officialFacts": "Official English/CN detail: Slot, RTP 95.89%, LOW volatility, Maximum Win 16800X, 243 Ways, release year 2020; Kong Wild, 10 volcano motifs in Free Game for up to 72X, volcano reward up to 16800X.",
       "sourceConflict": "Slots Launch same-title JDB page says 2022 versus official 2020 and claims uncorroborated progressive jackpot/scatter/bonus mechanics. Published game uses official values only.",
@@ -29,5 +29,15 @@
       "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
     }
   ],
-  "nextCursor": "JDB catalog card 38 MONEYBAGS MAN 2"
+  "nextCursor": "JDB catalog card 38 MONEYBAGS MAN 2",
+  "publication": {
+    "commit": "c7f92d9b48163878bac08fafe5e2bb303aba2c18",
+    "githubRun": 40978230847,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "9f415faa-7a8f-4af6-84d6-e4c83d95715e",
+    "cloudflareUrl": "https://9f415faa.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, WebP image and sitemap HTTP 200; official and exact Slots Launch platform URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

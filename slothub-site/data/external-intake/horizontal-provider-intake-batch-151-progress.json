@@ -1,0 +1,33 @@
+{
+  "batch": 151,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 38",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; no exact Moneybags Man 2/富豪哥2 record before this intake; base Moneybags Man is distinct card 39.",
+  "records": [
+    {
+      "order": 38,
+      "name": "Moneybags Man 2",
+      "slug": "moneybags-man-2-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/moneybags-man-2",
+      "officialFacts": "Official English/CN detail: Slot, RTP 95.92%, MEDIUM volatility, Maximum Win 20000X, 243 Ways, release year 2024; Feature Buy, free-game multipliers double/upgrade each game and consecutive grand prizes.",
+      "sourceConflict": "Slots Launch same-title JDB page says RTP 96.19% and June 2, 2022 versus official 95.92% and 2024, and describes fixed paylines rather than 243 Ways. Published game uses official data.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/moneybags-man-2",
+        "sourceUrl": "https://assets.slotslaunch.com/29530/moneybags-man-2.jpg",
+        "sha256": "32d0ac793924e4e1293ec4dd8222d45333f8a46c7ae6039d723f24549f789be3",
+        "actualMime": "image/webp",
+        "visualCheck": "Exact Slots Launch page identifies Moneybags Man 2 by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays MONEYBAGS MAN 2 title and 20000X matching official max win."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 39 MONEYBAGS MAN"
+}
