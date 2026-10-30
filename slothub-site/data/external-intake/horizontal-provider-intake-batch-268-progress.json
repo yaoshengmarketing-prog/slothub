@@ -1,10 +1,10 @@
 {
   "batch": 268,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "chameleon-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "79",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 79: RTP 96.13%, Medium volatility, overall maximum_win 5000; high payout symbols transform into the same symbol in free games. US guest canvas labels 243 WAYS.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US browser guest-query /h5/79/?language=en&token=guest HTTP 200 with exact CHAMELEON canvas, 5x3 reels, 243 WAYS and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Chameleon live closure, continue Fire Queen ID83 (official and guest 3x3 5 LINES, official image/icon downloaded and visually checked), then Thor ID89. Held source conflicts remain."
+  "nextCursor": "Chameleon 79 live verified; continue Fire Queen 83.",
+  "publication": {
+    "commit": "3175e0ed7825867d67e0b079aad3aa438e36d7d8",
+    "githubRun": 41079932196,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "5adb8d5b-51f9-4ccc-bce3-1c3a4ba2d38b",
+    "cloudflareUrl": "https://5adb8d5b.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

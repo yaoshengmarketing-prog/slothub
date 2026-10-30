@@ -1,0 +1,31 @@
+{
+  "batch": 269,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Fire Queen / 火之女王 (83) absent.",
+  "records": [
+    {
+      "name": "Fire Queen",
+      "slug": "fire-queen-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "83",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 83: RTP 96.02%, High volatility, overall maximum_win 3000; 3x3 reels and 5 lines, stacked WILD, full-reel matching-symbol free-game trigger. US guest canvas confirms 3x3 and 5 LINES.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/90FuSiLf.jpg",
+        "localPath": "public/assets/games/fire-queen-cq9.jpg",
+        "sha256": "8982c84f68b59cd27de3fc289975896b59ad5e1f064090c5dff3fbf32df9d098",
+        "visualCheck": "Official ID 83 maps to fiery canyon background; matching title icon spells Fire Queen."
+      },
+      "demo": "US browser guest-query /h5/83/?language=en&token=guest HTTP 200 with exact FIRE QUEEN canvas, 3x3 reels, 5 LINES and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Fire Queen live closure, continue Thor ID89 (US exact guest Demo verified; official image/icon downloaded and visually checked), then Jumping Mobile ID105. Held source conflicts remain."
+}
