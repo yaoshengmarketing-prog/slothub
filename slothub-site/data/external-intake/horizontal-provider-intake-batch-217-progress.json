@@ -1,0 +1,31 @@
+{
+  "batch": 217,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Wolf Disco / 野狼Disco (183) absent before intake.",
+  "records": [
+    {
+      "name": "Wolf Disco",
+      "slug": "wolf-disco-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "183",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 183: RTP 96.16%, High volatility, overall maximum_win 6000; retro 1980s disco theme. US guest canvas visibly labels 243 Ways. No unverified reward feature asserted.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/r3tXqed6.jpg",
+        "localPath": "public/assets/games/wolf-disco-cq9.jpg",
+        "sha256": "4efd1ec672bb17697d2377b9feb12e23d39191a1e65b4bf1829caec4992d8cdb",
+        "visualCheck": "Official ID 183 maps to blue neon brick wall background; matching icon spells Wolf Disco."
+      },
+      "demo": "US New York browser guest-query /h5/183/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 243 Ways, reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Wolf Disco live closure, continue next uncollected CQ9 Slot. Wing Chun 187, Cricket Fever 188, Dragon Ball 185 under US guest check. Zeus M 125 loading only and core conflicts remain review queue."
+}

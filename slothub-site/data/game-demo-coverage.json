@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 778,
+  "gameCount": 779,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 660,
+    "available": 661,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wolf-disco-cq9",
+      "name": "Wolf Disco",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Wolf Disco ID 183, RTP 96.16%, High volatility and overall 6000x maximum; official theme description only. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, matching Wolf Disco branding, 243 Ways, reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 183 and metrics"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/183/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact branding, 243 Ways, reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/r3tXqed6.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped blue neon brick wall background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/0gSkYuoB.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Wolf Disco"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/183/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Wolf Disco ID 183, RTP 96.16%, High volatility and overall 6000x maximum; official theme description only. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, matching Wolf Disco branding, 243 Ways, reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "disco-night-m-cq9",
       "name": "Disco Night M",
