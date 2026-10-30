@@ -1,0 +1,33 @@
+{
+  "batch": 157,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 44",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; Winning Mask/變臉 absent before intake.",
+  "records": [
+    {
+      "order": 44,
+      "name": "Winning Mask",
+      "slug": "winning-mask-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/winning-mask",
+      "officialFacts": "Official English detail and browser ledger: Slot, RTP 96.04%, MEDIUM volatility, Maximum Win 5500X, 1024 Ways, release year 2016; free game session up to 150 times, Mask Reel Bonus maximum 200X.",
+      "sourceConflict": "Slots Launch exact URL 404. CasinoRating says up to 10 free spins versus official up to 150; partner claim excluded. Chinese alias corroborated by secondary icasino.tw; direct official Chinese detail unavailable to web tool. CasinoRating static content says demo temporarily unavailable; no playable-demo claim.",
+      "image": {
+        "sourcePage": "https://www.casinorating.com/games/jdb-gaming/slots/winning-mask",
+        "sourceUrl": "https://www.casinorating.com/media/game_screenshot/0005/40/thumb_439432_game_screenshot_standart.jpg",
+        "sha256": "39fb2bbe64e1d0d3c2cc5df12eca74874b7ce9fb778c64a5fc733239620332a9",
+        "actualMime": "image/jpeg",
+        "visualCheck": "CasinoRating exact Winning Mask by JDB Gaming page current main screenshot downloaded valid JPEG showing WINNING MASK in-game title and reel symbols."
+      },
+      "demo": "not-verified; CasinoRating static unavailable message and dynamic Play for free control conflict; no launch attempt."
+    }
+  ],
+  "nextCursor": "JDB catalog card 45 PROSPERITY TIGER"
+}

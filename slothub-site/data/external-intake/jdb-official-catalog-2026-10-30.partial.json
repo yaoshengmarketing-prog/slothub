@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-43 imported. Next individual candidate is card 44 WINNING MASK. Cards 1-10 and 44-46 remain.",
-  "nextStep": "After card 43 publication loop, continue card 44 WINNING MASK using official details ledger, exact image and Demo checks.",
-  "publishedCount": 32,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-44 imported. Next individual candidate is card 45 PROSPERITY TIGER. Cards 1-10 and 45-46 remain.",
+  "nextStep": "After card 44 publication loop, continue card 45 PROSPERITY TIGER using official details ledger, exact image and Demo checks.",
+  "publishedCount": 33,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -621,6 +621,20 @@
     "partnerAttribution": "Exact Slots Launch page identifies Fortune Neko by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays FORTUNE NEKO title.",
     "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
     "dedup": "All Game Markdown and Provider name/alias fields; Fortune Neko/幸運招財貓 absent before intake.",
+    "decision": "published-live-verified"
+  },
+  "card44Evidence": {
+    "name": "WINNING MASK",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/winning-mask",
+    "officialFacts": "Official English detail and browser ledger: Slot, RTP 96.04%, MEDIUM volatility, Maximum Win 5500X, 1024 Ways, release year 2016; free game session up to 150 times, Mask Reel Bonus maximum 200X.",
+    "sourceConflict": "Slots Launch exact URL 404. CasinoRating says up to 10 free spins versus official up to 150; partner claim excluded. Chinese alias corroborated by secondary icasino.tw; direct official Chinese detail unavailable to web tool. CasinoRating static content says demo temporarily unavailable; no playable-demo claim.",
+    "partnerPage": "https://www.casinorating.com/games/jdb-gaming/slots/winning-mask",
+    "partnerImage": "https://www.casinorating.com/media/game_screenshot/0005/40/thumb_439432_game_screenshot_standart.jpg",
+    "partnerImageSha256": "39fb2bbe64e1d0d3c2cc5df12eca74874b7ce9fb778c64a5fc733239620332a9",
+    "partnerImageMime": "image/jpeg",
+    "partnerAttribution": "CasinoRating exact Winning Mask by JDB Gaming page current main screenshot downloaded valid JPEG showing WINNING MASK in-game title and reel symbols.",
+    "demo": "not-verified; CasinoRating static unavailable message and dynamic Play for free control conflict; no launch attempt.",
+    "dedup": "All Game Markdown and Provider name/alias fields; Winning Mask/變臉 absent before intake.",
     "decision": "captured-awaiting-publication"
   }
 }

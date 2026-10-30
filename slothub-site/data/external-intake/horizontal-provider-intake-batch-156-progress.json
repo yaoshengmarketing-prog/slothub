@@ -1,10 +1,10 @@
 {
   "batch": 156,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 43",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Fortune Neko",
       "slug": "fortune-neko-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/fortune-neko",
       "officialFacts": "Official English/CN detail: Slot, RTP 95.99%, LOW volatility, Maximum Win 800X, 5 Lines, release year 2022; two identical axes, Respin of Fortune, Full Reel and Fortune Wheel.",
       "sourceConflict": "No partner-only numeric or mechanics claims adopted; official data takes precedence.",
@@ -29,5 +29,15 @@
       "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
     }
   ],
-  "nextCursor": "JDB catalog card 44 WINNING MASK"
+  "nextCursor": "JDB catalog card 44 WINNING MASK",
+  "publication": {
+    "commit": "e904b2e8fec1d3673fb427fd98b5a0b64aafa994",
+    "githubRun": 40981108072,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "15f9be74-22e1-4242-a5c3-92055bc09924",
+    "cloudflareUrl": "https://15f9be74.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, WebP image and sitemap HTTP 200; official and exact Slots Launch platform URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
