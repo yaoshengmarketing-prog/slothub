@@ -1,0 +1,23 @@
+---
+import { getGameDiagramLinks } from '../lib/game-diagram-links.mjs';
+import { slotsUrl } from '../lib/urls';
+interface Props {
+  game: { status: string; primaryType: string; winMechanism?: string; features?: string[] };
+}
+const { game } = Astro.props;
+const links = getGameDiagramLinks(game);
+---
+{links.length > 0 && <nav class="game-diagram-links" aria-label="互動概念圖解" data-game-diagram-links>
+  <ul>{links.map((link) => <li><a href={`${slotsUrl()}#${link.anchor}`} data-diagram-link={link.anchor}>{link.label}</a></li>)}</ul>
+  <p>通用概念示意，非本款實際畫面；細部條件請看本款規則。</p>
+</nav>}
+
+<style>
+  .game-diagram-links { margin-top: 20px; padding-top: 12px; border-top: 1px solid #d8dde6; }
+  ul { display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 0; margin: 0; list-style: none; }
+  li { min-width: 0; max-width: 100%; }
+  a { display: inline-flex; align-items: center; min-height: 44px; padding-block: 8px; color: var(--navy); font-size: .88rem; font-weight: 750; line-height: 1.65; text-decoration: underline; text-underline-offset: 4px; overflow-wrap: anywhere; }
+  a:hover { color: var(--signal); }
+  a:focus-visible { outline: 3px solid var(--signal); outline-offset: 3px; border-radius: 3px; }
+  p { margin: 4px 0 0; color: var(--muted); font-size: .78rem; line-height: 1.65; }
+</style>
