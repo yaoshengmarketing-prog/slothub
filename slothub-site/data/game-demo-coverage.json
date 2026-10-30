@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 777,
+  "gameCount": 778,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 659,
+    "available": 660,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "disco-night-m-cq9",
+      "name": "Disco Night M",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Disco Night M ID 137, RTP 96.18%, High volatility, overall 5000x maximum, portrait layout and Golden Diamond Free Games multiplier locally up to 150x. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, title Disco Night M, matching branding, 243 Ways, reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 137, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/137/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser title Disco Night M, exact branding, 243 Ways, reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/AJmwRaYQ.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped disco lights background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/EYe9gKUL.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Disco Night"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/137/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Disco Night M ID 137, RTP 96.18%, High volatility, overall 5000x maximum, portrait layout and Golden Diamond Free Games multiplier locally up to 150x. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, title Disco Night M, matching branding, 243 Ways, reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "rave-jump-mobile-cq9",
       "name": "Rave Jump Mobile",
