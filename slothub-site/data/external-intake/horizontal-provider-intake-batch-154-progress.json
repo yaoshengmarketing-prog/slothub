@@ -1,0 +1,33 @@
+{
+  "batch": 154,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 41",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; Elemental Link Fire/元素連結火 absent before intake.",
+  "records": [
+    {
+      "order": 41,
+      "name": "Elemental Link Fire",
+      "slug": "elemental-link-fire-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/elemental-link-fire",
+      "officialFacts": "Official English/CN detail: Slot, RTP 96.01%, SUPER HIGH volatility, Maximum Win 25000X, 25 Lines, release year 2022; Elemental Respin Hold & Spin, Element Bonus after respin, Multiplier Wild up to 243X.",
+      "sourceConflict": "Slots Launch overview states 50 paylines despite official 25 Lines and includes unsupported Link & Win orb and Scatter mechanics; those partner-only claims excluded.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/elemental-link-fire",
+        "sourceUrl": "https://assets.slotslaunch.com/1644/elemental-link-fire.jpg",
+        "sha256": "4c4c99ad0580aeed171f3e6d6e87c383313fcfd8671b6a4cdabfccc36cd596d7",
+        "actualMime": "image/webp",
+        "visualCheck": "Exact Slots Launch page identifies Elemental Link Fire by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays ELEMENTAL LINK FIRE title."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 42 CAISHEN COMING"
+}
