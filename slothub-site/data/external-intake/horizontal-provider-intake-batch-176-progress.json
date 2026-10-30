@@ -1,0 +1,37 @@
+{
+  "batch": 176,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "CQ9 official Slot catalog continuation with English and Japanese exact-title first-party news",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Mahjong Break / 麻雀開胡 (game ID CP1) absent before intake.",
+  "records": [
+    {
+      "name": "Mahjong Break",
+      "slug": "mahjong-break-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "CP1",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/ja/news/detail/958",
+      "officialFacts": "Official CQ9 Slot catalog, English news and Japanese exact-title news agree on RTP 97.14%, Medium volatility, global maximum 2500x. Cascading Mahjong symbols and Bet Boost random 2x/3x/5x up to 10x local multiplier. Isolated copy artifacts in English news (Mahjong Wins) and catalog description (Mahjong UNLEASHED) were excluded from game identity and mechanics; official titles, visual title icon, metrics and article body align.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/eGEr8Fml.png",
+        "localPath": "public/assets/games/mahjong-break-cq9.png",
+        "sha256": "eaa830b8a6a40a9c7e404e4a3a240c97b5471bbebd21d9cbe1c7bc74053b4619",
+        "visualCheck": "Official CP1 maps to teal Mahjong tile and gold coins background; official icon H0lcI82o.png visibly spells MAHJONG BREAK."
+      },
+      "demo": "Official catalog modal did not expose independently verified playable href; status not-verified."
+    }
+  ],
+  "excludedCandidate": {
+    "name": "Sugar Combo",
+    "gameId": "CP2",
+    "reason": "Official CQ9 catalog game_equity lists High volatility, but English news/detail/963 and Chinese news/detail/962 state Medium volatility. Preserve as unresolved official-source conflict; do not guess core metric."
+  },
+  "nextCursor": "After Mahjong Break live closure, inspect Black Wukong (ID 158), Mafia (243), Treasure Pirate (242) and other CQ9 Slot entries against exact-title official news and images; retain Sung Wukong and Sugar Combo review queue."
+}

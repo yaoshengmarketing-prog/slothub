@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 737,
+  "gameCount": 738,
   "providerCount": 371,
-  "sourcePageCount": 1345,
+  "sourcePageCount": 1349,
   "counts": {
     "access-restricted": 4,
     "available": 630,
-    "not-verified": 103
+    "not-verified": 104
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mahjong-break-cq9",
+      "name": "Mahjong Break",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "Official CQ9 Slot catalog identifies game ID CP1 and exact-title English/Japanese news confirms the game, but the catalog modal did not expose a verified playable href.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot card and modal, game ID CP1"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/ja/news/detail/958",
+          "httpStatus": 200,
+          "notes": "Official exact-title Japanese Slot news, core metrics"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/956",
+          "httpStatus": 200,
+          "notes": "Official exact-title English Slot news, core metrics"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/eGEr8Fml.png",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/H0lcI82o.png",
+          "httpStatus": 200,
+          "notes": "Official title icon, visually checked"
+        }
+      ]
+    },
     {
       "slug": "wizards-wizard-cq9",
       "name": "Wizard's Wizard",

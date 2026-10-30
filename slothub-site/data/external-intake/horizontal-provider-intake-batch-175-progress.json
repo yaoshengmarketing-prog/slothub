@@ -1,10 +1,10 @@
 {
   "batch": 175,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "CQ9 official Slot catalog continuation with first-party exact-title news",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "wizards-wizard-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "CP3",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialNews": "https://www.cq9gaming.com/news/detail/1352",
       "officialFacts": "Official CQ9 Slot catalog: CP3, RTP 97.09%, High volatility, global maximum 15000x. Catalog and official news identify Any 8 cascading mechanic; catalog states four Magic Orbs with up to 500x local multiplier, Free Games up to 100 and Feature Buy.",
@@ -28,5 +28,15 @@
       "demo": "Official catalog modal did not expose independently verified playable href; status not-verified."
     }
   ],
-  "nextCursor": "After Wizard's Wizard live closure, continue official CQ9 Slot catalog; inspect Mahjong Break (CP1) official description title inconsistency before importing. Retain Sung Wukong source-conflict review queue."
+  "nextCursor": "Wizard's Wizard live verified; continue CQ9 Slot catalog at Mahjong Break (ID CP1); retain Sung Wukong and Sugar Combo official-source conflict review queue.",
+  "publication": {
+    "commit": "69f7c9bee7bb15fe343e2a3bc8aca1d7899b82c5",
+    "githubRun": 41008485639,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "614efbb0-9eed-46e0-a3c7-1905106c9219",
+    "cloudflareUrl": "https://614efbb0.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, PNG image and sitemap HTTP 200; official news/catalog source, RTP and maximum win present; live image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
