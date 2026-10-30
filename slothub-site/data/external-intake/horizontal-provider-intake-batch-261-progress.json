@@ -1,0 +1,31 @@
+{
+  "batch": 261,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Fire 777 / 火爆777 (66) absent.",
+  "records": [
+    {
+      "name": "Fire 777",
+      "slug": "fire-777-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "66",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 66: RTP 97.02%, Medium volatility, overall maximum_win 3000; FG high-point bonus and more than 500x payouts. US guest canvas labels 20 LINES and shows Lucky Game panel.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/R3XT1APq.jpg",
+        "localPath": "public/assets/games/fire-777-cq9.jpg",
+        "sha256": "0365fc3fc876548451f780f48fc5a027980ff77c07c9870add2e054363105af8",
+        "visualCheck": "Official ID 66 maps to red and blue fire background; matching slot-machine title icon spells Fire 777."
+      },
+      "demo": "US browser guest-query /h5/66/?language=en&token=guest HTTP 200 with Welcome page title but exact FIRE777 canvas branding, 5x3 reels, 20 LINES and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Fire 777 live closure, continue Wukong & Peaches ID68 (US exact guest Demo verified and official assets visually checked), then Fa Cai Shen69, Wanbao Dino70 and Happy Rich Year72. Held Kronos ID154 geometry conflict remains."
+}

@@ -1,10 +1,10 @@
 {
   "batch": 260,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "zeus-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "64",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 64: RTP 96.18%, Medium volatility, overall maximum_win 3000; 243 ways, stacked WILDs, free games with one to nine random WILDs and retrigger. US guest canvas labels 243WAYS.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US browser guest-query /h5/64/?language=en&token=guest HTTP 200 with Welcome page title but exact ZEUS canvas branding, 5x3 reels, 243WAYS and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Zeus live closure, continue Fire 777 ID66 and Wukong & Peaches ID68 (US exact guest Demos verified; official images/icons downloaded and visually checked), then Fa Cai Shen69, Wanbao Dino70, Happy Rich Year72. Held Kronos ID154 geometry conflict remains."
+  "nextCursor": "Zeus 64 live verified; continue Fire 777 66.",
+  "publication": {
+    "commit": "4000242fa61c1cec237ef5891f4ebe62590b9e86",
+    "githubRun": 41074764087,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "3de6bd82-a69a-4080-8192-b7b6f9bb645f",
+    "cloudflareUrl": "https://3de6bd82.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

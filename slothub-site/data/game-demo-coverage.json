@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 822,
+  "gameCount": 823,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 704,
+    "available": 705,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fire-777-cq9",
+      "name": "Fire 777",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fire 777 ID 66, RTP 97.02%, Medium volatility, overall 3000x maximum, FG high-point bonus and more than 500x payouts. US browser read-only guest Demo: browser page title Welcome but exact FIRE777 visible in game canvas, 5x3 reels, 20 LINES, Lucky Game panel and controls without login. No spin, bet or login; panel behavior not inferred.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 66, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/66/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser page title Welcome, but canvas rendered FIRE777 branding, 5x3 reels, 20 LINES, Lucky Game panel and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/R3XT1APq.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped red and blue fire background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/6KyGSa7t.png",
+          "httpStatus": 200,
+          "notes": "Official Fire 777 title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/66/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fire 777 ID 66, RTP 97.02%, Medium volatility, overall 3000x maximum, FG high-point bonus and more than 500x payouts. US browser read-only guest Demo: browser page title Welcome but exact FIRE777 visible in game canvas, 5x3 reels, 20 LINES, Lucky Game panel and controls without login. No spin, bet or login; panel behavior not inferred.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "zeus-cq9",
       "name": "Zeus",
