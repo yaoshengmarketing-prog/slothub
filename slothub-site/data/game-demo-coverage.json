@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 709,
+  "gameCount": 710,
   "providerCount": 371,
-  "sourcePageCount": 1284,
+  "sourcePageCount": 1286,
   "counts": {
     "access-restricted": 4,
     "available": 613,
-    "not-verified": 92
+    "not-verified": 93
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,35 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "birds-party-jdb",
+      "name": "Birds Party",
+      "provider": "jdb-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "presentation": "external",
+      "note": "Slots Launch same-name JDB page conflicts on year, RTP, Ways/Lines and mechanisms; playable version not independently reconciled.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/birds-party",
+          "httpStatus": 200,
+          "notes": "Official Browser Use direct inspection runs ab0298cc-7ea1-4d63-940e-bbaf3f232728 and 6a07e15b-d9cd-4096-b0ca-a49d361ca5fe"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/cn/games/slot/birds-party",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/birds-party",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://assets.slotslaunch.com/22452/birds-party.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "open-sesame-ii-jdb",
       "name": "Open Sesame Ⅱ",

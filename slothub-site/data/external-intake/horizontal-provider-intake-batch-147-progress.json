@@ -1,10 +1,10 @@
 {
   "batch": 147,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 34",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Open Sesame Ⅱ",
       "slug": "open-sesame-ii-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/open-sesame-ii",
       "officialFacts": "Official English detail: Slot, RTP 95.87%, HIGH volatility, Maximum Win 2000X, 243 Ways, release year 2016; Mysterious Treasure Box lucky draw gives extra multipliers/spins, free-game randomly accumulating images.",
       "sourceConflict": "Slots Launch release date 2022 conflicts with official 2016; partner-only Wild Multiplier, 3-scatter Free Spins, progressive jackpot and other mechanisms not used.",
@@ -28,5 +28,15 @@
       "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
     }
   ],
-  "nextCursor": "JDB catalog card 35 BIRDS PARTY"
+  "nextCursor": "JDB catalog card 35 BIRDS PARTY",
+  "publication": {
+    "commit": "aa8746c5168b112275fba57d88c790a4428b5b3d",
+    "githubRun": 40953201567,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "214b122b-9ded-47ac-b962-b54e3a717297",
+    "cloudflareUrl": "https://214b122b.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, image and sitemap HTTP 200; official and exact Slots Launch platform URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

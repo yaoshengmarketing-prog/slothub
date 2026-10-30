@@ -1,0 +1,32 @@
+{
+  "batch": 148,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 35",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; no Birds Party or 飞鸟派对 record before this intake.",
+  "records": [
+    {
+      "order": 35,
+      "name": "Birds Party",
+      "slug": "birds-party-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/birds-party",
+      "officialFacts": "Official English/CN detail: Slot, RTP 96.99%, HIGH volatility, Maximum Win 50000X, 243 Ways, release year 2018; Cascading Reels, Feature Buy, Free Games with up to 5X multipliers.",
+      "sourceConflict": "Slots Launch same-name JDB page says 2024, approximately 96% RTP, 25 paylines and partner-only Wild/Scatter/Party features. Game cover visibly matches BIRDS PARTY and 50000X, but playable version is not independently reconciled; Demo not-verified.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/birds-party",
+        "sourceUrl": "https://assets.slotslaunch.com/22452/birds-party.jpg",
+        "sha256": "d24449817c53e300d34d05ea5ffb0c109d3600bee07aff3d64ddec56f322c87c",
+        "visualCheck": "Exact Slots Launch page identifies Birds Party by JDB Gaming; downloaded valid 500x333 JPEG visibly displays BIRDS PARTY title and 50000X, matching official maximum win."
+      },
+      "demo": "Not verified: third-party same-name page contradicts official version-level metadata; no play or verified official Demo destination."
+    }
+  ],
+  "nextCursor": "JDB catalog card 36 (see official details ledger)"
+}
