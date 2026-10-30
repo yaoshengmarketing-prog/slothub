@@ -1,0 +1,31 @@
+{
+  "batch": 209,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 6 Toros / 666 (173) absent before intake.",
+  "records": [
+    {
+      "name": "6 Toros",
+      "slug": "6-toros-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "173",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 173: RTP 96.06%, Medium volatility, overall maximum_win 7000. Six or more identical connected symbols trigger elimination until no combination; in Free Games scores double per elimination up to 100x local multiplier.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/W83Ldtqf.jpg",
+        "localPath": "public/assets/games/6-toros-cq9.jpg",
+        "sha256": "b26de8d8c37151f8df3d155be66c44229022ea8a435dfa2031847d278d164ecd",
+        "visualCheck": "Official 173 maps to green grid background; icon R52AT7g9.png visibly spells 6 Toros over cartoon bull."
+      },
+      "demo": "US New York browser: guest-query /h5/173/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; 6 Toros branding, grid and START/AUTO/menu controls after about 40 seconds without login. No spin, bet or login action."
+    }
+  ],
+  "nextCursor": "After 6 Toros live closure, continue next uncollected CQ9 Slot from official catalog. Kronos 154 geometry disagreement remains in review queue; do not publish guessed reel dimensions."
+}

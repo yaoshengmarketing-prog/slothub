@@ -1,10 +1,10 @@
 {
   "batch": 208,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "gu-gu-gu-3-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "180",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 180: RTP 96.04%, High volatility, overall maximum_win 4000. Description says Golden Egg icon bonus multiplier up to 200x. US guest canvas labels 243 WAYS and RESPIN, not present in catalog description.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser: guest-query /h5/180/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; Gu Gu Gu 3/243 WAYS branding, reels and RESPIN controls after about 40 seconds without login. Informational overlay not dismissed; no spin, bet or login action."
     }
   ],
-  "nextCursor": "After Gu Gu Gu 3 live closure, continue 6 Toros 173 (US guest Demo verified). Kronos 154 geometry disagreement held for source review."
+  "nextCursor": "Gu Gu Gu 3 180 live verified with official Golden Egg local 200x and US guest 243 WAYS/RESPIN canvas. Continue 6 Toros 173.",
+  "publication": {
+    "commit": "ed1e3f215a9292e83ee912b1c35e9bd8f981cc9a",
+    "githubRun": 41046821948,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "7255004c-d756-4965-ace4-80a91c0bb51a",
+    "cloudflareUrl": "https://7255004c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

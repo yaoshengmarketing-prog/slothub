@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 770,
+  "gameCount": 771,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 652,
+    "available": 653,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "6-toros-cq9",
+      "name": "6 Toros",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies 6 Toros ID 173, exact domain, RTP 96.06%, Medium volatility, overall 7000x maximum and six-symbol cascading mechanic with a scoped 100x Free Game multiplier. US New York browser read-only check: current guest-query /h5/173/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, 6 Toros branding, reel/grid area and START/AUTO/menu controls after about 40 seconds without login. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 173, metrics, six-symbol elimination and Free Game multiplier"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/173/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; 6 Toros grid and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/W83Ldtqf.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped green symbol grid background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/R52AT7g9.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells 6 Toros"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/173/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies 6 Toros ID 173, exact domain, RTP 96.06%, Medium volatility, overall 7000x maximum and six-symbol cascading mechanic with a scoped 100x Free Game multiplier. US New York browser read-only check: current guest-query /h5/173/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, 6 Toros branding, reel/grid area and START/AUTO/menu controls after about 40 seconds without login. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "gu-gu-gu-3-cq9",
       "name": "Gu Gu Gu 3",
