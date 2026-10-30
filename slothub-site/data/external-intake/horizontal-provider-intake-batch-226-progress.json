@@ -1,0 +1,31 @@
+{
+  "batch": 226,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Vampire Kiss / 血之吻 (3) absent before intake.",
+  "records": [
+    {
+      "name": "Vampire Kiss",
+      "slug": "vampire-kiss-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "3",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 3: RTP 96.01%, Medium volatility, overall maximum_win 1500. Vague 1000x promotional phrase not equated to max; US guest canvas labels 40 LINES.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/6RzKqKmN.jpg",
+        "localPath": "public/assets/games/vampire-kiss-cq9.jpg",
+        "sha256": "471246240b610815ae78f8d81719fa0bbf155df7fe02b77f50365e37b09b16af",
+        "visualCheck": "Official ID 3 maps to moonlit cemetery background; matching icon spells Vampire Kiss."
+      },
+      "demo": "US New York browser guest-query /h5/3/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 40 LINES, 5x3 reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Vampire Kiss live closure, continue next uncollected CQ9 Slot from Rave Jump 7, So Sweet 8, Zhong Kui 9, US guest checks pending. Fruit King 1 and Mr. Rich 5 held; Hot DJ GB5, OrientalBeauty202 and prior conflicts remain review queue."
+}

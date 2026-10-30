@@ -1,10 +1,10 @@
 {
   "batch": 225,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "jump-higher-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "99",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 99: RTP 96.18%, High volatility, overall maximum_win 5000; reel-selective Respin and rising Free Game random multiplier. US guest canvas labels 243 WAYS and RESPIN.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/99/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 243 WAYS, five reels with RESPIN labels and feature modal left untouched. No gameplay action."
     }
   ],
-  "nextCursor": "After Jump Higher live closure, continue next uncollected CQ9 Slot. Fruit King 1, Vampire Kiss 3, Mr. Rich 5 under US guest check. Hold Hot DJ GB5, OrientalBeauty 202 and previous conflicts."
+  "nextCursor": "Jump Higher 99 live verified, distinct from Jump Higher Mobile 108. Continue Vampire Kiss 3.",
+  "publication": {
+    "commit": "5d80bdcb98c7206a45f6e7352291a1d44c166a66",
+    "githubRun": 41055601701,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "5850608b-aebc-4509-bfb1-2c1a8075301e",
+    "cloudflareUrl": "https://5850608b.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
