@@ -1,10 +1,10 @@
 {
   "batch": 271,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "jumping-mobile-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "105",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 105: RTP 96.18%, High volatility, overall maximum_win 5000; portrait design and Extra Random Multiplier in free games up to 150x. US guest canvas labels 243 WAYS.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US fresh-browser-tab guest-query /h5/105/?language=en&token=guest HTTP 200 with exact JUMPING MOBILE portrait canvas, 5x3 reels, 243 WAYS and controls without login. No gameplay action; prior reused-tab Connect Error transient."
     }
   ],
-  "nextCursor": "After Jumping Mobile live closure, inspect remaining held source conflicts individually against official metrics and exact US guest Demo. Never infer disputed values from catalog-vs-canvas mismatch."
+  "nextCursor": "Jumping Mobile 105 live verified. All 17 remaining CQ9 Slot entries have unresolved core official-source or exact Demo conflicts; see cq9-source-quality-handoff-2026-10-30.md.",
+  "publication": {
+    "commit": "f5b0ee7b54b7ac889dbd982e98329ed1b9b662b2",
+    "githubRun": 41082446721,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "61035c99-30db-46fd-8130-4e7261789aec",
+    "cloudflareUrl": "https://61035c99.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
