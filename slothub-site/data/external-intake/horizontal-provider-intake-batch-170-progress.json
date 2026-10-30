@@ -1,10 +1,10 @@
 {
   "batch": 170,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Taiwan entertainment-site prevalent CQ9 Gaming; continue existing Provider rather than require a new one",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "wild-disco-night",
       "provider": "cq9-gaming",
       "officialGameId": "252",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialNews": "https://www.cq9gaming.com/news/detail/865",
       "officialFacts": "CQ9 official Slot list and first-party data: RTP 97.07%, Medium volatility, maximum_win 7000; official news: split Wild on reels 2-4, five Scatter trigger 12 Free Games, ALL WIN multiplier.",
@@ -28,5 +28,15 @@
       "demo": "Official catalog modal and dataset identify game-specific domain, but the page exposes no verified playable href without launching; status not-verified."
     }
   ],
-  "nextCursor": "After Wild Disco Night live closure, continue CQ9 official Slot catalog: Treasure Bowl JP (ID 1074), Lucky Bats JP (ID 1010), Sung Wukong (ID 253), Go Fishing (ID 246); dedup and source-check each."
+  "nextCursor": "Wild Disco Night live verified; continue CQ9 Slot catalog at Treasure Bowl JP (ID 1074).",
+  "publication": {
+    "commit": "6ae211c7a805734890d069669e90667c772ff1e4",
+    "githubRun": 41001873661,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "3ea531f9-3624-4b25-b7e0-103d01e5df25",
+    "cloudflareUrl": "https://3ea531f9.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG image and sitemap HTTP 200; official news/catalog source, RTP and max win present; live image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

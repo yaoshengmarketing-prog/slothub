@@ -1,0 +1,31 @@
+{
+  "batch": 171,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "CQ9 official Slot catalog continuation, first newest uncollected card",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked. CQ9 Treasure Bowl JP (game ID 1074) absent; JDB Treasure Bowl X-Huge is a different Provider and named version.",
+  "records": [
+    {
+      "name": "Treasure Bowl JP",
+      "slug": "treasure-bowl-jp-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "1074",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "Official Slot card, game ID 1074, RTP 96.02%, Medium volatility, maximum_win N/A. Official description identifies Fortune Wild, Treasure Bowl 5x score and random Dragon/Phoenix awards; no global max win inferred.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/N4jmBYOt.jpg",
+        "localPath": "public/assets/games/treasure-bowl-jp-cq9.jpg",
+        "sha256": "1f1535eba9a7df1ffe2333d183f7d6b6c2045aed670902974250f0b0d19986f7",
+        "visualCheck": "Official catalog maps game ID 1074 to red/gold horizontal background; official icon 6SSyBLCA.png visibly says JACKPOT Treasure Bowl."
+      },
+      "demo": "Official modal had no directly verified playable href; status not-verified."
+    }
+  ],
+  "nextCursor": "After Treasure Bowl JP live closure, next CQ9 Slot cards: Lucky Bats JP (ID 1010), Sung Wukong (ID 253), Go Fishing (ID 246); verify each independently."
+}
