@@ -1,10 +1,10 @@
 {
   "batch": 184,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "football-fever-m-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "GB13",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialNews": "https://www.cq9gaming.com/news/detail/211",
       "officialFacts": "CQ9 Slot catalog ID GB13: RTP 96.08%, High volatility, maximum_win 15000. Exact official news identifies mobile-friendly Football Fever M, Football/Wild Free Games and Gold Ball extra multiplier. Catalog describes a different maximum bonus perspective, so no merged Gold Ball multiplier claim.",
@@ -28,5 +28,15 @@
       "demo": "CQ9 official news/detail/211 embeds exact GB13 guest URL. US egress read-only browser confirmed HTTP 200, unchanged URL, exact title, reels and spin/stake controls without login after about 8 seconds. Catalog /h5/GB13/ remains loading canvas. Direct Demo available externally; no spin/bet/login action."
     }
   ],
-  "nextCursor": "After GB13 live closure, continue next uncollected CQ9 Slot. Preserve Sung Wukong (253) and Sugar Combo (CP2) official metric conflict queue."
+  "nextCursor": "GB13 Football Fever M live verified with official playable guest Demo. Continue Lucky Tigers (226), official news/detail/200 and mapped image checked; compare old guest and current catalog Demo endpoints. Then continue remaining CQ9 catalog.",
+  "publication": {
+    "commit": "344bdaf522623a3b738063ae47c8013258f4bbaf",
+    "githubRun": 41017211805,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "13df293c-e7f9-46fd-9142-95d9d90c8b48",
+    "cloudflareUrl": "https://13df293c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official news/catalog, RTP/max and verified guest Demo link present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

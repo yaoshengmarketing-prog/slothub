@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 746,
+  "gameCount": 747,
   "providerCount": 371,
-  "sourcePageCount": 1385,
+  "sourcePageCount": 1391,
   "counts": {
     "access-restricted": 4,
     "available": 632,
-    "not-verified": 110
+    "not-verified": 111
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,47 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "lucky-tigers-cq9",
+      "name": "Lucky Tigers",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "Exact CQ9 catalog/news identify Lucky Tigers ID 226. Old official-news guest URL returns HTTP 404; current catalog game shell returns HTTP 200. Ready playable controls not verified, so no public Demo link. Browser visual check pending.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card 226"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/200",
+          "httpStatus": 200,
+          "notes": "Exact Lucky Tigers news; links historical guest URL"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/226/?language=en&token=guest",
+          "httpStatus": 404,
+          "notes": "Historical official-news guest URL returns HTTP 404; not a 403"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/226/",
+          "httpStatus": 200,
+          "notes": "Current official catalog game URL returns HTTP 200 document, but ready Demo controls not verified"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/Ef3tXsvb.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/HZMTD7vZ.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Lucky Tigers"
+        }
+      ]
+    },
     {
       "slug": "football-fever-m-cq9",
       "name": "Football Fever M",
