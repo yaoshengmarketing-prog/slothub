@@ -1,0 +1,31 @@
+{
+  "batch": 203,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Flying Cai Shen / 飛天財神 (113) absent before intake.",
+  "records": [
+    {
+      "name": "Flying Cai Shen",
+      "slug": "flying-cai-shen-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "113",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 113: RTP 96.04%, Medium volatility, overall maximum_win 3000. Description states reel extension, three-level upgrade and Free Game choice of reel size and round count; no trigger probabilities are given.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/bWw8Gc1D.jpg",
+        "localPath": "public/assets/games/flying-cai-shen-cq9.jpg",
+        "sha256": "5115ad7d4d7d93909b8baca977da0ef8ab5361ee32170699d5608810238af1f1",
+        "visualCheck": "Official 113 maps to golden light background; icon RXsH0LQ7.png visibly spells Flying Cai Shen."
+      },
+      "demo": "US New York browser: current guest-query /h5/113/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; Flying Cai Shen branding, Reel Ways, LEVEL 1, reels and controls after about 42 seconds without login. No spin, bet or login action."
+    }
+  ],
+  "nextCursor": "After Flying Cai Shen live closure, reconcile Kronos 154 4x3 official description vs five-column visual report; then continue other uncollected CQ9 Slots. Do not infer missing reel geometry."
+}

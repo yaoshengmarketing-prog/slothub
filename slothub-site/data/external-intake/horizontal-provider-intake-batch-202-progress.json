@@ -1,10 +1,10 @@
 {
   "batch": 202,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "fly-out-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "111",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 111: RTP 96.18%, High volatility, overall maximum_win 3000. Description says player selects a reel to respin, Golden Ball count determines Free Game count, and an extra multiplier can yield 72x locally.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser: current guest-query /h5/111/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; Fly Out branding, 243 Ways, reels, RESPIN labels and controls after about 42 seconds without login. Informational overlay not dismissed; no spin, bet or login action."
     }
   ],
-  "nextCursor": "After Fly Out live closure, continue Flying Cai Shen 113 (US guest Demo verified) then other uncollected CQ9 Slots. Kronos 154 reel geometry wording remains in review queue."
+  "nextCursor": "Fly Out 111 live verified with official Respin and Golden Ball mechanics; continue Flying Cai Shen 113, US guest Demo verified.",
+  "publication": {
+    "commit": "2ca376821f26818da49541e1ddda37d3ef042570",
+    "githubRun": 41043338454,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "7dc21786-628a-4785-ac87-98cc9d7100a8",
+    "cloudflareUrl": "https://7dc21786.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 764,
+  "gameCount": 765,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 646,
+    "available": 647,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "flying-cai-shen-cq9",
+      "name": "Flying Cai Shen",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Flying Cai Shen ID 113, exact domain, RTP 96.04%, Medium volatility, overall 3000x maximum, reel extension and three-level upgrade mechanics. US New York browser read-only check: current guest-query /h5/113/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, matching Flying Cai Shen branding, reels, Reel Ways/LEVEL 1 display and controls within about 42 seconds without login. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 113, metrics, reel extension and Free Game facts"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/113/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; matching Flying Cai Shen reels and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/bWw8Gc1D.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped golden light background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/RXsH0LQ7.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Flying Cai Shen"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/113/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Flying Cai Shen ID 113, exact domain, RTP 96.04%, Medium volatility, overall 3000x maximum, reel extension and three-level upgrade mechanics. US New York browser read-only check: current guest-query /h5/113/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, matching Flying Cai Shen branding, reels, Reel Ways/LEVEL 1 display and controls within about 42 seconds without login. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "fly-out-cq9",
       "name": "Fly Out",
