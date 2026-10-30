@@ -1,10 +1,10 @@
 {
   "batch": 174,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "CQ9 official Slot catalog continuation with matching independent official news and catalog metrics",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "golden-horus-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "CP4",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialNews": "https://www.cq9gaming.com/news/detail/1343",
       "officialFacts": "Official catalog and news agree: Slot, RTP 97.07%, High volatility, global maximum 6000x. Catalog describes cascades, random reel multiplier up to 500x, Free Spins multiplier accumulation and Twin Falcons.",
@@ -28,5 +28,15 @@
       "demo": "Official catalog modal did not expose independently verified playable href; status not-verified."
     }
   ],
-  "nextCursor": "After Golden Horus live closure, continue official CQ9 Slot catalog; Wizard's Wizard (CP3) and Mahjong Break (CP1) are next high-evidence candidates. Retain Sung Wukong source-conflict review queue."
+  "nextCursor": "Golden Horus live verified; continue CQ9 Slot catalog at Wizard's Wizard (ID CP3), retain Sung Wukong source-conflict review queue.",
+  "publication": {
+    "commit": "35451211c524c61a800da4c364d641805f1ac8cb",
+    "githubRun": 41007957007,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "f14238f0-ce59-441d-bb2e-32d9ec510139",
+    "cloudflareUrl": "https://f14238f0.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, PNG image and sitemap HTTP 200; official news/catalog source, RTP and maximum win present; live image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

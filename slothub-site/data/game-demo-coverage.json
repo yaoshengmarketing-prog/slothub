@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 736,
+  "gameCount": 737,
   "providerCount": 371,
-  "sourcePageCount": 1342,
+  "sourcePageCount": 1345,
   "counts": {
     "access-restricted": 4,
     "available": 630,
-    "not-verified": 102
+    "not-verified": 103
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wizards-wizard-cq9",
+      "name": "Wizard's Wizard",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "Official CQ9 Slot catalog identifies game ID CP3 and first-party exact-title news confirms the game, but the catalog modal did not expose a verified playable href.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot card and modal, game ID CP3"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/1352",
+          "httpStatus": 200,
+          "notes": "Official exact-title Slot news"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/Y3ZQrRHe.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked; image/png content type"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/yzBPlGMB.png",
+          "httpStatus": 200,
+          "notes": "Official title icon, visually checked"
+        }
+      ]
+    },
     {
       "slug": "golden-horus-cq9",
       "name": "Golden Horus",
