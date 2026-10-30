@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 816,
+  "gameCount": 817,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 698,
+    "available": 699,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "funny-alpaca-cq9",
+      "name": "Funny Alpaca",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Funny Alpaca ID 54, RTP 96.07%, High volatility, overall 8000x maximum, five SC icons in a row awarding up to 50x total bet score and up to 50 free games. US browser read-only guest Demo: HTTP 200 matching FUNNY ALPACA branding, 5x3 reels, 5 LINES and controls with demo credit without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 54, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/54/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered FUNNY ALPACA branding, 5x3 reels, 5 LINES and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/Seq2xci1.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped night street background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/CCUV6GQb.png",
+          "httpStatus": 200,
+          "notes": "Official alpaca title icon spells Funny Alpaca"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/54/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Funny Alpaca ID 54, RTP 96.07%, High volatility, overall 8000x maximum, five SC icons in a row awarding up to 50x total bet score and up to 50 free games. US browser read-only guest Demo: HTTP 200 matching FUNNY ALPACA branding, 5x3 reels, 5 LINES and controls with demo credit without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "flower-fortunes-cq9",
       "name": "Flower Fortunes",

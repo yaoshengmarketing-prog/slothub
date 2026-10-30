@@ -1,0 +1,31 @@
+{
+  "batch": 255,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Funny Alpaca / 火草泥马 (54) absent.",
+  "records": [
+    {
+      "name": "Funny Alpaca",
+      "slug": "funny-alpaca-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "54",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 54: RTP 96.07%, High volatility, overall maximum_win 8000; five SC icons in a row can award up to 50x total bet score and up to 50 free games. US guest canvas labels 5 LINES.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/Seq2xci1.jpg",
+        "localPath": "public/assets/games/funny-alpaca-cq9.jpg",
+        "sha256": "93f6a3e7dbd4ef03cb4c5c014ca78c584db9dfe25c6752faedb83fc425f3f0b2",
+        "visualCheck": "Official ID 54 maps to night street background; matching alpaca title icon spells Funny Alpaca."
+      },
+      "demo": "US browser guest-query /h5/54/?language=en&token=guest HTTP 200 with exact FUNNY ALPACA branding, 5x3 reels, 5 LINES and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Funny Alpaca live closure, continue Fortune Totem ID148 (US guest Demo verified; official image/icon downloaded and visually checked), then Shou-Xin ID150, The Beast War ID57, Gu Gu Gu 2 ID58 under active US browser check. Held source conflicts remain."
+}
