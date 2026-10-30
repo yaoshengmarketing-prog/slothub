@@ -1,10 +1,10 @@
 {
   "batch": 236,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "invincible-elephant-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "124",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 124: RTP 96%, High volatility, overall maximum_win 5000, 50 lines, roulette 9-40 Free Games and sticky WILD symbols. US guest canvas labels 50 Lines.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/124/?language=en&token=guest HTTP 200, exact Invincible Elephant branding, 50 Lines, 5x4 reels and controls without login after intro splash. No gameplay action."
     }
   ],
-  "nextCursor": "After Invincible Elephant live closure, continue Lucky Bats M ID123 and God of War M ID127 after exact official source, asset and US guest Demo checks. Held max-win conflict queue persists."
+  "nextCursor": "Invincible Elephant 124 live verified; continue Lucky Bats M 123.",
+  "publication": {
+    "commit": "14e28d8ad7e9056efe3afb0a4167c2e32e1b3c64",
+    "githubRun": 41060921707,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "c9936af2-ec0b-48bf-8ae8-a71dee2e6bde",
+    "cloudflareUrl": "https://c9936af2.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

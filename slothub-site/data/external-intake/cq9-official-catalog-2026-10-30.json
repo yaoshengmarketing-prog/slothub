@@ -4,8 +4,8 @@
   "checkedAt": "2026-10-30",
   "catalogCount": 141,
   "slotCount": 122,
-  "capturedCountThisRun": 67,
-  "publishedCountThisRun": 66,
+  "capturedCountThisRun": 68,
+  "publishedCountThisRun": 67,
   "reviewQueue": [
     {
       "name": "Sung Wukong",
@@ -76,6 +76,11 @@
       "name": "777",
       "gameId": "26",
       "reason": "Official catalog maximumWin 2000x while same description says diamond WILD 10000 prize; core max-win interpretation unresolved."
+    },
+    {
+      "name": "Wheel Money",
+      "gameId": "128",
+      "reason": "Official description calls this a classic 3*1 reel, but US guest canvas visibly renders a 3x3 symbol window with 1 Line. Hold exact geometry interpretation before detailed page."
     }
   ],
   "existingAtStart": [
@@ -85,9 +90,9 @@
   ],
   "intakeState": "in-progress",
   "nextCandidateOrder": [
-    "Invincible Elephant",
     "Lucky Bats M",
-    "God of War M"
+    "God of War M",
+    "Wheel Money"
   ],
   "slotItems": [
     {
@@ -2356,6 +2361,6 @@
     }
   ],
   "inventoryState": "all-141-official-products-captured",
-  "sitePublishedSlotCount": 69,
-  "remainingSlotCount": 53
+  "sitePublishedSlotCount": 71,
+  "remainingSlotCount": 51
 }

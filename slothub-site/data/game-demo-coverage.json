@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 798,
+  "gameCount": 799,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 680,
+    "available": 681,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "lucky-bats-m-cq9",
+      "name": "Lucky Bats M",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Lucky Bats M ID 123, distinct from Lucky Bats ID10 and Lucky Bats JP ID1010; RTP 96.02%, Low volatility, overall 3000x maximum, 10 Free Games, local 50x reward and stacked symbols. US New York browser read-only guest Demo: HTTP 200, matching Lucky Bats M branding, 243 Ways, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 123, metrics and Free Games description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/123/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Lucky Bats M branding, 243 Ways, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/Gzvf70Sp.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped red/purple lucky motif background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/J1Nzx0J1.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Lucky Bats M"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/123/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Lucky Bats M ID 123, distinct from Lucky Bats ID10 and Lucky Bats JP ID1010; RTP 96.02%, Low volatility, overall 3000x maximum, 10 Free Games, local 50x reward and stacked symbols. US New York browser read-only guest Demo: HTTP 200, matching Lucky Bats M branding, 243 Ways, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "invincible-elephant-cq9",
       "name": "Invincible Elephant",

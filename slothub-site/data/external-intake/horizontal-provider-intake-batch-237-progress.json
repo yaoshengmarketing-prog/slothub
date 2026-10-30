@@ -1,0 +1,31 @@
+{
+  "batch": 237,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Lucky Bats M / 直式五福临门 (123) absent, distinct from Lucky Bats 10 and Lucky Bats JP 1010.",
+  "records": [
+    {
+      "name": "Lucky Bats M",
+      "slug": "lucky-bats-m-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "123",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 123: RTP 96.02%, Low volatility, overall maximum_win 3000; 10 Free Games, local 50x reward, stacked high-paying symbols. US guest canvas labels 243 Ways.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/Gzvf70Sp.jpg",
+        "localPath": "public/assets/games/lucky-bats-m-cq9.jpg",
+        "sha256": "2352844965bc53ad01c6dbb39f3e5c4fd9232b0e198cad08f0a632a6c5f59e70",
+        "visualCheck": "Official ID 123 maps to red/purple lucky motif background; matching title icon spells Lucky Bats M."
+      },
+      "demo": "US New York browser guest-query /h5/123/?language=en&token=guest HTTP 200, exact Lucky Bats M branding, 243 Ways, 5x3 reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Lucky Bats M live closure, continue God of War M ID127 (US guest Demo verified; official image/icon downloaded and visually checked). Wheel Money ID128 held for official 3*1 vs rendered 3x3 geometry interpretation."
+}
