@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 and 1-7 imported. Next individual candidate is card 8 BASTET. Cards 8-10 remain.",
-  "nextStep": "After card 7 publication loop, continue card 8 BASTET from JDB official detail ledger; verify exact identity, image and Demo.",
-  "publishedCount": 42,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 and 1-8 imported. Next individual candidate is card 9 CYBER BOUNTY 4096. Cards 9-10 remain.",
+  "nextStep": "After card 8 publication loop, continue card 9 Cyber Bounty 4096 from JDB official ledger; verify version distinct from Cyber Bounty WILD LOCK.",
+  "publishedCount": 43,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -772,6 +772,22 @@
     "partnerAttribution": "Slots Launch exact page identifies Voyage of Cryo Gunner X-Lock by JDB; downloaded WebP (despite .jpg URL) visibly displays full VOYAGE OF CRYO GUNNER X-LOCK title and penguin.",
     "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
     "dedup": "All Game Markdown and Provider name/alias fields; Cryo Gunner absent before intake, distinct from Daring Queen and Blast Raider X-Lock.",
+    "decision": "published-live-verified"
+  },
+  "card8Evidence": {
+    "name": "BASTET",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/bastet",
+    "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/bastet",
+    "officialFacts": "JDB official English/CN detail: RTP 96.5%, MEDIUM volatility, Maximum Win 17000X, 6×5 layout, year 2026; 8+ matching symbols, cascades, 2X-500X additive multiplier symbols, 4+ Scatter 15 Free Games, up to 30, Feature Buy and Extra Bet doubles trigger probability.",
+    "sourceConflict": "Slots Launch exact JDB Bastet page uses an image reading 5000X, conflicting with JDB official max 17000X; official artwork selected and discrepancy disclosed.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming/bastet",
+    "partnerImage": "https://assets.slotslaunch.com/112885/bastet.jpg",
+    "officialImage": "https://www.jdbgaming.com/upload_image/games/games_84b0ad4728269cf3e19460275382ebcf.jpg",
+    "officialImageSha256": "a1c3ec6656bab00681ae9bb6bec8120a6dc50abd5f936967cbba95836392848f",
+    "officialImageMime": "image/jpeg",
+    "imageAttribution": "Official JDB detail art retrieved as valid JPEG and visually inspected: Bastet cat goddess with Egyptian setting, same character as official card and partner thumbnail, without partner’s contradictory 5000X label.",
+    "demo": "Exact third-party Slots Launch page identifies Bastet and JDB; external platform-game-page only, not official Demo; art on partner uses conflicting 5000X.",
+    "dedup": "All Game Markdown and Provider name/alias fields; Bastet/戰神芭絲特 absent before intake. Earlier batch 46/59/72 exclusions were due inaccessible official art, resolved via verified first-party detail image.",
     "decision": "captured-awaiting-publication"
   }
 }

@@ -1,10 +1,10 @@
 {
   "batch": 166,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 7",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "VOYAGE OF CRYO GUNNER X-LOCK™",
       "slug": "voyage-of-cryo-gunner-x-lock-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/voyage-of-cryo-gunner-x-lock",
       "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/voyage-of-cryo-gunner-x-lock",
       "officialFacts": "JDB official English/CN detail: RTP 96.5%, MEDIUM volatility, Maximum Win 2000X, 40 Ways specification, release year 2026; Cryo Gunner X-Lock coin collection, Treasure Collect, Cannonade, Pirate’s Frenzy, Random Cash Feature, three Feature Buy options.",
@@ -31,5 +31,15 @@
       "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
     }
   ],
-  "nextCursor": "JDB catalog card 8 BASTET"
+  "nextCursor": "JDB catalog card 8 BASTET",
+  "publication": {
+    "commit": "a6f88a084d5b514f85e24f21ad89b4bf24720538",
+    "githubRun": 40985433530,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "8dc4b796-9371-43b2-86ed-7a6a69b4e4ba",
+    "cloudflareUrl": "https://8dc4b796.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, WebP image and sitemap HTTP 200; official and official English and Chinese URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
