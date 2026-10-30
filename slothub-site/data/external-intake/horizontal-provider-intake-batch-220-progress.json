@@ -1,10 +1,10 @@
 {
   "batch": 220,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "dragon-ball-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "185",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 185: RTP 96.06%, High volatility, overall maximum_win 3000; portrait 576 Ways, three Dragon Balls upgrade reel and Scatter, doubled Free Game Wild multiplier with local 125x. US guest canvas labels 576 Ways.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/185/?language=en&token=guest HTTP 200, unchanged final URL; exact title, 576 Ways, portrait reels and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Dragon Ball live closure, continue next uncollected CQ9 Slot. Fire Queen 2 186, Sweet POP 206, Money Tree 208 under US guest check. Zeus M 125 loading only and core conflicts remain review queue."
+  "nextCursor": "Dragon Ball 185 live verified; continue Fire Queen 2 186.",
+  "publication": {
+    "commit": "cde926d7b6a64656da50438ed0c411bae879c527",
+    "githubRun": 41052572069,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "8ed72383-7c64-46dd-8360-4f58eff7a05a",
+    "cloudflareUrl": "https://8ed72383.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

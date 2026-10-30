@@ -1,0 +1,31 @@
+{
+  "batch": 221,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Fire Queen 2 / 火之女王2 (186) absent before intake.",
+  "records": [
+    {
+      "name": "Fire Queen 2",
+      "slug": "fire-queen-2-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "186",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 186: RTP 96.14%, High volatility, overall maximum_win 4000; five paylines, stacked symbols and locking/accumulating Free Game multipliers. US guest canvas labels 5 LINES.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/FulPiR5e.jpg",
+        "localPath": "public/assets/games/fire-queen-2-cq9.jpg",
+        "sha256": "0818a520d6bd9ea628af9a6e8486bf44db7ce8b9541ff83cb7789a42402e2def",
+        "visualCheck": "Official ID 186 maps to fire background; matching icon spells Fire Queen 2."
+      },
+      "demo": "US New York browser guest-query /h5/186/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 5 LINES, 3x3 reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Fire Queen 2 live closure, continue Sweet POP 206 then Money Tree 208, both US guest Demo visually verified. Zeus M 125 loading only and core conflicts remain review queue."
+}
