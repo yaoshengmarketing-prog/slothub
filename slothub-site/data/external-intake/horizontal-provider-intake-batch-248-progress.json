@@ -1,0 +1,31 @@
+{
+  "batch": 248,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Wolf Moon / 狼月 (46) absent.",
+  "records": [
+    {
+      "name": "Wolf Moon",
+      "slug": "wolf-moon-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "46",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 46: RTP 96.27%, Medium volatility, overall maximum_win 3000; free games and high score icon can upgrade to WILD. US guest canvas labels 40 LINES.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/OLlzM8C2.jpg",
+        "localPath": "public/assets/games/wolf-moon-cq9.jpg",
+        "sha256": "2b7c3ddd1b1a84378f4a25bf32217367e2c1153ad89da808d5e2b42dc6dd5fcd",
+        "visualCheck": "Official ID 46 maps to night forest background; matching title icon spells Wolf Moon."
+      },
+      "demo": "US New York browser guest-query /h5/46/?language=en&token=guest HTTP 200 with exact Wolf Moon branding, 5x3 reels, 40 LINES and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Wolf Moon live closure, continue Good Fortune ID50 and Xmas ID141 (US guest Demos verified; official images/icons downloaded and visually checked), then Hephaestus ID142. Held source conflicts remain."
+}

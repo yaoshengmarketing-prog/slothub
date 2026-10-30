@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 809,
+  "gameCount": 810,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 691,
+    "available": 692,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wolf-moon-cq9",
+      "name": "Wolf Moon",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Wolf Moon ID 46, RTP 96.27%, Medium volatility, overall 3000x maximum, free games and upgrading high score icons to WILD. US New York browser read-only guest Demo: HTTP 200 matching Wolf Moon branding, 5x3 reels, 40 LINES, EXTRA PLAY button and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 46, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/46/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser rendered Wolf Moon branding, 5x3 reels, 40 LINES and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/OLlzM8C2.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped night forest background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/OIPQMNEH.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Wolf Moon"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/46/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Wolf Moon ID 46, RTP 96.27%, Medium volatility, overall 3000x maximum, free games and upgrading high score icons to WILD. US New York browser read-only guest Demo: HTTP 200 matching Wolf Moon branding, 5x3 reels, 40 LINES, EXTRA PLAY button and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "fire-chibi-2-cq9",
       "name": "Fire Chibi 2",
