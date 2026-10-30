@@ -1,0 +1,31 @@
+{
+  "batch": 196,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Six Candy / 六顆糖 (153) absent before intake.",
+  "records": [
+    {
+      "name": "Six Candy",
+      "slug": "six-candy-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "153",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 153: RTP 96.14%, High volatility, overall maximum_win 2000. Official description says six or more Scatter symbols may trigger Free Games and the bonus multiplier reaches 15x; feature multiplier is distinct from overall maximum.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/OeT9w0uP.jpg",
+        "localPath": "public/assets/games/six-candy-cq9.jpg",
+        "sha256": "99ee0727f44705e940cd47bd2300656eacf3b6bc4b0f647638650e491a0efb3a",
+        "visualCheck": "Official 153 maps to pastel candy background; icon h58qXy8j.png visibly spells Six Candy."
+      },
+      "demo": "US New York browser: current guest-query /h5/153/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; exact Six Candy candy reels and controls within 35 seconds without login. No spin, bet or login action."
+    }
+  ],
+  "nextCursor": "After Six Candy live closure, reconcile Double Fly 152 and Kronos 154 local feature awards against overall catalog maximum; both guest Demos independently verified in US browser."
+}

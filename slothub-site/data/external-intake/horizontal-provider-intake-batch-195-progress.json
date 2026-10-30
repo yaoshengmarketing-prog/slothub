@@ -1,10 +1,10 @@
 {
   "batch": 195,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "floating-market-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "220",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 220: RTP 96.15%, High volatility, overall maximum_win 20000. Official description says winning combinations eliminate until no further wins, Free Games Wild multipliers and local 100x reward; feature value is distinct from overall maximum.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser: bare current /h5/220/ HTTP 200 Welcome title, splash/loading only after 40 sec; current guest-query HTTP 200 same final URL, exact Floating Market reels and controls without login. Direct Demo available externally; no spin, bet or login."
     }
   ],
-  "nextCursor": "After Floating Market live closure, continue next uncollected CQ9 Slot; preserve Sung Wukong/Sugar Combo metric conflict queue."
+  "nextCursor": "Floating Market 220 live verified; continue Six Candy 153. US guest reels and controls verified for 152, 153, 154. Double Fly and Kronos require scoped maximum-win reconciliation.",
+  "publication": {
+    "commit": "553f85639027ac82c88c152d70109d3f1e8768af",
+    "githubRun": 41026664975,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "627ac5a0-8bd4-4d25-a44f-de9c7a51cf85",
+    "cloudflareUrl": "https://627ac5a0.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

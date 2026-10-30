@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 757,
+  "gameCount": 758,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 639,
+    "available": 640,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "six-candy-cq9",
+      "name": "Six Candy",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Six Candy ID 153, exact domain, RTP 96.14%, High volatility, overall 2000x maximum and Scatter/Free Games mechanics. US New York browser read-only check: current guest-query /h5/153/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, matching Six Candy candy reels and controls within 35 seconds without login. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog card ID 153; RTP, volatility, maximum and Scatter/Free Games facts"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/153/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; matching Six Candy reels and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/OeT9w0uP.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped pastel candy background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/h58qXy8j.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Six Candy"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/153/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Six Candy ID 153, exact domain, RTP 96.14%, High volatility, overall 2000x maximum and Scatter/Free Games mechanics. US New York browser read-only check: current guest-query /h5/153/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, matching Six Candy candy reels and controls within 35 seconds without login. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "floating-market-cq9",
       "name": "Floating Market",
