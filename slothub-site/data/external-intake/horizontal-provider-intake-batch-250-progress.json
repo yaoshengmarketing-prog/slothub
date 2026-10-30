@@ -1,10 +1,10 @@
 {
   "batch": 250,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "xmas-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "141",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 141: RTP 97.50%, Medium volatility, overall maximum_win 10000; elimination-style levels, specified icons can trigger free games, 1-5x multiplier chance. No unsupported reel/line/Ways field.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/141/?language=en&token=guest HTTP 200 with exact Xmas branding and Start/Auto 1/Auto 2/bet controls without login; no conventional reel layout asserted. No gameplay action."
     }
   ],
-  "nextCursor": "After Xmas live closure, continue Hephaestus ID142, Fa Cai Fu Wa ID143 and Sky Lanterns ID146 (US guest Demos verified; official images/icons downloaded and visually checked). Held source conflicts remain."
+  "nextCursor": "Xmas 141 live verified; continue Hephaestus 142.",
+  "publication": {
+    "commit": "2ba1c71a92cfbe36a3e35a9becffd929e7a3bf6a",
+    "githubRun": 41068745813,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "9a3c953a-c9f4-476d-b2aa-f3a7224c3451",
+    "cloudflareUrl": "https://9a3c953a.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

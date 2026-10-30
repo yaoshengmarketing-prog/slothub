@@ -1,0 +1,31 @@
+{
+  "batch": 251,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Hephaestus / 火神 (142) absent.",
+  "records": [
+    {
+      "name": "Hephaestus",
+      "slug": "hephaestus-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "142",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 142: RTP 96.07%, High volatility, overall maximum_win 4000; Super WILD burns icons into WILD fireballs, description mentions 3000x prize. US guest canvas labels 243 WAYS.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/RK31YwtL.jpg",
+        "localPath": "public/assets/games/hephaestus-cq9.jpg",
+        "sha256": "d94c2da0ba97cf45d3f97ae717a6e848e9c2c40e618532e3893c45541de989a1",
+        "visualCheck": "Official ID 142 maps to gold fire background; matching title icon spells Hephaestus."
+      },
+      "demo": "US New York browser guest-query /h5/142/?language=en&token=guest HTTP 200 with exact Hephaestus branding, 5x3 reels, 243 WAYS and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Hephaestus live closure, continue Fa Cai Fu Wa ID143 and Sky Lanterns ID146 (US guest Demos verified; official images/icons downloaded and visually checked). Held source conflicts remain."
+}
