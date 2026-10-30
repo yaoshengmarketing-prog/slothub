@@ -1,0 +1,31 @@
+{
+  "batch": 225,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Jump Higher / 跳更高 (99) absent, distinct from Jump Higher Mobile 108.",
+  "records": [
+    {
+      "name": "Jump Higher",
+      "slug": "jump-higher-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "99",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 99: RTP 96.18%, High volatility, overall maximum_win 5000; reel-selective Respin and rising Free Game random multiplier. US guest canvas labels 243 WAYS and RESPIN.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/jIlFq0qY.jpg",
+        "localPath": "public/assets/games/jump-higher-cq9.jpg",
+        "sha256": "7530d7dd39d2fdc24fada19b164239166295b897a6d42f9513698384a5ee6703",
+        "visualCheck": "Official ID 99 maps to nightclub brick wall background; matching icon spells Jump Higher."
+      },
+      "demo": "US New York browser guest-query /h5/99/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 243 WAYS, five reels with RESPIN labels and feature modal left untouched. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Jump Higher live closure, continue next uncollected CQ9 Slot. Fruit King 1, Vampire Kiss 3, Mr. Rich 5 under US guest check. Hold Hot DJ GB5, OrientalBeauty 202 and previous conflicts."
+}

@@ -1,10 +1,10 @@
 {
   "batch": 224,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "888-cai-shen-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "227",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 227: RTP 96.14%, High volatility, overall maximum_win 12000; variable reel heights 2-6 and up to 7776 ways, Free Game Wild reel with local 512x reward. US guest canvas labels RICH WAYS and BUY FEATURE, buy not tested.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/227/?language=en&token=guest HTTP 200, unchanged final URL, title 888 Cai Shen; RICH WAYS, 5x5 visible grid, controls and BUY FEATURE button without login. No gameplay action."
     }
   ],
-  "nextCursor": "After 888 Cai Shen live closure, continue Jump Higher 99, visually verified US guest 243 WAYS/RESPIN modal. Hold Hot DJ GB5 and OrientalBeauty 202 conflicts, Zeus M 125 loading only, and previous core review queue."
+  "nextCursor": "888 Cai Shen 227 live verified; continue Jump Higher 99 distinct from Jump Higher Mobile 108.",
+  "publication": {
+    "commit": "23f349e94052d2a7218e863ccf75aeb274117ee8",
+    "githubRun": 41055150655,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "970d1fb3-294d-4e09-b34f-07604c3501d0",
+    "cloudflareUrl": "https://970d1fb3.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

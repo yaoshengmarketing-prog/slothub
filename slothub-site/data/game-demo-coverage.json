@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 786,
+  "gameCount": 787,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 668,
+    "available": 669,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "jump-higher-cq9",
+      "name": "Jump Higher",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Jump Higher ID 99 (distinct from Jump Higher Mobile 108), RTP 96.18%, High volatility, overall 5000x maximum, reel-selective Respin and rising Free Game random multiplier. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, JUMP HIGHER 243 WAYS branding, five reels with RESPIN labels and TRY THE RESPIN FEATURE modal. No modal click, spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 99, metrics and Respin description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/99/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser JUMP HIGHER 243 WAYS, five reels, RESPIN labels and untouched feature modal"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/jIlFq0qY.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped nightclub brick wall background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/jbrmZ3l9.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Jump Higher"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/99/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Jump Higher ID 99 (distinct from Jump Higher Mobile 108), RTP 96.18%, High volatility, overall 5000x maximum, reel-selective Respin and rising Free Game random multiplier. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, JUMP HIGHER 243 WAYS branding, five reels with RESPIN labels and TRY THE RESPIN FEATURE modal. No modal click, spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "888-cai-shen-cq9",
       "name": "888 Cai Shen",
