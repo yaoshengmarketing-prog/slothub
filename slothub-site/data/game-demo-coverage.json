@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 797,
+  "gameCount": 798,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 679,
+    "available": 680,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "invincible-elephant-cq9",
+      "name": "Invincible Elephant",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Invincible Elephant ID 124, RTP 96%, High volatility, overall 5000x maximum, 50 lines, roulette awards 9-40 Free Games, sticky WILD symbols during Free Games. US New York browser read-only guest Demo: HTTP 200, matching INVINCIBLE ELEPHANT branding, 50 Lines, 5x4 reels and controls without login after initial splash. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 124, metrics and Free Games description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/124/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Invincible Elephant branding, 50 Lines, 5x4 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/q4VlXJ9G.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped golden elephant background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/sOuNJHuS.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Invincible Elephant"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/124/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Invincible Elephant ID 124, RTP 96%, High volatility, overall 5000x maximum, 50 lines, roulette awards 9-40 Free Games, sticky WILD symbols during Free Games. US New York browser read-only guest Demo: HTTP 200, matching INVINCIBLE ELEPHANT branding, 50 Lines, 5x4 reels and controls without login after initial splash. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "apsaras-cq9",
       "name": "Apsaras",
