@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 791,
+  "gameCount": 792,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 673,
+    "available": 674,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "lucky-bats-cq9",
+      "name": "Lucky Bats",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Lucky Bats ID 10 (distinct from Lucky Bats JP 1010), RTP 96.02%, Low volatility, overall 3000x maximum, 243 Ways, stacked symbols and high-paying-only symbols during Free Games. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Lucky Bats branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 10, metrics and stacked symbols"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/10/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Lucky Bats, 243 WAYS, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/S4auUPEU.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped oriental lucky pattern background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/0s2JAojt.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Lucky Bats"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/10/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Lucky Bats ID 10 (distinct from Lucky Bats JP 1010), RTP 96.02%, Low volatility, overall 3000x maximum, 243 Ways, stacked symbols and high-paying-only symbols during Free Games. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Lucky Bats branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "zhong-kui-cq9",
       "name": "Zhong Kui",

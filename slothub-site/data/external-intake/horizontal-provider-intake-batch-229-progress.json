@@ -1,10 +1,10 @@
 {
   "batch": 229,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "zhong-kui-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "9",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 9: RTP 96.10%, High volatility, overall maximum_win 5000; only high-paying symbols during Free Games. US guest canvas labels 243 WAYS.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/9/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 243 WAYS, 5x3 reels and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Zhong Kui live closure, continue next uncollected CQ9 Slot. Lucky Bats 10, Super5 16, Great Lion 17 under US guest check. Previous core conflicts remain review queue."
+  "nextCursor": "Zhong Kui 9 live verified; continue Lucky Bats 10.",
+  "publication": {
+    "commit": "cd33db6c4ecaa696a003f907686a733058268096",
+    "githubRun": 41057417456,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "0fc7db9b-c256-4fc2-8bb8-62c836b2d90f",
+    "cloudflareUrl": "https://0fc7db9b.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
