@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 823,
+  "gameCount": 824,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 705,
+    "available": 706,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wukong-and-peaches-cq9",
+      "name": "Wukong & Peaches",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Wukong & Peaches ID 68, RTP 96.91%, High volatility, overall 8000x maximum, peach icons adding bonus multiplier in free games. US browser read-only guest Demo: canvas logo Wukong Peaches omits ampersand but matches official game/icon, 5x3 reels, 243 ways and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 68, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/68/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered Wukong Peaches logo, 5x3 reels, 243 ways and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/FXYcOAAT.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped peach-blossom bridge background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/G72CaDlv.png",
+          "httpStatus": 200,
+          "notes": "Official Wukong & Peaches title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/68/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Wukong & Peaches ID 68, RTP 96.91%, High volatility, overall 8000x maximum, peach icons adding bonus multiplier in free games. US browser read-only guest Demo: canvas logo Wukong Peaches omits ampersand but matches official game/icon, 5x3 reels, 243 ways and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "fire-777-cq9",
       "name": "Fire 777",

@@ -1,0 +1,31 @@
+{
+  "batch": 262,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Wukong & Peaches / 悟空偷桃 (68) absent.",
+  "records": [
+    {
+      "name": "Wukong & Peaches",
+      "slug": "wukong-and-peaches-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "68",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 68: RTP 96.91%, High volatility, overall maximum_win 8000; peach icon in free game can add escalating bonus multiplier. US guest canvas labels 243 ways.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/FXYcOAAT.jpg",
+        "localPath": "public/assets/games/wukong-and-peaches-cq9.jpg",
+        "sha256": "9423ebf3cd6aadb2db909243004d52b00293000db6f0becf2a95827e09b705d0",
+        "visualCheck": "Official ID 68 maps to peach-blossom bridge background; matching monkey king title icon spells Wukong & Peaches."
+      },
+      "demo": "US browser guest-query /h5/68/?language=en&token=guest HTTP 200 with Wukong Peaches canvas logo (ampersand absent), 5x3 reels, 243 ways and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Wukong & Peaches live closure, continue Fa Cai Shen ID69, Wanbao Dino ID70 and Happy Rich Year ID72 (US exact guest Demos verified; official images/icons downloaded and visually checked). Held source conflicts remain."
+}
