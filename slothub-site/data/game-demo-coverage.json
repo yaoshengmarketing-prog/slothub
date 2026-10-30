@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 761,
+  "gameCount": 762,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 643,
+    "available": 644,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "hercules-cq9",
+      "name": "Hercules",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Hercules ID 161, exact domain, RTP 95.94%, High volatility, overall 3000x maximum and scoped Golden Fist 250x reward. US New York browser read-only check: current guest-query /h5/161/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, matching Hercules branding, reels and controls without login. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 161, metrics, elimination and Golden Fist reward"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/161/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; matching Hercules reels and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/7oMeVNlc.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped golden burst background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/zIALpKwM.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Hercules"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/161/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Hercules ID 161, exact domain, RTP 95.94%, High volatility, overall 3000x maximum and scoped Golden Fist 250x reward. US New York browser read-only check: current guest-query /h5/161/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, matching Hercules branding, reels and controls without login. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "5-boxing-cq9",
       "name": "5 Boxing",

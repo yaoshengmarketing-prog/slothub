@@ -1,10 +1,10 @@
 {
   "batch": 199,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "5-boxing-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "157",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 157: RTP 96.18%, Medium volatility, overall maximum_win 5000. Official description describes five boxing forms and Free Game high-score icon conversion; promotional 4000x award is distinct from overall catalog maximum.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser: current guest-query /h5/157/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; exact 5 Boxing branding, reels and controls without login. No spin, bet or login action."
     }
   ],
-  "nextCursor": "After 5 Boxing live closure, continue Hercules 161, whose official local Golden Fist 250x award must remain distinct from catalog overall 3000x. US guest Demo verified."
+  "nextCursor": "5 Boxing 157 live verified with catalog overall 5000x distinct from promotional 4000x. Continue Hercules 161, US guest Demo verified.",
+  "publication": {
+    "commit": "00fef9793f5378e2630d865250740c78b3701744",
+    "githubRun": 41029282559,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "5e63a3be-66c6-47e8-88b1-59089e06c81f",
+    "cloudflareUrl": "https://5e63a3be.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
