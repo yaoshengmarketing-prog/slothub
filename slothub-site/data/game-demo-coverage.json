@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 780,
+  "gameCount": 781,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 662,
+    "available": 663,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "cricket-fever-cq9",
+      "name": "Cricket Fever",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Cricket Fever ID 188, RTP 95.97%, High volatility, overall 5000x maximum and Free Game retrigger. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Cricket Fever 243 Ways branding, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 188, metrics and Free Game retrigger"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/188/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Cricket Fever branding, 243 Ways, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/qvHFwkE8.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped cricket stadium background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/5FmroacQ.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Cricket Fever"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/188/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Cricket Fever ID 188, RTP 95.97%, High volatility, overall 5000x maximum and Free Game retrigger. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Cricket Fever 243 Ways branding, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "wing-chun-cq9",
       "name": "Wing Chun",
