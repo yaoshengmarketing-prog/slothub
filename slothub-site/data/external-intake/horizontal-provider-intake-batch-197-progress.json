@@ -1,10 +1,10 @@
 {
   "batch": 197,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "double-fly-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "152",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 152: RTP 96.14%, High volatility, overall maximum_win 6000. Description says more than four Free Game icons yield a random multiplier up to 12x, Swap reorders reels for the highest score and promotes a 3000x prize; promo value is distinct from overall catalog maximum.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser: current guest-query /h5/152/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; exact Double Fly branding, reels and controls within 35 seconds without login. No spin, bet or login action."
     }
   ],
-  "nextCursor": "After Double Fly live closure, continue Kronos 154: catalog overall maximum 3000x vs description 1000x promotional prize; US guest Demo reels and controls independently verified."
+  "nextCursor": "Double Fly 152 live verified with catalog overall 6000x distinct from promotional 3000x. Continue Fa Cai Shen2 160, US guest Demo verified.",
+  "publication": {
+    "commit": "bd141064ac08aada4548fd648d655de27aa316d4",
+    "githubRun": 41028075400,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "1d8c2451-6017-4da6-93ab-3957b4fa4d05",
+    "cloudflareUrl": "https://1d8c2451.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

@@ -1,0 +1,31 @@
+{
+  "batch": 198,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Fa Cai Shen2 / 發財神2 (160) absent before intake.",
+  "records": [
+    {
+      "name": "Fa Cai Shen2",
+      "slug": "fa-cai-shen-2-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "160",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 160: RTP 96.19%, High volatility, overall maximum_win 3000. Official description states reel extension and says reel size upgrade chance relates to bet size; no numeric trigger probability is given.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/6Qz2B4Pb.jpg",
+        "localPath": "public/assets/games/fa-cai-shen-2-cq9.jpg",
+        "sha256": "5613662ed2f78359251fb2940e100aa36c3a40e6b84d10a9d86e7cadfadd3e1d",
+        "visualCheck": "Official 160 maps to red background; icon hFlPadSN.png visibly spells Fa Cai Shen2 with matching character."
+      },
+      "demo": "US New York browser: current guest-query /h5/160/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; exact Fa Cai Shen2 branding, reels and controls without login. No spin, bet or login action."
+    }
+  ],
+  "nextCursor": "After Fa Cai Shen2 live closure, continue 5 Boxing 157 or Hercules 161. Both US guest Demos verified; catalog overall maxima must remain distinct from promotional local awards."
+}
