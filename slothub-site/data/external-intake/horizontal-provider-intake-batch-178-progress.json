@@ -1,10 +1,10 @@
 {
   "batch": 178,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "CQ9 official Slot catalog continuation with first-party Mafia news",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "mafia-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "243",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialNews": "https://www.cq9gaming.com/th/news/detail/222",
       "officialFacts": "Official CQ9 catalog Slot ID 243, RTP 96.10%, High volatility, global maximum 12000x. Exact-title news confirms Mafia and limousine-triggered Free Games, 12 initial games and retriggers up to 500.",
@@ -28,5 +28,15 @@
       "demo": "Official catalog modal did not expose independently verified playable href; status not-verified."
     }
   ],
-  "nextCursor": "After Mafia live closure, inspect Treasure Pirate (ID 242), The Chicken House (ID 241) and other CQ9 Slot entries against exact-title official news and images; retain Sung Wukong and Sugar Combo review queue."
+  "nextCursor": "Mafia live verified; continue CQ9 Slot catalog at The Chicken House (ID 241); inspect Treasure Pirate / Pirate Treasure naming difference before import.",
+  "publication": {
+    "commit": "5d904f2d0421c8ab1471b6212f61913191721d56",
+    "githubRun": 41009950587,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "19a2ab81-ffdd-44d0-a1a3-3fc28ee3631e",
+    "cloudflareUrl": "https://19a2ab81.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG image and sitemap HTTP 200; official news/catalog source, RTP and maximum win present; live image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

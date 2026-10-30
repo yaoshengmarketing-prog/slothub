@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 740,
+  "gameCount": 741,
   "providerCount": 371,
-  "sourcePageCount": 1355,
+  "sourcePageCount": 1358,
   "counts": {
     "access-restricted": 4,
     "available": 630,
-    "not-verified": 106
+    "not-verified": 107
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-chicken-house-cq9",
+      "name": "The Chicken House",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "Official CQ9 Slot catalog identifies game ID 241 and exact-title news confirms the game, but the catalog modal did not expose a verified playable href.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot card and modal, game ID 241"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/215",
+          "httpStatus": 200,
+          "notes": "Official exact-title Slot news"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/4mTq560X.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/HUUzbeUj.png",
+          "httpStatus": 200,
+          "notes": "Official title icon, visually checked"
+        }
+      ]
+    },
     {
       "slug": "mafia-cq9",
       "name": "Mafia",

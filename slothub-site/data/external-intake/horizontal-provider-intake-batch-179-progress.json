@@ -1,0 +1,32 @@
+{
+  "batch": 179,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "CQ9 official Slot catalog continuation with exact-title first-party Chicken House news",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 The Chicken House / 咕咕雞 (game ID 241) absent before intake.",
+  "records": [
+    {
+      "name": "The Chicken House",
+      "slug": "the-chicken-house-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "241",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/news/detail/215",
+      "officialFacts": "Official CQ9 catalog Slot ID 241, RTP 96.09%, High volatility, global maximum 10000x. Official exact-title news confirms Golden Egg Wild 2x/3x, two selectable Free Games modes, locked egg multipliers up to 5x and Feature Buy.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/4mTq560X.jpg",
+        "localPath": "public/assets/games/the-chicken-house-cq9.jpg",
+        "sha256": "1faa351f7cbba62f31d4e04557bdfd5d98329193d3622fb06450a081ef03a001",
+        "visualCheck": "Official ID 241 maps to bright green/gold feather background; official icon HUUzbeUj.png visibly spells THE CHICKEN HOUSE."
+      },
+      "demo": "Official catalog modal did not expose independently verified playable href; status not-verified."
+    }
+  ],
+  "nextCursor": "After The Chicken House live closure, inspect Treasure Pirate (ID 242, catalog description reverses English name to Pirate Treasure), Baseball Fever (ID 230), and other CQ9 Slot entries. Retain Sung Wukong and Sugar Combo official-source conflict review queue."
+}
