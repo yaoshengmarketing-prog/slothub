@@ -1,0 +1,37 @@
+{
+  "batch": 275,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue ATG Games official Slot catalog after Flaming Three Kingdoms live closure",
+  "catalog": "https://www.atg-games.com/en/games?type=all",
+  "dedupScope": "All Game Markdown names, aliases, filenames and Provider; ATG Vampire absent and distinct from CQ9 Vampire Kiss and other Provider vampire-themed games.",
+  "excludedBeforeCursor": [
+    {
+      "name": "Wuxia",
+      "officialPage": "https://www.atg-games.com/games/slot/wuxia-caishen",
+      "reason": "Same official page describes over a million ways to win in the introductory text but up to 32,400 ways in the Features/Description. Core win-way count unresolved; no detailed Game page created.",
+      "next": "Obtain a version-matched ATG specification or official correction establishing whether the million-way claim and 32,400-way mechanism are different scopes; recheck exact image and Demo before intake."
+    }
+  ],
+  "records": [
+    {
+      "name": "Vampire",
+      "slug": "vampire-atg",
+      "provider": "atg-games",
+      "status": "imported-awaiting-live-closure",
+      "officialPage": "https://www.atg-games.com/games/slot/vampire",
+      "officialFacts": "2026-08-18 release; five reels, 40 left-to-right paylines; RTP 96.1%; Medium volatility; Winning ratio x60000; 3/4/5 Scatters award 5/10/15 Free Games, Lucky Moment, free-game multiplier selection and JP Jackpot.",
+      "image": {
+        "sourceUrl": "https://www.atg-games.com/_ipx/f_webp/vampire/en/game_icon.png",
+        "localPath": "public/assets/games/vampire-atg.webp",
+        "sha256": "0fa2422c1ba1726404fb146877ce7f1d28cbd0cdaa31d5df0ec3d45bdf40e94f",
+        "visualCheck": "Official exact-game WebP icon visibly displays Vampire with Curse and Rebirth subtitle, matching the official page's Vampire title; downloaded bytes and visual inspected."
+      },
+      "demo": "Exact official page and catalog expose no verified playable same-game destination in this check; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After Vampire same-SHA CI, Cloudflare and seven-route live readback, continue official ATG Jinlian, then Froststorm Hunter and remaining Slot cards. Wuxia remains an exact source-conflict hold."
+}

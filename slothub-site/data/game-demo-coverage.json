@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 836,
+  "gameCount": 837,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 117
+    "not-verified": 118
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,32 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "vampire-atg",
+      "name": "Vampire",
+      "provider": "atg-games",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "ATG official exact Vampire page confirms 2026-08-18 release, 40 left-to-right paylines, RTP 96.1%, Medium volatility and Winning ratio x60000. Official exact-game icon displays Vampire with Curse and Rebirth subtitle. No exact playable Demo destination and load were verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.atg-games.com/en/games?type=all",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card links to exact Vampire Game Info"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/games/slot/vampire",
+          "httpStatus": 200,
+          "notes": "Official exact game page with identity, date, paylines, math and mechanics; no verified Demo"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/_ipx/f_webp/vampire/en/game_icon.png",
+          "httpStatus": 200,
+          "notes": "Valid visually checked Vampire title WebP, SHA256 0fa2422c1ba1726404fb146877ce7f1d28cbd0cdaa31d5df0ec3d45bdf40e94f"
+        }
+      ]
+    },
     {
       "slug": "flaming-three-kingdoms-atg",
       "name": "Flaming Three Kingdoms",
