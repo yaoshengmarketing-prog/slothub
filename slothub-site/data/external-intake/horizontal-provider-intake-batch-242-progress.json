@@ -1,0 +1,31 @@
+{
+  "batch": 242,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Good Fortune M / 直式鸿福齐天 (133) absent.",
+  "records": [
+    {
+      "name": "Good Fortune M",
+      "slug": "good-fortune-m-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "133",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 133: RTP 96.19%, Medium volatility, overall maximum_win 3000; portrait design, firecracker-themed Free Games and stacked high-paying symbols. US guest canvas labels 243 Ways.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/mK4Mq44T.jpg",
+        "localPath": "public/assets/games/good-fortune-m-cq9.jpg",
+        "sha256": "83caed9d6a72db5c74eb587398baa55f52a6b671402b45f2f2153f8e4644d574",
+        "visualCheck": "Official ID 133 maps to red fortune motif background; matching title icon spells Good Fortune M."
+      },
+      "demo": "US New York browser guest-query /h5/133/?language=en&token=guest HTTP 200, exact Good Fortune M branding, 243 Ways, 5x3 portrait reels and controls without login after splash. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Good Fortune M live closure, continue Sherlock Holmes ID42 and Gu Gu Gu M ID135 (US guest Demos verified; official images/icons downloaded and visually checked). Held source conflicts remain."
+}

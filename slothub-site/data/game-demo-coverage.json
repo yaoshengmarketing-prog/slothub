@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 803,
+  "gameCount": 804,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 685,
+    "available": 686,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "good-fortune-m-cq9",
+      "name": "Good Fortune M",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Good Fortune M ID 133, RTP 96.19%, Medium volatility, overall 3000x maximum, portrait design, firecracker-themed Free Games and stacked high-paying symbols. US New York browser read-only guest Demo: HTTP 200, matching Good Fortune M branding, 243 Ways, 5x3 portrait reels and controls without login after splash. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 133, metrics and Free Games description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/133/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Good Fortune M branding, 243 Ways, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/mK4Mq44T.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped red fortune motif background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/Muuo7IQ4.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Good Fortune M"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/133/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Good Fortune M ID 133, RTP 96.19%, Medium volatility, overall 3000x maximum, portrait design, firecracker-themed Free Games and stacked high-paying symbols. US New York browser read-only guest Demo: HTTP 200, matching Good Fortune M branding, 243 Ways, 5x3 portrait reels and controls without login after splash. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "fa-cai-shen-m-cq9",
       "name": "Fa Cai Shen M",
