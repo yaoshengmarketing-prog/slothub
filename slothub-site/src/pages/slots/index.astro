@@ -7,6 +7,7 @@ import { loadPublishedGameCatalog } from '../../lib/game-catalog';
 import { createGuideRelationshipIndex, conceptExplorerUrl, relationshipLabel } from '../../lib/guide-relationship-catalog';
 import { buildGuideReadingSections, GUIDE_READING_PATHS } from '../../lib/guide-reading-path.mjs';
 import CascadingDemo from '../../components/CascadingDemo.astro';
+import PayoutMechanismDemo from '../../components/PayoutMechanismDemo.astro';
 
 const catalog = await loadPublishedGameCatalog();
 const games = catalog.games.filter((game) => game.primaryType === 'slots');
@@ -110,6 +111,7 @@ const dataTopics = dataTopicDefinitions.flatMap((definition) => {
         <div><a href={item.exploreHref}>查看 {item.count} 款遊戲</a><a href={item.guide.url}>看懂賠付機制</a></div>
       </article>)}
     </div>
+    <PayoutMechanismDemo />
   </section>
 
   <section class="slots-hub-section slots-hub-section-soft" id="features" aria-labelledby="features-title">
