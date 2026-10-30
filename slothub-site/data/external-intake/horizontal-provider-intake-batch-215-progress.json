@@ -1,0 +1,31 @@
+{
+  "batch": 215,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Rave Jump Mobile / 单手跳起来 (109) absent before intake.",
+  "records": [
+    {
+      "name": "Rave Jump Mobile",
+      "slug": "rave-jump-mobile-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "109",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 109: RTP 96.18%, High volatility, overall maximum_win 3000; portrait nightclub design and stacked Golden Ball symbols. US guest canvas visibly labels 243 Ways.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/WXcoZ52v.jpg",
+        "localPath": "public/assets/games/rave-jump-mobile-cq9.jpg",
+        "sha256": "05c6ac282562608a6232ff3457d5ee3d60ce350c5485e79aa07577d50c3e411b",
+        "visualCheck": "Official ID 109 maps to nightclub stage background; matching icon spells Rave Jump."
+      },
+      "demo": "US New York browser guest-query /h5/109/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 243 Ways, reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Rave Jump Mobile live closure, continue Disco Night M 137 then Wolf Disco 183, both US guest Demo visually verified. Zeus M 125 loading only and core conflicts remain review queue."
+}

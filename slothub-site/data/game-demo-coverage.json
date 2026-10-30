@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 776,
+  "gameCount": 777,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 658,
+    "available": 659,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "rave-jump-mobile-cq9",
+      "name": "Rave Jump Mobile",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Rave Jump Mobile ID 109, RTP 96.18%, High volatility, overall 3000x maximum, portrait nightclub game with stacked Golden Ball symbols. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, matching Rave Jump Mobile branding, 243 Ways, reels and controls after about 40 seconds without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 109, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/109/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact brand, 243 Ways, reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/WXcoZ52v.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped nightclub stage background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/FTOgWQxD.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Rave Jump"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/109/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Rave Jump Mobile ID 109, RTP 96.18%, High volatility, overall 3000x maximum, portrait nightclub game with stacked Golden Ball symbols. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, matching Rave Jump Mobile branding, 243 Ways, reels and controls after about 40 seconds without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "jump-higher-mobile-cq9",
       "name": "Jump Higher Mobile",

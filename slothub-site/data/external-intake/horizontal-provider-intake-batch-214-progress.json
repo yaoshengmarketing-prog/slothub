@@ -1,10 +1,10 @@
 {
   "batch": 214,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "jump-higher-mobile-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "108",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 108: RTP 96.18%, High volatility, overall maximum_win 5000; portrait Respin selectable reels, Free Game multiplier doubles each game with local 150x reward. US guest canvas visibly labels 243 Ways.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/108/?language=en&token=guest HTTP 200, final URL unchanged; matching branding, 243 Ways, reels and TRY THE RESPIN FEATURE modal after about 40 seconds. No gameplay action."
     }
   ],
-  "nextCursor": "After Jump Higher Mobile live closure, continue next uncollected CQ9 Slot. Zeus M 125 Demo remained blurred loading after 40 seconds; other official core conflicts remain review queue."
+  "nextCursor": "Jump Higher Mobile 108 live verified; continue Rave Jump Mobile 109.",
+  "publication": {
+    "commit": "9178636b4a492e93458257d94a1df213e9e274f6",
+    "githubRun": 41049636743,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "92e75e05-c0d0-4cfc-8bda-41c061f53fe3",
+    "cloudflareUrl": "https://92e75e05.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
