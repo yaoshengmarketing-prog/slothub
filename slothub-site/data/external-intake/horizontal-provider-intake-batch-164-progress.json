@@ -1,10 +1,10 @@
 {
   "batch": 164,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 5",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "THE GOLDEN MARKHOR",
       "slug": "the-golden-markhor-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/the-golden-markhor",
       "officialNews": "https://www.jdbgaming.com/en/news/games/the-golden-markhor",
       "officialFacts": "JDB official detail: RTP 96.5%, LOW volatility, Maximum Win 13000X, 1 Line, release year 2026. Official English news: number symbols connect on reels 1-3, reel 4 multipliers, respins or bonus trigger, bonus reel up to three plays/layers, Feature Buy.",
@@ -33,5 +33,15 @@
       "demo": "Slots Launch labels exact title Coming Soon; BC.Game exact listing is not proof of an anonymously playable demo; not-verified."
     }
   ],
-  "nextCursor": "JDB catalog card 6 VOYAGE OF DARING QUEEN X-LOCK™"
+  "nextCursor": "JDB catalog card 6 VOYAGE OF DARING QUEEN X-LOCK™",
+  "publication": {
+    "commit": "856ae8f6991b4021823d1445a755511291aac5ce",
+    "githubRun": 40984461891,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "0e8a364f-31fc-412a-bf84-ff9dcdc9971c",
+    "cloudflareUrl": "https://0e8a364f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPEG image and sitemap HTTP 200; official and official English and Chinese URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

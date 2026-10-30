@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 and 1-5 imported. Next individual candidate is card 6 VOYAGE OF DARING QUEEN X-LOCK™. Cards 6-10 remain.",
-  "nextStep": "After card 5 publication loop, continue card 6 from JDB official details ledger; check exact title, image and Demo.",
-  "publishedCount": 40,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 and 1-6 imported. Next individual candidate is card 7 VOYAGE OF CRYO GUNNER X-LOCK™. Cards 7-10 remain.",
+  "nextStep": "After card 6 publication loop, continue card 7 from JDB official detail ledger; verify exact identity, image and Demo.",
+  "publishedCount": 41,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -742,6 +742,21 @@
     "imageAttribution": "JDB official card and detail JPEG images inspected: both display same gold markhor with curled horns. First-party card image bytes retrieved through Google Translate public image proxy due direct JDB geo restriction.",
     "demo": "Slots Launch labels exact title Coming Soon; BC.Game exact listing is not proof of an anonymously playable demo; not-verified.",
     "dedup": "All Game Markdown and Provider name/alias fields; The Golden Markhor/黃金靈羊 absent before intake.",
+    "decision": "published-live-verified"
+  },
+  "card6Evidence": {
+    "name": "VOYAGE OF DARING QUEEN X-LOCK™",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/voyage-of-daring-queen-x-lock",
+    "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/voyage-of-daring-queen-x-lock",
+    "officialFacts": "JDB official English/CN detail: RTP 96.43%, HIGH volatility, Maximum Win 2000X, 243 Ways, release year 2026; X-Lock Wild collects displayed Coin values, Shoot & Spread replicates Coin values, Lock & Multiply upgrades marked positions.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming/voyage-of-daring-queen-x-lock",
+    "sourceConflict": "Slots Launch calls payoff generic All Ways; precise 243 Ways and math taken from JDB official.",
+    "partnerImage": "https://assets.slotslaunch.com/106876/voyage-of-daring-queen-x-lock.jpg",
+    "partnerImageSha256": "899c58e65315bf4cb74d3cbb675de910f76d5f8453fcad96e8a9e8fe51a1c6b2",
+    "partnerImageMime": "image/webp",
+    "partnerAttribution": "Slots Launch exact page identifies Voyage of Daring Queen X-Lock by JDB; downloaded WebP (despite .jpg URL) visibly displays VOYAGE OF DARING QUEEN and X-LOCK title with sea horse captain. Official JDB card and partner show same character theme.",
+    "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
+    "dedup": "All Game Markdown and Provider name/alias fields; Daring Queen absent before intake, distinct from Cryo Gunner and Blast Raider X-Lock.",
     "decision": "captured-awaiting-publication"
   }
 }

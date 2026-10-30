@@ -1,0 +1,35 @@
+{
+  "batch": 165,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 6",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; Daring Queen absent before intake, distinct from Cryo Gunner and Blast Raider X-Lock.",
+  "records": [
+    {
+      "order": 6,
+      "name": "VOYAGE OF DARING QUEEN X-LOCK™",
+      "slug": "voyage-of-daring-queen-x-lock-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/voyage-of-daring-queen-x-lock",
+      "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/voyage-of-daring-queen-x-lock",
+      "officialFacts": "JDB official English/CN detail: RTP 96.43%, HIGH volatility, Maximum Win 2000X, 243 Ways, release year 2026; X-Lock Wild collects displayed Coin values, Shoot & Spread replicates Coin values, Lock & Multiply upgrades marked positions.",
+      "partnerPage": "https://slotslaunch.com/jdb-gaming/voyage-of-daring-queen-x-lock",
+      "sourceConflict": "Slots Launch calls payoff generic All Ways; precise 243 Ways and math taken from JDB official.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/voyage-of-daring-queen-x-lock",
+        "sourceUrl": "https://assets.slotslaunch.com/106876/voyage-of-daring-queen-x-lock.jpg",
+        "sha256": "899c58e65315bf4cb74d3cbb675de910f76d5f8453fcad96e8a9e8fe51a1c6b2",
+        "actualMime": "image/webp",
+        "visualCheck": "Slots Launch exact page identifies Voyage of Daring Queen X-Lock by JDB; downloaded WebP (despite .jpg URL) visibly displays VOYAGE OF DARING QUEEN and X-LOCK title with sea horse captain. Official JDB card and partner show same character theme."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 7 VOYAGE OF CRYO GUNNER X-LOCK™"
+}
