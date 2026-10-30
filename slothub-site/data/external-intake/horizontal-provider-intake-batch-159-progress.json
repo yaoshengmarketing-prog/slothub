@@ -1,0 +1,33 @@
+{
+  "batch": 159,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 46",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider names/aliases: JDB Mjolnir absent; RSG Thunder Hammer shares Chinese alias but is different provider and game, not a duplicate.",
+  "records": [
+    {
+      "order": 46,
+      "name": "Mjolnir",
+      "slug": "mjolnir-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/mjolnir",
+      "officialFacts": "Official EN detail browser ledger and CN detail: Slot, RTP 96%, HIGH volatility, Maximum Win 2000X, 243 Ways, release year 2023; feature buy, lightning Wild, Thunder Strike and Free Games per-elimination multiplier up to 8X distinct from total max.",
+      "sourceConflict": "Slots Launch exact JDB Mjolnir page describes 25 paylines versus official 243 Ways and partner-only Thor Lightning Bonus; official data takes precedence. Current web fetch of official English page redirected to geographic block, but prior Browser Use detail ledger captured specification and Chinese page corroborates game/features.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/mjolnir",
+        "sourceUrl": "https://assets.slotslaunch.com/19282/mjolnir.jpg",
+        "sha256": "cd91963ad9df7e580e989b5766330f7451ddf4e799da06c3ed5155d6779c2b94",
+        "actualMime": "image/webp",
+        "visualCheck": "Exact Slots Launch page identifies Mjolnir by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays MJOLNIR title and Thor hammer."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 1 CYBER BOUNTY WILD LOCK"
+}

@@ -1,10 +1,10 @@
 {
   "batch": 158,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 45",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Prosperity Tiger",
       "slug": "prosperity-tiger-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/prosperity-tiger",
       "officialFacts": "Official English/CN detail: Slot, RTP 96.02%, MEDIUM volatility, Maximum Win 3500X, 243 Ways, release year 2021; Golden Tiger Wild and up to 100 extra Free Games.",
       "sourceConflict": "Slots Launch exact same-game JDB page reports 2022 release versus official 2021; partner-only Scatter and multiplier details excluded.",
@@ -29,5 +29,15 @@
       "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
     }
   ],
-  "nextCursor": "JDB catalog card 46 MJOLNIR"
+  "nextCursor": "JDB catalog card 46 MJOLNIR",
+  "publication": {
+    "commit": "2385cd62089c0e911010512cca00544748b692ff",
+    "githubRun": 40981879179,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "bcc3b851-9399-42bd-9606-5791925259dd",
+    "cloudflareUrl": "https://bcc3b851.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, WebP image and sitemap HTTP 200; official and exact Slots Launch platform URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

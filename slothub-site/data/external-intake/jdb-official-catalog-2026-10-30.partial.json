@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-45 imported. Next individual candidate is card 46 MJOLNIR. Cards 1-10 and 46 remain.",
-  "nextStep": "After card 45 publication loop, continue card 46 MJOLNIR using official details ledger, exact image and Demo checks.",
-  "publishedCount": 34,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 imported. Next individual candidate is card 1 CYBER BOUNTY WILD LOCK. Cards 1-10 remain.",
+  "nextStep": "After card 46 publication loop, continue card 1 CYBER BOUNTY WILD LOCK using official details ledger, exact image and Demo checks.",
+  "publishedCount": 35,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -650,6 +650,21 @@
     "partnerAttribution": "Exact Slots Launch page identifies Prosperity Tiger by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays PROSPERITY TIGER title.",
     "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
     "dedup": "All Game Markdown and Provider name/alias fields; Prosperity Tiger/虎福生豐 absent before intake.",
+    "decision": "published-live-verified"
+  },
+  "card46Evidence": {
+    "name": "MJOLNIR",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/mjolnir",
+    "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/mjolnir",
+    "officialFacts": "Official EN detail browser ledger and CN detail: Slot, RTP 96%, HIGH volatility, Maximum Win 2000X, 243 Ways, release year 2023; feature buy, lightning Wild, Thunder Strike and Free Games per-elimination multiplier up to 8X distinct from total max.",
+    "sourceConflict": "Slots Launch exact JDB Mjolnir page describes 25 paylines versus official 243 Ways and partner-only Thor Lightning Bonus; official data takes precedence. Current web fetch of official English page redirected to geographic block, but prior Browser Use detail ledger captured specification and Chinese page corroborates game/features.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming/mjolnir",
+    "partnerImage": "https://assets.slotslaunch.com/19282/mjolnir.jpg",
+    "partnerImageSha256": "cd91963ad9df7e580e989b5766330f7451ddf4e799da06c3ed5155d6779c2b94",
+    "partnerImageMime": "image/webp",
+    "partnerAttribution": "Exact Slots Launch page identifies Mjolnir by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays MJOLNIR title and Thor hammer.",
+    "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
+    "dedup": "All Game Markdown and Provider names/aliases: JDB Mjolnir absent; RSG Thunder Hammer shares Chinese alias but is different provider and game, not a duplicate.",
     "decision": "captured-awaiting-publication"
   }
 }
