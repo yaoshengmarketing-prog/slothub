@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 827,
+  "gameCount": 828,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 709,
+    "available": 710,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "treasure-bowl-cq9",
+      "name": "Treasure Bowl",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Treasure Bowl ID 74, RTP 96.06%, Medium volatility, overall 3000x maximum, eight free games, 50x local reward and 5x extra WILD bonus. US browser read-only guest Demo: exact TREASURE BOWL canvas, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 74, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/74/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered exact TREASURE BOWL canvas, 5x3 reels, 243 WAYS and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/pcl6XiVe.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped red pattern background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/ESogCyv6.png",
+          "httpStatus": 200,
+          "notes": "Official Treasure Bowl title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/74/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Treasure Bowl ID 74, RTP 96.06%, Medium volatility, overall 3000x maximum, eight free games, 50x local reward and 5x extra WILD bonus. US browser read-only guest Demo: exact TREASURE BOWL canvas, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "happy-rich-year-cq9",
       "name": "Happy Rich Year",

@@ -1,0 +1,31 @@
+{
+  "batch": 266,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Treasure Bowl / 聚宝盆 (74) absent.",
+  "records": [
+    {
+      "name": "Treasure Bowl",
+      "slug": "treasure-bowl-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "74",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 74: RTP 96.06%, Medium volatility, overall maximum_win 3000; eight free games, 50x local reward and extra 5x WILD bonus. US guest canvas labels 243 WAYS.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/pcl6XiVe.jpg",
+        "localPath": "public/assets/games/treasure-bowl-cq9.jpg",
+        "sha256": "1f1535eba9a7df1ffe2333d183f7d6b6c2045aed670902974250f0b0d19986f7",
+        "visualCheck": "Official ID 74 maps to red decorative background; matching title icon spells Treasure Bowl."
+      },
+      "demo": "US browser guest-query /h5/74/?language=en&token=guest HTTP 200 with exact TREASURE BOWL canvas, 5x3 reels, 243 WAYS and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Treasure Bowl live closure, continue Apollo ID78 and Chameleon ID79 (US exact guest Demos verified; official image/icon downloaded and visually checked), then Fire Queen ID83. Held source conflicts remain."
+}

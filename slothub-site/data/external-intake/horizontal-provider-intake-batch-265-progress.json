@@ -1,10 +1,10 @@
 {
   "batch": 265,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "happy-rich-year-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "72",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 72: RTP 96.06%, Medium volatility, overall maximum_win 3000; blessing doubles score, lantern local 100x and free-game connected symbols triple score. US guest canvas labels 243 WAYS.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US browser guest-query /h5/72/?language=en&token=guest HTTP 200 with exact HAPPY RICH YEAR canvas, 5x3 reels, 243 WAYS and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Happy Rich Year live closure, continue Treasure Bowl ID74 (US exact guest Demo verified; official image/icon downloaded and visually checked), then Apollo ID78. Held source conflicts remain."
+  "nextCursor": "Happy Rich Year 72 live verified; continue Treasure Bowl 74.",
+  "publication": {
+    "commit": "849e381268e13df602b196a28a6070258a2d7177",
+    "githubRun": 41078146633,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "f004f38c-64a4-443e-8127-48d840c93233",
+    "cloudflareUrl": "https://f004f38c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
