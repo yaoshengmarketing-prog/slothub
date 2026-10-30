@@ -1,10 +1,10 @@
 {
   "batch": 242,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "good-fortune-m-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "133",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 133: RTP 96.19%, Medium volatility, overall maximum_win 3000; portrait design, firecracker-themed Free Games and stacked high-paying symbols. US guest canvas labels 243 Ways.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/133/?language=en&token=guest HTTP 200, exact Good Fortune M branding, 243 Ways, 5x3 portrait reels and controls without login after splash. No gameplay action."
     }
   ],
-  "nextCursor": "After Good Fortune M live closure, continue Sherlock Holmes ID42 and Gu Gu Gu M ID135 (US guest Demos verified; official images/icons downloaded and visually checked). Held source conflicts remain."
+  "nextCursor": "Good Fortune M 133 live verified; continue Sherlock Holmes 42.",
+  "publication": {
+    "commit": "5e923d0503749e61a08b909937d2445404306b2d",
+    "githubRun": 41064189795,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "cccc3d9e-e203-42b1-9b0c-495a8bfb5c9f",
+    "cloudflareUrl": "https://cccc3d9e.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

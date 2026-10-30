@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 804,
+  "gameCount": 805,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 686,
+    "available": 687,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sherlock-holmes-cq9",
+      "name": "Sherlock Holmes",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Sherlock Holmes ID 42, RTP 96.11%, Medium volatility, overall 3000x maximum, five Free Game modes and a local reward up to 30x. US New York browser read-only guest Demo: HTTP 200, matching Sherlock Holmes branding, 243 Ways, 5x3 reels and controls without login; visible 3 WAY control not operated. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 42, metrics and five Free Game modes"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/42/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Sherlock Holmes branding, 243 Ways, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/QxSleZ5Y.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped detective study/fireplace background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/17tEE26p.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Sherlock Holmes"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/42/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Sherlock Holmes ID 42, RTP 96.11%, Medium volatility, overall 3000x maximum, five Free Game modes and a local reward up to 30x. US New York browser read-only guest Demo: HTTP 200, matching Sherlock Holmes branding, 243 Ways, 5x3 reels and controls without login; visible 3 WAY control not operated. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "good-fortune-m-cq9",
       "name": "Good Fortune M",
