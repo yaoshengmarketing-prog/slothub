@@ -1,0 +1,31 @@
+{
+  "batch": 205,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Wonderland / 夢遊仙境 (116) absent before intake.",
+  "records": [
+    {
+      "name": "Wonderland",
+      "slug": "wonderland-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "116",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 116: RTP 96.09%, Medium volatility, overall maximum_win 3000. Description states 243 Ways and five specified symbols expand upward during Free Games, substituting for a basic symbol.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/L3fYzQIv.jpg",
+        "localPath": "public/assets/games/wonderland-cq9.jpg",
+        "sha256": "25ff1e23a00aeecb1e84a795d23c4e21a0854789a84ba9bfce13742877d8204c",
+        "visualCheck": "Official 116 maps to fantasy forest background; icon ZcsPXlbg.png visibly spells Wonderland."
+      },
+      "demo": "US New York browser: guest-query /h5/116/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; Wonderland/243 Ways branding, 5x3 reels and controls after 40 seconds without login. No spin, bet or login action."
+    }
+  ],
+  "nextCursor": "After Wonderland live closure, continue 5 God beasts 117 (US guest Demo verified), then next uncollected CQ9 Slot. Kronos 154 geometry wording remains in review queue."
+}
