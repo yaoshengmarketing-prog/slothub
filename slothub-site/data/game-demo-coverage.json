@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 771,
+  "gameCount": 772,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 653,
+    "available": 654,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "thor-2-cq9",
+      "name": "Thor 2",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Thor 2 ID 182, exact domain, RTP 96.19%, High volatility, overall 3000x maximum, Wild-triggered five Free Games and buy option. US New York browser read-only check: current guest-query /h5/182/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, THOR 2/243 WAYS branding, five reels, BUY FEATURE and other controls after about 40 seconds without login. No spin, bet, feature buy or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 182, metrics, Wild-triggered Free Games and buy option"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/182/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; THOR 2/243 WAYS reels and BUY FEATURE control without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/RWIIRjvJ.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped lightning beam background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/wlUmyslm.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells THOR 2"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/182/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Thor 2 ID 182, exact domain, RTP 96.19%, High volatility, overall 3000x maximum, Wild-triggered five Free Games and buy option. US New York browser read-only check: current guest-query /h5/182/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, THOR 2/243 WAYS branding, five reels, BUY FEATURE and other controls after about 40 seconds without login. No spin, bet, feature buy or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "6-toros-cq9",
       "name": "6 Toros",

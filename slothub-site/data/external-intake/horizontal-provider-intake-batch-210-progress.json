@@ -1,0 +1,31 @@
+{
+  "batch": 210,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Thor 2 / 雷神2 (182) absent before intake.",
+  "records": [
+    {
+      "name": "Thor 2",
+      "slug": "thor-2-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "182",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 182: RTP 96.19%, High volatility, overall maximum_win 3000. Wild on designated combinations grants five Free Games; base game allows buying five Free Games. US guest canvas visibly labels 243 WAYS and BUY FEATURE.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/RWIIRjvJ.jpg",
+        "localPath": "public/assets/games/thor-2-cq9.jpg",
+        "sha256": "5a1bcc9aedb6eceeaeee8b6a3ca383bc0009d175b4cc85a23581de1aff71418b",
+        "visualCheck": "Official 182 maps to lightning beam background; icon wlUmyslm.png visibly spells THOR 2 over hammer."
+      },
+      "demo": "US New York browser: guest-query /h5/182/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; THOR 2/243 WAYS branding, reels and BUY FEATURE control after about 40 seconds without login. No spin, bet, buy or login action."
+    }
+  ],
+  "nextCursor": "After Thor 2 live closure, continue MuayThai 201 or DiscoNight 205, both US guest Demos verified. Kronos 154 geometry disagreement held for source review."
+}

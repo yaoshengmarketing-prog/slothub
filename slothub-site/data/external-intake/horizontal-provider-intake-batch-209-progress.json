@@ -1,10 +1,10 @@
 {
   "batch": 209,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "6-toros-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "173",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 173: RTP 96.06%, Medium volatility, overall maximum_win 7000. Six or more identical connected symbols trigger elimination until no combination; in Free Games scores double per elimination up to 100x local multiplier.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser: guest-query /h5/173/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; 6 Toros branding, grid and START/AUTO/menu controls after about 40 seconds without login. No spin, bet or login action."
     }
   ],
-  "nextCursor": "After 6 Toros live closure, continue next uncollected CQ9 Slot from official catalog. Kronos 154 geometry disagreement remains in review queue; do not publish guessed reel dimensions."
+  "nextCursor": "6 Toros 173 live verified with six-symbol elimination, scoped 100x multiplier and US guest grid. Continue Thor 2 182.",
+  "publication": {
+    "commit": "0c3ea50c788e6ecff0d752581de812baef38f055",
+    "githubRun": 41047206903,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "cc3708b7-9cd1-42a9-80e1-fca188d9ae79",
+    "cloudflareUrl": "https://cc3708b7.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
