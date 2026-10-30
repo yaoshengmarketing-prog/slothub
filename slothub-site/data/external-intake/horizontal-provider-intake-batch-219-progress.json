@@ -1,10 +1,10 @@
 {
   "batch": 219,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "cricket-fever-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "188",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 188: RTP 95.97%, High volatility, overall maximum_win 5000; Free Games may retrigger. US guest canvas labels 243 Ways.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/188/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 243 Ways, 5x3 reels and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Cricket Fever live closure, continue Dragon Ball 185, US guest Demo visually verified. Zeus M 125 loading only and core conflicts remain review queue."
+  "nextCursor": "Cricket Fever 188 live verified; continue Dragon Ball 185.",
+  "publication": {
+    "commit": "8b8a5b08f9e33dcdb9bd761265cbc21041305a76",
+    "githubRun": 41052077418,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "cf5b1225-e850-4d90-a985-90e675b86898",
+    "cloudflareUrl": "https://cf5b1225.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

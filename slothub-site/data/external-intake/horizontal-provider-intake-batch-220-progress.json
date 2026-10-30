@@ -1,0 +1,31 @@
+{
+  "batch": 220,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Dragon Ball / 龙珠 (185) absent before intake.",
+  "records": [
+    {
+      "name": "Dragon Ball",
+      "slug": "dragon-ball-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "185",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 185: RTP 96.06%, High volatility, overall maximum_win 3000; portrait 576 Ways, three Dragon Balls upgrade reel and Scatter, doubled Free Game Wild multiplier with local 125x. US guest canvas labels 576 Ways.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/o1wEKe6Q.jpg",
+        "localPath": "public/assets/games/dragon-ball-cq9.jpg",
+        "sha256": "d1c4c72f7c9d206555b78adecc674ca74a306ebda15f9a7bbad51273d343c0f6",
+        "visualCheck": "Official ID 185 maps to green burst background; matching icon spells Dragon Ball."
+      },
+      "demo": "US New York browser guest-query /h5/185/?language=en&token=guest HTTP 200, unchanged final URL; exact title, 576 Ways, portrait reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Dragon Ball live closure, continue next uncollected CQ9 Slot. Fire Queen 2 186, Sweet POP 206, Money Tree 208 under US guest check. Zeus M 125 loading only and core conflicts remain review queue."
+}
