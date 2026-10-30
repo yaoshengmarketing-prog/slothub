@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 807,
+  "gameCount": 808,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 689,
+    "available": 690,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fire-chibi-m-cq9",
+      "name": "Fire Chibi M",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fire Chibi M ID 139, RTP 96.13%, High volatility, overall 6000x maximum and locked WILDs with up to 1500x perks. US New York browser read-only guest Demo: HTTP 200 matching Fire Chibi M branding, portrait 5x4 reels, 60 Lines and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 139, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/139/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser rendered Fire Chibi M branding, portrait 5x4 reels, 60 Lines and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/lmNMVKZy.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped red battle ships background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/2ydsCVXV.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Fire Chibi M"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/139/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fire Chibi M ID 139, RTP 96.13%, High volatility, overall 6000x maximum and locked WILDs with up to 1500x perks. US New York browser read-only guest Demo: HTTP 200 matching Fire Chibi M branding, portrait 5x4 reels, 60 Lines and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "move-n-jump-cq9",
       "name": "Move n' Jump",
