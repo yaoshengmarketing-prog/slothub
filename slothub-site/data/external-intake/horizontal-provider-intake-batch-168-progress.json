@@ -1,10 +1,10 @@
 {
   "batch": 168,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 9",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "CYBER BOUNTY 4096",
       "slug": "cyber-bounty-4096-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/cyber-bounty-4096",
       "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/cyber-bounty-4096",
       "officialNews": "https://www.jdbgaming.com/en/news/games/n-cyber-bounty-4096",
@@ -32,5 +32,15 @@
       "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
     }
   ],
-  "nextCursor": "JDB catalog card 10 MAGIC ACE WILD LOCK"
+  "nextCursor": "JDB catalog card 10 MAGIC ACE WILD LOCK",
+  "publication": {
+    "commit": "d18a9bab2288b3d993876da9250a23b20c6cb85b",
+    "githubRun": 40986307768,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "be6bee8f-b8ef-40b2-87aa-52b4b2200e60",
+    "cloudflareUrl": "https://be6bee8f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, WebP image and sitemap HTTP 200; official and official English and Chinese URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

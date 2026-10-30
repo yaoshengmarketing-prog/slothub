@@ -1,0 +1,35 @@
+{
+  "batch": 169,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete documented JDB official catalog at card 10",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; Magic Ace WILD LOCK absent before intake, distinct from published Magic Ace base. Prior batch 124 explicitly noted separate official catalog title.",
+  "records": [
+    {
+      "order": 10,
+      "name": "MAGIC ACE WILD LOCK",
+      "slug": "magic-ace-wild-lock-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/magic-ace-wild-lock",
+      "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/magic-ace-wild-lock",
+      "officialFacts": "JDB official English/CN detail: RTP 96.33%, MEDIUM volatility, Maximum Win 2600X, 1024 Ways, year 2024; cascades, golden symbols become Joker Wilds, Super Joker locks for three games, base multiplier wheel 1X-5X and Free Games 2X-10X, Feature Buy and Extra Bet.",
+      "sourceConflict": "Slots Launch calls lines Fixed; official JDB specification says 1024 Ways. Exact version distinguished from Magic Ace base.",
+      "partnerPage": "https://slotslaunch.com/jdb-gaming/magic-ace-wild-lock",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/magic-ace-wild-lock",
+        "sourceUrl": "https://assets.slotslaunch.com/29686/magic-ace-wild-lock.jpg",
+        "sha256": "f1684fb42890fd8b3ad9c1042354f59e58231e424f9f7626deb971161ed8e4a6",
+        "actualMime": "image/webp",
+        "visualCheck": "Exact Slots Launch page identifies Magic Ace Wild Lock by JDB; valid downloaded WebP (despite .jpg URL) visibly displays MAGIC ACE WILD LOCK, not the base title."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "All 46 official JDB Slot cards imported; verify card 10 CI, Cloudflare and live readback, then close final catalog record."
+}

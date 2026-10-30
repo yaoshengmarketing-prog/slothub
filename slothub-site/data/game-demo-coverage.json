@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 730,
+  "gameCount": 731,
   "providerCount": 371,
-  "sourcePageCount": 1328,
+  "sourcePageCount": 1330,
   "counts": {
     "access-restricted": 4,
-    "available": 629,
+    "available": 630,
     "not-verified": 97
   },
   "rules": {
@@ -17,6 +17,38 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "magic-ace-wild-lock-jdb",
+      "name": "Magic Ace WILD LOCK",
+      "provider": "jdb-gaming",
+      "status": "available",
+      "url": "https://slotslaunch.com/jdb-gaming/magic-ace-wild-lock",
+      "accessType": "platform-game-page",
+      "platformName": "Slots Launch",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "Exact Slots Launch title, JDB provider and downloaded WILD LOCK title art; distinct from Magic Ace base. Official JDB detail supplies 1024 Ways.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/magic-ace-wild-lock",
+          "httpStatus": 200,
+          "notes": "Official JDB browser detail ledger and current web-indexed detail"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/cn/games/slot/magic-ace-wild-lock",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/magic-ace-wild-lock",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://assets.slotslaunch.com/29686/magic-ace-wild-lock.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "cyber-bounty-4096-jdb",
       "name": "Cyber Bounty 4096",

@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 and 1-9 imported. Next individual candidate is card 10 MAGIC ACE WILD LOCK. Card 10 remains.",
-  "nextStep": "After card 9 publication loop, continue card 10 Magic Ace WILD LOCK from JDB official ledger and verify distinction from Magic Ace base.",
-  "publishedCount": 44,
+  "nextCursor": "Catalog positions 1-46 enumerated and imported; card 10 awaits CI, Cloudflare and full live readback. No catalog candidates remain.",
+  "nextStep": "Verify card 10 exact SHA in Actions and Cloudflare, run full live readback, mark 46/46 and publish final closure metadata.",
+  "publishedCount": 45,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -804,6 +804,21 @@
     "partnerAttribution": "Exact Slots Launch page identifies Cyber Bounty 4096 by JDB; valid downloaded WebP (despite .jpg URL) visibly displays CYBER BOUNTY 4096 and 10000X, distinct from WILD LOCK.",
     "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
     "dedup": "All Game Markdown and Provider name/alias fields; Cyber Bounty 4096 absent before intake, distinct from published Cyber Bounty WILD LOCK (separate official cards, different mechanics and max wins).",
+    "decision": "published-live-verified"
+  },
+  "card10Evidence": {
+    "name": "MAGIC ACE WILD LOCK",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/magic-ace-wild-lock",
+    "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/magic-ace-wild-lock",
+    "officialFacts": "JDB official English/CN detail: RTP 96.33%, MEDIUM volatility, Maximum Win 2600X, 1024 Ways, year 2024; cascades, golden symbols become Joker Wilds, Super Joker locks for three games, base multiplier wheel 1X-5X and Free Games 2X-10X, Feature Buy and Extra Bet.",
+    "sourceConflict": "Slots Launch calls lines Fixed; official JDB specification says 1024 Ways. Exact version distinguished from Magic Ace base.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming/magic-ace-wild-lock",
+    "partnerImage": "https://assets.slotslaunch.com/29686/magic-ace-wild-lock.jpg",
+    "partnerImageSha256": "f1684fb42890fd8b3ad9c1042354f59e58231e424f9f7626deb971161ed8e4a6",
+    "partnerImageMime": "image/webp",
+    "partnerAttribution": "Exact Slots Launch page identifies Magic Ace Wild Lock by JDB; valid downloaded WebP (despite .jpg URL) visibly displays MAGIC ACE WILD LOCK, not the base title.",
+    "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
+    "dedup": "All Game Markdown and Provider name/alias fields; Magic Ace WILD LOCK absent before intake, distinct from published Magic Ace base. Prior batch 124 explicitly noted separate official catalog title.",
     "decision": "captured-awaiting-publication"
   }
 }
