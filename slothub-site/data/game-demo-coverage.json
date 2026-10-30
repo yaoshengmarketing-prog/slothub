@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 814,
+  "gameCount": 815,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 696,
+    "available": 697,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sky-lanterns-cq9",
+      "name": "Sky Lanterns",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Sky Lanterns ID 146, RTP 96.01%, High volatility, overall 3000x maximum, WILD icons covering reels and description reward up to 1600x. US New York browser read-only guest Demo: initial black canvas then HTTP 200 matching Sky Lanterns branding, 5x3 reels, 50 Lines and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 146, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/146/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser black loading canvas settled to Sky Lanterns branding, 5x3 reels, 50 Lines and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/zdNYdfkK.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped mountain night sky background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/AUN4LME1.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Sky Lanterns"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/146/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Sky Lanterns ID 146, RTP 96.01%, High volatility, overall 3000x maximum, WILD icons covering reels and description reward up to 1600x. US New York browser read-only guest Demo: initial black canvas then HTTP 200 matching Sky Lanterns branding, 5x3 reels, 50 Lines and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "fa-cai-fu-wa-cq9",
       "name": "Fa Cai Fu Wa",
