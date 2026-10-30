@@ -1,0 +1,34 @@
+{
+  "batch": 161,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 2",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; Treasure Bowl X-Huge / 聚寶盆 X-Huge absent before intake. Old Treasure Bowl page not treated as an exact upgraded-version demo.",
+  "records": [
+    {
+      "order": 2,
+      "name": "Treasure Bowl X-Huge™",
+      "slug": "treasure-bowl-x-huge-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/treasure-bowl-x-huge",
+      "officialFacts": "Official English/CN detail: Slot, RTP 96.47%, LOW volatility, Maximum Win 1800X, 1 Line, release year 2019; X-Huge Giant Symbol, Feature Buy three-Wild connections, Extrabet Free Game trigger boost.",
+      "sourceConflict": "Slots Launch exact X-Huge URL 404; older Treasure Bowl page says 25 paylines and 2023, unlike official upgraded version 1 Line and 2019; not used as exact demo or image source. SlotCatalog old-name page mentions X-Huge but cannot prove same upgraded version.",
+      "image": {
+        "sourcePage": "https://www.jdbgaming.com/cn/games/slot/treasure-bowl-x-huge",
+        "sourceUrl": "https://www.jdbgaming.com/og_image/games/og-73-cn.jpg",
+        "retrievalProxy": "https://www-jdbgaming-com.translate.goog/og_image/games/og-73-cn.jpg?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=en",
+        "sha256": "d7c3e669dd2e2623de03387e6bb0428969633db23929fd60288f252682a28ec5",
+        "actualMime": "image/jpeg",
+        "visualCheck": "Official JDB Chinese X-Huge page OG image retrieved via Google Translate image proxy because direct JDB image bytes geo-block in this environment; JPEG visually shows matching gold bowl artwork. It is first-party image tied to exact X-Huge page."
+      },
+      "demo": "not-verified; exact X-Huge partner page 404, old Treasure Bowl page conflicts on layout and year, official Play destination untested."
+    }
+  ],
+  "nextCursor": "JDB catalog card 3 VOYAGE OF BLAST RAIDER X-LOCK™"
+}

@@ -1,10 +1,10 @@
 {
   "batch": 160,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 1",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Cyber Bounty WILD LOCK",
       "slug": "cyber-bounty-wild-lock-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/cyber-bounty-wild-lock",
       "officialFacts": "Official EN detail and CN catalog: Slot, RTP 96.5%, MEDIUM volatility, Maximum Win 15000X, 3600 Ways, release year 2026; WILD LOCK 3 rounds/spins, cascading wins, Golden Symbols to WILD/WILD LOCK, base multiplier X1024 and Extra Bet X4096, Feature Buy.",
       "sourceConflict": "Official feature label says three rounds and introduction says three spins; source wording preserved as three uses, without inventing a time model. Multiplier X4096 is distinct from maximum total win 15000X.",
@@ -29,5 +29,15 @@
       "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
     }
   ],
-  "nextCursor": "JDB catalog card 2 TREASURE BOWL X-HUGE™"
+  "nextCursor": "JDB catalog card 2 TREASURE BOWL X-HUGE™",
+  "publication": {
+    "commit": "9b64c72a9d89a317702de68d4ba472e135069b26",
+    "githubRun": 40982629041,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "8ca90081-d131-445b-8ade-19aa811031cf",
+    "cloudflareUrl": "https://8ca90081.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, WebP image and sitemap HTTP 200; official and exact Slots Launch platform URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

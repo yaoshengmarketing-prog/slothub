@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 722,
+  "gameCount": 723,
   "providerCount": 371,
-  "sourcePageCount": 1310,
+  "sourcePageCount": 1312,
   "counts": {
     "access-restricted": 4,
     "available": 624,
-    "not-verified": 94
+    "not-verified": 95
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,41 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "treasure-bowl-x-huge-jdb",
+      "name": "Treasure Bowl X-Huge™",
+      "provider": "jdb-gaming",
+      "status": "not-verified",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "note": "Slots Launch exact X-Huge URL 404; old Treasure Bowl page describes conflicting layout, and official Play destination not verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/treasure-bowl-x-huge",
+          "httpStatus": 200,
+          "notes": "Official JDB browser detail ledger and current web-indexed detail"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/cn/games/slot/treasure-bowl-x-huge",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/og_image/games/og-73-cn.jpg",
+          "httpStatus": 200,
+          "notes": "Retrieved JPEG bytes through Google Translate proxy; direct JDB image request returned HTML geo challenge"
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/treasure-bowl-x-huge",
+          "httpStatus": 404
+        },
+        {
+          "requestedUrl": "https://slotcatalog.com/en/slots/Treasure-Bowl-JDB",
+          "httpStatus": 200,
+          "notes": "Old title only; not exact upgraded version"
+        }
+      ]
+    },
     {
       "slug": "cyber-bounty-wild-lock-jdb",
       "name": "Cyber Bounty WILD LOCK",
