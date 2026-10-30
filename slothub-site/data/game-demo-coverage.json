@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 769,
+  "gameCount": 770,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 651,
+    "available": 652,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gu-gu-gu-3-cq9",
+      "name": "Gu Gu Gu 3",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Gu Gu Gu 3 ID 180, exact domain, RTP 96.04%, High volatility, overall 4000x maximum and Golden Egg local multiplier up to 200x. US New York browser read-only check: current guest-query /h5/180/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, Gu Gu Gu 3/243 WAYS branding, reels and RESPIN controls after about 40 seconds without login. TRY THE RESPIN FEATURE overlay was left intact; no spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 180, metrics and Golden Egg award"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/180/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; Gu Gu Gu 3/243 WAYS reels and RESPIN controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/LGpFkoBP.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped pond landscape background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/C7xS5WMw.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Gu Gu Gu 3"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/180/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Gu Gu Gu 3 ID 180, exact domain, RTP 96.04%, High volatility, overall 4000x maximum and Golden Egg local multiplier up to 200x. US New York browser read-only check: current guest-query /h5/180/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, Gu Gu Gu 3/243 WAYS branding, reels and RESPIN controls after about 40 seconds without login. TRY THE RESPIN FEATURE overlay was left intact; no spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "skrskr-cq9",
       "name": "SkrSkr",

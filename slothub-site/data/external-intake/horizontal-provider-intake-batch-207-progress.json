@@ -1,10 +1,10 @@
 {
   "batch": 207,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "skrskr-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "118",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 118: RTP 96.00%, High volatility, overall maximum_win 12150. Description states Wild doubles score on scoring line, five SC icons may grant Free Games and 200x award, and Turbo Wild activates Wild reel.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser: guest-query /h5/118/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; SkrSkr/243 WAYS branding, five reels and controls after about 40 seconds without login. No spin, bet or login action."
     }
   ],
-  "nextCursor": "After SkrSkr live closure, continue Gu Gu Gu 3 180 and 6 Toros 173, both US guest Demos verified. Kronos 154 geometry disagreement held for source review."
+  "nextCursor": "SkrSkr 118 live verified with official 12150x maximum, Wild/SC/Turbo Wild and US guest canvas. Continue Gu Gu Gu 3 180.",
+  "publication": {
+    "commit": "7d7f5971fe7c61a36d6af1380dc3eafe35496c91",
+    "githubRun": 41046409586,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "39802636-73f2-4494-864b-22cd45b31089",
+    "cloudflareUrl": "https://39802636.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

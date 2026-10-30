@@ -1,0 +1,31 @@
+{
+  "batch": 208,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Gu Gu Gu 3 / 金雞報囍3 (180) absent before intake.",
+  "records": [
+    {
+      "name": "Gu Gu Gu 3",
+      "slug": "gu-gu-gu-3-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "180",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 180: RTP 96.04%, High volatility, overall maximum_win 4000. Description says Golden Egg icon bonus multiplier up to 200x. US guest canvas labels 243 WAYS and RESPIN, not present in catalog description.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/LGpFkoBP.jpg",
+        "localPath": "public/assets/games/gu-gu-gu-3-cq9.jpg",
+        "sha256": "83a8d2255612549715b67b679cb919a929c8cf9a0d7f8816a5c6e38b549587ba",
+        "visualCheck": "Official 180 maps to pond landscape background; icon C7xS5WMw.png visibly spells Gu Gu Gu 3 over rooster."
+      },
+      "demo": "US New York browser: guest-query /h5/180/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; Gu Gu Gu 3/243 WAYS branding, reels and RESPIN controls after about 40 seconds without login. Informational overlay not dismissed; no spin, bet or login action."
+    }
+  ],
+  "nextCursor": "After Gu Gu Gu 3 live closure, continue 6 Toros 173 (US guest Demo verified). Kronos 154 geometry disagreement held for source review."
+}
