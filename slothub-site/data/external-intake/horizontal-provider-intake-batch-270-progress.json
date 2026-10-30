@@ -1,0 +1,31 @@
+{
+  "batch": 270,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Thor / 雷神 (89) absent.",
+  "records": [
+    {
+      "name": "Thor",
+      "slug": "thor-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "89",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 89: RTP 95.96%, High volatility, overall maximum_win 5000; WILD combination triggered free games and SCATTER rewards in free games. US guest canvas labels 243 WAYS.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/xrmFeJ8U.jpg",
+        "localPath": "public/assets/games/thor-cq9.jpg",
+        "sha256": "12071be6d67b7f5922a819348d7312e19530152f5d14ad7c5a2312ca7798cbbb",
+        "visualCheck": "Official ID 89 maps to blue starry background; matching title icon spells Thor."
+      },
+      "demo": "US browser guest-query /h5/89/?language=en&token=guest HTTP 200 with exact THOR canvas, 5x3 reels, 243 WAYS and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Thor live closure, continue Jumping Mobile ID105 (US exact guest Demo verified; official image/icon downloaded and visually checked), then inspect remaining held source conflicts individually."
+}
