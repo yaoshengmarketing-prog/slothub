@@ -1,0 +1,33 @@
+{
+  "batch": 156,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 43",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; Fortune Neko/幸運招財貓 absent before intake.",
+  "records": [
+    {
+      "order": 43,
+      "name": "Fortune Neko",
+      "slug": "fortune-neko-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/fortune-neko",
+      "officialFacts": "Official English/CN detail: Slot, RTP 95.99%, LOW volatility, Maximum Win 800X, 5 Lines, release year 2022; two identical axes, Respin of Fortune, Full Reel and Fortune Wheel.",
+      "sourceConflict": "No partner-only numeric or mechanics claims adopted; official data takes precedence.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/fortune-neko",
+        "sourceUrl": "https://assets.slotslaunch.com/29501/fortune-neko.jpg",
+        "sha256": "7507aa4b8e49ac7447135c4d2c570753ff08037b70c7359f451a039499945008",
+        "actualMime": "image/webp",
+        "visualCheck": "Exact Slots Launch page identifies Fortune Neko by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays FORTUNE NEKO title."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 44 WINNING MASK"
+}

@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-42 imported. Next individual candidate is card 43 FORTUNE NEKO. Cards 1-10 and 43-46 remain.",
-  "nextStep": "After card 42 publication loop, continue card 43 FORTUNE NEKO using official details ledger, exact image and Demo checks.",
-  "publishedCount": 31,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-43 imported. Next individual candidate is card 44 WINNING MASK. Cards 1-10 and 44-46 remain.",
+  "nextStep": "After card 43 publication loop, continue card 44 WINNING MASK using official details ledger, exact image and Demo checks.",
+  "publishedCount": 32,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -606,6 +606,21 @@
     "partnerAttribution": "Exact Slots Launch page identifies Caishen Coming by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays CAISHEN COMING title and conflicting 4700X text. Discrepancy disclosed on page; game identity is exact.",
     "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
     "dedup": "All Game Markdown and Provider name/alias fields; Caishen Coming/天降財神 absent before intake.",
+    "decision": "published-live-verified"
+  },
+  "card43Evidence": {
+    "name": "FORTUNE NEKO",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/fortune-neko",
+    "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/fortune-neko",
+    "officialFacts": "Official English/CN detail: Slot, RTP 95.99%, LOW volatility, Maximum Win 800X, 5 Lines, release year 2022; two identical axes, Respin of Fortune, Full Reel and Fortune Wheel.",
+    "sourceConflict": "No partner-only numeric or mechanics claims adopted; official data takes precedence.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming/fortune-neko",
+    "partnerImage": "https://assets.slotslaunch.com/29501/fortune-neko.jpg",
+    "partnerImageSha256": "7507aa4b8e49ac7447135c4d2c570753ff08037b70c7359f451a039499945008",
+    "partnerImageMime": "image/webp",
+    "partnerAttribution": "Exact Slots Launch page identifies Fortune Neko by JDB Gaming; downloaded valid WebP (despite .jpg URL) visibly displays FORTUNE NEKO title.",
+    "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
+    "dedup": "All Game Markdown and Provider name/alias fields; Fortune Neko/幸運招財貓 absent before intake.",
     "decision": "captured-awaiting-publication"
   }
 }

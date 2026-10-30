@@ -1,10 +1,10 @@
 {
   "batch": 155,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 42",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Caishen Coming",
       "slug": "caishen-coming-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/caishen-coming",
       "officialFacts": "Official English/CN detail: Slot, RTP 96.43%, MEDIUM volatility, Maximum Win 4200X, exact unusual string 2025~32400 Ways, release year 2023; Double Wild, double elimination and Caishen multiplier.",
       "sourceConflict": "Exact Slots Launch image prints 4700X while official maximum is 4200X. Image still has exact CAISHEN COMING title and page attributes JDB; site summary/alt and intake explicitly flag mismatch. Partner-only Scatter/free-spin/pick bonus claims excluded. Official data takes precedence.",
@@ -29,5 +29,15 @@
       "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
     }
   ],
-  "nextCursor": "JDB catalog card 43 FORTUNE NEKO"
+  "nextCursor": "JDB catalog card 43 FORTUNE NEKO",
+  "publication": {
+    "commit": "5f2923ba5492bcf4dbfdc8fa6df2d26ca79b1733",
+    "githubRun": 40980848831,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "27a76b27-9cb7-4447-9f5f-82238292a784",
+    "cloudflareUrl": "https://27a76b27.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, WebP image and sitemap HTTP 200; official and exact Slots Launch platform URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
