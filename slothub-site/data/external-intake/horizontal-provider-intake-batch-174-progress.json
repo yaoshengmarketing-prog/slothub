@@ -1,0 +1,32 @@
+{
+  "batch": 174,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "CQ9 official Slot catalog continuation with matching independent official news and catalog metrics",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Golden Horus / 黃金荷魯斯 (game ID CP4) absent before intake.",
+  "records": [
+    {
+      "name": "Golden Horus",
+      "slug": "golden-horus-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "CP4",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/news/detail/1343",
+      "officialFacts": "Official catalog and news agree: Slot, RTP 97.07%, High volatility, global maximum 6000x. Catalog describes cascades, random reel multiplier up to 500x, Free Spins multiplier accumulation and Twin Falcons.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/OzjyAdPi.png",
+        "localPath": "public/assets/games/golden-horus-cq9.png",
+        "sha256": "1c24a72f2e95e43573cedbed456424dcd86c2fdd92fcd7b4b2b3abf2471de9c8",
+        "visualCheck": "Official CP4 record maps to blue/gold Horus background; official icon hiJ3zcIV.png visibly spells GOLDEN HORUS."
+      },
+      "demo": "Official catalog modal did not expose independently verified playable href; status not-verified."
+    }
+  ],
+  "nextCursor": "After Golden Horus live closure, continue official CQ9 Slot catalog; Wizard's Wizard (CP3) and Mahjong Break (CP1) are next high-evidence candidates. Retain Sung Wukong source-conflict review queue."
+}
