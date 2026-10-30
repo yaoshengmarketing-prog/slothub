@@ -1,0 +1,31 @@
+{
+  "batch": 195,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Floating Market / 這市集絕了 (220) absent before intake.",
+  "records": [
+    {
+      "name": "Floating Market",
+      "slug": "floating-market-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "220",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 220: RTP 96.15%, High volatility, overall maximum_win 20000. Official description says winning combinations eliminate until no further wins, Free Games Wild multipliers and local 100x reward; feature value is distinct from overall maximum.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/enZOqksZ.jpg",
+        "localPath": "public/assets/games/floating-market-cq9.jpg",
+        "sha256": "d0ad3c09ec0fc257cfe8fa71ad8956cd2bd565232e4c0d8cbb08348c154dd7ce",
+        "visualCheck": "Official 220 maps to floating-market canal background; icon zaGqaVxt.png visibly spells Floating Market."
+      },
+      "demo": "US New York browser: bare current /h5/220/ HTTP 200 Welcome title, splash/loading only after 40 sec; current guest-query HTTP 200 same final URL, exact Floating Market reels and controls without login. Direct Demo available externally; no spin, bet or login."
+    }
+  ],
+  "nextCursor": "After Floating Market live closure, continue next uncollected CQ9 Slot; preserve Sung Wukong/Sugar Combo metric conflict queue."
+}

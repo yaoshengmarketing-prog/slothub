@@ -1,10 +1,10 @@
 {
   "batch": 194,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "mr-miser-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "225",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 225: RTP 96.12%, High volatility, overall maximum_win 3000. Official description gives variable reel height 3-6, up to 7776 ways to win, cascading 10x extra and gold-symbol mechanic on reels 2-4.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser: exact catalog /h5/225/ HTTP 200, title Mr. Miser, splash/loading only after ~40 sec; guest-query HTTP 200 but final URL canonicalized to bare /h5/225/, still splash only. No reels/controls, login, 403 or 404. Demo not-verified; no spin, bet or login."
     }
   ],
-  "nextCursor": "After Mr. Miser live closure, continue next uncollected CQ9 Slot; preserve Sung Wukong/Sugar Combo metric conflict queue."
+  "nextCursor": "Mr. Miser 225 live verified with official 7776 Ways; US bare and guest-query routes load splash only, Demo not-verified and no guest link published. Continue Floating Market 220: official catalog and exact image/icon checked; US browser guest check pending.",
+  "publication": {
+    "commit": "b77684756473eed7541d34a260f36fdbd73fb067",
+    "githubRun": 41026008419,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "baba2a3f-d08a-49d8-a17f-2194dcc61807",
+    "cloudflareUrl": "https://baba2a3f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max present; unverified guest Demo absent; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

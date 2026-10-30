@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 756,
+  "gameCount": 757,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 638,
+    "available": 639,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,47 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "floating-market-cq9",
+      "name": "Floating Market",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Floating Market ID 220, exact domain, metrics and features. Same-browser US New York read-only check: current guest-query /h5/220/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, exact Floating Market reels and visible controls without login. Bare /h5/220/ HTTP 200, Welcome title but CQ9 splash/loading only after 40 seconds. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog card ID 220; metrics and cascading/free games features"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/220/",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; CQ9 splash/loading only after 40 seconds"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/220/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; exact Floating Market reels and controls without login; no gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/enZOqksZ.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped market canal background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/zaGqaVxt.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Floating Market"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/220/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Floating Market ID 220, exact domain, metrics and features. Same-browser US New York read-only check: current guest-query /h5/220/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, exact Floating Market reels and visible controls without login. Bare /h5/220/ HTTP 200, Welcome title but CQ9 splash/loading only after 40 seconds. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "mr-miser-cq9",
       "name": "Mr. Miser",
