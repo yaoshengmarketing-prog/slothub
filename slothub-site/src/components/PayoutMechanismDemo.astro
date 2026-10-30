@@ -1,0 +1,164 @@
+---
+import { PAYOUT_CASES, PAYOUT_RULES, getPayoutView } from '../lib/payout-mechanism-demo.mjs';
+const first = getPayoutView();
+---
+<section class="payout-demo" id="payout-mechanism-demo" aria-labelledby="payout-demo-title" data-payout-demo data-case="aligned" data-mechanism="paylines">
+  <header class="payout-heading">
+    <h3 id="payout-demo-title">賠線與 Ways：組合怎麼判定？</h3>
+    <p>切換兩套示例規則，看看同一盤面會判讀哪些位置。</p>
+    <p class="payout-disclaimer">本站概念示意，非特定遊戲實際畫面；成立條件依下方示例設定，實際遊戲請看個別規則。</p>
+    <p class="payout-target-note">本例只判讀<strong>圓形</strong>；其他幾何符號僅作背景，不參與判定。</p>
+  </header>
+  <div class="payout-case-control" hidden>
+    <label for="payout-case">固定案例</label>
+    <select id="payout-case" aria-label="固定案例">
+      {PAYOUT_CASES.map((item, index) => <option value={item.id}>案例 {index + 1}：{item.label}</option>)}
+    </select>
+    <span>換案例才換盤面；切換機制不移動符號。</span>
+  </div>
+  <div class="payout-layout">
+    <figure>
+      <svg class="payout-board" viewBox="0 0 500 340" role="img" aria-labelledby="payout-board-title payout-board-description">
+        <title id="payout-board-title">五軸三列固定示例盤面</title>
+        <desc id="payout-board-description">{first.description}。{first.rule} {first.result}：{first.reason}</desc>
+        {Array.from({ length: 5 }, (_, reel) => <text class="payout-axis" x={reel * 100 + 50} y="24" text-anchor="middle">第 {reel + 1} 軸</text>)}
+        {first.board.map((_, cell) => <rect class="payout-cell" x={(cell % 5) * 100 + 4} y={Math.floor(cell / 5) * 100 + 39} width="92" height="92" rx="10" />)}
+        <g class="payout-reel-marks" aria-hidden="true">
+          {Array.from({ length: 3 }, (_, reel) => <g data-reel={reel} data-missing="false" data-hidden="true">
+            <rect x={reel * 100 + 2} y="37" width="96" height="296" rx="12" />
+            <path class="payout-gap" d={`M${reel * 100 + 41} 44l18 18m-18 0 18-18`} />
+          </g>)}
+        </g>
+        <line class="payout-route" x1="2" y1="185" x2="498" y2="185" aria-hidden="true" data-hidden="false" />
+        <g aria-hidden="true">
+          {first.board.map((shape, cell) => <g data-cell={cell} data-shape={shape} data-read={String(first.readCells.includes(cell))} data-target={String(first.targets.includes(cell))} transform={`translate(${(cell % 5) * 100},${Math.floor(cell / 5) * 100 + 35})`}>
+            <rect class="payout-read" x="10" y="10" width="80" height="80" rx="7" />
+            <rect class="payout-symbol-mark" x="16" y="16" width="68" height="68" rx="5" />
+            <circle data-symbol="circle" data-hidden={String(shape !== 'circle')} class="payout-symbol circle" cx="50" cy="50" r="24" />
+            <rect data-symbol="square" data-hidden={String(shape !== 'square')} class="payout-symbol square" x="28" y="28" width="44" height="44" rx="3" />
+            <path data-symbol="triangle" data-hidden={String(shape !== 'triangle')} class="payout-symbol triangle" d="M50 24 77 73H23Z" />
+            <path data-symbol="diamond" data-hidden={String(shape !== 'diamond')} class="payout-symbol diamond" d="m50 20 28 30-28 30-28-30Z" />
+          </g>)}
+        </g>
+      </svg>
+      <figcaption class="payout-legend">虛線是本例賠線；小框為前三軸線上判讀位置，雙框標出其中的圓形。</figcaption>
+    </figure>
+    <div class="payout-explanation">
+      <fieldset class="payout-mode-control" hidden>
+        <legend>切換示例規則</legend>
+        <div>{PAYOUT_RULES.map((item, index) => <label><input type="radio" name="payout-mechanism" value={item.id} checked={index === 0} /><span>{item.label}</span></label>)}</div>
+      </fieldset>
+      <div class="payout-result" role="status" aria-live="polite" aria-atomic="true">
+        <p class="payout-context">{first.label} · {PAYOUT_CASES[0].label}</p>
+        <strong class="payout-verdict">{first.result}</strong>
+        <p class="payout-reason">{first.reason}</p>
+      </div>
+      <div class="payout-rules" aria-label="兩套示例規則">
+        {PAYOUT_RULES.map((item) => <section data-rule={item.id} data-active={String(item.id === first.mechanism)}><h4>{item.label}</h4><p>{item.rule}</p></section>)}
+      </div>
+      <details class="payout-static">
+        <summary>查看三個案例的條件對照</summary>
+        <table><caption>只依本例兩套規則判定</caption><thead><tr><th scope="col">案例</th><th scope="col">賠線</th><th scope="col">Ways</th></tr></thead><tbody>
+          {PAYOUT_CASES.map((item) => <tr><th scope="row">{item.label}</th><td>{getPayoutView(item.id, 'paylines').matches ? '符合' : '未符合'}</td><td>{getPayoutView(item.id, 'ways-to-win').matches ? '符合' : '未符合'}</td></tr>)}
+        </tbody></table>
+      </details>
+      <noscript><p class="payout-no-script">目前顯示「中間列對齊」的靜態盤面：前三軸中間列均為圓形，符合兩套本例條件。可閱讀上方規則與案例對照，原有教學及遊戲探索入口仍可使用。</p></noscript>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { getPayoutView } from '../lib/payout-mechanism-demo.mjs';
+  document.querySelectorAll<HTMLElement>('[data-payout-demo]').forEach((root) => {
+    if (root.dataset.ready) return;
+    const cases = root.querySelector<HTMLSelectElement>('#payout-case');
+    const caseControl = root.querySelector<HTMLElement>('.payout-case-control');
+    const modes = root.querySelector<HTMLFieldSetElement>('.payout-mode-control');
+    if (!cases || !caseControl || !modes) return;
+    const render = () => {
+      const mechanism = modes.querySelector<HTMLInputElement>('input:checked')!.value;
+      const view = getPayoutView(cases.value, mechanism);
+      root.dataset.case = cases.value;
+      root.dataset.mechanism = mechanism;
+      root.querySelectorAll<SVGGElement>('[data-cell]').forEach((node) => {
+        const cell = Number(node.dataset.cell);
+        node.dataset.shape = view.board[cell];
+        node.dataset.read = String(view.readCells.includes(cell));
+        node.dataset.target = String(view.targets.includes(cell));
+        node.querySelectorAll<SVGElement>('[data-symbol]').forEach((symbol) => { symbol.dataset.hidden = String(symbol.dataset.symbol !== view.board[cell]); });
+      });
+      root.querySelector<SVGElement>('.payout-route')!.dataset.hidden = String(mechanism !== 'paylines');
+      root.querySelectorAll<SVGGElement>('[data-reel]').forEach((node) => {
+        node.dataset.hidden = String(mechanism !== 'ways-to-win');
+        node.dataset.missing = String(view.missingReels.includes(Number(node.dataset.reel)));
+      });
+      root.querySelector('#payout-board-description')!.textContent = `${view.description}。${view.rule} ${view.result}：${view.reason}`;
+      root.querySelector('.payout-context')!.textContent = `${view.label} · ${view.caseLabel}`;
+      root.querySelector('.payout-verdict')!.textContent = view.result;
+      root.querySelector('.payout-reason')!.textContent = view.reason;
+      root.querySelector('.payout-legend')!.textContent = mechanism === 'paylines'
+        ? '虛線是本例賠線；小框為前三軸線上判讀位置，雙框標出其中的圓形。'
+        : '直框標示前三個相鄰轉輪，雙框標出判讀範圍內圓形；虛框與叉號表示該軸缺少圓形，並非另一條賠線。';
+      root.querySelectorAll<HTMLElement>('[data-rule]').forEach((node) => { node.dataset.active = String(node.dataset.rule === mechanism); });
+    };
+    cases.addEventListener('change', render);
+    modes.addEventListener('change', render);
+    render();
+    root.dataset.ready = 'true';
+    caseControl.hidden = false;
+    modes.hidden = false;
+  });
+</script>
+
+<style>
+  .payout-demo { margin-top: 28px; padding: clamp(18px, 3vw, 32px); border: 1px solid #d8dde6; border-radius: 17px; background: white; color: var(--navy); scroll-margin-top: 90px; }
+  .payout-heading h3 { margin: 0; font: 850 clamp(1.3rem, 2.2vw, 1.8rem)/1.35 "Aptos Display", "Noto Sans TC", sans-serif; }
+  .payout-heading p { margin: 10px 0 0; line-height: 1.65; }
+  .payout-disclaimer { padding-left: 12px; border-left: 3px solid var(--signal); color: var(--muted); font-size: .8rem; }
+  .payout-target-note { font-size: .85rem; }
+  .payout-case-control { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 24px; font-size: .85rem; }
+  .payout-case-control label { font-weight: 800; }
+  .payout-case-control select { max-width: 100%; min-height: 44px; padding: 9px; border: 1px solid var(--navy); border-radius: 8px; background: white; color: var(--navy); font: inherit; }
+  .payout-case-control span { color: var(--muted); font-size: .78rem; }
+  .payout-layout { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); align-items: start; gap: clamp(24px, 4vw, 42px); margin-top: 22px; }
+  figure { min-width: 0; margin: 0; }
+  .payout-board { display: block; width: 100%; height: auto; max-width: 520px; margin: auto; }
+  .payout-cell { fill: #eef1f6; stroke: #d8dde6; }
+  .payout-axis { fill: var(--navy); font: 700 20px sans-serif; }
+  .payout-route { stroke: var(--navy); stroke-width: 3; stroke-dasharray: 8 6; }
+  .payout-reel-marks rect { fill: none; stroke: var(--navy); stroke-width: 3; }
+  .payout-reel-marks [data-missing="true"] rect { stroke-dasharray: 8 6; }
+  .payout-gap { display: none; fill: none; stroke: var(--navy); stroke-width: 3; }
+  .payout-reel-marks [data-missing="true"] .payout-gap { display: block; }
+  .payout-read, .payout-symbol-mark { fill: none; stroke: var(--navy); stroke-width: 2; visibility: hidden; }
+  .payout-demo[data-mechanism="paylines"] [data-cell][data-read="true"] .payout-read, [data-cell][data-target="true"] .payout-read, [data-cell][data-target="true"] .payout-symbol-mark { visibility: visible; }
+  .payout-board [data-hidden="true"] { display: none; }
+  .payout-symbol { stroke: var(--navy); stroke-width: 2; }
+  .circle { fill: var(--signal); } .square { fill: var(--lime); } .triangle { fill: var(--navy); } .diamond { fill: var(--sky); }
+  figcaption { margin-top: 12px; font-size: .78rem; color: var(--muted); line-height: 1.65; }
+  .payout-explanation { min-width: 0; }
+  .payout-mode-control { min-width: 0; padding: 0; margin: 0; border: 0; }
+  .payout-mode-control legend { margin-bottom: 8px; font-size: .8rem; font-weight: 800; }
+  .payout-mode-control > div { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .payout-mode-control label { display: flex; align-items: center; justify-content: center; gap: 7px; min-height: 44px; padding: 8px 6px; border: 1px solid var(--navy); border-radius: 8px; font-size: .85rem; font-weight: 750; cursor: pointer; }
+  .payout-mode-control label:has(input:checked) { border-width: 2px; background: var(--sky); }
+  .payout-mode-control input { margin: 0; accent-color: var(--navy); }
+  .payout-mode-control label:has(input:focus-visible), select:focus-visible, summary:focus-visible { outline: 3px solid var(--signal); outline-offset: 4px; }
+  .payout-result { margin: 18px 0; padding: 14px; border-left: 3px solid var(--navy); background: var(--soft); }
+  .payout-context { margin: 0 0 7px; font-size: .78rem; font-weight: 750; }
+  .payout-verdict { display: block; font-size: 1.1rem; }
+  .payout-reason { margin: 8px 0 0; line-height: 1.7; font-size: .9rem; }
+  .payout-rules section { padding: 12px 0; border-top: 1px solid #d8dde6; }
+  .payout-rules h4 { margin: 0; font-size: .85rem; }
+  .payout-rules [data-active="true"] h4 { text-decoration: underline; text-underline-offset: 4px; }
+  .payout-rules p { margin: 6px 0 0; font-size: .8rem; line-height: 1.7; }
+  .payout-static { margin-top: 10px; border-top: 1px solid #d8dde6; padding-top: 14px; font-size: .8rem; line-height: 1.7; }
+  summary { font-weight: 750; cursor: pointer; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; table-layout: fixed; }
+  th, td { padding: 7px 4px; border-bottom: 1px solid #d8dde6; text-align: left; overflow-wrap: anywhere; }
+  caption, .payout-no-script { color: var(--muted); font-size: .78rem; line-height: 1.65; }
+  .payout-case-control[hidden], .payout-mode-control[hidden] { display: none; }
+  @media(max-width:700px) { .payout-layout { grid-template-columns: minmax(0, 1fr); gap: 18px; } .payout-case-control { display: grid; gap: 7px; } .payout-case-control select { width: 100%; } }
+  @media(prefers-reduced-motion:reduce) { .payout-board * { animation: none; transition: none; } }
+  @media(forced-colors:active) { .payout-demo, .payout-result, .payout-mode-control label { background: Canvas; color: CanvasText; border-color: CanvasText; } .payout-cell { fill: Canvas; stroke: CanvasText; } .payout-axis { fill: CanvasText; } .payout-symbol { fill: CanvasText; stroke: CanvasText; } .payout-route, .payout-reel-marks rect, .payout-gap, .payout-read, .payout-symbol-mark { stroke: CanvasText; } }
+</style>
