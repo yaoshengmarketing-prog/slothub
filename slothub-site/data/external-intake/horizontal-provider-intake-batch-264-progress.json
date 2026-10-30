@@ -1,10 +1,10 @@
 {
   "batch": 264,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "wanbao-dino-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "70",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 70: RTP 96.07%, High volatility, overall maximum_win 3000; volcano free games, up to 300x local reward, WILD conversion and doubled score. US guest canvas labels 25 LINES.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US browser guest-query /h5/70/?language=en&token=guest HTTP 200 with exact WANBAO DINO canvas, 5x3 reels, 25 LINES and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Wanbao Dino live closure, continue Happy Rich Year ID72 (US exact guest Demo verified; official image/icon downloaded and visually checked), then Treasure Bowl ID74. Held source conflicts remain."
+  "nextCursor": "Wanbao Dino 70 live verified; continue Happy Rich Year 72.",
+  "publication": {
+    "commit": "f1f04be934092092d826d78a304a140df1db116b",
+    "githubRun": 41077348192,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "82298c5e-bb00-4dce-9a3f-ebe7908c7bc0",
+    "cloudflareUrl": "https://82298c5e.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
