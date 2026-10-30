@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 725,
+  "gameCount": 726,
   "providerCount": 371,
-  "sourcePageCount": 1316,
+  "sourcePageCount": 1319,
   "counts": {
     "access-restricted": 4,
     "available": 625,
-    "not-verified": 96
+    "not-verified": 97
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,38 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-golden-markhor-jdb",
+      "name": "The Golden Markhor",
+      "provider": "jdb-gaming",
+      "status": "not-verified",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "JDB official detail/news/art identify The Golden Markhor. Slots Launch exact JDB listing says Coming Soon.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/the-golden-markhor",
+          "httpStatus": 200,
+          "notes": "Official JDB Browser Use detail ledger; direct local request geo-restricted"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/news/games/the-golden-markhor",
+          "httpStatus": 200,
+          "notes": "Official English announcement and game mechanics"
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming",
+          "httpStatus": 200,
+          "notes": "Exact title/provider listed Coming Soon; not a demo"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/upload_image/gamesCoverOne/gamesCoverOne_2075f843f03ec6dae4567985ce54bc7d.jpg",
+          "httpStatus": 200,
+          "notes": "Valid JPEG bytes via recorded Google Translate image proxy"
+        }
+      ]
+    },
     {
       "slug": "pinata-bon-jdb",
       "name": "Pinata BON",

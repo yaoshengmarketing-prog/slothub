@@ -1,0 +1,37 @@
+{
+  "batch": 164,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 5",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; The Golden Markhor/黃金靈羊 absent before intake.",
+  "records": [
+    {
+      "order": 5,
+      "name": "THE GOLDEN MARKHOR",
+      "slug": "the-golden-markhor-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/the-golden-markhor",
+      "officialNews": "https://www.jdbgaming.com/en/news/games/the-golden-markhor",
+      "officialFacts": "JDB official detail: RTP 96.5%, LOW volatility, Maximum Win 13000X, 1 Line, release year 2026. Official English news: number symbols connect on reels 1-3, reel 4 multipliers, respins or bonus trigger, bonus reel up to three plays/layers, Feature Buy.",
+      "partnerPage": "https://slotslaunch.com/jdb-gaming",
+      "partnerEvidence": "Slots Launch provider catalog shows exact The Golden Markhor by JDB under Upcoming and Coming Soon; BC.Game indexed exact title/provider with 96.5%, low volatility, 13000X.",
+      "image": {
+        "sourcePage": "https://www.jdbgaming.com/en/games/slot/the-golden-markhor",
+        "sourceUrl": "https://www.jdbgaming.com/upload_image/gamesCoverOne/gamesCoverOne_2075f843f03ec6dae4567985ce54bc7d.jpg",
+        "retrievalProxy": "https://www-jdbgaming-com.translate.goog/upload_image/gamesCoverOne/gamesCoverOne_2075f843f03ec6dae4567985ce54bc7d.jpg?_x_tr_sl=en&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN",
+        "detailImage": "https://www.jdbgaming.com/upload_image/games/games_d07a775caf6353a869f70d8edc20e5bc.jpg",
+        "sha256": "114b4cc82427bbed36257ea5ef5edfb40cefa8076f160fdba2f20191be946437",
+        "actualMime": "image/jpeg",
+        "visualCheck": "JDB official card and detail JPEG images inspected: both display same gold markhor with curled horns. First-party card image bytes retrieved through Google Translate public image proxy due direct JDB geo restriction."
+      },
+      "demo": "Slots Launch labels exact title Coming Soon; BC.Game exact listing is not proof of an anonymously playable demo; not-verified."
+    }
+  ],
+  "nextCursor": "JDB catalog card 6 VOYAGE OF DARING QUEEN X-LOCK™"
+}

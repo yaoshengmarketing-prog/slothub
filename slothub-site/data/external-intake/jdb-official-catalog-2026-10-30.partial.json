@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 and 1-4 imported. Next individual candidate is card 5. Cards 5-10 remain.",
-  "nextStep": "After card 4 publication loop, continue card 5 from JDB official details ledger and independently check image and demo.",
-  "publishedCount": 39,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 and 1-5 imported. Next individual candidate is card 6 VOYAGE OF DARING QUEEN X-LOCK™. Cards 6-10 remain.",
+  "nextStep": "After card 5 publication loop, continue card 6 from JDB official details ledger; check exact title, image and Demo.",
+  "publishedCount": 40,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -726,6 +726,22 @@
     "imageAttribution": "JDB official detail and card images share the same goggles-wearing woman holding a rainbow piñata; both downloaded as valid JPEG and inspected. First-party card image was obtained through Google Translate public image proxy because direct JDB asset is geo-restricted.",
     "demo": "No confirmed anonymous exact-game playable demo; marked not-verified.",
     "dedup": "All Game Markdown and Provider name/alias fields; Pinata BON absent before intake. Slots Launch Pinata Bum is not assumed the same game.",
+    "decision": "published-live-verified"
+  },
+  "card5Evidence": {
+    "name": "THE GOLDEN MARKHOR",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/the-golden-markhor",
+    "officialNews": "https://www.jdbgaming.com/en/news/games/the-golden-markhor",
+    "officialChineseNews": "https://www.jdbgaming.com/cn/news/games/the-golden-markhor",
+    "officialFacts": "JDB official detail: RTP 96.5%, LOW volatility, Maximum Win 13000X, 1 Line, release year 2026. Official English news: number symbols connect on reels 1-3, reel 4 multipliers, respins or bonus trigger, bonus reel up to three plays/layers, Feature Buy.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming",
+    "partnerEvidence": "Slots Launch provider catalog shows exact The Golden Markhor by JDB under Upcoming and Coming Soon; BC.Game indexed exact title/provider with 96.5%, low volatility, 13000X.",
+    "officialImage": "https://www.jdbgaming.com/upload_image/gamesCoverOne/gamesCoverOne_2075f843f03ec6dae4567985ce54bc7d.jpg",
+    "officialImageSha256": "114b4cc82427bbed36257ea5ef5edfb40cefa8076f160fdba2f20191be946437",
+    "officialImageMime": "image/jpeg",
+    "imageAttribution": "JDB official card and detail JPEG images inspected: both display same gold markhor with curled horns. First-party card image bytes retrieved through Google Translate public image proxy due direct JDB geo restriction.",
+    "demo": "Slots Launch labels exact title Coming Soon; BC.Game exact listing is not proof of an anonymously playable demo; not-verified.",
+    "dedup": "All Game Markdown and Provider name/alias fields; The Golden Markhor/黃金靈羊 absent before intake.",
     "decision": "captured-awaiting-publication"
   }
 }

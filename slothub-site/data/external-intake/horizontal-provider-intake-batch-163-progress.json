@@ -1,10 +1,10 @@
 {
   "batch": 163,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 4",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "PINATA BON",
       "slug": "pinata-bon-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/pinata-bon",
       "officialFacts": "JDB official card/detail: RTP 96.5%, MEDIUM volatility, Maximum Win 6800X, 20 Lines, release year 2026; cascading wins, Golden Symbols on reels 2-4 with X2-X100 multipliers and symbol upgrade, 3+ Scatters for at least 15 Free Games, up to three symbol types upgraded.",
       "partnerPage": "https://bc.game/game/pinata-bon-by-jdb",
@@ -33,5 +33,15 @@
       "demo": "No confirmed anonymous exact-game playable demo; marked not-verified."
     }
   ],
-  "nextCursor": "JDB catalog card 5"
+  "nextCursor": "JDB catalog card 5",
+  "publication": {
+    "commit": "69b639894ad28a19f062adab13385e4dd1a1130b",
+    "githubRun": 40984005229,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "7b22e17d-43f7-41a7-9701-c9172f6a7f17",
+    "cloudflareUrl": "https://7b22e17d.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPEG image and sitemap HTTP 200; official and official English and Chinese URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
