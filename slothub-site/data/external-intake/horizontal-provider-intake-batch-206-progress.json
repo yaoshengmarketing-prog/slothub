@@ -1,0 +1,31 @@
+{
+  "batch": 206,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 5 God beasts / 東方神起 (117) absent before intake.",
+  "records": [
+    {
+      "name": "5 God beasts",
+      "slug": "5-god-beasts-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "117",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 117: RTP 96.04%, Low volatility, overall maximum_win 3000. Description states 243 Ways, five-level achievement, collect Wild to upgrade payout symbols, and upward expanding symbols in Free Games.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/txbQzOrK.jpg",
+        "localPath": "public/assets/games/5-god-beasts-cq9.jpg",
+        "sha256": "4556269fbc2109160a79514cea79b89ea4d3eb56cd38c47cf18005dc04f243a4",
+        "visualCheck": "Official 117 maps to blue starry background; icon NRqQo6b0.png visibly spells 5 God Beasts."
+      },
+      "demo": "US New York browser: guest-query /h5/117/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; 5 God Beasts/243 Ways branding, 5x3 reels and controls after 40 seconds without login. No spin, bet or login action."
+    }
+  ],
+  "nextCursor": "After 5 God beasts live closure, reconcile Kronos 154 official 4x3 reel wording against US browser five-column report; then continue other uncollected CQ9 Slots. Preserve source disagreement without guessing."
+}
