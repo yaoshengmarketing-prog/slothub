@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 774,
+  "gameCount": 775,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 656,
+    "available": 657,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "all-star-team-cq9",
+      "name": "All Star Team",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies All Star Team ID 98, RTP 96.09%, Medium volatility, overall 3000x maximum and 243 Ways with teammate/Free Game round selection and local random winning-line multiplier up to 30x. US New York browser read-only guest Demo: HTTP 200, unchanged final URL; matching All Star Team branding, 5x3 reels and controls after about 40 seconds, no login. No spin, bet, feature selection or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 98, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/98/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser matching brand, 5x3 reels and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/FHq1qiM5.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped stadium background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/Okh58PC3.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells All Star Team"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/98/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies All Star Team ID 98, RTP 96.09%, Medium volatility, overall 3000x maximum and 243 Ways with teammate/Free Game round selection and local random winning-line multiplier up to 30x. US New York browser read-only guest Demo: HTTP 200, unchanged final URL; matching All Star Team branding, 5x3 reels and controls after about 40 seconds, no login. No spin, bet, feature selection or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "disconight-cq9",
       "name": "DiscoNight",
