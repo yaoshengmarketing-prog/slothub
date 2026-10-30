@@ -2,7 +2,7 @@
 
 核對日期：2026-10-30。來源：[CQ9 官方遊戲目錄](https://site.cq9gaming.com/en/games)；完整逐款來源網址、圖片網址與原始敘述保存在 [`cq9-official-catalog-2026-10-30.json`](./cq9-official-catalog-2026-10-30.json)。
 
-官方目錄共 141 個產品：Slot（官方 type=1）122 款，其他官方類型共 19 款（type=2 六款、type=3 三款、type=4 十款）。本清單列出全部 141 個不重複 Game ID。Slot Hub 目前已有 46 款 CQ9 Slot 詳細頁，其餘 76 款 Slot 待逐款查核、配圖、驗證與發布；非 Slot 產品先保留完整官方名單與數值，不混入 Slot 新增數。141 款皆保存官方圖示及背景圖 URL；2026-10-30 逐一讀取全部 141 張背景圖、141 張圖示和 141 個遊戲入口，結果與 SHA256 見 [`cq9-all-product-asset-audit-2026-10-30.json`](./cq9-all-product-asset-audit-2026-10-30.json)。全部圖檔格式有效、入口 HTTP 200；其中 102 個入口仍顯示通用 Welcome 標題，HTTP 200 不等於 Demo 可玩。官網未列的 RTP、波動或最高倍數維持缺值，不做推算。目錄數值是 CQ9 官方當日快照，不表示所有款式已完成本站收錄或 Demo 核對。
+官方目錄共 141 個產品：Slot（官方 type=1）122 款，其他官方類型共 19 款（type=2 六款、type=3 三款、type=4 十款）。本清單列出全部 141 個不重複 Game ID。Slot Hub 目前已有 47 款 CQ9 Slot 詳細頁，其餘 75 款 Slot 待逐款查核、配圖、驗證與發布；非 Slot 產品先保留完整官方名單與數值，不混入 Slot 新增數。141 款皆保存官方圖示及背景圖 URL；2026-10-30 逐一讀取全部 141 張背景圖、141 張圖示和 141 個遊戲入口，結果與 SHA256 見 [`cq9-all-product-asset-audit-2026-10-30.json`](./cq9-all-product-asset-audit-2026-10-30.json)。全部圖檔格式有效、入口 HTTP 200；其中 102 個入口仍顯示通用 Welcome 標題，HTTP 200 不等於 Demo 可玩。官網未列的 RTP、波動或最高倍數維持缺值，不做推算。目錄數值是 CQ9 官方當日快照，不表示所有款式已完成本站收錄或 Demo 核對。
 
 官方目錄的 `nameTw` 若是「API處尚未建立遊戲.」，本表改列 `nameCn` 作原文參考；繁中正式名稱仍須逐款核對。最高倍數 `N/A` 維持官方缺值，不做推算。
 
@@ -93,7 +93,7 @@
 | 84 | 205 | DiscoNight | 蹦迪 | 96.18% | High | 5000× | [已收錄](../../src/content/games/disconight-cq9.md) |
 | 86 | 1010 | Lucky Bats JP | 五福临门JP | 96.17% | High | 未列 | [已收錄](../../src/content/games/lucky-bats-jp-cq9.md) |
 | 87 | 1074 | Treasure Bowl JP | 聚宝盆JP | 96.02% | Medium | 未列 | [已收錄](../../src/content/games/treasure-bowl-jp-cq9.md) |
-| 88 | 98 | All Star Team | 世界杯全明星 | 96.09% | Medium | 3000× | 待逐款收錄 |
+| 88 | 98 | All Star Team | 世界杯全明星 | 96.09% | Medium | 3000× | [已收錄](../../src/content/games/all-star-team-cq9.md) |
 | 89 | 125 | Zeus M | 直式宙斯 | 96.18% | Medium | 3000× | 待逐款收錄 |
 | 90 | 108 | Jump Higher Mobile | 直式跳更高 | 96.18% | High | 5000× | 待逐款收錄 |
 | 91 | 109 | Rave Jump Mobile | 单手跳起来 | 96.18% | High | 3000× | 待逐款收錄 |
@@ -167,5 +167,3 @@
 Treasure Pirate（242）的官方新聞雖使用 Pirate Treasure 字序，但新聞連結的精確 ID 242 遊戲客戶端標題與官方標題圖均為 Treasure Pirate；身份已核對。
 
 以上待釐清數值不影響 141 款官方產品名單完整性。
-
-\n
