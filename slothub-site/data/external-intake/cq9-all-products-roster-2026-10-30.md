@@ -2,7 +2,7 @@
 
 核對日期：2026-10-30。來源：[CQ9 官方遊戲目錄](https://site.cq9gaming.com/en/games)；完整逐款來源網址、圖片網址與原始敘述保存在 [`cq9-official-catalog-2026-10-30.json`](./cq9-official-catalog-2026-10-30.json)。
 
-官方目錄共 141 個產品：Slot（官方 type=1）122 款，其他官方類型共 19 款（type=2 六款、type=3 三款、type=4 十款）。本清單列出全部 141 個不重複 Game ID。Slot Hub 目前已有 72 款 CQ9 Slot 詳細頁，其餘 50 款 Slot 待逐款查核、配圖、驗證與發布；非 Slot 產品先保留完整官方名單與數值，不混入 Slot 新增數。141 款皆保存官方圖示及背景圖 URL；2026-10-30 逐一讀取全部 141 張背景圖、141 張圖示和 141 個遊戲入口，結果與 SHA256 見 [`cq9-all-product-asset-audit-2026-10-30.json`](./cq9-all-product-asset-audit-2026-10-30.json)。全部圖檔格式有效、入口 HTTP 200；其中 102 個入口仍顯示通用 Welcome 標題，HTTP 200 不等於 Demo 可玩。官網未列的 RTP、波動或最高倍數維持缺值，不做推算。目錄數值是 CQ9 官方當日快照，不表示所有款式已完成本站收錄或 Demo 核對。
+官方目錄共 141 個產品：Slot（官方 type=1）122 款，其他官方類型共 19 款（type=2 六款、type=3 三款、type=4 十款）。本清單列出全部 141 個不重複 Game ID。Slot Hub 目前已有 73 款 CQ9 Slot 詳細頁，其餘 49 款 Slot 待逐款查核、配圖、驗證與發布；非 Slot 產品先保留完整官方名單與數值，不混入 Slot 新增數。141 款皆保存官方圖示及背景圖 URL；2026-10-30 逐一讀取全部 141 張背景圖、141 張圖示和 141 個遊戲入口，結果與 SHA256 見 [`cq9-all-product-asset-audit-2026-10-30.json`](./cq9-all-product-asset-audit-2026-10-30.json)。全部圖檔格式有效、入口 HTTP 200；其中 102 個入口仍顯示通用 Welcome 標題，HTTP 200 不等於 Demo 可玩。官網未列的 RTP、波動或最高倍數維持缺值，不做推算。目錄數值是 CQ9 官方當日快照，不表示所有款式已完成本站收錄或 Demo 核對。
 
 官方目錄的 `nameTw` 若是「API處尚未建立遊戲.」，本表改列 `nameCn` 作原文參考；繁中正式名稱仍須逐款核對。最高倍數 `N/A` 維持官方缺值，不做推算。
 
@@ -34,7 +34,7 @@
 | 22 | 124 | Invincible Elephant | 锁象无敌 | 96% | High | 5000× | [已收錄](../../src/content/games/invincible-elephant-cq9.md) |
 | 23 | 127 | God of War M | 直式武圣 | 96.10% | Medium | 3000× | [已收錄](../../src/content/games/god-of-war-m-cq9.md) |
 | 24 | 128 | Wheel Money | 转大钱 | 97.00% | High | 900× | 待逐款收錄 |
-| 25 | 129 | Gu Gu Gu 2 M | 直式金鸡报囍2 | 95.97% | High | 8000× | 待逐款收錄 |
+| 25 | 129 | Gu Gu Gu 2 M | 直式金鸡报囍2 | 95.97% | High | 8000× | [已收錄](../../src/content/games/gu-gu-gu-2-m-cq9.md) |
 | 26 | 130 | Gold Stealer | 偷金妹子 | 96.15% | Medium | 1000× | 待逐款收錄 |
 | 27 | 131 | Fa Cai Shen M | 直式发财神 | 96.07% | High | 3000× | 待逐款收錄 |
 | 28 | 133 | Good Fortune M | 直式鸿福齐天 | 96.19% | Medium | 3000× | 待逐款收錄 |

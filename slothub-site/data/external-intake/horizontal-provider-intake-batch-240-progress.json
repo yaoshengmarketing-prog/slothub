@@ -1,0 +1,31 @@
+{
+  "batch": 240,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Gold Stealer / 偷金妹子 (130) absent.",
+  "records": [
+    {
+      "name": "Gold Stealer",
+      "slug": "gold-stealer-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "130",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 130: RTP 96.15%, Medium volatility, overall maximum_win 1000; 25 Free Games, a local 25x prize and random full-reel WILD. US guest canvas labels 40 LINES.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/K9hp2Kqo.jpg",
+        "localPath": "public/assets/games/gold-stealer-cq9.jpg",
+        "sha256": "75e8d677cc4029bbc76fe2515e1a1e6371969f2afad489addee4306bf022ba60",
+        "visualCheck": "Official ID 130 maps to gold vault background; matching title icon spells Gold Stealer."
+      },
+      "demo": "US New York browser guest-query /h5/130/?language=en&token=guest HTTP 200, exact Gold Stealer branding, 40 LINES, 5x4 landscape reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Gold Stealer live closure, continue Fa Cai Shen M ID131 (US guest Demo verified; official image/icon downloaded and visually checked), then Good Fortune M ID133 after source and Demo checks. Held source conflicts remain."
+}

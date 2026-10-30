@@ -1,10 +1,10 @@
 {
   "batch": 239,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "gu-gu-gu-2-m-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "129",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 129: RTP 95.97%, High volatility, overall maximum_win 8000; local WILD 5x reward and potential reel-3 respin after two Free Game symbols. US guest canvas labels 15 Lines.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/129/?language=en&token=guest HTTP 200, exact Gu Gu Gu 2 M branding, 15 Lines, 5x3 portrait reels and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Gu Gu Gu 2 M live closure, continue Gold Stealer ID130 and Fa Cai Shen M ID131 (US guest Demos verified; official images/icons downloaded and visually checked). Held source conflicts remain."
+  "nextCursor": "Gu Gu Gu 2 M 129 live verified; continue Gold Stealer 130.",
+  "publication": {
+    "commit": "9d94c95a6b103127688402e2ff4d2bfdf9f5833b",
+    "githubRun": 41062438196,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "1b5b65fb-a778-46a1-a212-86ecbd8d15c2",
+    "cloudflareUrl": "https://1b5b65fb.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

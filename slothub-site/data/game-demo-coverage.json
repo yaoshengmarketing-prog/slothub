@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 801,
+  "gameCount": 802,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 683,
+    "available": 684,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gold-stealer-cq9",
+      "name": "Gold Stealer",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Gold Stealer ID 130, RTP 96.15%, Medium volatility, overall 1000x maximum, 25 Free Games, a local 25x prize and random full-reel WILD. US New York browser read-only guest Demo: HTTP 200, matching Gold Stealer branding, 40 LINES, 5x4 landscape reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 130, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/130/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Gold Stealer branding, 40 LINES, 5x4 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/K9hp2Kqo.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped gold vault background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/2LfJumfY.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Gold Stealer"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/130/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Gold Stealer ID 130, RTP 96.15%, Medium volatility, overall 1000x maximum, 25 Free Games, a local 25x prize and random full-reel WILD. US New York browser read-only guest Demo: HTTP 200, matching Gold Stealer branding, 40 LINES, 5x4 landscape reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "gu-gu-gu-2-m-cq9",
       "name": "Gu Gu Gu 2 M",
