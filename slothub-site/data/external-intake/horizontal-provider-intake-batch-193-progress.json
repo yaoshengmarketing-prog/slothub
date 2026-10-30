@@ -1,10 +1,10 @@
 {
   "batch": 193,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "night-city-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "229",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 229: RTP 96.16%, High volatility, overall maximum_win 80000. Official description details eight matching symbols, 30 eliminations up to 4000x local multiplier, Sapphire up to 50x, Golden Diamond up to 10x, Free Games, Double Chance and Buy Feature. JILI same-name ID 37 is separate.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser: exact CQ9 ID 229 bare current /h5/229/ HTTP 200 splash/reel art only; current guest-query HTTP 200 exact Night City title, 6x6 reels and Buy Feature/Double Chance controls without login. Direct Demo available externally; no spin, bet or login."
     }
   ],
-  "nextCursor": "After CQ9 Night City live closure, continue next uncollected CQ9 Slot; preserve Sung Wukong/Sugar Combo metric conflict queue."
+  "nextCursor": "CQ9 Night City 229 live verified, distinct from JILI same-name ID 37; guest query renders 6x6 reels with Buy Feature/Double Chance. Continue Mr. Miser 225: official catalog and exact image/icon checked; US browser guest check pending.",
+  "publication": {
+    "commit": "b4d51c700bf41f42c8e13c086c247ca0628ca5ea",
+    "githubRun": 41025185398,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "8674f482-65e7-4556-88d4-f0a830886c6d",
+    "cloudflareUrl": "https://8674f482.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo link present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

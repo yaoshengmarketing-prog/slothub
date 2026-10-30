@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 755,
+  "gameCount": 756,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 638,
-    "not-verified": 113
+    "not-verified": 114
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,43 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mr-miser-cq9",
+      "name": "Mr. Miser",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog confirms Mr. Miser ID 225, RTP 96.12, High, maximum_win 3000 and 7776 ways. Same-browser US New York read-only check: exact catalog /h5/225/ HTTP 200, Mr. Miser title and promotional/loading splash only after approximately 40 seconds. Guest-query /h5/225/?language=en&token=guest HTTP 200 but final URL canonicalized to bare /h5/225/ and stayed on same splash. No reels or controls, login, 403 or 404; Demo not-verified. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog card ID 225; unique metrics and mechanics"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/225/",
+          "httpStatus": 200,
+          "notes": "US New York browser Mr. Miser title and splash/loading canvas only after approximately 40 seconds"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/225/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser final URL became bare /h5/225/; splash only, no reels or controls"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/7hDjaiyn.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped rainbow meadow background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/ouxlCOaf.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Mr. Miser"
+        }
+      ],
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "night-city-cq9",
       "name": "Night City",
