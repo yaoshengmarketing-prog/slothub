@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 710,
+  "gameCount": 711,
   "providerCount": 371,
-  "sourcePageCount": 1286,
+  "sourcePageCount": 1288,
   "counts": {
     "access-restricted": 4,
-    "available": 613,
+    "available": 614,
     "not-verified": 93
   },
   "rules": {
@@ -17,6 +17,38 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "book-of-mystery-jdb",
+      "name": "Book of Mystery",
+      "provider": "jdb-gaming",
+      "status": "available",
+      "url": "https://slotslaunch.com/jdb-gaming/book-of-mystery",
+      "accessType": "platform-game-page",
+      "platformName": "Slots Launch",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "Slots Launch exact page and image identify Book of Mystery and JDB Gaming; official English/CN detail supplies exact specs and mechanisms.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/book-of-mystery",
+          "httpStatus": 200,
+          "notes": "Official Browser Use direct inspection runs 8c2b9487-f70f-4b83-be00-6e8056deeea3 and 14353139-b1bf-444d-9fcf-d5958b77a61e"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/cn/games/slot/book-of-mystery",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/book-of-mystery",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://assets.slotslaunch.com/29479/book-of-mystery.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "birds-party-jdb",
       "name": "Birds Party",

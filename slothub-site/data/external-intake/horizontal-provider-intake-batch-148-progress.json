@@ -1,10 +1,10 @@
 {
   "batch": 148,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 35",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Birds Party",
       "slug": "birds-party-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/birds-party",
       "officialFacts": "Official English/CN detail: Slot, RTP 96.99%, HIGH volatility, Maximum Win 50000X, 243 Ways, release year 2018; Cascading Reels, Feature Buy, Free Games with up to 5X multipliers.",
       "sourceConflict": "Slots Launch same-name JDB page says 2024, approximately 96% RTP, 25 paylines and partner-only Wild/Scatter/Party features. Game cover visibly matches BIRDS PARTY and 50000X, but playable version is not independently reconciled; Demo not-verified.",
@@ -28,5 +28,15 @@
       "demo": "Not verified: third-party same-name page contradicts official version-level metadata; no play or verified official Demo destination."
     }
   ],
-  "nextCursor": "JDB catalog card 36 (see official details ledger)"
+  "nextCursor": "JDB catalog card 36 (see official details ledger)",
+  "publication": {
+    "commit": "2ba60d06a2fd327f0c39107156230e666e0ba467",
+    "githubRun": 40976880529,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "120d9ad2-0143-4013-b664-5632e2d4c711",
+    "cloudflareUrl": "https://120d9ad2.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, image and sitemap HTTP 200; official and exact Slots Launch source URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-35 imported. Next individual candidate is card 36 (see official details ledger). Cards 1-10 and 36-46 remain.",
-  "nextStep": "After card 35 publication loop, continue card 36 using official details ledger, exact image and Demo checks.",
-  "publishedCount": 24,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-36 imported. Next individual candidate is card 37 KONG. Cards 1-10 and 37-46 remain.",
+  "nextStep": "After card 36 publication loop, continue card 37 KONG using official details ledger, exact image and Demo checks.",
+  "publishedCount": 25,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -501,6 +501,21 @@
     "partnerAttribution": "Exact Slots Launch page identifies Birds Party by JDB Gaming; downloaded valid 500x333 JPEG visibly displays BIRDS PARTY title and 50000X, matching official maximum win.",
     "demo": "Not verified: third-party same-name page contradicts official version-level metadata; no play or verified official Demo destination.",
     "dedup": "All Game Markdown and Provider name/alias fields; no Birds Party or 飞鸟派对 record before this intake.",
+    "decision": "published-live-verified"
+  },
+  "card36Evidence": {
+    "name": "BOOK OF MYSTERY",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/book-of-mystery",
+    "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/book-of-mystery",
+    "officialFacts": "Official English/CN detail: Slot, RTP 96.42%, SUPER HIGH volatility, Maximum Win 5000X, 10 Lines, release year 2022; golden-book WILD, up to 100 Free Spins, random Mystery expansion/full-screen 5000X.",
+    "sourceConflict": "Slots Launch says medium-to-high volatility versus official SUPER HIGH; its approximately 96% RTP is rounded. Partner-only three-book scatter/retrigger details excluded.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming/book-of-mystery",
+    "partnerImage": "https://assets.slotslaunch.com/29479/book-of-mystery.jpg",
+    "partnerImageSha256": "1e1f695dce07279e701f70e41c0d5e1066dc8cecc757815b08a5ec563faf0ab5",
+    "partnerImageMime": "image/webp",
+    "partnerAttribution": "Exact Slots Launch page identifies Book of Mystery by JDB Gaming; downloaded valid 600x400 WebP (despite .jpg URL) visibly displays BOOK OF MYSTERY title and character with golden book.",
+    "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
+    "dedup": "All Game Markdown and Provider name/alias fields; no Book of Mystery or 神秘之书 record before this intake.",
     "decision": "captured-awaiting-publication"
   }
 }

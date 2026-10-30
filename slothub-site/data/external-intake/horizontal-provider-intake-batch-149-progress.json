@@ -1,0 +1,33 @@
+{
+  "batch": 149,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 36",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; no Book of Mystery or 神秘之书 record before this intake.",
+  "records": [
+    {
+      "order": 36,
+      "name": "Book of Mystery",
+      "slug": "book-of-mystery-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/book-of-mystery",
+      "officialFacts": "Official English/CN detail: Slot, RTP 96.42%, SUPER HIGH volatility, Maximum Win 5000X, 10 Lines, release year 2022; golden-book WILD, up to 100 Free Spins, random Mystery expansion/full-screen 5000X.",
+      "sourceConflict": "Slots Launch says medium-to-high volatility versus official SUPER HIGH; its approximately 96% RTP is rounded. Partner-only three-book scatter/retrigger details excluded.",
+      "image": {
+        "sourcePage": "https://slotslaunch.com/jdb-gaming/book-of-mystery",
+        "sourceUrl": "https://assets.slotslaunch.com/29479/book-of-mystery.jpg",
+        "sha256": "1e1f695dce07279e701f70e41c0d5e1066dc8cecc757815b08a5ec563faf0ab5",
+        "actualMime": "image/webp",
+        "visualCheck": "Exact Slots Launch page identifies Book of Mystery by JDB Gaming; downloaded valid 600x400 WebP (despite .jpg URL) visibly displays BOOK OF MYSTERY title and character with golden book."
+      },
+      "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
+    }
+  ],
+  "nextCursor": "JDB catalog card 37 KONG"
+}
