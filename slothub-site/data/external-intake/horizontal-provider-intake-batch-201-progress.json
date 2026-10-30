@@ -1,10 +1,10 @@
 {
   "batch": 201,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "pyramid-raider-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "112",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 112: RTP 96.06%, Medium volatility, overall maximum_win 3000. Official description says 7776 Ways and variable reel dimensions from 3x5 to 6x5.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser: current guest-query /h5/112/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; exact Pyramid Raider branding, Egyptian reels and controls without login. No spin, bet or login action."
     }
   ],
-  "nextCursor": "After Pyramid Raider live closure, continue Fly Out 111 or Flying Cai Shen 113; both US guest Demos independently verified. Kronos 154 reel geometry wording remains in review queue."
+  "nextCursor": "Pyramid Raider 112 live verified, including Spanish localized official icon and US guest game canvas. Continue Fly Out 111.",
+  "publication": {
+    "commit": "f53f7e4356431273f055b42cbdba2eceddabc766",
+    "githubRun": 41042887213,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "4e0d4d71-ba5a-4ce7-a410-87adc5e98fe8",
+    "cloudflareUrl": "https://4e0d4d71.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
