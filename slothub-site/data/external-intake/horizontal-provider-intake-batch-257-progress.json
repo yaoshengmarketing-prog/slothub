@@ -1,10 +1,10 @@
 {
   "batch": 257,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "shou-xin-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "150",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 150: RTP 96.14%, High volatility, overall maximum_win 3000; free-game multiplier roulette up to 64x and FG icons on reels two through four can award 2x bet and free games. US guest canvas labels 25 Lines.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US browser guest-query /h5/150/?language=en&token=guest HTTP 200 with Welcome page title but exact Shou-Xin canvas branding, 5x3 reels, 25 Lines and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Shou-Xin live closure, continue The Beast War ID57 and Gu Gu Gu 2 ID58 (US guest Demos verified exact titles/lines/5x3; official images/icons downloaded and visually checked). Held source conflicts remain."
+  "nextCursor": "Shou-Xin 150 live verified; continue The Beast War 57.",
+  "publication": {
+    "commit": "f6bf9e960afc8494be7a71b7b24a63b30e3e157b",
+    "githubRun": 41073122522,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "ae425070-95eb-49a0-9a0e-2b1a048ba01f",
+    "cloudflareUrl": "https://ae425070.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

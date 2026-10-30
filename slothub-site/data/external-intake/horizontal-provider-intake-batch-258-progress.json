@@ -1,0 +1,31 @@
+{
+  "batch": 258,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 The Beast War / 神兽争霸 (57) absent.",
+  "records": [
+    {
+      "name": "The Beast War",
+      "slug": "the-beast-war-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "57",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 57: RTP 95.99%, Medium volatility, overall maximum_win 1000; choose free-game rounds and patron saint, giant and stacked icons. US guest canvas labels 40 Lines.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/JmiPiByg.jpg",
+        "localPath": "public/assets/games/the-beast-war-cq9.jpg",
+        "sha256": "46efce0afae72f6899472b100108a9a3e82006f640571a9165f55bcf6c74fd55",
+        "visualCheck": "Official ID 57 maps to purple star field background; matching golden beast title icon spells The Beast War."
+      },
+      "demo": "US browser guest-query /h5/57/?language=en&token=guest HTTP 200 with Welcome page title but exact The Beast War canvas branding, 5x3 reels, 40 Lines and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After The Beast War live closure, continue Gu Gu Gu 2 ID58 (US guest Demo verified; official image/icon downloaded and visually checked), then Zeus ID64, Fire 777 ID66 and Wukong & Peaches ID68 (US exact guest Demos verified). Held Kronos ID154 geometry conflict remains."
+}
