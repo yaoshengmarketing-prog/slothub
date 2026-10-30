@@ -1,0 +1,32 @@
+{
+  "batch": 191,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Mirror Mirror / 魔鏡魔鏡 (228) absent before intake.",
+  "records": [
+    {
+      "name": "Mirror Mirror",
+      "slug": "mirror-mirror-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "228",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/ko/news/detail/206",
+      "officialFacts": "CQ9 Slot catalog ID 228: RTP 96.10%, Medium volatility, maximum_win 4000. Exact official news describes icon elimination, increasing main-game multiplier, Magic Mirror on reels 2-4, Free Games and Golden Apple buy feature. Catalog describes up to x99 Free Games multiplier; do not conflate feature multiplier with overall max win.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/1J7RaUg4.jpg",
+        "localPath": "public/assets/games/mirror-mirror-cq9.jpg",
+        "sha256": "143e7ba9db72d6cef595e4842513602dce6da365631c6b8e24a1c15b2f4d4530",
+        "visualCheck": "Official 228 maps to magical forest background; icon hUSvRvpt.png visibly spells Mirror Mirror."
+      },
+      "demo": "US New York browser: historical official-news guest /228/ HTTP 404; bare current /h5/228/ HTTP 200 intro/reels but no controls; current /h5/228/?language=en&token=guest HTTP 200 exact MirrorMirror title, reels and controls without login. Direct Demo available externally; no spin, bet or login."
+    }
+  ],
+  "nextCursor": "After Mirror Mirror live closure, continue next uncollected CQ9 Slot; preserve Sung Wukong/Sugar Combo metric conflict queue."
+}

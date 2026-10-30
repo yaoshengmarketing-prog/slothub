@@ -1,10 +1,10 @@
 {
   "batch": 190,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "football-fever-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "GB9",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialNews": "https://www.cq9gaming.com/ko/news/detail/204",
       "officialFacts": "CQ9 Slot catalog ID GB9: RTP 96.08%, High volatility, maximum_win 15000 and official description states 243 ways. Exact official news describes football stars plus Wild trigger, Gold Ball Free Games/multiplier and Buy Feature; related GB13 is mobile version.",
@@ -28,7 +28,7 @@
       "demo": "US New York browser: official GB9 guest HTTP 200, exact Football Fever title, 243 Ways, reels and control UI rendered without login; bare catalog /h5/GB9/ HTTP 200 but loading only after 40+ sec. Direct Demo available externally; no spin, bet or login."
     }
   ],
-  "nextCursor": "Rerun full verify under 737076a with Football Fever GB9, then exact-path stage/commit, normal push, same-SHA CI/Cloudflare success and seven-route live readback.",
+  "nextCursor": "Original Football Fever GB9 live verified; guest Demo renders 243 Ways reels and controls. Continue Mirror Mirror 228: official article/detail/206 and exact image/icon checked; US browser guest check pending.",
   "syncHistory": {
     "observedAt": "2026-10-30T15:43:00+08:00",
     "localHead": "c2a132c3301ac5c4998774bb047e4138d50708e3",
@@ -39,5 +39,15 @@
     "nextAction": "In the same fixed worktree, reacquire exclusive lock; inspect remote PR #13 and reconcile origin/main with local uncommitted Football Fever/Aladdin closure changes, rerun full verify under merged HEAD, explicit-path stage, one normal commit and push, same-SHA GitHub Actions/Cloudflare success, immutable seven-route readback and image SHA. Then continue next uncollected CQ9 Slot.",
     "resolvedAt": "2026-10-30T00:00:00+08:00",
     "resolution": "Fetched and fast-forwarded fixed worktree to 737076a after confirming only diagram-link code paths changed; local CQ9 files remained intact. node scripts/run-verify.mjs passed under merged HEAD for 752 Games. PR #13 GitHub Actions run 41021688464 completed success, including npm run verify on Linux."
+  },
+  "publication": {
+    "commit": "a8707127f1ab9b87ad71cacae94c4e8b67223e33",
+    "githubRun": 41023059618,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "7a669ca1-20c8-4f8c-af68-b7bc00f8f564",
+    "cloudflareUrl": "https://7a669ca1.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official news/catalog, RTP, 243 Ways and max present; verified guest Demo link present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
   }
 }
