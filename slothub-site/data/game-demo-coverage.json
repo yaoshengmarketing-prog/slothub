@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 813,
+  "gameCount": 814,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 695,
+    "available": 696,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fa-cai-fu-wa-cq9",
+      "name": "Fa Cai Fu Wa",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fa Cai Fu Wa ID 143, RTP 96.09%, Low volatility, overall 3000x maximum, three rounds of free games, locked WILDs and prize above 1000x. US New York browser read-only guest Demo: initial black canvas then HTTP 200 matching Fa Cai Fu Wa branding, 5x3 reels, 243 WAY and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 143, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/143/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser black loading canvas settled to Fa Cai Fu Wa branding, 5x3 reels, 243 WAY and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/AaRKa391.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped gold radial background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/CMDpUcV7.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Fa Cai Fu Wa"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/143/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fa Cai Fu Wa ID 143, RTP 96.09%, Low volatility, overall 3000x maximum, three rounds of free games, locked WILDs and prize above 1000x. US New York browser read-only guest Demo: initial black canvas then HTTP 200 matching Fa Cai Fu Wa branding, 5x3 reels, 243 WAY and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "hephaestus-cq9",
       "name": "Hephaestus",

@@ -1,10 +1,10 @@
 {
   "batch": 251,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "hephaestus-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "142",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 142: RTP 96.07%, High volatility, overall maximum_win 4000; Super WILD burns icons into WILD fireballs, description mentions 3000x prize. US guest canvas labels 243 WAYS.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/142/?language=en&token=guest HTTP 200 with exact Hephaestus branding, 5x3 reels, 243 WAYS and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Hephaestus live closure, continue Fa Cai Fu Wa ID143 and Sky Lanterns ID146 (US guest Demos verified; official images/icons downloaded and visually checked). Held source conflicts remain."
+  "nextCursor": "Hephaestus 142 live verified; continue Fa Cai Fu Wa 143.",
+  "publication": {
+    "commit": "524b5ab253a900801ce0e732cfe77ef7c18fd516",
+    "githubRun": 41069376745,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "6c6d8ea5-7c42-4db0-8767-8fd9fa972fb9",
+    "cloudflareUrl": "https://6c6d8ea5.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
