@@ -1,10 +1,12 @@
-# CQ9 Gaming 官方 Slot 完整款式清單
+# CQ9 Gaming 官方完整產品清單（141 款）
 
 核對日期：2026-10-30。來源：[CQ9 官方遊戲目錄](https://site.cq9gaming.com/en/games)；完整逐款來源網址、圖片網址與原始敘述保存在 [`cq9-official-catalog-2026-10-30.json`](./cq9-official-catalog-2026-10-30.json)。
 
-官方目錄共 141 個產品，其中 Slot（官方 type=1）122 款。本清單按官方目錄順序列出全部 122 款；目前站內已有 15 款 CQ9 Game，其餘 107 款待逐款查核、配圖、驗證與發布。目錄數值是 CQ9 官方當日快照，不表示所有款式已完成本站收錄或 Demo 核對。
+官方目錄共 141 個產品：Slot（官方 type=1）122 款，其他官方類型共 19 款（type=2 六款、type=3 三款、type=4 十款）。本清單列出全部 141 個不重複 Game ID。Slot Hub 目前已有 15 款 CQ9 Slot 詳細頁，其餘 107 款 Slot 待逐款查核、配圖、驗證與發布；非 Slot 產品先保留完整官方名單與數值，不混入 Slot 新增數。141 款皆保存官方圖示及背景圖 URL；官網未列的 RTP、波動或最高倍數維持缺值，不做推算。目錄數值是 CQ9 官方當日快照，不表示所有款式已完成本站收錄或 Demo 核對。
 
 官方目錄的 `nameTw` 若是「API處尚未建立遊戲.」，本表改列 `nameCn` 作原文參考；繁中正式名稱仍須逐款核對。最高倍數 `N/A` 維持官方缺值，不做推算。
+
+## Slot（type=1，122 款）
 
 | 官方序 | Game ID | 英文名稱 | 官方中文名稱／原文 | RTP | 波動 | 最高倍數 | 本站狀態 |
 | ---: | --- | --- | --- | ---: | --- | ---: | --- |
@@ -131,6 +133,32 @@
 | 140 | CP4 | Golden Horus | 黃金荷魯斯 | 97.07% | High | 6000× | [已收錄](../../src/content/games/golden-horus-cq9.md) |
 | 141 | CP3 | Wizard's Wizard | 狂野巫師 | 97.09% | High | 15000× | [已收錄](../../src/content/games/wizards-wizard-cq9.md) |
 
+## 其他官方產品（19 款）
+
+以下保留 CQ9 原始 `type` 數值；官網介面列出 Fishing、Table、Arcade 分類。某些作品名稱與玩法跨類型，本站不擅自改成 Slot。
+
+| 官方序 | Game ID | 官方 type | 英文名稱 | 官方中文名稱／原文 | RTP | 波動 | 最高倍數 |
+| ---: | --- | ---: | --- | --- | ---: | --- | ---: |
+| 48 | 60 | 4 | Jungle Party | 丛林舞会 | 96.00% | 未列 | 未列 |
+| 49 | 61 | 4 | Mr. Bean | 天天吃豆 | 96.05% | 未列 | 未列 |
+| 76 | AT01 | 2 | OneShotFishing | 一炮捕鱼 | 96.00% | 未列 | 500× |
+| 85 | AB3 | 2 | Paradise | 皇金渔场 | 97.00% | 未列 | 1000× |
+| 94 | AT05 | 2 | LuckyFishing | 欢乐捕鱼 | 96.00% | 未列 | 700× |
+| 98 | BT02 | 3 | Banker Dice Bull-Bull | 抢庄骰子牛牛 | 未列 | 未列 | 未列 |
+| 100 | BT03 | 3 | Peeking Banker Bull-Bull | 抢庄眯牌牛牛 | 未列 | 未列 | 未列 |
+| 101 | 196 | 4 | Tenfold Eggs | 十倍金喜 | 95.98% | Medium | 10000× |
+| 104 | 213 | 4 | Mini Roulette | 迷你轮盘 | 96.00% | Low | 未列 |
+| 105 | 207 | 4 | Thai HILO | 泰式骰宝 | 96.00% | Low | 未列 |
+| 107 | 216 | 4 | Xoc Dia | 色碟 | 97.07% | Low | 未列 |
+| 109 | 217 | 4 | Mahjong Fruit | 麻将水果盘 | 96.20% | Low | 10000× |
+| 113 | GO02 | 2 | Hero Fishing | 英雄捕鱼 | 96.07% | 未列 | 1000× |
+| 115 | GB11 | 4 | Thai Fish Prawn Crab | 泰式鱼虾蟹 | 96.00% | Low | 未列 |
+| 118 | 224 | 4 | K.O. Island | 冒险岛 | 96.14% | Medium | 475× |
+| 119 | GO03 | 3 | Thai Pok Deng | 泰式博丁 | 未列 | 未列 | 未列 |
+| 129 | GB14 | 4 | Funky Bingo | 放客宾果 | 96.04% | High | 2000× |
+| 135 | GO05 | 2 | Onestick Fishing | 一棒捕鱼 | 96.00% | 未列 | 1000× |
+| 137 | GO06 | 2 | Paradise 2 | 皇金渔场2 | 96.00% | 未列 | 1000× |
+
 ## 待釐清的官方資料
 
 - Sung Wukong（253）：官方目錄與官方新聞的波動、重轉滾輪位置互相矛盾。
@@ -138,4 +166,4 @@
 
 Treasure Pirate（242）的官方新聞雖使用 Pirate Treasure 字序，但新聞連結的精確 ID 242 遊戲客戶端標題與官方標題圖均為 Treasure Pirate；身份已核對。
 
-以上待釐清數值不影響 122 款官方 Slot 名單完整性。
+以上待釐清數值不影響 141 款官方產品名單完整性。

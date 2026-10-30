@@ -1,10 +1,10 @@
 {
   "batch": 181,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 122-Slot catalog intake with exact-title official news",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "baseball-fever-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "230",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialNews": "https://www.cq9gaming.com/news/detail/212",
       "officialFacts": "CQ9 catalog Slot ID 230, RTP 96.09%, High volatility, maximum_win 10000. Official exact-title news describes Wild up to 5x, Spin Again, Burning Ball Free Games and combination multipliers up to 125x; catalog describes 125x from a different angle, so no single-Wild 125x claim is made.",
@@ -25,8 +25,18 @@
         "sha256": "451e95fee480f488cbe292a3f3422d4757ce09b7886ed4b9735b60f04981a792",
         "visualCheck": "Official ID 230 maps to baseball stadium background; official icon 1zBo9gh3.png visibly spells BASEBALL FEVER."
       },
-      "demo": "US-egress read-only browser verified official news/detail/212 historical /230/?language=en&token=guest returns HTTP 404, while catalog /h5/230/ returns HTTP 200 and shows Baseball Fever title, artwork and loading reels but no usable controls. No 403 or geo block observed. Preserve status not-verified; no spin, bet or login action was taken."
+      "demo": "US-egress read-only browser: historical official-news guest URL /230/?language=en&token=guest returns HTTP 404; catalog /h5/230/ returns HTTP 200 and shows title/artwork/loading reels, but ready controls were not reached. Not-verified Demo. No 403 or geo block, no spin/bet/login."
     }
   ],
-  "nextCursor": "After Baseball Fever live closure, continue official CQ9 Slot catalog; inspect Hero of the 3 Kingdoms - Cao Cao (GB15) and Myeong-ryang (GB12) with identity, metrics and exact image checks. Preserve official conflict queue for Sung Wukong and Sugar Combo."
+  "nextCursor": "Baseball Fever live verified. Complete CQ9 inventory contains 141 distinct official products (122 Slot, 19 other); 15 Slot Game pages are live and 107 Slot pages remain. Continue at Hero of the 3 Kingdoms - Cao Cao (GB15), then Myeong-ryang (GB12); check exact official news, metrics, image mapping and Demo. Retain Sung Wukong and Sugar Combo metric-conflict queue.",
+  "publication": {
+    "commit": "28f86c85baaf3a53bacf7b624594cb2017a3de69",
+    "githubRun": 41013646157,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "d9bb0c3d-b060-480d-830d-d6fa0b71b2c3",
+    "cloudflareUrl": "https://d9bb0c3d.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG image and sitemap HTTP 200; official catalog/news and RTP/max present, stale 404 guest Demo absent; live image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
