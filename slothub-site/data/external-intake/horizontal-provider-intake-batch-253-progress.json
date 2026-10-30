@@ -1,10 +1,10 @@
 {
   "batch": 253,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "sky-lanterns-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "146",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 146: RTP 96.01%, High volatility, overall maximum_win 3000; WILD icons can cover reels, description mentions up to 1600x. US guest canvas labels 50 Lines.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/146/?language=en&token=guest HTTP 200 after black loading canvas with exact Sky Lanterns branding, 5x3 reels, 50 Lines and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Sky Lanterns live closure, continue Flower Fortunes ID147, Funny Alpaca ID54 and Fortune Totem ID148 (US guest Demos verified exact titles and geometry; fetch/visual-check official images next). Held source conflicts remain."
+  "nextCursor": "Sky Lanterns 146 live verified; continue Flower Fortunes 147.",
+  "publication": {
+    "commit": "3c27eab0d1d8c16461c84c3783e41ab438aae5fd",
+    "githubRun": 41070981081,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "0cb0ece5-199a-4afb-a6bc-152b3d9264cf",
+    "cloudflareUrl": "https://0cb0ece5.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

@@ -1,0 +1,31 @@
+{
+  "batch": 254,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Flower Fortunes / 花开富贵 (147) absent.",
+  "records": [
+    {
+      "name": "Flower Fortunes",
+      "slug": "flower-fortunes-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "147",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 147: RTP 96.00%, High volatility, overall maximum_win 4000; multiple WILDs can raise scoring multiplier, description mentions up to 1000x. US guest canvas labels 25 LINE.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/yfQAvFVz.jpg",
+        "localPath": "public/assets/games/flower-fortunes-cq9.jpg",
+        "sha256": "531085084c050b08070c77473e1261eefddaf11ed74497da6e78e3e8649a5b4a",
+        "visualCheck": "Official ID 147 maps to orange landscape background; matching flower title icon spells Flower Fortunes."
+      },
+      "demo": "US browser guest-query /h5/147/?language=en&token=guest HTTP 200 with exact Flower Fortunes branding, 5x3 reels, 25 LINE and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Flower Fortunes live closure, continue Funny Alpaca ID54 and Fortune Totem ID148 (US guest Demos verified; official images/icons downloaded and visually checked). Held source conflicts remain."
+}

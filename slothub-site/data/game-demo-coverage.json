@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 815,
+  "gameCount": 816,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 697,
+    "available": 698,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "flower-fortunes-cq9",
+      "name": "Flower Fortunes",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Flower Fortunes ID 147, RTP 96.00%, High volatility, overall 4000x maximum, multiple WILDs improving the scoring multiplier and description up to 1000x. US browser read-only guest Demo: HTTP 200 matching Flower Fortunes branding, 5x3 reels, 25 LINE and controls with demo credit without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 147, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/147/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered Flower Fortunes branding, 5x3 reels, 25 LINE and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/yfQAvFVz.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped orange landscape background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/3is7ZyOl.png",
+          "httpStatus": 200,
+          "notes": "Official flower title icon spells Flower Fortunes"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/147/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Flower Fortunes ID 147, RTP 96.00%, High volatility, overall 4000x maximum, multiple WILDs improving the scoring multiplier and description up to 1000x. US browser read-only guest Demo: HTTP 200 matching Flower Fortunes branding, 5x3 reels, 25 LINE and controls with demo credit without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "sky-lanterns-cq9",
       "name": "Sky Lanterns",
