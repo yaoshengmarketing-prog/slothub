@@ -1,0 +1,31 @@
+{
+  "batch": 199,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 5 Boxing / 五形拳 (157) absent before intake.",
+  "records": [
+    {
+      "name": "5 Boxing",
+      "slug": "5-boxing-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "157",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 157: RTP 96.18%, Medium volatility, overall maximum_win 5000. Official description describes five boxing forms and Free Game high-score icon conversion; promotional 4000x award is distinct from overall catalog maximum.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/eTOkDbGh.jpg",
+        "localPath": "public/assets/games/5-boxing-cq9.jpg",
+        "sha256": "03882d8a3a928139df94af43184b3b49c2e85610d2c862858329bd9c844d8857",
+        "visualCheck": "Official 157 maps to martial arts hall background; icon 4aI0yoPF.png visibly spells 5 Boxing."
+      },
+      "demo": "US New York browser: current guest-query /h5/157/?language=en&token=guest HTTP 200, unchanged final URL, Welcome title; exact 5 Boxing branding, reels and controls without login. No spin, bet or login action."
+    }
+  ],
+  "nextCursor": "After 5 Boxing live closure, continue Hercules 161, whose official local Golden Fist 250x award must remain distinct from catalog overall 3000x. US guest Demo verified."
+}

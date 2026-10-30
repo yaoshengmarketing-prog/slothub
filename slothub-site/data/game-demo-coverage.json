@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 760,
+  "gameCount": 761,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 642,
+    "available": 643,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "5-boxing-cq9",
+      "name": "5 Boxing",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies 5 Boxing ID 157, exact domain, RTP 96.18%, Medium volatility, overall 5000x maximum and scoped 4000x promotional prize. US New York browser read-only check: current guest-query /h5/157/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, matching 5 Boxing branding, reels and controls without login. No spin, bet or login action.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 157, metrics and Free Game icon conversion"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/157/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Welcome title; matching 5 Boxing reels and controls without login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/eTOkDbGh.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped martial arts hall background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/4aI0yoPF.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells 5 Boxing"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/157/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies 5 Boxing ID 157, exact domain, RTP 96.18%, Medium volatility, overall 5000x maximum and scoped 4000x promotional prize. US New York browser read-only check: current guest-query /h5/157/?language=en&token=guest HTTP 200, final URL unchanged, Welcome title, matching 5 Boxing branding, reels and controls without login. No spin, bet or login action.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "fa-cai-shen-2-cq9",
       "name": "Fa Cai Shen2",
