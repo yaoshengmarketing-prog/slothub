@@ -4,8 +4,8 @@
   "checkedAt": "2026-10-30",
   "catalogCount": 141,
   "slotCount": 122,
-  "capturedCountThisRun": 54,
-  "publishedCountThisRun": 53,
+  "capturedCountThisRun": 55,
+  "publishedCountThisRun": 54,
   "reviewQueue": [
     {
       "name": "Sung Wukong",
@@ -31,6 +31,16 @@
       "name": "Zeus M",
       "gameId": "125",
       "reason": "US New York guest Demo /h5/125/ HTTP 200 but remained blurred splash/loading after 40 seconds; no readable branding, reels or controls. Recheck before available Demo claim or publication."
+    },
+    {
+      "name": "Hot DJ",
+      "gameId": "GB5",
+      "reason": "Official icon visibly says 20000X but official catalog maximumWin is 13000; exact US New York guest /h5/GB5/?language=en&token=guest returned 404. Hold core max-win conflict and Demo claim until authoritative reconciliation."
+    },
+    {
+      "name": "OrientalBeauty",
+      "gameId": "202",
+      "reason": "Official catalog maximumWin is 6000x while same official catalog description calls 4000x grand prize; hold core max-win conflict despite visually rendered US guest Demo."
     }
   ],
   "existingAtStart": [
@@ -40,10 +50,8 @@
   ],
   "intakeState": "in-progress",
   "nextCandidateOrder": [
-    "Money Tree",
-    "Hot DJ",
-    "Acrobatics",
-    "Lucky Tigers"
+    "888 Cai Shen",
+    "Jump Higher"
   ],
   "slotItems": [
     {

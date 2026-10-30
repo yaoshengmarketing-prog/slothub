@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 785,
+  "gameCount": 786,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 667,
+    "available": 668,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "888-cai-shen-cq9",
+      "name": "888 Cai Shen",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies 888 Cai Shen ID 227, RTP 96.14%, High volatility, overall 12000x maximum, variable reel heights 2-6, up to 7776 ways, Wild reel during Free Games and local 512x reward. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, title 888 Cai Shen, RICH WAYS branding, 5x5 visible grid, controls and BUY FEATURE button without login. No spin, bet, buy or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 227, metrics and variable-height ways description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/227/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser title 888 Cai Shen, RICH WAYS, 5x5 visible grid, controls and BUY FEATURE button without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/mQnBGezQ.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped golden Cai Shen background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/LwhKroKO.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells 888 Cai Shen"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/227/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies 888 Cai Shen ID 227, RTP 96.14%, High volatility, overall 12000x maximum, variable reel heights 2-6, up to 7776 ways, Wild reel during Free Games and local 512x reward. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, title 888 Cai Shen, RICH WAYS branding, 5x5 visible grid, controls and BUY FEATURE button without login. No spin, bet, buy or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "money-tree-cq9",
       "name": "Money Tree",
