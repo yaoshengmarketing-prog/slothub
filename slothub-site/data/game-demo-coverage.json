@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 833,
+  "gameCount": 834,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 114
+    "not-verified": 115
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,32 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "elder-god-baphomet",
+      "name": "Elder God Baphomet",
+      "provider": "atg-games",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "ATG exact game page identifies Elder God Baphomet and its 2026-05-26 release, 5x5 Cluster Pays, RTP 96.35%, Advanced volatility and Winning ratio x65536. The official catalog and exact page did not expose a verified game-specific Demo control during this check. No generic provider URL is substituted.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.atg-games.com/en/games?type=all",
+          "httpStatus": 200,
+          "notes": "Official catalog card names Elder God Baphomet and identifies Slot and Game Info"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/games/slot/elder-god-baphomet",
+          "httpStatus": 200,
+          "notes": "Exact official game page with identity, date, metrics and features; no verified Demo control"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/_ipx/f_webp/elder-god-baphomet/en/game_icon.png",
+          "httpStatus": 200,
+          "notes": "Valid WebP official title icon; SHA256 6ef99a3a3c8e5d054cfa7564f892f2ddc677aa9b86c1df50687796cb6e20d66a and visual title checked"
+        }
+      ]
+    },
     {
       "slug": "jumping-mobile-cq9",
       "name": "Jumping Mobile",
