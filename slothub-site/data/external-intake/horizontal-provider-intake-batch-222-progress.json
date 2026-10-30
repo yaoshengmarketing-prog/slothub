@@ -1,10 +1,10 @@
 {
   "batch": 222,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "sweet-pop-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "206",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 206: RTP 96.15%, High volatility, overall maximum_win 3000; portrait elimination with any eight matching symbols and new drops; random high multiplier symbols during Free Games. US guest canvas labels ANY8.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/206/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, ANY8, 6x6 grid and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Sweet POP live closure, continue Money Tree 208, US guest Demo visually verified. Zeus M 125 loading only and core conflicts remain review queue."
+  "nextCursor": "Sweet POP 206 live verified; continue Money Tree 208.",
+  "publication": {
+    "commit": "eb513d49536b1575da3dbb13472d9bbee4839ccd",
+    "githubRun": 41053461960,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "980c8dea-b849-4887-93d2-2ed7a3b815bc",
+    "cloudflareUrl": "https://980c8dea.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

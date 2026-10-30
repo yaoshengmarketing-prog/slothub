@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 784,
+  "gameCount": 785,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 666,
+    "available": 667,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "money-tree-cq9",
+      "name": "Money Tree",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Money Tree ID 208, RTP 96.15%, Low volatility, overall 2000x maximum, five paylines and chance to trigger re-spin continuing until a win. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Money Tree title, 5Lines, 3x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 208, metrics and Respin description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/208/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser title Money Tree, 5Lines, 3x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/PSJAPlR5.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped green tree background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/JOeIAmue.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Money Tree"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/208/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Money Tree ID 208, RTP 96.15%, Low volatility, overall 2000x maximum, five paylines and chance to trigger re-spin continuing until a win. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Money Tree title, 5Lines, 3x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "sweet-pop-cq9",
       "name": "Sweet POP",

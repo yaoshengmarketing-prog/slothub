@@ -1,0 +1,31 @@
+{
+  "batch": 223,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Money Tree / 金钱树 (208) absent before intake.",
+  "records": [
+    {
+      "name": "Money Tree",
+      "slug": "money-tree-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "208",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 208: RTP 96.15%, Low volatility, overall maximum_win 2000; five paylines and chance to trigger re-spin continuing until win. US guest canvas labels 5Lines.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/PSJAPlR5.jpg",
+        "localPath": "public/assets/games/money-tree-cq9.jpg",
+        "sha256": "a627a30601b30cf18f41b904674bd198536de29fb311a729590375d28dde30bb",
+        "visualCheck": "Official ID 208 maps to green tree leaves background; matching icon spells Money Tree."
+      },
+      "demo": "US New York browser guest-query /h5/208/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 5Lines, 3x3 reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Money Tree live closure, continue next uncollected CQ9 Slot. Hot DJ GB5, Acrobatics 223, Lucky Tigers 226 under US guest check. Zeus M 125 loading only and core conflicts remain review queue."
+}
