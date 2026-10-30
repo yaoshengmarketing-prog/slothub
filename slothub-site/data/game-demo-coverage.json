@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 749,
+  "gameCount": 750,
   "providerCount": 371,
-  "sourcePageCount": 1403,
+  "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 632,
+    "available": 633,
     "not-verified": 113
   },
   "rules": {
@@ -18,13 +18,59 @@
   },
   "entries": [
     {
+      "slug": "monster-hunter-cq9",
+      "name": "Monster Hunter",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official news/detail/187 embeds exact GB2 guest URL. Same-browser US New York egress: guest URL HTTP 200, final URL unchanged, exact Monster Hunter title, rendered reel board, balance, bet and line UI without login. No spin, bet or login action. General catalog /h5/GB2/ remained loading-logo shell after approximately 22 seconds.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card GB2"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/ko/news/detail/187",
+          "httpStatus": 200,
+          "notes": "Exact Monster Hunter news; links GB2 guest URL"
+        },
+        {
+          "requestedUrl": "https://web-gb.cqgame.games/h5/GB2/",
+          "httpStatus": 200,
+          "notes": "US New York HTTP 200, exact title but loading-logo shell after approximately 22 seconds"
+        },
+        {
+          "requestedUrl": "https://web-gb.cqgame.games/h5/GB2/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York HTTP 200, exact title, reels and balance/bet/line UI rendered; no login or gameplay action"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/CThiZgNI.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped forest background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/Eg2S3rBT.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells Monster Hunter"
+        }
+      ],
+      "url": "https://web-gb.cqgame.games/h5/GB2/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official news/detail/187 embeds exact GB2 guest URL. Same-browser US New York egress: guest URL HTTP 200, final URL unchanged, exact Monster Hunter title, rendered reel board, balance, bet and line UI without login. No spin, bet or login action. General catalog /h5/GB2/ remained loading-logo shell after approximately 22 seconds.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
       "slug": "king-of-atlantis-cq9",
       "name": "King of Atlantis",
       "provider": "cq9-gaming",
       "status": "not-verified",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-10-30",
-      "evidence": "CQ9 official catalog/news identify King of Atlantis ID 211. Old news guest URL HTTP 404; current catalog game shell HTTP 200 with generic Welcome title. Ready playable controls not verified; US browser visual check pending.",
+      "evidence": "US New York same-browser read-only verification: official news guest ID 211 returns HTTP 404; current /h5/211/ HTTP 200 with generic Welcome title, black CQ9 loading canvas and Atlantis-specific assets, but no reels or usable controls after 30+ seconds. No 403 or login; Demo not-verified.",
       "inspectedUrls": [
         {
           "requestedUrl": "https://site.cq9gaming.com/en/games",
@@ -43,7 +89,7 @@
         },
         {
           "requestedUrl": "https://h5c.cqgame.games/h5/211/",
-          "notes": "Current catalog URL HTTP 200; generic Welcome document title; ready controls and visible game identity require browser check",
+          "notes": "US browser HTTP 200, generic Welcome title, Atlantis asset loading canvas without playable controls after 30+ seconds",
           "httpStatus": 200
         },
         {
@@ -56,7 +102,8 @@
           "httpStatus": 200,
           "notes": "Official title icon visibly spells King of Atlantis"
         }
-      ]
+      ],
+      "browserReviewedAt": "2026-10-30"
     },
     {
       "slug": "acrobatics-cq9",

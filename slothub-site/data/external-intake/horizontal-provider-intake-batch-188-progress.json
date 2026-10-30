@@ -1,0 +1,32 @@
+{
+  "batch": 188,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Monster Hunter / 怪獸獵人 (GB2) absent before intake.",
+  "records": [
+    {
+      "name": "Monster Hunter",
+      "slug": "monster-hunter-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "GB2",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/ko/news/detail/187",
+      "officialFacts": "CQ9 Slot catalog ID GB2: RTP 96.08%, Low volatility, maximum_win 600. Exact official news describes three Bonus symbols, three skill choices, and up to 200x in the bonus game; this is narrower than catalog overall 600x.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/CThiZgNI.jpg",
+        "localPath": "public/assets/games/monster-hunter-cq9.jpg",
+        "sha256": "4af7494c6956bd9eb57fd8bfd0b4b9a4dac3c2bd8241d05c3b9d68e71ed4d0dc",
+        "visualCheck": "Official GB2 maps to forest background; icon Eg2S3rBT.png visibly spells Monster Hunter."
+      },
+      "demo": "Official news guest URL GB2: US New York browser HTTP 200, unchanged URL, exact Monster Hunter title, rendered reels and balance/bet/line UI without login. Catalog URL remains loading shell. Direct Demo available externally; no spin, bet or login action."
+    }
+  ],
+  "nextCursor": "After Monster Hunter live closure, continue next uncollected CQ9 Slot; preserve Sung Wukong/Sugar Combo metric conflict queue."
+}
