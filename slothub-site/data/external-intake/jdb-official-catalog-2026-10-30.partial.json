@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 and 1-6 imported. Next individual candidate is card 7 VOYAGE OF CRYO GUNNER X-LOCK™. Cards 7-10 remain.",
-  "nextStep": "After card 6 publication loop, continue card 7 from JDB official detail ledger; verify exact identity, image and Demo.",
-  "publishedCount": 41,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 and 1-7 imported. Next individual candidate is card 8 BASTET. Cards 8-10 remain.",
+  "nextStep": "After card 7 publication loop, continue card 8 BASTET from JDB official detail ledger; verify exact identity, image and Demo.",
+  "publishedCount": 42,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -757,6 +757,21 @@
     "partnerAttribution": "Slots Launch exact page identifies Voyage of Daring Queen X-Lock by JDB; downloaded WebP (despite .jpg URL) visibly displays VOYAGE OF DARING QUEEN and X-LOCK title with sea horse captain. Official JDB card and partner show same character theme.",
     "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
     "dedup": "All Game Markdown and Provider name/alias fields; Daring Queen absent before intake, distinct from Cryo Gunner and Blast Raider X-Lock.",
+    "decision": "published-live-verified"
+  },
+  "card7Evidence": {
+    "name": "VOYAGE OF CRYO GUNNER X-LOCK™",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/voyage-of-cryo-gunner-x-lock",
+    "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/voyage-of-cryo-gunner-x-lock",
+    "officialFacts": "JDB official English/CN detail: RTP 96.5%, MEDIUM volatility, Maximum Win 2000X, 40 Ways specification, release year 2026; Cryo Gunner X-Lock coin collection, Treasure Collect, Cannonade, Pirate’s Frenzy, Random Cash Feature, three Feature Buy options.",
+    "sourceConflict": "JDB same-page introduction calls it 40-line, while official specification states 40 Ways; Slots Launch describes Fixed paylines and SlotCatalog says high volatility. Site records JDB specification 40 Ways and MEDIUM and discloses the lines/ways conflict.",
+    "partnerPage": "https://slotslaunch.com/jdb-gaming/voyage-of-cryo-gunner-x-lock",
+    "partnerImage": "https://assets.slotslaunch.com/106873/voyage-of-cryo-gunner-x-lock.jpg",
+    "partnerImageSha256": "a1895560711065011e9b55ae9561094f4976e1b0fab6a1582421042813c0e167",
+    "partnerImageMime": "image/webp",
+    "partnerAttribution": "Slots Launch exact page identifies Voyage of Cryo Gunner X-Lock by JDB; downloaded WebP (despite .jpg URL) visibly displays full VOYAGE OF CRYO GUNNER X-LOCK title and penguin.",
+    "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
+    "dedup": "All Game Markdown and Provider name/alias fields; Cryo Gunner absent before intake, distinct from Daring Queen and Blast Raider X-Lock.",
     "decision": "captured-awaiting-publication"
   }
 }

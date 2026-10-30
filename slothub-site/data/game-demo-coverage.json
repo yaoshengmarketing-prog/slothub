@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 727,
+  "gameCount": 728,
   "providerCount": 371,
-  "sourcePageCount": 1321,
+  "sourcePageCount": 1323,
   "counts": {
     "access-restricted": 4,
-    "available": 626,
+    "available": 627,
     "not-verified": 97
   },
   "rules": {
@@ -17,6 +17,38 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "voyage-of-cryo-gunner-x-lock-jdb",
+      "name": "Voyage of Cryo Gunner X-Lock™",
+      "provider": "jdb-gaming",
+      "status": "available",
+      "url": "https://slotslaunch.com/jdb-gaming/voyage-of-cryo-gunner-x-lock",
+      "accessType": "platform-game-page",
+      "platformName": "Slots Launch",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "sameGameEvidence": "Exact Slots Launch title, provider and downloaded title art identify Cryo Gunner X-Lock; official JDB English/CN detail supplies specs and lines/ways conflict.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.jdbgaming.com/en/games/slot/voyage-of-cryo-gunner-x-lock",
+          "httpStatus": 200,
+          "notes": "Official JDB browser detail ledger and current web-indexed detail"
+        },
+        {
+          "requestedUrl": "https://www.jdbgaming.com/cn/games/slot/voyage-of-cryo-gunner-x-lock",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://slotslaunch.com/jdb-gaming/voyage-of-cryo-gunner-x-lock",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://assets.slotslaunch.com/106873/voyage-of-cryo-gunner-x-lock.jpg",
+          "httpStatus": 200
+        }
+      ]
+    },
     {
       "slug": "voyage-of-daring-queen-x-lock-jdb",
       "name": "Voyage of Daring Queen X-Lock™",

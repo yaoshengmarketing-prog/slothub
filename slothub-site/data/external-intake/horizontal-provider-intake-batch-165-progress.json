@@ -1,10 +1,10 @@
 {
   "batch": 165,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 6",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "VOYAGE OF DARING QUEEN X-LOCK™",
       "slug": "voyage-of-daring-queen-x-lock-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/voyage-of-daring-queen-x-lock",
       "officialChinesePage": "https://www.jdbgaming.com/cn/games/slot/voyage-of-daring-queen-x-lock",
       "officialFacts": "JDB official English/CN detail: RTP 96.43%, HIGH volatility, Maximum Win 2000X, 243 Ways, release year 2026; X-Lock Wild collects displayed Coin values, Shoot & Spread replicates Coin values, Lock & Multiply upgrades marked positions.",
@@ -31,5 +31,15 @@
       "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
     }
   ],
-  "nextCursor": "JDB catalog card 7 VOYAGE OF CRYO GUNNER X-LOCK™"
+  "nextCursor": "JDB catalog card 7 VOYAGE OF CRYO GUNNER X-LOCK™",
+  "publication": {
+    "commit": "390763451a2f429c1b514b3d9b81834ac6192c28",
+    "githubRun": 40984932510,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "d5f8ad4c-9f74-4dd3-9260-8d8c0515ecc8",
+    "cloudflareUrl": "https://d5f8ad4c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, WebP image and sitemap HTTP 200; official and official English and Chinese URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
