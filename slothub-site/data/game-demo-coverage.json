@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 739,
+  "gameCount": 740,
   "providerCount": 371,
-  "sourcePageCount": 1352,
+  "sourcePageCount": 1355,
   "counts": {
     "access-restricted": 4,
     "available": 630,
-    "not-verified": 105
+    "not-verified": 106
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mafia-cq9",
+      "name": "Mafia",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "Official CQ9 Slot catalog identifies game ID 243 and exact-title news confirms the game, but the catalog modal did not expose a verified playable href.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot card and modal, game ID 243"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/th/news/detail/222",
+          "httpStatus": 200,
+          "notes": "Official exact-title Slot news"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/vT4rqSJA.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/basJ8VxG.png",
+          "httpStatus": 200,
+          "notes": "Official title icon, visually checked"
+        }
+      ]
+    },
     {
       "slug": "black-wukong-cq9",
       "name": "Black Wukong",

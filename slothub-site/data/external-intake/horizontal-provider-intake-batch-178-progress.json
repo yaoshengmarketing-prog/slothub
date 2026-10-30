@@ -1,0 +1,32 @@
+{
+  "batch": 178,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "CQ9 official Slot catalog continuation with first-party Mafia news",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Mafia / 黑手黨 (game ID 243) absent before intake.",
+  "records": [
+    {
+      "name": "Mafia",
+      "slug": "mafia-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "243",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/th/news/detail/222",
+      "officialFacts": "Official CQ9 catalog Slot ID 243, RTP 96.10%, High volatility, global maximum 12000x. Exact-title news confirms Mafia and limousine-triggered Free Games, 12 initial games and retriggers up to 500.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/vT4rqSJA.jpg",
+        "localPath": "public/assets/games/mafia-cq9.jpg",
+        "sha256": "972c10bb214144c6806c5793942926e46f34748e8a5da221cdd0b53949564896",
+        "visualCheck": "Official ID 243 maps to sepia city street background; official icon basJ8VxG.png visibly spells MAFIA."
+      },
+      "demo": "Official catalog modal did not expose independently verified playable href; status not-verified."
+    }
+  ],
+  "nextCursor": "After Mafia live closure, inspect Treasure Pirate (ID 242), The Chicken House (ID 241) and other CQ9 Slot entries against exact-title official news and images; retain Sung Wukong and Sugar Combo review queue."
+}
