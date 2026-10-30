@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 829,
+  "gameCount": 830,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 711,
+    "available": 712,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "chameleon-cq9",
+      "name": "Chameleon",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Chameleon ID 79, RTP 96.13%, Medium volatility, overall 5000x maximum, high payout symbols matching in free games. US browser read-only guest Demo: exact CHAMELEON canvas, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 79, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/79/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered exact CHAMELEON canvas, 5x3 reels, 243 WAYS and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/I0hId8i0.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped green forest background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/FFRRdPcq.png",
+          "httpStatus": 200,
+          "notes": "Official Chameleon title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/79/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Chameleon ID 79, RTP 96.13%, Medium volatility, overall 5000x maximum, high payout symbols matching in free games. US browser read-only guest Demo: exact CHAMELEON canvas, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "apollo-cq9",
       "name": "Apollo",

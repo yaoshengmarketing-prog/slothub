@@ -1,0 +1,31 @@
+{
+  "batch": 268,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Chameleon / 变色龙 (79) absent.",
+  "records": [
+    {
+      "name": "Chameleon",
+      "slug": "chameleon-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "79",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 79: RTP 96.13%, Medium volatility, overall maximum_win 5000; high payout symbols transform into the same symbol in free games. US guest canvas labels 243 WAYS.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/I0hId8i0.jpg",
+        "localPath": "public/assets/games/chameleon-cq9.jpg",
+        "sha256": "35237b34965a8c07c37651cef0408a050421de14ebef27b997e1e687de113364",
+        "visualCheck": "Official ID 79 maps to green jungle background; matching title icon spells Chameleon."
+      },
+      "demo": "US browser guest-query /h5/79/?language=en&token=guest HTTP 200 with exact CHAMELEON canvas, 5x3 reels, 243 WAYS and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Chameleon live closure, continue Fire Queen ID83 (official and guest 3x3 5 LINES, official image/icon downloaded and visually checked), then Thor ID89. Held source conflicts remain."
+}
