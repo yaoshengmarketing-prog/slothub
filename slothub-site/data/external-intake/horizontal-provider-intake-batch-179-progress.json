@@ -1,10 +1,10 @@
 {
   "batch": 179,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "CQ9 official Slot catalog continuation with exact-title first-party Chicken House news",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "the-chicken-house-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "241",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialNews": "https://www.cq9gaming.com/news/detail/215",
       "officialFacts": "Official CQ9 catalog Slot ID 241, RTP 96.09%, High volatility, global maximum 10000x. Official exact-title news confirms Golden Egg Wild 2x/3x, two selectable Free Games modes, locked egg multipliers up to 5x and Feature Buy.",
@@ -28,5 +28,15 @@
       "demo": "Official catalog modal did not expose independently verified playable href; status not-verified."
     }
   ],
-  "nextCursor": "After The Chicken House live closure, inspect Treasure Pirate (ID 242, catalog description reverses English name to Pirate Treasure), Baseball Fever (ID 230), and other CQ9 Slot entries. Retain Sung Wukong and Sugar Combo official-source conflict review queue."
+  "nextCursor": "The Chicken House live verified. Next: inspect Treasure Pirate (CQ9 ID 242) catalog name versus Pirate Treasure in catalog prose and locate exact official article; if identity remains ambiguous, continue Baseball Fever (ID 230) or another evidence-complete CQ9 Slot. Retain Sung Wukong (ID 253) and Sugar Combo (CP2) metric-conflict review queue.",
+  "publication": {
+    "commit": "6eee4aaaa2f7af5ea9be5eb5c22b555765fdf9e4",
+    "githubRun": 41010348907,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "46f59f81-1d88-4852-9400-f9ccc06b5cd6",
+    "cloudflareUrl": "https://46f59f81.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG image and sitemap HTTP 200; official news/catalog source, RTP and maximum win present; live image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
