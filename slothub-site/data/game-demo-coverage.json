@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 802,
+  "gameCount": 803,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 684,
+    "available": 685,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fa-cai-shen-m-cq9",
+      "name": "Fa Cai Shen M",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Fa Cai Shen M ID 131, RTP 96.07%, High volatility, overall 3000x maximum, a designated symbol that retriggers Free Games and Treasure Bowl WILD with random local multiplier up to 27x. US New York browser read-only guest Demo: HTTP 200, matching Fa Cai Shen M branding, 243 Ways, 5x3 portrait reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 131, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/131/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser exact Fa Cai Shen M branding, 243 Ways, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/vToXiVvp.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped wealth god golden glow background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/vIhTvyji.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Fa Cai Shen M"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/131/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Fa Cai Shen M ID 131, RTP 96.07%, High volatility, overall 3000x maximum, a designated symbol that retriggers Free Games and Treasure Bowl WILD with random local multiplier up to 27x. US New York browser read-only guest Demo: HTTP 200, matching Fa Cai Shen M branding, 243 Ways, 5x3 portrait reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "gold-stealer-cq9",
       "name": "Gold Stealer",

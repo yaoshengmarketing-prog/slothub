@@ -1,0 +1,31 @@
+{
+  "batch": 241,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Fa Cai Shen M / 直式发财神 (131) absent.",
+  "records": [
+    {
+      "name": "Fa Cai Shen M",
+      "slug": "fa-cai-shen-m-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "131",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 131: RTP 96.07%, High volatility, overall maximum_win 3000; designated symbol retriggers Free Games and Treasure Bowl WILD has random local multiplier up to 27x. US guest canvas labels 243 Ways.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/vToXiVvp.jpg",
+        "localPath": "public/assets/games/fa-cai-shen-m-cq9.jpg",
+        "sha256": "92331ab0982546e8c41fe7ca4f30be7623df2c0040f5f7fb81e7183262af14c0",
+        "visualCheck": "Official ID 131 maps to wealth god golden glow background; matching title icon spells Fa Cai Shen M."
+      },
+      "demo": "US New York browser guest-query /h5/131/?language=en&token=guest HTTP 200, exact Fa Cai Shen M branding, 243 Ways, 5x3 portrait reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Fa Cai Shen M live closure, continue Good Fortune M ID133, Sherlock Holmes ID42 and Gu Gu Gu M ID135 if US guest Demo verifies. Their official images/icons downloaded and visually checked. Held source conflicts remain."
+}
