@@ -1,0 +1,32 @@
+{
+  "batch": 186,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Acrobatics / 百戲 (223) absent before intake.",
+  "records": [
+    {
+      "name": "Acrobatics",
+      "slug": "acrobatics-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "223",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/news/detail/198",
+      "officialFacts": "CQ9 Slot catalog ID 223: RTP 96.16%, Low volatility, maximum_win 3000. Exact official news describes copied symbols on reels 2-4, second scoring chance and Free Games.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/pfYFfy4d.jpg",
+        "localPath": "public/assets/games/acrobatics-cq9.jpg",
+        "sha256": "de82549011f355cf0ea6ec5e2e6c6c2064e1f251f6e8a1c8b9eded72811feb6c",
+        "visualCheck": "Official 223 maps to theater stage background; icon md8hnuwC.png visibly spells Acrobatics."
+      },
+      "demo": "Historical news guest URL HTTP 404; current catalog URL HTTP 200 and exact title. Ready Demo controls not verified; browser visual check pending. No guest link published."
+    }
+  ],
+  "nextCursor": "After Acrobatics live closure, continue next uncollected CQ9 Slot from official catalog, with exact news/image/Demo checks. Preserve Sung Wukong/Sugar Combo metric-conflict queue."
+}

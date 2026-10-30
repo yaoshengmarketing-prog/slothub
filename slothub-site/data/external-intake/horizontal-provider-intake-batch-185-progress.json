@@ -1,10 +1,10 @@
 {
   "batch": 185,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "lucky-tigers-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "226",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialNews": "https://www.cq9gaming.com/news/detail/200",
       "officialFacts": "CQ9 Slot catalog ID 226: RTP 96.14%, High volatility, maximum_win 4000. Exact official news describes firecrackers on reels 1/3/5 triggering Free Games and tiger multipliers.",
@@ -28,5 +28,15 @@
       "demo": "Historical official-news guest URL HTTP 404; current catalog game shell HTTP 200 document. Ready Demo controls not verified; browser visual check pending. No guest link published."
     }
   ],
-  "nextCursor": "After Lucky Tigers live closure, continue Acrobatics (223), exact official news/detail/198 and catalog-mapped art, then remaining CQ9 Slot catalog. Preserve Sung Wukong/Sugar Combo conflict queue."
+  "nextCursor": "Lucky Tigers 226 live verified; old official-news guest URL HTTP 404, current catalog game URL HTTP 200, playable Demo not verified. Continue Acrobatics 223, official news/detail/198 and mapped image checked, same guest 404/current URL 200 distinction. Preserve two metric-conflict items.",
+  "publication": {
+    "commit": "4023a9a1b428114dec5cd16f4e1d28d2692f9806",
+    "githubRun": 41018206163,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "a3c493b7-66db-4e97-86f7-7cce429f738d",
+    "cloudflareUrl": "https://a3c493b7.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official news/catalog and RTP/max present; stale 404 guest Demo absent; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
