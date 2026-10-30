@@ -1,10 +1,10 @@
 {
   "batch": 232,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "waterworld-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "29",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 29: RTP 96.18%, Low volatility, overall maximum_win 3000; scoring combinations eliminate and permit subsequent wins. US guest canvas labels 243 WAYS.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/29/?language=en&token=guest HTTP 200, exact WaterWorld branding, 243 WAYS, 5x3 reels and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After WaterWorld live closure, continue God of War ID31 and Fire Chibi ID33 after exact Demo and image checks. 777 ID26 held for official maximum conflict."
+  "nextCursor": "WaterWorld 29 live verified; continue God of War 31.",
+  "publication": {
+    "commit": "0c00ea9414c74f1b1e6d1865c52a259883ec650b",
+    "githubRun": 41059030107,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "a6624355-21a0-4f17-8c7a-5b8b1fe83216",
+    "cloudflareUrl": "https://a6624355.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

@@ -1,0 +1,31 @@
+{
+  "batch": 233,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 God of War / 武圣 (31) absent, distinct from God of War M 127.",
+  "records": [
+    {
+      "name": "God of War",
+      "slug": "god-of-war-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "31",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 31: RTP 96.10%, Medium volatility, overall maximum_win 3000; Free Games let player choose one of five symbols to appear on reels. US guest canvas labels 243 WAYS.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/7fpjEFNC.jpg",
+        "localPath": "public/assets/games/god-of-war-cq9.jpg",
+        "sha256": "07da9cc4770db785d5bbe03d9b987c10f43972b668bfe6a8cb85e2a6717e2521",
+        "visualCheck": "Official ID 31 maps to ancient battlefield background; matching title icon spells God of War."
+      },
+      "demo": "US New York browser guest-query /h5/31/?language=en&token=guest HTTP 200, exact God of War branding, 243 WAYS, 5x3 reels and controls without login after intro splash. No gameplay action."
+    }
+  ],
+  "nextCursor": "After God of War live closure, continue Fire Chibi ID33 (US guest Demo already verified; official image/icon downloaded and visually checked), then All Wilds ID38. Held max-win conflict queue persists."
+}
