@@ -1,0 +1,31 @@
+{
+  "batch": 228,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 So Sweet / 甜蜜蜜 (8) absent before intake.",
+  "records": [
+    {
+      "name": "So Sweet",
+      "slug": "so-sweet-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "8",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 8: RTP 96.11%, High volatility, overall maximum_win 6000; Free Game winning combinations have local 3x multiplier. US guest canvas labels 243 WAYS.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/EC8cj2jl.jpg",
+        "localPath": "public/assets/games/so-sweet-cq9.jpg",
+        "sha256": "c16cc1d3655110af074e45d82b9dc662608746dc87335f7ed8d52cba52a12d0f",
+        "visualCheck": "Official ID 8 maps to candy land background; matching icon spells So Sweet."
+      },
+      "demo": "US New York browser guest-query /h5/8/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 243 WAYS, 5x3 reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After So Sweet live closure, continue Zhong Kui 9, visually verified US guest 243 WAYS. Previous core conflicts remain review queue."
+}

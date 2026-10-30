@@ -1,10 +1,10 @@
 {
   "batch": 227,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "rave-jump-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "7",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 7: RTP 96.18%, High volatility, overall maximum_win 3000; stacked Golden Ball symbols determine Free Game multiplier. US guest canvas labels 243 WAYS.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/7/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 243 WAYS, 5x3 reels and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Rave Jump live closure, continue So Sweet 8 then Zhong Kui 9, both US guest Demo visually verified. Hold official conflicts in review queue."
+  "nextCursor": "Rave Jump 7 live verified; continue So Sweet 8.",
+  "publication": {
+    "commit": "b9f4a3af771ef31b4bb909098582e09d6d265c92",
+    "githubRun": 41056516124,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "ec6d73da-761c-45b9-a6ed-7257912dce0f",
+    "cloudflareUrl": "https://ec6d73da.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
