@@ -1,0 +1,31 @@
+{
+  "batch": 229,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Zhong Kui / 钟馗运财 (9) absent before intake.",
+  "records": [
+    {
+      "name": "Zhong Kui",
+      "slug": "zhong-kui-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "9",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 9: RTP 96.10%, High volatility, overall maximum_win 5000; only high-paying symbols during Free Games. US guest canvas labels 243 WAYS.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/EWIa7udg.jpg",
+        "localPath": "public/assets/games/zhong-kui-cq9.jpg",
+        "sha256": "e6b95cef8670442081678d7fdfe979d38035db9f181baba9bce257d2a23415c6",
+        "visualCheck": "Official ID 9 maps to fiery mountain background; matching icon spells Zhong Kui."
+      },
+      "demo": "US New York browser guest-query /h5/9/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 243 WAYS, 5x3 reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Zhong Kui live closure, continue next uncollected CQ9 Slot. Lucky Bats 10, Super5 16, Great Lion 17 under US guest check. Previous core conflicts remain review queue."
+}

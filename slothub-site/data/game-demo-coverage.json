@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 790,
+  "gameCount": 791,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 672,
+    "available": 673,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "zhong-kui-cq9",
+      "name": "Zhong Kui",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Zhong Kui ID 9, RTP 96.10%, High volatility, overall 5000x maximum; only high-paying symbols appear on reels during Free Games. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, ZHONG KUI branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 9, metrics and Free Game symbol set"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/9/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser ZHONG KUI, 243 WAYS, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/EWIa7udg.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped fiery mountain background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/Qp8HJX37.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Zhong Kui"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/9/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Zhong Kui ID 9, RTP 96.10%, High volatility, overall 5000x maximum; only high-paying symbols appear on reels during Free Games. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, ZHONG KUI branding, 243 WAYS, 5x3 reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "so-sweet-cq9",
       "name": "So Sweet",
