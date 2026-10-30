@@ -1,0 +1,37 @@
+{
+  "batch": 163,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "captured-awaiting-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue documented JDB official catalog at card 4",
+  "catalog": "https://www.jdbgaming.com/en/games/slot",
+  "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
+  "dedupScope": "All Game Markdown and Provider name/alias fields; Pinata BON absent before intake. Slots Launch Pinata Bum is not assumed the same game.",
+  "records": [
+    {
+      "order": 4,
+      "name": "PINATA BON",
+      "slug": "pinata-bon-jdb",
+      "provider": "jdb-gaming",
+      "status": "captured-awaiting-publication",
+      "officialPage": "https://www.jdbgaming.com/en/games/slot/pinata-bon",
+      "officialFacts": "JDB official card/detail: RTP 96.5%, MEDIUM volatility, Maximum Win 6800X, 20 Lines, release year 2026; cascading wins, Golden Symbols on reels 2-4 with X2-X100 multipliers and symbol upgrade, 3+ Scatters for at least 15 Free Games, up to three symbol types upgraded.",
+      "partnerPage": "https://bc.game/game/pinata-bon-by-jdb",
+      "partnerEvidence": "BC.Game indexed exact Pinata BON by JDB with RTP 96.5%, Medium volatility and 6800X; no public demo inferred.",
+      "sourceConflict": "Slots Launch lists Pinata Bum, unverified identity; not treated as Pinata BON.",
+      "image": {
+        "sourcePage": "https://www.jdbgaming.com/en/games/slot/pinata-bon",
+        "sourceUrl": "https://www.jdbgaming.com/upload_image/gamesCoverOne/gamesCoverOne_7b1f0595d6b1ac06f8e3f96d0ba63363.jpg",
+        "retrievalProxy": "https://www-jdbgaming-com.translate.goog/upload_image/gamesCoverOne/gamesCoverOne_7b1f0595d6b1ac06f8e3f96d0ba63363.jpg?_x_tr_sl=en&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN",
+        "detailImage": "https://www.jdbgaming.com/upload_image/games/games_19fc889a881a5661caf04c7bfc80d3e7.jpg",
+        "sha256": "dc74eeab7895dbdeeff0b5d5771376393529a6bf642ceee433ab86d98bedde3c",
+        "actualMime": "image/jpeg",
+        "visualCheck": "JDB official detail and card images share the same goggles-wearing woman holding a rainbow piñata; both downloaded as valid JPEG and inspected. First-party card image was obtained through Google Translate public image proxy because direct JDB asset is geo-restricted."
+      },
+      "demo": "No confirmed anonymous exact-game playable demo; marked not-verified."
+    }
+  ],
+  "nextCursor": "JDB catalog card 5"
+}

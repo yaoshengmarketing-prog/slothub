@@ -207,9 +207,9 @@
       }
     }
   ],
-  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 and 1-3 imported. Next individual candidate is card 4 PINATA BON. Cards 4-10 remain.",
-  "nextStep": "After card 3 publication loop, continue card 4 PINATA BON with exact official-versus-partner name and image checks.",
-  "publishedCount": 38,
+  "nextCursor": "Catalog positions 1-46 enumerated; cards 11-46 and 1-4 imported. Next individual candidate is card 5. Cards 5-10 remain.",
+  "nextStep": "After card 4 publication loop, continue card 5 from JDB official details ledger and independently check image and demo.",
+  "publishedCount": 39,
   "card15Evidence": {
     "name": "BULL TREASURE X-HUGE™",
     "officialPage": "https://www.jdbgaming.com/en/games/slot/bull-treasure",
@@ -711,6 +711,21 @@
     "partnerAttribution": "Exact Slots Launch page identifies Voyage of Blast Raider X-Lock by JDB Gaming; valid downloaded WebP (despite .jpg URL) visibly displays full VOYAGE OF BLAST RAIDER X-LOCK title and otter.",
     "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo.",
     "dedup": "All Game Markdown and Provider name/alias fields; Voyage of Blast Raider X-Lock absent before intake, distinct from other Voyage series members.",
+    "decision": "published-live-verified"
+  },
+  "card4Evidence": {
+    "name": "PINATA BON",
+    "officialPage": "https://www.jdbgaming.com/en/games/slot/pinata-bon",
+    "officialFacts": "JDB official card/detail: RTP 96.5%, MEDIUM volatility, Maximum Win 6800X, 20 Lines, release year 2026; cascading wins, Golden Symbols on reels 2-4 with X2-X100 multipliers and symbol upgrade, 3+ Scatters for at least 15 Free Games, up to three symbol types upgraded.",
+    "partnerPage": "https://bc.game/game/pinata-bon-by-jdb",
+    "partnerEvidence": "BC.Game indexed exact Pinata BON by JDB with RTP 96.5%, Medium volatility and 6800X; no public demo inferred.",
+    "sourceConflict": "Slots Launch lists Pinata Bum, unverified identity; not treated as Pinata BON.",
+    "officialImage": "https://www.jdbgaming.com/upload_image/gamesCoverOne/gamesCoverOne_7b1f0595d6b1ac06f8e3f96d0ba63363.jpg",
+    "officialImageSha256": "dc74eeab7895dbdeeff0b5d5771376393529a6bf642ceee433ab86d98bedde3c",
+    "officialImageMime": "image/jpeg",
+    "imageAttribution": "JDB official detail and card images share the same goggles-wearing woman holding a rainbow piñata; both downloaded as valid JPEG and inspected. First-party card image was obtained through Google Translate public image proxy because direct JDB asset is geo-restricted.",
+    "demo": "No confirmed anonymous exact-game playable demo; marked not-verified.",
+    "dedup": "All Game Markdown and Provider name/alias fields; Pinata BON absent before intake. Slots Launch Pinata Bum is not assumed the same game.",
     "decision": "captured-awaiting-publication"
   }
 }

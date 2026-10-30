@@ -1,10 +1,10 @@
 {
   "batch": 162,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "captured-awaiting-publication",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue documented JDB official catalog at card 3",
   "catalog": "https://www.jdbgaming.com/en/games/slot",
   "catalogSnapshot": "data/external-intake/jdb-official-catalog-2026-10-30.partial.json",
@@ -15,7 +15,7 @@
       "name": "Voyage of Blast Raider X-Lock™",
       "slug": "voyage-of-blast-raider-x-lock-jdb",
       "provider": "jdb-gaming",
-      "status": "captured-awaiting-publication",
+      "status": "published-live-verified",
       "officialPage": "https://www.jdbgaming.com/en/games/slot/voyage-of-blast-raider-x-lock",
       "officialFacts": "Official English/CN detail: Slot, RTP 96.42%, LOW volatility, Maximum Win 1500X, 243 Ways, release year 2026; Otter X-Lock collects coins, dual pot Hold & Spin, three Feature Buy choices and Unlock/Add/Double Coin effects.",
       "sourceConflict": "Slots Launch identifies same title/provider/year and only generic All Ways; exact 243 Ways and mechanics are from JDB official.",
@@ -29,5 +29,15 @@
       "demo": "Exact third-party Slots Launch page identifies game and JDB; external platform-game-page only, not official Demo."
     }
   ],
-  "nextCursor": "JDB catalog card 4 PINATA BON"
+  "nextCursor": "JDB catalog card 4 PINATA BON",
+  "publication": {
+    "commit": "67efcdb7c42911b6074ad126aefb6fd9d23955cf",
+    "githubRun": 40983556072,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "c061695c-49c5-428b-a72e-f2981fd62775",
+    "cloudflareUrl": "https://c061695c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, WebP image and sitemap HTTP 200; official and official English and Chinese URLs present; RTP and max win present; live image SHA256 matches local; HTML and X-Robots-Tag noindex/nofollow; no canonical; empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
