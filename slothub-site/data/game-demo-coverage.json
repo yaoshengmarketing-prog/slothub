@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 805,
+  "gameCount": 806,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 687,
+    "available": 688,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gu-gu-gu-m-cq9",
+      "name": "Gu Gu Gu M",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Gu Gu Gu M ID 135, RTP 96.13%, High volatility, overall 6000x maximum, up to 100 Free Games and a local 5x line payout on golden egg. US New York browser read-only guest Demo: initial transient Connect Error, same URL retried, HTTP 200 matching Gu Gu Gu M branding, 15 Lines, 5x3 portrait reels and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 135, metrics and Free Games description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/135/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser first Connect Error, same URL retried; Gu Gu Gu M branding, 15 Lines, 5x3 reels and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/xaggl9HH.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped moonlit pagodas background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/OccXMvsd.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Gu Gu Gu M"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/135/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Gu Gu Gu M ID 135, RTP 96.13%, High volatility, overall 6000x maximum, up to 100 Free Games and a local 5x line payout on golden egg. US New York browser read-only guest Demo: initial transient Connect Error, same URL retried, HTTP 200 matching Gu Gu Gu M branding, 15 Lines, 5x3 portrait reels and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "sherlock-holmes-cq9",
       "name": "Sherlock Holmes",

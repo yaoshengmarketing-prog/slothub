@@ -1,10 +1,10 @@
 {
   "batch": 243,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "sherlock-holmes-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "42",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 42: RTP 96.11%, Medium volatility, overall maximum_win 3000; five Free Game modes and local reward up to 30x. US guest canvas labels 243 Ways.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/42/?language=en&token=guest HTTP 200, exact Sherlock Holmes branding, 243 Ways, 5x3 reels and controls without login. Visible 3 WAY control not operated; no gameplay action."
     }
   ],
-  "nextCursor": "After Sherlock Holmes live closure, continue Gu Gu Gu M ID135 (US guest Demo verified after one transient Connect Error; official image/icon downloaded and visually checked), then Move n Jump ID138 if its Demo verifies. Held source conflicts remain."
+  "nextCursor": "Sherlock Holmes 42 live verified; continue Gu Gu Gu M 135.",
+  "publication": {
+    "commit": "5d5e540cc6b47c3ceac4d859825e0c5a09b0aed3",
+    "githubRun": 41064801361,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "e30bc747-fb33-479b-a6a7-dffe8775640d",
+    "cloudflareUrl": "https://e30bc747.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

@@ -1,0 +1,31 @@
+{
+  "batch": 244,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Gu Gu Gu M / 直式金鸡报喜 (135) absent.",
+  "records": [
+    {
+      "name": "Gu Gu Gu M",
+      "slug": "gu-gu-gu-m-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "135",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 135: RTP 96.13%, High volatility, overall maximum_win 6000; up to 100 Free Games and local 5x line payout on golden egg. US guest canvas labels 15 Lines.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/xaggl9HH.jpg",
+        "localPath": "public/assets/games/gu-gu-gu-m-cq9.jpg",
+        "sha256": "d5ec68e9a8246b44cddc9be70ce40df8d5dc1f35c0708aa92d751955d2b6a2a6",
+        "visualCheck": "Official ID 135 maps to moonlit pagodas background; matching title icon spells Gu Gu Gu M."
+      },
+      "demo": "US New York browser guest-query /h5/135/?language=en&token=guest first showed transient Connect Error; same URL retry HTTP 200, exact Gu Gu Gu M branding, 15 Lines, 5x3 portrait reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Gu Gu Gu M live closure, continue Move n Jump ID138, Fire Chibi M ID139 and Fire Chibi 2 ID140 (US guest Demos verified; official images/icons downloaded and visually checked). Held source conflicts remain."
+}
