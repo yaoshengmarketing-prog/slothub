@@ -1,0 +1,42 @@
+{
+  "batch": 170,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Taiwan entertainment-site prevalent CQ9 Gaming; continue existing Provider rather than require a new one",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Wild Disco Night (ID 252, 蹦迪狂歡夜) absent before intake. CQ9 Provider already published and officialUrl points to cq9gaming.com.",
+  "records": [
+    {
+      "name": "Wild Disco Night",
+      "slug": "wild-disco-night",
+      "provider": "cq9-gaming",
+      "officialGameId": "252",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/news/detail/865",
+      "officialFacts": "CQ9 official Slot list and first-party data: RTP 97.07%, Medium volatility, maximum_win 7000; official news: split Wild on reels 2-4, five Scatter trigger 12 Free Games, ALL WIN multiplier.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/6zoBQNkw.jpg",
+        "localPath": "public/assets/games/wild-disco-night.jpg",
+        "sha256": "2cab7b1cc610678e2c6cce77e0c5f63f934fc68624f22947447e61e4b4a05308",
+        "visualCheck": "Exact official catalog record maps game ID 252 to the neon-disco horizontal background; official icon nayxH992.png visually spells WILD DISCO NIGHT."
+      },
+      "demo": "Official catalog modal and dataset identify game-specific domain, but the page exposes no verified playable href without launching; status not-verified."
+    }
+  ],
+  "nextCursor": "Wild Disco Night live verified; continue CQ9 Slot catalog at Treasure Bowl JP (ID 1074).",
+  "publication": {
+    "commit": "6ae211c7a805734890d069669e90667c772ff1e4",
+    "githubRun": 41001873661,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "3ea531f9-3624-4b25-b7e0-103d01e5df25",
+    "cloudflareUrl": "https://3ea531f9.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG image and sitemap HTTP 200; official news/catalog source, RTP and max win present; live image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}

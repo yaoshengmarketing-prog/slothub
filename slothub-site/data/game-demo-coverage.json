@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 731,
+  "gameCount": 736,
   "providerCount": 371,
-  "sourcePageCount": 1330,
+  "sourcePageCount": 1342,
   "counts": {
     "access-restricted": 4,
     "available": 630,
-    "not-verified": 97
+    "not-verified": 102
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,146 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "golden-horus-cq9",
+      "name": "Golden Horus",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "Official CQ9 Slot catalog identifies game ID CP4 and first-party exact-title news confirms the game, but the catalog modal did not expose a verified playable href.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot card and modal, game ID CP4"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/1343",
+          "httpStatus": 200,
+          "notes": "Official exact-title Slot news"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/OzjyAdPi.png",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/hiJ3zcIV.png",
+          "httpStatus": 200,
+          "notes": "Official title icon, visually checked"
+        }
+      ]
+    },
+    {
+      "slug": "go-fishing-cq9",
+      "name": "Go Fishing",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "Official CQ9 Slot catalog identifies game ID 246, while the exact-title official news calls Go Fishing a Slot; the catalog modal did not expose a verified playable href.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot card and modal, game ID 246"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/795",
+          "httpStatus": 200,
+          "notes": "Official exact-title Slot news"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/Ls6RTmor.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/UYOm1DZx.png",
+          "httpStatus": 200,
+          "notes": "Official title icon, visually checked"
+        }
+      ]
+    },
+    {
+      "slug": "lucky-bats-jp-cq9",
+      "name": "Lucky Bats JP",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "Official CQ9 Slot catalog modal identifies game ID 1010, but does not expose an independently verified playable href; no generic lobby or catalog substituted.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot card and modal, game ID 1010"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/IZCHs2VZ.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/B8QtA1mp.png",
+          "httpStatus": 200,
+          "notes": "Official title icon, visually checked"
+        }
+      ]
+    },
+    {
+      "slug": "treasure-bowl-jp-cq9",
+      "name": "Treasure Bowl JP",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "Official CQ9 Slot catalog modal identifies game ID 1074, but does not expose an independently verified playable href. Do not substitute a generic catalog or lobby.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot card and modal, game ID 1074"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/N4jmBYOt.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/6SSyBLCA.png",
+          "httpStatus": 200,
+          "notes": "Official title icon, visually checked"
+        }
+      ]
+    },
+    {
+      "slug": "wild-disco-night",
+      "name": "Wild Disco Night",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies exact game ID 252 and a game-specific domain, but its public modal did not expose a verified playable href; no generic provider page substituted.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card and modal, game ID 252"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/news/detail/865",
+          "httpStatus": 200,
+          "notes": "Official exact-title Slot news"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/6zoBQNkw.jpg",
+          "httpStatus": 200,
+          "notes": "Official image, visually checked against exact catalog record"
+        }
+      ]
+    },
     {
       "slug": "magic-ace-wild-lock-jdb",
       "name": "Magic Ace WILD LOCK",

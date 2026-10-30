@@ -1,0 +1,47 @@
+{
+  "batch": 173,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "CQ9 official Slot catalog continuation; skip unresolved Sung Wukong official volatility conflict",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; Go Fishing / 釣魚趣 (CQ9 game ID 246) absent. Official CQ9 calls it a Slot despite fishing-themed name; do not merge with Fishing category.",
+  "records": [
+    {
+      "name": "Go Fishing",
+      "slug": "go-fishing-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "246",
+      "status": "published-live-verified",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/news/detail/795",
+      "officialFacts": "Official CQ9 catalog type Slot, ID 246, RTP 96.06%, High volatility, maximum_win 15000; official news confirms Any 8 Slot, line-clear/cascade mechanics and random multiplier up to 500X.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/Ls6RTmor.jpg",
+        "localPath": "public/assets/games/go-fishing-cq9.jpg",
+        "sha256": "dbf8a3c756dec0570a2539f2fb74a724cd7032b101426fe799a2a0ed0e8a5f1b",
+        "visualCheck": "Exact official ID 246 maps to harbor background; official icon UYOm1DZx.png visually spells Go Fishing with fish art."
+      },
+      "demo": "Official modal did not expose independently verified playable href; status not-verified."
+    }
+  ],
+  "excludedCandidate": {
+    "name": "Sung Wukong",
+    "gameId": "253",
+    "reason": "Official CQ9 catalog game_equity lists Medium volatility, but official CQ9 news at https://www.cq9gaming.com/news/detail/900 explicitly calls it high-volatility; the news also describes re-spinning first and third reels while catalog Chinese text says first and last. Preserve as unresolved official-source conflict; do not guess or publish core field."
+  },
+  "nextCursor": "Go Fishing live verified; continue CQ9 Slot catalog at Golden Horus (ID CP4), retain Sung Wukong source-conflict review queue.",
+  "publication": {
+    "commit": "e3ef7f1508d80ba9d86aa0ccbac3da574b37ad8c",
+    "githubRun": 41007561037,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "95d8d8b0-cedc-494c-a8e7-d554c04017b3",
+    "cloudflareUrl": "https://95d8d8b0.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG image and sitemap HTTP 200; official news/catalog source, RTP and maximum win present; live image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
+}
