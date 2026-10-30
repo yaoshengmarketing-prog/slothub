@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 828,
+  "gameCount": 829,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 710,
+    "available": 711,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "apollo-cq9",
+      "name": "Apollo",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Apollo ID 78, RTP 96.13%, Medium volatility, overall 3000x maximum, five shield icons awarding 100 free games, stacked symbols and two-way scoring. US browser read-only guest Demo: exact APOLLO canvas, 5x3 reels, 40 LINES and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 78, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/78/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered exact APOLLO canvas, 5x3 reels, 40 LINES and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/l2kFkneI.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped gold sky background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/t04iYWeL.png",
+          "httpStatus": 200,
+          "notes": "Official Apollo title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/78/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Apollo ID 78, RTP 96.13%, Medium volatility, overall 3000x maximum, five shield icons awarding 100 free games, stacked symbols and two-way scoring. US browser read-only guest Demo: exact APOLLO canvas, 5x3 reels, 40 LINES and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "treasure-bowl-cq9",
       "name": "Treasure Bowl",

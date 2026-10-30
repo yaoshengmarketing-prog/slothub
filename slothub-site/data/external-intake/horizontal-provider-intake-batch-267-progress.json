@@ -1,0 +1,31 @@
+{
+  "batch": 267,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Apollo / 阿波罗 (78) absent.",
+  "records": [
+    {
+      "name": "Apollo",
+      "slug": "apollo-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "78",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 78: RTP 96.13%, Medium volatility, overall maximum_win 3000; five shield icons can award 100 free games, stacked symbols and two-way scoring. US guest canvas labels 40 LINES.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/l2kFkneI.jpg",
+        "localPath": "public/assets/games/apollo-cq9.jpg",
+        "sha256": "811c489bbad0156db42d3b4986776afa6149debf2ca81d84649f418a84ca199d",
+        "visualCheck": "Official ID 78 maps to golden sky background; matching title icon spells Apollo."
+      },
+      "demo": "US browser guest-query /h5/78/?language=en&token=guest HTTP 200 with exact APOLLO canvas, 5x3 reels, 40 LINES and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Apollo live closure, continue Chameleon ID79 (US exact guest Demo verified; official image/icon downloaded and visually checked), then Fire Queen ID83 and Thor ID89. Held source conflicts remain."
+}
