@@ -1,0 +1,32 @@
+{
+  "batch": 187,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 King of Atlantis / 海王 (211) absent before intake.",
+  "records": [
+    {
+      "name": "King of Atlantis",
+      "slug": "king-of-atlantis-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "211",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/pt-BR/news/detail/184",
+      "officialFacts": "CQ9 Slot catalog ID 211: RTP 96.17%, High volatility, maximum_win 10000. Exact official news describes six reels, Free Games Buy and random multiplier/additional Free Games.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/cdYQlKaE.jpg",
+        "localPath": "public/assets/games/king-of-atlantis-cq9.jpg",
+        "sha256": "2c06309df6646491ba83f50817c884cf4efba96c620db8bfe2a8e7959ce767a7",
+        "visualCheck": "Official 211 maps to undersea background; icon AK9ebmsy.png visibly spells King of Atlantis."
+      },
+      "demo": "Historical official-news guest URL HTTP 404; current catalog URL HTTP 200 with generic Welcome document title. Browser visual check pending. Demo not-verified; no guest link published."
+    }
+  ],
+  "nextCursor": "After King of Atlantis live closure, continue next uncollected CQ9 Slot; preserve Sung Wukong/Sugar Combo metric conflict queue."
+}

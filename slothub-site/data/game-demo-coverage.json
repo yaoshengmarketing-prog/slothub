@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 748,
+  "gameCount": 749,
   "providerCount": 371,
-  "sourcePageCount": 1397,
+  "sourcePageCount": 1403,
   "counts": {
     "access-restricted": 4,
     "available": 632,
-    "not-verified": 112
+    "not-verified": 113
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -18,13 +18,54 @@
   },
   "entries": [
     {
+      "slug": "king-of-atlantis-cq9",
+      "name": "King of Atlantis",
+      "provider": "cq9-gaming",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog/news identify King of Atlantis ID 211. Old news guest URL HTTP 404; current catalog game shell HTTP 200 with generic Welcome title. Ready playable controls not verified; US browser visual check pending.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card 211"
+        },
+        {
+          "requestedUrl": "https://www.cq9gaming.com/pt-BR/news/detail/184",
+          "httpStatus": 200,
+          "notes": "Exact King of Atlantis news and historical guest link"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/211/?language=en&token=guest",
+          "notes": "Historical official-news guest URL HTTP 404; not a 403",
+          "httpStatus": 404
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/211/",
+          "notes": "Current catalog URL HTTP 200; generic Welcome document title; ready controls and visible game identity require browser check",
+          "httpStatus": 200
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/cdYQlKaE.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped undersea background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/AK9ebmsy.png",
+          "httpStatus": 200,
+          "notes": "Official title icon visibly spells King of Atlantis"
+        }
+      ]
+    },
+    {
       "slug": "acrobatics-cq9",
       "name": "Acrobatics",
       "provider": "cq9-gaming",
       "status": "not-verified",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-10-30",
-      "evidence": "Exact CQ9 catalog/news identify Acrobatics ID 223. Old official-news guest URL HTTP 404; current catalog game URL HTTP 200 with matching title. Ready playable controls not verified, so no public Demo link. Browser visual check pending.",
+      "evidence": "US New York same-browser read-only verification: official news guest URL for ID 223 returns HTTP 404; current catalog /h5/223/ returns HTTP 200, exact game title and canvas artwork, but remains a loading shell without reels or usable controls after about 45 seconds. No 403 or login; Demo not-verified.",
       "inspectedUrls": [
         {
           "requestedUrl": "https://site.cq9gaming.com/en/games",
@@ -44,7 +85,7 @@
         {
           "requestedUrl": "https://h5c.cqgame.games/h5/223/",
           "httpStatus": 200,
-          "notes": "Current catalog game URL returns HTTP 200 and title Acrobatics; ready controls not verified"
+          "notes": "US New York browser HTTP 200, exact game title, loading canvas after about 45 seconds without playable reels/controls"
         },
         {
           "requestedUrl": "https://images.hfyali.com/cherry/background/pfYFfy4d.jpg",
@@ -56,7 +97,8 @@
           "httpStatus": 200,
           "notes": "Official title icon visibly spells Acrobatics"
         }
-      ]
+      ],
+      "browserReviewedAt": "2026-10-30"
     },
     {
       "slug": "lucky-tigers-cq9",
@@ -65,7 +107,7 @@
       "status": "not-verified",
       "iframeStatus": "not-tested",
       "checkedAt": "2026-10-30",
-      "evidence": "Exact CQ9 catalog/news identify Lucky Tigers ID 226. Old official-news guest URL returns HTTP 404; current catalog game shell returns HTTP 200. Ready playable controls not verified, so no public Demo link. Browser visual check pending.",
+      "evidence": "US New York same-browser read-only verification: official news guest URL for ID 226 returns HTTP 404; current catalog /h5/226/ returns HTTP 200, exact game title and canvas artwork, but remains a loading shell without reels or usable controls after about 40 seconds. No 403 or login; Demo not-verified.",
       "inspectedUrls": [
         {
           "requestedUrl": "https://site.cq9gaming.com/en/games",
@@ -85,7 +127,7 @@
         {
           "requestedUrl": "https://h5c.cqgame.games/h5/226/",
           "httpStatus": 200,
-          "notes": "Current official catalog game URL returns HTTP 200 document, but ready Demo controls not verified"
+          "notes": "US New York browser HTTP 200, exact game title, loading canvas after about 40 seconds without playable reels/controls"
         },
         {
           "requestedUrl": "https://images.hfyali.com/cherry/background/Ef3tXsvb.jpg",
@@ -97,7 +139,8 @@
           "httpStatus": 200,
           "notes": "Official title icon visibly spells Lucky Tigers"
         }
-      ]
+      ],
+      "browserReviewedAt": "2026-10-30"
     },
     {
       "slug": "football-fever-m-cq9",
