@@ -1,0 +1,32 @@
+{
+  "batch": 177,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "CQ9 official Slot catalog continuation with exact-title first-party Black Wukong news",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Black Wukong / 黑悟空 (game ID 158) absent before intake. Distinct from Sung Wukong / 孫大聖 (ID 253).",
+  "records": [
+    {
+      "name": "Black Wukong",
+      "slug": "black-wukong-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "158",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialNews": "https://www.cq9gaming.com/ja/news/detail/841",
+      "officialFacts": "Official CQ9 catalog Slot ID 158, RTP 95.97%, High volatility, global maximum 5000x. Official exact-title news confirms 243 ways, Golden Hoop Wild-triggered Free Games up to 10, and Black Wukong symbol local multiplier up to 50x.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/ezEhTbEK.jpg",
+        "localPath": "public/assets/games/black-wukong-cq9.jpg",
+        "sha256": "2e80f4b7b88d08c5213f1cdf4a968a82a538b5170f113897bbac0085d788e0af",
+        "visualCheck": "Official ID 158 maps to dark mythic tree background; official icon fc4MDfHN.png visibly spells BLACK WUKONG."
+      },
+      "demo": "Official catalog modal did not expose independently verified playable href; status not-verified."
+    }
+  ],
+  "nextCursor": "After Black Wukong live closure, inspect Mafia (ID 243), Treasure Pirate (ID 242), The Chicken House (ID 241) and other CQ9 Slot entries against exact-title official news and images; retain Sung Wukong and Sugar Combo review queue."
+}

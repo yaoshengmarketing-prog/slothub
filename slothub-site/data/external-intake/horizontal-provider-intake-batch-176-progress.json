@@ -1,10 +1,10 @@
 {
   "batch": 176,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "CQ9 official Slot catalog continuation with English and Japanese exact-title first-party news",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "mahjong-break-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "CP1",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialNews": "https://www.cq9gaming.com/ja/news/detail/958",
       "officialFacts": "Official CQ9 Slot catalog, English news and Japanese exact-title news agree on RTP 97.14%, Medium volatility, global maximum 2500x. Cascading Mahjong symbols and Bet Boost random 2x/3x/5x up to 10x local multiplier. Isolated copy artifacts in English news (Mahjong Wins) and catalog description (Mahjong UNLEASHED) were excluded from game identity and mechanics; official titles, visual title icon, metrics and article body align.",
@@ -33,5 +33,15 @@
     "gameId": "CP2",
     "reason": "Official CQ9 catalog game_equity lists High volatility, but English news/detail/963 and Chinese news/detail/962 state Medium volatility. Preserve as unresolved official-source conflict; do not guess core metric."
   },
-  "nextCursor": "After Mahjong Break live closure, inspect Black Wukong (ID 158), Mafia (243), Treasure Pirate (242) and other CQ9 Slot entries against exact-title official news and images; retain Sung Wukong and Sugar Combo review queue."
+  "nextCursor": "Mahjong Break live verified; continue CQ9 Slot catalog at Black Wukong (ID 158); retain Sung Wukong and Sugar Combo official-source conflict review queue.",
+  "publication": {
+    "commit": "dd5a55b0eaabd74a2a049ea04efe67d4daadac93",
+    "githubRun": 41008872986,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "cc4ac5b7-b920-47b4-bef0-626a80af3b6b",
+    "cloudflareUrl": "https://cc4ac5b7.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, PNG image and sitemap HTTP 200; official news/catalog source, RTP and maximum win present; live image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }
