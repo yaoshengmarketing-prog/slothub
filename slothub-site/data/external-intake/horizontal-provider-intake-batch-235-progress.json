@@ -1,0 +1,31 @@
+{
+  "batch": 235,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Apsaras / 飞天 (39) absent. All Wilds ID38 already published, so not duplicated.",
+  "records": [
+    {
+      "name": "Apsaras",
+      "slug": "apsaras-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "39",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 39: RTP 96.03%, High volatility, overall maximum_win 6000; Free Games Reel Move brings extra combinations and doubled bonus chance. US guest canvas labels 243 WAYS.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/QlIJp5Av.jpg",
+        "localPath": "public/assets/games/apsaras-cq9.jpg",
+        "sha256": "df218006eb55df0b4d696775ed99d6f9a2f4fb16f0e864ae3516d38e8f72dfe2",
+        "visualCheck": "Official ID 39 maps to purple stone wall background; matching title icon spells Apsaras."
+      },
+      "demo": "US New York browser guest-query /h5/39/?language=en&token=guest HTTP 200, exact Apsaras branding, 243 WAYS, 5x3 reels and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Apsaras live closure, continue Invincible Elephant ID124 (US guest Demo verified; official image/icon downloaded and visually checked), then Lucky Bats M ID123 after source and Demo checks. Held source conflicts remain."
+}
