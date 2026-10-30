@@ -1,10 +1,10 @@
 {
   "batch": 221,
   "recordedAt": "2026-10-30T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete CQ9 official Slot catalog intake",
   "catalog": "https://site.cq9gaming.com/en/games",
   "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
@@ -15,7 +15,7 @@
       "slug": "fire-queen-2-cq9",
       "provider": "cq9-gaming",
       "officialGameId": "186",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialCatalog": "https://site.cq9gaming.com/en/games",
       "officialFacts": "CQ9 Slot catalog ID 186: RTP 96.14%, High volatility, overall maximum_win 4000; five paylines, stacked symbols and locking/accumulating Free Game multipliers. US guest canvas labels 5 LINES.",
       "image": {
@@ -27,5 +27,15 @@
       "demo": "US New York browser guest-query /h5/186/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, 5 LINES, 3x3 reels and controls without login. No gameplay action."
     }
   ],
-  "nextCursor": "After Fire Queen 2 live closure, continue Sweet POP 206 then Money Tree 208, both US guest Demo visually verified. Zeus M 125 loading only and core conflicts remain review queue."
+  "nextCursor": "Fire Queen 2 186 live verified; continue Sweet POP 206.",
+  "publication": {
+    "commit": "45e8d0856dab859cef7b1b842074ae3b810e49cc",
+    "githubRun": 41053060514,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "f653bad3-c003-431e-9280-63f496da7caf",
+    "cloudflareUrl": "https://f653bad3.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Games Explorer, Compare, JPG and sitemap HTTP 200; official catalog, RTP/max and verified guest Demo present; image SHA256 matches local; noindex/nofollow, no canonical, empty sitemap",
+    "checkedAt": "2026-10-30"
+  }
 }

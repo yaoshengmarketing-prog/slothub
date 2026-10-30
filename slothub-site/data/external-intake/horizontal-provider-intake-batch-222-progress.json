@@ -1,0 +1,31 @@
+{
+  "batch": 222,
+  "recordedAt": "2026-10-30T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete CQ9 official Slot catalog intake",
+  "catalog": "https://site.cq9gaming.com/en/games",
+  "catalogSnapshot": "data/external-intake/cq9-official-catalog-2026-10-30.json",
+  "dedupScope": "All Game Markdown checked; CQ9 Sweet POP / 甜蜜暴击 (206) absent before intake.",
+  "records": [
+    {
+      "name": "Sweet POP",
+      "slug": "sweet-pop-cq9",
+      "provider": "cq9-gaming",
+      "officialGameId": "206",
+      "status": "imported",
+      "officialCatalog": "https://site.cq9gaming.com/en/games",
+      "officialFacts": "CQ9 Slot catalog ID 206: RTP 96.15%, High volatility, overall maximum_win 3000; portrait elimination with any eight matching symbols and new drops; random high multiplier symbols during Free Games. US guest canvas labels ANY8.",
+      "image": {
+        "sourceUrl": "https://images.hfyali.com/cherry/background/qy1DQK2l.jpg",
+        "localPath": "public/assets/games/sweet-pop-cq9.jpg",
+        "sha256": "e2fc5e8a20806e390db087ef08547b489a9a9167a24ba11061b3447b0fdf3a8b",
+        "visualCheck": "Official ID 206 maps to candy rainbow background; matching icon spells Sweet POP."
+      },
+      "demo": "US New York browser guest-query /h5/206/?language=en&token=guest HTTP 200, unchanged final URL; exact branding, ANY8, 6x6 grid and controls without login. No gameplay action."
+    }
+  ],
+  "nextCursor": "After Sweet POP live closure, continue Money Tree 208, US guest Demo visually verified. Zeus M 125 loading only and core conflicts remain review queue."
+}

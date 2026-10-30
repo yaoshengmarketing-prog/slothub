@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 783,
+  "gameCount": 784,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 665,
+    "available": 666,
     "not-verified": 114
   },
   "rules": {
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sweet-pop-cq9",
+      "name": "Sweet POP",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Sweet POP ID 206, RTP 96.15%, High volatility, overall 3000x maximum, portrait elimination game with any eight matching symbols triggering drop and random Free Game multiplier symbols. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Sweet POP ANY8 branding, 6x6 symbol grid and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 206, metrics and elimination feature"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/206/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US New York browser Sweet POP ANY8, 6x6 grid and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/qy1DQK2l.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped candy rainbow background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/ghppFsDy.png",
+          "httpStatus": 200,
+          "notes": "Official title icon spells Sweet POP"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/206/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Sweet POP ID 206, RTP 96.15%, High volatility, overall 3000x maximum, portrait elimination game with any eight matching symbols triggering drop and random Free Game multiplier symbols. US New York browser read-only guest Demo: HTTP 200, unchanged final URL, Sweet POP ANY8 branding, 6x6 symbol grid and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "fire-queen-2-cq9",
       "name": "Fire Queen 2",
