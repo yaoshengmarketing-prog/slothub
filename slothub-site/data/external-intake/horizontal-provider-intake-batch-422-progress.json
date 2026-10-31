@@ -1,0 +1,32 @@
+{
+  "batch": 422,
+  "recordedAt": "2026-11-01T06:45:07+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Candy Burst/70 absent before intake.",
+  "records": [
+    {
+      "name": "Candy Burst",
+      "slug": "candy-burst-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/58/",
+      "officialFacts": "Official gid 58, pgid 70, Video Slots, RTP 96.95%, Medium volatility, maximum x15000. Exact layout 6×6 symbols combination; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/ee1539eb-4997-46cc-af17-72513b521187.png",
+        "localPath": "public/assets/games/candy-burst-pg-soft.png",
+        "sha256": "d8ad6b36377e817faf59cf7e8350fb3ed1c7787fde76cc5dd86413f548d136a5",
+        "byteSize": 43637,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: chocolate candy ball with pink icing and colourful sweets with PG logo; matches Candy Burst identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/candy-burst/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 57 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
