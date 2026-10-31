@@ -1,0 +1,13 @@
+{
+  "batch": 420,
+  "recordedAt": "2026-11-01T06:35:45+08:00",
+  "state": "excluded-existing-game",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Mahjong Ways 2",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/60/language/1/live/true",
+  "evidence": "Official API identifies enabled Video Slot gid60 pgid74 Mahjong Ways 2. Existing src/content/games/mahjong-ways-2.md has same name and provider; exact duplicate. No new Game, coverage or image write.",
+  "decision": "Excluded as existing Game; no new-game count.",
+  "nextCursor": "Continue enabled gid59 Bikini Paradise."
+}
