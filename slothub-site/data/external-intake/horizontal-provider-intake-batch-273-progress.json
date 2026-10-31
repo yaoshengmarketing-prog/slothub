@@ -1,0 +1,39 @@
+{
+  "batch": 273,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue documented ATG Games official Slot catalog after Elder God Baphomet live closure",
+  "catalog": "https://www.atg-games.com/en/games?type=all",
+  "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Tiger Girl absent before intake and distinct from other tiger-themed games by ATG official title and artwork.",
+  "records": [
+    {
+      "name": "Tiger Girl",
+      "slug": "tiger-girl-atg",
+      "provider": "atg-games",
+      "status": "published-live-verified",
+      "officialPage": "https://www.atg-games.com/games/slot/tiger-girl",
+      "officialFacts": "2026-06-30 release; 6x5 cascading Pay Anywhere; four or more Wine Barrels unlock Free Games; RTP 96.89%; Advanced volatility; Winning ratio x81000; split and locked multiplier orbs.",
+      "image": {
+        "sourceUrl": "https://www.atg-games.com/_ipx/f_webp/tiger-girl/en/game_icon.png",
+        "localPath": "public/assets/games/tiger-girl-atg.webp",
+        "sha256": "a04fffb0b09336f2a937381b4b07185cb17e1a28d875bfc92e0ba742af6db3cc",
+        "visualCheck": "Official exact-game WebP icon visibly displays TIGER GIRL with the matching character; downloaded bytes and visual inspected."
+      },
+      "demo": "Exact official page and catalog show Game Info but no verified game-specific Demo control; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After same-SHA CI, Cloudflare and live readback, continue official ATG catalog Flaming Three Kingdoms, then Wuxia and later uncollected Slot cards. CQ9 17 source-quality holds remain separate.",
+  "publication": {
+    "commit": "ae33e10679f98287b0bf22b1d11d5da1f2cc90b7",
+    "githubRun": 41107113589,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "65d4b012-8220-4bfd-8837-34d726b52651",
+    "cloudflareUrl": "https://65d4b012.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, WebP and sitemap HTTP 200; Provider lists game, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
+}

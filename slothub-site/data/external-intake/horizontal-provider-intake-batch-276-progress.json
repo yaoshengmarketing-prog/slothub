@@ -1,0 +1,29 @@
+{
+  "batch": 276,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue ATG Games official Slot catalog after Vampire live closure",
+  "catalog": "https://www.atg-games.com/en/games?type=all",
+  "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Jinlian absent before intake and distinct from other Chinese-themed titles.",
+  "records": [
+    {
+      "name": "Jinlian",
+      "slug": "jinlian-atg",
+      "provider": "atg-games",
+      "status": "imported-awaiting-live-closure",
+      "officialPage": "https://www.atg-games.com/games/slot/jinlian",
+      "officialFacts": "2026-09-08 release; five reels, 40 left-to-right paylines; RTP 96.38%; Advanced volatility; Winning ratio x1000; 3+ Scatter Free Games, expanding and stacked locked Wilds, random Lucky Moment and JP Jackpot.",
+      "image": {
+        "sourceUrl": "https://www.atg-games.com/_ipx/f_webp/jinlian/en/game_icon.png",
+        "localPath": "public/assets/games/jinlian-atg.webp",
+        "sha256": "ccff77925e607a00fe292312e4cba38f87aa84aa153d904e0c100ef4389c2346",
+        "visualCheck": "Official exact-game WebP icon clearly displays Jinlian title and character, matching the official page; downloaded valid image bytes and visually inspected."
+      },
+      "demo": "Exact official page and catalog expose no verified playable same-game destination in this check; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After same-SHA CI, Cloudflare and full live readback, resume official ATG catalog Froststorm Hunter, Triple Fortune and Bubble Gum. Wuxia remains held for conflicting official way counts; CQ9 17 source-quality holds remain separate."
+}

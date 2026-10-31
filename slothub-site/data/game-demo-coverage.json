@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 831,
+  "gameCount": 838,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
-    "available": 713,
-    "not-verified": 114
+    "available": 715,
+    "not-verified": 119
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,208 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "jinlian-atg",
+      "name": "Jinlian",
+      "provider": "atg-games",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "ATG official exact Jinlian page confirms 2026-09-08 release, five reels, 40 left-to-right paylines, RTP 96.38%, Advanced volatility and Winning ratio x1000. Exact game-specific playable Demo destination and load were not verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.atg-games.com/en/games?type=all",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card links to exact Jinlian Game Info"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/games/slot/jinlian",
+          "httpStatus": 200,
+          "notes": "Official exact game page with identity, date, paylines, math and mechanics; no verified Demo"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/_ipx/f_webp/jinlian/en/game_icon.png",
+          "httpStatus": 200,
+          "notes": "Valid visually checked Jinlian title WebP, SHA256 ccff77925e607a00fe292312e4cba38f87aa84aa153d904e0c100ef4389c2346"
+        }
+      ]
+    },
+    {
+      "slug": "vampire-atg",
+      "name": "Vampire",
+      "provider": "atg-games",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "ATG official exact Vampire page confirms 2026-08-18 release, 40 left-to-right paylines, RTP 96.1%, Medium volatility and Winning ratio x60000. Official exact-game icon displays Vampire with Curse and Rebirth subtitle. No exact playable Demo destination and load were verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.atg-games.com/en/games?type=all",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card links to exact Vampire Game Info"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/games/slot/vampire",
+          "httpStatus": 200,
+          "notes": "Official exact game page with identity, date, paylines, math and mechanics; no verified Demo"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/_ipx/f_webp/vampire/en/game_icon.png",
+          "httpStatus": 200,
+          "notes": "Valid visually checked Vampire title WebP, SHA256 0fa2422c1ba1726404fb146877ce7f1d28cbd0cdaa31d5df0ec3d45bdf40e94f"
+        }
+      ]
+    },
+    {
+      "slug": "flaming-three-kingdoms-atg",
+      "name": "Flaming Three Kingdoms",
+      "provider": "atg-games",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "ATG exact page and title icon identify Flaming Three Kingdoms despite scarlet-three-kingdoms URL. Official page states RTP 96.89%, Advanced volatility and maximum 51,000x. The page prints Demo text but no exact playable destination and load result was verified; not-verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.atg-games.com/en/games?type=all",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card links to exact Game Info"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/games/slot/scarlet-three-kingdoms",
+          "httpStatus": 200,
+          "notes": "Exact official page title Flaming Three Kingdoms, metrics and features; Demo destination not confirmed"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/_ipx/f_webp/scarlet-three-kingdoms/en/game_icon.png",
+          "httpStatus": 200,
+          "notes": "Valid WebP displaying Flaming Three Kingdoms title; SHA256 411975dbc1b6fe54e1fc01a914386a0cf1c5d3b592a643ba21103f5d518f2e37"
+        }
+      ]
+    },
+    {
+      "slug": "tiger-girl-atg",
+      "name": "Tiger Girl",
+      "provider": "atg-games",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "ATG exact Tiger Girl page identifies the 2026-06-30 release, 6x5 cascading Pay Anywhere game, RTP 96.89%, Advanced volatility and Winning ratio x81000. No exact game-specific Demo control was verified in the official catalog or page; Provider homepage is not substituted.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.atg-games.com/en/games?type=all",
+          "httpStatus": 200,
+          "notes": "Official Slot card names Tiger Girl and links to exact Game Info"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/games/slot/tiger-girl",
+          "httpStatus": 200,
+          "notes": "Exact official page with identity, release, metrics and mechanics; no verified Demo control"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/_ipx/f_webp/tiger-girl/en/game_icon.png",
+          "httpStatus": 200,
+          "notes": "Valid visually checked title WebP, SHA256 a04fffb0b09336f2a937381b4b07185cb17e1a28d875bfc92e0ba742af6db3cc"
+        }
+      ]
+    },
+    {
+      "slug": "elder-god-baphomet",
+      "name": "Elder God Baphomet",
+      "provider": "atg-games",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "ATG exact game page identifies Elder God Baphomet and its 2026-05-26 release, 5x5 Cluster Pays, RTP 96.35%, Advanced volatility and Winning ratio x65536. The official catalog and exact page did not expose a verified game-specific Demo control during this check. No generic provider URL is substituted.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.atg-games.com/en/games?type=all",
+          "httpStatus": 200,
+          "notes": "Official catalog card names Elder God Baphomet and identifies Slot and Game Info"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/games/slot/elder-god-baphomet",
+          "httpStatus": 200,
+          "notes": "Exact official game page with identity, date, metrics and features; no verified Demo control"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/_ipx/f_webp/elder-god-baphomet/en/game_icon.png",
+          "httpStatus": 200,
+          "notes": "Valid WebP official title icon; SHA256 6ef99a3a3c8e5d054cfa7564f892f2ddc677aa9b86c1df50687796cb6e20d66a and visual title checked"
+        }
+      ]
+    },
+    {
+      "slug": "jumping-mobile-cq9",
+      "name": "Jumping Mobile",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Jumping Mobile ID 105, RTP 96.18%, High volatility, overall 5000x maximum, portrait layout and an Extra Random Multiplier up to 150x in free games. US browser fresh-tab read-only guest Demo: exact JUMPING MOBILE portrait canvas, 5x3 reels, 243 WAYS and controls without login. Earlier reused-tab Connect Error was transient. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 105, metrics, portrait design and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/105/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US fresh browser tab rendered exact JUMPING MOBILE portrait canvas, 5x3 reels, 243 WAYS and controls without login; prior reused-tab Connect Error transient"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/SrsBNYRk.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped brick wall background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/zY84kunx.png",
+          "httpStatus": 200,
+          "notes": "Official Jumping Mobile title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/105/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Jumping Mobile ID 105, RTP 96.18%, High volatility, overall 5000x maximum, portrait layout and an Extra Random Multiplier up to 150x in free games. US browser fresh-tab read-only guest Demo: exact JUMPING MOBILE portrait canvas, 5x3 reels, 243 WAYS and controls without login. Earlier reused-tab Connect Error was transient. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
+    {
+      "slug": "thor-cq9",
+      "name": "Thor",
+      "provider": "cq9-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-30",
+      "evidence": "CQ9 official catalog identifies Thor ID 89, RTP 95.96%, High volatility, overall 5000x maximum, WILD combination triggered free games and SCATTER awards in free games. US browser read-only guest Demo: exact THOR canvas, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://site.cq9gaming.com/en/games",
+          "httpStatus": 200,
+          "notes": "Official CQ9 Slot catalog ID 89, metrics and feature description"
+        },
+        {
+          "requestedUrl": "https://h5c.cqgame.games/h5/89/?language=en&token=guest",
+          "httpStatus": 200,
+          "notes": "US browser rendered exact THOR canvas, 5x3 reels, 243 WAYS and controls without login"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/background/xrmFeJ8U.jpg",
+          "httpStatus": 200,
+          "notes": "Official mapped blue sky background, visually checked"
+        },
+        {
+          "requestedUrl": "https://images.hfyali.com/cherry/icon/xd4z0bYW.png",
+          "httpStatus": 200,
+          "notes": "Official Thor title icon visually checked"
+        }
+      ],
+      "url": "https://h5c.cqgame.games/h5/89/?language=en&token=guest",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "sameGameEvidence": "CQ9 official catalog identifies Thor ID 89, RTP 95.96%, High volatility, overall 5000x maximum, WILD combination triggered free games and SCATTER awards in free games. US browser read-only guest Demo: exact THOR canvas, 5x3 reels, 243 WAYS and controls without login. No spin, bet or login.",
+      "browserReviewedAt": "2026-10-30"
+    },
     {
       "slug": "fire-queen-cq9",
       "name": "Fire Queen",

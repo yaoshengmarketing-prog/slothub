@@ -1,0 +1,39 @@
+{
+  "batch": 274,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "published-and-verified-live",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue ATG Games official Slot catalog after Tiger Girl live closure",
+  "catalog": "https://www.atg-games.com/en/games?type=all",
+  "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Flaming Three Kingdoms absent before intake. Official URL retains older scarlet-three-kingdoms path but page title and artwork say Flaming Three Kingdoms.",
+  "records": [
+    {
+      "name": "Flaming Three Kingdoms",
+      "slug": "flaming-three-kingdoms-atg",
+      "provider": "atg-games",
+      "status": "published-live-verified",
+      "officialPage": "https://www.atg-games.com/games/slot/scarlet-three-kingdoms",
+      "officialFacts": "Official exact page identifies Flaming Three Kingdoms, RTP 96.89%, Advanced volatility, Winning ratio x51000 and description jackpot up to 51,000x; four to six Dragon King symbols award 15 Free Games, cascades upgrade local multiplier orbs up to 500x.",
+      "image": {
+        "sourceUrl": "https://www.atg-games.com/_ipx/f_webp/scarlet-three-kingdoms/en/game_icon.png",
+        "localPath": "public/assets/games/flaming-three-kingdoms-atg.webp",
+        "sha256": "411975dbc1b6fe54e1fc01a914386a0cf1c5d3b592a643ba21103f5d518f2e37",
+        "visualCheck": "Official exact-game WebP icon visibly spells Flaming Three Kingdoms; downloaded valid image bytes and visually inspected."
+      },
+      "demo": "Official page prints Demo text but current extracted page supplies no verified exact playable destination or load result; kept not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After same-SHA CI, Cloudflare and full live readback, continue ATG official Wuxia then Vampire and remaining uncollected Slot cards. CQ9 conflict holds remain separate.",
+  "publication": {
+    "commit": "78964ddf50777d0b09dd1bf123264eb6c67268eb",
+    "githubRun": 41108030911,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "160e1fee-aaae-4a44-8b27-bdc545a95a64",
+    "cloudflareUrl": "https://160e1fee.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, WebP and sitemap HTTP 200; Provider lists game, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
+}
