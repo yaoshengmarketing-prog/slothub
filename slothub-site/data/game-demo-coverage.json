@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 923,
+  "gameCount": 924,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 204
+    "not-verified": 205
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "speed-winner-pg-soft",
+      "name": "Speed Winner",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Speed Winner, pgid 127, as Video Slots with RTP 96.72%, Medium volatility and maximum x100000. Official pi:4 icon was downloaded, decoded and visually reviewed: red striped sports car and PG mark. Exact official Try Now returned HTTP 200, 5632-byte Redirecting... shell without independently playable exact Demo; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/119/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/119/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/25881516-d439-43ed-b6e3-eaf96f9074f7.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 b00c4b00710727f1b2e83d34669cee341408ff34253aa7647522edc11a0d1fdc"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/127/index.html?language=en-US&bet_type=2",
+          "httpStatus": 200,
+          "notes": "HTTP 200, 5632-byte Redirecting... shell; no independently playable exact Demo established"
+        }
+      ]
+    },
     {
       "slug": "legend-of-perseus-pg-soft",
       "name": "Legend of Perseus",

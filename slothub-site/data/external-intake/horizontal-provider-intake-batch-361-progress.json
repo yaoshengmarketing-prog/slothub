@@ -1,10 +1,10 @@
 {
   "batch": 361,
   "recordedAt": "2026-11-01T01:47:27+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Legend of Perseus/128 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Legend of Perseus",
       "slug": "legend-of-perseus-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/120/",
       "officialFacts": "Official gid 120, pgid 128, Video Slots, RTP 96.77%, Medium volatility, maximum x50000. Exact layout 6 reels × 5 rows; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/128/index.html?language=en-US&bet_type=2 returned HTTP 200, 5632-byte Redirecting... shell on 2026-11-01; no independently playable exact Demo established. No public link; not-verified."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 119 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 119; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "commit": "546e0b14db604cfb64323aaeda6211744f844b44",
+    "githubRun": 41226544659,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "9bcf23d5-a31f-4250-a28b-e4faab57758b",
+    "cloudflareUrl": "https://9bcf23d5.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Legend of Perseus, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-11-01"
+  }
 }
