@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 851,
+  "gameCount": 852,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 132
+    "not-verified": 133
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "reel-royale-showdown-pg-soft",
+      "name": "Reel Royale Showdown",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Reel Royale Showdown, pgid 2058347, as Video Slots with RTP 96.75%, High volatility and maximum x5000. Official pi:4 icon was downloaded, decoded and visually matched. Official Try Now redirected in a read-only browser check to unrelated blushtales.com page; no playable same-game Demo or public Demo link verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/193/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/193/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/417a3bd7-e6b4-4a20-be7d-256d2dea772c.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 a660f48f2550dafd84b8aa77d8a10f810baf6ac9c5b6922d2ccd9044ece269b2"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2058347/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Read-only browser check redirected to unrelated blushtales.com page; same-game playability not verified"
+        }
+      ]
+    },
     {
       "slug": "super-wildrix-pg-soft",
       "name": "Super Wildrix",

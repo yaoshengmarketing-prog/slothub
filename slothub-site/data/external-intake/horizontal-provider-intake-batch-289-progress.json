@@ -1,10 +1,10 @@
 {
   "batch": 289,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Super Wildrix/2040102 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Super Wildrix",
       "slug": "super-wildrix-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/195/",
       "officialFacts": "Official gid 195, pgid 2040102, Video Slots, RTP 96.75%, High volatility, maximum x20000. Exact layout 5 reels × 5 rows; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/2040102/index.html?language=en-US&bet_type=2 redirected in read-only browser check to unrelated datavexhub.co.in Click Allow page; no same-game playability verified. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 194 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Route 193 Reel Royale Showdown was sourced and prepared while same-SHA CI ran; close it next, then return to route 194 Mighty Mania before descending. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "24909e5e2068061f26271fe5669aa22d2423844a",
+    "githubRun": 41191837179,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "bda1a2f7-5f77-4965-9a7d-3d875020076d",
+    "cloudflareUrl": "https://bda1a2f7.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Super Wildrix, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }

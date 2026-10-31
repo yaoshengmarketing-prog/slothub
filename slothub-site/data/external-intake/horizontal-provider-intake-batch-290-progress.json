@@ -1,0 +1,32 @@
+{
+  "batch": 290,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Reel Royale Showdown/2058347 absent before intake.",
+  "records": [
+    {
+      "name": "Reel Royale Showdown",
+      "slug": "reel-royale-showdown-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/193/",
+      "officialFacts": "Official gid 193, pgid 2058347, Video Slots, RTP 96.75%, High volatility, maximum x5000. Six reels, rows 4-5-5-5-5-4; 4 Scatters trigger 10 free spins, winning combinations raise free-spin multiplier, all three Wild slots add Wilds to empty positions on reels 2-5; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/417a3bd7-e6b4-4a20-be7d-256d2dea772c.png",
+        "localPath": "public/assets/games/reel-royale-showdown-pg-soft.png",
+        "sha256": "a660f48f2550dafd84b8aa77d8a10f810baf6ac9c5b6922d2ccd9044ece269b2",
+        "byteSize": 14854,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: shouting gold-armoured character and PG mark match same-game title artwork; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/2058347/index.html?language=en-US&bet_type=2 redirected in read-only browser check to unrelated blushtales.com page; no same-game playability verified. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, return to official numeric gid 194 Mighty Mania (already sourced); then gid 192 and descend eligible missing Video Slots. Resolve filter-only pgids separately."
+}
