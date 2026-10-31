@@ -1,10 +1,10 @@
 {
   "batch": 311,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Knockout Riches/1881268 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Knockout Riches",
       "slug": "knockout-riches-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/173/",
       "officialFacts": "Official gid 173, pgid 1881268, enabled Video Slots, RTP 96.75%, High volatility, maximum x10000. Five reels; reels 1 and 5 vary from 1 to 3 rows, reels 2–4 from 4 to 20 rows; Stacked Symbols feature collects winning symbols; 2 Scatters trigger 5 free spins. No explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/1881268/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 172 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 172; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "40c7dbce9fb32068d293085022fdedabcbe40256",
+    "githubRun": 41200613303,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "39b1c352-4a7b-4697-9845-c840d1796be1",
+    "cloudflareUrl": "https://39b1c352.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, WEBP and sitemap HTTP 200; Provider lists Knockout Riches, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }

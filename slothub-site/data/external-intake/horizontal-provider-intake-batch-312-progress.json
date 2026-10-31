@@ -1,0 +1,32 @@
+{
+  "batch": 312,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Doomsday Rampage/1827457 absent before intake.",
+  "records": [
+    {
+      "name": "Doomsday Rampage",
+      "slug": "doomsday-rampage-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/172/",
+      "officialFacts": "Official gid 172, pgid 1827457, enabled Video Slots, RTP 96.76%, Medium volatility, maximum x5000. Five reels x one row; during a winning spin 3+ Power Clamp symbols activate a Multiplier Wheel; Red Multiplier Wheel raises chance of multipliers up to x100. No Wild mechanic or explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/fac797e7-e4dd-4fcb-a76b-30009a7f0772.webp",
+        "localPath": "public/assets/games/doomsday-rampage-pg-soft.webp",
+        "sha256": "f87b795d23f5a0e5ef44274e3428ed0fa9bd38d1a1ebf674a64467f758aef3a1",
+        "byteSize": 10096,
+        "dimensions": "156x156",
+        "mime": "image/webp",
+        "visualCheck": "Viewed official pi:4 156x156 icon: armored off-road vehicle in fiery wasteland with PG mark matches Doomsday title artwork; source URL, decoded WebP and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1827457/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 171 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
