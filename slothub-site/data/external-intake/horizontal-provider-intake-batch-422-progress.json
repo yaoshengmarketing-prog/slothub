@@ -1,10 +1,10 @@
 {
   "batch": 422,
   "recordedAt": "2026-11-01T06:45:07+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Candy Burst/70 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Candy Burst",
       "slug": "candy-burst-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/58/",
       "officialFacts": "Official gid 58, pgid 70, Video Slots, RTP 96.95%, Medium volatility, maximum x15000. Exact layout 6×6 symbols combination; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/candy-burst/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 57 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue enabled official numeric route 57 Caishen Wins; then descend eligible missing PG SOFT Video Slots.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "cloudflareUrl": "https://f3c6844d.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "githubConclusion": "success",
+    "githubRun": 41249800929,
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Candy Burst, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-11-01",
+    "commit": "00a307914b687090a7231f34381d135f44246d47",
+    "cloudflareDeploymentId": "f3c6844d-7775-4251-b2d1-5833437a3dea"
+  }
 }

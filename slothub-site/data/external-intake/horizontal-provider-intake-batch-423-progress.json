@@ -1,0 +1,32 @@
+{
+  "batch": 423,
+  "recordedAt": "2026-11-01T06:51:20+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Caishen Wins/71 absent before intake.",
+  "records": [
+    {
+      "name": "Caishen Wins",
+      "slug": "caishen-wins-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/57/",
+      "officialFacts": "Official gid 57, pgid 71, Video Slots, RTP 96.92%, Medium volatility, maximum x100000. Description states 6 reels × 5 rows plus an additional reel above reels 2–5; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/26555ae0-ce85-4d0f-b8c8-f3b61ae5a7ef.png",
+        "localPath": "public/assets/games/caishen-wins-pg-soft.png",
+        "sha256": "39341acb8d83df6c0a6fadc2d2830376aa1bd3e2f33a44bec785bedee963e613",
+        "byteSize": 16160,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: smiling Caishen figure holding gold ingot with child companion and PG logo; matches Caishen Wins identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/cai-shen-wins/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 56 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
