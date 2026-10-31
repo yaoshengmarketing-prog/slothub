@@ -1,0 +1,32 @@
+{
+  "batch": 435,
+  "recordedAt": "2026-11-01T07:51:04+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Leprechaun Riches/60 absent before intake.",
+  "records": [
+    {
+      "name": "Leprechaun Riches",
+      "slug": "leprechaun-riches-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/45/",
+      "officialFacts": "Official gid 45, pgid 60, Video Slots, RTP 97.35%, Medium volatility, maximum x100000. Exact layout 6 reels × 6 rows; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/eb4ef96e-c572-4605-af79-7363db79d1b7.png",
+        "localPath": "public/assets/games/leprechaun-riches-pg-soft.png",
+        "sha256": "6cba3157e1a2c9df409ed4f72cfd6ba62709d73a50c5c839c6bdbcdc06508193",
+        "byteSize": 14841,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: smiling red-haired leprechaun with coins and PG logo; matches Leprechaun Riches identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/leprechaun-riches/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 44 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
