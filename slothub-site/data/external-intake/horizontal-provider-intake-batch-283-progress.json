@@ -1,10 +1,10 @@
 {
   "batch": 283,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue PG SOFT numeric Slot detail pages after Lucky Mischief live closure",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Prosperity Lanterns and PG SOFT game ID 2061925 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Prosperity Lanterns",
       "slug": "prosperity-lanterns-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/201/",
       "officialFacts": "Official route 201 / pgid 2061925; 3D Games and Video Slots; 5-reel, 3-row video slot, RTP 96.77%, High volatility, maximum x10000; six or more Prize symbols trigger three bonus spins and filled rows use the rightmost reel multiplier up to x1000. No explicit payline/Ways count or release date asserted.",
       "image": {
@@ -25,5 +25,20 @@
       "demo": "Official exact-game Try Now URL https://m.pg-redirect.com/2061925/index.html?language=en-US&bet_type=2 redirected in browser to unrelated datavexhub.co.in robot-verification page. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After same-SHA CI, Cloudflare and full seven-route readback, continue PG SOFT official numeric page 200 Touchdown Wins, then inspect 199 downward if source quality permits. Each needs exact identity, metric, official icon and Demo check."
+  "nextCursor": "Continue PG SOFT official numeric page 200 Touchdown Wins, then inspect 199 downward if source quality permits. Each needs exact identity, metric, official icon and Demo check.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "20ffb8744184686db1ef525696ea31a63601ea28",
+    "githubRun": 41187907996,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "70031088-ba31-41fc-8fec-d29ddf776f5e",
+    "cloudflareUrl": "https://70031088.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Prosperity Lanterns, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }

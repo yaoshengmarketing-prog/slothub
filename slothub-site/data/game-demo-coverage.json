@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 845,
+  "gameCount": 846,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 126
+    "not-verified": 127
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,36 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "touchdown-wins-pg-soft",
+      "name": "Touchdown Wins",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT official exact numeric page 200 and public Game Details API identify Touchdown Wins, pgid 2152563, as a 3-reel video slot with 2-3-2 rows, RTP 96.74%, Medium volatility, maximum x5000 and Free Spins multipliers. Its official app icon was retrieved and visually checked. The official Try Now URL redirected in browser to unrelated MidnightManga adult age-gate content, so no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/200/",
+          "httpStatus": 200,
+          "notes": "Official exact-game SSR and browser page confirm name, game ID, video-slot type, 2-3-2 layout, RTP, Medium volatility and maximum win"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/200/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms pgid 2152563, app icon and Try Now target"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/5011abb8-7644-46f8-b59c-d300e6959784.png",
+          "httpStatus": 200,
+          "notes": "Official app icon from exact-game media list; valid image/png showing football player and PG mark, SHA256 0adccd8740e5c095e37efedf5dec7cedd658e2dce0d34efbf1a88e036e03755d"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2152563/index.html?language=en-US&bet_type=2",
+          "notes": "Official Try Now redirected in browser to unrelated midnightmanga.com adult age gate; no exact same-game playable content observed"
+        }
+      ]
+    },
     {
       "slug": "prosperity-lanterns-pg-soft",
       "name": "Prosperity Lanterns",

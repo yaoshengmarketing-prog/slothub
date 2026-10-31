@@ -1,0 +1,29 @@
+{
+  "batch": 284,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete missing PG SOFT Slots after Prosperity Lanterns live closure",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Touchdown Wins and PG SOFT game ID 2152563 absent before intake.",
+  "records": [
+    {
+      "name": "Touchdown Wins",
+      "slug": "touchdown-wins-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/200/",
+      "officialFacts": "Official route 200 / pgid 2152563; 3D Games and Video Slots; 3-reel video slot with 2-3-2 rows, RTP 96.74%, Medium volatility, maximum x5000; wins activate multipliers, Free Spins multipliers reach x2048, and eight random Free Spins double all multipliers. No explicit payline/Ways count or release date asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/5011abb8-7644-46f8-b59c-d300e6959784.png",
+        "localPath": "public/assets/games/touchdown-wins-pg-soft.png",
+        "sha256": "0adccd8740e5c095e37efedf5dec7cedd658e2dce0d34efbf1a88e036e03755d",
+        "visualCheck": "Official exact-game app icon is valid image/png and visibly shows a football player with PG mark; source mapping is in same-game official media list."
+      },
+      "demo": "Official exact-game Try Now URL https://m.pg-redirect.com/2152563/index.html?language=en-US&bet_type=2 redirected in browser to unrelated MidnightManga adult age gate. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After same-SHA CI, Cloudflare and seven-route readback, continue PG SOFT official catalog and numeric route 199 downward; first confirm Slot type, official identity and dedup."
+}
