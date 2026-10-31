@@ -1,0 +1,32 @@
+{
+  "batch": 292,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Funky Fortunez/2035783 absent before intake.",
+  "records": [
+    {
+      "name": "Funky Fortunez",
+      "slug": "funky-fortunez-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/192/",
+      "officialFacts": "Official gid 192, pgid 2035783, enabled Video Slots, RTP 96.74%, Medium volatility, maximum x2000. 4x4 symbol combination; Prize symbols and Platinum Prize can award up to 500x bet; 3 Scatters trigger 10 free spins; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/962aa995-67ee-49c4-aa39-1ef993b675be.webp",
+        "localPath": "public/assets/games/funky-fortunez-pg-soft.webp",
+        "sha256": "2a17171d39644cf4fdaa829d45d2cc99ca4d8df0a77955e7d218dd46bf311330",
+        "byteSize": 9484,
+        "dimensions": "156x156",
+        "mime": "image/webp",
+        "visualCheck": "Viewed official pi:4 156x156 icon: colourful headphone-wearing DJ and PG mark match same-game title artwork; source URL, decoded WebP and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/2035783/index.html?language=en-US&bet_type=2 redirected in read-only browser check to unrelated age/gender survey; no same-game playability verified. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 191 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}

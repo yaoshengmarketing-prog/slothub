@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 853,
+  "gameCount": 854,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 134
+    "not-verified": 135
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "funky-fortunez-pg-soft",
+      "name": "Funky Fortunez",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Funky Fortunez, pgid 2035783, as enabled Video Slots with RTP 96.74%, Medium volatility and maximum x2000. Official pi:4 icon was downloaded, decoded and visually matched. Official Try Now redirected in a read-only browser check to unrelated age/gender survey; no playable same-game Demo or public Demo link verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/192/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/192/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/962aa995-67ee-49c4-aa39-1ef993b675be.webp",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/webp, 156x156, SHA256 2a17171d39644cf4fdaa829d45d2cc99ca4d8df0a77955e7d218dd46bf311330"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2035783/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Read-only browser check redirected to unrelated age/gender survey; same-game playability not verified"
+        }
+      ]
+    },
     {
       "slug": "mighty-mania-pg-soft",
       "name": "Mighty Mania",

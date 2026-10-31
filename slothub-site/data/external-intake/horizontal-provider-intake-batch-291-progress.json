@@ -1,10 +1,10 @@
 {
   "batch": 291,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Mighty Mania/2081892 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Mighty Mania",
       "slug": "mighty-mania-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/194/",
       "officialFacts": "Official gid 194, pgid 2081892, Video Slots, RTP 96.76%, High volatility, maximum x5000. Six reels, rows 4-4-3-3-4-4; multipliers up to x50, winning symbols on reels 3-4 transform into Wilds, 3 Scatters trigger Free Spins; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/2081892/index.html?language=en-US&bet_type=2 redirected in read-only browser check to unrelated datavexhub.co.in Click Allow page; no same-game playability verified. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 192 Funky Fortunez, then descend eligible missing Video Slots. Route 193 is already handled in batch 290; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 192 Funky Fortunez, already sourced and prepared in batch 292; route 193 was published in batch 290. Then descend eligible missing Video Slots and resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "5ff4d89f4048f745fa84c7d54ba5c0d8764c048c",
+    "githubRun": 41192653628,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "f933c3dd-b03a-45fa-86f9-cc76be0730f9",
+    "cloudflareUrl": "https://f933c3dd.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, WEBP and sitemap HTTP 200; Provider lists Mighty Mania, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }
