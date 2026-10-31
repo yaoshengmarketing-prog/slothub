@@ -1,0 +1,32 @@
+{
+  "batch": 350,
+  "recordedAt": "2026-11-01T00:37:14+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Bakery Bonanza/1418544 absent before intake.",
+  "records": [
+    {
+      "name": "Bakery Bonanza",
+      "slug": "bakery-bonanza-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/132/",
+      "officialFacts": "Official gid 132, pgid 1418544, enabled Video Slots, RTP 96.72%, High volatility, maximum x35000. Six reels x five rows plus additional reel below reels 2-5; four Scatters trigger ten free spins starting at x3 multiplier; each winning symbol in multiplier reel increases multiplier by three. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/d4edb7e0-bfea-4da6-bd85-be73404a06ae.png",
+        "localPath": "public/assets/games/bakery-bonanza-pg-soft.png",
+        "sha256": "c0ded9b47272628853367474aec956eba3168a18cf9c8988ea539fb97dd674f4",
+        "byteSize": 12914,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: baker's chef hat, bread and rolling pin with PG mark matches Bakery Bonanza identity; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1418544/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 131 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
