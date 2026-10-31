@@ -1,0 +1,32 @@
+{
+  "batch": 308,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Diner Frenzy Spins/1935269 absent before intake.",
+  "records": [
+    {
+      "name": "Diner Frenzy Spins",
+      "slug": "diner-frenzy-spins-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/176/",
+      "officialFacts": "Official gid 176, pgid 1935269, enabled Video Slots, RTP 96.80%, High volatility, maximum x2105. Five reels x four rows, connecting ways and sticky symbol respins; random Mystery Respin; 30 selected low/high-paying symbols during feature expand reels to seven rows. No explicit Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/9c3e9243-009b-49e7-866a-04e2cbffe1b0.webp",
+        "localPath": "public/assets/games/diner-frenzy-spins-pg-soft.webp",
+        "sha256": "f00db174d21aef2c8531e40c70dba2cdf8935fd3b3a086187305c1dab431a7e8",
+        "byteSize": 9324,
+        "dimensions": "156x156",
+        "mime": "image/webp",
+        "visualCheck": "Viewed official pi:4 156x156 icon: burger, fries and soda diner artwork with PG mark matches same-game title; source URL, decoded WebP and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1935269/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 175 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
