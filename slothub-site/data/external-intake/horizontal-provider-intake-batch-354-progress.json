@@ -1,10 +1,10 @@
 {
   "batch": 354,
   "recordedAt": "2026-11-01T01:03:41+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Asgardian Rising/1340277 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Asgardian Rising",
       "slug": "asgardian-rising-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/127/",
       "officialFacts": "Official gid 127, pgid 1340277, Video Slots, RTP 96.76%, Medium volatility, maximum x25000. Exact layout 6 reels × 5 rows; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/1340277/index.html?language=en-US&bet_type=2 returned HTTP 200, 5644-byte Redirecting... shell on 2026-11-01; no independently playable exact Demo established. No public link; not-verified."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 126 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 126; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "commit": "3fcede695213998af2464cb1dca34554dd1ae9f8",
+    "githubRun": 41222977209,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "6bc83d6c-d0d7-4458-9bf5-7544e1250eae",
+    "cloudflareUrl": "https://6bc83d6c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Asgardian Rising, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-11-01"
+  }
 }
