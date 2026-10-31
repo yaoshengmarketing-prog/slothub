@@ -1,0 +1,32 @@
+{
+  "batch": 386,
+  "recordedAt": "2026-11-01T04:05:43+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Heist Stakes/105 absent before intake.",
+  "records": [
+    {
+      "name": "Heist Stakes",
+      "slug": "heist-stakes-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/94/",
+      "officialFacts": "Official gid 94, pgid 105, Video Slots, RTP 96.72%, Medium volatility, maximum x30000. Exact layout 5 reels; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/ec91051e-5415-4f31-8ab6-d63f55f7a7d4.png",
+        "localPath": "public/assets/games/heist-stakes-pg-soft.png",
+        "sha256": "ee11a96ec0d8ec758e33f7c8c30c950310e867b67b47ee011c7f8ad2cd0c1869",
+        "byteSize": 48850,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: heist scene with high heels, vault and cash plus PG logo; matches Heist Stakes identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/heist-stakes/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 93 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
