@@ -1,0 +1,32 @@
+{
+  "batch": 374,
+  "recordedAt": "2026-11-01T03:08:09+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Emoji Riches/114 absent before intake.",
+  "records": [
+    {
+      "name": "Emoji Riches",
+      "slug": "emoji-riches-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/106/",
+      "officialFacts": "Official gid 106, pgid 114, Video Slots, RTP 96.78%, Medium volatility, maximum x25000. Exact layout 6×6 symbols combination; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/679e269d-c9a2-4233-a03d-dd55856243c6.png",
+        "localPath": "public/assets/games/emoji-riches-pg-soft.png",
+        "sha256": "19b665b2f4e8fd75fa5f7946eb80835ddfc84a46d666187686237f0ddf4931a8",
+        "byteSize": 10895,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: yellow heart-eye emoji with colorful stickers and PG logo; matches Emoji Riches identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/114/index.html?language=en-US&bet_type=2. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 105 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}

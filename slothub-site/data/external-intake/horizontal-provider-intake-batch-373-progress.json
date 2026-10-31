@@ -1,10 +1,10 @@
 {
   "batch": 373,
   "recordedAt": "2026-11-01T03:01:42+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Cocktail Nights/117 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Cocktail Nights",
       "slug": "cocktail-nights-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/107/",
       "officialFacts": "Official gid 107, pgid 117, Video Slots, RTP 96.75%, Medium volatility, maximum x100000. Exact layout 6 reels × 5 rows; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/117/index.html?language=en-US&bet_type=2. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 106 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 106 Emoji Riches; then descend eligible missing PG SOFT Video Slots. Oriental Prosperity gid109 remains held.",
+  "validation": {
+    "checkedAt": "2026-11-01",
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs"
+  },
+  "publication": {
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "498668cd-4189-4ba2-b9c5-0e67b5a51ee9",
+    "commit": "c598edd1d72cac9e943bd4b52c76a4341cfc8959",
+    "githubRun": 41232505313,
+    "checkedAt": "2026-11-01",
+    "cloudflareUrl": "https://498668cd.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Cocktail Nights, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap"
+  }
 }
