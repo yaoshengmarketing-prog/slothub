@@ -1,0 +1,32 @@
+{
+  "batch": 380,
+  "recordedAt": "2026-11-01T03:40:23+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Supermarket Spree/115 absent before intake.",
+  "records": [
+    {
+      "name": "Supermarket Spree",
+      "slug": "supermarket-spree-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/100/",
+      "officialFacts": "Official gid 100, pgid 115, Video Slots, RTP 96.71%, Medium volatility, maximum x25000. Exact layout 6×6 symbols combination; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/3f60bdb8-a317-43cf-928f-02c69636f29b.png",
+        "localPath": "public/assets/games/supermarket-spree-pg-soft.png",
+        "sha256": "0253c997c7aa42ba88892df73844f8e53b33a7b6a321c8f24c950540ed0bf714",
+        "byteSize": 15040,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: shopping cart with groceries and PG logo; matches Supermarket Spree identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/sprmkt-spree/index.html?language=en-US&bet_type=2. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 99 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
