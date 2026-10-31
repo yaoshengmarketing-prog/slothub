@@ -1,10 +1,10 @@
 {
   "batch": 382,
   "recordedAt": "2026-11-01T03:46:26+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Mermaid Riches/102 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Mermaid Riches",
       "slug": "mermaid-riches-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/98/",
       "officialFacts": "Official gid 98, pgid 102, Video Slots, RTP 96.71%, Medium volatility, maximum x20000. Exact layout 5 reels; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 Try Now redirected to exact mermaid-riches path on m.pg-demo.com, but returned HTTP 404 on 2026-11-01. Transient operator token omitted. No public link; not-verified."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 97 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue enabled official numeric route 97 Jurassic Kingdom; then descend eligible missing PG SOFT Video Slots.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "checkedAt": "2026-11-01",
+    "cloudflareDeploymentId": "cbee1bf7-cf5b-44a5-8fb1-888f964385ee",
+    "githubConclusion": "success",
+    "cloudflareUrl": "https://cbee1bf7.slothub-4cu.pages.dev",
+    "commit": "7bdf1751b8283662d94baced9b202f6a771eef9b",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Mermaid Riches, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "githubRun": 41236139968
+  }
 }
