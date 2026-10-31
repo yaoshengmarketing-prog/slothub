@@ -1,0 +1,32 @@
+{
+  "batch": 347,
+  "recordedAt": "2026-11-01T00:16:32+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Lucky Clover Riches/1601012 absent before intake.",
+  "records": [
+    {
+      "name": "Lucky Clover Riches",
+      "slug": "lucky-clover-riches-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/136/",
+      "officialFacts": "Official gid 136, pgid 1601012, enabled Video Slots, RTP 96.77%, High volatility, maximum x7500. Five-by-six symbol combination; eight or more matching symbols win; sticky winning symbols, Lucky Clover awards Level-up or Multiplier symbols; three Scatters trigger 15 free spins. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/18ade33f-90e6-4394-b22b-9e89ecc70e71.png",
+        "localPath": "public/assets/games/lucky-clover-riches-pg-soft.png",
+        "sha256": "a052b2c42f8e8ec939c4252b8155bbc344ced39f5691fc5c2b989aed20a76f56",
+        "byteSize": 15386,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: smiling pink-haired elf in green hat holding coin with PG mark matches Lucky Clover Riches identity; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1601012/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 135 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
