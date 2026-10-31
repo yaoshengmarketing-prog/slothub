@@ -1,0 +1,32 @@
+{
+  "batch": 345,
+  "recordedAt": "2026-10-31T16:01:29.200Z",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Cruise Royale/1473388 absent before intake.",
+  "records": [
+    {
+      "name": "Cruise Royale",
+      "slug": "cruise-royale-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/138/",
+      "officialFacts": "Official gid 138, pgid 1473388, enabled Video Slots, RTP 96.65%, High volatility, maximum x2500. Six reels x four rows plus additional reel above reels 2-5; four Scatters trigger 8 free spins; multiplier increases by x1 after each free spin, while Wilds persist and travel diagonally down-left. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/cc91a6ca-ba1b-4a0c-a24c-b5a833de9b38.png",
+        "localPath": "public/assets/games/cruise-royale-pg-soft.png",
+        "sha256": "ae937c75f6fb20ac81892cae606176833aa75527d690c3e6a3360ebbf354261d",
+        "byteSize": 13526,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: large white cruise liner with PG mark matches Cruise Royale identity; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1473388/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 137 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}

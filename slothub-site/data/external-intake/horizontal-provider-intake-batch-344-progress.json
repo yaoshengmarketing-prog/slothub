@@ -1,10 +1,10 @@
 {
   "batch": 344,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Safari Wilds/1594259 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Safari Wilds",
       "slug": "safari-wilds-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/139/",
       "officialFacts": "Official gid 139, pgid 1594259, enabled Video Slots, RTP 96.75%, Medium volatility, maximum x5000. Six reels: five rows on 1,2,5,6 and six rows on 3,4. Any win increases multiplier and turns winning symbols on reels 3,4 Wild; four Scatters trigger 12 free spins. No explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/1594259/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 138 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 138; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "8cf7092a0613d6409a59bc547a3bc08b9229087f",
+    "githubRun": 41217429516,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "a4a52742-d81f-4f08-9c42-ad9cdaaf3672",
+    "cloudflareUrl": "https://a4a52742.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Safari Wilds, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }
