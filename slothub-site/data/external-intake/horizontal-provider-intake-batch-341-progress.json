@@ -1,0 +1,32 @@
+{
+  "batch": 341,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Ultimate Striker/1489936 absent before intake.",
+  "records": [
+    {
+      "name": "Ultimate Striker",
+      "slug": "ultimate-striker-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/142/",
+      "officialFacts": "Official gid 142, pgid 1489936, enabled Video Slots, RTP 96.77%, High volatility, maximum x8000. Six reels x six rows; sticky Wilds-on-the-Way transform a randomly selected symbol; any win increases all multipliers below reels. Free spins increasing all multipliers mentioned, with no trigger condition specified. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/e1ac3f0d-bb93-4f32-8ade-5842de312997.png",
+        "localPath": "public/assets/games/ultimate-striker-pg-soft.png",
+        "sha256": "5b33807c721dd9c748d92c39159853397522a39d34d93fd63eb0ad3b90d57177",
+        "byteSize": 13520,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: soccer ball under kicking cleat and PG mark matches Ultimate Striker identity; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1489936/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 141 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}

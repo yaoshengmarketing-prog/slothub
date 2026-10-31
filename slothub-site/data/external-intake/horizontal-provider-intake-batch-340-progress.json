@@ -1,10 +1,10 @@
 {
   "batch": 340,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Wild Heist Cashout/1568554 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Wild Heist Cashout",
       "slug": "wild-heist-cashout-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/143/",
       "officialFacts": "Official gid 143, pgid 1568554, enabled Video Slots, RTP 96.77%, Medium volatility, maximum x2500. Two five-reel sets, bottom-left and top-right, each with 5,4,3,2,1 rows by reel. One travelling Wild per spin; Heist Thief reaches a Vault to turn same-reel symbols Wild; each win increases multiplier; three Scatters trigger eight free spins. No explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/1568554/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 142 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 142; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "3793fdf2af1c14bf163007d19e77bc7a7dedb14b",
+    "githubRun": 41215383304,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "d4e93c68-ada6-48b2-b7ab-da7538ec8132",
+    "cloudflareUrl": "https://d4e93c68.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Wild Heist Cashout, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }
