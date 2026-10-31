@@ -1,0 +1,47 @@
+{
+  "batch": 294,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Mayan Destiny/1997301 absent before intake.",
+  "records": [
+    {
+      "name": "Mayan Destiny",
+      "slug": "mayan-destiny-pg-soft",
+      "provider": "pg-soft",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pgsoft.com/en/games/190/",
+      "officialFacts": "Official gid 190, pgid 1997301, enabled Video Slots, RTP 96.74%, High volatility, maximum x10000. Official game information PDF states three reels x three rows and 5 lines; Prize Wheel awards 1x, 2x, 5x or Bonus, and Bonus Wheel has 2x, 4x, 10x and Double tiles.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/27b785eb-2713-48f6-95ec-c12149a63f89.png",
+        "localPath": "public/assets/games/mayan-destiny-pg-soft.png",
+        "sha256": "12854547287e964e6f801acdbe599de87d959a888bc8b32223722754b4827b14",
+        "byteSize": 61503,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: Mayan-styled woman holding a PG ball with PG mark match same-game title artwork; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1997301/index.html?language=en-US&bet_type=2 returned a Redirecting shell in read-only browser check; no same-game playable interface verified. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "Continue official numeric route 189; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "a725d7bf235559c9028efd896ad623ccff7eb356",
+    "githubRun": 41193859063,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "1841c730-b11f-49e4-85d8-33d2d341e977",
+    "cloudflareUrl": "https://1841c730.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Mayan Destiny, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
+}

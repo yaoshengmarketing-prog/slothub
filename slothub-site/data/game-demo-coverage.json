@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 849,
+  "gameCount": 857,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 130
+    "not-verified": 138
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,258 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "inferno-mayhem-pg-soft",
+      "name": "Inferno Mayhem",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Inferno Mayhem, pgid 1950910, as enabled Video Slots with RTP 96.76%, High volatility and maximum x25000. Official pi:4 icon was downloaded, decoded and visually matched. Official Try Now failed with ERR_SOCKS_CONNECTION_FAILED in a read-only browser check; no playable same-game Demo or public Demo link verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/189/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/189/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/1bf867f7-6ead-4a20-bb60-077c7acbcddd.webp",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/webp, 156x156, SHA256 d330dad37c96a3627f61d4593a82bebdcaac111d4a08c9465f4191ffc22940a2"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1950910/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Read-only browser check failed with ERR_SOCKS_CONNECTION_FAILED; same-game playability not verified"
+        }
+      ]
+    },
+    {
+      "slug": "mayan-destiny-pg-soft",
+      "name": "Mayan Destiny",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page, game information PDF and public Game Details API identify Mayan Destiny, pgid 1997301, as enabled Video Slots with RTP 96.74%, High volatility, maximum x10000 and 5 lines. Official pi:4 icon was downloaded, decoded and visually matched. Official Try Now returned a Redirecting shell in a read-only browser check; no playable same-game Demo or public Demo link verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/190/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/190/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Pdf/Mayan_Destiny_Gameinformation_EN.pdf",
+          "httpStatus": 200,
+          "notes": "Official game information PDF corroborates layout, five lines and Prize/Bonus Wheel feature details"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/27b785eb-2713-48f6-95ec-c12149a63f89.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 12854547287e964e6f801acdbe599de87d959a888bc8b32223722754b4827b14"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1997301/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Read-only browser check returned Redirecting shell; same-game playability not verified"
+        }
+      ]
+    },
+    {
+      "slug": "perfect-strike-pg-soft",
+      "name": "Perfect Strike",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Perfect Strike, pgid 2024510, as enabled Video Slots with RTP 96.78%, Medium volatility and maximum x4000. Official pi:4 icon was downloaded, decoded and visually matched. Official Try Now redirected in a read-only browser check to unrelated datavexhub.co.in Click Allow page; no playable same-game Demo or public Demo link verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/191/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/191/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/f5885185-5889-40f3-bb67-ec7c929d5310.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 8dc80d7d8ff6ca93943d35f15ef4bd6dbb21b80c65e76004021311ecda338498"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2024510/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Read-only browser check redirected to unrelated datavexhub.co.in Click Allow page; same-game playability not verified"
+        }
+      ]
+    },
+    {
+      "slug": "funky-fortunez-pg-soft",
+      "name": "Funky Fortunez",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Funky Fortunez, pgid 2035783, as enabled Video Slots with RTP 96.74%, Medium volatility and maximum x2000. Official pi:4 icon was downloaded, decoded and visually matched. Official Try Now redirected in a read-only browser check to unrelated age/gender survey; no playable same-game Demo or public Demo link verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/192/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/192/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/962aa995-67ee-49c4-aa39-1ef993b675be.webp",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/webp, 156x156, SHA256 2a17171d39644cf4fdaa829d45d2cc99ca4d8df0a77955e7d218dd46bf311330"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2035783/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Read-only browser check redirected to unrelated age/gender survey; same-game playability not verified"
+        }
+      ]
+    },
+    {
+      "slug": "mighty-mania-pg-soft",
+      "name": "Mighty Mania",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Mighty Mania, pgid 2081892, as Video Slots with RTP 96.76%, High volatility and maximum x5000. Official pi:4 icon was downloaded, decoded and visually matched. Official Try Now redirected in a read-only browser check to unrelated datavexhub.co.in Click Allow page; no playable same-game Demo or public Demo link verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/194/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/194/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/173f17fa-b4d9-4c63-80c9-5f241dde3e73.webp",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/webp, 156x156, SHA256 b8ed78e2f5dc828e72fe4ad8e5393575fe3fe74d07a651c549e122c28b8fda1c"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2081892/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Read-only browser check redirected to unrelated datavexhub.co.in Click Allow page; same-game playability not verified"
+        }
+      ]
+    },
+    {
+      "slug": "reel-royale-showdown-pg-soft",
+      "name": "Reel Royale Showdown",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Reel Royale Showdown, pgid 2058347, as Video Slots with RTP 96.75%, High volatility and maximum x5000. Official pi:4 icon was downloaded, decoded and visually matched. Official Try Now redirected in a read-only browser check to unrelated blushtales.com page; no playable same-game Demo or public Demo link verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/193/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/193/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/417a3bd7-e6b4-4a20-be7d-256d2dea772c.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 a660f48f2550dafd84b8aa77d8a10f810baf6ac9c5b6922d2ccd9044ece269b2"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2058347/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Read-only browser check redirected to unrelated blushtales.com page; same-game playability not verified"
+        }
+      ]
+    },
+    {
+      "slug": "super-wildrix-pg-soft",
+      "name": "Super Wildrix",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Super Wildrix, pgid 2040102, as Video Slots with RTP 96.75%, High volatility and maximum x20000. Official pi:4 icon was downloaded, decoded and visually matched. Official Try Now redirected in a read-only browser check to unrelated datavexhub.co.in Click Allow page; no playable same-game Demo or public Demo link verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/195/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/195/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/a56fb0ad-f3e1-4e61-9a6f-b992a2c2d9a3.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 d3a6011a16bdecfb46af22729f2d20d8e688e190c76423a284c02c661bca861d"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2040102/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Read-only browser check redirected to unrelated datavexhub.co.in Click Allow page; same-game playability not verified"
+        }
+      ]
+    },
+    {
+      "slug": "zombie-blasters-pg-soft",
+      "name": "Zombie Blasters",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Zombie Blasters, pgid 2075272, as a 5x6 Video Slot with RTP 96.75%, High volatility, maximum x10000 and Alarm-symbol multipliers. Official pi:4 icon was downloaded and visually checked. Browser navigation of official Try Now redirected to unrelated robot-verification content; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/196/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/196/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/f550d3d5-6a94-4f98-8afa-399064a0de10.webp",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/webp, 156x156, visually shows zombie face and PG mark, SHA256 6bda05850d3b34a154c9578cf1dd0af859b373a2a57a6954f8b404911695fce8"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2075272/index.html?language=en-US&bet_type=2",
+          "notes": "Read-only browser redirected to unrelated datavexhub.co.in robot-verification page; no same-game playable content observed"
+        }
+      ]
+    },
     {
       "slug": "monkeys-wild-party-pg-soft",
       "name": "Monkeys Wild Party",

@@ -1,0 +1,47 @@
+{
+  "batch": 293,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Perfect Strike/2024510 absent before intake.",
+  "records": [
+    {
+      "name": "Perfect Strike",
+      "slug": "perfect-strike-pg-soft",
+      "provider": "pg-soft",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pgsoft.com/en/games/191/",
+      "officialFacts": "Official gid 191, pgid 2024510, enabled Video Slots, RTP 96.78%, Medium volatility, maximum x4000. Three reels x three rows; 3+ Trophy symbols trigger respins, Trophy wins up to 200x bet, up to 10 free spins and x10 multipliers; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/f5885185-5889-40f3-bb67-ec7c929d5310.png",
+        "localPath": "public/assets/games/perfect-strike-pg-soft.png",
+        "sha256": "8dc80d7d8ff6ca93943d35f15ef4bd6dbb21b80c65e76004021311ecda338498",
+        "byteSize": 13264,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: glowing bowling ball and pins with PG mark match same-game title artwork; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/2024510/index.html?language=en-US&bet_type=2 redirected in read-only browser check to unrelated datavexhub.co.in Click Allow page; no same-game playability verified. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "Continue official numeric route 190; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "345f7e23ac2e56070327a10c42bfd4e76a584226",
+    "githubRun": 41193437536,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "8e363a03-9546-41e7-9661-c9f8e4367240",
+    "cloudflareUrl": "https://8e363a03.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Perfect Strike, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
+}
