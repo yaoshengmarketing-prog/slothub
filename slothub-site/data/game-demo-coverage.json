@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 952,
+  "gameCount": 953,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 233
+    "not-verified": 234
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "jack-frost-s-winter-pg-soft",
+      "name": "Jack Frost's Winter",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Jack Frost's Winter, pgid 97, as Video Slots with RTP 96.70%, High volatility and maximum x100000. Official pi:4 icon was downloaded and decoded. Exact official Try Now URL could not be loaded: TypeError: fetch failed; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/80/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/80/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/42db67b5-c702-4d29-8f31-3d14e221692e.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 6a35fd8aef51083ad16fdc5b6b3ca2955eb085f2a3da96d24cd1509482cbe09f"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/jack-frosts/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6",
+          "httpStatus": null,
+          "notes": "Exact official Try Now URL could not be loaded: TypeError: fetch failed"
+        }
+      ]
+    },
     {
       "slug": "galactic-gems-pg-soft",
       "name": "Galactic Gems",

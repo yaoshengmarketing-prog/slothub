@@ -1,0 +1,32 @@
+{
+  "batch": 400,
+  "recordedAt": "2026-11-01T05:02:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Jack Frost's Winter/97 absent before intake.",
+  "records": [
+    {
+      "name": "Jack Frost's Winter",
+      "slug": "jack-frost-s-winter-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/80/",
+      "officialFacts": "Official gid 80, pgid 97, Video Slots, RTP 96.70%, High volatility, maximum x100000. Official long description states 3 or more reels, 4 rows and Infinity Reels; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/42db67b5-c702-4d29-8f31-3d14e221692e.png",
+        "localPath": "public/assets/games/jack-frost-s-winter-pg-soft.png",
+        "sha256": "6a35fd8aef51083ad16fdc5b6b3ca2955eb085f2a3da96d24cd1509482cbe09f",
+        "byteSize": 14772,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: white-haired ice-blue-eyed Jack Frost character with snowflakes and PG logo; matches official identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/jack-frosts/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 79 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
