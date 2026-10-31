@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 866,
+  "gameCount": 867,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 147
+    "not-verified": 148
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "grimms-bounty-hansel-and-gretel-pg-soft",
+      "name": "Grimms' Bounty: Hansel & Gretel",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Grimms' Bounty: Hansel & Gretel, pgid 1903012, as enabled Video Slots, distinct from the already-published Princess & the Frog title, with RTP 96.71%, High volatility and maximum x10000. Official pi:4 icon was downloaded, decoded and visually matched. Official Try Now returned HTTP 200 Redirecting shell on a read-only HTTP check, not same-game playable content; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/179/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/179/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/457d9f02-028d-4892-837b-515d210a8885.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 9aa1931c0129bcdfff2a7e377a874c0aa7bff1e054e2852713dd9aa3d63150fe"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1903012/index.html?language=en-US&bet_type=2",
+          "httpStatus": 200,
+          "notes": "Read-only HTTP response was a Redirecting shell, with no same-game playable content"
+        }
+      ]
+    },
     {
       "slug": "majestic-empire-pg-soft",
       "name": "Majestic Empire",
