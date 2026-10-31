@@ -1,0 +1,32 @@
+{
+  "batch": 354,
+  "recordedAt": "2026-11-01T01:03:41+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Asgardian Rising/1340277 absent before intake.",
+  "records": [
+    {
+      "name": "Asgardian Rising",
+      "slug": "asgardian-rising-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/127/",
+      "officialFacts": "Official gid 127, pgid 1340277, Video Slots, RTP 96.76%, Medium volatility, maximum x25000. Exact layout 6 reels × 5 rows; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/9b5036db-8ed1-4548-82e2-c3bbb555da95.png",
+        "localPath": "public/assets/games/asgardian-rising-pg-soft.png",
+        "sha256": "b74d0a521257e3fd2b62d3926a5529de7fe9a8bcafb18c2b5817985d11db9ab9",
+        "byteSize": 16954,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: helmeted bearded Viking warrior with gold 100 badge and PG logo; matches Asgardian Rising identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1340277/index.html?language=en-US&bet_type=2 returned HTTP 200, 5644-byte Redirecting... shell on 2026-11-01; no independently playable exact Demo established. No public link; not-verified."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 126 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}

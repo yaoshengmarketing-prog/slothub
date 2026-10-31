@@ -1,10 +1,10 @@
 {
   "batch": 353,
   "recordedAt": "2026-11-01T00:56:58+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Midas Fortune/1402846 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Midas Fortune",
       "slug": "midas-fortune-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/128/",
       "officialFacts": "Official gid 128, pgid 1402846, Video Slots, RTP 96.73%, Medium volatility, maximum x5000. Exact layout 5×5 symbols combination; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,7 +28,7 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/1402846/index.html?language=en-US&bet_type=2 returned HTTP 200, 5644-byte Redirecting... shell on 2026-11-01; no independently playable exact Demo established. No public link; not-verified."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 127 and continue eligible missing Video Slots; resolve filter-only pgids separately.",
+  "nextCursor": "Continue official numeric route 127; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
   "excludedBeforeIntake": [
     {
       "gid": 129,
@@ -38,5 +38,20 @@
       "source": "https://www.pgsoft.com/en/games/129/",
       "existingRecord": "src/content/games/fortune-rabbit.md"
     }
-  ]
+  ],
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "commit": "c07b350e4d587406a43c67eacdd3fe5d01b2dbde",
+    "githubRun": 41222440255,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "b31f2220-df58-4bd1-95e9-d96c4e4d6d75",
+    "cloudflareUrl": "https://b31f2220.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Midas Fortune, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-11-01"
+  }
 }
