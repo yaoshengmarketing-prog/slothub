@@ -1,0 +1,32 @@
+{
+  "batch": 416,
+  "recordedAt": "2026-11-01T06:17:22+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Phoenix Rises/82 absent before intake.",
+  "records": [
+    {
+      "name": "Phoenix Rises",
+      "slug": "phoenix-rises-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/64/",
+      "officialFacts": "Official gid 64, pgid 82, Video Slots, RTP 96.70%, Medium volatility, maximum x20000. Exact layout 5 reels × 3 rows; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/29012e2d-9e89-452b-b9cf-30f509b92a59.png",
+        "localPath": "public/assets/games/phoenix-rises-pg-soft.png",
+        "sha256": "ac47c33076181f9c2de3bb51b0142bf2423f2251fdcb9ca75bbd977286a2a71b",
+        "byteSize": 16563,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: flaming gold-orange phoenix in flight with PG logo; matches Phoenix Rises identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/phoenix-rises/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 63 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
