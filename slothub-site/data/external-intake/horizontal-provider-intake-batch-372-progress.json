@@ -1,10 +1,10 @@
 {
   "batch": 372,
   "recordedAt": "2026-11-01T02:55:01+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Mask Carnival/118 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Mask Carnival",
       "slug": "mask-carnival-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/108/",
       "officialFacts": "Official gid 108, pgid 118, Video Slots, RTP 96.70%, Medium volatility, maximum x20000. Exact layout 5 reels × 4 rows; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/118/index.html?language=en-US&bet_type=2. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 107 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 107 Cocktail Nights; then descend eligible missing PG SOFT Video Slots. Oriental Prosperity gid109 remains held for official RTP discrepancy.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "checkedAt": "2026-11-01",
+    "commit": "430c831967f137078cf84258c7c1aa88187d27f7",
+    "cloudflareUrl": "https://ea72226e.slothub-4cu.pages.dev",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Mask Carnival, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "githubConclusion": "success",
+    "cloudflareStatus": "success",
+    "githubRun": 41231965046,
+    "cloudflareDeploymentId": "ea72226e-0a93-41ee-998b-12ce0e2b6912"
+  }
 }
