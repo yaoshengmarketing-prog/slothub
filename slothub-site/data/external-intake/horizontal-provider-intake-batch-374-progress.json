@@ -1,10 +1,10 @@
 {
   "batch": 374,
   "recordedAt": "2026-11-01T03:08:09+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Emoji Riches/114 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Emoji Riches",
       "slug": "emoji-riches-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/106/",
       "officialFacts": "Official gid 106, pgid 114, Video Slots, RTP 96.78%, Medium volatility, maximum x25000. Exact layout 6×6 symbols combination; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/114/index.html?language=en-US&bet_type=2. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 105 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Official gid105 Farm Invaders is disabled (en=false) and exact page redirects to homepage; skip. Continue enabled gid104 Legendary Monkey King.",
+  "validation": {
+    "checkedAt": "2026-11-01",
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs"
+  },
+  "publication": {
+    "githubRun": 41233065701,
+    "cloudflareDeploymentId": "bad830d4-9705-4d67-9c1a-10ff9d980802",
+    "checkedAt": "2026-11-01",
+    "githubConclusion": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Emoji Riches, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "cloudflareUrl": "https://bad830d4.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "commit": "75519528e93ff4c99832266e8ee674ccbdc1e85a"
+  }
 }

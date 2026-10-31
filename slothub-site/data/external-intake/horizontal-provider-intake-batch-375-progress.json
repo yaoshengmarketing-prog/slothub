@@ -1,0 +1,14 @@
+{
+  "batch": 375,
+  "recordedAt": "2026-11-01T03:15:33+08:00",
+  "state": "excluded-disabled-official-game",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Farm Invaders",
+  "officialPage": "https://www.pgsoft.com/en/games/105/",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/105/language/1/live/true",
+  "evidence": "Official API HTTP 200 identifies gid105 pgid116 Video Slots but en=false. Exact official page HEAD returns HTTP 301 Location http://www.pgsoft.com/, not a retrievable game detail. Preparation stopped before any Game/coverage/image write.",
+  "decision": "Excluded from current intake; do not count or publish a disabled game.",
+  "nextCursor": "Continue official enabled gid104 Legendary Monkey King; keep gid105 excluded unless official enabled status and exact page return."
+}
