@@ -1,0 +1,42 @@
+{
+  "batch": 371,
+  "recordedAt": "2026-11-01T02:53:04+08:00",
+  "state": "held-source-conflict",
+  "batchSize": 1,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Oriental Prosperity/112 absent before intake.",
+  "records": [
+    {
+      "name": "Oriental Prosperity",
+      "slug": "oriental-prosperity-pg-soft",
+      "provider": "pg-soft",
+      "status": "held-source-conflict",
+      "officialPage": "https://www.pgsoft.com/en/games/109/",
+      "officialFacts": "Official gid 109, pgid 112, Video Slots, Medium volatility, maximum x100000. Current exact official page/API says RTP 96.74%, while official Oriental Prosperity Game Information PDF says 96.75%; RTP withheld. Page description ends with stale name Chinese Painting even though title, ID, icon and PDF identify Oriental Prosperity.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/a59bcfc9-08ed-468f-8120-20744697255f.png",
+        "localPath": "public/assets/games/oriental-prosperity-pg-soft.png",
+        "sha256": "14432e97dd37a1d5d106fa06dd0d2680394999128fb42023fc54d91e48378a29",
+        "byteSize": 16352,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: woman with flower hair ornaments and PG logo; maps to current official Oriental Prosperity page. Asset held locally, not published."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/112/index.html?language=en-US&bet_type=2. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "Hold gid 109 Oriental Prosperity until PG SOFT supplies versioned RTP/name clarification or a documented omit-field publication decision. Continue screening official numeric gid 108 for a distinct eligible Video Slot.",
+  "sourceConflict": {
+    "currentPage": "https://www.pgsoft.com/en/games/109/",
+    "currentApi": "https://api.pgsoft.com/Game/GetGameDetails/game/109/language/1/live/true",
+    "pdfStatus": "HTTP 200 application/pdf, 27,524,906 bytes on 2026-11-01",
+    "currentRtp": "96.74%",
+    "decision": "No public Game or coverage row; do not assert a contested RTP or infer version identity.",
+    "officialPdf": "https://www.pgsoft.com/uploads/Games/Pdf/Oriental_Prosperity_Gameinformation_EN.pdf",
+    "staleName": "Current page CTA says Play Chinese Painting now, while current title and official PDF say Oriental Prosperity",
+    "pdfRtp": "96.75%"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "batch": 372,
+  "recordedAt": "2026-11-01T02:55:01+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Mask Carnival/118 absent before intake.",
+  "records": [
+    {
+      "name": "Mask Carnival",
+      "slug": "mask-carnival-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/108/",
+      "officialFacts": "Official gid 108, pgid 118, Video Slots, RTP 96.70%, Medium volatility, maximum x20000. Exact layout 5 reels × 4 rows; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/6142e08b-96d2-40af-b116-6352f5834292.png",
+        "localPath": "public/assets/games/mask-carnival-pg-soft.png",
+        "sha256": "dcd8567388d8f43f3496823d9983e23fae297189525e66854b0a7c97638db752",
+        "byteSize": 16757,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: ornate red and gold Venetian carnival mask with PG logo; matches Mask Carnival identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/118/index.html?language=en-US&bet_type=2. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 107 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
