@@ -1,0 +1,32 @@
+{
+  "batch": 310,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Dead Man's Riches/1865521 absent before intake.",
+  "records": [
+    {
+      "name": "Dead Man's Riches",
+      "slug": "dead-man-s-riches-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/174/",
+      "officialFacts": "Official gid 174, pgid 1865521, enabled Video Slots, RTP 96.75%, High volatility, maximum x10000. Five reels x three rows; Red or Blue Skull Wild triggers travelling Wild respins with increasing multipliers; 3 Scatters trigger a choice of 15 Free Spins or 8 Free Spins with Persistent Wilds. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/03ab6918-7da7-46fc-ab04-de92a1eae4f0.webp",
+        "localPath": "public/assets/games/dead-man-s-riches-pg-soft.webp",
+        "sha256": "d0b9b136f7e97b633ae457cc49d0c7ac1f3571b18917203b56f30bd5f8afa24a",
+        "byteSize": 8510,
+        "dimensions": "156x156",
+        "mime": "image/webp",
+        "visualCheck": "Viewed official pi:4 156x156 icon: glowing turquoise pirate skull with tricorn hat and PG mark matches title artwork; source URL, decoded WebP and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1865521/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 173 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
