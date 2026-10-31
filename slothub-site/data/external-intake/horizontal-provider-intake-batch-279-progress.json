@@ -1,0 +1,30 @@
+{
+  "batch": 279,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Finish user-authorized ATG Games Slot catalog after Froststorm Hunter live closure",
+  "catalog": "https://www.atg-games.com/games?type=slot",
+  "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Wuxia/武俠 absent before intake and distinct from other Wuxia-themed games.",
+  "records": [
+    {
+      "name": "Wuxia",
+      "slug": "wuxia-atg",
+      "provider": "atg-games",
+      "status": "imported",
+      "officialPage": "https://www.atg-games.com/games/slot/wuxia-caishen",
+      "officialFacts": "2025-04-14 release; MegaWays game; RTP 97%; Advanced/High volatility; Winning ratio x100000; silver-frame symbols upgrade to gold frame then Wild after wins; four Scatters trigger up to 100 Free Games; Giant WILD and automatically accumulating free-game multipliers.",
+      "sourceConflict": "Official English and Traditional Chinese exact-game introductions claim over one million ways, while both formal spec panels state 2025-32400 ways and the mechanic description says up to 32400. Exact relationship is unresolved. Game record deliberately omits winCount/paylines and does not claim either number as resolved; both source pages and conflict are saved.",
+      "image": {
+        "sourceUrl": "https://www.atg-games.com/_ipx/f_webp/wuxia-caishen/en/game_icon.png",
+        "localPath": "public/assets/games/wuxia-atg.webp",
+        "sha256": "291ee5b350c26a949b83ba80b185f0b11901557936e0eb8d43b7181c76ed49b9",
+        "visualCheck": "Official exact-game WebP icon visibly displays WUXIA and matching characters; valid RIFF/WEBP bytes inspected."
+      },
+      "demo": "Official loaded handler constructs exact https://demo-api.godeebxp.com/trail/wuxia-caishen?lang=en&brand=rgs&t=<timestamp>, but a direct browser test returned ERR_SOCKS_CONNECTION_FAILED rather than playable content. No public Demo link added; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After same-SHA CI, Cloudflare Pages and complete live readback, mark Wuxia published. Current official ATG Slot catalog has no further uncollected Slot; the uncommitted Azteca Legacy PG SOFT candidate is preserved in stash for separate publication after this closure. CQ9 17 source-quality holds remain."
+}

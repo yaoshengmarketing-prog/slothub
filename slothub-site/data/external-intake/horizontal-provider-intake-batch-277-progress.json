@@ -1,10 +1,10 @@
 {
   "batch": 277,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue ATG Games official Slot catalog after Jinlian live closure",
   "catalog": "https://www.atg-games.com/en/games?type=all",
   "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Froststorm Hunter and Winter Hunter absent before intake; exact ATG page and image confirm same product.",
@@ -13,7 +13,7 @@
       "name": "Froststorm Hunter",
       "slug": "froststorm-hunter-atg",
       "provider": "atg-games",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.atg-games.com/games/slot/new-winter-hunter",
       "officialFacts": "2026-10-13 release; five reels and 50 left-to-right paylines; RTP 96.6%; Medium volatility; Winning ratio x10000; 3 Scatter trigger 10 Free Games, retrigger, Sticky WILD, random Lucky Moment and JP Jackpot.",
       "image": {
@@ -25,5 +25,15 @@
       "demo": "Official exact game page and catalog expose no verified same-game playable destination in this check; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After Froststorm Hunter same-SHA CI, Cloudflare and full live readback, inspect ATG Triple Fortune and Bubble Gum official catalog cards with game-type checks. Wuxia remains held for official way-count conflict; CQ9 17 holds persist."
+  "nextCursor": "ATG Slot catalog: Wuxia held for official way-count conflict. Triple Fortune and Bubble Gum exact official pages classify them as Arcade, so they are not remaining Slot candidates. Continue PG SOFT official Slot detail pages; Azteca Legacy begins batch 278. CQ9 17 holds persist.",
+  "publication": {
+    "commit": "6d9aa3de994e6a023e8b5eeb1186d591bf078f97",
+    "githubRun": 41182951242,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "942b1ff8-9469-4f15-bd6e-a38e89b4d985",
+    "cloudflareUrl": "https://942b1ff8.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, WebP and sitemap HTTP 200; Provider lists game, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }
