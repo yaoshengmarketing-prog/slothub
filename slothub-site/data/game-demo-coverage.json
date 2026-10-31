@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 841,
+  "gameCount": 842,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 122
+    "not-verified": 123
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,31 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "thunder-reckoning-pg-soft",
+      "name": "Thunder Reckoning",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT official exact numeric page 204 identifies Thunder Reckoning, pgid 2132187, as a 5x6 video slot with RTP 96.76%, Medium volatility, maximum x5000 and activated-position Prize Symbol mechanics. Its official app icon was retrieved and visually checked. The exact official Try Now URL redirected in browser to unrelated OpticsPlanet content rather than a playable same-game Demo, so no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/204/",
+          "httpStatus": 200,
+          "notes": "Official exact-game SSR and browser page confirm name, game ID, video-slot type, 5x6 mechanic, RTP, volatility and maximum win"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/92b5ae6f-fd21-40cf-9c6a-b316a0410f3d.png",
+          "httpStatus": 200,
+          "notes": "Official app icon from the exact-game media list; valid image/png showing thunder-themed character and PG mark, SHA256 9a29d35362c185174172177a48e393910ca5df934e4be01397a07c5bcef9e60e"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2132187/index.html?language=en-US&bet_type=2",
+          "notes": "Exact official Try Now destination redirected in browser to unrelated OpticsPlanet content; no exact same-game playable content was observed"
+        }
+      ]
+    },
     {
       "slug": "azteca-legacy-pg-soft",
       "name": "Azteca Legacy",

@@ -1,0 +1,29 @@
+{
+  "batch": 280,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue PG SOFT numeric Slot detail pages after Azteca Legacy live closure",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Thunder Reckoning and PG SOFT game ID 2132187 absent before intake.",
+  "records": [
+    {
+      "name": "Thunder Reckoning",
+      "slug": "thunder-reckoning-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/204/",
+      "officialFacts": "Official route 204 / pgid 2132187; 3D Games and Video Slots; 5x6 symbol combination, RTP 96.76%, Medium volatility, maximum x5000; variable-size Prize Symbols, winning positions activate and fully activated grid merges into 5x6 symbol position. No explicit payline/Ways count or release date asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/92b5ae6f-fd21-40cf-9c6a-b316a0410f3d.png",
+        "localPath": "public/assets/games/thunder-reckoning-pg-soft.png",
+        "sha256": "9a29d35362c185174172177a48e393910ca5df934e4be01397a07c5bcef9e60e",
+        "visualCheck": "Exact official page app icon is valid image/png and visibly shows thunder-themed character with PG mark; source mapping is in same-game official media list."
+      },
+      "demo": "Official exact-game Try Now URL https://m.pg-redirect.com/2132187/index.html?language=en-US&bet_type=2 redirected in browser to unrelated OpticsPlanet content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After same-SHA CI, Cloudflare and full seven-route readback, continue PG SOFT official numeric page 203 Grimms' Bounty: Princess & the Frog, then 202 Lucky Mischief, 201 Prosperity Lanterns and 200 Touchdown Wins. Each needs exact identity, metric, official icon and Demo check."
+}
