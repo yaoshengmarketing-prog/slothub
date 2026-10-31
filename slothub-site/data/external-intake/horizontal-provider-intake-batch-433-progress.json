@@ -1,0 +1,32 @@
+{
+  "batch": 433,
+  "recordedAt": "2026-11-01T07:40:05+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Ninja vs Samurai/59 absent before intake.",
+  "records": [
+    {
+      "name": "Ninja vs Samurai",
+      "slug": "ninja-vs-samurai-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/47/",
+      "officialFacts": "Official gid 47, pgid 59, Video Slots, RTP 97.44%, Medium volatility, maximum x15000. Exact layout 5 reels × 3 rows; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/129a76ff-cd17-41ff-8deb-8c3d391c2bf2.png",
+        "localPath": "public/assets/games/ninja-vs-samurai-pg-soft.png",
+        "sha256": "f722d681b1d4c308479b654bfbd7dd3d11358fd1100abdd1e8f95786c44a4de3",
+        "byteSize": 14779,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: split samurai in gold armor and blue ninja with PG logo; matches Ninja vs Samurai identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/ninja-vs-samurai/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 46 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
