@@ -1,0 +1,32 @@
+{
+  "batch": 401,
+  "recordedAt": "2026-11-01T05:07:59+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Opera Dynasty/93 absent before intake.",
+  "records": [
+    {
+      "name": "Opera Dynasty",
+      "slug": "opera-dynasty-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/79/",
+      "officialFacts": "Official gid 79, pgid 93, Video Slots, RTP 96.79%, Medium volatility, maximum x100000. Description states 6 reels × 5 rows plus an additional reel above reels 2–5; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/70afa3e2-1404-4758-93c0-7a2a39451b17.png",
+        "localPath": "public/assets/games/opera-dynasty-pg-soft.png",
+        "sha256": "f6a6460bab58d3f96c33cadbe0bf2e00896ca91f112070dfcef61259a42d0b6f",
+        "byteSize": 55891,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: female Beijing opera performer in ornate floral headdress with PG logo; matches Opera Dynasty identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/opera-dynasty/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 78 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
