@@ -83,7 +83,7 @@ assert.match(styles, /\.explorer-result-heading\{[^}]*flex-wrap:wrap/, 'Explorer
 assert.match(styles, /\.explorer-active-filters\{[^}]*flex:1 1 100%;[^}]*min-width:0/, 'Explorer active filters must be allowed to shrink within the result heading');
 assert.match(explorer, /handoffDefaults\.primaryType/);
 assert.match(gamesIndex, /<GuidedExplorerPilot games=\{games\} resultAnchor="game-results" client:load \/>/, 'Games must hand the guided mode to the shared result target');
-assert.match(gamesIndex, /<GameExplorer games=\{games\} relationshipLinks=\{relationshipLinks\} resultAnchor="game-results" urlState client:load\/>/, 'Games must keep the existing full Explorer as the only state owner');
+assert.match(gamesIndex, /<GameExplorer games=\{games\} relationshipLinks=\{relationshipLinks\} resultAnchor="game-results" filterNote="篩選依本站已取得的資料進行；未取得的欄位不代表數值為零或功能不存在。" urlState client:load\/>/, 'Games must keep the existing full Explorer as the only state owner with its approved filter note');
 assert.doesNotMatch(slots, /<GameExplorer\b/, 'Slots must not duplicate the full Explorer owner');
 assert.match(slots, /gamesIndexUrl\(\{ primaryType: 'slots' \}\)/, 'Slots must hand the complete catalog task to Games');
 for (const anchor of ['mechanisms', 'features', 'data-topics']) assert.match(slots, new RegExp(`id="${anchor}"`), `Slots ${anchor} section missing`);

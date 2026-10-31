@@ -45,7 +45,7 @@ function FeatureToggle({ feature, count, selected, onToggle }: { feature: string
   </button>;
 }
 
-export default function GameExplorer({ games, initialLimit, urlState = false, handoffDefaults = {}, relationshipLinks = [], resultAnchor }: { games: GameCatalogItem[]; initialLimit?: number; urlState?: boolean; handoffDefaults?: Partial<ExplorerState>; relationshipLinks?: ExplorerGuideLink[]; resultAnchor?: string }) {
+export default function GameExplorer({ games, initialLimit, urlState = false, handoffDefaults = {}, relationshipLinks = [], resultAnchor, filterNote }: { games: GameCatalogItem[]; initialLimit?: number; urlState?: boolean; handoffDefaults?: Partial<ExplorerState>; relationshipLinks?: ExplorerGuideLink[]; resultAnchor?: string; filterNote?: string }) {
   const [state, setState] = useState<ExplorerState>(() => emptyExplorerState());
   const [urlReady, setUrlReady] = useState(!urlState);
   const replaceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -190,7 +190,7 @@ export default function GameExplorer({ games, initialLimit, urlState = false, ha
       </details>
     </div>
 
-    <div className="result-heading explorer-result-heading" id={resultAnchor} ref={resultHeadingRef} tabIndex={resultAnchor ? -1 : undefined}><div><strong>{filtered.length}</strong><span>款符合目前條件</span>{urlState && filtered.length > 0 && <small>第 {pagination.page} 頁／共 {pagination.totalPages} 頁，顯示第 {pagination.start + 1}–{pagination.start + shown.length} 款</small>}{hasNumericFilter && <small>數值條件只包含已取得該欄位的遊戲</small>}</div>{hasFilters && <button type="button" className="clear-filters" onClick={clear}>清除全部條件</button>}{activeFilterLabels.length > 0 && <ul className="explorer-active-filters" aria-label="已套用條件">{activeFilterLabels.map((label) => <li key={label}>{label}</li>)}</ul>}</div>
+    <div className="result-heading explorer-result-heading" id={resultAnchor} ref={resultHeadingRef} tabIndex={resultAnchor ? -1 : undefined}><div><strong>{filtered.length}</strong><span>款符合目前條件</span>{urlState && filtered.length > 0 && <small>第 {pagination.page} 頁／共 {pagination.totalPages} 頁，顯示第 {pagination.start + 1}–{pagination.start + shown.length} 款</small>}{(filterNote || hasNumericFilter) && <small>{filterNote ?? '數值條件只包含已取得該欄位的遊戲'}</small>}</div>{hasFilters && <button type="button" className="clear-filters" onClick={clear}>清除全部條件</button>}{activeFilterLabels.length > 0 && <ul className="explorer-active-filters" aria-label="已套用條件">{activeFilterLabels.map((label) => <li key={label}>{label}</li>)}</ul>}</div>
     {activeGuideLinks.length > 0 && <aside className="explorer-guide-links" aria-label="目前條件的相關教學">
       <span>看懂目前條件</span>
       <div>{activeGuideLinks.map((link) => <a key={`${link.type}-${link.value}`} href={link.guideUrl}><b>{link.label}</b><small>{link.guideTitle}</small><i>閱讀 →</i></a>)}</div>
