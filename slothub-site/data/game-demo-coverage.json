@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 890,
+  "gameCount": 891,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 171
+    "not-verified": 172
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mystic-potion-pg-soft",
+      "name": "Mystic Potion",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Mystic Potion, pgid 1717688, as Video Slots with RTP 96.70%, High volatility and maximum x10000. Official pi:4 icon was downloaded and decoded. Exact official Try Now URL could not be loaded: TypeError: fetch failed; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/154/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/154/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/45caaf2d-d977-4cb9-ba41-da5ed5b9ddd2.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 a2a1c21e4bd9a7a04cbc3ad28e1a5f2314e1d99dd3dcc9dab73b18e9b808f78a"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1717688/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Exact official Try Now URL could not be loaded: TypeError: fetch failed"
+        }
+      ]
+    },
     {
       "slug": "anubis-wrath-pg-soft",
       "name": "Anubis Wrath",
