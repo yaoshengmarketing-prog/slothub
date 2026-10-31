@@ -1,0 +1,32 @@
+{
+  "batch": 358,
+  "recordedAt": "2026-11-01T01:28:26+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Prosperity Fortune Tree/1312883 absent before intake.",
+  "records": [
+    {
+      "name": "Prosperity Fortune Tree",
+      "slug": "prosperity-fortune-tree-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/123/",
+      "officialFacts": "Official gid 123, pgid 1312883, Video Slots, RTP 96.77%, High volatility, maximum x20000. Exact layout 6 reels × 4 rows; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/fe0deca8-9e51-43e2-8416-76c3843d6c84.png",
+        "localPath": "public/assets/games/prosperity-fortune-tree-pg-soft.png",
+        "sha256": "48092c988d4fd88181c27a419e8873b64a66d4f0d4f6ba173f940d8e56d3ce3d",
+        "byteSize": 17128,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: lush tree bearing red lucky envelopes with falling gold ingots and PG logo; matches Prosperity Fortune Tree identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1312883/index.html?language=en-US&bet_type=2 returned HTTP 200, 5644-byte Redirecting... shell on 2026-11-01; no independently playable exact Demo established. No public link; not-verified."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 122 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
