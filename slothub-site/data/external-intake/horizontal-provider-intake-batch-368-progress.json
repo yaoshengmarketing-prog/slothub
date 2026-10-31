@@ -1,10 +1,10 @@
 {
   "batch": 368,
   "recordedAt": "2026-11-01T02:35:32+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Butterfly Blossom/125 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Butterfly Blossom",
       "slug": "butterfly-blossom-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/113/",
       "officialFacts": "Official gid 113, pgid 125, Video Slots, RTP 96.74%, Medium volatility, maximum x50000. Exact layout 5 reels × 3 rows; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/125/index.html?language=en-US&bet_type=2. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 112 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 112; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "githubConclusion": "success",
+    "githubRun": 41230436960,
+    "cloudflareStatus": "success",
+    "commit": "1a49e1574be470a02e3d3c13fb28b641be62e97c",
+    "cloudflareDeploymentId": "6b399658-d3b8-49b6-9965-80f5b018964f",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Butterfly Blossom, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-11-01",
+    "cloudflareUrl": "https://6b399658.slothub-4cu.pages.dev"
+  }
 }
