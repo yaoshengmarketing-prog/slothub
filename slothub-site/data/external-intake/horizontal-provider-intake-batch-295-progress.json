@@ -1,10 +1,10 @@
 {
   "batch": 295,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Inferno Mayhem/1950910 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Inferno Mayhem",
       "slug": "inferno-mayhem-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/189/",
       "officialFacts": "Official gid 189, pgid 1950910, enabled Video Slots, RTP 96.76%, High volatility, maximum x25000. 5x5 symbol combination, Wild multipliers up to x500, each Wild awards one respin, Super Feature Buy guarantees x2-x500 Wild multipliers; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/1950910/index.html?language=en-US&bet_type=2 failed with ERR_SOCKS_CONNECTION_FAILED in read-only browser check; no same-game playability verified. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 188 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 188; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "651d79096fc77dc1c5f0e225d25ad700f4a9afc3",
+    "githubRun": 41194224662,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "55cb369c-111b-4e39-a004-3b1a8bba4252",
+    "cloudflareUrl": "https://55cb369c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, WEBP and sitemap HTTP 200; Provider lists Inferno Mayhem, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }
