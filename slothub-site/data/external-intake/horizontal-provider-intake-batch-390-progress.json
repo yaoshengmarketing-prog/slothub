@@ -1,0 +1,32 @@
+{
+  "batch": 390,
+  "recordedAt": "2026-11-01T04:32:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Majestic Treasures/95 absent before intake.",
+  "records": [
+    {
+      "name": "Majestic Treasures",
+      "slug": "majestic-treasures-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/90/",
+      "officialFacts": "Official gid 90, pgid 95, Video Slots, RTP 96.68%, Medium volatility, maximum x50000. Exact layout 5×5 symbols combination; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/b29bec46-4cf1-4eb1-9b77-98ad9813410d.png",
+        "localPath": "public/assets/games/majestic-treasures-pg-soft.png",
+        "sha256": "6ccbb3641276edc8937a271defe5d00500644ed79b5d1574d3e34936bd8b072b",
+        "byteSize": 54668,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: jewelled red-and-gold crown with gems and PG logo; matches Majestic Treasures royal-diamond identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/majestic-ts/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 89 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
