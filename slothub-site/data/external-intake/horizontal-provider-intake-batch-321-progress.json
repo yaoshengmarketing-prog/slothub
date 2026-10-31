@@ -1,0 +1,32 @@
+{
+  "batch": 321,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Oishi Delights/1815268 absent before intake.",
+  "records": [
+    {
+      "name": "Oishi Delights",
+      "slug": "oishi-delights-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/163/",
+      "officialFacts": "Official gid 163, pgid 1815268, enabled Video Slots, RTP 96.75%, High volatility, maximum x10000. Five reels x eight rows; winning symbols with a wind chime activate/increase multipliers up to x1024; 3 Scatters trigger 10 free spins. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/62656bc0-b89c-49e4-992f-476438f55a70.webp",
+        "localPath": "public/assets/games/oishi-delights-pg-soft.webp",
+        "sha256": "65ad215380784ad9c3184275add614ec44c63744521c7af5e4a53be26b8f2585",
+        "byteSize": 10084,
+        "dimensions": "156x156",
+        "mime": "image/webp",
+        "visualCheck": "Viewed official pi:4 156x156 icon: festival girl in red kimono holding dango with fireworks and PG mark matches Japanese festival title artwork; source URL, decoded WebP and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1815268/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 162 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
