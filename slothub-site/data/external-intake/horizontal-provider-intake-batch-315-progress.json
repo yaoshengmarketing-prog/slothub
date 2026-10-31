@@ -1,0 +1,32 @@
+{
+  "batch": 315,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Fortune Snake/1879752 absent before intake.",
+  "records": [
+    {
+      "name": "Fortune Snake",
+      "slug": "fortune-snake-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/169/",
+      "officialFacts": "Official gid 169, pgid 1879752, enabled Video Slots, official sv code 1 interpreted Low volatility, RTP 96.76%, maximum x5000. Three reels, 3 rows on reels 1 and 3, 4 rows on reel 2; respins, stacked Wild x10, randomly triggered Fortune Snake Feature and Bonus Bet increasing feature chance. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/cf36776a-3d4f-4ca0-9763-475979b5c6e2.webp",
+        "localPath": "public/assets/games/fortune-snake-pg-soft.webp",
+        "sha256": "8c761eb5cbef34e122ed9fbefb468f391e76cc80ae5337642e85792bbb5cf8b0",
+        "byteSize": 9096,
+        "dimensions": "156x156",
+        "mime": "image/webp",
+        "visualCheck": "Viewed official pi:4 156x156 icon: cheerful teal snake beside microphone against purple music background with PG mark matches hip-hop Fortune Snake title; source URL, decoded WebP and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1879752/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 168 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
