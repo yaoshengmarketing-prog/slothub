@@ -1,0 +1,13 @@
+{
+  "batch": 429,
+  "recordedAt": "2026-11-01T07:27:27+08:00",
+  "state": "excluded-disabled-duplicate-official-route",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Gem Saviour Conquest",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/51/language/1/live/true",
+  "evidence": "Official gid51 reports en=false and pgid62/name Gem Saviour Conquest, matching enabled gid55 and published Game from batch425. No Game, coverage or image write.",
+  "decision": "Excluded as disabled duplicate route; no new-game count.",
+  "nextCursor": "Continue numeric gid50; recheck gid51 only if official identity or enabled status changes."
+}

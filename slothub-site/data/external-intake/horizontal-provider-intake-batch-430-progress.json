@@ -1,0 +1,13 @@
+{
+  "batch": 430,
+  "recordedAt": "2026-11-01T07:27:38+08:00",
+  "state": "excluded-existing-game",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Mahjong Ways",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/50/language/1/live/true",
+  "evidence": "Official API identifies enabled Video Slot gid50 pgid65 Mahjong Ways. Existing src/content/games/mahjong-ways.md has same name and provider; exact duplicate. No new Game, coverage or image write.",
+  "decision": "Excluded as existing Game; no new-game count.",
+  "nextCursor": "Continue enabled gid49 Dragon Tiger Luck."
+}
