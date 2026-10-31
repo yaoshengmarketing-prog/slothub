@@ -1,10 +1,10 @@
 {
   "batch": 284,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete missing PG SOFT Slots after Prosperity Lanterns live closure",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Touchdown Wins and PG SOFT game ID 2152563 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Touchdown Wins",
       "slug": "touchdown-wins-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/200/",
       "officialFacts": "Official route 200 / pgid 2152563; 3D Games and Video Slots; 3-reel video slot with 2-3-2 rows, RTP 96.74%, Medium volatility, maximum x5000; wins activate multipliers, Free Spins multipliers reach x2048, and eight random Free Spins double all multipliers. No explicit payline/Ways count or release date asserted.",
       "image": {
@@ -25,5 +25,20 @@
       "demo": "Official exact-game Try Now URL https://m.pg-redirect.com/2152563/index.html?language=en-US&bet_type=2 redirected in browser to unrelated MidnightManga adult age gate. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After same-SHA CI, Cloudflare and seven-route readback, continue PG SOFT official catalog and numeric route 199 downward; first confirm Slot type, official identity and dedup."
+  "nextCursor": "Continue PG SOFT official catalog and numeric route 199 downward; first confirm Slot type, official identity and dedup.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "a9041d1b314ce7c10795c9fdc7df060cd734d5fa",
+    "githubRun": 41189144342,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "55c27497-252e-4d6a-8189-a9b10eb410e4",
+    "cloudflareUrl": "https://55c27497.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Touchdown Wins, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }

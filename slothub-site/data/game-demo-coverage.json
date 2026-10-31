@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 846,
+  "gameCount": 847,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 127
+    "not-verified": 128
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,36 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "farmstead-fortune-pg-soft",
+      "name": "Farmstead Fortune",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT official exact numeric page 199 and public Game Details API identify Farmstead Fortune, pgid 2118946, as a 5x5 video slot with RTP 96.76%, High volatility, maximum x10000 and expanding 7x7 Bonus feature. Its official app icon was retrieved and visually checked. The official Try Now URL redirected in browser to an unrelated robot-verification page, so no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/199/",
+          "httpStatus": 200,
+          "notes": "Official exact-game SSR and browser page confirm name, game ID, video-slot type, 5x5 layout, RTP, High volatility and maximum win"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/199/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms pgid 2118946, app icon and Try Now target"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/14702c99-900a-4f3a-ac83-3f88c068e55a.webp",
+          "httpStatus": 200,
+          "notes": "Official app icon from exact-game media list; valid image/webp showing pumpkin and PG mark, SHA256 6ba056ea19cd63a16be6333c7e8e5e25af7f0e675aa6864bd13cdb9fa9b23435"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2118946/index.html?language=en-US&bet_type=2",
+          "notes": "Official Try Now redirected in browser to unrelated datavexhub.co.in robot-verification page; no exact same-game playable content observed"
+        }
+      ]
+    },
     {
       "slug": "touchdown-wins-pg-soft",
       "name": "Touchdown Wins",

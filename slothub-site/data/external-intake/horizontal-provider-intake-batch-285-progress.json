@@ -1,0 +1,30 @@
+{
+  "batch": 285,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake after Touchdown Wins live closure",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "catalogEvidence": "Official en-US catalog API returned 156 detailed records and official Video Slots filter tid 59 listed 201 pgids. Exact Game Details for numeric gid 205 down to 1 found 174 enabled Video Slots, 11 already published at baseline HEAD, 163 missing; 10 filter pgids could not be resolved by those numeric routes. The homepage counters 173 total / 171 Slot differ from current API and are not used as a completion proof. Full compact official-source baseline is data/external-intake/pgsoft-official-catalog-2026-10-31.json.",
+  "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Farmstead Fortune and PG SOFT game ID 2118946 absent before intake.",
+  "records": [
+    {
+      "name": "Farmstead Fortune",
+      "slug": "farmstead-fortune-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/199/",
+      "officialFacts": "Official route 199 / pgid 2118946; 3D Games and Video Slots; 5x5 symbol combination, RTP 96.76%, High volatility, maximum x10000; multipliers up to x100, Mini Bonus, 3 Scatters trigger 3 bonus spins with 7x7 expanded reels, Level-Up symbol upgrade. No explicit payline/Ways count or release date asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/14702c99-900a-4f3a-ac83-3f88c068e55a.webp",
+        "localPath": "public/assets/games/farmstead-fortune-pg-soft.webp",
+        "sha256": "6ba056ea19cd63a16be6333c7e8e5e25af7f0e675aa6864bd13cdb9fa9b23435",
+        "visualCheck": "Official exact-game app icon is valid image/webp and visibly shows a pumpkin with PG mark; source mapping is in same-game official media list."
+      },
+      "demo": "Official exact-game Try Now URL https://m.pg-redirect.com/2118946/index.html?language=en-US&bet_type=2 redirected in browser to unrelated datavexhub.co.in robot-verification page. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After same-SHA CI, Cloudflare and seven-route readback, continue official numeric route 198 Tornado Rampage, then descend eligible missing PG SOFT Video Slots. Reconcile 10 unresolved filter-only pgids separately; never count disabled/non-Slot or duplicate records."
+}
