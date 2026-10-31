@@ -1,0 +1,32 @@
+{
+  "batch": 434,
+  "recordedAt": "2026-11-01T07:45:44+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Flirting Scholar/61 absent before intake.",
+  "records": [
+    {
+      "name": "Flirting Scholar",
+      "slug": "flirting-scholar-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/46/",
+      "officialFacts": "Official gid 46, pgid 61, Video Slots, RTP 97.44%, Medium volatility, maximum x22500. Exact layout not asserted; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/4afc4039-1e93-47fc-b7c6-93129a57f4a2.png",
+        "localPath": "public/assets/games/flirting-scholar-pg-soft.png",
+        "sha256": "951f25dabab0374c5c8ee985a825e13406f75b7c4aaa05c0f01c145c0c3c13ef",
+        "byteSize": 15249,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: smiling historical scholar in blue cap and robes with PG logo; matches Flirting Scholar identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/flirting-scholar/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 45 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
