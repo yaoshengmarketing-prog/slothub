@@ -1,0 +1,32 @@
+{
+  "batch": 300,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Alibaba's Cave of Fortune/1940257 absent before intake.",
+  "records": [
+    {
+      "name": "Alibaba's Cave of Fortune",
+      "slug": "alibaba-s-cave-of-fortune-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/184/",
+      "officialFacts": "Official gid 184, pgid 1940257, enabled Video Slots, RTP 96.77%, High volatility, maximum x10000. Five reels x three rows; Collector gathers different Coin values, 6+ Coins trigger Bonus with 3 spins, Collector can reset bonus-spin counter; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/6e6e5582-09ed-4a12-ac6b-44ede2e2c7ad.png",
+        "localPath": "public/assets/games/alibaba-s-cave-of-fortune-pg-soft.png",
+        "sha256": "ec8029045636ccc71ef7db7c34fb6cfe0df7122784a65bfec95599ed899fc028",
+        "byteSize": 55657,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: robed adventurer facing glowing cave portal and PG mark match same-game title artwork; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1940257/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 183 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
