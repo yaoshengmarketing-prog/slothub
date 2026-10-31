@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 842,
+  "gameCount": 843,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 123
+    "not-verified": 124
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "grimms-bounty-princess-and-the-frog-pg-soft",
+      "name": "Grimms’ Bounty: Princess & the Frog",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT official exact numeric page 203 and public Game Details API identify Grimms’ Bounty: Princess & the Frog, pgid 2140622, as a 3-reel, 5-row connecting-ways video slot with RTP 96.77%, High volatility and maximum x10000. The official exact-game app icon was retrieved and visually checked. The detail page has no exposed Try Now URL: game-button is empty, gametrial is empty, gametrial_en is null and the API has no pi:22 trial media. Its masthead URL is title animation rather than a playable slot. No public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/203/",
+          "httpStatus": 200,
+          "notes": "Official exact-game SSR and browser page confirm identity, game ID, video-slot type, layout, features, RTP, High volatility and maximum win; no Try Now destination exposed"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/203/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms pgid 2140622 and exact media mapping; no pi:22 trial media record"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/7f6f39d9-5b11-4747-a1ad-48d27233c4c1.png",
+          "httpStatus": 200,
+          "notes": "Official app icon from exact-game media list; valid image/png showing princess, frog and PG mark, SHA256 58387cba7ac4c8c01a38e975c2a7227b3c6d87159d5f92d2fcb1ca3b0d3d0e5b"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/masthead/grimms-bounty-princess-&-the-frog.html?language=en",
+          "httpStatus": 200,
+          "notes": "Exact-game masthead is title/background animation, not a playable Demo"
+        }
+      ]
+    },
     {
       "slug": "thunder-reckoning-pg-soft",
       "name": "Thunder Reckoning",

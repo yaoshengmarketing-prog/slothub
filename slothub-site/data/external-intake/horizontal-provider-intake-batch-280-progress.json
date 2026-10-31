@@ -1,10 +1,10 @@
 {
   "batch": 280,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue PG SOFT numeric Slot detail pages after Azteca Legacy live closure",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Thunder Reckoning and PG SOFT game ID 2132187 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Thunder Reckoning",
       "slug": "thunder-reckoning-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/204/",
       "officialFacts": "Official route 204 / pgid 2132187; 3D Games and Video Slots; 5x6 symbol combination, RTP 96.76%, Medium volatility, maximum x5000; variable-size Prize Symbols, winning positions activate and fully activated grid merges into 5x6 symbol position. No explicit payline/Ways count or release date asserted.",
       "image": {
@@ -25,5 +25,20 @@
       "demo": "Official exact-game Try Now URL https://m.pg-redirect.com/2132187/index.html?language=en-US&bet_type=2 redirected in browser to unrelated OpticsPlanet content. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After same-SHA CI, Cloudflare and full seven-route readback, continue PG SOFT official numeric page 203 Grimms' Bounty: Princess & the Frog, then 202 Lucky Mischief, 201 Prosperity Lanterns and 200 Touchdown Wins. Each needs exact identity, metric, official icon and Demo check."
+  "nextCursor": "Continue PG SOFT official numeric page 203 Grimms' Bounty: Princess & the Frog, then 202 Lucky Mischief, 201 Prosperity Lanterns and 200 Touchdown Wins. Each needs exact identity, metric, official icon and Demo check.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "19bea17fa0cc19e6f55dffa377bc3b6b20eddfbf",
+    "githubRun": 41186499510,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "b7d4d3f1-c565-44d4-b8ae-1f07dea45c50",
+    "cloudflareUrl": "https://b7d4d3f1.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Thunder Reckoning, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }
