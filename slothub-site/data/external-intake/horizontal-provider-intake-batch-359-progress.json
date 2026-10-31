@@ -1,0 +1,33 @@
+{
+  "batch": 359,
+  "recordedAt": "2026-11-01T01:35:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Wild Bounty Showdown/135 absent before intake.",
+  "records": [
+    {
+      "name": "Wild Bounty Showdown",
+      "slug": "wild-bounty-showdown-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/122/",
+      "officialFacts": "Official gid 122, pgid 135, Video Slots, RTP 96.75%, High volatility, maximum x5000. Exact layout 6 reels; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/47558386-711e-4a2f-95cc-953a29f5b0e6.png",
+        "localPath": "public/assets/games/wild-bounty-showdown-pg-soft.png",
+        "sha256": "ec14808c440e1fc365d2623405f412025ed8682a2670cc8aa43e92af83172e80",
+        "byteSize": 57291,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: blue-eyed cowgirl in wide-brim hat holding a revolver, gold desert background and PG logo; matches Wild Bounty Showdown identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/135/index.html?language=en-US&bet_type=2 returned HTTP 200, 5632-byte Redirecting... shell on 2026-11-01; no independently playable exact Demo established. No public link; not-verified."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 121 and continue eligible missing Video Slots; resolve filter-only pgids separately.",
+  "dedupResolution": "PG SOFT pgid 135 collides numerically with JILI Mayan Empire gameId 135. Different providers and names, so it is not a duplicate; provider-scoped ID check passed."
+}

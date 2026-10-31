@@ -1,10 +1,10 @@
 {
   "batch": 358,
   "recordedAt": "2026-11-01T01:28:26+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Prosperity Fortune Tree/1312883 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Prosperity Fortune Tree",
       "slug": "prosperity-fortune-tree-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/123/",
       "officialFacts": "Official gid 123, pgid 1312883, Video Slots, RTP 96.77%, High volatility, maximum x20000. Exact layout 6 reels × 4 rows; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/1312883/index.html?language=en-US&bet_type=2 returned HTTP 200, 5644-byte Redirecting... shell on 2026-11-01; no independently playable exact Demo established. No public link; not-verified."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 122 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 122; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "commit": "65cbce0feb5a764b45a7b3c08447f1443cc1e743",
+    "githubRun": 41225014884,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "d83ccf86-7ca2-4620-9871-399e7cbdd67f",
+    "cloudflareUrl": "https://d83ccf86.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Prosperity Fortune Tree, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-11-01"
+  }
 }
