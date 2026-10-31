@@ -1,0 +1,13 @@
+{
+  "batch": 411,
+  "recordedAt": "2026-11-01T06:04:37+08:00",
+  "state": "excluded-disabled-official-game",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Dim Sum Mania",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/69/language/1/live/true",
+  "evidence": "Official API HTTP 200 identifies gid69 pgid81 as Video Slots but en=false; not an enabled current candidate. No Game, coverage or image write.",
+  "decision": "Excluded from current intake; do not count or publish disabled game.",
+  "nextCursor": "Continue numeric gid68; recheck gid69 only if official enabled status changes."
+}

@@ -1,0 +1,32 @@
+{
+  "batch": 412,
+  "recordedAt": "2026-11-01T06:04:45+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Wild Fireworks/83 absent before intake.",
+  "records": [
+    {
+      "name": "Wild Fireworks",
+      "slug": "wild-fireworks-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/68/",
+      "officialFacts": "Official gid 68, pgid 83, Video Slots, RTP 96.75%, Medium volatility, maximum x20000. Exact layout 5 reels × 3 rows; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/c76eb55f-9632-4bb7-a06a-92be48ef8e6f.png",
+        "localPath": "public/assets/games/wild-fireworks-pg-soft.png",
+        "sha256": "f1b740d909bfa607da85d5836826b4a5910abae30fe55f13abee0787e67ac57d",
+        "byteSize": 54197,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: red and green festival rockets, lion dance ornament and fireworks with PG logo; matches Wild Fireworks identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/wild-fireworks/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 67 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
