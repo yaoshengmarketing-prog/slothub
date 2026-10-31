@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { ReactNode } from 'react';
 import type { GameCatalogItem as Game } from '../lib/game-catalog';
+import { buildRecordedRtpPresentation, formatRecordedRtp, RTP_MISSING, RTP_PRIMARY_NOTE, RTP_USAGE_NOTE } from '../lib/game-detail-presentation.mjs';
 import { featureLabels, volatilityLabels, winMechanismLabels } from '../lib/taxonomy';
 import {
   COMPARE_MISSING, COMPARE_NORMALIZED_MISSING, COMPARE_ORIGINAL_MISSING,
@@ -50,15 +51,17 @@ function CompareIdentity({ game }: { game: Game }) {
 }
 
 function RtpValue({ game }: { game: Game }) {
-  const variants = game.rtpVariants ?? [];
+  const rtp = buildRecordedRtpPresentation(game);
+  if (!rtp.hasRecordedValues) return <span>{RTP_MISSING}</span>;
+  const fullList = <ul className="recorded-rtp-list">{rtp.values.map((value) => <li key={value}>
+    {formatRecordedRtp(value)}{rtp.hasPrimary && value === rtp.primary && <small>本站記錄的主要值</small>}
+  </li>)}</ul>;
   return <div className="compare-value-stack">
-    {game.rtp !== undefined
-      ? <><small className="compare-primary-label">主要顯示值</small><span>{game.rtp}%</span></>
-      : <span>{COMPARE_MISSING}</span>}
-    {variants.length > 0 && <details className="compare-details">
-      <summary>查看 {variants.length} 個已核實版本</summary>
-      <ul>{variants.map((value) => <li key={value}>{value}%</li>)}</ul>
-    </details>}
+    {rtp.valueCount <= 2
+      ? <><div className="recorded-rtp-values">{rtp.values.map((value, index) => <span key={value}>{index > 0 && '／'}{formatRecordedRtp(value)}</span>)}</div>
+        {rtp.hasPrimary && <details className="compare-details"><summary>查看主要值與用途</summary>{fullList}<small>{RTP_PRIMARY_NOTE}</small></details>}</>
+      : <details className="compare-details"><summary>{rtp.valueCount} 個已收錄數值</summary>{fullList}{rtp.hasPrimary && <small>{RTP_PRIMARY_NOTE}</small>}</details>}
+    <small className="rtp-usage-note">{RTP_USAGE_NOTE}</small>
   </div>;
 }
 
@@ -122,7 +125,7 @@ const sections: CompareSection[] = [
     key: 'core-data',
     title: '核心數據',
     rows: [
-      { key: 'rtp', label: 'RTP', help: '長期理論比例，不代表單次或短期結果。', render: (game) => <RtpValue game={game} /> },
+      { key: 'rtp', label: '已收錄 RTP', help: '長期理論比例，不代表單次或短期結果。', render: (game) => <RtpValue game={game} /> },
       { key: 'volatility-original', label: '原廠波動度', help: '保留原廠文字或尺度，不直接跨 Provider 排名。', render: (game) => <VolatilityValue game={game} /> },
       { key: 'volatility-normalized', label: 'Slot Hub 統一波動度', help: '編輯統一顯示，不是產業共同精確尺度。', render: (game) => <VolatilityValue game={game} normalized /> },
       { key: 'max-win', label: '統一 Max Win', help: '最高上限不代表常見結果或出現頻率。', render: (game) => <MaxWinValue game={game} /> },

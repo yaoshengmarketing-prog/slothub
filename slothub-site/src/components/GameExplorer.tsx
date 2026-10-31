@@ -1,4 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import type { ReactNode } from 'react';
+import { buildRecordedRtpPresentation, formatRecordedRtp, RTP_FILTER_NOTE, RTP_USAGE_NOTE } from '../lib/game-detail-presentation.mjs';
 import type { GameCatalogItem } from '../lib/game-catalog';
 import {
   emptyExplorerState, explorerOptions, featureResultCount, filterAndSortGames, hasExplorerFilters,
@@ -167,6 +169,7 @@ export default function GameExplorer({ games, initialLimit, urlState = false, ha
     });
   };
   const handoffState = handoffDefaults.primaryType && !state.primaryType ? { ...state, primaryType: handoffDefaults.primaryType } : state;
+  const rtpRuleActive = state.rtpMin !== undefined || state.sort === 'rtp-asc' || state.sort === 'rtp-desc';
 
   return <div className={`explorer explorer-v2 ${urlState && !urlReady ? 'url-state-loading' : ''}`}>
     <div className="filter-console-v2">
@@ -177,6 +180,7 @@ export default function GameExplorer({ games, initialLimit, urlState = false, ha
         <label>賠付機制<select value={state.mechanism} onChange={(event) => update({ mechanism: event.target.value })}><option value="">全部機制</option>{mechanisms.map((mechanism) => <option key={mechanism} value={mechanism}>{winMechanismLabels[mechanism] ?? mechanism}（{games.filter((game) => game.winMechanism === mechanism).length}）</option>)}</select></label>
         <label>排序<select value={state.sort} onChange={(event) => update({ sort: event.target.value as ExplorerState['sort'] })}>{state.q && <option value="relevance">搜尋相關度</option>}<option value="name-asc">名稱 A–Z</option><option value="rtp-desc">RTP 高到低</option><option value="rtp-asc">RTP 低到高</option><option value="max-win-desc">最高倍數 高到低</option><option value="max-win-asc">最高倍數 低到高</option></select></label>
       </div>
+      {rtpRuleActive && <p className="rtp-filter-policy" role="note">{RTP_FILTER_NOTE}</p>}
       <fieldset className="feature-filters"><legend>遊戲功能 <small>可複選，需符合全部條件</small></legend><div>{primaryFeatures.map((feature) => <FeatureToggle key={feature} feature={feature} selected={state.features.includes(feature)} count={featureResultCount(games, state, feature)} onToggle={() => toggleFeature(feature)} />)}</div></fieldset>
       <details className="advanced-filters" open={advancedActive || undefined}>
         <summary><span>進階篩選</span><small>RTP、波動度、最高倍數與子類型</small></summary>
@@ -198,11 +202,18 @@ export default function GameExplorer({ games, initialLimit, urlState = false, ha
     {state.primaryType && primaryTypes.length === 1 && <div className="active-context">目前類型：<b>{primaryTypeLabels[state.primaryType] ?? state.primaryType}</b></div>}
     {!urlState && <a className="explorer-share-link" href={gamesIndexUrl(handoffState)}>{hasFilters ? '在完整遊戲庫開啟這組條件 →' : '前往完整遊戲庫 →'}</a>}
     <div className="game-grid">{shown.map((game) => {
+      const rtp = buildRecordedRtpPresentation(game);
       const metrics = [
-        game.rtp !== undefined ? { label: 'RTP', value: `${game.rtp}%`, note: game.rtpVariants.length > 1 ? '多版本' : undefined } : undefined,
+        rtp.hasRecordedValues ? { label: '已收錄 RTP', value: <div className="card-recorded-rtp">
+          {rtp.valueCount <= 2
+            ? <div className="recorded-rtp-values">{rtp.values.map((value, index) => <span key={value}>{index > 0 && '／'}{formatRecordedRtp(value)}</span>)}</div>
+            : <span>{rtp.valueCount} 個已收錄數值</span>}
+          {rtpRuleActive && rtp.hasPrimary && <span className="rtp-primary-basis">主要值：<b>{formatRecordedRtp(rtp.primary)}</b></span>}
+          <span className="rtp-usage-note">{RTP_USAGE_NOTE}</span>
+        </div> } : undefined,
         game.volatilityNormalized ? { label: '波動度', value: volatilityLabels[game.volatilityNormalized] ?? game.volatilityNormalized } : undefined,
         game.maxWinMultiplier !== undefined ? { label: '最高倍數', value: formatMultiplier(game.maxWinMultiplier) } : undefined,
-      ].filter(Boolean) as { label: string; value: string; note?: string }[];
+      ].filter(Boolean) as { label: string; value: ReactNode; note?: string }[];
       return <article className="game-card" key={game.slug}><a className="game-art" href={game.url} aria-label={`查看 ${game.name}`} onClick={flushPendingQuery}>{game.image ? <img src={game.image.src} alt={game.image.alt} loading="lazy" /> : <b>{game.name.slice(0, 1)}</b>}<small>{game.providerName}</small></a><div className="game-card-body"><p>{game.providerName}</p><h3><a href={game.url} onClick={flushPendingQuery}>{game.name}</a>{game.displayNameZhHant && <small>{game.originalName}</small>}</h3>{metrics.length > 0 && <dl className="game-metrics">{metrics.map((metric) => <div key={metric.label}><dt>{metric.label}</dt><dd>{metric.value}{metric.note && <small>{metric.note}</small>}</dd></div>)}</dl>}{game.mechanismLabel && <div className="game-mechanism"><span>賠付機制</span><b>{game.mechanismLabel}</b></div>}<button className={compare.selected.includes(game.slug) ? 'compare-add active' : 'compare-add'} onClick={() => compare.toggle(game.slug)} disabled={!compare.selected.includes(game.slug) && compare.selected.length >= 3}>{compare.selected.includes(game.slug) ? '✓ 已加入比較' : '＋ 加入比較'}</button></div></article>;
     })}</div>
     {urlState && filtered.length > 0 && <div className="explorer-pagination">
