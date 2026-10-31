@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 888,
+  "gameCount": 897,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 169
+    "not-verified": 178
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,285 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "dragon-hatch-2-pg-soft",
+      "name": "Dragon Hatch 2",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Dragon Hatch 2, pgid 1451122, as Video Slots with RTP 96.76%, Medium volatility and maximum x2500. Official pi:4 icon was downloaded and decoded. Exact official Try Now URL could not be loaded: TypeError: fetch failed; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/148/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/148/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/2be4d0d4-2ee9-4164-a5c3-55166ac74cda.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 da3711653a1a276a6d246c9541ca6ae154ca3c0e30aec0ddc5b08abe93764bcd"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1451122/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Exact official Try Now URL could not be loaded: TypeError: fetch failed"
+        }
+      ]
+    },
+    {
+      "slug": "fortune-dragon-pg-soft",
+      "name": "Fortune Dragon",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Fortune Dragon, pgid 1695365, as Video Slots with RTP 96.74%, Medium volatility and maximum x2500. Official pi:4 icon was downloaded and decoded. Exact official Try Now URL could not be loaded: TypeError: fetch failed; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/149/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/149/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/6db8b734-210d-4c7f-b427-0480a05a9e7d.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 8ee2512a0538b7d4dde85bd0e23742f6ae41f7627ea5f149ddd8d43369f3c3a4"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1695365/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Exact official Try Now URL could not be loaded: TypeError: fetch failed"
+        }
+      ]
+    },
+    {
+      "slug": "gemstones-gold-pg-soft",
+      "name": "Gemstones Gold",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Gemstones Gold, pgid 1671262, as Video Slots with RTP 96.71%, High volatility and maximum x7500. Official pi:4 icon was downloaded and decoded. Exact official Try Now URL could not be loaded: TypeError: fetch failed; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/150/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/150/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/cd358c25-7258-4929-baff-0e0c85b4b884.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 e18ce4346d2511bb6810a635c5100df43f64000277a89c38e3c1a397617739a6"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1671262/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Exact official Try Now URL could not be loaded: TypeError: fetch failed"
+        }
+      ]
+    },
+    {
+      "slug": "cash-mania-pg-soft",
+      "name": "Cash Mania",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Cash Mania, pgid 1682240, as Video Slots with RTP 96.75%, High volatility and maximum x2000. Official pi:4 icon was downloaded and decoded. Exact official Try Now URL could not be loaded: TypeError: fetch failed; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/151/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/151/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/ba4c7860-3a80-4425-82ea-d0c7775aec93.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 7bb07fec5e39cfe8e8aec95cec91f07a5aecb66e7207016d771cd9a96a4d0cb4"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1682240/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Exact official Try Now URL could not be loaded: TypeError: fetch failed"
+        }
+      ]
+    },
+    {
+      "slug": "wild-ape-3258-pg-soft",
+      "name": "Wild Ape #3258",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Wild Ape #3258, pgid 1508783, as Video Slots with RTP 96.73%, High volatility and maximum x10000. Official pi:4 icon was downloaded and decoded. Exact official Try Now URL could not be loaded: TypeError: fetch failed; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/152/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/152/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/537cafee-4b42-48f2-83b6-3aa4a5278ad1.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 504375cdc3b40143c73dd2cc636871a9e2f010106ba0feaabcbdb5bcab23fd95"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1508783/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Exact official Try Now URL could not be loaded: TypeError: fetch failed"
+        }
+      ]
+    },
+    {
+      "slug": "pinata-wins-pg-soft",
+      "name": "Pinata Wins",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Pinata Wins, pgid 1492288, as Video Slots with RTP 96.76%, Medium volatility and maximum x5000. Official pi:4 icon was downloaded and decoded. Exact official Try Now URL could not be loaded: TypeError: fetch failed; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/153/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/153/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/5065b967-4b74-40f9-918a-470557b9b942.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 46d69d15c6cabfe13257a4e4ab299e9f675956c365fe2e3f0ea991c0717a1efe"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1492288/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Exact official Try Now URL could not be loaded: TypeError: fetch failed"
+        }
+      ]
+    },
+    {
+      "slug": "mystic-potion-pg-soft",
+      "name": "Mystic Potion",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Mystic Potion, pgid 1717688, as Video Slots with RTP 96.70%, High volatility and maximum x10000. Official pi:4 icon was downloaded and decoded. Exact official Try Now URL could not be loaded: TypeError: fetch failed; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/154/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/154/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/45caaf2d-d977-4cb9-ba41-da5ed5b9ddd2.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 a2a1c21e4bd9a7a04cbc3ad28e1a5f2314e1d99dd3dcc9dab73b18e9b808f78a"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1717688/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Exact official Try Now URL could not be loaded: TypeError: fetch failed"
+        }
+      ]
+    },
+    {
+      "slug": "anubis-wrath-pg-soft",
+      "name": "Anubis Wrath",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Anubis Wrath, pgid 1623475, as Video Slots with RTP 96.75%, High volatility and maximum x10000. Official pi:4 icon was downloaded and decoded. Exact official Try Now URL could not be loaded: TypeError: fetch failed; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/155/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/155/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/65c195f6-a3d3-4523-9017-b754fa019d0e.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 77708c00ed7c68d4e7186f940a9b773b4759f45e220a383680769385cc76bd9b"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1623475/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Exact official Try Now URL could not be loaded: TypeError: fetch failed"
+        }
+      ]
+    },
+    {
+      "slug": "zombie-outbreak-pg-soft",
+      "name": "Zombie Outbreak",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Zombie Outbreak, pgid 1635221, as Video Slots with RTP 96.75%, High volatility and maximum x5000. Official pi:4 icon was downloaded and decoded. Exact official Try Now URL could not be loaded: TypeError: fetch failed; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/156/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/156/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/188a0ea2-3d8e-4fd5-9306-6a75680285df.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 203919adef688f9d178573faf844fc3b20f89b44bc40f9f4f34899ad07d05b3c"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1635221/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Exact official Try Now URL could not be loaded: TypeError: fetch failed"
+        }
+      ]
+    },
     {
       "slug": "futebol-fever-pg-soft",
       "name": "Futebol Fever",

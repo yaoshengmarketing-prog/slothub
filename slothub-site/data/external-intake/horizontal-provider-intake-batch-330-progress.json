@@ -1,0 +1,47 @@
+{
+  "batch": 330,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Pinata Wins/1492288 absent before intake.",
+  "records": [
+    {
+      "name": "Pinata Wins",
+      "slug": "pinata-wins-pg-soft",
+      "provider": "pg-soft",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pgsoft.com/en/games/153/",
+      "officialFacts": "Official gid 153, pgid 1492288, enabled Video Slots, RTP 96.76%, Medium volatility, maximum x5000. Five reels x three rows; Gold Framed symbols have multipliers up to x100; 3 Scatters trigger 15 free spins, during which collected multipliers remain above reels to feature end. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/5065b967-4b74-40f9-918a-470557b9b942.png",
+        "localPath": "public/assets/games/pinata-wins-pg-soft.png",
+        "sha256": "46d69d15c6cabfe13257a4e4ab299e9f675956c365fe2e3f0ea991c0717a1efe",
+        "byteSize": 15084,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: multicolor piñata horse and party stick with PG mark matches title artwork; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1492288/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "Continue official numeric route 152; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "fd1980eb8e12dfb0891440de005833ac2c27764c",
+    "githubRun": 41209349993,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "6fcd1cbe-b18f-4b03-9061-1e44436c5601",
+    "cloudflareUrl": "https://6fcd1cbe.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Pinata Wins, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
+}
