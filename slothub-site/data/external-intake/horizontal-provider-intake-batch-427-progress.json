@@ -1,10 +1,10 @@
 {
   "batch": 427,
   "recordedAt": "2026-11-01T07:14:55+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Fortune Mouse/68 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Fortune Mouse",
       "slug": "fortune-mouse-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/53/",
       "officialFacts": "Official gid 53, pgid 68, Video Slots, RTP 96.96%, Medium volatility, maximum x1000. Exact layout 3 reels × 3 rows; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/fortune-mouse/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 52 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue enabled official numeric route 52 Dragon Hatch; then descend eligible missing PG SOFT Video Slots.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "cloudflareUrl": "https://3ab7e55d.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "githubConclusion": "success",
+    "githubRun": 41251937932,
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Fortune Mouse, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-11-01",
+    "commit": "84a992cb0f613b159a6b93bbbd1bc5b11e86ffaf",
+    "cloudflareDeploymentId": "3ab7e55d-a712-462a-9c21-cab23b1f6cd7"
+  }
 }

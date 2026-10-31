@@ -1,0 +1,32 @@
+{
+  "batch": 428,
+  "recordedAt": "2026-11-01T07:20:49+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Dragon Hatch/57 absent before intake.",
+  "records": [
+    {
+      "name": "Dragon Hatch",
+      "slug": "dragon-hatch-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/52/",
+      "officialFacts": "Official gid 52, pgid 57, Video Slots, RTP 96.83%, Medium volatility, maximum x15000. Long description states 5 by 5 symbol arrangement with cascades and Earth/Water/Fire/Mother Dragon features; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/c6c50759-1c6b-4ad9-8e2d-841343373672.png",
+        "localPath": "public/assets/games/dragon-hatch-pg-soft.png",
+        "sha256": "8297aa76fce7412441999154c680744b2afeb618b9d7431107c05d35743db062",
+        "byteSize": 16557,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: red dragon head emerging from a glowing egg with PG logo; matches Dragon Hatch identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/dragon-hatch/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 51 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
