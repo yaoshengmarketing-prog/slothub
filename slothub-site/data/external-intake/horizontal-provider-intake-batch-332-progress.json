@@ -1,0 +1,32 @@
+{
+  "batch": 332,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Cash Mania/1682240 absent before intake.",
+  "records": [
+    {
+      "name": "Cash Mania",
+      "slug": "cash-mania-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/151/",
+      "officialFacts": "Official gid 151, pgid 1682240, enabled Video Slots, RTP 96.75%, High volatility, maximum x2000. Three reels x one row; symbols on middle reel win when matched on leftmost and rightmost reel, multipliers up to x100. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/ba4c7860-3a80-4425-82ea-d0c7775aec93.png",
+        "localPath": "public/assets/games/cash-mania-pg-soft.png",
+        "sha256": "7bb07fec5e39cfe8e8aec95cec91f07a5aecb66e7207016d771cd9a96a4d0cb4",
+        "byteSize": 12650,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: white-haired smiling character, cash and PG mark matches Cash Mania identity; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1682240/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 150 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
