@@ -1,0 +1,32 @@
+{
+  "batch": 318,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Chocolate Deluxe/1666445 absent before intake.",
+  "records": [
+    {
+      "name": "Chocolate Deluxe",
+      "slug": "chocolate-deluxe-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/166/",
+      "officialFacts": "Official gid 166, pgid 1666445, enabled Video Slots, RTP 96.75%, Medium volatility, maximum x5000. Six-by-six symbols combination; sticky winning symbols with additive multipliers up to x100; 3 Scatters trigger 10 free spins. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/1a035990-664c-4794-afe6-10ca9ebe2778.webp",
+        "localPath": "public/assets/games/chocolate-deluxe-pg-soft.webp",
+        "sha256": "a16d12a9bdb8d4bf1c98d4df02f9902bc32be89baf09d894bad953acba71c8d7",
+        "byteSize": 6870,
+        "dimensions": "156x156",
+        "mime": "image/webp",
+        "visualCheck": "Viewed official pi:4 156x156 icon: cut chocolate bonbons with glowing dessert background and PG mark matches title artwork; source URL, decoded WebP and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1666445/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 165 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
