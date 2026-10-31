@@ -1,10 +1,10 @@
 {
   "batch": 312,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Doomsday Rampage/1827457 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Doomsday Rampage",
       "slug": "doomsday-rampage-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/172/",
       "officialFacts": "Official gid 172, pgid 1827457, enabled Video Slots, RTP 96.76%, Medium volatility, maximum x5000. Five reels x one row; during a winning spin 3+ Power Clamp symbols activate a Multiplier Wheel; Red Multiplier Wheel raises chance of multipliers up to x100. No Wild mechanic or explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/1827457/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 171 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 171; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "01e9deac0e9676099a9da46f066725c85c0c65f0",
+    "githubRun": 41201042554,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "c57df95c-5d98-464c-b10a-59effc4825aa",
+    "cloudflareUrl": "https://c57df95c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, WEBP and sitemap HTTP 200; Provider lists Doomsday Rampage, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }
