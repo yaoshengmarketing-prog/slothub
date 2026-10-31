@@ -1,0 +1,43 @@
+{
+  "batch": 278,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue Taiwan-common PG SOFT after ATG Slot catalog candidates were published or held",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "catalogEvidence": "PG SOFT homepage SSR counter reports 173 total games and 171 Slot games on 2026-10-31. The All Games page renders cards in browser behind an age overlay. Direct official GetDefaultAllGame API returned code 2100; exact numeric game pages remain readable.",
+  "dedupScope": "Existing PG SOFT Game pages are Fortune Ox, Fortune Rabbit, Fortune Tiger, Mahjong Ways and Mahjong Ways 2. Azteca Legacy, game ID 2160925 and numeric page 205 were absent from all Game Markdown before intake.",
+  "records": [
+    {
+      "name": "Azteca Legacy",
+      "slug": "azteca-legacy-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/205/",
+      "officialFacts": "PG SOFT numeric game 205, game ID 2160925, video slot, seven reels with 4-5-6-7-6-5-4 row pattern, RTP 96.75%, maximum x10000, 4-Corner Sync Symbols, Wild, increasing multipliers and 10 free spins after all positions unlock. No explicit paylines/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/14639d5b-adcc-4907-a7e4-381be955453f.png",
+        "localPath": "public/assets/games/azteca-legacy-pg-soft.png",
+        "sha256": "4726f0dd520f63bdf932dd4379a12d6d70b64c576f255fbc9af1375713f8c387",
+        "visualCheck": "Official exact-game icon is an Azteca golden sun face with PG logo; downloaded valid PNG and visually inspected."
+      },
+      "demo": "Official exact-game Try Now URL redirected in browser to an unrelated adult site; excluded from public Game data, status not-verified."
+    }
+  ],
+  "nextCursor": "After Azteca Legacy same-SHA CI, Cloudflare deployment and seven-route immutable readback, close batch278. Continue numeric official PG SOFT pages 204, 203, 202, 201, 200 with identity, metric, image and Demo checks; catalog API code 2100 and Demo redirect remain recorded.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31",
+    "initialAttempt": "Default ~4 GB Node heap failed during Astro diagnostics; rerun with 8 GB heap passed full checks."
+  },
+  "synchronization": {
+    "state": "reconciled-and-current",
+    "localHead": "a1b218edc7254d1cb20064fb91a08397afde5429",
+    "remoteMain": "a1b218edc7254d1cb20064fb91a08397afde5429",
+    "remoteChange": "PR #14 Densho multiplier storyboard was safely fast-forwarded before the Wuxia publication; the current origin/main SHA matches local HEAD and Azteca files remain isolated",
+    "checkedAt": "2026-10-31"
+  }
+}

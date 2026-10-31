@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 840,
+  "gameCount": 841,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 121
+    "not-verified": 122
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "azteca-legacy-pg-soft",
+      "name": "Azteca Legacy",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT official exact game 205 identifies Azteca Legacy, game ID 2160925, RTP 96.75%, maximum x10000 and 4-5-6-7-6-5-4 seven-reel slot features. The exact-game icon is served from its official game media. Its published Try Now target returned HTTP 200 but a browser navigation redirected to unrelated midnightmanga.com, not this game; do not link that unsafe destination as a verified Demo. Official All Games cards loaded behind Responsible Gaming age overlay in browser, while direct catalog API returned code 2100 in CLI.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/all/",
+          "httpStatus": 200,
+          "notes": "Official catalog page and game cards load in browser behind Responsible Gaming overlay; CLI API GetDefaultAllGame returned 2100 internal error"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/205/",
+          "httpStatus": 200,
+          "notes": "Official exact game SSR state confirms name, identity, description, RTP, max win, media and game ID 2160925"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/14639d5b-adcc-4907-a7e4-381be955453f.png",
+          "httpStatus": 200,
+          "notes": "Valid image/png, visually inspected Azteca-themed game icon from the exact-game media list, SHA256 4726f0dd520f63bdf932dd4379a12d6d70b64c576f255fbc9af1375713f8c387"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2160925/index.html?language=en-US&bet_type=2",
+          "httpStatus": 200,
+          "notes": "Official exact-game Try Now destination; browser followed a redirect to unrelated adult site instead of opening the game, so Demo remains not-verified and the destination is excluded from public Game data"
+        }
+      ]
+    },
     {
       "slug": "wuxia-atg",
       "name": "Wuxia",
