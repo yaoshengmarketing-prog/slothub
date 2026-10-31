@@ -1,0 +1,13 @@
+{
+  "batch": 413,
+  "recordedAt": "2026-11-01T06:10:45+08:00",
+  "state": "excluded-non-slot-disabled-official-game",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Five Numbers Hi Lo",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/67/language/1/live/true",
+  "evidence": "Official API HTTP 200 identifies gid67 pgid78 as table_games and en=false, outside enabled Video Slots intake. No Game, coverage or image write.",
+  "decision": "Excluded from current Slot intake; do not count or publish.",
+  "nextCursor": "Continue numeric gid66; reconsider only on a new approved intake scope."
+}

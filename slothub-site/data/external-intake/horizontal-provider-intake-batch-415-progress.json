@@ -1,0 +1,32 @@
+{
+  "batch": 415,
+  "recordedAt": "2026-11-01T06:11:36+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Dreams of Macau/79 absent before intake.",
+  "records": [
+    {
+      "name": "Dreams of Macau",
+      "slug": "dreams-of-macau-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/65/",
+      "officialFacts": "Official gid 65, pgid 79, Video Slots, RTP 96.73%, Medium volatility, maximum x100000. Description states 6 reels × 5 rows plus an additional reel above reels 2–5; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/c074537e-b0bf-4d76-98bd-c43f8755d5c6.png",
+        "localPath": "public/assets/games/dreams-of-macau-pg-soft.png",
+        "sha256": "a67effb8d0ceade04d778518e171963899e66ce64b835b70d6ec8086673c8a5e",
+        "byteSize": 16257,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: glamorous woman in red dress amid casino marquee lights with PG logo; matches Dreams of Macau identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/dreams-of-macau/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 64 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
