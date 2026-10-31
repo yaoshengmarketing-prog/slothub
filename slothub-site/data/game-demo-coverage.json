@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 905,
+  "gameCount": 906,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 186
+    "not-verified": 187
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "safari-wilds-pg-soft",
+      "name": "Safari Wilds",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Safari Wilds, pgid 1594259, as Video Slots with RTP 96.75%, Medium volatility and maximum x5000. Official pi:4 icon was downloaded and decoded. Exact official Try Now URL could not be loaded: TypeError: fetch failed; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/139/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/139/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/ee6e5685-a253-4522-a178-17af607f1242.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 838c0ebc1ec0fbbb05fe5ed0b44da41b58f2422e7b2207559c54ee839f45fc54"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1594259/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Exact official Try Now URL could not be loaded: TypeError: fetch failed"
+        }
+      ]
+    },
     {
       "slug": "gladiator-s-glory-pg-soft",
       "name": "Gladiator's Glory",

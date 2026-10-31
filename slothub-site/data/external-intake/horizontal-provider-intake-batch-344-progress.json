@@ -1,0 +1,32 @@
+{
+  "batch": 344,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Safari Wilds/1594259 absent before intake.",
+  "records": [
+    {
+      "name": "Safari Wilds",
+      "slug": "safari-wilds-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/139/",
+      "officialFacts": "Official gid 139, pgid 1594259, enabled Video Slots, RTP 96.75%, Medium volatility, maximum x5000. Six reels: five rows on 1,2,5,6 and six rows on 3,4. Any win increases multiplier and turns winning symbols on reels 3,4 Wild; four Scatters trigger 12 free spins. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/ee6e5685-a253-4522-a178-17af607f1242.png",
+        "localPath": "public/assets/games/safari-wilds-pg-soft.png",
+        "sha256": "838c0ebc1ec0fbbb05fe5ed0b44da41b58f2422e7b2207559c54ee839f45fc54",
+        "byteSize": 15072,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: savanna sunset with elephant and giraffe silhouettes plus PG mark matches Safari Wilds identity; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1594259/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 138 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
