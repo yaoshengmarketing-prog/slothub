@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 865,
+  "gameCount": 866,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 146
+    "not-verified": 147
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "majestic-empire-pg-soft",
+      "name": "Majestic Empire",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Majestic Empire, pgid 1971587, as enabled Video Slots with RTP 96.74%, High volatility and maximum x10000. Official pi:4 icon was downloaded, decoded and visually matched. Official Try Now returned HTTP 200 Redirecting shell on a read-only HTTP check, not same-game playable content; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/180/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/180/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/20e17a35-1334-4bd0-960a-bd6b8f060579.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 ccb62d44b23629b5ba02e3c714d83880853b2a35a807ff32668fb437eb08d450"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1971587/index.html?language=en-US&bet_type=2",
+          "httpStatus": 200,
+          "notes": "Read-only HTTP response was a Redirecting shell, with no same-game playable content"
+        }
+      ]
+    },
     {
       "slug": "kraken-gold-rush-pg-soft",
       "name": "Kraken Gold Rush",

@@ -1,0 +1,32 @@
+{
+  "batch": 304,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Majestic Empire/1971587 absent before intake.",
+  "records": [
+    {
+      "name": "Majestic Empire",
+      "slug": "majestic-empire-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/180/",
+      "officialFacts": "Official gid 180, pgid 1971587, enabled Video Slots, RTP 96.74%, High volatility, maximum x10000. 5x6 symbol combination with additional 5-symbol reel, big symbols and increasing multiplier, 4 Scatters trigger 10 free spins, each winning symbol in Free Spins adds 2 to multiplier; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/20e17a35-1334-4bd0-960a-bd6b8f060579.png",
+        "localPath": "public/assets/games/majestic-empire-pg-soft.png",
+        "sha256": "ccb62d44b23629b5ba02e3c714d83880853b2a35a807ff32668fb437eb08d450",
+        "byteSize": 54259,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: jeweled desert ruler holding a golden relic and PG mark match same-game title artwork; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1971587/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 179 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
