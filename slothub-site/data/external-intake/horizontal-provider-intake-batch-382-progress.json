@@ -1,0 +1,32 @@
+{
+  "batch": 382,
+  "recordedAt": "2026-11-01T03:46:26+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Mermaid Riches/102 absent before intake.",
+  "records": [
+    {
+      "name": "Mermaid Riches",
+      "slug": "mermaid-riches-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/98/",
+      "officialFacts": "Official gid 98, pgid 102, Video Slots, RTP 96.71%, Medium volatility, maximum x20000. Exact layout 5 reels; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/52f68384-fc85-488d-a7e9-f1729dc63ca9.png",
+        "localPath": "public/assets/games/mermaid-riches-pg-soft.png",
+        "sha256": "550306eb9b8210ecb36c9dfea26ab129528c052453c9ac05d9f31a9adf9a209d",
+        "byteSize": 14922,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: red-haired mermaid in underwater blue scene with PG logo; matches Mermaid Riches identity."
+      },
+      "demo": "Official pi:22 Try Now redirected to exact mermaid-riches path on m.pg-demo.com, but returned HTTP 404 on 2026-11-01. Transient operator token omitted. No public link; not-verified."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 97 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}

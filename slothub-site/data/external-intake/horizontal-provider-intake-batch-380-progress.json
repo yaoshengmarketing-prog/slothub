@@ -1,10 +1,10 @@
 {
   "batch": 380,
   "recordedAt": "2026-11-01T03:40:23+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Supermarket Spree/115 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Supermarket Spree",
       "slug": "supermarket-spree-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/100/",
       "officialFacts": "Official gid 100, pgid 115, Video Slots, RTP 96.71%, Medium volatility, maximum x25000. Exact layout 6×6 symbols combination; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/sprmkt-spree/index.html?language=en-US&bet_type=2. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 99 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Official gid99 Groundhog Harvest is disabled (en=false); skip. Continue enabled gid98 Mermaid Riches.",
+  "validation": {
+    "checkedAt": "2026-11-01",
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs"
+  },
+  "publication": {
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "e5fedf39-8449-4763-b96f-6c58598d9f3a",
+    "githubRun": 41235563925,
+    "cloudflareStatus": "success",
+    "cloudflareUrl": "https://e5fedf39.slothub-4cu.pages.dev",
+    "commit": "88b481edf41379575629772a58bf03fbcb36a84a",
+    "checkedAt": "2026-11-01",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Supermarket Spree, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap"
+  }
 }

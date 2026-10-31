@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 940,
+  "gameCount": 941,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 221
+    "not-verified": 222
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mermaid-riches-pg-soft",
+      "name": "Mermaid Riches",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "PG SOFT exact official page and Game Details API identify Mermaid Riches, pgid 102, as Video Slots with RTP 96.71%, Medium volatility and maximum x20000. Exact official pi:4 image decoded and visually matched. Try Now redirected to an exact mermaid-riches path but returned HTTP 404; transient operator token omitted; no public Demo link.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/98/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/98/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/52f68384-fc85-488d-a7e9-f1729dc63ca9.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 550306eb9b8210ecb36c9dfea26ab129528c052453c9ac05d9f31a9adf9a209d"
+        },
+        {
+          "requestedUrl": "https://m.pg-demo.com/mermaid-riches/index.html?__refer=m.pg-redirect.com&__sv=0&language=en-US&bet_type=2&operator_token=8735ze6y8kp7jpwmxvau7gvytu3adwj4&from=https://public.pg-redirect.com/pages/close.html",
+          "httpStatus": 404,
+          "notes": "Official Try Now redirected to exact mermaid-riches path on m.pg-demo.com but returned HTTP 404; transient operator token omitted; not playable."
+        }
+      ]
+    },
     {
       "slug": "supermarket-spree-pg-soft",
       "name": "Supermarket Spree",
