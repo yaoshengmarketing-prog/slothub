@@ -1,0 +1,32 @@
+{
+  "batch": 424,
+  "recordedAt": "2026-11-01T06:57:06+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Shaolin Soccer/67 absent before intake.",
+  "records": [
+    {
+      "name": "Shaolin Soccer",
+      "slug": "shaolin-soccer-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/56/",
+      "officialFacts": "Official gid 56, pgid 67, Video Slots, RTP 96.93%, Medium volatility, maximum x4000. Exact layout 5 reels × 4 rows; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/ccb499d7-fb1a-4c6b-967a-0ed35df440e3.png",
+        "localPath": "public/assets/games/shaolin-soccer-pg-soft.png",
+        "sha256": "18a61e45cf5e33dc510a8c38a26bbeb488211f12359c275c47b15c18547400f3",
+        "byteSize": 15567,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: cartoon Shaolin monk kicking a soccer ball with PG logo; matches Shaolin Soccer identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/shaolin-soccer/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 55 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
