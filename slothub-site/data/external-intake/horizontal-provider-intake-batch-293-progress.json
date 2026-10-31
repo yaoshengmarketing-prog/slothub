@@ -1,0 +1,32 @@
+{
+  "batch": 293,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Perfect Strike/2024510 absent before intake.",
+  "records": [
+    {
+      "name": "Perfect Strike",
+      "slug": "perfect-strike-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/191/",
+      "officialFacts": "Official gid 191, pgid 2024510, enabled Video Slots, RTP 96.78%, Medium volatility, maximum x4000. Three reels x three rows; 3+ Trophy symbols trigger respins, Trophy wins up to 200x bet, up to 10 free spins and x10 multipliers; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/f5885185-5889-40f3-bb67-ec7c929d5310.png",
+        "localPath": "public/assets/games/perfect-strike-pg-soft.png",
+        "sha256": "8dc80d7d8ff6ca93943d35f15ef4bd6dbb21b80c65e76004021311ecda338498",
+        "byteSize": 13264,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: glowing bowling ball and pins with PG mark match same-game title artwork; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/2024510/index.html?language=en-US&bet_type=2 redirected in read-only browser check to unrelated datavexhub.co.in Click Allow page; no same-game playability verified. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 190 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
