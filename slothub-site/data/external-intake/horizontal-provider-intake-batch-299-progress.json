@@ -1,0 +1,32 @@
+{
+  "batch": 299,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Poker Kingdom Win/2009635 absent before intake.",
+  "records": [
+    {
+      "name": "Poker Kingdom Win",
+      "slug": "poker-kingdom-win-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/185/",
+      "officialFacts": "Official gid 185, pgid 2009635, enabled Video Slots, RTP 96.74%, High volatility, maximum x5000. Five reels x three rows; sticky symbols and increasing ways, winning Multiplier-Ways symbols persist and add 1 next round, then even values become Wild and odd values become random symbols; no exact Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/98c61d3b-196b-4123-bac1-97f2073c07ec.webp",
+        "localPath": "public/assets/games/poker-kingdom-win-pg-soft.webp",
+        "sha256": "fdf3212c693119dc39201460ba8bb455cc20523c3290aaff11c6f6b2eff79a77",
+        "byteSize": 7790,
+        "dimensions": "156x156",
+        "mime": "image/webp",
+        "visualCheck": "Viewed official pi:4 156x156 icon: crown over playing cards and PG mark match same-game title artwork; source URL, decoded WebP and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/2009635/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 184 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
