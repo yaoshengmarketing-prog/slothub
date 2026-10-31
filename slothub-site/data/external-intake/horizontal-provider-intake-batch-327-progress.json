@@ -1,10 +1,10 @@
 {
   "batch": 327,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Zombie Outbreak/1635221 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Zombie Outbreak",
       "slug": "zombie-outbreak-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/156/",
       "officialFacts": "Official gid 156, pgid 1635221, enabled Video Slots, RTP 96.75%, High volatility, maximum x5000. Five reels, 4 rows on reels 1, 3, 5 and 5 rows on reels 2, 4; Expanding Wilds have three collectible multipliers; 3 Scatters trigger 15 free spins. No explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/1635221/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 155 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 155; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "c49ef388ea985ea7158a97e354d7b9b7bf02d91b",
+    "githubRun": 41207842168,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "baa480c7-416b-4142-8eaa-8043d2486622",
+    "cloudflareUrl": "https://baa480c7.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Zombie Outbreak, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }

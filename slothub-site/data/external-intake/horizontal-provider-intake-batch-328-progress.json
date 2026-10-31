@@ -1,0 +1,32 @@
+{
+  "batch": 328,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Anubis Wrath/1623475 absent before intake.",
+  "records": [
+    {
+      "name": "Anubis Wrath",
+      "slug": "anubis-wrath-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/155/",
+      "officialFacts": "Official gid 155, pgid 1623475, enabled Video Slots, RTP 96.75%, High volatility, maximum x10000. Five reels x four rows; Multiplier Reel up to x500, random Anubis symbols activate multipliers; 3 Scatters trigger 15 free spins. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/65c195f6-a3d3-4523-9017-b754fa019d0e.png",
+        "localPath": "public/assets/games/anubis-wrath-pg-soft.png",
+        "sha256": "77708c00ed7c68d4e7186f940a9b773b4759f45e220a383680769385cc76bd9b",
+        "byteSize": 18139,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: dark jackal-headed Anubis with fiery orange eyes and PG mark matches title artwork; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1623475/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 154 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
