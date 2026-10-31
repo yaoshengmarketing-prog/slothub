@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 856,
+  "gameCount": 857,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 137
+    "not-verified": 138
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "inferno-mayhem-pg-soft",
+      "name": "Inferno Mayhem",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Inferno Mayhem, pgid 1950910, as enabled Video Slots with RTP 96.76%, High volatility and maximum x25000. Official pi:4 icon was downloaded, decoded and visually matched. Official Try Now failed with ERR_SOCKS_CONNECTION_FAILED in a read-only browser check; no playable same-game Demo or public Demo link verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/189/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/189/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/1bf867f7-6ead-4a20-bb60-077c7acbcddd.webp",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/webp, 156x156, SHA256 d330dad37c96a3627f61d4593a82bebdcaac111d4a08c9465f4191ffc22940a2"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1950910/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Read-only browser check failed with ERR_SOCKS_CONNECTION_FAILED; same-game playability not verified"
+        }
+      ]
+    },
     {
       "slug": "mayan-destiny-pg-soft",
       "name": "Mayan Destiny",

@@ -1,0 +1,32 @@
+{
+  "batch": 295,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Inferno Mayhem/1950910 absent before intake.",
+  "records": [
+    {
+      "name": "Inferno Mayhem",
+      "slug": "inferno-mayhem-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/189/",
+      "officialFacts": "Official gid 189, pgid 1950910, enabled Video Slots, RTP 96.76%, High volatility, maximum x25000. 5x5 symbol combination, Wild multipliers up to x500, each Wild awards one respin, Super Feature Buy guarantees x2-x500 Wild multipliers; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/1bf867f7-6ead-4a20-bb60-077c7acbcddd.webp",
+        "localPath": "public/assets/games/inferno-mayhem-pg-soft.webp",
+        "sha256": "d330dad37c96a3627f61d4593a82bebdcaac111d4a08c9465f4191ffc22940a2",
+        "byteSize": 8924,
+        "dimensions": "156x156",
+        "mime": "image/webp",
+        "visualCheck": "Viewed official pi:4 156x156 icon: fiery figure raising both arms and PG mark match same-game title artwork; source URL, decoded WebP and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1950910/index.html?language=en-US&bet_type=2 failed with ERR_SOCKS_CONNECTION_FAILED in read-only browser check; no same-game playability verified. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 188 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
