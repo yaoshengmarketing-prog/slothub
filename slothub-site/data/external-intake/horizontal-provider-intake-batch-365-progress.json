@@ -1,10 +1,10 @@
 {
   "batch": 365,
   "recordedAt": "2026-11-01T02:16:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Battleground Royale/124 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Battleground Royale",
       "slug": "battleground-royale-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/116/",
       "officialFacts": "Official gid 116, pgid 124, Video Slots, RTP 96.75%, Medium volatility, maximum x20000. Exact layout 5 reels; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/124/index.html?language=en-US&bet_type=2. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 115 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 115; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "checkedAt": "2026-11-01",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs"
+  },
+  "publication": {
+    "cloudflareDeploymentId": "87ec5d90-857e-4696-8cf4-b52b04d4cd0f",
+    "cloudflareStatus": "success",
+    "githubConclusion": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Battleground Royale, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "commit": "20d7ef62c502b5f8e40d050e22db791a044022ab",
+    "githubRun": 41228830864,
+    "cloudflareUrl": "https://87ec5d90.slothub-4cu.pages.dev",
+    "checkedAt": "2026-11-01"
+  }
 }
