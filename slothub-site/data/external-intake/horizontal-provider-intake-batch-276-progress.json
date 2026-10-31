@@ -1,10 +1,10 @@
 {
   "batch": 276,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue ATG Games official Slot catalog after Vampire live closure",
   "catalog": "https://www.atg-games.com/en/games?type=all",
   "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Jinlian absent before intake and distinct from other Chinese-themed titles.",
@@ -13,7 +13,7 @@
       "name": "Jinlian",
       "slug": "jinlian-atg",
       "provider": "atg-games",
-      "status": "imported-awaiting-live-closure",
+      "status": "published-live-verified",
       "officialPage": "https://www.atg-games.com/games/slot/jinlian",
       "officialFacts": "2026-09-08 release; five reels, 40 left-to-right paylines; RTP 96.38%; Advanced volatility; Winning ratio x1000; 3+ Scatter Free Games, expanding and stacked locked Wilds, random Lucky Moment and JP Jackpot.",
       "image": {
@@ -25,5 +25,15 @@
       "demo": "Exact official page and catalog expose no verified playable same-game destination in this check; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After same-SHA CI, Cloudflare and full live readback, resume official ATG catalog Froststorm Hunter, Triple Fortune and Bubble Gum. Wuxia remains held for conflicting official way counts; CQ9 17 source-quality holds remain separate."
+  "nextCursor": "After same-SHA CI, Cloudflare and full live readback, resume official ATG catalog Froststorm Hunter, Triple Fortune and Bubble Gum. Wuxia remains held for conflicting official way counts; CQ9 17 source-quality holds remain separate.",
+  "publication": {
+    "commit": "3e25fa3444c24f85b86b6a8256a9a226107d4a94",
+    "githubRun": 41109849750,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "c5d198b6-9ce6-44f6-92fc-9e45f5e8b005",
+    "cloudflareUrl": "https://c5d198b6.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, WebP and sitemap HTTP 200; Provider lists game, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }

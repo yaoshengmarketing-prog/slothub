@@ -1,0 +1,29 @@
+{
+  "batch": 277,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue ATG Games official Slot catalog after Jinlian live closure",
+  "catalog": "https://www.atg-games.com/en/games?type=all",
+  "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Froststorm Hunter and Winter Hunter absent before intake; exact ATG page and image confirm same product.",
+  "records": [
+    {
+      "name": "Froststorm Hunter",
+      "slug": "froststorm-hunter-atg",
+      "provider": "atg-games",
+      "status": "imported",
+      "officialPage": "https://www.atg-games.com/games/slot/new-winter-hunter",
+      "officialFacts": "2026-10-13 release; five reels and 50 left-to-right paylines; RTP 96.6%; Medium volatility; Winning ratio x10000; 3 Scatter trigger 10 Free Games, retrigger, Sticky WILD, random Lucky Moment and JP Jackpot.",
+      "image": {
+        "sourceUrl": "https://www.atg-games.com/_ipx/f_webp/new-winter-hunter/en/game_icon.png",
+        "localPath": "public/assets/games/froststorm-hunter-atg.webp",
+        "sha256": "9a8993dd304f962140fa09009f9efe1fecd6d04e75aeaae615249a3600b8cd1b",
+        "visualCheck": "Official exact-game WebP icon clearly displays Froststorm Hunter and Yeti character, matching the exact ATG page and official news."
+      },
+      "demo": "Official exact game page and catalog expose no verified same-game playable destination in this check; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After Froststorm Hunter same-SHA CI, Cloudflare and full live readback, inspect ATG Triple Fortune and Bubble Gum official catalog cards with game-type checks. Wuxia remains held for official way-count conflict; CQ9 17 holds persist."
+}
