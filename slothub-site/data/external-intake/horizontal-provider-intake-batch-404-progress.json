@@ -1,0 +1,32 @@
+{
+  "batch": 404,
+  "recordedAt": "2026-11-01T05:24:40+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Queen of Bounty/84 absent before intake.",
+  "records": [
+    {
+      "name": "Queen of Bounty",
+      "slug": "queen-of-bounty-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/76/",
+      "officialFacts": "Official gid 76, pgid 84, Video Slots, RTP 96.74%, Medium volatility, maximum x50000. Exact layout 5 reels × 3 rows; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/7c545509-fb5a-47a7-ae9f-9692a26cecf8.png",
+        "localPath": "public/assets/games/queen-of-bounty-pg-soft.png",
+        "sha256": "839095c3d6314bea32dfef536555daa7bd0e8adcb200e4ac4a80551d4d56e0f0",
+        "byteSize": 14846,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: female pirate captain in tricorn hat holding a gold coin with PG logo; matches Queen of Bounty identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/queen-bounty/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 75 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
