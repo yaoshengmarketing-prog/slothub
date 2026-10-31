@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 847,
+  "gameCount": 848,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 128
+    "not-verified": 129
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,36 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "tornado-rampage-pg-soft",
+      "name": "Tornado Rampage",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT official exact numeric page 198 and public Game Details API identify Tornado Rampage, pgid 2126622, as a 5-reel 3-4-5-4-3-row video slot with RTP 96.75%, Medium volatility, maximum x5000 and Travelling/Golden Wild features. Its official app icon was retrieved and visually checked. The official Try Now URL redirected in browser to an unrelated robot-verification page, so no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/198/",
+          "httpStatus": 200,
+          "notes": "Official exact-game SSR and browser page confirm name, game ID, video-slot type, 3-4-5-4-3 layout, RTP, Medium volatility and maximum win"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/198/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms pgid 2126622, app icon and Try Now target"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/4fc4dab8-a15a-417b-89bd-3555d878f56c.png",
+          "httpStatus": 200,
+          "notes": "Official app icon from exact-game media list; valid image/png showing tornado, cars and PG mark, SHA256 0036415012a06a5fcb84c3b189f0a2889ef2735bc11d5a153dfef9e0e68082be"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2126622/index.html?language=en-US&bet_type=2",
+          "notes": "Official Try Now redirected in browser to unrelated datavexhub.co.in robot-verification page; no exact same-game playable content observed"
+        }
+      ]
+    },
     {
       "slug": "farmstead-fortune-pg-soft",
       "name": "Farmstead Fortune",

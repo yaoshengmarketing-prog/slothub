@@ -1,10 +1,10 @@
 {
   "batch": 285,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake after Touchdown Wins live closure",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "catalogEvidence": "Official en-US catalog API returned 156 detailed records and official Video Slots filter tid 59 listed 201 pgids. Exact Game Details for numeric gid 205 down to 1 found 174 enabled Video Slots, 11 already published at baseline HEAD, 163 missing; 10 filter pgids could not be resolved by those numeric routes. The homepage counters 173 total / 171 Slot differ from current API and are not used as a completion proof. Full compact official-source baseline is data/external-intake/pgsoft-official-catalog-2026-10-31.json.",
@@ -14,7 +14,7 @@
       "name": "Farmstead Fortune",
       "slug": "farmstead-fortune-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/199/",
       "officialFacts": "Official route 199 / pgid 2118946; 3D Games and Video Slots; 5x5 symbol combination, RTP 96.76%, High volatility, maximum x10000; multipliers up to x100, Mini Bonus, 3 Scatters trigger 3 bonus spins with 7x7 expanded reels, Level-Up symbol upgrade. No explicit payline/Ways count or release date asserted.",
       "image": {
@@ -26,5 +26,20 @@
       "demo": "Official exact-game Try Now URL https://m.pg-redirect.com/2118946/index.html?language=en-US&bet_type=2 redirected in browser to unrelated datavexhub.co.in robot-verification page. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After same-SHA CI, Cloudflare and seven-route readback, continue official numeric route 198 Tornado Rampage, then descend eligible missing PG SOFT Video Slots. Reconcile 10 unresolved filter-only pgids separately; never count disabled/non-Slot or duplicate records."
+  "nextCursor": "Continue official numeric route 198 Tornado Rampage, then descend eligible missing PG SOFT Video Slots. Reconcile 10 unresolved filter-only pgids separately; never count disabled/non-Slot or duplicate records.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "9c76b709c9756e5bd15c835e0bbc423eafbee218",
+    "githubRun": 41190000215,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "05527f25-ad33-4d0d-b0d1-1944b45e1e45",
+    "cloudflareUrl": "https://05527f25.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, WebP and sitemap HTTP 200; Provider lists Farmstead Fortune, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }
