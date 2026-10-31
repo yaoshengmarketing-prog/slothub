@@ -1,0 +1,29 @@
+{
+  "batch": 287,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake after Tornado Rampage live closure",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Monkeys Wild Party and PG SOFT game ID 2090174 absent before intake.",
+  "records": [
+    {
+      "name": "Monkeys Wild Party",
+      "slug": "monkeys-wild-party-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/197/",
+      "officialFacts": "Official route 197 / pgid 2090174; 3D Games and Video Slots; 5x5 symbol combination, RTP 96.75%, Medium volatility, maximum x10000; Wild Mushroom transforms adjacent Monkey symbols into Wild, connected Monkey symbols become Wild Monkeys, each winning combination increases multiplier. No explicit payline/Ways count or release date asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/56e75b51-7783-4e2d-a912-2747b3fa67ac.png",
+        "localPath": "public/assets/games/monkeys-wild-party-pg-soft.png",
+        "sha256": "8f95156ab22df99178192eeebd2b753127043c83ff053e18c9c5d3fd9ac95a86",
+        "visualCheck": "Official exact-game app icon is valid image/png and visibly shows luminous mushroom and PG mark; source mapping is in same-game official media list."
+      },
+      "demo": "Official exact-game Try Now URL https://m.pg-redirect.com/2090174/index.html?language=en-US&bet_type=2 redirected in browser to unrelated age/gender survey page. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After same-SHA CI, Cloudflare and seven-route readback, continue official numeric route 196 Zombie Blasters, then descend eligible missing PG SOFT Video Slots. Keep unresolved filter-only pgids separate."
+}

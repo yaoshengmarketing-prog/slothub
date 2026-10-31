@@ -1,10 +1,10 @@
 {
   "batch": 286,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake after Farmstead Fortune live closure",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Tornado Rampage and PG SOFT game ID 2126622 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Tornado Rampage",
       "slug": "tornado-rampage-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/198/",
       "officialFacts": "Official route 198 / pgid 2126622; 3D Games and Video Slots; 5 reels with 3-4-5-4-3 rows, RTP 96.75%, Medium volatility, maximum x5000; Travelling Wilds with increasing multipliers, Golden Wilds trigger Respin and Golden Wild wins award x2 or higher. No explicit payline/Ways count or release date asserted.",
       "image": {
@@ -25,5 +25,20 @@
       "demo": "Official exact-game Try Now URL https://m.pg-redirect.com/2126622/index.html?language=en-US&bet_type=2 redirected in browser to unrelated datavexhub.co.in robot-verification page. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After same-SHA CI, Cloudflare and seven-route readback, continue official numeric route 197 Monkeys Wild Party, then descend eligible missing PG SOFT Video Slots. Keep unresolved filter-only pgids separate."
+  "nextCursor": "Continue official numeric route 197 Monkeys Wild Party, then descend eligible missing PG SOFT Video Slots. Keep unresolved filter-only pgids separate.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "d5810e28fb5afa66fb1543cb53016676b1005bfe",
+    "githubRun": 41190464341,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "e2aec6bb-7e62-4705-83f3-998dcda70673",
+    "cloudflareUrl": "https://e2aec6bb.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Tornado Rampage, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }

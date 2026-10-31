@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 848,
+  "gameCount": 849,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 129
+    "not-verified": 130
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,36 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "monkeys-wild-party-pg-soft",
+      "name": "Monkeys Wild Party",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT official exact numeric page 197 and public Game Details API identify Monkeys Wild Party, pgid 2090174, as a 5x5 video slot with RTP 96.75%, Medium volatility, maximum x10000 and Wild Mushroom/Monkey mechanics. Its official app icon was retrieved and visually checked. The official Try Now URL redirected in browser to an unrelated age/gender survey page, so no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/197/",
+          "httpStatus": 200,
+          "notes": "Official exact-game SSR and browser page confirm name, game ID, video-slot type, 5x5 layout, RTP, Medium volatility and maximum win"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/197/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms pgid 2090174, app icon and Try Now target"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/56e75b51-7783-4e2d-a912-2747b3fa67ac.png",
+          "httpStatus": 200,
+          "notes": "Official app icon from exact-game media list; valid image/png showing luminous mushroom and PG mark, SHA256 8f95156ab22df99178192eeebd2b753127043c83ff053e18c9c5d3fd9ac95a86"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2090174/index.html?language=en-US&bet_type=2",
+          "notes": "Official Try Now redirected in browser to unrelated age/gender survey; no exact same-game playable content observed"
+        }
+      ]
+    },
     {
       "slug": "tornado-rampage-pg-soft",
       "name": "Tornado Rampage",
