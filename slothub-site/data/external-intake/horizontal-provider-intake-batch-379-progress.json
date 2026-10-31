@@ -1,0 +1,32 @@
+{
+  "batch": 379,
+  "recordedAt": "2026-11-01T03:34:19+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Raider Jane's Crypt of Fortune/113 absent before intake.",
+  "records": [
+    {
+      "name": "Raider Jane's Crypt of Fortune",
+      "slug": "raider-jane-s-crypt-of-fortune-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/101/",
+      "officialFacts": "Official gid 101, pgid 113, Video Slots, RTP 96.75%, High volatility, maximum x50000. Exact layout 6 reels × 3 rows; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/c72dace6-59d4-4475-ad42-2a15a353253e.png",
+        "localPath": "public/assets/games/raider-jane-s-crypt-of-fortune-pg-soft.png",
+        "sha256": "cdc4c746d71f7dc004bdf4f55638e24096b97f0641e2081bd55efeaff0b11213",
+        "byteSize": 15187,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: adventurer woman wearing a brown hat with PG logo; matches Raider Jane identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/crypt-fortune/index.html?language=en-US&bet_type=2. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 100 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
