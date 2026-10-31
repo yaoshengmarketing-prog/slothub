@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 859,
+  "gameCount": 860,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 140
+    "not-verified": 141
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mythical-guardians-pg-soft",
+      "name": "Mythical Guardians",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Mythical Guardians, pgid 1849515, as enabled Video Slots with RTP 96.76%, Medium volatility and maximum x15000. Official pi:4 icon was downloaded, decoded and visually matched. Official Try Now returned HTTP 200 Redirecting shell on a read-only HTTP check, not same-game playable content; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/186/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/186/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/e0fdc8ad-7a14-421e-ae3d-4987b84823c3.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 56b8f5352f02e5f29c72c231d514f4d5d0fa31f4da01f826b944ff31ea3e8ed5"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1849515/index.html?language=en-US&bet_type=2",
+          "httpStatus": 200,
+          "notes": "Read-only HTTP response was a Redirecting shell, with no same-game playable content"
+        }
+      ]
+    },
     {
       "slug": "forbidden-alchemy-pg-soft",
       "name": "Forbidden Alchemy",
