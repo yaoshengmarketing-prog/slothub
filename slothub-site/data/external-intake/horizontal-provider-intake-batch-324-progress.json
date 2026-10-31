@@ -1,0 +1,32 @@
+{
+  "batch": 324,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Yakuza Honor/1760238 absent before intake.",
+  "records": [
+    {
+      "name": "Yakuza Honor",
+      "slug": "yakuza-honor-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/160/",
+      "officialFacts": "Official gid 160, pgid 1760238, enabled Video Slots, RTP 96.75%, High volatility, maximum x2500. Five-by-five symbols combination; winning activates/increases multiplier, Yakuza symbol wins add 5 to multiplier; 3 Scatters trigger 12 free spins. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/c961c180-e315-4985-b66d-be3dcb4ac2bd.webp",
+        "localPath": "public/assets/games/yakuza-honor-pg-soft.webp",
+        "sha256": "0f7b5c6fc3ae54cbee3771efad309a141c909d1f955fb065a07a80f5df59afbc",
+        "byteSize": 7762,
+        "dimensions": "156x156",
+        "mime": "image/webp",
+        "visualCheck": "Viewed official pi:4 156x156 icon: stern yakuza man holding cash and a katana, PG mark, matching title artwork; source URL, decoded WebP and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1760238/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 159 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
