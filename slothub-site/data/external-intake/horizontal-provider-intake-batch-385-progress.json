@@ -1,0 +1,32 @@
+{
+  "batch": 385,
+  "recordedAt": "2026-11-01T03:59:19+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Rise of the Sun God/101 absent before intake.",
+  "records": [
+    {
+      "name": "Rise of the Sun God",
+      "slug": "rise-of-the-sun-god-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/95/",
+      "officialFacts": "Official gid 95, pgid 101, Video Slots, RTP 96.78%, Medium volatility, maximum x100000. Exact layout 6 reels × 6 rows; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/a9dd85c6-5c65-414c-8133-ce11610a5b04.png",
+        "localPath": "public/assets/games/rise-of-the-sun-god-pg-soft.png",
+        "sha256": "3dd356dffdd1d5535e6e7a87d614dc5986285987ab6063dd3c6ddc1edba3f707",
+        "byteSize": 17475,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: golden sun god with white hair and PG logo; matches Rise of the Sun God identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/rise-of-apollo/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 94 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}

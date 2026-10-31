@@ -1,10 +1,10 @@
 {
   "batch": 383,
   "recordedAt": "2026-11-01T03:53:18+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Jurassic Kingdom/110 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Jurassic Kingdom",
       "slug": "jurassic-kingdom-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/97/",
       "officialFacts": "Official gid 97, pgid 110, Video Slots, RTP 96.72%, Medium volatility, maximum x100000. Exact layout 6 reels × 6 rows; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/jurassic-kdm/index.html?language=en-US&bet_type=2. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 96 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Official gid96 Sushi Oishi is disabled (en=false); skip. Continue enabled gid95 Rise of the Sun God.",
+  "validation": {
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "result": "PASS",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "githubRun": 41236547606,
+    "githubConclusion": "success",
+    "cloudflareUrl": "https://bd4cf967.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Jurassic Kingdom, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "cloudflareDeploymentId": "bd4cf967-d885-42ae-86fa-76dbefab7a7e",
+    "commit": "5266a311ea6f575c6d54ac18ca5a3850bc248236",
+    "checkedAt": "2026-11-01"
+  }
 }
