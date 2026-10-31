@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 918,
+  "gameCount": 919,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 199
+    "not-verified": 200
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "totem-wonders-pg-soft",
+      "name": "Totem Wonders",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Totem Wonders, pgid 1338274, as Video Slots with RTP 96.73%, Medium volatility and maximum x2500. Official pi:4 icon was downloaded, decoded and visually reviewed: stacked carved totem faces and PG mark. Exact official Try Now returned HTTP 200, 5644-byte Redirecting... shell without independently playable exact Demo; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/124/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/124/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/624b2c4e-24c0-4597-a84a-8da5a8aaabbc.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 d5bce6182a75f61bc37b07c92247daa2f4dc65c84eec105c8250ef5b8af5b2a1"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1338274/index.html?language=en-US&bet_type=2",
+          "httpStatus": 200,
+          "notes": "HTTP 200, 5644-byte Redirecting... shell; no independently playable exact Demo established"
+        }
+      ]
+    },
     {
       "slug": "alchemy-gold-pg-soft",
       "name": "Alchemy Gold",
