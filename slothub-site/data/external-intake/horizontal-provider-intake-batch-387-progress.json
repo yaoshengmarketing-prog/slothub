@@ -1,0 +1,32 @@
+{
+  "batch": 387,
+  "recordedAt": "2026-11-01T04:12:12+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Ways of the Qilin/106 absent before intake.",
+  "records": [
+    {
+      "name": "Ways of the Qilin",
+      "slug": "ways-of-the-qilin-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/93/",
+      "officialFacts": "Official gid 93, pgid 106, Video Slots, RTP 96.69%, Medium volatility, maximum x80000. Exact layout 6 reels × 6 rows; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/8f9f7e6a-021c-4d18-9b40-e306e662669c.png",
+        "localPath": "public/assets/games/ways-of-the-qilin-pg-soft.png",
+        "sha256": "94350bcfd63643159b32792de9c940d4bf73efc09e903b844b7b40b7b5639f57",
+        "byteSize": 16263,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: red and gold Qilin dragon-like face with PG logo; matches Ways of the Qilin identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/ways-of-qilin/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 92 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
