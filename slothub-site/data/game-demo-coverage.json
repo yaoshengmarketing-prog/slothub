@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 852,
+  "gameCount": 853,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 133
+    "not-verified": 134
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mighty-mania-pg-soft",
+      "name": "Mighty Mania",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Mighty Mania, pgid 2081892, as Video Slots with RTP 96.76%, High volatility and maximum x5000. Official pi:4 icon was downloaded, decoded and visually matched. Official Try Now redirected in a read-only browser check to unrelated datavexhub.co.in Click Allow page; no playable same-game Demo or public Demo link verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/194/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/194/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/173f17fa-b4d9-4c63-80c9-5f241dde3e73.webp",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/webp, 156x156, SHA256 b8ed78e2f5dc828e72fe4ad8e5393575fe3fe74d07a651c549e122c28b8fda1c"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2081892/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Read-only browser check redirected to unrelated datavexhub.co.in Click Allow page; same-game playability not verified"
+        }
+      ]
+    },
     {
       "slug": "reel-royale-showdown-pg-soft",
       "name": "Reel Royale Showdown",

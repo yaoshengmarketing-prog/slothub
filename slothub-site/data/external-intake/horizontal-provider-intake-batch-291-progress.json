@@ -1,0 +1,32 @@
+{
+  "batch": 291,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Mighty Mania/2081892 absent before intake.",
+  "records": [
+    {
+      "name": "Mighty Mania",
+      "slug": "mighty-mania-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/194/",
+      "officialFacts": "Official gid 194, pgid 2081892, Video Slots, RTP 96.76%, High volatility, maximum x5000. Six reels, rows 4-4-3-3-4-4; multipliers up to x50, winning symbols on reels 3-4 transform into Wilds, 3 Scatters trigger Free Spins; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/173f17fa-b4d9-4c63-80c9-5f241dde3e73.webp",
+        "localPath": "public/assets/games/mighty-mania-pg-soft.webp",
+        "sha256": "b8ed78e2f5dc828e72fe4ad8e5393575fe3fe74d07a651c549e122c28b8fda1c",
+        "byteSize": 7376,
+        "dimensions": "156x156",
+        "mime": "image/webp",
+        "visualCheck": "Viewed official pi:4 156x156 icon: flexing athlete with gold medal and PG mark match same-game title artwork; source URL, decoded WebP and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/2081892/index.html?language=en-US&bet_type=2 redirected in read-only browser check to unrelated datavexhub.co.in Click Allow page; no same-game playability verified. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 192 Funky Fortunez, then descend eligible missing Video Slots. Route 193 is already handled in batch 290; resolve filter-only pgids separately."
+}
