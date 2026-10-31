@@ -1,0 +1,32 @@
+{
+  "batch": 363,
+  "recordedAt": "2026-11-01T02:01:56+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Lucky Piggy/130 absent before intake.",
+  "records": [
+    {
+      "name": "Lucky Piggy",
+      "slug": "lucky-piggy-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/118/",
+      "officialFacts": "Official gid 118, pgid 130, Video Slots, RTP 96.79%, Medium volatility, maximum x20000. Official description says 5 reels but lists positions through reel 6; reel count intentionally omitted pending a consistent official source. No payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/cbc99249-8902-4c8d-9d52-16839d553a6f.png",
+        "localPath": "public/assets/games/lucky-piggy-pg-soft.png",
+        "sha256": "3891a7a5e331371e63a4618530a4d791c3cf4173a4babe3d747661e5d26b5699",
+        "byteSize": 12888,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: smiling golden piggy bank on stacks of coins, purple background and PG logo; matches Lucky Piggy identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/130/index.html?language=en-US&bet_type=2 returned HTTP 200, 5632-byte Redirecting... shell on 2026-11-01; no independently playable exact Demo established. No public link; not-verified."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 117 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}

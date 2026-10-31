@@ -1,10 +1,10 @@
 {
   "batch": 362,
   "recordedAt": "2026-11-01T01:54:14+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Speed Winner/127 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Speed Winner",
       "slug": "speed-winner-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/119/",
       "officialFacts": "Official gid 119, pgid 127, Video Slots, RTP 96.72%, Medium volatility, maximum x100000. Exact layout 6 reels × 5 rows; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/127/index.html?language=en-US&bet_type=2 returned HTTP 200, 5632-byte Redirecting... shell on 2026-11-01; no independently playable exact Demo established. No public link; not-verified."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 118 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 118; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "commit": "add9d7498a54e2707899194836e2883c9282838b",
+    "githubRun": 41227061926,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "2a30624f-c5ed-4cf1-91fe-5e5246446890",
+    "cloudflareUrl": "https://2a30624f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Speed Winner, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-11-01"
+  }
 }

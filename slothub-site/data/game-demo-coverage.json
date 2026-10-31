@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 924,
+  "gameCount": 925,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 205
+    "not-verified": 206
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "lucky-piggy-pg-soft",
+      "name": "Lucky Piggy",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Lucky Piggy, pgid 130, as Video Slots with RTP 96.79%, Medium volatility and maximum x20000. Official source contradicts itself on reel count (5 reels but mentions reel 6), so omitted. Official pi:4 icon was downloaded, decoded and visually reviewed: golden piggy bank and PG mark. Exact official Try Now returned HTTP 200, 5632-byte Redirecting... shell without independently playable exact Demo; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/118/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/118/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/cbc99249-8902-4c8d-9d52-16839d553a6f.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 3891a7a5e331371e63a4618530a4d791c3cf4173a4babe3d747661e5d26b5699"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/130/index.html?language=en-US&bet_type=2",
+          "httpStatus": 200,
+          "notes": "HTTP 200, 5632-byte Redirecting... shell; no independently playable exact Demo established"
+        }
+      ]
+    },
     {
       "slug": "speed-winner-pg-soft",
       "name": "Speed Winner",
