@@ -1,0 +1,32 @@
+{
+  "batch": 405,
+  "recordedAt": "2026-11-01T05:30:26+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Secrets of Cleopatra/90 absent before intake.",
+  "records": [
+    {
+      "name": "Secrets of Cleopatra",
+      "slug": "secrets-of-cleopatra-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/75/",
+      "officialFacts": "Official gid 75, pgid 90, Video Slots, RTP 96.74%, High volatility, maximum x100000. Official long description states 3 or more reels, 4 rows and Infinity Reels; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/854f925a-8c48-4bca-a3a2-7738dc6dc327.png",
+        "localPath": "public/assets/games/secrets-of-cleopatra-pg-soft.png",
+        "sha256": "094607d3e9eae036d51d7a2d9d2dce16c1250e048a5dfd59034c78e2f9ef4239",
+        "byteSize": 15239,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: Cleopatra portrait with Egyptian gold headdress and PG logo; matches Secrets of Cleopatra identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/sct-cleopatra/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 74 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
