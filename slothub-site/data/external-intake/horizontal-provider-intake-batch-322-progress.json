@@ -1,0 +1,32 @@
+{
+  "batch": 322,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Three Crazy Piggies/1727711 absent before intake.",
+  "records": [
+    {
+      "name": "Three Crazy Piggies",
+      "slug": "three-crazy-piggies-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/162/",
+      "officialFacts": "Official gid 162, pgid 1727711, enabled Video Slots, RTP 96.72%, Medium volatility, maximum x2500. Five reels; 3 rows on reel 3 and 4 rows on reels 1, 2, 4, 5; symbol transformations and x10 multiplier; 3 Scatters trigger 10 free spins with all three special features active. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/9e85c34c-e2b9-4964-9ca6-cbc8da943885.webp",
+        "localPath": "public/assets/games/three-crazy-piggies-pg-soft.webp",
+        "sha256": "117a9977fe330e8fc802a7be18d2320a8d8fd45ccb515565f51039ce2b381a48",
+        "byteSize": 8384,
+        "dimensions": "156x156",
+        "mime": "image/webp",
+        "visualCheck": "Viewed official pi:4 156x156 icon: three cartoon pig brothers with PG mark matches same-game title; source URL, decoded WebP and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1727711/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 161 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
