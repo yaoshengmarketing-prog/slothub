@@ -1,0 +1,32 @@
+{
+  "batch": 343,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Gladiator's Glory/1572362 absent before intake.",
+  "records": [
+    {
+      "name": "Gladiator's Glory",
+      "slug": "gladiator-s-glory-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/140/",
+      "officialFacts": "Official gid 140, pgid 1572362, enabled Video Slots, RTP 96.75%, Medium volatility, maximum x5000. Five reels with rows 3,4,5,4,3; winning Wilds turn into Multipliers and increase total multiplier; three Scatters trigger 10 free spins. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/eb322534-bfe4-42db-a1ac-8c7b16db1c80.png",
+        "localPath": "public/assets/games/gladiator-s-glory-pg-soft.png",
+        "sha256": "9f844ed06f6dafa09800174c0d6774291866a7748a04a14516b9b5c94d3b3c1a",
+        "byteSize": 53274,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: yelling armored gladiator with flames and PG mark matches Gladiator's Glory identity; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1572362/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 139 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
