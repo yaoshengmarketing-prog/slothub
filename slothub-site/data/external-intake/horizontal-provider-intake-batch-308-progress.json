@@ -1,10 +1,10 @@
 {
   "batch": 308,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Diner Frenzy Spins/1935269 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Diner Frenzy Spins",
       "slug": "diner-frenzy-spins-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/176/",
       "officialFacts": "Official gid 176, pgid 1935269, enabled Video Slots, RTP 96.80%, High volatility, maximum x2105. Five reels x four rows, connecting ways and sticky symbol respins; random Mystery Respin; 30 selected low/high-paying symbols during feature expand reels to seven rows. No explicit Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/1935269/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 175 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 175; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "544709eb5c4cc2b682a2991ebd34716565a1fb1a",
+    "githubRun": 41199399583,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "70162bdd-07c5-49a9-882c-d1294e6e2925",
+    "cloudflareUrl": "https://70162bdd.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, WEBP and sitemap HTTP 200; Provider lists Diner Frenzy Spins, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }
