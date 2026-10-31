@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 914,
+  "gameCount": 915,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 195
+    "not-verified": 196
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "midas-fortune-pg-soft",
+      "name": "Midas Fortune",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Midas Fortune, pgid 1402846, as Video Slots with RTP 96.73%, Medium volatility and maximum x5000. Official pi:4 icon was downloaded, decoded and visually reviewed: gold over treasure and coins with PG mark. Exact official Try Now returned HTTP 200, 5644-byte Redirecting... shell without independently playable exact Demo; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/128/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/128/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/77b9a4c7-ca70-4aa0-898a-eb248ee158f1.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 53964cf1d0818bb10992c674c8a2e1d94ea1919d790fb50021428e88ea1b2623"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1402846/index.html?language=en-US&bet_type=2",
+          "httpStatus": 200,
+          "notes": "HTTP 200, 5644-byte Redirecting... shell; no independently playable exact Demo established"
+        }
+      ]
+    },
     {
       "slug": "rave-party-fever-pg-soft",
       "name": "Rave Party Fever",
