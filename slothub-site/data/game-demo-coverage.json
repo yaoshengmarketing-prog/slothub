@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 838,
+  "gameCount": 839,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 119
+    "not-verified": 120
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,32 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "froststorm-hunter-atg",
+      "name": "Froststorm Hunter",
+      "provider": "atg-games",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "ATG official exact Froststorm Hunter page confirms 2026-10-13 release, five reels, 50 left-to-right paylines, RTP 96.6%, Medium volatility and Winning ratio x10000. Catalog card was earlier logged as Winter Hunter; official exact page, news and image title identify Froststorm Hunter. Exact game-specific playable Demo destination and load were not verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.atg-games.com/en/games?type=all",
+          "httpStatus": 200,
+          "notes": "Official Slot catalog card links to new-winter-hunter Game Info; no exact Demo control verified"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/games/slot/new-winter-hunter",
+          "httpStatus": 200,
+          "notes": "Official exact Froststorm Hunter Game page with identity, date, 50 paylines, RTP, volatility, Winning ratio and features; no verified Demo"
+        },
+        {
+          "requestedUrl": "https://www.atg-games.com/_ipx/f_webp/new-winter-hunter/en/game_icon.png",
+          "httpStatus": 200,
+          "notes": "Validimage/webp, visually checked Froststorm Hunter title icon, SHA256 9a8993dd304f962140fa09009f9efe1fecd6d04e75aeaa e615249a3600b8cd1b"
+        }
+      ]
+    },
     {
       "slug": "jinlian-atg",
       "name": "Jinlian",
