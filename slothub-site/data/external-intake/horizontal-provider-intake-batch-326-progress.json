@@ -1,0 +1,32 @@
+{
+  "batch": 326,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Futebol Fever/1778752 absent before intake.",
+  "records": [
+    {
+      "name": "Futebol Fever",
+      "slug": "futebol-fever-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/158/",
+      "officialFacts": "Official gid 158, pgid 1778752, enabled Video Slots, RTP 96.75%, Medium volatility, maximum x2000. Three reels x three rows; individual-reel respins; one symbol occupying all positions awards Full Screen Bonus Win; winning spins can randomly award multipliers up to x10. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/23ede2c6-1cb2-4f5d-9062-47a643be0c1c.webp",
+        "localPath": "public/assets/games/futebol-fever-pg-soft.webp",
+        "sha256": "7c9349914f0ddb5ff2d5690ec5c9a847a48f1217177536b65f7a9f45326c73b6",
+        "byteSize": 21902,
+        "dimensions": "312x312",
+        "mime": "image/webp",
+        "visualCheck": "Viewed official pi:4 312x312 icon: football in a goal net with bright pitch colors and PG mark matches title artwork; source URL, decoded WebP and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1778752/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 157 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
