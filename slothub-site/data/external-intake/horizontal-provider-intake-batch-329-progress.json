@@ -1,10 +1,10 @@
 {
   "batch": 329,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Mystic Potion/1717688 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Mystic Potion",
       "slug": "mystic-potion-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/154/",
       "officialFacts": "Official gid 154, pgid 1717688, enabled Video Slots, RTP 96.70%, High volatility, maximum x10000. Six-by-six symbols combination; four matching symbols in a square form Big Symbol with x2–x500 multipliers; 3 Scatters trigger 15 free spins. No explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/1717688/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 153 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 153; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "e242ea4d743065ac23647e1ab031293db3b7dd34",
+    "githubRun": 41208905272,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "0f25b11d-0959-4fd1-9ef3-7f2f00df4eee",
+    "cloudflareUrl": "https://0f25b11d.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Mystic Potion, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }
