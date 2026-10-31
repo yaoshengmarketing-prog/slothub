@@ -1,10 +1,10 @@
 {
   "batch": 281,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-and-verified-live",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue PG SOFT numeric Slot detail pages after Thunder Reckoning live closure",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Grimms’ Bounty: Princess & the Frog and PG SOFT game ID 2140622 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Grimms’ Bounty: Princess & the Frog",
       "slug": "grimms-bounty-princess-and-the-frog-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/203/",
       "officialFacts": "Official route 203 / pgid 2140622; 3D Games and Video Slots; 3-reel, 5-row connecting ways, RTP 96.77%, High volatility, maximum x10000; Collector multiplier up to x10, Prize symbols up to 500x bet, three Scatter symbols trigger eight free spins. No explicit payline/Ways count or release date asserted.",
       "image": {
@@ -25,5 +25,20 @@
       "demo": "Official exact-game detail page has empty game-button, gametrial empty and gametrial_en null; Game Details API has no pi:22 trial record. Masthead URL is title animation, not playable Demo. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After same-SHA CI, Cloudflare and full seven-route readback, continue PG SOFT official numeric page 202 Lucky Mischief, then 201 Prosperity Lanterns and 200 Touchdown Wins. Each needs exact identity, metric, official icon and Demo check."
+  "nextCursor": "Continue PG SOFT official numeric page 202 Lucky Mischief, then 201 Prosperity Lanterns and 200 Touchdown Wins. Each needs exact identity, metric, official icon and Demo check.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "bcac8c8adfa78069750071e3432d2e16d825e67f",
+    "githubRun": 41187078859,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "6356468c-3aa8-4b26-bd45-73321145a7c2",
+    "cloudflareUrl": "https://6356468c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Grimms’ Bounty, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }

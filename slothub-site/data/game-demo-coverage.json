@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 843,
+  "gameCount": 844,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 124
+    "not-verified": 125
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,31 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "lucky-mischief-pg-soft",
+      "name": "Lucky Mischief",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT official exact numeric page 202 identifies Lucky Mischief, pgid 2175036, as a 5-reel, 5-row video slot with RTP 96.75%, High volatility, maximum x5000 and Summoning Wild/Free Spins mechanics. Its official app icon was retrieved and visually checked. The official Try Now URL redirected in browser to unrelated MidnightManga adult age-gate content rather than a playable same-game Demo, so no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/202/",
+          "httpStatus": 200,
+          "notes": "Official exact-game SSR and browser page confirm name, game ID, video-slot type, 5x5 layout, RTP, High volatility, maximum win and Try Now target"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/8a7ea638-92f7-43c0-9851-5d34b39c2abc.png",
+          "httpStatus": 200,
+          "notes": "Official app icon from exact-game media list; valid image/png showing imp character and PG mark, SHA256 308d700f72d5b74bb5466b56c709ce0a595d0863fdbb72ae7ba6bcf6372f4917"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2175036/index.html?language=en-US&bet_type=2",
+          "notes": "Official Try Now redirected in browser to unrelated midnightmanga.com adult age gate; no exact same-game playable content observed"
+        }
+      ]
+    },
     {
       "slug": "grimms-bounty-princess-and-the-frog-pg-soft",
       "name": "Grimms’ Bounty: Princess & the Frog",

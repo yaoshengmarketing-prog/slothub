@@ -1,0 +1,29 @@
+{
+  "batch": 282,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue PG SOFT numeric Slot detail pages after Grimms’ Bounty live closure",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Lucky Mischief and PG SOFT game ID 2175036 absent before intake.",
+  "records": [
+    {
+      "name": "Lucky Mischief",
+      "slug": "lucky-mischief-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/202/",
+      "officialFacts": "Official route 202 / pgid 2175036; 3D Games and Video Slots; 5-reel, 5-row video slot, RTP 96.75%, High volatility, maximum x5000; Summoning Wild adds Wild symbols, transforms adjacent symbols into Wild before wins pay, and Free Spins multipliers reach x100. No explicit payline/Ways count or release date asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/8a7ea638-92f7-43c0-9851-5d34b39c2abc.png",
+        "localPath": "public/assets/games/lucky-mischief-pg-soft.png",
+        "sha256": "308d700f72d5b74bb5466b56c709ce0a595d0863fdbb72ae7ba6bcf6372f4917",
+        "visualCheck": "Official exact-game app icon is valid image/png and visibly shows an imp and PG mark; source mapping is in same-game official media list."
+      },
+      "demo": "Official exact-game Try Now URL https://m.pg-redirect.com/2175036/index.html?language=en-US&bet_type=2 redirected in browser to unrelated MidnightManga adult age gate. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After same-SHA CI, Cloudflare and full seven-route readback, continue PG SOFT official numeric page 201 Prosperity Lanterns, then 200 Touchdown Wins. Each needs exact identity, metric, official icon and Demo check."
+}
