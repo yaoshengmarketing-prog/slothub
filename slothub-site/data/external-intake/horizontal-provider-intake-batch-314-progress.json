@@ -1,0 +1,32 @@
+{
+  "batch": 314,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Mr. Treasure's Fortune/1799745 absent before intake.",
+  "records": [
+    {
+      "name": "Mr. Treasure's Fortune",
+      "slug": "mr-treasure-s-fortune-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/170/",
+      "officialFacts": "Official gid 170, pgid 1799745, enabled Video Slots, RTP 96.71%, Medium volatility, maximum x5000. Three reels x three rows, symbols with multipliers up to x100, randomly triggered 10 free spins; multipliers collected during free spins accumulate and remain atop reels. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/b936e5e8-9350-4690-84aa-53449fb9b475.webp",
+        "localPath": "public/assets/games/mr-treasure-s-fortune-pg-soft.webp",
+        "sha256": "e0913f7db2709c4e80be626289562ba3cf5ba7cd113777c472b22578fbb62f25",
+        "byteSize": 9688,
+        "dimensions": "156x156",
+        "mime": "image/webp",
+        "visualCheck": "Viewed official pi:4 156x156 icon: locked treasure chest, golden crown and PG mark match pirate treasure title artwork; source URL, decoded WebP and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1799745/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 169 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
