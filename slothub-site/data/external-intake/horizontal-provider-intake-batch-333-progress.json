@@ -1,0 +1,32 @@
+{
+  "batch": 333,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Gemstones Gold/1671262 absent before intake.",
+  "records": [
+    {
+      "name": "Gemstones Gold",
+      "slug": "gemstones-gold-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/150/",
+      "officialFacts": "Official gid 150, pgid 1671262, enabled Video Slots, RTP 96.71%, High volatility, maximum x7500. Five-by-six symbol combination; winning unlocks multiplier symbols up to x500; 3 Scatters trigger 10 free spins. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/cd358c25-7258-4929-baff-0e0c85b4b884.png",
+        "localPath": "public/assets/games/gemstones-gold-pg-soft.png",
+        "sha256": "e18ce4346d2511bb6810a635c5100df43f64000277a89c38e3c1a397617739a6",
+        "byteSize": 17767,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: ore cart filled with gold gemstones and PG mark matches Gemstones Gold identity; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1671262/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 149 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}

@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 894,
+  "gameCount": 895,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 175
+    "not-verified": 176
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gemstones-gold-pg-soft",
+      "name": "Gemstones Gold",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Gemstones Gold, pgid 1671262, as Video Slots with RTP 96.71%, High volatility and maximum x7500. Official pi:4 icon was downloaded and decoded. Exact official Try Now URL could not be loaded: TypeError: fetch failed; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/150/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/150/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/cd358c25-7258-4929-baff-0e0c85b4b884.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 e18ce4346d2511bb6810a635c5100df43f64000277a89c38e3c1a397617739a6"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/1671262/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Exact official Try Now URL could not be loaded: TypeError: fetch failed"
+        }
+      ]
+    },
     {
       "slug": "cash-mania-pg-soft",
       "name": "Cash Mania",
