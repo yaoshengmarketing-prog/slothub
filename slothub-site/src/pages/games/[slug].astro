@@ -6,7 +6,7 @@ import { absoluteUrl, gameUrl, gamesIndexUrl, providerUrl } from '../../lib/urls
 import { featureLabels, jackpotTypeLabels, primaryTypeLabels, volatilityLabels, winMechanismLabels } from '../../lib/taxonomy';
 import { buildGameDetailKnowledgePresentation, loadGuideRelationshipIndex, relationshipLabel, type GameDetailFieldPlacement } from '../../lib/guide-relationship-catalog';
 import { buildSimilarPlayPresentation } from '../../lib/similar-play.mjs';
-import { buildGameDetailPresentation } from '../../lib/game-detail-presentation.mjs';
+import { buildGameDetailPresentation, formatRecordedRtp, RTP_MISSING, RTP_PRIMARY_NOTE, RTP_USAGE_NOTE } from '../../lib/game-detail-presentation.mjs';
 import { loadPublishedDataMethodologyEntry } from '../../lib/data-methodology';
 import { projectGameEvidence } from '../../lib/game-metric-evidence.mjs';
 import MetricEvidenceSummary from '../../components/MetricEvidenceSummary.astro';
@@ -86,14 +86,15 @@ const quickStats = [
     guidePlacement: 'core-mechanism' as const,
   },
   {
-    label: '主要 RTP',
-    value: presentation.quick.rtp.value !== undefined ? `${presentation.quick.rtp.value}%` : undefined,
-    badge: presentation.quick.rtp.additionalVariantCount > 0 ? '多版本' : undefined,
-    note: presentation.quick.rtp.value !== undefined
-      ? presentation.quick.rtp.additionalVariantCount > 0
-        ? `另有 ${presentation.quick.rtp.additionalVariantCount} 個已收錄數值，需連同版本與來源閱讀。`
-        : '目前保存一個已核實的主要顯示值。'
-      : '不從其他版本、同系列或第三方摘要補猜。',
+    label: '已收錄 RTP',
+    value: presentation.quick.rtp.hasRecordedValues
+      ? presentation.quick.rtp.valueCount <= 2
+        ? presentation.quick.rtp.values.map(formatRecordedRtp).join('／')
+        : `${presentation.quick.rtp.valueCount} 個已收錄數值`
+      : RTP_MISSING,
+    isUnknown: !presentation.quick.rtp.hasRecordedValues,
+    fullDataHref: presentation.quick.rtp.valueCount > 2 ? '#full-data-title' : undefined,
+    note: presentation.quick.rtp.hasRecordedValues ? RTP_USAGE_NOTE : '不以其他資訊補猜數值。',
     guidePlacement: 'core-rtp' as const,
   },
   {
@@ -114,7 +115,7 @@ const quickStats = [
       : '不以單一符號或 Feature 的局部倍數替代整局上限。',
     guidePlacement: 'core-max-win' as const,
   },
-] as { label: string; value?: string; badge?: string; note: string; guidePlacement: GameDetailFieldPlacement }[];
+] as { label: string; value?: string; badge?: string; isUnknown?: boolean; fullDataHref?: string; note: string; guidePlacement: GameDetailFieldPlacement }[];
 
 const unknown = '尚未核實';
 const demo = entry.data.demo;
@@ -237,7 +238,7 @@ const schema = {
 
     <section class="game-quick-read" aria-labelledby="quick-read-title">
       <div class="game-quick-heading"><p class="eyebrow">AT A GLANCE</p><h2 id="quick-read-title">快速看懂</h2></div>
-      <dl>{quickStats.map((stat) => <div><dt>{stat.label}</dt><dd class={!stat.value ? 'is-unknown' : undefined}>{stat.value ?? unknown}{stat.badge && <small>{stat.badge}</small>}</dd><p>{stat.note}</p>{stat.value && knowledgePresentation.fieldGuides[stat.guidePlacement]?.map((match) => <a class="game-field-guide-link" href={match.guide.url} aria-label={`了解${stat.label}：${match.guide.title}`} data-guide-slug={match.guide.slug} data-guide-placement={stat.guidePlacement}>了解這項資料 →</a>)}</div>)}</dl>
+      <dl>{quickStats.map((stat) => <div><dt>{stat.label}</dt><dd class={(stat.isUnknown ?? !stat.value) ? 'is-unknown' : undefined}>{stat.value ?? unknown}{stat.badge && <small>{stat.badge}</small>}</dd><p>{stat.note}</p>{stat.fullDataHref && <a class="game-field-guide-link" href={stat.fullDataHref}>查看完整 RTP 清單 →</a>}{!stat.isUnknown && stat.value && knowledgePresentation.fieldGuides[stat.guidePlacement]?.map((match) => <a class="game-field-guide-link" href={match.guide.url} aria-label={`了解${stat.label}：${match.guide.title}`} data-guide-slug={match.guide.slug} data-guide-placement={stat.guidePlacement}>了解這項資料 →</a>)}</div>)}</dl>
     </section>
 
     <GameMedia items={mediaItems} />
@@ -304,11 +305,13 @@ const schema = {
       <div class="game-section-heading"><p class="eyebrow">STRUCTURED DATA</p><div><h2 id="full-data-title">完整資料與版本</h2><p>保留原廠文字、已收錄版本與缺值；缺值一律表示目前尚未核實。</p></div></div>
       <dl class="game-data-ledger">
         <div>
-          <dt>Slot Hub 已收錄的 RTP 版本</dt>
+          <dt>已收錄 RTP 數值</dt>
           <dd class={presentation.full.rtpValues.length === 0 ? 'is-unknown' : undefined}>
             {presentation.full.rtpValues.length > 1
-              ? <details><summary>查看 {presentation.full.rtpValues.length} 個已收錄數值</summary><p>{presentation.full.rtpValues.map((value: number) => `${value}%`).join('、')}</p><small>不同數值不代表每個市場都可自由選擇。</small></details>
-              : presentation.full.rtpValues.length === 1 ? `${presentation.full.rtpValues[0]}%` : unknown}
+              ? <details><summary>查看 {presentation.full.rtpValues.length} 個已收錄數值</summary><ul class="recorded-rtp-list">{presentation.full.rtpValues.map((value: number) => <li>{formatRecordedRtp(value)}{presentation.quick.rtp.hasPrimary && value === presentation.quick.rtp.primary && <small>本站記錄的主要值</small>}</li>)}</ul><small>不同數值不代表每個市場都可自由選擇。</small></details>
+              : presentation.full.rtpValues.length === 1 ? <p>{formatRecordedRtp(presentation.full.rtpValues[0])}{presentation.quick.rtp.hasPrimary && <small>本站記錄的主要值</small>}</p> : RTP_MISSING}
+            {presentation.quick.rtp.hasRecordedValues && <small>{RTP_USAGE_NOTE}</small>}
+            {presentation.quick.rtp.hasPrimary && <small>{RTP_PRIMARY_NOTE}</small>}
           </dd>
           {knowledgePresentation.fieldGuides['full-rtp-variants']?.map((match) => <a class="game-field-guide-link" href={match.guide.url} aria-label={`了解 RTP 版本：${match.guide.title}`} data-guide-slug={match.guide.slug} data-guide-placement="full-rtp-variants">了解這項資料 →</a>)}
         </div>

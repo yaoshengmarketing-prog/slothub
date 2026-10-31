@@ -25,7 +25,11 @@ for (const { slug, data } of published) {
   assert.deepEqual(presentation.operation.features, [...new Set(data.features ?? [])], `${slug}: features must derive from the Game record`);
   assert.deepEqual(presentation.operation.ruleNotes, [...new Set(data.bonusFeatures ?? [])], `${slug}: rule notes must derive from the Game record`);
   assert.equal(presentation.quick.mechanism.known, Boolean(data.winMechanism && data.winMechanism !== 'other'), `${slug}: mechanism state mismatch`);
-  assert.equal(presentation.quick.rtp.known, data.rtp !== undefined, `${slug}: RTP state mismatch`);
+  assert.equal(presentation.quick.rtp.hasPrimary, typeof data.rtp === 'number' && Number.isFinite(data.rtp), `${slug}: primary RTP state mismatch`);
+  const recordedRtp = [...new Set([data.rtp, ...(data.rtpVariants ?? [])].filter((value) => typeof value === 'number' && Number.isFinite(value)))];
+  assert.deepEqual(presentation.quick.rtp.values, recordedRtp, `${slug}: recorded RTP values mismatch`);
+  assert.equal(presentation.quick.rtp.hasRecordedValues, recordedRtp.length > 0, `${slug}: recorded RTP availability mismatch`);
+  assert.equal(presentation.quick.rtp.valueCount, recordedRtp.length, `${slug}: distinct RTP count mismatch`);
   assert.equal(presentation.quick.volatility.known, Boolean(data.volatilityNormalized ?? data.volatility), `${slug}: volatility state mismatch`);
   assert.equal(presentation.quick.maxWin.known, data.maxWinMultiplier !== undefined, `${slug}: Max Win state mismatch`);
   assert.equal(presentation.trust.sourceCount, data.sources?.length || (data.source ? 1 : 0), `${slug}: source count mismatch`);
@@ -42,7 +46,7 @@ for (const { slug, data } of published) {
   ].filter((position) => position >= 0);
   assert.deepEqual(positions, [...positions].sort((a, b) => a - b), `${slug}: shared reading order changed`);
   assert.equal((html.match(/class="game-quick-read"/g) ?? []).length, 1, `${slug}: quick read must render once`);
-  assert.equal((html.match(/<dt>(主要玩法|主要 RTP|統一波動度|最高倍數)<\/dt>/g) ?? []).length, 4, `${slug}: quick read must expose four fields`);
+  assert.equal((html.match(/<dt>(主要玩法|已收錄 RTP|統一波動度|最高倍數)<\/dt>/g) ?? []).length, 4, `${slug}: quick read must expose four fields`);
   assert.equal((html.match(/class="game-operation"/g) ?? []).length, 1, `${slug}: operation section must render once`);
   assert.equal((html.match(/class="game-data-section"/g) ?? []).length, 1, `${slug}: full data section must render once`);
   assert.ok(!html.includes('game-dna-pilot') && !html.includes('遊戲 DNA'), `${slug}: single-game DNA Pilot leaked`);
@@ -54,17 +58,18 @@ assert.ok(mahjong && bigBass, 'representative Games missing');
 const mahjongPresentation = buildGameDetailPresentation(mahjong.data);
 const bigBassPresentation = buildGameDetailPresentation(bigBass.data);
 assert.equal(mahjongPresentation.full.rtpValues.length, 7, 'Mahjong Ways must retain seven collected RTP values');
-assert.equal(mahjongPresentation.quick.rtp.additionalVariantCount, 6, 'Mahjong Ways quick read must count only additional RTP values');
+assert.equal(mahjongPresentation.quick.rtp.hasPrimary, true, 'Mahjong Ways must retain its primary RTP');
+assert.equal(mahjongPresentation.quick.rtp.valueCount, 7, 'Mahjong Ways quick read must count distinct recorded RTP values');
 assert.equal(bigBassPresentation.quick.volatility.known, false, 'Big Bass volatility must remain unknown');
 assert.equal(bigBassPresentation.quick.maxWin.known, false, 'Big Bass Max Win must remain unknown');
 assert.equal(bigBassPresentation.full.bonusBuy, undefined, 'Big Bass Bonus Buy must remain unknown');
 
 const mahjongHtml = await readFile(join(distGamesDirectory, 'mahjong-ways', 'index.html'), 'utf8');
 const bigBassHtml = await readFile(join(distGamesDirectory, 'big-bass-bonanza', 'index.html'), 'utf8');
-for (const text of ['快速看懂', '這款怎麼運作', '完整資料與版本', 'Slot Hub 已收錄的 RTP 版本', '查看 7 個已收錄數值', '接著探索', '資料來源與可信度']) {
+for (const text of ['快速看懂', '這款怎麼運作', '完整資料與版本', '已收錄 RTP 數值', '查看 7 個已收錄數值', '接著探索', '資料來源與可信度']) {
   assert.ok(mahjongHtml.includes(text), `Mahjong Ways: missing ${text}`);
 }
-assert.ok(mahjongHtml.includes('另有 6 個已收錄數值'), 'Mahjong Ways: quick RTP count mismatch');
+assert.ok(mahjongHtml.includes('7 個已收錄數值'), 'Mahjong Ways: quick RTP count mismatch');
 for (const text of ['統一波動度</dt><dd class="is-unknown">尚未核實', '最高倍數</dt><dd class="is-unknown">尚未核實', 'Bonus Buy</dt><dd class="is-unknown">尚未核實']) {
   assert.ok(bigBassHtml.includes(text), `Big Bass Bonanza: missing honest unknown state ${text}`);
 }

@@ -621,3 +621,14 @@ main :where(section[id],h2[id]){scroll-margin-top:84px}
 /* Game identity keeps the Slot Hub Provider page and the external provider site distinct. */
 .game-file-meta a{display:inline-flex;min-height:44px;align-items:center}
 .game-file-meta .game-provider-official-link{border-color:#d8dde6;color:var(--signal)}
+
+/* Recorded RTP display is independent from the unchanged primary-value filters. */
+.recorded-rtp-values{display:flex;flex-wrap:wrap;min-width:0;gap:2px 0}
+.recorded-rtp-values>span{white-space:nowrap}
+.card-recorded-rtp{display:grid;gap:6px;min-width:0;max-width:100%}
+.rtp-primary-basis{display:flex;flex-wrap:wrap;gap:2px 4px;font-weight:500}
+.rtp-primary-basis b{white-space:nowrap}
+.rtp-usage-note{display:block;color:var(--muted);font-size:.72rem;font-weight:500;line-height:1.65;white-space:normal}
+.rtp-filter-policy{margin:10px 0;color:var(--muted);font-size:.8rem;line-height:1.7}
+.recorded-rtp-list{padding-left:1.2em;margin:8px 0}
+.recorded-rtp-list li small{display:block}

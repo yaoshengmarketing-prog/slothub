@@ -69,7 +69,9 @@ for (const token of ['<table', '<caption>', '<thead>', '<tbody', 'scope="col"', 
 assert.doesNotMatch(component, /compare-section-row[^\n]*scope="colgroup"/);
 assert.match(component, /aria-hidden="true"/);
 assert.match(component, /compare-sticky-head/);
-assert.match(component, /主要顯示值/);
+assert.match(component, /buildRecordedRtpPresentation\(game\)/);
+assert.match(component, /本站記錄的主要值/);
+assert.match(component, /個已收錄數值/);
 assert.match(component, /未建立正式系列資料/);
 const stickyMarkup = component.slice(component.indexOf('<div className="compare-sticky-bar"'), component.indexOf('<table className="compare-table"'));
 assert.doesNotMatch(stickyMarkup, /<(?:a|button|input|select|textarea)\b|tabIndex=/);
