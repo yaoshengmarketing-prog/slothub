@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 849,
+  "gameCount": 850,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 130
+    "not-verified": 131
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,36 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "zombie-blasters-pg-soft",
+      "name": "Zombie Blasters",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Zombie Blasters, pgid 2075272, as a 5x6 Video Slot with RTP 96.75%, High volatility, maximum x10000 and Alarm-symbol multipliers. Official pi:4 icon was downloaded and visually checked. Browser navigation of official Try Now redirected to unrelated robot-verification content; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/196/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/196/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/f550d3d5-6a94-4f98-8afa-399064a0de10.webp",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/webp, 156x156, visually shows zombie face and PG mark, SHA256 6bda05850d3b34a154c9578cf1dd0af859b373a2a57a6954f8b404911695fce8"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2075272/index.html?language=en-US&bet_type=2",
+          "notes": "Read-only browser redirected to unrelated datavexhub.co.in robot-verification page; no same-game playable content observed"
+        }
+      ]
+    },
     {
       "slug": "monkeys-wild-party-pg-soft",
       "name": "Monkeys Wild Party",

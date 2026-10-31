@@ -1,0 +1,32 @@
+{
+  "batch": 288,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Zombie Blasters/2075272 absent before intake.",
+  "records": [
+    {
+      "name": "Zombie Blasters",
+      "slug": "zombie-blasters-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/196/",
+      "officialFacts": "Official gid 196, pgid 2075272, Video Slots, RTP 96.75%, High volatility, maximum x10000. Exact layout 5×6 symbols combination; winning Alarm symbols become multipliers up to x50 and 4+ Scatters trigger Free Spins. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/f550d3d5-6a94-4f98-8afa-399064a0de10.webp",
+        "localPath": "public/assets/games/zombie-blasters-pg-soft.webp",
+        "sha256": "6bda05850d3b34a154c9578cf1dd0af859b373a2a57a6954f8b404911695fce8",
+        "byteSize": 7054,
+        "dimensions": "156x156",
+        "mime": "image/webp",
+        "visualCheck": "Official exact-game icon is valid image/webp, 156x156, and visibly shows a square zombie face with PG mark; source mapping is exact-game pi:4 media."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/2075272/index.html?language=en-US&bet_type=2. Browser read-only navigation redirected to unrelated datavexhub.co.in robot-verification page, not same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 195 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
