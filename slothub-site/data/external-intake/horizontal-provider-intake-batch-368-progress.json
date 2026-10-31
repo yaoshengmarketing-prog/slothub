@@ -1,0 +1,32 @@
+{
+  "batch": 368,
+  "recordedAt": "2026-11-01T02:35:32+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Butterfly Blossom/125 absent before intake.",
+  "records": [
+    {
+      "name": "Butterfly Blossom",
+      "slug": "butterfly-blossom-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/113/",
+      "officialFacts": "Official gid 113, pgid 125, Video Slots, RTP 96.74%, Medium volatility, maximum x50000. Exact layout 5 reels × 3 rows; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/cc9e1cff-f7b7-4c42-885c-042909529531.png",
+        "localPath": "public/assets/games/butterfly-blossom-pg-soft.png",
+        "sha256": "491c364dcf35eec5307abc3f37e0a318af0b388025dc0ef7427537733ca7440a",
+        "byteSize": 15704,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: golden butterfly amid flowers with PG logo; matches Butterfly Blossom identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/125/index.html?language=en-US&bet_type=2. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 112 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
