@@ -1,0 +1,32 @@
+{
+  "batch": 338,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Mafia Mayhem/1580541 absent before intake.",
+  "records": [
+    {
+      "name": "Mafia Mayhem",
+      "slug": "mafia-mayhem-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/145/",
+      "officialFacts": "Official gid 145, pgid 1580541, enabled Video Slots, RTP 96.77%, High volatility, maximum x10000. Six reels: three rows on 1-2, four rows on 3-6. Sticky Wilds may transform into Multiplier symbols; all Wilds transform into x2-x100 Multiplier symbols at each spin end. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/99b8a358-9dcb-4ffe-b32f-750dee2da5df.png",
+        "localPath": "public/assets/games/mafia-mayhem-pg-soft.png",
+        "sha256": "c33c078c2138b505cbf10d90a6dc43ed84e7161f8d14385a2500b75d05970937",
+        "byteSize": 13490,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: fedora-wearing cigar-smoking mafia figure with PG mark matches Mafia Mayhem identity; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1580541/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 144 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
