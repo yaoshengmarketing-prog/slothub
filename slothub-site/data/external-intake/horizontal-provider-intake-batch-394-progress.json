@@ -1,0 +1,13 @@
+{
+  "batch": 394,
+  "recordedAt": "2026-11-01T04:49:04+08:00",
+  "state": "excluded-disabled-official-game",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Prosperity Lion - Mythical Treasure Jackpot",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/86/language/1/live/true",
+  "evidence": "Official API HTTP 200 identifies gid86 pgid46 as Video Slots but en=false; not an enabled current candidate. No Game, coverage or image write.",
+  "decision": "Excluded from current intake; do not count or publish disabled game.",
+  "nextCursor": "Continue descending numeric gid; recheck only if official enabled status changes."
+}

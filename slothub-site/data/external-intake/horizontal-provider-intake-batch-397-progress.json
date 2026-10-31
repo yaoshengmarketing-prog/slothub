@@ -1,0 +1,13 @@
+{
+  "batch": 397,
+  "recordedAt": "2026-11-01T04:49:18+08:00",
+  "state": "excluded-existing-game",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Fortune Ox",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/83/language/1/live/true",
+  "evidence": "Official API identifies enabled Video Slot gid83 pgid98 Fortune Ox. Existing src/content/games/fortune-ox.md has same name, provider and gameId PG SOFT gid: 83 / pgid: 98; exact duplicate. No new Game, coverage or image write.",
+  "decision": "Excluded as existing Game; no new-game count.",
+  "nextCursor": "Continue enabled gid82 Guardians of Ice & Fire."
+}
