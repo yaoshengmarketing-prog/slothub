@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 850,
+  "gameCount": 851,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 131
+    "not-verified": 132
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "super-wildrix-pg-soft",
+      "name": "Super Wildrix",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Super Wildrix, pgid 2040102, as Video Slots with RTP 96.75%, High volatility and maximum x20000. Official pi:4 icon was downloaded, decoded and visually matched. Official Try Now redirected in a read-only browser check to unrelated datavexhub.co.in Click Allow page; no playable same-game Demo or public Demo link verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/195/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/195/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/a56fb0ad-f3e1-4e61-9a6f-b992a2c2d9a3.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 d3a6011a16bdecfb46af22729f2d20d8e688e190c76423a284c02c661bca861d"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2040102/index.html?language=en-US&bet_type=2",
+          "httpStatus": null,
+          "notes": "Read-only browser check redirected to unrelated datavexhub.co.in Click Allow page; same-game playability not verified"
+        }
+      ]
+    },
     {
       "slug": "zombie-blasters-pg-soft",
       "name": "Zombie Blasters",

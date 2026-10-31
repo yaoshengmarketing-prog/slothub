@@ -1,0 +1,32 @@
+{
+  "batch": 289,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Super Wildrix/2040102 absent before intake.",
+  "records": [
+    {
+      "name": "Super Wildrix",
+      "slug": "super-wildrix-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/195/",
+      "officialFacts": "Official gid 195, pgid 2040102, Video Slots, RTP 96.75%, High volatility, maximum x20000. Exact layout 5 reels × 5 rows; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/a56fb0ad-f3e1-4e61-9a6f-b992a2c2d9a3.png",
+        "localPath": "public/assets/games/super-wildrix-pg-soft.png",
+        "sha256": "d3a6011a16bdecfb46af22729f2d20d8e688e190c76423a284c02c661bca861d",
+        "byteSize": 14851,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed downloaded 156x156 official pi:4 icon: masked grinning character and PG mark match the Super Wildrix title artwork; exact source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/2040102/index.html?language=en-US&bet_type=2 redirected in read-only browser check to unrelated datavexhub.co.in Click Allow page; no same-game playability verified. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 194 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
