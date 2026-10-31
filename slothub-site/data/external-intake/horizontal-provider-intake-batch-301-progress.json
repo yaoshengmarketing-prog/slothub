@@ -1,0 +1,32 @@
+{
+  "batch": 301,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Skylight Wonders/2012025 absent before intake.",
+  "records": [
+    {
+      "name": "Skylight Wonders",
+      "slug": "skylight-wonders-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/183/",
+      "officialFacts": "Official gid 183, pgid 2012025, enabled Video Slots, RTP 96.74%, Medium volatility, maximum x5000. 5x5 symbol combination, increasing multipliers, winning symbols on three reel frames become Wild next round, 3/4/5+ Free Spin symbols award 10/15/20 spins; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/aa95f7c0-edbd-484b-8728-5152094141dd.png",
+        "localPath": "public/assets/games/skylight-wonders-pg-soft.png",
+        "sha256": "31f57afcd407011abeab9fe21c7dd44eba04b16d32272f695fbc84465f1ec474",
+        "byteSize": 40433,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: bright hot-air balloons in sky and PG mark match same-game title artwork; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/2012025/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 182 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}

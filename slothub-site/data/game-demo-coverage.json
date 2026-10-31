@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 862,
+  "gameCount": 863,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 143
+    "not-verified": 144
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "skylight-wonders-pg-soft",
+      "name": "Skylight Wonders",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Skylight Wonders, pgid 2012025, as enabled Video Slots with RTP 96.74%, Medium volatility and maximum x5000. Official pi:4 icon was downloaded, decoded and visually matched. Official Try Now returned HTTP 200 Redirecting shell on a read-only HTTP check, not same-game playable content; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/183/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/183/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/aa95f7c0-edbd-484b-8728-5152094141dd.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 31f57afcd407011abeab9fe21c7dd44eba04b16d32272f695fbc84465f1ec474"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2012025/index.html?language=en-US&bet_type=2",
+          "httpStatus": 200,
+          "notes": "Read-only HTTP response was a Redirecting shell, with no same-game playable content"
+        }
+      ]
+    },
     {
       "slug": "alibaba-s-cave-of-fortune-pg-soft",
       "name": "Alibaba's Cave of Fortune",

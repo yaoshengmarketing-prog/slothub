@@ -1,10 +1,10 @@
 {
   "batch": 300,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Alibaba's Cave of Fortune/1940257 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Alibaba's Cave of Fortune",
       "slug": "alibaba-s-cave-of-fortune-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/184/",
       "officialFacts": "Official gid 184, pgid 1940257, enabled Video Slots, RTP 96.77%, High volatility, maximum x10000. Five reels x three rows; Collector gathers different Coin values, 6+ Coins trigger Bonus with 3 spins, Collector can reset bonus-spin counter; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/1940257/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 183 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 183; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "d4ae69c0bccfb112bf4ab42599ee51d231b17f09",
+    "githubRun": 41196421985,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "2255e134-a9d8-4f75-8c71-3d6653181d9b",
+    "cloudflareUrl": "https://2255e134.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Alibaba's Cave of Fortune, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }
