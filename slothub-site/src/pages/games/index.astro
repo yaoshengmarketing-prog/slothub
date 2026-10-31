@@ -22,10 +22,11 @@ const verifiedDateFormatter = new Intl.DateTimeFormat('zh-TW', {
   timeZone: 'Asia/Taipei',
 });
 ---
-<BaseLayout title="遊戲庫｜Slot Hub" description="依廠商、玩法、功能與數據搜尋、篩選及比較遊戲。" canonicalPath="/games/">
+<BaseLayout title="老虎機遊戲庫｜依廠商、玩法與功能找遊戲｜Slot Hub" description="搜尋 Slot Hub 已收錄的老虎機，依遊戲名稱、廠商、主要玩法、功能及已取得的數據條件縮小範圍，再查看單款資料、來源與相關教學。" canonicalPath="/games/">
   <section class="games-v3-intro shell">
     <p class="eyebrow">GAME LIBRARY</p>
-    <div><h1>找一款有明確資料的遊戲</h1><p>目前收錄 {games.length} 款遊戲、{providerCount} 家廠商。可以先用兩個條件開始，也可以直接調整完整篩選；兩種入口共用同一個 Explorer 與網址狀態。</p></div>
+    <div><h1>老虎機遊戲庫</h1><p>依遊戲名稱、廠商、玩法或功能，找到想了解的老虎機，再查看遊戲規格、資料來源與相關教學。也可以將感興趣的遊戲加入比較，並排查閱差異。</p></div>
+    <p>目前收錄 {games.length} 款遊戲、{providerCount} 家廠商。</p>
     <nav class="games-v3-mode-links" aria-label="選擇找遊戲方式"><a href="#guided-explorer">從玩法開始</a><a href="#full-explorer">直接調整完整條件</a></nav>
   </section>
 
@@ -58,6 +59,6 @@ const verifiedDateFormatter = new Intl.DateTimeFormat('zh-TW', {
 
   <section class="games-v3-full shell" id="full-explorer" aria-labelledby="full-explorer-title">
     <header class="games-v3-section-head"><div><p class="eyebrow">FULL EXPLORER</p><h2 id="full-explorer-title">完整遊戲篩選</h2></div><p>依名稱、廠商、主要玩法、功能與已取得的數值欄位調整。網址會保存正式條件，Reload 與上一頁／下一頁都能恢復。</p></header>
-    <GameExplorer games={games} relationshipLinks={relationshipLinks} resultAnchor="game-results" urlState client:load/>
+    <GameExplorer games={games} relationshipLinks={relationshipLinks} resultAnchor="game-results" filterNote="篩選依本站已取得的資料進行；未取得的欄位不代表數值為零或功能不存在。" urlState client:load/>
   </section>
 </BaseLayout>
