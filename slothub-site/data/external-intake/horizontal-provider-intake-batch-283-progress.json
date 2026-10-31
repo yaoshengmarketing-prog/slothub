@@ -1,0 +1,29 @@
+{
+  "batch": 283,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue PG SOFT numeric Slot detail pages after Lucky Mischief live closure",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All Game Markdown names, aliases, filenames and Provider; Prosperity Lanterns and PG SOFT game ID 2061925 absent before intake.",
+  "records": [
+    {
+      "name": "Prosperity Lanterns",
+      "slug": "prosperity-lanterns-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/201/",
+      "officialFacts": "Official route 201 / pgid 2061925; 3D Games and Video Slots; 5-reel, 3-row video slot, RTP 96.77%, High volatility, maximum x10000; six or more Prize symbols trigger three bonus spins and filled rows use the rightmost reel multiplier up to x1000. No explicit payline/Ways count or release date asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/03f94955-6c52-42da-8844-df9557aabce6.png",
+        "localPath": "public/assets/games/prosperity-lanterns-pg-soft.png",
+        "sha256": "7ad1ea50f19b98c9cc05b045405fcd216d461d0ce29c686c103052c77f84e094",
+        "visualCheck": "Official exact-game app icon is valid image/png and visibly shows sky lanterns, moon and PG mark; source mapping is in same-game official media list."
+      },
+      "demo": "Official exact-game Try Now URL https://m.pg-redirect.com/2061925/index.html?language=en-US&bet_type=2 redirected in browser to unrelated datavexhub.co.in robot-verification page. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After same-SHA CI, Cloudflare and full seven-route readback, continue PG SOFT official numeric page 200 Touchdown Wins, then inspect 199 downward if source quality permits. Each needs exact identity, metric, official icon and Demo check."
+}

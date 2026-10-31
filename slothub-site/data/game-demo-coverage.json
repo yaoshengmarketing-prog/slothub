@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00.000Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 844,
+  "gameCount": 845,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 125
+    "not-verified": 126
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,36 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "prosperity-lanterns-pg-soft",
+      "name": "Prosperity Lanterns",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-10-31",
+      "evidence": "PG SOFT official exact numeric page 201 and public Game Details API identify Prosperity Lanterns, pgid 2061925, as a 5-reel, 3-row video slot with RTP 96.77%, High volatility, maximum x10000 and Prize-symbol bonus spins. Its official app icon was retrieved and visually checked. The official Try Now URL redirected in browser to a non-game robot-verification page on an unrelated domain; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/201/",
+          "httpStatus": 200,
+          "notes": "Official exact-game SSR and browser page confirm name, game ID, video-slot type, 5x3 layout, RTP, High volatility and maximum win"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/201/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms pgid 2061925, app icon and Try Now trial target"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/03f94955-6c52-42da-8844-df9557aabce6.png",
+          "httpStatus": 200,
+          "notes": "Official app icon from exact-game media list; valid image/png showing sky lanterns, moon and PG mark, SHA256 7ad1ea50f19b98c9cc05b045405fcd216d461d0ce29c686c103052c77f84e094"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/2061925/index.html?language=en-US&bet_type=2",
+          "notes": "Official Try Now redirected in browser to unrelated datavexhub.co.in robot-verification page, not an exact same-game playable Demo"
+        }
+      ]
+    },
     {
       "slug": "lucky-mischief-pg-soft",
       "name": "Lucky Mischief",
