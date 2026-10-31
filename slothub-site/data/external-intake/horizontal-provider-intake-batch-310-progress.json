@@ -1,10 +1,10 @@
 {
   "batch": 310,
   "recordedAt": "2026-10-31T00:00:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Dead Man's Riches/1865521 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Dead Man's Riches",
       "slug": "dead-man-s-riches-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/174/",
       "officialFacts": "Official gid 174, pgid 1865521, enabled Video Slots, RTP 96.75%, High volatility, maximum x10000. Five reels x three rows; Red or Blue Skull Wild triggers travelling Wild respins with increasing multipliers; 3 Scatters trigger a choice of 15 Free Spins or 8 Free Spins with Persistent Wilds. No explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/1865521/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 173 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 173; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "f4360df3c76986d9ddb4d09afab9bc7f630affbe",
+    "githubRun": 41200196733,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "c8831916-2d90-44fa-926c-82813b9f76ee",
+    "cloudflareUrl": "https://c8831916.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, WEBP and sitemap HTTP 200; Provider lists Dead Man's Riches, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }

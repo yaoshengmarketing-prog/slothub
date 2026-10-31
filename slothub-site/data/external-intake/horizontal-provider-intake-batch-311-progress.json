@@ -1,0 +1,32 @@
+{
+  "batch": 311,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Knockout Riches/1881268 absent before intake.",
+  "records": [
+    {
+      "name": "Knockout Riches",
+      "slug": "knockout-riches-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/173/",
+      "officialFacts": "Official gid 173, pgid 1881268, enabled Video Slots, RTP 96.75%, High volatility, maximum x10000. Five reels; reels 1 and 5 vary from 1 to 3 rows, reels 2–4 from 4 to 20 rows; Stacked Symbols feature collects winning symbols; 2 Scatters trigger 5 free spins. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/7f90b3bc-6dd5-499b-b662-67b350061839.webp",
+        "localPath": "public/assets/games/knockout-riches-pg-soft.webp",
+        "sha256": "142ebce63c13755b15633216d99a820058bfd48180783ee83ec4aa8932d5d987",
+        "byteSize": 7242,
+        "dimensions": "156x156",
+        "mime": "image/webp",
+        "visualCheck": "Viewed official pi:4 156x156 icon: red-haired woman boxer with red glove and PG mark matches Ruby boxing title artwork; source URL, decoded WebP and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1881268/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 172 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
