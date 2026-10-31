@@ -1,0 +1,32 @@
+{
+  "batch": 410,
+  "recordedAt": "2026-11-01T05:58:51+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Genie's 3 Wishes/85 absent before intake.",
+  "records": [
+    {
+      "name": "Genie's 3 Wishes",
+      "slug": "genie-s-3-wishes-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/70/",
+      "officialFacts": "Official gid 70, pgid 85, Video Slots, RTP 96.75%, Medium volatility, maximum x100000. Exact layout 5 reels × 3 rows; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/6e24d56a-60d9-49d9-bd58-199ac0a30e1c.png",
+        "localPath": "public/assets/games/genie-s-3-wishes-pg-soft.png",
+        "sha256": "ae8ab58bee8286c1ac4c7d4ace93e8b0efb771db65d31a29de287e05a99114c4",
+        "byteSize": 52086,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: ornate magic lamp atop a pile of gold with PG logo; matches Genie's 3 Wishes identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/genies-wishes/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 69 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
