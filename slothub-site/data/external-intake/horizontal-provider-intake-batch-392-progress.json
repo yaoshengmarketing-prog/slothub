@@ -1,0 +1,32 @@
+{
+  "batch": 392,
+  "recordedAt": "2026-11-01T04:43:17+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Bali Vacation/94 absent before intake.",
+  "records": [
+    {
+      "name": "Bali Vacation",
+      "slug": "bali-vacation-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/88/",
+      "officialFacts": "Official gid 88, pgid 94, Video Slots, RTP 96.71%, High volatility, maximum x100000. Official description states 3 or more reels, 4 rows and Infinity Reels; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/8a6f54bc-5f8d-4d23-9737-53df9ee34cfc.png",
+        "localPath": "public/assets/games/bali-vacation-pg-soft.png",
+        "sha256": "1495a304d77f0dc9efa4a424bb73f37646e42652c66d76adf9ef94fc4aaec6b1",
+        "byteSize": 16513,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: Balinese temple gateway and sunset beach scene with PG logo; matches Bali Vacation identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/bali-vacation/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 87 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
