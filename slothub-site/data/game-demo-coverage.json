@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 925,
+  "gameCount": 926,
   "providerCount": 371,
   "sourcePageCount": 1409,
   "counts": {
     "access-restricted": 4,
     "available": 715,
-    "not-verified": 206
+    "not-verified": 207
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "win-win-fish-prawn-crab-pg-soft",
+      "name": "Win Win Fish Prawn Crab",
+      "provider": "pg-soft",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "PG SOFT exact official game page and public Game Details API identify Win Win Fish Prawn Crab, pgid 129, as Video Slots with RTP 96.72%, Low volatility and maximum x20000. Official pi:4 icon was downloaded, decoded and visually reviewed: fish, prawn and crab tiles with PG mark. Exact official Try Now returned HTTP 200, 5632-byte Redirecting... shell without independently playable exact Demo; no public Demo link was added.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pgsoft.com/en/games/117/",
+          "httpStatus": 200,
+          "notes": "Exact official page corroborates game identity and metrics"
+        },
+        {
+          "requestedUrl": "https://api.pgsoft.com/Game/GetGameDetails/game/117/language/1/live/true",
+          "httpStatus": 200,
+          "notes": "Official Game Details API confirms gid, pgid, Video Slots category, metrics and exact image/Trial media mapping"
+        },
+        {
+          "requestedUrl": "https://www.pgsoft.com/uploads/Games/Images/f60111e4-7981-43c5-8154-2d866de25aa0.png",
+          "httpStatus": 200,
+          "notes": "Official pi:4 icon, image/png, 156x156, SHA256 a08b726f00f21664a06f116606ca4f258e016302bca02bfca93b46604ee8b659"
+        },
+        {
+          "requestedUrl": "https://m.pg-redirect.com/129/index.html?language=en-US&bet_type=2",
+          "httpStatus": 200,
+          "notes": "HTTP 200, 5632-byte Redirecting... shell; no independently playable exact Demo established"
+        }
+      ]
+    },
     {
       "slug": "lucky-piggy-pg-soft",
       "name": "Lucky Piggy",

@@ -1,0 +1,32 @@
+{
+  "batch": 364,
+  "recordedAt": "2026-11-01T02:08:47+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Win Win Fish Prawn Crab/129 absent before intake.",
+  "records": [
+    {
+      "name": "Win Win Fish Prawn Crab",
+      "slug": "win-win-fish-prawn-crab-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/117/",
+      "officialFacts": "Official gid 117, pgid 129, Video Slots, RTP 96.72%, Low volatility, maximum x20000. Exact layout 6 reels; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/f60111e4-7981-43c5-8154-2d866de25aa0.png",
+        "localPath": "public/assets/games/win-win-fish-prawn-crab-pg-soft.png",
+        "sha256": "a08b726f00f21664a06f116606ca4f258e016302bca02bfca93b46604ee8b659",
+        "byteSize": 12974,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: three colorful fish, prawn and crab illustrated tiles on blue background with PG logo; matches Win Win Fish Prawn Crab identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/129/index.html?language=en-US&bet_type=2 returned HTTP 200, 5632-byte Redirecting... shell on 2026-11-01; no independently playable exact Demo established. No public link; not-verified."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 116 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
