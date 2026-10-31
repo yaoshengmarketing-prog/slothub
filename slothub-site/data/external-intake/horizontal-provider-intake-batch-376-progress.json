@@ -1,10 +1,10 @@
 {
   "batch": 376,
   "recordedAt": "2026-11-01T03:15:51+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Legendary Monkey King/107 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Legendary Monkey King",
       "slug": "legendary-monkey-king-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/104/",
       "officialFacts": "Official gid 104, pgid 107, Video Slots, RTP 96.71%, Medium volatility, maximum x50000. Exact layout 5 reels × 4 rows; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/lgd-monkey-kg/index.html?language=en-US&bet_type=2. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 103 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue enabled official numeric route 103 Spirited Wonders; then descend eligible missing PG SOFT Video Slots.",
+  "validation": {
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "result": "PASS",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "cloudflareDeploymentId": "aa3384f3-f126-4fb4-9af4-0bc5a6482d4c",
+    "githubRun": 41233651263,
+    "cloudflareStatus": "success",
+    "checkedAt": "2026-11-01",
+    "githubConclusion": "success",
+    "commit": "dfc65661d489c7504fd842cb7f52370952eac9cb",
+    "cloudflareUrl": "https://aa3384f3.slothub-4cu.pages.dev",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Legendary Monkey King, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap"
+  }
 }

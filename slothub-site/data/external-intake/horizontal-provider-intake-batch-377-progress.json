@@ -1,0 +1,32 @@
+{
+  "batch": 377,
+  "recordedAt": "2026-11-01T03:21:41+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Spirited Wonders/119 absent before intake.",
+  "records": [
+    {
+      "name": "Spirited Wonders",
+      "slug": "spirited-wonders-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/103/",
+      "officialFacts": "Official gid 103, pgid 119, Video Slots, RTP 96.70%, Medium volatility, maximum x50000. Exact layout 6 reels × 4 rows; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/199235bb-b8a9-4a54-a63f-0c7120724841.png",
+        "localPath": "public/assets/games/spirited-wonders-pg-soft.png",
+        "sha256": "ada0b6f1c6d5b8fa8786e1fff70f12e5a5a14be3a29fc0b45f0ee72b9b6c7fde",
+        "byteSize": 56395,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: fierce red yokai face with horns and PG logo; matches Spirited Wonders identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/spirit-wonder/index.html?language=en-US&bet_type=2. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 102 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
