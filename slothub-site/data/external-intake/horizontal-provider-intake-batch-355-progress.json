@@ -1,10 +1,10 @@
 {
   "batch": 355,
   "recordedAt": "2026-11-01T01:09:55+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Diner Delights/1372643 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Diner Delights",
       "slug": "diner-delights-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/126/",
       "officialFacts": "Official gid 126, pgid 1372643, Video Slots, RTP 96.75%, Medium volatility, maximum x5000. Exact layout 6×6 symbols combination; no explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/1372643/index.html?language=en-US&bet_type=2 returned HTTP 200, 5644-byte Redirecting... shell on 2026-11-01; no independently playable exact Demo established. No public link; not-verified."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 125 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 125; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "commit": "1a11f0ec617bd7acbf63020c89a4e664b1b1427f",
+    "githubRun": 41223494944,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "d083c402-3030-4d29-834d-1ccd2b627643",
+    "cloudflareUrl": "https://d083c402.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Diner Delights, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-11-01"
+  }
 }
