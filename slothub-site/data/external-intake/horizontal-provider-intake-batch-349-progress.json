@@ -1,0 +1,32 @@
+{
+  "batch": 349,
+  "recordedAt": "2026-11-01T00:29:55+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Mystical Spirits/1432733 absent before intake.",
+  "records": [
+    {
+      "name": "Mystical Spirits",
+      "slug": "mystical-spirits-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/134/",
+      "officialFacts": "Official gid 134, pgid 1432733, enabled Video Slots, RTP 96.75%, High volatility, maximum x5000. Six reels x five rows; winning symbols collect in multiplier slots below reels to raise multiplier; four Free Spins symbols trigger 12 spins. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/797a15fe-b4cd-4fd6-83f5-49d00c473b1a.png",
+        "localPath": "public/assets/games/mystical-spirits-pg-soft.png",
+        "sha256": "23e3233a236b86168dd25282b96252dc801c6e991f945d49dbf0bd605c323e98",
+        "byteSize": 12175,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: glowing three-color elemental swirl with PG mark matches Mystical Spirits theme; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1432733/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 133 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
