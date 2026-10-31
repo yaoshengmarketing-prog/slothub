@@ -1,10 +1,10 @@
 {
   "batch": 345,
   "recordedAt": "2026-10-31T16:01:29.200Z",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Cruise Royale/1473388 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Cruise Royale",
       "slug": "cruise-royale-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/138/",
       "officialFacts": "Official gid 138, pgid 1473388, enabled Video Slots, RTP 96.65%, High volatility, maximum x2500. Six reels x four rows plus additional reel above reels 2-5; four Scatters trigger 8 free spins; multiplier increases by x1 after each free spin, while Wilds persist and travel diagonally down-left. No explicit payline/Ways count asserted.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/1473388/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-11-01."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 137 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 137; then descend eligible missing PG SOFT Video Slots. Resolve filter-only pgids separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-10-31"
+  },
+  "publication": {
+    "commit": "9f03ad81969449b07f46eda218fe2926eace5da6",
+    "githubRun": 41217963490,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "56e6ddb8-82b1-4799-a290-f871b4a7417c",
+    "cloudflareUrl": "https://56e6ddb8.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Cruise Royale, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-10-31"
+  }
 }

@@ -1,0 +1,32 @@
+{
+  "batch": 346,
+  "recordedAt": "2026-11-01T00:07:32+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Fruity Candy/1397455 absent before intake.",
+  "records": [
+    {
+      "name": "Fruity Candy",
+      "slug": "fruity-candy-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/137/",
+      "officialFacts": "Official gid 137, pgid 1397455, enabled Video Slots, RTP 96.75%, High volatility, maximum x10000. Official describes 5-4-5-4-5 reels combination, expanding reels and increasing multiplier; three Free Spins symbols trigger 10 free spins, with additional spins and multipliers of 1,2,3,5 in official description. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/43d9adea-7937-4517-9b18-de5c2d38ac5e.png",
+        "localPath": "public/assets/games/fruity-candy-pg-soft.png",
+        "sha256": "b4f9a14dbf8f45fa333b52542793938ca8d1402063d7395be3ba147c02e2513d",
+        "byteSize": 11899,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: yellow bear-shaped candy with purple grapes and PG mark matches Fruity Candy art; source URL, decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1397455/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 136 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
