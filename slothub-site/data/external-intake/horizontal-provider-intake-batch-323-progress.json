@@ -1,0 +1,32 @@
+{
+  "batch": 323,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Wings of Iguazu/1747549 absent before intake.",
+  "records": [
+    {
+      "name": "Wings of Iguazu",
+      "slug": "wings-of-iguazu-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/161/",
+      "officialFacts": "Official gid 161, pgid 1747549, enabled Video Slots, RTP 96.78%, Medium volatility, maximum x2000. Three reels, 3 rows on reels 1 and 3, 4 rows on reel 2; each Blue Macaw symbol increases multiplier by 2; 3 Scatters trigger 10 free spins. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/3b2f77b8-40ba-46f6-ba9a-7a24f095223b.webp",
+        "localPath": "public/assets/games/wings-of-iguazu-pg-soft.webp",
+        "sha256": "3bf3a28e8a7f5fb5fcdb145ea5b870bb76b9892b702ef3dda94b79b7d20b2f95",
+        "byteSize": 18690,
+        "dimensions": "312x312",
+        "mime": "image/webp",
+        "visualCheck": "Viewed official pi:4 312x312 icon: vivid blue macaw flying in front of Iguazu waterfall with PG mark matches title artwork; source URL, decoded WebP and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1747549/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 160 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
