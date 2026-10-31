@@ -1,0 +1,32 @@
+{
+  "batch": 342,
+  "recordedAt": "2026-10-31T00:00:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Ninja Raccoon Frenzy/1529867 absent before intake.",
+  "records": [
+    {
+      "name": "Ninja Raccoon Frenzy",
+      "slug": "ninja-raccoon-frenzy-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/141/",
+      "officialFacts": "Official gid 141, pgid 1529867, enabled Video Slots, RTP 96.80%, Medium volatility, maximum x2500. Double six-reel, three-row layout; duplicating Wilds, each winning spin increases multiplier, three Bonus symbols trigger Bonus Feature with Prize Multiplier, Shuriken and Kunai symbols. No explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/563ef823-4192-44ce-8575-1e21706df385.png",
+        "localPath": "public/assets/games/ninja-raccoon-frenzy-pg-soft.png",
+        "sha256": "1ea7f3154ed38c029de21ff59e0122c655d7c46b0156823c3f441516bad0a5e7",
+        "byteSize": 57015,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official pi:4 156x156 icon: ninja blade slicing watermelon with PG mark; raccoon character is not pictured, but official gid 141 image mapping and source URL directly confirm game identity; decoded PNG and SHA256 confirmed"
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/1529867/index.html?language=en-US&bet_type=2 returned HTTP 200 Redirecting shell on read-only HTTP check, with no same-game playable content. No public link; not-verified, checked 2026-10-31."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 140 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
