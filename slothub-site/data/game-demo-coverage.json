@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1099,
+  "gameCount": 1100,
   "providerCount": 371,
-  "sourcePageCount": 1685,
+  "sourcePageCount": 1688,
   "counts": {
     "access-restricted": 4,
-    "available": 807,
+    "available": 808,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "jokers-jewels-hold-spin-pragmatic-play",
+      "name": "Joker’s Jewels Hold & Spin",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/jokers-jewels-hold-spin/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Joker’s Jewels Hold & Spin, three money symbols triggering Hold and Spin respins. Exact iframe gameSymbol vs5jokjewhs opened matching Joker’s Jewels Hold & Spin Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/jokers-jewels-hold-spin/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/12/Jokers-Jewels-Hold-Spin_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Joker’s Jewels Hold & Spin title artwork, 339x180 PNG, SHA256 44D0843845DBC8745FA5E18C51BD5B732BF1C93CDA5C8F5089CD71E0AAA457C9"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5jokjewhs&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "wheel-of-happiness-pragmatic-play",
       "name": "Wheel of Happiness",

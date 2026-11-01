@@ -1,0 +1,37 @@
+{
+  "batch": 573,
+  "recordedAt": "2026-11-01T18:10:22.612Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1099 published Game Markdown records and same-provider exact official path/name/gameSymbol; Joker’s Jewels Hold & Spin /vs5jokjewhs absent.",
+  "records": [
+    {
+      "index": 90,
+      "name": "Joker’s Jewels Hold & Spin",
+      "slug": "jokers-jewels-hold-spin-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/jokers-jewels-hold-spin/",
+      "officialFacts": "Official page: three or more money symbols trigger Hold and Spin with three initial respins. Money symbols stick and reset the spin count. Their values pay at feature end, while filling the entire grid awards 10000x.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/12/Jokers-Jewels-Hold-Spin_339x180_EN.png",
+        "localPath": "public/assets/games/jokers-jewels-hold-spin-pragmatic-play.png",
+        "sha256": "44D0843845DBC8745FA5E18C51BD5B732BF1C93CDA5C8F5089CD71E0AAA457C9",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Joker’s Jewels Hold & Spin title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5jokjewhs opened matching Joker’s Jewels Hold & Spin Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 91 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full run-verify exit 0: 1100 Games, 1504 internal HTML links, outbound nofollow pass."
+  }
+}
