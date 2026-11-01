@@ -1,0 +1,13 @@
+{
+  "batch": 440,
+  "recordedAt": "2026-11-01T08:13:34+08:00",
+  "state": "excluded-disabled-official-route",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Wild Inferno",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/40/language/1/live/true",
+  "evidence": "Exact official API gid40 HTTP 200 reports name Wild Inferno, pgid40, en=false; not an enabled Video Slot. No Game, coverage or image write.",
+  "decision": "Excluded disabled route; no new-game count.",
+  "nextCursor": "Continue numeric gid39; recheck gid40 only if official enabled status changes."
+}
