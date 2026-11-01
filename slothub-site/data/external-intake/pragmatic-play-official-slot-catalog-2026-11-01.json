@@ -10,13 +10,13 @@
   "nextPageCards": 0,
   "totalCards": 665,
   "exactGameCards": 663,
-  "publishedExisting": 36,
-  "pendingIndividualCheck": 626,
+  "publishedExisting": 37,
+  "pendingIndividualCheck": 625,
   "comingSoon": 2,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 30 after item 29 Super Serge validation and publication closure.",
+  "nextCursor": "Catalog item 31 after item 30 Jade Legends validation and publication closure.",
   "pages": [
     {
       "page": 1,
@@ -679,7 +679,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/super-serge/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/Super-Serge_339x180_EN.png",
       "releaseLabel": null,
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "super-serge-pragmatic-play",
       "sourceCaveat": "Official text says 5x4 base grid and also mentions reel six; grid dimensions omitted from published record."
     },
@@ -690,8 +690,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/jade-legends/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/Jade-Legends_339x180_EN.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "jade-legends-pragmatic-play"
     },
     {
       "index": 31,

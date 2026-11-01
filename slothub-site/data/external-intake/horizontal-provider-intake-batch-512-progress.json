@@ -1,10 +1,10 @@
 {
   "batch": 512,
   "recordedAt": "2026-11-01T10:21:27.049Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1038 published Game Markdown records and same-provider exact official path/name/gameSymbol; Super Serge /vswayssparkadv absent.",
@@ -14,7 +14,7 @@
       "name": "Super Serge",
       "slug": "super-serge-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/super-serge/",
       "officialFacts": "Official page: Collect symbols award money-symbol values up to 2500x; Wild activates Expand, Collect or Cash modifier; 3+ Scatter trigger choice of cash collect spins with modifiers or free spins with Wild multipliers up to 5x. Grid statement conflicts internally (5x4 versus reel six), so no base grid dimension is asserted. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswayssparkadv returned HTTP 200 and HTML title Super Serge; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 30 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 30 Jade Legends validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1039 published Games, build, 1443 internal HTML links and outbound nofollow checks passed; official base-grid conflict left unasserted."
+  },
+  "publication": {
+    "commit": "61595892d1127600025e840da5e7598b7ec7966b",
+    "githubActionsRun": 41297330710,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "91241ecb-e0c6-4bca-8f74-2a037c01978e",
+    "cloudflareUrl": "https://91241ecb.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

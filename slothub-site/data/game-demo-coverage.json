@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1039,
+  "gameCount": 1040,
   "providerCount": 371,
-  "sourcePageCount": 1505,
+  "sourcePageCount": 1508,
   "counts": {
     "access-restricted": 4,
-    "available": 747,
+    "available": 748,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "jade-legends-pragmatic-play",
+      "name": "Jade Legends",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/jade-legends/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Jade Legends, 7x7 cluster pays, Tumble spot multipliers, dragon coin collect and Scatter free-spin levels. Exact iframe gameSymbol vs20jademrich returned HTTP 200 and HTML title Jade Legends; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/jade-legends/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/Jade-Legends_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Jade Legends title artwork, 339x180 PNG, SHA256 A0F1FDE4691D3E2C9285250BBD3F503243E40F3BACED6F6AD04E80A3165B2EB9"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20jademrich&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "super-serge-pragmatic-play",
       "name": "Super Serge",
