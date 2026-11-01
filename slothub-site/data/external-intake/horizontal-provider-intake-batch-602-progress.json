@@ -1,10 +1,10 @@
 {
   "batch": 602,
   "recordedAt": "2026-11-01T21:40:59Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1128 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sweet Rush Bonanza /vs20swrbon absent.",
@@ -14,7 +14,7 @@
       "name": "Sweet Rush Bonanza",
       "slug": "sweet-rush-bonanza-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/sweet-rush-bonanza/",
       "officialFacts": "Official page: eight or more matching symbols pay anywhere on the grid; repeated hits on winning positions double a multiplier up to 128x. Four Scatters trigger ten Free Spins; marked positions and multipliers persist during Free Spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20swrbon opened matching Sweet Rush Bonanza Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 120 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 120 Hundreds and Thousands validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1129 Games; internal link 1533 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "1bd8016df025aaac2160220c41024d9f499aa3cb",
+    "githubActionsRun": 41353585210,
+    "cloudflareDeployment": "852c95f6-02e0-4147-a886-a30e1f6ecff2",
+    "cloudflareUrl": "https://852c95f6.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
