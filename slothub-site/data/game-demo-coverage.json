@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1017,
+  "gameCount": 1018,
   "providerCount": 371,
-  "sourcePageCount": 1439,
+  "sourcePageCount": 1442,
   "counts": {
     "access-restricted": 4,
-    "available": 725,
+    "available": 726,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-halloween-splash-1000-pragmatic-play",
+      "name": "Big Bass Halloween Splash 1000",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/big-bass-halloween-splash-1000/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official catalog card, exact page heading and image all identify Big Bass Halloween Splash 1000; one prose sentence reverses Halloween/Splash order, so title follows the three matching primary identifiers. Mechanics and embedded gameSymbol vs10bbsplxh are on exact page. Exact iframe HTTP 200; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-halloween-splash-1000/",
+          "httpStatus": 200,
+          "notes": "Exact heading, gameplay and iframe; prose title-order typo noted"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Big-Bass-Halloween-Splash-1000_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed exact title artwork, 339x180 PNG, SHA256 BB342D2A59C7E4CF3E20655E8370065FEEC5F7EB6C919CDF72B56CCCD2F56E12"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbsplxh&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact official embedded gameSymbol URL, HTTP reachable only"
+        }
+      ]
+    },
     {
       "slug": "wonders-of-aztec-pragmatic-play",
       "name": "Wonders of Aztec",

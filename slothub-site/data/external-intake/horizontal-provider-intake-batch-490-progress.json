@@ -1,10 +1,10 @@
 {
   "batch": 490,
   "recordedAt": "2026-11-01T08:09:53.066Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1016 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wonders of Aztec /vs20gtsparta absent.",
@@ -14,7 +14,7 @@
       "name": "Wonders of Aztec",
       "slug": "wonders-of-aztec-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/wonders-of-aztec/",
       "officialFacts": "Official page: bomb symbols can add or double reel multipliers up to 128x, Super Bomb boosts all reel multipliers, sum applies after Tumble; 4-6 scatters yield 10-30 free spins with persistent multipliers and five-spin retriggers; Super Scatter increases starting reel multipliers. No unsupported RTP, volatility, release date or total max win.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20gtsparta returned HTTP 200; public link exact official page, embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 8 Big Bass Halloween Splash 1000 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 8 Big Bass Halloween Splash 1000 validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1017 published Games, build, 1421 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "f75a901ad9f5cb4d58290f8bb8fac35fa051eddf",
+    "githubActionsRun": 41287897915,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "a298545a-157a-4030-a813-88dfb23263da",
+    "cloudflareUrl": "https://a298545a.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
