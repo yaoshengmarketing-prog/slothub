@@ -1,0 +1,37 @@
+{
+  "batch": 493,
+  "recordedAt": "2026-11-01T08:28:36.795Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1019 published Game Markdown records and same-provider exact official path/name/gameSymbol; Pelican Payday /vs10lckfshmn absent. POP sub-brand on official page and within umbrella SLOTS catalog.",
+  "records": [
+    {
+      "index": 10,
+      "name": "Pelican Payday",
+      "slug": "pelican-payday-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/pelican-payday/",
+      "officialFacts": "Official exact POP page: reel-three Collect sums same-spin money symbols up to 1000x each; three scatters give eight initial free spins with retriggers; feature Collect symbols can appear on any reel and add money values to a persistent pot. No unsupported RTP, volatility, release date or total max win.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/09/Pelican-Payday_339x180_B.png",
+        "localPath": "public/assets/games/pelican-payday-pragmatic-play.png",
+        "sha256": "7E76B7A4CA3DF962095913DE70C84366B678FFFE2A91AFA3E17E35A12347920B",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Pelican Payday title and POP artwork, matches catalog card and page OG image."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10lckfshmn returned HTTP 200; public link exact official page, embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 11 Deep Sea Frenzy after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1020 published Games, build, 1424 internal HTML links and outbound nofollow checks passed."
+  }
+}

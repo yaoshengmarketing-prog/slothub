@@ -1,10 +1,10 @@
 {
   "batch": 492,
   "recordedAt": "2026-11-01T08:21:27.668Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1018 published Game Markdown records and same-provider exact official path/name/gameSymbol; Cheetah Wild /vswayscheetah absent.",
@@ -14,7 +14,7 @@
       "name": "Cheetah Wild",
       "slug": "cheetah-wild-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/cheetah-wild/",
       "officialFacts": "Official exact page: wilds on reels 2-4 carry up to 3x multipliers, multiple wild multipliers multiply; reel-1 Collect adds adjacent money/wild values; 3-5 scatters grant 8-20 free spins with retriggers; Level Up converts high symbols into money symbols through five progressive levels. No unsupported RTP, volatility, release date or total max win.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswayscheetah returned HTTP 200; public link exact official page, embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 10 Pelican Payday after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 10 Pelican Payday validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1019 published Games, build, 1423 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "2e4b01bb0951312d7257ec02191bccc2c871cb3b",
+    "githubActionsRun": 41288738508,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "80a25bf2-9ef2-4f56-ad73-a2f5658fe9b0",
+    "cloudflareUrl": "https://80a25bf2.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local after deployment-success status."
   }
 }

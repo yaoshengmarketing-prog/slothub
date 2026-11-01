@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1019,
+  "gameCount": 1020,
   "providerCount": 371,
-  "sourcePageCount": 1445,
+  "sourcePageCount": 1448,
   "counts": {
     "access-restricted": 4,
-    "available": 727,
+    "available": 728,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "pelican-payday-pragmatic-play",
+      "name": "Pelican Payday",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/pelican-payday/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play POP exact page and umbrella SLOTS catalog identify title, mechanics, and embedded gameSymbol vs10lckfshmn. Exact official iframe HTTP 200; playable reels not visually tested. POP sub-brand retained in source labels.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/pelican-payday/",
+          "httpStatus": 200,
+          "notes": "Exact POP title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS umbrella catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/09/Pelican-Payday_339x180_B.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed exact POP title artwork, 339x180 PNG, SHA256 7E76B7A4CA3DF962095913DE70C84366B678FFFE2A91AFA3E17E35A12347920B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10lckfshmn&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact official embedded gameSymbol URL, HTTP reachable only"
+        }
+      ]
+    },
     {
       "slug": "cheetah-wild-pragmatic-play",
       "name": "Cheetah Wild",
