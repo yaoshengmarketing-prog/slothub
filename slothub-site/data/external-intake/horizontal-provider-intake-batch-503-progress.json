@@ -1,10 +1,10 @@
 {
   "batch": 503,
   "recordedAt": "2026-11-01T09:26:26.338Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1029 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Drums 88 /vs20luckycoi88 absent.",
@@ -14,7 +14,7 @@
       "name": "Lucky Drums 88",
       "slug": "lucky-drums-88-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/lucky-drums-88/",
       "officialFacts": "Official exact page: 5x5, 7-12+ pay-anywhere; gold/silver coins collected in drums can give Hold & Spin, up to 1000x instant prize or up to 10x spin multiplier; one or both 5x3 respin grids start with three respins; coin/drum resets count; filling one grid adds 1000x. Those specific prizes are not total max win. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20luckycoi88 returned HTTP 200; public link exact official page, embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 21 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 21 Ra vs Osiris validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1030 published Games, build, 1434 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "398a175ab88eb6cae0238efbc8e5b9637602775d",
+    "githubActionsRun": 41293376330,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "2848587f-f528-4a47-9a28-b31cbb52d8ff",
+    "cloudflareUrl": "https://2848587f.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

@@ -1,0 +1,37 @@
+{
+  "batch": 504,
+  "recordedAt": "2026-11-01T09:32:50.399Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1030 published Game Markdown records and same-provider exact official path/name/gameSymbol; Ra vs Osiris /vs15raos absent.",
+  "records": [
+    {
+      "index": 21,
+      "name": "Ra vs Osiris",
+      "slug": "ra-vs-osiris-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/ra-vs-osiris/",
+      "officialFacts": "Official exact page: selectable Ra/Osiris volatility modes; Osiris is more volatile. Expanding wilds up to 1000x, multiple wild multipliers add; 3-5 scatters give six free spins with minimum wild multiplier 2x/4x/8x; walking wild multipliers respin and move left; retriggers add six spins. 1000x is wild multiplier, not overall max win; no singular volatility assigned. No unsupported RTP or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/08/Ra-vs-Osiris_339x180_EN.png",
+        "localPath": "public/assets/games/ra-vs-osiris-pragmatic-play.png",
+        "sha256": "25EF611202C9CAA1CD5F666F4C3ED07F2DA93034B42C5889E8188FD44050551C",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Ra vs Osiris title artwork, matches catalog and page OG image."
+      },
+      "demo": "Official exact page iframe gameSymbol vs15raos returned HTTP 200; public link exact official page, embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 22 Gates of Olympus POP after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1031 published Games, build, 1435 internal HTML links and outbound nofollow checks passed."
+  }
+}
