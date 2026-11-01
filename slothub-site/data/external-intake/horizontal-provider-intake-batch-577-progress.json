@@ -1,10 +1,10 @@
 {
   "batch": 577,
   "recordedAt": "2026-11-01T18:38:02.582Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1103 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Panda /vs5lckpnd absent.",
@@ -14,7 +14,7 @@
       "name": "Lucky Panda",
       "slug": "lucky-panda-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/lucky-panda/",
       "officialFacts": "Official page: a special multiplier boosts wins by 2x to 10x on every spin. A panda Wild can randomly trigger eight Free Spins. During the feature, up to three multiplier symbols land and add before applying to the spin win.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs5lckpnd opened matching Lucky Panda Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 95 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 95 Fortune of Olympus validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full run-verify exit 0: 1104 Games, 1508 internal HTML links, outbound nofollow pass."
+  },
+  "publication": {
+    "commit": "8142d2e0ed6b7b9c02b2350c298827fd00e31f52",
+    "githubActionsRun": 41337988417,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "f975f50b-c3d1-43bc-8663-47270ce79e08",
+    "cloudflareUrl": "https://f975f50b.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

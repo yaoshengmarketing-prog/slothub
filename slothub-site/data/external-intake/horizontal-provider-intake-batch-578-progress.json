@@ -1,0 +1,37 @@
+{
+  "batch": 578,
+  "recordedAt": "2026-11-01T18:44:54.753Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1104 published Game Markdown records and same-provider exact official path/name/gameSymbol; Fortune of Olympus /vs20olympgcl absent.",
+  "records": [
+    {
+      "index": 95,
+      "name": "Fortune of Olympus",
+      "slug": "fortune-of-olympus-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/fortune-of-olympus/",
+      "officialFacts": "Official page: random multipliers up to 500x can land in base and bonus games, adding during tumbles. Four to seven scatters trigger up to 30 Free Spins, where multiplier values accumulate and apply to subsequent wins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/11/Fortune-of-Olympus_339x180_EN.png",
+        "localPath": "public/assets/games/fortune-of-olympus-pragmatic-play.png",
+        "sha256": "585EC53BC5B5CBEE19FC53CFCF4C33052CD60CEF81480C1F0CAE14FDD531B9E0",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Fortune of Olympus title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20olympgcl opened matching Fortune of Olympus Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 96 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verification passed: 1105 Games, 1509 HTML files; internal links and outbound nofollow PASS."
+  }
+}
