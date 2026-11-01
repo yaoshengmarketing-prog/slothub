@@ -1,10 +1,10 @@
 {
   "batch": 511,
   "recordedAt": "2026-11-01T10:16:11.096Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1037 published Game Markdown records and same-provider exact official path/name/gameSymbol; 777 Wheel Blitz /vs5wheel7s absent.",
@@ -14,7 +14,7 @@
       "name": "777 Wheel Blitz",
       "slug": "777-wheel-blitz-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/777-wheel-blitz/",
       "officialFacts": "Official page: three-reel classic slot, three adjacent matching symbols win up to 200x; three matching gemstones on centre payline trigger opal, ruby, emerald or diamond prize wheel. Wheels can pay cash or upgrade one tier; diamond wheel prizes 100x-5000x, which is not asserted overall max win. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs5wheel7s returned HTTP 200 and HTML title 777 Wheel Blitz; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 29 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 29 Super Serge validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Corrected a NODE_OPTIONS typo before the complete run. Game schema, demo coverage, 1038 published Games, build, 1442 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "9c5f37ee816314aa0ff7532e70a4efc759ec7885",
+    "githubActionsRun": 41296952768,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "3c4b382e-3744-4797-8bda-d8ae87030934",
+    "cloudflareUrl": "https://3c4b382e.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

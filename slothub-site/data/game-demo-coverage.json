@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1038,
+  "gameCount": 1039,
   "providerCount": 371,
-  "sourcePageCount": 1502,
+  "sourcePageCount": 1505,
   "counts": {
     "access-restricted": 4,
-    "available": 746,
+    "available": 747,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "super-serge-pragmatic-play",
+      "name": "Super Serge",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/super-serge/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Super Serge, Collect money symbols, Wild modifiers and Scatter bonus choice. Page calls base grid 5x4 but mentions reel six; contradictory grid detail omitted from Game record. Exact iframe gameSymbol vswayssparkadv returned HTTP 200 and HTML title Super Serge; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/super-serge/",
+          "httpStatus": 200,
+          "notes": "Exact title, mechanics and iframe; conflicting base grid description recorded"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/Super-Serge_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Super Serge title artwork, 339x180 PNG, SHA256 73900FD31695E94DF287F46F8109AAD09F119FBFA76D2795D83C1B2ABDF35EFC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayssparkadv&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "777-wheel-blitz-pragmatic-play",
       "name": "777 Wheel Blitz",
