@@ -1,0 +1,37 @@
+{
+  "batch": 591,
+  "recordedAt": "2026-11-01T20:19:28.54Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1117 published Game Markdown records and same-provider exact official path/name/gameSymbol; Oracle of Gold /vs20oragold absent.",
+  "records": [
+    {
+      "index": 108,
+      "name": "Oracle of Gold",
+      "slug": "oracle-of-gold-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/oracle-of-gold/",
+      "officialFacts": "Official page: Winning gold symbols leave a Wild for the next tumble. Wilds carry 2x or 3x multipliers that multiply together. Four, five or six scatters trigger 10, 15 or 20 Free Spins, where every tumbling win raises a persistent multiplier by 1x.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/10/Oracle-of-Gold_339x180_EN.png",
+        "localPath": "public/assets/games/oracle-of-gold-pragmatic-play.png",
+        "sha256": "430A0915A69805E6760EEE3A1EB97C278BCDAAD4965E71536B8467ACD2710E68",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Oracle of Gold title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20oragold opened matching Oracle of Gold Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 109 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verify exit 0: Similar play 1118 Games; internal link 1522 HTML files PASS; outbound nofollow PASS."
+  }
+}

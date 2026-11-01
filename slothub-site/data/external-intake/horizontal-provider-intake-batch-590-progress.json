@@ -1,10 +1,10 @@
 {
   "batch": 590,
   "recordedAt": "2026-11-01T20:11:29.454Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1116 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild Wild Riches Returns /vswayswwrichr absent.",
@@ -14,7 +14,7 @@
       "name": "Wild Wild Riches Returns",
       "slug": "wild-wild-riches-returns-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/wild-wild-riches-returns/",
       "officialFacts": "Official page: Money symbols up to 10,000x on reel five are collected by a Wild on reel one or five. Three Bonus symbols trigger 6 to 20 Free Spins; money symbol values accumulate and are paid if a Wild lands on an outer reel at the end.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswayswwrichr opened matching Wild Wild Riches Returns Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 108 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 108 Oracle of Gold validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1117 Games; internal link 1521 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "79a5cf12e3774264943749e68e9b0eec3524b40b",
+    "githubActionsRun": 41345958905,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "b0d06ac3-b107-4945-a3aa-fd4c1b9084c3",
+    "cloudflareUrl": "https://b0d06ac3.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
