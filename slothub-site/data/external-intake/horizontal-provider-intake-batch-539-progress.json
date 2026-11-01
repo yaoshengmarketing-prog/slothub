@@ -1,10 +1,10 @@
 {
   "batch": 539,
   "recordedAt": "2026-11-01T13:22:55.442Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1065 published Game Markdown records and same-provider exact official path/name/gameSymbol; Dragon Pots Megaways™ /vswaysdragden absent.",
@@ -14,7 +14,7 @@
       "name": "Dragon Pots Megaways™",
       "slug": "dragon-pots-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/dragon-pots-megaways/",
       "officialFacts": "Official page: six-reel Megaways title, blue green and gold dragon Scatters can randomly trigger ten Free Spins and corresponding Wild, Multiplier, and Bonus modifiers. Additional Scatters in the bonus activate more modifiers and each adds five spins. Demo HTML title omits trademark symbol. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysdragden returned HTTP 200 and HTML title Dragon Pots Megaways™; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 57 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 57 Great Ghosts! validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1066 published Games; 1470 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "9c5d002d41c8fb18928bd2dc4985333a029b0988",
+    "githubActionsRun": 41311238776,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "82d3aaea-0cd6-4037-a0aa-b605930902a2",
+    "cloudflareUrl": "https://82d3aaea.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
