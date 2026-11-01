@@ -1,0 +1,37 @@
+{
+  "batch": 520,
+  "recordedAt": "2026-11-01T11:10:37.604Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1046 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Blast /vs10bbasblitz absent, distinct from other Big Bass series games.",
+  "records": [
+    {
+      "index": 37,
+      "name": "Big Bass Blast",
+      "slug": "big-bass-blast-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-blast/",
+      "officialFacts": "Official page: 3-5 Scatter trigger 5-9 Free Spins; hook may supply third Scatter after two. Fisherman Wild collects fish-money symbols up to 500x, can carry up to 10x base multiplier; every seventh Wild in feature grants five spins and rising win multiplier to 10x. 500x is money-symbol value, not asserted overall max win. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/06/Big-Bass-Blast_339x180_EN.png",
+        "localPath": "public/assets/games/big-bass-blast-pragmatic-play.png",
+        "sha256": "7408A2108621198664EDDD453024151900C64833FFB80B85894F019605E0474B",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Big Bass Blast title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10bbasblitz returned HTTP 200 and HTML title Big Bass Blast; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 38 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1047 published Games, build, 1451 internal HTML links and outbound nofollow checks passed."
+  }
+}

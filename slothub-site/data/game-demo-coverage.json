@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1046,
+  "gameCount": 1047,
   "providerCount": 371,
-  "sourcePageCount": 1526,
+  "sourcePageCount": 1529,
   "counts": {
     "access-restricted": 4,
-    "available": 754,
+    "available": 755,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-blast-pragmatic-play",
+      "name": "Big Bass Blast",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/big-bass-blast/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Big Bass Blast, Fisherman Wild fish-money collection, 3-5 Scatter and retriggered Free Spins. Exact iframe gameSymbol vs10bbasblitz returned HTTP 200 and HTML title Big Bass Blast; playable reels not visually tested. Distinct from other Big Bass series by exact title, page and Demo symbol.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-blast/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/06/Big-Bass-Blast_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Big Bass Blast title artwork, 339x180 PNG, SHA256 7408A2108621198664EDDD453024151900C64833FFB80B85894F019605E0474B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbasblitz&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "out-of-the-woods-pragmatic-play",
       "name": "Out of the Woods",

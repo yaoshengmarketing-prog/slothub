@@ -1,10 +1,10 @@
 {
   "batch": 519,
   "recordedAt": "2026-11-01T11:04:34.144Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1045 published Game Markdown records and same-provider exact official path/name/gameSymbol; Out of the Woods /vs25bstackwild absent.",
@@ -14,7 +14,7 @@
       "name": "Out of the Woods",
       "slug": "out-of-the-woods-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/out-of-the-woods/",
       "officialFacts": "Official page: Wild multiplier stacks cover reels with 1x-4x initial values; winning combinations with stacks trigger respins, move stack downward and increase exposed multipliers. Gold-rimmed Wild can move stack up to ten positions. 3-5 Scatter grant 10-20 Free Spins, with persistent rising Wild multipliers and potential 20 more spins. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs25bstackwild returned HTTP 200 and HTML title Out of the Woods; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 37 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 37 Big Bass Blast validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1046 published Games, build, 1450 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "f569475ea10f4b00dfc3e00bff158bc19a4044c3",
+    "githubActionsRun": 41300469371,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "c9dca8f5-90d7-4e8b-aa7c-0984b641e6f5",
+    "cloudflareUrl": "https://c9dca8f5.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
