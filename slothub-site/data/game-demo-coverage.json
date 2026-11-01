@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1108,
+  "gameCount": 1109,
   "providerCount": 371,
-  "sourcePageCount": 1712,
+  "sourcePageCount": 1715,
   "counts": {
     "access-restricted": 4,
-    "available": 816,
+    "available": 817,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wisdom-of-athena-1000-xmas-pragmatic-play",
+      "name": "Wisdom of Athena 1000 Xmas",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/wisdom-of-athena-1000-xmas/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Wisdom of Athena 1000 Xmas, four or more scatters triggering ten Free Spins with accumulating multipliers. Exact iframe gameSymbol vs20procountxm opened matching Wisdom of Athena 1000 Xmas Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wisdom-of-athena-1000-xmas/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/11/Wisdom-of-Athena-1000-Xmas_667x414_EN-1-339x180-1-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Wisdom of Athena 1000 Xmas title artwork, 339x180 PNG, SHA256 70C6AFBF3D86879347A6525EED055416D1A53E46BEB470E3A39B8D571B0BB96A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20procountxm&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "sweet-craze-pragmatic-play",
       "name": "Sweet Craze",

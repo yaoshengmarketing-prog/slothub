@@ -1,0 +1,37 @@
+{
+  "batch": 582,
+  "recordedAt": "2026-11-01T19:14:03.447Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1108 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wisdom of Athena 1000 Xmas /vs20procountxm absent.",
+  "records": [
+    {
+      "index": 99,
+      "name": "Wisdom of Athena 1000 Xmas",
+      "slug": "wisdom-of-athena-1000-xmas-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/wisdom-of-athena-1000-xmas/",
+      "officialFacts": "Official page: On a 6x6 grid, consecutive tumbles unlock top-row positions. Multipliers up to 1000x can land on any spin; four or more scatters trigger ten Free Spins where multipliers accumulate and apply to every win.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/11/Wisdom-of-Athena-1000-Xmas_667x414_EN-1-339x180-1-1.png",
+        "localPath": "public/assets/games/wisdom-of-athena-1000-xmas-pragmatic-play.png",
+        "sha256": "70C6AFBF3D86879347A6525EED055416D1A53E46BEB470E3A39B8D571B0BB96A",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Wisdom of Athena 1000 Xmas title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20procountxm opened matching Wisdom of Athena 1000 Xmas Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 100 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verification passed: 1109 Games, 1513 HTML files; internal links and outbound nofollow PASS."
+  }
+}
