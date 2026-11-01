@@ -1,0 +1,37 @@
+{
+  "batch": 610,
+  "recordedAt": "2026-11-01T22:39:53.77Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1136 published Game Markdown records and same-provider exact official path/name/gameSymbol; Olympus Wins /vswaysolwfp absent.",
+  "records": [
+    {
+      "index": 127,
+      "name": "Olympus Wins",
+      "slug": "olympus-wins-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/olympus-wins/",
+      "officialFacts": "Official title and Demo identify Olympus Wins; paragraph and artwork call it Olympus Wins Super Scatter. Gold symbols can turn Wild after winning tumbles, multiplier reaches 5x in base play and 10x during Free Spins; Super Scatters can award up to 100,000x.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/08/Olympus-Wins-Super-Scatter_339x180_B.png",
+        "localPath": "public/assets/games/olympus-wins-pragmatic-play.png",
+        "sha256": "1AA26ECE43847C2F881CAD83256BB670F7769A654CC15ED56FF829BB2C09E97A",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Olympus Wins title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysolwfp opened matching Olympus Wins Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 128 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verify exit 0: Similar play 1137 Games; internal link 1541 HTML files PASS; outbound nofollow PASS."
+  }
+}

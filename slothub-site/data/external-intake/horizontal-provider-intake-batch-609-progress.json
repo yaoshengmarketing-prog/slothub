@@ -1,10 +1,10 @@
 {
   "batch": 609,
   "recordedAt": "2026-11-01T22:32:16.652Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1135 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lobster House /vs20lbstrhouse absent.",
@@ -14,7 +14,7 @@
       "name": "Lobster House",
       "slug": "lobster-house-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/lobster-house/",
       "officialFacts": "Official page: Wild symbols can carry 2x or 3x multipliers, which add together when more than one contributes to a win. Bonus symbols on reels one, three and five trigger nine to twenty seven Free Spins determined by nine clams, with sticky Wild multipliers during the feature.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20lbstrhouse opened matching Lobster House Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 127 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 127 Olympus Wins validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1136 Games; internal link 1540 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "c0f716af826c54e1bc034db85b3496fa15b6659d",
+    "githubActionsRun": 41357965563,
+    "cloudflareDeployment": "8b343314-3940-43af-b94e-cf23731eeb21",
+    "cloudflareUrl": "https://8b343314.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
