@@ -1,10 +1,10 @@
 {
   "batch": 502,
   "recordedAt": "2026-11-01T09:20:16.774Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1028 published Game Markdown records and same-provider exact official path/name/gameSymbol; Eternal Diamonds /vs50tphns absent.",
@@ -14,7 +14,7 @@
       "name": "Eternal Diamonds",
       "slug": "eternal-diamonds-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/eternal-diamonds/",
       "officialFacts": "Official exact page: blue/red/green chips can randomly trigger three initial respins with up to three modifiers; blue position multipliers up to 100x, red expanding respins, green adds respins; sticky money symbols up to 125x reset count; full 15 positions grant extra 10000x. That extra is not total max win. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs50tphns returned HTTP 200; public link exact official page, embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 20 Lucky Drums 88 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 20 Lucky Drums 88 validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1029 published Games, build, 1433 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "335709ebd6357b8d995119dc765db3d49a0ba768",
+    "githubActionsRun": 41292946601,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "2011eb4c-d7a6-4227-a4a0-e0d317bc1f90",
+    "cloudflareUrl": "https://2011eb4c.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

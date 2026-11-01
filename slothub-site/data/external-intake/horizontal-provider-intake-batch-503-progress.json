@@ -1,0 +1,37 @@
+{
+  "batch": 503,
+  "recordedAt": "2026-11-01T09:26:26.338Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1029 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Drums 88 /vs20luckycoi88 absent.",
+  "records": [
+    {
+      "index": 20,
+      "name": "Lucky Drums 88",
+      "slug": "lucky-drums-88-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/lucky-drums-88/",
+      "officialFacts": "Official exact page: 5x5, 7-12+ pay-anywhere; gold/silver coins collected in drums can give Hold & Spin, up to 1000x instant prize or up to 10x spin multiplier; one or both 5x3 respin grids start with three respins; coin/drum resets count; filling one grid adds 1000x. Those specific prizes are not total max win. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/08/Lucky-Drums-88_339x180_EN.png",
+        "localPath": "public/assets/games/lucky-drums-88-pragmatic-play.png",
+        "sha256": "4FFCA9656296297D7D13D4DAA2F9FD714AB9E1C60996388EA25EA57C7C22578D",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Lucky Drums 88 title artwork, matches catalog and page OG image."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20luckycoi88 returned HTTP 200; public link exact official page, embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 21 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1030 published Games, build, 1434 internal HTML links and outbound nofollow checks passed."
+  }
+}

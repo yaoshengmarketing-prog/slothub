@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1029,
+  "gameCount": 1030,
   "providerCount": 371,
-  "sourcePageCount": 1475,
+  "sourcePageCount": 1478,
   "counts": {
     "access-restricted": 4,
-    "available": 737,
+    "available": 738,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "lucky-drums-88-pragmatic-play",
+      "name": "Lucky Drums 88",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/lucky-drums-88/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official exact page and SLOTS catalog identify title, dual-grid Hold & Spin mechanics, and embedded gameSymbol vs20luckycoi88. Exact iframe HTTP 200; playable reels not visually tested. Instant/full-grid 1000x prizes are not asserted total max win.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/lucky-drums-88/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/08/Lucky-Drums-88_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed exact title artwork, 339x180 PNG, SHA256 4FFCA9656296297D7D13D4DAA2F9FD714AB9E1C60996388EA25EA57C7C22578D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20luckycoi88&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact official embedded gameSymbol URL, HTTP reachable only"
+        }
+      ]
+    },
     {
       "slug": "eternal-diamonds-pragmatic-play",
       "name": "Eternal Diamonds",
