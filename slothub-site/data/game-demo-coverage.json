@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1055,
+  "gameCount": 1056,
   "providerCount": 371,
-  "sourcePageCount": 1553,
+  "sourcePageCount": 1556,
   "counts": {
     "access-restricted": 4,
-    "available": 763,
+    "available": 764,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sanatorium-secrets-pragmatic-play",
+      "name": "Sanatorium Secrets",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/sanatorium-secrets/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Sanatorium Secrets, expanding Wilds, Hook symbols and puzzle respins. Exact iframe gameSymbol vswayssanator returned HTTP 200 and HTML title Sanatorium Secrets; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sanatorium-secrets/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/05/Sanatorium-Secrets_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Sanatorium Secrets title artwork, 339x180 PNG, SHA256 F9A44F7ABF0D86753EF4225E4A5482075D2CD5696981D07C00B7493968E52BCA"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayssanator&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "caishens-cash-pots-pragmatic-play",
       "name": "Caishen’s Cash Pots",

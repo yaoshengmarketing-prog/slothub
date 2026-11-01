@@ -1,0 +1,37 @@
+{
+  "batch": 529,
+  "recordedAt": "2026-11-01T12:04:07.282Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1055 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sanatorium Secrets /vswayssanator absent.",
+  "records": [
+    {
+      "index": 46,
+      "name": "Sanatorium Secrets",
+      "slug": "sanatorium-secrets-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/sanatorium-secrets/",
+      "officialFacts": "Official page: 1x4 expanding Wilds on reels two through five may carry up to 8x; 2x4 Wilds on reels three and four up to 64x. Hooks on reels one and six transform same-row high-pay symbols to Wilds. Three Scatters on reels two through five award six Free Spins, each additional Scatter adds two. Puzzle respins determine minimum later Wild multiplier; Super Free Spins guarantee two Hooks. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/05/Sanatorium-Secrets_339x180_EN.png",
+        "localPath": "public/assets/games/sanatorium-secrets-pragmatic-play.png",
+        "sha256": "F9A44F7ABF0D86753EF4225E4A5482075D2CD5696981D07C00B7493968E52BCA",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Sanatorium Secrets title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswayssanator returned HTTP 200 and HTML title Sanatorium Secrets; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 47 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1056 published Games; 1460 internal HTML links and outbound nofollow checks pass."
+  }
+}
