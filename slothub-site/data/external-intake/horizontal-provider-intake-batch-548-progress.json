@@ -1,0 +1,37 @@
+{
+  "batch": 548,
+  "recordedAt": "2026-11-01T14:29:48.991Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1074 published Game Markdown records and same-provider exact official path/name/gameSymbol; Steamin’ Reels /vs10stmreels absent.",
+  "records": [
+    {
+      "index": 65,
+      "name": "Steamin’ Reels",
+      "slug": "steamin-reels-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/steamin-reels/",
+      "officialFacts": "Official page: 5x3 grid; three to five Scatters trigger up to 20 Free Spins, with possible signalman Scatter transformations. Train carriages carry up to 500x prizes; crossing or station master collects them, with station master boosts up to 5x. Three golden tickets add ten spins and retrigger multipliers rise to 10x. No unsupported volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/03/Steamin-Reels_339x180_EN.png",
+        "localPath": "public/assets/games/steamin-reels-pragmatic-play.png",
+        "sha256": "C7E4C357F8A9B6659FE00867B2F03B341FC1BEE96B6480806AE51E0B8E88CD07",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Steamin’ Reels title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10stmreels returned HTTP 200 and HTML title Steamin’ Reels; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 66 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass after fast-forward sync to c8bd163: 1075 published Games; 1479 internal HTML links and outbound nofollow checks pass."
+  }
+}
