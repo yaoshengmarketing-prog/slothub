@@ -1,10 +1,10 @@
 {
   "batch": 485,
   "recordedAt": "2026-11-01T15:22:33+08:00",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue Taiwan-market-relevant Pragmatic Play exact Slot intake",
   "dedupScope": "All Game Markdown names, filenames and same-provider gameSymbol; original Wolf Gold vs25wolfgold absent. Wolf Gold PowerJackpot, Ultimate and 4 Pack are distinct variants.",
   "records": [
@@ -12,7 +12,7 @@
       "name": "Wolf Gold",
       "slug": "wolf-gold-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/wolf-gold-slot/",
       "officialAward": "https://www.pragmaticplay.com/en/news/pragmatic-play-victorious-at-malta-gaming-awards/",
       "officialFacts": "Exact original official page confirms 3 Scatter for 5 Free Spins, combined reels 2-4, 6+ Money Symbols for three Money Respins and 1000x Mega Jackpot on all 15 positions. The jackpot value is not whole-game max win. No unverified RTP, volatility or line count asserted.",
@@ -27,10 +27,33 @@
       "demo": "Official page iframe exact gameSymbol vs25wolfgold; direct URL returned HTTP 200. Public link is original official game page; iframe embedding not tested."
     }
   ],
-  "nextCursor": "After five-game Pragmatic Play batch closure, continue exact official Slot pages such as Starlight Princess 1000 or The Dog House variants only after same-provider dedup and source checks.",
+  "nextCursor": "Next exact Pragmatic Play candidate: https://www.pragmaticplay.com/en/games/starlight-princess-1000/ ; verify original/1000 series separation, same-provider gameSymbol, official artwork and demo before a new one-game closure. JDB 46-card and JILI 277-order saved catalogs were already exhausted; do not resume their stale cursors without a fresh official catalog diff.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1012 published Games, build, 1416 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "d5b076d6c9b0f97f67f05a575be7c3d1e68c6321",
+    "githubRun": 41284749636,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "b77a5bcf-adaf-4d5e-9cbe-81a3d41d6953",
+    "cloudflareUrl": "https://b77a5bcf.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, exact Game/Provider content, no canonical, stylesheet, empty sitemap and live PNG SHA256 match",
+    "checkedAt": "2026-11-01"
+  },
+  "batchClosure": {
+    "provider": "Pragmatic Play",
+    "newGamesPublished": 5,
+    "slugs": [
+      "starlight-princess-pragmatic-play",
+      "sugar-rush-pragmatic-play",
+      "the-dog-house-pragmatic-play",
+      "fruit-party-pragmatic-play",
+      "wolf-gold-pragmatic-play"
+    ],
+    "dailyPublishedCount": 105,
+    "verification": "Each of the five game commits passed full local validation, same-SHA GitHub Actions, Cloudflare Pages production deployment and seven-route immutable readback including local/live image SHA match."
   }
 }
