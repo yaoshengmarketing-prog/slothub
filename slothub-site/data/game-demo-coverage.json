@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1089,
+  "gameCount": 1090,
   "providerCount": 371,
-  "sourcePageCount": 1655,
+  "sourcePageCount": 1658,
   "counts": {
     "access-restricted": 4,
-    "available": 797,
+    "available": 798,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "zeus-vs-hades-gods-of-war-250-pragmatic-play",
+      "name": "Zeus vs Hades – Gods of War 250",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/zeus-vs-hades-gods-of-war-250/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Zeus vs Hades – Gods of War 250, the 5x5 grid and expanding Wild multipliers, with ten Free Spins. Exact iframe gameSymbol vs15zeushadseq opened matching Zeus vs Hades – Gods of War 250 Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/zeus-vs-hades-gods-of-war-250/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/01/Zeus-vs-Hades-Gods-of-War-250_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Zeus vs Hades – Gods of War 250 title artwork, 339x180 PNG, SHA256 6CB2560200BA2613309BCD88067E290BB4A7760CD776B930F14F7786289C095D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs15zeushadseq&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "3-magic-eggs-pragmatic-play",
       "name": "3 Magic Eggs",
