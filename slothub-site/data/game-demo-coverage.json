@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1070,
+  "gameCount": 1071,
   "providerCount": 371,
-  "sourcePageCount": 1598,
+  "sourcePageCount": 1601,
   "counts": {
     "access-restricted": 4,
-    "available": 778,
+    "available": 779,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "snow-party-pragmatic-play",
+      "name": "Snow Party",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/snow-party/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Snow Party, 7x7 clusters and Wild-triggered Respins. Exact iframe gameSymbol vs20clustersw returned HTTP 200 and HTML title Snow Party; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/snow-party/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/03/Snow-Party_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Snow Party title artwork, 339x180 PNG, SHA256 28E079F271D7AA276E5B4446F5B32F02062BAB2DF0E4797CB5ACD152914D2633"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20clustersw&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "idol-pop-fever-pragmatic-play",
       "name": "Idol Pop Fever",
