@@ -1,10 +1,10 @@
 {
   "batch": 437,
   "recordedAt": "2026-11-01T07:56:44+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Captain’s Bounty/54 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Captain’s Bounty",
       "slug": "captain-s-bounty-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/43/",
       "officialFacts": "Official gid 43, pgid 54, Video Slots, RTP 96.15%, Medium volatility, maximum x30000. Exact layout 5 reels × 3 rows; no explicit payline/Ways count asserted. Official long description explicitly confirms cascading symbols, increasing multipliers and 10 free spins; recorded cascading-reels subtype.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/captains-bounty/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 42 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 42; then descend eligible missing PG SOFT Video Slots.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "cloudflareUrl": "https://a21b15cb.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "githubConclusion": "success",
+    "githubRun": 41254810560,
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Captains Bounty, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-11-01",
+    "commit": "d92ca9ddbd502d17a46222fb6983eb261d94c079",
+    "cloudflareDeploymentId": "a21b15cb-9d4a-4541-b331-1cfe928746a3"
+  }
 }
