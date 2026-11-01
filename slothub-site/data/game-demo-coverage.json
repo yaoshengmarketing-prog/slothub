@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1028,
+  "gameCount": 1029,
   "providerCount": 371,
-  "sourcePageCount": 1472,
+  "sourcePageCount": 1475,
   "counts": {
     "access-restricted": 4,
-    "available": 736,
+    "available": 737,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "eternal-diamonds-pragmatic-play",
+      "name": "Eternal Diamonds",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/eternal-diamonds/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official exact page and SLOTS catalog identify title, three-chip respin mechanics, and embedded gameSymbol vs50tphns. Exact iframe HTTP 200; playable reels not visually tested. 10000x full-grid prize is not asserted overall max win.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/eternal-diamonds/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/08/Eternal-Diamonds_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed exact title artwork, 339x180 PNG, SHA256 CFF2D8EBC2E1BB549B0BE5E89D70E4BAF2E863C3B8A56869E6B802733BB359C7"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50tphns&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact official embedded gameSymbol URL, HTTP reachable only"
+        }
+      ]
+    },
     {
       "slug": "helios-triple-sun-pragmatic-play",
       "name": "Helios – Triple Sun",
