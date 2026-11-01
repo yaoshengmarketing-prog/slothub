@@ -1,0 +1,37 @@
+{
+  "batch": 553,
+  "recordedAt": "2026-11-01T15:32:13.048Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1079 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild Skullz /vswayscyclop absent.",
+  "records": [
+    {
+      "index": 70,
+      "name": "Wild Skullz",
+      "slug": "wild-skullz-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/wild-skullz/",
+      "officialFacts": "Official page: expanded Wilds fill reels and can carry up to 512x. At least three Scatters trigger bonus game. Expanded Wild begins on reel five and moves toward reel one each spin; a Scatter returns it to reel five. Winning expanded Wild multiplier doubles from 2x up to 512x. No unsupported volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/02/Wild-Skullz_339x180_EN.png",
+        "localPath": "public/assets/games/wild-skullz-pragmatic-play.png",
+        "sha256": "1F44B4937DA594CB6B1381C0F55CDB04DA7EFE29A0C7CB4BA9E7CFB3B97DC55A",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Wild Skullz title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswayscyclop opened in Codex in-app browser, redirected to matching Wild Skullz title and showed loading screen; public link exact official page; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 71 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1080 published Games; 1484 internal HTML links and outbound nofollow checks pass."
+  }
+}

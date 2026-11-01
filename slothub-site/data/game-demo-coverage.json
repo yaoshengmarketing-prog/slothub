@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1079,
+  "gameCount": 1080,
   "providerCount": 371,
-  "sourcePageCount": 1625,
+  "sourcePageCount": 1628,
   "counts": {
     "access-restricted": 4,
-    "available": 787,
+    "available": 788,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wild-skullz-pragmatic-play",
+      "name": "Wild Skullz",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/wild-skullz/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Wild Skullz and expanding Wilds with multipliers up to 512x. Exact iframe gameSymbol vswayscyclop opened in Codex in-app browser, redirected to matching game title and showed loading screen; reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-skullz/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/02/Wild-Skullz_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Wild Skullz title artwork, 339x180 PNG, SHA256 1F44B4937DA594CB6B1381C0F55CDB04DA7EFE29A0C7CB4BA9E7CFB3B97DC55A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayscyclop&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened in Codex in-app browser, redirected to matching title and showed loading screen"
+        }
+      ]
+    },
     {
       "slug": "tuts-treasure-tower-pragmatic-play",
       "name": "Tut’s Treasure Tower",

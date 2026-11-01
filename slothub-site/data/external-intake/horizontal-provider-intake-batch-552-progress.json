@@ -1,10 +1,10 @@
 {
   "batch": 552,
   "recordedAt": "2026-11-01T15:13:25.252Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1078 published Game Markdown records and same-provider exact official path/name/gameSymbol; Tut’s Treasure Tower /vs5luckytwr absent.",
@@ -14,7 +14,7 @@
       "name": "Tut’s Treasure Tower",
       "slug": "tuts-treasure-tower-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/tuts-treasure-tower/",
       "officialFacts": "Official page: 3x3 grid. Four or more golden coins trigger Lucky Respin Tower; one to three may randomly trigger. Three starting respins reset as coins land and lock; collecting coins unlocks up to seven rows. Filling all 21 positions awards the 5000x Grand Jackpot. No unsupported volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs5luckytwr opened in Codex in-app browser, redirected to matching Tut's Treasure Tower title and showed loading screen; public link exact official page; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 70 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 70 Wild Skullz validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass on retry after interrupted process: 1079 published Games; 1483 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "56410059241221b38464f72e79f079ca151237b6",
+    "githubActionsRun": 41321482667,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "42a1bda9-c491-4151-ba65-7f3005804344",
+    "cloudflareUrl": "https://42a1bda9.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
