@@ -1,0 +1,32 @@
+{
+  "batch": 450,
+  "recordedAt": "2026-11-01T08:38:04+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Symbols of Egypt/41 absent before intake.",
+  "records": [
+    {
+      "name": "Symbols of Egypt",
+      "slug": "symbols-of-egypt-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/30/",
+      "officialFacts": "Official gid 30, pgid 41, Video Slots, RTP 95.71%, Medium volatility, maximum x1800. Exact layout 3 reels × 3 rows; no explicit payline/Ways count asserted. Official long description confirms four Bonus Lines and Bonus Multiplier up to x30; this is not a claim of four paylines.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/9bb285e8-c438-4672-8da0-4fa3e8294607.png",
+        "localPath": "public/assets/games/symbols-of-egypt-pg-soft.png",
+        "sha256": "8fa23a78b9549d9e3250673853d5294e9be9758fd9716f03a7b9501ae164107b",
+        "byteSize": 15653,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: blue and gold Egyptian scarab beneath green jewel with PG logo; matches Symbols of Egypt identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/symbols-of-egypt/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 29 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}

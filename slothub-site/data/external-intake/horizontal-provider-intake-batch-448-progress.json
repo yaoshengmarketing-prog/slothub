@@ -1,0 +1,13 @@
+{
+  "batch": 448,
+  "recordedAt": "2026-11-01T08:37:44+08:00",
+  "state": "excluded-invalid-official-route",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Numeric route gid32",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/32/language/1/live/true",
+  "evidence": "Exact official API gid32 HTTP 200 returns err cd 2120 Invalid Game Id (tid JAKQP3R7); no enabled Video Slot identity. No Game, coverage or image write.",
+  "decision": "Excluded invalid route; no new-game count.",
+  "nextCursor": "Continue numeric gid31; recheck gid32 only if official identity becomes valid."
+}

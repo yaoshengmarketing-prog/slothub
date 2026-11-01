@@ -1,0 +1,13 @@
+{
+  "batch": 449,
+  "recordedAt": "2026-11-01T08:38:03+08:00",
+  "state": "excluded-disabled-official-route",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Mythical Treasure Jackpot",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/31/language/1/live/true",
+  "evidence": "Exact official API gid31 HTTP 200 reports name Mythical Treasure Jackpot, en=false; not an enabled Video Slot. No Game, coverage or image write.",
+  "decision": "Excluded disabled route; no new-game count.",
+  "nextCursor": "Continue numeric gid30; recheck gid31 only if official enabled status changes."
+}
