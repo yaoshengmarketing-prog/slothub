@@ -1,0 +1,32 @@
+{
+  "batch": 442,
+  "recordedAt": "2026-11-01T08:19:09+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Emperor's Favour/44 absent before intake.",
+  "records": [
+    {
+      "name": "Emperor's Favour",
+      "slug": "emperor-s-favour-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/38/",
+      "officialFacts": "Official gid 38, pgid 44, Video Slots, RTP 96.03%, Medium volatility, maximum x10000. Exact layout 5 reels × 3 rows; no explicit payline/Ways count asserted. Official long description explicitly confirms 2x2 symbols and guaranteed 3x3 symbols in free spins; summary records those details.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/e4af9ee7-9c0d-460e-8790-07f556a90058.png",
+        "localPath": "public/assets/games/emperor-s-favour-pg-soft.png",
+        "sha256": "f8de6d272c39baf65dc721b424f4457407530866f1a4ec739b8cc0675535171e",
+        "byteSize": 14375,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: emperor in red Qing hat and gold robes before palace with PG logo; matches Emperors Favour identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/emperors-favour/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 37 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
