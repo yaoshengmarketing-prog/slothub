@@ -1,0 +1,37 @@
+{
+  "batch": 609,
+  "recordedAt": "2026-11-01T22:32:16.652Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1135 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lobster House /vs20lbstrhouse absent.",
+  "records": [
+    {
+      "index": 126,
+      "name": "Lobster House",
+      "slug": "lobster-house-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/lobster-house/",
+      "officialFacts": "Official page: Wild symbols can carry 2x or 3x multipliers, which add together when more than one contributes to a win. Bonus symbols on reels one, three and five trigger nine to twenty seven Free Spins determined by nine clams, with sticky Wild multipliers during the feature.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/08/Lobster-House_339x180_EN.png",
+        "localPath": "public/assets/games/lobster-house-pragmatic-play.png",
+        "sha256": "563E54639EFB5F28D553E7D2643C2EA64EE3DF45B320181F66B965C298EF551A",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Lobster House title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20lbstrhouse opened matching Lobster House Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 127 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verify exit 0: Similar play 1136 Games; internal link 1540 HTML files PASS; outbound nofollow PASS."
+  }
+}
