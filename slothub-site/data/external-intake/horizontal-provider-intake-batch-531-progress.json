@@ -1,10 +1,10 @@
 {
   "batch": 531,
   "recordedAt": "2026-11-01T12:16:16.324Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1057 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Football Bonanza /vs10bbwcup absent.",
@@ -14,7 +14,7 @@
       "name": "Big Bass Football Bonanza",
       "slug": "big-bass-football-bonanza-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-football-bonanza/",
       "officialFacts": "Official page: three to five Scatters trigger 15 to 25 Free Spins; two base Scatters may gain a third. During the feature, red and blue fisherman Wilds collect Money symbols up to 5000x. Every fourth Wild in its meter adds ten spins and upgrades win multiplier through 2x, 3x, then 10x. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10bbwcup returned HTTP 200 and HTML title Big Bass Football Bonanza; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 49 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 49 The Big Dog House validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1058 published Games; 1462 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "db6bdcfc044dc1fd5a508ee0a659525bfe21a0b3",
+    "githubActionsRun": 41305935371,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "bf416a94-f469-4ea8-9883-d69e8ed750f7",
+    "cloudflareUrl": "https://bf416a94.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
