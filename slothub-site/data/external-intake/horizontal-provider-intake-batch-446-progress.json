@@ -1,0 +1,13 @@
+{
+  "batch": 446,
+  "recordedAt": "2026-11-01T08:31:46+08:00",
+  "state": "excluded-disabled-duplicate-official-route",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Double Fortune",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/34/language/1/live/true",
+  "evidence": "Exact official API gid34 HTTP 200 reports en=false, name Double Fortune and RTP 96.22%, matching enabled gid39 and published batch441 name/RTP. No Game, coverage or image write.",
+  "decision": "Excluded disabled duplicate route; no new-game count.",
+  "nextCursor": "Continue numeric gid33; recheck gid34 only if official identity or enabled status changes."
+}
