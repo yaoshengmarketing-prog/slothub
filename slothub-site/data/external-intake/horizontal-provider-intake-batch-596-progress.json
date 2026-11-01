@@ -1,10 +1,10 @@
 {
   "batch": 596,
   "recordedAt": "2026-11-01T20:57:00.737Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1122 published Game Markdown records and same-provider exact official path/name/gameSymbol; Bingo Mania /vs30bingomania absent.",
@@ -14,7 +14,7 @@
       "name": "Bingo Mania",
       "slug": "bingo-mania-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/bingo-mania/",
       "officialFacts": "Official page: Six Bingo symbols trigger three respins on an expanded 5x5 grid. Sticky coin symbols combine when a line forms; ten completed lines can award 5,000x. Three base-game scatters award six Free Spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs30bingomania opened matching Bingo Mania Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 114 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 114 Lava Balls validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1123 Games; internal link 1527 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "a14ac076dd0752a3796a177bc55ba030103e338f",
+    "githubActionsRun": 41349791157,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "142d5002-b91f-458b-9b4f-0c3b48d507c8",
+    "cloudflareUrl": "https://142d5002.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
