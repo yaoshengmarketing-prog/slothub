@@ -1,10 +1,10 @@
 {
   "batch": 578,
   "recordedAt": "2026-11-01T18:44:54.753Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1104 published Game Markdown records and same-provider exact official path/name/gameSymbol; Fortune of Olympus /vs20olympgcl absent.",
@@ -14,7 +14,7 @@
       "name": "Fortune of Olympus",
       "slug": "fortune-of-olympus-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/fortune-of-olympus/",
       "officialFacts": "Official page: random multipliers up to 500x can land in base and bonus games, adding during tumbles. Four to seven scatters trigger up to 30 Free Spins, where multiplier values accumulate and apply to subsequent wins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20olympgcl opened matching Fortune of Olympus Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 96 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 96 Big Bass Splash 1000 validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verification passed: 1105 Games, 1509 HTML files; internal links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "8aba5871fc7dca8d37c22feeea15d65b728dbe7e",
+    "githubActionsRun": 41338571434,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "e9322bb2-751b-409e-b8fe-827164264765",
+    "cloudflareUrl": "https://e9322bb2.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
