@@ -1,0 +1,32 @@
+{
+  "batch": 461,
+  "recordedAt": "2026-11-01T09:29:51+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown provider/name/original name/filename/game IDs. Cross-provider originalName Dragon Legend exists in dragon-legend-rsg.md, provider rsg ID119; this official PG SOFT game has provider pg-soft ID29, different source, theme, image and gameplay, so is a distinct work. No existing PG SOFT same-name or same-ID Game.",
+  "records": [
+    {
+      "name": "Dragon Legend",
+      "slug": "dragon-legend-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/19/",
+      "officialFacts": "Official gid 19, pgid 29, Video Slots, RTP 97.15%, Medium volatility, maximum x3000. Exact layout not asserted; no explicit payline/Ways count asserted. Distinct from published RSG originalName Dragon Legend: RSG ID119 has 20-line cascades and x300, while PG SOFT ID29 has Koi/free spins and x3000; provider/source/image differ.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/f912c332-0ad4-438c-be7a-7e99a6fc9403.png",
+        "localPath": "public/assets/games/dragon-legend-pg-soft.png",
+        "sha256": "8445e09b1c6401b6977eee34eb11a93a8b36b2f74793aea0c6332dff5f9f676a",
+        "byteSize": 18806,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: colorful dragon head in red and gold with PG logo; differs from RSG game image and matches PG Dragon Legend identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/dragon-legend/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 18 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
