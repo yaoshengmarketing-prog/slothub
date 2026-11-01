@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1126,
+  "gameCount": 1127,
   "providerCount": 371,
-  "sourcePageCount": 1766,
+  "sourcePageCount": 1769,
   "counts": {
     "access-restricted": 4,
-    "available": 834,
+    "available": 835,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "chests-of-cai-shen-2-pragmatic-play",
+      "name": "Chests of Cai Shen 2",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/chests-of-cai-shen-2/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Chests of Cai Shen 2, Bonus Coin modifiers and sticky money symbol respins. Exact iframe gameSymbol vs25caishen2 opened matching Chests of Cai Shen 2 Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/chests-of-cai-shen-2/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/09/Chests-of-Cai-Shen-2_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Chests of Cai Shen 2 title artwork, 339x180 PNG, SHA256 865FC2B93DBF466DAF3A226F25CF3FB448766B9C55A777B2CC472DAC55E6BA9F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25caishen2&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "code-of-cairo-pragmatic-play",
       "name": "Code of Cairo",

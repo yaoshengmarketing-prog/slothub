@@ -1,10 +1,10 @@
 {
   "batch": 599,
   "recordedAt": "2026-11-01T21:18:09.218Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1125 published Game Markdown records and same-provider exact official path/name/gameSymbol; Code of Cairo /vs5spjokfp absent.",
@@ -14,7 +14,7 @@
       "name": "Code of Cairo",
       "slug": "code-of-cairo-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/code-of-cairo/",
       "officialFacts": "Official page: Two full reels of matching symbols or Wilds trigger a third-reel respin until a win. A full matching 3x3 grid triggers a multiplier wheel: the first wheel awards 2x to 5x or access to a second wheel awarding 7x to 20x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs5spjokfp opened matching Code of Cairo Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 117 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 117 Chests of Cai Shen 2 validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1126 Games; internal link 1530 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "3007fb8707c43a21f77a5f2b2ebefa7aa3be418b",
+    "githubActionsRun": 41351679206,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "a04de705-39b2-415e-892e-70a07c337150",
+    "cloudflareUrl": "https://a04de705.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
