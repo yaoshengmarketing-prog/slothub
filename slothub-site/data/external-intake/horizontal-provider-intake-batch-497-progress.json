@@ -1,0 +1,37 @@
+{
+  "batch": 497,
+  "recordedAt": "2026-11-01T08:50:43.83Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1023 published Game Markdown records and same-provider exact official path/name/gameSymbol; Freya 1000 /vs10freya absent.",
+  "records": [
+    {
+      "index": 14,
+      "name": "Freya 1000",
+      "slug": "freya-1000-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/freya-1000/",
+      "officialFacts": "Official exact page: 5x3 slot, shield money symbols up to 40x, wheel offers money up to 20x, multiplier up to 1000x or six standard / 6-12 Super free spins, money symbols may add three free spins in both variants. 1000x wheel is not overall max win. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/09/Freya-1000_339x180_EN.png",
+        "localPath": "public/assets/games/freya-1000-pragmatic-play.png",
+        "sha256": "EF728C1D5EFC009AFBE6715E519365810293210B8DE53F6CE3AA4E3B4C19176E",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Freya 1000 title artwork, matches catalog and page OG image."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10freya returned HTTP 200; public link exact official page, embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 15 Coven Rising after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1024 published Games, build, 1428 internal HTML links and outbound nofollow checks passed."
+  }
+}

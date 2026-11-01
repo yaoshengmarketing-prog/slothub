@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1023,
+  "gameCount": 1024,
   "providerCount": 371,
-  "sourcePageCount": 1457,
+  "sourcePageCount": 1460,
   "counts": {
     "access-restricted": 4,
-    "available": 731,
+    "available": 732,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "freya-1000-pragmatic-play",
+      "name": "Freya 1000",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/freya-1000/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official exact page and SLOTS catalog identify title, mechanics, and embedded gameSymbol vs10freya. Exact iframe HTTP 200; playable reels not visually tested. Wheel 1000x is a possible multiplier, not asserted total max win.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/freya-1000/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/09/Freya-1000_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed exact title artwork, 339x180 PNG, SHA256 EF728C1D5EFC009AFBE6715E519365810293210B8DE53F6CE3AA4E3B4C19176E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10freya&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact official embedded gameSymbol URL, HTTP reachable only"
+        }
+      ]
+    },
     {
       "slug": "big-bass-vegas-1000-pragmatic-play",
       "name": "Big Bass Vegas 1000",
