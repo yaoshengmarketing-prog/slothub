@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1068,
+  "gameCount": 1069,
   "providerCount": 371,
-  "sourcePageCount": 1592,
+  "sourcePageCount": 1595,
   "counts": {
     "access-restricted": 4,
-    "available": 776,
+    "available": 777,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "inca-queen-pragmatic-play",
+      "name": "Inca Queen",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/inca-queen/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Inca Queen, Coin and Frame Respins with expanding Wild. Exact iframe gameSymbol vs20thunder returned HTTP 200 and HTML title Inca Queen; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/inca-queen/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/03/Inca-Queen_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Inca Queen title artwork, 339x180 PNG, SHA256 F4D6E98F187BBC63B08DD1C749A9EBC4AA50137A8C34E32F2F2337462CD7CF9F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20thunder&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "big-bass-trophy-catch-pragmatic-play",
       "name": "Big Bass Trophy Catch",

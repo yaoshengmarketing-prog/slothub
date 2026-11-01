@@ -1,0 +1,37 @@
+{
+  "batch": 542,
+  "recordedAt": "2026-11-01T13:43:47.069Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1068 published Game Markdown records and same-provider exact official path/name/gameSymbol; Inca Queen /vs20thunder absent.",
+  "records": [
+    {
+      "index": 59,
+      "name": "Inca Queen",
+      "slug": "inca-queen-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/inca-queen/",
+      "officialFacts": "Official page: 5x3 grid with Money symbols up to 250x and expanding Inca Queen Wild. Coin or Frame can trigger corresponding or combined Respins, progressing to Money Respins once six symbols appear; base six-plus Money or Frame symbols also trigger. Coins and Frames lock and reset Respins to three; combined feature can apply up to 10x to Coin values. Exact total and full-grid prize omitted. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/03/Inca-Queen_339x180_EN.png",
+        "localPath": "public/assets/games/inca-queen-pragmatic-play.png",
+        "sha256": "F4D6E98F187BBC63B08DD1C749A9EBC4AA50137A8C34E32F2F2337462CD7CF9F",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Inca Queen title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20thunder returned HTTP 200 and HTML title Inca Queen; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 60 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1069 published Games; 1473 internal HTML links and outbound nofollow checks pass."
+  }
+}
