@@ -1,0 +1,37 @@
+{
+  "batch": 615,
+  "recordedAt": "2026-11-01T23:20:03.903Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1141 published Game Markdown records and same-provider exact official path/name/gameSymbol; Dino Drop /vs5tdragresk absent.",
+  "records": [
+    {
+      "index": 132,
+      "name": "Dino Drop",
+      "slug": "dino-drop-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/dino-drop/",
+      "officialFacts": "Official Pragmatic Play POP page: three matching symbols pay up to 60x. One or two full stacks of green dinosaur symbols trigger Respin Until You Win; the stacks become sticky Wilds and other reels respin until a winning combination lands.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/08/Dino-Drop_339x180_B.png",
+        "localPath": "public/assets/games/dino-drop-pragmatic-play.png",
+        "sha256": "7912D44AE08D9CA8601B1F57EC610AD232FEED957AED7A21CDA00E3EF8D50B12",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Dino Drop title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5tdragresk opened matching Dino Drop Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 133 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verify exit 0: Similar play 1142 Games; internal link 1546 HTML files PASS; outbound nofollow PASS."
+  }
+}

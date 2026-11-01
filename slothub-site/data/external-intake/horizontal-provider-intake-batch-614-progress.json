@@ -1,10 +1,10 @@
 {
   "batch": 614,
   "recordedAt": "2026-11-01T23:11:42.643Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1140 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wolf Gold 4 Pack /vs25quadwolf absent.",
@@ -14,7 +14,7 @@
       "name": "Wolf Gold 4 Pack",
       "slug": "wolf-gold-4-pack-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/wolf-gold-4-pack/",
       "officialFacts": "Official page: distinct from original Wolf Gold, Bonus Feature uses four 5x3 grids. Moon symbols stay sticky and reset three respins on their grid, gold moons reset all four, and filling all positions adds 1,000x. Super Bonus starts with all four grids open.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs25quadwolf opened matching Wolf Gold 4 Pack Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 132 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 132 Dino Drop validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1141 Games; internal link 1545 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "6c5356dc1e7154a15a78ed7e9f389be988d2b536",
+    "githubActionsRun": 41361282852,
+    "cloudflareDeployment": "3ee20304-dc8e-41b4-9e22-549289562dbb",
+    "cloudflareUrl": "https://3ee20304.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
