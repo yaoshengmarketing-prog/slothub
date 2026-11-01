@@ -10,13 +10,13 @@
   "nextPageCards": 0,
   "totalCards": 665,
   "exactGameCards": 663,
-  "publishedExisting": 39,
-  "pendingIndividualCheck": 623,
+  "publishedExisting": 40,
+  "pendingIndividualCheck": 622,
   "comingSoon": 2,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 33 after item 32 Sunnydaze Asylum validation and publication closure.",
+  "nextCursor": "Catalog item 34 after item 33 Sleeping Dragon Ultra Dark validation and publication closure.",
   "pages": [
     {
       "page": 1,
@@ -710,7 +710,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/sunnydaze-asylum/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/Sunnydaze-Asylum_339x180_EN.png",
       "releaseLabel": null,
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "sunnydaze-asylum-pragmatic-play"
     },
     {
@@ -720,8 +720,9 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/sleeping-dragon-ultra-dark/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/Sleeping-Dragon-Ultra-Dark_667x414_EN-339x180-1.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "sleeping-dragon-ultra-dark-pragmatic-play",
+      "sourceCaveat": "Official mini-respin copy says 3x3 and also eight filled positions for full reward; published record omits precise mini-grid threshold."
     },
     {
       "index": 34,

@@ -1,10 +1,10 @@
 {
   "batch": 515,
   "recordedAt": "2026-11-01T10:38:36.719Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1041 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sunnydaze Asylum /vswayssndzaslm absent.",
@@ -14,7 +14,7 @@
       "name": "Sunnydaze Asylum",
       "slug": "sunnydaze-asylum-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/sunnydaze-asylum/",
       "officialFacts": "Official page: 5x5, 3-5 matching symbols and Tumble; multiplier Scatter yields silver or gold multipliers at Tumble end. Silver multipliers each up to 100x add, then gold multipliers 2x-10x multiply that sum. 3+ Scatter trigger ten initial Free Spins with up to fifteen more. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswayssndzaslm returned HTTP 200 and HTML title Sunnydaze Asylum; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 33 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 33 Sleeping Dragon Ultra Dark validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1042 published Games, build, 1446 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "f8ae4395e819a275f91e9310d2a448a3152dad52",
+    "githubActionsRun": 41298587134,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "bca58ba7-7a9e-4876-a036-e2409ff7e9bc",
+    "cloudflareUrl": "https://bca58ba7.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

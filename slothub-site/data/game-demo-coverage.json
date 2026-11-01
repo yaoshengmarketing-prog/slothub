@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1042,
+  "gameCount": 1043,
   "providerCount": 371,
-  "sourcePageCount": 1514,
+  "sourcePageCount": 1517,
   "counts": {
     "access-restricted": 4,
-    "available": 750,
+    "available": 751,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sleeping-dragon-ultra-dark-pragmatic-play",
+      "name": "Sleeping Dragon Ultra Dark",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/sleeping-dragon-ultra-dark/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Sleeping Dragon Ultra Dark, coins and respin bonus, dragon Scatter free spins and giant symbols. Official mini-respin wording conflicts between 3x3 grid and filling eight positions; exact mini-grid full threshold omitted. Exact iframe gameSymbol vs10sleepdud returned HTTP 200 and HTML title Sleeping Dragon Ultra Dark; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sleeping-dragon-ultra-dark/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe; mini-respin full-grid wording conflict recorded"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/Sleeping-Dragon-Ultra-Dark_667x414_EN-339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Sleeping Dragon Ultra Dark title artwork, 339x180 PNG, SHA256 9DA06ECAD76F68C681177BA86F8C417FB49BAD4571BBFE11BAE11F4CF570906B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10sleepdud&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "sunnydaze-asylum-pragmatic-play",
       "name": "Sunnydaze Asylum",

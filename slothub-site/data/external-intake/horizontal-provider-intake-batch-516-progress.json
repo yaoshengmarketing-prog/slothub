@@ -1,0 +1,37 @@
+{
+  "batch": 516,
+  "recordedAt": "2026-11-01T10:43:58.298Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1042 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sleeping Dragon Ultra Dark /vs10sleepdud absent.",
+  "records": [
+    {
+      "index": 33,
+      "name": "Sleeping Dragon Ultra Dark",
+      "slug": "sleeping-dragon-ultra-dark-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/sleeping-dragon-ultra-dark/",
+      "officialFacts": "Official page: six-plus coins trigger three initial respins, each new coin resets count, full 15-position main grid awards extra 7000x prize. Money egg can trigger mini respin; its source copy conflicts on full-grid threshold, so no specific mini threshold asserted. 3-5 dragon Scatter grant 8, 12 or 50 Free Spins; giant 3x3 symbols may trigger respins or more spins. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/Sleeping-Dragon-Ultra-Dark_667x414_EN-339x180-1.png",
+        "localPath": "public/assets/games/sleeping-dragon-ultra-dark-pragmatic-play.png",
+        "sha256": "9DA06ECAD76F68C681177BA86F8C417FB49BAD4571BBFE11BAE11F4CF570906B",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Sleeping Dragon Ultra Dark title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10sleepdud returned HTTP 200 and HTML title Sleeping Dragon Ultra Dark; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 34 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1043 published Games, build, 1447 internal HTML links and outbound nofollow checks passed; conflicting mini-respin threshold left unasserted."
+  }
+}
