@@ -1,0 +1,13 @@
+{
+  "batch": 453,
+  "recordedAt": "2026-11-01T08:55:09+08:00",
+  "state": "excluded-non-slot-official-route",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Baccarat Deluxe",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/27/language/1/live/true",
+  "evidence": "Exact official API gid27 HTTP 200 reports en=true and categories 3d_games, table_games, not video_slots; Baccarat Deluxe is outside Slot intake. No Game, coverage or image write.",
+  "decision": "Excluded non-Slot Table Game; no new-game count.",
+  "nextCursor": "Continue numeric gid26; recheck gid27 only if official category changes."
+}

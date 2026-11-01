@@ -1,0 +1,32 @@
+{
+  "batch": 454,
+  "recordedAt": "2026-11-01T08:55:11+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Santa’s Gift Rush/37 absent before intake.",
+  "records": [
+    {
+      "name": "Santa’s Gift Rush",
+      "slug": "santa-s-gift-rush-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/26/",
+      "officialFacts": "Official gid 26, pgid 37, Video Slots, RTP 96.36%, Low volatility, maximum x9000. Exact layout 5 reels × 3 rows; no explicit payline/Ways count asserted. Official long description confirms three Gift Rush symbol bonus types: Coin, Elf and Free Spins; summary records these.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/4290df81-2b14-46bf-be22-f8a3b0cbcc38.png",
+        "localPath": "public/assets/games/santa-s-gift-rush-pg-soft.png",
+        "sha256": "eea5b8bc5e717ded6e248f82abfb56f51094479ae9b9e229d17891c4b618cb2e",
+        "byteSize": 14009,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: smiling Santa Claus in red suit on purple festive background with PG logo; matches Santa Gift Rush identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/santas-gift-rush/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 25 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
