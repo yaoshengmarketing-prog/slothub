@@ -1,0 +1,37 @@
+{
+  "batch": 543,
+  "recordedAt": "2026-11-01T13:51:05.509Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1069 published Game Markdown records and same-provider exact official path/name/gameSymbol; Idol Pop Fever /vs20slightwdm absent.",
+  "records": [
+    {
+      "index": 60,
+      "name": "Idol Pop Fever",
+      "slug": "idol-pop-fever-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/idol-pop-fever/",
+      "officialFacts": "Official page: 5x5 grid; random Spotlight highlights up to five positions and turns symbols into Wilds with multiplier up to 5x. Multipliers above 1x on a winning line add before applying. Three or more Scatters grant ten Free Spins, with Spotlight more likely and a minimum multiplier up to 3x depending on triggering Scatter count. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/03/Idol-Pop-Fever_339x180_EN.png",
+        "localPath": "public/assets/games/idol-pop-fever-pragmatic-play.png",
+        "sha256": "2218F54AA8DD850127F2F7CBDD8B8820F4D7EB4940F26554AB78D7C2E237C8AE",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Idol Pop Fever title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20slightwdm returned HTTP 200 and HTML title Idol Pop Fever; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 61 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1070 published Games; 1474 internal HTML links and outbound nofollow checks pass."
+  }
+}
