@@ -1,10 +1,10 @@
 {
   "batch": 555,
   "recordedAt": "2026-11-01T15:49:24.418Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1081 published Game Markdown records and same-provider exact official path/name/gameSymbol; Rolling in Treasures /vs20rnriches absent.",
@@ -14,7 +14,7 @@
       "name": "Rolling in Treasures",
       "slug": "rolling-in-treasures-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/rolling-in-treasures/",
       "officialFacts": "Official page: at least eight matching mining symbols pay. Any tumble may activate multiplier symbols starting 2x and rising by 1 on subsequent tumbles; winning multipliers sum. Four to six Bonus symbols trigger ten to twenty Free Spins. The progressive multiplier does not reset during feature; five spins can be retriggered. No unsupported volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20rnriches opened in Codex in-app browser, redirected to matching Rolling in Treasures title and showed loading screen; public link exact official page; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 73 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 73 Mummy’s Jewels 100 validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1082 published Games; 1486 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "7a4da9977231e98610fb820507a4c6ec432e3b1d",
+    "githubActionsRun": 41323580595,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "2d3fc60c-82cf-482e-8183-14fe9bcb03e5",
+    "cloudflareUrl": "https://2d3fc60c.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

@@ -1,0 +1,37 @@
+{
+  "batch": 556,
+  "recordedAt": "2026-11-01T15:57:41.693Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1082 published Game Markdown records and same-provider exact official path/name/gameSymbol; Mummy’s Jewels 100 /vswaysmjwl2 absent.",
+  "records": [
+    {
+      "index": 73,
+      "name": "Mummy’s Jewels 100",
+      "slug": "mummys-jewels-100-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/mummys-jewels-100/",
+      "officialFacts": "Official page: reel-one Eye of Ra collect and super collect symbols gather adjacent money symbols, with super collect multipliers up to 100x. Purple Wild boosts prize wheel values, green adds up to three pointers, red can award five to fifty Respins. Multiple colored Wild features may trigger together. No unsupported volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/02/Mummys-Jewels-100_339x180_EN.png",
+        "localPath": "public/assets/games/mummys-jewels-100-pragmatic-play.png",
+        "sha256": "4C9FA81AB8769C7B925008CF37FED07967A0FD29CF230669B905C9ABC70FC675",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Mummy’s Jewels 100 title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysmjwl2 opened in Codex in-app browser, redirected to matching Mummy's Jewels 100 title and showed loading screen; public link exact official page; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 74 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1083 published Games; 1487 internal HTML links and outbound nofollow checks pass."
+  }
+}
