@@ -1,10 +1,10 @@
 {
   "batch": 551,
   "recordedAt": "2026-11-01T15:03:47.043Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1077 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Raceday Repeat /vs10bbrcdr absent.",
@@ -14,7 +14,7 @@
       "name": "Big Bass Raceday Repeat",
       "slug": "big-bass-raceday-repeat-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-raceday-repeat/",
       "officialFacts": "Official page: three to five Scatters trigger ten to twenty Free Spins. Select a racing gate for a possible modifier, including extra money symbols, higher retrigger multipliers or fewer Scatters. Fisherman Wild collects racehorse money symbols. Every fourth Wild adds ten spins and retrigger multipliers rise to 10x. No unsupported volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10bbrcdr opened in Codex in-app browser, redirected to matching Big Bass Raceday Repeat title and showed loading screen; public link exact official page; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 69 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 69 Tut’s Treasure Tower validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1078 published Games; 1482 internal HTML links and outbound nofollow checks pass; prior Markdown EOF blank corrected."
+  },
+  "publication": {
+    "commit": "3c015864687841b6773fd0c57ff55e12d0b9354b",
+    "githubActionsRun": 41319819596,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "0af51953-789d-4927-bb3b-4effc728e250",
+    "cloudflareUrl": "https://0af51953.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

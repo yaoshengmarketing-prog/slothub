@@ -1,0 +1,37 @@
+{
+  "batch": 552,
+  "recordedAt": "2026-11-01T15:13:25.252Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1078 published Game Markdown records and same-provider exact official path/name/gameSymbol; Tut’s Treasure Tower /vs5luckytwr absent.",
+  "records": [
+    {
+      "index": 69,
+      "name": "Tut’s Treasure Tower",
+      "slug": "tuts-treasure-tower-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/tuts-treasure-tower/",
+      "officialFacts": "Official page: 3x3 grid. Four or more golden coins trigger Lucky Respin Tower; one to three may randomly trigger. Three starting respins reset as coins land and lock; collecting coins unlocks up to seven rows. Filling all 21 positions awards the 5000x Grand Jackpot. No unsupported volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/03/Tuts-Treasure-Tower_339x180_B-1.png",
+        "localPath": "public/assets/games/tuts-treasure-tower-pragmatic-play.png",
+        "sha256": "7EA25205BF8389EB7DDC908794BD113FEF477DD71A0D0BFB19AE4A861C078DA3",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Tut’s Treasure Tower title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5luckytwr opened in Codex in-app browser, redirected to matching Tut's Treasure Tower title and showed loading screen; public link exact official page; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 70 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass on retry after interrupted process: 1079 published Games; 1483 internal HTML links and outbound nofollow checks pass."
+  }
+}
