@@ -1,10 +1,10 @@
 {
   "batch": 486,
   "recordedAt": "2026-11-01T15:44:38+08:00",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1012 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sweet Loot /vs20stopbnnza absent. Catalog item 3 is unique; items 1-2 are future-dated.",
@@ -14,7 +14,7 @@
       "name": "Sweet Loot",
       "slug": "sweet-loot-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/sweet-loot/",
       "officialNews": "https://www.pragmaticplay.com/en/news/pragmatic-play-sets-sail-in-the-candy-coated-sweet-loot/",
       "officialFacts": "Official 2026-10-29 release and exact page confirm base 6x5 plus four top-row positions, 8-12+ pay-anywhere, Tumble, top-row multiplier up to 500x, 4-6 Scatter for 10-30 free spins, Super Free Spins. News calls overall visible arrangement 6x6; description does not force an inconsistent reel count. 2000x instant bonus prize is not overall max win. RTP/volatility omitted.",
@@ -29,10 +29,18 @@
       "demo": "Official exact page iframe gameSymbol vs20stopbnnza returned HTTP 200; public link is the exact official game page, embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 4 Chests Of Cai Shen – Infinity after current one-game CI, Cloudflare and immutable readback; official catalog has 665 cards, 663 exact links, 2 future, 10 previously published.",
+  "nextCursor": "Catalog item 4 Chests Of Cai Shen – Infinity validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1013 published Games, build, 1417 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "20f5cb3074aed31135ae0d4416b14db9089378c6",
+    "githubActionsRun": 41286214044,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "fa1d97c8-37f4-47e6-ac9f-8a286219b01c",
+    "cloudflareUrl": "https://fa1d97c8.slothub-4cu.pages.dev",
+    "readback": "Seven routes returned HTTP 200, noindex/nofollow, no canonical, empty sitemap, and live image SHA256 matched local."
   }
 }

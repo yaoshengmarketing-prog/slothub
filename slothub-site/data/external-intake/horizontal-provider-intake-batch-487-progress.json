@@ -1,0 +1,37 @@
+{
+  "batch": 487,
+  "recordedAt": "2026-11-01T07:51:58.675Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1013 published Game Markdown records and same-provider exact official path/name/gameSymbol; Chests Of Cai Shen – Infinity /vs25caishen4 absent. Official art and title exact match.",
+  "records": [
+    {
+      "index": 4,
+      "name": "Chests Of Cai Shen – Infinity",
+      "slug": "chests-of-cai-shen-infinity-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/chests-of-cai-shen-infinity/",
+      "officialFacts": "Official exact page confirms collectible coloured coins, random bonus with three initial respins and up to four modifiers, sticky money symbols up to 150x, blue-zone multiplier up to 100x, red extra 5x3 grid, and additional 5000x for filling all positions. No unsupported RTP, volatility, release date or total max win stated.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Chests-Of-Cai-Shen-Infinity_339x180_EN.png",
+        "localPath": "public/assets/games/chests-of-cai-shen-infinity-pragmatic-play.png",
+        "sha256": "95BAB75B91519D7B50BE5013D8CD7A27066556B5E3F11017BC772F89D3C2AD88",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed official artwork showing exact Chests Of Cai Shen Infinity title and character; matches official catalog and OG image."
+      },
+      "demo": "Official exact page iframe gameSymbol vs25caishen4 returned HTTP 200; public link is exact official page, embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 5 Rat Royale after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1014 published Games, build, 1418 internal HTML links and outbound nofollow checks passed."
+  }
+}
