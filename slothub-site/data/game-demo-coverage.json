@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1035,
+  "gameCount": 1036,
   "providerCount": 371,
-  "sourcePageCount": 1493,
+  "sourcePageCount": 1496,
   "counts": {
     "access-restricted": 4,
-    "available": 743,
+    "available": 744,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "golden-retriever-pragmatic-play",
+      "name": "Golden Retriever",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/golden-retriever/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Golden Retriever, Scatter-triggered Free Spins or Hold & Spin, money-symbol collection and retrigger modifiers. Exact iframe gameSymbol vs10goldenret returned HTTP 200 and HTML title Golden Retriever; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/golden-retriever/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/Golden-Retriever_339x180_EN-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Golden Retriever title artwork, 339x180 PNG, SHA256 0C812E8DEE432D78B16BD53B9D2A222B30355F86638158141C23B0FC08376EFA"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10goldenret&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "bubble-up-pragmatic-play",
       "name": "Bubble Up!",

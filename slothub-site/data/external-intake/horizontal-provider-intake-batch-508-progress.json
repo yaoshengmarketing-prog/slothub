@@ -1,10 +1,10 @@
 {
   "batch": 508,
   "recordedAt": "2026-11-01T09:56:30.956Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1034 published Game Markdown records and same-provider exact official path/name/gameSymbol; Bubble Up! /vs20bblup absent.",
@@ -14,7 +14,7 @@
       "name": "Bubble Up!",
       "slug": "bubble-up-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/bubble-up/",
       "officialFacts": "Official page: 3-6 matching sea creatures, money symbols in wins up to 10000x, 2x2-6x6 bubble frames pay money symbols, overlapping frames boost up to 10x; 3-6 pearl Scatter trigger six initial free spins and 1-4 modifiers, every third Scatter adds two spins and expands frames. 10000x is money-symbol value, not asserted overall max win. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20bblup returned HTTP 200 and HTML title Bubble Up!; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 26 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 26 Golden Retriever validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1035 published Games, build, 1439 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "d8f404516d001a51d01c4a531355dab1f3facf92",
+    "githubActionsRun": 41295451910,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "18476169-08ba-43e0-8b3b-b5ff730e3b74",
+    "cloudflareUrl": "https://18476169.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
