@@ -1,10 +1,10 @@
 {
   "batch": 559,
   "recordedAt": "2026-11-01T16:21:06.714Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1085 published Game Markdown records and same-provider exact official path/name/gameSymbol; Emerald King – Wheel of Wealth /vs10dublin absent.",
@@ -14,7 +14,7 @@
       "name": "Emerald King – Wheel of Wealth",
       "slug": "emerald-king-wheel-of-wealth-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/emerald-king-wheel-of-wealth/",
       "officialFacts": "Official page: 5x3 grid; three to five bonus symbols trigger ten to twenty Free Spins. Two symbols can randomly trigger a bonus wheel. During the feature, a Wild landing with money symbols collects values up to 1000x and triggers a wheel for more spins, a 2x to 8x multiplier or up to 3000x Jackpot. Wild without money may extend the feature.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10dublin opened matching Emerald King – Wheel of Wealth Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 77 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 77 Knights vs Barbarians validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full node scripts/run-verify.mjs exit 0; 1086 Games, 1490 internal HTML links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "1e7d5da0af7ec2c5095ce34a0c1c889e2b3daa35",
+    "githubActionsRun": 41326365368,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "7454dacb-0d1e-4dcb-91e3-837c9e99c075",
+    "cloudflareUrl": "https://7454dacb.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

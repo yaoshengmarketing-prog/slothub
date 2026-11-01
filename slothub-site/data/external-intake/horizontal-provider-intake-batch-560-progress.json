@@ -1,0 +1,37 @@
+{
+  "batch": 560,
+  "recordedAt": "2026-11-01T16:29:08.319Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1086 published Game Markdown records and same-provider exact official path/name/gameSymbol; Knights vs Barbarians /vs10cenrlgdevl absent.",
+  "records": [
+    {
+      "index": 77,
+      "name": "Knights vs Barbarians",
+      "slug": "knights-vs-barbarians-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/knights-vs-barbarians/",
+      "officialFacts": "Official page: 5x3 grid; Knight or Barbarian scatters in the central marked position turn matching symbols Wild. Battle scatter awards a random 2x to 100x multiplier and turns the winning faction symbols Wild. Three to five castle scatters trigger ten to twenty Free Spins, with random retriggers of up to ten additional spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/01/Knights-vs-Barbarians_339x180_EN-1.png",
+        "localPath": "public/assets/games/knights-vs-barbarians-pragmatic-play.png",
+        "sha256": "09EF6806A1B0F14074B8DE995323FF43E4AB12FCF0E82F95B57E7F8AFA8741D0",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Knights vs Barbarians title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10cenrlgdevl opened matching Knights vs Barbarians Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 78 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full node scripts/run-verify.mjs exit 0; 1087 Games, 1491 internal HTML links and outbound nofollow PASS."
+  }
+}
