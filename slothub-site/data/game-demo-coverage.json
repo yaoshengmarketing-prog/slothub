@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1012,
+  "gameCount": 1013,
   "providerCount": 371,
-  "sourcePageCount": 1424,
+  "sourcePageCount": 1427,
   "counts": {
     "access-restricted": 4,
-    "available": 720,
+    "available": 721,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sweet-loot-pragmatic-play",
+      "name": "Sweet Loot",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/sweet-loot/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play exact page and card identify Sweet Loot, and the page embeds gameSymbol vs20stopbnnza. Exact official iframe URL returned HTTP 200; playable reels were not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sweet-loot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, mechanics and vs20stopbnnza iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/news/pragmatic-play-sets-sail-in-the-candy-coated-sweet-loot/",
+          "httpStatus": 200,
+          "notes": "Official 2026-10-29 Slot release"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Sweet-Loot_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork, SHA256 6077AE83520D4ACD7E241BFD43011CFA1E726A0E0087F4C94313F14B8C4EA941"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20stopbnnza&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact official embedded gameSymbol URL, HTTP reachable only"
+        }
+      ]
+    },
     {
       "slug": "wolf-gold-pragmatic-play",
       "name": "Wolf Gold",

@@ -1,0 +1,38 @@
+{
+  "batch": 486,
+  "recordedAt": "2026-11-01T15:44:38+08:00",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1012 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sweet Loot /vs20stopbnnza absent. Catalog item 3 is unique; items 1-2 are future-dated.",
+  "records": [
+    {
+      "index": 3,
+      "name": "Sweet Loot",
+      "slug": "sweet-loot-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/sweet-loot/",
+      "officialNews": "https://www.pragmaticplay.com/en/news/pragmatic-play-sets-sail-in-the-candy-coated-sweet-loot/",
+      "officialFacts": "Official 2026-10-29 release and exact page confirm base 6x5 plus four top-row positions, 8-12+ pay-anywhere, Tumble, top-row multiplier up to 500x, 4-6 Scatter for 10-30 free spins, Super Free Spins. News calls overall visible arrangement 6x6; description does not force an inconsistent reel count. 2000x instant bonus prize is not overall max win. RTP/volatility omitted.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Sweet-Loot_339x180_EN.png",
+        "localPath": "public/assets/games/sweet-loot-pragmatic-play.png",
+        "sha256": "6077AE83520D4ACD7E241BFD43011CFA1E726A0E0087F4C94313F14B8C4EA941",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 339x180 art: exact Sweet Loot title, gummy pirates, candy ship; same URL as official card and page OG image."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20stopbnnza returned HTTP 200; public link is the exact official game page, embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 4 Chests Of Cai Shen – Infinity after current one-game CI, Cloudflare and immutable readback; official catalog has 665 cards, 663 exact links, 2 future, 10 previously published.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1013 published Games, build, 1417 internal HTML links and outbound nofollow checks passed."
+  }
+}
