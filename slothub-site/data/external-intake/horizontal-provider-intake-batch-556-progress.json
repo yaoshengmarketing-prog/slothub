@@ -1,10 +1,10 @@
 {
   "batch": 556,
   "recordedAt": "2026-11-01T15:57:41.693Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1082 published Game Markdown records and same-provider exact official path/name/gameSymbol; Mummy’s Jewels 100 /vswaysmjwl2 absent.",
@@ -14,7 +14,7 @@
       "name": "Mummy’s Jewels 100",
       "slug": "mummys-jewels-100-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/mummys-jewels-100/",
       "officialFacts": "Official page: reel-one Eye of Ra collect and super collect symbols gather adjacent money symbols, with super collect multipliers up to 100x. Purple Wild boosts prize wheel values, green adds up to three pointers, red can award five to fifty Respins. Multiple colored Wild features may trigger together. No unsupported volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysmjwl2 opened in Codex in-app browser, redirected to matching Mummy's Jewels 100 title and showed loading screen; public link exact official page; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 74 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 74 Treasures of Osiris validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1083 published Games; 1487 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "0f69bd14f7da15538645d4826e54347a19cfa8c4",
+    "githubActionsRun": 41324253013,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "c8101738-c798-49eb-bd56-fee97d994816",
+    "cloudflareUrl": "https://c8101738.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

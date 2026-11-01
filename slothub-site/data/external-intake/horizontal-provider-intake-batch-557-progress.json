@@ -1,0 +1,37 @@
+{
+  "batch": 557,
+  "recordedAt": "2026-11-01T16:05:00.312Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1083 published Game Markdown records and same-provider exact official path/name/gameSymbol; Treasures of Osiris /vs25tripleps absent.",
+  "records": [
+    {
+      "index": 74,
+      "name": "Treasures of Osiris",
+      "slug": "treasures-of-osiris-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/treasures-of-osiris/",
+      "officialFacts": "Official page: 5x4 grid, Wild, money or Jackpot special symbols may randomly trigger ten Free Spins and up to three modifiers. Golden frames cover changing positions; framed special symbols can transform other framed positions. Modifiers may award 3x line multipliers, expanding money wins or Jackpot meter boosts, with prizes up to 10000x. No unsupported volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/02/Treasures-of-Osiris_339x180_EN.png",
+        "localPath": "public/assets/games/treasures-of-osiris-pragmatic-play.png",
+        "sha256": "3C3AC23AD4EEC28BFF62F6F37227D372533A8EF38F593C151FC44C58E5843A3A",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Treasures of Osiris title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs25tripleps opened matching Treasures of Osiris Demo splash in Codex in-app browser; public link is exact official page. Reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 75 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full node scripts/run-verify.mjs exit 0; 1084 Games, 1488 internal HTML links and outbound nofollow PASS."
+  }
+}
