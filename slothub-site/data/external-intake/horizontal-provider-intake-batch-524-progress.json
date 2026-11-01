@@ -1,10 +1,10 @@
 {
   "batch": 524,
   "recordedAt": "2026-11-01T11:33:39.591Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1050 published Game Markdown records and same-provider exact official path/name/gameSymbol; Better Barn House Bonanza /vswaysbibebarn absent.",
@@ -14,7 +14,7 @@
       "name": "Better Barn House Bonanza",
       "slug": "better-barn-house-bonanza-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/better-barn-house-bonanza/",
       "officialFacts": "Official page: 5x3 base grid, six-plus Scatter trigger six initial Free Spins, scatter positions upgrade straw to wood to brick, brick house prizes up to 5000x. Three wheel bonus symbol combinations can activate tiered wheel games and instant jackpot prizes up to 35000x. These are feature prizes, not asserted overall max win. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysbibebarn returned HTTP 200 and HTML title Better Barn House Bonanza; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 42 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 42 Mahjong Wins Triple Pot validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1051 published Games, build, 1455 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "841de81fdb21fbc0a21bc557efa0d17fbd17fccd",
+    "githubActionsRun": 41302636522,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "06b3e708-1e57-48f8-b963-61563810c012",
+    "cloudflareUrl": "https://06b3e708.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

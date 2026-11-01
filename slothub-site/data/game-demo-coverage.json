@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1051,
+  "gameCount": 1052,
   "providerCount": 371,
-  "sourcePageCount": 1541,
+  "sourcePageCount": 1544,
   "counts": {
     "access-restricted": 4,
-    "available": 759,
+    "available": 760,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mahjong-wins-triple-pot-pragmatic-play",
+      "name": "Mahjong Wins Triple Pot",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/mahjong-wins-triple-pot/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Mahjong Wins Triple Pot, 4-5-5-5-4 grid, Tumble multipliers, Wild tiles and three Scatter pots. Exact iframe gameSymbol vswaysmajhng3p returned HTTP 200 and HTML title Mahjong Wins Triple Pot; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/mahjong-wins-triple-pot/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/06/Mahjong-Wins-Triple-Pot_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Mahjong Wins Triple Pot title artwork, 339x180 PNG, SHA256 F2964A508DE5737557143BE74AD2AF3A8C99A4A92AB246E74ABBC677D4040498"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysmajhng3p&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "better-barn-house-bonanza-pragmatic-play",
       "name": "Better Barn House Bonanza",

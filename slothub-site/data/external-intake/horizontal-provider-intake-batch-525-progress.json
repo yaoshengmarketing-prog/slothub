@@ -1,0 +1,37 @@
+{
+  "batch": 525,
+  "recordedAt": "2026-11-01T11:39:21.228Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1051 published Game Markdown records and same-provider exact official path/name/gameSymbol; Mahjong Wins Triple Pot /vswaysmajhng3p absent.",
+  "records": [
+    {
+      "index": 42,
+      "name": "Mahjong Wins Triple Pot",
+      "slug": "mahjong-wins-triple-pot-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/mahjong-wins-triple-pot/",
+      "officialFacts": "Official page: 4-5-5-5-4 grid, three-plus matching tiles, base Tumble multiplier up to 5x, winning golden tiles become Wilds, blue/red/purple coin Scatter pots, instant prize up to 100000x or eight Free Spins, bonus multiplier up to 10x. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/06/Mahjong-Wins-Triple-Pot_339x180_EN.png",
+        "localPath": "public/assets/games/mahjong-wins-triple-pot-pragmatic-play.png",
+        "sha256": "F2964A508DE5737557143BE74AD2AF3A8C99A4A92AB246E74ABBC677D4040498",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Mahjong Wins Triple Pot title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysmajhng3p returned HTTP 200 and HTML title Mahjong Wins Triple Pot; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 43 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1052 published Games; 1456 internal HTML links and outbound nofollow checks pass."
+  }
+}
