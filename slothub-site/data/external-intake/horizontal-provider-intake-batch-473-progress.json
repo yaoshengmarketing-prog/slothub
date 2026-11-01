@@ -1,0 +1,13 @@
+{
+  "batch": 473,
+  "recordedAt": "2026-11-01T10:05:35+08:00",
+  "state": "excluded-disabled-non-slot-official-route",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Joker Wild",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/7/language/1/live/true",
+  "evidence": "Exact official API gid7 HTTP 200 reports name Joker Wild, pgid10, en=false and categories 3d_games/table_games, not video_slots. No Game, coverage or image write.",
+  "decision": "Excluded disabled non-Slot Table Game; no new-game count.",
+  "nextCursor": "Continue numeric gid6; recheck gid7 only if official category or enabled status changes."
+}

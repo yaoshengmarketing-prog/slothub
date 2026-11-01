@@ -1,0 +1,32 @@
+{
+  "batch": 474,
+  "recordedAt": "2026-11-01T10:05:36+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Medusa II/6 absent before intake.",
+  "records": [
+    {
+      "name": "Medusa II",
+      "slug": "medusa-ii-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/6/",
+      "officialFacts": "Official gid 6, pgid 6, Video Slots, RTP 94.96%, Medium volatility, maximum x2000. Exact layout 5 reels × 3 rows; no explicit payline/Ways count asserted. Official long description explicitly states 5 reels, 3 rows, 30 lines; recorded fixed-paylines, winCount30 and payline label.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/b7f55749-aaa4-4167-b4b8-e0d372159761.png",
+        "localPath": "public/assets/games/medusa-ii-pg-soft.png",
+        "sha256": "1c4c20431ed8ee42fdae8010c7906d3d521695b9339f2fbc8843d3a5a766ee2d",
+        "byteSize": 56108,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: Medusa with snake headdress and glowing eyes with PG logo; matches Medusa II identity and differs from Medusa original."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/medusa2/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 5 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}

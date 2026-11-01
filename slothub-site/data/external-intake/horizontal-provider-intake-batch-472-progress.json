@@ -1,0 +1,13 @@
+{
+  "batch": 472,
+  "recordedAt": "2026-11-01T10:05:17+08:00",
+  "state": "excluded-disabled-official-route",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Peas Fairy",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/8/language/1/live/true",
+  "evidence": "Exact official API gid8 HTTP 200 reports name Peas Fairy, pgid8, categories 3d_games/video_slots but en=false. No Game, coverage or image write.",
+  "decision": "Excluded disabled route; no new-game count.",
+  "nextCursor": "Continue numeric gid7; recheck gid8 only if official enabled status changes."
+}
