@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1034,
+  "gameCount": 1035,
   "providerCount": 371,
-  "sourcePageCount": 1490,
+  "sourcePageCount": 1493,
   "counts": {
     "access-restricted": 4,
-    "available": 742,
+    "available": 743,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "bubble-up-pragmatic-play",
+      "name": "Bubble Up!",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/bubble-up/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Bubble Up!, matching 3-6 sea symbols, bubble frames and Scatter bonus. Exact iframe gameSymbol vs20bblup returned HTTP 200 and HTML title Bubble Up!; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/bubble-up/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/08/Bubble-Up_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Bubble Up! title artwork, 339x180 PNG, SHA256 9B9DCEC35D2C4A0904DADFFE8A9FAA3DFD00A3767DCF27D2ED49058E48D07D45"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20bblup&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "eastern-fury-pragmatic-play",
       "name": "Eastern Fury",

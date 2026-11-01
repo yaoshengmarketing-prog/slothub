@@ -1,0 +1,37 @@
+{
+  "batch": 508,
+  "recordedAt": "2026-11-01T09:56:30.956Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1034 published Game Markdown records and same-provider exact official path/name/gameSymbol; Bubble Up! /vs20bblup absent.",
+  "records": [
+    {
+      "index": 25,
+      "name": "Bubble Up!",
+      "slug": "bubble-up-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/bubble-up/",
+      "officialFacts": "Official page: 3-6 matching sea creatures, money symbols in wins up to 10000x, 2x2-6x6 bubble frames pay money symbols, overlapping frames boost up to 10x; 3-6 pearl Scatter trigger six initial free spins and 1-4 modifiers, every third Scatter adds two spins and expands frames. 10000x is money-symbol value, not asserted overall max win. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/08/Bubble-Up_339x180_EN.png",
+        "localPath": "public/assets/games/bubble-up-pragmatic-play.png",
+        "sha256": "9B9DCEC35D2C4A0904DADFFE8A9FAA3DFD00A3767DCF27D2ED49058E48D07D45",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Bubble Up! title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20bblup returned HTTP 200 and HTML title Bubble Up!; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 26 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1035 published Games, build, 1439 internal HTML links and outbound nofollow checks passed."
+  }
+}

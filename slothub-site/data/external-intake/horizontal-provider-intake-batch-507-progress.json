@@ -1,10 +1,10 @@
 {
   "batch": 507,
   "recordedAt": "2026-11-01T09:50:32.9Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1033 published Game Markdown records and same-provider exact official path/name/gameSymbol; Eastern Fury /vs15eastfury absent.",
@@ -14,7 +14,7 @@
       "name": "Eastern Fury",
       "slug": "eastern-fury-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/eastern-fury/",
       "officialFacts": "Official page: 5x5, 3+ left-to-right matching symbols, expanding Wild 2x-100x, sticky Wild and respins until win, 3-5 Scatter grant 10-20 Free Spins, Super Scatter grants Super Free Spins with 10x minimum Wild multiplier. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs15eastfury returned HTTP 200 and HTML title Eastern Fury; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 25 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 25 Bubble Up! validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1034 published Games, build, 1438 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "664895dde3ab88ff810fd2eea964c75fd0b83177",
+    "githubActionsRun": 41295051633,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "50eef801-08f2-4807-926e-27ced4467265",
+    "cloudflareUrl": "https://50eef801.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
