@@ -1,10 +1,10 @@
 {
   "batch": 606,
   "recordedAt": "2026-11-01T22:09:05.236Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1132 published Game Markdown records and same-provider exact official path/name/gameSymbol; Bounty Hunter /vs20bhunter absent.",
@@ -14,7 +14,7 @@
       "name": "Bounty Hunter",
       "slug": "bounty-hunter-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/bounty-hunter/",
       "officialFacts": "Official page: reel-one Collector gathers money symbols and raises a progressive multiplier, while reel-five Multiplier can reach 100x. Three to five Scatters trigger eight, twelve or sixteen Free Spins, with Collector multiplier retained across feature spins up to 100x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20bhunter opened matching Bounty Hunter Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 124 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 124 Bee Keeper validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1133 Games; internal link 1537 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "30922bcc89a5e8fe0cc251ee5caa91f98471d2bb",
+    "githubActionsRun": 41356017631,
+    "cloudflareDeployment": "f3973a44-161c-4913-8615-534370b82eb4",
+    "cloudflareUrl": "https://f3973a44.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
