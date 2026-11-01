@@ -1,0 +1,37 @@
+{
+  "batch": 589,
+  "recordedAt": "2026-11-01T20:03:39.917Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1115 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Dice /vs5luckdce88 absent.",
+  "records": [
+    {
+      "index": 106,
+      "name": "Lucky Dice",
+      "slug": "lucky-dice-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/lucky-dice/",
+      "officialFacts": "Official page: Middle-reel Wilds can multiply base wins by 2x, 3x, 5x, 8x or 10x. Three scatters trigger respins with only scatters and blanks; each new scatter adds a spin, up to eight scatters pay 500x, and a retrigger icon can restart the round.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/11/Lucky-Dice_339x180_NB.png",
+        "localPath": "public/assets/games/lucky-dice-pragmatic-play.png",
+        "sha256": "933D93A4645FC4F435133D8D8E484EBD13DF7C4917C685084B6C3B351425309E",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Lucky Dice title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5luckdce88 opened matching Lucky Dice Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 107 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verify exit 0: Similar play 1116 Games; internal link 1520 HTML files PASS; outbound nofollow PASS."
+  }
+}
