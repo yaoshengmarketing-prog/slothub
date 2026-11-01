@@ -1,0 +1,37 @@
+{
+  "batch": 575,
+  "recordedAt": "2026-11-01T18:24:20.879Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1101 published Game Markdown records and same-provider exact official path/name/gameSymbol; Anaconda Gold /vswaysacnd absent.",
+  "records": [
+    {
+      "index": 92,
+      "name": "Anaconda Gold",
+      "slug": "anaconda-gold-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/anaconda-gold/",
+      "officialFacts": "Official page: tumble wins expand the grid from six by four to six by eight. Two anaconda symbols transform matching or money symbols along a path. Three to six scatters trigger 10 to 25 Free Spins, where expanded rows persist between spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/11/Anaconda-Gold_339x180_EN.png",
+        "localPath": "public/assets/games/anaconda-gold-pragmatic-play.png",
+        "sha256": "714B530D23B27A41B99E5F5BB84E12A82B7A00DA738D6E0B2B5316B068CE3AFD",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Anaconda Gold title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysacnd opened matching Anaconda Gold Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 93 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full run-verify exit 0: 1102 Games, 1506 internal HTML links, outbound nofollow pass."
+  }
+}
