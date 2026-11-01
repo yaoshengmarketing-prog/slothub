@@ -1,0 +1,37 @@
+{
+  "batch": 564,
+  "recordedAt": "2026-11-01T17:02:28.941Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1090 published Game Markdown records and same-provider exact official path/name/gameSymbol; Cyberheist City /vswayscyhecity absent.",
+  "records": [
+    {
+      "index": 81,
+      "name": "Cyberheist City",
+      "slug": "cyberheist-city-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/cyberheist-city/",
+      "officialFacts": "Official page: 5x3 grid. Wilds on reels two to five can carry multipliers up to 100x that accumulate during tumbles. Three to five scatters trigger ten to twenty Free Spins, with up to twenty more possible from retriggers. Super Scatter unlocks Super Free Spins in which all Wilds carry at least 10x.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/01/Cyberheist-City_339x180_EN.png",
+        "localPath": "public/assets/games/cyberheist-city-pragmatic-play.png",
+        "sha256": "FDFD7FC683DBDE71C9D9A3955710A781F8058984D817FFB3894211009A476322",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Cyberheist City title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswayscyhecity opened matching Cyberheist City Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 82 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full node scripts/run-verify.mjs exit 0 after removing unsupported tumbling tag; 1091 Games, 1495 internal HTML links and outbound nofollow PASS."
+  }
+}
