@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1118,
+  "gameCount": 1119,
   "providerCount": 371,
-  "sourcePageCount": 1742,
+  "sourcePageCount": 1745,
   "counts": {
     "access-restricted": 4,
-    "available": 826,
+    "available": 827,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "starlight-princess-super-scatter-pragmatic-play",
+      "name": "Starlight Princess Super Scatter",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/starlight-princess-super-scatter/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Starlight Princess Super Scatter, base multipliers, Free Spins and Super Scatter awards. Exact iframe gameSymbol vs20starprss opened matching Starlight Princess Super Scatter Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/starlight-princess-super-scatter/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/10/Starlight-Princess-Super-Scatter_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Starlight Princess Super Scatter title artwork, 339x180 PNG, SHA256 9FEA8AD18C13296E88A4BAF185AE5248DED19A0F4AF0FAD82B397753FAFADD6B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20starprss&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "oracle-of-gold-pragmatic-play",
       "name": "Oracle of Gold",

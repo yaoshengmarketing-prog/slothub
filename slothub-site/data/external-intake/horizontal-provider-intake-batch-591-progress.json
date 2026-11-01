@@ -1,10 +1,10 @@
 {
   "batch": 591,
   "recordedAt": "2026-11-01T20:19:28.54Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1117 published Game Markdown records and same-provider exact official path/name/gameSymbol; Oracle of Gold /vs20oragold absent.",
@@ -14,7 +14,7 @@
       "name": "Oracle of Gold",
       "slug": "oracle-of-gold-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/oracle-of-gold/",
       "officialFacts": "Official page: Winning gold symbols leave a Wild for the next tumble. Wilds carry 2x or 3x multipliers that multiply together. Four, five or six scatters trigger 10, 15 or 20 Free Spins, where every tumbling win raises a persistent multiplier by 1x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20oragold opened matching Oracle of Gold Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 109 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 109 Starlight Princess Super Scatter validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1118 Games; internal link 1522 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "b14eaff634e61c9518cddd17dbfd93b21b9f223c",
+    "githubActionsRun": 41346621097,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "88b74177-59a3-4065-b89b-ae40bb819af4",
+    "cloudflareUrl": "https://88b74177.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

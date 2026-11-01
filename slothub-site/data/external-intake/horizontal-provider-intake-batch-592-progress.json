@@ -1,0 +1,37 @@
+{
+  "batch": 592,
+  "recordedAt": "2026-11-01T20:26:33.989Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1118 published Game Markdown records and same-provider exact official path/name/gameSymbol; Starlight Princess Super Scatter /vs20starprss absent.",
+  "records": [
+    {
+      "index": 109,
+      "name": "Starlight Princess Super Scatter",
+      "slug": "starlight-princess-super-scatter-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/starlight-princess-super-scatter/",
+      "officialFacts": "Official page: Base-game winning tumbles may include multipliers up to 500x that add together. Four or more scatters trigger Free Spins where winning tumble multipliers accumulate. One to four Super Scatters can award 100x to 50,000x.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/10/Starlight-Princess-Super-Scatter_339x180_EN.png",
+        "localPath": "public/assets/games/starlight-princess-super-scatter-pragmatic-play.png",
+        "sha256": "9FEA8AD18C13296E88A4BAF185AE5248DED19A0F4AF0FAD82B397753FAFADD6B",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Starlight Princess Super Scatter title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20starprss opened matching Starlight Princess Super Scatter Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 110 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verify exit 0: Similar play 1119 Games; internal link 1523 HTML files PASS; outbound nofollow PASS."
+  }
+}
