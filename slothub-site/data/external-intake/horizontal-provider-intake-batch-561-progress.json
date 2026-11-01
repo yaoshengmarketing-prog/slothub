@@ -1,10 +1,10 @@
 {
   "batch": 561,
   "recordedAt": "2026-11-01T16:37:36.97Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1087 published Game Markdown records and same-provider exact official path/name/gameSymbol; Fire Stampede Ultimate /vswaysfirest3 absent.",
@@ -14,7 +14,7 @@
       "name": "Fire Stampede Ultimate",
       "slug": "fire-stampede-ultimate-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/fire-stampede-ultimate/",
       "officialFacts": "Official page: Connect and Collect chains can award special prizes at reel three or six, including up to 25 Free Spins and extra Wilds. Reel three can trigger Respins or Cash Respins; together they trigger Super Respins. Cash Respins may add buffalo coin multipliers up to 5x or mystery cash prizes, with official maximum win up to 80000x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysfirest3 opened matching Fire Stampede Ultimate Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 79 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 79 3 Magic Eggs validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full node scripts/run-verify.mjs exit 0; 1088 Games, 1492 internal HTML links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "a05e0674960f7ad805e5e032855359c888b893f8",
+    "githubActionsRun": 41327721354,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "1eda1c97-da16-420f-b177-391a8f681ecb",
+    "cloudflareUrl": "https://1eda1c97.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

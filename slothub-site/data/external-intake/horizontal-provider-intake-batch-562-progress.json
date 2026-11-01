@@ -1,0 +1,37 @@
+{
+  "batch": 562,
+  "recordedAt": "2026-11-01T16:45:21.739Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1088 published Game Markdown records and same-provider exact official path/name/gameSymbol; 3 Magic Eggs /vs25wolfgmm absent.",
+  "records": [
+    {
+      "index": 79,
+      "name": "3 Magic Eggs",
+      "slug": "3-magic-eggs-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/3-magic-eggs/",
+      "officialFacts": "Official page: 5x3 grid; green, red and blue eggs can randomly trigger Chest Respins with Collect, Jackpot or Multiplier modifiers. The feature starts with three respins and adds a row per active modifier. Sticky golden money eggs up to 50x reset respins to three. Green collect, red fixed jackpots and blue multipliers up to 5x are separate modifiers.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/01/3-Magic-Eggs_339x180.png",
+        "localPath": "public/assets/games/3-magic-eggs-pragmatic-play.png",
+        "sha256": "F00BAA98C488C9D4F455B71B7C5A3B3DE6621F002CB921F04B8A0141A4C266F5",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact 3 Magic Eggs title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs25wolfgmm opened matching 3 Magic Eggs Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 80 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full node scripts/run-verify.mjs exit 0; 1089 Games, 1493 internal HTML links and outbound nofollow PASS."
+  }
+}
