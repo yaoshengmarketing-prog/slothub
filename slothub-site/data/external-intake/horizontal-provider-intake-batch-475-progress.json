@@ -1,0 +1,13 @@
+{
+  "batch": 475,
+  "recordedAt": "2026-11-01T10:11:09+08:00",
+  "state": "excluded-disabled-duplicate-official-route",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Summon & Conquer",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/5/language/1/live/true",
+  "evidence": "Exact official API gid5 HTTP 200 reports en=false, pgid4 and HTML-encoded name Summon & Conquer, same identity as disabled gid17/batch463. No Game, coverage or image write.",
+  "decision": "Excluded disabled duplicate route; no new-game count.",
+  "nextCursor": "Continue numeric gid4; recheck gid5 only if official identity or enabled status changes."
+}

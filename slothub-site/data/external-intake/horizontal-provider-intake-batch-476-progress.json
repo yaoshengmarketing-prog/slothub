@@ -1,0 +1,32 @@
+{
+  "batch": 476,
+  "recordedAt": "2026-11-01T10:11:16+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Tree Of Fortune/26 absent before intake.",
+  "records": [
+    {
+      "name": "Tree Of Fortune",
+      "slug": "tree-of-fortune-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/4/",
+      "officialFacts": "Official gid 4, pgid 26, Video Slots, RTP 95.01%, Medium volatility, maximum x5000. Exact layout not asserted; no explicit payline/Ways count asserted. Official long description explicitly says 30 lines title; recorded fixed-paylines, winCount30 and payline label, while reel layout remains unknown.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/7a503550-716c-4464-a7d5-c6ca7c74a482.png",
+        "localPath": "public/assets/games/tree-of-fortune-pg-soft.png",
+        "sha256": "e981b77159202511546c7d5a52432f7b02d7443243d3e5c298cfe2b8d4bd3386",
+        "byteSize": 60555,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: coin and red-packet bearing tree against gold background with PG logo; matches Tree Of Fortune identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/fortune-tree/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 3 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
