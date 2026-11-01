@@ -1,0 +1,37 @@
+{
+  "batch": 545,
+  "recordedAt": "2026-11-01T14:06:19.116Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1071 published Game Markdown records and same-provider exact official path/name/gameSymbol; Jelly Express /vs20payanyvol absent.",
+  "records": [
+    {
+      "index": 62,
+      "name": "Jelly Express",
+      "slug": "jelly-express-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/jelly-express/",
+      "officialFacts": "Official page: 6x5 grid, eight or more matching symbols anywhere pay, tumbling reels, Train Wild multipliers up to 100x. Three Coin Scatters trigger a choice among six bonus options with up to 25 Free Spins and Wild multipliers up to 100x. A Scatter during Free Spins may trigger Super Free Spins with five added spins, during which winning Wilds add to a total multiplier for later Wild wins. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/02/Jelly-Express_339x180_EN.png",
+        "localPath": "public/assets/games/jelly-express-pragmatic-play.png",
+        "sha256": "69260C3A59E83198AFE55F6D89389229A4050CD35466C65BFF0B234FE4B9A4F1",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Jelly Express title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20payanyvol returned HTTP 200 and HTML title Jelly Express; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 63 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1072 published Games; 1476 internal HTML links and outbound nofollow checks pass."
+  }
+}

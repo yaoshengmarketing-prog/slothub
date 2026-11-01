@@ -1,10 +1,10 @@
 {
   "batch": 544,
   "recordedAt": "2026-11-01T13:58:01.567Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1070 published Game Markdown records and same-provider exact official path/name/gameSymbol; Snow Party /vs20clustersw absent.",
@@ -14,7 +14,7 @@
       "name": "Snow Party",
       "slug": "snow-party-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/snow-party/",
       "officialFacts": "Official page: 7x7 grid, matching clusters of five or more award wins; specific cluster prize up to 1250x. Base Wild multipliers up to 100x; winning Wild clusters respin until no new Wild winning combination. Three to seven Scatters award ten Free Spins, with more Scatters increasing minimum Wild multiplier up to 10x; feature Wilds stay sticky. Cluster prize and Wild multiplier are not asserted overall max win. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20clustersw returned HTTP 200 and HTML title Snow Party; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 62 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 62 Jelly Express validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1071 published Games; 1475 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "166339fbee6b0048b718f90a2f50cf3b52e81eeb",
+    "githubActionsRun": 41314167966,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "8166554f-669e-482c-b525-69c610e8dcc9",
+    "cloudflareUrl": "https://8166554f.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
