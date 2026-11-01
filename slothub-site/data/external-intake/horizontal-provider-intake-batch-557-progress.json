@@ -1,10 +1,10 @@
 {
   "batch": 557,
   "recordedAt": "2026-11-01T16:05:00.312Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1083 published Game Markdown records and same-provider exact official path/name/gameSymbol; Treasures of Osiris /vs25tripleps absent.",
@@ -14,7 +14,7 @@
       "name": "Treasures of Osiris",
       "slug": "treasures-of-osiris-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/treasures-of-osiris/",
       "officialFacts": "Official page: 5x4 grid, Wild, money or Jackpot special symbols may randomly trigger ten Free Spins and up to three modifiers. Golden frames cover changing positions; framed special symbols can transform other framed positions. Modifiers may award 3x line multipliers, expanding money wins or Jackpot meter boosts, with prizes up to 10000x. No unsupported volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs25tripleps opened matching Treasures of Osiris Demo splash in Codex in-app browser; public link is exact official page. Reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 75 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 75 Lucky Tiger Gold validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full node scripts/run-verify.mjs exit 0; 1084 Games, 1488 internal HTML links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "564e3dae0a9d12878c14c68a654cf4d66703225d",
+    "githubActionsRun": 41324883954,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "55f9b955-5ea1-4c8d-8372-5637e1ecad1f",
+    "cloudflareUrl": "https://55f9b955.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

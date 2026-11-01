@@ -1,0 +1,37 @@
+{
+  "batch": 558,
+  "recordedAt": "2026-11-01T16:12:35.817Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1084 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Tiger Gold /vs5luckytru absent.",
+  "records": [
+    {
+      "index": 75,
+      "name": "Lucky Tiger Gold",
+      "slug": "lucky-tiger-gold-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/lucky-tiger-gold/",
+      "officialFacts": "Official page: 3x3 grid; matching three symbols wins instant payouts. A full grid of one symbol in the base game may multiply all winning combinations by up to 100x. Random respins select a paying symbol, and coin symbols may award Extra Life, Multiplier Upgrader, or Symbol Upgrade. A full grid of the selected symbol applies the accumulated multiplier, with a full screen multiplier up to 1000x.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/02/Lucky-Tiger-Gold_339x180_B-1.png",
+        "localPath": "public/assets/games/lucky-tiger-gold-pragmatic-play.png",
+        "sha256": "4E08E7E52540AFC893B4BA488E13BF96B6F4B4E4D80A22D6E4B29C92C0C674A6",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Lucky Tiger Gold title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5luckytru opened matching Lucky Tiger Gold Demo splash in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 76 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full node scripts/run-verify.mjs exit 0; 1085 Games, 1489 internal HTML links and outbound nofollow PASS."
+  }
+}
