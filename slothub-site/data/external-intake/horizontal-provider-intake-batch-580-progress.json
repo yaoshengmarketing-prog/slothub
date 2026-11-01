@@ -1,0 +1,37 @@
+{
+  "batch": 580,
+  "recordedAt": "2026-11-01T19:00:30.453Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1106 published Game Markdown records and same-provider exact official path/name/gameSymbol; Bloody Dawn /vswayswildb absent.",
+  "records": [
+    {
+      "index": 97,
+      "name": "Bloody Dawn",
+      "slug": "bloody-dawn-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/bloody-dawn/",
+      "officialFacts": "Official page: Golden symbols in winning combinations on reels 2-4 turn Wild on the next tumble; each tumble adds 1x multiplier. Three to ten scatters trigger twelve Free Spins with up to 8x starting multiplier; three to ten more scatters add six spins and raise the multiplier.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/11/Bloody-Dawn_339x180_EN.png",
+        "localPath": "public/assets/games/bloody-dawn-pragmatic-play.png",
+        "sha256": "7A520CAF1FC1C3078A7EB7AEE71E1B5B627658084E13E1BF0814785B419B881F",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Bloody Dawn title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswayswildb opened matching Bloody Dawn Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 98 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verification passed: 1107 Games, 1511 HTML files; internal links and outbound nofollow PASS."
+  }
+}
