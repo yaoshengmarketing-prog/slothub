@@ -1,0 +1,41 @@
+{
+  "batch": 480,
+  "recordedAt": "2026-11-01T10:31:48+08:00",
+  "state": "numeric-catalog-exhausted-source-quality-holds",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "dailyPublishedCount": 100,
+  "numericAudit": {
+    "source": "https://api.pgsoft.com/Game/GetGameDetails/game/{gid}/language/1/live/true",
+    "routesChecked": "205 down to 1",
+    "enabledVideoSlots": 173,
+    "matchedByExistingPgSoftGameId": 166,
+    "matchedByExistingPgSoftTitle": 6,
+    "heldSourceConflict": 1,
+    "missingPublishable": 0,
+    "titleMatches": "Azteca Legacy, Fortune Rabbit, Fortune Tiger, Fortune Ox, Mahjong Ways 2, Mahjong Ways",
+    "held": "Oriental Prosperity gid109 pgid112, batch371: official current page/API RTP96.74%, official PDF RTP96.75%, stale Chinese Painting CTA. No public Game until official version clarification or documented omit-field product decision."
+  },
+  "filterOnlyAudit": {
+    "source": "https://api.pgsoft.com/Game/GetDefaultAllGameFilter/language/en-US",
+    "pgids": [
+      200001,
+      10000108,
+      2220422,
+      99,
+      100000,
+      10000107,
+      1000000,
+      1000001,
+      100001,
+      100002
+    ],
+    "catalogSource": "https://api.pgsoft.com/Game/GetDefaultAllGame/language/en-US",
+    "catalogMatches": 0,
+    "exactPageMatches": 0,
+    "detailProbe": "Nine of ten pgids queried as numeric game routes return official Invalid Game Id cd2120. The remaining value 99 resolves as unrelated disabled Groundhog Harvest gid99/pgid111, so does not identify filter pgid99. No exact official detail route, name and icon mapping can be verified; none are publishable."
+  },
+  "decision": "PG SOFT numeric candidate set exhausted; filter-only IDs lack minimum source identity and icon evidence; Oriental Prosperity held for conflicting official facts. Do not lower source threshold or count disabled, duplicate, held or audit rows.",
+  "nextStep": "On next run recheck official filter/catalog detail mapping for the ten pgids and official Oriental Prosperity page/API/PDF; if unchanged, seek a separate official enabled Slot source under the repo intake rules. Preserve exclusion and publication receipts; resume one-game closures only after exact identity/source/image/demo checks."
+}

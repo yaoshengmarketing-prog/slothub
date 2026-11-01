@@ -1,10 +1,10 @@
 {
   "batch": 479,
   "recordedAt": "2026-11-01T10:23:13+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Honey Trap of Diao Chan/1 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Honey Trap of Diao Chan",
       "slug": "honey-trap-of-diao-chan-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/1/",
       "officialFacts": "Official gid 1, pgid 1, Video Slots, RTP 96.96%, High volatility, maximum x100000. Exact layout not asserted; no explicit payline/Ways count asserted. Official long description confirms selectable characters with Dong Zhuo multipliers, Diao Chan expanded Wilds, Lu Bu big wins and varied free games; summary records this.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/diaochan/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 0 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Numeric gid205..1 exhausted after full provider-scoped audit; investigate ten filter-only pgids only if official exact detail mapping appears, and hold Oriental Prosperity gid109 until official RTP/version conflict resolves.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "cloudflareUrl": "https://11172205.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "githubConclusion": "success",
+    "githubRun": 41265200221,
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Honey Trap of Diao Chan, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-11-01",
+    "commit": "07d1e10f06ca61d185c38566259f7ac43af9c373",
+    "cloudflareDeploymentId": "11172205-ef98-42c6-8f42-1e4a398bf5bc"
+  }
 }
