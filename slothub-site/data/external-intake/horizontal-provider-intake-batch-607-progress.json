@@ -1,10 +1,10 @@
 {
   "batch": 607,
   "recordedAt": "2026-11-01T22:17:10.74Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1133 published Game Markdown records and same-provider exact official path/name/gameSymbol; Bee Keeper /vs10beekeep absent.",
@@ -14,7 +14,7 @@
       "name": "Bee Keeper",
       "slug": "bee-keeper-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/bee-keeper/",
       "officialFacts": "Official page: three to five Scatters trigger ten to twenty Free Spins. During the feature Wilds collect visible money symbols; each fourth Wild can trigger one of three honey pots that add spins and 2x, 3x, then 20x multipliers.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10beekeep opened matching Bee Keeper Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 125 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 125 Genie’s Gem Bonanza validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1134 Games; internal link 1538 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "a666efb0edfc2ad03a505f84ceff30fd42a5c1fe",
+    "githubActionsRun": 41356714680,
+    "cloudflareDeployment": "7a289c9c-0410-4533-ba77-9bbb77738f73",
+    "cloudflareUrl": "https://7a289c9c.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

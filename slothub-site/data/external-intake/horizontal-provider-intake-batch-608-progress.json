@@ -1,0 +1,37 @@
+{
+  "batch": 608,
+  "recordedAt": "2026-11-01T22:24:26.117Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1134 published Game Markdown records and same-provider exact official path/name/gameSymbol; Genie’s Gem Bonanza /vs20gengembnz absent.",
+  "records": [
+    {
+      "index": 125,
+      "name": "Genie’s Gem Bonanza",
+      "slug": "genies-gem-bonanza-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/genies-gem-bonanza/",
+      "officialFacts": "Official page: eight to thirty matching symbols pay anywhere; mystery symbols can become paying symbols or Cash Coins up to 100x. Multipliers can reach 100x and add together; four Scatters trigger twelve Free Spins, with two more for each extra Scatter.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/08/Genies-Gem-Bonanza_667x414_EN-339x180-1.png",
+        "localPath": "public/assets/games/genies-gem-bonanza-pragmatic-play.png",
+        "sha256": "1D082EE50C706C6F8A9BF417507C5EB213D4748665696BF2AB09D1D94428953A",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Genie’s Gem Bonanza title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20gengembnz opened matching Genie’s Gem Bonanza Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 126 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verify exit 0: Similar play 1135 Games; internal link 1539 HTML files PASS; outbound nofollow PASS."
+  }
+}

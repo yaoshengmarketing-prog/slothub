@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1134,
+  "gameCount": 1135,
   "providerCount": 371,
-  "sourcePageCount": 1790,
+  "sourcePageCount": 1793,
   "counts": {
     "access-restricted": 4,
-    "available": 842,
+    "available": 843,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "genies-gem-bonanza-pragmatic-play",
+      "name": "Genie’s Gem Bonanza",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/genies-gem-bonanza/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Genie’s Gem Bonanza. Official page: eight to thirty matching symbols pay anywhere; mystery symbols can become paying symbols or Cash Coins up to 100x. Multipliers can reach 100x and add together; four Scatters trigger twelve Free Spins, with two more for each extra Scatter. Exact iframe gameSymbol vs20gengembnz opened matching Genie’s Gem Bonanza Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/genies-gem-bonanza/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/08/Genies-Gem-Bonanza_667x414_EN-339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Genie’s Gem Bonanza title artwork, 339x180 PNG, SHA256 1D082EE50C706C6F8A9BF417507C5EB213D4748665696BF2AB09D1D94428953A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20gengembnz",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "bee-keeper-pragmatic-play",
       "name": "Bee Keeper",
