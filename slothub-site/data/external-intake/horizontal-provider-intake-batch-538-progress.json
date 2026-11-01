@@ -1,0 +1,37 @@
+{
+  "batch": 538,
+  "recordedAt": "2026-11-01T13:16:24.697Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1064 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sweet Bonanza 2500 /vs20swbon2500 absent.",
+  "records": [
+    {
+      "index": 55,
+      "name": "Sweet Bonanza 2500",
+      "slug": "sweet-bonanza-2500-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/sweet-bonanza-2500/",
+      "officialFacts": "Official page: 6x5 grid, eight or more matching symbols pay, overall max win up to 25000x. Four or more lollipops trigger ten Free Spins. Candy bomb multipliers during Free Spins reach up to 2500x; at least three more lollipops add five spins. Distinct exact title/page/gameSymbol from Sweet Bonanza, Sweet Bonanza 1000 and Sweet Bonanza POP. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/04/Sweet-Bonanza-2500_339x180_EN.png",
+        "localPath": "public/assets/games/sweet-bonanza-2500-pragmatic-play.png",
+        "sha256": "6BE966EE6A27FEC326044A75BF1C1DCDFAFA17212E3954D06CDBB907AA996577",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Sweet Bonanza 2500 title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20swbon2500 returned HTTP 200 and HTML title Sweet Bonanza 2500; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 56 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1065 published Games; 1469 internal HTML links and outbound nofollow checks pass."
+  }
+}

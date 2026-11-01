@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1064,
+  "gameCount": 1065,
   "providerCount": 371,
-  "sourcePageCount": 1580,
+  "sourcePageCount": 1583,
   "counts": {
     "access-restricted": 4,
-    "available": 772,
+    "available": 773,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sweet-bonanza-2500-pragmatic-play",
+      "name": "Sweet Bonanza 2500",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/sweet-bonanza-2500/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Sweet Bonanza 2500, 6x5 candy rewards and Free Spins multipliers. Exact iframe gameSymbol vs20swbon2500 returned HTTP 200 and HTML title Sweet Bonanza 2500; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sweet-bonanza-2500/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/04/Sweet-Bonanza-2500_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Sweet Bonanza 2500 title artwork, 339x180 PNG, SHA256 6BE966EE6A27FEC326044A75BF1C1DCDFAFA17212E3954D06CDBB907AA996577"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20swbon2500&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "mr-nulls-wicked-wares-pragmatic-play",
       "name": "Mr Null’s Wicked Wares",

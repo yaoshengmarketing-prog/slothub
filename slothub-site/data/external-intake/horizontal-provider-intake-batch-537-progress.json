@@ -1,10 +1,10 @@
 {
   "batch": 537,
   "recordedAt": "2026-11-01T13:09:25.351Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1063 published Game Markdown records and same-provider exact official path/name/gameSymbol; Mr Null’s Wicked Wares /vswaysmrcursc absent.",
@@ -14,7 +14,7 @@
       "name": "Mr Null’s Wicked Wares",
       "slug": "mr-nulls-wicked-wares-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/mr-nulls-wicked-wares/",
       "officialFacts": "Official page: 3-4-4-4-3 grid; mystery symbols on reels two to four transform into a randomly selected paying symbol. Base multipliers 2x to 10x combine multiplicatively if multiple mystery symbols contribute. Three Scatters trigger seven Free Spins, each additional Scatter adds one; bonus reel multipliers begin at 2 and increase by one per mystery landing. Demo HTML uses Mr. Nulls ASCII punctuation alias. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysmrcursc returned HTTP 200 and HTML title Mr Null’s Wicked Wares; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 55 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 55 Sweet Bonanza 2500 validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1064 published Games; 1468 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "687d43503c692ec423dc8b6c0a1a27d1e19b8734",
+    "githubActionsRun": 41310174514,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "a82e01b1-b4b4-4050-af3b-04c386390a84",
+    "cloudflareUrl": "https://a82e01b1.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
