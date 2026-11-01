@@ -1,0 +1,37 @@
+{
+  "batch": 488,
+  "recordedAt": "2026-11-01T07:58:48.116Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1014 published Game Markdown records and same-provider exact official path/name/gameSymbol; Rat Royale /vswaysratking absent.",
+  "records": [
+    {
+      "index": 5,
+      "name": "Rat Royale",
+      "slug": "rat-royale-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/rat-royale/",
+      "officialFacts": "Official exact page: standard wild up to 100x, central Rat King wild up to 500x, multiple wild multipliers sum in a winning combination, Rat King triggers one of four modifiers, 3-5 scatters give one of three free-spin variants with ten initial spins. Conflicting third variant names omitted. No unsupported RTP, volatility, release date or max win.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Rat-Royale_339x180.png",
+        "localPath": "public/assets/games/rat-royale-pragmatic-play.png",
+        "sha256": "36E09A765B8F7A6A52E4B8CE1F4A17E76E4925E4A649EAB559C3265F5DE4DC44",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed official title artwork, exact Rat Royale title and rat king; matches catalog and page OG image."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysratking returned HTTP 200; public link exact official page, embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 6 Sweet Bonanza POP after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1015 published Games, build, 1419 internal HTML links and outbound nofollow checks passed."
+  }
+}
