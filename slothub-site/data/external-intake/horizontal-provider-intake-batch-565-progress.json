@@ -1,10 +1,10 @@
 {
   "batch": 565,
   "recordedAt": "2026-11-01T17:12:00.73Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1091 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sweet Burst /vs10luckybnz absent.",
@@ -14,7 +14,7 @@
       "name": "Sweet Burst",
       "slug": "sweet-burst-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/sweet-burst/",
       "officialFacts": "Official page: 3x5 grid, with five or more matching symbols anywhere paying wins up to 50x. At least three scatters trigger ten Free Spins; up to ten more can retrigger. During the feature, multiplier symbols worth up to 1000x may land on any spin.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10luckybnz opened matching Sweet Burst Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 83 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 83 Super Tiki Strike validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full node scripts/run-verify.mjs exit 0; 1092 Games, 1496 internal HTML links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "280846549e43dcf51b29ab3aa6c552c48527b171",
+    "githubActionsRun": 41330618024,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "92cca14b-559f-4e15-857c-920c01e20f02",
+    "cloudflareUrl": "https://92cca14b.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

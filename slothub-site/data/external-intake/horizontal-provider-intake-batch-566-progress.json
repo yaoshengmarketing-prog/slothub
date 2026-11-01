@@ -1,0 +1,37 @@
+{
+  "batch": 566,
+  "recordedAt": "2026-11-01T17:19:24.211Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1092 published Game Markdown records and same-provider exact official path/name/gameSymbol; Super Tiki Strike /vs5tikistrike absent.",
+  "records": [
+    {
+      "index": 83,
+      "name": "Super Tiki Strike",
+      "slug": "super-tiki-strike-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/super-tiki-strike/",
+      "officialFacts": "Official page: classic 3x3 with five paylines. Matching three symbols may pay up to 2000x, and Wild Multiplier in a winning combination multiplies by 5x. Collect symbol on reel two with money on reels one or three can award money and trigger three Respins. During the feature, Wilds add 1x and Wild Multipliers add 5x to position multipliers, up to 1000x.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/01/Super-Tiki-Strike_339x180_EN.png",
+        "localPath": "public/assets/games/super-tiki-strike-pragmatic-play.png",
+        "sha256": "101F6D8B51ED7D314982F07AD20B5D20BEF619E1E1CEEC60B6C4941DDE1CAA16",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Super Tiki Strike title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5tikistrike opened matching Super Tiki Strike Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 84 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full node scripts/run-verify.mjs exit 0; 1093 Games, 1497 internal HTML links and outbound nofollow PASS."
+  }
+}
