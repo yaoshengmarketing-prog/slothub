@@ -1,10 +1,10 @@
 {
   "batch": 571,
   "recordedAt": "2026-11-01T17:56:24.285Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1097 published Game Markdown records and same-provider exact official path/name/gameSymbol; Hot Tuna /vs10hottuna absent.",
@@ -14,7 +14,7 @@
       "name": "Hot Tuna",
       "slug": "hot-tuna-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/hot-tuna/",
       "officialFacts": "Official page: three to five scatters trigger 10 to 20 Free Spins. Fisherman Wilds collect money symbols and add one spin. Uncollected money symbols fill a meter; a full meter adds ten spins with Hot Tuna symbols, which multiply collected values by 10x when paired with fisherman Wilds.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10hottuna opened matching Hot Tuna Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 89 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 89 Wheel of Happiness validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full run-verify exit 0: 1098 Games, 1502 internal HTML links, outbound nofollow pass."
+  },
+  "publication": {
+    "commit": "0d91ca4ac6e714f24ec529b8dfb33e99859ca56d",
+    "githubActionsRun": 41334362046,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "93c2eb77-9a84-4ed1-805b-8d7fb9bb2c92",
+    "cloudflareUrl": "https://93c2eb77.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

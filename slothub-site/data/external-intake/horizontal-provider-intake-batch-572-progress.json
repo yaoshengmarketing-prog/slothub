@@ -1,0 +1,37 @@
+{
+  "batch": 572,
+  "recordedAt": "2026-11-01T18:03:50.922Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1098 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wheel of Happiness /vswayswildeq absent.",
+  "records": [
+    {
+      "index": 89,
+      "name": "Wheel of Happiness",
+      "slug": "wheel-of-happiness-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/wheel-of-happiness/",
+      "officialFacts": "Official page: three scatters trigger the wheel with Wild Wins, Wild Wins Plus, Free Spins, or Free Spins Plus. Wild Wins places two to seven Wilds; enhanced variants add a 2x to 10x multiplier. Free Spins award two to 25 spins, and three scatters during the feature can retrigger the wheel.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/12/Wheel-of-Happiness_339x180_EN.png",
+        "localPath": "public/assets/games/wheel-of-happiness-pragmatic-play.png",
+        "sha256": "5816A74BDF81744128C684D913C0D1B3DE4CB5A8CC217EA67D56545D173AEDA9",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Wheel of Happiness title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswayswildeq opened matching Wheel of Happiness Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 90 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full run-verify exit 0: 1099 Games, 1503 internal HTML links, outbound nofollow pass."
+  }
+}

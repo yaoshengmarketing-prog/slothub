@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1098,
+  "gameCount": 1099,
   "providerCount": 371,
-  "sourcePageCount": 1682,
+  "sourcePageCount": 1685,
   "counts": {
     "access-restricted": 4,
-    "available": 806,
+    "available": 807,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wheel-of-happiness-pragmatic-play",
+      "name": "Wheel of Happiness",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/wheel-of-happiness/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Wheel of Happiness, three scatters triggering a four award wheel with Wild Wins and Free Spins. Exact iframe gameSymbol vswayswildeq opened matching Wheel of Happiness Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wheel-of-happiness/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/12/Wheel-of-Happiness_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Wheel of Happiness title artwork, 339x180 PNG, SHA256 5816A74BDF81744128C684D913C0D1B3DE4CB5A8CC217EA67D56545D173AEDA9"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayswildeq&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "hot-tuna-pragmatic-play",
       "name": "Hot Tuna",
