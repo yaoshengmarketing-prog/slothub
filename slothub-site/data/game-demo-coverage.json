@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1061,
+  "gameCount": 1062,
   "providerCount": 371,
-  "sourcePageCount": 1571,
+  "sourcePageCount": 1574,
   "counts": {
     "access-restricted": 4,
-    "available": 769,
+    "available": 770,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "heartbreakers-pragmatic-play",
+      "name": "Heartbreakers",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/heartbreakers/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Heartbreakers, five reel multipliers and three-colour bottle Respins. Exact iframe gameSymbol vs20prizegrow returned HTTP 200 and HTML title Heartbreakers; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/heartbreakers/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/04/Heartbreakers_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Heartbreakers title artwork, 339x180 PNG, SHA256 E46FF575A38C2F1A6134D9F338D9E8DB81CC5CA21AEA35EEFAE25D7F18C3BD4C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20prizegrow&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "triple-pot-plinko-hercules-pragmatic-play",
       "name": "Triple Pot Plinko – Hercules",

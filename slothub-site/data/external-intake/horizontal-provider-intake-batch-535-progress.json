@@ -1,0 +1,37 @@
+{
+  "batch": 535,
+  "recordedAt": "2026-11-01T12:48:03.614Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1061 published Game Markdown records and same-provider exact official path/name/gameSymbol; Heartbreakers /vs20prizegrow absent.",
+  "records": [
+    {
+      "index": 52,
+      "name": "Heartbreakers",
+      "slug": "heartbreakers-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/heartbreakers/",
+      "officialFacts": "Official page: 5x4 grid and a multiplier up to 100x above each reel on every spin. Green bottle pays bet times its reel multiplier; red has random multiplier up to 100x multiplied by reel value; yellow applies the sum of all five reel multipliers. Three Scatters trigger three Respins; each bottle boosts the respective reel multiplier and resets Respins. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/04/Heartbreakers_339x180_EN.png",
+        "localPath": "public/assets/games/heartbreakers-pragmatic-play.png",
+        "sha256": "E46FF575A38C2F1A6134D9F338D9E8DB81CC5CA21AEA35EEFAE25D7F18C3BD4C",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Heartbreakers title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20prizegrow returned HTTP 200 and HTML title Heartbreakers; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 53 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1062 published Games; 1466 internal HTML links and outbound nofollow checks pass."
+  }
+}

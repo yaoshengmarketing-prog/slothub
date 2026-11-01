@@ -1,10 +1,10 @@
 {
   "batch": 534,
   "recordedAt": "2026-11-01T12:40:31.564Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1060 published Game Markdown records and same-provider exact official path/name/gameSymbol; Triple Pot Plinko – Hercules /vswaysplnk3p absent.",
@@ -14,7 +14,7 @@
       "name": "Triple Pot Plinko – Hercules",
       "slug": "triple-pot-plinko-hercules-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/triple-pot-plinko-hercules/",
       "officialFacts": "Official page: a 5x3 base grid with blue, red, and green Scatters that can trigger Plinko and at least one modifier. Each triggering colour provides ten initial balls, nine buckets have fixed multipliers from 1x to 30x. Blue can add up to 20 balls, red can apply up to 100x to random balls, green can raise random bucket multipliers up to 100x. Demo HTML title uses ASCII hyphen alias. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysplnk3p returned HTTP 200 and HTML title Triple Pot Plinko – Hercules; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 52 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 52 Heartbreakers validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1061 published Games; 1465 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "1e69860d9d821154a42c7972724214000ce67e98",
+    "githubActionsRun": 41307964606,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "cfa0b39a-f59e-491a-a972-3aba6c3479a0",
+    "cloudflareUrl": "https://cfa0b39a.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
