@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1081,
+  "gameCount": 1082,
   "providerCount": 371,
-  "sourcePageCount": 1631,
+  "sourcePageCount": 1634,
   "counts": {
     "access-restricted": 4,
-    "available": 789,
+    "available": 790,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "rolling-in-treasures-pragmatic-play",
+      "name": "Rolling in Treasures",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/rolling-in-treasures/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Rolling in Treasures, tumble multipliers and progressive Free Spins feature. Exact iframe gameSymbol vs20rnriches opened in Codex in-app browser, redirected to matching game title and showed loading screen; reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/rolling-in-treasures/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/02/Rolling-in-Treasures_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Rolling in Treasures title artwork, 339x180 PNG, SHA256 6213D9F73115DB5857A10AA04A0512A81F1AB29491AC89275C3BB87003F3F7A8"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20rnriches&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened in Codex in-app browser, redirected to matching title and showed loading screen"
+        }
+      ]
+    },
     {
       "slug": "haunted-crypt-pragmatic-play",
       "name": "Haunted Crypt",

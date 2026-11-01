@@ -1,10 +1,10 @@
 {
   "batch": 554,
   "recordedAt": "2026-11-01T15:42:07.627Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1080 published Game Markdown records and same-provider exact official path/name/gameSymbol; Haunted Crypt /vs20dhousehm absent.",
@@ -14,7 +14,7 @@
       "name": "Haunted Crypt",
       "slug": "haunted-crypt-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/haunted-crypt/",
       "officialFacts": "Official page: 5x3 grid, Value and Speed base modes, Speed increases Free Spins chance. Base Wild multiplier up to 10x; three Scatters trigger ten spins. Feature Wilds leave electrified frames whose multipliers rise by 1x each spin; further Wilds can turn framed symbols into Wilds. Five spins may be retriggered. No unsupported volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20dhousehm opened in Codex in-app browser, redirected to matching Haunted Crypt title and showed loading screen; public link exact official page; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 72 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 72 Rolling in Treasures validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1081 published Games; 1485 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "c3b766275bb3207ae788cbc307ac58c359243c09",
+    "githubActionsRun": 41322939526,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "d997ae7b-12d0-4792-be9e-cfdbeef9ee41",
+    "cloudflareUrl": "https://d997ae7b.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
