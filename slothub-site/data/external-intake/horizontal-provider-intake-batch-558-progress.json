@@ -1,10 +1,10 @@
 {
   "batch": 558,
   "recordedAt": "2026-11-01T16:12:35.817Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1084 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Tiger Gold /vs5luckytru absent.",
@@ -14,7 +14,7 @@
       "name": "Lucky Tiger Gold",
       "slug": "lucky-tiger-gold-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/lucky-tiger-gold/",
       "officialFacts": "Official page: 3x3 grid; matching three symbols wins instant payouts. A full grid of one symbol in the base game may multiply all winning combinations by up to 100x. Random respins select a paying symbol, and coin symbols may award Extra Life, Multiplier Upgrader, or Symbol Upgrade. A full grid of the selected symbol applies the accumulated multiplier, with a full screen multiplier up to 1000x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs5luckytru opened matching Lucky Tiger Gold Demo splash in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 76 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 76 Emerald King – Wheel of Wealth validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full node scripts/run-verify.mjs exit 0; 1085 Games, 1489 internal HTML links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "2749a4efc0bb36eaf102a12aef9e0cc5cf71b873",
+    "githubActionsRun": 41325661064,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "7d30fc45-dcc5-4e01-8cd1-2fd867d98272",
+    "cloudflareUrl": "https://7d30fc45.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

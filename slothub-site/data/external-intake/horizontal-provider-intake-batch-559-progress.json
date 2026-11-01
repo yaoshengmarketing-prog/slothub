@@ -1,0 +1,37 @@
+{
+  "batch": 559,
+  "recordedAt": "2026-11-01T16:21:06.714Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1085 published Game Markdown records and same-provider exact official path/name/gameSymbol; Emerald King – Wheel of Wealth /vs10dublin absent.",
+  "records": [
+    {
+      "index": 76,
+      "name": "Emerald King – Wheel of Wealth",
+      "slug": "emerald-king-wheel-of-wealth-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/emerald-king-wheel-of-wealth/",
+      "officialFacts": "Official page: 5x3 grid; three to five bonus symbols trigger ten to twenty Free Spins. Two symbols can randomly trigger a bonus wheel. During the feature, a Wild landing with money symbols collects values up to 1000x and triggers a wheel for more spins, a 2x to 8x multiplier or up to 3000x Jackpot. Wild without money may extend the feature.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/02/Emerald-King-Wheel-of-Wealth_339x180_EN.png",
+        "localPath": "public/assets/games/emerald-king-wheel-of-wealth-pragmatic-play.png",
+        "sha256": "B65EC57D2F8F9F1A0698D553823545B5FB144407AB8C3985963C4B6756821362",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Emerald King – Wheel of Wealth title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10dublin opened matching Emerald King – Wheel of Wealth Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 77 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full node scripts/run-verify.mjs exit 0; 1086 Games, 1490 internal HTML links and outbound nofollow PASS."
+  }
+}
