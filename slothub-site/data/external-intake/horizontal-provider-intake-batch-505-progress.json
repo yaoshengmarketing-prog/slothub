@@ -1,10 +1,10 @@
 {
   "batch": 505,
   "recordedAt": "2026-11-01T09:38:30.533Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1031 published Game Markdown records and same-provider exact official path/name/gameSymbol; Gates of Olympus POP /vs10olymppop absent. POP sub-brand on official page and within umbrella SLOTS catalog.",
@@ -14,7 +14,7 @@
       "name": "Gates of Olympus POP",
       "slug": "gates-of-olympus-pop-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/gates-of-olympus-pop/",
       "officialFacts": "Official exact POP page: 3x5, 5-9+ pay-anywhere and Tumble; sticky multiplier symbols up to 1000x sum at Tumble end; three or more scatters/super scatters give 15 free spins, two more scatters add five; combinations can award instant jackpots up to 25000x, which is not overall max win. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10olymppop returned HTTP 200; public link exact official page, embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 23 Heart of Venus; official title singular and same-page prose/art plural are documented as aliases, official Demo confirmed. Next after full current closure.",
+  "nextCursor": "Catalog item 23 Heart of Venus, with official plural alias Hearts of Venus, validated and queued for one-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1032 published Games, build, 1436 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "82ebf3f13e5699b8e3e7154c3b600fc88de270a5",
+    "githubActionsRun": 41294228156,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "5be8707e-87e7-42df-a922-22102b2e2d33",
+    "cloudflareUrl": "https://5be8707e.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
