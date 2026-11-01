@@ -1,10 +1,10 @@
 {
   "batch": 504,
   "recordedAt": "2026-11-01T09:32:50.399Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1030 published Game Markdown records and same-provider exact official path/name/gameSymbol; Ra vs Osiris /vs15raos absent.",
@@ -14,7 +14,7 @@
       "name": "Ra vs Osiris",
       "slug": "ra-vs-osiris-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/ra-vs-osiris/",
       "officialFacts": "Official exact page: selectable Ra/Osiris volatility modes; Osiris is more volatile. Expanding wilds up to 1000x, multiple wild multipliers add; 3-5 scatters give six free spins with minimum wild multiplier 2x/4x/8x; walking wild multipliers respin and move left; retriggers add six spins. 1000x is wild multiplier, not overall max win; no singular volatility assigned. No unsupported RTP or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs15raos returned HTTP 200; public link exact official page, embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 22 Gates of Olympus POP after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 22 Gates of Olympus POP validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1031 published Games, build, 1435 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "ee336d447f4d848e1e4afee69aaf823904ab3fbe",
+    "githubActionsRun": 41293811025,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "638e41a7-3313-4387-99d6-b5f4ad8435b6",
+    "cloudflareUrl": "https://638e41a7.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

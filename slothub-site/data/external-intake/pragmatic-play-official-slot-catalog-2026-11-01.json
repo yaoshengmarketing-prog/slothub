@@ -10,13 +10,13 @@
   "nextPageCards": 0,
   "totalCards": 665,
   "exactGameCards": 663,
-  "publishedExisting": 28,
-  "pendingIndividualCheck": 634,
+  "publishedExisting": 29,
+  "pendingIndividualCheck": 633,
   "comingSoon": 2,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 22, Gates of Olympus POP, https://www.pragmaticplay.com/en/games/gates-of-olympus-pop/ ; item 21 Ra vs Osiris validated and pending publication closure.",
+  "nextCursor": "Catalog item 23, Heart of Venus, https://www.pragmaticplay.com/en/games/heart-of-venus/ ; item 22 Gates of Olympus POP validated and pending publication closure. Item 23 title/image discrepancy requires source audit.",
   "pages": [
     {
       "page": 1,
@@ -597,7 +597,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/ra-vs-osiris/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/08/Ra-vs-Osiris_339x180_EN.png",
       "releaseLabel": null,
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "ra-vs-osiris-pragmatic-play"
     },
     {
@@ -607,8 +607,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/gates-of-olympus-pop/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/Gates-of-Olympus-POP_339x180_NB.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "gates-of-olympus-pop-pragmatic-play"
     },
     {
       "index": 23,

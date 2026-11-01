@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1031,
+  "gameCount": 1032,
   "providerCount": 371,
-  "sourcePageCount": 1481,
+  "sourcePageCount": 1484,
   "counts": {
     "access-restricted": 4,
-    "available": 739,
+    "available": 740,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gates-of-olympus-pop-pragmatic-play",
+      "name": "Gates of Olympus POP",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/gates-of-olympus-pop/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play POP exact page and umbrella SLOTS catalog identify title, mechanics, and embedded gameSymbol vs10olymppop. Exact iframe HTTP 200; playable reels not visually tested. Jackpot 25000x is instant prize, not asserted total max win.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gates-of-olympus-pop/",
+          "httpStatus": 200,
+          "notes": "Exact POP title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS umbrella catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/Gates-of-Olympus-POP_339x180_NB.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed exact POP title artwork, 339x180 PNG, SHA256 D26FE12EFC4F8165C053CC1A4CC45E751B6A1649EF1110F07883647BBFB349F9"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10olymppop&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact official embedded gameSymbol URL, HTTP reachable only"
+        }
+      ]
+    },
     {
       "slug": "ra-vs-osiris-pragmatic-play",
       "name": "Ra vs Osiris",
