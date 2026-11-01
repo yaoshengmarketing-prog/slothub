@@ -1,10 +1,10 @@
 {
   "batch": 455,
   "recordedAt": "2026-11-01T09:00:47+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Hip Hop Panda/33 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Hip Hop Panda",
       "slug": "hip-hop-panda-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/25/",
       "officialFacts": "Official gid 25, pgid 33, Video Slots, RTP 95.75%, Medium volatility, maximum x600. Exact layout 3 reels × 3 rows; no explicit payline/Ways count asserted. Official long description confirms Chain Combo Gameplay, Bomb clearing most symbols and Free Spins with increased bonus multipliers; no cascading subtype inferred.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/hip-hop-panda/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 24 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 24; then descend eligible missing PG SOFT Video Slots.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "cloudflareUrl": "https://554b851f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "githubConclusion": "success",
+    "githubRun": 41259466725,
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Hip Hop Panda, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-11-01",
+    "commit": "4abad3b088b55b2b340a44965cbccdcb7f9bd02f",
+    "cloudflareDeploymentId": "554b851f-05e1-4455-a503-e14c5c297611"
+  }
 }
