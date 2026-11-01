@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1132,
+  "gameCount": 1133,
   "providerCount": 371,
-  "sourcePageCount": 1784,
+  "sourcePageCount": 1787,
   "counts": {
     "access-restricted": 4,
-    "available": 840,
+    "available": 841,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "bounty-hunter-pragmatic-play",
+      "name": "Bounty Hunter",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/bounty-hunter/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Bounty Hunter. Official page: reel-one Collector gathers money symbols and raises a progressive multiplier, while reel-five Multiplier can reach 100x. Three to five Scatters trigger eight, twelve or sixteen Free Spins, with Collector multiplier retained across feature spins up to 100x. Exact iframe gameSymbol vs20bhunter opened matching Bounty Hunter Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/bounty-hunter/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/09/Bounty-Hunter_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Bounty Hunter title artwork, 339x180 PNG, SHA256 DC47CDC4B92845071AB240BBED5611FB4F8E7A3EEE089F530284B126D545A4E2"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20bhunter",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "bigger-barn-house-bonanza-pragmatic-play",
       "name": "Bigger Barn House Bonanza",

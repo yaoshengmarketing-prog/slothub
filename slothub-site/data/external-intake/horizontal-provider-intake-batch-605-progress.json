@@ -1,10 +1,10 @@
 {
   "batch": 605,
   "recordedAt": "2026-11-01T22:01:37.611Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1131 published Game Markdown records and same-provider exact official path/name/gameSymbol; Bigger Barn House Bonanza /vswaysbbarnh absent.",
@@ -14,7 +14,7 @@
       "name": "Bigger Barn House Bonanza",
       "slug": "bigger-barn-house-bonanza-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/bigger-barn-house-bonanza/",
       "officialFacts": "Official page: six Scatters trigger six Free Spins, and repeat hits upgrade marked positions from straw to wood and brick for increasing prizes. Wheel Bonus can award up to 5,000x or a larger 5x6 grid.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysbbarnh opened matching Bigger Barn House Bonanza Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 123 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 123 Bounty Hunter validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1132 Games; internal link 1536 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "a4405247812e437b142578e71dba1fb9df31471e",
+    "githubActionsRun": 41355342314,
+    "cloudflareDeployment": "aeff52fd-5c5c-480e-af34-327b3860c42d",
+    "cloudflareUrl": "https://aeff52fd.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
