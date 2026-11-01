@@ -1,0 +1,37 @@
+{
+  "batch": 583,
+  "recordedAt": "2026-11-01T19:21:13.695Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1109 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Christmas – Frozen Lake /vs10bbglxmas absent.",
+  "records": [
+    {
+      "index": 100,
+      "name": "Big Bass Christmas – Frozen Lake",
+      "slug": "big-bass-christmas-frozen-lake-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-christmas-frozen-lake/",
+      "officialFacts": "Official page: Three to five scatters trigger a card reveal to choose normal or Frozen Lake Free Spins. Fisherman Wilds collect money symbols; every fourth Wild adds ten spins and 2x, 3x, then 10x multipliers. Frozen Lake Free Spins use only Wilds and money symbols.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/11/Big-Bass-Christmas-Frozen-Lake_339x180_EN-1.png",
+        "localPath": "public/assets/games/big-bass-christmas-frozen-lake-pragmatic-play.png",
+        "sha256": "3E5CFE5BD10B58721B38DE316ACFE52CA9FA5416CEB0A7A93BB3AB3224EDA49D",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Big Bass Christmas – Frozen Lake title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10bbglxmas opened matching Big Bass Christmas – Frozen Lake Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 101 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verification passed: 1110 Games, 1514 HTML files; internal links and outbound nofollow PASS."
+  }
+}
