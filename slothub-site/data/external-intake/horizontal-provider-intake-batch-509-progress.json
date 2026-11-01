@@ -1,10 +1,10 @@
 {
   "batch": 509,
   "recordedAt": "2026-11-01T10:02:14.689Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1035 published Game Markdown records and same-provider exact official path/name/gameSymbol; Golden Retriever /vs10goldenret absent.",
@@ -14,7 +14,7 @@
       "name": "Golden Retriever",
       "slug": "golden-retriever-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/golden-retriever/",
       "officialFacts": "Official page: 3-5 Scatter give either 10-20 Free Spins or Hold & Spin starting at 1x, 5x or 10x. Wild collects money symbols in Free Spins; each fourth Wild retriggers ten spins and changes modifiers. Hold & Spin gives three initial respins, coins reset counter, full grid can retrigger multiplier up to 25x. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10goldenret returned HTTP 200 and HTML title Golden Retriever; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 27 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 27 Harvest Moon – Grave Profits validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1036 published Games, build, 1440 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "7ddbc29ebb3df082ef783bca60efec285df3a2b7",
+    "githubActionsRun": 41295878335,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "2f030b91-0223-4883-92dc-34e0eabdd3fa",
+    "cloudflareUrl": "https://2f030b91.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

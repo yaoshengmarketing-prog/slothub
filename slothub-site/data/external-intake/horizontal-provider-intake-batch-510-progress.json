@@ -1,0 +1,37 @@
+{
+  "batch": 510,
+  "recordedAt": "2026-11-01T10:07:52.219Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1036 published Game Markdown records and same-provider exact official path/name/gameSymbol; Harvest Moon – Grave Profits /vs15grprofits absent.",
+  "records": [
+    {
+      "index": 27,
+      "name": "Harvest Moon – Grave Profits",
+      "slug": "harvest-moon-grave-profits-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/harvest-moon-grave-profits/",
+      "officialFacts": "Official page: silver Wild adds 1-6 Wilds; gold Wild does likewise with multipliers up to 1000x. Three Scatter trigger three initial respins. Silver, gold and diamond Collect symbols gather money values, reset respin count to three, remain until feature ends and pay total money-symbol values. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/Harvest-Moon-Grave-Profits_339x180_EN.png",
+        "localPath": "public/assets/games/harvest-moon-grave-profits-pragmatic-play.png",
+        "sha256": "5D06C055CD8A3354CB4ED0FADD893CDD5496182FA377D7D2347C3644E22D0301",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs15grprofits returned HTTP 200 and title Harvest Moon - Grave Profits; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 28 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Initial run failed because next-game draft was created after build; moved draft out of content directory and reran full verification. Game schema, demo coverage, 1037 published Games, build, 1441 internal HTML links and outbound nofollow checks passed."
+  }
+}
