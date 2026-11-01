@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1094,
+  "gameCount": 1095,
   "providerCount": 371,
-  "sourcePageCount": 1670,
+  "sourcePageCount": 1673,
   "counts": {
     "access-restricted": 4,
-    "available": 802,
+    "available": 803,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "floating-dragon-wild-horses-pragmatic-play",
+      "name": "Floating Dragon Wild Horses",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/floating-dragon-wild-horses/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Floating Dragon Wild Horses, three to five scatters triggering 15 to 25 Free Spins and wild meters adding spins and multipliers. Exact iframe gameSymbol vs10fdwhorses opened matching Floating Dragon Wild Horses Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/floating-dragon-wild-horses/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/01/Floating-Dragon-Wild-Horses_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Floating Dragon Wild Horses title artwork, 339x180 PNG, SHA256 C029979A543AF59425EA20935D274B2765AA6ABD6F22051C2FDDC0E6A9C5113A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10fdwhorses&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "dragon-tiger-fortunes-pragmatic-play",
       "name": "Dragon Tiger Fortunes",

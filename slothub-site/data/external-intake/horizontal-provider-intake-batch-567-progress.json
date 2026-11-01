@@ -1,10 +1,10 @@
 {
   "batch": 567,
   "recordedAt": "2026-11-01T17:27:33.396Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1093 published Game Markdown records and same-provider exact official path/name/gameSymbol; Dragon Tiger Fortunes /vswayshuffpbh absent.",
@@ -14,7 +14,7 @@
       "name": "Dragon Tiger Fortunes",
       "slug": "dragon-tiger-fortunes-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/dragon-tiger-fortunes/",
       "officialFacts": "Official page: three bonus symbols trigger a wheel for Free Spins or one of four instant Jackpots. Six tiger scatters trigger six initial Free Spins. Marked positions upgrade from bronze to silver and gold as scatters land; gold spots can reveal money prizes up to 8000x at the feature end.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswayshuffpbh opened matching Dragon Tiger Fortunes Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 85 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 85 Floating Dragon Wild Horses validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full run-verify exit 0: 1094 Games, 1498 internal HTML links, outbound nofollow pass."
+  },
+  "publication": {
+    "commit": "e0084d327de4529367cd15db151a391b7b226382",
+    "githubActionsRun": 41331938918,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "5810f356-e5fc-4553-9127-735d544e8592",
+    "cloudflareUrl": "https://5810f356.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

@@ -1,0 +1,37 @@
+{
+  "batch": 568,
+  "recordedAt": "2026-11-01T17:34:24.298Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1094 published Game Markdown records and same-provider exact official path/name/gameSymbol; Floating Dragon Wild Horses /vs10fdwhorses absent.",
+  "records": [
+    {
+      "index": 85,
+      "name": "Floating Dragon Wild Horses",
+      "slug": "floating-dragon-wild-horses-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/floating-dragon-wild-horses/",
+      "officialFacts": "Official page: three to five scatters trigger 15 to 25 Free Spins. Wilds collect money symbols up to 5000x during the feature. Princess and horse Wilds fill separate meters; four Wilds add ten spins and multipliers rise from 2x to 3x to 10x.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/01/Floating-Dragon-Wild-Horses_339x180_EN.png",
+        "localPath": "public/assets/games/floating-dragon-wild-horses-pragmatic-play.png",
+        "sha256": "C029979A543AF59425EA20935D274B2765AA6ABD6F22051C2FDDC0E6A9C5113A",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Floating Dragon Wild Horses title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10fdwhorses opened matching Floating Dragon Wild Horses Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 86 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full run-verify exit 0: 1095 Games, 1499 internal HTML links, outbound nofollow pass."
+  }
+}
