@@ -1,0 +1,37 @@
+{
+  "batch": 524,
+  "recordedAt": "2026-11-01T11:33:39.591Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1050 published Game Markdown records and same-provider exact official path/name/gameSymbol; Better Barn House Bonanza /vswaysbibebarn absent.",
+  "records": [
+    {
+      "index": 41,
+      "name": "Better Barn House Bonanza",
+      "slug": "better-barn-house-bonanza-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/better-barn-house-bonanza/",
+      "officialFacts": "Official page: 5x3 base grid, six-plus Scatter trigger six initial Free Spins, scatter positions upgrade straw to wood to brick, brick house prizes up to 5000x. Three wheel bonus symbol combinations can activate tiered wheel games and instant jackpot prizes up to 35000x. These are feature prizes, not asserted overall max win. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/06/Better-Barn-House-Bonanza_339x180_EN.png",
+        "localPath": "public/assets/games/better-barn-house-bonanza-pragmatic-play.png",
+        "sha256": "01E2483874AD8A91F76A3D39980E4E973469E7FFD3DAD8812055602E854F6376",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Better Barn House Bonanza title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysbibebarn returned HTTP 200 and HTML title Better Barn House Bonanza; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 42 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1051 published Games, build, 1455 internal HTML links and outbound nofollow checks passed."
+  }
+}

@@ -1,10 +1,10 @@
 {
   "batch": 523,
   "recordedAt": "2026-11-01T11:27:56.22Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1049 published Game Markdown records and same-provider exact official path/name/gameSymbol; Fury of Anubis /vs20wraanu absent.",
@@ -14,7 +14,7 @@
       "name": "Fury of Anubis",
       "slug": "fury-of-anubis-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/fury-of-anubis/",
       "officialFacts": "Official page: 5x6, 8-12+ pay-anywhere, Tumble win multiplier doubles from 1x up to 1024x; 3-6 Scatter trigger ten Free Spins with 8x-64x starting bonus multiplier and optional gamble up to 256x. Bonus multiplier resets to starting value before each Free Spin. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20wraanu returned HTTP 200 and HTML title Fury of Anubis; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 41 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 41 Better Barn House Bonanza validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1050 published Games, build, 1454 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "15dec8de483bcc6f2b7763160766f3f41a32ff94",
+    "githubActionsRun": 41302207216,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "294fdf99-fa1d-4409-a9c1-ca9c52bc85bd",
+    "cloudflareUrl": "https://294fdf99.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

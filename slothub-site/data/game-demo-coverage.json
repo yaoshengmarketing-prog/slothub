@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1050,
+  "gameCount": 1051,
   "providerCount": 371,
-  "sourcePageCount": 1538,
+  "sourcePageCount": 1541,
   "counts": {
     "access-restricted": 4,
-    "available": 758,
+    "available": 759,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "better-barn-house-bonanza-pragmatic-play",
+      "name": "Better Barn House Bonanza",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/better-barn-house-bonanza/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Better Barn House Bonanza, scatter upgrades and three bonus-wheel tiers. Exact iframe gameSymbol vswaysbibebarn returned HTTP 200 and HTML title Better Barn House Bonanza; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/better-barn-house-bonanza/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/06/Better-Barn-House-Bonanza_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Better Barn House Bonanza title artwork, 339x180 PNG, SHA256 01E2483874AD8A91F76A3D39980E4E973469E7FFD3DAD8812055602E854F6376"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysbibebarn&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "fury-of-anubis-pragmatic-play",
       "name": "Fury of Anubis",
