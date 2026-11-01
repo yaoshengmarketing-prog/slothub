@@ -1,10 +1,10 @@
 {
   "batch": 594,
   "recordedAt": "2026-11-01T20:41:54.483Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1120 published Game Markdown records and same-provider exact official path/name/gameSymbol; Mystic Wishes /vs7fire88fp absent.",
@@ -14,7 +14,7 @@
       "name": "Mystic Wishes",
       "slug": "mystic-wishes-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/mystic-wishes/",
       "officialFacts": "Official page: Two reels with Wild symbols trigger a free respin on the third reel. Three jackpot-badged lamp symbols trigger a jackpot game; matching three prizes awards 38x, 88x or 888x the total bet.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs7fire88fp opened matching Mystic Wishes Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 112 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 112 Frightening Frankie validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0 after correcting feature tag to respins: Similar play 1121 Games; internal link 1525 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "99be92393cddc740f1869ed712029304238f49ee",
+    "githubActionsRun": 41348582782,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "a3b8bbb4-b91b-41db-b715-efbd942fdc91",
+    "cloudflareUrl": "https://a3b8bbb4.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
