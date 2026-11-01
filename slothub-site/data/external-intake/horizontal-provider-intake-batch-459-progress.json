@@ -1,0 +1,32 @@
+{
+  "batch": 459,
+  "recordedAt": "2026-11-01T09:18:01+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Mr. Hallow-Jackpot!/35 absent before intake.",
+  "records": [
+    {
+      "name": "Mr. Hallow-Jackpot!",
+      "slug": "mr-hallow-jackpot-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/21/",
+      "officialFacts": "Official gid 21, pgid 35, Video Slots, RTP 95.86%, Medium volatility, maximum x5000. Exact layout not asserted; no explicit payline/Ways count asserted. Official long description confirms Mini Haunt guarantees a win and jack-o-lantern rewards during free spins; summary records these without asserting reel layout.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/eed8d666-40e6-4582-9c5b-7995aab78d5a.png",
+        "localPath": "public/assets/games/mr-hallow-jackpot-pg-soft.png",
+        "sha256": "41fb598ec20749b1c2d9bf4ae5d81fbb418e01659e4a67deb38aaf3d1870ea76",
+        "byteSize": 13723,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: glowing jack-o-lantern face in dark spooky setting with PG logo; matches Mr. Hallow-Jackpot! identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/mr-hallow-win/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 20 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
