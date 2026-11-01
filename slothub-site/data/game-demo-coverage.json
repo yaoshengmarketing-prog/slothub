@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1097,
+  "gameCount": 1098,
   "providerCount": 371,
-  "sourcePageCount": 1679,
+  "sourcePageCount": 1682,
   "counts": {
     "access-restricted": 4,
-    "available": 805,
+    "available": 806,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "hot-tuna-pragmatic-play",
+      "name": "Hot Tuna",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/hot-tuna/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Hot Tuna, scatter triggered Free Spins and Wild collection of money symbols. Exact iframe gameSymbol vs10hottuna opened matching Hot Tuna Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/hot-tuna/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/01/Hot-Tuna_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Hot Tuna title artwork, 339x180 PNG, SHA256 29036146AA9FE780A250C6C30E9976253509DECB10839E0E23848ED559CE1CCD"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10hottuna&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "lucky-fortune-tree-pragmatic-play",
       "name": "Lucky Fortune Tree",
