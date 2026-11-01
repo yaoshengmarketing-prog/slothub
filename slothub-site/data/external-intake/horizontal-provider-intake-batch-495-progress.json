@@ -1,10 +1,10 @@
 {
   "batch": 495,
   "recordedAt": "2026-11-01T08:39:34.243Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1021 published Game Markdown records and same-provider exact official path/name/gameSymbol; Forever Split Megaways /vswaysmgrmgw absent.",
@@ -14,7 +14,7 @@
       "name": "Forever Split Megaways™",
       "slug": "forever-split-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/forever-split-megaways/",
       "officialFacts": "Official exact page: up to 72030 ways, two horizontal reels above/below grid, paying symbol multipliers up to 15x add to spin multiplier and apply to subsequent Tumble wins, reset at spin end; 3-6 scatters grant 10-25 free spins where these multipliers continue increasing. No unsupported RTP, volatility, release date or total max win.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysmgrmgw returned HTTP 200; public link exact official page, embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 13 Big Bass Vegas 1000 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 13 Big Bass Vegas 1000 validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1022 published Games, build, 1426 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "6deeede4f7804901949f6a556d0a23670d7b802c",
+    "githubActionsRun": 41289983434,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "c4597eb5-5331-4e80-9e38-ac177310c9df",
+    "cloudflareUrl": "https://c4597eb5.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

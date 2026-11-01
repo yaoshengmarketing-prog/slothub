@@ -1,0 +1,37 @@
+{
+  "batch": 496,
+  "recordedAt": "2026-11-01T08:44:46.2Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1022 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Vegas 1000 /vs10bbveg1000 absent.",
+  "records": [
+    {
+      "index": 13,
+      "name": "Big Bass Vegas 1000",
+      "slug": "big-bass-vegas-1000-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-vegas-1000/",
+      "officialFacts": "Official exact page: fish money symbols up to 1000x, 3-5 scatters trigger 15-25 free spins; red/blue fisherman wilds collect fish money symbols, every fourth same-kind wild adds ten spins and 2x/3x/10x win multipliers on three retriggers. No unsupported RTP, volatility, release date or total max win.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/09/Big-Bass-Vegas-1000_339x180_EN.png",
+        "localPath": "public/assets/games/big-bass-vegas-1000-pragmatic-play.png",
+        "sha256": "9EFE10A2B3F5B675D625A8796EB78D31BB3DFA9EB14A41C7201F87590EF2D108",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Big Bass Vegas 1000 title artwork, matches catalog and page OG image."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10bbveg1000 returned HTTP 200; public link exact official page, embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 14 Freya 1000 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1023 published Games, build, 1427 internal HTML links and outbound nofollow checks passed."
+  }
+}
