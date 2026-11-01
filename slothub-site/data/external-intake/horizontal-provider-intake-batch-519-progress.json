@@ -1,0 +1,37 @@
+{
+  "batch": 519,
+  "recordedAt": "2026-11-01T11:04:34.144Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1045 published Game Markdown records and same-provider exact official path/name/gameSymbol; Out of the Woods /vs25bstackwild absent.",
+  "records": [
+    {
+      "index": 36,
+      "name": "Out of the Woods",
+      "slug": "out-of-the-woods-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/out-of-the-woods/",
+      "officialFacts": "Official page: Wild multiplier stacks cover reels with 1x-4x initial values; winning combinations with stacks trigger respins, move stack downward and increase exposed multipliers. Gold-rimmed Wild can move stack up to ten positions. 3-5 Scatter grant 10-20 Free Spins, with persistent rising Wild multipliers and potential 20 more spins. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/06/Out-of-the-Woods_339x180_EN.png",
+        "localPath": "public/assets/games/out-of-the-woods-pragmatic-play.png",
+        "sha256": "805D800BE915CFB40989960C380681E5796B162A6A13E637C90854A2321EAF25",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Out of the Woods title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs25bstackwild returned HTTP 200 and HTML title Out of the Woods; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 37 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1046 published Games, build, 1450 internal HTML links and outbound nofollow checks passed."
+  }
+}

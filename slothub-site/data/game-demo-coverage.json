@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1045,
+  "gameCount": 1046,
   "providerCount": 371,
-  "sourcePageCount": 1523,
+  "sourcePageCount": 1526,
   "counts": {
     "access-restricted": 4,
-    "available": 753,
+    "available": 754,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "out-of-the-woods-pragmatic-play",
+      "name": "Out of the Woods",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/out-of-the-woods/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Out of the Woods, stacked Wild multipliers and respins, Scatter free spins with persistent multiplier growth. Exact iframe gameSymbol vs25bstackwild returned HTTP 200 and HTML title Out of the Woods; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/out-of-the-woods/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/06/Out-of-the-Woods_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Out of the Woods title artwork, 339x180 PNG, SHA256 805D800BE915CFB40989960C380681E5796B162A6A13E637C90854A2321EAF25"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25bstackwild&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "the-dog-house-megaways-1000-pragmatic-play",
       "name": "The Dog House Megaways 1000",

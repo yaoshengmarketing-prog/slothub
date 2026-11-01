@@ -1,10 +1,10 @@
 {
   "batch": 518,
   "recordedAt": "2026-11-01T10:58:28.968Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1044 published Game Markdown records and same-provider exact official path/name/gameSymbol; The Dog House Megaways 1000 /vswaysdh1000 absent, distinct from original The Dog House.",
@@ -17,7 +17,7 @@
       ],
       "slug": "the-dog-house-megaways-1000-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/the-dog-house-megaways-1000/",
       "officialFacts": "Official page: Megaways variant with Wild multipliers up to 1000x; multiple Wild multipliers multiply together. 3-6 Scatter trigger up to 20 Free Spins with Sticky Wilds or Random Wilds; Super Scatter unlocks enhanced bonus modes. 1000x is a Wild multiplier, not asserted overall max win. No unsupported RTP, volatility or release date.",
       "image": {
@@ -31,10 +31,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysdh1000 returned HTTP 200 and full HTML title The Dog House Megaways 1000; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 36 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 36 Out of the Woods validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1045 published Games, build, 1449 internal HTML links and outbound nofollow checks passed; official artwork abbreviation documented."
+  },
+  "publication": {
+    "commit": "01643440a4a1b1c6ef0a8e93ac5ea272d0d9249f",
+    "githubActionsRun": 41300011567,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "17554259-a3f9-4148-8b32-7d4a753ec480",
+    "cloudflareUrl": "https://17554259.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
