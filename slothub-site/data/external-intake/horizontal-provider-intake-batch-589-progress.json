@@ -1,10 +1,10 @@
 {
   "batch": 589,
   "recordedAt": "2026-11-01T20:03:39.917Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1115 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Dice /vs5luckdce88 absent.",
@@ -14,7 +14,7 @@
       "name": "Lucky Dice",
       "slug": "lucky-dice-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/lucky-dice/",
       "officialFacts": "Official page: Middle-reel Wilds can multiply base wins by 2x, 3x, 5x, 8x or 10x. Three scatters trigger respins with only scatters and blanks; each new scatter adds a spin, up to eight scatters pay 500x, and a retrigger icon can restart the round.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs5luckdce88 opened matching Lucky Dice Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 107 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 107 Wild Wild Riches Returns validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1116 Games; internal link 1520 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "32181483dbd12f02984ab85929d7ae6b0de93348",
+    "githubActionsRun": 41345246719,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "96df1374-93cd-46c3-811f-57ad6f69d342",
+    "cloudflareUrl": "https://96df1374.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1116,
+  "gameCount": 1117,
   "providerCount": 371,
-  "sourcePageCount": 1736,
+  "sourcePageCount": 1739,
   "counts": {
     "access-restricted": 4,
-    "available": 824,
+    "available": 825,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wild-wild-riches-returns-pragmatic-play",
+      "name": "Wild Wild Riches Returns",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/wild-wild-riches-returns/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Wild Wild Riches Returns, money symbols and a free-spins collection feature. Exact iframe gameSymbol vswayswwrichr opened matching Wild Wild Riches Returns Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-wild-riches-returns/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/10/Wild-Wild-Riches-Returns_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Wild Wild Riches Returns title artwork, 339x180 PNG, SHA256 2972049B855C5B1CA9654590ECC78617F31AB6121852FF6F6C65119BED6F84C4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayswwrichr&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "lucky-dice-pragmatic-play",
       "name": "Lucky Dice",

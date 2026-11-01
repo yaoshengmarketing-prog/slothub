@@ -1,0 +1,37 @@
+{
+  "batch": 590,
+  "recordedAt": "2026-11-01T20:11:29.454Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1116 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild Wild Riches Returns /vswayswwrichr absent.",
+  "records": [
+    {
+      "index": 107,
+      "name": "Wild Wild Riches Returns",
+      "slug": "wild-wild-riches-returns-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/wild-wild-riches-returns/",
+      "officialFacts": "Official page: Money symbols up to 10,000x on reel five are collected by a Wild on reel one or five. Three Bonus symbols trigger 6 to 20 Free Spins; money symbol values accumulate and are paid if a Wild lands on an outer reel at the end.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/10/Wild-Wild-Riches-Returns_339x180_EN.png",
+        "localPath": "public/assets/games/wild-wild-riches-returns-pragmatic-play.png",
+        "sha256": "2972049B855C5B1CA9654590ECC78617F31AB6121852FF6F6C65119BED6F84C4",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Wild Wild Riches Returns title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswayswwrichr opened matching Wild Wild Riches Returns Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 108 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verify exit 0: Similar play 1117 Games; internal link 1521 HTML files PASS; outbound nofollow PASS."
+  }
+}
