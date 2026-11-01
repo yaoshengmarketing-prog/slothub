@@ -1,10 +1,10 @@
 {
   "batch": 516,
   "recordedAt": "2026-11-01T10:43:58.298Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1042 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sleeping Dragon Ultra Dark /vs10sleepdud absent.",
@@ -14,7 +14,7 @@
       "name": "Sleeping Dragon Ultra Dark",
       "slug": "sleeping-dragon-ultra-dark-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/sleeping-dragon-ultra-dark/",
       "officialFacts": "Official page: six-plus coins trigger three initial respins, each new coin resets count, full 15-position main grid awards extra 7000x prize. Money egg can trigger mini respin; its source copy conflicts on full-grid threshold, so no specific mini threshold asserted. 3-5 dragon Scatter grant 8, 12 or 50 Free Spins; giant 3x3 symbols may trigger respins or more spins. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10sleepdud returned HTTP 200 and HTML title Sleeping Dragon Ultra Dark; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 34 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 34 Cosmic Clusters! validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1043 published Games, build, 1447 internal HTML links and outbound nofollow checks passed; conflicting mini-respin threshold left unasserted."
+  },
+  "publication": {
+    "commit": "6cf108f632d7b9e7f67c88ea59a053fea42c1759",
+    "githubActionsRun": 41298964691,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "387f5c20-625e-4a8d-9ab3-b1e1eb92d9a7",
+    "cloudflareUrl": "https://387f5c20.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1043,
+  "gameCount": 1044,
   "providerCount": 371,
-  "sourcePageCount": 1517,
+  "sourcePageCount": 1520,
   "counts": {
     "access-restricted": 4,
-    "available": 751,
+    "available": 752,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "cosmic-clusters-pragmatic-play",
+      "name": "Cosmic Clusters!",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/cosmic-clusters/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Cosmic Clusters!, 6x6 cluster pays, Tumble random Wilds, money-symbol clusters and Scatter free spins. Exact iframe gameSymbol vs20cjoinclust returned HTTP 200 and HTML title Cosmic Clusters!; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/cosmic-clusters/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/Cosmic-Clusters_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Cosmic Clusters! title artwork, 339x180 PNG, SHA256 4753BB142109FA92FAF8494C7826889D31A391DAE2A325F3A3EA921F9D0E67F6"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20cjoinclust&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "sleeping-dragon-ultra-dark-pragmatic-play",
       "name": "Sleeping Dragon Ultra Dark",

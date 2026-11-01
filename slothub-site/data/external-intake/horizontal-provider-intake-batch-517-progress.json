@@ -1,0 +1,37 @@
+{
+  "batch": 517,
+  "recordedAt": "2026-11-01T10:52:52.89Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1043 published Game Markdown records and same-provider exact official path/name/gameSymbol; Cosmic Clusters! /vs20cjoinclust absent.",
+  "records": [
+    {
+      "index": 34,
+      "name": "Cosmic Clusters!",
+      "slug": "cosmic-clusters-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/cosmic-clusters/",
+      "officialFacts": "Official page: 6x6, 5-14 matching symbol clusters and Tumbles, random Wild added after each Tumble, five-plus matching money symbols award their sum, 3-6 Scatter grant 12-21 Free Spins, non-winning money symbols persist during feature. Money symbols up to 1000x are symbol values, not asserted overall max win. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/Cosmic-Clusters_339x180_EN.png",
+        "localPath": "public/assets/games/cosmic-clusters-pragmatic-play.png",
+        "sha256": "4753BB142109FA92FAF8494C7826889D31A391DAE2A325F3A3EA921F9D0E67F6",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Cosmic Clusters! title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20cjoinclust returned HTTP 200 and HTML title Cosmic Clusters!; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 35 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1044 published Games, build, 1448 internal HTML links and outbound nofollow checks passed."
+  }
+}
