@@ -1,10 +1,10 @@
 {
   "batch": 514,
   "recordedAt": "2026-11-01T10:33:26.963Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1040 published Game Markdown records and same-provider exact official path/name/gameSymbol; Death Dominion /vs20ddominion absent.",
@@ -14,7 +14,7 @@
       "name": "Death Dominion",
       "slug": "death-dominion-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/death-dominion/",
       "officialFacts": "Official page: base and bonus multipliers respectively up to 100x and 1000x; Doom symbols transform to multiplier or nullify multipliers after Tumbles; 4-6 Scatter grant 12-20 Free Spins and enhanced Dominion/Immortal variants. Bonus multipliers aggregate to total multiplier on bonus win. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20ddominion returned HTTP 200 and HTML title Death Dominion; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 32 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 32 Sunnydaze Asylum validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1041 published Games, build, 1445 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "735957e34b56195b78c8a0f691327354716944e0",
+    "githubActionsRun": 41298220824,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "71b63fcc-9570-4db4-bdea-4bbbf6f27780",
+    "cloudflareUrl": "https://71b63fcc.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

@@ -1,0 +1,37 @@
+{
+  "batch": 515,
+  "recordedAt": "2026-11-01T10:38:36.719Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1041 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sunnydaze Asylum /vswayssndzaslm absent.",
+  "records": [
+    {
+      "index": 32,
+      "name": "Sunnydaze Asylum",
+      "slug": "sunnydaze-asylum-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/sunnydaze-asylum/",
+      "officialFacts": "Official page: 5x5, 3-5 matching symbols and Tumble; multiplier Scatter yields silver or gold multipliers at Tumble end. Silver multipliers each up to 100x add, then gold multipliers 2x-10x multiply that sum. 3+ Scatter trigger ten initial Free Spins with up to fifteen more. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/Sunnydaze-Asylum_339x180_EN.png",
+        "localPath": "public/assets/games/sunnydaze-asylum-pragmatic-play.png",
+        "sha256": "15902FF5E07131DB35C39EEF79A870920EB60FAEF72212F71AC27BE289C8D6C9",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Sunnydaze Asylum title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswayssndzaslm returned HTTP 200 and HTML title Sunnydaze Asylum; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 33 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1042 published Games, build, 1446 internal HTML links and outbound nofollow checks passed."
+  }
+}
