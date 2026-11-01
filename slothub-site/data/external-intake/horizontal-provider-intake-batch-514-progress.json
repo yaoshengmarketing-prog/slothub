@@ -1,0 +1,37 @@
+{
+  "batch": 514,
+  "recordedAt": "2026-11-01T10:33:26.963Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1040 published Game Markdown records and same-provider exact official path/name/gameSymbol; Death Dominion /vs20ddominion absent.",
+  "records": [
+    {
+      "index": 31,
+      "name": "Death Dominion",
+      "slug": "death-dominion-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/death-dominion/",
+      "officialFacts": "Official page: base and bonus multipliers respectively up to 100x and 1000x; Doom symbols transform to multiplier or nullify multipliers after Tumbles; 4-6 Scatter grant 12-20 Free Spins and enhanced Dominion/Immortal variants. Bonus multipliers aggregate to total multiplier on bonus win. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/Death-Dominion_339x180_EN.png",
+        "localPath": "public/assets/games/death-dominion-pragmatic-play.png",
+        "sha256": "E8279D28B2A2EB3DF626AB176E8A5FBAA484679E12822691D608A890086A0B76",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Death Dominion title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20ddominion returned HTTP 200 and HTML title Death Dominion; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 32 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1041 published Games, build, 1445 internal HTML links and outbound nofollow checks passed."
+  }
+}

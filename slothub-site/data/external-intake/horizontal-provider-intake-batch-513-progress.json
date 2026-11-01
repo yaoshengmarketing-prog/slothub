@@ -1,10 +1,10 @@
 {
   "batch": 513,
   "recordedAt": "2026-11-01T10:27:15.603Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1039 published Game Markdown records and same-provider exact official path/name/gameSymbol; Jade Legends /vs20jademrich absent.",
@@ -14,7 +14,7 @@
       "name": "Jade Legends",
       "slug": "jade-legends-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/jade-legends/",
       "officialFacts": "Official page: 7x7 grid, 5+ matching cluster pays, winning spots turn gold and gain multipliers from later Tumbles. Golden dragon triggers coin collect with coins up to 500x; four Scatter grant eight Free Spins, 5-7 Scatter unlock enhanced levels, multiplier spots persist during bonus until selected dragon collect. 500x is coin value, not asserted overall max win. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20jademrich returned HTTP 200 and HTML title Jade Legends; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 31 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 31 Death Dominion validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1040 published Games, build, 1444 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "4a797b2c338a82ff0777a7650b5426faa81f92a7",
+    "githubActionsRun": 41297748217,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "aa683cf6-db60-4e79-b8f5-2265bc68937b",
+    "cloudflareUrl": "https://aa683cf6.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

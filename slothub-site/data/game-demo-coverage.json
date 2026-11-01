@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1040,
+  "gameCount": 1041,
   "providerCount": 371,
-  "sourcePageCount": 1508,
+  "sourcePageCount": 1511,
   "counts": {
     "access-restricted": 4,
-    "available": 748,
+    "available": 749,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "death-dominion-pragmatic-play",
+      "name": "Death Dominion",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/death-dominion/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Death Dominion, Tumble Doom multiplier mechanics and Scatter free-spin levels. Exact iframe gameSymbol vs20ddominion returned HTTP 200 and HTML title Death Dominion; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/death-dominion/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/Death-Dominion_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Death Dominion title artwork, 339x180 PNG, SHA256 E8279D28B2A2EB3DF626AB176E8A5FBAA484679E12822691D608A890086A0B76"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20ddominion&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "jade-legends-pragmatic-play",
       "name": "Jade Legends",
