@@ -1,0 +1,37 @@
+{
+  "batch": 522,
+  "recordedAt": "2026-11-01T11:22:20.719Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1048 published Game Markdown records and same-provider exact official path/name/gameSymbol; Hell Butcher /vs20multcann absent.",
+  "records": [
+    {
+      "index": 39,
+      "name": "Hell Butcher",
+      "slug": "hell-butcher-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/hell-butcher/",
+      "officialFacts": "Official page: 6x6, 5+ matching symbol blocks and Tumbles; Wild hooks multiplier from meter, which can grow up to 512x through Tumbles. 3-6 Scatter trigger 12-30 Free Spins; special Scatter combinations activate three bonus modifiers. 512x is Wild multiplier, not asserted overall max win. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/06/Hell-Butcher_339x180_EN.png",
+        "localPath": "public/assets/games/hell-butcher-pragmatic-play.png",
+        "sha256": "8763CA89C8BB92EF7A18B9FC1673A7FF97763185E2A95F28BF941EFC63C29280",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Hell Butcher title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20multcann returned HTTP 200 and HTML title Hell Butcher; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 40 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1049 published Games, build, 1453 internal HTML links and outbound nofollow checks passed."
+  }
+}

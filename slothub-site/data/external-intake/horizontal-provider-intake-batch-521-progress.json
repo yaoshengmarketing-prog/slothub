@@ -1,10 +1,10 @@
 {
   "batch": 521,
   "recordedAt": "2026-11-01T11:16:08.141Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1047 published Game Markdown records and same-provider exact official path/name/gameSymbol; Luxor of Cleopatra /vswaysladythf absent.",
@@ -14,7 +14,7 @@
       "name": "Luxor of Cleopatra",
       "slug": "luxor-of-cleopatra-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/luxor-of-cleopatra/",
       "officialFacts": "Official page: 3-5 lotus Scatter trigger ten Free Spins; Wilds can carry 2x multiplier; vault starts at 20x and gains values from Wild and Scatter. Eight key positions marked first spin, Cleopatra marks more, all 20 positions unlock vault value in addition to bonus wins. 12500x mentioned as vault boost, not asserted overall max win. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysladythf returned HTTP 200 and HTML title Luxor of Cleopatra; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 39 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 39 Hell Butcher validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1048 published Games, build, 1452 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "197a3ad6567b74a9ce0cb3caf6a29d214eccc1ad",
+    "githubActionsRun": 41301339561,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "4b95c280-fb8e-460a-a896-42fdd6aeb75f",
+    "cloudflareUrl": "https://4b95c280.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
