@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1007,
+  "gameCount": 1008,
   "providerCount": 371,
-  "sourcePageCount": 1409,
+  "sourcePageCount": 1412,
   "counts": {
     "access-restricted": 4,
-    "available": 715,
+    "available": 716,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "starlight-princess-pragmatic-play",
+      "name": "Starlight Princess",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/starlight-princess/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play exact game page identifies Starlight Princess and embeds gameSymbol vs20starlight. Exact official iframe URL returned HTTP 200; playable reels were not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/starlight-princess/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded vs20starlight demo"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/news/pragmatic-play-delivers-regal-adventure-in-starlight-princess/",
+          "httpStatus": 200,
+          "notes": "Official 2021-09-23 slot release and highly volatile classification"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/08/Starlight-Princess_EN_339x180_01.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork, SHA256 24387B5F675F1499D24503925F21F7BB9D025AA1DE485373DF7C379C75841C10"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20starlight&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact official embedded gameSymbol URL, HTTP reachable only"
+        }
+      ]
+    },
     {
       "slug": "honey-trap-of-diao-chan-pg-soft",
       "name": "Honey Trap of Diao Chan",

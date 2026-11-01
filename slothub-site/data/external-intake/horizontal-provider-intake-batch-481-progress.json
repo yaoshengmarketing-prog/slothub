@@ -1,0 +1,36 @@
+{
+  "batch": 481,
+  "recordedAt": "2026-11-01T14:53:20+08:00",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Taiwan-market-relevant Pragmatic Play Slot intake after complete JDB and JILI saved catalogs",
+  "dedupScope": "All current Game Markdown names, filenames, provider and gameSymbol; Starlight Princess and Pragmatic Play gameSymbol vs20starlight absent before intake.",
+  "records": [
+    {
+      "name": "Starlight Princess",
+      "slug": "starlight-princess-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/starlight-princess/",
+      "officialNews": "https://www.pragmaticplay.com/en/news/pragmatic-play-delivers-regal-adventure-in-starlight-princess/",
+      "officialFacts": "Official game page confirms 8-30 same symbols pay anywhere, Tumble, 2x-500x multipliers, 4+ Scatter and 15 free spins. Official 2021-09-23 release says video slot and highly volatile. No unverified RTP, game maximum win or reel dimensions asserted.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/08/Starlight-Princess_EN_339x180_01.png",
+        "localPath": "public/assets/games/starlight-princess-pragmatic-play.png",
+        "sha256": "24387B5F675F1499D24503925F21F7BB9D025AA1DE485373DF7C379C75841C10",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed official image: Starlight Princess title and red-haired princess, consistent with exact official game page."
+      },
+      "demo": "Official page iframe exact gameSymbol vs20starlight; direct URL returned HTTP 200. Public link is official game page; iframe embedding not tested."
+    }
+  ],
+  "nextCursor": "Continue Pragmatic Play official exact Slot pages: Sugar Rush, The Dog House, Fruit Party, and further unique titles; each requires same-provider dedup and exact official image/demo check.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1008 published Games, build, 1412 internal HTML links and outbound nofollow checks passed."
+  }
+}
