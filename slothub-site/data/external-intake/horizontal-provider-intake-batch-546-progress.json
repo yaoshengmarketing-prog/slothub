@@ -1,10 +1,10 @@
 {
   "batch": 546,
   "recordedAt": "2026-11-01T14:14:45.921Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1072 published Game Markdown records and same-provider exact official path/name/gameSymbol; Triple Pot Diamond /vswaystrpgug absent.",
@@ -14,7 +14,7 @@
       "name": "Triple Pot Diamond",
       "slug": "triple-pot-diamond-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/triple-pot-diamond/",
       "officialFacts": "Official page: base Money coins on reels one through four carry up to 500x; Collect on reel five pays their sum. Phoenix, dragon and tiger Scatters on reels two through four fill corresponding pots and may trigger six Free Spins. A bonus-triggering Scatter position receives 5x, adjacent positions 2x; each extra Scatter adds three spins. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaystrpgug returned HTTP 200 and HTML title Triple Pot Diamond; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 64 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 64 Happy Dragon validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1073 published Games; 1477 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "af1eb488ba893e04282fca19ab174a333520298b",
+    "githubActionsRun": 41315519012,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "a7a4b899-654b-4f1e-bb43-6ca71d60c008",
+    "cloudflareUrl": "https://a7a4b899.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
