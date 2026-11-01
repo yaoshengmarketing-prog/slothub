@@ -1,10 +1,10 @@
 {
   "batch": 575,
   "recordedAt": "2026-11-01T18:24:20.879Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1101 published Game Markdown records and same-provider exact official path/name/gameSymbol; Anaconda Gold /vswaysacnd absent.",
@@ -14,7 +14,7 @@
       "name": "Anaconda Gold",
       "slug": "anaconda-gold-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/anaconda-gold/",
       "officialFacts": "Official page: tumble wins expand the grid from six by four to six by eight. Two anaconda symbols transform matching or money symbols along a path. Three to six scatters trigger 10 to 25 Free Spins, where expanded rows persist between spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysacnd opened matching Anaconda Gold Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 93 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 93 Hammerstorm validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full run-verify exit 0: 1102 Games, 1506 internal HTML links, outbound nofollow pass."
+  },
+  "publication": {
+    "commit": "20c6a1bbdfc6c288aa9cf99e366699621b94335a",
+    "githubActionsRun": 41336797748,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "da045088-596f-4f33-87d5-890566bbca3f",
+    "cloudflareUrl": "https://da045088.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

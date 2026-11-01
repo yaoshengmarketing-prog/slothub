@@ -1,0 +1,37 @@
+{
+  "batch": 576,
+  "recordedAt": "2026-11-01T18:30:57.119Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1102 published Game Markdown records and same-provider exact official path/name/gameSymbol; Hammerstorm /vs40hmrstrm absent.",
+  "records": [
+    {
+      "index": 93,
+      "name": "Hammerstorm",
+      "slug": "hammerstorm-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/hammerstorm/",
+      "officialFacts": "Official page: lightning symbols or Thor with lightning can trigger five initial respins. A moving zone collects coin and lightning values up to 10000x, expanding as symbols accumulate. Double, Expand and Spins modifiers can collect twice, grow the grid or add a spin.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/11/Hammerstorm_339x180_EN.png",
+        "localPath": "public/assets/games/hammerstorm-pragmatic-play.png",
+        "sha256": "9F1E8A65C4C52E35573EEB3E965A912B40D2DBB8FD2200B327DF0DBEA230D271",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Hammerstorm title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs40hmrstrm opened matching Hammerstorm Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 94 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full run-verify exit 0: 1103 Games, 1507 internal HTML links, outbound nofollow pass."
+  }
+}
