@@ -1,0 +1,37 @@
+{
+  "batch": 588,
+  "recordedAt": "2026-11-01T19:57:12.543Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1114 published Game Markdown records and same-provider exact official path/name/gameSymbol; Duel of Night & Day /vswaysyinyang absent.",
+  "records": [
+    {
+      "index": 105,
+      "name": "Duel of Night & Day",
+      "slug": "duel-of-night-day-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/duel-of-night-day/",
+      "officialFacts": "Official page: Wins pay from either side. Sun and Moon symbols increase their respective side multipliers. Three to six scatters trigger ten Free Spins with multipliers persisting through the round; bonus scatters add ten more spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/10/Duel-of-Night-Day_339x180_EN.png",
+        "localPath": "public/assets/games/duel-of-night-day-pragmatic-play.png",
+        "sha256": "6E857DA43D223F9884EA2FA432C86E3943DAE703525D9F2BB82911DCC1423F65",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Duel of Night & Day title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysyinyang opened matching Duel of Night & Day Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 106 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verification passed: 1115 Games, 1519 HTML files; internal links and outbound nofollow PASS."
+  }
+}

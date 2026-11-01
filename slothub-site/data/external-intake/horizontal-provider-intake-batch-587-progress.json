@@ -1,10 +1,10 @@
 {
   "batch": 587,
   "recordedAt": "2026-11-01T19:49:48.73Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1113 published Game Markdown records and same-provider exact official path/name/gameSymbol; Super Gummy Strike /vs5supergummy absent.",
@@ -14,7 +14,7 @@
       "name": "Super Gummy Strike",
       "slug": "super-gummy-strike-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/super-gummy-strike/",
       "officialFacts": "Official page: Money symbols up to 2000x on outer reels are collected by a middle-reel Collect or Super Collect, triggering three respins that reset when money Collect or Wild lands. Collect symbols are sticky and Wilds add positional multipliers; Super Collect expands to a 3x5 grid.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs5supergummy opened matching Super Gummy Strike Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 105 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 105 Duel of Night & Day validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verification passed: 1114 Games, 1518 HTML files; internal links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "78e012b980c5095e25f392c93a5f339a3cf178a2",
+    "githubActionsRun": 41344071657,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "07204309-e5f7-4672-b31f-8613c1bc233d",
+    "cloudflareUrl": "https://07204309.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

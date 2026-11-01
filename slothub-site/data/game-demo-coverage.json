@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1114,
+  "gameCount": 1115,
   "providerCount": 371,
-  "sourcePageCount": 1730,
+  "sourcePageCount": 1733,
   "counts": {
     "access-restricted": 4,
-    "available": 822,
+    "available": 823,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "duel-of-night-day-pragmatic-play",
+      "name": "Duel of Night & Day",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/duel-of-night-day/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Duel of Night & Day, three to six scatters triggering Free Spins with persistent Sun and Moon multipliers. Exact iframe gameSymbol vswaysyinyang opened matching Duel of Night & Day Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/duel-of-night-day/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/10/Duel-of-Night-Day_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Duel of Night & Day title artwork, 339x180 PNG, SHA256 6E857DA43D223F9884EA2FA432C86E3943DAE703525D9F2BB82911DCC1423F65"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysyinyang&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "super-gummy-strike-pragmatic-play",
       "name": "Super Gummy Strike",
