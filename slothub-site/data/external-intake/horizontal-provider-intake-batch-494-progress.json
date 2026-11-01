@@ -1,10 +1,10 @@
 {
   "batch": 494,
   "recordedAt": "2026-11-01T08:34:01.317Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1020 published Game Markdown records and same-provider exact official path/name/gameSymbol; Deep Sea Frenzy /vs50frenzy absent.",
@@ -14,7 +14,7 @@
       "name": "Deep Sea Frenzy",
       "slug": "deep-sea-frenzy-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/deep-sea-frenzy/",
       "officialFacts": "Official exact page: shark money symbols on reels 1-4 up to 200x; reel-five Collect up to 5x; eight or more money symbols with Collect award and trigger five free spins; +1 Spin Collect adds spins; money symbol values progress up to 200x by twelfth feature spin. No unsupported RTP, volatility, release date or total max win.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs50frenzy returned HTTP 200; public link exact official page, embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 12 Forever Split Megaways after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 12 Forever Split Megaways validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1021 published Games, build, 1425 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "59a9ac5beda08e7e5052c48540c9d8575a6f0677",
+    "githubActionsRun": 41289609180,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "e8d27ded-4894-4209-a8b2-789116810e3c",
+    "cloudflareUrl": "https://e8d27ded.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
