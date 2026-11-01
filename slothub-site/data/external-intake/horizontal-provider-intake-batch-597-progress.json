@@ -1,10 +1,10 @@
 {
   "batch": 597,
   "recordedAt": "2026-11-01T21:03:54.582Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1123 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lava Balls /vswayslavabls absent.",
@@ -14,7 +14,7 @@
       "name": "Lava Balls",
       "slug": "lava-balls-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/lava-balls/",
       "officialFacts": "Official page: A winning Wild drops a ball into one of seven pots for a prize or bonus. Three scatters trigger twelve Free Spins; Extra Pot Values increase pot prizes, and Ball Drop symbols collect balls released into pots at the end.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswayslavabls opened matching Lava Balls Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 115 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 115 Big Bass Halloween 3 validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1124 Games; internal link 1528 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "d349324dfa400fdacdfefe17dd139fe59939eeaa",
+    "githubActionsRun": 41350421846,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "e2a6cfc4-a610-4e7a-9d31-5fc543212407",
+    "cloudflareUrl": "https://e2a6cfc4.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
