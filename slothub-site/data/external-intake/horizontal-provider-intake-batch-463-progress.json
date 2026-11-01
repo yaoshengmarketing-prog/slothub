@@ -1,0 +1,13 @@
+{
+  "batch": 463,
+  "recordedAt": "2026-11-01T09:42:10+08:00",
+  "state": "excluded-disabled-official-route",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Summon & Conquer",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/17/language/1/live/true",
+  "evidence": "Exact official API gid17 HTTP 200 reports name Summon & Conquer, pgid4, categories 3d_games/video_slots but en=false. No Game, coverage or image write.",
+  "decision": "Excluded disabled route; no new-game count.",
+  "nextCursor": "Continue numeric gid16; recheck gid17 only if official enabled status changes."
+}

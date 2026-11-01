@@ -1,0 +1,32 @@
+{
+  "batch": 465,
+  "recordedAt": "2026-11-01T09:42:27+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Gem Saviour/2 absent before intake.",
+  "records": [
+    {
+      "name": "Gem Saviour",
+      "slug": "gem-saviour-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/15/",
+      "officialFacts": "Official gid 15, pgid 2, Video Slots, RTP 96.82%, Medium volatility, maximum x1000. Exact layout not asserted; no explicit payline/Ways count asserted. Official long description calls this a Match Four title with consecutive combinations and respins; summary records that without inferring reel layout or win count.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/e723e07e-6c22-4a94-8f48-6d4d15946950.png",
+        "localPath": "public/assets/games/gem-saviour-pg-soft.png",
+        "sha256": "a115628c5f3b2a6dc829645d791c3d56049dcb803f9d6b3c17407b996a40fd21",
+        "byteSize": 54174,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: blond gem adventurer holding pink crystal with PG logo; matches Gem Saviour identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/gem-saviour/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 14 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
