@@ -1,0 +1,13 @@
+{
+  "batch": 469,
+  "recordedAt": "2026-11-01T09:53:51+08:00",
+  "state": "excluded-disabled-non-slot-official-route",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "European Blackjack",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/11/language/1/live/true",
+  "evidence": "Exact official API gid11 HTTP 200 reports name European Blackjack, pgid12, en=false and categories 3d_games/table_games, not video_slots. No Game, coverage or image write.",
+  "decision": "Excluded disabled non-Slot Table Game; no new-game count.",
+  "nextCursor": "Continue numeric gid10; recheck gid11 only if official category or enabled status changes."
+}

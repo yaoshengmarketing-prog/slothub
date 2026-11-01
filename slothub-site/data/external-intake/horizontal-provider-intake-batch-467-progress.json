@@ -1,0 +1,13 @@
+{
+  "batch": 467,
+  "recordedAt": "2026-11-01T09:53:17+08:00",
+  "state": "excluded-disabled-official-route",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Wizdom Wonders",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/13/language/1/live/true",
+  "evidence": "Exact official API gid13 HTTP 200 reports name Wizdom Wonders, pgid17, categories 3d_games/video_slots but en=false. No Game, coverage or image write.",
+  "decision": "Excluded disabled route; no new-game count.",
+  "nextCursor": "Continue numeric gid12; recheck gid13 only if official enabled status changes."
+}

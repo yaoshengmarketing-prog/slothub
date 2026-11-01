@@ -1,0 +1,13 @@
+{
+  "batch": 468,
+  "recordedAt": "2026-11-01T09:53:33+08:00",
+  "state": "excluded-disabled-non-slot-official-route",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "American Blackjack",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/12/language/1/live/true",
+  "evidence": "Exact official API gid12 HTTP 200 reports name American Blackjack, pgid11, en=false and categories 3d_games/table_games, not video_slots. No Game, coverage or image write.",
+  "decision": "Excluded disabled non-Slot Table Game; no new-game count.",
+  "nextCursor": "Continue numeric gid11; recheck gid12 only if official category or enabled status changes."
+}

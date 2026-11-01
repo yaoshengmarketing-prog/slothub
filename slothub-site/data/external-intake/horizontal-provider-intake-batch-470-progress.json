@@ -1,0 +1,32 @@
+{
+  "batch": 470,
+  "recordedAt": "2026-11-01T09:53:52+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Medusa/7 absent before intake.",
+  "records": [
+    {
+      "name": "Medusa",
+      "slug": "medusa-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/10/",
+      "officialFacts": "Official gid 10, pgid 7, Video Slots, RTP 95.29%, Medium volatility, maximum x400. Exact layout not asserted; no explicit payline/Ways count asserted. Official long description mentions mini reels, Medusa/Poseidon symbol meter and Scatter leading to free spins; summary records these without inferring reel layout.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/1d618b78-04f1-4033-ac90-0e6059bd9c98.png",
+        "localPath": "public/assets/games/medusa-pg-soft.png",
+        "sha256": "d00cd0a4013962cada102671bf2bb76e0cf7c6126785fc811a04c62d8eaa2855",
+        "byteSize": 49514,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 portrait image of Medusa character with dark hair and PG logo; exact official icon mapping matches Medusa despite no snake detail in small crop."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/medusa/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 9 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
