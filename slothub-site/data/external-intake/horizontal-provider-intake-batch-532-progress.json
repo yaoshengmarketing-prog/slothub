@@ -1,10 +1,10 @@
 {
   "batch": 532,
   "recordedAt": "2026-11-01T12:27:26.156Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1058 published Game Markdown records and same-provider exact official path/name/gameSymbol; The Big Dog House /vs20bgdoghouse absent.",
@@ -14,7 +14,7 @@
       "name": "The Big Dog House",
       "slug": "the-big-dog-house-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/the-big-dog-house/",
       "officialFacts": "Official page: Wilds carry 2x or 3x and may be normal, 1x3 expanded, or 3x3 symbols. Three paw Scatters trigger a nine-mini-reel bonus awarding up to 27 Free Spins. Wild multipliers stick during the feature; Ghost Wilds up to 3x may substitute and remove random sticky Wilds. Biggie and Ghost Out modifiers alter bonus Wild behavior. Distinct exact page and gameSymbol from The Dog House and The Dog House Megaways 1000. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20bgdoghouse returned HTTP 200 and HTML title The Big Dog House; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 50 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 50 Dragon’s Gate – Bonus Choice validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1059 published Games; 1463 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "353bbe537b853e9a626c54cf3b3b3a770489e09e",
+    "githubActionsRun": 41306867072,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "bb84a6d4-2fa7-48f4-8000-183b90f8487d",
+    "cloudflareUrl": "https://bb84a6d4.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

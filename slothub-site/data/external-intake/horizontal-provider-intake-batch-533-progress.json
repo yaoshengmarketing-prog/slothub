@@ -1,0 +1,37 @@
+{
+  "batch": 533,
+  "recordedAt": "2026-11-01T12:33:53.493Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1059 published Game Markdown records and same-provider exact official path/name/gameSymbol; Dragon’s Gate – Bonus Choice /vs50dragatebch absent.",
+  "records": [
+    {
+      "index": 50,
+      "name": "Dragon’s Gate – Bonus Choice",
+      "slug": "dragons-gate-bonus-choice-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/dragons-gate-bonus-choice/",
+      "officialFacts": "Official page: red, yellow and blue Bonus symbols can trigger Balance, Prosperity or Vitality modifiers; four to five Bonus symbols guarantee a feature. Players choose Free Spins or Respins. Respins start at three; Coin symbols reset spins and pay up to 150x; filling all 15 positions pays 5000x Grand Jackpot. Free Spins start at five and blue Bonus symbols can add up to 20. Demo HTML uses ASCII punctuation alias. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/05/Dragons-Gate-Bonus-Choice_339x180_EN.png",
+        "localPath": "public/assets/games/dragons-gate-bonus-choice-pragmatic-play.png",
+        "sha256": "C93B54840657F0B1051EE7B5AD7AF95B10167896F80E06DF9E119CFE1FBF73A8",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Dragon’s Gate – Bonus Choice title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs50dragatebch returned HTTP 200 and HTML title Dragon’s Gate – Bonus Choice; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 51 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1060 published Games; 1464 internal HTML links and outbound nofollow checks pass."
+  }
+}
