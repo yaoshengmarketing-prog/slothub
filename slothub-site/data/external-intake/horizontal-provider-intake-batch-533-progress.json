@@ -1,10 +1,10 @@
 {
   "batch": 533,
   "recordedAt": "2026-11-01T12:33:53.493Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1059 published Game Markdown records and same-provider exact official path/name/gameSymbol; Dragon’s Gate – Bonus Choice /vs50dragatebch absent.",
@@ -14,7 +14,7 @@
       "name": "Dragon’s Gate – Bonus Choice",
       "slug": "dragons-gate-bonus-choice-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/dragons-gate-bonus-choice/",
       "officialFacts": "Official page: red, yellow and blue Bonus symbols can trigger Balance, Prosperity or Vitality modifiers; four to five Bonus symbols guarantee a feature. Players choose Free Spins or Respins. Respins start at three; Coin symbols reset spins and pay up to 150x; filling all 15 positions pays 5000x Grand Jackpot. Free Spins start at five and blue Bonus symbols can add up to 20. Demo HTML uses ASCII punctuation alias. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs50dragatebch returned HTTP 200 and HTML title Dragon’s Gate – Bonus Choice; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 51 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 51 Triple Pot Plinko – Hercules validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1060 published Games; 1464 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "feb44bb30190385d9a5b9b968fd700698250b60d",
+    "githubActionsRun": 41307361631,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "5675e7f0-7dca-4da0-b699-ebb6f438fb05",
+    "cloudflareUrl": "https://5675e7f0.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
