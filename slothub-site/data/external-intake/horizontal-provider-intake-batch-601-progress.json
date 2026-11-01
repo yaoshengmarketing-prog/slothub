@@ -1,0 +1,37 @@
+{
+  "batch": 601,
+  "recordedAt": "2026-11-01T21:32:15.049Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1127 published Game Markdown records and same-provider exact official path/name/gameSymbol; Mermaid’s Treasure Trove /vs20mmdtres absent.",
+  "records": [
+    {
+      "index": 118,
+      "name": "Mermaid’s Treasure Trove",
+      "slug": "mermaids-treasure-trove-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/mermaids-treasure-trove/",
+      "officialFacts": "Official page: five or more identical symbols in a cluster pay; winning clusters can produce rising Wild multipliers. Three to seven Scatters trigger ten to eighteen Free Spins; Wild multipliers stay sticky and additional Scatters add spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/09/Mermaids-Treasure-Trove_339x180_EN.png",
+        "localPath": "public/assets/games/mermaids-treasure-trove-pragmatic-play.png",
+        "sha256": "827299EB928D5D9347D59954365735B4832656EB07A4D0770C548A1F07016CC9",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Mermaid’s Treasure Trove title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20mmdtres opened matching Mermaid’s Treasure Trove Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 119 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verify exit 0: Similar play 1128 Games; internal link 1532 HTML files PASS; outbound nofollow PASS."
+  }
+}

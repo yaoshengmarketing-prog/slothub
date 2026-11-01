@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1127,
+  "gameCount": 1128,
   "providerCount": 371,
-  "sourcePageCount": 1769,
+  "sourcePageCount": 1772,
   "counts": {
     "access-restricted": 4,
-    "available": 835,
+    "available": 836,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mermaids-treasure-trove-pragmatic-play",
+      "name": "Mermaid’s Treasure Trove",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/mermaids-treasure-trove/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Mermaid’s Treasure Trove, cluster wins, rising Wild multipliers and Free Spins. Exact iframe gameSymbol vs20mmdtres opened matching Mermaid’s Treasure Trove Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/mermaids-treasure-trove/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/09/Mermaids-Treasure-Trove_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Mermaid’s Treasure Trove title artwork, 339x180 PNG, SHA256 827299EB928D5D9347D59954365735B4832656EB07A4D0770C548A1F07016CC9"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20mmdtres",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "chests-of-cai-shen-2-pragmatic-play",
       "name": "Chests of Cai Shen 2",
