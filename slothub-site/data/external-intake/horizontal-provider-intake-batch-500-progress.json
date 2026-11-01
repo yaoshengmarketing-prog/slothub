@@ -1,10 +1,10 @@
 {
   "batch": 500,
   "recordedAt": "2026-11-01T09:08:23.05Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1026 published Game Markdown records and same-provider exact official path/name/gameSymbol; Triple Hop Pots /vs5luckytpg absent. POP sub-brand on official page and within umbrella SLOTS catalog.",
@@ -14,7 +14,7 @@
       "name": "Triple Hop Pots",
       "slug": "triple-hop-pots-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/triple-hop-pots/",
       "officialFacts": "Official exact POP page: 3x3, green/red/purple scatter frogs randomly trigger six free spins; frogs apply full-reel multipliers up to 6x, multiple frogs can activate; bonus coins up to 500x; more scatters may add modifiers and spins. No unsupported RTP, volatility, release date or overall max win.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs5luckytpg returned HTTP 200; public link exact official page, embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 18 Helios – Triple Sun after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 18 Helios – Triple Sun validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1027 published Games, build, 1431 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "200fe32bc7bab149b91e9cada47e1ddfbae0f7bd",
+    "githubActionsRun": 41292013438,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "e6764c12-ec37-4c4f-925c-48f412f0c385",
+    "cloudflareUrl": "https://e6764c12.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
