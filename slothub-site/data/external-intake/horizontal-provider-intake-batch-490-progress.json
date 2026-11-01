@@ -1,0 +1,37 @@
+{
+  "batch": 490,
+  "recordedAt": "2026-11-01T08:09:53.066Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1016 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wonders of Aztec /vs20gtsparta absent.",
+  "records": [
+    {
+      "index": 7,
+      "name": "Wonders of Aztec",
+      "slug": "wonders-of-aztec-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/wonders-of-aztec/",
+      "officialFacts": "Official page: bomb symbols can add or double reel multipliers up to 128x, Super Bomb boosts all reel multipliers, sum applies after Tumble; 4-6 scatters yield 10-30 free spins with persistent multipliers and five-spin retriggers; Super Scatter increases starting reel multipliers. No unsupported RTP, volatility, release date or total max win.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Wonders-of-Aztec_339x180_EN.png",
+        "localPath": "public/assets/games/wonders-of-aztec-pragmatic-play.png",
+        "sha256": "9212D84CC787AFB2784DDC3CDA714DD7439CBCD2033E6A7411125A9DFD614BAF",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Wonders of Aztec title artwork, matches catalog and page OG image."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20gtsparta returned HTTP 200; public link exact official page, embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 8 Big Bass Halloween Splash 1000 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1017 published Games, build, 1421 internal HTML links and outbound nofollow checks passed."
+  }
+}

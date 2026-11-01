@@ -1,10 +1,10 @@
 {
   "batch": 489,
   "recordedAt": "2026-11-01T08:04:33.623Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1015 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sweet Bonanza POP /vs10swtbnz absent. Pragmatic Play POP sub-brand is present on official page and within umbrella SLOTS catalog.",
@@ -14,7 +14,7 @@
       "name": "Sweet Bonanza POP",
       "slug": "sweet-bonanza-pop-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/sweet-bonanza-pop/",
       "officialFacts": "Official exact POP page: 3x5 grid, 5-9+ pay-anywhere, Tumble, three or more lollipop Scatter or POP symbols trigger 10 initial free spins, sticky multipliers up to 1000x during feature, 3-4 retrigger Scatter yield 5 or 10 more spins. No unsupported RTP, volatility, release date or overall max win.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10swtbnz returned HTTP 200; public link exact official page, embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 7 Wonders of Aztec after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 7 Wonders of Aztec validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1016 published Games, build, 1420 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "40ecb269fb274f43720a0214ea9c2cfe6454a765",
+    "githubActionsRun": 41287508398,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "5245a172-4672-4d3a-8d30-b0887cd86c38",
+    "cloudflareUrl": "https://5245a172.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
