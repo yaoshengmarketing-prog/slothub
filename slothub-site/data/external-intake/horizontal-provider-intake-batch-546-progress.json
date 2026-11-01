@@ -1,0 +1,37 @@
+{
+  "batch": 546,
+  "recordedAt": "2026-11-01T14:14:45.921Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1072 published Game Markdown records and same-provider exact official path/name/gameSymbol; Triple Pot Diamond /vswaystrpgug absent.",
+  "records": [
+    {
+      "index": 63,
+      "name": "Triple Pot Diamond",
+      "slug": "triple-pot-diamond-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/triple-pot-diamond/",
+      "officialFacts": "Official page: base Money coins on reels one through four carry up to 500x; Collect on reel five pays their sum. Phoenix, dragon and tiger Scatters on reels two through four fill corresponding pots and may trigger six Free Spins. A bonus-triggering Scatter position receives 5x, adjacent positions 2x; each extra Scatter adds three spins. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/03/Triple-Pot-Diamond_667x414_EN-339x180-1.png",
+        "localPath": "public/assets/games/triple-pot-diamond-pragmatic-play.png",
+        "sha256": "0B974E8E164FBEF961AD57B4AD2398ED7BD18BDE52F2CD7C40B87693BB8E23EB",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Triple Pot Diamond title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaystrpgug returned HTTP 200 and HTML title Triple Pot Diamond; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 64 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1073 published Games; 1477 internal HTML links and outbound nofollow checks pass."
+  }
+}

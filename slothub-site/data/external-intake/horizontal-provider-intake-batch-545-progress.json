@@ -1,10 +1,10 @@
 {
   "batch": 545,
   "recordedAt": "2026-11-01T14:06:19.116Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1071 published Game Markdown records and same-provider exact official path/name/gameSymbol; Jelly Express /vs20payanyvol absent.",
@@ -14,7 +14,7 @@
       "name": "Jelly Express",
       "slug": "jelly-express-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/jelly-express/",
       "officialFacts": "Official page: 6x5 grid, eight or more matching symbols anywhere pay, tumbling reels, Train Wild multipliers up to 100x. Three Coin Scatters trigger a choice among six bonus options with up to 25 Free Spins and Wild multipliers up to 100x. A Scatter during Free Spins may trigger Super Free Spins with five added spins, during which winning Wilds add to a total multiplier for later Wild wins. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20payanyvol returned HTTP 200 and HTML title Jelly Express; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 63 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 63 Triple Pot Diamond validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1072 published Games; 1476 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "b7cd11f84619a94d206a890d7a626fbca33956c4",
+    "githubActionsRun": 41314902357,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "caf8ef47-2d12-4050-94de-4167e325d501",
+    "cloudflareUrl": "https://caf8ef47.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
