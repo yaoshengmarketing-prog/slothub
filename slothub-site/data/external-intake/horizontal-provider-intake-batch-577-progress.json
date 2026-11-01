@@ -1,0 +1,37 @@
+{
+  "batch": 577,
+  "recordedAt": "2026-11-01T18:38:02.582Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1103 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Panda /vs5lckpnd absent.",
+  "records": [
+    {
+      "index": 94,
+      "name": "Lucky Panda",
+      "slug": "lucky-panda-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/lucky-panda/",
+      "officialFacts": "Official page: a special multiplier boosts wins by 2x to 10x on every spin. A panda Wild can randomly trigger eight Free Spins. During the feature, up to three multiplier symbols land and add before applying to the spin win.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/12/Lucky-Panda_339x180_B.png",
+        "localPath": "public/assets/games/lucky-panda-pragmatic-play.png",
+        "sha256": "CDF33211712493EA096440922EED26F712DB16FAEDC2B16836D886D267A20203",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Lucky Panda title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5lckpnd opened matching Lucky Panda Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 95 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full run-verify exit 0: 1104 Games, 1508 internal HTML links, outbound nofollow pass."
+  }
+}
