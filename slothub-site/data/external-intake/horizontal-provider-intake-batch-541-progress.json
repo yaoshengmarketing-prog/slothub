@@ -1,0 +1,45 @@
+{
+  "batch": 541,
+  "recordedAt": "2026-11-01T13:36:36.12Z",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1067 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Trophy Catch /vs10bbtrphfshn absent.",
+  "records": [
+    {
+      "index": 58,
+      "name": "Big Bass Trophy Catch",
+      "slug": "big-bass-trophy-catch-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-trophy-catch/",
+      "officialFacts": "Official page: three to five Scatters grant ten to twenty Free Spins. Fisherman Wilds collect fish Money symbols up to 5000x; every fourth Wild adds ten spins and upgrades win multiplier through 2x, 3x, and 10x. Golden Power Up coins can apply green, red, or blue modifiers including 2x wins, more Money symbols, or more Wilds. Distinct page and gameSymbol from other Big Bass titles. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/03/Big-Bass-Trophy-Catch_339x180_EN.png",
+        "localPath": "public/assets/games/big-bass-trophy-catch-pragmatic-play.png",
+        "sha256": "029BA0D3E13D4D9EF491AB53B374BC2DB5420EFA832377F51EE88C1A0F821901",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Big Bass Trophy Catch title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10bbtrphfshn returned HTTP 200 and HTML title Big Bass Trophy Catch; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 59 Inca Queen validated and queued for single-game publication closure.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1068 published Games; 1472 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "24229a5c892f660f80f3ebfafe3afa5cbea8b289",
+    "githubActionsRun": 41312442510,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "6efccc9f-9374-4609-9f0e-aee2b6fa64fc",
+    "cloudflareUrl": "https://6efccc9f.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
+  }
+}

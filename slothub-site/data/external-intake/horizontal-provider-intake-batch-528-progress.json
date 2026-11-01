@@ -1,10 +1,10 @@
 {
   "batch": 528,
   "recordedAt": "2026-11-01T11:57:36.298Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1054 published Game Markdown records and same-provider exact official path/name/gameSymbol; Caishen’s Cash Pots /vsways4ptgld absent.",
@@ -14,7 +14,7 @@
       "name": "Caishen’s Cash Pots",
       "slug": "caishens-cash-pots-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/caishens-cash-pots/",
       "officialFacts": "Official page: reel-five Collect symbol awards base Money symbols up to 500x; phoenix, dragon and tiger Scatter pots can trigger six initial Free Spins with up to three modifiers. Additional Scatters add three spins, position multipliers up to 10x. A fourth fish pot can add multipliers up to 5x and three spins during the feature. Demo HTML title uses ASCII apostrophe alias. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vsways4ptgld returned HTTP 200 and HTML title Caishen’s Cash Pots; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 46 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 46 Sanatorium Secrets validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1055 published Games; 1459 internal HTML links and outbound nofollow checks pass. Unsupported collect tag removed; official Collect mechanic retained in summary."
+  },
+  "publication": {
+    "commit": "61487b2d4841d2f4ff6cdc70d472f0f6caedabf9",
+    "githubActionsRun": 41304448481,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "afcc966a-0497-4d9c-b142-62a8acbd79f6",
+    "cloudflareUrl": "https://afcc966a.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

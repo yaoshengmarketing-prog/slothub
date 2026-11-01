@@ -1,0 +1,45 @@
+{
+  "batch": 540,
+  "recordedAt": "2026-11-01T13:30:02.796Z",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1066 published Game Markdown records and same-provider exact official path/name/gameSymbol; Great Ghosts! /vs50grghsts absent.",
+  "records": [
+    {
+      "index": 57,
+      "name": "Great Ghosts!",
+      "slug": "great-ghosts-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pragmaticplay.com/en/games/great-ghosts/",
+      "officialFacts": "Official page: blue pink and green Scatters can randomly trigger Ghost Respins with up to three modifiers. Three initial Respins; sticky yellow Money symbols up to 1250x; every Money landing resets count to three. Collecting 8, 12, 16 and 20 symbols unlocks up to four rows; a modifier may unlock additional rewards up to 5750x. These are feature values, not overall max win. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/04/Great-Ghosts_339x180_EN.png",
+        "localPath": "public/assets/games/great-ghosts-pragmatic-play.png",
+        "sha256": "4657AD8DEAD61F7D01293ECB82A1595C1B083EAC79778C4759C1D6AB40D8D4A0",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Great Ghosts! title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs50grghsts returned HTTP 200 and HTML title Great Ghosts!; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 58 Big Bass Trophy Catch validated and queued for single-game publication closure.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1067 published Games; 1471 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "83057cbd7652a32fc09ee8d6a94f0f3a7a9b4c0e",
+    "githubActionsRun": 41311873969,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "20dc1d05-0187-4ca0-8b2c-ca87d0f6e855",
+    "cloudflareUrl": "https://20dc1d05.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
+  }
+}

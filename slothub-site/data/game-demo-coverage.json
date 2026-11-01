@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1055,
+  "gameCount": 1073,
   "providerCount": 371,
-  "sourcePageCount": 1553,
+  "sourcePageCount": 1607,
   "counts": {
     "access-restricted": 4,
-    "available": 763,
+    "available": 781,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,618 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "triple-pot-diamond-pragmatic-play",
+      "name": "Triple Pot Diamond",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/triple-pot-diamond/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Triple Pot Diamond, three Scatter pots and position multipliers. Exact iframe gameSymbol vswaystrpgug returned HTTP 200 and HTML title Triple Pot Diamond; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/triple-pot-diamond/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/03/Triple-Pot-Diamond_667x414_EN-339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Triple Pot Diamond title artwork, 339x180 PNG, SHA256 0B974E8E164FBEF961AD57B4AD2398ED7BD18BDE52F2CD7C40B87693BB8E23EB"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaystrpgug&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
+    {
+      "slug": "jelly-express-pragmatic-play",
+      "name": "Jelly Express",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/jelly-express/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Jelly Express, Tumble wins, Train Wild multipliers and six bonus choices. Exact iframe gameSymbol vs20payanyvol returned HTTP 200 and HTML title Jelly Express; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/jelly-express/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/02/Jelly-Express_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Jelly Express title artwork, 339x180 PNG, SHA256 69260C3A59E83198AFE55F6D89389229A4050CD35466C65BFF0B234FE4B9A4F1"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20payanyvol&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
+    {
+      "slug": "snow-party-pragmatic-play",
+      "name": "Snow Party",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/snow-party/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Snow Party, 7x7 clusters and Wild-triggered Respins. Exact iframe gameSymbol vs20clustersw returned HTTP 200 and HTML title Snow Party; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/snow-party/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/03/Snow-Party_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Snow Party title artwork, 339x180 PNG, SHA256 28E079F271D7AA276E5B4446F5B32F02062BAB2DF0E4797CB5ACD152914D2633"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20clustersw&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
+    {
+      "slug": "idol-pop-fever-pragmatic-play",
+      "name": "Idol Pop Fever",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/idol-pop-fever/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Idol Pop Fever, Spotlight Wild multipliers and Free Spins. Exact iframe gameSymbol vs20slightwdm returned HTTP 200 and HTML title Idol Pop Fever; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/idol-pop-fever/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/03/Idol-Pop-Fever_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Idol Pop Fever title artwork, 339x180 PNG, SHA256 2218F54AA8DD850127F2F7CBDD8B8820F4D7EB4940F26554AB78D7C2E237C8AE"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20slightwdm&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
+    {
+      "slug": "inca-queen-pragmatic-play",
+      "name": "Inca Queen",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/inca-queen/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Inca Queen, Coin and Frame Respins with expanding Wild. Exact iframe gameSymbol vs20thunder returned HTTP 200 and HTML title Inca Queen; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/inca-queen/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/03/Inca-Queen_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Inca Queen title artwork, 339x180 PNG, SHA256 F4D6E98F187BBC63B08DD1C749A9EBC4AA50137A8C34E32F2F2337462CD7CF9F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20thunder&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
+    {
+      "slug": "big-bass-trophy-catch-pragmatic-play",
+      "name": "Big Bass Trophy Catch",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/big-bass-trophy-catch/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Big Bass Trophy Catch, fisherman Wild collection and Power Up modifiers. Exact iframe gameSymbol vs10bbtrphfshn returned HTTP 200 and HTML title Big Bass Trophy Catch; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-trophy-catch/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/03/Big-Bass-Trophy-Catch_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Big Bass Trophy Catch title artwork, 339x180 PNG, SHA256 029BA0D3E13D4D9EF491AB53B374BC2DB5420EFA832377F51EE88C1A0F821901"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbtrphfshn&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
+    {
+      "slug": "great-ghosts-pragmatic-play",
+      "name": "Great Ghosts!",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/great-ghosts/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Great Ghosts!, Ghost Respins with three coloured Scatter modifiers. Exact iframe gameSymbol vs50grghsts returned HTTP 200 and HTML title Great Ghosts!; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/great-ghosts/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/04/Great-Ghosts_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Great Ghosts! title artwork, 339x180 PNG, SHA256 4657AD8DEAD61F7D01293ECB82A1595C1B083EAC79778C4759C1D6AB40D8D4A0"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50grghsts&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
+    {
+      "slug": "dragon-pots-megaways-pragmatic-play",
+      "name": "Dragon Pots Megaways™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/dragon-pots-megaways/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Dragon Pots Megaways™, six-reel Megaways and dragon Scatter modifiers. Exact iframe gameSymbol vswaysdragden returned HTTP 200 and HTML title Dragon Pots Megaways™; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/dragon-pots-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/04/Dragon-Pots-Megaways_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Dragon Pots Megaways™ title artwork, 339x180 PNG, SHA256 22355A8F2F74757E6710D56DE030299E12C442F41A399A38F580916AA9B31267"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysdragden&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
+    {
+      "slug": "sweet-bonanza-2500-pragmatic-play",
+      "name": "Sweet Bonanza 2500",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/sweet-bonanza-2500/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Sweet Bonanza 2500, 6x5 candy rewards and Free Spins multipliers. Exact iframe gameSymbol vs20swbon2500 returned HTTP 200 and HTML title Sweet Bonanza 2500; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sweet-bonanza-2500/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/04/Sweet-Bonanza-2500_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Sweet Bonanza 2500 title artwork, 339x180 PNG, SHA256 6BE966EE6A27FEC326044A75BF1C1DCDFAFA17212E3954D06CDBB907AA996577"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20swbon2500&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
+    {
+      "slug": "mr-nulls-wicked-wares-pragmatic-play",
+      "name": "Mr Null’s Wicked Wares",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/mr-nulls-wicked-wares/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Mr Null’s Wicked Wares, mystery symbols and growing reel multipliers. Exact iframe gameSymbol vswaysmrcursc returned HTTP 200 and HTML title Mr Null’s Wicked Wares; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/mr-nulls-wicked-wares/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/04/Mr.-Nulls-Wicked-Wares_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Mr Null’s Wicked Wares title artwork, 339x180 PNG, SHA256 6590670C181638DEE98316491A2E1DD2E8DFB8A2FFF79A855131F1E74744BAAA"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysmrcursc&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
+    {
+      "slug": "launch-to-riches-pragmatic-play",
+      "name": "Launch to Riches",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/launch-to-riches/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Launch to Riches, rocket Collect symbols and asteroid grids. Exact iframe gameSymbol vswaysrocktrls returned HTTP 200 and HTML title Launch to Riches; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/launch-to-riches/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/04/Launch-to-Riches_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Launch to Riches title artwork, 339x180 PNG, SHA256 748E28B70F9447CF6ECA37DB75E99629490DC0E2AC5D249C6E781B60AA03D873"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysrocktrls&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
+    {
+      "slug": "heartbreakers-pragmatic-play",
+      "name": "Heartbreakers",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/heartbreakers/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Heartbreakers, five reel multipliers and three-colour bottle Respins. Exact iframe gameSymbol vs20prizegrow returned HTTP 200 and HTML title Heartbreakers; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/heartbreakers/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/04/Heartbreakers_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Heartbreakers title artwork, 339x180 PNG, SHA256 E46FF575A38C2F1A6134D9F338D9E8DB81CC5CA21AEA35EEFAE25D7F18C3BD4C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20prizegrow&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
+    {
+      "slug": "triple-pot-plinko-hercules-pragmatic-play",
+      "name": "Triple Pot Plinko – Hercules",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/triple-pot-plinko-hercules/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Triple Pot Plinko – Hercules, Plinko bonus with three coloured Scatter modifiers. Exact iframe gameSymbol vswaysplnk3p returned HTTP 200 and HTML title Triple Pot Plinko – Hercules; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/triple-pot-plinko-hercules/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/05/Triple-Pot-Plinko-Hercules_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Triple Pot Plinko – Hercules title artwork, 339x180 PNG, SHA256 28AF2DF2B4A12111E193D5AEC7E9C336C8BBFC268088B7167279D7BACE16DACB"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysplnk3p&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
+    {
+      "slug": "dragons-gate-bonus-choice-pragmatic-play",
+      "name": "Dragon’s Gate – Bonus Choice",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/dragons-gate-bonus-choice/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Dragon’s Gate – Bonus Choice, Bonus Choice between Free Spins and Respins with three modifiers. Exact iframe gameSymbol vs50dragatebch returned HTTP 200 and HTML title Dragon’s Gate – Bonus Choice; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/dragons-gate-bonus-choice/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/05/Dragons-Gate-Bonus-Choice_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Dragon’s Gate – Bonus Choice title artwork, 339x180 PNG, SHA256 C93B54840657F0B1051EE7B5AD7AF95B10167896F80E06DF9E119CFE1FBF73A8"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50dragatebch&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
+    {
+      "slug": "the-big-dog-house-pragmatic-play",
+      "name": "The Big Dog House",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/the-big-dog-house/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify The Big Dog House, supersized Wilds, Ghost Wilds and mini-reel Free Spins. Exact iframe gameSymbol vs20bgdoghouse returned HTTP 200 and HTML title The Big Dog House; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-big-dog-house/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/05/The-Big-Dog-House_339x180_EN-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed The Big Dog House title artwork, 339x180 PNG, SHA256 1EF7D0B59D7FED0FBB71F7F64A6B763E8F523CC9804B202BC57FCC4AD77E3FE5"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20bgdoghouse&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
+    {
+      "slug": "big-bass-football-bonanza-pragmatic-play",
+      "name": "Big Bass Football Bonanza",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/big-bass-football-bonanza/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Big Bass Football Bonanza, Scatter-triggered Free Spins and fisherman Wild meters. Exact iframe gameSymbol vs10bbwcup returned HTTP 200 and HTML title Big Bass Football Bonanza; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-football-bonanza/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/05/Big-Bass-Football-Bonanza_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Big Bass Football Bonanza title artwork, 339x180 PNG, SHA256 D1E8BFA7AAAD225F73EC9F440488A346D5CD7C2F79DE72328FB7DE89880D853C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbwcup&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
+    {
+      "slug": "candy-rush-pragmatic-play",
+      "name": "Candy Rush",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/candy-rush/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Candy Rush, Tumble multipliers and Scatter-triggered Free Spins. Exact iframe gameSymbol vs20candyia returned HTTP 200 and HTML title Candy Rush; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/candy-rush/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/05/Candy-Rush_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Candy Rush title artwork, 339x180 PNG, SHA256 0C8BD70BBE6D3522AEB7E3202E07BF45BB094DB5B182EE31EA2CAE4107481799"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20candyia&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
+    {
+      "slug": "sanatorium-secrets-pragmatic-play",
+      "name": "Sanatorium Secrets",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/sanatorium-secrets/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Sanatorium Secrets, expanding Wilds, Hook symbols and puzzle respins. Exact iframe gameSymbol vswayssanator returned HTTP 200 and HTML title Sanatorium Secrets; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sanatorium-secrets/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/05/Sanatorium-Secrets_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Sanatorium Secrets title artwork, 339x180 PNG, SHA256 F9A44F7ABF0D86753EF4225E4A5482075D2CD5696981D07C00B7493968E52BCA"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayssanator&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "caishens-cash-pots-pragmatic-play",
       "name": "Caishen’s Cash Pots",

@@ -1,0 +1,45 @@
+{
+  "batch": 530,
+  "recordedAt": "2026-11-01T12:09:46.378Z",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1056 published Game Markdown records and same-provider exact official path/name/gameSymbol; Candy Rush /vs20candyia absent.",
+  "records": [
+    {
+      "index": 47,
+      "name": "Candy Rush",
+      "slug": "candy-rush-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pragmaticplay.com/en/games/candy-rush/",
+      "officialFacts": "Official page: at least five matching symbols award wins in a tumbling-reels game. Base grid positions can carry 2x multipliers which persist across Tumbles and double on consecutive wins up to 128x. Three to seven Scatters trigger up to 30 Free Spins; guaranteed multipliers land on each feature spin and can also double to 128x. Random Super Free Spins make the guaranteed multiplier span the full grid. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/05/Candy-Rush_339x180_EN.png",
+        "localPath": "public/assets/games/candy-rush-pragmatic-play.png",
+        "sha256": "0C8BD70BBE6D3522AEB7E3202E07BF45BB094DB5B182EE31EA2CAE4107481799",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Candy Rush title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20candyia returned HTTP 200 and HTML title Candy Rush; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 48 Big Bass Football Bonanza validated and queued for single-game publication closure.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1057 published Games; 1461 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "221a8cd7d253d65e6a88670c96c366176743e5f5",
+    "githubActionsRun": 41305427510,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "bb26dc76-bad2-498f-a74d-eab188482e0e",
+    "cloudflareUrl": "https://bb26dc76.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
+  }
+}
