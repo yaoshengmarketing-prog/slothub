@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1144,
+  "gameCount": 1145,
   "providerCount": 371,
-  "sourcePageCount": 1820,
+  "sourcePageCount": 1823,
   "counts": {
     "access-restricted": 4,
-    "available": 852,
+    "available": 853,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "argonauts-pragmatic-play",
+      "name": "Argonauts",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/argonauts/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Argonauts. Official page: wilds collect adjacent money symbols and can carry multipliers up to 2,000x. Six or more money symbols trigger three respins; new money symbols reset the count, and a full grid doubles money values. Exact iframe gameSymbol vswaysargonts opened matching Argonauts Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/argonauts/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/Argonauts_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Argonauts title artwork, 339x180 PNG, SHA256 BF420AB90DD0BBD5124C7D2A3BD52298C8ED9850CDF060BE4FC538F1167C0E4B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysargonts",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "ice-mints-pragmatic-play",
       "name": "Ice Mints",

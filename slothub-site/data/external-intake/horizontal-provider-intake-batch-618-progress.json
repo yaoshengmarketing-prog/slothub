@@ -1,0 +1,37 @@
+{
+  "batch": 618,
+  "recordedAt": "2026-11-01T23:41:36.984Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1144 published Game Markdown records and same-provider exact official path/name/gameSymbol; Argonauts /vswaysargonts absent.",
+  "records": [
+    {
+      "index": 135,
+      "name": "Argonauts",
+      "slug": "argonauts-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/argonauts/",
+      "officialFacts": "Official page: wilds collect adjacent money symbols and can carry multipliers up to 2,000x. Six or more money symbols trigger three respins; new money symbols reset the count, and a full grid doubles money values.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/Argonauts_339x180_EN.png",
+        "localPath": "public/assets/games/argonauts-pragmatic-play.png",
+        "sha256": "BF420AB90DD0BBD5124C7D2A3BD52298C8ED9850CDF060BE4FC538F1167C0E4B",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Argonauts title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysargonts opened matching Argonauts Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 136 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full preview verification passed: 1145 Similar play Games, 1549 internal HTML links, outbound nofollow."
+  }
+}
