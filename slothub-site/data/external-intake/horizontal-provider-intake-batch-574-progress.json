@@ -1,0 +1,37 @@
+{
+  "batch": 574,
+  "recordedAt": "2026-11-01T18:17:18.949Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1100 published Game Markdown records and same-provider exact official path/name/gameSymbol; DJ Neko /vs10djneko absent.",
+  "records": [
+    {
+      "index": 91,
+      "name": "DJ Neko",
+      "slug": "dj-neko-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/dj-neko/",
+      "officialFacts": "Official page: three by four by three grid with ten paylines. The DJ Neko symbol can randomly trigger eight Free Spins. During the feature only money symbols and blanks land.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/12/DJ-Neko_339x180_B-1.png",
+        "localPath": "public/assets/games/dj-neko-pragmatic-play.png",
+        "sha256": "37B7E92DBCF43AF81CB8EE7648ECA7EB6073DAFA2A6761AD0D98C64C5F6D3B8D",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact DJ Neko title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10djneko opened matching DJ Neko Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 92 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full run-verify exit 0: 1101 Games, 1505 internal HTML links, outbound nofollow pass."
+  }
+}

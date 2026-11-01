@@ -1,10 +1,10 @@
 {
   "batch": 573,
   "recordedAt": "2026-11-01T18:10:22.612Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1099 published Game Markdown records and same-provider exact official path/name/gameSymbol; Joker’s Jewels Hold & Spin /vs5jokjewhs absent.",
@@ -14,7 +14,7 @@
       "name": "Joker’s Jewels Hold & Spin",
       "slug": "jokers-jewels-hold-spin-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/jokers-jewels-hold-spin/",
       "officialFacts": "Official page: three or more money symbols trigger Hold and Spin with three initial respins. Money symbols stick and reset the spin count. Their values pay at feature end, while filling the entire grid awards 10000x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs5jokjewhs opened matching Joker’s Jewels Hold & Spin Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 91 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 91 DJ Neko validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full run-verify exit 0: 1100 Games, 1504 internal HTML links, outbound nofollow pass."
+  },
+  "publication": {
+    "commit": "ac85dbbb2feac904f3973d6cece9046442b5680a",
+    "githubActionsRun": 41335560956,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "5e4ead9b-5f33-48d2-af8e-2fe433bcb817",
+    "cloudflareUrl": "https://5e4ead9b.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
