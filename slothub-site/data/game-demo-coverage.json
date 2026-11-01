@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1076,
+  "gameCount": 1077,
   "providerCount": 371,
-  "sourcePageCount": 1616,
+  "sourcePageCount": 1619,
   "counts": {
     "access-restricted": 4,
-    "available": 784,
+    "available": 785,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "luckys-wild-pub-2-pragmatic-play",
+      "name": "Lucky’s Wild Pub 2",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/luckys-wild-pub-2/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Lucky's Wild Pub 2, three colored coin modifiers and Pot Respin. Exact iframe gameSymbol vs25luckpub opened in Codex in-app browser, redirected to matching game title and showed loading screen; reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/luckys-wild-pub-2/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/03/Luckys-Wild-Pub-2_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Lucky’s Wild Pub 2 title artwork, 339x180 PNG, SHA256 44B2B2BA797A2EAE54CE80B9A8A065E408EA66083BB1EBCA82A44AE458BCEFF7"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25luckpub&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened in Codex in-app browser, redirected to Lucky's Wild Pub 2 title and showed loading screen"
+        }
+      ]
+    },
     {
       "slug": "cult-pragmatic-play",
       "name": "CULT",

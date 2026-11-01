@@ -1,10 +1,10 @@
 {
   "batch": 549,
   "recordedAt": "2026-11-01T14:43:06.582Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1075 published Game Markdown records and same-provider exact official path/name/gameSymbol; CULT /vs25scolymp absent.",
@@ -14,7 +14,7 @@
       "name": "CULT",
       "slug": "cult-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/cult/",
       "officialFacts": "Official page: 5x4 grid, multiplier Wilds up to 100x. Three, four or five Scatters award ten, fifteen or twenty Free Spins; winning multiplier Wilds accumulate a feature total, and bonus Scatters can retrigger up to twenty spins. Special bet options may change feature chances. No unsupported volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs25scolymp opened in Codex in-app browser, redirected to the matching CULT. game title and showed the loading screen; public link is the exact official page; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 67 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 67 Lucky’s Wild Pub 2 validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1076 published Games; 1480 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "b89778b0891f3dedf5262b3e90f38223820be9bb",
+    "githubActionsRun": 41318158935,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "c565df76-b7c5-4587-80fe-9c84fe881b66",
+    "cloudflareUrl": "https://c565df76.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
