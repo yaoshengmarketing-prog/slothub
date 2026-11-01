@@ -1,0 +1,37 @@
+{
+  "batch": 500,
+  "recordedAt": "2026-11-01T09:08:23.05Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1026 published Game Markdown records and same-provider exact official path/name/gameSymbol; Triple Hop Pots /vs5luckytpg absent. POP sub-brand on official page and within umbrella SLOTS catalog.",
+  "records": [
+    {
+      "index": 17,
+      "name": "Triple Hop Pots",
+      "slug": "triple-hop-pots-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/triple-hop-pots/",
+      "officialFacts": "Official exact POP page: 3x3, green/red/purple scatter frogs randomly trigger six free spins; frogs apply full-reel multipliers up to 6x, multiple frogs can activate; bonus coins up to 500x; more scatters may add modifiers and spins. No unsupported RTP, volatility, release date or overall max win.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/08/Triple-Hop-Pots_339x180_B.png",
+        "localPath": "public/assets/games/triple-hop-pots-pragmatic-play.png",
+        "sha256": "0731C738A48BCDCDF242A06DF231DCB39AC6C253C1F6E278E4BE8FEEF8F77A6B",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Triple Hop Pots title and POP artwork, matches catalog and page OG image."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5luckytpg returned HTTP 200; public link exact official page, embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 18 Helios – Triple Sun after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1027 published Games, build, 1431 internal HTML links and outbound nofollow checks passed."
+  }
+}
