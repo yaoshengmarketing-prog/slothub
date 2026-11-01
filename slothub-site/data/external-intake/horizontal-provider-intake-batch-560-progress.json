@@ -1,10 +1,10 @@
 {
   "batch": 560,
   "recordedAt": "2026-11-01T16:29:08.319Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1086 published Game Markdown records and same-provider exact official path/name/gameSymbol; Knights vs Barbarians /vs10cenrlgdevl absent.",
@@ -14,7 +14,7 @@
       "name": "Knights vs Barbarians",
       "slug": "knights-vs-barbarians-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/knights-vs-barbarians/",
       "officialFacts": "Official page: 5x3 grid; Knight or Barbarian scatters in the central marked position turn matching symbols Wild. Battle scatter awards a random 2x to 100x multiplier and turns the winning faction symbols Wild. Three to five castle scatters trigger ten to twenty Free Spins, with random retriggers of up to ten additional spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10cenrlgdevl opened matching Knights vs Barbarians Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 78 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 78 Fire Stampede Ultimate validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full node scripts/run-verify.mjs exit 0; 1087 Games, 1491 internal HTML links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "ef48c841bde0c6bfeb5c2e681ea754deb5d36954",
+    "githubActionsRun": 41327082460,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "cf0091a2-dd0c-4ea9-beb3-686a55a4a15c",
+    "cloudflareUrl": "https://cf0091a2.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
