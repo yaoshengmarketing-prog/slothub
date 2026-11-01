@@ -1,0 +1,37 @@
+{
+  "batch": 569,
+  "recordedAt": "2026-11-01T17:42:47.184Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1095 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sugar Rush Super Scatter /vs20sugrushss absent.",
+  "records": [
+    {
+      "index": 86,
+      "name": "Sugar Rush Super Scatter",
+      "slug": "sugar-rush-super-scatter-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/sugar-rush-super-scatter/",
+      "officialFacts": "Official page: consecutive tumbles on marked positions double multipliers up to 1024x. Three to seven scatters trigger up to 30 Free Spins, and at least one Super Scatter can award an instant win up to 50000x. Marked multipliers persist through the bonus round.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/01/Sugar-Rush-Super-Scatter_339x180_EN.png",
+        "localPath": "public/assets/games/sugar-rush-super-scatter-pragmatic-play.png",
+        "sha256": "63691CC52FD8BF80827594A21300DB65A143FB7EAFEFF7FAFCA5F49266381969",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Sugar Rush Super Scatter title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20sugrushss opened matching Sugar Rush Super Scatter Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 87 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full run-verify exit 0: 1096 Games, 1500 internal HTML links, outbound nofollow pass."
+  }
+}

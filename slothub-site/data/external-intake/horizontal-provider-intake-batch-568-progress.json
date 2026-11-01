@@ -1,10 +1,10 @@
 {
   "batch": 568,
   "recordedAt": "2026-11-01T17:34:24.298Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1094 published Game Markdown records and same-provider exact official path/name/gameSymbol; Floating Dragon Wild Horses /vs10fdwhorses absent.",
@@ -14,7 +14,7 @@
       "name": "Floating Dragon Wild Horses",
       "slug": "floating-dragon-wild-horses-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/floating-dragon-wild-horses/",
       "officialFacts": "Official page: three to five scatters trigger 15 to 25 Free Spins. Wilds collect money symbols up to 5000x during the feature. Princess and horse Wilds fill separate meters; four Wilds add ten spins and multipliers rise from 2x to 3x to 10x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10fdwhorses opened matching Floating Dragon Wild Horses Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 86 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 86 Sugar Rush Super Scatter validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full run-verify exit 0: 1095 Games, 1499 internal HTML links, outbound nofollow pass."
+  },
+  "publication": {
+    "commit": "635c0e62b16f2a4d8bc4b5cd61e4435612fbbfa8",
+    "githubActionsRun": 41332472536,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "48a1707b-574f-448f-88ef-5b18f5da4b30",
+    "cloudflareUrl": "https://48a1707b.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
