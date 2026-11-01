@@ -1,0 +1,37 @@
+{
+  "batch": 494,
+  "recordedAt": "2026-11-01T08:34:01.317Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1020 published Game Markdown records and same-provider exact official path/name/gameSymbol; Deep Sea Frenzy /vs50frenzy absent.",
+  "records": [
+    {
+      "index": 11,
+      "name": "Deep Sea Frenzy",
+      "slug": "deep-sea-frenzy-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/deep-sea-frenzy/",
+      "officialFacts": "Official exact page: shark money symbols on reels 1-4 up to 200x; reel-five Collect up to 5x; eight or more money symbols with Collect award and trigger five free spins; +1 Spin Collect adds spins; money symbol values progress up to 200x by twelfth feature spin. No unsupported RTP, volatility, release date or total max win.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/09/Deep-Sea-Frenzy_339x180_EN.png",
+        "localPath": "public/assets/games/deep-sea-frenzy-pragmatic-play.png",
+        "sha256": "8E9B73CCA670C3FB6C828388292E1854C154B926EA01B346679E4D87B3543F46",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Deep Sea Frenzy title artwork, matches catalog and page OG image."
+      },
+      "demo": "Official exact page iframe gameSymbol vs50frenzy returned HTTP 200; public link exact official page, embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 12 Forever Split Megaways after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1021 published Games, build, 1425 internal HTML links and outbound nofollow checks passed."
+  }
+}

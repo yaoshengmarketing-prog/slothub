@@ -1,10 +1,10 @@
 {
   "batch": 493,
   "recordedAt": "2026-11-01T08:28:36.795Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1019 published Game Markdown records and same-provider exact official path/name/gameSymbol; Pelican Payday /vs10lckfshmn absent. POP sub-brand on official page and within umbrella SLOTS catalog.",
@@ -14,7 +14,7 @@
       "name": "Pelican Payday",
       "slug": "pelican-payday-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/pelican-payday/",
       "officialFacts": "Official exact POP page: reel-three Collect sums same-spin money symbols up to 1000x each; three scatters give eight initial free spins with retriggers; feature Collect symbols can appear on any reel and add money values to a persistent pot. No unsupported RTP, volatility, release date or total max win.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10lckfshmn returned HTTP 200; public link exact official page, embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 11 Deep Sea Frenzy after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 11 Deep Sea Frenzy validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1020 published Games, build, 1424 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "00634daaf1e463f25597c7e688fa3522821a4fa1",
+    "githubActionsRun": 41289230315,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "2d936703-dbd4-485d-a519-3efa3d3e85c1",
+    "cloudflareUrl": "https://2d936703.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

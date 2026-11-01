@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1020,
+  "gameCount": 1021,
   "providerCount": 371,
-  "sourcePageCount": 1448,
+  "sourcePageCount": 1451,
   "counts": {
     "access-restricted": 4,
-    "available": 728,
+    "available": 729,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "deep-sea-frenzy-pragmatic-play",
+      "name": "Deep Sea Frenzy",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/deep-sea-frenzy/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official exact page and SLOTS catalog identify title, mechanics, and embedded gameSymbol vs50frenzy. Exact iframe HTTP 200; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/deep-sea-frenzy/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/09/Deep-Sea-Frenzy_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed exact title artwork, 339x180 PNG, SHA256 8E9B73CCA670C3FB6C828388292E1854C154B926EA01B346679E4D87B3543F46"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50frenzy&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact official embedded gameSymbol URL, HTTP reachable only"
+        }
+      ]
+    },
     {
       "slug": "pelican-payday-pragmatic-play",
       "name": "Pelican Payday",
