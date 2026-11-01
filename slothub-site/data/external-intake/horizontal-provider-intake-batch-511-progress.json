@@ -1,0 +1,37 @@
+{
+  "batch": 511,
+  "recordedAt": "2026-11-01T10:16:11.096Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1037 published Game Markdown records and same-provider exact official path/name/gameSymbol; 777 Wheel Blitz /vs5wheel7s absent.",
+  "records": [
+    {
+      "index": 28,
+      "name": "777 Wheel Blitz",
+      "slug": "777-wheel-blitz-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/777-wheel-blitz/",
+      "officialFacts": "Official page: three-reel classic slot, three adjacent matching symbols win up to 200x; three matching gemstones on centre payline trigger opal, ruby, emerald or diamond prize wheel. Wheels can pay cash or upgrade one tier; diamond wheel prizes 100x-5000x, which is not asserted overall max win. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/07/777-Wheel-Blitz_339x180_EN.png",
+        "localPath": "public/assets/games/777-wheel-blitz-pragmatic-play.png",
+        "sha256": "21B0DAB28BC66BB86B90F97AE61789D2C8A7FA17125EF26C2333727356F10A5D",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact 777 Wheel Blitz title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5wheel7s returned HTTP 200 and HTML title 777 Wheel Blitz; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 29 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Corrected a NODE_OPTIONS typo before the complete run. Game schema, demo coverage, 1038 published Games, build, 1442 internal HTML links and outbound nofollow checks passed."
+  }
+}
