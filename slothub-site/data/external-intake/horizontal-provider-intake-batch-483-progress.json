@@ -1,10 +1,10 @@
 {
   "batch": 483,
   "recordedAt": "2026-11-01T15:08:51+08:00",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue Taiwan-market-relevant Pragmatic Play exact Slot intake",
   "dedupScope": "All Game Markdown names, filenames, same-provider gameSymbol and series variants; The Dog House original vs20doghouse absent. Other Dog House variants are distinct.",
   "records": [
@@ -12,7 +12,7 @@
       "name": "The Dog House",
       "slug": "the-dog-house-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/the-dog-house-slot/",
       "officialNews": "https://www.pragmaticplay.com/en/news/pragmatic-play-launches-the-dog-house/",
       "officialFacts": "Official original page: 5x3, 20 lines, multiplier Wilds on reels 2-4, Sticky Wilds in free spins. Official 2019-05-09 launch: three bonus paws activate Free Spins and max whole-round win up to 6750x original stake. RTP and volatility left unfilled.",
@@ -32,5 +32,15 @@
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1010 published Games, build, 1414 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "d5287ef92abc060f79a0b371fbd9519322712b23",
+    "githubRun": 41283841679,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "e31b0bc3-52dc-4774-8a3b-fbd302c838bb",
+    "cloudflareUrl": "https://e31b0bc3.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, exact Game/Provider content, no canonical, stylesheet, empty sitemap and live PNG SHA256 match",
+    "checkedAt": "2026-11-01"
   }
 }
