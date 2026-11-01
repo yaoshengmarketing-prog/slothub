@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1067,
+  "gameCount": 1068,
   "providerCount": 371,
-  "sourcePageCount": 1589,
+  "sourcePageCount": 1592,
   "counts": {
     "access-restricted": 4,
-    "available": 775,
+    "available": 776,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-trophy-catch-pragmatic-play",
+      "name": "Big Bass Trophy Catch",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/big-bass-trophy-catch/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Big Bass Trophy Catch, fisherman Wild collection and Power Up modifiers. Exact iframe gameSymbol vs10bbtrphfshn returned HTTP 200 and HTML title Big Bass Trophy Catch; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-trophy-catch/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/03/Big-Bass-Trophy-Catch_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Big Bass Trophy Catch title artwork, 339x180 PNG, SHA256 029BA0D3E13D4D9EF491AB53B374BC2DB5420EFA832377F51EE88C1A0F821901"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbtrphfshn&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "great-ghosts-pragmatic-play",
       "name": "Great Ghosts!",
