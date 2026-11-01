@@ -1,0 +1,36 @@
+{
+  "batch": 483,
+  "recordedAt": "2026-11-01T15:08:51+08:00",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue Taiwan-market-relevant Pragmatic Play exact Slot intake",
+  "dedupScope": "All Game Markdown names, filenames, same-provider gameSymbol and series variants; The Dog House original vs20doghouse absent. Other Dog House variants are distinct.",
+  "records": [
+    {
+      "name": "The Dog House",
+      "slug": "the-dog-house-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/the-dog-house-slot/",
+      "officialNews": "https://www.pragmaticplay.com/en/news/pragmatic-play-launches-the-dog-house/",
+      "officialFacts": "Official original page: 5x3, 20 lines, multiplier Wilds on reels 2-4, Sticky Wilds in free spins. Official 2019-05-09 launch: three bonus paws activate Free Spins and max whole-round win up to 6750x original stake. RTP and volatility left unfilled.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/02/The-Dog-House%E2%84%A2_339x180px-1-1.png",
+        "localPath": "public/assets/games/the-dog-house-pragmatic-play.png",
+        "sha256": "283DCEA3BE043880DC593D1878D0D542E4B19D531834BD33D3C1BC35042605E4",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed official image: three dogs and exact The Dog House logo on original official page."
+      },
+      "demo": "Official page iframe exact gameSymbol vs20doghouse; direct URL returned HTTP 200. Public link is original official game page; iframe embedding not tested."
+    }
+  ],
+  "nextCursor": "Continue Pragmatic Play exact Slot pages: Fruit Party, Wolf Gold, or other unique official titles; verify series variant separately.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1010 published Games, build, 1414 internal HTML links and outbound nofollow checks passed."
+  }
+}

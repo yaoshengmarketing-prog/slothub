@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1009,
+  "gameCount": 1010,
   "providerCount": 371,
-  "sourcePageCount": 1415,
+  "sourcePageCount": 1418,
   "counts": {
     "access-restricted": 4,
-    "available": 717,
+    "available": 718,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-dog-house-pragmatic-play",
+      "name": "The Dog House",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/the-dog-house-slot/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play exact original game page identifies The Dog House and embeds gameSymbol vs20doghouse. Exact official iframe URL returned HTTP 200; playable reels were not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-dog-house-slot/",
+          "httpStatus": 200,
+          "notes": "Exact original title, 5x3 and 20 lines, embedded vs20doghouse demo"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/news/pragmatic-play-launches-the-dog-house/",
+          "httpStatus": 200,
+          "notes": "Official 2019-05-09 original slot release and 6750x whole-game maximum"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/02/The-Dog-House%E2%84%A2_339x180px-1-1.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork, SHA256 283DCEA3BE043880DC593D1878D0D542E4B19D531834BD33D3C1BC35042605E4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20doghouse&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact official embedded gameSymbol URL, HTTP reachable only"
+        }
+      ]
+    },
     {
       "slug": "sugar-rush-pragmatic-play",
       "name": "Sugar Rush",
