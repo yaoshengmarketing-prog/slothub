@@ -1,0 +1,32 @@
+{
+  "batch": 462,
+  "recordedAt": "2026-11-01T09:35:59+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Hood vs Wolf/18 absent before intake.",
+  "records": [
+    {
+      "name": "Hood vs Wolf",
+      "slug": "hood-vs-wolf-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/18/",
+      "officialFacts": "Official gid 18, pgid 18, Video Slots, RTP 95.39%, Medium volatility, maximum x4000. Exact layout not asserted; no explicit payline/Ways count asserted. Official long description confirms character battle and three rounds of rock-paper-scissors reward mode, plus Mini Janken on reels 2 and 4; summary records this.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/6156447d-0627-413f-9ae9-7d2b2cd29f43.png",
+        "localPath": "public/assets/games/hood-vs-wolf-pg-soft.png",
+        "sha256": "9f252181be485936405b8255ebe9003256a37b1af447998c9cf14cf36eb855f3",
+        "byteSize": 46409,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: opposing cartoon hands playing rock-paper-scissors on pink and orange background with PG logo; matches Hood vs Wolf gameplay identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/hood-wolf/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 17 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
