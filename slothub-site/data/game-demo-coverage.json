@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1011,
+  "gameCount": 1012,
   "providerCount": 371,
-  "sourcePageCount": 1421,
+  "sourcePageCount": 1424,
   "counts": {
     "access-restricted": 4,
-    "available": 719,
+    "available": 720,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wolf-gold-pragmatic-play",
+      "name": "Wolf Gold",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/wolf-gold-slot/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play exact original game page identifies Wolf Gold and embeds gameSymbol vs25wolfgold. Exact official iframe URL returned HTTP 200; playable reels were not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wolf-gold-slot/",
+          "httpStatus": 200,
+          "notes": "Exact original title, Free Spins and Money Respins, embedded vs25wolfgold demo"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/news/pragmatic-play-victorious-at-malta-gaming-awards/",
+          "httpStatus": 200,
+          "notes": "Official award coverage identifies Wolf Gold original as Slot"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/04/thumb__WOLF_GOLD__330x140px.png",
+          "httpStatus": 200,
+          "notes": "Official decoded 339x180 title artwork, SHA256 D9CEF1E7484B72748BA3048217F82F34F190A56653E38AAFD858B7C79E9920D8"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25wolfgold&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact official embedded gameSymbol URL, HTTP reachable only"
+        }
+      ]
+    },
     {
       "slug": "fruit-party-pragmatic-play",
       "name": "Fruit Party",

@@ -1,10 +1,10 @@
 {
   "batch": 484,
   "recordedAt": "2026-11-01T15:15:11+08:00",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue Taiwan-market-relevant Pragmatic Play exact Slot intake",
   "dedupScope": "All Game Markdown names, filenames and same-provider gameSymbol; original Fruit Party vs20fruitparty absent. Fruit Party 2 is a distinct sequel and not counted here.",
   "records": [
@@ -12,7 +12,7 @@
       "name": "Fruit Party",
       "slug": "fruit-party-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/fruit-party-slot/",
       "officialNews": "https://www.pragmaticplay.com/en/news/pragmatic-play-gets-summer-started-with-fruit-party/",
       "officialFacts": "Official original 2020-05-27 release confirms 7x7 high-volatility cluster video slot, Tumble, three Golden Fruit Scatter to bonus and up to 256x winning-block multiplier. Page confirms 10 free spins and retriggers. 256x is not whole-game maximum; overall max win and RTP not asserted.",
@@ -32,5 +32,15 @@
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1011 published Games, build, 1415 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "9f12b300095be1d192e91a67765948b704fa6973",
+    "githubRun": 41284265417,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "515f46d9-4ee1-407f-b5d3-4c567d8fb20d",
+    "cloudflareUrl": "https://515f46d9.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, exact Game/Provider content, no canonical, stylesheet, empty sitemap and live PNG SHA256 match",
+    "checkedAt": "2026-11-01"
   }
 }

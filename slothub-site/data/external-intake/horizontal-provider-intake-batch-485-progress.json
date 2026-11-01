@@ -1,0 +1,36 @@
+{
+  "batch": 485,
+  "recordedAt": "2026-11-01T15:22:33+08:00",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue Taiwan-market-relevant Pragmatic Play exact Slot intake",
+  "dedupScope": "All Game Markdown names, filenames and same-provider gameSymbol; original Wolf Gold vs25wolfgold absent. Wolf Gold PowerJackpot, Ultimate and 4 Pack are distinct variants.",
+  "records": [
+    {
+      "name": "Wolf Gold",
+      "slug": "wolf-gold-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/wolf-gold-slot/",
+      "officialAward": "https://www.pragmaticplay.com/en/news/pragmatic-play-victorious-at-malta-gaming-awards/",
+      "officialFacts": "Exact original official page confirms 3 Scatter for 5 Free Spins, combined reels 2-4, 6+ Money Symbols for three Money Respins and 1000x Mega Jackpot on all 15 positions. The jackpot value is not whole-game max win. No unverified RTP, volatility or line count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/04/thumb__WOLF_GOLD__330x140px.png",
+        "localPath": "public/assets/games/wolf-gold-pragmatic-play.png",
+        "sha256": "D9CEF1E7484B72748BA3048217F82F34F190A56653E38AAFD858B7C79E9920D8",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed official image: exact Wolf Gold title and wolf portrait, consistent with original official page."
+      },
+      "demo": "Official page iframe exact gameSymbol vs25wolfgold; direct URL returned HTTP 200. Public link is original official game page; iframe embedding not tested."
+    }
+  ],
+  "nextCursor": "After five-game Pragmatic Play batch closure, continue exact official Slot pages such as Starlight Princess 1000 or The Dog House variants only after same-provider dedup and source checks.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1012 published Games, build, 1416 internal HTML links and outbound nofollow checks passed."
+  }
+}
