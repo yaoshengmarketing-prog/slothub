@@ -1,10 +1,10 @@
 {
   "batch": 603,
   "recordedAt": "2026-11-01T21:48:15.21Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1129 published Game Markdown records and same-provider exact official path/name/gameSymbol; Hundreds and Thousands /vs100hsandks absent.",
@@ -14,7 +14,7 @@
       "name": "Hundreds and Thousands",
       "slug": "hundreds-and-thousands-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/hundreds-and-thousands/",
       "officialFacts": "Official page: 5x5 grid with Bar and X symbols. Five Free Spins symbols on winning lines can trigger up to one hundred Free Spins, based on number of winning lines, with all wins multiplied by 2x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs100hsandks opened matching Hundreds and Thousands Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 121 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 121 777 Rush validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1130 Games; internal link 1534 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "442329ff5fe0c5f5d37a58f92f69f22da7222465",
+    "githubActionsRun": 41354200728,
+    "cloudflareDeployment": "e64a4a22-fe70-46a1-bd9e-d8cdfd85ad0f",
+    "cloudflareUrl": "https://e64a4a22.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

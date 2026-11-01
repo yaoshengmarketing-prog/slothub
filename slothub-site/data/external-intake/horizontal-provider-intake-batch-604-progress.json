@@ -1,0 +1,37 @@
+{
+  "batch": 604,
+  "recordedAt": "2026-11-01T21:55:17.693Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1130 published Game Markdown records and same-provider exact official path/name/gameSymbol; 777 Rush /vs5t8goldfp absent.",
+  "records": [
+    {
+      "index": 121,
+      "name": "777 Rush",
+      "slug": "777-rush-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/777-rush/",
+      "officialFacts": "Official Pragmatic Play POP page: 3x3 grid, three matching symbols win, Wild 7 substitutes, and three Wild 7 symbols can pay up to 1,200x depending on the payline.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/09/777-Rush_339x180_B-1.png",
+        "localPath": "public/assets/games/777-rush-pragmatic-play.png",
+        "sha256": "308A2BD2F3F86D943BD3061D1F04AE056017538D4EB7E57A1245A8C936F10EAF",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact 777 Rush title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5t8goldfp opened matching 777 Rush Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 122 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verify exit 0: Similar play 1131 Games; internal link 1535 HTML files PASS; outbound nofollow PASS."
+  }
+}
