@@ -1,10 +1,10 @@
 {
   "batch": 506,
   "recordedAt": "2026-11-01T09:44:58.395Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1032 published Game Markdown records and same-provider exact official path/name/gameSymbol; Heart of Venus / Hearts of Venus / vs20sugarrusha absent. Official singular/plural mismatch resolved as aliases using same-page Demo title and art.",
@@ -17,7 +17,7 @@
       ],
       "slug": "heart-of-venus-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/heart-of-venus/",
       "officialFacts": "Official page: 6x5, 8-12+ pay-anywhere and Tumble, heart multiplier spots up to 1024x, 3-6 Scatter grant six initial free spins with 2x-16x starting booster, every third Scatter grants two spins and doubles booster. No unsupported RTP, volatility or release date.",
       "image": {
@@ -31,10 +31,18 @@
       "demo": "Exact official page iframe gameSymbol vs20sugarrusha returned HTTP 200 with HTML title Hearts of Venus; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 24 Eastern Fury; after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 24 Eastern Fury validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1033 published Games, build, 1437 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "1edccf6285708e81ac09dc20abfd825a2dce02b2",
+    "githubActionsRun": 41294675191,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "d4cc717a-e387-473a-8de7-8b2951449476",
+    "cloudflareUrl": "https://d4cc717a.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
