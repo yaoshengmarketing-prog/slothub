@@ -1,10 +1,10 @@
 {
   "batch": 611,
   "recordedAt": "2026-11-01T22:46:58.272Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1137 published Game Markdown records and same-provider exact official path/name/gameSymbol; Captain Kraken Megaways /vswayschilhtwo absent.",
@@ -14,7 +14,7 @@
       "name": "Captain Kraken Megaways",
       "slug": "captain-kraken-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/captain-kraken-megaways/",
       "officialFacts": "Official page: six by seven grid with up to 200,704 ways. Money symbols up to 2,000x can be collected; a Respins symbol on reel six with a money symbol triggers the feature, where new money or modifiers reset three respins and modifiers can collect or boost up to 100x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswayschilhtwo opened matching Captain Kraken Megaways Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 129 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 129 Jackpot Blaze validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Initial validation rejected unsupported feature megaways; removed tag and reran full verify exit 0: Similar play 1138 Games; internal link 1542 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "3865305949f1f8f1630bf9c3f216f20ed9df8f69",
+    "githubActionsRun": 41359199526,
+    "cloudflareDeployment": "ae1719ea-d404-4285-a471-5daa7208370a",
+    "cloudflareUrl": "https://ae1719ea.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

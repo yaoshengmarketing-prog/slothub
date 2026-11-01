@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1138,
+  "gameCount": 1139,
   "providerCount": 371,
-  "sourcePageCount": 1802,
+  "sourcePageCount": 1805,
   "counts": {
     "access-restricted": 4,
-    "available": 846,
+    "available": 847,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "jackpot-blaze-pragmatic-play",
+      "name": "Jackpot Blaze",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/jackpot-blaze/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Jackpot Blaze. Official page: eight to thirty matching symbols pay anywhere; special award symbols collected during a tumbling sequence can trigger five jackpot tiers from 5x to 1,000x. Four to six Scatters trigger fifteen to twenty five Free Spins with award collection retained between spins. The official bullet mislabels the 5x tier, so tier names are omitted. Exact iframe gameSymbol vs10jpblaze opened matching Jackpot Blaze Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/jackpot-blaze/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/08/Jackpot-Blaze_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Jackpot Blaze title artwork, 339x180 PNG, SHA256 0ED416B95E5EB59A08E97673299763BF6137C586FBA39D295CD17E2E5CE0FEFC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10jpblaze",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "captain-kraken-megaways-pragmatic-play",
       "name": "Captain Kraken Megaways",

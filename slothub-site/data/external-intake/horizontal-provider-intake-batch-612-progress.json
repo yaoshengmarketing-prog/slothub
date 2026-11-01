@@ -1,0 +1,37 @@
+{
+  "batch": 612,
+  "recordedAt": "2026-11-01T22:55:03.246Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1138 published Game Markdown records and same-provider exact official path/name/gameSymbol; Jackpot Blaze /vs10jpblaze absent.",
+  "records": [
+    {
+      "index": 129,
+      "name": "Jackpot Blaze",
+      "slug": "jackpot-blaze-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/jackpot-blaze/",
+      "officialFacts": "Official page: eight to thirty matching symbols pay anywhere; special award symbols collected during a tumbling sequence can trigger five jackpot tiers from 5x to 1,000x. Four to six Scatters trigger fifteen to twenty five Free Spins with award collection retained between spins. The official bullet mislabels the 5x tier, so tier names are omitted.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/08/Jackpot-Blaze_339x180_EN.png",
+        "localPath": "public/assets/games/jackpot-blaze-pragmatic-play.png",
+        "sha256": "0ED416B95E5EB59A08E97673299763BF6137C586FBA39D295CD17E2E5CE0FEFC",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Jackpot Blaze title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10jpblaze opened matching Jackpot Blaze Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 130 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verify exit 0: Similar play 1139 Games; internal link 1543 HTML files PASS; outbound nofollow PASS."
+  }
+}
