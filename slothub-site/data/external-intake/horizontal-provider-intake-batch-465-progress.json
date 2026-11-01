@@ -1,10 +1,10 @@
 {
   "batch": 465,
   "recordedAt": "2026-11-01T09:42:27+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Gem Saviour/2 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Gem Saviour",
       "slug": "gem-saviour-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/15/",
       "officialFacts": "Official gid 15, pgid 2, Video Slots, RTP 96.82%, Medium volatility, maximum x1000. Exact layout not asserted; no explicit payline/Ways count asserted. Official long description calls this a Match Four title with consecutive combinations and respins; summary records that without inferring reel layout or win count.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/gem-saviour/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 14 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 14; then descend eligible missing PG SOFT Video Slots.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "cloudflareUrl": "https://0acfee7c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "githubConclusion": "success",
+    "githubRun": 41262396269,
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Gem Saviour, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-11-01",
+    "commit": "5625a18312cfe9f11f0dc57bda769e8662e6e3e6",
+    "cloudflareDeploymentId": "0acfee7c-0bc0-424d-91d2-df4ff81491d8"
+  }
 }
