@@ -1,0 +1,37 @@
+{
+  "batch": 602,
+  "recordedAt": "2026-11-01T21:40:59Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1128 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sweet Rush Bonanza /vs20swrbon absent.",
+  "records": [
+    {
+      "index": 119,
+      "name": "Sweet Rush Bonanza",
+      "slug": "sweet-rush-bonanza-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/sweet-rush-bonanza/",
+      "officialFacts": "Official page: eight or more matching symbols pay anywhere on the grid; repeated hits on winning positions double a multiplier up to 128x. Four Scatters trigger ten Free Spins; marked positions and multipliers persist during Free Spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/09/Sweet-Rush-Bonanza_339x180-1.png",
+        "localPath": "public/assets/games/sweet-rush-bonanza-pragmatic-play.png",
+        "sha256": "C990E7C902BCB6BECC40C15E77A7DF4E624B3FBD808D8D96C05972A6A98E7DEB",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Sweet Rush Bonanza title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20swrbon opened matching Sweet Rush Bonanza Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 120 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verify exit 0: Similar play 1129 Games; internal link 1533 HTML files PASS; outbound nofollow PASS."
+  }
+}

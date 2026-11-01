@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1128,
+  "gameCount": 1129,
   "providerCount": 371,
-  "sourcePageCount": 1772,
+  "sourcePageCount": 1775,
   "counts": {
     "access-restricted": 4,
-    "available": 836,
+    "available": 837,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sweet-rush-bonanza-pragmatic-play",
+      "name": "Sweet Rush Bonanza",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/sweet-rush-bonanza/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Sweet Rush Bonanza, eight-symbol wins, rising position multipliers and Free Spins. Exact iframe gameSymbol vs20swrbon opened matching Sweet Rush Bonanza Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sweet-rush-bonanza/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/09/Sweet-Rush-Bonanza_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Sweet Rush Bonanza title artwork, 339x180 PNG, SHA256 C990E7C902BCB6BECC40C15E77A7DF4E624B3FBD808D8D96C05972A6A98E7DEB"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20swrbon",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "mermaids-treasure-trove-pragmatic-play",
       "name": "Mermaid’s Treasure Trove",

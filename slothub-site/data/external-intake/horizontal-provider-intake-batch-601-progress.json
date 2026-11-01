@@ -1,10 +1,10 @@
 {
   "batch": 601,
   "recordedAt": "2026-11-01T21:32:15.049Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1127 published Game Markdown records and same-provider exact official path/name/gameSymbol; Mermaid’s Treasure Trove /vs20mmdtres absent.",
@@ -14,7 +14,7 @@
       "name": "Mermaid’s Treasure Trove",
       "slug": "mermaids-treasure-trove-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/mermaids-treasure-trove/",
       "officialFacts": "Official page: five or more identical symbols in a cluster pay; winning clusters can produce rising Wild multipliers. Three to seven Scatters trigger ten to eighteen Free Spins; Wild multipliers stay sticky and additional Scatters add spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20mmdtres opened matching Mermaid’s Treasure Trove Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 119 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 119 Sweet Rush Bonanza validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1128 Games; internal link 1532 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "ae601fc750ddbcf69e7f95b05e8d3d2c539dbc3e",
+    "githubActionsRun": 41352898017,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "948220bb-516f-4ee3-aec8-a2da8a53ab5e",
+    "cloudflareUrl": "https://948220bb.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
