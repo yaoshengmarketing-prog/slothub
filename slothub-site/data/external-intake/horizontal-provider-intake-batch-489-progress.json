@@ -1,0 +1,37 @@
+{
+  "batch": 489,
+  "recordedAt": "2026-11-01T08:04:33.623Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1015 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sweet Bonanza POP /vs10swtbnz absent. Pragmatic Play POP sub-brand is present on official page and within umbrella SLOTS catalog.",
+  "records": [
+    {
+      "index": 6,
+      "name": "Sweet Bonanza POP",
+      "slug": "sweet-bonanza-pop-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/sweet-bonanza-pop/",
+      "officialFacts": "Official exact POP page: 3x5 grid, 5-9+ pay-anywhere, Tumble, three or more lollipop Scatter or POP symbols trigger 10 initial free spins, sticky multipliers up to 1000x during feature, 3-4 retrigger Scatter yield 5 or 10 more spins. No unsupported RTP, volatility, release date or overall max win.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Sweet-Bonanza-POP_339x180_NB.png",
+        "localPath": "public/assets/games/sweet-bonanza-pop-pragmatic-play.png",
+        "sha256": "47D05C489BB8CB9B9AD99498FC3C8C54CBD0400E26043D148C240EBB40D65003",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Sweet Bonanza POP title artwork, matches catalog card and page OG image."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10swtbnz returned HTTP 200; public link exact official page, embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 7 Wonders of Aztec after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1016 published Games, build, 1420 internal HTML links and outbound nofollow checks passed."
+  }
+}

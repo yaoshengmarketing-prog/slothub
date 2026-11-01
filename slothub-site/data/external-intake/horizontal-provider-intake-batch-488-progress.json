@@ -1,10 +1,10 @@
 {
   "batch": 488,
   "recordedAt": "2026-11-01T07:58:48.116Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1014 published Game Markdown records and same-provider exact official path/name/gameSymbol; Rat Royale /vswaysratking absent.",
@@ -14,7 +14,7 @@
       "name": "Rat Royale",
       "slug": "rat-royale-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/rat-royale/",
       "officialFacts": "Official exact page: standard wild up to 100x, central Rat King wild up to 500x, multiple wild multipliers sum in a winning combination, Rat King triggers one of four modifiers, 3-5 scatters give one of three free-spin variants with ten initial spins. Conflicting third variant names omitted. No unsupported RTP, volatility, release date or max win.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysratking returned HTTP 200; public link exact official page, embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 6 Sweet Bonanza POP after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 6 Sweet Bonanza POP validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1015 published Games, build, 1419 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "8cc67d0ca6cd282c3bb5393f48dbed1c3ca4b803",
+    "githubActionsRun": 41287112345,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "e931330a-5f44-4e1a-87d6-01680263f58f",
+    "cloudflareUrl": "https://e931330a.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

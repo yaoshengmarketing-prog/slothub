@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1015,
+  "gameCount": 1016,
   "providerCount": 371,
-  "sourcePageCount": 1433,
+  "sourcePageCount": 1436,
   "counts": {
     "access-restricted": 4,
-    "available": 723,
+    "available": 724,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sweet-bonanza-pop-pragmatic-play",
+      "name": "Sweet Bonanza POP",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/sweet-bonanza-pop/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play POP exact page and umbrella SLOTS catalog identify title, mechanics, and embedded gameSymbol vs10swtbnz. Exact official iframe returned HTTP 200; playable reels not visually tested. POP sub-brand is retained in source labels.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sweet-bonanza-pop/",
+          "httpStatus": 200,
+          "notes": "Exact POP title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS umbrella catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Sweet-Bonanza-POP_339x180_NB.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed exact POP title artwork, 339x180 PNG, SHA256 47D05C489BB8CB9B9AD99498FC3C8C54CBD0400E26043D148C240EBB40D65003"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10swtbnz&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact official embedded gameSymbol URL, HTTP reachable only"
+        }
+      ]
+    },
     {
       "slug": "rat-royale-pragmatic-play",
       "name": "Rat Royale",
