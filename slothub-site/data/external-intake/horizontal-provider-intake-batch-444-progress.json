@@ -1,0 +1,32 @@
+{
+  "batch": 444,
+  "recordedAt": "2026-11-01T08:25:35+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Jungle Delight/40 absent before intake.",
+  "records": [
+    {
+      "name": "Jungle Delight",
+      "slug": "jungle-delight-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/36/",
+      "officialFacts": "Official gid 36, pgid 40, Video Slots, RTP 96.03%, Medium volatility, maximum x15000. Exact layout 5 reels × 3 rows; no explicit payline/Ways count asserted. Official long description explicitly mentions Mystery Box and sticky symbols in free spins; summary records these.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/86d4e934-bd1d-4d39-8cda-e271d584b6f2.png",
+        "localPath": "public/assets/games/jungle-delight-pg-soft.png",
+        "sha256": "7042891fe5098a9a79a7fda34467859458ebf408d9eb5c93b4d61aa69700da5c",
+        "byteSize": 52644,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: wide-eyed lemur-like jungle animal against leaves with PG logo; matches Jungle Delight identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/jungle-delight/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 35 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
