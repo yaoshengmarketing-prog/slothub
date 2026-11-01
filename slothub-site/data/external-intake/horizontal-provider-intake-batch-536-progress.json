@@ -1,10 +1,10 @@
 {
   "batch": 536,
   "recordedAt": "2026-11-01T12:58:07.802Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1062 published Game Markdown records and same-provider exact official path/name/gameSymbol; Launch to Riches /vswaysrocktrls absent.",
@@ -14,7 +14,7 @@
       "name": "Launch to Riches",
       "slug": "launch-to-riches-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/launch-to-riches/",
       "officialFacts": "Official page: up to three base rocket Collect symbols fire at a 5x4 asteroid grid to reveal cash, Scatters, or bombs. Three Scatters trigger ten Free Spins, each extra Scatter adds two. During bonus, rockets fire from a 5x1 row at a 5x7 asteroid grid; clearing all asteroids applies up to 10x to the total win. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysrocktrls returned HTTP 200 and HTML title Launch to Riches; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 54 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 54 Mr Null’s Wicked Wares validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1063 published Games; 1467 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "5e76e10f826bf81fc342ce9e467b9a1496bac1a0",
+    "githubActionsRun": 41309559667,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "dcf25259-2d66-422f-a691-b37c24bfee9b",
+    "cloudflareUrl": "https://dcf25259.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

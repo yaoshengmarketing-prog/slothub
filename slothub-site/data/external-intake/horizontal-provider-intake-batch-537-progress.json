@@ -1,0 +1,37 @@
+{
+  "batch": 537,
+  "recordedAt": "2026-11-01T13:09:25.351Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1063 published Game Markdown records and same-provider exact official path/name/gameSymbol; Mr Null’s Wicked Wares /vswaysmrcursc absent.",
+  "records": [
+    {
+      "index": 54,
+      "name": "Mr Null’s Wicked Wares",
+      "slug": "mr-nulls-wicked-wares-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/mr-nulls-wicked-wares/",
+      "officialFacts": "Official page: 3-4-4-4-3 grid; mystery symbols on reels two to four transform into a randomly selected paying symbol. Base multipliers 2x to 10x combine multiplicatively if multiple mystery symbols contribute. Three Scatters trigger seven Free Spins, each additional Scatter adds one; bonus reel multipliers begin at 2 and increase by one per mystery landing. Demo HTML uses Mr. Nulls ASCII punctuation alias. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/04/Mr.-Nulls-Wicked-Wares_339x180_EN.png",
+        "localPath": "public/assets/games/mr-nulls-wicked-wares-pragmatic-play.png",
+        "sha256": "6590670C181638DEE98316491A2E1DD2E8DFB8A2FFF79A855131F1E74744BAAA",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Mr Null’s Wicked Wares title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysmrcursc returned HTTP 200 and HTML title Mr Null’s Wicked Wares; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 55 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1064 published Games; 1468 internal HTML links and outbound nofollow checks pass."
+  }
+}
