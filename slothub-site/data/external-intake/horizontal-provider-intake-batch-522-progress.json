@@ -1,10 +1,10 @@
 {
   "batch": 522,
   "recordedAt": "2026-11-01T11:22:20.719Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1048 published Game Markdown records and same-provider exact official path/name/gameSymbol; Hell Butcher /vs20multcann absent.",
@@ -14,7 +14,7 @@
       "name": "Hell Butcher",
       "slug": "hell-butcher-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/hell-butcher/",
       "officialFacts": "Official page: 6x6, 5+ matching symbol blocks and Tumbles; Wild hooks multiplier from meter, which can grow up to 512x through Tumbles. 3-6 Scatter trigger 12-30 Free Spins; special Scatter combinations activate three bonus modifiers. 512x is Wild multiplier, not asserted overall max win. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20multcann returned HTTP 200 and HTML title Hell Butcher; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 40 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 40 Fury of Anubis validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1049 published Games, build, 1453 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "08d030650f6838c23cc573af7b099966973cf567",
+    "githubActionsRun": 41301795033,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "b5b0f846-548c-451d-8072-46d22defb230",
+    "cloudflareUrl": "https://b5b0f846.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
