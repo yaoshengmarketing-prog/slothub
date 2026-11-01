@@ -1,10 +1,10 @@
 {
   "batch": 517,
   "recordedAt": "2026-11-01T10:52:52.89Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1043 published Game Markdown records and same-provider exact official path/name/gameSymbol; Cosmic Clusters! /vs20cjoinclust absent.",
@@ -14,7 +14,7 @@
       "name": "Cosmic Clusters!",
       "slug": "cosmic-clusters-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/cosmic-clusters/",
       "officialFacts": "Official page: 6x6, 5-14 matching symbol clusters and Tumbles, random Wild added after each Tumble, five-plus matching money symbols award their sum, 3-6 Scatter grant 12-21 Free Spins, non-winning money symbols persist during feature. Money symbols up to 1000x are symbol values, not asserted overall max win. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20cjoinclust returned HTTP 200 and HTML title Cosmic Clusters!; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 35 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 35 The Dog House Megaways 1000 validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1044 published Games, build, 1448 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "be92ac5f78ac2815f67623ff40d5baa6b9f8b995",
+    "githubActionsRun": 41299599275,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "d851d392-77f5-40c9-a778-5adb28b0ef8c",
+    "cloudflareUrl": "https://d851d392.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local. Initial readback expected non-rendered 1000 value; rerun checked rendered 6x6 game mechanic and passed."
   }
 }
