@@ -1,0 +1,37 @@
+{
+  "batch": 585,
+  "recordedAt": "2026-11-01T19:35:07.694Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1111 published Game Markdown records and same-provider exact official path/name/gameSymbol; Zeus vs Typhon /vswaysreelbtl absent.",
+  "records": [
+    {
+      "index": 102,
+      "name": "Zeus vs Typhon",
+      "slug": "zeus-vs-typhon-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/zeus-vs-typhon/",
+      "officialFacts": "Official page: Wins can start from either side. Random 2x to 20x multipliers affect their respective side and multiply for a two-sided win. Three Bonus symbols trigger ten Free Spins, plus five for each additional symbol; a multiplier appears on both sides in every feature spin.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/11/Zeus-vs-Typhon_339x180_EN-1.png",
+        "localPath": "public/assets/games/zeus-vs-typhon-pragmatic-play.png",
+        "sha256": "C20AB3D58E32A07B6F5E928AFDCD2B50C7C5C3401D7B3C4FC704646438479A93",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Zeus vs Typhon title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysreelbtl opened matching Zeus vs Typhon Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 103 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verification passed: 1112 Games, 1516 HTML files; internal links and outbound nofollow PASS."
+  }
+}

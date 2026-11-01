@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1111,
+  "gameCount": 1112,
   "providerCount": 371,
-  "sourcePageCount": 1721,
+  "sourcePageCount": 1724,
   "counts": {
     "access-restricted": 4,
-    "available": 819,
+    "available": 820,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "zeus-vs-typhon-pragmatic-play",
+      "name": "Zeus vs Typhon",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/zeus-vs-typhon/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Zeus vs Typhon, three Bonus symbols triggering Free Spins with side-specific multipliers. Exact iframe gameSymbol vswaysreelbtl opened matching Zeus vs Typhon Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/zeus-vs-typhon/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/11/Zeus-vs-Typhon_339x180_EN-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Zeus vs Typhon title artwork, 339x180 PNG, SHA256 C20AB3D58E32A07B6F5E928AFDCD2B50C7C5C3401D7B3C4FC704646438479A93"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysreelbtl&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "happy-nets-pragmatic-play",
       "name": "Happy Nets",
