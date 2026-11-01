@@ -1,10 +1,10 @@
 {
   "batch": 553,
   "recordedAt": "2026-11-01T15:32:13.048Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1079 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild Skullz /vswayscyclop absent.",
@@ -14,7 +14,7 @@
       "name": "Wild Skullz",
       "slug": "wild-skullz-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/wild-skullz/",
       "officialFacts": "Official page: expanded Wilds fill reels and can carry up to 512x. At least three Scatters trigger bonus game. Expanded Wild begins on reel five and moves toward reel one each spin; a Scatter returns it to reel five. Winning expanded Wild multiplier doubles from 2x up to 512x. No unsupported volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswayscyclop opened in Codex in-app browser, redirected to matching Wild Skullz title and showed loading screen; public link exact official page; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 71 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 71 Haunted Crypt validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1080 published Games; 1484 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "48b0e7d14f64593e22955bab4086e6a855b41b71",
+    "githubActionsRun": 41322307737,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "99997cc7-4c87-4923-b837-13b4e325efd5",
+    "cloudflareUrl": "https://99997cc7.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

@@ -1,0 +1,37 @@
+{
+  "batch": 554,
+  "recordedAt": "2026-11-01T15:42:07.627Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1080 published Game Markdown records and same-provider exact official path/name/gameSymbol; Haunted Crypt /vs20dhousehm absent.",
+  "records": [
+    {
+      "index": 71,
+      "name": "Haunted Crypt",
+      "slug": "haunted-crypt-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/haunted-crypt/",
+      "officialFacts": "Official page: 5x3 grid, Value and Speed base modes, Speed increases Free Spins chance. Base Wild multiplier up to 10x; three Scatters trigger ten spins. Feature Wilds leave electrified frames whose multipliers rise by 1x each spin; further Wilds can turn framed symbols into Wilds. Five spins may be retriggered. No unsupported volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/02/Haunted-Crypt_339x180_EN.png",
+        "localPath": "public/assets/games/haunted-crypt-pragmatic-play.png",
+        "sha256": "5B27487E3F6B4ABCB66914606AC54C9EBF6DBCB35A998A80457FD36DF2399B0C",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Haunted Crypt title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20dhousehm opened in Codex in-app browser, redirected to matching Haunted Crypt title and showed loading screen; public link exact official page; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 72 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1081 published Games; 1485 internal HTML links and outbound nofollow checks pass."
+  }
+}
