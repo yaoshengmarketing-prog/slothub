@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1065,
+  "gameCount": 1066,
   "providerCount": 371,
-  "sourcePageCount": 1583,
+  "sourcePageCount": 1586,
   "counts": {
     "access-restricted": 4,
-    "available": 773,
+    "available": 774,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "dragon-pots-megaways-pragmatic-play",
+      "name": "Dragon Pots Megaways™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/dragon-pots-megaways/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Dragon Pots Megaways™, six-reel Megaways and dragon Scatter modifiers. Exact iframe gameSymbol vswaysdragden returned HTTP 200 and HTML title Dragon Pots Megaways™; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/dragon-pots-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/04/Dragon-Pots-Megaways_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Dragon Pots Megaways™ title artwork, 339x180 PNG, SHA256 22355A8F2F74757E6710D56DE030299E12C442F41A399A38F580916AA9B31267"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysdragden&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "sweet-bonanza-2500-pragmatic-play",
       "name": "Sweet Bonanza 2500",
