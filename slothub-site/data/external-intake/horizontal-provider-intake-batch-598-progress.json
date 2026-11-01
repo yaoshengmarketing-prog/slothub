@@ -1,10 +1,10 @@
 {
   "batch": 598,
   "recordedAt": "2026-11-01T21:10:49.474Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1124 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Halloween 3 /vs10bhallbnza3 absent.",
@@ -14,7 +14,7 @@
       "name": "Big Bass Halloween 3",
       "slug": "big-bass-halloween-3-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-halloween-3/",
       "officialFacts": "Official page: Three to five scatters trigger 15 to 25 Free Spins. Blue or red fisherman Wilds collect money symbols up to 5,000x; every fourth Wild grants ten extra spins and raises the multiplier to 2x, 3x or 10x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10bhallbnza3 opened matching Big Bass Halloween 3 Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 116 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 116 Code of Cairo validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1125 Games; internal link 1529 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "42917fa83467b28f02425323d79de96f7f9b27f0",
+    "githubActionsRun": 41351033102,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "a54e9ff3-e250-47e5-bf53-f62040f436d5",
+    "cloudflareUrl": "https://a54e9ff3.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
