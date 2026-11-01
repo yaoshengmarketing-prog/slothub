@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1140,
+  "gameCount": 1141,
   "providerCount": 371,
-  "sourcePageCount": 1808,
+  "sourcePageCount": 1811,
   "counts": {
     "access-restricted": 4,
-    "available": 848,
+    "available": 849,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wolf-gold-4-pack-pragmatic-play",
+      "name": "Wolf Gold 4 Pack",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/wolf-gold-4-pack/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Wolf Gold 4 Pack. Official page: distinct from original Wolf Gold, Bonus Feature uses four 5x3 grids. Moon symbols stay sticky and reset three respins on their grid, gold moons reset all four, and filling all positions adds 1,000x. Super Bonus starts with all four grids open. Exact iframe gameSymbol vs25quadwolf opened matching Wolf Gold 4 Pack Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wolf-gold-4-pack/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/Wolf-Gold-4-Pack_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Wolf Gold 4 Pack title artwork, 339x180 PNG, SHA256 A4F659D96AE725ECB4E3AC0D93BFA3A073C4B2473B42F07554A9C4119D85422A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25quadwolf",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "fire-stampede-2-pragmatic-play",
       "name": "Fire Stampede 2",

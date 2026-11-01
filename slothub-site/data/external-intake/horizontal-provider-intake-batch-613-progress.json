@@ -1,10 +1,10 @@
 {
   "batch": 613,
   "recordedAt": "2026-11-01T23:03:15.235Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1139 published Game Markdown records and same-provider exact official path/name/gameSymbol; Fire Stampede 2 /vswaysfirest2 absent.",
@@ -14,7 +14,7 @@
       "name": "Fire Stampede 2",
       "slug": "fire-stampede-2-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/fire-stampede-2/",
       "officialFacts": "Official page: adjacent Connect and Collect symbols from reel one reach special positions on reels three and six for prizes including up to 4,000x, respins and Free Spins. Three to five Scatters award seven to fifteen Free Spins, when Wilds carry 2x or 3x multipliers that multiply together.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysfirest2 opened matching Fire Stampede 2 Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 131 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 131 Wolf Gold 4 Pack validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1140 Games; internal link 1544 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "3f2bdbbc1061f0a8258f3773d219bdee4c199438",
+    "githubActionsRun": 41360529527,
+    "cloudflareDeployment": "f87c51c7-0a79-4f15-87c3-f6c50ce38cea",
+    "cloudflareUrl": "https://f87c51c7.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
