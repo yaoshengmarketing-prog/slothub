@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1093,
+  "gameCount": 1094,
   "providerCount": 371,
-  "sourcePageCount": 1667,
+  "sourcePageCount": 1670,
   "counts": {
     "access-restricted": 4,
-    "available": 801,
+    "available": 802,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "dragon-tiger-fortunes-pragmatic-play",
+      "name": "Dragon Tiger Fortunes",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/dragon-tiger-fortunes/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Dragon Tiger Fortunes, bonus symbols triggering a wheel and tiger scatters triggering Free Spins. Exact iframe gameSymbol vswayshuffpbh opened matching Dragon Tiger Fortunes Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/dragon-tiger-fortunes/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/01/Dragon-Tiger-Fortunes_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Dragon Tiger Fortunes title artwork, 339x180 PNG, SHA256 F13D21A1B9FCA35DBAD8271F1FFE9A140321CFA36772C39114D5BBEB0F10219F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayshuffpbh&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "super-tiki-strike-pragmatic-play",
       "name": "Super Tiki Strike",
