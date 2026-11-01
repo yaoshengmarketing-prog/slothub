@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1131,
+  "gameCount": 1132,
   "providerCount": 371,
-  "sourcePageCount": 1781,
+  "sourcePageCount": 1784,
   "counts": {
     "access-restricted": 4,
-    "available": 839,
+    "available": 840,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "bigger-barn-house-bonanza-pragmatic-play",
+      "name": "Bigger Barn House Bonanza",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/bigger-barn-house-bonanza/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Bigger Barn House Bonanza. Official page: six Scatters trigger six Free Spins, and repeat hits upgrade marked positions from straw to wood and brick for increasing prizes. Wheel Bonus can award up to 5,000x or a larger 5x6 grid. Exact iframe gameSymbol vswaysbbarnh opened matching Bigger Barn House Bonanza Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/bigger-barn-house-bonanza/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/09/Bigger-Barn-House-Bonanza_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Bigger Barn House Bonanza title artwork, 339x180 PNG, SHA256 BDB8034C74182C7F8E3C6C2390C11F0F3C2EEDA2F8482C00D5AE03230CE836E7"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysbbarnh",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "777-rush-pragmatic-play",
       "name": "777 Rush",
