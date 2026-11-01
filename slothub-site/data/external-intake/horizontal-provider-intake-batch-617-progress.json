@@ -1,0 +1,37 @@
+{
+  "batch": 617,
+  "recordedAt": "2026-11-01T23:35:19.317Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1143 published Game Markdown records and same-provider exact official path/name/gameSymbol; Ice Mints /vs20popbottles absent.",
+  "records": [
+    {
+      "index": 134,
+      "name": "Ice Mints",
+      "slug": "ice-mints-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/ice-mints/",
+      "officialFacts": "Official page: mint symbols drop into cups below reels two to four, reveal wilds and activate cup multipliers up to 20x or 25x. Three to five Scatters award ten to twenty Free Spins, with mint symbols able to raise cup multipliers.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/Ice-Mints_339x180.png",
+        "localPath": "public/assets/games/ice-mints-pragmatic-play.png",
+        "sha256": "3C95DA04B4BE8B48121FE4D5F844DF77CB4B70A6651D9552D3F5FE784F8E2B05",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Ice Mints title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20popbottles opened matching Ice Mints Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 135 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full preview verification passed: 1144 Similar play Games, 1548 internal HTML links, outbound nofollow."
+  }
+}

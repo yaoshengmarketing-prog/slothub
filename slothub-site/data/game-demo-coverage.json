@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1143,
+  "gameCount": 1144,
   "providerCount": 371,
-  "sourcePageCount": 1817,
+  "sourcePageCount": 1820,
   "counts": {
     "access-restricted": 4,
-    "available": 851,
+    "available": 852,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "ice-mints-pragmatic-play",
+      "name": "Ice Mints",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/ice-mints/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Ice Mints. Official page: mint symbols drop into cups below reels two to four, reveal wilds and activate cup multipliers up to 20x or 25x. Three to five Scatters award ten to twenty Free Spins, with mint symbols able to raise cup multipliers. Exact iframe gameSymbol vs20popbottles opened matching Ice Mints Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/ice-mints/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/Ice-Mints_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Ice Mints title artwork, 339x180 PNG, SHA256 3C95DA04B4BE8B48121FE4D5F844DF77CB4B70A6651D9552D3F5FE784F8E2B05"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20popbottles",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "spellmaster-pragmatic-play",
       "name": "Spellmaster",

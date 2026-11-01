@@ -1,10 +1,10 @@
 {
   "batch": 616,
   "recordedAt": "2026-11-01T23:27:34.845Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1142 published Game Markdown records and same-provider exact official path/name/gameSymbol; Spellmaster /vs10spellmastr absent.",
@@ -14,7 +14,7 @@
       "name": "Spellmaster",
       "slug": "spellmaster-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/spellmaster/",
       "officialFacts": "Official page and Demo say Spellmaster while artwork says Spell Master. Gold, red and blue Bonus Orbs add jackpot, multiplier and charge modifiers. Feature starts with three respins, reset by money or orbs; filling the grid awards 40,000x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10spellmastr opened matching Spellmaster Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 134 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 134 Ice Mints validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1143 Games; internal link 1547 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "b4579d2481507c41a232ab4901ef1f4f08bb4b9c",
+    "githubActionsRun": 41362528461,
+    "cloudflareDeployment": "da0afa4c-698b-4281-9d2b-662b5f2ed1c5",
+    "cloudflareUrl": "https://da0afa4c.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
