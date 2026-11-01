@@ -1,7 +1,9 @@
+import { buildRecordedRtpPresentation } from './game-detail-presentation.mjs';
+
 const hasRecordedValue = (value) => value !== undefined && value !== null;
 
 const coverageDefinitions = [
-  ['rtp', 'RTP 已記錄', (game) => hasRecordedValue(game.rtp)],
+  ['rtp', '有已收錄 RTP 數值', (game) => game.recordedRtp.hasRecordedValues],
   ['volatilityOriginal', '原廠波動度已記錄', (game) => hasRecordedValue(game.volatilityOriginal)],
   ['volatilityNormalized', 'Slot Hub 統一波動度已建立', (game) => hasRecordedValue(game.volatilityNormalized)],
   ['maxWinMultiplier', 'Max Win 已記錄', (game) => hasRecordedValue(game.maxWinMultiplier)],
@@ -32,7 +34,10 @@ export function buildProviderHubProjection(providerEntry, gameEntries, taxonomy)
       const game = entryData(entry);
       return game.status === 'published' && game.provider === providerSlug;
     })
-    .map((entry) => ({ slug: entryId(entry), ...entryData(entry) }))
+    .map((entry) => {
+      const game = entryData(entry);
+      return { slug: entryId(entry), ...game, recordedRtp: buildRecordedRtpPresentation(game) };
+    })
     .sort((a, b) => {
       const left = a.displayNameZhHant ?? a.originalName ?? a.name;
       const right = b.displayNameZhHant ?? b.originalName ?? b.name;

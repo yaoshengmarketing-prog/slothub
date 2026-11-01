@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { buildProviderHubProjection } from '../../lib/provider-hub.mjs';
+import { buildRecordedRtpPresentation, formatRecordedRtp } from '../../lib/game-detail-presentation.mjs';
 import { gameUrl, gamesIndexUrl, providerUrl } from '../../lib/urls';
 import { featureLabels, providerRoleLabels, winMechanismLabels } from '../../lib/taxonomy';
 
@@ -10,7 +11,7 @@ type ProviderGame = {
   name: string;
   originalName?: string;
   displayNameZhHant?: string;
-  rtp?: number;
+  recordedRtp: ReturnType<typeof buildRecordedRtpPresentation>;
 };
 
 type ProviderPresentation = {
@@ -94,7 +95,13 @@ const updatedDate = provider.updatedAt.toISOString().slice(0, 10);
                 <strong>{game.displayNameZhHant ?? game.originalName ?? game.name}</strong>
                 {game.displayNameZhHant && <small>{game.originalName ?? game.name}</small>}
               </span>
-              <span>{game.rtp !== undefined ? `RTP ${game.rtp}%` : 'RTP 尚未核實'} →</span>
+              <span class="provider-game-rtp">
+                {game.recordedRtp.hasRecordedValues
+                  ? game.recordedRtp.valueCount <= 2
+                    ? <>已收錄 RTP｜{game.recordedRtp.values.map((value, index) => <span class="provider-rtp-value">{index > 0 && '／'}{formatRecordedRtp(value)}</span>)}</>
+                    : <>已收錄 {game.recordedRtp.valueCount} 個 RTP 數值</>
+                  : '尚未收錄 RTP 數值'} <span aria-hidden="true">→</span>
+              </span>
             </a>
           ))}
         </div>
@@ -174,3 +181,13 @@ const updatedDate = provider.updatedAt.toISOString().slice(0, 10);
     </section>
   </article>
 </BaseLayout>
+
+<style>
+  .provider-games .simple-game-list > a { gap: 20px; min-width: 0; }
+  .provider-games .bilingual-list-title { min-width: 0; overflow-wrap: anywhere; }
+  .provider-games .provider-game-rtp { flex: 0 0 14rem; min-width: 0; max-width: 45%; text-align: right; overflow-wrap: anywhere; }
+  .provider-rtp-value { display: inline-block; max-width: 100%; }
+  @media (max-width: 620px) {
+    .provider-games .provider-game-rtp { flex-basis: 8.8rem; max-width: 50%; }
+  }
+</style>

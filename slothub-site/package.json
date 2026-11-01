@@ -28,7 +28,7 @@
     "verify:game-detail-presentation": "node scripts/verify-game-detail-presentation.mjs",
     "verify:p1-expansion": "node scripts/verify-p1-expansion.mjs",
     "verify:domain-migration": "node scripts/verify-domain-migration.mjs",
-    "verify:production-candidate": "node scripts/verify-production-candidate.mjs && node scripts/verify-game-media.mjs --built && node scripts/verify-payout-mechanism-demo.mjs --built && node scripts/verify-game-diagram-links.mjs --built && node scripts/verify-densho-multiplier-storyboard.mjs --built && npm run verify:recorded-rtp",
+    "verify:production-candidate": "node scripts/verify-production-candidate.mjs && node scripts/verify-game-media.mjs --built && node scripts/verify-payout-mechanism-demo.mjs --built && node scripts/verify-game-diagram-links.mjs --built && node scripts/verify-densho-multiplier-storyboard.mjs --built && npm run verify:recorded-rtp && npm run verify:provider-hub",
     "verify:fourth-batch": "node scripts/verify-fourth-game-batch.mjs",
     "verify:fifth-batch": "node scripts/verify-fifth-game-batch.mjs",
     "verify:sixth-batch": "node scripts/verify-sixth-game-batch.mjs",
