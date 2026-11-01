@@ -1,0 +1,13 @@
+{
+  "batch": 478,
+  "recordedAt": "2026-11-01T10:23:09+08:00",
+  "state": "excluded-disabled-duplicate-official-route",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Gem Saviour",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/2/language/1/live/true",
+  "evidence": "Exact official API gid2 HTTP 200 reports en=false, pgid2, name Gem Saviour and RTP96.82%, matching enabled gid15 and published batch465. No Game, coverage or image write.",
+  "decision": "Excluded disabled duplicate route; no new-game count.",
+  "nextCursor": "Continue numeric gid1; recheck gid2 only if official identity or enabled status changes."
+}

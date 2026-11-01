@@ -1,10 +1,10 @@
 {
   "batch": 477,
   "recordedAt": "2026-11-01T10:17:00+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Fortune Gods/3 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Fortune Gods",
       "slug": "fortune-gods-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/3/",
       "officialFacts": "Official gid 3, pgid 3, Video Slots, RTP 95.04%, High volatility, maximum x3600. Exact layout not asserted; no explicit payline/Ways count asserted. Official long description explicitly says 15 lines, both left-to-right and right-to-left line wins and Wild-filled respins; recorded fixed-paylines and winCount15 while reel layout remains unknown.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/fortune-gods/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 2 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 2; then inspect gid1 and filter-only PG SOFT catalog identities.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "cloudflareUrl": "https://23d41561.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "githubConclusion": "success",
+    "githubRun": 41264757396,
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Fortune Gods, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-11-01",
+    "commit": "afa9fae26f6887074a234fd24421071d4277a36a",
+    "cloudflareDeploymentId": "23d41561-e4f5-405d-92b0-d60056c0fc7b"
+  }
 }
