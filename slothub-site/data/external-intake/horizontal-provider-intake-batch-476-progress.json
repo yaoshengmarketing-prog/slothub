@@ -1,10 +1,10 @@
 {
   "batch": 476,
   "recordedAt": "2026-11-01T10:11:16+08:00",
-  "state": "imported-pending-live-closure",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
   "catalog": "https://www.pgsoft.com/en/games/all/",
   "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Tree Of Fortune/26 absent before intake.",
@@ -13,7 +13,7 @@
       "name": "Tree Of Fortune",
       "slug": "tree-of-fortune-pg-soft",
       "provider": "pg-soft",
-      "status": "imported",
+      "status": "published-live-verified",
       "officialPage": "https://www.pgsoft.com/en/games/4/",
       "officialFacts": "Official gid 4, pgid 26, Video Slots, RTP 95.01%, Medium volatility, maximum x5000. Exact layout not asserted; no explicit payline/Ways count asserted. Official long description explicitly says 30 lines title; recorded fixed-paylines, winCount30 and payline label, while reel layout remains unknown.",
       "image": {
@@ -28,5 +28,20 @@
       "demo": "Official pi:22 https://m.pg-redirect.com/fortune-tree/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
     }
   ],
-  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 3 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+  "nextCursor": "Continue official numeric route 3; then descend eligible missing PG SOFT Video Slots.",
+  "validation": {
+    "result": "PASS",
+    "command": "SLOTHUB_ASCII_WORKDIR=1 NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "checkedAt": "2026-11-01"
+  },
+  "publication": {
+    "cloudflareUrl": "https://c8c2d14c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "githubConclusion": "success",
+    "githubRun": 41264347731,
+    "readback": "Game, Provider, Search, Explorer, Compare, PNG and sitemap HTTP 200; Provider lists Tree Of Fortune, image SHA256 matches, noindex/nofollow, no canonical, stylesheet linked and empty sitemap",
+    "checkedAt": "2026-11-01",
+    "commit": "b2c0b0fbab6c65b1d29976b667a69bd96d8d2fd1",
+    "cloudflareDeploymentId": "c8c2d14c-d18d-4360-a44b-52bb552ba8df"
+  }
 }

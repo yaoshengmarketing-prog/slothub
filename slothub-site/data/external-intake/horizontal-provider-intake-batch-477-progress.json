@@ -1,0 +1,32 @@
+{
+  "batch": 477,
+  "recordedAt": "2026-11-01T10:17:00+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Fortune Gods/3 absent before intake.",
+  "records": [
+    {
+      "name": "Fortune Gods",
+      "slug": "fortune-gods-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/3/",
+      "officialFacts": "Official gid 3, pgid 3, Video Slots, RTP 95.04%, High volatility, maximum x3600. Exact layout not asserted; no explicit payline/Ways count asserted. Official long description explicitly says 15 lines, both left-to-right and right-to-left line wins and Wild-filled respins; recorded fixed-paylines and winCount15 while reel layout remains unknown.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/95683bf7-a2fd-45d7-9804-9631f2a62fa7.png",
+        "localPath": "public/assets/games/fortune-gods-pg-soft.png",
+        "sha256": "fda83f5a5f19a9b12c66681c1274e75e6ce25c5bf18c423de409f3f40302c53d",
+        "byteSize": 53961,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: smiling Chinese fortune god holding gold ingot with PG logo; matches Fortune Gods identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/fortune-gods/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 2 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
