@@ -1,0 +1,37 @@
+{
+  "batch": 536,
+  "recordedAt": "2026-11-01T12:58:07.802Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1062 published Game Markdown records and same-provider exact official path/name/gameSymbol; Launch to Riches /vswaysrocktrls absent.",
+  "records": [
+    {
+      "index": 53,
+      "name": "Launch to Riches",
+      "slug": "launch-to-riches-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/launch-to-riches/",
+      "officialFacts": "Official page: up to three base rocket Collect symbols fire at a 5x4 asteroid grid to reveal cash, Scatters, or bombs. Three Scatters trigger ten Free Spins, each extra Scatter adds two. During bonus, rockets fire from a 5x1 row at a 5x7 asteroid grid; clearing all asteroids applies up to 10x to the total win. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/04/Launch-to-Riches_339x180_EN.png",
+        "localPath": "public/assets/games/launch-to-riches-pragmatic-play.png",
+        "sha256": "748E28B70F9447CF6ECA37DB75E99629490DC0E2AC5D249C6E781B60AA03D873",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Launch to Riches title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysrocktrls returned HTTP 200 and HTML title Launch to Riches; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 54 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1063 published Games; 1467 internal HTML links and outbound nofollow checks pass."
+  }
+}
