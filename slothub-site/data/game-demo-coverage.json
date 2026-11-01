@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1056,
+  "gameCount": 1057,
   "providerCount": 371,
-  "sourcePageCount": 1556,
+  "sourcePageCount": 1559,
   "counts": {
     "access-restricted": 4,
-    "available": 764,
+    "available": 765,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "candy-rush-pragmatic-play",
+      "name": "Candy Rush",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/candy-rush/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Candy Rush, Tumble multipliers and Scatter-triggered Free Spins. Exact iframe gameSymbol vs20candyia returned HTTP 200 and HTML title Candy Rush; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/candy-rush/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/05/Candy-Rush_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Candy Rush title artwork, 339x180 PNG, SHA256 0C8BD70BBE6D3522AEB7E3202E07BF45BB094DB5B182EE31EA2CAE4107481799"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20candyia&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "sanatorium-secrets-pragmatic-play",
       "name": "Sanatorium Secrets",
