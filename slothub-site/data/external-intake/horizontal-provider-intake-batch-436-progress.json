@@ -1,0 +1,13 @@
+{
+  "batch": 436,
+  "recordedAt": "2026-11-01T07:56:43+08:00",
+  "state": "excluded-disabled-official-route",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "candidate": "Tiki Go",
+  "officialApi": "https://api.pgsoft.com/Game/GetGameDetails/game/44/language/1/live/true",
+  "evidence": "Exact official API gid44 HTTP 200 reports name Tiki Go, pgid44, en=false; not an enabled Video Slot. No Game, coverage or image write.",
+  "decision": "Excluded disabled route; no new-game count.",
+  "nextCursor": "Continue numeric gid43; recheck gid44 only if official enabled status changes."
+}

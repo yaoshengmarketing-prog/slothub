@@ -1,0 +1,32 @@
+{
+  "batch": 437,
+  "recordedAt": "2026-11-01T07:56:44+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; Captain’s Bounty/54 absent before intake.",
+  "records": [
+    {
+      "name": "Captain’s Bounty",
+      "slug": "captain-s-bounty-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/43/",
+      "officialFacts": "Official gid 43, pgid 54, Video Slots, RTP 96.15%, Medium volatility, maximum x30000. Exact layout 5 reels × 3 rows; no explicit payline/Ways count asserted. Official long description explicitly confirms cascading symbols, increasing multipliers and 10 free spins; recorded cascading-reels subtype.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/d21582d6-3caf-4201-9896-c23a3d6560e0.png",
+        "localPath": "public/assets/games/captain-s-bounty-pg-soft.png",
+        "sha256": "339cb3e812e1fe8ebf9b84b9a9ddcab23752c370c36f1abd1edff0854d4085ce",
+        "byteSize": 14034,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: black-bearded pirate captain with eyepatch, hat, skull badge and PG logo; matches game identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/captains-bounty/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 42 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
