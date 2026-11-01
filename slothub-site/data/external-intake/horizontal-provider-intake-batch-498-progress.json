@@ -1,10 +1,10 @@
 {
   "batch": 498,
   "recordedAt": "2026-11-01T08:57:01.041Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1024 published Game Markdown records and same-provider exact official path/name/gameSymbol; Coven Rising /vs20coven absent.",
@@ -14,7 +14,7 @@
       "name": "Coven Rising",
       "slug": "coven-rising-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/coven-rising/",
       "officialFacts": "Official exact page: 1-4-7-6-7-4-1 independent-position grid; clusters of five or more same symbols win and winning positions respin; center modifiers collect coins up to 500x, upgrade symbols, transform blanks or add wilds; 3-6 scatters give 12-24 free spins with persistent enhanced coin/symbol upgrades. No unsupported RTP, volatility, release date or total max win.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20coven returned HTTP 200; public link exact official page, embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 16 Gates of Olympus 2500 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 16 Gates of Olympus 2500 validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1025 published Games, build, 1429 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "6a587579060651ee2b9f78a02e1f8cc90609cd15",
+    "githubActionsRun": 41291158264,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "6c27c410-29ff-4857-9ec0-186e9f1f1fe1",
+    "cloudflareUrl": "https://6c27c410.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
