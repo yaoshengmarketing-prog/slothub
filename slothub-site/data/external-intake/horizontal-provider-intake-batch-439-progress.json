@@ -1,0 +1,32 @@
+{
+  "batch": 439,
+  "recordedAt": "2026-11-01T08:08:20+08:00",
+  "state": "imported-pending-live-closure",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue complete PG SOFT Slot intake from official catalog baseline",
+  "catalog": "https://www.pgsoft.com/en/games/all/",
+  "dedupScope": "All current Game Markdown names, original names, filenames and game IDs; The Great Icescape/53 absent before intake.",
+  "records": [
+    {
+      "name": "The Great Icescape",
+      "slug": "the-great-icescape-pg-soft",
+      "provider": "pg-soft",
+      "status": "imported",
+      "officialPage": "https://www.pgsoft.com/en/games/41/",
+      "officialFacts": "Official gid 41, pgid 53, Video Slots, RTP 96.33%, Medium volatility, maximum x50000. Exact layout 5 reels × 5 rows; no explicit payline/Ways count asserted.",
+      "image": {
+        "sourceUrl": "https://www.pgsoft.com/uploads/Games/Images/28d18ca3-ede8-4ccf-a60a-5aeb99ed2f06.png",
+        "localPath": "public/assets/games/the-great-icescape-pg-soft.png",
+        "sha256": "efe6a07010e3b3b533502921e6b4ba917d0f5503da16697355868b56c0c51b11",
+        "byteSize": 14190,
+        "dimensions": "156x156",
+        "mime": "image/png",
+        "visualCheck": "Viewed official 156x156 pi:4 image: smiling baby penguin holding a hammer among ice blocks with PG logo; matches The Great Icescape identity."
+      },
+      "demo": "Official pi:22 https://m.pg-redirect.com/the-great-icescape/index.html?language=en-US&bet_type=2&operator_token=fu6fpagpekf7445m6sdeecr8xvkkfvy6. Exact official Try Now URL could not be loaded: TypeError: fetch failed. No public link; not-verified, checked 2026-11-01."
+    }
+  ],
+  "nextCursor": "After full verification and same-SHA CI/Cloudflare/readback, inspect official numeric gid 40 and continue eligible missing Video Slots; resolve filter-only pgids separately."
+}
