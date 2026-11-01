@@ -1,0 +1,37 @@
+{
+  "batch": 570,
+  "recordedAt": "2026-11-01T17:49:48.293Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1096 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Fortune Tree /vssg5luckycol absent.",
+  "records": [
+    {
+      "index": 87,
+      "name": "Lucky Fortune Tree",
+      "slug": "lucky-fortune-tree-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/lucky-fortune-tree/",
+      "officialFacts": "Official page: money symbols up to 1000x on reels one and two are collected by a symbol on reel three with up to 8x multiplier. A collect symbol with money symbols on both reels triggers three initial respins. Money or sticky collect symbols reset respins; sticky collects pay all money symbols at feature end.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/01/Lucky-Fortune-Tree_339x180_B-1-1.png",
+        "localPath": "public/assets/games/lucky-fortune-tree-pragmatic-play.png",
+        "sha256": "519F93BEE7D2BBC90A576BAFA4DDC7EBE4D208E1BF6FA62B1CE61E90CAB7DEFA",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Lucky Fortune Tree title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vssg5luckycol opened matching Lucky Fortune Tree Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 88 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full run-verify exit 0: 1097 Games, 1501 internal HTML links, outbound nofollow pass."
+  }
+}

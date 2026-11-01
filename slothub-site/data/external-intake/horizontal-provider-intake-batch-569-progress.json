@@ -1,10 +1,10 @@
 {
   "batch": 569,
   "recordedAt": "2026-11-01T17:42:47.184Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1095 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sugar Rush Super Scatter /vs20sugrushss absent.",
@@ -14,7 +14,7 @@
       "name": "Sugar Rush Super Scatter",
       "slug": "sugar-rush-super-scatter-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/sugar-rush-super-scatter/",
       "officialFacts": "Official page: consecutive tumbles on marked positions double multipliers up to 1024x. Three to seven scatters trigger up to 30 Free Spins, and at least one Super Scatter can award an instant win up to 50000x. Marked multipliers persist through the bonus round.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20sugrushss opened matching Sugar Rush Super Scatter Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 87 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 87 Lucky Fortune Tree validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full run-verify exit 0: 1096 Games, 1500 internal HTML links, outbound nofollow pass."
+  },
+  "publication": {
+    "commit": "5bdb8f5033b81fb6aa58992b278b1d0afcc0dfaf",
+    "githubActionsRun": 41333218299,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "cabd0cf9-863e-4b83-a457-3825f98dbdb6",
+    "cloudflareUrl": "https://cabd0cf9.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
