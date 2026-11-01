@@ -1,10 +1,10 @@
 {
   "batch": 481,
   "recordedAt": "2026-11-01T14:53:20+08:00",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Taiwan-market-relevant Pragmatic Play Slot intake after complete JDB and JILI saved catalogs",
   "dedupScope": "All current Game Markdown names, filenames, provider and gameSymbol; Starlight Princess and Pragmatic Play gameSymbol vs20starlight absent before intake.",
   "records": [
@@ -12,7 +12,7 @@
       "name": "Starlight Princess",
       "slug": "starlight-princess-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/starlight-princess/",
       "officialNews": "https://www.pragmaticplay.com/en/news/pragmatic-play-delivers-regal-adventure-in-starlight-princess/",
       "officialFacts": "Official game page confirms 8-30 same symbols pay anywhere, Tumble, 2x-500x multipliers, 4+ Scatter and 15 free spins. Official 2021-09-23 release says video slot and highly volatile. No unverified RTP, game maximum win or reel dimensions asserted.",
@@ -32,5 +32,15 @@
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1008 published Games, build, 1412 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "0f298332d2d6691f0329380a0a65d4837b218510",
+    "githubRun": 41282877962,
+    "githubConclusion": "success",
+    "cloudflareDeploymentId": "1a386981-57ca-4b6b-9541-e2179837de4c",
+    "cloudflareUrl": "https://1a386981.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, Game and Provider exact content, no canonical, stylesheet, empty sitemap and live PNG SHA256 match",
+    "checkedAt": "2026-11-01"
   }
 }
