@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1047,
+  "gameCount": 1048,
   "providerCount": 371,
-  "sourcePageCount": 1529,
+  "sourcePageCount": 1532,
   "counts": {
     "access-restricted": 4,
-    "available": 755,
+    "available": 756,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "luxor-of-cleopatra-pragmatic-play",
+      "name": "Luxor of Cleopatra",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/luxor-of-cleopatra/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Luxor of Cleopatra, lotus Scatter free spins, vault meter and Cleopatra key positions. Exact iframe gameSymbol vswaysladythf returned HTTP 200 and HTML title Luxor of Cleopatra; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/luxor-of-cleopatra/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/06/Luxor-of-Cleopatra_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Luxor of Cleopatra title artwork, 339x180 PNG, SHA256 563AC93C1D81053DCD485C1B0E80DDD2FF06CDAEF3ED7B4ACC3C2EF8702ACA67"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysladythf&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "big-bass-blast-pragmatic-play",
       "name": "Big Bass Blast",

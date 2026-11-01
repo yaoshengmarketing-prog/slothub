@@ -1,10 +1,10 @@
 {
   "batch": 520,
   "recordedAt": "2026-11-01T11:10:37.604Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1046 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Blast /vs10bbasblitz absent, distinct from other Big Bass series games.",
@@ -14,7 +14,7 @@
       "name": "Big Bass Blast",
       "slug": "big-bass-blast-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-blast/",
       "officialFacts": "Official page: 3-5 Scatter trigger 5-9 Free Spins; hook may supply third Scatter after two. Fisherman Wild collects fish-money symbols up to 500x, can carry up to 10x base multiplier; every seventh Wild in feature grants five spins and rising win multiplier to 10x. 500x is money-symbol value, not asserted overall max win. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10bbasblitz returned HTTP 200 and HTML title Big Bass Blast; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 38 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 38 Luxor of Cleopatra validated and queued for single-game publication closure.",
   "validation": {
     "result": "PASS",
     "command": "node scripts/run-verify.mjs",
     "notes": "Game schema, demo coverage, 1047 published Games, build, 1451 internal HTML links and outbound nofollow checks passed."
+  },
+  "publication": {
+    "commit": "22145b97d1e0d98812961920f194bce3a555b189",
+    "githubActionsRun": 41300924483,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "4180ed17-168a-480e-8438-668808d1dd88",
+    "cloudflareUrl": "https://4180ed17.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
