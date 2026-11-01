@@ -1,0 +1,37 @@
+{
+  "batch": 492,
+  "recordedAt": "2026-11-01T08:21:27.668Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1018 published Game Markdown records and same-provider exact official path/name/gameSymbol; Cheetah Wild /vswayscheetah absent.",
+  "records": [
+    {
+      "index": 9,
+      "name": "Cheetah Wild",
+      "slug": "cheetah-wild-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/cheetah-wild/",
+      "officialFacts": "Official exact page: wilds on reels 2-4 carry up to 3x multipliers, multiple wild multipliers multiply; reel-1 Collect adds adjacent money/wild values; 3-5 scatters grant 8-20 free spins with retriggers; Level Up converts high symbols into money symbols through five progressive levels. No unsupported RTP, volatility, release date or total max win.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Cheetah-Wild_339x180_EN.png",
+        "localPath": "public/assets/games/cheetah-wild-pragmatic-play.png",
+        "sha256": "89A1D4892B0811B4320C73E55A9FF0AA9CA526FA9EC44CC36F13F91865B1D964",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Cheetah Wild title artwork, matches catalog and page OG image."
+      },
+      "demo": "Official exact page iframe gameSymbol vswayscheetah returned HTTP 200; public link exact official page, embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 10 Pelican Payday after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "PASS",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Game schema, demo coverage, 1019 published Games, build, 1423 internal HTML links and outbound nofollow checks passed."
+  }
+}
