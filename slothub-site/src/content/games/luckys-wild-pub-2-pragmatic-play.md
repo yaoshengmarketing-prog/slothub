@@ -22,4 +22,3 @@ demo: { status: available, checkedAt: 2026-11-01, iframeStatus: not-tested, url:
 lastVerifiedAt: 2026-11-01
 updatedAt: 2026-11-01
 ---
-

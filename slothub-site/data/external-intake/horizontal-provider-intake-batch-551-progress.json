@@ -1,0 +1,37 @@
+{
+  "batch": 551,
+  "recordedAt": "2026-11-01T15:03:47.043Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1077 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Raceday Repeat /vs10bbrcdr absent.",
+  "records": [
+    {
+      "index": 68,
+      "name": "Big Bass Raceday Repeat",
+      "slug": "big-bass-raceday-repeat-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-raceday-repeat/",
+      "officialFacts": "Official page: three to five Scatters trigger ten to twenty Free Spins. Select a racing gate for a possible modifier, including extra money symbols, higher retrigger multipliers or fewer Scatters. Fisherman Wild collects racehorse money symbols. Every fourth Wild adds ten spins and retrigger multipliers rise to 10x. No unsupported volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/02/Big-Bass-Raceday-Repeat_339x180_EN.png",
+        "localPath": "public/assets/games/big-bass-raceday-repeat-pragmatic-play.png",
+        "sha256": "9C455CECB079EAF172151E0B1C891B8F629DAFCCDCBCCE69916BE817410CB308",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Big Bass Raceday Repeat title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10bbrcdr opened in Codex in-app browser, redirected to matching Big Bass Raceday Repeat title and showed loading screen; public link exact official page; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 69 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1078 published Games; 1482 internal HTML links and outbound nofollow checks pass; prior Markdown EOF blank corrected."
+  }
+}

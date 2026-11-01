@@ -1,10 +1,10 @@
 {
   "batch": 550,
   "recordedAt": "2026-11-01T14:53:34.344Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1076 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky’s Wild Pub 2 /vs25luckpub absent.",
@@ -14,7 +14,7 @@
       "name": "Lucky’s Wild Pub 2",
       "slug": "luckys-wild-pub-2-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/luckys-wild-pub-2/",
       "officialFacts": "Official page: purple, red and green coins randomly trigger Pot Respin with three initial respins. Purple creates four multiplier zones up to 100x, red adds a 5x3 grid, green adds one initial respin. Money symbols up to 30x lock and reset respins; bonus values include 10x, 20x and 150x. No unsupported volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs25luckpub opened in Codex in-app browser, redirected to matching Lucky's Wild Pub 2 title and showed loading screen; public link exact official page; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 68 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 68 Big Bass Raceday Repeat validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1077 published Games; 1481 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "301c26a289a716ba4febd0e19a5498db3d6cec65",
+    "githubActionsRun": 41319059435,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "f71230cf-655f-44be-9edd-d6b49638b295",
+    "cloudflareUrl": "https://f71230cf.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
