@@ -1,0 +1,37 @@
+{
+  "batch": 565,
+  "recordedAt": "2026-11-01T17:12:00.73Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1091 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sweet Burst /vs10luckybnz absent.",
+  "records": [
+    {
+      "index": 82,
+      "name": "Sweet Burst",
+      "slug": "sweet-burst-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/sweet-burst/",
+      "officialFacts": "Official page: 3x5 grid, with five or more matching symbols anywhere paying wins up to 50x. At least three scatters trigger ten Free Spins; up to ten more can retrigger. During the feature, multiplier symbols worth up to 1000x may land on any spin.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/01/Sweet-Burst_339x180_B-1.png",
+        "localPath": "public/assets/games/sweet-burst-pragmatic-play.png",
+        "sha256": "36724057C35382BE958573809EBEFC00F53AB6D4A313593B2CB200821B82D3C9",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Sweet Burst title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10luckybnz opened matching Sweet Burst Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 83 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full node scripts/run-verify.mjs exit 0; 1092 Games, 1496 internal HTML links and outbound nofollow PASS."
+  }
+}

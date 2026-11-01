@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1091,
+  "gameCount": 1092,
   "providerCount": 371,
-  "sourcePageCount": 1661,
+  "sourcePageCount": 1664,
   "counts": {
     "access-restricted": 4,
-    "available": 799,
+    "available": 800,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sweet-burst-pragmatic-play",
+      "name": "Sweet Burst",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/sweet-burst/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Sweet Burst, the 3x5 grid, 10 Free Spins and multiplier symbols during the feature. Exact iframe gameSymbol vs10luckybnz opened matching Sweet Burst Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sweet-burst/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/01/Sweet-Burst_339x180_B-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Sweet Burst title artwork, 339x180 PNG, SHA256 36724057C35382BE958573809EBEFC00F53AB6D4A313593B2CB200821B82D3C9"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10luckybnz&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "cyberheist-city-pragmatic-play",
       "name": "Cyberheist City",

@@ -1,10 +1,10 @@
 {
   "batch": 564,
   "recordedAt": "2026-11-01T17:02:28.941Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1090 published Game Markdown records and same-provider exact official path/name/gameSymbol; Cyberheist City /vswayscyhecity absent.",
@@ -14,7 +14,7 @@
       "name": "Cyberheist City",
       "slug": "cyberheist-city-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/cyberheist-city/",
       "officialFacts": "Official page: 5x3 grid. Wilds on reels two to five can carry multipliers up to 100x that accumulate during tumbles. Three to five scatters trigger ten to twenty Free Spins, with up to twenty more possible from retriggers. Super Scatter unlocks Super Free Spins in which all Wilds carry at least 10x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswayscyhecity opened matching Cyberheist City Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 82 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 82 Sweet Burst validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full node scripts/run-verify.mjs exit 0 after removing unsupported tumbling tag; 1091 Games, 1495 internal HTML links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "265f1c5ebbedf7301cda32624a84afc17d93f4b0",
+    "githubActionsRun": 41329979670,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "ddeaa864-6449-41c0-85e6-658348831574",
+    "cloudflareUrl": "https://ddeaa864.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
