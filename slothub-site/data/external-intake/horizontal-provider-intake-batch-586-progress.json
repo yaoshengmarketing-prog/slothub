@@ -1,10 +1,10 @@
 {
   "batch": 586,
   "recordedAt": "2026-11-01T19:42:35.027Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1112 published Game Markdown records and same-provider exact official path/name/gameSymbol; Santa’s Slay /vs10santasl absent.",
@@ -14,7 +14,7 @@
       "name": "Santa’s Slay",
       "slug": "santas-slay-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/santas-slay/",
       "officialFacts": "Official page: Three four or five reindeer scatters trigger ten fifteen or thirty Free Spins. Up to eight Wilds can land randomly per bonus spin and remain until a win; overlapping Wilds add positional multipliers.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10santasl opened matching Santa’s Slay Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 104 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 104 Super Gummy Strike validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verification passed: 1113 Games, 1517 HTML files; internal links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "810ff83791ff3c74ad5ee215b6c327c487db1af8",
+    "githubActionsRun": 41343437396,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "fab257ca-4d4b-4fa9-90b4-403bcd62bf9b",
+    "cloudflareUrl": "https://fab257ca.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
