@@ -1,10 +1,10 @@
 {
   "batch": 580,
   "recordedAt": "2026-11-01T19:00:30.453Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1106 published Game Markdown records and same-provider exact official path/name/gameSymbol; Bloody Dawn /vswayswildb absent.",
@@ -14,7 +14,7 @@
       "name": "Bloody Dawn",
       "slug": "bloody-dawn-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/bloody-dawn/",
       "officialFacts": "Official page: Golden symbols in winning combinations on reels 2-4 turn Wild on the next tumble; each tumble adds 1x multiplier. Three to ten scatters trigger twelve Free Spins with up to 8x starting multiplier; three to ten more scatters add six spins and raise the multiplier.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswayswildb opened matching Bloody Dawn Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 98 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 98 Sweet Craze validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verification passed: 1107 Games, 1511 HTML files; internal links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "c232978c95825feaf21f695dd3bbc105a5cd9f83",
+    "githubActionsRun": 41339848333,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "34f1e389-5b92-4616-b87f-11ce629ea3dc",
+    "cloudflareUrl": "https://34f1e389.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

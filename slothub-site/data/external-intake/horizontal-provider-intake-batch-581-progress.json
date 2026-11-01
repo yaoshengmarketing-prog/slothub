@@ -1,0 +1,37 @@
+{
+  "batch": 581,
+  "recordedAt": "2026-11-01T19:07:26.861Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1107 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sweet Craze /vs20chestcol absent.",
+  "records": [
+    {
+      "index": 98,
+      "name": "Sweet Craze",
+      "slug": "sweet-craze-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/sweet-craze/",
+      "officialFacts": "Official page: Winning chests turn into money symbols up to 500x. Money symbols stick through tumbles, adding 1x each tumble; four to seven scatters trigger up to sixteen Free Spins where transformed money symbols persist, and more scatters add five to sixteen spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/11/Sweet-Craze_339x180_EN.png",
+        "localPath": "public/assets/games/sweet-craze-pragmatic-play.png",
+        "sha256": "2DAAD486C68B62C29150982F513648FF9273443D246CEFDE4E5E62AE431D70C5",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Sweet Craze title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20chestcol opened matching Sweet Craze Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 99 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verification passed: 1108 Games, 1512 HTML files; internal links and outbound nofollow PASS."
+  }
+}
