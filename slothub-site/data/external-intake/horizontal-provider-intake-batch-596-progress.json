@@ -1,0 +1,37 @@
+{
+  "batch": 596,
+  "recordedAt": "2026-11-01T20:57:00.737Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1122 published Game Markdown records and same-provider exact official path/name/gameSymbol; Bingo Mania /vs30bingomania absent.",
+  "records": [
+    {
+      "index": 113,
+      "name": "Bingo Mania",
+      "slug": "bingo-mania-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/bingo-mania/",
+      "officialFacts": "Official page: Six Bingo symbols trigger three respins on an expanded 5x5 grid. Sticky coin symbols combine when a line forms; ten completed lines can award 5,000x. Three base-game scatters award six Free Spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/10/Bingo-Mania_339x180_EN.png",
+        "localPath": "public/assets/games/bingo-mania-pragmatic-play.png",
+        "sha256": "B5CF898ED51E5C8EA7C8A55199E36B73E946B423A88CB17BA8837B6C3D7E2A02",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Bingo Mania title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs30bingomania opened matching Bingo Mania Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 114 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full verify exit 0: Similar play 1123 Games; internal link 1527 HTML files PASS; outbound nofollow PASS."
+  }
+}
