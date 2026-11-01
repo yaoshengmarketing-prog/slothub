@@ -1,10 +1,10 @@
 {
   "batch": 610,
   "recordedAt": "2026-11-01T22:39:53.77Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1136 published Game Markdown records and same-provider exact official path/name/gameSymbol; Olympus Wins /vswaysolwfp absent.",
@@ -14,7 +14,7 @@
       "name": "Olympus Wins",
       "slug": "olympus-wins-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/olympus-wins/",
       "officialFacts": "Official title and Demo identify Olympus Wins; paragraph and artwork call it Olympus Wins Super Scatter. Gold symbols can turn Wild after winning tumbles, multiplier reaches 5x in base play and 10x during Free Spins; Super Scatters can award up to 100,000x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysolwfp opened matching Olympus Wins Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 128 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 128 Captain Kraken Megaways validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1137 Games; internal link 1541 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "d004f5c677dc9891f231e0792f2a17f77b88e7e3",
+    "githubActionsRun": 41358558531,
+    "cloudflareDeployment": "50190c0a-f993-48e7-8ca1-bb00eb275768",
+    "cloudflareUrl": "https://50190c0a.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
