@@ -1,10 +1,10 @@
 {
   "batch": 527,
   "recordedAt": "2026-11-01T11:51:26.168Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1053 published Game Markdown records and same-provider exact official path/name/gameSymbol; Joker’s Revenge /vs5jkrrevenge absent.",
@@ -14,7 +14,7 @@
       "name": "Joker’s Revenge",
       "slug": "jokers-revenge-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/jokers-revenge/",
       "officialFacts": "Official page: five paylines, up to 500x base instant prize, three Bonus symbols trigger five initial Free Spins, three Bonus or Joker Wild combinations add one spin, two or more Bonus or Wild symbols trigger a progressive BONUS prize up to 10000x. Demo HTML title uses ASCII apostrophe alias. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs5jkrrevenge returned HTTP 200 and HTML title Joker’s Revenge; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 45 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 45 Caishen’s Cash Pots validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1054 published Games; 1458 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "3f73febb89f09534f419f39972a662aeb61bcb13",
+    "githubActionsRun": 41303975535,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "00c5b036-a424-4003-af60-f2ffef84ecf4",
+    "cloudflareUrl": "https://00c5b036.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

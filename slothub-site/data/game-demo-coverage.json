@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1054,
+  "gameCount": 1055,
   "providerCount": 371,
-  "sourcePageCount": 1550,
+  "sourcePageCount": 1553,
   "counts": {
     "access-restricted": 4,
-    "available": 762,
+    "available": 763,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "caishens-cash-pots-pragmatic-play",
+      "name": "Caishen’s Cash Pots",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/caishens-cash-pots/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-01",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Caishen’s Cash Pots, Collect symbols, three Scatter pots and Free Spins. Exact iframe gameSymbol vsways4ptgld returned HTTP 200 and HTML title Caishen’s Cash Pots; playable reels not visually tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/caishens-cash-pots/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/05/Caishens-Cash-Pots_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Caishen’s Cash Pots title artwork, 339x180 PNG, SHA256 D98866AC572F765AAC0FF8C8B8BF95A758B127B0C903E4267FB80012B1EAC5E6"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vsways4ptgld&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL and matching HTML title"
+        }
+      ]
+    },
     {
       "slug": "jokers-revenge-pragmatic-play",
       "name": "Joker’s Revenge",

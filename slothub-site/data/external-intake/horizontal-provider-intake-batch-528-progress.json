@@ -1,0 +1,37 @@
+{
+  "batch": 528,
+  "recordedAt": "2026-11-01T11:57:36.298Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1054 published Game Markdown records and same-provider exact official path/name/gameSymbol; Caishen’s Cash Pots /vsways4ptgld absent.",
+  "records": [
+    {
+      "index": 45,
+      "name": "Caishen’s Cash Pots",
+      "slug": "caishens-cash-pots-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/caishens-cash-pots/",
+      "officialFacts": "Official page: reel-five Collect symbol awards base Money symbols up to 500x; phoenix, dragon and tiger Scatter pots can trigger six initial Free Spins with up to three modifiers. Additional Scatters add three spins, position multipliers up to 10x. A fourth fish pot can add multipliers up to 5x and three spins during the feature. Demo HTML title uses ASCII apostrophe alias. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/05/Caishens-Cash-Pots_339x180_EN.png",
+        "localPath": "public/assets/games/caishens-cash-pots-pragmatic-play.png",
+        "sha256": "D98866AC572F765AAC0FF8C8B8BF95A758B127B0C903E4267FB80012B1EAC5E6",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Caishen’s Cash Pots title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vsways4ptgld returned HTTP 200 and HTML title Caishen’s Cash Pots; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 46 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1055 published Games; 1459 internal HTML links and outbound nofollow checks pass. Unsupported collect tag removed; official Collect mechanic retained in summary."
+  }
+}
