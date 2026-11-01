@@ -1,10 +1,10 @@
 {
   "batch": 593,
   "recordedAt": "2026-11-01T20:34:40.452Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1119 published Game Markdown records and same-provider exact official path/name/gameSymbol; Pandemic Rising /vs40pdmrsg absent.",
@@ -14,7 +14,7 @@
       "name": "Pandemic Rising",
       "slug": "pandemic-rising-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/pandemic-rising/",
       "officialFacts": "Official page: Base-game Wilds carry multipliers up to 10x that add together within one win. Three Bonus symbols trigger eight Free Spins. Every third Virus symbol advances the feature multiplier through 2x to 100x and awards an extra spin.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs40pdmrsg opened matching Pandemic Rising Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 111 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 111 Mystic Wishes validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verify exit 0: Similar play 1120 Games; internal link 1524 HTML files PASS; outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "54d958b8363223c57a1a55188a6d11167ca7215e",
+    "githubActionsRun": 41347932423,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "332b24ef-81dc-4c11-98b2-51bc3fb88019",
+    "cloudflareUrl": "https://332b24ef.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
