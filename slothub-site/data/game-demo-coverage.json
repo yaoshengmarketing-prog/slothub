@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1145,
+  "gameCount": 1146,
   "providerCount": 371,
-  "sourcePageCount": 1823,
+  "sourcePageCount": 1826,
   "counts": {
     "access-restricted": 4,
-    "available": 853,
+    "available": 854,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-reel-repeat-pragmatic-play",
+      "name": "Big Bass Reel Repeat",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/big-bass-reel-repeat/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Big Bass Reel Repeat. Official page: three to five Scatters trigger ten to twenty Free Spins. Wilds collect visible money symbols; each fourth Wild adds ten spins and increases win multipliers. Before the feature, one of twelve mystery cards adds a modifier. Exact iframe gameSymbol vs10bbrrp opened matching Big Bass Reel Repeat Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-reel-repeat/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/Big-Bass-Reel-Repeat_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Big Bass Reel Repeat title artwork, 339x180 PNG, SHA256 EE5F8A36BCA1025543B4545AF10ECD3B98B211B2A0BBD92FAE3B2E9EC774E35C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbrrp",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "argonauts-pragmatic-play",
       "name": "Argonauts",

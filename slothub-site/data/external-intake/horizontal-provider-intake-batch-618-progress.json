@@ -1,10 +1,10 @@
 {
   "batch": 618,
   "recordedAt": "2026-11-01T23:41:36.984Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1144 published Game Markdown records and same-provider exact official path/name/gameSymbol; Argonauts /vswaysargonts absent.",
@@ -14,7 +14,7 @@
       "name": "Argonauts",
       "slug": "argonauts-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/argonauts/",
       "officialFacts": "Official page: wilds collect adjacent money symbols and can carry multipliers up to 2,000x. Six or more money symbols trigger three respins; new money symbols reset the count, and a full grid doubles money values.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysargonts opened matching Argonauts Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 136 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 136 Big Bass Reel Repeat validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full preview verification passed: 1145 Similar play Games, 1549 internal HTML links, outbound nofollow."
+  },
+  "publication": {
+    "commit": "12dd6c8d2fa19ff6a29fa21ae1944f1c5a421a59",
+    "githubActionsRun": 41363663348,
+    "cloudflareDeployment": "4fbbd6cc-4da7-44b8-8ce4-de0099bac065",
+    "cloudflareUrl": "https://4fbbd6cc.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
