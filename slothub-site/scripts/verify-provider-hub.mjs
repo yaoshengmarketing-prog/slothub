@@ -4,6 +4,7 @@ import { basename, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'yaml';
 import { buildProviderHubIndex, buildProviderHubProjection, PROVIDER_COVERAGE_KEYS } from '../src/lib/provider-hub.mjs';
+import { buildRecordedRtpPresentation, formatRecordedRtp } from '../src/lib/game-detail-presentation.mjs';
 import { emptyExplorerState, filterAndSortGames, parseExplorerState } from '../src/lib/game-explorer-state.mjs';
 
 const providersDirectory = fileURLToPath(new URL('../src/content/providers/', import.meta.url));
@@ -109,6 +110,31 @@ for (const item of index) {
 
   const hasStatistics = detailHtml.includes('class="provider-sample-stats"');
   assert.equal(hasStatistics, item.sampleSize >= 2, `${item.providerSlug}: N threshold mismatch`);
+  const listHtml = detailHtml.match(/<section\b[^>]*class="section provider-games"[^>]*>([\s\S]*?)<\/section>/)?.[1] ?? '';
+  let previousGameIndex = -1;
+  for (const game of item.games) {
+    const href = `href="/games/${game.slug}/"`;
+    const gameIndex = listHtml.indexOf(href);
+    assert.ok(gameIndex > previousGameIndex, `${game.slug}: Provider list name ordering or link changed`);
+    previousGameIndex = gameIndex;
+    const rowHtml = listHtml.slice(gameIndex, listHtml.indexOf('</a>', gameIndex));
+    const rowText = rowHtml.replace(/<[^>]+>/g, '').replace(/\s+/g, '');
+    const rtp = buildRecordedRtpPresentation(game);
+    assert.deepEqual(game.recordedRtp, rtp, `${game.slug}: Provider RTP projection diverged from the shared helper`);
+    const expectedRtp = !rtp.hasRecordedValues ? '尚未收錄 RTP 數值'
+      : rtp.valueCount <= 2 ? `已收錄 RTP｜${rtp.values.map(formatRecordedRtp).join('／')}`
+      : `已收錄 ${rtp.valueCount} 個 RTP 數值`;
+    assert.ok(rowText.includes(expectedRtp.replace(/\s+/g, '')), `${game.slug}: Provider row recorded RTP output mismatch`);
+    assert.ok(!rowText.includes('RTP尚未核實'), `${game.slug}: old primary-only missing label remains`);
+  }
+  if (item.showStatistics) {
+    const rtpCoverage = item.coverage.find((field) => field.key === 'rtp');
+    const expectedRtpCount = item.games.filter((game) => game.recordedRtp.hasRecordedValues).length;
+    assert.equal(rtpCoverage.label, '有已收錄 RTP 數值');
+    assert.equal(rtpCoverage.count, expectedRtpCount, `${item.providerSlug}: RTP coverage must count games, not values`);
+    const coverageHtml = detailHtml.match(/<section\b[^>]*class="provider-coverage"[^>]*>([\s\S]*?)<\/section>/)?.[1] ?? '';
+    assert.match(coverageHtml, new RegExp(`<dt[^>]*>${rtpCoverage.label}</dt>\\s*<dd[^>]*>${expectedRtpCount}/${item.sampleSize}</dd>`), `${item.providerSlug}: built RTP coverage mismatch`);
+  }
   if (item.sampleSize === 1) {
     assert.ok(!detailHtml.includes('class="provider-coverage"'), `${item.providerSlug}: N=1 coverage must be hidden`);
   }
@@ -145,6 +171,51 @@ assert.equal(semantics.features.find((item) => item.value === 'free-spins').coun
 assert.ok(!semantics.mechanisms.some((item) => item.value === 'other'), 'other must not be a shared Mechanism chip');
 assert.equal(semantics.unclassifiedMechanismCount, 1);
 
+// Isolated values include inputs forbidden by the Game Schema. They never enter content or dist.
+const rtpCases = [
+  { id: 'primary', input: { rtp: 96.4 }, expected: [96.4] },
+  { id: 'variant-single', input: { rtpVariants: [96.7] }, expected: [96.7] },
+  { id: 'variant-multiple', input: { rtpVariants: [94.06, 96.7] }, expected: [94.06, 96.7] },
+  { id: 'duplicates', input: { rtp: 96.4, rtpVariants: [96.4, 94.38, 94.38] }, expected: [96.4, 94.38] },
+  { id: 'missing', input: { rtpVariants: [] }, expected: [] },
+  { id: 'zero-primary', input: { rtp: 0 }, expected: [0] },
+  { id: 'zero-variant', input: { rtpVariants: [0, 0] }, expected: [0] },
+  { id: 'non-finite', input: { rtp: NaN, rtpVariants: [Infinity, -Infinity] }, expected: [] },
+  { id: 'invalid', input: { rtp: null, rtpVariants: ['', '96.7', null, undefined, NaN] }, expected: [] },
+  { id: 'precision', input: { rtp: 96.1234, rtpVariants: [96.12340001] }, expected: [96.1234, 96.12340001] },
+];
+const rtpEntries = rtpCases.map(({ id, input }) => ({ id, data: {
+  status: 'published', provider: syntheticProvider.id, name: id, ...input,
+  sources: [{ url: 'https://example.test/rules', checkedAt: '2026-01-01' }],
+} }));
+rtpEntries.push(
+  { id: 'other-provider', data: { status: 'published', provider: 'different-provider', name: 'Other', rtp: 99 } },
+  { id: 'not-published', data: { status: 'draft', provider: syntheticProvider.id, name: 'Draft', rtpVariants: [99] } },
+);
+const beforeRtpEntries = structuredClone(rtpEntries);
+const freezeDeep = (value) => {
+  if (value && typeof value === 'object') { Object.values(value).forEach(freezeDeep); Object.freeze(value); }
+  return value;
+};
+freezeDeep(rtpEntries);
+const recorded = buildProviderHubProjection(syntheticProvider, rtpEntries, taxonomy);
+assert.equal(recorded.sampleSize, rtpCases.length, 'exclude other Provider and unpublished Games');
+assert.deepEqual(recorded.games.map((game) => game.slug), rtpCases.map((test) => test.id).sort((a, b) => a.localeCompare(b, 'zh-Hant-TW')), 'RTP must not change game name ordering');
+for (const test of rtpCases) {
+  const game = recorded.games.find((entry) => entry.slug === test.id);
+  assert.deepEqual(game.recordedRtp.values, test.expected, `${test.id}: stable finite recorded values`);
+  assert.equal(game.recordedRtp.hasRecordedValues, test.expected.length > 0, `${test.id}: list availability`);
+  assert.equal(game.recordedRtp.valueCount, test.expected.length, `${test.id}: distinct value count`);
+}
+assert.equal(recorded.coverage.find((field) => field.key === 'rtp').count, rtpCases.filter((test) => test.expected.length > 0).length, 'count each recorded Game once, including zero and variants-only');
+assert.equal(recorded.coverage.find((field) => field.key === 'sources').count, rtpCases.length, 'other coverage semantics preserved');
+assert.deepEqual(rtpEntries, beforeRtpEntries, 'original values, order and source records must remain unchanged');
+const onlyOneRecorded = buildProviderHubProjection(syntheticProvider, [rtpEntries[1], rtpEntries.at(-1), rtpEntries.at(-2)], taxonomy);
+assert.equal(onlyOneRecorded.sampleSize, 1);
+assert.equal(onlyOneRecorded.games[0].recordedRtp.hasRecordedValues, true);
+assert.equal(onlyOneRecorded.showStatistics, false, 'variants-only must not change N=1 presentation gate');
+assert.deepEqual(onlyOneRecorded.coverage, []);
+
 const providerTemplate = await readFile(fileURLToPath(new URL('../src/pages/providers/[slug].astro', import.meta.url)), 'utf8');
 assert.ok(providerTemplate.includes('Slot Hub 目前尚未收錄此廠商已公開的遊戲'), 'N=0 empty-state copy missing');
 assert.match(providerTemplate, /\{hasGames && \([\s\S]*provider-games/, 'N=0 game-list gate missing');
@@ -169,5 +240,7 @@ const providerCss = await readFile(fileURLToPath(new URL('../src/styles/global.c
 assert.match(providerCss, /\.provider-explorer-cta\{[^}]*text-align:center/, 'Provider CTA scoped CSS missing');
 assert.match(providerCss, /\.provider-detail-v2 a:focus-visible\{[^}]*outline:/, 'Provider focus-visible treatment missing');
 assert.ok(!providerTemplate.includes('client:'), 'Provider detail core content must not require client hydration');
+assert.ok(providerTemplate.includes('game.recordedRtp'), 'Provider list must use the same recorded RTP projection as coverage');
+assert.ok(!providerTemplate.includes('game.rtp !== undefined'), 'Provider list must not use primary-only availability');
 
-console.log(`PASS: Provider Hub v2 projected ${providers.length} Providers and ${games.length} Games with honest N states, fixed taxonomy order, exact Explorer URLs, field-presence coverage and no ranking output.`);
+console.log(`PASS: Provider Hub v2 projected ${providers.length} Providers and ${games.length} Games with honest N states, fixed taxonomy order, exact Explorer URLs, recorded RTP lists/coverage, isolated RTP states/non-mutation and no ranking output.`);
