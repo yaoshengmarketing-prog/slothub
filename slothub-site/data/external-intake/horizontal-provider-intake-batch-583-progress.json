@@ -1,10 +1,10 @@
 {
   "batch": 583,
   "recordedAt": "2026-11-01T19:21:13.695Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1109 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Christmas – Frozen Lake /vs10bbglxmas absent.",
@@ -14,7 +14,7 @@
       "name": "Big Bass Christmas – Frozen Lake",
       "slug": "big-bass-christmas-frozen-lake-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-christmas-frozen-lake/",
       "officialFacts": "Official page: Three to five scatters trigger a card reveal to choose normal or Frozen Lake Free Spins. Fisherman Wilds collect money symbols; every fourth Wild adds ten spins and 2x, 3x, then 10x multipliers. Frozen Lake Free Spins use only Wilds and money symbols.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10bbglxmas opened matching Big Bass Christmas – Frozen Lake Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 101 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 101 Happy Nets validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full verification passed: 1110 Games, 1514 HTML files; internal links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "5c243cd1f03d45dd5c0755c5775f19733ebac27b",
+    "githubActionsRun": 41341668754,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "094a5189-8968-4d77-ab7c-5279c4dbd7a9",
+    "cloudflareUrl": "https://094a5189.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
