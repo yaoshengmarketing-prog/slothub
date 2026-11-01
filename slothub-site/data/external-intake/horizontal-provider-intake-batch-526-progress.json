@@ -1,0 +1,37 @@
+{
+  "batch": 526,
+  "recordedAt": "2026-11-01T11:45:36.937Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1052 published Game Markdown records and same-provider exact official path/name/gameSymbol; Bear Crazy /vs20bigbbear absent.",
+  "records": [
+    {
+      "index": 43,
+      "name": "Bear Crazy",
+      "slug": "bear-crazy-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/bear-crazy/",
+      "officialFacts": "Official page: 5x3 grid, three to five Scatters trigger up to 20 initial Free Spins, choose among three jars for a random bonus modifier, every seventh pawprint awards ten extra Free Spins and additional Wilds. Mega Bear, Multiplier Bear and Expanding Bear have distinct effects. No unsupported RTP, volatility or release date.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/06/Bear-Crazy_339x180_EN.png",
+        "localPath": "public/assets/games/bear-crazy-pragmatic-play.png",
+        "sha256": "351A18396E6BDE3700C74C3457AE610CF3778A6F37ADDD53FEBF00D25F103921",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Bear Crazy title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20bigbbear returned HTTP 200 and HTML title Bear Crazy; public link exact official page, playable reels and embedding not visually tested."
+    }
+  ],
+  "nextCursor": "Catalog item 44 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "notes": "Full run-verify pass: 1053 published Games; 1457 internal HTML links and outbound nofollow checks pass."
+  }
+}

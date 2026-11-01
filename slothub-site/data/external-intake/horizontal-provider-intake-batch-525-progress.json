@@ -1,10 +1,10 @@
 {
   "batch": 525,
   "recordedAt": "2026-11-01T11:39:21.228Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1051 published Game Markdown records and same-provider exact official path/name/gameSymbol; Mahjong Wins Triple Pot /vswaysmajhng3p absent.",
@@ -14,7 +14,7 @@
       "name": "Mahjong Wins Triple Pot",
       "slug": "mahjong-wins-triple-pot-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/mahjong-wins-triple-pot/",
       "officialFacts": "Official page: 4-5-5-5-4 grid, three-plus matching tiles, base Tumble multiplier up to 5x, winning golden tiles become Wilds, blue/red/purple coin Scatter pots, instant prize up to 100000x or eight Free Spins, bonus multiplier up to 10x. No unsupported RTP, volatility or release date.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysmajhng3p returned HTTP 200 and HTML title Mahjong Wins Triple Pot; public link exact official page, playable reels and embedding not visually tested."
     }
   ],
-  "nextCursor": "Catalog item 43 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 43 Bear Crazy validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "notes": "Full run-verify pass: 1052 published Games; 1456 internal HTML links and outbound nofollow checks pass."
+  },
+  "publication": {
+    "commit": "f124eae372064637374b55749e67d556d35cd7b9",
+    "githubActionsRun": 41303070632,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "154849ca-fb77-4f15-91bf-dddd93bf66c1",
+    "cloudflareUrl": "https://154849ca.slothub-4cu.pages.dev",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
