@@ -1,0 +1,37 @@
+{
+  "batch": 688,
+  "recordedAt": "2026-11-02T18:27:56.931Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1213 published Game Markdown records and same-provider exact official path/name/gameSymbol; Fonzo’s Feline Fortunes /vs10fonzofff absent.",
+  "records": [
+    {
+      "index": 205,
+      "name": "Fonzo’s Feline Fortunes",
+      "slug": "fonzos-feline-fortunes-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/fonzos-feline-fortunes/",
+      "officialFacts": "Official page, 339x180 artwork and exact vs10fonzofff Demo title view match. Future Fortunes Respins repeat probabilistically, and Free Spins retriggers increase multiplier.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/01/Fonzos-Feline-Fortunes_339x180.png",
+        "localPath": "public/assets/games/fonzos-feline-fortunes-pragmatic-play.png",
+        "sha256": "1748F6E566A7B0D106BC88A23A50ACF4450252B573749E298C5BA22750A8C96B",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Fonzo’s Feline Fortunes title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10fonzofff opened matching Fonzo’s Feline Fortunes Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 206 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "note": "exit 0; full preview verification passed including build, data, links and nofollow"
+  }
+}

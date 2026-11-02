@@ -1,10 +1,10 @@
 {
   "batch": 687,
   "recordedAt": "2026-11-02T18:19:58.929Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1212 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild Wild Pearls /vswayspearls absent.",
@@ -14,7 +14,7 @@
       "name": "Wild Wild Pearls",
       "slug": "wild-wild-pearls-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/wild-wild-pearls/",
       "officialFacts": "Official page, 339x180 artwork and exact vswayspearls Demo reels match. Wilds collect money symbols, full money reels apply multiplier and Bonus or Super Bonus starts Free Spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswayspearls opened matching Wild Wild Pearls Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 205 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 205 Fonzo’s Feline Fortunes validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
     "note": "exit 0; full preview verification passed including build, data, links and nofollow"
+  },
+  "publication": {
+    "commit": "f5fb1097c10cc10a109f88e71249f60d10803ab8",
+    "githubActionsRun": 41500383893,
+    "cloudflareDeployment": "2532e9b7-8f5d-4d2a-8e26-66626ec905cf",
+    "cloudflareUrl": "https://2532e9b7.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1213,
+  "gameCount": 1214,
   "providerCount": 371,
-  "sourcePageCount": 2027,
+  "sourcePageCount": 2030,
   "counts": {
     "access-restricted": 4,
-    "available": 921,
+    "available": 922,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fonzos-feline-fortunes-pragmatic-play",
+      "name": "Fonzo’s Feline Fortunes",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/fonzos-feline-fortunes/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Fonzo’s Feline Fortunes. Official page, 339x180 artwork and exact vs10fonzofff Demo title view match. Future Fortunes Respins repeat probabilistically, and Free Spins retriggers increase multiplier. Exact iframe gameSymbol vs10fonzofff opened matching Fonzo’s Feline Fortunes Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fonzos-feline-fortunes/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/01/Fonzos-Feline-Fortunes_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Fonzo’s Feline Fortunes title artwork, 339x180 PNG, SHA256 1748F6E566A7B0D106BC88A23A50ACF4450252B573749E298C5BA22750A8C96B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10fonzofff",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "wild-wild-pearls-pragmatic-play",
       "name": "Wild Wild Pearls",
