@@ -1,10 +1,10 @@
 {
   "batch": 669,
   "recordedAt": "2026-11-02T13:02:41.888Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1194 published Game Markdown records and same-provider exact official path/name/gameSymbol; Volcano Goddess /vswaysvlcgds absent.",
@@ -14,7 +14,7 @@
       "name": "Volcano Goddess",
       "slug": "volcano-goddess-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/volcano-goddess/",
       "officialFacts": "Official page, artwork and exact vswaysvlcgds Demo opened with matching volcano goddess art. Six Scatters offer Respins or Free Spins; full Respins grid pays 5,000x Grand.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysvlcgds opened matching Volcano Goddess Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 187 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 187 Wild Wild Joker validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "4c10f2924dc8cf6616c35b84938f49fbaa9e310d",
+    "githubActionsRun": 41450331964,
+    "cloudflareDeployment": "ef08b51b-b800-47cf-a4d8-f5e4360e473d",
+    "cloudflareUrl": "https://ef08b51b.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

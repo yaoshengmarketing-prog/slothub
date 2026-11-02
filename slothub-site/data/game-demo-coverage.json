@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1195,
+  "gameCount": 1196,
   "providerCount": 371,
-  "sourcePageCount": 1973,
+  "sourcePageCount": 1976,
   "counts": {
     "access-restricted": 4,
-    "available": 903,
+    "available": 904,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wild-wild-joker-pragmatic-play",
+      "name": "Wild Wild Joker",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/wild-wild-joker/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Wild Wild Joker. Official page, artwork and exact vswayswwjoker Demo game view match. Two-way wins, Wild pairs collect money symbols, and Wilds with centre symbol start Free Spins or Super Free Spins. Exact iframe gameSymbol vswayswwjoker opened matching Wild Wild Joker Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-wild-joker/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/02/Wild-Wild-Joker_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Wild Wild Joker title artwork, 339x180 PNG, SHA256 9262A5576A39142FA3A877CB371832967C4CC4988554A1A506985864F108581B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayswwjoker",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "volcano-goddess-pragmatic-play",
       "name": "Volcano Goddess",
