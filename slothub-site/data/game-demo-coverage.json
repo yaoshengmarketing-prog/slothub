@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1201,
+  "gameCount": 1202,
   "providerCount": 371,
-  "sourcePageCount": 1991,
+  "sourcePageCount": 1994,
   "counts": {
     "access-restricted": 4,
-    "available": 909,
+    "available": 910,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "john-hunter-and-galileos-secrets-pragmatic-play",
+      "name": "John Hunter and Galileo’s Secrets",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/john-hunter-and-galileos-secrets/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify John Hunter and Galileo’s Secrets. Official page, 339x180 artwork and exact vs10booklight Demo reels match. Six money symbols start sticky respins; three Scatters or Super Scatters start Free Spins or Super Free Spins. Exact iframe gameSymbol vs10booklight opened matching John Hunter and Galileo’s Secrets Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/john-hunter-and-galileos-secrets/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/01/John-Hunter-and-Galileos-Secrets_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed John Hunter and Galileo’s Secrets title artwork, 339x180 PNG, SHA256 54E4879C4EC32E231817A5D951EC4CA4EE36ADAEE9BDA4322B2EC4BA5A71699C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10booklight",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "big-bass-return-to-the-races-pragmatic-play",
       "name": "Big Bass Return to the Races",

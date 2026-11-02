@@ -1,10 +1,10 @@
 {
   "batch": 675,
   "recordedAt": "2026-11-02T13:52:13.146Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1200 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Return to the Races /vs10bbrttr absent.",
@@ -14,7 +14,7 @@
       "name": "Big Bass Return to the Races",
       "slug": "big-bass-return-to-the-races-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-return-to-the-races/",
       "officialFacts": "Official page, artwork and exact vs10bbrttr Reel Kingdom Demo view match. Distinct Big Bass game. Scatters start card-selected ordinary or Golden Cup Free Spins with Wild collection.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10bbrttr opened matching Big Bass Return to the Races Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 193 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 193 John Hunter and Galileo’s Secrets validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "551be82187066f2548cadf537a9afd8b02e64474",
+    "githubActionsRun": 41457388453,
+    "cloudflareDeployment": "aba22cf8-a534-4e97-829f-7edb7dd01758",
+    "cloudflareUrl": "https://aba22cf8.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
