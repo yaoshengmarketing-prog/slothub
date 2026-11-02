@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1164,
+  "gameCount": 1165,
   "providerCount": 371,
-  "sourcePageCount": 1880,
+  "sourcePageCount": 1883,
   "counts": {
     "access-restricted": 4,
-    "available": 872,
+    "available": 873,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-boxing-bonus-round-pragmatic-play",
+      "name": "Big Bass Boxing Bonus Round",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/big-bass-boxing-bonus-round/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Big Bass Boxing Bonus Round. Official page, artwork and Demo matched. Three to five Scatters award fifteen to twenty five Free Spins. Separate blue and red Wild meters add ten spins each fourth Wild and higher multiplier; Wilds collect money symbols. Exact iframe gameSymbol vs10bbbbrnd opened matching Big Bass Boxing Bonus Round Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-boxing-bonus-round/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/05/Big-Bass-Boxing-Bonus-Round_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Big Bass Boxing Bonus Round title artwork, 339x180 PNG, SHA256 5A192269735B941FC1752AC53578C73687821C097E828CB4B6D70E618D65CC3E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbbbrnd",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "lucky-phoenix-pragmatic-play",
       "name": "Lucky Phoenix",

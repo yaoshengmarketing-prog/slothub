@@ -1,10 +1,10 @@
 {
   "batch": 637,
   "recordedAt": "2026-11-02T08:45:03.089Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1163 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Phoenix /vs5luckyphnly absent.",
@@ -14,7 +14,7 @@
       "name": "Lucky Phoenix",
       "slug": "lucky-phoenix-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/lucky-phoenix/",
       "officialFacts": "Official Pragmatic Play POP page, artwork and Demo match. Collected Wilds may trigger ten Free Spins randomly; multiplier rises by one after each feature spin and extra Wilds may add ten spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs5luckyphnly opened matching Lucky Phoenix Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 155 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 155 Big Bass Boxing Bonus Round validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Build complete; Similar play computed for 1164 Games; internal link check passed for 1568 HTML files; outbound nofollow passed."
+  },
+  "publication": {
+    "commit": "64f6b0f04b1f96637d708e29a6fab1ed3d0efc75",
+    "githubActionsRun": 41416344856,
+    "cloudflareDeployment": "4ade82c3-9faf-4de2-ad17-5f9dfa7c62bc",
+    "cloudflareUrl": "https://4ade82c3.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
