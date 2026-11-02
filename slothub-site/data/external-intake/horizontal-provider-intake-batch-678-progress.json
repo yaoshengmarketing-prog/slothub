@@ -1,0 +1,37 @@
+{
+  "batch": 678,
+  "recordedAt": "2026-11-02T14:16:16.763Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1203 published Game Markdown records and same-provider exact official path/name/gameSymbol; Touro Sortudo /vs10fortnhs absent.",
+  "records": [
+    {
+      "index": 195,
+      "name": "Touro Sortudo",
+      "slug": "touro-sortudo-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/touro-sortudo/",
+      "officialFacts": "Official page, 339x180 artwork and exact vs10fortnhs POP Demo title view match. Hold and Spin sticky money symbols, Collect and 2000x full-grid jackpot.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/02/Touro-Sortudo_339x180_B-1-1.png",
+        "localPath": "public/assets/games/touro-sortudo-pragmatic-play.png",
+        "sha256": "F61BF4F007F35D6950A414D7596923322972DC2BCFDDA483DDD4D2E7482BF2EA",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Touro Sortudo title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10fortnhs opened matching Touro Sortudo Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 196 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}
