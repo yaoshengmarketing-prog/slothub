@@ -1,10 +1,10 @@
 {
   "batch": 683,
   "recordedAt": "2026-11-02T14:59:44.356Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1208 published Game Markdown records and same-provider exact official path/name/gameSymbol; Escape the Pyramid – Fire & Ice /vs10fireice absent.",
@@ -14,7 +14,7 @@
       "name": "Escape the Pyramid – Fire & Ice",
       "slug": "escape-the-pyramid-fire-ice-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/escape-the-pyramid-fire-ice/",
       "officialFacts": "Official page, 339x180 artwork and exact vs10fireice Demo reels match. Fire and Ice Scatters transform positions to Wilds or same paying symbol and grant respins; prior tumbles increase feature multiplier.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10fireice opened matching Escape the Pyramid – Fire & Ice Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 201 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 201 Wild Wildebeest Wins validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "b0b90400f47639ee11d81bc8822ba90efc0fa9ba",
+    "githubActionsRun": 41467953406,
+    "cloudflareDeployment": "d1cf4a58-e177-4c77-9841-ce74e55946e8",
+    "cloudflareUrl": "https://d1cf4a58.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
