@@ -1,10 +1,10 @@
 {
   "batch": 622,
   "recordedAt": "2026-11-02T00:11:14.39Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1148 published Game Markdown records and same-provider exact official path/name/gameSymbol; Starlight Wins /vswayssw absent.",
@@ -14,7 +14,7 @@
       "name": "Starlight Wins",
       "slug": "starlight-wins-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/starlight-wins/",
       "officialFacts": "Official Pragmatic Play POP page: gold symbols on reels two to four become wilds on subsequent tumbles; base multipliers reach 5x. Three Scatters award ten Free Spins, extra Scatters add spins, and feature multipliers can reach 10x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswayssw opened matching Starlight Wins Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 140 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 140 Gem Trio validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full preview verification passed: 1149 Similar play Games, 1553 internal HTML links, outbound nofollow."
+  },
+  "publication": {
+    "commit": "cc7caaafa44b48a3a67f8c6704f9e95e8b4ebeb1",
+    "githubActionsRun": 41366128796,
+    "cloudflareDeployment": "9e5ac9e7-104d-43ac-b0d1-0f280a195c2b",
+    "cloudflareUrl": "https://9e5ac9e7.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

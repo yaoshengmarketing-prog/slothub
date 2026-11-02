@@ -1,0 +1,37 @@
+{
+  "batch": 623,
+  "recordedAt": "2026-11-02T06:40:17.795Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1149 published Game Markdown records and same-provider exact official path/name/gameSymbol; Gem Trio /vs9gemtrio absent.",
+  "records": [
+    {
+      "index": 140,
+      "name": "Gem Trio",
+      "slug": "gem-trio-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/gem-trio/",
+      "officialFacts": "Official page: three Scatters start ten Free Spins; collecting emerald, diamond and ruby symbols can activate extra spins, prizes or an added three by three grid. The three-times Wild multiplies eligible base combinations.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/Gem-Trio_339x180_EN.png",
+        "localPath": "public/assets/games/gem-trio-pragmatic-play.png",
+        "sha256": "01E8AFBC5F7A86277A78A2D54535C32ECB4E99061A00AEB2F1FC1CA6E5831196",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Gem Trio title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs9gemtrio opened matching Gem Trio Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 141 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full preview verification passed: 1150 Similar play Games, 1554 internal HTML links, outbound nofollow."
+  }
+}
