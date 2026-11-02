@@ -1,10 +1,10 @@
 {
   "batch": 629,
   "recordedAt": "2026-11-02T07:33:13.009Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1155 published Game Markdown records and same-provider exact official path/name/gameSymbol; Club Tropicana – Happy Hour /vs12trpcnhour absent.",
@@ -14,7 +14,7 @@
       "name": "Club Tropicana – Happy Hour",
       "slug": "club-tropicana-happy-hour-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/club-tropicana-happy-hour/",
       "officialFacts": "Official page uses en dash in name; exact Demo title uses hyphen. Three to five Scatters award ten to twenty Free Spins. Up to five modifiers can precede feature; every fourth Wild adds ten spins and multiplier up to 10x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs12trpcnhour opened matching Club Tropicana – Happy Hour Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 147 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 147 Waves of Poseidon validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full preview verification passed: 1156 Similar play Games, 1560 internal HTML links, outbound nofollow."
+  },
+  "publication": {
+    "commit": "decbd4ad61a738d6f7e5d33cb9c6d4c9132ef898",
+    "githubActionsRun": 41407516873,
+    "cloudflareDeployment": "41a3a101-2ae7-4f6d-be57-7db2c683ba9e",
+    "cloudflareUrl": "https://41a3a101.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

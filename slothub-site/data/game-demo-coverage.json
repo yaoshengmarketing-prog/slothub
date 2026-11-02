@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1156,
+  "gameCount": 1157,
   "providerCount": 371,
-  "sourcePageCount": 1856,
+  "sourcePageCount": 1859,
   "counts": {
     "access-restricted": 4,
-    "available": 864,
+    "available": 865,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "waves-of-poseidon-pragmatic-play",
+      "name": "Waves of Poseidon",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/waves-of-poseidon/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Waves of Poseidon. Official page and Demo match. BONUS symbol unlocks a locked reel multiplier of up to 20x, BONUS itself may hold up to 50x; four or more scatters award 10-20 free spins; six or more trigger persistent multiplier Super Free Spins. Exact iframe gameSymbol vs20bigmass opened matching Waves of Poseidon Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/waves-of-poseidon/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Waves-of-Poseidon_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Waves of Poseidon title artwork, 339x180 PNG, SHA256 6B38B39D23BD98C152F9572C4D0E678E3A26055173B9AB55268B89C26131C419"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20bigmass",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "club-tropicana-happy-hour-pragmatic-play",
       "name": "Club Tropicana – Happy Hour",
