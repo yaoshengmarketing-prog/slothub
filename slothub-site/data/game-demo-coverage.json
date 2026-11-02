@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1152,
+  "gameCount": 1153,
   "providerCount": 371,
-  "sourcePageCount": 1844,
+  "sourcePageCount": 1847,
   "counts": {
     "access-restricted": 4,
-    "available": 860,
+    "available": 861,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "chilli-heat-spicy-spins-pragmatic-play",
+      "name": "Chilli Heat Spicy Spins",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/chilli-heat-spicy-spins/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Chilli Heat Spicy Spins. Official page: three Scatters trigger a five-by-five Respins feature. Money symbols stick and reset three respins, adjacent groups can carry multipliers up to 50x, and a full grid awards 10,000x. Exact iframe gameSymbol vs10chillihmr opened matching Chilli Heat Spicy Spins Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/chilli-heat-spicy-spins/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/Chilli-Heat-Spicy-Spins_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Chilli Heat Spicy Spins title artwork, 339x180 PNG, SHA256 FCA4C08046E4D5D9B6ED107272DC3EB2EB485B2A02717ECBFA7913DA9F6FD4A8"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10chillihmr",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "master-gems-pragmatic-play",
       "name": "Master Gems",
