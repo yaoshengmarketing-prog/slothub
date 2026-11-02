@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1171,
+  "gameCount": 1172,
   "providerCount": 371,
-  "sourcePageCount": 1901,
+  "sourcePageCount": 1904,
   "counts": {
     "access-restricted": 4,
-    "available": 879,
+    "available": 880,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mummys-jewels-pragmatic-play",
+      "name": "Mummy’s Jewels",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/mummys-jewels/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Mummy’s Jewels. Original Mummy’s Jewels official page, artwork and exact vswaysmjwl Demo match; existing Mummy’s Jewels 100 is separate official path with symbol vswaysmjwl2. Eye of Ra collects money; colored Wilds trigger Upgrade, Extra and Respins. Exact iframe gameSymbol vswaysmjwl opened matching Mummy’s Jewels Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/mummys-jewels/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Mummys-Jewels_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Mummy’s Jewels title artwork, 339x180 PNG, SHA256 A78040FA72751F3FC2012D3DC596CD77500360CB4FA0B2E7E6E7564FA7504639"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysmjwl",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "wealthy-frog-pragmatic-play",
       "name": "Wealthy Frog",
