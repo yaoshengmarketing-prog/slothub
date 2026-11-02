@@ -1,0 +1,37 @@
+{
+  "batch": 689,
+  "recordedAt": "2026-11-02T18:35:01.871Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1214 published Game Markdown records and same-provider exact official path/name/gameSymbol; Floating Dragon – Year of the Snake /vs10fdsnake absent.",
+  "records": [
+    {
+      "index": 206,
+      "name": "Floating Dragon – Year of the Snake",
+      "slug": "floating-dragon-year-of-the-snake-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/floating-dragon-year-of-the-snake/",
+      "officialFacts": "Official page, 339x180 artwork and exact vs10fdsnake Reel Kingdom Demo title view match. Wilds collect money in Free Spins and every fourth Wild raises multiplier and retriggers.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/12/Floating-Dragon-Year-of-the-Snake_339x180.png",
+        "localPath": "public/assets/games/floating-dragon-year-of-the-snake-pragmatic-play.png",
+        "sha256": "E3E425FBC1A8EB735693A85C67978D43E67EB921FF6EEDD7265A8BBDF39DBAE4",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Floating Dragon – Year of the Snake title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10fdsnake opened matching Floating Dragon – Year of the Snake Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 207 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "note": "exit 0; full preview verification passed including build, data, links and nofollow"
+  }
+}

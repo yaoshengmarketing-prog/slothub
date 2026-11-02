@@ -1,10 +1,10 @@
 {
   "batch": 688,
   "recordedAt": "2026-11-02T18:27:56.931Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1213 published Game Markdown records and same-provider exact official path/name/gameSymbol; Fonzo’s Feline Fortunes /vs10fonzofff absent.",
@@ -14,7 +14,7 @@
       "name": "Fonzo’s Feline Fortunes",
       "slug": "fonzos-feline-fortunes-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/fonzos-feline-fortunes/",
       "officialFacts": "Official page, 339x180 artwork and exact vs10fonzofff Demo title view match. Future Fortunes Respins repeat probabilistically, and Free Spins retriggers increase multiplier.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10fonzofff opened matching Fonzo’s Feline Fortunes Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 206 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 206 Floating Dragon – Year of the Snake validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
     "note": "exit 0; full preview verification passed including build, data, links and nofollow"
+  },
+  "publication": {
+    "commit": "4dff9fc386af23c8ab7612cca9e49e3205451987",
+    "githubActionsRun": 41501357042,
+    "cloudflareDeployment": "bbbb6fa8-3862-4df7-854f-1584152e4d04",
+    "cloudflareUrl": "https://bbbb6fa8.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

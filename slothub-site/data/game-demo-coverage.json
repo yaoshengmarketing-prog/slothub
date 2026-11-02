@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1214,
+  "gameCount": 1215,
   "providerCount": 371,
-  "sourcePageCount": 2030,
+  "sourcePageCount": 2033,
   "counts": {
     "access-restricted": 4,
-    "available": 922,
+    "available": 923,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "floating-dragon-year-of-the-snake-pragmatic-play",
+      "name": "Floating Dragon – Year of the Snake",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/floating-dragon-year-of-the-snake/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Floating Dragon – Year of the Snake. Official page, 339x180 artwork and exact vs10fdsnake Reel Kingdom Demo title view match. Wilds collect money in Free Spins and every fourth Wild raises multiplier and retriggers. Exact iframe gameSymbol vs10fdsnake opened matching Floating Dragon – Year of the Snake Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/floating-dragon-year-of-the-snake/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/12/Floating-Dragon-Year-of-the-Snake_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Floating Dragon – Year of the Snake title artwork, 339x180 PNG, SHA256 E3E425FBC1A8EB735693A85C67978D43E67EB921FF6EEDD7265A8BBDF39DBAE4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10fdsnake",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "fonzos-feline-fortunes-pragmatic-play",
       "name": "Fonzo’s Feline Fortunes",
