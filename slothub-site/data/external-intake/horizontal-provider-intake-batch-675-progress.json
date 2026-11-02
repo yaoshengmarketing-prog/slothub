@@ -1,0 +1,37 @@
+{
+  "batch": 675,
+  "recordedAt": "2026-11-02T13:52:13.146Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1200 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Return to the Races /vs10bbrttr absent.",
+  "records": [
+    {
+      "index": 192,
+      "name": "Big Bass Return to the Races",
+      "slug": "big-bass-return-to-the-races-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-return-to-the-races/",
+      "officialFacts": "Official page, artwork and exact vs10bbrttr Reel Kingdom Demo view match. Distinct Big Bass game. Scatters start card-selected ordinary or Golden Cup Free Spins with Wild collection.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/01/Big-Bass-Return-To-The-Races_339x180-1.png",
+        "localPath": "public/assets/games/big-bass-return-to-the-races-pragmatic-play.png",
+        "sha256": "71F6B7E8C289C52E5E5C66FF05D989E6605A3F956E5B83D86F2C491C76C15EA5",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Big Bass Return to the Races title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10bbrttr opened matching Big Bass Return to the Races Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 193 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}

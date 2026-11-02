@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1200,
+  "gameCount": 1201,
   "providerCount": 371,
-  "sourcePageCount": 1988,
+  "sourcePageCount": 1991,
   "counts": {
     "access-restricted": 4,
-    "available": 908,
+    "available": 909,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-return-to-the-races-pragmatic-play",
+      "name": "Big Bass Return to the Races",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/big-bass-return-to-the-races/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Big Bass Return to the Races. Official page, artwork and exact vs10bbrttr Reel Kingdom Demo view match. Distinct Big Bass game. Scatters start card-selected ordinary or Golden Cup Free Spins with Wild collection. Exact iframe gameSymbol vs10bbrttr opened matching Big Bass Return to the Races Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-return-to-the-races/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/01/Big-Bass-Return-To-The-Races_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Big Bass Return to the Races title artwork, 339x180 PNG, SHA256 71F6B7E8C289C52E5E5C66FF05D989E6605A3F956E5B83D86F2C491C76C15EA5"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbrttr",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "5-lions-megaways-2-pragmatic-play",
       "name": "5 Lions Megaways™ 2",
