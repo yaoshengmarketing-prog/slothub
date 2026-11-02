@@ -1,0 +1,37 @@
+{
+  "batch": 686,
+  "recordedAt": "2026-11-02T15:24:47.331Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1211 published Game Markdown records and same-provider exact official path/name/gameSymbol; Aztec Gems Megaways™ /vswaysaztec absent.",
+  "records": [
+    {
+      "index": 203,
+      "name": "Aztec Gems Megaways™",
+      "slug": "aztec-gems-megaways-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/aztec-gems-megaways/",
+      "officialFacts": "Official page, 339x180 artwork and exact vswaysaztec Demo reels match. Fourth reel guarantees a 1x to 100x multiplier each spin on a variable Megaways grid.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/01/Aztec-Gems-Megaways_339x180.png",
+        "localPath": "public/assets/games/aztec-gems-megaways-pragmatic-play.png",
+        "sha256": "43C83FC82B93ECB44F0D245F68FF6B7375AD3B9A8D551BEEA011C3952758703F",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Aztec Gems Megaways™ title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysaztec opened matching Aztec Gems Megaways™ Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 204 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}

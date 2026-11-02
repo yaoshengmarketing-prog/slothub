@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1211,
+  "gameCount": 1212,
   "providerCount": 371,
-  "sourcePageCount": 2021,
+  "sourcePageCount": 2024,
   "counts": {
     "access-restricted": 4,
-    "available": 919,
+    "available": 920,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "aztec-gems-megaways-pragmatic-play",
+      "name": "Aztec Gems Megaways™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/aztec-gems-megaways/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Aztec Gems Megaways™. Official page, 339x180 artwork and exact vswaysaztec Demo reels match. Fourth reel guarantees a 1x to 100x multiplier each spin on a variable Megaways grid. Exact iframe gameSymbol vswaysaztec opened matching Aztec Gems Megaways™ Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/aztec-gems-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/01/Aztec-Gems-Megaways_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Aztec Gems Megaways™ title artwork, 339x180 PNG, SHA256 43C83FC82B93ECB44F0D245F68FF6B7375AD3B9A8D551BEEA011C3952758703F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysaztec",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "brick-house-bonanza-pragmatic-play",
       "name": "Brick House Bonanza",
