@@ -1,0 +1,45 @@
+{
+  "batch": 626,
+  "recordedAt": "2026-11-02T07:05:13.837Z",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1152 published Game Markdown records and same-provider exact official path/name/gameSymbol; Chilli Heat Spicy Spins /vs10chillihmr absent.",
+  "records": [
+    {
+      "index": 143,
+      "name": "Chilli Heat Spicy Spins",
+      "slug": "chilli-heat-spicy-spins-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pragmaticplay.com/en/games/chilli-heat-spicy-spins/",
+      "officialFacts": "Official page: three Scatters trigger a five-by-five Respins feature. Money symbols stick and reset three respins, adjacent groups can carry multipliers up to 50x, and a full grid awards 10,000x.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/Chilli-Heat-Spicy-Spins_339x180.png",
+        "localPath": "public/assets/games/chilli-heat-spicy-spins-pragmatic-play.png",
+        "sha256": "FCA4C08046E4D5D9B6ED107272DC3EB2EB485B2A02717ECBFA7913DA9F6FD4A8",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Chilli Heat Spicy Spins title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10chillihmr opened matching Chilli Heat Spicy Spins Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 144 Alien Invaders validated and queued for single-game publication closure.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full preview verification passed: 1153 Similar play Games, 1557 internal HTML links, outbound nofollow."
+  },
+  "publication": {
+    "commit": "cfba4c5e4b42ba8687fb127f6b8281061f9a86d6",
+    "githubActionsRun": 41404574742,
+    "cloudflareDeployment": "7cecca68-26e3-453b-a1e2-1513c928722b",
+    "cloudflareUrl": "https://7cecca68.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
+  }
+}

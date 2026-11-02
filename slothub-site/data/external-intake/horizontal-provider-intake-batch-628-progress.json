@@ -1,0 +1,45 @@
+{
+  "batch": 628,
+  "recordedAt": "2026-11-02T07:24:22.993Z",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1154 published Game Markdown records and same-provider exact official path/name/gameSymbol; Fortune of Aztec /vswaysaztecgm absent.",
+  "records": [
+    {
+      "index": 145,
+      "name": "Fortune of Aztec",
+      "slug": "fortune-of-aztec-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pragmaticplay.com/en/games/fortune-of-aztec/",
+      "officialFacts": "Official Pragmatic Play POP page: every tumble adds one to base multiplier, reset after spin; four to fourteen Scatters award ten to thirty Free Spins, where each tumble adds two and the multiplier persists.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/Fortune-of-Aztec_339x180_B.png",
+        "localPath": "public/assets/games/fortune-of-aztec-pragmatic-play.png",
+        "sha256": "F8DAA6201A59C2D0BE34DF3CC6B79840931C83342D0C5ADEAB54CFEBEE5F7997",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Fortune of Aztec title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysaztecgm opened matching Fortune of Aztec Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 146 Club Tropicana – Happy Hour validated and queued for single-game publication closure.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full preview verification passed: 1155 Similar play Games, 1559 internal HTML links, outbound nofollow."
+  },
+  "publication": {
+    "commit": "9d2d7dbdecc0dcc13aefc63d06ed39925953f38e",
+    "githubActionsRun": 41406680819,
+    "cloudflareDeployment": "e3f27365-48b5-4742-ad6b-afac657995e4",
+    "cloudflareUrl": "https://e3f27365.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
+  }
+}

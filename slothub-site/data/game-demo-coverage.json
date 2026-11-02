@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1149,
+  "gameCount": 1165,
   "providerCount": 371,
-  "sourcePageCount": 1835,
+  "sourcePageCount": 1883,
   "counts": {
     "access-restricted": 4,
-    "available": 857,
+    "available": 873,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,550 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-boxing-bonus-round-pragmatic-play",
+      "name": "Big Bass Boxing Bonus Round",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/big-bass-boxing-bonus-round/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Big Bass Boxing Bonus Round. Official page, artwork and Demo matched. Three to five Scatters award fifteen to twenty five Free Spins. Separate blue and red Wild meters add ten spins each fourth Wild and higher multiplier; Wilds collect money symbols. Exact iframe gameSymbol vs10bbbbrnd opened matching Big Bass Boxing Bonus Round Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-boxing-bonus-round/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/05/Big-Bass-Boxing-Bonus-Round_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Big Bass Boxing Bonus Round title artwork, 339x180 PNG, SHA256 5A192269735B941FC1752AC53578C73687821C097E828CB4B6D70E618D65CC3E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbbbrnd",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
+    {
+      "slug": "lucky-phoenix-pragmatic-play",
+      "name": "Lucky Phoenix",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/lucky-phoenix/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Lucky Phoenix. Official Pragmatic Play POP page, artwork and Demo match. Collected Wilds may trigger ten Free Spins randomly; multiplier rises by one after each feature spin and extra Wilds may add ten spins. Exact iframe gameSymbol vs5luckyphnly opened matching Lucky Phoenix Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/lucky-phoenix/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Lucky-Phoenix_339x180_B.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Lucky Phoenix title artwork, 339x180 PNG, SHA256 29477AB5555F712F66002B34D5C5C2754A76769C8B8F76971CB5AB0FB69CF09A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5luckyphnly",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
+    {
+      "slug": "temple-guardians-pragmatic-play",
+      "name": "Temple Guardians",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/temple-guardians/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Temple Guardians. Official page and matching Demo checked. Five or more money symbols trigger three respins; purple, green and blue values combine progressively, each money symbol resets respins and filling grid awards 2,000x. Exact iframe gameSymbol vs10diamondrgh opened matching Temple Guardians Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/temple-guardians/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/05/Temple-Guardians_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Temple Guardians title artwork, 339x180 PNG, SHA256 CCAE32B1E62D7E0F21D7815895B59FD628BC3E541E85F2C5C61331707B588D39"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10diamondrgh",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
+    {
+      "slug": "plushie-wins-pragmatic-play",
+      "name": "Plushie Wins",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/plushie-wins/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Plushie Wins. Official Pragmatic Play POP page, exact artwork and Demo matched despite unusual symbol naming. Three animal symbols on the central line award prizes, with three matching chicks paying 100x. Exact iframe gameSymbol vs1dragon888 opened matching Plushie Wins Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/plushie-wins/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Plushie-Wins_339x180_B.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Plushie Wins title artwork, 339x180 PNG, SHA256 3A0DBAD56A278E22BDF7BE9CF95F4B54B22C172D73AB475791A0ED4E1A0657FA"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs1dragon888",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
+    {
+      "slug": "finger-lickn-free-spins-pragmatic-play",
+      "name": "Finger Lick’n Free Spins",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/finger-lickn-free-spins/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Finger Lick’n Free Spins. Official page uses curly apostrophe; matching Demo uses straight apostrophe. Three or more eggs in one spin trigger rewards including Free Spins and moving Wild. Golden eggs may add up to fifteen spins, 20x Wild or 2,000x prize. Exact iframe gameSymbol vs10fingerlfs opened matching Finger Lick’n Free Spins Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/finger-lickn-free-spins/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Finger-Lickn-Free-Spins_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Finger Lick’n Free Spins title artwork, 339x180 PNG, SHA256 B65E5739197AAE01EADDF8DEA6519DFB069856986071EE37083DDAB527C62312"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10fingerlfs",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
+    {
+      "slug": "pig-farm-pragmatic-play",
+      "name": "Pig Farm",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/pig-farm/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Pig Farm. Official Pragmatic Play POP page and matching Demo checked. Six money symbols trigger three Money Respins with sticky values; filling 15 cells awards 1,000x. Three Scatters trigger Free Spins with combined giant reels two through four. Exact iframe gameSymbol vs25pfarmfp opened matching Pig Farm Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/pig-farm/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Pig-Farm_339x180_NB.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Pig Farm title artwork, 339x180 PNG, SHA256 27C05C7D136360E024E0CC7F93C89C325783C8D8BF5D5392C748F2CEF2098AD2"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25pfarmfp",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
+    {
+      "slug": "gold-party-2-after-hours-pragmatic-play",
+      "name": "Gold Party 2 – After Hours",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/gold-party-2-after-hours/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Gold Party 2 – After Hours. Official en-dash page and matching hyphen Demo checked. Wild multipliers on reels two to four can multiply each other. Six or more money symbols trigger eight Money Respins on four 3x5 grids; bonus award collections can add prize up to 10,000x. Exact iframe gameSymbol vs25goldpartya opened matching Gold Party 2 – After Hours Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gold-party-2-after-hours/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Gold-Party-2-After-Hours_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Gold Party 2 – After Hours title artwork, 339x180 PNG, SHA256 B0426971A6859A792FE1782A7C6CD7A206EFF5EBA1AF757256C2AC34EB9DF6AE"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25goldpartya",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
+    {
+      "slug": "gem-fire-fortune-pragmatic-play",
+      "name": "Gem Fire Fortune",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/gem-fire-fortune/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Gem Fire Fortune. Official page and matching Demo checked. Matching clusters of five or more gems win; base game wins may carry 2x, 5x, 10x or 100x. Three or more scatters award ten free spins; retriggers add five; each bonus win carries 5x, 10x or 100x. Exact iframe gameSymbol vs20gemfirefor opened matching Gem Fire Fortune Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gem-fire-fortune/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Gem-Fire-Fortune_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Gem Fire Fortune title artwork, 339x180 PNG, SHA256 88BA8867D6AB2097DBD5F785664EE6BA515B702C0598061B90BD33E4B918890D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20gemfirefor",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
+    {
+      "slug": "waves-of-poseidon-pragmatic-play",
+      "name": "Waves of Poseidon",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/waves-of-poseidon/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Waves of Poseidon. Official page and Demo match. BONUS symbol unlocks a locked reel multiplier of up to 20x, BONUS itself may hold up to 50x; four or more scatters award 10-20 free spins; six or more trigger persistent multiplier Super Free Spins. Exact iframe gameSymbol vs20bigmass opened matching Waves of Poseidon Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/waves-of-poseidon/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Waves-of-Poseidon_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Waves of Poseidon title artwork, 339x180 PNG, SHA256 6B38B39D23BD98C152F9572C4D0E678E3A26055173B9AB55268B89C26131C419"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20bigmass",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
+    {
+      "slug": "club-tropicana-happy-hour-pragmatic-play",
+      "name": "Club Tropicana – Happy Hour",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/club-tropicana-happy-hour/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Club Tropicana – Happy Hour. Official page uses en dash in name; exact Demo title uses hyphen. Three to five Scatters award ten to twenty Free Spins. Up to five modifiers can precede feature; every fourth Wild adds ten spins and multiplier up to 10x. Exact iframe gameSymbol vs12trpcnhour opened matching Club Tropicana – Happy Hour Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/club-tropicana-happy-hour/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Club-Tropicana-Happy-Hour_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Club Tropicana – Happy Hour title artwork, 339x180 PNG, SHA256 EA526B6BAA87CF8FF6FA69F310C59E7F26639092CBF2C56A88F2473F0B67179F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs12trpcnhour",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
+    {
+      "slug": "fortune-of-aztec-pragmatic-play",
+      "name": "Fortune of Aztec",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/fortune-of-aztec/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Fortune of Aztec. Official Pragmatic Play POP page: every tumble adds one to base multiplier, reset after spin; four to fourteen Scatters award ten to thirty Free Spins, where each tumble adds two and the multiplier persists. Exact iframe gameSymbol vswaysaztecgm opened matching Fortune of Aztec Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fortune-of-aztec/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/Fortune-of-Aztec_339x180_B.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Fortune of Aztec title artwork, 339x180 PNG, SHA256 F8DAA6201A59C2D0BE34DF3CC6B79840931C83342D0C5ADEAB54CFEBEE5F7997"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysaztecgm",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
+    {
+      "slug": "alien-invaders-pragmatic-play",
+      "name": "Alien Invaders",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/alien-invaders/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Alien Invaders. Official page: matching bottom-row symbols activate reels and explosions. Every ten exploded symbols raise a spin multiplier; three Scatters award seven Free Spins, with feature multiplier persisting between spins. Exact iframe gameSymbol vs20alieninv opened matching Alien Invaders Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/alien-invaders/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Alien-Invaders_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Alien Invaders title artwork, 339x180 PNG, SHA256 FCCF11C74DE35911969CF3D42CE705B79B549B934C3F9CCFAC2B5F34DCEC9224"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20alieninv",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
+    {
+      "slug": "chilli-heat-spicy-spins-pragmatic-play",
+      "name": "Chilli Heat Spicy Spins",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/chilli-heat-spicy-spins/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Chilli Heat Spicy Spins. Official page: three Scatters trigger a five-by-five Respins feature. Money symbols stick and reset three respins, adjacent groups can carry multipliers up to 50x, and a full grid awards 10,000x. Exact iframe gameSymbol vs10chillihmr opened matching Chilli Heat Spicy Spins Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/chilli-heat-spicy-spins/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/Chilli-Heat-Spicy-Spins_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Chilli Heat Spicy Spins title artwork, 339x180 PNG, SHA256 FCA4C08046E4D5D9B6ED107272DC3EB2EB485B2A02717ECBFA7913DA9F6FD4A8"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10chillihmr",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
+    {
+      "slug": "master-gems-pragmatic-play",
+      "name": "Master Gems",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/master-gems/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Master Gems. Official Pragmatic Play POP page: dynamite Wilds on reel three can trigger a win multiplier when participating in a win, from 2x up to 100x. Exact iframe gameSymbol vs1mjokfp opened matching Master Gems Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/master-gems/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/Master-Gems_339x180_NB.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Master Gems title artwork, 339x180 PNG, SHA256 B3BF883D75CFD1E92A7B1DADE683F5FB9633D401368E42CD7A265B34870374AC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs1mjokfp",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
+    {
+      "slug": "you-can-piggy-bank-on-it-pragmatic-play",
+      "name": "You Can Piggy Bank On It",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/you-can-piggy-bank-on-it/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify You Can Piggy Bank On It. Official page: three to five Scatters trigger ten to twenty Free Spins. The vault holds fourteen money symbols; a TNT Wild collects them and starts a centre respin, with pig symbol possibly collecting vault values again. Exact iframe gameSymbol vs10piggybank opened matching You Can Piggy Bank On It Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/you-can-piggy-bank-on-it/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/You-Can-Piggy-Bank-On-It_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed You Can Piggy Bank On It title artwork, 339x180 PNG, SHA256 EB22D53F71FCFB45FBAAB3D3C3543006FBEC2B1B537033E414F4323C951CA7E0"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10piggybank",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
+    {
+      "slug": "gem-trio-pragmatic-play",
+      "name": "Gem Trio",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/gem-trio/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Gem Trio. Official page: three Scatters start ten Free Spins; collecting emerald, diamond and ruby symbols can activate extra spins, prizes or an added three by three grid. The three-times Wild multiplies eligible base combinations. Exact iframe gameSymbol vs9gemtrio opened matching Gem Trio Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gem-trio/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/Gem-Trio_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Gem Trio title artwork, 339x180 PNG, SHA256 01E8AFBC5F7A86277A78A2D54535C32ECB4E99061A00AEB2F1FC1CA6E5831196"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs9gemtrio",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "starlight-wins-pragmatic-play",
       "name": "Starlight Wins",

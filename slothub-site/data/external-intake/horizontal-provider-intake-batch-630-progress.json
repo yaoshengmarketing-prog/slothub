@@ -1,0 +1,45 @@
+{
+  "batch": 630,
+  "recordedAt": "2026-11-02T07:40:14.365Z",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1156 published Game Markdown records and same-provider exact official path/name/gameSymbol; Waves of Poseidon /vs20bigmass absent.",
+  "records": [
+    {
+      "index": 147,
+      "name": "Waves of Poseidon",
+      "slug": "waves-of-poseidon-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pragmaticplay.com/en/games/waves-of-poseidon/",
+      "officialFacts": "Official page and Demo match. BONUS symbol unlocks a locked reel multiplier of up to 20x, BONUS itself may hold up to 50x; four or more scatters award 10-20 free spins; six or more trigger persistent multiplier Super Free Spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Waves-of-Poseidon_339x180.png",
+        "localPath": "public/assets/games/waves-of-poseidon-pragmatic-play.png",
+        "sha256": "6B38B39D23BD98C152F9572C4D0E678E3A26055173B9AB55268B89C26131C419",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Waves of Poseidon title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20bigmass opened matching Waves of Poseidon Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 148 Gem Fire Fortune validated and queued for single-game publication closure.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full preview verification passed: 1157 Similar play Games, 1561 internal HTML links, outbound nofollow."
+  },
+  "publication": {
+    "commit": "db773aea41a93eebcf0711893e9b124880876526",
+    "githubActionsRun": 41408367578,
+    "cloudflareDeployment": "669a77ee-dab9-4f51-bd05-33189381b005",
+    "cloudflareUrl": "https://669a77ee.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
+  }
+}

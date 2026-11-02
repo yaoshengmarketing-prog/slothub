@@ -1,0 +1,45 @@
+{
+  "batch": 637,
+  "recordedAt": "2026-11-02T08:45:03.089Z",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1163 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Phoenix /vs5luckyphnly absent.",
+  "records": [
+    {
+      "index": 154,
+      "name": "Lucky Phoenix",
+      "slug": "lucky-phoenix-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pragmaticplay.com/en/games/lucky-phoenix/",
+      "officialFacts": "Official Pragmatic Play POP page, artwork and Demo match. Collected Wilds may trigger ten Free Spins randomly; multiplier rises by one after each feature spin and extra Wilds may add ten spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Lucky-Phoenix_339x180_B.png",
+        "localPath": "public/assets/games/lucky-phoenix-pragmatic-play.png",
+        "sha256": "29477AB5555F712F66002B34D5C5C2754A76769C8B8F76971CB5AB0FB69CF09A",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Lucky Phoenix title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5luckyphnly opened matching Lucky Phoenix Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 155 Big Bass Boxing Bonus Round validated and queued for single-game publication closure.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Build complete; Similar play computed for 1164 Games; internal link check passed for 1568 HTML files; outbound nofollow passed."
+  },
+  "publication": {
+    "commit": "64f6b0f04b1f96637d708e29a6fab1ed3d0efc75",
+    "githubActionsRun": 41416344856,
+    "cloudflareDeployment": "4ade82c3-9faf-4de2-ad17-5f9dfa7c62bc",
+    "cloudflareUrl": "https://4ade82c3.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
+  }
+}
