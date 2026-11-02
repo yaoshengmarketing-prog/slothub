@@ -1,10 +1,10 @@
 {
   "batch": 672,
   "recordedAt": "2026-11-02T13:26:32.168Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1197 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky’s Wild Pub /vs25luckwildpb absent.",
@@ -14,7 +14,7 @@
       "name": "Lucky’s Wild Pub",
       "slug": "luckys-wild-pub-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/luckys-wild-pub/",
       "officialFacts": "Official page, artwork and exact vs25luckwildpb Demo loaded matching themed game. Three coin modifiers trigger Pot Respin, full money grid adds 5,000x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs25luckwildpb opened matching Lucky’s Wild Pub Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 190 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 190 Raging Waterfall Megaways™ validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "9bffd71d67f5957439f24aed68108428e16ee164",
+    "githubActionsRun": 41453705966,
+    "cloudflareDeployment": "c717021e-dc22-48a6-8359-bdb417b3a674",
+    "cloudflareUrl": "https://c717021e.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
