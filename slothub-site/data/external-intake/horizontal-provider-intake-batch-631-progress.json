@@ -1,0 +1,37 @@
+{
+  "batch": 631,
+  "recordedAt": "2026-11-02T07:48:01.192Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1157 published Game Markdown records and same-provider exact official path/name/gameSymbol; Gem Fire Fortune /vs20gemfirefor absent.",
+  "records": [
+    {
+      "index": 148,
+      "name": "Gem Fire Fortune",
+      "slug": "gem-fire-fortune-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/gem-fire-fortune/",
+      "officialFacts": "Official page and matching Demo checked. Matching clusters of five or more gems win; base game wins may carry 2x, 5x, 10x or 100x. Three or more scatters award ten free spins; retriggers add five; each bonus win carries 5x, 10x or 100x.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Gem-Fire-Fortune_339x180.png",
+        "localPath": "public/assets/games/gem-fire-fortune-pragmatic-play.png",
+        "sha256": "88BA8867D6AB2097DBD5F785664EE6BA515B702C0598061B90BD33E4B918890D",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Gem Fire Fortune title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20gemfirefor opened matching Gem Fire Fortune Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 149 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full preview verification passed: 1158 Similar play Games, 1562 internal HTML links, outbound nofollow."
+  }
+}

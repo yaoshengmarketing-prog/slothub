@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1157,
+  "gameCount": 1158,
   "providerCount": 371,
-  "sourcePageCount": 1859,
+  "sourcePageCount": 1862,
   "counts": {
     "access-restricted": 4,
-    "available": 865,
+    "available": 866,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gem-fire-fortune-pragmatic-play",
+      "name": "Gem Fire Fortune",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/gem-fire-fortune/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Gem Fire Fortune. Official page and matching Demo checked. Matching clusters of five or more gems win; base game wins may carry 2x, 5x, 10x or 100x. Three or more scatters award ten free spins; retriggers add five; each bonus win carries 5x, 10x or 100x. Exact iframe gameSymbol vs20gemfirefor opened matching Gem Fire Fortune Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gem-fire-fortune/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Gem-Fire-Fortune_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Gem Fire Fortune title artwork, 339x180 PNG, SHA256 88BA8867D6AB2097DBD5F785664EE6BA515B702C0598061B90BD33E4B918890D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20gemfirefor",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "waves-of-poseidon-pragmatic-play",
       "name": "Waves of Poseidon",
