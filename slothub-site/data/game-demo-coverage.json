@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1182,
+  "gameCount": 1183,
   "providerCount": 371,
-  "sourcePageCount": 1934,
+  "sourcePageCount": 1937,
   "counts": {
     "access-restricted": 4,
-    "available": 890,
+    "available": 891,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "cash-surge-pragmatic-play",
+      "name": "Cash Surge",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/cash-surge/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Cash Surge. Official page, artwork and exact vswayscashsurg Demo title match. Lightning builds reel prizes and may trigger a wheel; four Scatters raise the multiplier, five start Free Spins. Exact iframe gameSymbol vswayscashsurg opened matching Cash Surge Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/cash-surge/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/03/Cash-Surge_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Cash Surge title artwork, 339x180 PNG, SHA256 8E03ED133DF30C9F8438FF5A73B5D197309E5F123FED54951A4F525783807BB3"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayscashsurg",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "lucky-dog-pragmatic-play",
       "name": "Lucky Dog",

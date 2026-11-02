@@ -1,10 +1,10 @@
 {
   "batch": 656,
   "recordedAt": "2026-11-02T11:13:12.314Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1181 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Dog /vs5luckydogly absent.",
@@ -14,7 +14,7 @@
       "name": "Lucky Dog",
       "slug": "lucky-dog-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/lucky-dog/",
       "officialFacts": "Official Pragmatic Play POP page, artwork and exact vs5luckydogly Demo title match. Randomly triggered Respins give a four-bag choice; multiplier grows 1x each Respin, and a later bag choice may extend the feature.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs5luckydogly opened matching Lucky Dog Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 174 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 174 Cash Surge validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full preview verify exit 0; Similar play, internal links, outbound nofollow, and build checks passed."
+  },
+  "publication": {
+    "commit": "6f533b96931727f3f0519c1b02f180faa59adb58",
+    "githubActionsRun": 41435654774,
+    "cloudflareDeployment": "dafecaa4-ca87-4ca0-833d-c1e27b5d8edd",
+    "cloudflareUrl": "https://dafecaa4.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
