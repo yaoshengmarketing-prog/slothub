@@ -1,0 +1,37 @@
+{
+  "batch": 667,
+  "recordedAt": "2026-11-02T12:45:53.758Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1192 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Mouse /vs10forwildly absent.",
+  "records": [
+    {
+      "index": 184,
+      "name": "Lucky Mouse",
+      "slug": "lucky-mouse-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/lucky-mouse/",
+      "officialFacts": "Official POP page, artwork and exact vs10forwildly Demo splash match. Wilds carry two to five times multipliers, add on a winning line, and mouse may grant up to ten Wilds.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/03/Lucky-Mouse_339x180_B.png",
+        "localPath": "public/assets/games/lucky-mouse-pragmatic-play.png",
+        "sha256": "2AF16ADE45C3FF70A11A733568F5E0B4101FB2465C07C4DD07858636526CBBEB",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Lucky Mouse title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10forwildly opened matching Lucky Mouse Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 185 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}

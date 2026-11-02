@@ -1,10 +1,10 @@
 {
   "batch": 666,
   "recordedAt": "2026-11-02T12:38:06.794Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1191 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Tiger /vs5luckytigly absent.",
@@ -14,7 +14,7 @@
       "name": "Lucky Tiger",
       "slug": "lucky-tiger-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/lucky-tiger/",
       "officialFacts": "Official POP page, artwork and exact vs5luckytigly Demo view match. Distinct from Lucky Tiger 1000 and Gold exact official paths and symbols. Three by three paylines, full-grid multiplier and random retriggering Respins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs5luckytigly opened matching Lucky Tiger Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 184 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 184 Lucky Mouse validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "4bffedf7bfe862d979f9d85241f14c741753c2ca",
+    "githubActionsRun": 41446924200,
+    "cloudflareDeployment": "1224e281-a238-470d-a898-9ea7f9a4a675",
+    "cloudflareUrl": "https://1224e281.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

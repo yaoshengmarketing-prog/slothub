@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1192,
+  "gameCount": 1193,
   "providerCount": 371,
-  "sourcePageCount": 1964,
+  "sourcePageCount": 1967,
   "counts": {
     "access-restricted": 4,
-    "available": 900,
+    "available": 901,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "lucky-mouse-pragmatic-play",
+      "name": "Lucky Mouse",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/lucky-mouse/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Lucky Mouse. Official POP page, artwork and exact vs10forwildly Demo splash match. Wilds carry two to five times multipliers, add on a winning line, and mouse may grant up to ten Wilds. Exact iframe gameSymbol vs10forwildly opened matching Lucky Mouse Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/lucky-mouse/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/03/Lucky-Mouse_339x180_B.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Lucky Mouse title artwork, 339x180 PNG, SHA256 2AF16ADE45C3FF70A11A733568F5E0B4101FB2465C07C4DD07858636526CBBEB"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10forwildly",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "lucky-tiger-pragmatic-play",
       "name": "Lucky Tiger",
