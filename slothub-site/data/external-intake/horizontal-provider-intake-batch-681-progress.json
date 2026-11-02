@@ -1,10 +1,10 @@
 {
   "batch": 681,
   "recordedAt": "2026-11-02T14:42:12.763Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1206 published Game Markdown records and same-provider exact official path/name/gameSymbol; Savannah Legend /vswayssavlgnd absent.",
@@ -14,7 +14,7 @@
       "name": "Savannah Legend",
       "slug": "savannah-legend-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/savannah-legend/",
       "officialFacts": "Official page, 339x180 artwork and exact vswayssavlgnd Demo reels match. Wild multipliers combine, three to five Scatters start Free Spins, Special Lions transform animal symbols.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswayssavlgnd opened matching Savannah Legend Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 199 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 199 Bigger Bass Splash validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "3823f3d05e53f795a4b40674ff6001ca3bee3344",
+    "githubActionsRun": 41465271379,
+    "cloudflareDeployment": "9406521b-3a6a-4253-a077-75edf6744abc",
+    "cloudflareUrl": "https://9406521b.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
