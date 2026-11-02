@@ -1,0 +1,37 @@
+{
+  "batch": 634,
+  "recordedAt": "2026-11-02T08:18:56.209Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1160 published Game Markdown records and same-provider exact official path/name/gameSymbol; Finger Lick’n Free Spins /vs10fingerlfs absent.",
+  "records": [
+    {
+      "index": 151,
+      "name": "Finger Lick’n Free Spins",
+      "slug": "finger-lickn-free-spins-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/finger-lickn-free-spins/",
+      "officialFacts": "Official page uses curly apostrophe; matching Demo uses straight apostrophe. Three or more eggs in one spin trigger rewards including Free Spins and moving Wild. Golden eggs may add up to fifteen spins, 20x Wild or 2,000x prize.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Finger-Lickn-Free-Spins_339x180-1.png",
+        "localPath": "public/assets/games/finger-lickn-free-spins-pragmatic-play.png",
+        "sha256": "B65E5739197AAE01EADDF8DEA6519DFB069856986071EE37083DDAB527C62312",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Finger Lick’n Free Spins title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10fingerlfs opened matching Finger Lick’n Free Spins Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 152 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Build complete; Similar play computed for 1161 Games; internal link check passed for 1565 HTML files; outbound nofollow passed."
+  }
+}

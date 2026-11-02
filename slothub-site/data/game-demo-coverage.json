@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1160,
+  "gameCount": 1161,
   "providerCount": 371,
-  "sourcePageCount": 1868,
+  "sourcePageCount": 1871,
   "counts": {
     "access-restricted": 4,
-    "available": 868,
+    "available": 869,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "finger-lickn-free-spins-pragmatic-play",
+      "name": "Finger Lick’n Free Spins",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/finger-lickn-free-spins/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Finger Lick’n Free Spins. Official page uses curly apostrophe; matching Demo uses straight apostrophe. Three or more eggs in one spin trigger rewards including Free Spins and moving Wild. Golden eggs may add up to fifteen spins, 20x Wild or 2,000x prize. Exact iframe gameSymbol vs10fingerlfs opened matching Finger Lick’n Free Spins Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/finger-lickn-free-spins/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Finger-Lickn-Free-Spins_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Finger Lick’n Free Spins title artwork, 339x180 PNG, SHA256 B65E5739197AAE01EADDF8DEA6519DFB069856986071EE37083DDAB527C62312"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10fingerlfs",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "pig-farm-pragmatic-play",
       "name": "Pig Farm",
