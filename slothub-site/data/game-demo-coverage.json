@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1172,
+  "gameCount": 1173,
   "providerCount": 371,
-  "sourcePageCount": 1904,
+  "sourcePageCount": 1907,
   "counts": {
     "access-restricted": 4,
-    "available": 880,
+    "available": 881,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "jumbo-safari-pragmatic-play",
+      "name": "Jumbo Safari",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/jumbo-safari/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Jumbo Safari. Official page, artwork and exact vs20jjjack Demo title matched. Three to five Scatters start fifteen to fifty Free Spins; a chest selects one stacked animal, and five matching animals award corresponding prizes. Exact iframe gameSymbol vs20jjjack opened matching Jumbo Safari Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/jumbo-safari/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/04/Jumbo-Safari_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Jumbo Safari title artwork, 339x180 PNG, SHA256 A98E7F44FDF7EAB86EC750DB709FADB2B3C256CEE5E15AAD7FF7C6D05CEB2D77"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20jjjack",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "mummys-jewels-pragmatic-play",
       "name": "Mummy’s Jewels",
