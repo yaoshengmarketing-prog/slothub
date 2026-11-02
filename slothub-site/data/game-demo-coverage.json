@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1177,
+  "gameCount": 1178,
   "providerCount": 371,
-  "sourcePageCount": 1919,
+  "sourcePageCount": 1922,
   "counts": {
     "access-restricted": 4,
-    "available": 885,
+    "available": 886,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "resurrecting-riches-pragmatic-play",
+      "name": "Resurrecting Riches",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/resurrecting-riches/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Resurrecting Riches. Official page, artwork and exact vswaysresurich Demo title match. Phoenix collects reel-one-to-five money; five without collect trigger a held Respin; Bonus money awards eight to twelve Free Spins with shadow values. Exact iframe gameSymbol vswaysresurich opened matching Resurrecting Riches Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/resurrecting-riches/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/03/Resurrecting-Riches_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Resurrecting Riches title artwork, 339x180 PNG, SHA256 5A44E367574812F98257C5E2061D2BDE87657B9AACA911582F1C42E9BC8FA1D1"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysresurich",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "witch-heart-megaways-pragmatic-play",
       "name": "Witch Heart Megaways",
