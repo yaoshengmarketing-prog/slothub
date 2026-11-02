@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1158,
+  "gameCount": 1159,
   "providerCount": 371,
-  "sourcePageCount": 1862,
+  "sourcePageCount": 1865,
   "counts": {
     "access-restricted": 4,
-    "available": 866,
+    "available": 867,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gold-party-2-after-hours-pragmatic-play",
+      "name": "Gold Party 2 – After Hours",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/gold-party-2-after-hours/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Gold Party 2 – After Hours. Official en-dash page and matching hyphen Demo checked. Wild multipliers on reels two to four can multiply each other. Six or more money symbols trigger eight Money Respins on four 3x5 grids; bonus award collections can add prize up to 10,000x. Exact iframe gameSymbol vs25goldpartya opened matching Gold Party 2 – After Hours Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gold-party-2-after-hours/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Gold-Party-2-After-Hours_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Gold Party 2 – After Hours title artwork, 339x180 PNG, SHA256 B0426971A6859A792FE1782A7C6CD7A206EFF5EBA1AF757256C2AC34EB9DF6AE"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25goldpartya",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "gem-fire-fortune-pragmatic-play",
       "name": "Gem Fire Fortune",

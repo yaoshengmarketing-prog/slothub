@@ -1,10 +1,10 @@
 {
   "batch": 631,
   "recordedAt": "2026-11-02T07:48:01.192Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1157 published Game Markdown records and same-provider exact official path/name/gameSymbol; Gem Fire Fortune /vs20gemfirefor absent.",
@@ -14,7 +14,7 @@
       "name": "Gem Fire Fortune",
       "slug": "gem-fire-fortune-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/gem-fire-fortune/",
       "officialFacts": "Official page and matching Demo checked. Matching clusters of five or more gems win; base game wins may carry 2x, 5x, 10x or 100x. Three or more scatters award ten free spins; retriggers add five; each bonus win carries 5x, 10x or 100x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20gemfirefor opened matching Gem Fire Fortune Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 149 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 149 Gold Party 2 – After Hours validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full preview verification passed: 1158 Similar play Games, 1562 internal HTML links, outbound nofollow."
+  },
+  "publication": {
+    "commit": "8626505e300f48b81399bcc46b652b521a086064",
+    "githubActionsRun": 41409212273,
+    "cloudflareDeployment": "43f2f112-d35c-423f-be0d-78abce46c05b",
+    "cloudflareUrl": "https://43f2f112.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
