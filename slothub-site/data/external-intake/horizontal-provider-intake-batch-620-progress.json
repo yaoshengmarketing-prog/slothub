@@ -1,0 +1,37 @@
+{
+  "batch": 620,
+  "recordedAt": "2026-11-01T23:56:17.58Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1146 published Game Markdown records and same-provider exact official path/name/gameSymbol; Zombie School Megaways /vswayspompmr2 absent.",
+  "records": [
+    {
+      "index": 137,
+      "name": "Zombie School Megaways",
+      "slug": "zombie-school-megaways-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/zombie-school-megaways/",
+      "officialFacts": "Official page: tumbling wins can increase reel symbol counts in a game offering up to 117,649 ways. Four to six Scatters award ten to twenty Free Spins, with feature wins receiving a multiplier.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/Zombie-School-Megaways_339x180_EN.png",
+        "localPath": "public/assets/games/zombie-school-megaways-pragmatic-play.png",
+        "sha256": "0230D37955C045FFB50C809686994AB9B19D39B377E6A16CF00F3B4963A05CB0",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Zombie School Megaways title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswayspompmr2 opened matching Zombie School Megaways Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 138 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full preview verification passed: 1147 Similar play Games, 1551 internal HTML links, outbound nofollow."
+  }
+}
