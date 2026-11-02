@@ -1,10 +1,10 @@
 {
   "batch": 686,
   "recordedAt": "2026-11-02T15:24:47.331Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1211 published Game Markdown records and same-provider exact official path/name/gameSymbol; Aztec Gems Megaways™ /vswaysaztec absent.",
@@ -14,7 +14,7 @@
       "name": "Aztec Gems Megaways™",
       "slug": "aztec-gems-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/aztec-gems-megaways/",
       "officialFacts": "Official page, 339x180 artwork and exact vswaysaztec Demo reels match. Fourth reel guarantees a 1x to 100x multiplier each spin on a variable Megaways grid.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysaztec opened matching Aztec Gems Megaways™ Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 204 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 204 Wild Wild Pearls validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "0f5b467f62604ac5896c42741242077e9cfec2eb",
+    "githubActionsRun": 41472217205,
+    "cloudflareDeployment": "405f6c4f-724f-45c8-a31e-8be7f3db469d",
+    "cloudflareUrl": "https://405f6c4f.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

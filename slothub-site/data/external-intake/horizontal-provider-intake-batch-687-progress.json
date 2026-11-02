@@ -1,0 +1,37 @@
+{
+  "batch": 687,
+  "recordedAt": "2026-11-02T18:19:58.929Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1212 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild Wild Pearls /vswayspearls absent.",
+  "records": [
+    {
+      "index": 204,
+      "name": "Wild Wild Pearls",
+      "slug": "wild-wild-pearls-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/wild-wild-pearls/",
+      "officialFacts": "Official page, 339x180 artwork and exact vswayspearls Demo reels match. Wilds collect money symbols, full money reels apply multiplier and Bonus or Super Bonus starts Free Spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/01/Wild-Wild-Pearls_339x180.png",
+        "localPath": "public/assets/games/wild-wild-pearls-pragmatic-play.png",
+        "sha256": "AA2FB9C594E4085C04D944F0E600C31DEF683EA39B29E08285093D5294A73739",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Wild Wild Pearls title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswayspearls opened matching Wild Wild Pearls Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 205 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
+    "note": "exit 0; full preview verification passed including build, data, links and nofollow"
+  }
+}
