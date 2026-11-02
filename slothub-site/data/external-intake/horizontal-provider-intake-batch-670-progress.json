@@ -1,10 +1,10 @@
 {
   "batch": 670,
   "recordedAt": "2026-11-02T13:10:29.300Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1195 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild Wild Joker /vswayswwjoker absent.",
@@ -14,7 +14,7 @@
       "name": "Wild Wild Joker",
       "slug": "wild-wild-joker-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/wild-wild-joker/",
       "officialFacts": "Official page, artwork and exact vswayswwjoker Demo game view match. Two-way wins, Wild pairs collect money symbols, and Wilds with centre symbol start Free Spins or Super Free Spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswayswwjoker opened matching Wild Wild Joker Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 188 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 188 Triple Pot Gold validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "72215d90ffca35879a2439615eb98cbacad284d6",
+    "githubActionsRun": 41451363338,
+    "cloudflareDeployment": "33ac3230-a628-4f0b-be8c-f2473741e0f9",
+    "cloudflareUrl": "https://33ac3230.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
