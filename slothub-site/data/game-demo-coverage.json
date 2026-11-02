@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1150,
+  "gameCount": 1151,
   "providerCount": 371,
-  "sourcePageCount": 1838,
+  "sourcePageCount": 1841,
   "counts": {
     "access-restricted": 4,
-    "available": 858,
+    "available": 859,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "you-can-piggy-bank-on-it-pragmatic-play",
+      "name": "You Can Piggy Bank On It",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/you-can-piggy-bank-on-it/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify You Can Piggy Bank On It. Official page: three to five Scatters trigger ten to twenty Free Spins. The vault holds fourteen money symbols; a TNT Wild collects them and starts a centre respin, with pig symbol possibly collecting vault values again. Exact iframe gameSymbol vs10piggybank opened matching You Can Piggy Bank On It Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/you-can-piggy-bank-on-it/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/You-Can-Piggy-Bank-On-It_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed You Can Piggy Bank On It title artwork, 339x180 PNG, SHA256 EB22D53F71FCFB45FBAAB3D3C3543006FBEC2B1B537033E414F4323C951CA7E0"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10piggybank",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "gem-trio-pragmatic-play",
       "name": "Gem Trio",
