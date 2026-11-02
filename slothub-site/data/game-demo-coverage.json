@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1189,
+  "gameCount": 1190,
   "providerCount": 371,
-  "sourcePageCount": 1955,
+  "sourcePageCount": 1958,
   "counts": {
     "access-restricted": 4,
-    "available": 897,
+    "available": 898,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-dog-house-royal-hunt-pragmatic-play",
+      "name": "The Dog House – Royal Hunt",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/the-dog-house-royal-hunt/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify The Dog House – Royal Hunt. Official page, artwork and exact vs20dhsuper Demo game view match. Wild multipliers combine; Bonus symbols on reels one three and five trigger up to twenty seven Free Spins with sticky Wilds. Exact iframe gameSymbol vs20dhsuper opened matching The Dog House – Royal Hunt Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-dog-house-royal-hunt/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/02/The-Dog-House-Royal-Hunt_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed The Dog House – Royal Hunt title artwork, 339x180 PNG, SHA256 9162EC4C25FEAB4E9F1647599C6F32CC4C4BDD1A3D2C3A03B3080BDBCD505DB6"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20dhsuper",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "bandit-megaways-pragmatic-play",
       "name": "Bandit Megaways™",

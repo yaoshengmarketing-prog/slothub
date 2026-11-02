@@ -1,10 +1,10 @@
 {
   "batch": 663,
   "recordedAt": "2026-11-02T12:13:56.734Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1188 published Game Markdown records and same-provider exact official path/name/gameSymbol; Bandit Megaways™ /vswaysbandit absent.",
@@ -14,7 +14,7 @@
       "name": "Bandit Megaways™",
       "slug": "bandit-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/bandit-megaways/",
       "officialFacts": "Official page, artwork and exact vswaysbandit Demo splash match. Up to 117,649 ways; dynamite multipliers up to 500x, four to six Scatters start fifteen to twenty five Free Spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysbandit opened matching Bandit Megaways™ Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 181 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 181 The Dog House – Royal Hunt validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "33297dbdef6ff67c36e9ee1a6e4de84cdb4a4d31",
+    "githubActionsRun": 41443734279,
+    "cloudflareDeployment": "73be6ac5-6115-4153-97f6-2f5fc7d99956",
+    "cloudflareUrl": "https://73be6ac5.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
