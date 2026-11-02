@@ -1,10 +1,10 @@
 {
   "batch": 632,
   "recordedAt": "2026-11-02T07:56:59.426Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1158 published Game Markdown records and same-provider exact official path/name/gameSymbol; Gold Party 2 – After Hours /vs25goldpartya absent.",
@@ -14,7 +14,7 @@
       "name": "Gold Party 2 – After Hours",
       "slug": "gold-party-2-after-hours-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/gold-party-2-after-hours/",
       "officialFacts": "Official en-dash page and matching hyphen Demo checked. Wild multipliers on reels two to four can multiply each other. Six or more money symbols trigger eight Money Respins on four 3x5 grids; bonus award collections can add prize up to 10,000x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs25goldpartya opened matching Gold Party 2 – After Hours Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 150 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 150 Pig Farm validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full preview verification passed: 1159 Similar play Games, 1563 internal HTML links, outbound nofollow."
+  },
+  "publication": {
+    "commit": "cb7c669da5f228728dfbe7ea16ec9e8615779d93",
+    "githubActionsRun": 41410149083,
+    "cloudflareDeployment": "811971f9-1e7a-412f-ba15-94e94ccd0a13",
+    "cloudflareUrl": "https://811971f9.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
