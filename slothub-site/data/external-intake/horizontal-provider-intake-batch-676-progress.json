@@ -1,10 +1,10 @@
 {
   "batch": 676,
   "recordedAt": "2026-11-02T13:59:50.335Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1201 published Game Markdown records and same-provider exact official path/name/gameSymbol; John Hunter and Galileo’s Secrets /vs10booklight absent.",
@@ -14,7 +14,7 @@
       "name": "John Hunter and Galileo’s Secrets",
       "slug": "john-hunter-and-galileos-secrets-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/john-hunter-and-galileos-secrets/",
       "officialFacts": "Official page, 339x180 artwork and exact vs10booklight Demo reels match. Six money symbols start sticky respins; three Scatters or Super Scatters start Free Spins or Super Free Spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10booklight opened matching John Hunter and Galileo’s Secrets Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 194 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 194 Peppe’s Pepperoni Pizza Plaza validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "b2d92691a3151be947d6d2fd6bbebbadf9df1b6b",
+    "githubActionsRun": 41458582851,
+    "cloudflareDeployment": "db529702-84b0-410c-9d36-a0a0ba5611dc",
+    "cloudflareUrl": "https://db529702.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
