@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1155,
+  "gameCount": 1156,
   "providerCount": 371,
-  "sourcePageCount": 1853,
+  "sourcePageCount": 1856,
   "counts": {
     "access-restricted": 4,
-    "available": 863,
+    "available": 864,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "club-tropicana-happy-hour-pragmatic-play",
+      "name": "Club Tropicana – Happy Hour",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/club-tropicana-happy-hour/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Club Tropicana – Happy Hour. Official page uses en dash in name; exact Demo title uses hyphen. Three to five Scatters award ten to twenty Free Spins. Up to five modifiers can precede feature; every fourth Wild adds ten spins and multiplier up to 10x. Exact iframe gameSymbol vs12trpcnhour opened matching Club Tropicana – Happy Hour Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/club-tropicana-happy-hour/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Club-Tropicana-Happy-Hour_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Club Tropicana – Happy Hour title artwork, 339x180 PNG, SHA256 EA526B6BAA87CF8FF6FA69F310C59E7F26639092CBF2C56A88F2473F0B67179F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs12trpcnhour",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "fortune-of-aztec-pragmatic-play",
       "name": "Fortune of Aztec",
