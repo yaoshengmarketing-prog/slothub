@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1210,
+  "gameCount": 1211,
   "providerCount": 371,
-  "sourcePageCount": 2018,
+  "sourcePageCount": 2021,
   "counts": {
     "access-restricted": 4,
-    "available": 918,
+    "available": 919,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "brick-house-bonanza-pragmatic-play",
+      "name": "Brick House Bonanza",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/brick-house-bonanza/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Brick House Bonanza. Official page, 339x180 artwork and exact vswaysbrickhos Demo reels match, though official iframe localized to Lithuanian. Scatter positions upgrade straw, wood, brick during Free Spins; Wheel Bonus offers other features or Jackpot. Exact iframe gameSymbol vswaysbrickhos opened matching Brick House Bonanza Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/brick-house-bonanza/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/01/Brick-House-Bonanza_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Brick House Bonanza title artwork, 339x180 PNG, SHA256 E6BC1F4C3600E7188A5D01187903F0A35CC7533150DC468AA7C350CC94BE2012"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysbrickhos",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "wild-wildebeest-wins-pragmatic-play",
       "name": "Wild Wildebeest Wins",

@@ -1,10 +1,10 @@
 {
   "batch": 684,
   "recordedAt": "2026-11-02T15:07:48.434Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1209 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild Wildebeest Wins /vswaysbufstamp absent.",
@@ -14,7 +14,7 @@
       "name": "Wild Wildebeest Wins",
       "slug": "wild-wildebeest-wins-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/wild-wildebeest-wins/",
       "officialFacts": "Official page, 339x180 artwork and exact vswaysbufstamp Demo reels match. Wild multipliers combine in Free Spins, Super Wildebeest distributes collected symbols.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysbufstamp opened matching Wild Wildebeest Wins Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 202 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 202 Brick House Bonanza validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "0ee87522727a321801c7958a10e582f97e01f6b8",
+    "githubActionsRun": 41469439039,
+    "cloudflareDeployment": "0a30e306-9d9e-4fa9-bb87-3d4eee07560e",
+    "cloudflareUrl": "https://0a30e306.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

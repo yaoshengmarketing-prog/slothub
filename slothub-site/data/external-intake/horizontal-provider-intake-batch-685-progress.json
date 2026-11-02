@@ -1,0 +1,37 @@
+{
+  "batch": 685,
+  "recordedAt": "2026-11-02T15:16:31.958Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1210 published Game Markdown records and same-provider exact official path/name/gameSymbol; Brick House Bonanza /vswaysbrickhos absent.",
+  "records": [
+    {
+      "index": 202,
+      "name": "Brick House Bonanza",
+      "slug": "brick-house-bonanza-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/brick-house-bonanza/",
+      "officialFacts": "Official page, 339x180 artwork and exact vswaysbrickhos Demo reels match, though official iframe localized to Lithuanian. Scatter positions upgrade straw, wood, brick during Free Spins; Wheel Bonus offers other features or Jackpot.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/01/Brick-House-Bonanza_339x180-1.png",
+        "localPath": "public/assets/games/brick-house-bonanza-pragmatic-play.png",
+        "sha256": "E6BC1F4C3600E7188A5D01187903F0A35CC7533150DC468AA7C350CC94BE2012",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Brick House Bonanza title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysbrickhos opened matching Brick House Bonanza Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 203 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}
