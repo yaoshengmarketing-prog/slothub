@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1215,
+  "gameCount": 1216,
   "providerCount": 371,
-  "sourcePageCount": 2033,
+  "sourcePageCount": 2036,
   "counts": {
     "access-restricted": 4,
-    "available": 923,
+    "available": 924,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "irish-crown-pragmatic-play",
+      "name": "Irish Crown",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/irish-crown/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Irish Crown. Official page, 339x180 artwork and exact vs20irishcrown Demo loading view match. Three Scatters trigger ten Free Spins; three to nine crowns award Big Money instant cash, while ten crowns trigger respins. Exact iframe gameSymbol vs20irishcrown opened matching Irish Crown Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/irish-crown/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/12/Irish-crown_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Irish Crown title artwork, 339x180 PNG, SHA256 79409864B2F812C3611355A810AB441C1A7239B804691C6C4AF17F3D33E37AB9"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20irishcrown",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "floating-dragon-year-of-the-snake-pragmatic-play",
       "name": "Floating Dragon – Year of the Snake",
