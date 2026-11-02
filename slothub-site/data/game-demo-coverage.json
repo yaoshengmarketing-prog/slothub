@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1167,
+  "gameCount": 1168,
   "providerCount": 371,
-  "sourcePageCount": 1889,
+  "sourcePageCount": 1892,
   "counts": {
     "access-restricted": 4,
-    "available": 875,
+    "available": 876,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mahjong-wins-super-scatter-pragmatic-play",
+      "name": "Mahjong Wins Super Scatter",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/mahjong-wins-super-scatter/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Mahjong Wins Super Scatter. Official page, artwork and Demo match. Winning gold symbols leave Wilds, tumble multiplier rises to 5x in base and 10x in Free Spins. Three Scatters award ten spins, plus two per extra; Super Scatters can award prizes up to 100,000x. Exact iframe gameSymbol vswaysmwss opened matching Mahjong Wins Super Scatter Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/mahjong-wins-super-scatter/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/05/Mahjong-Wins-Super-Scatter_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Mahjong Wins Super Scatter title artwork, 339x180 PNG, SHA256 7180F582B06980B11953CDE378E9FDC88B67FE179E787883EEF0DCA6B51572C8"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysmwss",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "wild-west-gold-blazing-bounty-pragmatic-play",
       "name": "Wild West Gold Blazing Bounty",

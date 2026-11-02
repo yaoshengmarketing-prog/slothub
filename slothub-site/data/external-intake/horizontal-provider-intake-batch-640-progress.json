@@ -1,10 +1,10 @@
 {
   "batch": 640,
   "recordedAt": "2026-11-02T09:20:07.786Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1166 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild West Gold Blazing Bounty /vs20wwgcluster absent.",
@@ -14,7 +14,7 @@
       "name": "Wild West Gold Blazing Bounty",
       "slug": "wild-west-gold-blazing-bounty-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/wild-west-gold-blazing-bounty/",
       "officialFacts": "Official page, artwork and Demo match. Three or more Scatters award ten Free Spins, with sticky Wilds; Wild multiplier range depends on three, four or five triggering Scatters.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20wwgcluster opened matching Wild West Gold Blazing Bounty Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 158 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 158 Mahjong Wins Super Scatter validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Build complete; Similar play computed for 1167 Games; internal link check passed for 1571 HTML files; outbound nofollow passed."
+  },
+  "publication": {
+    "commit": "dc77f6b02a1e4d07276239ce24efe346de64796e",
+    "githubActionsRun": 41420682218,
+    "cloudflareDeployment": "eef9cbf4-a23f-4769-a28c-8648bda46e36",
+    "cloudflareUrl": "https://eef9cbf4.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
