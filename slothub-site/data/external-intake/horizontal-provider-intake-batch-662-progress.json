@@ -1,10 +1,10 @@
 {
   "batch": 662,
   "recordedAt": "2026-11-02T11:57:31.891Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1187 published Game Markdown records and same-provider exact official path/name/gameSymbol; Emotiwins /vs10emotiwins absent.",
@@ -14,7 +14,7 @@
       "name": "Emotiwins",
       "slug": "emotiwins-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/emotiwins/",
       "officialFacts": "Official POP page, artwork and exact vs10emotiwins Demo splash match. Six to fifteen hearts/Wilds pay up to 5,000x; all fifteen Wilds pay 25,000x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10emotiwins opened matching Emotiwins Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 180 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 180 Bandit Megaways™ validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full preview verify exit 0; Similar play, internal links, outbound nofollow, and build checks passed."
+  },
+  "publication": {
+    "commit": "d39d09f87220dfbb0f3f3dbefce9f9d74f341432",
+    "githubActionsRun": 41442568476,
+    "cloudflareDeployment": "86295998-5e1c-47c0-8c51-ece8fe09ded2",
+    "cloudflareUrl": "https://86295998.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
