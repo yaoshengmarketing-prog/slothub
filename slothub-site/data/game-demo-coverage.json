@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1204,
+  "gameCount": 1205,
   "providerCount": 371,
-  "sourcePageCount": 2000,
+  "sourcePageCount": 2003,
   "counts": {
     "access-restricted": 4,
-    "available": 912,
+    "available": 913,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "greedy-fortune-pig-pragmatic-play",
+      "name": "Greedy Fortune Pig",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/greedy-fortune-pig/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Greedy Fortune Pig. Official page, 339x180 artwork and exact vs10fortnpig Demo reels match. Expanding moving Wilds collect money symbols and raise multiplier; three Bonus symbols grant five to eight Free Spins. Exact iframe gameSymbol vs10fortnpig opened matching Greedy Fortune Pig Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/greedy-fortune-pig/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/02/Greedy-Fortune-Pig_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Greedy Fortune Pig title artwork, 339x180 PNG, SHA256 BAD11F768988D7F0E6519F9F8B4CBCC1DF21D716BC2846DA7782D76A58A27B36"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10fortnpig",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "touro-sortudo-pragmatic-play",
       "name": "Touro Sortudo",

@@ -1,10 +1,10 @@
 {
   "batch": 678,
   "recordedAt": "2026-11-02T14:16:16.763Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1203 published Game Markdown records and same-provider exact official path/name/gameSymbol; Touro Sortudo /vs10fortnhs absent.",
@@ -14,7 +14,7 @@
       "name": "Touro Sortudo",
       "slug": "touro-sortudo-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/touro-sortudo/",
       "officialFacts": "Official page, 339x180 artwork and exact vs10fortnhs POP Demo title view match. Hold and Spin sticky money symbols, Collect and 2000x full-grid jackpot.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10fortnhs opened matching Touro Sortudo Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 196 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 196 Greedy Fortune Pig validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "dd9ce2502f50c1661a385080e8b4b97b27c6062a",
+    "githubActionsRun": 41461101441,
+    "cloudflareDeployment": "0cd98d20-4d2d-43e2-a0e2-adbcf6616e94",
+    "cloudflareUrl": "https://0cd98d20.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
