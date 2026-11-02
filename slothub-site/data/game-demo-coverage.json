@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1169,
+  "gameCount": 1170,
   "providerCount": 371,
-  "sourcePageCount": 1895,
+  "sourcePageCount": 1898,
   "counts": {
     "access-restricted": 4,
-    "available": 877,
+    "available": 878,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "majestic-express-gold-run-pragmatic-play",
+      "name": "Majestic Express – Gold Run",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/majestic-express-gold-run/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Majestic Express – Gold Run. Official en-dash page, artwork and matching hyphen Demo checked. Collect/Super Collect on reel five gathers Money and Train Money, with Super Collect train carts increasing multiplier; three dynamite Scatters award ten Free Spins. Exact iframe gameSymbol vs25goldrexp opened matching Majestic Express – Gold Run Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/majestic-express-gold-run/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/05/Majestic-Express-Gold-Run_667x414-339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Majestic Express – Gold Run title artwork, 339x180 PNG, SHA256 E24A0F6407654D48F237BA710013E13C170302B3C2BF095170DE7D7F01539D55"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25goldrexp",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "lucky-tiger-1000-pragmatic-play",
       "name": "Lucky Tiger 1000",
