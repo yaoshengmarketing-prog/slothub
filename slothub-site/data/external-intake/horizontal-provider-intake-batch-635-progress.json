@@ -1,0 +1,37 @@
+{
+  "batch": 635,
+  "recordedAt": "2026-11-02T08:26:59.179Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1161 published Game Markdown records and same-provider exact official path/name/gameSymbol; Plushie Wins /vs1dragon888 absent.",
+  "records": [
+    {
+      "index": 152,
+      "name": "Plushie Wins",
+      "slug": "plushie-wins-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/plushie-wins/",
+      "officialFacts": "Official Pragmatic Play POP page, exact artwork and Demo matched despite unusual symbol naming. Three animal symbols on the central line award prizes, with three matching chicks paying 100x.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Plushie-Wins_339x180_B.png",
+        "localPath": "public/assets/games/plushie-wins-pragmatic-play.png",
+        "sha256": "3A0DBAD56A278E22BDF7BE9CF95F4B54B22C172D73AB475791A0ED4E1A0657FA",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Plushie Wins title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs1dragon888 opened matching Plushie Wins Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 153 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Build complete; Similar play computed for 1162 Games; internal link check passed for 1566 HTML files; outbound nofollow passed."
+  }
+}
