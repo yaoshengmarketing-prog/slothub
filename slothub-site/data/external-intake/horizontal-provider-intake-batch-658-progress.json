@@ -1,10 +1,10 @@
 {
   "batch": 658,
   "recordedAt": "2026-11-02T11:27:13.058Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1183 published Game Markdown records and same-provider exact official path/name/gameSymbol; 5 Lions Reborn /vsways5lionsr absent.",
@@ -14,7 +14,7 @@
       "name": "5 Lions Reborn",
       "slug": "5-lions-reborn-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/5-lions-reborn/",
       "officialFacts": "Official page, artwork and exact vsways5lionsr Demo title match. Three Scatters offer up to twenty Free Spins and fifteen-times starting Wild multiplier; Super Free Spins start at those maxima.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vsways5lionsr opened matching 5 Lions Reborn Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 176 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 176 Ride The Lightning validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full preview verify exit 0; Similar play, internal links, outbound nofollow, and build checks passed."
+  },
+  "publication": {
+    "commit": "d8ad8cf1b0ce3612fdda8e412ba8fd306e7a2fcd",
+    "githubActionsRun": 41437531304,
+    "cloudflareDeployment": "4568664f-ff10-41cb-ab2e-750292922598",
+    "cloudflareUrl": "https://4568664f.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
