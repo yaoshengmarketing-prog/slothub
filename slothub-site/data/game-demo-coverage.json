@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1178,
+  "gameCount": 1179,
   "providerCount": 371,
-  "sourcePageCount": 1922,
+  "sourcePageCount": 1925,
   "counts": {
     "access-restricted": 4,
-    "available": 886,
+    "available": 887,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "jelly-candy-pragmatic-play",
+      "name": "Jelly Candy",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/jelly-candy/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Jelly Candy. Official Pragmatic Play POP page, artwork and exact vs5jellyc Demo title match. Three-by-three five-line game with lemon Wild and horizontal multiplier reel up to 15x; maximum win 375x. Exact iframe gameSymbol vs5jellyc opened matching Jelly Candy Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/jelly-candy/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/04/Jelly-Candy_339x180_NB.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Jelly Candy title artwork, 339x180 PNG, SHA256 BF98AD0F722B3E59C96BCEA1A0E7AF47F5787427FCD9C0F3ED1B017C8E2A970C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5jellyc",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "resurrecting-riches-pragmatic-play",
       "name": "Resurrecting Riches",

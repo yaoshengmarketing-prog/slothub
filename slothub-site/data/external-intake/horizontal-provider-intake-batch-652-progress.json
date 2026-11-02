@@ -1,10 +1,10 @@
 {
   "batch": 652,
   "recordedAt": "2026-11-02T10:42:57.223Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1177 published Game Markdown records and same-provider exact official path/name/gameSymbol; Resurrecting Riches /vswaysresurich absent.",
@@ -14,7 +14,7 @@
       "name": "Resurrecting Riches",
       "slug": "resurrecting-riches-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/resurrecting-riches/",
       "officialFacts": "Official page, artwork and exact vswaysresurich Demo title match. Phoenix collects reel-one-to-five money; five without collect trigger a held Respin; Bonus money awards eight to twelve Free Spins with shadow values.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysresurich opened matching Resurrecting Riches Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 170 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 170 Jelly Candy validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full preview verify exit 0: build complete, Similar play 1178 Games, internal links 1582 HTML files PASS, outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "46046f33eef5b244452bc8393e490d3f5fa4f21a",
+    "githubActionsRun": 41431672815,
+    "cloudflareDeployment": "8b901810-e78f-4f6b-9fff-0d9d00c38ce6",
+    "cloudflareUrl": "https://8b901810.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

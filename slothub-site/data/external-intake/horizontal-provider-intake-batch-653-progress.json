@@ -1,0 +1,37 @@
+{
+  "batch": 653,
+  "recordedAt": "2026-11-02T10:51:12.263Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1178 published Game Markdown records and same-provider exact official path/name/gameSymbol; Jelly Candy /vs5jellyc absent.",
+  "records": [
+    {
+      "index": 170,
+      "name": "Jelly Candy",
+      "slug": "jelly-candy-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/jelly-candy/",
+      "officialFacts": "Official Pragmatic Play POP page, artwork and exact vs5jellyc Demo title match. Three-by-three five-line game with lemon Wild and horizontal multiplier reel up to 15x; maximum win 375x.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/04/Jelly-Candy_339x180_NB.png",
+        "localPath": "public/assets/games/jelly-candy-pragmatic-play.png",
+        "sha256": "BF98AD0F722B3E59C96BCEA1A0E7AF47F5787427FCD9C0F3ED1B017C8E2A970C",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Jelly Candy title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5jellyc opened matching Jelly Candy Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 171 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full preview verify exit 0: build complete, Similar play 1179 Games, internal links 1583 HTML files PASS, outbound nofollow PASS."
+  }
+}
