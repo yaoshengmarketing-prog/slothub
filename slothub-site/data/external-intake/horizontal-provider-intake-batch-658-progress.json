@@ -1,0 +1,37 @@
+{
+  "batch": 658,
+  "recordedAt": "2026-11-02T11:27:13.058Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1183 published Game Markdown records and same-provider exact official path/name/gameSymbol; 5 Lions Reborn /vsways5lionsr absent.",
+  "records": [
+    {
+      "index": 175,
+      "name": "5 Lions Reborn",
+      "slug": "5-lions-reborn-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/5-lions-reborn/",
+      "officialFacts": "Official page, artwork and exact vsways5lionsr Demo title match. Three Scatters offer up to twenty Free Spins and fifteen-times starting Wild multiplier; Super Free Spins start at those maxima.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/03/5-Lions-Reborn_339x180.png",
+        "localPath": "public/assets/games/5-lions-reborn-pragmatic-play.png",
+        "sha256": "E163CCF71C8E02885D04F2ACDF8C6B51905186F1464588520389F068D36D72B3",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact 5 Lions Reborn title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vsways5lionsr opened matching 5 Lions Reborn Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 176 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full preview verify exit 0; Similar play, internal links, outbound nofollow, and build checks passed."
+  }
+}
