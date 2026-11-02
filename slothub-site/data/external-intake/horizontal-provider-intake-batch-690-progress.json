@@ -1,10 +1,10 @@
 {
   "batch": 690,
   "recordedAt": "2026-11-02T18:50:18.945Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1215 published Game Markdown records and same-provider exact official path/name/gameSymbol; Irish Crown /vs20irishcrown absent.",
@@ -14,7 +14,7 @@
       "name": "Irish Crown",
       "slug": "irish-crown-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/irish-crown/",
       "officialFacts": "Official page, 339x180 artwork and exact vs20irishcrown Demo loading view match. Three Scatters trigger ten Free Spins; three to nine crowns award Big Money instant cash, while ten crowns trigger respins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20irishcrown opened matching Irish Crown Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 208 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 208 Aztec Smash validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "NODE_OPTIONS=--max-old-space-size=8192 node scripts/run-verify.mjs",
     "note": "exit 0; full preview verification passed including build, data, links and nofollow"
+  },
+  "publication": {
+    "commit": "630588d45b33845966775da24fa8dba0b80bb256",
+    "githubActionsRun": 41504911053,
+    "cloudflareDeployment": "a28cd1c2-024e-45f4-96f6-6bbcd923ce3e",
+    "cloudflareUrl": "https://a28cd1c2.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
