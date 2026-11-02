@@ -1,10 +1,10 @@
 {
   "batch": 638,
   "recordedAt": "2026-11-02T08:56:32.706Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1164 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Boxing Bonus Round /vs10bbbbrnd absent.",
@@ -14,7 +14,7 @@
       "name": "Big Bass Boxing Bonus Round",
       "slug": "big-bass-boxing-bonus-round-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-boxing-bonus-round/",
       "officialFacts": "Official page, artwork and Demo matched. Three to five Scatters award fifteen to twenty five Free Spins. Separate blue and red Wild meters add ten spins each fourth Wild and higher multiplier; Wilds collect money symbols.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10bbbbrnd opened matching Big Bass Boxing Bonus Round Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 156 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 156 Eye of Spartacus validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Build complete; Similar play computed for 1165 Games; internal link check passed for 1569 HTML files; outbound nofollow passed."
+  },
+  "publication": {
+    "commit": "940e338d6cda0e278f296d1a01dfb936d3295131",
+    "githubActionsRun": 41417489375,
+    "cloudflareDeployment": "f66e4726-e557-4b92-b3ae-027487968b2a",
+    "cloudflareUrl": "https://f66e4726.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
