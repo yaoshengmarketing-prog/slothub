@@ -7,6 +7,7 @@ import { featureLabels, jackpotTypeLabels, primaryTypeLabels, volatilityLabels, 
 import { buildGameDetailKnowledgePresentation, loadGuideRelationshipIndex, relationshipLabel, type GameDetailFieldPlacement } from '../../lib/guide-relationship-catalog';
 import { buildSimilarPlayPresentation } from '../../lib/similar-play.mjs';
 import { buildGameDetailPresentation, formatRecordedRtp, RTP_MISSING, RTP_PRIMARY_NOTE, RTP_USAGE_NOTE } from '../../lib/game-detail-presentation.mjs';
+import { compareGridLabel } from '../../lib/compare-presentation.mjs';
 import { loadPublishedDataMethodologyEntry } from '../../lib/data-methodology';
 import { projectGameEvidence } from '../../lib/game-metric-evidence.mjs';
 import MetricEvidenceSummary from '../../components/MetricEvidenceSummary.astro';
@@ -56,9 +57,9 @@ const formatNumber = (value: number) => value.toLocaleString('zh-Hant-TW', { max
 const mechanism = presentation.operation.mechanism
   ? winMechanismLabels[presentation.operation.mechanism] ?? presentation.operation.mechanism
   : undefined;
-const gridDisplay = presentation.full.reels
-  ? presentation.full.reels.replace(/\s*[x×]\s*/i, ' × ')
-  : presentation.full.rows ? `${presentation.full.rows} 列` : undefined;
+const gridDisplay = presentation.full.reels || presentation.full.rows
+  ? compareGridLabel(presentation.full.reels, presentation.full.rows)
+  : undefined;
 const formatWinCount = (value: number | undefined, mechanismValue: string | undefined) => value
   ? mechanismValue === 'paylines'
     ? `${value.toLocaleString()} 條賠線`

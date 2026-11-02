@@ -55,6 +55,17 @@ assert.match(bySlug.get('mahjong-ways-2').maxWinLabelOriginal, /Advertised Max W
 assert.match(bySlug.get('mahjong-ways-2').maxWinLabelOriginal, /Max Exposure \(1 billion simulations\)/);
 assert.equal(compareGridLabel(bySlug.get('bonanza').reels, bySlug.get('bonanza').rows), bySlug.get('bonanza').reels);
 assert.equal(compareGridLabel('5x3', 3), '5 × 3');
+assert.equal(compareGridLabel('5', 3), '5 × 3');
+assert.equal(compareGridLabel(bySlug.get('book-of-8-riches').reels, bySlug.get('book-of-8-riches').rows), '5 × 3');
+assert.equal(compareGridLabel(bySlug.get('gonzos-quest').reels, bySlug.get('gonzos-quest').rows), '5 × 3');
+assert.equal(compareGridLabel(bySlug.get('the-great-pigsby-megaways').reels, bySlug.get('the-great-pigsby-megaways').rows), bySlug.get('the-great-pigsby-megaways').reels, 'preserve conflicting source descriptions verbatim');
+assert.equal(compareGridLabel(undefined, undefined), COMPARE_MISSING);
+assert.equal(compareGridLabel(undefined, 3), '3 列');
+assert.equal(compareGridLabel('5', undefined), '5');
+assert.equal(compareGridLabel('5x3', 7), '5 × 3', 'do not overwrite an explicit grid with a separate row value');
+for (const reels of ['6 reels; 2–7 symbols per reel; carts above reels 2–5', 'Official source conflict: current product page 6x7; launch release 5x3']) {
+  assert.equal(compareGridLabel(reels, 3), reels, 'descriptive or conflicting source text must not be parsed into a fixed grid');
+}
 assert.equal(compareWinCountLabel('paylines', 10), '10 條');
 assert.equal(compareWinCountLabel('ways-to-win', 1024), '1,024 路');
 
@@ -70,6 +81,7 @@ assert.doesNotMatch(component, /compare-section-row[^\n]*scope="colgroup"/);
 assert.match(component, /aria-hidden="true"/);
 assert.match(component, /compare-sticky-head/);
 assert.match(component, /buildRecordedRtpPresentation\(game\)/);
+assert.match(component, /compareGridLabel\(game\.reels, game\.rows\)/, 'Compare must retain the existing shared grid formatter');
 assert.match(component, /本站記錄的主要值/);
 assert.match(component, /個已收錄數值/);
 assert.match(component, /未建立正式系列資料/);
