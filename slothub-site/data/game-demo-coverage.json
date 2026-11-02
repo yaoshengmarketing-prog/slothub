@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1206,
+  "gameCount": 1207,
   "providerCount": 371,
-  "sourcePageCount": 2006,
+  "sourcePageCount": 2009,
   "counts": {
     "access-restricted": 4,
-    "available": 914,
+    "available": 915,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "savannah-legend-pragmatic-play",
+      "name": "Savannah Legend",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/savannah-legend/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Savannah Legend. Official page, 339x180 artwork and exact vswayssavlgnd Demo reels match. Wild multipliers combine, three to five Scatters start Free Spins, Special Lions transform animal symbols. Exact iframe gameSymbol vswayssavlgnd opened matching Savannah Legend Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/savannah-legend/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/01/Savannah-Legend_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Savannah Legend title artwork, 339x180 PNG, SHA256 C189B175B0947ED98E394CD2B317CADD40CA916F3F51F6A3338B8F99915F79FE"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayssavlgnd",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "ancient-island-megaways-pragmatic-play",
       "name": "Ancient Island Megaways™",

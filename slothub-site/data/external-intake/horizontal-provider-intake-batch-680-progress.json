@@ -1,10 +1,10 @@
 {
   "batch": 680,
   "recordedAt": "2026-11-02T14:33:13.606Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1205 published Game Markdown records and same-provider exact official path/name/gameSymbol; Ancient Island Megaways™ /vswaysmodfr absent.",
@@ -14,7 +14,7 @@
       "name": "Ancient Island Megaways™",
       "slug": "ancient-island-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/ancient-island-megaways/",
       "officialFacts": "Official page, 339x180 artwork and exact vswaysmodfr Demo reels match. Expanding Wilds trigger reel modifiers, and four to six Scatters start Free Spins with four modifiers each spin.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysmodfr opened matching Ancient Island Megaways™ Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 198 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 198 Savannah Legend validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "3252dffb80fa9aa0bdac581544b27447b615f433",
+    "githubActionsRun": 41463831370,
+    "cloudflareDeployment": "af21f2aa-8042-4153-b3db-987514f777e0",
+    "cloudflareUrl": "https://af21f2aa.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
