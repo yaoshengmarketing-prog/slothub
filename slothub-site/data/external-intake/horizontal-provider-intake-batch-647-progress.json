@@ -1,10 +1,10 @@
 {
   "batch": 647,
   "recordedAt": "2026-11-02T10:06:26.198Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1172 published Game Markdown records and same-provider exact official path/name/gameSymbol; Jumbo Safari /vs20jjjack absent.",
@@ -14,7 +14,7 @@
       "name": "Jumbo Safari",
       "slug": "jumbo-safari-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/jumbo-safari/",
       "officialFacts": "Official page, artwork and exact vs20jjjack Demo title matched. Three to five Scatters start fifteen to fifty Free Spins; a chest selects one stacked animal, and five matching animals award corresponding prizes.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20jjjack opened matching Jumbo Safari Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 165 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 165 Fiesta Fortune validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full preview verify exit 0: build complete, Similar play 1173 Games, internal links 1577 HTML files PASS, outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "34ad54f306d26aeb503841160e69ffa58e021ccf",
+    "githubActionsRun": 41426637334,
+    "cloudflareDeployment": "10a3932d-98a1-4f49-a989-e95b8b7576a0",
+    "cloudflareUrl": "https://10a3932d.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
