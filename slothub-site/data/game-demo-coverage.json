@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1199,
+  "gameCount": 1200,
   "providerCount": 371,
-  "sourcePageCount": 1985,
+  "sourcePageCount": 1988,
   "counts": {
     "access-restricted": 4,
-    "available": 907,
+    "available": 908,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "5-lions-megaways-2-pragmatic-play",
+      "name": "5 Lions Megaways™ 2",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/5-lions-megaways-2/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify 5 Lions Megaways™ 2. Official page, artwork and exact vsways5lions2 Demo splash match. Distinct sequel. Wild multiplier up to 100x, three Scatters start Free Spins and Super Scatters can start Super Free Spins. Exact iframe gameSymbol vsways5lions2 opened matching 5 Lions Megaways™ 2 Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/5-lions-megaways-2/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/02/5-Lions-Megaways-2_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed 5 Lions Megaways™ 2 title artwork, 339x180 PNG, SHA256 A7DC3D4439EE2B7A0A15A009A8BA52FE68F56CD9431F25AD78859657B2481212"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vsways5lions2",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "raging-waterfall-megaways-pragmatic-play",
       "name": "Raging Waterfall Megaways™",

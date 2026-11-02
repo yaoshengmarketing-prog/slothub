@@ -1,10 +1,10 @@
 {
   "batch": 673,
   "recordedAt": "2026-11-02T13:35:13.241Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1198 published Game Markdown records and same-provider exact official path/name/gameSymbol; Raging Waterfall Megaways™ /vswaysmltchmgw absent.",
@@ -14,7 +14,7 @@
       "name": "Raging Waterfall Megaways™",
       "slug": "raging-waterfall-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/raging-waterfall-megaways/",
       "officialFacts": "Official page, artwork and exact vswaysmltchmgw Demo splash match. Multi Chance expands and respins reels; four Scatters start Free Spins with four possible modifiers.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysmltchmgw opened matching Raging Waterfall Megaways™ Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 191 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 191 5 Lions Megaways™ 2 validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "60dcd9e6ea7fd812889f7b7af788009ca3f906ae",
+    "githubActionsRun": 41454936388,
+    "cloudflareDeployment": "73d26129-3068-40b0-b5a6-c3fa0821ba7a",
+    "cloudflareUrl": "https://73d26129.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
