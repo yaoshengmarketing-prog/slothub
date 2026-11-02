@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1147,
+  "gameCount": 1148,
   "providerCount": 371,
-  "sourcePageCount": 1829,
+  "sourcePageCount": 1832,
   "counts": {
     "access-restricted": 4,
-    "available": 855,
+    "available": 856,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sweet-bonanza-super-scatter-pragmatic-play",
+      "name": "Sweet Bonanza Super Scatter",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/sweet-bonanza-super-scatter/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Sweet Bonanza Super Scatter. Official page: four to six Scatters award ten Free Spins. One to four Super Scatters at trigger award 100x to 50,000x. Multiplier symbols up to 100x remain during feature, and three more Scatters add five spins. Exact iframe gameSymbol vs20swbonsup opened matching Sweet Bonanza Super Scatter Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sweet-bonanza-super-scatter/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/Sweet-Bonanza-Super-Scatter_339x180_Scatter.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Sweet Bonanza Super Scatter title artwork, 339x180 PNG, SHA256 AD4C3F69D36A9EB15AEE008E307F75EE0BD29A303FA14F19FC0EC9745BD99AF8"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20swbonsup",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "zombie-school-megaways-pragmatic-play",
       "name": "Zombie School Megaways",

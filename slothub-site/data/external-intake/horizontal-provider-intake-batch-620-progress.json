@@ -1,10 +1,10 @@
 {
   "batch": 620,
   "recordedAt": "2026-11-01T23:56:17.58Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1146 published Game Markdown records and same-provider exact official path/name/gameSymbol; Zombie School Megaways /vswayspompmr2 absent.",
@@ -14,7 +14,7 @@
       "name": "Zombie School Megaways",
       "slug": "zombie-school-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/zombie-school-megaways/",
       "officialFacts": "Official page: tumbling wins can increase reel symbol counts in a game offering up to 117,649 ways. Four to six Scatters award ten to twenty Free Spins, with feature wins receiving a multiplier.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswayspompmr2 opened matching Zombie School Megaways Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 138 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 138 Sweet Bonanza Super Scatter validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full preview verification passed: 1147 Similar play Games, 1551 internal HTML links, outbound nofollow."
+  },
+  "publication": {
+    "commit": "7866028b0ccc7c453e6e35bfff9e9b2416080174",
+    "githubActionsRun": 41364849841,
+    "cloudflareDeployment": "a2fdfa20-43ed-4a67-bcdc-d588ae52aa18",
+    "cloudflareUrl": "https://a2fdfa20.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
