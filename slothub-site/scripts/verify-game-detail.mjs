@@ -1,4 +1,7 @@
 import { readFile } from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import { parse } from 'yaml';
+import { compareGridLabel } from '../src/lib/compare-presentation.mjs';
 
 const root = new URL('../dist/games/', import.meta.url);
 const failures = [];
@@ -21,6 +24,40 @@ requireText(seth2, ['戰神賽特2－覺醒之力', 'Storm of Seth 2: Awakening'
 requireText(chaos, ['已收錄 RTP', '個已收錄數值', '96.30%', '92.40%', '88.40%'], 'Chaos Crew');
 requireText(sparse, ['Fortune Paw', '最高倍數', '盤面', '發行日期'], 'Fortune Paw');
 if (seth2.includes('賠線／Ways 數量')) failures.push('Storm of Seth 2: mechanism text must not render as win count');
+
+// Check the actual summary and full-data output, not an unrelated occurrence in props or sources.
+const gridSlugs = ['book-of-8-riches', 'gonzos-quest', 'bonanza', 'the-great-pigsby-megaways', 'jump-high'];
+for (const slug of gridSlugs) {
+  const raw = await readFile(new URL(`../src/content/games/${slug}.md`, import.meta.url), 'utf8');
+  const game = parse(raw.match(/^---\r?\n([\s\S]*?)\r?\n---/)?.[1]);
+  const hasGrid = Boolean(game.reels || game.rows);
+  const expected = hasGrid ? compareGridLabel(game.reels, game.rows) : '尚未核實';
+  const html = await load(slug);
+  const summary = html.match(/<section class="game-quick-read"[\s\S]*?<\/section>/)?.[0];
+  const mechanism = summary?.match(/<dt>主要玩法<\/dt>[\s\S]*?<p>([\s\S]*?)<\/p>/)?.[1];
+  const ledger = html.match(/<dl class="game-data-ledger">[\s\S]*?<\/dl>/)?.[0];
+  const fullGrid = ledger?.match(/<dt>盤面<\/dt><dd[^>]*>([\s\S]*?)<\/dd>/)?.[1];
+  assert.ok(mechanism, `${slug}: quick mechanism note missing`);
+  if (hasGrid) assert.ok(mechanism.includes(expected), `${slug}: quick mechanism note must use the shared grid label`);
+  else assert.ok(!mechanism.includes(expected), `${slug}: absent grid must not insert Compare missing text into the quick note`);
+  assert.equal(fullGrid, expected, `${slug}: full grid must agree with Compare`);
+}
+
+const template = await readFile(new URL('../src/pages/games/[slug].astro', import.meta.url), 'utf8');
+const gridExpression = template.match(/const gridDisplay = ([\s\S]*?);/)?.[1];
+assert.ok(gridExpression, 'detail grid expression missing');
+const detailGrid = new Function('presentation', 'compareGridLabel', `return (${gridExpression});`);
+for (const [input, expected] of [
+  [{}, undefined], [{ reels: '' }, undefined], [{ rows: 3 }, '3 列'],
+  [{ reels: '5' }, '5'], [{ reels: '5', rows: 3 }, '5 × 3'],
+  [{ reels: '5x3', rows: 3 }, '5 × 3'],
+  [{ reels: 'dynamic 2–7 symbols; source says 6x7', rows: 3 }, 'dynamic 2–7 symbols; source says 6x7'],
+  [{ reels: 'Official source conflict: current product page 6x7; launch release 5x3' }, 'Official source conflict: current product page 6x7; launch release 5x3'],
+]) {
+  const before = structuredClone(input);
+  assert.equal(detailGrid({ full: Object.freeze(input) }, compareGridLabel), expected, 'detail grid / missing-value semantics');
+  assert.deepEqual(input, before, 'display must not alter original grid data');
+}
 
 for (const [page, html] of [['Storm of Seth', seth], ['Storm of Seth 2', seth2], ['Chaos Crew', chaos], ['Fortune Paw', sparse]]) {
   requireText(html, ['"@type":"VideoGame"', 'content="noindex,nofollow"', '加入比較'], page);
@@ -46,4 +83,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log('PASS: 14 game detail fixtures, contextual knowledge placement, overflow, bilingual identity, sparse data, Schema and Preview safeguards verified.');
+console.log('PASS: 14 game detail fixtures plus 5 scoped grid cases, shared Compare grid labels/missing semantics, contextual knowledge placement, overflow, bilingual identity, sparse data, Schema and Preview safeguards verified.');
