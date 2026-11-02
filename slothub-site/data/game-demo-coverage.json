@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1181,
+  "gameCount": 1182,
   "providerCount": 371,
-  "sourcePageCount": 1931,
+  "sourcePageCount": 1934,
   "counts": {
     "access-restricted": 4,
-    "available": 889,
+    "available": 890,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "lucky-dog-pragmatic-play",
+      "name": "Lucky Dog",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/lucky-dog/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Lucky Dog. Official Pragmatic Play POP page, artwork and exact vs5luckydogly Demo title match. Randomly triggered Respins give a four-bag choice; multiplier grows 1x each Respin, and a later bag choice may extend the feature. Exact iframe gameSymbol vs5luckydogly opened matching Lucky Dog Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/lucky-dog/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/04/Lucky-Dog_339x180_NB.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Lucky Dog title artwork, 339x180 PNG, SHA256 8C3E83091020CE7610A45C3F0293982DFC8071843AB397F11890E664035D6ABD"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5luckydogly",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "big-bass-bonanza-1000-pragmatic-play",
       "name": "Big Bass Bonanza 1000",

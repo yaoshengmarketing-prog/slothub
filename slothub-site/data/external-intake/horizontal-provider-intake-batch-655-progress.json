@@ -1,10 +1,10 @@
 {
   "batch": 655,
   "recordedAt": "2026-11-02T11:05:58.858Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1180 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Bonanza 1000 /vs10bbbnz1000 absent.",
@@ -14,7 +14,7 @@
       "name": "Big Bass Bonanza 1000",
       "slug": "big-bass-bonanza-1000-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-bonanza-1000/",
       "officialFacts": "Official page, artwork and exact vs10bbbnz1000 Demo title match. Three to five Scatters award ten to twenty Free Spins; every fourth Fisherman Wild retriggers ten Free Spins and increasing 2x, 3x, then 10x multipliers.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10bbbnz1000 opened matching Big Bass Bonanza 1000 Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 173 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 173 Lucky Dog validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full preview verify exit 0: build complete, Similar play 1181 Games, internal links 1585 HTML files PASS, outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "f45c3c248381f20b5c34dc5b7bd4a21b87c16552",
+    "githubActionsRun": 41434631183,
+    "cloudflareDeployment": "9330795d-3ea2-43b8-ac5d-6e3b92f2b676",
+    "cloudflareUrl": "https://9330795d.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

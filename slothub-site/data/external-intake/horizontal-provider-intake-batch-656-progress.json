@@ -1,0 +1,37 @@
+{
+  "batch": 656,
+  "recordedAt": "2026-11-02T11:13:12.314Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1181 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Dog /vs5luckydogly absent.",
+  "records": [
+    {
+      "index": 173,
+      "name": "Lucky Dog",
+      "slug": "lucky-dog-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/lucky-dog/",
+      "officialFacts": "Official Pragmatic Play POP page, artwork and exact vs5luckydogly Demo title match. Randomly triggered Respins give a four-bag choice; multiplier grows 1x each Respin, and a later bag choice may extend the feature.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/04/Lucky-Dog_339x180_NB.png",
+        "localPath": "public/assets/games/lucky-dog-pragmatic-play.png",
+        "sha256": "8C3E83091020CE7610A45C3F0293982DFC8071843AB397F11890E664035D6ABD",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Lucky Dog title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5luckydogly opened matching Lucky Dog Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 174 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full preview verify exit 0; Similar play, internal links, outbound nofollow, and build checks passed."
+  }
+}
