@@ -1,0 +1,28 @@
+{
+  "batch": 644,
+  "recordedAt": "2026-11-02T09:51:17.913Z",
+  "state": "excluded-source-conflict",
+  "batchSize": 0,
+  "capturedCount": 0,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "records": [
+    {
+      "index": 161,
+      "name": "Gates of Hades",
+      "provider": "pragmatic-play",
+      "status": "excluded-source-conflict",
+      "officialPage": "https://www.pragmaticplay.com/en/games/gates-of-hades/",
+      "checkedAt": "2026-11-02",
+      "browser": "Codex in-app browser",
+      "reason": "The official single-game page contradicts itself on the minimum Scatter count required to start Free Spins.",
+      "evidence": [
+        "Main description: Landing 3+ scatters triggers the bonus game with 15 free spins.",
+        "What to expect: Land 4+ scatters to trigger free spins."
+      ],
+      "nextStep": "Keep excluded unless a separate official help or paytable resolves the trigger count; continue with catalog item 162."
+    }
+  ],
+  "nextCursor": "Catalog item 162 Wealthy Frog; do not count excluded item 161 as a publication."
+}

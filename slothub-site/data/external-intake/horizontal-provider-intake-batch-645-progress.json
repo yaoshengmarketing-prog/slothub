@@ -1,0 +1,37 @@
+{
+  "batch": 645,
+  "recordedAt": "2026-11-02T09:51:17.913Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1170 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wealthy Frog /vs5wfrog absent.",
+  "records": [
+    {
+      "index": 162,
+      "name": "Wealthy Frog",
+      "slug": "wealthy-frog-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/wealthy-frog/",
+      "officialFacts": "Official Pragmatic Play POP page, artwork and Demo match. Three to five diamond Scatters pay anywhere up to 250x; five golden frogs on a payline award 1,000x.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/05/Wealthy-Frog_339x180_B.png",
+        "localPath": "public/assets/games/wealthy-frog-pragmatic-play.png",
+        "sha256": "9CDC66B9E09E80D1C3715668FDE2FD0269ED03FA293839C0D8A7A8FF06B8E387",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Wealthy Frog title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5wfrog opened matching Wealthy Frog Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 163 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full preview verify exit 0: build complete, Similar play 1171 Games, internal links 1575 HTML files PASS, outbound nofollow PASS."
+  }
+}
