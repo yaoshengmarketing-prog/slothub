@@ -1,10 +1,10 @@
 {
   "batch": 648,
   "recordedAt": "2026-11-02T10:12:42.419Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1173 published Game Markdown records and same-provider exact official path/name/gameSymbol; Fiesta Fortune /vs10gbseries absent.",
@@ -14,7 +14,7 @@
       "name": "Fiesta Fortune",
       "slug": "fiesta-fortune-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/fiesta-fortune/",
       "officialFacts": "Official page, artwork and exact vs10gbseries Demo title matched. Six Money symbols start Money Respins; three Scatters start six sticky-money Free Spins; full Money grid awards 5,000x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10gbseries opened matching Fiesta Fortune Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 166 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 166 Lucky Monkey validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full preview verify exit 0: build complete, Similar play 1174 Games, internal links 1578 HTML files PASS, outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "9bd24a2829d4d290535ff06aeed49cba4fcda260",
+    "githubActionsRun": 41427624224,
+    "cloudflareDeployment": "87aa833a-6c15-4796-8506-086c3307b574",
+    "cloudflareUrl": "https://87aa833a.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
