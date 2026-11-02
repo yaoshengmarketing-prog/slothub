@@ -1,0 +1,37 @@
+{
+  "batch": 672,
+  "recordedAt": "2026-11-02T13:26:32.168Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1197 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky’s Wild Pub /vs25luckwildpb absent.",
+  "records": [
+    {
+      "index": 189,
+      "name": "Lucky’s Wild Pub",
+      "slug": "luckys-wild-pub-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/luckys-wild-pub/",
+      "officialFacts": "Official page, artwork and exact vs25luckwildpb Demo loaded matching themed game. Three coin modifiers trigger Pot Respin, full money grid adds 5,000x.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/02/Luckys-Wild-Pub_339x180_Without-Border.png",
+        "localPath": "public/assets/games/luckys-wild-pub-pragmatic-play.png",
+        "sha256": "9AA7BA849D5F724EC0220E6A85EF27657B78614887E6E589159BFA4491B9FF1B",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Lucky’s Wild Pub title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs25luckwildpb opened matching Lucky’s Wild Pub Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 190 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}

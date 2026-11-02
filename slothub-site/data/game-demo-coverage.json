@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1197,
+  "gameCount": 1198,
   "providerCount": 371,
-  "sourcePageCount": 1979,
+  "sourcePageCount": 1982,
   "counts": {
     "access-restricted": 4,
-    "available": 905,
+    "available": 906,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "luckys-wild-pub-pragmatic-play",
+      "name": "Lucky’s Wild Pub",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/luckys-wild-pub/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Lucky’s Wild Pub. Official page, artwork and exact vs25luckwildpb Demo loaded matching themed game. Three coin modifiers trigger Pot Respin, full money grid adds 5,000x. Exact iframe gameSymbol vs25luckwildpb opened matching Lucky’s Wild Pub Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/luckys-wild-pub/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/02/Luckys-Wild-Pub_339x180_Without-Border.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Lucky’s Wild Pub title artwork, 339x180 PNG, SHA256 9AA7BA849D5F724EC0220E6A85EF27657B78614887E6E589159BFA4491B9FF1B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25luckwildpb",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "triple-pot-gold-pragmatic-play",
       "name": "Triple Pot Gold",
