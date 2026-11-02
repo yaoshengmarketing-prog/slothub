@@ -1,10 +1,10 @@
 {
   "batch": 665,
   "recordedAt": "2026-11-02T12:30:39.450Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1190 published Game Markdown records and same-provider exact official path/name/gameSymbol; Book of Monsters /vs20fatbook absent.",
@@ -14,7 +14,7 @@
       "name": "Book of Monsters",
       "slug": "book-of-monsters-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/book-of-monsters/",
       "officialFacts": "Official page, artwork and exact vs20fatbook Demo splash match. Five-symbol clusters pay; large symbols up to seven by seven, and Bonus grants expanding Fat symbol Free Spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20fatbook opened matching Book of Monsters Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 183 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 183 Lucky Tiger validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "ca48c1ac7dbe0c5d57b9fe27e8b59e4f4670fdac",
+    "githubActionsRun": 41445901919,
+    "cloudflareDeployment": "bc58a8ca-d8ff-447c-a8f9-cfe262fcb96b",
+    "cloudflareUrl": "https://bc58a8ca.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

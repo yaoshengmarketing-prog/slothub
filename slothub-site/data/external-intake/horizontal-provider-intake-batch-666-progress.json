@@ -1,0 +1,37 @@
+{
+  "batch": 666,
+  "recordedAt": "2026-11-02T12:38:06.794Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1191 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Tiger /vs5luckytigly absent.",
+  "records": [
+    {
+      "index": 183,
+      "name": "Lucky Tiger",
+      "slug": "lucky-tiger-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/lucky-tiger/",
+      "officialFacts": "Official POP page, artwork and exact vs5luckytigly Demo view match. Distinct from Lucky Tiger 1000 and Gold exact official paths and symbols. Three by three paylines, full-grid multiplier and random retriggering Respins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/03/Lucky-Tiger_339x180_B.png",
+        "localPath": "public/assets/games/lucky-tiger-pragmatic-play.png",
+        "sha256": "2048730C84E3D848D09A6678AFC54A487C36C6AAFA9CFA005180F4461E26E7FE",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Lucky Tiger title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5luckytigly opened matching Lucky Tiger Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 184 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}
