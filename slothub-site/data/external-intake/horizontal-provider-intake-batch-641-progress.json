@@ -1,10 +1,10 @@
 {
   "batch": 641,
   "recordedAt": "2026-11-02T09:29:27.241Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1167 published Game Markdown records and same-provider exact official path/name/gameSymbol; Mahjong Wins Super Scatter /vswaysmwss absent.",
@@ -14,7 +14,7 @@
       "name": "Mahjong Wins Super Scatter",
       "slug": "mahjong-wins-super-scatter-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/mahjong-wins-super-scatter/",
       "officialFacts": "Official page, artwork and Demo match. Winning gold symbols leave Wilds, tumble multiplier rises to 5x in base and 10x in Free Spins. Three Scatters award ten spins, plus two per extra; Super Scatters can award prizes up to 100,000x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysmwss opened matching Mahjong Wins Super Scatter Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 159 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 159 Lucky Tiger 1000 validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Build complete; Similar play computed for 1168 Games; internal link check passed for 1572 HTML files; outbound nofollow passed."
+  },
+  "publication": {
+    "commit": "cc603fed1f95ed8bfe067e9cc6767cb210bceb75",
+    "githubActionsRun": 41421705877,
+    "cloudflareDeployment": "2069e52e-1022-4218-b291-43a242ceb365",
+    "cloudflareUrl": "https://2069e52e.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

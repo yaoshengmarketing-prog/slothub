@@ -1,0 +1,37 @@
+{
+  "batch": 642,
+  "recordedAt": "2026-11-02T09:36:20.969Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1168 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Tiger 1000 /vs5luckyt1kly absent.",
+  "records": [
+    {
+      "index": 159,
+      "name": "Lucky Tiger 1000",
+      "slug": "lucky-tiger-1000-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/lucky-tiger-1000/",
+      "officialFacts": "Official Pragmatic Play POP page, artwork and Demo match. Full 3x3 screen of one symbol may award random multiplier up to 1,000x; random Respin feature continues when chosen symbol or Wild lands.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/05/Lucky-Tiger-1000_339x180_B.png",
+        "localPath": "public/assets/games/lucky-tiger-1000-pragmatic-play.png",
+        "sha256": "AE40AB00F5F9C72A66F37156D3E7C219718C0EF6A04CA381561A99664C656F42",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Lucky Tiger 1000 title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5luckyt1kly opened matching Lucky Tiger 1000 Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 160 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Build complete; Similar play computed for 1169 Games; internal link check passed for 1573 HTML files; outbound nofollow passed."
+  }
+}
