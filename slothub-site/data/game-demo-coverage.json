@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1190,
+  "gameCount": 1191,
   "providerCount": 371,
-  "sourcePageCount": 1958,
+  "sourcePageCount": 1961,
   "counts": {
     "access-restricted": 4,
-    "available": 898,
+    "available": 899,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "book-of-monsters-pragmatic-play",
+      "name": "Book of Monsters",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/book-of-monsters/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Book of Monsters. Official page, artwork and exact vs20fatbook Demo splash match. Five-symbol clusters pay; large symbols up to seven by seven, and Bonus grants expanding Fat symbol Free Spins. Exact iframe gameSymbol vs20fatbook opened matching Book of Monsters Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/book-of-monsters/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/02/Book-of-Monsters_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Book of Monsters title artwork, 339x180 PNG, SHA256 AD4757C9D7CEF715124A57C68391A0A14B66FCC06DF62AA0E0DDF501C013F65C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20fatbook",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "the-dog-house-royal-hunt-pragmatic-play",
       "name": "The Dog House – Royal Hunt",

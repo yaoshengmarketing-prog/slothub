@@ -1,10 +1,10 @@
 {
   "batch": 664,
   "recordedAt": "2026-11-02T12:21:50.693Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1189 published Game Markdown records and same-provider exact official path/name/gameSymbol; The Dog House – Royal Hunt /vs20dhsuper absent.",
@@ -14,7 +14,7 @@
       "name": "The Dog House – Royal Hunt",
       "slug": "the-dog-house-royal-hunt-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/the-dog-house-royal-hunt/",
       "officialFacts": "Official page, artwork and exact vs20dhsuper Demo game view match. Wild multipliers combine; Bonus symbols on reels one three and five trigger up to twenty seven Free Spins with sticky Wilds.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20dhsuper opened matching The Dog House – Royal Hunt Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 182 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 182 Book of Monsters validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "a78e7e99ca43cff7870ddd0d3ec3c0e337638368",
+    "githubActionsRun": 41444827038,
+    "cloudflareDeployment": "cfc84f1f-2c5d-4b53-9849-f42ab357e7db",
+    "cloudflareUrl": "https://cfc84f1f.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
