@@ -1,10 +1,10 @@
 {
   "batch": 660,
   "recordedAt": "2026-11-02T11:41:25.938Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1185 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky Bull /vs10fortnhsly absent.",
@@ -14,7 +14,7 @@
       "name": "Lucky Bull",
       "slug": "lucky-bull-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/lucky-ox/",
       "officialFacts": "Official page heading and artwork/Demo say Lucky Bull though official URL ends lucky-ox. Five money symbols pay on a 3-4-3 grid; random Hold and Spin has three resetting Respins and a full-grid Grand prize.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10fortnhsly opened matching Lucky Bull Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 178 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 178 Joker’s Jewels Cash validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full preview verify exit 0; Similar play, internal links, outbound nofollow, and build checks passed."
+  },
+  "publication": {
+    "commit": "289428a13bd8059602df852ef72df1475f1b69ee",
+    "githubActionsRun": 41439382550,
+    "cloudflareDeployment": "f6fbd02e-a27e-4eaa-9d31-32c394789928",
+    "cloudflareUrl": "https://f6fbd02e.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
