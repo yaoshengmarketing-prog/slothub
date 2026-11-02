@@ -1,10 +1,10 @@
 {
   "batch": 639,
   "recordedAt": "2026-11-02T09:05:56.031Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1165 published Game Markdown records and same-provider exact official path/name/gameSymbol; Eye of Spartacus /vs15eyeofspart absent.",
@@ -14,7 +14,7 @@
       "name": "Eye of Spartacus",
       "slug": "eye-of-spartacus-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/eye-of-spartacus/",
       "officialFacts": "Official page, artwork and Demo match. Expanding wild may carry 2x to 100x; three Scatters trigger ten Free Spins and expanding Wilds add spins and upgrade symbols during feature.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs15eyeofspart opened matching Eye of Spartacus Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 157 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 157 Wild West Gold Blazing Bounty validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Build complete; Similar play computed for 1166 Games; internal link check passed for 1570 HTML files; outbound nofollow passed."
+  },
+  "publication": {
+    "commit": "54e59f1df124cfac35e1d259595ac4a0ef5644f7",
+    "githubActionsRun": 41419402704,
+    "cloudflareDeployment": "144c6bfe-b847-4e4c-a4cc-ce996c18c76b",
+    "cloudflareUrl": "https://144c6bfe.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

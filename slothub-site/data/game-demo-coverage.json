@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1166,
+  "gameCount": 1167,
   "providerCount": 371,
-  "sourcePageCount": 1886,
+  "sourcePageCount": 1889,
   "counts": {
     "access-restricted": 4,
-    "available": 874,
+    "available": 875,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wild-west-gold-blazing-bounty-pragmatic-play",
+      "name": "Wild West Gold Blazing Bounty",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/wild-west-gold-blazing-bounty/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Wild West Gold Blazing Bounty. Official page, artwork and Demo match. Three or more Scatters award ten Free Spins, with sticky Wilds; Wild multiplier range depends on three, four or five triggering Scatters. Exact iframe gameSymbol vs20wwgcluster opened matching Wild West Gold Blazing Bounty Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-west-gold-blazing-bounty/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/05/Wild-West-Gold-Blazing-Bounty_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Wild West Gold Blazing Bounty title artwork, 339x180 PNG, SHA256 7E8FDF705684D18CE95D01CF63708CA9146A1F71A8BC9223AF2E51B56CDC7BA8"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20wwgcluster",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "eye-of-spartacus-pragmatic-play",
       "name": "Eye of Spartacus",

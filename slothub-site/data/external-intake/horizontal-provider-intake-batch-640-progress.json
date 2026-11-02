@@ -1,0 +1,37 @@
+{
+  "batch": 640,
+  "recordedAt": "2026-11-02T09:20:07.786Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1166 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild West Gold Blazing Bounty /vs20wwgcluster absent.",
+  "records": [
+    {
+      "index": 157,
+      "name": "Wild West Gold Blazing Bounty",
+      "slug": "wild-west-gold-blazing-bounty-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/wild-west-gold-blazing-bounty/",
+      "officialFacts": "Official page, artwork and Demo match. Three or more Scatters award ten Free Spins, with sticky Wilds; Wild multiplier range depends on three, four or five triggering Scatters.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/05/Wild-West-Gold-Blazing-Bounty_339x180.png",
+        "localPath": "public/assets/games/wild-west-gold-blazing-bounty-pragmatic-play.png",
+        "sha256": "7E8FDF705684D18CE95D01CF63708CA9146A1F71A8BC9223AF2E51B56CDC7BA8",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Wild West Gold Blazing Bounty title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20wwgcluster opened matching Wild West Gold Blazing Bounty Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 158 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Build complete; Similar play computed for 1167 Games; internal link check passed for 1571 HTML files; outbound nofollow passed."
+  }
+}
