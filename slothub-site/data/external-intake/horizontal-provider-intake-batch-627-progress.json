@@ -1,0 +1,37 @@
+{
+  "batch": 627,
+  "recordedAt": "2026-11-02T07:13:48.439Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1153 published Game Markdown records and same-provider exact official path/name/gameSymbol; Alien Invaders /vs20alieninv absent.",
+  "records": [
+    {
+      "index": 144,
+      "name": "Alien Invaders",
+      "slug": "alien-invaders-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/alien-invaders/",
+      "officialFacts": "Official page: matching bottom-row symbols activate reels and explosions. Every ten exploded symbols raise a spin multiplier; three Scatters award seven Free Spins, with feature multiplier persisting between spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Alien-Invaders_339x180-1.png",
+        "localPath": "public/assets/games/alien-invaders-pragmatic-play.png",
+        "sha256": "FCCF11C74DE35911969CF3D42CE705B79B549B934C3F9CCFAC2B5F34DCEC9224",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Alien Invaders title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20alieninv opened matching Alien Invaders Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 145 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "Full preview verification passed: 1154 Similar play Games, 1558 internal HTML links, outbound nofollow."
+  }
+}

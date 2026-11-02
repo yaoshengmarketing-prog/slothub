@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1153,
+  "gameCount": 1154,
   "providerCount": 371,
-  "sourcePageCount": 1847,
+  "sourcePageCount": 1850,
   "counts": {
     "access-restricted": 4,
-    "available": 861,
+    "available": 862,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "alien-invaders-pragmatic-play",
+      "name": "Alien Invaders",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/alien-invaders/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Alien Invaders. Official page: matching bottom-row symbols activate reels and explosions. Every ten exploded symbols raise a spin multiplier; three Scatters award seven Free Spins, with feature multiplier persisting between spins. Exact iframe gameSymbol vs20alieninv opened matching Alien Invaders Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/alien-invaders/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/06/Alien-Invaders_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Alien Invaders title artwork, 339x180 PNG, SHA256 FCCF11C74DE35911969CF3D42CE705B79B549B934C3F9CCFAC2B5F34DCEC9224"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20alieninv",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "chilli-heat-spicy-spins-pragmatic-play",
       "name": "Chilli Heat Spicy Spins",
