@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1151,
+  "gameCount": 1152,
   "providerCount": 371,
-  "sourcePageCount": 1841,
+  "sourcePageCount": 1844,
   "counts": {
     "access-restricted": 4,
-    "available": 859,
+    "available": 860,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "master-gems-pragmatic-play",
+      "name": "Master Gems",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/master-gems/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Master Gems. Official Pragmatic Play POP page: dynamite Wilds on reel three can trigger a win multiplier when participating in a win, from 2x up to 100x. Exact iframe gameSymbol vs1mjokfp opened matching Master Gems Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/master-gems/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/07/Master-Gems_339x180_NB.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Master Gems title artwork, 339x180 PNG, SHA256 B3BF883D75CFD1E92A7B1DADE683F5FB9633D401368E42CD7A265B34870374AC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs1mjokfp",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "you-can-piggy-bank-on-it-pragmatic-play",
       "name": "You Can Piggy Bank On It",

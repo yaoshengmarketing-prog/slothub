@@ -1,10 +1,10 @@
 {
   "batch": 624,
   "recordedAt": "2026-11-02T06:50:25.56Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1150 published Game Markdown records and same-provider exact official path/name/gameSymbol; You Can Piggy Bank On It /vs10piggybank absent.",
@@ -14,7 +14,7 @@
       "name": "You Can Piggy Bank On It",
       "slug": "you-can-piggy-bank-on-it-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/you-can-piggy-bank-on-it/",
       "officialFacts": "Official page: three to five Scatters trigger ten to twenty Free Spins. The vault holds fourteen money symbols; a TNT Wild collects them and starts a centre respin, with pig symbol possibly collecting vault values again.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10piggybank opened matching You Can Piggy Bank On It Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 142 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 142 Master Gems validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full preview verification passed: 1151 Similar play Games, 1555 internal HTML links, outbound nofollow."
+  },
+  "publication": {
+    "commit": "bf55027c62482bb132cb8dfd089e39f6e2772170",
+    "githubActionsRun": 41402899190,
+    "cloudflareDeployment": "b842bc57-1049-4e52-9461-72162898c4e0",
+    "cloudflareUrl": "https://b842bc57.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
