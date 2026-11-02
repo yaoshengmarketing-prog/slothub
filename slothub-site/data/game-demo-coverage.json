@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1179,
+  "gameCount": 1180,
   "providerCount": 371,
-  "sourcePageCount": 1925,
+  "sourcePageCount": 1928,
   "counts": {
     "access-restricted": 4,
-    "available": 887,
+    "available": 888,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gates-of-olympus-super-scatter-pragmatic-play",
+      "name": "Gates of Olympus Super Scatter",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/gates-of-olympus-super-scatter/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Gates of Olympus Super Scatter. Official page, artwork and exact vs20olympgold Demo title match. Four or more Scatters trigger fifteen Free Spins; one to four Super Scatters on the trigger award 100x to 50,000x. Exact iframe gameSymbol vs20olympgold opened matching Gates of Olympus Super Scatter Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gates-of-olympus-super-scatter/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/03/Gates-Of-Olympus-Super-Scatter_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Gates of Olympus Super Scatter title artwork, 339x180 PNG, SHA256 2D52335D0352D2661E7530472B10DBA43C49D4B20D7F0E9CAA67F89F38ABB4A2"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20olympgold",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "jelly-candy-pragmatic-play",
       "name": "Jelly Candy",

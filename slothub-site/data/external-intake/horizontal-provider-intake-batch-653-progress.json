@@ -1,10 +1,10 @@
 {
   "batch": 653,
   "recordedAt": "2026-11-02T10:51:12.263Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1178 published Game Markdown records and same-provider exact official path/name/gameSymbol; Jelly Candy /vs5jellyc absent.",
@@ -14,7 +14,7 @@
       "name": "Jelly Candy",
       "slug": "jelly-candy-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/jelly-candy/",
       "officialFacts": "Official Pragmatic Play POP page, artwork and exact vs5jellyc Demo title match. Three-by-three five-line game with lemon Wild and horizontal multiplier reel up to 15x; maximum win 375x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs5jellyc opened matching Jelly Candy Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 171 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 171 Gates of Olympus Super Scatter validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "Full preview verify exit 0: build complete, Similar play 1179 Games, internal links 1583 HTML files PASS, outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "b50e6a773cc74b751d6e2893d3704ece4d1ef058",
+    "githubActionsRun": 41432625538,
+    "cloudflareDeployment": "597b3107-fb8c-47cb-a01d-eb697e7b1368",
+    "cloudflareUrl": "https://597b3107.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
