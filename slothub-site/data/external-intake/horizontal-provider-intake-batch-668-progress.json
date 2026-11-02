@@ -1,10 +1,10 @@
 {
   "batch": 668,
   "recordedAt": "2026-11-02T12:54:06.441Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1193 published Game Markdown records and same-provider exact official path/name/gameSymbol; Blitz Super Wheel /vs20lightblitz absent.",
@@ -14,7 +14,7 @@
       "name": "Blitz Super Wheel",
       "slug": "blitz-super-wheel-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/blitz-super-wheel/",
       "officialFacts": "Official page, artwork and exact vs20lightblitz Demo game view match. Random wheel offers one of seven prizes including Wilds, Mystery, fixed jackpots or five to eight Free Spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20lightblitz opened matching Blitz Super Wheel Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 186 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 186 Volcano Goddess validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "9efd10655ebd5f644e58fa1ddf142510b9035953",
+    "githubActionsRun": 41449083666,
+    "cloudflareDeployment": "6d917fe3-329e-4f05-997d-aab47b526833",
+    "cloudflareUrl": "https://6d917fe3.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

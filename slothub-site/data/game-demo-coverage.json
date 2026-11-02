@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1194,
+  "gameCount": 1195,
   "providerCount": 371,
-  "sourcePageCount": 1970,
+  "sourcePageCount": 1973,
   "counts": {
     "access-restricted": 4,
-    "available": 902,
+    "available": 903,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "volcano-goddess-pragmatic-play",
+      "name": "Volcano Goddess",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/volcano-goddess/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Volcano Goddess. Official page, artwork and exact vswaysvlcgds Demo opened with matching volcano goddess art. Six Scatters offer Respins or Free Spins; full Respins grid pays 5,000x Grand. Exact iframe gameSymbol vswaysvlcgds opened matching Volcano Goddess Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/volcano-goddess/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/02/Volcano-Goddess_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Volcano Goddess title artwork, 339x180 PNG, SHA256 B826E8CD2A50432E44DCA48C1F9517127526655B43ED957BE63427A4E15B1BCA"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysvlcgds",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "blitz-super-wheel-pragmatic-play",
       "name": "Blitz Super Wheel",

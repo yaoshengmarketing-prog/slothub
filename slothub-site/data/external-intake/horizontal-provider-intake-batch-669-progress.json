@@ -1,0 +1,37 @@
+{
+  "batch": 669,
+  "recordedAt": "2026-11-02T13:02:41.888Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1194 published Game Markdown records and same-provider exact official path/name/gameSymbol; Volcano Goddess /vswaysvlcgds absent.",
+  "records": [
+    {
+      "index": 186,
+      "name": "Volcano Goddess",
+      "slug": "volcano-goddess-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/volcano-goddess/",
+      "officialFacts": "Official page, artwork and exact vswaysvlcgds Demo opened with matching volcano goddess art. Six Scatters offer Respins or Free Spins; full Respins grid pays 5,000x Grand.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2025/02/Volcano-Goddess_339x180.png",
+        "localPath": "public/assets/games/volcano-goddess-pragmatic-play.png",
+        "sha256": "B826E8CD2A50432E44DCA48C1F9517127526655B43ED957BE63427A4E15B1BCA",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Volcano Goddess title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysvlcgds opened matching Volcano Goddess Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 187 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}
