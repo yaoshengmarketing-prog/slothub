@@ -1,10 +1,10 @@
 {
   "batch": 728,
   "recordedAt": "2026-11-03T06:15:33.168Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1253 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sumo Supreme Megaways /vswaysmegwghts absent.",
@@ -14,7 +14,7 @@
       "name": "Sumo Supreme Megaways",
       "slug": "sumo-supreme-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/sumo-supreme-megaways/",
       "officialFacts": "Official page, 339x180 artwork and exact vswaysmegwghts Demo title and sumo art match. Megaways tumble and reel weight break mechanic; four Scatters grant eight Free Spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysmegwghts opened matching Sumo Supreme Megaways Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 246 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 246 Hot to Burn – 7 Deadly Free Spins validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "8055f26386553ce39d6ce4a2fc849efafa981a74",
+    "githubActionsRun": 41589141849,
+    "cloudflareDeployment": "1bd7d9aa-1dbf-4d30-8015-461e1218d7b9",
+    "cloudflareUrl": "https://1bd7d9aa.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
