@@ -1,10 +1,10 @@
 {
   "batch": 743,
   "recordedAt": "2026-11-03T08:41:51.102Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1268 published Game Markdown records and same-provider exact official path/name/gameSymbol; Hot to Burn Multiplier /vs5hotbmult absent.",
@@ -14,7 +14,7 @@
       "name": "Hot to Burn Multiplier",
       "slug": "hot-to-burn-multiplier-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/hot-to-burn-multiplier/",
       "officialFacts": "Official page, 339x180 artwork and exact vs5hotbmult Demo title and fruit art match. Flame multiplier up to 5x; distinct from 7 Deadly Free Spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs5hotbmult opened matching Hot to Burn Multiplier Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 261 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 261 Buffalo King Untamed Megaways validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "41047965e12441d4db40e0bafe556c70e13def4f",
+    "githubActionsRun": 41605768523,
+    "cloudflareDeployment": "71845952-ca8f-4d19-a40b-5635921844d1",
+    "cloudflareUrl": "https://71845952.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

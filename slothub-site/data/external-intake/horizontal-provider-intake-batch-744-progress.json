@@ -1,0 +1,37 @@
+{
+  "batch": 744,
+  "recordedAt": "2026-11-03T08:49:16.158Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1269 published Game Markdown records and same-provider exact official path/name/gameSymbol; Buffalo King Untamed Megaways /vswaysbkingasc absent.",
+  "records": [
+    {
+      "index": 261,
+      "name": "Buffalo King Untamed Megaways",
+      "slug": "buffalo-king-untamed-megaways-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/buffalo-king-untamed-megaways/",
+      "officialFacts": "Official page, 339x180 artwork and exact vswaysbkingasc Demo title and buffalo art match. Megaways Wild multipliers and Scatter Free Spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/06/Buffalo-King-Untamed-Megaways_339x180_EN.png",
+        "localPath": "public/assets/games/buffalo-king-untamed-megaways-pragmatic-play.png",
+        "sha256": "01E66D8696193DA9640846648DCB240B9DCC363AC79449D1F1FA76C6F4AAFB02",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Buffalo King Untamed Megaways title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysbkingasc opened matching Buffalo King Untamed Megaways Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 262 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}
