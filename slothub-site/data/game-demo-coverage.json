@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1240,
+  "gameCount": 1241,
   "providerCount": 371,
-  "sourcePageCount": 2108,
+  "sourcePageCount": 2111,
   "counts": {
     "access-restricted": 4,
-    "available": 948,
+    "available": 949,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-dog-house-muttley-crew-pragmatic-play",
+      "name": "The Dog House – Muttley Crew",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/the-dog-house-muttley-crew/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify The Dog House – Muttley Crew. Official page, 339x180 artwork and exact vs20dhcluster2 Demo playable reels, title and pirate-dog theme match. Five-symbol cluster wins, chest multiplier Wilds and sticky Wild Free Spins. Exact iframe gameSymbol vs20dhcluster2 opened matching The Dog House – Muttley Crew Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-dog-house-muttley-crew/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/09/The-Dog-House-Muttley-Crew_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed The Dog House – Muttley Crew title artwork, 339x180 PNG, SHA256 78B1B8F093552D3791B473D45352A92F86976C5FF440ACB4285B4A2E4241131A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20dhcluster2",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "fortune-hitn-roll-pragmatic-play",
       "name": "Fortune Hit’n Roll",
