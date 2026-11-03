@@ -1,10 +1,10 @@
 {
   "batch": 707,
   "recordedAt": "2026-11-03T02:37:26.507Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1232 published Game Markdown records and same-provider exact official path/name/gameSymbol; Candy Corner /vs20fourmc absent.",
@@ -14,7 +14,7 @@
       "name": "Candy Corner",
       "slug": "candy-corner-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/candy-corner/",
       "officialFacts": "Official page, 339x180 artwork and exact vs20fourmc Demo title match. 7x7 cluster game, corners randomly provide cash, multiplier, extra Wild or expanded Wild modifiers.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20fourmc opened matching Candy Corner Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 225 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 225 Fangtastic Freespins validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "d11171d9e0318b31f7e1d72434fb5c6806d2941d",
+    "githubActionsRun": 41567639953,
+    "cloudflareDeployment": "2e24e745-e37a-4a2b-8107-c9b9a1e2b108",
+    "cloudflareUrl": "https://2e24e745.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

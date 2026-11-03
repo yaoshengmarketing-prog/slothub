@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1233,
+  "gameCount": 1234,
   "providerCount": 371,
-  "sourcePageCount": 2087,
+  "sourcePageCount": 2090,
   "counts": {
     "access-restricted": 4,
-    "available": 941,
+    "available": 942,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fangtastic-freespins-pragmatic-play",
+      "name": "Fangtastic Freespins",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/fangtastic-freespins/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Fangtastic Freespins. Official page, 339x180 artwork and exact vs10fangfree Demo title match. Three to five Scatters grant ten to twenty Free Spins; werewolf collects full moon money values, blood bank progress adds spins and multiplier. Exact iframe gameSymbol vs10fangfree opened matching Fangtastic Freespins Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fangtastic-freespins/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/09/Fangtastic-Freespins_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Fangtastic Freespins title artwork, 339x180 PNG, SHA256 2DC24174642B65EC16EEDBAD5052ECDFB852E6750C5A674359A141888ACE0A5D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10fangfree",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "candy-corner-pragmatic-play",
       "name": "Candy Corner",
