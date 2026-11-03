@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1221,
+  "gameCount": 1222,
   "providerCount": 371,
-  "sourcePageCount": 2051,
+  "sourcePageCount": 2054,
   "counts": {
     "access-restricted": 4,
-    "available": 929,
+    "available": 930,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "dragon-king-hot-pots-pragmatic-play",
+      "name": "Dragon King Hot Pots",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/dragon-king-hot-pots/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Dragon King Hot Pots. Official page, 339x180 artwork and exact vs10dkinghp Demo title match. Dragon Mini Slots triggered by three or more Scatters or randomly with one or two; matching eights award cash, diamond ends bonus. Exact iframe gameSymbol vs10dkinghp opened matching Dragon King Hot Pots Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/dragon-king-hot-pots/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/11/Dragon-King-Hot-Pots_339x180_without-border.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Dragon King Hot Pots title artwork, 339x180 PNG, SHA256 C18F390C9BD3A39D9A7E588D7BC5869484650D3D03CEFEC5F676633352E64941"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10dkinghp",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "mining-rush-pragmatic-play",
       "name": "Mining Rush",
