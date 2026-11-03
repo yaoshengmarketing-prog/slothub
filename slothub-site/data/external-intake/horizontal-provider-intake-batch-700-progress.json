@@ -1,10 +1,10 @@
 {
   "batch": 700,
   "recordedAt": "2026-11-03T01:47:29.581Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1225 published Game Markdown records and same-provider exact official path/name/gameSymbol; Penguins Christmas Party Time /vs25xmasparty absent.",
@@ -14,7 +14,7 @@
       "name": "Penguins Christmas Party Time",
       "slug": "penguins-christmas-party-time-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/penguins-christmas-party-time/",
       "officialFacts": "Official page, 339x180 artwork and exact vs25xmasparty Demo title match. Three golden Scatters on reels one, three, five lead to a choice of three ten-spin bonus features: Boogie Back, Wild Party or Snowball Booster.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs25xmasparty opened matching Penguins Christmas Party Time Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 218 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 218 Might of Freya Megaways™ validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "9a45bb681228ddac0ea1eee6b8f9e1c827769096",
+    "githubActionsRun": 41562470435,
+    "cloudflareDeployment": "7814e1be-b9fb-420c-acde-59db6b8f9c47",
+    "cloudflareUrl": "https://7814e1be.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

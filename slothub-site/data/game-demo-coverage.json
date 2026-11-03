@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1226,
+  "gameCount": 1227,
   "providerCount": 371,
-  "sourcePageCount": 2066,
+  "sourcePageCount": 2069,
   "counts": {
     "access-restricted": 4,
-    "available": 934,
+    "available": 935,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "might-of-freya-megaways-pragmatic-play",
+      "name": "Might of Freya Megaways™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/might-of-freya-megaways/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Might of Freya Megaways™. Official page, 339x180 artwork and exact vswaysmfreya Demo title match. 6x7 Megaways tumbles; Super Symbol wild grants respins, five consecutive tumble wins trigger bonus with up to twenty Free Spins. Exact iframe gameSymbol vswaysmfreya opened matching Might of Freya Megaways™ Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/might-of-freya-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/11/Might-of-Freya-Megaways_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Might of Freya Megaways™ title artwork, 339x180 PNG, SHA256 CC8A3AB3615185109A0FB2AD714C415A8F4F70DBDF37968B5EB36CAF3B6B8EDA"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysmfreya",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "penguins-christmas-party-time-pragmatic-play",
       "name": "Penguins Christmas Party Time",
