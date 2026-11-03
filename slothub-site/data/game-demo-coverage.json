@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1234,
+  "gameCount": 1235,
   "providerCount": 371,
-  "sourcePageCount": 2090,
+  "sourcePageCount": 2093,
   "counts": {
     "access-restricted": 4,
-    "available": 942,
+    "available": 943,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "7-clovers-of-fortune-pragmatic-play",
+      "name": "7 Clovers of Fortune",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/7-clovers-of-fortune/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify 7 Clovers of Fortune. Official page, 339x180 artwork and exact vswayssevenc Demo title match. Connect and Collect special symbols can award respins, Wilds and jackpots; three to five pot Scatters grant ten to twenty Free Spins. Exact iframe gameSymbol vswayssevenc opened matching 7 Clovers of Fortune Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/7-clovers-of-fortune/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/09/7-Clovers-Of-Fortune_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed 7 Clovers of Fortune title artwork, 339x180 PNG, SHA256 7800E6A57A068C4E6D9E244BE037EC478FEEAEB92870F342A4DE6C54C89257BC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayssevenc",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "fangtastic-freespins-pragmatic-play",
       "name": "Fangtastic Freespins",

@@ -1,0 +1,37 @@
+{
+  "batch": 709,
+  "recordedAt": "2026-11-03T02:51:35.566Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1234 published Game Markdown records and same-provider exact official path/name/gameSymbol; 7 Clovers of Fortune /vswayssevenc absent.",
+  "records": [
+    {
+      "index": 226,
+      "name": "7 Clovers of Fortune",
+      "slug": "7-clovers-of-fortune-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/7-clovers-of-fortune/",
+      "officialFacts": "Official page, 339x180 artwork and exact vswayssevenc Demo title match. Connect and Collect special symbols can award respins, Wilds and jackpots; three to five pot Scatters grant ten to twenty Free Spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/09/7-Clovers-Of-Fortune_339x180.png",
+        "localPath": "public/assets/games/7-clovers-of-fortune-pragmatic-play.png",
+        "sha256": "7800E6A57A068C4E6D9E244BE037EC478FEEAEB92870F342A4DE6C54C89257BC",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact 7 Clovers of Fortune title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswayssevenc opened matching 7 Clovers of Fortune Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 227 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}
