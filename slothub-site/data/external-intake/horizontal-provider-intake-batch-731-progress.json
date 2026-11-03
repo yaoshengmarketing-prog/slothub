@@ -1,10 +1,10 @@
 {
   "batch": 731,
   "recordedAt": "2026-11-03T06:36:20.909Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1256 published Game Markdown records and same-provider exact official path/name/gameSymbol; Running Sushi /vswayscashconv absent.",
@@ -14,7 +14,7 @@
       "name": "Running Sushi",
       "slug": "running-sushi-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/running-sushi/",
       "officialFacts": "Official page, 339x180 artwork and exact vswayscashconv Demo title and sushi art match. Conveyor values, Take Sushi and Scatter Free Spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswayscashconv opened matching Running Sushi Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 249 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 249 Dragon Gold 88 validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "10309fba7edb758f4f930971d60c388ab9df0238",
+    "githubActionsRun": 41591342035,
+    "cloudflareDeployment": "d6246942-db41-4d84-94e5-3d29aa1a8302",
+    "cloudflareUrl": "https://d6246942.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
