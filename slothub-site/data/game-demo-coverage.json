@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1263,
+  "gameCount": 1264,
   "providerCount": 371,
-  "sourcePageCount": 2177,
+  "sourcePageCount": 2180,
   "counts": {
     "access-restricted": 4,
-    "available": 971,
+    "available": 972,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "6-jokers-pragmatic-play",
+      "name": "6 Jokers",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/6-jokers/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify 6 Jokers. Official page, 339x180 artwork and exact vs5magicdoor Demo title and six Jokers art match. Extra reel Joker Wilds accumulate through tumbles and multiplier bombs. Exact iframe gameSymbol vs5magicdoor opened matching 6 Jokers Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/6-jokers/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/06/6-Jokers_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed 6 Jokers title artwork, 339x180 PNG, SHA256 7B99FB435358A815494F08F8DDB970628C00DE050239A8F17BFDC26A6A691705"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5magicdoor",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "jokers-jewels-wild-pragmatic-play",
       "name": "Joker’s Jewels Wild",

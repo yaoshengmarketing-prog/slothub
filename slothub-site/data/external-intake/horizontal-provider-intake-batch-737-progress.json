@@ -1,10 +1,10 @@
 {
   "batch": 737,
   "recordedAt": "2026-11-03T07:56:36.778Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1262 published Game Markdown records and same-provider exact official path/name/gameSymbol; Joker’s Jewels Wild /vs5jjwild absent.",
@@ -14,7 +14,7 @@
       "name": "Joker’s Jewels Wild",
       "slug": "jokers-jewels-wild-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/jokers-jewels-wild/",
       "officialFacts": "Official page, 339x180 artwork and exact vs5jjwild Demo title and Joker art match. Expanding Wild and instant paying Scatters; distinct from Joker Jewels Cash and Hold & Spin.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs5jjwild opened matching Joker’s Jewels Wild Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 255 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 255 6 Jokers validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "81a8c8450590a8451aa160d3f8532c2a639720d6",
+    "githubActionsRun": 41600142228,
+    "cloudflareDeployment": "e15c0b8a-9fbd-42e6-bfbd-917e87f9648e",
+    "cloudflareUrl": "https://e15c0b8a.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
