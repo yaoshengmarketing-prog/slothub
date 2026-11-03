@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1223,
+  "gameCount": 1224,
   "providerCount": 371,
-  "sourcePageCount": 2057,
+  "sourcePageCount": 2060,
   "counts": {
     "access-restricted": 4,
-    "available": 931,
+    "available": 932,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gates-of-olympus-xmas-1000-pragmatic-play",
+      "name": "Gates of Olympus Xmas 1000",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/gates-of-olympus-xmas-1000/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Gates of Olympus Xmas 1000. Official page, 339x180 artwork and exact vs20olympxmas Demo title match. Festive 6x5 game, eight matching symbols win, four Scatters grant fifteen Free Spins, multiplier symbols can reach 1000x. Exact iframe gameSymbol vs20olympxmas opened matching Gates of Olympus Xmas 1000 Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gates-of-olympus-xmas-1000/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/11/Gates-Of-Olympus-X-mas-1000_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Gates of Olympus Xmas 1000 title artwork, 339x180 PNG, SHA256 42E010D6AE3EB2382960DDB115B3024DC411B95418E98BD336909D14F7888324"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20olympxmas",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "tiny-toads-pragmatic-play",
       "name": "Tiny Toads",
