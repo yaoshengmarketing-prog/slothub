@@ -1,0 +1,37 @@
+{
+  "batch": 731,
+  "recordedAt": "2026-11-03T06:36:20.909Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1256 published Game Markdown records and same-provider exact official path/name/gameSymbol; Running Sushi /vswayscashconv absent.",
+  "records": [
+    {
+      "index": 248,
+      "name": "Running Sushi",
+      "slug": "running-sushi-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/running-sushi/",
+      "officialFacts": "Official page, 339x180 artwork and exact vswayscashconv Demo title and sushi art match. Conveyor values, Take Sushi and Scatter Free Spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/07/Running-Sushi_339x180.png",
+        "localPath": "public/assets/games/running-sushi-pragmatic-play.png",
+        "sha256": "3AEBA94C9795F9F3E87DC03C2CF489DD13397A7511BA7FD64CCAB8CE6755EA1B",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Running Sushi title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswayscashconv opened matching Running Sushi Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 249 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}
