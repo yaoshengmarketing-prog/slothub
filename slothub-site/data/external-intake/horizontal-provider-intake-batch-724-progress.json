@@ -1,10 +1,10 @@
 {
   "batch": 724,
   "recordedAt": "2026-11-03T05:47:54.372Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1249 published Game Markdown records and same-provider exact official path/name/gameSymbol; Mustang Gold Megaways™ /vswaysgoldcol absent.",
@@ -14,7 +14,7 @@
       "name": "Mustang Gold Megaways™",
       "slug": "mustang-gold-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/mustang-gold-megaways/",
       "officialFacts": "Official page, 339x180 artwork and exact vswaysgoldcol Demo playable reels, title and horse theme match. Scatter plus Collect triggers Free Spins; sticky Collect gives respins and prizes.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysgoldcol opened matching Mustang Gold Megaways™ Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 242 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 242 Gem Elevator validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "ab5d9c171a3565f086287f73704fe0fe9b16d618",
+    "githubActionsRun": 41586352596,
+    "cloudflareDeployment": "d5140c5d-3983-4997-90d5-163986ccb989",
+    "cloudflareUrl": "https://d5140c5d.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

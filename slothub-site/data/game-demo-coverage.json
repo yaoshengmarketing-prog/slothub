@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1250,
+  "gameCount": 1251,
   "providerCount": 371,
-  "sourcePageCount": 2138,
+  "sourcePageCount": 2141,
   "counts": {
     "access-restricted": 4,
-    "available": 958,
+    "available": 959,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gem-elevator-pragmatic-play",
+      "name": "Gem Elevator",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/gem-elevator/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Gem Elevator. Official page, 339x180 artwork and exact vs20elevclust Demo playable reels, title and mining theme match. Elevator nudges reels; Bonus symbols grant Free Spins. Exact iframe gameSymbol vs20elevclust opened matching Gem Elevator Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gem-elevator/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/07/Gem-Elevator_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Gem Elevator title artwork, 339x180 PNG, SHA256 967D98674449309236E980EA1229B8DDBF0051B7E38889B95362D749A46989C9"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20elevclust",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "mustang-gold-megaways-pragmatic-play",
       "name": "Mustang Gold Megaways™",
