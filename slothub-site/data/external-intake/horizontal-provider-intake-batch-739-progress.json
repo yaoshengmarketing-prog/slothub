@@ -1,0 +1,37 @@
+{
+  "batch": 739,
+  "recordedAt": "2026-11-03T08:11:05.862Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1264 published Game Markdown records and same-provider exact official path/name/gameSymbol; Samurai Code /vs12scode absent.",
+  "records": [
+    {
+      "index": 256,
+      "name": "Samurai Code",
+      "slug": "samurai-code-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/samurai-code/",
+      "officialFacts": "Official page, 339x180 artwork and exact vs12scode Demo title and samurai art match. Wild collects money symbols during Free Spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/06/Samurai-Code_339x180.png",
+        "localPath": "public/assets/games/samurai-code-pragmatic-play.png",
+        "sha256": "60FD032219EE118C44B4260141BDCF20D50C5B5B96826CA3B169AA6A489AA8AF",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Samurai Code title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs12scode opened matching Samurai Code Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 257 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}
