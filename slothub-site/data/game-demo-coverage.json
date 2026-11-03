@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1249,
+  "gameCount": 1250,
   "providerCount": 371,
-  "sourcePageCount": 2135,
+  "sourcePageCount": 2138,
   "counts": {
     "access-restricted": 4,
-    "available": 957,
+    "available": 958,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mustang-gold-megaways-pragmatic-play",
+      "name": "Mustang Gold Megaways™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/mustang-gold-megaways/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Mustang Gold Megaways™. Official page, 339x180 artwork and exact vswaysgoldcol Demo playable reels, title and horse theme match. Scatter plus Collect triggers Free Spins; sticky Collect gives respins and prizes. Exact iframe gameSymbol vswaysgoldcol opened matching Mustang Gold Megaways™ Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/mustang-gold-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/08/Mustang-Gold-Megaways_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Mustang Gold Megaways™ title artwork, 339x180 PNG, SHA256 85D6D966E42179ACC22E1015A6FB7DFFE7593D8E56459ABD918D27123D4CFDA3"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysgoldcol",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "angel-vs-sinner-pragmatic-play",
       "name": "Angel vs Sinner",

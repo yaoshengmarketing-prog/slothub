@@ -1,0 +1,37 @@
+{
+  "batch": 724,
+  "recordedAt": "2026-11-03T05:47:54.372Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1249 published Game Markdown records and same-provider exact official path/name/gameSymbol; Mustang Gold Megaways™ /vswaysgoldcol absent.",
+  "records": [
+    {
+      "index": 241,
+      "name": "Mustang Gold Megaways™",
+      "slug": "mustang-gold-megaways-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/mustang-gold-megaways/",
+      "officialFacts": "Official page, 339x180 artwork and exact vswaysgoldcol Demo playable reels, title and horse theme match. Scatter plus Collect triggers Free Spins; sticky Collect gives respins and prizes.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/08/Mustang-Gold-Megaways_339x180.png",
+        "localPath": "public/assets/games/mustang-gold-megaways-pragmatic-play.png",
+        "sha256": "85D6D966E42179ACC22E1015A6FB7DFFE7593D8E56459ABD918D27123D4CFDA3",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Mustang Gold Megaways™ title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysgoldcol opened matching Mustang Gold Megaways™ Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 242 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}
