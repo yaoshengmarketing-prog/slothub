@@ -1,0 +1,37 @@
+{
+  "batch": 695,
+  "recordedAt": "2026-11-03T01:06:11.013Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1220 published Game Markdown records and same-provider exact official path/name/gameSymbol; Mining Rush /vs20minerush absent.",
+  "records": [
+    {
+      "index": 212,
+      "name": "Mining Rush",
+      "slug": "mining-rush-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/mining-rush/",
+      "officialFacts": "Official page, 339x180 artwork and exact vs20minerush Demo title match. 7x7 cluster game with sticky mines that level through wins; three or more Scatters grant up to twenty Free Spins, new mines add spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/11/Mining-Rush_339x180.png",
+        "localPath": "public/assets/games/mining-rush-pragmatic-play.png",
+        "sha256": "0BA20548AA7E8D01084EE84145328142EF7288AC1D5357188F94632A42832B0C",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Mining Rush title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20minerush opened matching Mining Rush Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 213 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}

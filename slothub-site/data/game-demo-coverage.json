@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1220,
+  "gameCount": 1221,
   "providerCount": 371,
-  "sourcePageCount": 2048,
+  "sourcePageCount": 2051,
   "counts": {
     "access-restricted": 4,
-    "available": 928,
+    "available": 929,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mining-rush-pragmatic-play",
+      "name": "Mining Rush",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/mining-rush/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Mining Rush. Official page, 339x180 artwork and exact vs20minerush Demo title match. 7x7 cluster game with sticky mines that level through wins; three or more Scatters grant up to twenty Free Spins, new mines add spins. Exact iframe gameSymbol vs20minerush opened matching Mining Rush Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/mining-rush/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/11/Mining-Rush_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Mining Rush title artwork, 339x180 PNG, SHA256 0BA20548AA7E8D01084EE84145328142EF7288AC1D5357188F94632A42832B0C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20minerush",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "big-bass-bonanza-3-reeler-pragmatic-play",
       "name": "Big Bass Bonanza 3 Reeler",
