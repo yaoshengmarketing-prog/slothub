@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1217,
+  "gameCount": 1218,
   "providerCount": 371,
-  "sourcePageCount": 2039,
+  "sourcePageCount": 2042,
   "counts": {
     "access-restricted": 4,
-    "available": 925,
+    "available": 926,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "ratinho-sortudo-pragmatic-play",
+      "name": "Ratinho Sortudo",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/ratinho-sortudo/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Ratinho Sortudo. Official Pragmatic Play POP page, 339x180 artwork and exact vs10forwild Demo title match. Distinct from Lucky Mouse vs10forwildly. 3-4-3 ten payline game; mouse can grant up to ten Wilds, each Wild up to 5x multiplier. Exact iframe gameSymbol vs10forwild opened matching Ratinho Sortudo Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/ratinho-sortudo/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/12/Ratinho-Sortudo_339x180_B-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Ratinho Sortudo title artwork, 339x180 PNG, SHA256 D0E4EEF59B81FF986D6674804C6647069FCD9B527448B13F441C57F5610A7D62"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10forwild",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "aztec-smash-pragmatic-play",
       "name": "Aztec Smash",
