@@ -1,10 +1,10 @@
 {
   "batch": 715,
   "recordedAt": "2026-11-03T03:36:38.207Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1240 published Game Markdown records and same-provider exact official path/name/gameSymbol; The Dog House – Muttley Crew /vs20dhcluster2 absent.",
@@ -14,7 +14,7 @@
       "name": "The Dog House – Muttley Crew",
       "slug": "the-dog-house-muttley-crew-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/the-dog-house-muttley-crew/",
       "officialFacts": "Official page, 339x180 artwork and exact vs20dhcluster2 Demo playable reels, title and pirate-dog theme match. Five-symbol cluster wins, chest multiplier Wilds and sticky Wild Free Spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20dhcluster2 opened matching The Dog House – Muttley Crew Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 233 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 233 Wisdom of Athena 1000 validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "9974383ebba3b63258a00e87ae2da9d9c7310c2b",
+    "githubActionsRun": 41573619060,
+    "cloudflareDeployment": "625755b0-b8ce-483d-b699-09216fc6518b",
+    "cloudflareUrl": "https://625755b0.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
