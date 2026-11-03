@@ -1,10 +1,10 @@
 {
   "batch": 732,
   "recordedAt": "2026-11-03T07:14:31.815Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1257 published Game Markdown records and same-provider exact official path/name/gameSymbol; Dragon Gold 88 /vs10dgold88 absent.",
@@ -14,7 +14,7 @@
       "name": "Dragon Gold 88",
       "slug": "dragon-gold-88-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/dragon-gold-88/",
       "officialFacts": "Official page, 339x180 artwork and exact vs10dgold88 Demo title and dragon art match. Scatters grant Free Spins; dragon Wild collects money symbols.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10dgold88 opened matching Dragon Gold 88 Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 250 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 250 Money Stacks validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "f430327c885351caa0381fdc0f164859d4763b68",
+    "githubActionsRun": 41595469543,
+    "cloudflareDeployment": "af9a1b98-2a4f-4643-a0df-a50f2a89c322",
+    "cloudflareUrl": "https://af9a1b98.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
