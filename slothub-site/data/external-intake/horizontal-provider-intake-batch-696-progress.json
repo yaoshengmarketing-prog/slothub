@@ -1,10 +1,10 @@
 {
   "batch": 696,
   "recordedAt": "2026-11-03T01:16:32.193Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1221 published Game Markdown records and same-provider exact official path/name/gameSymbol; Dragon King Hot Pots /vs10dkinghp absent.",
@@ -14,7 +14,7 @@
       "name": "Dragon King Hot Pots",
       "slug": "dragon-king-hot-pots-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/dragon-king-hot-pots/",
       "officialFacts": "Official page, 339x180 artwork and exact vs10dkinghp Demo title match. Dragon Mini Slots triggered by three or more Scatters or randomly with one or two; matching eights award cash, diamond ends bonus.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10dkinghp opened matching Dragon King Hot Pots Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 214 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 214 Tiny Toads validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "e0887fad6c8ed674709953ef562ccf1bba181239",
+    "githubActionsRun": 41559122269,
+    "cloudflareDeployment": "5553b74b-ef52-41fc-af0f-146860377d77",
+    "cloudflareUrl": "https://5553b74b.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
