@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1265,
+  "gameCount": 1266,
   "providerCount": 371,
-  "sourcePageCount": 2183,
+  "sourcePageCount": 2186,
   "counts": {
     "access-restricted": 4,
-    "available": 973,
+    "available": 974,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "crank-it-up-pragmatic-play",
+      "name": "Crank It Up",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/crank-it-up/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Crank It Up. Official page, 339x180 artwork and exact vs20crankit Demo title and nightclub art match. Scatters grant Free Spins and Wild position multipliers. Exact iframe gameSymbol vs20crankit opened matching Crank It Up Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/crank-it-up/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/06/Crank-it-up_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Crank It Up title artwork, 339x180 PNG, SHA256 52EA7A7065DCB6DC185E0F89859F07D2F3F6993FAA0A35B5AB31426D282FE1B9"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20crankit",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "samurai-code-pragmatic-play",
       "name": "Samurai Code",
