@@ -1,10 +1,10 @@
 {
   "batch": 721,
   "recordedAt": "2026-11-03T04:28:22.237Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1246 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Vegas Double Down Deluxe /vs10bbdoubled absent.",
@@ -14,7 +14,7 @@
       "name": "Big Bass Vegas Double Down Deluxe",
       "slug": "big-bass-vegas-double-down-deluxe-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-double-down-deluxe/",
       "officialFacts": "Official page, 339x180 artwork and exact vs10bbdoubled Demo title and Vegas fisherman theme match. Fisherman collects cash; Scatters grant Free Spins, fourth Fisherman raises spin count and multiplier.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10bbdoubled opened matching Big Bass Vegas Double Down Deluxe Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 239 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 239 Mystery Mice validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "8439a7e0f17bd5c165e29f7842738bd2766c9ee5",
+    "githubActionsRun": 41578664270,
+    "cloudflareDeployment": "fcaeae82-1689-4eaa-ba09-ca3c7620f3e4",
+    "cloudflareUrl": "https://fcaeae82.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
