@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1228,
+  "gameCount": 1229,
   "providerCount": 371,
-  "sourcePageCount": 2072,
+  "sourcePageCount": 2075,
   "counts": {
     "access-restricted": 4,
-    "available": 936,
+    "available": 937,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "eternal-empress-freeze-time-pragmatic-play",
+      "name": "Eternal Empress – Freeze Time",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/eternal-empress-freeze-time/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Eternal Empress – Freeze Time. Official page, 339x180 artwork and exact vswaysfreezet Demo title match. Diamond on reels one or five collects cash on middle reels; three Scatters grant ten Free Spins; watch and padlock freeze cash and spins counter. Exact iframe gameSymbol vswaysfreezet opened matching Eternal Empress – Freeze Time Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/eternal-empress-freeze-time/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/10/Eternal-Empress-Freeze-Time_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Eternal Empress – Freeze Time title artwork, 339x180 PNG, SHA256 7545C533877B72AA3132EDB6994C48D2525937A6F5C60FE32554EDF7065158B1"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysfreezet",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "big-bass-xmas-extreme-pragmatic-play",
       "name": "Big Bass Xmas Extreme",

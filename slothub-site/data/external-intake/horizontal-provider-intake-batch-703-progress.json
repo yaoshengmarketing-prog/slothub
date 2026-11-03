@@ -1,0 +1,37 @@
+{
+  "batch": 703,
+  "recordedAt": "2026-11-03T02:09:03.214Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1228 published Game Markdown records and same-provider exact official path/name/gameSymbol; Eternal Empress – Freeze Time /vswaysfreezet absent.",
+  "records": [
+    {
+      "index": 220,
+      "name": "Eternal Empress – Freeze Time",
+      "slug": "eternal-empress-freeze-time-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/eternal-empress-freeze-time/",
+      "officialFacts": "Official page, 339x180 artwork and exact vswaysfreezet Demo title match. Diamond on reels one or five collects cash on middle reels; three Scatters grant ten Free Spins; watch and padlock freeze cash and spins counter.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/10/Eternal-Empress-Freeze-Time_339x180.png",
+        "localPath": "public/assets/games/eternal-empress-freeze-time-pragmatic-play.png",
+        "sha256": "7545C533877B72AA3132EDB6994C48D2525937A6F5C60FE32554EDF7065158B1",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Eternal Empress – Freeze Time title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysfreezet opened matching Eternal Empress – Freeze Time Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 221 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}

@@ -1,10 +1,10 @@
 {
   "batch": 702,
   "recordedAt": "2026-11-03T02:01:20.641Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1227 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Xmas Extreme /vs10bbxext absent.",
@@ -14,7 +14,7 @@
       "name": "Big Bass Xmas Extreme",
       "slug": "big-bass-xmas-extreme-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-xmas-extreme/",
       "officialFacts": "Official page calls Extreme, exact vs10bbxext Demo and artwork call Xtreme; matching game symbol and fishing theme resolve naming variant. Three Scatters trigger ten Free Spins, fisherman collects fish cash, each fourth adds spins and multiplier up to 50x.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10bbxext opened matching Big Bass Xmas Extreme Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 220 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 220 Eternal Empress – Freeze Time validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "5d82fd45bcee1157657c0ff24594e3c4705cf35d",
+    "githubActionsRun": 41563938072,
+    "cloudflareDeployment": "d5a575e4-bf28-42d0-97d6-c80637c12937",
+    "cloudflareUrl": "https://d5a575e4.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
