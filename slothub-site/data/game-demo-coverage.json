@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1224,
+  "gameCount": 1225,
   "providerCount": 371,
-  "sourcePageCount": 2060,
+  "sourcePageCount": 2063,
   "counts": {
     "access-restricted": 4,
-    "available": 932,
+    "available": 933,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "santas-xmas-rush-pragmatic-play",
+      "name": "Santa’s Xmas Rush",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/santas-xmas-rush/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Santa’s Xmas Rush. Official page, 339x180 artwork and exact vs20rainbowrsh Demo title match. 6x6 cluster slot; Santa reveals snowflake cash or respin prizes, four to seven Scatters grant ten to twenty-two Free Spins. Exact iframe gameSymbol vs20rainbowrsh opened matching Santa’s Xmas Rush Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/santas-xmas-rush/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/11/Santas-Xmas-Rush_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Santa’s Xmas Rush title artwork, 339x180 PNG, SHA256 837EE0BE8FB109D67DA49C6D6A163BDE75C1ADAC4F4514B03D0AAF54C6F79993"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20rainbowrsh",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "gates-of-olympus-xmas-1000-pragmatic-play",
       "name": "Gates of Olympus Xmas 1000",
