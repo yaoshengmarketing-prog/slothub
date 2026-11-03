@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1268,
+  "gameCount": 1269,
   "providerCount": 371,
-  "sourcePageCount": 2192,
+  "sourcePageCount": 2195,
   "counts": {
     "access-restricted": 4,
-    "available": 976,
+    "available": 977,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "hot-to-burn-multiplier-pragmatic-play",
+      "name": "Hot to Burn Multiplier",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/hot-to-burn-multiplier/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Hot to Burn Multiplier. Official page, 339x180 artwork and exact vs5hotbmult Demo title and fruit art match. Flame multiplier up to 5x; distinct from 7 Deadly Free Spins. Exact iframe gameSymbol vs5hotbmult opened matching Hot to Burn Multiplier Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/hot-to-burn-multiplier/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/06/Hot_to_Burn_Multiplier%E2%84%A2_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Hot to Burn Multiplier title artwork, 339x180 PNG, SHA256 AA2C52AA31ED57E352BE3C10C5932AF2ABE5F13F50FEC129F3D8849CAB22A2C9"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5hotbmult",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "hand-of-midas-2-pragmatic-play",
       "name": "Hand of Midas 2",

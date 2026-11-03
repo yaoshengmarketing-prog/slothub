@@ -1,10 +1,10 @@
 {
   "batch": 742,
   "recordedAt": "2026-11-03T08:34:13.800Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1267 published Game Markdown records and same-provider exact official path/name/gameSymbol; Hand of Midas 2 /vs20midas2 absent.",
@@ -14,7 +14,7 @@
       "name": "Hand of Midas 2",
       "slug": "hand-of-midas-2-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/hand-of-midas-2/",
       "officialFacts": "Official page, 339x180 artwork and exact vs20midas2 Demo title and Midas sequel art match. Multiplier Wilds and sticky Wild Free Spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20midas2 opened matching Hand of Midas 2 Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 260 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 260 Hot to Burn Multiplier validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "13537a90cd35d28251a525432d1de855ef614800",
+    "githubActionsRun": 41604762957,
+    "cloudflareDeployment": "2d2c0e15-82f8-494b-8769-b06a6ef6d180",
+    "cloudflareUrl": "https://2d2c0e15.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

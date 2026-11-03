@@ -1,0 +1,37 @@
+{
+  "batch": 743,
+  "recordedAt": "2026-11-03T08:41:51.102Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1268 published Game Markdown records and same-provider exact official path/name/gameSymbol; Hot to Burn Multiplier /vs5hotbmult absent.",
+  "records": [
+    {
+      "index": 260,
+      "name": "Hot to Burn Multiplier",
+      "slug": "hot-to-burn-multiplier-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/hot-to-burn-multiplier/",
+      "officialFacts": "Official page, 339x180 artwork and exact vs5hotbmult Demo title and fruit art match. Flame multiplier up to 5x; distinct from 7 Deadly Free Spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/06/Hot_to_Burn_Multiplier%E2%84%A2_EN_339x180.png",
+        "localPath": "public/assets/games/hot-to-burn-multiplier-pragmatic-play.png",
+        "sha256": "AA2C52AA31ED57E352BE3C10C5932AF2ABE5F13F50FEC129F3D8849CAB22A2C9",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Hot to Burn Multiplier title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5hotbmult opened matching Hot to Burn Multiplier Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 261 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}
