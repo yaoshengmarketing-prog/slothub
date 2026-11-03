@@ -1,10 +1,10 @@
 {
   "batch": 693,
   "recordedAt": "2026-11-03T00:51:22.215Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1218 published Game Markdown records and same-provider exact official path/name/gameSymbol; Money Stacks Megaways™ /vswaysbblitz absent.",
@@ -14,7 +14,7 @@
       "name": "Money Stacks Megaways™",
       "slug": "money-stacks-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/money-stacks-megaways/",
       "officialFacts": "Official page, 339x180 artwork and exact vswaysbblitz Demo title match. Collect and Super Collect gather money symbols; three to six Scatters offer Random Wild Multipliers or Money Spins feature.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysbblitz opened matching Money Stacks Megaways™ Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 211 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 211 Big Bass Bonanza 3 Reeler validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "3e4675869a2eed9781460f3e1506dda73a6c2e10",
+    "githubActionsRun": 41556229258,
+    "cloudflareDeployment": "6197a9a5-1882-4141-b640-7ae6c8a00f71",
+    "cloudflareUrl": "https://6197a9a5.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

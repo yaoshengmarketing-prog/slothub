@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1219,
+  "gameCount": 1220,
   "providerCount": 371,
-  "sourcePageCount": 2045,
+  "sourcePageCount": 2048,
   "counts": {
     "access-restricted": 4,
-    "available": 927,
+    "available": 928,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-bonanza-3-reeler-pragmatic-play",
+      "name": "Big Bass Bonanza 3 Reeler",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/big-bass-bonanza-3-reeler/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Big Bass Bonanza 3 Reeler. Official page, 339x180 artwork and exact vs5bb3reeler Demo title match. Distinct 3x3 five-payline Big Bass game; three Scatters grant at least ten Free Spins, fisherman collects fish cash, fourth fisherman adds spins and multiplier. Exact iframe gameSymbol vs5bb3reeler opened matching Big Bass Bonanza 3 Reeler Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-bonanza-3-reeler/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/12/Big-Bass-Bonanza-3-Reeler_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Big Bass Bonanza 3 Reeler title artwork, 339x180 PNG, SHA256 AD97D824703BAE026CFFD02C972E4992A6982F9E94E48BC2EBD8F5AAD0E00105"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5bb3reeler",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "money-stacks-megaways-pragmatic-play",
       "name": "Money Stacks Megaways™",
