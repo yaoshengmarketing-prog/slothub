@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1261,
+  "gameCount": 1262,
   "providerCount": 371,
-  "sourcePageCount": 2171,
+  "sourcePageCount": 2174,
   "counts": {
     "access-restricted": 4,
-    "available": 969,
+    "available": 970,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "dynamite-diggin-doug-pragmatic-play",
+      "name": "Dynamite Diggin Doug",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/dynamite-diggin-doug/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Dynamite Diggin Doug. Official page, 339x180 artwork and exact vs10dyndigd Demo title and miner art match. Dynamite collection and Free Spins. Exact iframe gameSymbol vs10dyndigd opened matching Dynamite Diggin Doug Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/dynamite-diggin-doug/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/07/Dynamite-Diggin-Doug_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Dynamite Diggin Doug title artwork, 339x180 PNG, SHA256 E58212548F3C8533229710843CD9D71F34477489166D495D7E72D4CA4ED1FBD6"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10dyndigd",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "jackpot-hunter-pragmatic-play",
       "name": "Jackpot Hunter",
