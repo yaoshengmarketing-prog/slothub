@@ -1,0 +1,37 @@
+{
+  "batch": 746,
+  "recordedAt": "2026-11-03T09:03:44.786Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1271 published Game Markdown records and same-provider exact official path/name/gameSymbol; Medusa’s Stone /vs20medusast absent.",
+  "records": [
+    {
+      "index": 263,
+      "name": "Medusa’s Stone",
+      "slug": "medusas-stone-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/medusas-stone/",
+      "officialFacts": "Official page, 339x180 artwork and exact vs20medusast Demo title and Medusa art match. Medusa Spins transform Wilds and bonus multipliers.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/05/Medusas-Stone_339x180.png",
+        "localPath": "public/assets/games/medusas-stone-pragmatic-play.png",
+        "sha256": "5BEFCE8C3AE43E7A434B663CC9CA099CF29835114A12EBC7DBF4DFD9A1433DED",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Medusa’s Stone title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20medusast opened matching Medusa’s Stone Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 264 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}
