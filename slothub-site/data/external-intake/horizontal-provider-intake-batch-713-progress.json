@@ -1,0 +1,37 @@
+{
+  "batch": 713,
+  "recordedAt": "2026-11-03T03:19:51.750Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1238 published Game Markdown records and same-provider exact official path/name/gameSymbol; Chests of Cai Shen /vs25checaishen absent.",
+  "records": [
+    {
+      "index": 230,
+      "name": "Chests of Cai Shen",
+      "slug": "chests-of-cai-shen-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/chests-of-cai-shen/",
+      "officialFacts": "Official page, 339x180 artwork and exact vs25checaishen Demo playable title, reels and chest theme match. Green, red and purple coin chests trigger separate or combined Hold and Spin modifiers.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/09/Chests-of-Cai-Shen_339x180.png",
+        "localPath": "public/assets/games/chests-of-cai-shen-pragmatic-play.png",
+        "sha256": "CD3E14995BDDC67682379D3D02BE2ED4378C240D42F62FAECB98FEF67D1B2E12",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Chests of Cai Shen title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs25checaishen opened matching Chests of Cai Shen Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 231 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}
