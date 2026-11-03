@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1252,
+  "gameCount": 1253,
   "providerCount": 371,
-  "sourcePageCount": 2144,
+  "sourcePageCount": 2147,
   "counts": {
     "access-restricted": 4,
-    "available": 960,
+    "available": 961,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "aztec-treasure-hunt-pragmatic-play",
+      "name": "Aztec Treasure Hunt",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/aztec-treasure-hunt/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Aztec Treasure Hunt. Official page, 339x180 artwork and exact vs20trswild3 Demo playable reels, title and Aztec treasure theme match. Mask Wild collects cash with multiplier; five money icons trigger Free Spins. Exact iframe gameSymbol vs20trswild3 opened matching Aztec Treasure Hunt Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/aztec-treasure-hunt/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/07/Aztec-Treasure-Hunt_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Aztec Treasure Hunt title artwork, 339x180 PNG, SHA256 B0996E6B3A030B04EFA9B6F60B7DB2A79EA05655424FFD84B6F9C330A04CE1B1"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20trswild3",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "forging-wilds-pragmatic-play",
       "name": "Forging Wilds",
