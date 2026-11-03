@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1276,
+  "gameCount": 1277,
   "providerCount": 371,
-  "sourcePageCount": 2216,
+  "sourcePageCount": 2219,
   "counts": {
     "access-restricted": 4,
-    "available": 984,
+    "available": 985,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "heroic-spins-pragmatic-play",
+      "name": "Heroic Spins",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/heroic-spins/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Heroic Spins. Official page, 339x180 artwork and exact vs20shootstars Demo title and dragon art match. Expanding Wild multipliers and Hero Scatter Free Spins. Exact iframe gameSymbol vs20shootstars opened matching Heroic Spins Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/heroic-spins/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/04/Heroic-Spins_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Heroic Spins title artwork, 339x180 PNG, SHA256 8423FEFA09E61408F8B1BE28B625AD8414D183BC3AE0BDA1E327B29C11A4B659"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20shootstars",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "big-bass-bonanza-reel-action-pragmatic-play",
       "name": "Big Bass Bonanza – Reel Action",
