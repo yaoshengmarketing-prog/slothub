@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1236,
+  "gameCount": 1237,
   "providerCount": 371,
-  "sourcePageCount": 2096,
+  "sourcePageCount": 2099,
   "counts": {
     "access-restricted": 4,
-    "available": 944,
+    "available": 945,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "vampy-party-pragmatic-play",
+      "name": "Vampy Party",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/vampy-party/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Vampy Party. Official page, 339x180 artwork and exact vswayswbounty Demo playable title and theme match. Six reels, 3,600 ways; tumbling wins double multiplier up to 1,024x; Scatter Free Spins. Exact iframe gameSymbol vswayswbounty opened matching Vampy Party Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/vampy-party/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/09/Vampy-Party_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Vampy Party title artwork, 339x180 PNG, SHA256 AE14B127037440E6152F6EC30BC6F99B2E061A11090E63676888334C5DCBA36C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayswbounty",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "big-bass-halloween-2-pragmatic-play",
       "name": "Big Bass Halloween 2",

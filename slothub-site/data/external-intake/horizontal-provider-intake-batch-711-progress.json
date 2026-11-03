@@ -1,0 +1,37 @@
+{
+  "batch": 711,
+  "recordedAt": "2026-11-03T03:05:47.868Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1236 published Game Markdown records and same-provider exact official path/name/gameSymbol; Vampy Party /vswayswbounty absent.",
+  "records": [
+    {
+      "index": 228,
+      "name": "Vampy Party",
+      "slug": "vampy-party-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/vampy-party/",
+      "officialFacts": "Official page, 339x180 artwork and exact vswayswbounty Demo playable title and theme match. Six reels, 3,600 ways; tumbling wins double multiplier up to 1,024x; Scatter Free Spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/09/Vampy-Party_339x180.png",
+        "localPath": "public/assets/games/vampy-party-pragmatic-play.png",
+        "sha256": "AE14B127037440E6152F6EC30BC6F99B2E061A11090E63676888334C5DCBA36C",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Vampy Party title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswayswbounty opened matching Vampy Party Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 229 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}
