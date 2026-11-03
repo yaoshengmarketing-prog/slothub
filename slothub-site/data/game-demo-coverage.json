@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1218,
+  "gameCount": 1219,
   "providerCount": 371,
-  "sourcePageCount": 2042,
+  "sourcePageCount": 2045,
   "counts": {
     "access-restricted": 4,
-    "available": 926,
+    "available": 927,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "money-stacks-megaways-pragmatic-play",
+      "name": "Money Stacks Megaways™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/money-stacks-megaways/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Money Stacks Megaways™. Official page, 339x180 artwork and exact vswaysbblitz Demo title match. Collect and Super Collect gather money symbols; three to six Scatters offer Random Wild Multipliers or Money Spins feature. Exact iframe gameSymbol vswaysbblitz opened matching Money Stacks Megaways™ Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/money-stacks-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/12/Money-Stacks-Megaways_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Money Stacks Megaways™ title artwork, 339x180 PNG, SHA256 4CB7F718AC68A3A137FE5A1FD7428D49B080CDD3943A30FC46ECC66E077B3A8B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysbblitz",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "ratinho-sortudo-pragmatic-play",
       "name": "Ratinho Sortudo",
