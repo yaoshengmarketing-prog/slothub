@@ -1,0 +1,37 @@
+{
+  "batch": 721,
+  "recordedAt": "2026-11-03T04:28:22.237Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1246 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Vegas Double Down Deluxe /vs10bbdoubled absent.",
+  "records": [
+    {
+      "index": 238,
+      "name": "Big Bass Vegas Double Down Deluxe",
+      "slug": "big-bass-vegas-double-down-deluxe-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-double-down-deluxe/",
+      "officialFacts": "Official page, 339x180 artwork and exact vs10bbdoubled Demo title and Vegas fisherman theme match. Fisherman collects cash; Scatters grant Free Spins, fourth Fisherman raises spin count and multiplier.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/08/Big-Bass-Vegas-Double-Down-Deluxe_339x180.png",
+        "localPath": "public/assets/games/big-bass-vegas-double-down-deluxe-pragmatic-play.png",
+        "sha256": "7F0D6C159BEAEBFAF833775630B305D41EDE3DC2F2E5FA55588FAE23B2B1202E",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Big Bass Vegas Double Down Deluxe title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10bbdoubled opened matching Big Bass Vegas Double Down Deluxe Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 239 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}

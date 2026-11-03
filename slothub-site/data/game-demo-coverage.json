@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1246,
+  "gameCount": 1247,
   "providerCount": 371,
-  "sourcePageCount": 2126,
+  "sourcePageCount": 2129,
   "counts": {
     "access-restricted": 4,
-    "available": 954,
+    "available": 955,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-vegas-double-down-deluxe-pragmatic-play",
+      "name": "Big Bass Vegas Double Down Deluxe",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/big-bass-double-down-deluxe/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Big Bass Vegas Double Down Deluxe. Official page, 339x180 artwork and exact vs10bbdoubled Demo title and Vegas fisherman theme match. Fisherman collects cash; Scatters grant Free Spins, fourth Fisherman raises spin count and multiplier. Exact iframe gameSymbol vs10bbdoubled opened matching Big Bass Vegas Double Down Deluxe Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-double-down-deluxe/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/08/Big-Bass-Vegas-Double-Down-Deluxe_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Big Bass Vegas Double Down Deluxe title artwork, 339x180 PNG, SHA256 7F0D6C159BEAEBFAF833775630B305D41EDE3DC2F2E5FA55588FAE23B2B1202E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbdoubled",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "jokers-jewels-hot-pragmatic-play",
       "name": "Joker’s Jewels Hot",
