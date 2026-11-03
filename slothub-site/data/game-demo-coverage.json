@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1245,
+  "gameCount": 1246,
   "providerCount": 371,
-  "sourcePageCount": 2123,
+  "sourcePageCount": 2126,
   "counts": {
     "access-restricted": 4,
-    "available": 953,
+    "available": 954,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "jokers-jewels-hot-pragmatic-play",
+      "name": "Joker’s Jewels Hot",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/jokers-jewels-hot/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Joker’s Jewels Hot. Official page, 339x180 artwork and exact vs10jokerhot Demo playable reels, title and Hot Wild theme match. Hot and Hot Wild symbols can trigger jackpot bonus. Exact iframe gameSymbol vs10jokerhot opened matching Joker’s Jewels Hot Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/jokers-jewels-hot/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/09/Jokers-Jewels-Hot_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Joker’s Jewels Hot title artwork, 339x180 PNG, SHA256 81196D614E9130A7E9CB5D9A2B6D1C902F7EBFD2E21613F9487896BE6BB75EC0"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10jokerhot",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "congo-cash-xl-pragmatic-play",
       "name": "Congo Cash XL",

@@ -1,0 +1,37 @@
+{
+  "batch": 720,
+  "recordedAt": "2026-11-03T04:20:33.466Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1245 published Game Markdown records and same-provider exact official path/name/gameSymbol; Joker’s Jewels Hot /vs10jokerhot absent.",
+  "records": [
+    {
+      "index": 237,
+      "name": "Joker’s Jewels Hot",
+      "slug": "jokers-jewels-hot-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/jokers-jewels-hot/",
+      "officialFacts": "Official page, 339x180 artwork and exact vs10jokerhot Demo playable reels, title and Hot Wild theme match. Hot and Hot Wild symbols can trigger jackpot bonus.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/09/Jokers-Jewels-Hot_339x180-1.png",
+        "localPath": "public/assets/games/jokers-jewels-hot-pragmatic-play.png",
+        "sha256": "81196D614E9130A7E9CB5D9A2B6D1C902F7EBFD2E21613F9487896BE6BB75EC0",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Joker’s Jewels Hot title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs10jokerhot opened matching Joker’s Jewels Hot Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 238 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}
