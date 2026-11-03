@@ -1,10 +1,10 @@
 {
   "batch": 706,
   "recordedAt": "2026-11-03T02:30:40.927Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1231 published Game Markdown records and same-provider exact official path/name/gameSymbol; Moleionaire /vs20clreacts absent.",
@@ -14,7 +14,7 @@
       "name": "Moleionaire",
       "slug": "moleionaire-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/moleionaire/",
       "officialFacts": "Official page, 339x180 artwork and exact vs20clreacts Demo title match despite stray semicolon in Demo gname. 7x7 cluster game, React Pair transforms adjacent symbols to Wilds; four to seven Scatters grant eight to fourteen Free Spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20clreacts opened matching Moleionaire Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 224 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 224 Candy Corner validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "12654a820a6a7937cb36a24403739df30d897d74",
+    "githubActionsRun": 41566976558,
+    "cloudflareDeployment": "baca72c5-4338-4ab7-a75a-bf791794d09d",
+    "cloudflareUrl": "https://baca72c5.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

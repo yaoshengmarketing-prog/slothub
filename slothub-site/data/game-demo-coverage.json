@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1232,
+  "gameCount": 1233,
   "providerCount": 371,
-  "sourcePageCount": 2084,
+  "sourcePageCount": 2087,
   "counts": {
     "access-restricted": 4,
-    "available": 940,
+    "available": 941,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "candy-corner-pragmatic-play",
+      "name": "Candy Corner",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/candy-corner/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Candy Corner. Official page, 339x180 artwork and exact vs20fourmc Demo title match. 7x7 cluster game, corners randomly provide cash, multiplier, extra Wild or expanded Wild modifiers. Exact iframe gameSymbol vs20fourmc opened matching Candy Corner Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/candy-corner/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/09/Candy-Corner_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Candy Corner title artwork, 339x180 PNG, SHA256 9D18155E664C29E2401F2D87C6A7F2665EB4F2E46C40244768FAFFB25F3DF053"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20fourmc",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "moleionaire-pragmatic-play",
       "name": "Moleionaire",
