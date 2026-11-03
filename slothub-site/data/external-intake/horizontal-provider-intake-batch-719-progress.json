@@ -1,0 +1,37 @@
+{
+  "batch": 719,
+  "recordedAt": "2026-11-03T04:06:51.439Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1244 published Game Markdown records and same-provider exact official path/name/gameSymbol; Congo Cash XL /vswayscongcash absent.",
+  "records": [
+    {
+      "index": 236,
+      "name": "Congo Cash XL",
+      "slug": "congo-cash-xl-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/congo-cash-xl/",
+      "officialFacts": "Official page, 339x180 artwork and exact vswayscongcash Demo title and jungle theme match. Butterfly with Congo Cash or XL symbols collects jewel-board cash, jackpots or Free Spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/08/Congo-Cash-XL_339x180.png",
+        "localPath": "public/assets/games/congo-cash-xl-pragmatic-play.png",
+        "sha256": "7377B7CC56BDE7B94F756616599F88DA6F8E71595128634198334C4AD4380DCA",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Congo Cash XL title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswayscongcash opened matching Congo Cash XL Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 237 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}

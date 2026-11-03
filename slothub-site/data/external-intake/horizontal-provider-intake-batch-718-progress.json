@@ -1,10 +1,10 @@
 {
   "batch": 718,
   "recordedAt": "2026-11-03T03:58:59.633Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1243 published Game Markdown records and same-provider exact official path/name/gameSymbol; Oodles of Noodles /vs10noodles absent.",
@@ -14,7 +14,7 @@
       "name": "Oodles of Noodles",
       "slug": "oodles-of-noodles-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/oodles-of-noodles/",
       "officialFacts": "Official page, 339x180 artwork and exact vs10noodles Demo title and panda/noodle theme match. Panda collects bowl values; seven consecutive respins or Scatters grant Free Spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs10noodles opened matching Oodles of Noodles Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 236 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 236 Congo Cash XL validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "5185965d71821570aeead881f36772716106a458",
+    "githubActionsRun": 41575822713,
+    "cloudflareDeployment": "704c330f-fc3f-4713-a01c-a5d1b580818c",
+    "cloudflareUrl": "https://704c330f.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1244,
+  "gameCount": 1245,
   "providerCount": 371,
-  "sourcePageCount": 2120,
+  "sourcePageCount": 2123,
   "counts": {
     "access-restricted": 4,
-    "available": 952,
+    "available": 953,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "congo-cash-xl-pragmatic-play",
+      "name": "Congo Cash XL",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/congo-cash-xl/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Congo Cash XL. Official page, 339x180 artwork and exact vswayscongcash Demo title and jungle theme match. Butterfly with Congo Cash or XL symbols collects jewel-board cash, jackpots or Free Spins. Exact iframe gameSymbol vswayscongcash opened matching Congo Cash XL Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/congo-cash-xl/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/08/Congo-Cash-XL_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Congo Cash XL title artwork, 339x180 PNG, SHA256 7377B7CC56BDE7B94F756616599F88DA6F8E71595128634198334C4AD4380DCA"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayscongcash",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "oodles-of-noodles-pragmatic-play",
       "name": "Oodles of Noodles",
