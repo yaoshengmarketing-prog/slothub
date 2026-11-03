@@ -1,0 +1,37 @@
+{
+  "batch": 704,
+  "recordedAt": "2026-11-03T02:16:14.305Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1229 published Game Markdown records and same-provider exact official path/name/gameSymbol; Himalayan Wild /vs5himalaw absent.",
+  "records": [
+    {
+      "index": 221,
+      "name": "Himalayan Wild",
+      "slug": "himalayan-wild-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/himalayan-wild/",
+      "officialFacts": "Official page, 339x180 artwork and exact vs5himalaw Demo title match. 5x3 mountain game; three peak Scatters on reels one, three, five unlock nine Free Spins; official page also describes Wild-triggered bonus symbol respins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/10/Himalayan-Wild_339x180.png",
+        "localPath": "public/assets/games/himalayan-wild-pragmatic-play.png",
+        "sha256": "DB5DB8CCFF15AC41B603AF2E5D8759012EF8E84783434C7DD96AA1B33EFC7022",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Himalayan Wild title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs5himalaw opened matching Himalayan Wild Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 222 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}

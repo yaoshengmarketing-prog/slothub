@@ -1,10 +1,10 @@
 {
   "batch": 703,
   "recordedAt": "2026-11-03T02:09:03.214Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1228 published Game Markdown records and same-provider exact official path/name/gameSymbol; Eternal Empress – Freeze Time /vswaysfreezet absent.",
@@ -14,7 +14,7 @@
       "name": "Eternal Empress – Freeze Time",
       "slug": "eternal-empress-freeze-time-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/eternal-empress-freeze-time/",
       "officialFacts": "Official page, 339x180 artwork and exact vswaysfreezet Demo title match. Diamond on reels one or five collects cash on middle reels; three Scatters grant ten Free Spins; watch and padlock freeze cash and spins counter.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswaysfreezet opened matching Eternal Empress – Freeze Time Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 221 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 221 Himalayan Wild validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "bb70e35af8c56c319d3407790470e7e3c061fe9a",
+    "githubActionsRun": 41564768158,
+    "cloudflareDeployment": "c8031eb2-91d3-4421-a478-2da5cdf2ea95",
+    "cloudflareUrl": "https://c8031eb2.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
