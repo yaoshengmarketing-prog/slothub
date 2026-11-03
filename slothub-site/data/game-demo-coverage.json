@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1259,
+  "gameCount": 1260,
   "providerCount": 371,
-  "sourcePageCount": 2165,
+  "sourcePageCount": 2168,
   "counts": {
     "access-restricted": 4,
-    "available": 967,
+    "available": 968,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "bow-of-artemis-pragmatic-play",
+      "name": "Bow of Artemis",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/bow-of-artemis/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Bow of Artemis. Official page, 339x180 artwork and exact vs20gembondx Demo title and Artemis art match. Cluster tumbles and Gold Fever multiplier levels. Exact iframe gameSymbol vs20gembondx opened matching Bow of Artemis Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/bow-of-artemis/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/07/Bow-of-Artemis_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Bow of Artemis title artwork, 339x180 PNG, SHA256 348D666962A6ACAB02DC51C69DEA3083837F9661F25566E310BEBF15451EFAA1"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20gembondx",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "money-stacks-pragmatic-play",
       "name": "Money Stacks",
