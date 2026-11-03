@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1272,
+  "gameCount": 1273,
   "providerCount": 371,
-  "sourcePageCount": 2204,
+  "sourcePageCount": 2207,
   "counts": {
     "access-restricted": 4,
-    "available": 980,
+    "available": 981,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "devilicious-pragmatic-play",
+      "name": "Devilicious",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/devilicious/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Devilicious. Official page, 339x180 artwork and exact vs20devilic Demo title and devil art match. Hearts grant Free Spins; Wilds can award respins. Exact iframe gameSymbol vs20devilic opened matching Devilicious Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/devilicious/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/05/Devilicious_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Devilicious title artwork, 339x180 PNG, SHA256 0170D4AFE8FDB1EC836513233918BC04B4001EF286F44BB7FC6BF66E5F42CA0B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20devilic",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "medusas-stone-pragmatic-play",
       "name": "Medusa’s Stone",
