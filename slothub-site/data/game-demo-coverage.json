@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1239,
+  "gameCount": 1240,
   "providerCount": 371,
-  "sourcePageCount": 2105,
+  "sourcePageCount": 2108,
   "counts": {
     "access-restricted": 4,
-    "available": 947,
+    "available": 948,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fortune-hitn-roll-pragmatic-play",
+      "name": "Fortune Hit’n Roll",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/fortune-hitn-roll/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Fortune Hit’n Roll. Official page, 339x180 artwork and exact vs40wildrun playable Demo title, reels and Aztec theme match. Forged Wilds move and gain multiplier; three Scatters grant nine Free Spins. Exact iframe gameSymbol vs40wildrun opened matching Fortune Hit’n Roll Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fortune-hitn-roll/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/09/Fortune-Hitn-Roll_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Fortune Hit’n Roll title artwork, 339x180 PNG, SHA256 C8F110B15697D70566107738D64C40DED9C9C171F8BE2E5A687AA512C5CE7267"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40wildrun",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "chests-of-cai-shen-pragmatic-play",
       "name": "Chests of Cai Shen",
