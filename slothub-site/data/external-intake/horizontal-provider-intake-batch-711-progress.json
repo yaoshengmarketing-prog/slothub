@@ -1,10 +1,10 @@
 {
   "batch": 711,
   "recordedAt": "2026-11-03T03:05:47.868Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1236 published Game Markdown records and same-provider exact official path/name/gameSymbol; Vampy Party /vswayswbounty absent.",
@@ -14,7 +14,7 @@
       "name": "Vampy Party",
       "slug": "vampy-party-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/vampy-party/",
       "officialFacts": "Official page, 339x180 artwork and exact vswayswbounty Demo playable title and theme match. Six reels, 3,600 ways; tumbling wins double multiplier up to 1,024x; Scatter Free Spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vswayswbounty opened matching Vampy Party Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 229 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 229 Release the Kraken Megaways validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "f3f122b94f0a40224cfec3936574d5ec4e16ace9",
+    "githubActionsRun": 41570488215,
+    "cloudflareDeployment": "b3df20a6-7937-45d2-a70f-cd96d6de6438",
+    "cloudflareUrl": "https://b3df20a6.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }
