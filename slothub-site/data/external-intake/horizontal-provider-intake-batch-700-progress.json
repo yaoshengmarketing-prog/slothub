@@ -1,0 +1,37 @@
+{
+  "batch": 700,
+  "recordedAt": "2026-11-03T01:47:29.581Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1225 published Game Markdown records and same-provider exact official path/name/gameSymbol; Penguins Christmas Party Time /vs25xmasparty absent.",
+  "records": [
+    {
+      "index": 217,
+      "name": "Penguins Christmas Party Time",
+      "slug": "penguins-christmas-party-time-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/penguins-christmas-party-time/",
+      "officialFacts": "Official page, 339x180 artwork and exact vs25xmasparty Demo title match. Three golden Scatters on reels one, three, five lead to a choice of three ten-spin bonus features: Boogie Back, Wild Party or Snowball Booster.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/11/Penguins-Christmas-Party-Time_339x180.png",
+        "localPath": "public/assets/games/penguins-christmas-party-time-pragmatic-play.png",
+        "sha256": "F0F51BE3F4BE56DB0EB8C37F11C89E86999EBFF25354B73E70F8DA03F30BD247",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Viewed exact Penguins Christmas Party Time title artwork matching official catalog and page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs25xmasparty opened matching Penguins Christmas Party Time Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
+    }
+  ],
+  "nextCursor": "Catalog item 218 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-verify.mjs",
+    "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  }
+}

@@ -1,10 +1,10 @@
 {
   "batch": 699,
   "recordedAt": "2026-11-03T01:37:39.313Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1224 published Game Markdown records and same-provider exact official path/name/gameSymbol; Santa’s Xmas Rush /vs20rainbowrsh absent.",
@@ -14,7 +14,7 @@
       "name": "Santa’s Xmas Rush",
       "slug": "santas-xmas-rush-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/santas-xmas-rush/",
       "officialFacts": "Official page, 339x180 artwork and exact vs20rainbowrsh Demo title match. 6x6 cluster slot; Santa reveals snowflake cash or respin prizes, four to seven Scatters grant ten to twenty-two Free Spins.",
       "image": {
@@ -28,10 +28,18 @@
       "demo": "Official exact page iframe gameSymbol vs20rainbowrsh opened matching Santa’s Xmas Rush Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 217 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 217 Penguins Christmas Party Time validated and queued for single-game publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "d7086ad9dc0233aa3a9c51020eb62ff88f4ac0bb",
+    "githubActionsRun": 41561428764,
+    "cloudflareDeployment": "5e636fbf-cde0-4437-bfd6-9599010e15e4",
+    "cloudflareUrl": "https://5e636fbf.slothub-4cu.pages.dev",
+    "githubActionsConclusion": "success",
+    "readback": "Seven routes HTTP 200, noindex/nofollow, no canonical, empty sitemap, live image SHA256 matched local."
   }
 }

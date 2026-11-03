@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1225,
+  "gameCount": 1226,
   "providerCount": 371,
-  "sourcePageCount": 2063,
+  "sourcePageCount": 2066,
   "counts": {
     "access-restricted": 4,
-    "available": 933,
+    "available": 934,
     "not-verified": 288
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "penguins-christmas-party-time-pragmatic-play",
+      "name": "Penguins Christmas Party Time",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "url": "https://www.pragmaticplay.com/en/games/penguins-christmas-party-time/",
+      "accessType": "official-game-page",
+      "presentation": "external",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-02",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact game page identify Penguins Christmas Party Time. Official page, 339x180 artwork and exact vs25xmasparty Demo title match. Three golden Scatters on reels one, three, five lead to a choice of three ten-spin bonus features: Boogie Back, Wild Party or Snowball Booster. Exact iframe gameSymbol vs25xmasparty opened matching Penguins Christmas Party Time Demo loading view in Codex in-app browser; playable reels and embedding not tested.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/penguins-christmas-party-time/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and iframe"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/11/Penguins-Christmas-Party-Time_339x180.png",
+          "httpStatus": 200,
+          "notes": "Visually reviewed Penguins Christmas Party Time title artwork, 339x180 PNG, SHA256 F0F51BE3F4BE56DB0EB8C37F11C89E86999EBFF25354B73E70F8DA03F30BD247"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25xmasparty",
+          "httpStatus": 200,
+          "notes": "Exact embedded gameSymbol URL opened matching Demo loading view in Codex in-app browser"
+        }
+      ]
+    },
     {
       "slug": "santas-xmas-rush-pragmatic-play",
       "name": "Santa’s Xmas Rush",
