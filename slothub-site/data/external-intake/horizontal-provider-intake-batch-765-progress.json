@@ -1,10 +1,10 @@
 {
   "batch": 765,
   "recordedAt": "2026-11-04T07:06:58.13Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1289 published Game Markdown records and same-provider exact official path/name/gameSymbol; Aztec Powernudge /vs20sbpnudge absent.",
@@ -14,7 +14,7 @@
       "name": "Aztec Powernudge",
       "slug": "aztec-powernudge-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/aztec-powernudge/",
       "officialFacts": "Official exact page confirms 6x5 pays-anywhere wins of eight or more symbols, diamond multipliers, Powernudge reel shifts, four Scatters in a nudge sequence triggering Free Spins and three bonus Scatters retriggering five spins.",
       "image": {
@@ -28,11 +28,20 @@
       "demo": "Official exact page iframe gameSymbol vs20sbpnudge redirected to matching Aztec Powernudge html5Game.do title in Codex in-app browser; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 283 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 283 Ripe Rewards validated and queued for individual publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch765.log"
+  },
+  "publication": {
+    "commit": "d096fb787bb8d1cd7139c48da6580447529f12e9",
+    "githubActionsRun": 41790606833,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "2be59503-17de-438c-a79f-347918423c64",
+    "cloudflareUrl": "https://2be59503.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

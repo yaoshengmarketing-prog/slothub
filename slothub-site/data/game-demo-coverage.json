@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1290,
+  "gameCount": 1291,
   "providerCount": 371,
-  "sourcePageCount": 2259,
+  "sourcePageCount": 2262,
   "counts": {
     "access-restricted": 4,
     "available": 985,
-    "not-verified": 301
+    "not-verified": 302
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "ripe-rewards-pragmatic-play",
+      "name": "Ripe Rewards",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page confirms Ripe Rewards, a 5x5 adjacent-symbol wins slot with multiplier Wilds and sticky Wild Free Spins. Official page iframe redirects to html5Game.do with exact gameSymbol vs40stckwldlvl and matching title in Codex in-app browser; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 8D602B4DDAABAC7E355BD595128E690FF0DF3D537E970FD59E65F65F1F9D73D6. Same-provider name, official path and symbol absent from existing game records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/ripe-rewards/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 283"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/03/Ripe-Rewards_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 8D602B4DDAABAC7E355BD595128E690FF0DF3D537E970FD59E65F65F1F9D73D6"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40stckwldlvl",
+          "httpStatus": 200,
+          "notes": "Exact official embedded Demo redirected to html5Game.do with matching title in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "aztec-powernudge-pragmatic-play",
       "name": "Aztec Powernudge",
