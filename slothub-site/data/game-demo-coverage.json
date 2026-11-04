@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1298,
+  "gameCount": 1299,
   "providerCount": 371,
-  "sourcePageCount": 2283,
+  "sourcePageCount": 2286,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 308
+    "not-verified": 309
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gears-of-horus-pragmatic-play",
+      "name": "Gears of Horus",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page confirms Gears of Horus, 6x6 expanding up to 8x8 after consecutive cluster tumbles, Wilds, Free Spins and bonus multipliers. Official page iframe in Codex in-app browser opened matching Gears of Horus html5Game.do title with exact gameSymbol vs20clustext; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 49512B417FD234EF648169454E5D1FEB3B4E8CDC13CC6019369A7357DBB626B1. Same-provider name, official path and exact symbol absent from existing game records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gears-of-horus/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded matching gameSymbol in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 291"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/02/Gears-of-Horus_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 49512B417FD234EF648169454E5D1FEB3B4E8CDC13CC6019369A7357DBB626B1"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20clustext",
+          "httpStatus": 200,
+          "notes": "Official embedded Demo redirected to matching html5Game.do title in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "big-bass-day-at-the-races-pragmatic-play",
       "name": "Big Bass Day at the Races",

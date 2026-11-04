@@ -1,0 +1,38 @@
+{
+  "batch": 774,
+  "recordedAt": "2026-11-04T09:54:42.002Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1298 published Game Markdown records and same-provider exact official path/name/gameSymbol; Gears of Horus /vs20clustext absent.",
+  "records": [
+    {
+      "index": 291,
+      "name": "Gears of Horus",
+      "slug": "gears-of-horus-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/gears-of-horus/",
+      "officialFacts": "Official exact page confirms 6x6 grid expanding up to 8x8 after four consecutive wins of at least eight adjacent symbols, four Scatters awarding eight Free Spins, up to x3 bonus expansion multipliers and random Wilds.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/02/Gears-of-Horus_339x180-1.png",
+        "localPath": "public/assets/games/gears-of-horus-pragmatic-play.png",
+        "sha256": "49512B417FD234EF648169454E5D1FEB3B4E8CDC13CC6019369A7357DBB626B1",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Codex in-app browser shows exact Gears of Horus title art matching official game page."
+      },
+      "demo": "Official exact page iframe opened matching Gears of Horus html5Game.do title with gameSymbol vs20clustext in Codex in-app browser; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 292 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch774.log"
+  }
+}
