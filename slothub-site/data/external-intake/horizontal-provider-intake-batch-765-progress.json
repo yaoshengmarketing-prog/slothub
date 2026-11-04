@@ -1,0 +1,38 @@
+{
+  "batch": 765,
+  "recordedAt": "2026-11-04T07:06:58.13Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1289 published Game Markdown records and same-provider exact official path/name/gameSymbol; Aztec Powernudge /vs20sbpnudge absent.",
+  "records": [
+    {
+      "index": 282,
+      "name": "Aztec Powernudge",
+      "slug": "aztec-powernudge-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/aztec-powernudge/",
+      "officialFacts": "Official exact page confirms 6x5 pays-anywhere wins of eight or more symbols, diamond multipliers, Powernudge reel shifts, four Scatters in a nudge sequence triggering Free Spins and three bonus Scatters retriggering five spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/03/Aztec-Powernudge_339x180.png",
+        "localPath": "public/assets/games/aztec-powernudge-pragmatic-play.png",
+        "sha256": "DC7DDF1D1F5B6F827AC0E62EB0B85717FAFE62AF52C9C90FECF47F8A45FA98F3",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Codex in-app browser shows exact Aztec Powernudgetitle art matching official game page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20sbpnudge redirected to matching Aztec Powernudge html5Game.do title in Codex in-app browser; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 283 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch765.log"
+  }
+}
