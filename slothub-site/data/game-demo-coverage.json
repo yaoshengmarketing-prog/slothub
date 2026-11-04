@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1285,
+  "gameCount": 1286,
   "providerCount": 371,
-  "sourcePageCount": 2243,
+  "sourcePageCount": 2247,
   "counts": {
     "access-restricted": 4,
     "available": 985,
-    "not-verified": 296
+    "not-verified": 297
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "lobster-bobs-sea-food-and-win-it-pragmatic-play",
+      "name": "Lobster Bob’s Sea Food and Win It",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play English page confirms the title and gameSymbol of Lobster Bob’s Sea Food and Win It, but its gameplay copy incorrectly describes Ice Lobster. Official Indonesian page for the same game supplies the matching 5x3 sequel, Hold and Spinner Crab Coins and Free Spins multipliers. Official English page iframe redirects to html5Game.do with exact gameSymbol vs20lobseafd and matching title in Codex in-app browser; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 C837F08A2AF7F0D07D613BF92C46946539D6AEB9BBF628CA81FF95404CB7BE16. Same-provider name, official path and symbol absent from existing records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/lobster-bobs-sea-food-and-win-it/",
+          "httpStatus": 200,
+          "notes": "Exact title and embedded gameSymbol in Codex in-app browser; English gameplay copy mistakenly describes Ice Lobster"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 278"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/id/permainan/lobster-bobs-sea-food-and-win-it/",
+          "httpStatus": 200,
+          "notes": "Official Indonesian page gives gameplay matching the title; English page text incorrectly describes Ice Lobster"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/04/Lobster-Bobs-Sea-Food-and-Win-It_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 C837F08A2AF7F0D07D613BF92C46946539D6AEB9BBF628CA81FF95404CB7BE16"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20lobseafd",
+          "httpStatus": 200,
+          "notes": "Exact official embedded Demo redirected to html5Game.do with matching title in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "release-the-bison-pragmatic-play",
       "name": "Release the Bison",
