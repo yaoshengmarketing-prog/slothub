@@ -21,9 +21,9 @@ const conceptCount = (type: 'mechanism' | 'feature', value: string) => filterAnd
 }).length;
 
 const mechanismDefinitions = [
-  { value: 'paylines', summary: '沿固定賠線核對一般得獎組合。' },
-  { value: 'ways-to-win', summary: '按相鄰轉輪與符合位置判定多路組合。' },
-  { value: 'megaways', summary: '每次盤面可能改變可用符號位置與贏法數。' },
+  { value: 'paylines', summary: '依指定路線上的符號判定。賠線可以是直線，也可以跨列，依各款規則而定。' },
+  { value: 'ways-to-win', summary: '通常檢查相鄰轉軸上的有效符號，符號可以在不同列，不必排在同一條賠線。' },
+  { value: 'megaways', summary: '各軸的可見符號位置數可以變動，可能成立的贏法數也會隨盤面改變。' },
   { value: 'cluster-pays', summary: '以相鄰符號群集是否達成條件判定。' },
   { value: 'pay-anywhere', summary: '依個別規則核對符號數量與位置要求。' },
 ] as const;
@@ -63,9 +63,9 @@ const featureGroups = featureDefinitions.flatMap((definition) => {
 });
 
 const dataTopicDefinitions = [
-  { value: 'rtp', title: 'RTP 與多版本' },
-  { value: 'volatility', title: '波動度' },
-  { value: 'max-win', title: '最高倍數' },
+  { value: 'rtp', title: 'RTP 與多版本', summary: '指定版本在大量遊戲下的理論回報比例。同款可能有不同設定，請以實際版本的遊戲資訊為準。' },
+  { value: 'volatility', title: '波動度', summary: '描述派彩結果的分布與起伏。各廠商的標示尺度可能不同，比較前先看原廠怎麼定義。' },
+  { value: 'max-win', title: '最高倍數', summary: '在指定投注基準、範圍與規則下的派彩上限。想知道這個數字怎麼讀，先確認它涵蓋整局或單一功能。' },
 ] as const;
 
 const dataTopics = dataTopicDefinitions.flatMap((definition) => {
@@ -79,10 +79,10 @@ const dataTopics = dataTopicDefinitions.flatMap((definition) => {
       <div>
         <p class="eyebrow">PLAY &amp; DATA HUB</p>
         <h1><span class="keep">老虎機</span><span class="keep">玩法與遊戲數據</span></h1>
-        <p>從賠付方式、特殊功能到 RTP 與波動度，認識老虎機的玩法與資料。透過相關教學和遊戲實例，了解規則、查看已收錄的版本資訊，並回到來源確認適用條件。</p>
+        <p>老虎機（Slot）通常在轉輪停下後，依遊戲規則判定畫面上的符號組合是否得獎。想看懂一局怎麼判定，先找遊戲內的賠付表（Paytable）或規則說明，確認哪些位置會計入，再看百搭符號、免費旋轉等功能何時生效。</p>
         <div class="slots-v3-actions">
           <a class="button primary" href={gamesIndexUrl({ primaryType: 'slots' })}>前往 {games.length} 款老虎機</a>
-          <a class="button secondary" href="/guide/slot-beginners-guide/">第一次使用先從這裡開始</a>
+          <a class="button secondary" href="/guide/slot-beginners-guide/">老虎機新手入門</a>
         </div>
       </div>
       <aside aria-label="玩法與資料入口摘要">
@@ -98,10 +98,18 @@ const dataTopics = dataTopicDefinitions.flatMap((definition) => {
     </nav>
   </section>
 
+  <section class="slots-hub-section slots-types shell" aria-labelledby="slots-types-title">
+    <header class="slots-hub-heading">
+      <div><p class="eyebrow">REELS &amp; ROWS</p><h2 id="slots-types-title">老虎機種類與盤面差異</h2></div>
+      <p>經典三軸常見水果、BAR 或七字等符號，視訊老虎機則可以用多軸、方格或會變動的盤面。以 5 × 3 為例，畫面有五個直向轉軸，每軸顯示三個位置。</p>
+    </header>
+    <p>經典風格也可以有五軸。例如 <a href="/games/100-happy-seven/">100 Happy Seven</a> 採用經典符號，盤面是 5 × 3，依 100 條賠線判定。<a href="/games/reactoonz/">Reactoonz</a> 則用 7 × 7 方格，依相鄰符號的群集判定。辨認畫面後，還要看哪些位置和組合符合得獎條件。</p>
+  </section>
+
   <section class="slots-hub-section shell" id="mechanisms" aria-labelledby="mechanisms-title">
     <header class="slots-hub-heading">
       <div><p class="eyebrow">HOW WINS FORM</p><h2 id="mechanisms-title">先分清主要賠付方式</h2></div>
-      <p>主要賠付機制回答「一般得獎組合如何成立」。同一個名稱下仍可能有不同盤面、功能與細部規則，請回到個別遊戲資料核對。</p>
+      <p>同樣出現三個相同符號，位置不同就可能得到不同判定。用下方的<a href="#payout-mechanism-demo">賠線與 Ways 圖解</a>切換同一盤面，看看兩種規則各檢查哪些位置。想知道遊戲內的賠付表在哪裡，可先讀<a href="/guide/slot-screen-beginners-guide/">老虎機畫面入門</a>。</p>
     </header>
     <div class="slots-mechanism-grid">
       {mechanismConcepts.map((item, index) => <article>
@@ -118,7 +126,7 @@ const dataTopics = dataTopicDefinitions.flatMap((definition) => {
     <div class="shell">
       <header class="slots-hub-heading">
         <div><p class="eyebrow">FEATURES</p><h2 id="features-title">再看功能如何改變過程</h2></div>
-        <p>功能可能改變符號、盤面更新或 Bonus 入口，但不會自動取代主要賠付機制。每個探索入口只套用一項已結構化的 Feature 條件。</p>
+        <p>功能描述遊戲過程中還會發生什麼。Wild（百搭）可以依規則替代部分符號，Free Spins（免費旋轉）需要符合觸發條件，Multiplier（倍數）則要看它乘在哪一筆派彩。</p>
       </header>
       <div class="knowledge-grid relationship-knowledge-grid slots-feature-grid">
         {featureGroups.map((group) => <article>
@@ -140,8 +148,8 @@ const dataTopics = dataTopicDefinitions.flatMap((definition) => {
     <div class="slots-data-grid">
       {dataTopics.map((item) => <article>
         <strong>{item.title}</strong>
-        <p>{item.guide.description}</p>
-        <a href={item.guide.url}>閱讀完整 Guide →</a>
+        <p>{item.summary}</p>
+        <a href={item.guide.url}>了解{item.title} →</a>
       </article>)}
     </div>
     <aside class="slots-method-note">
@@ -155,3 +163,10 @@ const dataTopics = dataTopicDefinitions.flatMap((definition) => {
     <div class="guide-route-grid" data-guide-reading-summary="slots">{readingPaths.map((path) => <a class="guide-route-card" href={path.href} data-guide-reading-route={path.id}><span>{path.index} / {path.eyebrow}</span><strong>{path.title}</strong><p>{path.description}</p><b>{path.guides.length} 篇 Guide →</b></a>)}</div>
   </section>
 </BaseLayout>
+
+<style>
+  .slots-types { padding-block: 48px 0; }
+  .slots-types .slots-hub-heading { margin-bottom: 16px; }
+  .slots-types > p { max-width: 70ch; margin: 0; color: var(--muted); line-height: 1.75; }
+  .slots-types a, .slots-hub-heading a { color: var(--navy); text-underline-offset: .18em; }
+</style>
