@@ -1,10 +1,10 @@
 {
   "batch": 769,
   "recordedAt": "2026-11-04T08:20:48.444Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1293 published Game Markdown records and same-provider exact official path/name/gameSymbol; Fire Portals /vs20portals absent.",
@@ -14,7 +14,7 @@
       "name": "Fire Portals",
       "slug": "fire-portals-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/fire-portals/",
       "officialFacts": "Official exact page confirms 7x7 cluster pays from five connected symbols, tumble, Fire Portal Wilds increasing and merging multipliers, and three Scatters awarding at least ten Free Spins.",
       "image": {
@@ -28,11 +28,20 @@
       "demo": "Official exact page iframe contains gameSymbol vs20portals in Codex in-app browser; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 287 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 287 Sugar Rush 1000 after item 286 Fire Portals full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch769.log"
+  },
+  "publication": {
+    "commit": "acf35f6d4a7526e3349b05ff2e65aabf2464806a",
+    "githubActionsRun": 41801405561,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "fdee0f94-3842-44ef-9523-274fbff14ae5",
+    "cloudflareUrl": "https://fdee0f94.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

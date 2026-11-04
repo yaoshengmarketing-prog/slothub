@@ -1,0 +1,38 @@
+{
+  "batch": 770,
+  "recordedAt": "2026-11-04T08:45:14.491Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1294 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sugar Rush 1000 /vs20sugarrushx absent.",
+  "records": [
+    {
+      "index": 287,
+      "name": "Sugar Rush 1000",
+      "slug": "sugar-rush-1000-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/sugar-rush-1000/",
+      "officialFacts": "Official exact page confirms 7x7 cluster pays from five adjacent symbols, tumble, marked positions with multipliers from x2 to x1024, and three Scatters awarding at least ten Free Spins with persistent multipliers and retriggers.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/03/Sugar-Rush-1000_339x180.png",
+        "localPath": "public/assets/games/sugar-rush-1000-pragmatic-play.png",
+        "sha256": "584FDF799C18C33CBEE5B359E550535F7729E53DAC568851C6DF33834FDB503D",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Codex in-app browser shows exact Sugar Rush 1000 title art matching official game page."
+      },
+      "demo": "Official exact page iframe contains gameSymbol vs20sugarrushx in Codex in-app browser; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 288 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch770.log"
+  }
+}

@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1294,
+  "gameCount": 1295,
   "providerCount": 371,
-  "sourcePageCount": 2271,
+  "sourcePageCount": 2274,
   "counts": {
     "access-restricted": 4,
     "available": 985,
-    "not-verified": 305
+    "not-verified": 306
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sugar-rush-1000-pragmatic-play",
+      "name": "Sugar Rush 1000",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page confirms Sugar Rush 1000, a 7x7 cluster pays slot with tumble and marked-position multipliers from x2 to x1024 plus Scatter Free Spins. Official page iframe exposes exact gameSymbol vs20sugarrushx in Codex in-app browser; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 584FDF799C18C33CBEE5B359E550535F7729E53DAC568851C6DF33834FDB503D. Same-provider name, official path and symbol absent from existing game records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sugar-rush-1000/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 287"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/03/Sugar-Rush-1000_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 584FDF799C18C33CBEE5B359E550535F7729E53DAC568851C6DF33834FDB503D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20sugarrushx",
+          "httpStatus": 200,
+          "notes": "Official embedded Demo iframe showed exact gameSymbol in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "fire-portals-pragmatic-play",
       "name": "Fire Portals",
