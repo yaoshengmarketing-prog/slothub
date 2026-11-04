@@ -1,10 +1,10 @@
 {
   "batch": 771,
   "recordedAt": "2026-11-04T09:00:50.009Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1295 published Game Markdown records and same-provider exact official path/name/gameSymbol; Pot of Fortune /vs20stckwldsc absent.",
@@ -14,7 +14,7 @@
       "name": "Pot of Fortune",
       "slug": "pot-of-fortune-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/pot-of-fortune/",
       "officialFacts": "Official exact page confirms 5x4 grid, three to five Wild Pots awarding instant cash prize, six combined Wild/Scatter Pots starting eight Free Spins, triggering symbols becoming persistent Wilds, and optional 80x feature buy.",
       "image": {
@@ -28,11 +28,20 @@
       "demo": "Direct official Demo opened matching Pot of Fortune html5Game.do title and visibly loaded five reels in Codex in-app browser; no spin initiated. Official game page is the external Demo URL; embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 289 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 289 Beware The Deep Megaways after item 288 Pot of Fortune full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch771.log"
+  },
+  "publication": {
+    "commit": "37c8c7629aec4d501dac8480da830f9469c4a7f5",
+    "githubActionsRun": 41806510177,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "90f9cdc7-9d5d-4446-acb2-dd1cd133f8ce",
+    "cloudflareUrl": "https://90f9cdc7.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
