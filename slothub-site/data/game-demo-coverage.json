@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1280,
+  "gameCount": 1281,
   "providerCount": 371,
-  "sourcePageCount": 2228,
+  "sourcePageCount": 2231,
   "counts": {
     "access-restricted": 4,
     "available": 985,
-    "not-verified": 291
+    "not-verified": 292
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "odds-on-winner-pragmatic-play",
+      "name": "Odds On Winner",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page identifies Odds On Winner, a 5x3 horse racing slot with trophy Wilds and jockey Bonus symbol Free Spins. Official page iframe redirects to html5Game.do with exact gameSymbol vs10frontrun and matching title in Codex in-app browser; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 91F94EB19EF1DAD74011AB23404007688FF41AB933C0AB674A22A858B2BD5F6D. Same-provider name, official path and symbol absent from existing records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/odds-on-winner/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 273"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/05/ODDS-ON-WINNER_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 91F94EB19EF1DAD74011AB23404007688FF41AB933C0AB674A22A858B2BD5F6D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10frontrun",
+          "httpStatus": 200,
+          "notes": "Exact official embedded Demo redirected to html5Game.do with matching title in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "dwarf-dragon-pragmatic-play",
       "name": "Dwarf & Dragon",

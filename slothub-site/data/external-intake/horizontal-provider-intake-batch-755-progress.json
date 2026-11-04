@@ -1,10 +1,10 @@
 {
   "batch": 755,
   "recordedAt": "2026-11-04T04:01:22.282Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1279 published Game Markdown records and same-provider exact official path/name/gameSymbol; Dwarf & Dragon /vswaysspltsym absent.",
@@ -14,7 +14,7 @@
       "name": "Dwarf & Dragon",
       "slug": "dwarf-dragon-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/dwarf-dragon/",
       "officialFacts": "Official exact page confirms 5x4 layout, splitting symbols double value, dragon egg Wilds carry 2x 3x 5x or 10x multipliers, and three to five Bonus symbols award Free Spins.",
       "image": {
@@ -28,11 +28,20 @@
       "demo": "Official exact page iframe gameSymbol vswaysspltsym redirected to matching Dwarf & Dragon html5Game.do title in Codex in-app browser; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 273 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 273 Odds On Winner validated and queued for individual publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch755.log"
+  },
+  "publication": {
+    "commit": "90a6089453f0c4dfff23fc226443e93a1bbbf683",
+    "githubActionsRun": 41772678064,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "90954826-0987-4058-b008-3d1d17424760",
+    "cloudflareUrl": "https://90954826.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
