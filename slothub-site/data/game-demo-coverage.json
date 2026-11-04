@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1293,
+  "gameCount": 1294,
   "providerCount": 371,
-  "sourcePageCount": 2268,
+  "sourcePageCount": 2271,
   "counts": {
     "access-restricted": 4,
     "available": 985,
-    "not-verified": 304
+    "not-verified": 305
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fire-portals-pragmatic-play",
+      "name": "Fire Portals",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page confirms Fire Portals, a 7x7 cluster-pays slot with tumble, Fire Portal Wild multipliers and Scatter Free Spins. Official page iframe exposes exact gameSymbol vs20portals in Codex in-app browser; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 948D2A5E41E7290C3F715853C58A1CC56EAF9C0B5E10C6D54FD1560510453A78. Same-provider name, official path and symbol absent from existing game records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fire-portals/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 286"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/03/Fire-Portals_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 948D2A5E41E7290C3F715853C58A1CC56EAF9C0B5E10C6D54FD1560510453A78"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20portals",
+          "httpStatus": 200,
+          "notes": "Exact official embedded Demo iframe shows gameSymbol ${symbol} in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "big-burger-load-it-up-with-xtra-cheese-pragmatic-play",
       "name": "Big Burger Load it up with Xtra cheese",

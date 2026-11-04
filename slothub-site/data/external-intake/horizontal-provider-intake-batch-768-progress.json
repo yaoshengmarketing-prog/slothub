@@ -1,10 +1,10 @@
 {
   "batch": 768,
   "recordedAt": "2026-11-04T07:56:53.045Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1292 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Burger Load it up with Xtra cheese /vs10bburger absent.",
@@ -14,7 +14,7 @@
       "name": "Big Burger Load it up with Xtra cheese",
       "slug": "big-burger-load-it-up-with-xtra-cheese-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/big-burger-load-it-up-with-xtra-cheese/",
       "officialFacts": "Official exact page confirms 5x3 reels, three Hot Dog symbols triggering instant awards, three Scatters awarding ten Free Spins, expanding bonus grid and Ketchup/Mustard special symbols.",
       "image": {
@@ -28,11 +28,20 @@
       "demo": "Official exact page iframe gameSymbol vs10bburger redirected to matching Big Burger Load it up with Xtra cheese html5Game.do title in Codex in-app browser; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 286 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 286 Fire Portals after item 285 Big Burger Load it up with Xtra cheese full publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch768.log"
+  },
+  "publication": {
+    "commit": "c39934bb54ce0557db381d6c141fbd1c6e443638",
+    "githubActionsRun": 41798093747,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "3f517cc5-e26e-4795-8cc2-209b792d5fdd",
+    "cloudflareUrl": "https://3f517cc5.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
