@@ -1,10 +1,10 @@
 {
   "batch": 761,
   "recordedAt": "2026-11-04T06:27:56.606Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1285 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lobster Bob’s Sea Food and Win It /vs20lobseafd absent.",
@@ -14,7 +14,7 @@
       "name": "Lobster Bob’s Sea Food and Win It",
       "slug": "lobster-bobs-sea-food-and-win-it-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/lobster-bobs-sea-food-and-win-it/",
       "officialFacts": "Official Indonesian page confirms a 5x3 sequel, Hold and Spinner Crab Coins, three Scatter symbols awarding up to thirty Free Spins, and a Free Spins multiplier up to 5x. English page gameplay copy describes a different game and was not used for mechanics.",
       "image": {
@@ -28,11 +28,20 @@
       "demo": "Official exact page iframe gameSymbol vs20lobseafd redirected to matching Lobster Bob’s Sea Food and Win It html5Game.do title in Codex in-app browser; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 279 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 279 Barnyard Megahays Megaways validated and queued for individual publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch761.log"
+  },
+  "publication": {
+    "commit": "ed3645d98e831d9d750ca5b3a7a1ba7ffeb29b58",
+    "githubActionsRun": 41786203202,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "1d8b8267-cfa8-4930-92ed-d4ce1c7ff54b",
+    "cloudflareUrl": "https://1d8b8267.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

@@ -1,0 +1,38 @@
+{
+  "batch": 762,
+  "recordedAt": "2026-11-04T06:38:01.135Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1286 published Game Markdown records and same-provider exact official path/name/gameSymbol; Barnyard Megahays Megaways™ /vswaysmegahays absent.",
+  "records": [
+    {
+      "index": 279,
+      "name": "Barnyard Megahays Megaways™",
+      "slug": "barnyard-megahays-megaways-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/barnyard-megahays-megaways/",
+      "officialFacts": "Official exact page confirms changing reel sizes, Barnyard Wilds, tumbling wins, Haystack symbols activated by Tornado, and ten or twenty Free Spins from Free Spins Haystacks.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/03/Barnyard-Megahays-Megaways_339x180-1.png",
+        "localPath": "public/assets/games/barnyard-megahays-megaways-pragmatic-play.png",
+        "sha256": "95D3E8E6CCB3DE21A9E933B5E9C6F0C904A1B1554E57C10500368394B91CDC04",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Codex in-app browser shows exact Barnyard Megahays Megaways title art matching official game page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswaysmegahays redirected to matching Barnyard Megahays Megaways™ html5Game.do title in Codex in-app browser; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 280 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch762.log"
+  }
+}

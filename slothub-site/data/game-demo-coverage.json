@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1286,
+  "gameCount": 1287,
   "providerCount": 371,
-  "sourcePageCount": 2247,
+  "sourcePageCount": 2250,
   "counts": {
     "access-restricted": 4,
     "available": 985,
-    "not-verified": 297
+    "not-verified": 298
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "barnyard-megahays-megaways-pragmatic-play",
+      "name": "Barnyard Megahays Megaways™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page confirms Barnyard Megahays Megaways™, changing reel sizes, Barnyard Wilds, tumbling wins and Haystack/Tornado Free Spins. Official page iframe redirects to html5Game.do with exact gameSymbol vswaysmegahays and matching title in Codex in-app browser; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 95D3E8E6CCB3DE21A9E933B5E9C6F0C904A1B1554E57C10500368394B91CDC04. Same-provider name, official path and symbol absent from existing records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/barnyard-megahays-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 279"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/03/Barnyard-Megahays-Megaways_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 95D3E8E6CCB3DE21A9E933B5E9C6F0C904A1B1554E57C10500368394B91CDC04"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysmegahays",
+          "httpStatus": 200,
+          "notes": "Exact official embedded Demo redirected to html5Game.do with matching title in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "lobster-bobs-sea-food-and-win-it-pragmatic-play",
       "name": "Lobster Bob’s Sea Food and Win It",
