@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1297,
+  "gameCount": 1298,
   "providerCount": 371,
-  "sourcePageCount": 2280,
+  "sourcePageCount": 2283,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 307
+    "not-verified": 308
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-day-at-the-races-pragmatic-play",
+      "name": "Big Bass Day at the Races",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page confirms Big Bass Day at the Races, 5x3 reels with 10 paylines, three Scatter Free Spins with possible two-Scatter third-symbol feature, horse selection and Fisherman retriggers. Official page iframe in Codex in-app browser opened matching Big Bass Day at the Races html5Game.do title with exact gameSymbol vs10bbbnz; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 DFCC30CD52813E69618FE632806484FEAA69008CEF92CD4041341AAFA4307E2F. Same-provider name, official path and exact symbol absent from existing game records, distinct from vs10bbbnz1000.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-day-at-the-races/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded matching gameSymbol in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 290"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/02/Big-Bass-Day-at-The-Races_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 DFCC30CD52813E69618FE632806484FEAA69008CEF92CD4041341AAFA4307E2F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbbnz",
+          "httpStatus": 200,
+          "notes": "Official embedded Demo redirected to matching html5Game.do title in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "beware-the-deep-megaways-pragmatic-play",
       "name": "Beware The Deep Megaways™",
