@@ -1,10 +1,10 @@
 {
   "batch": 777,
   "recordedAt": "2026-11-04T18:47:41Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex iab unavailable; paid read-only Browser Use run 987f0d1b-7d39-43f6-9544-d3ca1ac14c4f confirmed exact page, art, Demo title and symbol for item 294; Demo only Loading Features, no playable reels.",
@@ -15,7 +15,7 @@
       "name": "Strawberry Cocktail",
       "slug": "strawberry-cocktail-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/strawberry-cocktail/",
       "officialFacts": "Official exact page confirms ten paylines, Wild substitution, three Scatters starting a bonus with two mini-games, and matching symbols increasing the multiplier up to x10.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Official Demo title matched vs10strawberry but stayed on Loading Features, no playable reels; not-verified."
     }
   ],
-  "nextCursor": "Catalog item 295 Pompeii Megareels Megaways after item 294 full publication closure.",
+  "nextCursor": "Catalog item 295 Pompeii Megareels Megaways after item 294 full publication closure; source prechecked in the same browser run.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build and checks PASS",
     "log": "tmp/verify-batch777.log"
+  },
+  "publication": {
+    "commit": "afbdd05cef3cf518712581f847523705d0277eb9",
+    "githubActionsRun": 41891042764,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "9178f004-fcd5-47b4-aa2c-a02c37679045",
+    "cloudflareUrl": "https://9178f004.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
