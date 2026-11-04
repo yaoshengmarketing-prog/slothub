@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1278,
+  "gameCount": 1279,
   "providerCount": 371,
-  "sourcePageCount": 2222,
+  "sourcePageCount": 2225,
   "counts": {
     "access-restricted": 4,
     "available": 985,
-    "not-verified": 289
+    "not-verified": 290
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "rise-of-pyramids-pragmatic-play",
+      "name": "Rise of Pyramids",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page identifies Rise of Pyramids, cluster pays, tumbling Wilds, Money Respins and Scatter Free Spins. Official page iframe redirects to html5Game.do with exact gameSymbol vswayshexhaus and matching title in Codex in-app browser; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 62368B749BF96B704C869A3AFA12598962D7BAE814BE26F83DE055D0F1B98CAC. Same-provider name, official path and symbol absent from existing records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/rise-of-pyramids/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 271"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/05/Rise-of-Pyramids_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 62368B749BF96B704C869A3AFA12598962D7BAE814BE26F83DE055D0F1B98CAC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayshexhaus",
+          "httpStatus": 200,
+          "notes": "Exact official embedded Demo redirected to html5Game.do with matching title in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "starlight-princess-pachi-pragmatic-play",
       "name": "Starlight Princess Pachi",

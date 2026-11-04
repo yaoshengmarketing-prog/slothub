@@ -1,10 +1,10 @@
 {
   "batch": 753,
   "recordedAt": "2026-11-03T18:17:46.728Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1277 published Game Markdown records plus same-provider exact official page/name/gameSymbol; Starlight Princess Pachi /vswaysjapan absent.",
@@ -14,7 +14,7 @@
       "name": "Starlight Princess Pachi",
       "slug": "starlight-princess-pachi-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/starlight-princess-pachi/",
       "officialFacts": "Exact official page HTTP 200 confirms 3x3, 27 ways, middle-reel princess Scatter respins, three Scatter Free Spins and twelve-Scatter Super Free Spins.",
       "image": {
@@ -28,7 +28,7 @@
       "demo": "Official exact page embeds vswaysjapan. Codex IAB unavailable; paid Browser Use read-only US/New York fallback run d77a4aa5-478d-4e09-9949-13d1207f86b9 reached html5Game.do loading/progress, no 403 or playable reels. Keep not-verified. Codex IAB follow-up on 2026-11-04 opened exact official page and vswaysjapan Demo, showing matching Starlight Princess Pachi title/loading screen; playable reels still not observed."
     }
   ],
-  "nextCursor": "Close catalog item 270 with exact six-path stage, one game commit, normal push, same-SHA CI/Cloudflare and seven-route/image readback; then item 271.",
+  "nextCursor": "Catalog item 271 Rise of Pyramids validated and queued for individual publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-package-script.mjs verify",
@@ -97,5 +97,14 @@
       "state": "candidate-prechecked-unpublished",
       "nextAction": "Reconfirm exact page, game data, dedup and Demo state before individual intake; then full verification and single-game closure after item 270."
     }
-  ]
+  ],
+  "publication": {
+    "commit": "a3110524e1ed94201c8d6c0946f16e9d70c3b85f",
+    "githubActionsRun": 41767362476,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "8d113a7f-b0f9-446e-921a-9a034c9e5121",
+    "cloudflareUrl": "https://8d113a7f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
+  }
 }

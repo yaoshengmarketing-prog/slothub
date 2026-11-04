@@ -1,0 +1,38 @@
+{
+  "batch": 754,
+  "recordedAt": "2026-11-04T03:36:56.226Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1278 published Game Markdown records and same-provider exact official path/name/gameSymbol; Rise of Pyramids /vswayshexhaus absent.",
+  "records": [
+    {
+      "index": 271,
+      "name": "Rise of Pyramids",
+      "slug": "rise-of-pyramids-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/rise-of-pyramids/",
+      "officialFacts": "Official exact page confirms octagonal cluster pays and tumbling symbols; Wilds detonate adjacent symbols; four Money symbols trigger resetting Respins; four Scatters trigger Free Spins with rising win multiplier.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/05/Rise-of-Pyramids_339x180-1.png",
+        "localPath": "public/assets/games/rise-of-pyramids-pragmatic-play.png",
+        "sha256": "62368B749BF96B704C869A3AFA12598962D7BAE814BE26F83DE055D0F1B98CAC",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Codex in-app browser shows exact Rise of Pyramids title art matching official game page."
+      },
+      "demo": "Official exact page iframe gameSymbol vswayshexhaus redirected to matching Rise of Pyramids html5Game.do title in Codex in-app browser; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 272 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch754.log"
+  }
+}
