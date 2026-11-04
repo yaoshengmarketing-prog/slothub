@@ -1,10 +1,10 @@
 {
   "batch": 775,
   "recordedAt": "2026-11-04T18:26:21Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": {
@@ -19,7 +19,7 @@
       "name": "Wheel O’Gold",
       "slug": "wheel-ogold-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/wheel-ogold/",
       "officialFacts": "Official exact page HTTP 200 confirms 6x5 grid, clusters of at least eight, five consecutive base-game tumbles revealing x2 to x50 wheel multipliers, and four Scatters awarding ten Free Spins.",
       "image": {
@@ -33,11 +33,20 @@
       "demo": "Official iframe identified vs20multiup; paid browser opened matching Wheel O’Gold Demo title but only Loading Features appeared, no playable reels. Chrome auxiliary displayed an age assertion and did not submit it. Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 293 after item 292 individual publication closure; items 293-295 source precheck also in same browser run.",
+  "nextCursor": "Catalog item 293 Mighty Munching Melons after item 292 full publication closure; items 293-295 source prechecked in same browser run.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; full preview build and checks PASS",
     "log": "tmp/verify-batch775-final.log"
+  },
+  "publication": {
+    "commit": "23e582be2376d512354be7db3a2c5c9f89018a56",
+    "githubActionsRun": 41888327754,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "0d9601f0-a930-4659-9afd-066457af4f26",
+    "cloudflareUrl": "https://0d9601f0.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

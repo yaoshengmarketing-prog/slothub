@@ -1,0 +1,39 @@
+{
+  "batch": 776,
+  "recordedAt": "2026-11-04T18:39:04Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex iab unavailable; paid read-only Browser Use run 987f0d1b-7d39-43f6-9544-d3ca1ac14c4f confirmed exact page, art, Demo title and symbol for item 293; Demo only Loading Features, no playable reels.",
+  "dedupScope": "All 1300 published Game Markdown records and same-provider exact official path/name/gameSymbol; Mighty Munching Melons /vs20mmmelon absent.",
+  "records": [
+    {
+      "index": 293,
+      "name": "Mighty Munching Melons",
+      "slug": "mighty-munching-melons-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/mighty-munching-melons/",
+      "officialFacts": "Official exact page confirms 5x3 reels and ten paylines, three watermelon Scatters for a bonus, four initial respins reset by bonus wins, instant-win coins and watermelon symbols.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/02/Mighty_Munching_Melons_339x180.png",
+        "localPath": "public/assets/games/mighty-munching-melons-pragmatic-play.png",
+        "sha256": "CC5655F0B748F06D0C47A0D64CD459CC290844152A66C2BF8852346DF6B68C5D",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Paid read-only browser showed exact title artwork; downloaded bytes separately viewed and hashed."
+      },
+      "demo": "Official Demo title matched vs20mmmelon but stayed on Loading Features, no playable reels; not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 294 Strawberry Cocktail after item 293 full publication closure.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build and checks PASS",
+    "log": "tmp/verify-batch776.log"
+  }
+}
