@@ -1,10 +1,10 @@
 {
   "batch": 776,
   "recordedAt": "2026-11-04T18:39:04Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex iab unavailable; paid read-only Browser Use run 987f0d1b-7d39-43f6-9544-d3ca1ac14c4f confirmed exact page, art, Demo title and symbol for item 293; Demo only Loading Features, no playable reels.",
@@ -15,7 +15,7 @@
       "name": "Mighty Munching Melons",
       "slug": "mighty-munching-melons-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/mighty-munching-melons/",
       "officialFacts": "Official exact page confirms 5x3 reels and ten paylines, three watermelon Scatters for a bonus, four initial respins reset by bonus wins, instant-win coins and watermelon symbols.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Official Demo title matched vs20mmmelon but stayed on Loading Features, no playable reels; not-verified."
     }
   ],
-  "nextCursor": "Catalog item 294 Strawberry Cocktail after item 293 full publication closure.",
+  "nextCursor": "Catalog item 294 Strawberry Cocktail after item 293 full publication closure; source prechecked in the same browser run.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build and checks PASS",
     "log": "tmp/verify-batch776.log"
+  },
+  "publication": {
+    "commit": "d0b00284a4483a27e2f7c8cb6200a00a74a5a900",
+    "githubActionsRun": 41889625744,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "02770c45-4358-4dc6-86a8-cdc2345f60a1",
+    "cloudflareUrl": "https://02770c45.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

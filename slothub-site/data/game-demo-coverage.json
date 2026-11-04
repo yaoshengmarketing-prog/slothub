@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1301,
+  "gameCount": 1302,
   "providerCount": 371,
-  "sourcePageCount": 2292,
+  "sourcePageCount": 2295,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 311
+    "not-verified": 312
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "strawberry-cocktail-pragmatic-play",
+      "name": "Strawberry Cocktail",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Official exact page HTTP 200 and paid read-only browser confirm Strawberry Cocktail title, ten paylines, Wild substitution, three Scatters for a bonus, two mini-games and up to x10 matching-symbol multiplier. Official iframe and matching Demo title identify gameSymbol vs10strawberry. Official title art visually checked, SHA256 F79530571B5AFF4A53408F8ECE1E6696CFBA4A1E4F36A58390C98F8075D45846. Demo stayed on Loading Features without playable reels; status remains not-verified. Same-provider name, official path and symbol absent from existing Game Markdown.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/strawberry-cocktail/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and matching iframe gameSymbol"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 294"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/02/Strawberry-Cocktail_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked, SHA256 F79530571B5AFF4A53408F8ECE1E6696CFBA4A1E4F36A58390C98F8075D45846"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10strawberry",
+          "httpStatus": 200,
+          "notes": "Paid read-only browser resolved matching title but only Loading Features, no playable reels"
+        }
+      ]
+    },
     {
       "slug": "mighty-munching-melons-pragmatic-play",
       "name": "Mighty Munching Melons",

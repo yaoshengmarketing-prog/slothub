@@ -1,0 +1,39 @@
+{
+  "batch": 777,
+  "recordedAt": "2026-11-04T18:47:41Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex iab unavailable; paid read-only Browser Use run 987f0d1b-7d39-43f6-9544-d3ca1ac14c4f confirmed exact page, art, Demo title and symbol for item 294; Demo only Loading Features, no playable reels.",
+  "dedupScope": "All 1301 published Game Markdown records and same-provider exact official path/name/gameSymbol; Strawberry Cocktail /vs10strawberry absent.",
+  "records": [
+    {
+      "index": 294,
+      "name": "Strawberry Cocktail",
+      "slug": "strawberry-cocktail-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/strawberry-cocktail/",
+      "officialFacts": "Official exact page confirms ten paylines, Wild substitution, three Scatters starting a bonus with two mini-games, and matching symbols increasing the multiplier up to x10.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/02/Strawberry-Cocktail_339x180.png",
+        "localPath": "public/assets/games/strawberry-cocktail-pragmatic-play.png",
+        "sha256": "F79530571B5AFF4A53408F8ECE1E6696CFBA4A1E4F36A58390C98F8075D45846",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Paid read-only browser showed exact title artwork; downloaded bytes separately viewed and hashed."
+      },
+      "demo": "Official Demo title matched vs10strawberry but stayed on Loading Features, no playable reels; not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 295 Pompeii Megareels Megaways after item 294 full publication closure.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build and checks PASS",
+    "log": "tmp/verify-batch777.log"
+  }
+}
