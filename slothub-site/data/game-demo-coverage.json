@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1277,
+  "gameCount": 1278,
   "providerCount": 371,
-  "sourcePageCount": 2219,
+  "sourcePageCount": 2222,
   "counts": {
     "access-restricted": 4,
     "available": 985,
-    "not-verified": 288
+    "not-verified": 289
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "starlight-princess-pachi-pragmatic-play",
+      "name": "Starlight Princess Pachi",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play SLOTS catalog and exact page identify Starlight Princess Pachi; exact page and PNG artwork HTTP 200, title and provider match, and page iframe gameSymbol vswaysjapan is distinct from existing records. Official PNG 339x180 visually names the game, SHA256 691A954A531124CE073C33FC8E129470BE6CC24676575BCF2E73C89053CC4F57. Codex IAB unavailable. Paid Browser Use read-only fallback run d77a4aa5-478d-4e09-9949-13d1207f86b9 used observed New York US exit: exact page and Demo redirected to html5Game.do with loading/progress screen, no 403, no playable reels. Demo remains not-verified under geo-restricted-source-access rule. Codex in-app browser follow-up on 2026-11-04 opened official exact page, exact vswaysjapan Demo redirect with matching title and loading graphic, and official 339x180 artwork; playable reels still not observed.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/starlight-princess-pachi/",
+          "httpStatus": 200,
+          "notes": "Official exact page title, gameplay and embedded vswaysjapan in HTML; shell fetch 2026-11-04"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog snapshot card 270"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/05/Starlight-Princess-Pachi_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 PNG, title visually inspected, SHA256 691A954A531124CE073C33FC8E129470BE6CC24676575BCF2E73C89053CC4F57"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysjapan",
+          "httpStatus": 200,
+          "notes": "Paid Browser Use US exit: redirected to html5Game.do and showed loading/progress only; playable reels not observed. Exact iframe URL in official page HTML. Codex IAB later confirmed matching title/loading screen; no reels."
+        }
+      ]
+    },
     {
       "slug": "heroic-spins-pragmatic-play",
       "name": "Heroic Spins",

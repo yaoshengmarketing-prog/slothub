@@ -1,10 +1,10 @@
 {
   "batch": 752,
   "recordedAt": "2026-11-03T09:55:28.204Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1276 published Game Markdown records and same-provider exact official path/name/gameSymbol; Heroic Spins /vs20shootstars absent.",
@@ -14,7 +14,7 @@
       "name": "Heroic Spins",
       "slug": "heroic-spins-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/heroic-spins/",
       "officialFacts": "Official page, 339x180 artwork and exact vs20shootstars Demo title and dragon art match. Expanding Wild multipliers and Hero Scatter Free Spins.",
       "image": {
@@ -28,10 +28,19 @@
       "demo": "Official exact page iframe gameSymbol vs20shootstars opened matching Heroic Spins Demo loading view in Codex in-app browser; public link exact official page, loading screen visually confirmed in Codex in-app browser; reels and embedding not tested."
     }
   ],
-  "nextCursor": "Catalog item 270 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 270 Starlight Princess Pachi captured for individual publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-verify.mjs",
     "note": "exit 0; build complete; Similar play, internal links and outbound nofollow PASS"
+  },
+  "publication": {
+    "commit": "532e3ea2f6b200021b800f11c09e286a5983e6f2",
+    "githubActionsRun": 41615618766,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "a35ad38a-ed78-43e5-bd1d-8ba1c62dd3e3",
+    "cloudflareUrl": "https://a35ad38a.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
