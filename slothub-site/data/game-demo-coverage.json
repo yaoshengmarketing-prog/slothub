@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1299,
+  "gameCount": 1300,
   "providerCount": 371,
-  "sourcePageCount": 2286,
+  "sourcePageCount": 2289,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 309
+    "not-verified": 310
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wheel-ogold-pragmatic-play",
+      "name": "Wheel O’Gold",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Official exact page HTTP 200, paid read-only browser and Chrome auxiliary confirm Wheel O’Gold title, 6x5 cluster grid, tumble and wheel multipliers, and Free Spins; official iframe identifies gameSymbol vs20multiup. Official artwork visually checked in both browsers, SHA256 6E03E2B1269EE669A5A749F5B97C32510D14D8DF88E278C6C6ABB6BF0AAFF0E4. Paid browser Demo resolved to matching title but remained on Loading Features with no playable reels. Chrome displayed an age assertion and did not submit it. Same-provider name, official path and symbol absent from existing Game Markdown.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wheel-ogold/",
+          "httpStatus": 200,
+          "notes": "Exact official page title, gameplay and matching iframe gameSymbol"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 292"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Wheel-OGold_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked, SHA256 6E03E2B1269EE669A5A749F5B97C32510D14D8DF88E278C6C6ABB6BF0AAFF0E4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20multiup",
+          "httpStatus": 200,
+          "notes": "Paid read-only browser opened matching title; remained on Loading Features, no playable reels"
+        }
+      ]
+    },
     {
       "slug": "gears-of-horus-pragmatic-play",
       "name": "Gears of Horus",
