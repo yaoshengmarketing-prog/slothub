@@ -1,10 +1,10 @@
 {
   "batch": 758,
   "recordedAt": "2026-11-04T05:22:08.479Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1282 published Game Markdown records and same-provider exact official path/name/gameSymbol; Fruity Treats /vs20fortbon absent.",
@@ -14,7 +14,7 @@
       "name": "Fruity Treats",
       "slug": "fruity-treats-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/fruity-treats/",
       "officialFacts": "Official exact page confirms 7x7 cluster pays, tumbling symbols, marked spot multipliers, and three or more Scatter symbols awarding ten Free Spins.",
       "image": {
@@ -28,11 +28,20 @@
       "demo": "Official exact page iframe gameSymbol vs20fortbon redirected to matching Fruity Treats html5Game.do title in Codex in-app browser; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 276 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 276 Candy Blitz Bombs validated and queued for individual publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch758.log"
+  },
+  "publication": {
+    "commit": "b4ab7171f521635b817aaa0e7de748a58183faf2",
+    "githubActionsRun": 41779291339,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "da460237-a2df-4b5e-874c-a28baff67ee2",
+    "cloudflareUrl": "https://da460237.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
