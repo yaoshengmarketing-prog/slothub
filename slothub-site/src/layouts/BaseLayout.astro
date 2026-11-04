@@ -1,7 +1,7 @@
 ---
 import { SITE } from '../consts';
 import { absoluteUrl } from '../lib/urls';
-import '../styles/global.css';
+import globalStylesHref from '../styles/global.css?url';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 
@@ -53,6 +53,7 @@ const isPreview = SITE.environment !== 'production';
     <meta name="robots" content={isPreview ? 'noindex,nofollow' : (robots ?? 'index,follow')} />
     {!isPreview && <link rel="canonical" href={canonical} />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href={globalStylesHref} />
     <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content={SITE.name} />
     <meta property="og:locale" content={SITE.locale} />
