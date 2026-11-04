@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1295,
+  "gameCount": 1296,
   "providerCount": 371,
-  "sourcePageCount": 2274,
+  "sourcePageCount": 2277,
   "counts": {
     "access-restricted": 4,
-    "available": 985,
+    "available": 986,
     "not-verified": 306
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "pot-of-fortune-pragmatic-play",
+      "name": "Pot of Fortune",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page confirms Pot of Fortune, a 5x4 slot with Wild Pot instant prizes and a six combined Wild/Scatter Pot symbols Free Spins trigger. Official page was checked in Codex in-app browser; iframe programmatic read timed out there, so exact gameSymbol vs20stckwldsc was read from the same official page by auxiliary HTTP. Direct official Demo redirected to matching Pot of Fortune html5Game.do title and visibly loaded five reels in Codex in-app browser; no spin was initiated. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 03A111D9444621DFA7CDD83CBDFFD37C588F1FDC0B0ABEACE37A95CD128A46A7. Same-provider name, official path and symbol absent from existing game records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/pot-of-fortune/",
+          "httpStatus": 200,
+          "notes": "Exact official title and gameplay in Codex in-app browser; iframe symbol from auxiliary official-page HTTP after IAB CDP timeout"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 288"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/03/Pot-of-Fortune_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 03A111D9444621DFA7CDD83CBDFFD37C588F1FDC0B0ABEACE37A95CD128A46A7"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20stckwldsc",
+          "httpStatus": 200,
+          "notes": "Direct official Demo redirected to matching Pot of Fortune html5Game.do and visibly loaded reels in Codex in-app browser; no spin initiated"
+        }
+      ],
+      "url": "https://www.pragmaticplay.com/en/games/pot-of-fortune/",
+      "accessType": "official-game-page",
+      "presentation": "external"
+    },
     {
       "slug": "sugar-rush-1000-pragmatic-play",
       "name": "Sugar Rush 1000",
