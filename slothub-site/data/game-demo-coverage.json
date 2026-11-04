@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1287,
+  "gameCount": 1288,
   "providerCount": 371,
-  "sourcePageCount": 2250,
+  "sourcePageCount": 2253,
   "counts": {
     "access-restricted": 4,
     "available": 985,
-    "not-verified": 298
+    "not-verified": 299
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "ice-lobster-pragmatic-play",
+      "name": "Ice Lobster",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page confirms Ice Lobster, 5x3 reels, 20 paylines, golden fish Wilds, anchor Scatter Free Spins and Money symbols. Its gameplay copy was mistakenly reused on the English Lobster Bob page; the distinct exact title, image and gameSymbol vs20stickypos establish a separate game. Official page iframe redirects to html5Game.do with matching title in Codex in-app browser; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 65225956602D0D6A7BB9E64BC84A704760EAE909D055782D5FD1C7C6695A4AEE. Same-provider name, official path and symbol absent from existing game records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/ice-lobster/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 280"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/03/Ice-Lobster_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 65225956602D0D6A7BB9E64BC84A704760EAE909D055782D5FD1C7C6695A4AEE"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20stickypos",
+          "httpStatus": 200,
+          "notes": "Exact official embedded Demo redirected to html5Game.do with matching title in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "barnyard-megahays-megaways-pragmatic-play",
       "name": "Barnyard Megahays Megaways™",
