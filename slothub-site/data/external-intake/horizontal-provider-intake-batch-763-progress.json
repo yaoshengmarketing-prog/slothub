@@ -1,10 +1,10 @@
 {
   "batch": 763,
   "recordedAt": "2026-11-04T06:47:57.643Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1287 published Game Markdown records and same-provider exact official path/name/gameSymbol; Ice Lobster /vs20stickypos absent.",
@@ -14,7 +14,7 @@
       "name": "Ice Lobster",
       "slug": "ice-lobster-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/ice-lobster/",
       "officialFacts": "Official exact page confirms 5x3 reels and 20 paylines, golden fish Wilds, three to five anchor Scatters awarding eight to fifteen Free Spins, locked Scatter positions in the bonus and Money symbols.",
       "image": {
@@ -28,11 +28,20 @@
       "demo": "Official exact page iframe gameSymbol vs20stickypos redirected to matching Ice Lobster html5Game.do title in Codex in-app browser; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 281 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 281 Big Bass Secrets of the Golden Lake validated and queued for individual publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch763.log"
+  },
+  "publication": {
+    "commit": "75f17581197e44233da4b737242fda29e1d8f862",
+    "githubActionsRun": 41788524142,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "10b3acd7-8cd8-4a48-beda-4a4f032bd5fe",
+    "cloudflareUrl": "https://10b3acd7.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

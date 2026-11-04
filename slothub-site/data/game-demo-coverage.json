@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1288,
+  "gameCount": 1289,
   "providerCount": 371,
-  "sourcePageCount": 2253,
+  "sourcePageCount": 2256,
   "counts": {
     "access-restricted": 4,
     "available": 985,
-    "not-verified": 299
+    "not-verified": 300
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-secrets-of-the-golden-lake-pragmatic-play",
+      "name": "Big Bass Secrets of the Golden Lake",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page confirms Big Bass Secrets of the Golden Lake, a 5x3 slot with classic and Golden Lake Free Spins, a card reveal and fisherman collection meter with progressive multipliers. Official page iframe redirects to html5Game.do with exact gameSymbol vs10bblotgl and matching Big Bass title in Codex in-app browser; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 8BCC7167922515C872F1EC7A32CF98167E883339FA903E1B141DA0AE1F7E00D1. Same-provider name, official path and symbol absent from existing game records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-secrets-of-the-golden-lake/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 281"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/03/Big-Bass-Secrets-of-the-Golden-Lake_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 8BCC7167922515C872F1EC7A32CF98167E883339FA903E1B141DA0AE1F7E00D1"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bblotgl",
+          "httpStatus": 200,
+          "notes": "Exact official embedded Demo redirected to html5Game.do with matching title in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "ice-lobster-pragmatic-play",
       "name": "Ice Lobster",
