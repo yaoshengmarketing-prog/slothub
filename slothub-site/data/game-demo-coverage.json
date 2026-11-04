@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1284,
+  "gameCount": 1285,
   "providerCount": 371,
-  "sourcePageCount": 2240,
+  "sourcePageCount": 2243,
   "counts": {
     "access-restricted": 4,
     "available": 985,
-    "not-verified": 295
+    "not-verified": 296
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "release-the-bison-pragmatic-play",
+      "name": "Release the Bison",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page identifies Release the Bison, a 5x4 slot with respins, random guaranteed wins, gem multipliers, a Free Spins wheel and roaming bison Wilds. Official page iframe redirects to html5Game.do with exact gameSymbol vs20bison and matching title in Codex in-app browser; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 7ED39F167F191C0FBFEC2A2C164151E7F694F97A99B86318A5C187E874B9AE65. Same-provider name, official path and symbol absent from existing records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/release-the-bison/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 277"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/03/Release-the-Bison_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 7ED39F167F191C0FBFEC2A2C164151E7F694F97A99B86318A5C187E874B9AE65"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20bison",
+          "httpStatus": 200,
+          "notes": "Exact official embedded Demo redirected to html5Game.do with matching title in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "candy-blitz-bombs-pragmatic-play",
       "name": "Candy Blitz Bombs",
