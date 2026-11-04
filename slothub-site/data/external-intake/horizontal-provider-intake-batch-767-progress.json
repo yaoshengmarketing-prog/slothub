@@ -1,0 +1,38 @@
+{
+  "batch": 767,
+  "recordedAt": "2026-11-04T07:33:34.999Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1291 published Game Markdown records and same-provider exact official path/name/gameSymbol; The Dog House – Dog or Alive /vs20doghouse2 absent.",
+  "records": [
+    {
+      "index": 284,
+      "name": "The Dog House – Dog or Alive",
+      "slug": "the-dog-house-dog-or-alive-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/the-dog-house-dog-or-alive/",
+      "officialFacts": "Official exact page confirms 5x3 reels, three adjacent matching symbols forming wins, badge Wild multipliers of 2x or 3x, three safe Bonus symbols triggering Free Spins, and sticky Wilds during the bonus.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/03/The-Dog-House-Dog-or-Alive_339x180-2.png",
+        "localPath": "public/assets/games/the-dog-house-dog-or-alive-pragmatic-play.png",
+        "sha256": "C35698CF5506283BC457375AA66B761BA181E91092EECBECE274785D75664CBA",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Codex in-app browser shows exact The Dog House – Dog or Alive title art matching official game page."
+      },
+      "demo": "Official exact page iframe gameSymbol vs20doghouse2 redirected to matching The Dog House – Dog or Alive html5Game.do title in Codex in-app browser; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 285 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch767.log"
+  }
+}

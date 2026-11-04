@@ -1,10 +1,10 @@
 {
   "batch": 766,
   "recordedAt": "2026-11-04T07:17:02.101Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1290 published Game Markdown records and same-provider exact official path/name/gameSymbol; Ripe Rewards /vs40stckwldlvl absent.",
@@ -14,7 +14,7 @@
       "name": "Ripe Rewards",
       "slug": "ripe-rewards-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/ripe-rewards/",
       "officialFacts": "Official exact page confirms 5x5 adjacent-symbol wins of three or more, Wild multipliers of 2x, 3x or 5x, three Scatters awarding seven Free Spins and sticky Wilds during the bonus.",
       "image": {
@@ -28,11 +28,20 @@
       "demo": "Official exact page iframe gameSymbol vs40stckwldlvl redirected to matching Ripe Rewards html5Game.do title in Codex in-app browser; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 284 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 284 The Dog House Dog or Alive validated and queued for individual publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch766.log"
+  },
+  "publication": {
+    "commit": "bcf21b736547c1c0eed25064c108c5b816b0599d",
+    "githubActionsRun": 41792463756,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "9d0ef645-b9e5-425a-9306-f8735065f434",
+    "cloudflareUrl": "https://9d0ef645.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
