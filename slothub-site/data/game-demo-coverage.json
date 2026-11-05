@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1343,
+  "gameCount": 1344,
   "providerCount": 371,
-  "sourcePageCount": 2418,
+  "sourcePageCount": 2421,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 353
+    "not-verified": 354
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "cyclops-smash-pragmatic-play",
+      "name": "Cyclops Smash™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Cyclops Smash™; 7x7 cluster-pay grid, tumbling wins, random Smash symbol rearrangement, and four or more Scatters trigger Free Spins with Smash win multipliers. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20earthquake. Direct official Demo request returned HTTP 200 and title Cyclops Smash; playable reels were not observed. Exact official image URL is linked as page og:image; artwork was visually checked and matches the title. Image/png SHA256 7602DFBA0A77852A9DF7F8A6BED13CA5A37589790C7ABA484DB8B0F4E3993020. Same-provider title, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/cyclops-smash/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 337"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/08/Cyclops-Smash_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page og:image mapping, title visually checked, SHA256 7602DFBA0A77852A9DF7F8A6BED13CA5A37589790C7ABA484DB8B0F4E3993020"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20earthquake",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Cyclops Smash; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "frozen-tropics-pragmatic-play",
       "name": "Frozen Tropics™",

@@ -1,10 +1,10 @@
 {
   "batch": 818,
   "recordedAt": "2026-11-05T09:13:37.868Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Frozen Tropics™",
       "slug": "frozen-tropics-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/frozen-tropics/",
       "officialFacts": "Official exact page confirms six reels in 3-4-4-4-4-3 layout, tumble wins break ice and leave multipliers, non-wild x1 and wild up to x100, and three or more Scatters awarding ten Free Spins.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vswaysftropics returned HTTP 200 and HTML title Frozen Tropics; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 337 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 337 Cyclops Smash after item 336 Frozen Tropics full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch818.log"
+  },
+  "publication": {
+    "commit": "069da771be7f05002cb608294533694ee2cc0f01",
+    "githubActionsRun": 42000958013,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "c971a7f6-838c-485a-bd0d-56824da59199",
+    "cloudflareUrl": "https://c971a7f6.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
