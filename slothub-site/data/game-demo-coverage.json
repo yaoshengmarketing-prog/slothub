@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1353,
+  "gameCount": 1354,
   "providerCount": 371,
-  "sourcePageCount": 2448,
+  "sourcePageCount": 2451,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 363
+    "not-verified": 364
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "lobster-bobs-crazy-crab-shack-pragmatic-play",
+      "name": "Lobster Bob’s Crazy Crab Shack™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Lobster Bob’s Crazy Crab Shack™; three or more golden crab symbols may award up to x2000, and three or more Free Spins symbols may award up to thirty spins with x2 or x3 multiplier. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20lobcrab. Direct official Demo request returned HTTP 200 and title Lobster Bob's Crazy Crab Shack; playable reels were not observed. Exact official image URL is linked as page og:image; artwork was visually checked and matches the title. Image/png SHA256 97417CDAA825FF59F54E31A04602447402940CC8C859E21907785EA2321ED6FF. Same-provider exact title, official path and symbol absent; Sea Food and Win It is a distinct game. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/lobster-bobs-crazy-crab-shack/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 347"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/07/Lobster-Bobs-Crazy-Crab-Shack_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page og:image mapping, exact title visually checked, SHA256 97417CDAA825FF59F54E31A04602447402940CC8C859E21907785EA2321ED6FF"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20lobcrab",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Lobster Bob’s Crazy Crab Shack™; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "sky-bounty-pragmatic-play",
       "name": "Sky Bounty™",
