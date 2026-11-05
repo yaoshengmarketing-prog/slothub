@@ -1,0 +1,39 @@
+{
+  "batch": 799,
+  "recordedAt": "2026-11-05T06:24:49.670Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
+  "dedupScope": "All 1323 published Game Markdown records and same-provider exact official path/name/gameSymbol; Nile Fortune™ /vs20nilefort absent.",
+  "records": [
+    {
+      "index": 317,
+      "name": "Nile Fortune™",
+      "slug": "nile-fortune-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/nile-fortune/",
+      "officialFacts": "Official exact page confirms five reels, three rows and twenty paylines. Mystery modifiers can add random Wilds, expand the grid to 5x6 or add a multiplier. Three or more Scatters award up to twenty Free Spins; three bonus Scatters can retrigger the round.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/10/Nile-Fortune_339x180.png",
+        "localPath": "public/assets/games/nile-fortune-pragmatic-play.png",
+        "sha256": "524E3A52FC70AE96B7320ED0C4A92883E07E3FEC006F0BD6FA533D619ECFC5C5",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes were visually inspected after direct download; title and image URL match official catalog and page metadata."
+      },
+      "demo": "Direct official openGame.do with gameSymbol vs20nilefort returned HTTP 200 and HTML title Nile Fortune; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 318 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch799.log"
+  }
+}

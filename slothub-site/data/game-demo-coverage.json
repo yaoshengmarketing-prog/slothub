@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1305,
+  "gameCount": 1324,
   "providerCount": 371,
-  "sourcePageCount": 2304,
+  "sourcePageCount": 2361,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 315
+    "not-verified": 334
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,595 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "nile-fortune-pragmatic-play",
+      "name": "Nile Fortune™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Nile Fortune™, five reels, three rows, twenty paylines, Mystery modifiers adding random Wilds, expanding to 5x6, or adding a multiplier, and three or more Scatters awarding up to twenty Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20nilefort. Direct official Demo request returned HTTP 200 and title Nile Fortune; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 524E3A52FC70AE96B7320ED0C4A92883E07E3FEC006F0BD6FA533D619ECFC5C5. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/nile-fortune/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 317"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/10/Nile-Fortune_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 524E3A52FC70AE96B7320ED0C4A92883E07E3FEC006F0BD6FA533D619ECFC5C5"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20nilefort",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Nile Fortune; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "the-wild-gang-pragmatic-play",
+      "name": "The Wild Gang™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Wild Gang™, 3-4-4-4-4-3 starting grid, four Wild types, three or more Wilds triggering one of two Free Spins rounds and bonus Wild multipliers. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswayswildgang. Direct official Demo request returned HTTP 200 and title The Wild Gang; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 62AC29030048247AFA71A1A2F8DA6A6DD4AC8F43F05166083747795E1F07500C. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-wild-gang/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 316"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/The-Wild-Gang_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 62AC29030048247AFA71A1A2F8DA6A6DD4AC8F43F05166083747795E1F07500C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayswildgang",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title The Wild Gang; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "big-bass-christmas-bash-pragmatic-play",
+      "name": "Big Bass Christmas Bash™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Big Bass Christmas Bash™, 5x3 grid with ten paylines, three or more Scatters or nudged Scatters unlocking Free Spins, Fishermen collecting fish money symbols and bonus retriggers. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs10bbsplxmas. Direct official Demo request returned HTTP 200 and title Big Bass Christmas Bash; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 033A636815AD08041F91BA43AE06A5F71D03837E71B96755B7903F835BEF360B. Same-provider exact name, official path and symbol absent from existing game records; related Big Bass titles have distinct pages and symbols. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-christmas-bash/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 315"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Big-Bass-Christmas-Bash_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 033A636815AD08041F91BA43AE06A5F71D03837E71B96755B7903F835BEF360B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbsplxmas",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Big Bass Christmas Bash; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "5-frozen-charms-megaways-pragmatic-play",
+      "name": "5 Frozen Charms Megaways™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title 5 Frozen Charms Megaways™, six changing reels, cascading wins, Wild multipliers up to 40x and a Free Spins bonus with selectable spin/multiplier options. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswayscharms. Direct official Demo request returned HTTP 200 and title 5 Frozen Charms Megaways; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 691D0A2E985B0AB98F372E335043BF98761C1027F3DFBFB31A5AC44779F12ED4. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/5-frozen-charms-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 314"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/5-Frozen-Charms-Megaways_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 691D0A2E985B0AB98F372E335043BF98761C1027F3DFBFB31A5AC44779F12ED4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayscharms",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title 5 Frozen Charms Megaways; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "sugar-rush-xmas-pragmatic-play",
+      "name": "Sugar Rush Xmas™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Sugar Rush Xmas™, 7x7 cluster-pays grid, cascades, marked position multipliers up to 128x and Free Spins with persistent marked spots. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20sugrux. Direct official Demo request returned HTTP 200 and title Sugar Rush Xmas; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 D5D252BDCD9BA4E51FB25F3FEA9C91C3550189F514533800B2920A078AD6F682. Same-provider exact name, official path and symbol absent from existing game records; related Sugar Rush titles have distinct paths and symbols. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sugar-rush-xmas/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 313"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Sugar-Rush-Xmas_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 D5D252BDCD9BA4E51FB25F3FEA9C91C3550189F514533800B2920A078AD6F682"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20sugrux",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Sugar Rush Xmas; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "ding-dong-christmas-bells-pragmatic-play",
+      "name": "Ding Dong Christmas Bells™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Ding Dong Christmas Bells™, ten paylines, five linked bell symbols, random Free Spins and bonus Wilds with double multipliers. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs10ddcbells. Direct official Demo request returned HTTP 200 and title Ding Dong Christmas Bells; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 25EBD9FCA786A7F0307C857D423F7F7ED8A3599CC4E12240E99EE7B47D5E1256. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/ding-dong-christmas-bells/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 312"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Ding-Dong-Christmas-Bells-_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 25EBD9FCA786A7F0307C857D423F7F7ED8A3599CC4E12240E99EE7B47D5E1256"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10ddcbells",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Ding Dong Christmas Bells; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "candy-jar-clusters-pragmatic-play",
+      "name": "Candy Jar Clusters™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Candy Jar Clusters™, clusters of six or more matching symbols, cascades, feature jars, random Free Spins and five Jackpot awards. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20cjcluster. Direct official Demo request returned HTTP 200 and title Candy Jar Clusters; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 1109920DEDBF0FC8FF85BE3527A7F6D3985687FCD79C8F1DDF59FB3D2BC628A4. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/candy-jar-clusters/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 311"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Candy-Jar-Cluster_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 1109920DEDBF0FC8FF85BE3527A7F6D3985687FCD79C8F1DDF59FB3D2BC628A4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20cjcluster",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Candy Jar Clusters; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "floating-dragon-new-year-festival-ultra-megaways-hold-spin-pragmatic-play",
+      "name": "Floating Dragon New Year Festival Ultra Megaways™ Hold & Spin",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Floating Dragon New Year Festival Ultra Megaways™ Hold & Spin, six reels with up to 147456 ways, cascades, Free Spins and Hold & Spin bonus with retriggered cash-symbol respins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswaysfltdrgny. Direct official Demo request returned HTTP 200 and title Floating Dragon New Year Festival Ultra Megaways Hold & Spin; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 5B80E44E707066C1588F0833F4266EDCD1481626538D8A5ED8B5DB66EF8E30B6. Exact name, official path and symbol absent from existing game records; related Floating Dragon titles have distinct pages and symbols. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/floating-dragon-new-year-festival-ultra-megaways-hold-spin/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 310"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Floating-Dragon-New-Year-Festival-Ultra-Megaways-Hold-Spin_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 5B80E44E707066C1588F0833F4266EDCD1481626538D8A5ED8B5DB66EF8E30B6"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysfltdrgny",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Floating Dragon New Year Festival Ultra Megaways Hold & Spin; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "fire-stampede-pragmatic-play",
+      "name": "Fire Stampede™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fire Stampede™, 5x5 grid, Connect & Collect special positions, three Jackpot types and three or more Scatters triggering Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswaysstampede. Direct official Demo request returned HTTP 200 and title Fire Stampede; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 1BAAFC2655B74763E2C9816FAA69656D7C7330F22CE0F0D71D7D022B8D21741F. Exact name, official path and symbol absent from existing game records; Fire Stampede 2 and Fire Stampede Dollars & Dreams are distinct. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fire-stampede/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 309"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Fire-Stampede_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 1BAAFC2655B74763E2C9816FAA69656D7C7330F22CE0F0D71D7D022B8D21741F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysstampede",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Fire Stampede; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "juicy-fruits-multihold-pragmatic-play",
+      "name": "Juicy Fruits Multihold™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Juicy Fruits Multihold™, 5x5 grid, twenty paylines, multiplier Wilds, three or more Scatters awarding Free Spins and four unlockable bonus boards. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs50jfmulthold. Direct official Demo request returned HTTP 200 and title Juicy Fruits Multihold; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 2DBDA851F4280B7B202E98B5984DFD9849728BE35155204905C310D3EDBB0593. Same-provider name, official path and exact symbol absent from existing game records. Catalog item 307 Gates of Olympus 1000 already published-existing and skipped. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/juicy-fruits-multihold/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 308; card 307 already published-existing"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Juicy-Fruits-Multihold_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 2DBDA851F4280B7B202E98B5984DFD9849728BE35155204905C310D3EDBB0593"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50jfmulthold",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Juicy Fruits Multihold; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "blade-fangs-pragmatic-play",
+      "name": "Blade & Fangs",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Blade & Fangs, two 5x3 grids, multiplier symbols merging them into 5x6 with a respin and three or more Scatters triggering Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20mergedwndw. Direct official Demo request returned HTTP 200 and exact title Blade & Fangs; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 0BDA0854A469FDCCA44555FBFFBE7C89C8198B945D5FAFBC0CB6F2C9883C5CBC. Same-provider name, official path and exact symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/blade-fangs/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 306"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Blade-Fangs_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 0BDA0854A469FDCCA44555FBFFBE7C89C8198B945D5FAFBC0CB6F2C9883C5CBC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20mergedwndw",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned exact HTML title Blade & Fangs; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "the-big-dawgs-pragmatic-play",
+      "name": "The Big Dawgs",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Big Dawgs, 5x5 horizontal or vertical wins, tumbles, Super Wilds and two Free Spins bonus types. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20bigdawgs. Direct official Demo request returned HTTP 200 and exact title The Big Dawgs; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 741E55A56C7B2B1B8DFC6A08BA41B04E2DCBBF4FCF8F2A7F44822B5C7AB776EE. Same-provider name, official path and exact symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-big-dawgs/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 305"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/The-Big-Dawgs_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 741E55A56C7B2B1B8DFC6A08BA41B04E2DCBBF4FCF8F2A7F44822B5C7AB776EE"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20bigdawgs",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned exact HTML title The Big Dawgs; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "castle-of-fire-pragmatic-play",
+      "name": "Castle of Fire",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Castle of Fire, 6x3 grid, golden Mystery transformations and three or more Scatters awarding twelve Free Spins with sticky Mystery symbols. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswaysexpandng. Direct official Demo request returned HTTP 200 and exact title Castle of Fire; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 CEED47EA70F97080B9E401734407091E686FE04189B229967144308F3729702E. Same-provider name, official path and exact symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/castle-of-fire/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 304"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Castle-of-Fire_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 CEED47EA70F97080B9E401734407091E686FE04189B229967144308F3729702E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysexpandng",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned exact HTML title Castle of Fire; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "year-of-the-dragon-king-pragmatic-play",
+      "name": "Year of the Dragon King",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Year of the Dragon King, 5x3 grid, twenty paylines, Wild substitution and three bonus types with mini-slots and growing multipliers. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20yotdk. Direct official Demo request returned HTTP 200 and title Year Of The Dragon King; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 AE8C65A3D948AD7BEC945E7FF9CEE2C84270BB49CC9C3334AC5E952928A1C857. Same-provider name, official path and exact symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/year-of-the-dragon-king/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 303"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Year-Of-The-Dragon-King_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 AE8C65A3D948AD7BEC945E7FF9CEE2C84270BB49CC9C3334AC5E952928A1C857"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20yotdk",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Year Of The Dragon King; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "blazing-wilds-megaways-pragmatic-play",
+      "name": "Blazing Wilds Megaways",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Blazing Wilds Megaways, six changing reels, cascading wins and four or more Scatters triggering a bonus with Wild transformations and multipliers. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswaysfirewmw. Direct official Demo request returned HTTP 200 and title Blazing Wilds Megaways; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 BEE2AC4DCDE797BD5B55A3F79EC17664205D94A442009BF7A39A106A0F35C563. Same-provider name, official path and exact symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/blazing-wilds-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 302"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Blazing-Wilds-Megaways_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 BEE2AC4DCDE797BD5B55A3F79EC17664205D94A442009BF7A39A106A0F35C563"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysfirewmw",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Blazing Wilds Megaways; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "good-luck-good-fortune-pragmatic-play",
+      "name": "Good Luck & Good Fortune",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Good Luck & Good Fortune, 5x3 grid, ten paylines, Wild multipliers and three or more Scatters triggering Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs10luckfort. Direct official Demo request returned HTTP 200 and title Good Luck & Good Fortune; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 43FF681D71E19672A20021D73E12A64142A80204B76A9E51692946B33D61CBBB. Same-provider name, official path and exact symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/good-luck-good-fortune/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 301"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Good-Luck-Good-Fortune_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 43FF681D71E19672A20021D73E12A64142A80204B76A9E51692946B33D61CBBB"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10luckfort",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Good Luck & Good Fortune; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "lokis-riches-pragmatic-play",
+      "name": "Loki’s Riches",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Loki’s Riches, 7x7 cluster-pays grid, cascading wins, randomly expanding symbol and four or more Scatters triggering Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20loksriches. Direct official Demo request returned HTTP 200 and title Loki's Riches; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 E217912EB918365D0505C9D275D3EA9B1AD3185A30B783D0AA45200F53D2E848. Same-provider name, official path and exact symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/lokis-riches/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 300"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Lokis-Riches_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 E217912EB918365D0505C9D275D3EA9B1AD3185A30B783D0AA45200F53D2E848"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20loksriches",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Loki's Riches; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "red-hot-luck-pragmatic-play",
+      "name": "Red Hot Luck",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Red Hot Luck, 7x7 cluster-pays grid, cascading wins, point ladder and four or more Scatters triggering Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20powerpays. Direct official Demo request returned HTTP 200 and exact title Red Hot Luck; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 CBC125C41B02B285AD7DBCF750A6B4FD3BFF1234AD235B455BBE2F2B9A4F5F34. Same-provider name, official path and exact symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/red-hot-luck/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 299"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Red-Hot-Luck_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 CBC125C41B02B285AD7DBCF750A6B4FD3BFF1234AD235B455BBE2F2B9A4F5F34"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20powerpays",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned exact HTML title Red Hot Luck; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "trees-of-treasure-pragmatic-play",
+      "name": "Trees of Treasure",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Trees of Treasure, 5x3 grid and three or more Scatter symbols triggering Money Respin. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20treesot. Direct official Demo request returned HTTP 200 and exact title Trees of Treasure; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 96A870F5250FD8AE417F23FFEE226FD3358963578ECFE8F130C8AF2D0A8FE268. Same-provider name, official path and exact symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/trees-of-treasure/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 298"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Trees-of-Treasure_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 96A870F5250FD8AE417F23FFEE226FD3358963578ECFE8F130C8AF2D0A8FE268"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20treesot",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned exact HTML title Trees of Treasure; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "the-alter-ego-pragmatic-play",
       "name": "The Alter Ego",
