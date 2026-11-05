@@ -1,10 +1,10 @@
 {
   "batch": 832,
   "recordedAt": "2026-11-05T10:44:07.734Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Power of Merlin Megaways™",
       "slug": "power-of-merlin-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/power-of-merlin-megaways/",
       "officialFacts": "Official exact page confirms tumbling wins, fiery Wild, Lightning Bolt transforming random symbols to Wilds, four or more Scatters triggering Free Spins, and each bonus tumble adding x1 multiplier.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vswayspowzeus returned HTTP 200 and HTML title Power of Merlin Megaways™; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 351 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 351 Hellvis Wild after item 350 Power of Merlin Megaways full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch832.log"
+  },
+  "publication": {
+    "commit": "1b20139ea47d5a29c7dc3f08721b6a8352113f07",
+    "githubActionsRun": 42013449911,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "57e9a009-16d0-4828-afcd-304de5432e6e",
+    "cloudflareUrl": "https://57e9a009.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
