@@ -1,10 +1,10 @@
 {
   "batch": 800,
   "recordedAt": "2026-11-05T06:35:28.048Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Chase for Glory™",
       "slug": "chase-for-glory-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/chase-for-glory/",
       "officialFacts": "Official exact page confirms that three or more Scatters trigger Free Spins with four gladiator choices. Green gives 25 spins and possible x2 Wilds; red gives 20 with x2 or x3; blue gives 15 with x3 or x5; purple gives 10 with guaranteed x5. Coins collect during the round, Reset can clear the leading gladiator coin count.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vswayscfglory returned HTTP 200 and HTML title Chase For Glory; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 319 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 319 Timber Stacks after item 318 Chase for Glory full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch800.log"
+  },
+  "publication": {
+    "commit": "b05ccfe703780aa1592f0cef99c7252efca7a889",
+    "githubActionsRun": 41981718059,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "556ed70f-08d9-4767-bcf3-836418dc82eb",
+    "cloudflareUrl": "https://556ed70f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

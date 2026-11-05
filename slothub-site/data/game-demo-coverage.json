@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1325,
+  "gameCount": 1326,
   "providerCount": 371,
-  "sourcePageCount": 2364,
+  "sourcePageCount": 2367,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 335
+    "not-verified": 336
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "timber-stacks-pragmatic-play",
+      "name": "Timber Stacks™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Timber Stacks™; 5x5 grid with tumbling winning symbols may expand to 10x5, mountain Wild appears on middle reels, and four or more Scatters award at least eight Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswaystimber. Direct official Demo request returned HTTP 200 and title Timber Stacks; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 1DD59CDBA487EFD35A0DE0C4F9ABB3A526B1D381F70F31C31E48F5E9E1446D2E. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/timber-stacks/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 319"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/10/Timber-Stacks_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 1DD59CDBA487EFD35A0DE0C4F9ABB3A526B1D381F70F31C31E48F5E9E1446D2E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaystimber",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Timber Stacks; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "chase-for-glory-pragmatic-play",
       "name": "Chase for Glory™",
