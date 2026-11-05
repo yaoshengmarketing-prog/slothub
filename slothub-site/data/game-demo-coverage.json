@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1352,
+  "gameCount": 1353,
   "providerCount": 371,
-  "sourcePageCount": 2445,
+  "sourcePageCount": 2448,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 362
+    "not-verified": 363
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sky-bounty-pragmatic-play",
+      "name": "Sky Bounty™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Sky Bounty™; 6x6 grid with fifty paylines, Kraken Wild, three or more Bonus symbols trigger six Free Spins, a moving square expands on Bonus symbols, and expanding Wilds can increase a multiplier. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs50jucier. Direct official Demo request returned HTTP 200 and title Sky Bounty; playable reels were not observed. Exact official image URL is linked as page og:image; artwork visibly uses longer Kraken's Sky Bounty title and official page maps it to this game. Image/png SHA256 6EC7D41886BF71F70A8ECAF83A251577AC8C8912651A49F5355D86E77C7D3CBB. Same-provider title, alias, official path and symbol absent. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sky-bounty/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 346"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/07/Sky-Bounty_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page og:image mapping, longer Kraken title visually checked, SHA256 6EC7D41886BF71F70A8ECAF83A251577AC8C8912651A49F5355D86E77C7D3CBB"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50jucier",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Sky Bounty™; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "diamond-cascade-pragmatic-play",
       "name": "Diamond Cascade™",

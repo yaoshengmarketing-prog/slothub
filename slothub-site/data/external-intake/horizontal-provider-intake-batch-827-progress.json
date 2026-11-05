@@ -1,10 +1,10 @@
 {
   "batch": 827,
   "recordedAt": "2026-11-05T10:11:49.236Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Diamond Cascade™",
       "slug": "diamond-cascade-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/diamond-cascade/",
       "officialFacts": "Official exact page confirms five-or-more same-background jewels forming clusters, tumbling wins, x1 multiplier per twenty collected symbols, and three or more diamond Scatters triggering Free Spins.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vs50dmdcascade returned HTTP 200 and HTML title Diamond Cascade™; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 346 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 346 Sky Bounty after item 345 Diamond Cascade full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch827.log"
+  },
+  "publication": {
+    "commit": "ddd56c29e08b82599a0abbdcf0d1f75252ccadae",
+    "githubActionsRun": 42008955532,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "4c5f0d36-9360-4198-bdc0-5ec159af3748",
+    "cloudflareUrl": "https://4c5f0d36.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
