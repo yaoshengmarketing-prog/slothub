@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1328,
+  "gameCount": 1329,
   "providerCount": 371,
-  "sourcePageCount": 2373,
+  "sourcePageCount": 2376,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 338
+    "not-verified": 339
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-money-men-megaways-pragmatic-play",
+      "name": "The Money Men Megaways™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Money Men Megaways™; six variable-height Megaways reels have up to seven symbols per reel, wins tumble, and Wilds may trigger Random Wild Modifiers or Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswaysmoneyman. Direct official Demo request returned HTTP 200 and title The Money Men Megaways; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 8C55159902157512EAFA07A9C2CAFE9A35A503236119BD643925F15F9C8D1311. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-money-men-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 322"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/10/The-Money-men_Megaways_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 8C55159902157512EAFA07A9C2CAFE9A35A503236119BD643925F15F9C8D1311"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysmoneyman",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title The Money Men Megaways; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "viking-forge-pragmatic-play",
       "name": "Viking Forge™",
