@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1320,
+  "gameCount": 1321,
   "providerCount": 371,
-  "sourcePageCount": 2349,
+  "sourcePageCount": 2352,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 330
+    "not-verified": 331
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "5-frozen-charms-megaways-pragmatic-play",
+      "name": "5 Frozen Charms Megaways™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title 5 Frozen Charms Megaways™, six changing reels, cascading wins, Wild multipliers up to 40x and a Free Spins bonus with selectable spin/multiplier options. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswayscharms. Direct official Demo request returned HTTP 200 and title 5 Frozen Charms Megaways; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 691D0A2E985B0AB98F372E335043BF98761C1027F3DFBFB31A5AC44779F12ED4. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/5-frozen-charms-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 314"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/5-Frozen-Charms-Megaways_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 691D0A2E985B0AB98F372E335043BF98761C1027F3DFBFB31A5AC44779F12ED4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayscharms",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title 5 Frozen Charms Megaways; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "sugar-rush-xmas-pragmatic-play",
       "name": "Sugar Rush Xmas™",

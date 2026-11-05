@@ -1,0 +1,39 @@
+{
+  "batch": 796,
+  "recordedAt": "2026-11-05T06:03:12.990Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
+  "dedupScope": "All 1320 published Game Markdown records and same-provider exact official path/name/gameSymbol; 5 Frozen Charms Megaways™ /vswayscharms absent.",
+  "records": [
+    {
+      "index": 314,
+      "name": "5 Frozen Charms Megaways™",
+      "slug": "5-frozen-charms-megaways-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/5-frozen-charms-megaways/",
+      "officialFacts": "Official exact page confirms six changing Megaways reels, winning symbols tumbling away, Wild multipliers up to 40x, three or more Scatters unlocking Free Spins, and a bonus choice between spin count and Wild multiplier strength.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/5-Frozen-Charms-Megaways_339x180.png",
+        "localPath": "public/assets/games/5-frozen-charms-megaways-pragmatic-play.png",
+        "sha256": "691D0A2E985B0AB98F372E335043BF98761C1027F3DFBFB31A5AC44779F12ED4",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes were visually inspected after direct download; title and image URL match official catalog and page metadata."
+      },
+      "demo": "Direct official openGame.do with gameSymbol vswayscharms returned HTTP 200 and HTML title 5 Frozen Charms Megaways; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 315 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch796.log"
+  }
+}
