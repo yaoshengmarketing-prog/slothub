@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1321,
+  "gameCount": 1322,
   "providerCount": 371,
-  "sourcePageCount": 2352,
+  "sourcePageCount": 2355,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 331
+    "not-verified": 332
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-christmas-bash-pragmatic-play",
+      "name": "Big Bass Christmas Bash™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Big Bass Christmas Bash™, 5x3 grid with ten paylines, three or more Scatters or nudged Scatters unlocking Free Spins, Fishermen collecting fish money symbols and bonus retriggers. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs10bbsplxmas. Direct official Demo request returned HTTP 200 and title Big Bass Christmas Bash; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 033A636815AD08041F91BA43AE06A5F71D03837E71B96755B7903F835BEF360B. Same-provider exact name, official path and symbol absent from existing game records; related Big Bass titles have distinct pages and symbols. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-christmas-bash/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 315"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Big-Bass-Christmas-Bash_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 033A636815AD08041F91BA43AE06A5F71D03837E71B96755B7903F835BEF360B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbsplxmas",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Big Bass Christmas Bash; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "5-frozen-charms-megaways-pragmatic-play",
       "name": "5 Frozen Charms Megaways™",
