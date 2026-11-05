@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1334,
+  "gameCount": 1335,
   "providerCount": 371,
-  "sourcePageCount": 2391,
+  "sourcePageCount": 2394,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 344
+    "not-verified": 345
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "demon-pots-pragmatic-play",
+      "name": "Demon Pots™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Demon Pots™; forty paylines, central Demon Wild unlocks pots with coins, win spins, super coins or Free Spins, and the Wild remains during a six-spin bonus. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs40demonpots. Direct official Demo request returned HTTP 200 and title Demon Pots; playable reels were not observed. Official image URL matched catalog and page metadata, returned image/png, and downloaded bytes were visually inspected, SHA256 B8F22E5663544A087C98F86A26AAB57B9EA0E47CE9F58605525D419A198CE317. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/demon-pots/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 328"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/09/Demon-Pots_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 B8F22E5663544A087C98F86A26AAB57B9EA0E47CE9F58605525D419A198CE317"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40demonpots",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Demon Pots; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "cash-chips-pragmatic-play",
       "name": "Cash Chips™",
