@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1305,
+  "gameCount": 1306,
   "providerCount": 371,
-  "sourcePageCount": 2304,
+  "sourcePageCount": 2307,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 315
+    "not-verified": 316
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "trees-of-treasure-pragmatic-play",
+      "name": "Trees of Treasure",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Trees of Treasure, 5x3 grid and three or more Scatter symbols triggering Money Respin. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20treesot. Direct official Demo request returned HTTP 200 and exact title Trees of Treasure; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 96A870F5250FD8AE417F23FFEE226FD3358963578ECFE8F130C8AF2D0A8FE268. Same-provider name, official path and exact symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/trees-of-treasure/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 298"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Trees-of-Treasure_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 96A870F5250FD8AE417F23FFEE226FD3358963578ECFE8F130C8AF2D0A8FE268"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20treesot",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned exact HTML title Trees of Treasure; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "the-alter-ego-pragmatic-play",
       "name": "The Alter Ego",
