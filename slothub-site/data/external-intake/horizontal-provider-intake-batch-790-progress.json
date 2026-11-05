@@ -1,0 +1,39 @@
+{
+  "batch": 790,
+  "recordedAt": "2026-11-05T05:22:13.641Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
+  "dedupScope": "All 1314 published Game Markdown records and same-provider exact official path/name/gameSymbol; Juicy Fruits Multihold™ /vs50jfmulthold absent. Catalog item 307 Gates of Olympus 1000 already published-existing, skipped without counting.",
+  "records": [
+    {
+      "index": 308,
+      "name": "Juicy Fruits Multihold™",
+      "slug": "juicy-fruits-multihold-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/juicy-fruits-multihold/",
+      "officialFacts": "Official exact page confirms a 5x5 grid with twenty paylines, double or triple multiplier Wilds, three or more Scatters awarding six Free Spins, four unlockable gameboards and blue Scatters upgrading Wild size.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Juicy-Fruits-Multihold_339x180.png",
+        "localPath": "public/assets/games/juicy-fruits-multihold-pragmatic-play.png",
+        "sha256": "2DBDA851F4280B7B202E98B5984DFD9849728BE35155204905C310D3EDBB0593",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes were visually inspected after direct download; title and image URL match official catalog and page metadata."
+      },
+      "demo": "Direct official openGame.do with gameSymbol vs50jfmulthold returned HTTP 200 and HTML title Juicy Fruits Multihold; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 309 after current one-game CI, Cloudflare and immutable readback; catalog item 307 already published-existing.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch790.log"
+  }
+}
