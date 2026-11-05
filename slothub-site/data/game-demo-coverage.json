@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1318,
+  "gameCount": 1319,
   "providerCount": 371,
-  "sourcePageCount": 2343,
+  "sourcePageCount": 2346,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 328
+    "not-verified": 329
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "ding-dong-christmas-bells-pragmatic-play",
+      "name": "Ding Dong Christmas Bells™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Ding Dong Christmas Bells™, ten paylines, five linked bell symbols, random Free Spins and bonus Wilds with double multipliers. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs10ddcbells. Direct official Demo request returned HTTP 200 and title Ding Dong Christmas Bells; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 25EBD9FCA786A7F0307C857D423F7F7ED8A3599CC4E12240E99EE7B47D5E1256. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/ding-dong-christmas-bells/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 312"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Ding-Dong-Christmas-Bells-_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 25EBD9FCA786A7F0307C857D423F7F7ED8A3599CC4E12240E99EE7B47D5E1256"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10ddcbells",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Ding Dong Christmas Bells; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "candy-jar-clusters-pragmatic-play",
       "name": "Candy Jar Clusters™",
