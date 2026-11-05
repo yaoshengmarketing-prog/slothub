@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1363,
+  "gameCount": 1364,
   "providerCount": 371,
-  "sourcePageCount": 2478,
+  "sourcePageCount": 2481,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 373
+    "not-verified": 374
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "country-farming-pragmatic-play",
+      "name": "Country Farming™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Country Farming™; Official page confirms 5x3 reels, three or more Scatters unlocking Free Spins, at least one Mystery symbol in the bonus, five or more Jackpot Wilds offering a jackpot chance, and RTP 96.07%. Codex in-app browser unavailable; official HTML read directly, including gameSymbol vs20mysteryst. Direct official Demo returned HTTP 200 and matching HTML title; playable reels were not observed. Exact official image URL maps through page og:image; image/png SHA256 13ACA5526F9FB085B14C6EFE3C37C4CFCD58B57B68A367798095F059A1C724CE, artwork title visually checked. Same-provider exact title, official path and symbol absent. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/country-farming/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 357"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/05/Country_Farmimg_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 13ACA5526F9FB085B14C6EFE3C37C4CFCD58B57B68A367798095F059A1C724CE"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20mysteryst",
+          "httpStatus": 200,
+          "notes": "Direct official Demo matching HTML title; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "fat-panda-pragmatic-play",
       "name": "Fat Panda™",
