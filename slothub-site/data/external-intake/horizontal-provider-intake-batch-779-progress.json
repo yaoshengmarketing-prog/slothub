@@ -1,0 +1,38 @@
+{
+  "batch": 779,
+  "recordedAt": "2026-11-05T03:51:23.646Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "dedupScope": "All 1303 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Floats My Boat /vs10bbfloats absent.",
+  "records": [
+    {
+      "index": 296,
+      "name": "Big Bass Floats My Boat",
+      "slug": "big-bass-floats-my-boat-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-floats-my-boat/",
+      "officialFacts": "Official exact page confirms 5x3 reels and ten paylines, base-game fish instant prizes sometimes collected and multiplied up to x50, three or more Scatters awarding up to twenty Free Spins, position multipliers from bonus fish, ten-spin Fisherman retriggers and an octopus fish-transform feature.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Big-Bass-Floats-My-Boat_339x180.png",
+        "localPath": "public/assets/games/big-bass-floats-my-boat-pragmatic-play.png",
+        "sha256": "D45185982806342B2EF8F03A208D3C6714AE44348F2D3EC37953494A38CAA28C",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Codex in-app browser showed exact Big Bass Floats My Boat artwork matching official game page."
+      },
+      "demo": "Official page iframe opened matching Big Bass Floats My Boat html5Game.do title and gameSymbol vs10bbfloats in Codex in-app browser; age prompt covered page and playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 297 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch779.log"
+  }
+}

@@ -1,10 +1,10 @@
 {
   "batch": 778,
   "recordedAt": "2026-11-04T18:55:12Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex iab unavailable; paid read-only Browser Use run 987f0d1b-7d39-43f6-9544-d3ca1ac14c4f confirmed exact page, art, Demo title and symbol for item 295; Demo only Loading Features, no playable reels.",
@@ -15,7 +15,7 @@
       "name": "Pompeii Megareels Megaways™",
       "slug": "pompeii-megareels-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/pompeii-megareels-megaways/",
       "officialFacts": "Official exact page confirms six changing reels, Wilds on reels two to six except for Scatters, left-to-right adjacent wins and tumbles; four Scatters trigger fifteen Free Spins with symbol-count multipliers.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Official Demo vswaysmegareel title matched without the trademark symbol but stayed on Loading Features, no playable reels; not-verified."
     }
   ],
-  "nextCursor": "Catalog item 296 Big Bass Floats My Boat after item 295 full publication closure.",
+  "nextCursor": "Catalog item 296 Big Bass Floats My Boat after item 295 full publication closure; individual official page, artwork, Demo and dedup still pending.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build and checks PASS",
     "log": "tmp/verify-batch778.log"
+  },
+  "publication": {
+    "commit": "2da81f623c686b3d55be184bef7090c807968ae0",
+    "githubActionsRun": 41892244267,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "65a3fdd8-1317-464f-bf9f-ff443f5f9b60",
+    "cloudflareUrl": "https://65a3fdd8.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

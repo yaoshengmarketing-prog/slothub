@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1303,
+  "gameCount": 1304,
   "providerCount": 371,
-  "sourcePageCount": 2298,
+  "sourcePageCount": 2301,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 313
+    "not-verified": 314
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-floats-my-boat-pragmatic-play",
+      "name": "Big Bass Floats My Boat",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Official Pragmatic Play exact page confirms Big Bass Floats My Boat, 5x3 reels, ten paylines, instant fish prizes, Scatter Free Spins and Fisherman retriggers. Official page iframe loaded matching Big Bass Floats My Boat html5Game.do title with exact gameSymbol vs10bbfloats in Codex in-app browser; age prompt covered the page and playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 D45185982806342B2EF8F03A208D3C6714AE44348F2D3EC37953494A38CAA28C. Same-provider name, official path and exact symbol absent from existing game records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-floats-my-boat/",
+          "httpStatus": 200,
+          "notes": "Exact title, gameplay and matching iframe symbol/title in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 296"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Big-Bass-Floats-My-Boat_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 D45185982806342B2EF8F03A208D3C6714AE44348F2D3EC37953494A38CAA28C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbfloats",
+          "httpStatus": 200,
+          "notes": "Exact embedded Demo redirected to matching html5Game.do title; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "pompeii-megareels-megaways-pragmatic-play",
       "name": "Pompeii Megareels Megaways™",
