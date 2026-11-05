@@ -1,10 +1,10 @@
 {
   "batch": 817,
   "recordedAt": "2026-11-05T09:06:24.938Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Book of Tut Megaways™",
       "slug": "book-of-tut-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/book-of-tut-megaways/",
       "officialFacts": "Official exact page confirms six reels and up to 117649 winning ways, random expanding symbol in base game, three or more Scatters awarding ten Free Spins with a persistent expanding symbol, and ten-spin retriggers.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vswaystut returned HTTP 200 and HTML title Book of Tut Megaways; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 336 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 336 Frozen Tropics after item 335 Book of Tut Megaways full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch817.log"
+  },
+  "publication": {
+    "commit": "d5dd560a9df7e6e58dc110a4cd8e743ddb13c034",
+    "githubActionsRun": 42000028014,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "f8370723-abc9-4444-8f32-a3df3a03a09c",
+    "cloudflareUrl": "https://f8370723.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

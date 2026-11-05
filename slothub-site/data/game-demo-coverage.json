@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1342,
+  "gameCount": 1343,
   "providerCount": 371,
-  "sourcePageCount": 2415,
+  "sourcePageCount": 2418,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 352
+    "not-verified": 353
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "frozen-tropics-pragmatic-play",
+      "name": "Frozen Tropics™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Frozen Tropics™; six reels in 3-4-4-4-4-3 layout, ice blocks break on tumble wins, cleared symbols leave multipliers, and three or more Scatters award ten Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswaysftropics. Direct official Demo request returned HTTP 200 and title Frozen Tropics; playable reels were not observed. Exact official image URL is linked as page og:image; artwork was visually checked and matches the title. Image/png SHA256 8027A08879292BCBAEE81F33591198264F0AFA5C25E7D974794A5A234B63454E. Same-provider title, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/frozen-tropics/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 336"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/08/6VECEM9X.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page og:image mapping, title visually checked, SHA256 8027A08879292BCBAEE81F33591198264F0AFA5C25E7D974794A5A234B63454E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysftropics",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Frozen Tropics; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "book-of-tut-megaways-pragmatic-play",
       "name": "Book of Tut Megaways™",
