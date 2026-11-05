@@ -1,10 +1,10 @@
 {
   "batch": 787,
   "recordedAt": "2026-11-05T05:03:12.406Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Castle of Fire",
       "slug": "castle-of-fire-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/castle-of-fire/",
       "officialFacts": "Official exact page confirms a 6x3 grid, golden Mystery symbols changing into the same random paying symbol, three or more Scatters awarding twelve Free Spins, sticky Mystery symbols in the bonus, bonus Scatter retriggers and Bonus Buy.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vswaysexpandng returned HTTP 200 and exact HTML title Castle of Fire; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 305 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 305 The Big Dawgs after item 304 Castle of Fire full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch787.log"
+  },
+  "publication": {
+    "commit": "557ecd36ec2148a5e5164ea424b60a53e816e1cd",
+    "githubActionsRun": 41971769667,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "e3b8321f-a01b-4919-9a00-6aed5deb858c",
+    "cloudflareUrl": "https://e3b8321f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
