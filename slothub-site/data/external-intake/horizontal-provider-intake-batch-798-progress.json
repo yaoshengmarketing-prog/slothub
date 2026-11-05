@@ -1,0 +1,39 @@
+{
+  "batch": 798,
+  "recordedAt": "2026-11-05T06:16:56.981Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
+  "dedupScope": "All 1322 published Game Markdown records and same-provider exact official path/name/gameSymbol; The Wild Gang™ /vswayswildgang absent.",
+  "records": [
+    {
+      "index": 316,
+      "name": "The Wild Gang™",
+      "slug": "the-wild-gang-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/the-wild-gang/",
+      "officialFacts": "Official exact page confirms a 3-4-4-4-4-3 grid, four Wild types on reels two to five, three or more Wilds triggering Free Spins, three Wilds unlocking Wanted Free Spins and four Wilds unlocking Dead or Alive Free Spins with 4096 ways.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/The-Wild-Gang_339x180.png",
+        "localPath": "public/assets/games/the-wild-gang-pragmatic-play.png",
+        "sha256": "62AC29030048247AFA71A1A2F8DA6A6DD4AC8F43F05166083747795E1F07500C",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes were visually inspected after direct download; title and image URL match official catalog and page metadata."
+      },
+      "demo": "Direct official openGame.do with gameSymbol vswayswildgang returned HTTP 200 and HTML title The Wild Gang; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 317 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch798.log"
+  }
+}

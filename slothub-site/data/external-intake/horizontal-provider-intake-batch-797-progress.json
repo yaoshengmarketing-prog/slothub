@@ -1,10 +1,10 @@
 {
   "batch": 797,
   "recordedAt": "2026-11-05T06:09:56.836Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Big Bass Christmas Bash™",
       "slug": "big-bass-christmas-bash-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-christmas-bash/",
       "officialFacts": "Official exact page confirms a 5x3 grid with ten paylines, three or more Scatters awarding at least ten Free Spins, a two-Scatter nudge/lock respin chance, Fishermen collecting fish money symbols, bonus modifiers and Fisherman retriggers.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vs10bbsplxmas returned HTTP 200 and HTML title Big Bass Christmas Bash; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 316 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 316 The Wild Gang after item 315 Big Bass Christmas Bash full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch797.log"
+  },
+  "publication": {
+    "commit": "862c7261d466cfa0a290347c6442a0cb8b3e37db",
+    "githubActionsRun": 41978850525,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "22a7f891-6999-4722-9ab2-9519c078c7b9",
+    "cloudflareUrl": "https://22a7f891.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
