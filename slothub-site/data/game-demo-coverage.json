@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1333,
+  "gameCount": 1334,
   "providerCount": 371,
-  "sourcePageCount": 2388,
+  "sourcePageCount": 2391,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 343
+    "not-verified": 344
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "cash-chips-pragmatic-play",
+      "name": "Cash Chips™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Cash Chips™; Wilds substitute, four or more Cash Chips award an increasing prize, and three or more Scatters select between extra-Wild or extra-Chip Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20maskgame. Direct official Demo request returned HTTP 200 and title Cash Chips; playable reels were not observed. Official image URL matched catalog and page metadata, returned image/png, and downloaded bytes were visually inspected, SHA256 37C1EA069480BDAE43E07E39A6E8C25B79DCBDEC689A1E289A44BC2272E0919D. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/cash-chips/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 327"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/09/Cash-Chips_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 37C1EA069480BDAE43E07E39A6E8C25B79DCBDEC689A1E289A44BC2272E0919D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20maskgame",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Cash Chips; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "tundras-fortune-pragmatic-play",
       "name": "Tundra’s Fortune™",

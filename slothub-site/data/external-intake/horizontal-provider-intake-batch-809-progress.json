@@ -1,0 +1,39 @@
+{
+  "batch": 809,
+  "recordedAt": "2026-11-05T07:57:52.743Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
+  "dedupScope": "All 1333 published Game Markdown records and same-provider exact official path/name/gameSymbol; Cash Chips™ /vs20maskgame absent.",
+  "records": [
+    {
+      "index": 327,
+      "name": "Cash Chips™",
+      "slug": "cash-chips-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/cash-chips/",
+      "officialFacts": "Official exact page confirms Wild substitution, four or more Cash Chips awarding an increasing prize, and three or more Scatters selecting between ten extra-Wild Free Spins or fifteen extra-Chip Free Spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/09/Cash-Chips_339x180.png",
+        "localPath": "public/assets/games/cash-chips-pragmatic-play.png",
+        "sha256": "37C1EA069480BDAE43E07E39A6E8C25B79DCBDEC689A1E289A44BC2272E0919D",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes were visually inspected after direct download; title and image URL match official catalog and page metadata."
+      },
+      "demo": "Direct official openGame.do with gameSymbol vs20maskgame returned HTTP 200 and HTML title Cash Chips; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 328 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch809.log"
+  }
+}

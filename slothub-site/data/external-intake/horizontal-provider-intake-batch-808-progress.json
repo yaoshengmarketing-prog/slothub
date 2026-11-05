@@ -1,10 +1,10 @@
 {
   "batch": 808,
   "recordedAt": "2026-11-05T07:50:28.636Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Tundra’s Fortune™",
       "slug": "tundras-fortune-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/tundras-fortune/",
       "officialFacts": "Official exact page confirms a 6x6 honeycomb-like grid with left-to-right wins. Wilds may appear on reels two onward; three or more Scatters start Free Spins with Wild multipliers of at least x2.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vswaysraghex returned HTTP 200 and HTML title Tundra's Fortune; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 327 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 327 Cash Chips after item 326 Tundras Fortune full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch808.log"
+  },
+  "publication": {
+    "commit": "032635ba35550ed8a90198060e20d03b5efe0010",
+    "githubActionsRun": 41990353604,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "4bb25854-892c-4779-8218-30086794ae51",
+    "cloudflareUrl": "https://4bb25854.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
