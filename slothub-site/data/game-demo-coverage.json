@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1354,
+  "gameCount": 1355,
   "providerCount": 371,
-  "sourcePageCount": 2451,
+  "sourcePageCount": 2454,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 364
+    "not-verified": 365
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "3-buzzing-wilds-pragmatic-play",
+      "name": "3 Buzzing Wilds™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title 3 Buzzing Wilds™; 5x4 grid with twenty paylines, Wilds can transform adjacent symbols or create Wild reels, and three beehive Scatters unlock a choice among three Wild bonus mechanics. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20wildparty. Direct official Demo request returned HTTP 200 and title 3 Buzzing Wilds; playable reels were not observed. Exact official image URL is linked as page og:image; artwork was visually checked and matches the title. Image/png SHA256 D91BA48169503A604BCB0BF43D1A0A2C88F6E0FB888F94385B99940AD8971DDE. Same-provider exact title, official path and symbol absent. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/3-buzzing-wilds/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 348"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/07/3-Buzzing-Wilds_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page og:image mapping, exact title visually checked, SHA256 D91BA48169503A604BCB0BF43D1A0A2C88F6E0FB888F94385B99940AD8971DDE"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20wildparty",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title 3 Buzzing Wilds™; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "lobster-bobs-crazy-crab-shack-pragmatic-play",
       "name": "Lobster Bob’s Crazy Crab Shack™",
