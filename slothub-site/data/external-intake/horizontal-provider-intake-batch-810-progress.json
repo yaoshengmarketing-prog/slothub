@@ -1,10 +1,10 @@
 {
   "batch": 810,
   "recordedAt": "2026-11-05T08:05:06.165Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Demon Pots™",
       "slug": "demon-pots-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/demon-pots/",
       "officialFacts": "Official exact page confirms forty paylines, a central Demon Wild that unlocks pots with coins, win spins, super coins or Free Spins, and a six-spin bonus with persistent Demon Wild.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vs40demonpots returned HTTP 200 and HTML title Demon Pots; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 329 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 329 Twilight Princess after item 328 Demon Pots full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch810.log"
+  },
+  "publication": {
+    "commit": "417399ce6e23718cae361ee256a43d71cc96afe5",
+    "githubActionsRun": 41992076918,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "b34a52fe-e68a-4ef0-9471-e5c526a829c2",
+    "cloudflareUrl": "https://b34a52fe.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

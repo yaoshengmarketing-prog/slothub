@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1335,
+  "gameCount": 1336,
   "providerCount": 371,
-  "sourcePageCount": 2394,
+  "sourcePageCount": 2397,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 345
+    "not-verified": 346
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "twilight-princess-pragmatic-play",
+      "name": "Twilight Princess™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Twilight Princess™; 5x5 grid with five-symbol clusters, multiplier Wilds up to x10 and three or more Scatters award ten Free Spins with sticky Wilds. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20dhcluster. Direct official Demo request returned HTTP 200 and title Twilight Princess; playable reels were not observed. Official image URL matched catalog and page metadata, returned image/png, and downloaded bytes were visually inspected, SHA256 6CBABC7869F6EF8C8682496EDFD84328F55E770F5348A92A593A746125DB76B5. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/twilight-princess/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 329"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/09/Twilight-Princess_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 6CBABC7869F6EF8C8682496EDFD84328F55E770F5348A92A593A746125DB76B5"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20dhcluster",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Twilight Princess; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "demon-pots-pragmatic-play",
       "name": "Demon Pots™",
