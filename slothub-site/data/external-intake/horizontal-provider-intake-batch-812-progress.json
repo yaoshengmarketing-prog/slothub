@@ -1,0 +1,39 @@
+{
+  "batch": 812,
+  "recordedAt": "2026-11-05T08:22:51.343Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
+  "dedupScope": "All 1336 published Game Markdown records and same-provider exact official path/name/gameSymbol; Gravity Bonanza™ /vs20gravity absent.",
+  "records": [
+    {
+      "index": 330,
+      "name": "Gravity Bonanza™",
+      "slug": "gravity-bonanza-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/gravity-bonanza/",
+      "officialFacts": "Official exact page confirms a 7x7 grid with clusters of five or more adjacent symbols and tumbles. Black holes collect a random symbol; three or more Scatters trigger Free Spins, and bonus black holes may carry up to x10 multiplier.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/09/Gravity-Bonanza_339x180-1.png",
+        "localPath": "public/assets/games/gravity-bonanza-pragmatic-play.png",
+        "sha256": "FDBD1CE79EE6FD6E4E37838EFE2E45B1C1AFA37D0DA537A0C5626CB71AE4C91C",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes were visually inspected after direct download; title and image URL match official catalog and page metadata."
+      },
+      "demo": "Direct official openGame.do with gameSymbol vs20gravity returned HTTP 200 and HTML title Gravity Bonanza; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 331 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch812.log"
+  }
+}
