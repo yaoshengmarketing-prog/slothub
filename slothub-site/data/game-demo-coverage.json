@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1311,
+  "gameCount": 1312,
   "providerCount": 371,
-  "sourcePageCount": 2322,
+  "sourcePageCount": 2325,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 321
+    "not-verified": 322
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "castle-of-fire-pragmatic-play",
+      "name": "Castle of Fire",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Castle of Fire, 6x3 grid, golden Mystery transformations and three or more Scatters awarding twelve Free Spins with sticky Mystery symbols. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswaysexpandng. Direct official Demo request returned HTTP 200 and exact title Castle of Fire; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 CEED47EA70F97080B9E401734407091E686FE04189B229967144308F3729702E. Same-provider name, official path and exact symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/castle-of-fire/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 304"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Castle-of-Fire_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 CEED47EA70F97080B9E401734407091E686FE04189B229967144308F3729702E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysexpandng",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned exact HTML title Castle of Fire; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "year-of-the-dragon-king-pragmatic-play",
       "name": "Year of the Dragon King",

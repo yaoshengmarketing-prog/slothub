@@ -1,0 +1,39 @@
+{
+  "batch": 787,
+  "recordedAt": "2026-11-05T05:03:12.406Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
+  "dedupScope": "All 1311 published Game Markdown records and same-provider exact official path/name/gameSymbol; Castle of Fire /vswaysexpandng absent.",
+  "records": [
+    {
+      "index": 304,
+      "name": "Castle of Fire",
+      "slug": "castle-of-fire-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/castle-of-fire/",
+      "officialFacts": "Official exact page confirms a 6x3 grid, golden Mystery symbols changing into the same random paying symbol, three or more Scatters awarding twelve Free Spins, sticky Mystery symbols in the bonus, bonus Scatter retriggers and Bonus Buy.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Castle-of-Fire_339x180.png",
+        "localPath": "public/assets/games/castle-of-fire-pragmatic-play.png",
+        "sha256": "CEED47EA70F97080B9E401734407091E686FE04189B229967144308F3729702E",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes were visually inspected after direct download; title and image URL match official catalog and page metadata."
+      },
+      "demo": "Direct official openGame.do with gameSymbol vswaysexpandng returned HTTP 200 and exact HTML title Castle of Fire; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 305 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch787.log"
+  }
+}
