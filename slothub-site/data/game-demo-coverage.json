@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1338,
+  "gameCount": 1339,
   "providerCount": 371,
-  "sourcePageCount": 2403,
+  "sourcePageCount": 2406,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 348
+    "not-verified": 349
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gold-oasis-pragmatic-play",
+      "name": "Gold Oasis™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Gold Oasis™; 3x5 grid with wins starting anywhere across at least three reels, base-game random symbol duels and three golden keyhole Scatters triggering Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswaysincwnd. Direct official Demo request returned HTTP 200 and title Gold Oasis; playable reels were not observed. Official image URL matched catalog and page metadata, returned image/png, and downloaded bytes were visually inspected, SHA256 A2D55C1D475DE9A4A01B65D1677F57584D4ABB86D1AE2A1C70B64363D0CFD7FB. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gold-oasis/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 332"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/08/Gold-Oasis_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 A2D55C1D475DE9A4A01B65D1677F57584D4ABB86D1AE2A1C70B64363D0CFD7FB"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysincwnd",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Gold Oasis; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "rainbow-reels-pragmatic-play",
       "name": "Rainbow Reels™",

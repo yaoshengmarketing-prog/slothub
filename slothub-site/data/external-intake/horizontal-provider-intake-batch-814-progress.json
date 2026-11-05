@@ -1,0 +1,39 @@
+{
+  "batch": 814,
+  "recordedAt": "2026-11-05T08:38:10.629Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
+  "dedupScope": "All 1338 published Game Markdown records and same-provider exact official path/name/gameSymbol; Gold Oasis™ /vswaysincwnd absent.",
+  "records": [
+    {
+      "index": 332,
+      "name": "Gold Oasis™",
+      "slug": "gold-oasis-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/gold-oasis/",
+      "officialFacts": "Official exact page confirms 3x5 grid with winning combinations starting anywhere across at least three reels. Base-game symbol duels may replace up to ten symbols; three golden keyhole Scatters trigger Free Spins and bonus duels may add spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/08/Gold-Oasis_339x180.png",
+        "localPath": "public/assets/games/gold-oasis-pragmatic-play.png",
+        "sha256": "A2D55C1D475DE9A4A01B65D1677F57584D4ABB86D1AE2A1C70B64363D0CFD7FB",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes were visually inspected after direct download; title and image URL match official catalog and page metadata."
+      },
+      "demo": "Direct official openGame.do with gameSymbol vswaysincwnd returned HTTP 200 and HTML title Gold Oasis; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 333 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch814.log"
+  }
+}
