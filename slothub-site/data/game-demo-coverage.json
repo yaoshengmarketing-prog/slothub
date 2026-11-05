@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1356,
+  "gameCount": 1357,
   "providerCount": 371,
-  "sourcePageCount": 2457,
+  "sourcePageCount": 2460,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 366
+    "not-verified": 367
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "power-of-merlin-megaways-pragmatic-play",
+      "name": "Power of Merlin Megaways™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Power of Merlin Megaways™; tumbling wins, fiery Wilds, Lightning Bolt transforms random symbols into Wilds, four or more Scatters trigger Free Spins, and every bonus tumble raises the round multiplier by x1. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswayspowzeus. Direct official Demo request returned HTTP 200 and title Power of Merlin Megaways; playable reels were not observed. Exact official image URL is linked as page og:image; artwork was visually checked and matches the title. Image/png SHA256 18101C9AE712CA9A9EB7019946B75AAF2535B45859DD625049E740C1188425BE. Same-provider exact title, official path and symbol absent. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/power-of-merlin-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 350"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/06/Power-of-Merlin-Megaways_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page og:image mapping, exact title visually checked, SHA256 18101C9AE712CA9A9EB7019946B75AAF2535B45859DD625049E740C1188425BE"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayspowzeus",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Power of Merlin Megaways™; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "cash-box-pragmatic-play",
       "name": "Cash Box™",
