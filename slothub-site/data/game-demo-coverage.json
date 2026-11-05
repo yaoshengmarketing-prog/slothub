@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1339,
+  "gameCount": 1340,
   "providerCount": 371,
-  "sourcePageCount": 2406,
+  "sourcePageCount": 2409,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 349
+    "not-verified": 350
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "8-golden-dragon-challenge-pragmatic-play",
+      "name": "8 Golden Dragon Challenge™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title 8 Golden Dragon Challenge™; 3x5 grid and ten paylines, three Scatters start a bonus with eight mini slots, and three adjacent dragons on a mini slot award a respin. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs10gdchalleng. Direct official Demo request returned HTTP 200 and title 8 Golden Dragon Challenge; playable reels were not observed. Official image URL matched catalog and page metadata, returned image/png, and downloaded bytes were visually inspected, SHA256 637FB7DF4884A9B19AFE4841322717F457887AA1859072B522D508D0BC1195A6. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/8-golden-dragon-challenge/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 333"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/09/8-Golden-Dragon-Challenge_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 637FB7DF4884A9B19AFE4841322717F457887AA1859072B522D508D0BC1195A6"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10gdchalleng",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title 8 Golden Dragon Challenge; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "gold-oasis-pragmatic-play",
       "name": "Gold Oasis™",

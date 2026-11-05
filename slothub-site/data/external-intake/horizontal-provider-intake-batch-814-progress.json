@@ -1,10 +1,10 @@
 {
   "batch": 814,
   "recordedAt": "2026-11-05T08:38:10.629Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Gold Oasis™",
       "slug": "gold-oasis-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/gold-oasis/",
       "officialFacts": "Official exact page confirms 3x5 grid with winning combinations starting anywhere across at least three reels. Base-game symbol duels may replace up to ten symbols; three golden keyhole Scatters trigger Free Spins and bonus duels may add spins.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vswaysincwnd returned HTTP 200 and HTML title Gold Oasis; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 333 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 333 8 Golden Dragon Challenge after item 332 Gold Oasis full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch814.log"
+  },
+  "publication": {
+    "commit": "5a2f8060c15b0757e97e1b36b470296a9d7a8b25",
+    "githubActionsRun": 41996308011,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "3f59608c-379f-4010-94ef-82abba0972be",
+    "cloudflareUrl": "https://3f59608c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
