@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1327,
+  "gameCount": 1328,
   "providerCount": 371,
-  "sourcePageCount": 2370,
+  "sourcePageCount": 2373,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 337
+    "not-verified": 338
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "viking-forge-pragmatic-play",
+      "name": "Viking Forge™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Viking Forge™; 5x6 grid pays for eight or more matching symbols anywhere, tumble feature replaces winning symbols, collected coins carry values or multipliers, and four or more Scatters award Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20sugarcoins. Direct official Demo request returned HTTP 200 and title Viking Forge; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 5D6ADB79674F3FC03E01CBA407C7DE967E04CDCA9808510064EFB632D41CE812. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/viking-forge/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 321"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/10/Viking-Forge_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 5D6ADB79674F3FC03E01CBA407C7DE967E04CDCA9808510064EFB632D41CE812"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20sugarcoins",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Viking Forge; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "sugar-supreme-powernudge-pragmatic-play",
       "name": "Sugar Supreme Powernudge™",

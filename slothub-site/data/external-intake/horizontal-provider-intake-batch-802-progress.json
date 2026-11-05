@@ -1,10 +1,10 @@
 {
   "batch": 802,
   "recordedAt": "2026-11-05T06:54:58.022Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Sugar Supreme Powernudge™",
       "slug": "sugar-supreme-powernudge-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/sugar-supreme-powernudge/",
       "officialFacts": "Official exact page confirms 6x6 grid with wins from five or more identical symbols. Powernudge moves reels with winning symbols and increases multipliers on winning positions. Three or more Scatters award at least ten Free Spins; Powernudge triggers on each bonus win.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vs20sugarnudge returned HTTP 200 and HTML title Sugar Supreme Powernudge; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 321 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 321 Viking Forge after item 320 Sugar Supreme Powernudge full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch802.log"
+  },
+  "publication": {
+    "commit": "82c892100bbb69b8e3f60227ada4e13f50619bbd",
+    "githubActionsRun": 41983929406,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "a1325e99-f015-4195-8554-dad710c498b3",
+    "cloudflareUrl": "https://a1325e99.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
