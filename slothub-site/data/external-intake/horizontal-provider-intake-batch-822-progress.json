@@ -1,10 +1,10 @@
 {
   "batch": 822,
   "recordedAt": "2026-11-05T09:39:43.389Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Mustang Trail™",
       "slug": "mustang-trail-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/mustang-trail/",
       "officialFacts": "Official exact page confirms 5x4 grid with ten paylines, three Scatters awarding eight Free Spins, and every third collected Scatter retriggering five spins and adding a fixed-position Wild.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vs10trail returned HTTP 200 and HTML title Mustang Trail; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 341 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 341 Forge of Olympus after item 340 Mustang Trail full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch822.log"
+  },
+  "publication": {
+    "commit": "d2ec360662a984e4b0ed6278190c515b1473eea5",
+    "githubActionsRun": 42004474967,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "74af916e-ad41-4cbd-90b9-7dd1dd5a17e7",
+    "cloudflareUrl": "https://74af916e.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
