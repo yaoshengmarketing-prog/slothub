@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1330,
+  "gameCount": 1331,
   "providerCount": 371,
-  "sourcePageCount": 2379,
+  "sourcePageCount": 2382,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 340
+    "not-verified": 341
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-halloween-pragmatic-play",
+      "name": "Big Bass Halloween™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Big Bass Halloween™; 5x3 grid with ten paylines, fish symbols carry values, and three or more Scatters award up to twenty Free Spins with fisherman collection and retriggers. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs10bhallbnza. Direct official Demo request returned HTTP 200 and title Big Bass Halloween; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 C7B0BA8C7DC3B2E7BA09CBB763B93DBD0569F6219DB1E542BA1B0E89258C210A. Same-provider exact name, official path and symbol absent from existing game records; existing Big Bass Halloween 2 and 3 have distinct official pages and symbols. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-halloween/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 324"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/10/Big_Bass_Halloween_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 C7B0BA8C7DC3B2E7BA09CBB763B93DBD0569F6219DB1E542BA1B0E89258C210A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bhallbnza",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Big Bass Halloween; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "starlight-princess-1000-pragmatic-play",
       "name": "Starlight Princess 1000™",
