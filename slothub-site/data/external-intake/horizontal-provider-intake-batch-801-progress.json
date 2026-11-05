@@ -1,10 +1,10 @@
 {
   "batch": 801,
   "recordedAt": "2026-11-05T06:44:05.315Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Timber Stacks™",
       "slug": "timber-stacks-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/timber-stacks/",
       "officialFacts": "Official exact page confirms a 5x5 starting grid with tumbling wins. After tumbles, the grid may expand to 10x5 and then reset. Mountain Wild appears on reels two through four; four or more Scatters award at least eight Free Spins.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vswaystimber returned HTTP 200 and HTML title Timber Stacks; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 320 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 320 Sugar Supreme Powernudge after item 319 Timber Stacks full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch801.log"
+  },
+  "publication": {
+    "commit": "e9dd3c4978565519faa3e97f0b067a26415aac7f",
+    "githubActionsRun": 41983023516,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "ddc8d724-c44a-4910-b5e3-90f8863c261f",
+    "cloudflareUrl": "https://ddc8d724.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

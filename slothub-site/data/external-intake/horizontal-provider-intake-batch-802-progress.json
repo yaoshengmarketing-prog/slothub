@@ -1,0 +1,39 @@
+{
+  "batch": 802,
+  "recordedAt": "2026-11-05T06:54:58.022Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
+  "dedupScope": "All 1326 published Game Markdown records and same-provider exact official path/name/gameSymbol; Sugar Supreme Powernudge™ /vs20sugarnudge absent.",
+  "records": [
+    {
+      "index": 320,
+      "name": "Sugar Supreme Powernudge™",
+      "slug": "sugar-supreme-powernudge-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/sugar-supreme-powernudge/",
+      "officialFacts": "Official exact page confirms 6x6 grid with wins from five or more identical symbols. Powernudge moves reels with winning symbols and increases multipliers on winning positions. Three or more Scatters award at least ten Free Spins; Powernudge triggers on each bonus win.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/10/Sugar-Supreme-Powernudge_339x180.png",
+        "localPath": "public/assets/games/sugar-supreme-powernudge-pragmatic-play.png",
+        "sha256": "1628AA47BA81FB1F93A811266D1D4A4BA5B5662D60F5154ABBBF9027571A9628",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes were visually inspected after direct download; title and image URL match official catalog and page metadata."
+      },
+      "demo": "Direct official openGame.do with gameSymbol vs20sugarnudge returned HTTP 200 and HTML title Sugar Supreme Powernudge; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 321 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch802.log"
+  }
+}
