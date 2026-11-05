@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1359,
+  "gameCount": 1360,
   "providerCount": 371,
-  "sourcePageCount": 2466,
+  "sourcePageCount": 2469,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 369
+    "not-verified": 370
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wisdom-of-athena-pragmatic-play",
+      "name": "Wisdom of Athena™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wisdom of Athena™; 5x6 pays-anywhere grid with eight-symbol wins and tumbles that unlock an extra reel, while ten Free Spins persist multipliers and extra-reel progression. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20procount. Direct official Demo request returned HTTP 200 and title Wisdom of Athena; playable reels were not observed. Exact official image URL is linked as page og:image and artwork title was visually checked. Image/png SHA256 F6B44E328E18949461FF16985295A6B79460A3013FC0F7ADAD931782645424AA. Wisdom of Athena 1000 is a distinct later title with symbol vs20procountx; exact title, official path and symbol absent. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wisdom-of-athena/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 353"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/06/Wisdom_Of_Athena_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page og:image mapping, title visually checked, SHA256 F6B44E328E18949461FF16985295A6B79460A3013FC0F7ADAD931782645424AA"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20procount",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Wisdom of Athena™; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "spellbinding-mystery-pragmatic-play",
       "name": "Spellbinding Mystery™",
