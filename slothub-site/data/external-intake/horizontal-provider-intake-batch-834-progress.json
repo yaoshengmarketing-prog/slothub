@@ -1,0 +1,39 @@
+{
+  "batch": 834,
+  "recordedAt": "2026-11-05T10:57:22.039Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
+  "dedupScope": "All 1358 published Game Markdown records and same-provider exact official path/name/spaced alias/gameSymbol; Spellbinding Mystery™ /vs20splmystery absent.",
+  "records": [
+    {
+      "index": 352,
+      "name": "Spellbinding Mystery™",
+      "slug": "spellbinding-mystery-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/spellbinding-mystery/",
+      "officialFacts": "Official exact page confirms cluster wins from adjacent matches, sticky Mystery symbols in Free Spins gaining x1 each participating spin, and multiplier coins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/06/Spell-Binding-Mystery_339x180-1.png",
+        "localPath": "public/assets/games/spellbinding-mystery-pragmatic-play.png",
+        "sha256": "E26A1E95891F42F400EC6E66E368B965301F82872C157B6FD2ECEEE1656F53C5",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes were visually inspected; spaced title matches official page og:image mapping to Spellbinding Mystery."
+      },
+      "demo": "Direct official openGame.do with gameSymbol vs20splmystery returned HTTP 200 and HTML title Spellbinding Mystery™; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 353 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch834.log"
+  }
+}

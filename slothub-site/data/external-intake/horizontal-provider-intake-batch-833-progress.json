@@ -1,10 +1,10 @@
 {
   "batch": 833,
   "recordedAt": "2026-11-05T10:50:58.091Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Hellvis Wild™",
       "slug": "hellvis-wild-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/hellvis-wild/",
       "officialFacts": "Official exact page confirms 5x3 grid with 243 ways, two Wild variants, golden Wilds nudging down and increasing multiplier, and bonus reel multipliers persisting across spins.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vs243nudge4gold returned HTTP 200 and HTML title Hellvis Wild™; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 352 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 352 Spellbinding Mystery after item 351 Hellvis Wild full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch833.log"
+  },
+  "publication": {
+    "commit": "c2bd577a5c675dec195e1eac95c63c13cde6259a",
+    "githubActionsRun": 42014360156,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "c922da79-4167-43f8-ae53-6df9f1692825",
+    "cloudflareUrl": "https://c922da79.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1358,
+  "gameCount": 1359,
   "providerCount": 371,
-  "sourcePageCount": 2463,
+  "sourcePageCount": 2466,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 368
+    "not-verified": 369
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "spellbinding-mystery-pragmatic-play",
+      "name": "Spellbinding Mystery™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Spellbinding Mystery™; adjacent matching symbols form cluster wins, and sticky Mystery symbols in Free Spins gain x1 for each participating spin, aided by multiplier coins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20splmystery. Direct official Demo request returned HTTP 200 and title Spellbinding Mystery; playable reels were not observed. Exact official image URL is linked as page og:image; visually it uses spaced Spell Binding Mystery wording and official page maps it to this title. Image/png SHA256 E26A1E95891F42F400EC6E66E368B965301F82872C157B6FD2ECEEE1656F53C5. Same-provider title, alias, official path and symbol absent. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/spellbinding-mystery/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 352"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/06/Spell-Binding-Mystery_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page og:image mapping, spaced title visually checked, SHA256 E26A1E95891F42F400EC6E66E368B965301F82872C157B6FD2ECEEE1656F53C5"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20splmystery",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Spellbinding Mystery™; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "hellvis-wild-pragmatic-play",
       "name": "Hellvis Wild™",
