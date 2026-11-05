@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1313,
+  "gameCount": 1314,
   "providerCount": 371,
-  "sourcePageCount": 2328,
+  "sourcePageCount": 2331,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 323
+    "not-verified": 324
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "blade-fangs-pragmatic-play",
+      "name": "Blade & Fangs",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Blade & Fangs, two 5x3 grids, multiplier symbols merging them into 5x6 with a respin and three or more Scatters triggering Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20mergedwndw. Direct official Demo request returned HTTP 200 and exact title Blade & Fangs; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 0BDA0854A469FDCCA44555FBFFBE7C89C8198B945D5FAFBC0CB6F2C9883C5CBC. Same-provider name, official path and exact symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/blade-fangs/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 306"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Blade-Fangs_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 0BDA0854A469FDCCA44555FBFFBE7C89C8198B945D5FAFBC0CB6F2C9883C5CBC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20mergedwndw",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned exact HTML title Blade & Fangs; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "the-big-dawgs-pragmatic-play",
       "name": "The Big Dawgs",
