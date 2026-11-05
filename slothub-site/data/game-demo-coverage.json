@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1337,
+  "gameCount": 1338,
   "providerCount": 371,
-  "sourcePageCount": 2400,
+  "sourcePageCount": 2403,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 347
+    "not-verified": 348
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "rainbow-reels-pragmatic-play",
+      "name": "Rainbow Reels™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Rainbow Reels™; 4x5 grid, forty paylines, winning symbols uncover one of seven layers, and three or more Scatters trigger a bonus where final-layer symbols can become Wilds. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs40rainbowr. Direct official Demo request returned HTTP 200 and title Rainbow Reels; playable reels were not observed. Official image URL matched catalog and page metadata, returned image/png, and downloaded bytes were visually inspected, SHA256 CE727B4B8B1B2C28200FEA382429C5C507934426A9827793EAEA57AFFD32803D. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/rainbow-reels/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 331"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/09/Rainbow-Reels_-_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 CE727B4B8B1B2C28200FEA382429C5C507934426A9827793EAEA57AFFD32803D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40rainbowr",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Rainbow Reels; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "gravity-bonanza-pragmatic-play",
       "name": "Gravity Bonanza™",
