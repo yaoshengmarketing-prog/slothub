@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1317,
+  "gameCount": 1318,
   "providerCount": 371,
-  "sourcePageCount": 2340,
+  "sourcePageCount": 2343,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 327
+    "not-verified": 328
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "candy-jar-clusters-pragmatic-play",
+      "name": "Candy Jar Clusters™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Candy Jar Clusters™, clusters of six or more matching symbols, cascades, feature jars, random Free Spins and five Jackpot awards. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20cjcluster. Direct official Demo request returned HTTP 200 and title Candy Jar Clusters; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 1109920DEDBF0FC8FF85BE3527A7F6D3985687FCD79C8F1DDF59FB3D2BC628A4. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/candy-jar-clusters/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 311"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Candy-Jar-Cluster_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 1109920DEDBF0FC8FF85BE3527A7F6D3985687FCD79C8F1DDF59FB3D2BC628A4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20cjcluster",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Candy Jar Clusters; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "floating-dragon-new-year-festival-ultra-megaways-hold-spin-pragmatic-play",
       "name": "Floating Dragon New Year Festival Ultra Megaways™ Hold & Spin",
