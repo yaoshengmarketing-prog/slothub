@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1355,
+  "gameCount": 1356,
   "providerCount": 371,
-  "sourcePageCount": 2454,
+  "sourcePageCount": 2457,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 365
+    "not-verified": 366
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "cash-box-pragmatic-play",
+      "name": "Cash Box™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Cash Box™; 5x3 grid with opening Cash Box symbols, three or more cash values pay their sum, Mini Major and Grand jackpot symbols may appear, and three Free Spins symbols trigger ten starting spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20cashmachine. Direct official Demo request returned HTTP 200 and title Cash Box; playable reels were not observed. Exact official image URL is linked as page og:image; artwork was visually checked and matches the title. Image/png SHA256 24DC24C4DFE41365069FAD11212E47B32816378820058A060F22A373E1F84934. Same-provider exact title, official path and symbol absent. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/cash-box/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 349"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/06/Cash-Box_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page og:image mapping, exact title visually checked, SHA256 24DC24C4DFE41365069FAD11212E47B32816378820058A060F22A373E1F84934"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20cashmachine",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Cash Box™; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "3-buzzing-wilds-pragmatic-play",
       "name": "3 Buzzing Wilds™",
