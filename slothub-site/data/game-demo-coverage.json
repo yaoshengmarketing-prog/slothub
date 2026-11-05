@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1341,
+  "gameCount": 1342,
   "providerCount": 371,
-  "sourcePageCount": 2412,
+  "sourcePageCount": 2415,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 351
+    "not-verified": 352
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "book-of-tut-megaways-pragmatic-play",
+      "name": "Book of Tut Megaways™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Book of Tut Megaways™; six reels with up to 117649 winning ways, random expanding symbol, and three or more Scatters award ten Free Spins with a persistent expanding symbol. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswaystut. Direct official Demo request returned HTTP 200 and title Book of Tut Megaways; playable reels were not observed. Exact official image URL is linked as page og:image; artwork visibly uses the longer John Hunter and the Book of Tut Megaways name, a same-game alias. Image/png SHA256 5DE776B7137C174F97042559004DF36DD33D707D32B7675E99F887EF9C5C0315. Same-provider title, alias, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/book-of-tut-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 335"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/09/Book-of-Tut-Megaways_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page og:image mapping, longer John Hunter alias visibly checked, SHA256 5DE776B7137C174F97042559004DF36DD33D707D32B7675E99F887EF9C5C0315"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaystut",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Book of Tut Megaways; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "fortunes-of-aztec-pragmatic-play",
       "name": "Fortunes of Aztec™",
