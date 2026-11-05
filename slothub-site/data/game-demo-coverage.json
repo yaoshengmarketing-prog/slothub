@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1307,
+  "gameCount": 1308,
   "providerCount": 371,
-  "sourcePageCount": 2310,
+  "sourcePageCount": 2313,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 317
+    "not-verified": 318
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "lokis-riches-pragmatic-play",
+      "name": "Loki’s Riches",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Loki’s Riches, 7x7 cluster-pays grid, cascading wins, randomly expanding symbol and four or more Scatters triggering Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20loksriches. Direct official Demo request returned HTTP 200 and title Loki's Riches; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 E217912EB918365D0505C9D275D3EA9B1AD3185A30B783D0AA45200F53D2E848. Same-provider name, official path and exact symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/lokis-riches/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 300"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Lokis-Riches_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 E217912EB918365D0505C9D275D3EA9B1AD3185A30B783D0AA45200F53D2E848"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20loksriches",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Loki's Riches; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "red-hot-luck-pragmatic-play",
       "name": "Red Hot Luck",

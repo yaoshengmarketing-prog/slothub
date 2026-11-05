@@ -1,0 +1,39 @@
+{
+  "batch": 783,
+  "recordedAt": "2026-11-05T04:38:14.616Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
+  "dedupScope": "All 1307 published Game Markdown records and same-provider exact official path/name/gameSymbol; Loki’s Riches /vs20loksriches absent.",
+  "records": [
+    {
+      "index": 300,
+      "name": "Loki’s Riches",
+      "slug": "lokis-riches-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/lokis-riches/",
+      "officialFacts": "Official exact page confirms a 7x7 cluster-pays grid, five or more adjacent matching symbols triggering wins and tumbles, randomly selected expanding symbols growing into 2x2 groups, four or more Scatters awarding ten Free Spins, and the special expanding symbol active on every bonus spin.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Lokis-Riches_339x180-1.png",
+        "localPath": "public/assets/games/lokis-riches-pragmatic-play.png",
+        "sha256": "E217912EB918365D0505C9D275D3EA9B1AD3185A30B783D0AA45200F53D2E848",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes were visually inspected after direct download; title and image URL match official catalog and page metadata."
+      },
+      "demo": "Direct official openGame.do with gameSymbol vs20loksriches returned HTTP 200 and HTML title Loki's Riches; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 301 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch783.log"
+  }
+}
