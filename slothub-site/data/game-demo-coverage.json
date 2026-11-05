@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1304,
+  "gameCount": 1305,
   "providerCount": 371,
-  "sourcePageCount": 2301,
+  "sourcePageCount": 2304,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 314
+    "not-verified": 315
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-alter-ego-pragmatic-play",
+      "name": "The Alter Ego",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Alter Ego, starting 3-4-4-4-3 grid, expanding Scatter reels and Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswaysalterego. Direct official Demo request returned HTTP 200 and exact title The Alter Ego; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 5D817F0B58C8EE5EDAA2B6E551B3926350EC5E5725EE0AD390CCDC2F730B4985. Same-provider name, official path and exact symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-alter-ego/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 297"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/The-Alter-Ego_339x180-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 5D817F0B58C8EE5EDAA2B6E551B3926350EC5E5725EE0AD390CCDC2F730B4985"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysalterego",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned exact HTML title The Alter Ego; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "big-bass-floats-my-boat-pragmatic-play",
       "name": "Big Bass Floats My Boat",

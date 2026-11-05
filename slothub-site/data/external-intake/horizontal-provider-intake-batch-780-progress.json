@@ -1,0 +1,39 @@
+{
+  "batch": 780,
+  "recordedAt": "2026-11-05T04:16:41.940Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
+  "dedupScope": "All 1304 published Game Markdown records and same-provider exact official path/name/gameSymbol; The Alter Ego /vswaysalterego absent.",
+  "records": [
+    {
+      "index": 297,
+      "name": "The Alter Ego",
+      "slug": "the-alter-ego-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/the-alter-ego/",
+      "officialFacts": "Official exact page confirms 3-4-4-4-3 starting grid with up to 576 ways, Scatter expansion up to 10 symbols per reel and 100000 ways, three Scatters triggering Free Spins, bonus Scatter retriggers, persistent expanded reels and Mystery modifiers.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/The-Alter-Ego_339x180-2.png",
+        "localPath": "public/assets/games/the-alter-ego-pragmatic-play.png",
+        "sha256": "5D817F0B58C8EE5EDAA2B6E551B3926350EC5E5725EE0AD390CCDC2F730B4985",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes were visually inspected after direct download; title and image URL match official catalog and page metadata."
+      },
+      "demo": "Direct official openGame.do with gameSymbol vswaysalterego returned HTTP 200 and exact HTML title The Alter Ego; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 298 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch780.log"
+  }
+}
