@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1308,
+  "gameCount": 1309,
   "providerCount": 371,
-  "sourcePageCount": 2313,
+  "sourcePageCount": 2316,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 318
+    "not-verified": 319
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "good-luck-good-fortune-pragmatic-play",
+      "name": "Good Luck & Good Fortune",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Good Luck & Good Fortune, 5x3 grid, ten paylines, Wild multipliers and three or more Scatters triggering Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs10luckfort. Direct official Demo request returned HTTP 200 and title Good Luck & Good Fortune; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 43FF681D71E19672A20021D73E12A64142A80204B76A9E51692946B33D61CBBB. Same-provider name, official path and exact symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/good-luck-good-fortune/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 301"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Good-Luck-Good-Fortune_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 43FF681D71E19672A20021D73E12A64142A80204B76A9E51692946B33D61CBBB"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10luckfort",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Good Luck & Good Fortune; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "lokis-riches-pragmatic-play",
       "name": "Loki’s Riches",
