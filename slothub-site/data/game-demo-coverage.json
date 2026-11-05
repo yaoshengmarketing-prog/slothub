@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1360,
+  "gameCount": 1361,
   "providerCount": 371,
-  "sourcePageCount": 2469,
+  "sourcePageCount": 2472,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 370
+    "not-verified": 371
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "heist-for-the-golden-nuggets-pragmatic-play",
+      "name": "Heist for the Golden Nuggets™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Heist for the Golden Nuggets™; 5x3 Wild West reels, Golden Nuggets may trigger instant cash prizes, and Free Spins designate a Most Wanted symbol paying on appearance while collecting nuggets automatically. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20hstgldngt. Direct official Demo request returned HTTP 200 and title Heist for the Golden Nuggets; playable reels were not observed. Exact official image URL is linked as page og:image and artwork title was visually checked. Image/png SHA256 81AB13833F759B519BEA76D95A816A8C014AE18D2B869B711813F6C50C3006DF. Same-provider exact title, official path and symbol absent. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/heist-for-the-golden-nuggets/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 354"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/06/Heist-for-the-Golden-Nuggets_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page og:image mapping, title visually checked, SHA256 81AB13833F759B519BEA76D95A816A8C014AE18D2B869B711813F6C50C3006DF"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20hstgldngt",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Heist for the Golden Nuggets™; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "wisdom-of-athena-pragmatic-play",
       "name": "Wisdom of Athena™",
