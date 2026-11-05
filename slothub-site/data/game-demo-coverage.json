@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1340,
+  "gameCount": 1341,
   "providerCount": 371,
-  "sourcePageCount": 2409,
+  "sourcePageCount": 2412,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 350
+    "not-verified": 351
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fortunes-of-aztec-pragmatic-play",
+      "name": "Fortunes of Aztec™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fortunes of Aztec™; 4x6 grid with tumbling wins, clearing a reel increases total-win multiplier, and three or more Scatters award Free Spins with persistent multipliers. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswaysstrlght. Direct official Demo request returned HTTP 200 and title Fortunes of Aztec; playable reels were not observed. Exact official image URL differs from page slug by an extra the but official catalog and page metadata map it to this game, returned image/png and visually matched title, SHA256 F6C3F5E83126ABEB8D7EFC6825A084BCBAB52FC4B2328CB8628BF2A79BF91F5F. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fortunes-of-aztec/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 334"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/09/Fortunes-of-the-Aztec_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked despite extra the in filename, SHA256 F6C3F5E83126ABEB8D7EFC6825A084BCBAB52FC4B2328CB8628BF2A79BF91F5F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysstrlght",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Fortunes of Aztec; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "8-golden-dragon-challenge-pragmatic-play",
       "name": "8 Golden Dragon Challenge™",

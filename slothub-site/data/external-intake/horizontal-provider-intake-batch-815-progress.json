@@ -1,10 +1,10 @@
 {
   "batch": 815,
   "recordedAt": "2026-11-05T08:45:53.117Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "8 Golden Dragon Challenge™",
       "slug": "8-golden-dragon-challenge-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/8-golden-dragon-challenge/",
       "officialFacts": "Official exact page confirms 3x5 grid with ten paylines. Three Scatters start a bonus with eight mini slots, and three adjacent dragons on a mini slot award a respin; a full dragon reel awards an envelope prize.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vs10gdchalleng returned HTTP 200 and HTML title 8 Golden Dragon Challenge; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 334 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 334 Fortunes of Aztec after item 333 8 Golden Dragon Challenge full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch815.log"
+  },
+  "publication": {
+    "commit": "09deb6b81663e07b57ad84dbe52ab4832ced4875",
+    "githubActionsRun": 41997290479,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "d4aa44d2-a7a0-4372-9adc-5b7fbbbce659",
+    "cloudflareUrl": "https://d4aa44d2.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
