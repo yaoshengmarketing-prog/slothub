@@ -1,10 +1,10 @@
 {
   "batch": 807,
   "recordedAt": "2026-11-05T07:40:40.137Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Infective Wild™",
       "slug": "infective-wild-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/infective-wild/",
       "officialFacts": "Official exact page confirms forty paylines. Wilds transform high-paying symbols into additional Wilds. At least three Scatters start Free Spins; eight mini reels can each add up to three spins, and Wilds remain through the round.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vs40infwild returned HTTP 200 and HTML title Infective Wild; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 326 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 326 Tundras Fortune after item 325 Infective Wild full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch807.log"
+  },
+  "publication": {
+    "commit": "7e026bf42f7d230e77a9dc9fb57a371577da5de3",
+    "githubActionsRun": 41989334972,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "f193848e-2b81-46e4-8236-490d1b93d979",
+    "cloudflareUrl": "https://f193848e.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

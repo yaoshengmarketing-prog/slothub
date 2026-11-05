@@ -1,0 +1,39 @@
+{
+  "batch": 808,
+  "recordedAt": "2026-11-05T07:50:28.636Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
+  "dedupScope": "All 1332 published Game Markdown records and same-provider exact official path/name/gameSymbol; Tundra’s Fortune™ /vswaysraghex absent.",
+  "records": [
+    {
+      "index": 326,
+      "name": "Tundra’s Fortune™",
+      "slug": "tundras-fortune-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/tundras-fortune/",
+      "officialFacts": "Official exact page confirms a 6x6 honeycomb-like grid with left-to-right wins. Wilds may appear on reels two onward; three or more Scatters start Free Spins with Wild multipliers of at least x2.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/09/Tundras-Fortune_339x180-1.png",
+        "localPath": "public/assets/games/tundras-fortune-pragmatic-play.png",
+        "sha256": "04657378B2B45F6D9723CAE7392CFB8EDF4BF01D0FF429EAB5B214826207F5E4",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes were visually inspected after direct download; title and image URL match official catalog and page metadata."
+      },
+      "demo": "Direct official openGame.do with gameSymbol vswaysraghex returned HTTP 200 and HTML title Tundra's Fortune; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 327 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch808.log"
+  }
+}

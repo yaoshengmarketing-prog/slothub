@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1332,
+  "gameCount": 1333,
   "providerCount": 371,
-  "sourcePageCount": 2385,
+  "sourcePageCount": 2388,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 342
+    "not-verified": 343
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "tundras-fortune-pragmatic-play",
+      "name": "Tundra’s Fortune™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Tundra’s Fortune™; 6x6 honeycomb-like grid, left-to-right wins, Wilds on reels two onward, and three or more Scatters start Free Spins with multiplying Wilds. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswaysraghex. Direct official Demo request returned HTTP 200 and title Tundra's Fortune; playable reels were not observed. Official image URL matched catalog and page metadata, returned image/png, and downloaded bytes were visually inspected, SHA256 04657378B2B45F6D9723CAE7392CFB8EDF4BF01D0FF429EAB5B214826207F5E4. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/tundras-fortune/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 326"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/09/Tundras-Fortune_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 04657378B2B45F6D9723CAE7392CFB8EDF4BF01D0FF429EAB5B214826207F5E4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysraghex",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Tundra's Fortune; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "infective-wild-pragmatic-play",
       "name": "Infective Wild™",
