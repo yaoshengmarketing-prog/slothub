@@ -1,0 +1,39 @@
+{
+  "batch": 791,
+  "recordedAt": "2026-11-05T05:29:30.347Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
+  "dedupScope": "All 1315 published Game Markdown records and same-provider exact official path/name/gameSymbol; Fire Stampede™ /vswaysstampede absent. Fire Stampede 2 and Fire Stampede Dollars & Dreams are distinct titles with different symbols and pages.",
+  "records": [
+    {
+      "index": 309,
+      "name": "Fire Stampede™",
+      "slug": "fire-stampede-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/fire-stampede/",
+      "officialFacts": "Official exact page confirms a 5x5 grid, special cash/reward positions on reel three and an extra sixth reel, Connect & Collect paths awarding prizes, three Jackpot types and three or more Scatters triggering Free Spins.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Fire-Stampede_339x180-1.png",
+        "localPath": "public/assets/games/fire-stampede-pragmatic-play.png",
+        "sha256": "1BAAFC2655B74763E2C9816FAA69656D7C7330F22CE0F0D71D7D022B8D21741F",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes were visually inspected after direct download; title and image URL match official catalog and page metadata."
+      },
+      "demo": "Direct official openGame.do with gameSymbol vswaysstampede returned HTTP 200 and HTML title Fire Stampede; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 310 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch791.log"
+  }
+}

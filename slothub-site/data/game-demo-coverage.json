@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1315,
+  "gameCount": 1316,
   "providerCount": 371,
-  "sourcePageCount": 2334,
+  "sourcePageCount": 2337,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 325
+    "not-verified": 326
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fire-stampede-pragmatic-play",
+      "name": "Fire Stampede™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fire Stampede™, 5x5 grid, Connect & Collect special positions, three Jackpot types and three or more Scatters triggering Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswaysstampede. Direct official Demo request returned HTTP 200 and title Fire Stampede; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 1BAAFC2655B74763E2C9816FAA69656D7C7330F22CE0F0D71D7D022B8D21741F. Exact name, official path and symbol absent from existing game records; Fire Stampede 2 and Fire Stampede Dollars & Dreams are distinct. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fire-stampede/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 309"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Fire-Stampede_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 1BAAFC2655B74763E2C9816FAA69656D7C7330F22CE0F0D71D7D022B8D21741F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysstampede",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Fire Stampede; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "juicy-fruits-multihold-pragmatic-play",
       "name": "Juicy Fruits Multihold™",

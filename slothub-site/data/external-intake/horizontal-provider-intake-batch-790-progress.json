@@ -1,10 +1,10 @@
 {
   "batch": 790,
   "recordedAt": "2026-11-05T05:22:13.641Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Juicy Fruits Multihold™",
       "slug": "juicy-fruits-multihold-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/juicy-fruits-multihold/",
       "officialFacts": "Official exact page confirms a 5x5 grid with twenty paylines, double or triple multiplier Wilds, three or more Scatters awarding six Free Spins, four unlockable gameboards and blue Scatters upgrading Wild size.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vs50jfmulthold returned HTTP 200 and HTML title Juicy Fruits Multihold; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 309 after current one-game CI, Cloudflare and immutable readback; catalog item 307 already published-existing.",
+  "nextCursor": "Catalog item 309 Fire Stampede after item 308 Juicy Fruits Multihold full publication closure; item 307 published-existing skipped.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch790.log"
+  },
+  "publication": {
+    "commit": "7c7ae5849b37bf38d1f2391874a3f26a87f1d87f",
+    "githubActionsRun": 41973821489,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "7bf8abdf-e85d-4493-a23e-fa5dfe0403d5",
+    "cloudflareUrl": "https://7bf8abdf.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
