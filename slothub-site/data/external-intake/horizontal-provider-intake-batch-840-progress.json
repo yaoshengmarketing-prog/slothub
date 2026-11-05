@@ -1,0 +1,39 @@
+{
+  "batch": 840,
+  "recordedAt": "2026-11-05T18:49:03.185Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser unavailable. Exact official page, image and Demo title independently checked by direct HTTP; official artwork visually inspected. Paid browser not used. Demo playable reels not observed.",
+  "dedupScope": "All 1364 published Game Markdown records and same-provider exact official path/name/gameSymbol; Floating Dragon – Dragon Boat Festival™ /vs10fdrasbf absent.",
+  "records": [
+    {
+      "index": 358,
+      "name": "Floating Dragon – Dragon Boat Festival™",
+      "slug": "floating-dragon-dragon-boat-festival-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/floating-dragon-dragon-boat-festival/",
+      "officialFacts": "Official page confirms 10 paylines, Hold & Spin with coin-reset lives and diamonds, Free Spins with increasing multipliers and extra spins, and RTP 96.07%. This is distinct from other Floating Dragon variants by exact page and gameSymbol.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/05/Floating-Dragon-Boat_339x180.png",
+        "localPath": "public/assets/games/floating-dragon-dragon-boat-festival-pragmatic-play.png",
+        "sha256": "348B9CB22157A74962A36DA37A34FAB91B5A3B43B58E33E0FDCC52929D9C19D8",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Direct official openGame.do with gameSymbol vs10fdrasbf returned HTTP 200 and matching HTML title; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 359 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch840.log"
+  }
+}

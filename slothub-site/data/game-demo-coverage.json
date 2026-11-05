@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1364,
+  "gameCount": 1365,
   "providerCount": 371,
-  "sourcePageCount": 2481,
+  "sourcePageCount": 2484,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 374
+    "not-verified": 375
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "floating-dragon-dragon-boat-festival-pragmatic-play",
+      "name": "Floating Dragon – Dragon Boat Festival™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Floating Dragon – Dragon Boat Festival™; Official page confirms 10 paylines, Hold & Spin with coin-reset lives and diamonds, Free Spins with increasing multipliers and extra spins, and RTP 96.07%. This is distinct from other Floating Dragon variants by exact page and gameSymbol. Codex in-app browser unavailable; official HTML read directly, including gameSymbol vs10fdrasbf. Direct official Demo returned HTTP 200 and matching HTML title; playable reels were not observed. Exact official image URL maps through page og:image; image/png SHA256 348B9CB22157A74962A36DA37A34FAB91B5A3B43B58E33E0FDCC52929D9C19D8, artwork title visually checked. Same-provider exact title, official path and symbol absent. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/floating-dragon-dragon-boat-festival/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 358"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/05/Floating-Dragon-Boat_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 348B9CB22157A74962A36DA37A34FAB91B5A3B43B58E33E0FDCC52929D9C19D8"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10fdrasbf",
+          "httpStatus": 200,
+          "notes": "Direct official Demo matching HTML title; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "country-farming-pragmatic-play",
       "name": "Country Farming™",

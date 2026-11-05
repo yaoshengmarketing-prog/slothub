@@ -1,10 +1,10 @@
 {
   "batch": 839,
   "recordedAt": "2026-11-05T18:42:36.022Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser unavailable. Exact official page, image and Demo title independently checked by direct HTTP; official artwork visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Country Farming™",
       "slug": "country-farming-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/country-farming/",
       "officialFacts": "Official page confirms 5x3 reels, three or more Scatters unlocking Free Spins, at least one Mystery symbol in the bonus, five or more Jackpot Wilds offering a jackpot chance, and RTP 96.07%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vs20mysteryst returned HTTP 200 and matching HTML title; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 358 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 358 Floating Dragon – Dragon Boat Festival™ after item 357 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch839.log"
+  },
+  "publication": {
+    "commit": "967c64723ca1b8553618641a6bf97508573c6454",
+    "githubActionsRun": 42087292584,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "152c27af-1953-4a26-9977-9d022841f449",
+    "cloudflareUrl": "https://152c27af.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
