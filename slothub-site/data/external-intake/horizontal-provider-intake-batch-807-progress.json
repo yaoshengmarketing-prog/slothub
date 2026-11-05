@@ -1,0 +1,39 @@
+{
+  "batch": 807,
+  "recordedAt": "2026-11-05T07:40:40.137Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
+  "dedupScope": "All 1331 published Game Markdown records and same-provider exact official path/name/gameSymbol; Infective Wild™ /vs40infwild absent.",
+  "records": [
+    {
+      "index": 325,
+      "name": "Infective Wild™",
+      "slug": "infective-wild-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/infective-wild/",
+      "officialFacts": "Official exact page confirms forty paylines. Wilds transform high-paying symbols into additional Wilds. At least three Scatters start Free Spins; eight mini reels can each add up to three spins, and Wilds remain through the round.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/09/Infective-Wild™_339x180.png",
+        "localPath": "public/assets/games/infective-wild-pragmatic-play.png",
+        "sha256": "75EB2BFCE9AB960982D001286EE6921AF52417983A67807A548A2502B5A8D46C",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes were visually inspected after direct download; title and image URL match official catalog and page metadata."
+      },
+      "demo": "Direct official openGame.do with gameSymbol vs40infwild returned HTTP 200 and HTML title Infective Wild; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 326 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch807.log"
+  }
+}

@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1331,
+  "gameCount": 1332,
   "providerCount": 371,
-  "sourcePageCount": 2382,
+  "sourcePageCount": 2385,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 341
+    "not-verified": 342
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "infective-wild-pragmatic-play",
+      "name": "Infective Wild™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Infective Wild™; forty paylines, Wilds transform high-paying symbols into additional Wilds, and three or more Scatters start Free Spins where Wilds remain for the round. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs40infwild. Direct official Demo request returned HTTP 200 and title Infective Wild; playable reels were not observed. Exact catalog official artwork URL containing a trademark character returned image/png through percent-encoded request, was visually inspected from downloaded bytes, SHA256 75EB2BFCE9AB960982D001286EE6921AF52417983A67807A548A2502B5A8D46C. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/infective-wild/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 325"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/09/Infective-Wild™_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork retrieved with percent-encoded trademark URL, catalog and official page mapping, downloaded bytes visually checked, SHA256 75EB2BFCE9AB960982D001286EE6921AF52417983A67807A548A2502B5A8D46C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40infwild",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Infective Wild; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "big-bass-halloween-pragmatic-play",
       "name": "Big Bass Halloween™",
