@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1362,
+  "gameCount": 1363,
   "providerCount": 371,
-  "sourcePageCount": 2475,
+  "sourcePageCount": 2478,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 372
+    "not-verified": 373
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fat-panda-pragmatic-play",
+      "name": "Fat Panda™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fat Panda™; Official page confirms 5x3 reels, three or more Scatters triggering Free Spins, a top reel awarding expanding Wilds and bonus sticky Wilds, and RTP 96.07%. Codex in-app browser unavailable; official HTML read directly, including gameSymbol vs20beefed. Direct official Demo returned HTTP 200 and matching HTML title; playable reels were not observed. Exact official image URL maps through page og:image; image/png SHA256 8A12EE50688BD35E5C8F235B5AE54316CB22D3FA71074091AFB3BC36255EB547, artwork title visually checked. Same-provider exact title, official path and symbol absent. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fat-panda/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 356"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/06/Fat_Panda_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 8A12EE50688BD35E5C8F235B5AE54316CB22D3FA71074091AFB3BC36255EB547"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20beefed",
+          "httpStatus": 200,
+          "notes": "Direct official Demo matching HTML title; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "big-bass-amazon-xtreme-pragmatic-play",
       "name": "Big Bass Amazon Xtreme™",

@@ -1,10 +1,10 @@
 {
   "batch": 837,
   "recordedAt": "2026-11-05T18:29:53.185Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser unavailable. Exact official page, image and Demo title independently checked by direct HTTP; official artwork visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Big Bass Amazon Xtreme™",
       "slug": "big-bass-amazon-xtreme-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-amazon-xtreme/",
       "officialFacts": "Official exact page confirms 10 paylines, six player-selected mechanics before Free Spins, fishermen unlocking an increasing multiplier, and RTP 96.07%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vs10bbextreme returned HTTP 200 and exact HTML title; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 356 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 356 Fat Panda™ after item 355 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch837.log"
+  },
+  "publication": {
+    "commit": "e10cd000d5b537e443d0013e70928c736468c4f4",
+    "githubActionsRun": 42085194850,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "a1714ae0-0bc2-4569-aaa4-856825650ab3",
+    "cloudflareUrl": "https://a1714ae0.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

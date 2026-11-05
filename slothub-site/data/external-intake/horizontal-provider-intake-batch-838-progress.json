@@ -1,0 +1,39 @@
+{
+  "batch": 838,
+  "recordedAt": "2026-11-05T18:36:53.493Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser unavailable. Exact official page, image and Demo title independently checked by direct HTTP; official artwork visually inspected. Paid browser not used. Demo playable reels not observed.",
+  "dedupScope": "All 1362 published Game Markdown records and same-provider exact official path/name/gameSymbol; Fat Panda™ /vs20beefed absent.",
+  "records": [
+    {
+      "index": 356,
+      "name": "Fat Panda™",
+      "slug": "fat-panda-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/fat-panda/",
+      "officialFacts": "Official page confirms 5x3 reels, three or more Scatters triggering Free Spins, a top reel awarding expanding Wilds and bonus sticky Wilds, and RTP 96.07%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/06/Fat_Panda_339x180.png",
+        "localPath": "public/assets/games/fat-panda-pragmatic-play.png",
+        "sha256": "8A12EE50688BD35E5C8F235B5AE54316CB22D3FA71074091AFB3BC36255EB547",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Direct official openGame.do with gameSymbol vs20beefed returned HTTP 200 and matching HTML title; playable reels not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 357 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch838.log"
+  }
+}
