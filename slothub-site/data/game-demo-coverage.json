@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1345,
+  "gameCount": 1346,
   "providerCount": 371,
-  "sourcePageCount": 2424,
+  "sourcePageCount": 2427,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 355
+    "not-verified": 356
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-hold-spinner-megaways-pragmatic-play",
+      "name": "Big Bass Hold & Spinner Megaways™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Big Bass Hold & Spinner Megaways™; six variable-height reels with up to 147456 ways, cascading wins and mystery symbols, unlimited Free Spins retriggers, and Hold and Spin with three resetting spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswaysbbhas. Direct official Demo request returned HTTP 200 and title Big Bass Hold & Spinner Megaways; playable reels were not observed. Exact official image URL is linked as page og:image; artwork was visually checked and matches the title. Image/png SHA256 46D120F24293F06FBEA2B2C4BBB6B141497ADA05F32B04C18BA206A2DBDBD5E2. Same-provider exact name, official path and symbol absent; other Big Bass franchise titles are distinct. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-hold-spinner-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 339"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/08/6Tn7u0er.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page og:image mapping, title visually checked, SHA256 46D120F24293F06FBEA2B2C4BBB6B141497ADA05F32B04C18BA206A2DBDBD5E2"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysbbhas",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Big Bass Hold & Spinner Megaways; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "candy-blitz-pragmatic-play",
       "name": "Candy Blitz™",
