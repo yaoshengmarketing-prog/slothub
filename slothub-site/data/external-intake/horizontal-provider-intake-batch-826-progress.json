@@ -1,10 +1,10 @@
 {
   "batch": 826,
   "recordedAt": "2026-11-05T10:05:38.899Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Rocket Blast Megaways",
       "slug": "rocket-blast-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/rocket-blast-megaways/",
       "officialFacts": "Official exact page confirms six variable-height reels with tumbles, rockets converting symbols into Wilds that nudge downward and add more Wilds, and four or more Scatters triggering Free Spins.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vswaysrockblst returned HTTP 200 and HTML title Rocket Blast Megaways; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 345 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 345 Diamond Cascade after item 344 Rocket Blast Megaways full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch826.log"
+  },
+  "publication": {
+    "commit": "6283906395161d235ee5a90920fdb029d180101b",
+    "githubActionsRun": 42008074358,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "cd58fa79-e8b9-4c68-b9f9-016ed4683ef4",
+    "cloudflareUrl": "https://cd58fa79.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

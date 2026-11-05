@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1351,
+  "gameCount": 1352,
   "providerCount": 371,
-  "sourcePageCount": 2442,
+  "sourcePageCount": 2445,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 361
+    "not-verified": 362
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "diamond-cascade-pragmatic-play",
+      "name": "Diamond Cascade™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Diamond Cascade™; clusters of five or more jewels with the same background colour tumble, every twenty collected symbols add x1 multiplier, and three or more diamond Scatters trigger Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs50dmdcascade. Direct official Demo request returned HTTP 200 and title Diamond Cascade; playable reels were not observed. Exact official image URL is linked as page og:image; 300x159 artwork was visually checked and matches the title. Image/png SHA256 C3F5D1D8D2E776582E97A6C5FF89D87D98367A0DE4B7DBBB5B62505E774FF802. Same-provider exact name, official path and symbol absent. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/diamond-cascade/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 345"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/07/Diamond-Cascade_339x180-300x159-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page og:image mapping, title visually checked, SHA256 C3F5D1D8D2E776582E97A6C5FF89D87D98367A0DE4B7DBBB5B62505E774FF802"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50dmdcascade",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Diamond Cascade™; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "rocket-blast-megaways-pragmatic-play",
       "name": "Rocket Blast Megaways",
