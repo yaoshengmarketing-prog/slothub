@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1319,
+  "gameCount": 1320,
   "providerCount": 371,
-  "sourcePageCount": 2346,
+  "sourcePageCount": 2349,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 329
+    "not-verified": 330
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sugar-rush-xmas-pragmatic-play",
+      "name": "Sugar Rush Xmas™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Sugar Rush Xmas™, 7x7 cluster-pays grid, cascades, marked position multipliers up to 128x and Free Spins with persistent marked spots. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20sugrux. Direct official Demo request returned HTTP 200 and title Sugar Rush Xmas; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 D5D252BDCD9BA4E51FB25F3FEA9C91C3550189F514533800B2920A078AD6F682. Same-provider exact name, official path and symbol absent from existing game records; related Sugar Rush titles have distinct paths and symbols. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sugar-rush-xmas/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 313"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Sugar-Rush-Xmas_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 D5D252BDCD9BA4E51FB25F3FEA9C91C3550189F514533800B2920A078AD6F682"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20sugrux",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Sugar Rush Xmas; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "ding-dong-christmas-bells-pragmatic-play",
       "name": "Ding Dong Christmas Bells™",
