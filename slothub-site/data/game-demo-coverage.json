@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1361,
+  "gameCount": 1362,
   "providerCount": 371,
-  "sourcePageCount": 2472,
+  "sourcePageCount": 2475,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 371
+    "not-verified": 372
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-amazon-xtreme-pragmatic-play",
+      "name": "Big Bass Amazon Xtreme™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Big Bass Amazon Xtreme™; official page describes 10 paylines, six player-selected Free Spins mechanics and collecting fishermen for increasing multiplier, with RTP 96.07%. Codex in-app browser unavailable; same official HTML was read directly, including embedded gameSymbol vs10bbextreme. Direct official Demo returned HTTP 200 and exact title, but playable reels were not observed. Exact official image URL is page og:image; image/png SHA256 333BA99869E52BE497DE3334D0F3E8E27592ABF94D852BC9A7C64CE97C04E1A7 and artwork title visually checked. Same-provider exact title, official path and symbol absent. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-amazon-xtreme/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay, RTP and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 355"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/06/BBAEx_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page og:image mapping, title visually checked, SHA256 333BA99869E52BE497DE3334D0F3E8E27592ABF94D852BC9A7C64CE97C04E1A7"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbextreme",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Big Bass Amazon Xtreme; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "heist-for-the-golden-nuggets-pragmatic-play",
       "name": "Heist for the Golden Nuggets™",
