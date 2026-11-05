@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1292,
+  "gameCount": 1303,
   "providerCount": 371,
-  "sourcePageCount": 2265,
+  "sourcePageCount": 2298,
   "counts": {
     "access-restricted": 4,
-    "available": 985,
-    "not-verified": 303
+    "available": 986,
+    "not-verified": 313
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,350 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "pompeii-megareels-megaways-pragmatic-play",
+      "name": "Pompeii Megareels Megaways™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Official exact page HTTP 200 and paid read-only browser confirm Pompeii Megareels Megaways title, six changing reels, Wilds on reels two to six, left-to-right adjacent wins, tumbles, four Scatters for fifteen Free Spins and bonus multipliers. Official iframe identifies gameSymbol vswaysmegareel; matching Demo title omits only the trademark symbol. Official title art visually checked, SHA256 A5BC4544A58CD0A1AD8B657F4E9663DA5D0F60CCFA9A94D157C9C31DB8F7821D. Demo stayed on Loading Features without playable reels; status remains not-verified. Same-provider name, official path and symbol absent from existing Game Markdown.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/pompeii-megareels-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and matching iframe gameSymbol"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 295"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Pompeii-Megareels-Megaways_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked, SHA256 A5BC4544A58CD0A1AD8B657F4E9663DA5D0F60CCFA9A94D157C9C31DB8F7821D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysmegareel",
+          "httpStatus": 200,
+          "notes": "Paid read-only browser resolved matching title without trademark symbol but only Loading Features, no playable reels"
+        }
+      ]
+    },
+    {
+      "slug": "strawberry-cocktail-pragmatic-play",
+      "name": "Strawberry Cocktail",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Official exact page HTTP 200 and paid read-only browser confirm Strawberry Cocktail title, ten paylines, Wild substitution, three Scatters for a bonus, two mini-games and up to x10 matching-symbol multiplier. Official iframe and matching Demo title identify gameSymbol vs10strawberry. Official title art visually checked, SHA256 F79530571B5AFF4A53408F8ECE1E6696CFBA4A1E4F36A58390C98F8075D45846. Demo stayed on Loading Features without playable reels; status remains not-verified. Same-provider name, official path and symbol absent from existing Game Markdown.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/strawberry-cocktail/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and matching iframe gameSymbol"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 294"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/02/Strawberry-Cocktail_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked, SHA256 F79530571B5AFF4A53408F8ECE1E6696CFBA4A1E4F36A58390C98F8075D45846"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10strawberry",
+          "httpStatus": 200,
+          "notes": "Paid read-only browser resolved matching title but only Loading Features, no playable reels"
+        }
+      ]
+    },
+    {
+      "slug": "mighty-munching-melons-pragmatic-play",
+      "name": "Mighty Munching Melons",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Official exact page HTTP 200 and paid read-only browser confirm Mighty Munching Melons title, 5x3 reels, ten paylines, watermelon Scatters, four resetting respins and instant-win coins. Official iframe and matching Demo title identify gameSymbol vs20mmmelon. Official title art visually checked, SHA256 CC5655F0B748F06D0C47A0D64CD459CC290844152A66C2BF8852346DF6B68C5D. Demo stayed on Loading Features without playable reels; status remains not-verified. Same-provider name, official path and symbol absent from existing Game Markdown.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/mighty-munching-melons/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and matching iframe gameSymbol"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 293"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/02/Mighty_Munching_Melons_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked, SHA256 CC5655F0B748F06D0C47A0D64CD459CC290844152A66C2BF8852346DF6B68C5D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20mmmelon",
+          "httpStatus": 200,
+          "notes": "Paid read-only browser resolved matching title but only Loading Features, no playable reels"
+        }
+      ]
+    },
+    {
+      "slug": "wheel-ogold-pragmatic-play",
+      "name": "Wheel O’Gold",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Official exact page HTTP 200, paid read-only browser and Chrome auxiliary confirm Wheel O’Gold title, 6x5 cluster grid, tumble and wheel multipliers, and Free Spins; official iframe identifies gameSymbol vs20multiup. Official artwork visually checked in both browsers, SHA256 6E03E2B1269EE669A5A749F5B97C32510D14D8DF88E278C6C6ABB6BF0AAFF0E4. Paid browser Demo resolved to matching title but remained on Loading Features with no playable reels. Chrome displayed an age assertion and did not submit it. Same-provider name, official path and symbol absent from existing Game Markdown.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wheel-ogold/",
+          "httpStatus": 200,
+          "notes": "Exact official page title, gameplay and matching iframe gameSymbol"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 292"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/01/Wheel-OGold_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked, SHA256 6E03E2B1269EE669A5A749F5B97C32510D14D8DF88E278C6C6ABB6BF0AAFF0E4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20multiup",
+          "httpStatus": 200,
+          "notes": "Paid read-only browser opened matching title; remained on Loading Features, no playable reels"
+        }
+      ]
+    },
+    {
+      "slug": "gears-of-horus-pragmatic-play",
+      "name": "Gears of Horus",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page confirms Gears of Horus, 6x6 expanding up to 8x8 after consecutive cluster tumbles, Wilds, Free Spins and bonus multipliers. Official page iframe in Codex in-app browser opened matching Gears of Horus html5Game.do title with exact gameSymbol vs20clustext; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 49512B417FD234EF648169454E5D1FEB3B4E8CDC13CC6019369A7357DBB626B1. Same-provider name, official path and exact symbol absent from existing game records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gears-of-horus/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded matching gameSymbol in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 291"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/02/Gears-of-Horus_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 49512B417FD234EF648169454E5D1FEB3B4E8CDC13CC6019369A7357DBB626B1"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20clustext",
+          "httpStatus": 200,
+          "notes": "Official embedded Demo redirected to matching html5Game.do title in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "big-bass-day-at-the-races-pragmatic-play",
+      "name": "Big Bass Day at the Races",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page confirms Big Bass Day at the Races, 5x3 reels with 10 paylines, three Scatter Free Spins with possible two-Scatter third-symbol feature, horse selection and Fisherman retriggers. Official page iframe in Codex in-app browser opened matching Big Bass Day at the Races html5Game.do title with exact gameSymbol vs10bbbnz; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 DFCC30CD52813E69618FE632806484FEAA69008CEF92CD4041341AAFA4307E2F. Same-provider name, official path and exact symbol absent from existing game records, distinct from vs10bbbnz1000.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-day-at-the-races/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded matching gameSymbol in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 290"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/02/Big-Bass-Day-at-The-Races_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 DFCC30CD52813E69618FE632806484FEAA69008CEF92CD4041341AAFA4307E2F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbbnz",
+          "httpStatus": 200,
+          "notes": "Official embedded Demo redirected to matching html5Game.do title in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "beware-the-deep-megaways-pragmatic-play",
+      "name": "Beware The Deep Megaways™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page confirms Beware The Deep Megaways™, six changing-height reels with up to 117649 ways, cascades, Wild shark and two Scatter bonus modes. Official page iframe in Codex in-app browser opened matching Beware The Deep Megaways html5Game.do title with exact gameSymbol vswaysbewaretd; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 5ED62544C77783972C85FF001CA2DAA2BED778473CBA96771BA0D5BA199E1FEF. Same-provider name, official path and symbol absent from existing game records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/beware-the-deep-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded matching gameSymbol in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 289"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/02/Beware-The-Deep-Megaways_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 5ED62544C77783972C85FF001CA2DAA2BED778473CBA96771BA0D5BA199E1FEF"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysbewaretd",
+          "httpStatus": 200,
+          "notes": "Official embedded Demo redirected to matching html5Game.do title in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "pot-of-fortune-pragmatic-play",
+      "name": "Pot of Fortune",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page confirms Pot of Fortune, a 5x4 slot with Wild Pot instant prizes and a six combined Wild/Scatter Pot symbols Free Spins trigger. Official page was checked in Codex in-app browser; iframe programmatic read timed out there, so exact gameSymbol vs20stckwldsc was read from the same official page by auxiliary HTTP. Direct official Demo redirected to matching Pot of Fortune html5Game.do title and visibly loaded five reels in Codex in-app browser; no spin was initiated. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 03A111D9444621DFA7CDD83CBDFFD37C588F1FDC0B0ABEACE37A95CD128A46A7. Same-provider name, official path and symbol absent from existing game records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/pot-of-fortune/",
+          "httpStatus": 200,
+          "notes": "Exact official title and gameplay in Codex in-app browser; iframe symbol from auxiliary official-page HTTP after IAB CDP timeout"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 288"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/03/Pot-of-Fortune_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 03A111D9444621DFA7CDD83CBDFFD37C588F1FDC0B0ABEACE37A95CD128A46A7"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20stckwldsc",
+          "httpStatus": 200,
+          "notes": "Direct official Demo redirected to matching Pot of Fortune html5Game.do and visibly loaded reels in Codex in-app browser; no spin initiated"
+        }
+      ],
+      "url": "https://www.pragmaticplay.com/en/games/pot-of-fortune/",
+      "accessType": "official-game-page",
+      "presentation": "external"
+    },
+    {
+      "slug": "sugar-rush-1000-pragmatic-play",
+      "name": "Sugar Rush 1000",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page confirms Sugar Rush 1000, a 7x7 cluster pays slot with tumble and marked-position multipliers from x2 to x1024 plus Scatter Free Spins. Official page iframe exposes exact gameSymbol vs20sugarrushx in Codex in-app browser; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 584FDF799C18C33CBEE5B359E550535F7729E53DAC568851C6DF33834FDB503D. Same-provider name, official path and symbol absent from existing game records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sugar-rush-1000/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 287"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/03/Sugar-Rush-1000_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 584FDF799C18C33CBEE5B359E550535F7729E53DAC568851C6DF33834FDB503D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20sugarrushx",
+          "httpStatus": 200,
+          "notes": "Official embedded Demo iframe showed exact gameSymbol in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "fire-portals-pragmatic-play",
+      "name": "Fire Portals",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page confirms Fire Portals, a 7x7 cluster-pays slot with tumble, Fire Portal Wild multipliers and Scatter Free Spins. Official page iframe exposes exact gameSymbol vs20portals in Codex in-app browser; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 948D2A5E41E7290C3F715853C58A1CC56EAF9C0B5E10C6D54FD1560510453A78. Same-provider name, official path and symbol absent from existing game records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fire-portals/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 286"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/03/Fire-Portals_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 948D2A5E41E7290C3F715853C58A1CC56EAF9C0B5E10C6D54FD1560510453A78"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20portals",
+          "httpStatus": 200,
+          "notes": "Exact official embedded Demo iframe shows gameSymbol ${symbol} in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
+    {
+      "slug": "big-burger-load-it-up-with-xtra-cheese-pragmatic-play",
+      "name": "Big Burger Load it up with Xtra cheese",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-04",
+      "evidence": "Official Pragmatic Play exact page confirms Big Burger Load it up with Xtra cheese, a 5x3 diner-themed slot with Hot Dog instant awards, Scatter Free Spins, expanding bonus grid and special Wild/Pop/Ketchup/Mustard symbols. Official page iframe redirects to html5Game.do with exact gameSymbol vs10bburger and matching title in Codex in-app browser; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 232B3130C9658D16D63CF74B25397E9FA19AA148F71665A14CC9753B982C80CC. Same-provider name, official path and symbol absent from existing game records.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-burger-load-it-up-with-xtra-cheese/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 285"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2024/03/Big-Burger-Load-It-Up-With-Xtra-Cheese_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 232B3130C9658D16D63CF74B25397E9FA19AA148F71665A14CC9753B982C80CC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bburger",
+          "httpStatus": 200,
+          "notes": "Exact official embedded Demo redirected to html5Game.do with matching title in Codex in-app browser; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "the-dog-house-dog-or-alive-pragmatic-play",
       "name": "The Dog House – Dog or Alive",

@@ -1,10 +1,10 @@
 {
   "batch": 767,
   "recordedAt": "2026-11-04T07:33:34.999Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "dedupScope": "All 1291 published Game Markdown records and same-provider exact official path/name/gameSymbol; The Dog House – Dog or Alive /vs20doghouse2 absent.",
@@ -14,7 +14,7 @@
       "name": "The Dog House – Dog or Alive",
       "slug": "the-dog-house-dog-or-alive-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/the-dog-house-dog-or-alive/",
       "officialFacts": "Official exact page confirms 5x3 reels, three adjacent matching symbols forming wins, badge Wild multipliers of 2x or 3x, three safe Bonus symbols triggering Free Spins, and sticky Wilds during the bonus.",
       "image": {
@@ -28,11 +28,20 @@
       "demo": "Official exact page iframe gameSymbol vs20doghouse2 redirected to matching The Dog House – Dog or Alive html5Game.do title in Codex in-app browser; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 285 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 285 Big Burger Load it up with Xtra cheese validated and queued for individual publication closure.",
   "validation": {
     "result": "pass",
     "command": "node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch767.log"
+  },
+  "publication": {
+    "commit": "8f071a046a7bbb3a2211c1e99d3a583a01bcce3e",
+    "githubActionsRun": 41793693237,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "a43d004f-9833-4d71-a0bb-be9fb25c19c5",
+    "cloudflareUrl": "https://a43d004f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
