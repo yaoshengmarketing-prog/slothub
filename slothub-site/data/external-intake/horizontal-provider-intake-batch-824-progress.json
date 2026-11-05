@@ -1,10 +1,10 @@
 {
   "batch": 824,
   "recordedAt": "2026-11-05T09:52:17.384Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser kernel could not write its assets; reset and retry failed. Exact official page, image and Demo title were independently checked by direct HTTP; downloaded official image visually inspected. Paid browser not used. Demo playable reels not observed.",
@@ -15,7 +15,7 @@
       "name": "Pub Kings™",
       "slug": "pub-kings-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/pub-kings/",
       "officialFacts": "Official exact page confirms 5x4 grid with twenty paylines, Scatters on reels one three and five, two Scatters randomly awarding up to x5000, and collected high-paying symbols paying at the end of Free Spins.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Direct official openGame.do with gameSymbol vs20lvlup returned HTTP 200 and HTML title Pub Kings; playable reels not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 343 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 343 Piggy Bankers after item 342 Pub Kings full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch824.log"
+  },
+  "publication": {
+    "commit": "9eed97c722a4de83cb4e71fc24e6598de1d4aa7e",
+    "githubActionsRun": 42006246877,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "3c2f9cba-c893-444a-ab85-b637813f26bf",
+    "cloudflareUrl": "https://3c2f9cba.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

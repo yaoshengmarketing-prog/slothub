@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1349,
+  "gameCount": 1350,
   "providerCount": 371,
-  "sourcePageCount": 2436,
+  "sourcePageCount": 2439,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 359
+    "not-verified": 360
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "piggy-bankers-pragmatic-play",
+      "name": "Piggy Bankers™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Piggy Bankers™; 5x4 grid with Banker Wilds and top banknote reel, a full stacked Wild column can award up to x100 and trigger a Wild respin, while a bonus banknote or two stacked Wilds can trigger Free Spins. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20piggybank. Direct official Demo request returned HTTP 200 and title Piggy Bankers; playable reels were not observed. Exact official image URL is linked as page og:image; artwork was visually checked and matches the title. Image/png SHA256 E1E2D01AE352FA6FAB240E6357D862C97B9F9CACDBFC760B0312F2637DE33CA5. Same-provider exact name, official path and symbol absent. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/piggy-bankers/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 343"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/07/Piggy-Bankers_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page og:image mapping, title visually checked, SHA256 E1E2D01AE352FA6FAB240E6357D862C97B9F9CACDBFC760B0312F2637DE33CA5"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20piggybank",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Piggy Bankers; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "pub-kings-pragmatic-play",
       "name": "Pub Kings™",
