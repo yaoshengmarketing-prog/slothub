@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1324,
+  "gameCount": 1325,
   "providerCount": 371,
-  "sourcePageCount": 2361,
+  "sourcePageCount": 2364,
   "counts": {
     "access-restricted": 4,
     "available": 986,
-    "not-verified": 334
+    "not-verified": 335
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "chase-for-glory-pragmatic-play",
+      "name": "Chase for Glory™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-05",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Chase for Glory™; three or more Scatters trigger a Free Spins round with four gladiators offering different counts and Wild multipliers. Coin collection and Reset symbols are described on the page. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vswayscfglory. Direct official Demo request returned HTTP 200 and title Chase For Glory; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 22CD1C77B4E4A4247F40C4AEB24FC48D3B25D5948D2C16E1549F8C1458211059. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/chase-for-glory/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol in direct official HTML after Codex in-app browser environment failure"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 318"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/10/Chase-for-Glory_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png artwork, catalog and official page mapping, downloaded bytes visually checked, SHA256 22CD1C77B4E4A4247F40C4AEB24FC48D3B25D5948D2C16E1549F8C1458211059"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayscfglory",
+          "httpStatus": 200,
+          "notes": "Direct official Demo returned HTML title Chase For Glory; playable reels not observed"
+        }
+      ]
+    },
     {
       "slug": "nile-fortune-pragmatic-play",
       "name": "Nile Fortune™",
