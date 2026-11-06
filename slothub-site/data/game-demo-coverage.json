@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1367,
+  "gameCount": 1368,
   "providerCount": 371,
-  "sourcePageCount": 2490,
+  "sourcePageCount": 2493,
   "counts": {
     "access-restricted": 4,
-    "available": 988,
+    "available": 989,
     "not-verified": 375
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "zeus-vs-hades-gods-of-war-pragmatic-play",
+      "name": "Zeus vs Hades – Gods of War™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs15godsofwar",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Zeus vs Hades – Gods of War™; Official page confirms Olympus and Hades volatility choices, up to 15000x maximum win, Expanding Wild multipliers up to 100x, three Scatters triggering ten Free Spins with sticky expanding Wilds, and RTP 96.07%. Exact page and symbol differ from the existing 250 edition. Codex in-app browser showed the exact official page title, game choices and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vs15godsofwar. Codex in-app browser opened the exact official openGame.do URL and observed the Zeus vs Hades Gods of War mode-selection screen with virtual balance and stake controls, without selecting a mode, spinning or betting; direct HTTP returned 200 and matching HTML title. Exact official image URL maps through page og:image; image/png SHA256 208773B0C0C7D7FFA7FFCA8774B71693ED55CFE00B0181CF3444D148807C0728, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/zeus-vs-hades-gods-of-war/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 361"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/05/Zeus-vs-Hades-Gods-of-war_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 208773B0C0C7D7FFA7FFCA8774B71693ED55CFE00B0181CF3444D148807C0728"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs15godsofwar",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the exact official openGame.do URL and observed the Zeus vs Hades Gods of War mode-selection screen with virtual balance and stake controls, without selecting a mode, spinning or betting; direct HTTP returned 200 and matching HTML title."
+        }
+      ]
+    },
     {
       "slug": "sticky-bees-pragmatic-play",
       "name": "Sticky Bees™",
