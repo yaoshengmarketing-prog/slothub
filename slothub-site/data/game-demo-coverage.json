@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1373,
+  "gameCount": 1374,
   "providerCount": 371,
-  "sourcePageCount": 2508,
+  "sourcePageCount": 2511,
   "counts": {
     "access-restricted": 4,
     "available": 993,
-    "not-verified": 376
+    "not-verified": 377
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "kingdom-of-the-dead-pragmatic-play",
+      "name": "Kingdom of The Dead™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Kingdom of The Dead™; Official page confirms Egyptian 5x3 grid, 10 paylines, three Scatters open a choice of two Free Spins rounds with constant or changing expanding special symbols, and RTP 96.07%. Codex in-app browser showed the exact official page title, gameplay and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vs10kingofdth. Codex in-app browser opened exact official Demo URL and observed Kingdom of the Dead titled intro with a spin-style control, but no playable reel and stake interface without activating it; playable Demo remains unverified. Exact official image URL maps through page og:image; image/png SHA256 BCE93404CD3D980C457FBBDEC35A41AB2ADBAA5C78B3F78EF157379BD93A58F3, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/kingdom-of-the-dead/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 367"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/04/Kingdom-of-the-Dead_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 BCE93404CD3D980C457FBBDEC35A41AB2ADBAA5C78B3F78EF157379BD93A58F3"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10kingofdth",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo URL and observed Kingdom of the Dead titled intro with a spin-style control, but no playable reel and stake interface without activating it; playable Demo remains unverified."
+        }
+      ]
+    },
     {
       "slug": "excalibur-unleashed-pragmatic-play",
       "name": "Excalibur Unleashed™",

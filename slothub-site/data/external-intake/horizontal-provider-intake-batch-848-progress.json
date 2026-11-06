@@ -1,10 +1,10 @@
 {
   "batch": 848,
   "recordedAt": "2026-11-06T08:42:12.448Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Excalibur Unleashed™",
       "slug": "excalibur-unleashed-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/excalibur-unleashed/",
       "officialFacts": "Official page confirms Wild on first or fifth reel unlocks a random multiplier Wild reel, sticky multiplier Wild reels during Free Spins gain 1x after each participating win, and RTP 96.05%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser opened exact official Demo URL and observed Excalibur Unleashed titled reels, virtual balance, stake and spin controls, without spinning or betting."
     }
   ],
-  "nextCursor": "Catalog item 367 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 367 Kingdom of The Dead™ after item 366 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch848.log"
+  },
+  "publication": {
+    "commit": "6e22841b17eb190499c7ebb8c38a9831523e1cc8",
+    "githubActionsRun": 42190071002,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "08453235-cc7c-4842-826d-13f26b436656",
+    "cloudflareUrl": "https://08453235.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
