@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1380,
+  "gameCount": 1381,
   "providerCount": 371,
-  "sourcePageCount": 2529,
+  "sourcePageCount": 2532,
   "counts": {
     "access-restricted": 4,
     "available": 999,
-    "not-verified": 377
+    "not-verified": 378
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-hold-spinner-pragmatic-play",
+      "name": "Big Bass – Hold & Spinner™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "evidence": "Exact official Pragmatic Play page identifies Big Bass – Hold & Spinner™, gameplay and RTP: Official page confirms 5x3 reels, fisherman Free Spins with retrigger and rising multiplier, three base-game coins triggering a sticky-coin bonus, and RTP 96.07%. Official HTML contains gameSymbol vs10bbhas. Paid read-only browser saw exact Big Bass Hold & Spinner splash screen, but no playable reels or spin controls; Demo remains not-verified. Official image is page og:image, image/png SHA256 91A8191581EBD91F12528410A0717E19FB9A94D62BF96F274552D88A98333ED3, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser unavailable; paid read-only browser verified exact official page and image mapping, but not playable Demo.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-hold-spinner/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and gameSymbol"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 374"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/03/BBHaS_EN_339x180_04.png",
+          "httpStatus": 200,
+          "notes": "Official page og:image, title visually checked, SHA256 91A8191581EBD91F12528410A0717E19FB9A94D62BF96F274552D88A98333ED3"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbhas",
+          "httpStatus": 200,
+          "notes": "Paid read-only browser saw exact Big Bass Hold & Spinner splash screen, but no playable reels or spin controls; Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "the-red-queen-pragmatic-play",
       "name": "The Red Queen™",
