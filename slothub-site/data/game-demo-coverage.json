@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1365,
+  "gameCount": 1366,
   "providerCount": 371,
-  "sourcePageCount": 2484,
+  "sourcePageCount": 2487,
   "counts": {
     "access-restricted": 4,
-    "available": 986,
+    "available": 987,
     "not-verified": 375
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "pirates-pub-pragmatic-play",
+      "name": "Pirates Pub™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs9outlaw",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Pirates Pub™; Official page confirms 5x3 reels, 20 paylines, three Scatter Wilds triggering five Free Spins, framed Wilds awarding up to 5x on a repeated position, and RTP 96.03%. Codex in-app browser showed the exact official page title, gameplay and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vs9outlaw. Codex in-app browser opened the exact official openGame.do URL and observed Pirates Pub titled reels, visible balance, stake display and spin controls without spinning or betting; direct HTTP returned 200 and matching HTML title. Exact official image URL maps through page og:image; image/png SHA256 09109B1081240490D25DD17E755A811BDDF4EBED50325D15FE90E871969D1FAA, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/pirates-pub/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 359"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/05/Pirates-Pub_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 09109B1081240490D25DD17E755A811BDDF4EBED50325D15FE90E871969D1FAA"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs9outlaw",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the exact official openGame.do URL and observed Pirates Pub titled reels, visible balance, stake display and spin controls without spinning or betting; direct HTTP returned 200 and matching HTML title."
+        }
+      ]
+    },
     {
       "slug": "floating-dragon-dragon-boat-festival-pragmatic-play",
       "name": "Floating Dragon – Dragon Boat Festival™",
