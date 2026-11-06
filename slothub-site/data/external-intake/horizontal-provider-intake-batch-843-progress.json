@@ -1,0 +1,48 @@
+{
+  "batch": 843,
+  "recordedAt": "2026-11-06T07:37:11.543Z",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1367 published Game Markdown records and same-provider exact official path/name/gameSymbol; Zeus vs Hades – Gods of War™ /vs15godsofwar absent.",
+  "records": [
+    {
+      "index": 361,
+      "name": "Zeus vs Hades – Gods of War™",
+      "slug": "zeus-vs-hades-gods-of-war-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pragmaticplay.com/en/games/zeus-vs-hades-gods-of-war/",
+      "officialFacts": "Official page confirms Olympus and Hades volatility choices, up to 15000x maximum win, Expanding Wild multipliers up to 100x, three Scatters triggering ten Free Spins with sticky expanding Wilds, and RTP 96.07%. Exact page and symbol differ from the existing 250 edition.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/05/Zeus-vs-Hades-Gods-of-war_339x180.png",
+        "localPath": "public/assets/games/zeus-vs-hades-gods-of-war-pragmatic-play.png",
+        "sha256": "208773B0C0C7D7FFA7FFCA8774B71693ED55CFE00B0181CF3444D148807C0728",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened the exact official openGame.do URL and observed the Zeus vs Hades Gods of War mode-selection screen with virtual balance and stake controls, without selecting a mode, spinning or betting; direct HTTP returned 200 and matching HTML title."
+    }
+  ],
+  "nextCursor": "Catalog item 362 Jewel Rush™ after item 361 full publication closure.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch843.log"
+  },
+  "publication": {
+    "commit": "b519163f710b6750caddd4a3d6de64d9d2ed726b",
+    "githubActionsRun": 42182580163,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "5e6274bc-d0a6-408e-b9ac-d36386ae7aa4",
+    "cloudflareUrl": "https://5e6274bc.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
+  }
+}

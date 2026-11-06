@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1365,
+  "gameCount": 1371,
   "providerCount": 371,
-  "sourcePageCount": 2484,
+  "sourcePageCount": 2502,
   "counts": {
     "access-restricted": 4,
-    "available": 986,
-    "not-verified": 375
+    "available": 991,
+    "not-verified": 376
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,207 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "diamonds-of-egypt-pragmatic-play",
+      "name": "Diamonds Of Egypt™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayseternity",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Diamonds Of Egypt™; Official page confirms 5x3 grid, three Scatters award eight Free Spins, Sticky Wilds during Free Spins, Wild may trigger jackpot pot selection, and RTP 96.49%. Codex in-app browser showed the exact official page title, gameplay and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vswayseternity. Codex in-app browser opened exact official Demo URL and observed Diamonds Of Egypt titled reels and spin control, without spinning or betting; direct HTTP returned 200 and matching HTML title. Exact official image URL maps through page og:image; image/png SHA256 AC069D7D05B31A0636F5FE5D9D1CA1C1A005A5349A57FD5ADDE440440B1C681B, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/diamonds-of-egypt/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 364"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/04/Diamond_Of_Egypt.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 AC069D7D05B31A0636F5FE5D9D1CA1C1A005A5349A57FD5ADDE440440B1C681B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayseternity",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo URL and observed Diamonds Of Egypt titled reels and spin control, without spinning or betting; direct HTTP returned 200 and matching HTML title."
+        }
+      ]
+    },
+    {
+      "slug": "lamp-of-infinity-pragmatic-play",
+      "name": "Lamp Of Infinity™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Lamp Of Infinity™; Official page confirms 5x3 grid, 30 paylines, three Scatters award eight Free Spins, x2 multiplier, Wild reels 3 to 5, cascades on first two reels, retrigger and RTP 96.07%. Codex in-app browser showed the exact official page title, gameplay and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vs20lampinf. Codex in-app browser opened exact official Demo URL and observed only Lamp Of Infinity titled intro screen; reels and controls were not visible, so playable Demo remains unverified. Direct HTTP returned 200 with matching HTML title. Exact official image URL maps through page og:image; image/png SHA256 6F88268830BEEFB4DFB4B3A89C1A7F6DCA77E0302CDFF7A2A5F42B01802C99FD, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/lamp-of-infinity/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 363"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/04/Lamp-of-Infinity_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 6F88268830BEEFB4DFB4B3A89C1A7F6DCA77E0302CDFF7A2A5F42B01802C99FD"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20lampinf",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo URL and observed only Lamp Of Infinity titled intro screen; reels and controls were not visible, so playable Demo remains unverified. Direct HTTP returned 200 with matching HTML title."
+        }
+      ]
+    },
+    {
+      "slug": "jewel-rush-pragmatic-play",
+      "name": "Jewel Rush™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20jewelparty",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Jewel Rush™; Official page confirms 7x7 gemstone grid, clusters of five or more adjacent symbols, cascades, Wild multipliers, three Scatters triggering ten Free Spins, and RTP 96.47%. Codex in-app browser showed the exact official page title, gameplay and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vs20jewelparty. Codex in-app browser opened the exact official openGame.do URL and observed Jewel Rush titled 7x7 gemstone board and spin control, without spinning or betting; direct HTTP returned 200 and matching HTML title. Exact official image URL maps through page og:image; image/png SHA256 EB01DB9F603B85EE990B4803223C56449BD735EF434D2B21BB679227864E0224, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/jewel-rush/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 362"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/05/Jewel-Rush_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 EB01DB9F603B85EE990B4803223C56449BD735EF434D2B21BB679227864E0224"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20jewelparty",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the exact official openGame.do URL and observed Jewel Rush titled 7x7 gemstone board and spin control, without spinning or betting; direct HTTP returned 200 and matching HTML title."
+        }
+      ]
+    },
+    {
+      "slug": "zeus-vs-hades-gods-of-war-pragmatic-play",
+      "name": "Zeus vs Hades – Gods of War™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs15godsofwar",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Zeus vs Hades – Gods of War™; Official page confirms Olympus and Hades volatility choices, up to 15000x maximum win, Expanding Wild multipliers up to 100x, three Scatters triggering ten Free Spins with sticky expanding Wilds, and RTP 96.07%. Exact page and symbol differ from the existing 250 edition. Codex in-app browser showed the exact official page title, game choices and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vs15godsofwar. Codex in-app browser opened the exact official openGame.do URL and observed the Zeus vs Hades Gods of War mode-selection screen with virtual balance and stake controls, without selecting a mode, spinning or betting; direct HTTP returned 200 and matching HTML title. Exact official image URL maps through page og:image; image/png SHA256 208773B0C0C7D7FFA7FFCA8774B71693ED55CFE00B0181CF3444D148807C0728, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/zeus-vs-hades-gods-of-war/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 361"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/05/Zeus-vs-Hades-Gods-of-war_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 208773B0C0C7D7FFA7FFCA8774B71693ED55CFE00B0181CF3444D148807C0728"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs15godsofwar",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the exact official openGame.do URL and observed the Zeus vs Hades Gods of War mode-selection screen with virtual balance and stake controls, without selecting a mode, spinning or betting; direct HTTP returned 200 and matching HTML title."
+        }
+      ]
+    },
+    {
+      "slug": "sticky-bees-pragmatic-play",
+      "name": "Sticky Bees™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20clustwild",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Sticky Bees™; Official page confirms fruit cluster wins and cascades, 12 to 19 marked positions, bees transforming marked positions into Wilds, seven Free Spins with persistent Wilds, and RTP 96.06%. Codex in-app browser showed the exact official page title, gameplay and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vs20clustwild. Codex in-app browser opened the exact official openGame.do URL and observed Sticky Bees titled reels, visible balance, stake display and spin controls without spinning or betting; direct HTTP returned 200 and matching HTML title. Exact official image URL maps through page og:image; image/png SHA256 1C2800355CC1F1F6B73165A37CF273A03045B3B9E9D878F0202F03E55885B472, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sticky-bees/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 360"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/05/Sticky-Bees_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 1C2800355CC1F1F6B73165A37CF273A03045B3B9E9D878F0202F03E55885B472"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20clustwild",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the exact official openGame.do URL and observed Sticky Bees titled reels, visible balance, stake display and spin controls without spinning or betting; direct HTTP returned 200 and matching HTML title."
+        }
+      ]
+    },
+    {
+      "slug": "pirates-pub-pragmatic-play",
+      "name": "Pirates Pub™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs9outlaw",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Pirates Pub™; Official page confirms 5x3 reels, 20 paylines, three Scatter Wilds triggering five Free Spins, framed Wilds awarding up to 5x on a repeated position, and RTP 96.03%. Codex in-app browser showed the exact official page title, gameplay and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vs9outlaw. Codex in-app browser opened the exact official openGame.do URL and observed Pirates Pub titled reels, visible balance, stake display and spin controls without spinning or betting; direct HTTP returned 200 and matching HTML title. Exact official image URL maps through page og:image; image/png SHA256 09109B1081240490D25DD17E755A811BDDF4EBED50325D15FE90E871969D1FAA, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/pirates-pub/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 359"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/05/Pirates-Pub_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 09109B1081240490D25DD17E755A811BDDF4EBED50325D15FE90E871969D1FAA"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs9outlaw",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the exact official openGame.do URL and observed Pirates Pub titled reels, visible balance, stake display and spin controls without spinning or betting; direct HTTP returned 200 and matching HTML title."
+        }
+      ]
+    },
     {
       "slug": "floating-dragon-dragon-boat-festival-pragmatic-play",
       "name": "Floating Dragon – Dragon Boat Festival™",
