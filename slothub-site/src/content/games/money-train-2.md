@@ -35,7 +35,7 @@ editorialFeatured: false
 status: published
 source: { label: Relax Gaming 官方 Money Train 2 產品頁（Money Cart、角色、Buy Feature 及德國版 RTP／EUR 投注範圍回查）, url: https://www.relax-gaming.com/products/casino/moneytrain2, checkedAt: 2026-11-06 }
 sources:
-  - { label: "Relax Gaming 官方 Money Train 2 產品頁（遊戲介紹首兩段：進入條件、初始三次、角色、Persistent 與 Buy Feature；German RTP／Min bet／Max bet）", url: https://www.relax-gaming.com/products/casino/moneytrain2, checkedAt: 2026-11-06 }
+  - { label: "Relax Gaming 官方 Money Train 2 產品頁（Money Cart／角色說明段落：進入條件、初始三次、Persistent 與 Buy Feature；German RTP／Min bet／Max bet）", url: https://www.relax-gaming.com/products/casino/moneytrain2, checkedAt: 2026-11-06 }
   - { label: "Relax Gaming 官方 Money Train 2 產品頁（Bonus Round、Buy Feature、德國版 RTP 與投注範圍）", url: https://www.relax-gaming.com/products/casino/moneytrain2, checkedAt: 2026-09-16 }
   - { label: "Relax Gaming 官方發布稿（發行日、50,000× stake、Respins、Multiplier 與 Money Cart）", url: https://www.relax-gaming.com/news/2020/08/relax-gaming-to-roll-out-biggest-release-of-the-year-with-money-train-2, checkedAt: 2026-09-16 }
   - { label: "Relax Gaming 官方訪談（5 軸、40 Paylines 與 Free Spins mechanic）", url: https://www.relax-gaming.com/news/2020/09/relax-gaming-player-critique-played-an-integral-role-in-money-train-sequel, checkedAt: 2026-09-16 }
