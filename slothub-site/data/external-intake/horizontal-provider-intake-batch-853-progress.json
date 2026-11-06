@@ -1,10 +1,10 @@
 {
   "batch": 853,
   "recordedAt": "2026-11-06T18:24:54.627Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser unavailable; paid read-only browser verified exact official page, Demo and image mapping. No login or age confirmation performed.",
@@ -15,7 +15,7 @@
       "name": "African Elephant™",
       "slug": "african-elephant-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/african-elephant/",
       "officialFacts": "Official page confirms 5x4 reels, Elephant Wilds, pattern positions that turn Wild after the spin, three Scatters awarding ten Free Spins, and RTP 96.04%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Paid read-only browser observed exact African Elephant titled 5x4 reels, credit/bet readouts and spin controls at official Demo URL after an official-host redirect; no spin or bet performed."
     }
   ],
-  "nextCursor": "Catalog item 372 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 372 Gods of Giza™ after item 371 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch853.log"
+  },
+  "publication": {
+    "commit": "8ccb47ad82d5840a0d4496a4c1c9632d16030751",
+    "githubActionsRun": 42270937767,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "dd18ce72-c7bf-4779-950f-f31e784e94da",
+    "cloudflareUrl": "https://dd18ce72.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

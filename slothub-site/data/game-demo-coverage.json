@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1378,
+  "gameCount": 1379,
   "providerCount": 371,
-  "sourcePageCount": 2523,
+  "sourcePageCount": 2526,
   "counts": {
     "access-restricted": 4,
-    "available": 997,
+    "available": 998,
     "not-verified": 377
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gods-of-giza-pragmatic-play",
+      "name": "Gods of Giza™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10gizagods",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page identifies Gods of Giza™, gameplay and RTP: Official page confirms a 5x5 cluster grid, cascading wins, Wilds created after wins, four Scatters awarding fifteen Free Spins, and RTP 96.01%. Official HTML contains gameSymbol vs10gizagods. Paid read-only browser observed exact Gods of Giza titled 5x5 reels and circular spin control at the official Demo URL; no spin or bet performed. Official image is page og:image, image/png SHA256 0B922BE7E8FF0CE7FAD43E1DD073A97F93808CCB20C37CFBD63C956800C0BF3A, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser unavailable; paid read-only browser checked exact official page, Demo and image mapping.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gods-of-giza/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and gameSymbol"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 372"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/03/Gods_Of_Giza.png",
+          "httpStatus": 200,
+          "notes": "Official page og:image, title visually checked, SHA256 0B922BE7E8FF0CE7FAD43E1DD073A97F93808CCB20C37CFBD63C956800C0BF3A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10gizagods",
+          "httpStatus": 200,
+          "notes": "Paid read-only browser observed exact Gods of Giza titled 5x5 reels and circular spin control at the official Demo URL; no spin or bet performed."
+        }
+      ]
+    },
     {
       "slug": "african-elephant-pragmatic-play",
       "name": "African Elephant™",

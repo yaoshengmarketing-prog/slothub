@@ -1,0 +1,39 @@
+{
+  "batch": 854,
+  "recordedAt": "2026-11-06T18:37:42.190Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser unavailable; paid read-only browser checked exact official page, Demo and image mapping.",
+  "dedupScope": "All 1378 published Game Markdown records and same-provider exact official path/name/gameSymbol; Gods of Giza™ /vs10gizagods absent.",
+  "records": [
+    {
+      "index": 372,
+      "name": "Gods of Giza™",
+      "slug": "gods-of-giza-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/gods-of-giza/",
+      "officialFacts": "Official page confirms a 5x5 cluster grid, cascading wins, Wilds created after wins, four Scatters awarding fifteen Free Spins, and RTP 96.01%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/03/Gods_Of_Giza.png",
+        "localPath": "public/assets/games/gods-of-giza-pragmatic-play.png",
+        "sha256": "0B922BE7E8FF0CE7FAD43E1DD073A97F93808CCB20C37CFBD63C956800C0BF3A",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Paid read-only browser observed exact Gods of Giza titled 5x5 reels and circular spin control at the official Demo URL; no spin or bet performed."
+    }
+  ],
+  "nextCursor": "Catalog item 373 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch854.log"
+  }
+}
