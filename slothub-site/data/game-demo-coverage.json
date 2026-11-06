@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1379,
+  "gameCount": 1380,
   "providerCount": 371,
-  "sourcePageCount": 2526,
+  "sourcePageCount": 2529,
   "counts": {
     "access-restricted": 4,
-    "available": 998,
+    "available": 999,
     "not-verified": 377
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-red-queen-pragmatic-play",
+      "name": "The Red Queen™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysredqueen",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page identifies The Red Queen™, gameplay and RTP: Official page confirms a 5x3 ways slot with stacked symbols, queen respins, unlockable sixth reel, three Scatters awarding five Free Spins with an extra row, and RTP 96.06%. Official HTML contains gameSymbol vswaysredqueen. Paid read-only browser observed exact The Red Queen titled reels and circular spin control at official Demo URL; no spin or bet performed. Official image is page og:image, image/png SHA256 99930577F6B2446BD17B52D7483570F3DFE27F67AC024BC080D6DE8551DDD4C3, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser unavailable; paid read-only browser verified exact official page, Demo and image mapping.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-red-queen/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and gameSymbol"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 373"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/03/FCkYil5o.png",
+          "httpStatus": 200,
+          "notes": "Official page og:image, title visually checked, SHA256 99930577F6B2446BD17B52D7483570F3DFE27F67AC024BC080D6DE8551DDD4C3"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysredqueen",
+          "httpStatus": 200,
+          "notes": "Paid read-only browser observed exact The Red Queen titled reels and circular spin control at official Demo URL; no spin or bet performed."
+        }
+      ]
+    },
     {
       "slug": "gods-of-giza-pragmatic-play",
       "name": "Gods of Giza™",

@@ -1,10 +1,10 @@
 {
   "batch": 854,
   "recordedAt": "2026-11-06T18:37:42.190Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser unavailable; paid read-only browser checked exact official page, Demo and image mapping.",
@@ -15,7 +15,7 @@
       "name": "Gods of Giza™",
       "slug": "gods-of-giza-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/gods-of-giza/",
       "officialFacts": "Official page confirms a 5x5 cluster grid, cascading wins, Wilds created after wins, four Scatters awarding fifteen Free Spins, and RTP 96.01%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Paid read-only browser observed exact Gods of Giza titled 5x5 reels and circular spin control at the official Demo URL; no spin or bet performed."
     }
   ],
-  "nextCursor": "Catalog item 373 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 373 The Red Queen™ after item 372 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch854.log"
+  },
+  "publication": {
+    "commit": "7155a5c23d51b347ee2c2c4bae19e2de7a42005d",
+    "githubActionsRun": 42272796690,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "998e1b25-2b8a-4de6-850b-150b98d7d37b",
+    "cloudflareUrl": "https://998e1b25.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
