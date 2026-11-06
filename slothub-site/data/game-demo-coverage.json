@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1376,
+  "gameCount": 1377,
   "providerCount": 371,
-  "sourcePageCount": 2517,
+  "sourcePageCount": 2520,
   "counts": {
     "access-restricted": 4,
-    "available": 995,
+    "available": 996,
     "not-verified": 377
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wild-celebrity-bus-megaways-pragmatic-play",
+      "name": "Wild Celebrity Bus Megaways™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysrsm",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wild Celebrity Bus Megaways™; Official page confirms six variable-height reels, cascading wins, four Scatters award eight Free Spins, multiplier rises by 1x after each bonus win, two Scatters award five extra spins, and RTP 96.52%. Codex in-app browser showed the exact official page title, gameplay and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vswaysrsm. Codex in-app browser opened exact official Demo URL and observed Wild Celebrity Bus Megaways titled reels and spin control, without spinning or betting. Exact official image URL maps through page og:image; image/png SHA256 56234DF866C19E4775E67CCD7A7A1EA1F3AFCC214D868ABCC77495D50D04D3B4, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-celebrity-bus-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 370"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/04/yUpenbrU.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 56234DF866C19E4775E67CCD7A7A1EA1F3AFCC214D868ABCC77495D50D04D3B4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysrsm",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo URL and observed Wild Celebrity Bus Megaways titled reels and spin control, without spinning or betting."
+        }
+      ]
+    },
     {
       "slug": "3-dancing-monkeys-pragmatic-play",
       "name": "3 Dancing Monkeys™",

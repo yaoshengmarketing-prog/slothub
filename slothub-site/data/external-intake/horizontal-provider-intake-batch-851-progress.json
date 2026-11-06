@@ -1,10 +1,10 @@
 {
   "batch": 851,
   "recordedAt": "2026-11-06T09:09:02.636Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "3 Dancing Monkeys™",
       "slug": "3-dancing-monkeys-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/3-dancing-monkeys/",
       "officialFacts": "Official page confirms 5x3 grid, three colored gems activate modifiers, ten Free Spins with at least two modifiers that may expand to 5x5, add Wilds or multiplier, and RTP 96.00%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser opened exact official Demo URL and observed 3 Dancing Monkeys titled 5x3 reels, virtual balance, stake and spin controls without spinning or betting."
     }
   ],
-  "nextCursor": "Catalog item 370 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 370 Wild Celebrity Bus Megaways™ after item 369 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch851.log"
+  },
+  "publication": {
+    "commit": "fb722668fde24a8632c9e16fcd0e7c2f03786d58",
+    "githubActionsRun": 42193520479,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "4f66d3e4-5230-4834-8791-880a063fb9b2",
+    "cloudflareUrl": "https://4f66d3e4.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
