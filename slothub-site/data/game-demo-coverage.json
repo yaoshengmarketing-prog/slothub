@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1372,
+  "gameCount": 1373,
   "providerCount": 371,
-  "sourcePageCount": 2505,
+  "sourcePageCount": 2508,
   "counts": {
     "access-restricted": 4,
-    "available": 992,
+    "available": 993,
     "not-verified": 376
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "excalibur-unleashed-pragmatic-play",
+      "name": "Excalibur Unleashed™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20excalibur",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Excalibur Unleashed™; Official page confirms Wild on first or fifth reel unlocks a random multiplier Wild reel, sticky multiplier Wild reels during Free Spins gain 1x after each participating win, and RTP 96.05%. Codex in-app browser showed the exact official page title, gameplay and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vs20excalibur. Codex in-app browser opened exact official Demo URL and observed Excalibur Unleashed titled reels, virtual balance, stake and spin controls, without spinning or betting. Exact official image URL maps through page og:image; image/png SHA256 DAA126D729CD3B77596355FB099DCFA744772E9B1272EE3E8BA5B7C00B4D7F87, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/excalibur-unleashed/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 366"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/04/Excalibur_Unlished_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 DAA126D729CD3B77596355FB099DCFA744772E9B1272EE3E8BA5B7C00B4D7F87"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20excalibur",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo URL and observed Excalibur Unleashed titled reels, virtual balance, stake and spin controls, without spinning or betting."
+        }
+      ]
+    },
     {
       "slug": "knight-hot-spotz-pragmatic-play",
       "name": "Knight Hot Spotz™",

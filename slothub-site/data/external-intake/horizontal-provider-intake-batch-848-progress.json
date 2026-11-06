@@ -1,0 +1,39 @@
+{
+  "batch": 848,
+  "recordedAt": "2026-11-06T08:42:12.448Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1372 published Game Markdown records and same-provider exact official path/name/gameSymbol; Excalibur Unleashed™ /vs20excalibur absent.",
+  "records": [
+    {
+      "index": 366,
+      "name": "Excalibur Unleashed™",
+      "slug": "excalibur-unleashed-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/excalibur-unleashed/",
+      "officialFacts": "Official page confirms Wild on first or fifth reel unlocks a random multiplier Wild reel, sticky multiplier Wild reels during Free Spins gain 1x after each participating win, and RTP 96.05%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/04/Excalibur_Unlished_339x180.png",
+        "localPath": "public/assets/games/excalibur-unleashed-pragmatic-play.png",
+        "sha256": "DAA126D729CD3B77596355FB099DCFA744772E9B1272EE3E8BA5B7C00B4D7F87",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo URL and observed Excalibur Unleashed titled reels, virtual balance, stake and spin controls, without spinning or betting."
+    }
+  ],
+  "nextCursor": "Catalog item 367 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch848.log"
+  }
+}
