@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1369,
+  "gameCount": 1370,
   "providerCount": 371,
-  "sourcePageCount": 2496,
+  "sourcePageCount": 2499,
   "counts": {
     "access-restricted": 4,
     "available": 990,
-    "not-verified": 375
+    "not-verified": 376
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "lamp-of-infinity-pragmatic-play",
+      "name": "Lamp Of Infinity™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Lamp Of Infinity™; Official page confirms 5x3 grid, 30 paylines, three Scatters award eight Free Spins, x2 multiplier, Wild reels 3 to 5, cascades on first two reels, retrigger and RTP 96.07%. Codex in-app browser showed the exact official page title, gameplay and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vs20lampinf. Codex in-app browser opened exact official Demo URL and observed only Lamp Of Infinity titled intro screen; reels and controls were not visible, so playable Demo remains unverified. Direct HTTP returned 200 with matching HTML title. Exact official image URL maps through page og:image; image/png SHA256 6F88268830BEEFB4DFB4B3A89C1A7F6DCA77E0302CDFF7A2A5F42B01802C99FD, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/lamp-of-infinity/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 363"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/04/Lamp-of-Infinity_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 6F88268830BEEFB4DFB4B3A89C1A7F6DCA77E0302CDFF7A2A5F42B01802C99FD"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20lampinf",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo URL and observed only Lamp Of Infinity titled intro screen; reels and controls were not visible, so playable Demo remains unverified. Direct HTTP returned 200 with matching HTML title."
+        }
+      ]
+    },
     {
       "slug": "jewel-rush-pragmatic-play",
       "name": "Jewel Rush™",
