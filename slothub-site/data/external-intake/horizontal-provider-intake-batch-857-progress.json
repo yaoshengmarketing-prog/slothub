@@ -1,0 +1,39 @@
+{
+  "batch": 857,
+  "recordedAt": "2026-11-06T18:59:05.403Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser unavailable; paid read-only browser verified exact official page, Demo and image mapping.",
+  "dedupScope": "All 1381 published Game Markdown records and same-provider exact official path/name/gameSymbol; Rabbit Garden /vs20goldclust absent.",
+  "records": [
+    {
+      "index": 375,
+      "name": "Rabbit Garden",
+      "slug": "rabbit-garden-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/rabbit-garden/",
+      "officialFacts": "Official page confirms a 7x7 cluster grid, cascading wins, adjacent coin multipliers, five Free Spins levels and RTP 96.05%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/03/rabbit_garden.png",
+        "localPath": "public/assets/games/rabbit-garden-pragmatic-play.png",
+        "sha256": "4EAB5F8B479415E8A1F97A073D523A279B1168AB602AAE7D880D601B1785E5A2",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Paid read-only browser observed exact Rabbit Garden titled 7x7 reels and circular spin control at official Demo URL; no spin or bet performed."
+    }
+  ],
+  "nextCursor": "Catalog item 376 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch857.log"
+  }
+}

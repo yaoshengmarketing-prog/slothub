@@ -1,10 +1,10 @@
 {
   "batch": 856,
   "recordedAt": "2026-11-06T18:51:59.921Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser unavailable; paid read-only browser verified exact official page and image mapping, but not playable Demo.",
@@ -15,7 +15,7 @@
       "name": "Big Bass – Hold & Spinner™",
       "slug": "big-bass-hold-spinner-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-hold-spinner/",
       "officialFacts": "Official page confirms 5x3 reels, fisherman Free Spins with retrigger and rising multiplier, three base-game coins triggering a sticky-coin bonus, and RTP 96.07%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Paid read-only browser saw exact Big Bass Hold & Spinner splash screen, but no playable reels or spin controls; Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 375 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 375 Rabbit Garden after item 374 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch856.log"
+  },
+  "publication": {
+    "commit": "75b324ab9f85db72117e66e19c84dc949ea9d5a5",
+    "githubActionsRun": 42274920174,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "4201c659-31f4-44fb-bc32-dd31e4d82447",
+    "cloudflareUrl": "https://4201c659.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1381,
+  "gameCount": 1382,
   "providerCount": 371,
-  "sourcePageCount": 2532,
+  "sourcePageCount": 2535,
   "counts": {
     "access-restricted": 4,
-    "available": 999,
+    "available": 1000,
     "not-verified": 378
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "rabbit-garden-pragmatic-play",
+      "name": "Rabbit Garden",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20goldclust",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page identifies Rabbit Garden, gameplay and RTP: Official page confirms a 7x7 cluster grid, cascading wins, adjacent coin multipliers, five Free Spins levels and RTP 96.05%. Official HTML contains gameSymbol vs20goldclust. Paid read-only browser observed exact Rabbit Garden titled 7x7 reels and circular spin control at official Demo URL; no spin or bet performed. Official image is page og:image, image/png SHA256 4EAB5F8B479415E8A1F97A073D523A279B1168AB602AAE7D880D601B1785E5A2, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser unavailable; paid read-only browser verified exact official page, Demo and image mapping.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/rabbit-garden/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and gameSymbol"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 375"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/03/rabbit_garden.png",
+          "httpStatus": 200,
+          "notes": "Official page og:image, title visually checked, SHA256 4EAB5F8B479415E8A1F97A073D523A279B1168AB602AAE7D880D601B1785E5A2"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20goldclust",
+          "httpStatus": 200,
+          "notes": "Paid read-only browser observed exact Rabbit Garden titled 7x7 reels and circular spin control at official Demo URL; no spin or bet performed."
+        }
+      ]
+    },
     {
       "slug": "big-bass-hold-spinner-pragmatic-play",
       "name": "Big Bass – Hold & Spinner™",
