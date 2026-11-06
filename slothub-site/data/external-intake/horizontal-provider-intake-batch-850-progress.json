@@ -1,10 +1,10 @@
 {
   "batch": 850,
   "recordedAt": "2026-11-06T09:01:21.188Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Jane Hunter and the Mask of Montezuma™",
       "slug": "jane-hunter-mask-montezuma-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/jane-hunter-and-the-mask-of-montezuma/",
       "officialFacts": "Official page confirms 5x3 grid, 10 paylines, three tomb Scatters award ten Free Spins, collector gathers instant cash prizes from high-paying symbols, progressive meter upgrades prizes, and RTP 96.02%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser opened exact official Demo URL and observed Jane Hunter and the Mask of Montezuma titled 5x3 reels, virtual balance, stake and spin controls without spinning or betting."
     }
   ],
-  "nextCursor": "Catalog item 369 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 369 3 Dancing Monkeys™ after item 368 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch850.log"
+  },
+  "publication": {
+    "commit": "bef1c1d64a6aa2875ced4bebacdc3175dfa4da47",
+    "githubActionsRun": 42192412316,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "cd376356-db9c-423d-9138-b7185765c2ad",
+    "cloudflareUrl": "https://cd376356.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

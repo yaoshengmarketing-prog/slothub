@@ -1,0 +1,39 @@
+{
+  "batch": 851,
+  "recordedAt": "2026-11-06T09:09:02.636Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1375 published Game Markdown records and same-provider exact official path/name/gameSymbol; 3 Dancing Monkeys™ /vswaysmonkey absent.",
+  "records": [
+    {
+      "index": 369,
+      "name": "3 Dancing Monkeys™",
+      "slug": "3-dancing-monkeys-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/3-dancing-monkeys/",
+      "officialFacts": "Official page confirms 5x3 grid, three colored gems activate modifiers, ten Free Spins with at least two modifiers that may expand to 5x5, add Wilds or multiplier, and RTP 96.00%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/04/SqDaiork.png",
+        "localPath": "public/assets/games/3-dancing-monkeys-pragmatic-play.png",
+        "sha256": "09DD31A8F5443128CF681166984F5784C600A578C48BCFA3669B92356418CA32",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo URL and observed 3 Dancing Monkeys titled 5x3 reels, virtual balance, stake and spin controls without spinning or betting."
+    }
+  ],
+  "nextCursor": "Catalog item 370 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch851.log"
+  }
+}

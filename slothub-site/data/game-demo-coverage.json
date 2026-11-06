@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1375,
+  "gameCount": 1376,
   "providerCount": 371,
-  "sourcePageCount": 2514,
+  "sourcePageCount": 2517,
   "counts": {
     "access-restricted": 4,
-    "available": 994,
+    "available": 995,
     "not-verified": 377
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "3-dancing-monkeys-pragmatic-play",
+      "name": "3 Dancing Monkeys™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysmonkey",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title 3 Dancing Monkeys™; Official page confirms 5x3 grid, three colored gems activate modifiers, ten Free Spins with at least two modifiers that may expand to 5x5, add Wilds or multiplier, and RTP 96.00%. Codex in-app browser showed the exact official page title, gameplay and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vswaysmonkey. Codex in-app browser opened exact official Demo URL and observed 3 Dancing Monkeys titled 5x3 reels, virtual balance, stake and spin controls without spinning or betting. Exact official image URL maps through page og:image; image/png SHA256 09DD31A8F5443128CF681166984F5784C600A578C48BCFA3669B92356418CA32, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/3-dancing-monkeys/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 369"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/04/SqDaiork.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 09DD31A8F5443128CF681166984F5784C600A578C48BCFA3669B92356418CA32"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysmonkey",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo URL and observed 3 Dancing Monkeys titled 5x3 reels, virtual balance, stake and spin controls without spinning or betting."
+        }
+      ]
+    },
     {
       "slug": "jane-hunter-mask-montezuma-pragmatic-play",
       "name": "Jane Hunter and the Mask of Montezuma™",
