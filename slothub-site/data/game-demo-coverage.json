@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1374,
+  "gameCount": 1375,
   "providerCount": 371,
-  "sourcePageCount": 2511,
+  "sourcePageCount": 2514,
   "counts": {
     "access-restricted": 4,
-    "available": 993,
+    "available": 994,
     "not-verified": 377
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "jane-hunter-mask-montezuma-pragmatic-play",
+      "name": "Jane Hunter and the Mask of Montezuma™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10jnmntzma",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Jane Hunter and the Mask of Montezuma™; Official page confirms 5x3 grid, 10 paylines, three tomb Scatters award ten Free Spins, collector gathers instant cash prizes from high-paying symbols, progressive meter upgrades prizes, and RTP 96.02%. Codex in-app browser showed the exact official page title, gameplay and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vs10jnmntzma. Codex in-app browser opened exact official Demo URL and observed Jane Hunter and the Mask of Montezuma titled 5x3 reels, virtual balance, stake and spin controls without spinning or betting. Exact official image URL maps through page og:image; image/png SHA256 AD6618BB578B2F28C11190E4BAE4D3AC31AB449876A2BBAF464EA5B42E46D290, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/jane-hunter-and-the-mask-of-montezuma/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 368"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/04/JHATMOM.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 AD6618BB578B2F28C11190E4BAE4D3AC31AB449876A2BBAF464EA5B42E46D290"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10jnmntzma",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo URL and observed Jane Hunter and the Mask of Montezuma titled 5x3 reels, virtual balance, stake and spin controls without spinning or betting."
+        }
+      ]
+    },
     {
       "slug": "kingdom-of-the-dead-pragmatic-play",
       "name": "Kingdom of The Dead™",

@@ -1,10 +1,10 @@
 {
   "batch": 849,
   "recordedAt": "2026-11-06T08:49:47.981Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Kingdom of The Dead™",
       "slug": "kingdom-of-the-dead-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/kingdom-of-the-dead/",
       "officialFacts": "Official page confirms Egyptian 5x3 grid, 10 paylines, three Scatters open a choice of two Free Spins rounds with constant or changing expanding special symbols, and RTP 96.07%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser opened exact official Demo URL and observed Kingdom of the Dead titled intro with a spin-style control, but no playable reel and stake interface without activating it; playable Demo remains unverified."
     }
   ],
-  "nextCursor": "Catalog item 368 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 368 Jane Hunter and the Mask of Montezuma™ after item 367 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS after removing public URL from unverified Demo",
     "log": "tmp/verify-batch849.log"
+  },
+  "publication": {
+    "commit": "c9b014166db80edd4c2725ab154f68b3bacfdcda",
+    "githubActionsRun": 42191485255,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "99e85edd-5cdf-4de1-8e8c-66ea5fa5fcf9",
+    "cloudflareUrl": "https://99e85edd.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
