@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1370,
+  "gameCount": 1371,
   "providerCount": 371,
-  "sourcePageCount": 2499,
+  "sourcePageCount": 2502,
   "counts": {
     "access-restricted": 4,
-    "available": 990,
+    "available": 991,
     "not-verified": 376
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "diamonds-of-egypt-pragmatic-play",
+      "name": "Diamonds Of Egypt™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayseternity",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Diamonds Of Egypt™; Official page confirms 5x3 grid, three Scatters award eight Free Spins, Sticky Wilds during Free Spins, Wild may trigger jackpot pot selection, and RTP 96.49%. Codex in-app browser showed the exact official page title, gameplay and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vswayseternity. Codex in-app browser opened exact official Demo URL and observed Diamonds Of Egypt titled reels and spin control, without spinning or betting; direct HTTP returned 200 and matching HTML title. Exact official image URL maps through page og:image; image/png SHA256 AC069D7D05B31A0636F5FE5D9D1CA1C1A005A5349A57FD5ADDE440440B1C681B, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/diamonds-of-egypt/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 364"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/04/Diamond_Of_Egypt.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 AC069D7D05B31A0636F5FE5D9D1CA1C1A005A5349A57FD5ADDE440440B1C681B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayseternity",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo URL and observed Diamonds Of Egypt titled reels and spin control, without spinning or betting; direct HTTP returned 200 and matching HTML title."
+        }
+      ]
+    },
     {
       "slug": "lamp-of-infinity-pragmatic-play",
       "name": "Lamp Of Infinity™",
