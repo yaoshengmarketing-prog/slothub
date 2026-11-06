@@ -1,0 +1,39 @@
+{
+  "batch": 847,
+  "recordedAt": "2026-11-06T08:22:41.528Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1371 published Game Markdown records and same-provider exact official path/name/gameSymbol; Knight Hot Spotz™ /vs25spotz absent.",
+  "records": [
+    {
+      "index": 365,
+      "name": "Knight Hot Spotz™",
+      "slug": "knight-hot-spotz-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/knight-hot-spotz/",
+      "officialFacts": "Official page confirms 5x4 grid, 25 paylines, Wilds, six or more Scatters for up to 15 Free Spins, multiplier Wild upgrades per win, four more Scatters grant four extra spins, and RTP 96.50%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/04/Knight-Hot-Spotz_339x180.png",
+        "localPath": "public/assets/games/knight-hot-spotz-pragmatic-play.png",
+        "sha256": "6A3840A6A4BFE74241497FD98E671CCC2E26FDFA7F36D2D963170FE69FE5F0B0",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo URL and observed Knight Hot Spotz titled 5x4 reels, virtual balance, stake and spin controls, without spinning or betting."
+    }
+  ],
+  "nextCursor": "Catalog item 366 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0 after fast-forwarding origin/main de582570; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch847-after-sync.log"
+  }
+}

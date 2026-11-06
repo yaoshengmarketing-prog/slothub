@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1371,
+  "gameCount": 1372,
   "providerCount": 371,
-  "sourcePageCount": 2502,
+  "sourcePageCount": 2505,
   "counts": {
     "access-restricted": 4,
-    "available": 991,
+    "available": 992,
     "not-verified": 376
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "knight-hot-spotz-pragmatic-play",
+      "name": "Knight Hot Spotz™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25spotz",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Knight Hot Spotz™; Official page confirms 5x4 grid, 25 paylines, Wilds, six or more Scatters for up to 15 Free Spins, multiplier Wild upgrades per win, four more Scatters grant four extra spins, and RTP 96.50%. Codex in-app browser showed the exact official page title, gameplay and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vs25spotz. Codex in-app browser opened exact official Demo URL and observed Knight Hot Spotz titled 5x4 reels, virtual balance, stake and spin controls, without spinning or betting. Exact official image URL maps through page og:image; image/png SHA256 6A3840A6A4BFE74241497FD98E671CCC2E26FDFA7F36D2D963170FE69FE5F0B0, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/knight-hot-spotz/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 365"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/04/Knight-Hot-Spotz_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 6A3840A6A4BFE74241497FD98E671CCC2E26FDFA7F36D2D963170FE69FE5F0B0"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25spotz",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo URL and observed Knight Hot Spotz titled 5x4 reels, virtual balance, stake and spin controls, without spinning or betting."
+        }
+      ]
+    },
     {
       "slug": "diamonds-of-egypt-pragmatic-play",
       "name": "Diamonds Of Egypt™",

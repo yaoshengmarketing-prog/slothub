@@ -1,10 +1,10 @@
 {
   "batch": 846,
   "recordedAt": "2026-11-06T08:14:24.299Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Diamonds Of Egypt™",
       "slug": "diamonds-of-egypt-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/diamonds-of-egypt/",
       "officialFacts": "Official page confirms 5x3 grid, three Scatters award eight Free Spins, Sticky Wilds during Free Spins, Wild may trigger jackpot pot selection, and RTP 96.49%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser opened exact official Demo URL and observed Diamonds Of Egypt titled reels and spin control, without spinning or betting; direct HTTP returned 200 and matching HTML title."
     }
   ],
-  "nextCursor": "Catalog item 365 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 365 Knight Hot Spotz™ after item 364 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch846.log"
+  },
+  "publication": {
+    "commit": "ab720993b41cd331fc98210b41b7f16667a14d44",
+    "githubActionsRun": 42186910013,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "4b9127d0-c7f9-4509-b154-bd90861b2f4c",
+    "cloudflareUrl": "https://4b9127d0.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
