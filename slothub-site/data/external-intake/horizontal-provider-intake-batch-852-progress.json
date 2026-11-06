@@ -1,10 +1,10 @@
 {
   "batch": 852,
   "recordedAt": "2026-11-06T09:18:32.061Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Wild Celebrity Bus Megaways™",
       "slug": "wild-celebrity-bus-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/wild-celebrity-bus-megaways/",
       "officialFacts": "Official page confirms six variable-height reels, cascading wins, four Scatters award eight Free Spins, multiplier rises by 1x after each bonus win, two Scatters award five extra spins, and RTP 96.52%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser opened exact official Demo URL and observed Wild Celebrity Bus Megaways titled reels and spin control, without spinning or betting."
     }
   ],
-  "nextCursor": "Catalog item 371 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 371 African Elephant™ after item 370 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch852.log"
+  },
+  "publication": {
+    "commit": "d9736531810b9bcb25e74dde558fddb8be3649bc",
+    "githubActionsRun": 42195129524,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "f8998540-141d-497e-9d28-fcd9eecb9b49",
+    "cloudflareUrl": "https://f8998540.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1377,
+  "gameCount": 1378,
   "providerCount": 371,
-  "sourcePageCount": 2520,
+  "sourcePageCount": 2523,
   "counts": {
     "access-restricted": 4,
-    "available": 996,
+    "available": 997,
     "not-verified": 377
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "african-elephant-pragmatic-play",
+      "name": "African Elephant™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20hotzone",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page identifies African Elephant™, gameplay and RTP: Official page confirms 5x4 reels, Elephant Wilds, pattern positions that turn Wild after the spin, three Scatters awarding ten Free Spins, and RTP 96.04%. Official HTML contains gameSymbol vs20hotzone. Paid read-only browser observed exact African Elephant titled 5x4 reels, credit/bet readouts and spin controls at official Demo URL after an official-host redirect; no spin or bet performed. Official image is page og:image, image/png SHA256 8FD3C05D83EAEAD524B385DD0188AFD13379F65DDA1F017AD1388F520D57B326, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser unavailable; paid read-only browser verified exact official page, Demo and image mapping. No login or age confirmation performed.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/african-elephant/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and gameSymbol"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 371"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/03/l_R0x2-4.png",
+          "httpStatus": 200,
+          "notes": "Official page og:image, title visually checked, SHA256 8FD3C05D83EAEAD524B385DD0188AFD13379F65DDA1F017AD1388F520D57B326"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20hotzone",
+          "httpStatus": 200,
+          "notes": "Paid read-only browser observed exact African Elephant titled 5x4 reels, credit/bet readouts and spin controls at official Demo URL after an official-host redirect; no spin or bet performed."
+        }
+      ]
+    },
     {
       "slug": "wild-celebrity-bus-megaways-pragmatic-play",
       "name": "Wild Celebrity Bus Megaways™",
