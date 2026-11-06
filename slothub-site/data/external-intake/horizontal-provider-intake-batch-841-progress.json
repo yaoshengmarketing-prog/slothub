@@ -1,10 +1,10 @@
 {
   "batch": 841,
   "recordedAt": "2026-11-06T07:22:22.119Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Pirates Pub™",
       "slug": "pirates-pub-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/pirates-pub/",
       "officialFacts": "Official page confirms 5x3 reels, 20 paylines, three Scatter Wilds triggering five Free Spins, framed Wilds awarding up to 5x on a repeated position, and RTP 96.03%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser opened the exact official openGame.do URL and observed Pirates Pub titled reels, visible balance, stake display and spin controls without spinning or betting; direct HTTP returned 200 and matching HTML title."
     }
   ],
-  "nextCursor": "Catalog item 360 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 360 Sticky Bees™ after item 359 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch841.log"
+  },
+  "publication": {
+    "commit": "dcabea19a45f6290e968a22ce3464fa2bdfebed0",
+    "githubActionsRun": 42180891939,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "d7ee9fc7-24a4-4e02-ae32-3b2f2152406d",
+    "cloudflareUrl": "https://d7ee9fc7.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

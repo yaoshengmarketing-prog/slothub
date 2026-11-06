@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1366,
+  "gameCount": 1367,
   "providerCount": 371,
-  "sourcePageCount": 2487,
+  "sourcePageCount": 2490,
   "counts": {
     "access-restricted": 4,
-    "available": 987,
+    "available": 988,
     "not-verified": 375
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sticky-bees-pragmatic-play",
+      "name": "Sticky Bees™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20clustwild",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Sticky Bees™; Official page confirms fruit cluster wins and cascades, 12 to 19 marked positions, bees transforming marked positions into Wilds, seven Free Spins with persistent Wilds, and RTP 96.06%. Codex in-app browser showed the exact official page title, gameplay and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vs20clustwild. Codex in-app browser opened the exact official openGame.do URL and observed Sticky Bees titled reels, visible balance, stake display and spin controls without spinning or betting; direct HTTP returned 200 and matching HTML title. Exact official image URL maps through page og:image; image/png SHA256 1C2800355CC1F1F6B73165A37CF273A03045B3B9E9D878F0202F03E55885B472, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sticky-bees/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 360"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/05/Sticky-Bees_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 1C2800355CC1F1F6B73165A37CF273A03045B3B9E9D878F0202F03E55885B472"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20clustwild",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the exact official openGame.do URL and observed Sticky Bees titled reels, visible balance, stake display and spin controls without spinning or betting; direct HTTP returned 200 and matching HTML title."
+        }
+      ]
+    },
     {
       "slug": "pirates-pub-pragmatic-play",
       "name": "Pirates Pub™",
