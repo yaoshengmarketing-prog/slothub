@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1368,
+  "gameCount": 1369,
   "providerCount": 371,
-  "sourcePageCount": 2493,
+  "sourcePageCount": 2496,
   "counts": {
     "access-restricted": 4,
-    "available": 989,
+    "available": 990,
     "not-verified": 375
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "jewel-rush-pragmatic-play",
+      "name": "Jewel Rush™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-06",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20jewelparty",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Jewel Rush™; Official page confirms 7x7 gemstone grid, clusters of five or more adjacent symbols, cascades, Wild multipliers, three Scatters triggering ten Free Spins, and RTP 96.47%. Codex in-app browser showed the exact official page title, gameplay and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vs20jewelparty. Codex in-app browser opened the exact official openGame.do URL and observed Jewel Rush titled 7x7 gemstone board and spin control, without spinning or betting; direct HTTP returned 200 and matching HTML title. Exact official image URL maps through page og:image; image/png SHA256 EB01DB9F603B85EE990B4803223C56449BD735EF434D2B21BB679227864E0224, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/jewel-rush/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 362"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/05/Jewel-Rush_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 EB01DB9F603B85EE990B4803223C56449BD735EF434D2B21BB679227864E0224"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20jewelparty",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the exact official openGame.do URL and observed Jewel Rush titled 7x7 gemstone board and spin control, without spinning or betting; direct HTTP returned 200 and matching HTML title."
+        }
+      ]
+    },
     {
       "slug": "zeus-vs-hades-gods-of-war-pragmatic-play",
       "name": "Zeus vs Hades – Gods of War™",
