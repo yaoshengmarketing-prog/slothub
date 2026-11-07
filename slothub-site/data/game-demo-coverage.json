@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1415,
+  "gameCount": 1416,
   "providerCount": 372,
-  "sourcePageCount": 2639,
+  "sourcePageCount": 2642,
   "counts": {
     "access-restricted": 4,
     "available": 1011,
-    "not-verified": 400
+    "not-verified": 401
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-keeping-it-reel-reel-kingdom",
+      "name": "Big Bass – Keeping it Reel",
+      "provider": "reel-kingdom",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Big Bass – Keeping it Reel; Official page confirms 5x3 grid and ten paylines, up to twenty Free Spins from one trigger, Golden Wilds in bonus mode, levels unlocking multipliers, maximum win 10,000x, and RTP 96.07%. Codex in-app browser verified exact Pragmatic Play official page and matching direct Demo; Demo splash explicitly identifies Reel Kingdom powered by Pragmatic Play. Reel Kingdom already has a published Provider record and official homepage. Artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs10bbkir. Codex in-app browser on 2026-11-07 opened exact Big Bass Bonanza - Keeping it Reel Demo with gameSymbol vs10bbkir; Reel Kingdom splash identified the studio, then an introductory title screen appeared. Playable reels with balance/stake controls were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 9613E7FA3C89F2AD27E46934048C03DED57BE0EDB86B0C37C21F6C41707A7849, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-keeping-it-reel/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 409"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/10/Big_Bass_Bonanza_Keeping_it_Reel_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 9613E7FA3C89F2AD27E46934048C03DED57BE0EDB86B0C37C21F6C41707A7849"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbkir",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 opened exact Big Bass Bonanza - Keeping it Reel Demo with gameSymbol vs10bbkir; Reel Kingdom splash identified the studio, then an introductory title screen appeared. Playable reels with balance/stake controls were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "sword-of-ares-pragmatic-play",
       "name": "Sword of Ares",

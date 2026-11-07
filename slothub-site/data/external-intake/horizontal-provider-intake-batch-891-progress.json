@@ -1,0 +1,38 @@
+{
+  "batch": 891,
+  "recordedAt": "2026-11-07T13:19:06.244Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1415 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass – Keeping it Reel /vs10bbkir absent.",
+  "records": [
+    {
+      "index": 409,
+      "name": "Big Bass – Keeping it Reel",
+      "slug": "big-bass-keeping-it-reel-reel-kingdom",
+      "provider": "reel-kingdom",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-keeping-it-reel/",
+      "officialFacts": "Official page confirms 5x3 grid and ten paylines, up to twenty Free Spins from one trigger, Golden Wilds in bonus mode, levels unlocking multipliers, maximum win 10,000x, and RTP 96.07%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/10/Big_Bass_Bonanza_Keeping_it_Reel_EN_339x180.png",
+        "localPath": "public/assets/games/big-bass-keeping-it-reel-reel-kingdom.png",
+        "sha256": "9613E7FA3C89F2AD27E46934048C03DED57BE0EDB86B0C37C21F6C41707A7849",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser on 2026-11-07 opened exact Big Bass Bonanza - Keeping it Reel Demo with gameSymbol vs10bbkir; Reel Kingdom splash identified the studio, then an introductory title screen appeared. Playable reels with balance/stake controls were not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 410 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "log": "tmp/verify-batch891.log"
+  }
+}
