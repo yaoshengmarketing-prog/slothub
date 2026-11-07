@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1401,
+  "gameCount": 1402,
   "providerCount": 372,
-  "sourcePageCount": 2596,
+  "sourcePageCount": 2599,
   "counts": {
     "access-restricted": 4,
-    "available": 1007,
+    "available": 1008,
     "not-verified": 390
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sweet-powernudge-pragmatic-play",
+      "name": "Sweet Powernudge",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20clspwrndg",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Sweet Powernudge; Official page confirms 6x5 grid, five-plus matching symbols, winning reel nudges, reel-five multipliers, four Scatters triggering seven Free Spins, four collected Scatters retriggering three spins, and RTP 96.08%. Codex in-app browser verified exact official page, artwork mapping and playable Demo visual state; no paid browser used. Official HTML includes gameSymbol vs20clspwrndg. Codex in-app browser on 2026-11-07 observed exact Sweet Powernudge title, six reels, balance/stake readout and spin control in official direct Demo; no spin or bet performed. Exact official image URL maps through page og:image; image/png SHA256 7D4F12D4693651DC24260550F6295B34783FDA74B866FB2B52AE1AE3F2769575, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sweet-powernudge/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 395"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/12/Sweet-Powernudge_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 7D4F12D4693651DC24260550F6295B34783FDA74B866FB2B52AE1AE3F2769575"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20clspwrndg",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Sweet Powernudge title, six reels, balance/stake readout and spin control in official direct Demo; no spin or bet performed."
+        }
+      ]
+    },
     {
       "slug": "starlight-christmas-pragmatic-play",
       "name": "Starlight Christmas",

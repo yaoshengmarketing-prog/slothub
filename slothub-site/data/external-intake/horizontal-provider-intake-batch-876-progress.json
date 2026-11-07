@@ -1,10 +1,10 @@
 {
   "batch": 876,
   "recordedAt": "2026-11-07T08:26:32.726Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Starlight Christmas",
       "slug": "starlight-christmas-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/starlight-christmas/",
       "officialFacts": "Official page confirms 6x5 grid, tumbling wins, multiplier up to 500x and RTP 96.50%; source conflicts between 12-symbol clusters and 20 paylines, so win mechanism is left unspecified.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser on 2026-11-07 observed exact Starlight Christmas intro screen from official direct Demo URL but gameplay controls did not load; marked not-verified."
     }
   ],
-  "nextCursor": "Catalog item 395 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 395 Sweet Powernudge after item 394 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "log": "tmp/verify-batch876.log",
     "note": "Full preview verify exit 0; 1806 HTML pages isolated; all project checks pass."
+  },
+  "publication": {
+    "commit": "d49aebdf782d54722e5fdf08ecfe2084eb718d48",
+    "githubActionsRun": 42355752812,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "eadf8139-15d6-4143-b7a6-976c49918c62",
+    "cloudflareUrl": "https://eadf8139.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
