@@ -1,0 +1,39 @@
+{
+  "batch": 919,
+  "recordedAt": "2026-11-07T16:48:41.765Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1443 published Game Markdown records and same-provider exact official path/name/gameSymbol; Shining Hot 100 /vs100sh absent.",
+  "records": [
+    {
+      "index": 437,
+      "name": "Shining Hot 100",
+      "slug": "shining-hot-100-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/shining-hot-100/",
+      "officialFacts": "Official page confirms classic fruit symbols, flaming diamonds and bells, one hundred paylines, maximum win 2500x and RTP 96.32%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Shining-Hot-100_339x180.png",
+        "localPath": "public/assets/games/shining-hot-100-pragmatic-play.png",
+        "sha256": "383E0A3953EBCC4CE31F37D34749F72C03C5D4CCDD0E3145784151C32FE8EF08",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser followed exact official Shining Hot 100 Demo gameSymbol to a fully rendered reel grid with title, demo balance, stake and spin control. No spin or wager was initiated."
+    }
+  ],
+  "nextCursor": "Catalog item 438 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "Full preview verify exit 0; exact official page, symbol, artwork SHA and playable Demo checked.",
+    "log": "tmp/verify-batch919.log"
+  }
+}

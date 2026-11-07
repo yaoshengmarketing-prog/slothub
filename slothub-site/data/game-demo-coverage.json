@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1443,
+  "gameCount": 1444,
   "providerCount": 372,
-  "sourcePageCount": 2723,
+  "sourcePageCount": 2726,
   "counts": {
     "access-restricted": 4,
-    "available": 1018,
+    "available": 1019,
     "not-verified": 421
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "shining-hot-100-pragmatic-play",
+      "name": "Shining Hot 100",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs100sh",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Shining Hot 100; Official page confirms classic fruit symbols, flaming diamonds and bells, one hundred paylines, maximum win 2500x and RTP 96.32%. Codex in-app browser verified exact official title, page facts, og:image and playable Demo; official artwork visually shows Shining Hot 100. No paid browser used. Official HTML includes gameSymbol vs100sh. Codex in-app browser followed exact official Shining Hot 100 Demo gameSymbol to a fully rendered reel grid with title, demo balance, stake and spin control. No spin or wager was initiated. Exact official image URL maps through page og:image; image/png SHA256 383E0A3953EBCC4CE31F37D34749F72C03C5D4CCDD0E3145784151C32FE8EF08, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/shining-hot-100/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 437"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Shining-Hot-100_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 383E0A3953EBCC4CE31F37D34749F72C03C5D4CCDD0E3145784151C32FE8EF08"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs100sh",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser followed exact official Shining Hot 100 Demo gameSymbol to a fully rendered reel grid with title, demo balance, stake and spin control. No spin or wager was initiated."
+        }
+      ]
+    },
     {
       "slug": "shining-hot-20-pragmatic-play",
       "name": "Shining Hot 20",
