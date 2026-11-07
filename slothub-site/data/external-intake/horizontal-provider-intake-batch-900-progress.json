@@ -1,0 +1,39 @@
+{
+  "batch": 900,
+  "recordedAt": "2026-11-07T14:34:57.922Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1424 published Game Markdown records and same-provider exact official path/name/gameSymbol; Crown of Fire /vs10crownfire absent.",
+  "records": [
+    {
+      "index": 418,
+      "name": "Crown of Fire",
+      "slug": "crown-of-fire-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/crown-of-fire/",
+      "officialFacts": "Official page confirms 5x3 reels and ten paylines with fruit and bell symbols, expanding Wild reel, Scatter and Special symbols paying from any position, and RTP 96.36%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Crown-of-Fire_339x180-1.png",
+        "localPath": "public/assets/games/crown-of-fire-pragmatic-play.png",
+        "sha256": "7EAFF636586B6B42566A8FFF37E1BF502640D0B2ADC49F8E7B222CEE727ED4B9",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser on 2026-11-07 showed Crown of Fire playable five-reel screen with balance, stake and spin controls; no spin or wager made."
+    }
+  ],
+  "nextCursor": "Catalog item 419 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "Full preview verify exit 0; exact official source, symbol, artwork SHA and playable Demo checked.",
+    "log": "tmp/verify-batch900.log"
+  }
+}

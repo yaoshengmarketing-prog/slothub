@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1424,
+  "gameCount": 1425,
   "providerCount": 372,
-  "sourcePageCount": 2666,
+  "sourcePageCount": 2669,
   "counts": {
     "access-restricted": 4,
-    "available": 1013,
+    "available": 1014,
     "not-verified": 407
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "crown-of-fire-pragmatic-play",
+      "name": "Crown of Fire",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10crownfire",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Crown of Fire; Official page confirms 5x3 reels and ten paylines with fruit and bell symbols, expanding Wild reel, Scatter and Special symbols paying from any position, and RTP 96.36%. Codex in-app browser verified exact official game page and playable Demo visual state; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs10crownfire. Codex in-app browser on 2026-11-07 showed Crown of Fire playable five-reel screen with balance, stake and spin controls; no spin or wager made. Exact official image URL maps through page og:image; image/png SHA256 7EAFF636586B6B42566A8FFF37E1BF502640D0B2ADC49F8E7B222CEE727ED4B9, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/crown-of-fire/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 418"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Crown-of-Fire_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 7EAFF636586B6B42566A8FFF37E1BF502640D0B2ADC49F8E7B222CEE727ED4B9"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10crownfire",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 showed Crown of Fire playable five-reel screen with balance, stake and spin controls; no spin or wager made."
+        }
+      ]
+    },
     {
       "slug": "wild-hopdrop-pragmatic-play",
       "name": "Wild Hop&Drop",
