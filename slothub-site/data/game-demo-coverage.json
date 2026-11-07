@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1465,
+  "gameCount": 1466,
   "providerCount": 372,
-  "sourcePageCount": 2789,
+  "sourcePageCount": 2792,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 439
+    "not-verified": 440
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "rainbow-gold-pragmatic-play",
+      "name": "Rainbow Gold",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Rainbow Gold; Official page confirms 3x5 grid, maximum 5000x and RTP 96.63% with Irish luck theme; unspecified payment mechanism remains missing. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Rainbow Gold. No paid browser used. Official HTML includes gameSymbol vs20rainbowg. Codex in-app browser opened matching official Rainbow Gold Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 B8562DBEC6B0009142FAAA4DBC70C7CF90F5E0B9249457E2C83BABE9FD12958B, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/rainbow-gold/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 460"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/03/Rainbow_Gold_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 B8562DBEC6B0009142FAAA4DBC70C7CF90F5E0B9249457E2C83BABE9FD12958B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20rainbowg",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Rainbow Gold Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "tic-tac-take-pragmatic-play",
       "name": "Tic Tac Take",
