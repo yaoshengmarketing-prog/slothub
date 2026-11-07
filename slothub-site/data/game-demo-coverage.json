@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1428,
+  "gameCount": 1429,
   "providerCount": 372,
-  "sourcePageCount": 2678,
+  "sourcePageCount": 2681,
   "counts": {
     "access-restricted": 4,
     "available": 1015,
-    "not-verified": 409
+    "not-verified": 410
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "octobeer-fortunes-pragmatic-play",
+      "name": "Octobeer Fortunes",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Octobeer Fortunes; Official page confirms 5x3 reels, twenty fixed paylines, collection feature awarding instant cash prizes in base game, Free Spins gathering instant prizes throughout bonus, maximum win 4500x, and RTP 96.53%. Codex in-app browser verified exact official game page and Demo loading state; official artwork visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs20octobeer. Codex in-app browser showed exact Octobeer Fortunes Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 D504CB345DE2416D9D3CE1E661B8285CE79E1BA910E28A2678C37AE6DEC95940, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/octobeer-fortunes/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 422"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/Octobeer-Fortunes_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 D504CB345DE2416D9D3CE1E661B8285CE79E1BA910E28A2678C37AE6DEC95940"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20octobeer",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Octobeer Fortunes Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "happy-hooves-pragmatic-play",
       "name": "Happy Hooves",
