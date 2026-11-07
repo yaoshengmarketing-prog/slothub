@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1444,
+  "gameCount": 1445,
   "providerCount": 372,
-  "sourcePageCount": 2726,
+  "sourcePageCount": 2729,
   "counts": {
     "access-restricted": 4,
     "available": 1019,
-    "not-verified": 421
+    "not-verified": 422
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "cosmic-cash-pragmatic-play",
+      "name": "Cosmic Cash",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Cosmic Cash; Official page confirms 5x4 reels, 40 paylines, money-symbol respins, Wilds, jackpots, free spins, maximum win 2650x and RTP 96.55%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visually shows Cosmic Cash. No paid browser used. Official HTML includes gameSymbol vs40cosmiccash. Codex in-app browser opened the matching official Cosmic Cash Demo, but only the loading view was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 3D7BAC1D215078A25E3F2C42D333825F928C7082DCA78E8EFCB88E1BB705258C, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/cosmic-cash/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 438"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/06/Cosmic-Cash_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 3D7BAC1D215078A25E3F2C42D333825F928C7082DCA78E8EFCB88E1BB705258C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40cosmiccash",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the matching official Cosmic Cash Demo, but only the loading view was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "shining-hot-100-pragmatic-play",
       "name": "Shining Hot 100",
