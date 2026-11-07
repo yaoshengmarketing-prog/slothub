@@ -1,0 +1,39 @@
+{
+  "batch": 883,
+  "recordedAt": "2026-11-07T09:21:24.986Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1407 published Game Markdown records and same-provider exact official path/name/gameSymbol; Santa’s Great Gifts /vs20porbs absent.",
+  "records": [
+    {
+      "index": 401,
+      "name": "Santa’s Great Gifts",
+      "slug": "santas-great-gifts-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/santas-great-gifts/",
+      "officialFacts": "Official page confirms 6x5 grid, eight-plus matching symbols anywhere, tumbling wins, 2x-100x multipliers, four-plus Scatters triggering Free Spins with extras to twenty, progressive bonus multiplier to 100x, 5000x max win, and RTP 96.25%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/11/Santas_Great_Gifts_EN_339x180-1.png",
+        "localPath": "public/assets/games/santas-great-gifts-pragmatic-play.png",
+        "sha256": "C2F75F8AB18320419764AB50E2AC15CEEC62B474F48E0CF58F0BA8AF26DD68FD",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser on 2026-11-07 observed exact Santa Great Gifts tutorial screen from official direct Demo URL, but no balance/stake readout and confirmed playable controls; marked not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 402 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "log": "tmp/verify-batch883.log",
+    "note": "Full preview verify exit 0; 1813 HTML pages isolated; all project checks pass."
+  }
+}

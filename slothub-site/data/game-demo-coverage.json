@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1407,
+  "gameCount": 1408,
   "providerCount": 372,
-  "sourcePageCount": 2615,
+  "sourcePageCount": 2618,
   "counts": {
     "access-restricted": 4,
     "available": 1008,
-    "not-verified": 395
+    "not-verified": 396
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "santas-great-gifts-pragmatic-play",
+      "name": "Santa’s Great Gifts",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Santa’s Great Gifts; Official page confirms 6x5 grid, eight-plus matching symbols anywhere, tumbling wins, 2x-100x multipliers, four-plus Scatters triggering Free Spins with extras to twenty, progressive bonus multiplier to 100x, 5000x max win, and RTP 96.25%. Codex in-app browser verified exact official page and Demo identity; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs20porbs. Codex in-app browser on 2026-11-07 observed exact Santa Great Gifts tutorial screen from official direct Demo URL, but no balance/stake readout and confirmed playable controls; marked not-verified. Exact official image URL maps through page og:image; image/png SHA256 C2F75F8AB18320419764AB50E2AC15CEEC62B474F48E0CF58F0BA8AF26DD68FD, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/santas-great-gifts/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 401"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/11/Santas_Great_Gifts_EN_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 C2F75F8AB18320419764AB50E2AC15CEEC62B474F48E0CF58F0BA8AF26DD68FD"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20porbs",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Santa Great Gifts tutorial screen from official direct Demo URL, but no balance/stake readout and confirmed playable controls; marked not-verified."
+        }
+      ]
+    },
     {
       "slug": "bigger-bass-blizzard-christmas-catch-pragmatic-play",
       "name": "Bigger Bass Blizzard – Christmas Catch",
