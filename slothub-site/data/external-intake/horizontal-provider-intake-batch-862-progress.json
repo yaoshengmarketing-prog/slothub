@@ -1,10 +1,10 @@
 {
   "batch": 862,
   "recordedAt": "2026-11-07T06:39:02.482Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "The Dog House Multihold™",
       "slug": "the-dog-house-multihold-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/the-dog-house-multihold/",
       "officialFacts": "Official page confirms a 5x3 grid, 2x or 3x multiplier Wilds, three Bonus symbols granting seven Free Spins, Scatters unlocking up to four grids, sticky copied Wilds and RTP 96.06%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser on 2026-11-07 reached exact The Dog House Multihold Demo title and symbol but observed only an intro overlay without playable controls; Demo remains not-verified and no public link is exposed."
     }
   ],
-  "nextCursor": "Catalog item 381 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 381 Wild West Duels after item 380 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch862.log"
+  },
+  "publication": {
+    "commit": "0c2dbddf79a83de834d2caec726c6a1212c4a571",
+    "githubActionsRun": 42348273070,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "14ddd3a9-37f5-42f5-9edd-36aad2d05a63",
+    "cloudflareUrl": "https://14ddd3a9.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1387,
+  "gameCount": 1388,
   "providerCount": 371,
-  "sourcePageCount": 2550,
+  "sourcePageCount": 2553,
   "counts": {
     "access-restricted": 4,
-    "available": 1002,
+    "available": 1003,
     "not-verified": 381
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wild-west-duels-pragmatic-play",
+      "name": "Wild West Duels",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20pistols",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wild West Duels; Official page confirms 5x5 reels, 15 paylines, Lost Relic Wilds and multipliers, Duel ten-spin expanding Wild reels, Beer ten-spin held multiplier Wilds and RTP 96.00%. Codex in-app browser verified exact official page text, artwork mapping and direct Demo visual state; no paid browser used. Official HTML includes gameSymbol vs20pistols. Codex in-app browser on 2026-11-07 observed exact Wild West Duels title, five reels, balance/stake readout and circular spin control at the official Demo; no spin or bet performed. Exact official image URL maps through page og:image; image/png SHA256 8D1EE005C65EC423BC86B05FB9E8739A355FF0847FF06A1CD5B1327BAEB97334, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-west-duels/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 381"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/02/Wild-West-Duels_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 8D1EE005C65EC423BC86B05FB9E8739A355FF0847FF06A1CD5B1327BAEB97334"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20pistols",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Wild West Duels title, five reels, balance/stake readout and circular spin control at the official Demo; no spin or bet performed."
+        }
+      ]
+    },
     {
       "slug": "the-dog-house-multihold-pragmatic-play",
       "name": "The Dog House Multihold™",

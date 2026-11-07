@@ -1,0 +1,39 @@
+{
+  "batch": 863,
+  "recordedAt": "2026-11-07T06:46:56.706Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1387 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild West Duels /vs20pistols absent.",
+  "records": [
+    {
+      "index": 381,
+      "name": "Wild West Duels",
+      "slug": "wild-west-duels-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/wild-west-duels/",
+      "officialFacts": "Official page confirms 5x5 reels, 15 paylines, Lost Relic Wilds and multipliers, Duel ten-spin expanding Wild reels, Beer ten-spin held multiplier Wilds and RTP 96.00%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/02/Wild-West-Duels_339x180.png",
+        "localPath": "public/assets/games/wild-west-duels-pragmatic-play.png",
+        "sha256": "8D1EE005C65EC423BC86B05FB9E8739A355FF0847FF06A1CD5B1327BAEB97334",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser on 2026-11-07 observed exact Wild West Duels title, five reels, balance/stake readout and circular spin control at the official Demo; no spin or bet performed."
+    }
+  ],
+  "nextCursor": "Catalog item 382 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch863.log"
+  }
+}
