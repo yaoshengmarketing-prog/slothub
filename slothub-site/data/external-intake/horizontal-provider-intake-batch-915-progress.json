@@ -1,0 +1,39 @@
+{
+  "batch": 915,
+  "recordedAt": "2026-11-07T16:21:33.417Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1439 published Game Markdown records and same-provider exact official path/name/gameSymbol; Tropical Tiki /vswaysjkrdrop absent.",
+  "records": [
+    {
+      "index": 433,
+      "name": "Tropical Tiki",
+      "slug": "tropical-tiki-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/tropical-tiki/",
+      "officialFacts": "Official page confirms 3x6 reels, tumbling feature in which all symbols except winning ones disappear, expanding grid in Free Spins, maximum win 3000x and RTP 96.43%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Tropical-Tiki_339x180.png",
+        "localPath": "public/assets/games/tropical-tiki-pragmatic-play.png",
+        "sha256": "5FDF98C6B83D4CD1B973EA2D612B62DC728A7819216B9A075B14D1B131559BD9",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser showed exact Tropical Tiki Demo title and animated in-game tutorial, but no visible balance, stake or ready-to-play controls; Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 434 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "Full preview verify exit 0; exact official page, symbol and artwork SHA checked; Demo tutorial only.",
+    "log": "tmp/verify-batch915.log"
+  }
+}

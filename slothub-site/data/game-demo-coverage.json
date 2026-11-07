@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1439,
+  "gameCount": 1440,
   "providerCount": 372,
-  "sourcePageCount": 2711,
+  "sourcePageCount": 2714,
   "counts": {
     "access-restricted": 4,
     "available": 1016,
-    "not-verified": 419
+    "not-verified": 420
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "tropical-tiki-pragmatic-play",
+      "name": "Tropical Tiki",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Tropical Tiki; Official page confirms 3x6 reels, tumbling feature in which all symbols except winning ones disappear, expanding grid in Free Spins, maximum win 3000x and RTP 96.43%. Codex in-app browser verified exact official title, gameplay, page og:image and direct Demo tutorial; official artwork visually shows Tropical Tiki. No paid browser used. Official HTML includes gameSymbol vswaysjkrdrop. Codex in-app browser showed exact Tropical Tiki Demo title and animated in-game tutorial, but no visible balance, stake or ready-to-play controls; Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 5FDF98C6B83D4CD1B973EA2D612B62DC728A7819216B9A075B14D1B131559BD9, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/tropical-tiki/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 433"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Tropical-Tiki_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 5FDF98C6B83D4CD1B973EA2D612B62DC728A7819216B9A075B14D1B131559BD9"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysjkrdrop",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Tropical Tiki Demo title and animated in-game tutorial, but no visible balance, stake or ready-to-play controls; Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "magic-money-maze-pragmatic-play",
       "name": "Magic Money Maze",
