@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1390,
+  "gameCount": 1391,
   "providerCount": 371,
-  "sourcePageCount": 2560,
+  "sourcePageCount": 2563,
   "counts": {
     "access-restricted": 4,
-    "available": 1005,
+    "available": 1006,
     "not-verified": 381
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "peak-power-pragmatic-play",
+      "name": "Peak Power™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10powerlines",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Peak Power™; Official page confirms 5x3 reels, 10 paylines, winning-line multipliers, three Scatters granting Free Spins, higher line multipliers during Free Spins and RTP 96.02%. Codex in-app browser verified exact official page text, artwork mapping and direct Demo visual state; no paid browser used. Official HTML includes gameSymbol vs10powerlines. Codex in-app browser on 2026-11-07 observed exact Peak Power title, five reels, balance/stake readout and spin control at the official Demo; no spin or bet performed. Exact official image URL maps through page og:image; image/png SHA256 C7E06E59A8CC5917F5BFAFC29529E0E7627C69307073DBEFA2C2DB026BEB7DAB, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/peak-power/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 384"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/02/Peak-Power_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 C7E06E59A8CC5917F5BFAFC29529E0E7627C69307073DBEFA2C2DB026BEB7DAB"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10powerlines",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Peak Power title, five reels, balance/stake readout and spin control at the official Demo; no spin or bet performed."
+        }
+      ]
+    },
     {
       "slug": "wild-wild-riches-megaways-pragmatic-play",
       "name": "Wild Wild Riches Megaways™",
