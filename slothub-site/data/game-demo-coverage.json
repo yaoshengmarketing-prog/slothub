@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1404,
+  "gameCount": 1405,
   "providerCount": 372,
-  "sourcePageCount": 2606,
+  "sourcePageCount": 2609,
   "counts": {
     "access-restricted": 4,
     "available": 1008,
-    "not-verified": 392
+    "not-verified": 393
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "reel-banks-pragmatic-play",
+      "name": "Reel Banks",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Reel Banks; Official page confirms 5x4 grid, 25 paylines, Wild substitution except Scatters, instant cash collection, Bonus Coins on every reel triggering Free Spins, modifiers for coin values, extra spins, multipliers and bank collection, and RTP 96.04%. Codex in-app browser verified exact official page and Demo tutorial; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs25rlbank. Codex in-app browser on 2026-11-07 observed exact Reel Banks tutorial screen from official direct Demo URL, but no balance/stake readout and confirmed playable controls; marked not-verified. Exact official image URL maps through page og:image; image/png SHA256 0B67472422A7F50616B8F4080E7C1DE46DEF5ADB7C23F0B7E7992FE402343F1C, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/reel-banks/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 398"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/11/Reel-Banks_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 0B67472422A7F50616B8F4080E7C1DE46DEF5ADB7C23F0B7E7992FE402343F1C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25rlbank",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Reel Banks tutorial screen from official direct Demo URL, but no balance/stake readout and confirmed playable controls; marked not-verified."
+        }
+      ]
+    },
     {
       "slug": "hot-pepper-pragmatic-play",
       "name": "Hot Pepper",

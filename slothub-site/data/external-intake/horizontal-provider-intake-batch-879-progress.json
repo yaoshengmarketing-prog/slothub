@@ -1,10 +1,10 @@
 {
   "batch": 879,
   "recordedAt": "2026-11-07T08:48:53.719Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Hot Pepper",
       "slug": "hot-pepper-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/hot-pepper/",
       "officialFacts": "Official page confirms 7x7 grid, clusters of five or more adjacent matching symbols, tumbling wins, multiplier Wild creation, level-up to fifth level, 10000x max win, and RTP 96.45%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser on 2026-11-07 observed exact Hot Pepper intro/loading from official direct Demo URL but gameplay controls did not load; marked not-verified."
     }
   ],
-  "nextCursor": "Catalog item 398 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 398 Reel Banks after item 397 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "log": "tmp/verify-batch879.log",
     "note": "Full preview verify exit 0 after replacing unsupported tumbling-reels feature tag with supported cascading; 1809 HTML pages isolated; all project checks pass."
+  },
+  "publication": {
+    "commit": "e655a55ae55e7e6d628db0ebb6758f8cef0d0269",
+    "githubActionsRun": 42357467280,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "c8e92e5c-b62b-4169-ab15-b3ba705652e3",
+    "cloudflareUrl": "https://c8e92e5c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
