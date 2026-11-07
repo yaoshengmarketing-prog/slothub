@@ -1,0 +1,38 @@
+{
+  "batch": 886,
+  "recordedAt": "2026-11-07T09:44:28.837Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1410 published Game Markdown records and same-provider exact official path/name/gameSymbol; Shield of Sparta /vs20sparta absent.",
+  "records": [
+    {
+      "index": 404,
+      "name": "Shield of Sparta",
+      "slug": "shield-of-sparta-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/shield-of-sparta/",
+      "officialFacts": "Official page confirms 5x3 grid, twenty paylines, Bonus and Magnetic Bonus symbols locking after two and respinning remaining positions, three-to-five symbols awarding ten-to-twenty Free Spins, symbol upgrades in highlighted bonus positions, and RTP 96.50%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/11/Shield-of-Sparta_339x180-1.png",
+        "localPath": "public/assets/games/shield-of-sparta-pragmatic-play.png",
+        "sha256": "8CE8933A34D5187F2D332588DF817C7893016B5F5E5B92D8D426A6D8CD8942F4",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser on 2026-11-07 displayed Shield of Sparta playable five-reel game screen with balance, stake and spin controls; no wager or spin was made."
+    }
+  ],
+  "nextCursor": "Catalog item 405 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "log": "tmp/verify-batch886-final.log"
+  }
+}

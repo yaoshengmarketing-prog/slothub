@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1410,
+  "gameCount": 1411,
   "providerCount": 372,
-  "sourcePageCount": 2624,
+  "sourcePageCount": 2627,
   "counts": {
     "access-restricted": 4,
-    "available": 1008,
+    "available": 1009,
     "not-verified": 398
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "shield-of-sparta-pragmatic-play",
+      "name": "Shield of Sparta",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Shield of Sparta; Official page confirms 5x3 grid, twenty paylines, Bonus and Magnetic Bonus symbols locking after two and respinning remaining positions, three-to-five symbols awarding ten-to-twenty Free Spins, symbol upgrades in highlighted bonus positions, and RTP 96.50%. Codex in-app browser verified exact official page and Demo identity; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs20sparta. Codex in-app browser on 2026-11-07 displayed Shield of Sparta playable five-reel game screen with balance, stake and spin controls; no wager or spin was made. Exact official image URL maps through page og:image; image/png SHA256 8CE8933A34D5187F2D332588DF817C7893016B5F5E5B92D8D426A6D8CD8942F4, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/shield-of-sparta/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 404"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/11/Shield-of-Sparta_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 8CE8933A34D5187F2D332588DF817C7893016B5F5E5B92D8D426A6D8CD8942F4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20sparta",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 displayed Shield of Sparta playable five-reel game screen with balance, stake and spin controls; no wager or spin was made."
+        }
+      ],
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20sparta",
+      "accessType": "direct-demo",
+      "presentation": "external"
+    },
     {
       "slug": "gems-of-serengeti-pragmatic-play",
       "name": "Gems of Serengeti",
