@@ -1,10 +1,10 @@
 {
   "batch": 923,
   "recordedAt": "2026-11-07T17:14:56.578Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Cash Patrol",
       "slug": "cash-patrol-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/cash-patrol/",
       "officialFacts": "Official page confirms 5x3 reels, Money symbol collection, expanding Wilds, final-bust Free Spins and RTP 96.50%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser opened matching official Cash Patrol Demo and observed full reel grid, balance, stake and spin controls. No spin or wager was initiated."
     }
   ],
-  "nextCursor": "Catalog item 443 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 443 Queen of Gods after item 442 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "Full preview verify exit 0; exact official page, symbol, artwork SHA and playable Demo checked.",
     "log": "tmp/verify-batch923.log"
+  },
+  "publication": {
+    "commit": "4ff3229f00aa127da48f8b241a9d68d281880ab9",
+    "githubActionsRun": 42395658898,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "6daeafe7-890d-4ef2-87a8-90d210416ea9",
+    "cloudflareUrl": "https://6daeafe7.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
