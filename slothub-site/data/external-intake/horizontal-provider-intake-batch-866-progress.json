@@ -1,10 +1,10 @@
 {
   "batch": 866,
   "recordedAt": "2026-11-07T07:11:07.071Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Peak Power™",
       "slug": "peak-power-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/peak-power/",
       "officialFacts": "Official page confirms 5x3 reels, 10 paylines, winning-line multipliers, three Scatters granting Free Spins, higher line multipliers during Free Spins and RTP 96.02%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser on 2026-11-07 observed exact Peak Power title, five reels, balance/stake readout and spin control at the official Demo; no spin or bet performed."
     }
   ],
-  "nextCursor": "Catalog item 385 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 385 Club Tropicana™ after item 384 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch866.log"
+  },
+  "publication": {
+    "commit": "97cc0d7b4b3fb0bfabd46641eac666e935a9a5b9",
+    "githubActionsRun": 42350483185,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "e8cb9efa-abaa-45c9-a4f2-f7237d92fe81",
+    "cloudflareUrl": "https://e8cb9efa.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
