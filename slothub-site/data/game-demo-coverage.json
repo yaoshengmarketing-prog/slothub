@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1454,
+  "gameCount": 1455,
   "providerCount": 372,
-  "sourcePageCount": 2756,
+  "sourcePageCount": 2759,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 428
+    "not-verified": 429
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-great-stick-up-pragmatic-play",
+      "name": "The Great Stick-Up",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Great Stick-Up; Official page confirms crime-themed cash, map, handcuff and detective symbols, and RTP 96.30%; it does not provide a supported numeric maximum win. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says The Great Stick-Up. No paid browser used. Official HTML includes gameSymbol vs20stickysymbol. Codex in-app browser opened matching official The Great Stick-Up Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 9B84495CA3CF7775E2C3BDC9C33B271AAC248F6CA993C99C8E595D6A82777FCC, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-great-stick-up/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 449"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/05/THE-GREAT-STICK-UP_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 9B84495CA3CF7775E2C3BDC9C33B271AAC248F6CA993C99C8E595D6A82777FCC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20stickysymbol",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official The Great Stick-Up Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "little-gem-pragmatic-play",
       "name": "Little Gem",
