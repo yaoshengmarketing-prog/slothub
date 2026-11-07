@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1447,
+  "gameCount": 1448,
   "providerCount": 372,
-  "sourcePageCount": 2735,
+  "sourcePageCount": 2738,
   "counts": {
     "access-restricted": 4,
-    "available": 1020,
+    "available": 1021,
     "not-verified": 423
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "cash-patrol-pragmatic-play",
+      "name": "Cash Patrol",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25copsrobbers",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Cash Patrol; Official page confirms 5x3 reels, Money symbol collection, expanding Wilds, final-bust Free Spins and RTP 96.50%. Codex in-app browser verified exact official title, page facts, og:image and playable Demo; official artwork visually shows Cash Patrol. No paid browser used. Official HTML includes gameSymbol vs25copsrobbers. Codex in-app browser opened matching official Cash Patrol Demo and observed full reel grid, balance, stake and spin controls. No spin or wager was initiated. Exact official image URL maps through page og:image; image/png SHA256 C355A2C4921A680C8FDBD8AD193BAE199883B3F52D1DB620F43050DF35F4DD87, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/cash-patrol/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 442"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/02/Cash-Patrol_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 C355A2C4921A680C8FDBD8AD193BAE199883B3F52D1DB620F43050DF35F4DD87"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25copsrobbers",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Cash Patrol Demo and observed full reel grid, balance, stake and spin controls. No spin or wager was initiated."
+        }
+      ]
+    },
     {
       "slug": "big-bass-splash-pragmatic-play",
       "name": "Big Bass Splash",
