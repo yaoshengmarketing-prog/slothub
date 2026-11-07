@@ -1,10 +1,10 @@
 {
   "batch": 883,
   "recordedAt": "2026-11-07T09:21:24.986Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Santa’s Great Gifts",
       "slug": "santas-great-gifts-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/santas-great-gifts/",
       "officialFacts": "Official page confirms 6x5 grid, eight-plus matching symbols anywhere, tumbling wins, 2x-100x multipliers, four-plus Scatters triggering Free Spins with extras to twenty, progressive bonus multiplier to 100x, 5000x max win, and RTP 96.25%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser on 2026-11-07 observed exact Santa Great Gifts tutorial screen from official direct Demo URL, but no balance/stake readout and confirmed playable controls; marked not-verified."
     }
   ],
-  "nextCursor": "Catalog item 402 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 402 Snakes & Ladders – Snake Eyes after item 401 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "log": "tmp/verify-batch883.log",
     "note": "Full preview verify exit 0; 1813 HTML pages isolated; all project checks pass."
+  },
+  "publication": {
+    "commit": "45749693da1151df2cd0d06f2e1e445d4ba668e0",
+    "githubActionsRun": 42359735693,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "afebe03f-9feb-4185-8dc9-b18558947e40",
+    "cloudflareUrl": "https://afebe03f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1408,
+  "gameCount": 1409,
   "providerCount": 372,
-  "sourcePageCount": 2618,
+  "sourcePageCount": 2621,
   "counts": {
     "access-restricted": 4,
     "available": 1008,
-    "not-verified": 396
+    "not-verified": 397
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "snakes-ladders-snake-eyes-pragmatic-play",
+      "name": "Snakes & Ladders – Snake Eyes",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Snakes & Ladders – Snake Eyes; Official page confirms ten base paylines, 1x-3x multiplier Wilds, three Scatters triggering a 12x12 board bonus, extra Scatters and Big Scatter awarding more spins, and RTP 96.08%. Codex in-app browser verified exact official page and Demo identity; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs10snakeeyes. Codex in-app browser on 2026-11-07 observed exact Snake Eyes loading from official direct Demo URL but gameplay controls did not load; marked not-verified. Exact official image URL maps through page og:image; image/png SHA256 4A2CADD0D5B5EFF735E904DF4114097F133973EBAA0055DC38BD23E617ABE4E9, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/snakes-ladders-snake-eyes/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 402"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/10/Snake__Ladders_Snake_Eyes_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 4A2CADD0D5B5EFF735E904DF4114097F133973EBAA0055DC38BD23E617ABE4E9"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10snakeeyes",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Snake Eyes loading from official direct Demo URL but gameplay controls did not load; marked not-verified."
+        }
+      ]
+    },
     {
       "slug": "santas-great-gifts-pragmatic-play",
       "name": "Santa’s Great Gifts",
