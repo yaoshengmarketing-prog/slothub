@@ -1,10 +1,10 @@
 {
   "batch": 930,
   "recordedAt": "2026-11-07T18:03:25.248Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "The Great Stick-Up",
       "slug": "the-great-stick-up-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/the-great-stick-up/",
       "officialFacts": "Official page confirms crime-themed cash, map, handcuff and detective symbols, and RTP 96.30%; it does not provide a supported numeric maximum win.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser opened matching official The Great Stick-Up Demo but only the loading screen was observed; playable reels were not verified."
     }
   ],
-  "nextCursor": "Catalog item 450 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 450 Goblin Heist PowerNudge after item 449 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "Full preview verify exit 0; exact official page, symbol and artwork SHA checked; Demo loading only.",
     "log": "tmp/verify-batch930.log"
+  },
+  "publication": {
+    "commit": "2cdb634ef1f8962dc0d4936a02af06d18b0420a4",
+    "githubActionsRun": 42399657240,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "43eb38cf-4086-4004-bbbc-9918d6df2906",
+    "cloudflareUrl": "https://43eb38cf.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

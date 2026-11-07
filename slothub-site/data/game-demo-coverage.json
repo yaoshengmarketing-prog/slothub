@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1455,
+  "gameCount": 1456,
   "providerCount": 372,
-  "sourcePageCount": 2759,
+  "sourcePageCount": 2762,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 429
+    "not-verified": 430
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "goblin-heist-powernudge-pragmatic-play",
+      "name": "Goblin Heist PowerNudge",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Goblin Heist PowerNudge; Official page confirms 3x5 grid, PowerNudge, multiplier and mystery coins, maximum win 4000x and RTP 96.47%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Goblin Heist PowerNudge despite a misspelled filename. No paid browser used. Official HTML includes gameSymbol vs20gobnudge. Codex in-app browser opened matching official Goblin Heist PowerNudge Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 23F43327D40E94057098A2A38969ACA3FFE044D2BF027E4B9177E6529A23D83D, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/goblin-heist-powernudge/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 450"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/04/Goblin_Hiest_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 23F43327D40E94057098A2A38969ACA3FFE044D2BF027E4B9177E6529A23D83D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20gobnudge",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Goblin Heist PowerNudge Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "the-great-stick-up-pragmatic-play",
       "name": "The Great Stick-Up",
