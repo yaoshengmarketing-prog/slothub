@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1463,
+  "gameCount": 1464,
   "providerCount": 372,
-  "sourcePageCount": 2783,
+  "sourcePageCount": 2786,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 437
+    "not-verified": 438
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "barn-festival-pragmatic-play",
+      "name": "Barn Festival",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Barn Festival; Official page confirms tumbling pays-anywhere, three money symbols unlock multiplier, four unlock free spins with three respins and expanding reels, maximum 20000x and RTP 96.45%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Barn Festival. No paid browser used. Official HTML includes gameSymbol vs20farmfest. Codex in-app browser opened matching official Barn Festival Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 4CE784BCCE6FA39295F7295BA8FF12A4E54B3A7BD1F03CE242216A36DF1CBC8A, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/barn-festival/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 458"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/03/Barn-Festival_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 4CE784BCCE6FA39295F7295BA8FF12A4E54B3A7BD1F03CE242216A36DF1CBC8A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20farmfest",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Barn Festival Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "drill-that-gold-pragmatic-play",
       "name": "Drill that Gold",
