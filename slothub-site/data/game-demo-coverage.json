@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1435,
+  "gameCount": 1436,
   "providerCount": 372,
-  "sourcePageCount": 2699,
+  "sourcePageCount": 2702,
   "counts": {
     "access-restricted": 4,
-    "available": 1015,
+    "available": 1016,
     "not-verified": 416
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "black-bull-pragmatic-play",
+      "name": "Black Bull",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20trswild2",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Black Bull; Official page confirms 5x4 reels, money collect with cash bags collecting values on each spin, six or more golden coins triggering progressive free spins with wilds and more spins, maximum win 4500x and RTP 96.51%. Codex in-app browser verified exact official title, gameplay, page og:image and playable Demo view; official artwork visually shows Black Bull. No paid browser used. Official HTML includes gameSymbol vs20trswild2. Codex in-app browser followed exact official Demo gameSymbol to Black Bull; screenshot showed fully rendered 5x4 reels, title, demo balance, stake and spin control. No spin or wager was initiated. Exact official image URL maps through page og:image; image/png SHA256 4378381C1473AEC20307FD36F88B9D0075E367A7C25E3631740D884A979AF423, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/black-bull/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 429"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Black-Bull_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 4378381C1473AEC20307FD36F88B9D0075E367A7C25E3631740D884A979AF423"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20trswild2",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser followed exact official Demo gameSymbol to Black Bull; screenshot showed fully rendered 5x4 reels, title, demo balance, stake and spin control. No spin or wager was initiated."
+        }
+      ]
+    },
     {
       "slug": "hot-to-burn-extreme-pragmatic-play",
       "name": "Hot to Burn® Extreme",

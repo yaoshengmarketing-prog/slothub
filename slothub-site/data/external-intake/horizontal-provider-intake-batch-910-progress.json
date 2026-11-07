@@ -1,10 +1,10 @@
 {
   "batch": 910,
   "recordedAt": "2026-11-07T15:44:13.407Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Hot to Burn® Extreme",
       "slug": "hot-to-burn-extreme-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/hot-to-burn-extreme/",
       "officialFacts": "Official page confirms 5x3 reels, forty paylines, maximum win 5000x, three to five scatters awarding ten to twenty retriggerable free spins, and RTP 96.65%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser showed exact Hot To Burn Extreme Demo title but remained on a loading spinner on repeated observation; playable reels were not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 429 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 429 Black Bull after item 428 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "Full preview verify exit 0; exact official page, symbol and artwork SHA checked; Demo loading spinner only.",
     "log": "tmp/verify-batch910.log"
+  },
+  "publication": {
+    "commit": "8a1bfd23e362367bed394c8ec8409f169c1410e8",
+    "githubActionsRun": 42388128074,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "739d1474-cfea-4b64-8a39-e818e0519643",
+    "cloudflareUrl": "https://739d1474.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
