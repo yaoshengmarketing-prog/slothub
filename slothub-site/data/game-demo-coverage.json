@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1446,
+  "gameCount": 1447,
   "providerCount": 372,
-  "sourcePageCount": 2732,
+  "sourcePageCount": 2735,
   "counts": {
     "access-restricted": 4,
     "available": 1020,
-    "not-verified": 422
+    "not-verified": 423
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-splash-pragmatic-play",
+      "name": "Big Bass Splash",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Big Bass Splash; Official page confirms Free Spins awards of 10, 15 or 20 from three, four or five scatters, Wild money collection, retriggers with multipliers, bonus modifiers and RTP 96.71%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visually shows Big Bass Splash. No paid browser used. Official HTML includes gameSymbol vs10txbigbass. Codex in-app browser opened the matching official Big Bass Splash Demo but only the introductory tutorial was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 0CDAB076F2DC5315E90266E9C3AC388FCDC12BB43FA6C3CABFBF845FBED45D5D, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-splash/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 441"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/06/BBSPLASH_EN_339x180_04-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 0CDAB076F2DC5315E90266E9C3AC388FCDC12BB43FA6C3CABFBF845FBED45D5D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10txbigbass",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the matching official Big Bass Splash Demo but only the introductory tutorial was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "bomb-bonanza-pragmatic-play",
       "name": "Bomb Bonanza",

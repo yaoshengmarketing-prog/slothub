@@ -1,10 +1,10 @@
 {
   "batch": 921,
   "recordedAt": "2026-11-07T17:01:44.913Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Bomb Bonanza",
       "slug": "bomb-bonanza-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/bomb-bonanza/",
       "officialFacts": "Official page confirms 5x5 reels, three Free Spins symbols award six Free Spins, Wild Bomb upgrades, maximum win 2015x and RTP 96.46%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser opened the matching official Bomb Bonanza Demo and observed full reel grid, balance, stake and spin controls. No spin or wager was initiated."
     }
   ],
-  "nextCursor": "Catalog item 440 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 441 Big Bass Splash after item 439 full publication closure; skipped existing item(s) 440.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "Full preview verify exit 0; exact official page, symbol, artwork SHA and playable Demo checked.",
     "log": "tmp/verify-batch921.log"
+  },
+  "publication": {
+    "commit": "7eef880392f6d4f6a0bcbe65649d6ecee5cc37bc",
+    "githubActionsRun": 42394541676,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "8cc2fa38-62f7-4863-9e23-b03ae7199cf7",
+    "cloudflareUrl": "https://8cc2fa38.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
