@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1406,
+  "gameCount": 1407,
   "providerCount": 372,
-  "sourcePageCount": 2612,
+  "sourcePageCount": 2615,
   "counts": {
     "access-restricted": 4,
     "available": 1008,
-    "not-verified": 394
+    "not-verified": 395
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "bigger-bass-blizzard-christmas-catch-pragmatic-play",
+      "name": "Bigger Bass Blizzard – Christmas Catch",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Bigger Bass Blizzard – Christmas Catch; Official page confirms 5x4 grid, three-plus Scatters triggering Free Spins, Fisherman Wild cash collection, four Fisherman Wilds advancing bonus/retriggering spins and raising multiplier, and RTP 96.08%. Codex in-app browser verified exact official page and Demo identity; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs12bbbxmas. Codex in-app browser on 2026-11-07 observed exact Bigger Bass Blizzard Christmas Catch loading from official direct Demo URL but gameplay controls did not load; marked not-verified. Exact official image URL maps through page og:image; image/png SHA256 4774143354299AAD9B41991B9C6349B11610DB6D644B2DBCD137B53D34ABB993, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/bigger-bass-blizzard-christmas-catch/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 400"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/11/BBBKiR_EN_339x180_04.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 4774143354299AAD9B41991B9C6349B11610DB6D644B2DBCD137B53D34ABB993"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs12bbbxmas",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Bigger Bass Blizzard Christmas Catch loading from official direct Demo URL but gameplay controls did not load; marked not-verified."
+        }
+      ]
+    },
     {
       "slug": "fury-of-odin-megaways-pragmatic-play",
       "name": "Fury of Odin Megaways",

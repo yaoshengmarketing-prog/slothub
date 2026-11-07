@@ -1,0 +1,39 @@
+{
+  "batch": 882,
+  "recordedAt": "2026-11-07T09:12:53.684Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1406 published Game Markdown records and same-provider exact official path/name/gameSymbol; Bigger Bass Blizzard – Christmas Catch /vs12bbbxmas absent.",
+  "records": [
+    {
+      "index": 400,
+      "name": "Bigger Bass Blizzard – Christmas Catch",
+      "slug": "bigger-bass-blizzard-christmas-catch-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/bigger-bass-blizzard-christmas-catch/",
+      "officialFacts": "Official page confirms 5x4 grid, three-plus Scatters triggering Free Spins, Fisherman Wild cash collection, four Fisherman Wilds advancing bonus/retriggering spins and raising multiplier, and RTP 96.08%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/11/BBBKiR_EN_339x180_04.png",
+        "localPath": "public/assets/games/bigger-bass-blizzard-christmas-catch-pragmatic-play.png",
+        "sha256": "4774143354299AAD9B41991B9C6349B11610DB6D644B2DBCD137B53D34ABB993",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser on 2026-11-07 observed exact Bigger Bass Blizzard Christmas Catch loading from official direct Demo URL but gameplay controls did not load; marked not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 401 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "log": "tmp/verify-batch882.log",
+    "note": "Full preview verify exit 0; 1812 HTML pages isolated; all project checks pass."
+  }
+}
