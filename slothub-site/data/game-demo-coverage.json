@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1396,
+  "gameCount": 1397,
   "providerCount": 372,
-  "sourcePageCount": 2580,
+  "sourcePageCount": 2583,
   "counts": {
     "access-restricted": 4,
     "available": 1007,
-    "not-verified": 385
+    "not-verified": 386
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "secret-city-gold-pragmatic-play",
+      "name": "Secret City Gold",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Secret City Gold; Official page confirms 25 paylines, random Wild patterns, three Scatters triggering Free Spins, pattern-triggered extra spin, +1x multiplier after each bonus win, RTP 96.06% and 10000x max win. Codex in-app browser verified exact official page and Demo intro; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs25spgldways. Codex in-app browser on 2026-11-07 observed exact Secret City Gold intro screen from official direct Demo URL but gameplay controls did not load; marked not-verified. Exact official image URL maps through page og:image; image/png SHA256 7F03F23E368C89F53C7C545D7039E34C7EC264BB93EF6484A36619F9F20D1E86, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/secret-city-gold/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 390"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/01/Secret-City-Gold_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 7F03F23E368C89F53C7C545D7039E34C7EC264BB93EF6484A36619F9F20D1E86"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25spgldways",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Secret City Gold intro screen from official direct Demo URL but gameplay controls did not load; marked not-verified."
+        }
+      ]
+    },
     {
       "slug": "mammoth-gold-megaways-pragmatic-play",
       "name": "Mammoth Gold Megaways",
