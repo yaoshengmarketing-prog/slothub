@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1382,
+  "gameCount": 1383,
   "providerCount": 371,
-  "sourcePageCount": 2535,
+  "sourcePageCount": 2538,
   "counts": {
     "access-restricted": 4,
-    "available": 1000,
+    "available": 1001,
     "not-verified": 378
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-knight-king-pragmatic-play",
+      "name": "The Knight King™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20sknights",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Knight King™; Official page confirms 5x3 reels, a randomly selected symbol that can fill the base-game screen, three or more Scatters granting seven Free Spins, an increasing special-symbol value and RTP 96.05%. Codex in-app browser on 2026-11-07 verified exact official page title and gameplay text; direct Demo visually matched title and gameSymbol. No paid browser used in this run. Official HTML includes gameSymbol vs20sknights. Codex in-app browser on 2026-11-07 observed the exact titled 5x3 reels, balance/stake readout and circular spin control at the official direct Demo; no spin or bet performed. Exact official image URL maps through page og:image; image/png SHA256 F519B5E02ADEAFE6F376F77F6B7A9BC1E13CE47B49E44560C8A5419B30BCEC4A, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-knight-king/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 376"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/03/The-Knight-King_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 F519B5E02ADEAFE6F376F77F6B7A9BC1E13CE47B49E44560C8A5419B30BCEC4A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20sknights",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed the exact titled 5x3 reels, balance/stake readout and circular spin control at the official direct Demo; no spin or bet performed."
+        }
+      ]
+    },
     {
       "slug": "rabbit-garden-pragmatic-play",
       "name": "Rabbit Garden",

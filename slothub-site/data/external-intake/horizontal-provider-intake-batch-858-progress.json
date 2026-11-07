@@ -1,0 +1,39 @@
+{
+  "batch": 858,
+  "recordedAt": "2026-11-07T06:05:26.07Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1382 published Game Markdown records and same-provider exact official path/name/gameSymbol; The Knight King™ /vs20sknights absent.",
+  "records": [
+    {
+      "index": 376,
+      "name": "The Knight King™",
+      "slug": "the-knight-king-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/the-knight-king/",
+      "officialFacts": "Official page confirms 5x3 reels, a randomly selected symbol that can fill the base-game screen, three or more Scatters granting seven Free Spins, an increasing special-symbol value and RTP 96.05%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/03/The-Knight-King_339x180.png",
+        "localPath": "public/assets/games/the-knight-king-pragmatic-play.png",
+        "sha256": "F519B5E02ADEAFE6F376F77F6B7A9BC1E13CE47B49E44560C8A5419B30BCEC4A",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser on 2026-11-07 observed the exact titled 5x3 reels, balance/stake readout and circular spin control at the official direct Demo; no spin or bet performed."
+    }
+  ],
+  "nextCursor": "Catalog item 377 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch858.log"
+  }
+}
