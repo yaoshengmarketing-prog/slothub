@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1441,
+  "gameCount": 1442,
   "providerCount": 372,
-  "sourcePageCount": 2717,
+  "sourcePageCount": 2720,
   "counts": {
     "access-restricted": 4,
-    "available": 1017,
+    "available": 1018,
     "not-verified": 420
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "shining-hot-5-pragmatic-play",
+      "name": "Shining Hot 5",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5sh",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Shining Hot 5; Official page confirms classic fruit symbols, flaming diamonds and bells, five paylines, maximum win 2500x and RTP 96.33%. Codex in-app browser verified exact official title, gameplay, page og:image and playable Demo; official artwork visually shows Shining Hot 5. No paid browser used. Official HTML includes gameSymbol vs5sh. Codex in-app browser followed exact official Shining Hot 5 Demo gameSymbol to a fully rendered reel grid with title, demo balance, stake and spin control. No spin or wager was initiated. Exact official image URL maps through page og:image; image/png SHA256 1712A036421AB9934D660E60608D0EFB04FF852CEB8CD34CEEC3D9E2305DBED2, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/shining-hot-5/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 435"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Shining-Hot-5_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 1712A036421AB9934D660E60608D0EFB04FF852CEB8CD34CEEC3D9E2305DBED2"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5sh",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser followed exact official Shining Hot 5 Demo gameSymbol to a fully rendered reel grid with title, demo balance, stake and spin control. No spin or wager was initiated."
+        }
+      ]
+    },
     {
       "slug": "shining-hot-40-pragmatic-play",
       "name": "Shining Hot 40",
