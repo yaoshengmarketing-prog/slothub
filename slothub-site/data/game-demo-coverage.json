@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1452,
+  "gameCount": 1453,
   "providerCount": 372,
-  "sourcePageCount": 2750,
+  "sourcePageCount": 2753,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 426
+    "not-verified": 427
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "cleocatra-pragmatic-play",
+      "name": "Cleocatra",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Cleocatra; Official page confirms 2x or 3x multiplier Wilds, sticky respins from a first-reel cat stack, eight to sixteen Free Spins from three to five scatters, maximum win 5000x and RTP 96.20%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Cleocatra. No paid browser used. Official HTML includes gameSymbol vs20cleocatra. Codex in-app browser opened matching official Cleocatra Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 D54AED186316D50D9C70C1523C3516F3FA6255527691726C02928106A06C4C8B, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/cleocatra/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 447"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/05/Cleocatra_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 D54AED186316D50D9C70C1523C3516F3FA6255527691726C02928106A06C4C8B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20cleocatra",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Cleocatra Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "wild-west-gold-megaways-pragmatic-play",
       "name": "Wild West Gold Megaways",

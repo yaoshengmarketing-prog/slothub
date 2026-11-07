@@ -1,10 +1,10 @@
 {
   "batch": 927,
   "recordedAt": "2026-11-07T17:42:29.662Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Wild West Gold Megaways",
       "slug": "wild-west-gold-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/wild-west-gold-megaways/",
       "officialFacts": "Official page confirms Megaways with 117649 winning ways, Wild multipliers, Double Chance, sticky Wilds and bonus retriggers, RTP 96.44%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser opened matching official Wild West Gold Megaways Demo but only the loading screen was observed; playable reels were not verified."
     }
   ],
-  "nextCursor": "Catalog item 447 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 447 Cleocatra after item 446 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "Full preview verify exit 0; exact official page, symbol and artwork SHA checked; Demo loading only.",
     "log": "tmp/verify-batch927.log"
+  },
+  "publication": {
+    "commit": "2a5141b67a0afd684773a6a066dfacc9558d7021",
+    "githubActionsRun": 42397911524,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "01e8314b-108d-496a-9d41-91f7dc74ba3a",
+    "cloudflareUrl": "https://01e8314b.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
