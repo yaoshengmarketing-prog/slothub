@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1464,
+  "gameCount": 1465,
   "providerCount": 372,
-  "sourcePageCount": 2786,
+  "sourcePageCount": 2789,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 438
+    "not-verified": 439
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "tic-tac-take-pragmatic-play",
+      "name": "Tic Tac Take",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Tic Tac Take; Official page confirms 5x3 grid, ten paylines, wild substitution, maximum 22000x and RTP 96.63%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Tic Tac Take. No paid browser used. Official HTML includes gameSymbol vs10tictac. Codex in-app browser opened matching official Tic Tac Take Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 21FCB477FA01D1B4B43CAD423E43970CAFCAB92EB520CB10C9138D451C8AD6C8, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/tic-tac-take/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 459"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/03/TTT_EN_339x180_04.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 21FCB477FA01D1B4B43CAD423E43970CAFCAB92EB520CB10C9138D451C8AD6C8"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10tictac",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Tic Tac Take Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "barn-festival-pragmatic-play",
       "name": "Barn Festival",
