@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1422,
+  "gameCount": 1423,
   "providerCount": 372,
-  "sourcePageCount": 2660,
+  "sourcePageCount": 2663,
   "counts": {
     "access-restricted": 4,
     "available": 1013,
-    "not-verified": 405
+    "not-verified": 406
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "floating-dragon-megaways-pragmatic-play",
+      "name": "Floating Dragon Megaways",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Floating Dragon Megaways; Official page confirms 6x6 Megaways grid with up to 236,196 ways, Free Spins collecting instant wins and raising overall multiplier, four Collect symbols retriggering Free Spins, Hold and Spin awarding three respins renewed for each instant-win prize, maximum win 20,000x, and RTP 96.70%. Official page calls it Floating Dragon Megaways Hold&Spin while exact Demo uses Floating Dragon Hold & Spin Megaways. Codex in-app browser verified exact official page and playable Demo visual state; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vswaysfltdrg. Codex in-app browser on 2026-11-07 opened exact gameSymbol vswaysfltdrg Demo titled Floating Dragon Hold & Spin Megaways matching official page and artwork; playable reels and balance/stake controls were not yet observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 4C88DDEF4F4642FEA8288AB0B33464494E4385F9BB918A72EA51E738E0DE828E, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/floating-dragon-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 416"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Floating-Dragon-Megaways_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 4C88DDEF4F4642FEA8288AB0B33464494E4385F9BB918A72EA51E738E0DE828E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysfltdrg",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 opened exact gameSymbol vswaysfltdrg Demo titled Floating Dragon Hold & Spin Megaways matching official page and artwork; playable reels and balance/stake controls were not yet observed, so Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "aztec-blaze-pragmatic-play",
       "name": "Aztec Blaze",

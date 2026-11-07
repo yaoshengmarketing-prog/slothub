@@ -1,10 +1,10 @@
 {
   "batch": 897,
   "recordedAt": "2026-11-07T14:14:21.526Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Aztec Blaze",
       "slug": "aztec-blaze-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/aztec-blaze/",
       "officialFacts": "Official page confirms 6x4 grid and 25 paylines, random Colossal symbols growing from 2x2 to 4x4 through wins, max-size Colossal multipliers rising to 10x, two Scatters triggering Free Spins with five initial lives, lives falling on spins without Colossal-symbol wins, and RTP 96.50%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser on 2026-11-07 opened exact Aztec Blaze Demo identity and introductory Colossal-symbol screen; playable reels with balance and stake controls were not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 416 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 416 Floating Dragon Megaways after item 415 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "Full preview verify exit 0; official page, symbol and artwork hash checked; Demo intro only, not verified playable.",
     "log": "tmp/verify-batch897.log"
+  },
+  "publication": {
+    "commit": "7de2d1416b51cfe60ed4d0d660012c3a552a925f",
+    "githubActionsRun": 42380915880,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "1e238fc9-e993-497e-a1c4-f5d2a457c4f7",
+    "cloudflareUrl": "https://1e238fc9.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
