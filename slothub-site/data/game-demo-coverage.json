@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1416,
+  "gameCount": 1417,
   "providerCount": 372,
-  "sourcePageCount": 2642,
+  "sourcePageCount": 2645,
   "counts": {
     "access-restricted": 4,
-    "available": 1011,
+    "available": 1012,
     "not-verified": 401
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "candy-stars-pragmatic-play",
+      "name": "Candy Stars",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysstrwild",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Candy Stars; Official page confirms 5x3 grid, tumbling wins, Sticky Wilds on top reel gaining 1x per participating win, three diamonds awarding eight Free Spins, and Free Spins Sticky Wild multipliers doubling up to 128x; RTP 96.47%. Codex in-app browser verified exact official page and playable Demo visual state; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vswaysstrwild. Codex in-app browser on 2026-11-07 displayed Candy Stars playable five-reel game screen with balance, stake and spin controls; no wager or spin was made. Exact official image URL maps through page og:image; image/png SHA256 DF1AA8B7D42126DA16851E1A40FB613DF7A3C58C214925FE3F892FB24372CA65, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/candy-stars/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 410"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Candy_Star_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 DF1AA8B7D42126DA16851E1A40FB613DF7A3C58C214925FE3F892FB24372CA65"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysstrwild",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 displayed Candy Stars playable five-reel game screen with balance, stake and spin controls; no wager or spin was made."
+        }
+      ]
+    },
     {
       "slug": "big-bass-keeping-it-reel-reel-kingdom",
       "name": "Big Bass – Keeping it Reel",
