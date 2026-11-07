@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1405,
+  "gameCount": 1406,
   "providerCount": 372,
-  "sourcePageCount": 2609,
+  "sourcePageCount": 2612,
   "counts": {
     "access-restricted": 4,
     "available": 1008,
-    "not-verified": 393
+    "not-verified": 394
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fury-of-odin-megaways-pragmatic-play",
+      "name": "Fury of Odin Megaways",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fury of Odin Megaways; Official page confirms six variable-height reels, up to 117649 ways, tumbling wins, Fury and Mystery features, four or more Scatters triggering Free Spins, win multiplier rising 1x per bonus win, 15000x max win, and RTP 95.97%. Codex in-app browser verified exact official page and Demo identity; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vswaysfuryodin. Codex in-app browser on 2026-11-07 observed exact Fury of Odin Megaways tutorial screen from official direct Demo URL, but no balance/stake readout and confirmed playable controls; marked not-verified. Exact official image URL maps through page og:image; image/png SHA256 5904BF4B7C70A649BE10C29600896163F447F815E071DAE478635880451CFCA9, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fury-of-odin-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 399"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/11/Fury-of-Odin_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 5904BF4B7C70A649BE10C29600896163F447F815E071DAE478635880451CFCA9"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysfuryodin",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Fury of Odin Megaways tutorial screen from official direct Demo URL, but no balance/stake readout and confirmed playable controls; marked not-verified."
+        }
+      ]
+    },
     {
       "slug": "reel-banks-pragmatic-play",
       "name": "Reel Banks",
