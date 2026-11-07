@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1420,
+  "gameCount": 1421,
   "providerCount": 372,
-  "sourcePageCount": 2654,
+  "sourcePageCount": 2657,
   "counts": {
     "access-restricted": 4,
     "available": 1013,
-    "not-verified": 403
+    "not-verified": 404
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "john-hunter-book-of-tut-respin-pragmatic-play",
+      "name": "John Hunter and the Book of Tut Respin",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title John Hunter and the Book of Tut Respin; Official page confirms random Mystery symbol expansion during base spins triggering repeatable respins, three Book Scatters triggering ten Free Spins, bonus expanding symbol chosen by player and causing further respins, three more Books retriggering Free Spins, maximum win 4,000x, and RTP 96.50%. Codex in-app browser verified exact official page and playable Demo visual state; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs10tut. Codex in-app browser on 2026-11-07 opened gameSymbol vs10tut Demo titled Book Of Tut Respin, a short title matching the exact official John Hunter and the Book of Tut Respin page; playable reels and controls were not yet observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 FCE5E8CC9167DD153C2956C5D38A1DF75274B5608E047B130E28E751A41E8F1F, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/john-hunter-and-the-book-of-tut-respin/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 414"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/John-Hunter-Book-of-Tut-Respin_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 FCE5E8CC9167DD153C2956C5D38A1DF75274B5608E047B130E28E751A41E8F1F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10tut",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 opened gameSymbol vs10tut Demo titled Book Of Tut Respin, a short title matching the exact official John Hunter and the Book of Tut Respin page; playable reels and controls were not yet observed, so Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "pirate-golden-age-pragmatic-play",
       "name": "Pirate Golden Age",
