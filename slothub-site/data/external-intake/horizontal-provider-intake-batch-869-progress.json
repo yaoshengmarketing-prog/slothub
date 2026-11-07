@@ -1,0 +1,39 @@
+{
+  "batch": 869,
+  "recordedAt": "2026-11-07T07:33:42.737Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1393 published Game Markdown records and same-provider exact official path/name/gameSymbol; Monster Superlanche /vs20superlanche absent.",
+  "records": [
+    {
+      "index": 387,
+      "name": "Monster Superlanche",
+      "slug": "monster-superlanche-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/monster-superlanche/",
+      "officialFacts": "Official page confirms pay-anywhere wins, tumbling symbols, four Scatter bonus trigger, persistent multipliers from stacked winning symbols, max win 5000x and RTP 96.03%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/01/monster_superlanche-1.png",
+        "localPath": "public/assets/games/monster-superlanche-pragmatic-play.png",
+        "sha256": "CD224C3F6ECBF95407471EA3376EA773095E89E04ADFF3C75FAC32850AE6957C",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser on 2026-11-07 observed exact Monster Superlanche title and matching game intro artwork in the direct official Demo; playable balance/stake and controls were not observed, so Demo is not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 388 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch869.log"
+  }
+}

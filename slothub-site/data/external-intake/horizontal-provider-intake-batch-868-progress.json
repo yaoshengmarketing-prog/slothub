@@ -1,10 +1,10 @@
 {
   "batch": 868,
   "recordedAt": "2026-11-07T07:25:43.242Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Fire Archer",
       "slug": "fire-archer-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/fire-archer/",
       "officialFacts": "Official page confirms 5x5 reels, Arrow Target Wilds firing in one of eight directions, three or more Scatters granting Free Spins, Target upgrades during the bonus and RTP 96.07%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser on 2026-11-07 observed exact Fire Archer title, matching five-reel intro artwork and official direct Demo load; playable balance/stake and controls were not observed, so Demo is not-verified."
     }
   ],
-  "nextCursor": "Catalog item 387 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 387 Monster Superlanche after item 386 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch868.log"
+  },
+  "publication": {
+    "commit": "1672ba9eda1236ac83121c27c08032859e797286",
+    "githubActionsRun": 42351554002,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "ee947f78-c3ec-476c-ba77-5d354f452af2",
+    "cloudflareUrl": "https://ee947f78.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

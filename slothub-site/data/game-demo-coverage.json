@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1393,
+  "gameCount": 1394,
   "providerCount": 372,
-  "sourcePageCount": 2570,
+  "sourcePageCount": 2573,
   "counts": {
     "access-restricted": 4,
     "available": 1006,
-    "not-verified": 383
+    "not-verified": 384
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "monster-superlanche-pragmatic-play",
+      "name": "Monster Superlanche",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Monster Superlanche; Official page confirms pay-anywhere wins, tumbling symbols, four Scatter bonus trigger, persistent multipliers from stacked winning symbols, max win 5000x and RTP 96.03%. Codex in-app browser verified exact official page text, artwork mapping and direct Demo intro; no paid browser used. Official HTML includes gameSymbol vs20superlanche. Codex in-app browser on 2026-11-07 observed exact Monster Superlanche title and matching game intro artwork in the direct official Demo; playable balance/stake and controls were not observed, so Demo is not-verified. Exact official image URL maps through page og:image; image/png SHA256 CD224C3F6ECBF95407471EA3376EA773095E89E04ADFF3C75FAC32850AE6957C, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/monster-superlanche/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 387"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/01/monster_superlanche-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 CD224C3F6ECBF95407471EA3376EA773095E89E04ADFF3C75FAC32850AE6957C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20superlanche",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Monster Superlanche title and matching game intro artwork in the direct official Demo; playable balance/stake and controls were not observed, so Demo is not-verified."
+        }
+      ]
+    },
     {
       "slug": "fire-archer-pragmatic-play",
       "name": "Fire Archer",
