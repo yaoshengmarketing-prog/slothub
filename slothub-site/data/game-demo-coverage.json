@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1433,
+  "gameCount": 1434,
   "providerCount": 372,
-  "sourcePageCount": 2693,
+  "sourcePageCount": 2696,
   "counts": {
     "access-restricted": 4,
     "available": 1015,
-    "not-verified": 414
+    "not-verified": 415
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "down-the-rails-pragmatic-play",
+      "name": "Down the Rails",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Down the Rails; Official page confirms 5x3 reels, twenty paylines, five different random base-game features, five Free Spins variations and optional gamble for the highest-volatility End of the Line bonus, and RTP 96.51%. Codex in-app browser verified exact official game page and Demo loading state; the generic filename artwork was verified through this page og:image and visually inspected to show Down the Rails title. No paid browser used. Official HTML includes gameSymbol vs20underground. Codex in-app browser showed exact Down the Rails Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 2AA5A8E30B2EE41D65737961E4566646577FEB5C7CF3BDF77731C50DCF7AE3DE, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/down-the-rails/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 427"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 2AA5A8E30B2EE41D65737961E4566646577FEB5C7CF3BDF77731C50DCF7AE3DE"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20underground",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Down the Rails Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "fire-hot-40-pragmatic-play",
       "name": "Fire Hot 40",
