@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1414,
+  "gameCount": 1415,
   "providerCount": 372,
-  "sourcePageCount": 2636,
+  "sourcePageCount": 2639,
   "counts": {
     "access-restricted": 4,
     "available": 1011,
-    "not-verified": 399
+    "not-verified": 400
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sword-of-ares-pragmatic-play",
+      "name": "Sword of Ares",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Sword of Ares; Official page confirms pays-anywhere wins, repeatable tumbles after wins, Multiplier Collection with three or six levels and up to 15x, Bomb symbols, Free Spins multipliers up to 500x, maximum win 10,000x, and RTP 96.40%. Codex in-app browser verified exact official page and Demo identity; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs20swordofares. Codex in-app browser on 2026-11-07 observed exact Sword of Ares Demo identity and introductory feature screen, but playable reels with balance and stake controls were not observed; Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 55BA6087A5910BD57E1F547C67402C87AADE8B6E3B71AB2DD49DC8F76A5B47DA, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sword-of-ares/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 408"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/10/Sword-of-Ares_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 55BA6087A5910BD57E1F547C67402C87AADE8B6E3B71AB2DD49DC8F76A5B47DA"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20swordofares",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Sword of Ares Demo identity and introductory feature screen, but playable reels with balance and stake controls were not observed; Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "release-the-kraken-2-pragmatic-play",
       "name": "Release the Kraken 2",
