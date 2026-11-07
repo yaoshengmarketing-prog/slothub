@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1419,
+  "gameCount": 1420,
   "providerCount": 372,
-  "sourcePageCount": 2651,
+  "sourcePageCount": 2654,
   "counts": {
     "access-restricted": 4,
-    "available": 1012,
+    "available": 1013,
     "not-verified": 403
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "pirate-golden-age-pragmatic-play",
+      "name": "Pirate Golden Age",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20mtreasure",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Pirate Golden Age; Official page confirms 5x3 grid and twenty paylines, Skull Wilds, three Bonus symbols triggering Free Spins, Mystery Coins revealing matching symbols and redistributing in later spins, stacked coin multipliers, every five collected coins retriggering one to three spins, maximum win 3,000x and RTP 96.49%. Codex in-app browser verified exact official page and playable Demo visual state; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs20mtreasure. Codex in-app browser on 2026-11-07 displayed Pirate Golden Age playable five-reel game screen with balance, stake and spin controls; no wager or spin was made. Exact official image URL maps through page og:image; image/png SHA256 7903FBF40806EFFC315FEE026E5D7B43CFFABE1C35C1190865E7BF5DB027A2D2, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/pirate-golden-age/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 413"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Pirate-Golden-Age_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 7903FBF40806EFFC315FEE026E5D7B43CFFABE1C35C1190865E7BF5DB027A2D2"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20mtreasure",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 displayed Pirate Golden Age playable five-reel game screen with balance, stake and spin controls; no wager or spin was made."
+        }
+      ]
+    },
     {
       "slug": "firebird-spirit-pragmatic-play",
       "name": "Firebird Spirit",
