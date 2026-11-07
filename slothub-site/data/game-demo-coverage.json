@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1460,
+  "gameCount": 1461,
   "providerCount": 372,
-  "sourcePageCount": 2774,
+  "sourcePageCount": 2777,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 434
+    "not-verified": 435
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "eye-of-cleopatra-pragmatic-play",
+      "name": "Eye of Cleopatra",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Eye of Cleopatra; Official page confirms five reels and four rows, wild substitutions, high volatility, maximum 4000x and RTP 96.50%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Eye of Cleopatra. No paid browser used. Official HTML includes gameSymbol vs40cleoeye. Codex in-app browser opened matching official Eye of Cleopatra Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 C05F889C7A2CF443E614C7082D8DC56ECB33321CD2ADCD9FF59FB769037DA53D, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/eye-of-cleopatra/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 455"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/04/Eye-of-Cleo_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 C05F889C7A2CF443E614C7082D8DC56ECB33321CD2ADCD9FF59FB769037DA53D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40cleoeye",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Eye of Cleopatra Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "clover-gold-pragmatic-play",
       "name": "Clover Gold",
