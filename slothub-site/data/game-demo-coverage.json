@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1436,
+  "gameCount": 1437,
   "providerCount": 372,
-  "sourcePageCount": 2702,
+  "sourcePageCount": 2705,
   "counts": {
     "access-restricted": 4,
     "available": 1016,
-    "not-verified": 416
+    "not-verified": 417
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "greedy-wolf-pragmatic-play",
+      "name": "Greedy Wolf",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Greedy Wolf; Official page confirms 5x4 reels, twenty paylines, medium volatility, two wild types including stacked Greedy Wolf and 3 Little Pigs, six or more scatters triggering a straw-house bonus, maximum win 3000x and RTP 96.48%. Codex in-app browser verified exact official title, gameplay, page og:image and direct Demo tutorial; official artwork visually shows Greedy Wolf. No paid browser used. Official HTML includes gameSymbol vs20wolfie. Codex in-app browser showed exact Greedy Wolf Demo title and animated in-game tutorial, but no visible balance, stake or ready-to-play controls; Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 336D14001199580D1832F1E0F6394896788E1B4C6580754B3CA5D3CB5E8147D2, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/greedy-wolf/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 430"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Greedy-Wolf_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 336D14001199580D1832F1E0F6394896788E1B4C6580754B3CA5D3CB5E8147D2"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20wolfie",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Greedy Wolf Demo title and animated in-game tutorial, but no visible balance, stake or ready-to-play controls; Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "black-bull-pragmatic-play",
       "name": "Black Bull",
