@@ -1,0 +1,39 @@
+{
+  "batch": 865,
+  "recordedAt": "2026-11-07T07:04:05.8Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1389 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild Wild Riches Megaways™ /vswayswwriches absent.",
+  "records": [
+    {
+      "index": 383,
+      "name": "Wild Wild Riches Megaways™",
+      "slug": "wild-wild-riches-megaways-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/wild-wild-riches-megaways/",
+      "officialFacts": "Official page confirms up to 117649 ways, Money symbols with 1x to 20x values, Wilds, Jackpot values 25x to 250x, random multipliers, six to twenty Free Spins, max win 10000x and RTP 96.02%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/02/wild_wild_riches_megaways.png",
+        "localPath": "public/assets/games/wild-wild-riches-megaways-pragmatic-play.png",
+        "sha256": "0F67DA78EF25C3F5320325D9F8945BE054D91B98376386E77367BE81FC5B6C53",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser on 2026-11-07 observed exact Wild Wild Riches Megaways title, reels, balance/stake readout and spin control at the official Demo; no spin or bet performed."
+    }
+  ],
+  "nextCursor": "Catalog item 384 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch865.log"
+  }
+}
