@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1440,
+  "gameCount": 1441,
   "providerCount": 372,
-  "sourcePageCount": 2714,
+  "sourcePageCount": 2717,
   "counts": {
     "access-restricted": 4,
-    "available": 1016,
+    "available": 1017,
     "not-verified": 420
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "shining-hot-40-pragmatic-play",
+      "name": "Shining Hot 40",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40sh",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Shining Hot 40; Official page confirms classic fruit symbols, flaming diamonds and bells, forty paylines, maximum win 2500x and RTP 96.36%. Codex in-app browser verified exact official title, gameplay, page og:image and playable Demo; official artwork visually shows Shining Hot 40. No paid browser used. Official HTML includes gameSymbol vs40sh. Codex in-app browser followed exact official Shining Hot 40 Demo gameSymbol to a fully rendered reel grid with title, demo balance, stake and spin control. No spin or wager was initiated. Exact official image URL maps through page og:image; image/png SHA256 5B51F5A0E8857A8954F0DFE00FB0258DB538AE8976E7E89865A5283C53F28A6E, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/shining-hot-40/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 434"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Shining-Hot-40_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 5B51F5A0E8857A8954F0DFE00FB0258DB538AE8976E7E89865A5283C53F28A6E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40sh",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser followed exact official Shining Hot 40 Demo gameSymbol to a fully rendered reel grid with title, demo balance, stake and spin control. No spin or wager was initiated."
+        }
+      ]
+    },
     {
       "slug": "tropical-tiki-pragmatic-play",
       "name": "Tropical Tiki",

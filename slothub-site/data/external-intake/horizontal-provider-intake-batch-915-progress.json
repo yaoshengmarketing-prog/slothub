@@ -1,10 +1,10 @@
 {
   "batch": 915,
   "recordedAt": "2026-11-07T16:21:33.417Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Tropical Tiki",
       "slug": "tropical-tiki-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/tropical-tiki/",
       "officialFacts": "Official page confirms 3x6 reels, tumbling feature in which all symbols except winning ones disappear, expanding grid in Free Spins, maximum win 3000x and RTP 96.43%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser showed exact Tropical Tiki Demo title and animated in-game tutorial, but no visible balance, stake or ready-to-play controls; Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 434 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 434 Shining Hot 40 after item 433 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "Full preview verify exit 0; exact official page, symbol and artwork SHA checked; Demo tutorial only.",
     "log": "tmp/verify-batch915.log"
+  },
+  "publication": {
+    "commit": "3c54b5c71ad0c34103ca8aead40eeb0a31f93e9e",
+    "githubActionsRun": 42391198304,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "d606a4c3-0337-40e5-bfa6-22f28d118351",
+    "cloudflareUrl": "https://d606a4c3.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
