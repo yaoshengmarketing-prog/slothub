@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1431,
+  "gameCount": 1432,
   "providerCount": 372,
-  "sourcePageCount": 2687,
+  "sourcePageCount": 2690,
   "counts": {
     "access-restricted": 4,
     "available": 1015,
-    "not-verified": 412
+    "not-verified": 413
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fire-hot-5-pragmatic-play",
+      "name": "Fire Hot 5",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fire Hot 5; Official single-game page identifies Fire Hot 5 with RTP 96.27% and says the Fire Hot series uses classic fruit-machine design and symbols with Wilds expanding to Wild reels; variant-specific paylines and maximum win are not stated. Codex in-app browser verified exact official game page and Demo loading state; official artwork visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs5firehot. Codex in-app browser showed exact Fire Hot 5 Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 38A0AB519636706C2351EA0149BE36C8291FFEB7AE0F41F83F69FCB3B102FEA4, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fire-hot-5/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 425"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/Fire-Hot-5_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 38A0AB519636706C2351EA0149BE36C8291FFEB7AE0F41F83F69FCB3B102FEA4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5firehot",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Fire Hot 5 Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "fire-hot-20-pragmatic-play",
       "name": "Fire Hot 20",
