@@ -1,0 +1,39 @@
+{
+  "batch": 861,
+  "recordedAt": "2026-11-07T06:31:16.533Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1385 published Game Markdown records and same-provider exact official path/name/gameSymbol; Cowboy Coins™ /vswaysultrcoin absent.",
+  "records": [
+    {
+      "index": 379,
+      "name": "Cowboy Coins™",
+      "slug": "cowboy-coins-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/cowboy-coins/",
+      "officialFacts": "Official page confirms six reels, 20 paylines, three bonus respins that reset on new symbols, Dynamite multipliers, Money Bags, Safes and Badges, and RTP 96.08%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/02/s0zstLrY.png",
+        "localPath": "public/assets/games/cowboy-coins-pragmatic-play.png",
+        "sha256": "3E58A26A4462844D977E7711EB511B79DF9F4462C473B3BDA4171C924B426636",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser on 2026-11-07 reached exact Cowboy Coins title and symbol but observed only an intro overlay, not playable controls; Demo remains not-verified without a public URL."
+    }
+  ],
+  "nextCursor": "Catalog item 380 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
+    "log": "tmp/verify-batch861.log"
+  }
+}

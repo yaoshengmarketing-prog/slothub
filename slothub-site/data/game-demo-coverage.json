@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1385,
+  "gameCount": 1386,
   "providerCount": 371,
-  "sourcePageCount": 2544,
+  "sourcePageCount": 2547,
   "counts": {
     "access-restricted": 4,
     "available": 1002,
-    "not-verified": 379
+    "not-verified": 380
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "cowboy-coins-pragmatic-play",
+      "name": "Cowboy Coins™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Cowboy Coins™; Official page confirms six reels, 20 paylines, three bonus respins that reset on new symbols, Dynamite multipliers, Money Bags, Safes and Badges, and RTP 96.08%. Codex in-app browser verified exact official page text and Demo intro; official artwork visually checked. No paid browser used. Official HTML includes gameSymbol vswaysultrcoin. Codex in-app browser on 2026-11-07 reached exact Cowboy Coins title and symbol but observed only an intro overlay, not playable controls; Demo remains not-verified without a public URL. Exact official image URL maps through page og:image; image/png SHA256 3E58A26A4462844D977E7711EB511B79DF9F4462C473B3BDA4171C924B426636, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/cowboy-coins/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 379"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/02/s0zstLrY.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 3E58A26A4462844D977E7711EB511B79DF9F4462C473B3BDA4171C924B426636"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysultrcoin",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 reached exact Cowboy Coins title and symbol but observed only an intro overlay, not playable controls; Demo remains not-verified without a public URL."
+        }
+      ]
+    },
     {
       "slug": "mochimon-pragmatic-play",
       "name": "Mochimon™",
