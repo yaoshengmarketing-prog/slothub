@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1425,
+  "gameCount": 1426,
   "providerCount": 372,
-  "sourcePageCount": 2669,
+  "sourcePageCount": 2672,
   "counts": {
     "access-restricted": 4,
     "available": 1014,
-    "not-verified": 407
+    "not-verified": 408
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "book-of-golden-sands-pragmatic-play",
+      "name": "Book of Golden Sands",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Book of Golden Sands; Official page confirms 6x3 reels, 729 winning ways, Egyptian symbols, multiplier Wilds, Book symbol as Wild and Scatter, three or more Books triggering Free Spins, expanding special symbol adding winning ways on repeat expansions, maximum win 10000x, and RTP 96.46%. Codex in-app browser verified the exact official page and Demo intro visual state; official artwork visually inspected locally. No paid browser used. Official HTML includes gameSymbol vswaysbook. Codex in-app browser showed exact Book of Golden Sands Demo title and tutorial screen; playable reels were not independently observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 EFC862C4CFA3B4CB8FD4C5A17868B0915708BFF71FF5BFFB0AD6255093C40440, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/book-of-golden-sands/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 419"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Book-of-Golden-Sands_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 EFC862C4CFA3B4CB8FD4C5A17868B0915708BFF71FF5BFFB0AD6255093C40440"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysbook",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Book of Golden Sands Demo title and tutorial screen; playable reels were not independently observed, so Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "crown-of-fire-pragmatic-play",
       "name": "Crown of Fire",

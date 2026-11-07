@@ -1,0 +1,39 @@
+{
+  "batch": 901,
+  "recordedAt": "2026-11-07T14:41:52.858Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1425 published Game Markdown records and same-provider exact official path/name/gameSymbol; Book of Golden Sands /vswaysbook absent.",
+  "records": [
+    {
+      "index": 419,
+      "name": "Book of Golden Sands",
+      "slug": "book-of-golden-sands-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/book-of-golden-sands/",
+      "officialFacts": "Official page confirms 6x3 reels, 729 winning ways, Egyptian symbols, multiplier Wilds, Book symbol as Wild and Scatter, three or more Books triggering Free Spins, expanding special symbol adding winning ways on repeat expansions, maximum win 10000x, and RTP 96.46%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Book-of-Golden-Sands_339x180.png",
+        "localPath": "public/assets/games/book-of-golden-sands-pragmatic-play.png",
+        "sha256": "EFC862C4CFA3B4CB8FD4C5A17868B0915708BFF71FF5BFFB0AD6255093C40440",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser showed exact Book of Golden Sands Demo title and tutorial screen; playable reels were not independently observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 420 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "Full preview verify exit 0; exact official page, symbol and artwork hash checked; Demo tutorial only, not verified playable.",
+    "log": "tmp/verify-batch901.log"
+  }
+}
