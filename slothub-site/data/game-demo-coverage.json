@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1392,
+  "gameCount": 1393,
   "providerCount": 372,
-  "sourcePageCount": 2567,
+  "sourcePageCount": 2570,
   "counts": {
     "access-restricted": 4,
     "available": 1006,
-    "not-verified": 382
+    "not-verified": 383
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fire-archer-pragmatic-play",
+      "name": "Fire Archer",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fire Archer; Official page confirms 5x5 reels, Arrow Target Wilds firing in one of eight directions, three or more Scatters granting Free Spins, Target upgrades during the bonus and RTP 96.07%. Codex in-app browser verified exact official page text, artwork mapping and direct Demo intro; no paid browser used. Official HTML includes gameSymbol vs25archer. Codex in-app browser on 2026-11-07 observed exact Fire Archer title, matching five-reel intro artwork and official direct Demo load; playable balance/stake and controls were not observed, so Demo is not-verified. Exact official image URL maps through page og:image; image/png SHA256 23966CDCCA3DEE5357CB1E95E6ED83A1FE93110A91DEB8C91734E37241555D96, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fire-archer/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 386"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/01/Fire_Archer_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 23966CDCCA3DEE5357CB1E95E6ED83A1FE93110A91DEB8C91734E37241555D96"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25archer",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Fire Archer title, matching five-reel intro artwork and official direct Demo load; playable balance/stake and controls were not observed, so Demo is not-verified."
+        }
+      ]
+    },
     {
       "slug": "club-tropicana-reel-kingdom",
       "name": "Club Tropicana™",

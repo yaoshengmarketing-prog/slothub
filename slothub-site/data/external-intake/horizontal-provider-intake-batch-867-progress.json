@@ -1,10 +1,10 @@
 {
   "batch": 867,
   "recordedAt": "2026-11-07T07:18:13.062Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Club Tropicana™",
       "slug": "club-tropicana-reel-kingdom",
       "provider": "reel-kingdom",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/club-tropicana/",
       "officialFacts": "Reel Kingdom official individual page confirms exact title, 5x4 grid, three Scatter Free Spins, ten-spin retrigger, multiplier up to 10x and RTP 96.08%; Pragmatic Play official page and Demo confirm symbol vs12tropicana and Reel Kingdom Powered by Pragmatic Play.",
       "image": {
@@ -30,11 +30,20 @@
       "providerEvidence": "Reel Kingdom first-party individual game page names Club Tropicana and embeds exact vs12tropicana Demo; Pragmatic Play Demo boot says Reel Kingdom Powered by Pragmatic Play. New Reel Kingdom provider record uses first-party homepage."
     }
   ],
-  "nextCursor": "Catalog item 386 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 386 Fire Archer after item 385 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS including new Reel Kingdom provider",
     "log": "tmp/verify-batch867.log"
+  },
+  "publication": {
+    "commit": "551077dff3708e85f87d24cc8b53de683d3de268",
+    "githubActionsRun": 42351020136,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "62c9109e-27cc-4976-a56c-4e8755210a75",
+    "cloudflareUrl": "https://62c9109e.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
