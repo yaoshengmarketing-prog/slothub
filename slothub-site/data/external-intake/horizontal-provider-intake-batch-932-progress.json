@@ -1,10 +1,10 @@
 {
   "batch": 932,
   "recordedAt": "2026-11-07T18:18:06.945Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Fire Strike 2",
       "slug": "fire-strike-2-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/fire-strike-2/",
       "officialFacts": "Official page confirms ten paylines, collecting Fire Strike Wilds for instant cash prizes and a jackpot, RTP 96.50%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser opened matching official Fire Strike 2 Demo but only the loading screen was observed; playable reels were not verified."
     }
   ],
-  "nextCursor": "Catalog item 452 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 452 North Guardians after item 451 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "Full preview verify exit 0; exact official page, symbol and artwork SHA checked; Demo loading only.",
     "log": "tmp/verify-batch932.log"
+  },
+  "publication": {
+    "commit": "b0531417139ef2acc209dfeabbfc97f96281b098",
+    "githubActionsRun": 42400926979,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "17b57b52-35ea-449a-a52f-b0dc48870530",
+    "cloudflareUrl": "https://17b57b52.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
