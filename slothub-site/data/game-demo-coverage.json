@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1461,
+  "gameCount": 1462,
   "providerCount": 372,
-  "sourcePageCount": 2777,
+  "sourcePageCount": 2780,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 435
+    "not-verified": 436
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "chicken-chase-pragmatic-play",
+      "name": "Chicken Chase",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Chicken Chase; Official page confirms 3x5 grid, wolf/chicken theme and a stated 210x bonus win; RTP label has no displayed numeric value, so RTP remains missing. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Chicken Chase. No paid browser used. Official HTML includes gameSymbol vs10chkchase. Codex in-app browser opened matching official Chicken Chase Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 481BE5CE7DD690D5D1346209A0A956BD778F5AB12F2D81397C642236924B33F4, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/chicken-chase/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 456"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/03/Chicken-Chase_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 481BE5CE7DD690D5D1346209A0A956BD778F5AB12F2D81397C642236924B33F4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10chkchase",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Chicken Chase Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "eye-of-cleopatra-pragmatic-play",
       "name": "Eye of Cleopatra",
