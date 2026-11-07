@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1458,
+  "gameCount": 1459,
   "providerCount": 372,
-  "sourcePageCount": 2768,
+  "sourcePageCount": 2771,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 432
+    "not-verified": 433
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "spirit-of-adventure-pragmatic-play",
+      "name": "Spirit of Adventure",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Spirit of Adventure; Official page confirms 5x3 reels, ten paylines, instant cash, multipliers and bonus round, maximum win 5100x and RTP 96.60%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Spirit of Adventure. No paid browser used. Official HTML includes gameSymbol vs10spiritadv. Codex in-app browser opened matching official Spirit of Adventure Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 023A1C3594E529F49188C7D74F2FC4DB20EC2C4541F758C220B803DC4CA3FD10, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/spirit-of-adventure/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 453"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/04/Spirit-of-Adventure™_EN_339x180_04.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 023A1C3594E529F49188C7D74F2FC4DB20EC2C4541F758C220B803DC4CA3FD10"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10spiritadv",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Spirit of Adventure Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "north-guardians-pragmatic-play",
       "name": "North Guardians",
