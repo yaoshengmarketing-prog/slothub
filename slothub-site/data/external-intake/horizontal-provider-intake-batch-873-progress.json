@@ -1,0 +1,39 @@
+{
+  "batch": 873,
+  "recordedAt": "2026-11-07T08:04:48.598Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1397 published Game Markdown records and same-provider exact official path/name/gameSymbol; Pinup Girls /vs20ltng absent.",
+  "records": [
+    {
+      "index": 391,
+      "name": "Pinup Girls",
+      "slug": "pinup-girls-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/pinup-girls/",
+      "officialFacts": "Official page confirms 4x5 grid, middle reel multiplier accumulating over a ten-spin cycle, and RTP 96.44%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/01/Pinup_Girls_339x180.png",
+        "localPath": "public/assets/games/pinup-girls-pragmatic-play.png",
+        "sha256": "2500415F309665A61B7DCB72ABB636E22D5D7349DF2D6B4E156A300A7834822A",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser on 2026-11-07 observed exact Pinup Girls intro screen from official direct Demo URL but gameplay controls did not load; marked not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 392 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "log": "tmp/verify-batch873.log",
+    "note": "Full preview verify exit 0; 1803 HTML pages isolated; all project checks pass."
+  }
+}
