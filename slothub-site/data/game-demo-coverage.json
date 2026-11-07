@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1386,
+  "gameCount": 1387,
   "providerCount": 371,
-  "sourcePageCount": 2547,
+  "sourcePageCount": 2550,
   "counts": {
     "access-restricted": 4,
     "available": 1002,
-    "not-verified": 380
+    "not-verified": 381
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-dog-house-multihold-pragmatic-play",
+      "name": "The Dog House Multihold™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Dog House Multihold™; Official page confirms a 5x3 grid, 2x or 3x multiplier Wilds, three Bonus symbols granting seven Free Spins, Scatters unlocking up to four grids, sticky copied Wilds and RTP 96.06%. Codex in-app browser verified exact official page text and Demo intro; official artwork visually checked; exact title, URL and symbol differ from existing Dog House variants. No paid browser used. Official HTML includes gameSymbol vs20doghousemh. Codex in-app browser on 2026-11-07 reached exact The Dog House Multihold Demo title and symbol but observed only an intro overlay without playable controls; Demo remains not-verified and no public link is exposed. Exact official image URL maps through page og:image; image/png SHA256 D946B70CBB022F5381CDCF29511B612D8C5BD7E83F80511B3AF3D723859E84CC, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-dog-house-multihold/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 380"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/02/The_Dog_House_Multihold_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 D946B70CBB022F5381CDCF29511B612D8C5BD7E83F80511B3AF3D723859E84CC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20doghousemh",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 reached exact The Dog House Multihold Demo title and symbol but observed only an intro overlay without playable controls; Demo remains not-verified and no public link is exposed."
+        }
+      ]
+    },
     {
       "slug": "cowboy-coins-pragmatic-play",
       "name": "Cowboy Coins™",
