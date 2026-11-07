@@ -1,0 +1,38 @@
+{
+  "batch": 894,
+  "recordedAt": "2026-11-07T13:48:22.439Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1418 published Game Markdown records and same-provider exact official path/name/gameSymbol; Firebird Spirit /vswaysconcoll absent.",
+  "records": [
+    {
+      "index": 412,
+      "name": "Firebird Spirit",
+      "slug": "firebird-spirit-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/firebird-spirit/",
+      "officialFacts": "Official page confirms 5x6 grid and 1,875 ways, adjacent Connect and Collect pathways reaching special prize positions on reels three and six, Quick Collect, Respin rounds, Money Values, Jackpots, extra Wilds and Free Spins, maximum win 4,250x and RTP 96.00%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Firebird-Spirit_339x180.png",
+        "localPath": "public/assets/games/firebird-spirit-pragmatic-play.png",
+        "sha256": "B54D5FA93770933BCB552BB0B6F817C83DE67D6FD5F3BD576503F806CF4AEC2F",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser on 2026-11-07 observed exact gameSymbol vswaysconcoll Demo titled Firebird Spirit - Connect & Collect and introductory feature screen, but playable reels with balance and stake controls were not observed; Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 413 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "log": "tmp/verify-batch894.log"
+  }
+}

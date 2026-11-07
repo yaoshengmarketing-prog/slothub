@@ -1,10 +1,10 @@
 {
   "batch": 893,
   "recordedAt": "2026-11-07T13:37:09.536Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Muertos Multiplier Megaways",
       "slug": "muertos-multiplier-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/muertos-multiplier-megaways/",
       "officialFacts": "Official page confirms six reel Megaways with up to 117,649 winning ways, tumble after wins, Multiplier Wild substitution except Bonus symbols, three Bonus symbols triggering Free Spins with gamble for spin count, every bonus tumble adding 1x to overall multiplier, Wild multipliers multiplying current multiplier, maximum win 10,000x, and RTP 96.03%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser on 2026-11-07 observed exact Muertos Multiplier Megaways Demo identity and introductory feature screen, but playable reels with balance and stake controls were not observed; Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 412 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 412 Firebird Spirit after item 411 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "log": "tmp/verify-batch893.log"
+  },
+  "publication": {
+    "commit": "79434803f34dc57a672b74625b18d0a9883a59d5",
+    "githubActionsRun": 42378379227,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "06bced50-f382-43d4-bc42-bc278b95f185",
+    "cloudflareUrl": "https://06bced50.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

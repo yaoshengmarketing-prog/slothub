@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1418,
+  "gameCount": 1419,
   "providerCount": 372,
-  "sourcePageCount": 2648,
+  "sourcePageCount": 2651,
   "counts": {
     "access-restricted": 4,
     "available": 1012,
-    "not-verified": 402
+    "not-verified": 403
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "firebird-spirit-pragmatic-play",
+      "name": "Firebird Spirit",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Firebird Spirit; Official page confirms 5x6 grid and 1,875 ways, adjacent Connect and Collect pathways reaching special prize positions on reels three and six, Quick Collect, Respin rounds, Money Values, Jackpots, extra Wilds and Free Spins, maximum win 4,250x and RTP 96.00%. Codex in-app browser verified exact official page and playable Demo visual state; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vswaysconcoll. Codex in-app browser on 2026-11-07 observed exact gameSymbol vswaysconcoll Demo titled Firebird Spirit - Connect & Collect and introductory feature screen, but playable reels with balance and stake controls were not observed; Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 B54D5FA93770933BCB552BB0B6F817C83DE67D6FD5F3BD576503F806CF4AEC2F, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/firebird-spirit/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 412"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Firebird-Spirit_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 B54D5FA93770933BCB552BB0B6F817C83DE67D6FD5F3BD576503F806CF4AEC2F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysconcoll",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact gameSymbol vswaysconcoll Demo titled Firebird Spirit - Connect & Collect and introductory feature screen, but playable reels with balance and stake controls were not observed; Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "muertos-multiplier-megaways-pragmatic-play",
       "name": "Muertos Multiplier Megaways",
