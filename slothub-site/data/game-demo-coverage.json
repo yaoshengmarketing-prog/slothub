@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1449,
+  "gameCount": 1450,
   "providerCount": 372,
-  "sourcePageCount": 2741,
+  "sourcePageCount": 2744,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 423
+    "not-verified": 424
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fortune-of-giza-pragmatic-play",
+      "name": "Fortune of Giza",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fortune of Giza; Official page confirms Egyptian pyramid setting, sticky Wilds, a bonus round and RTP 96.51%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Fortune of Giza despite an older filename. No paid browser used. Official HTML includes gameSymbol vs20amuleteg. Codex in-app browser opened the matching official Fortune of Giza Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 52069F19C5082D2424D7D6A8492FE455B5CAD2E2E8C4A62831FCC298E444084C, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fortune-of-giza/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 444"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/12/Amulet_of_Egypt_667x414.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 52069F19C5082D2424D7D6A8492FE455B5CAD2E2E8C4A62831FCC298E444084C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20amuleteg",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the matching official Fortune of Giza Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "queen-of-gods-pragmatic-play",
       "name": "Queen of Gods",
