@@ -1,0 +1,39 @@
+{
+  "batch": 910,
+  "recordedAt": "2026-11-07T15:44:13.407Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1434 published Game Markdown records and same-provider exact official path/name/gameSymbol; Hot to Burn® Extreme /vs40hotburnx absent.",
+  "records": [
+    {
+      "index": 428,
+      "name": "Hot to Burn® Extreme",
+      "slug": "hot-to-burn-extreme-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/hot-to-burn-extreme/",
+      "officialFacts": "Official page confirms 5x3 reels, forty paylines, maximum win 5000x, three to five scatters awarding ten to twenty retriggerable free spins, and RTP 96.65%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/Hot-to-Burn™_EN_339x180_04.png",
+        "localPath": "public/assets/games/hot-to-burn-extreme-pragmatic-play.png",
+        "sha256": "C52A8392146D4E272B782B19436013D82C32C7D61ED3555F97BBF79F3D0D5B9C",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser showed exact Hot To Burn Extreme Demo title but remained on a loading spinner on repeated observation; playable reels were not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 429 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "Full preview verify exit 0; exact official page, symbol and artwork SHA checked; Demo loading spinner only.",
+    "log": "tmp/verify-batch910.log"
+  }
+}

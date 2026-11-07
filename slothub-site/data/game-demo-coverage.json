@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1434,
+  "gameCount": 1435,
   "providerCount": 372,
-  "sourcePageCount": 2696,
+  "sourcePageCount": 2699,
   "counts": {
     "access-restricted": 4,
     "available": 1015,
-    "not-verified": 415
+    "not-verified": 416
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "hot-to-burn-extreme-pragmatic-play",
+      "name": "Hot to Burn® Extreme",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Hot to Burn® Extreme; Official page confirms 5x3 reels, forty paylines, maximum win 5000x, three to five scatters awarding ten to twenty retriggerable free spins, and RTP 96.65%. Codex in-app browser verified exact official title, official game facts, page og:image and direct Demo loading state; the official artwork was visually inspected to show Hot to Burn Extreme. No paid browser used. Official HTML includes gameSymbol vs40hotburnx. Codex in-app browser showed exact Hot To Burn Extreme Demo title but remained on a loading spinner on repeated observation; playable reels were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 C52A8392146D4E272B782B19436013D82C32C7D61ED3555F97BBF79F3D0D5B9C, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/hot-to-burn-extreme/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 428"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/Hot-to-Burn™_EN_339x180_04.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 C52A8392146D4E272B782B19436013D82C32C7D61ED3555F97BBF79F3D0D5B9C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40hotburnx",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Hot To Burn Extreme Demo title but remained on a loading spinner on repeated observation; playable reels were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "down-the-rails-pragmatic-play",
       "name": "Down the Rails",

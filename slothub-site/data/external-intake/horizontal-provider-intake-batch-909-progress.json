@@ -1,10 +1,10 @@
 {
   "batch": 909,
   "recordedAt": "2026-11-07T15:35:11.846Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Down the Rails",
       "slug": "down-the-rails-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/down-the-rails/",
       "officialFacts": "Official page confirms 5x3 reels, twenty paylines, five different random base-game features, five Free Spins variations and optional gamble for the highest-volatility End of the Line bonus, and RTP 96.51%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser showed exact Down the Rails Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 428 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 428 Hot to Burn® Extreme after item 427 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "Full preview verify exit 0; exact official page, symbol and artwork SHA checked; Demo loading splash only.",
     "log": "tmp/verify-batch909.log"
+  },
+  "publication": {
+    "commit": "ad184098b2f89f7e32495619db5f2aad252110b9",
+    "githubActionsRun": 42387497943,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "da24b6a4-9761-4242-90d1-cc2e9e63b476",
+    "cloudflareUrl": "https://da24b6a4.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
