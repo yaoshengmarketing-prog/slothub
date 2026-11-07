@@ -1,0 +1,39 @@
+{
+  "batch": 878,
+  "recordedAt": "2026-11-07T08:41:00.683Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1402 published Game Markdown records and same-provider exact official path/name/gameSymbol; PIZZA! PIZZA? PIZZA! /vswayspizza absent.",
+  "records": [
+    {
+      "index": 396,
+      "name": "PIZZA! PIZZA? PIZZA!",
+      "slug": "pizza-pizza-pizza-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/pizza-pizza-pizza/",
+      "officialFacts": "Official page confirms Wild substitution except Scatters, optional Ante Bet raising bonus chance, three or more Scatters triggering bonus, Pizza Boy and Super Pizza Boy collecting money symbols, final bonus spin additions, and RTP 96.04%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/11/PPPizza_EN_380x230.png",
+        "localPath": "public/assets/games/pizza-pizza-pizza-pragmatic-play.png",
+        "sha256": "D0D36BA5CBD14C3DEFBC50692DA7CFAA81F58DF87F0EEFF6E756908B1BA34F4A",
+        "dimensions": "380x230",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser on 2026-11-07 observed exact PIZZA PIZZA PIZZA intro/loading from official direct Demo URL but gameplay controls did not load; marked not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 397 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "log": "tmp/verify-batch878.log",
+    "note": "Full preview verify exit 0; 1808 HTML pages isolated; all project checks pass. Official catalog thumbnail and exact game OG art visually matched at distinct sizes."
+  }
+}

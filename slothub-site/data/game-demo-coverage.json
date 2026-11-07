@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1402,
+  "gameCount": 1403,
   "providerCount": 372,
-  "sourcePageCount": 2599,
+  "sourcePageCount": 2603,
   "counts": {
     "access-restricted": 4,
     "available": 1008,
-    "not-verified": 390
+    "not-verified": 391
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "pizza-pizza-pizza-pragmatic-play",
+      "name": "PIZZA! PIZZA? PIZZA!",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title PIZZA! PIZZA? PIZZA!; Official page confirms Wild substitution except Scatters, optional Ante Bet raising bonus chance, three or more Scatters triggering bonus, Pizza Boy and Super Pizza Boy collecting money symbols, final bonus spin additions, and RTP 96.04%. Codex in-app browser verified exact official page and Demo intro; official OG artwork and catalog thumbnail visually matched. No paid browser used. Official HTML includes gameSymbol vswayspizza. Codex in-app browser on 2026-11-07 observed exact PIZZA PIZZA PIZZA intro/loading from official direct Demo URL but gameplay controls did not load; marked not-verified. Exact official image URL maps through page og:image; image/png SHA256 D0D36BA5CBD14C3DEFBC50692DA7CFAA81F58DF87F0EEFF6E756908B1BA34F4A, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/pizza-pizza-pizza/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 396"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/11/PPPizza_EN_380x230.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 D0D36BA5CBD14C3DEFBC50692DA7CFAA81F58DF87F0EEFF6E756908B1BA34F4A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayspizza",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact PIZZA PIZZA PIZZA intro/loading from official direct Demo URL but gameplay controls did not load; marked not-verified."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/11/PPPizza_EN_380x230-350x221.png",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog thumbnail; visually same artwork as exact game page OG original, distinct dimensions"
+        }
+      ]
+    },
     {
       "slug": "sweet-powernudge-pragmatic-play",
       "name": "Sweet Powernudge",
