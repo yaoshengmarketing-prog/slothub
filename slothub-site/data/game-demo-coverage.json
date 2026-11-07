@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1438,
+  "gameCount": 1439,
   "providerCount": 372,
-  "sourcePageCount": 2708,
+  "sourcePageCount": 2711,
   "counts": {
     "access-restricted": 4,
     "available": 1016,
-    "not-verified": 418
+    "not-verified": 419
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "magic-money-maze-pragmatic-play",
+      "name": "Magic Money Maze",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Magic Money Maze; Official page confirms 5x3 reels, ten paylines, high volatility, dice-triggered maze bonus, maximum win 10000x and RTP 96.61%. Codex in-app browser checked exact official title and facts again on 2026-11-08 and direct Demo loading/intro state; official artwork visually shows Magic Money Maze. No paid browser used. Official HTML includes gameSymbol vs10mmm. Codex in-app browser reached exact Magic Money Maze Demo title but repeated screenshots showed only Reel Kingdom loading or introduction, without visible balance, stake and ready-to-play controls; Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 60C76E914D45ABBA2C92717BC7B6830D90C1876743FFBFA443128E075F7F19D5, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/magic-money-maze/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 432"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Magic-Money-Maze™_EN_339x180_04.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 60C76E914D45ABBA2C92717BC7B6830D90C1876743FFBFA443128E075F7F19D5"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10mmm",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser reached exact Magic Money Maze Demo title but repeated screenshots showed only Reel Kingdom loading or introduction, without visible balance, stake and ready-to-play controls; Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "gorilla-mayhem-pragmatic-play",
       "name": "Gorilla Mayhem",

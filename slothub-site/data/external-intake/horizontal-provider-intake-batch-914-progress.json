@@ -1,0 +1,39 @@
+{
+  "batch": 914,
+  "recordedAt": "2026-11-07T16:14:15.071Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1438 published Game Markdown records and same-provider exact official path/name/gameSymbol; Magic Money Maze /vs10mmm absent.",
+  "records": [
+    {
+      "index": 432,
+      "name": "Magic Money Maze",
+      "slug": "magic-money-maze-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/magic-money-maze/",
+      "officialFacts": "Official page confirms 5x3 reels, ten paylines, high volatility, dice-triggered maze bonus, maximum win 10000x and RTP 96.61%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Magic-Money-Maze™_EN_339x180_04.png",
+        "localPath": "public/assets/games/magic-money-maze-pragmatic-play.png",
+        "sha256": "60C76E914D45ABBA2C92717BC7B6830D90C1876743FFBFA443128E075F7F19D5",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser reached exact Magic Money Maze Demo title but repeated screenshots showed only Reel Kingdom loading or introduction, without visible balance, stake and ready-to-play controls; Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 433 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "Full preview verify exit 0; exact official page, symbol and artwork SHA checked; Demo loading or intro only.",
+    "log": "tmp/verify-batch914.log"
+  }
+}
