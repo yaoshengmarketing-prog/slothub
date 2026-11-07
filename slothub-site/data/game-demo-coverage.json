@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1388,
+  "gameCount": 1389,
   "providerCount": 371,
-  "sourcePageCount": 2553,
+  "sourcePageCount": 2557,
   "counts": {
     "access-restricted": 4,
-    "available": 1003,
+    "available": 1004,
     "not-verified": 381
   },
   "rules": {
@@ -17,6 +17,45 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mystery-of-the-orient-wild-streak-gaming",
+      "name": "Mystery of the Orient",
+      "provider": "wild-streak-gaming",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysmorient",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Mystery of the Orient; Bragg official Wild Streak Gaming portfolio lists the exact game; Pragmatic Play official page confirms 5x3 reels, multiplier Wilds, three Scatters granting fifteen Free Spins, expanding reels, Mystery symbols, Jackpot prizes and RTP 96.00%. Codex in-app browser confirmed Bragg official Wild Streak Gaming portfolio card names Mystery of the Orient and labels the studio, while the Pragmatic Play individual page supplies exact gameplay/image/Demo facts. No paid browser used. Official HTML includes gameSymbol vswaysmorient. Codex in-app browser on 2026-11-07 saw Wild Streak Gaming Powered by Pragmatic Play load screen, followed by exact Mystery of the Orient title, five reels, balance/stake and spin control; no spin or bet performed. Exact official image URL maps through page og:image; image/png SHA256 0B4D0217F899F57EBB628131B436C7EB6BF53DA0BF4BE4624B112CA139023A08, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bragg.group/casino-games/wild-streak-gaming/",
+          "httpStatus": 200,
+          "notes": "Wild Streak Gaming official studio portfolio visibly names Mystery of the Orient and labels Wild Streak Gaming as studio"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/mystery-of-the-orient/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 382"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/02/Mystry-of-the-Orient_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 0B4D0217F899F57EBB628131B436C7EB6BF53DA0BF4BE4624B112CA139023A08"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysmorient",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 saw Wild Streak Gaming Powered by Pragmatic Play load screen, followed by exact Mystery of the Orient title, five reels, balance/stake and spin control; no spin or bet performed."
+        }
+      ]
+    },
     {
       "slug": "wild-west-duels-pragmatic-play",
       "name": "Wild West Duels",

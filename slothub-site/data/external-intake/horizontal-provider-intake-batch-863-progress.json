@@ -1,10 +1,10 @@
 {
   "batch": 863,
   "recordedAt": "2026-11-07T06:46:56.706Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Wild West Duels",
       "slug": "wild-west-duels-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/wild-west-duels/",
       "officialFacts": "Official page confirms 5x5 reels, 15 paylines, Lost Relic Wilds and multipliers, Duel ten-spin expanding Wild reels, Beer ten-spin held multiplier Wilds and RTP 96.00%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser on 2026-11-07 observed exact Wild West Duels title, five reels, balance/stake readout and circular spin control at the official Demo; no spin or bet performed."
     }
   ],
-  "nextCursor": "Catalog item 382 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 382 Mystery of the Orient after item 381 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch863.log"
+  },
+  "publication": {
+    "commit": "2f6e73ff510972d1262e935855e0b475eeb0b6b9",
+    "githubActionsRun": 42348847260,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "ef5364d8-0495-4e5b-939e-27c92a47bef1",
+    "cloudflareUrl": "https://ef5364d8.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
