@@ -1,10 +1,10 @@
 {
   "batch": 859,
   "recordedAt": "2026-11-07T06:14:24.485Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Jasmine Dreams™",
       "slug": "jasmine-dreams-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/jasmine-dreams/",
       "officialFacts": "Official page confirms a 5x3 grid, a Wild that can expand into a reel, three Scatters awarding six Free Spins, nudging Wild reels during the bonus, a growing overall multiplier and RTP 96.48%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser on 2026-11-07 reached exact official Demo title and symbol but only observed an intro overlay without playable controls; Demo remains not-verified and no public link is exposed."
     }
   ],
-  "nextCursor": "Catalog item 378 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 378 Mochimon™ after item 377 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch859.log"
+  },
+  "publication": {
+    "commit": "a5e0c62fd17f9342f973ac912277a3c0864f42be",
+    "githubActionsRun": 42346509566,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "ac95f8f5-f2ea-47dd-8822-fa870b8b1a10",
+    "cloudflareUrl": "https://ac95f8f5.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
