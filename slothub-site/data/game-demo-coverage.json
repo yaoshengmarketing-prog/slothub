@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1442,
+  "gameCount": 1443,
   "providerCount": 372,
-  "sourcePageCount": 2720,
+  "sourcePageCount": 2723,
   "counts": {
     "access-restricted": 4,
     "available": 1018,
-    "not-verified": 420
+    "not-verified": 421
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "shining-hot-20-pragmatic-play",
+      "name": "Shining Hot 20",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Shining Hot 20; Official page confirms classic fruit symbols, flaming diamonds and bells, twenty paylines, maximum win 2500x and RTP 96.35%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visually shows Shining Hot 20. The exact gameSymbol vs20sh is distinct from the longer existing vs20shootstars. No paid browser used. Official HTML includes gameSymbol vs20sh. Codex in-app browser reached exact Shining Hot 20 Demo title, but repeated screenshots stayed on loading splash; playable reels, balance and stake controls were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 5A3A0F878E4534F36B39177F51EE3093BC86D673F4A25CBCFB84FD4A26DB5AA6, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/shining-hot-20/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 436"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Shining-Hot-20_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 5A3A0F878E4534F36B39177F51EE3093BC86D673F4A25CBCFB84FD4A26DB5AA6"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20sh",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser reached exact Shining Hot 20 Demo title, but repeated screenshots stayed on loading splash; playable reels, balance and stake controls were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "shining-hot-5-pragmatic-play",
       "name": "Shining Hot 5",
