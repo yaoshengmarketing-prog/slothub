@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1383,
+  "gameCount": 1384,
   "providerCount": 371,
-  "sourcePageCount": 2538,
+  "sourcePageCount": 2541,
   "counts": {
     "access-restricted": 4,
     "available": 1001,
-    "not-verified": 378
+    "not-verified": 379
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "jasmine-dreams-pragmatic-play",
+      "name": "Jasmine Dreams™",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Jasmine Dreams™; Official page confirms a 5x3 grid, a Wild that can expand into a reel, three Scatters awarding six Free Spins, nudging Wild reels during the bonus, a growing overall multiplier and RTP 96.48%. Codex in-app browser on 2026-11-07 verified the exact official page title and gameplay text and inspected the Demo intro; no paid browser used in this run. Official HTML includes gameSymbol vs20mvwild. Codex in-app browser on 2026-11-07 reached exact official Demo title and symbol but only observed an intro overlay without playable controls; Demo remains not-verified and no public link is exposed. Exact official image URL maps through page og:image; image/png SHA256 4B6BEEE28542AC215F310028D584985539588F406887D229FAC2DEC788877983, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/jasmine-dreams/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 377"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/03/Jasmine-Dream_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 4B6BEEE28542AC215F310028D584985539588F406887D229FAC2DEC788877983"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20mvwild",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 reached exact official Demo title and symbol but only observed an intro overlay without playable controls; Demo remains not-verified and no public link is exposed."
+        }
+      ]
+    },
     {
       "slug": "the-knight-king-pragmatic-play",
       "name": "The Knight King™",
