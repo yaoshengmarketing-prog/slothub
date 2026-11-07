@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1411,
+  "gameCount": 1412,
   "providerCount": 372,
-  "sourcePageCount": 2627,
+  "sourcePageCount": 2630,
   "counts": {
     "access-restricted": 4,
-    "available": 1009,
+    "available": 1010,
     "not-verified": 398
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "towering-fortunes-pragmatic-play",
+      "name": "Towering Fortunes",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20theights",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Towering Fortunes; Official page confirms 5x3 grid, twenty paylines, Wild substitution except Money symbols, three or more Money symbols triggering Hold and Spin, expanded 11x5 bonus grid, three respins per reel, multipliers up to 100x, and RTP 96.50%. Codex in-app browser verified exact official page and Demo identity; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs20theights. Codex in-app browser on 2026-11-07 displayed Towering Fortunes playable five-reel game screen with balance, stake and spin controls; no wager or spin was made. Exact official image URL maps through page og:image; image/png SHA256 CD554250D8B7079007726B29621E61406B386F866F87FF43C909ADA3E22992A2, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/towering-fortunes/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 405"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/10/Towering-Fortunes_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 CD554250D8B7079007726B29621E61406B386F866F87FF43C909ADA3E22992A2"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20theights",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 displayed Towering Fortunes playable five-reel game screen with balance, stake and spin controls; no wager or spin was made."
+        }
+      ]
+    },
     {
       "slug": "shield-of-sparta-pragmatic-play",
       "name": "Shield of Sparta",

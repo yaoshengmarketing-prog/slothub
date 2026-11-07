@@ -1,10 +1,10 @@
 {
   "batch": 886,
   "recordedAt": "2026-11-07T09:44:28.837Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Shield of Sparta",
       "slug": "shield-of-sparta-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/shield-of-sparta/",
       "officialFacts": "Official page confirms 5x3 grid, twenty paylines, Bonus and Magnetic Bonus symbols locking after two and respinning remaining positions, three-to-five symbols awarding ten-to-twenty Free Spins, symbol upgrades in highlighted bonus positions, and RTP 96.50%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser on 2026-11-07 displayed Shield of Sparta playable five-reel game screen with balance, stake and spin controls; no wager or spin was made."
     }
   ],
-  "nextCursor": "Catalog item 405 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 405 Towering Fortunes after item 404 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "log": "tmp/verify-batch886-final.log"
+  },
+  "publication": {
+    "commit": "4f5424c5bd46e4906978588d6e323a248c8927cc",
+    "githubActionsRun": 42361769296,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "70a7b39d-56ff-447c-8187-85efa9f7889e",
+    "cloudflareUrl": "https://70a7b39d.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
