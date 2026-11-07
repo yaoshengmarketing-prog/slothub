@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1453,
+  "gameCount": 1454,
   "providerCount": 372,
-  "sourcePageCount": 2753,
+  "sourcePageCount": 2756,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 427
+    "not-verified": 428
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "little-gem-pragmatic-play",
+      "name": "Little Gem",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Little Gem; Official page confirms Hold & Spin respins, maximum win 2460x and RTP 96.70%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Little Gem Hold and Spin. No paid browser used. Official HTML includes gameSymbol vs5littlegem. Codex in-app browser opened the matching official Little Gem Hold and Spin Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 0374B923C9EE10B6E6337AD7CD7A9604D1EBB3BA7066FFD9214B83DBC15CA3B7, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/little-gem/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 448"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/05/Little-Gem_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 0374B923C9EE10B6E6337AD7CD7A9604D1EBB3BA7066FFD9214B83DBC15CA3B7"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5littlegem",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the matching official Little Gem Hold and Spin Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "cleocatra-pragmatic-play",
       "name": "Cleocatra",
