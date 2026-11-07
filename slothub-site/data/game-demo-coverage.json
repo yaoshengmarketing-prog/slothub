@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1399,
+  "gameCount": 1400,
   "providerCount": 372,
-  "sourcePageCount": 2590,
+  "sourcePageCount": 2593,
   "counts": {
     "access-restricted": 4,
     "available": 1007,
-    "not-verified": 388
+    "not-verified": 389
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "dragon-hero-pragmatic-play",
+      "name": "Dragon Hero",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Dragon Hero; Official page confirms 5x4 grid, dragons placing up to three Wilds, three Scatters triggering at least six Free Spins, held dragon positions in bonus, and RTP 96.00%. Codex in-app browser verified exact official page and Demo intro; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs20drgbless. Codex in-app browser on 2026-11-07 observed exact Dragon Hero intro screen from official direct Demo URL but gameplay controls did not load; marked not-verified. Exact official image URL maps through page og:image; image/png SHA256 FA0C8E952744442AA91F7C7B7CB463F484429962BDB937548DDE4AFCE16103DF, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/dragon-hero/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 393"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/12/Dragon_Hero_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 FA0C8E952744442AA91F7C7B7CB463F484429962BDB937548DDE4AFCE16103DF"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20drgbless",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Dragon Hero intro screen from official direct Demo URL but gameplay controls did not load; marked not-verified."
+        }
+      ]
+    },
     {
       "slug": "wild-wild-bananas-pragmatic-play",
       "name": "Wild Wild Bananas",
