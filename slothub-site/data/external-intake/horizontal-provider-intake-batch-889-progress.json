@@ -1,10 +1,10 @@
 {
   "batch": 889,
   "recordedAt": "2026-11-07T10:11:14.498Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Release the Kraken 2",
       "slug": "release-the-kraken-2-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/release-the-kraken-2/",
       "officialFacts": "Official page confirms 5x4 reels, random base-game Wild Respins, shifting stacked Wilds and guaranteed-win spins, bonus gamble for extra spins, an increasing multiplier, and RTP 96.50%.",
       "image": {
@@ -29,10 +29,30 @@
       "demo": "Codex in-app browser on 2026-11-07 observed exact Release the Kraken 2 Demo identity and introductory feature screen; playable reels with balance and stake controls were not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 408 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 408 Sword of Ares after item 407 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "log": "tmp/verify-batch889.log"
+  },
+  "publicationAttempt": {
+    "commit": "ab440e2f65ec7a4eb4f001c1c21f834a2a97f4d1",
+    "githubActionsRun": 42363079714,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "5156fdb8-3d01-4a2f-89d1-ad2438853316",
+    "cloudflareUrl": "https://5156fdb8.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "recovered-full-pass",
+    "readbackEvidence": "2026-11-07: /games/release-the-kraken-2-pragmatic-play/, /providers/pragmatic-play/, and image returned HTTP 200 with noindex/nofollow. /search/ stalled on two Invoke-WebRequest attempts; second hit explicit 30-second timeout. Codex in-app browser Page.navigate to same immutable /search/ also timed out. Full seven-route readback and live image hash not completed. Logs tmp/readback-batch889.log and tmp/readback-batch889-retry.log.",
+    "recoveryEvidence": "2026-11-07 resume: tmp/readback-batch889-resume.log shows HTTP 200 noindex/nofollow on all seven immutable routes, expected game title/symbol/source, no canonical, empty sitemap, and live/local image SHA256 B917467F72A196C45A8FD2C583F84DCE9C60E0ABADB638DC3DA38BE8F912EB75 match."
+  },
+  "publication": {
+    "commit": "ab440e2f65ec7a4eb4f001c1c21f834a2a97f4d1",
+    "githubActionsRun": 42363079714,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "5156fdb8-3d01-4a2f-89d1-ad2438853316",
+    "cloudflareUrl": "https://5156fdb8.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
