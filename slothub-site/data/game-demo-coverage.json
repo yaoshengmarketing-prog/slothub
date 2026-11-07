@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1466,
+  "gameCount": 1467,
   "providerCount": 372,
-  "sourcePageCount": 2792,
+  "sourcePageCount": 2795,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 440
+    "not-verified": 441
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wild-beach-party-pragmatic-play",
+      "name": "Wild Beach Party",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wild Beach Party; Official page confirms 7x7 cluster pays, wild multipliers, three pearls trigger free spins, maximum 5000x and RTP 96.53%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Wild Beach Party. A navigation timeout resolved in the same internal browser without switching. No paid browser used. Official HTML includes gameSymbol vs20bchprty. Codex in-app browser opened matching official Wild Beach Party Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 B387889E8D41514411076D3C9549D35D71A5824340E954196B4495029FF8602D, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-beach-party/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 461"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/02/Wild_Beach_Party_EN_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 B387889E8D41514411076D3C9549D35D71A5824340E954196B4495029FF8602D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20bchprty",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Wild Beach Party Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "rainbow-gold-pragmatic-play",
       "name": "Rainbow Gold",
