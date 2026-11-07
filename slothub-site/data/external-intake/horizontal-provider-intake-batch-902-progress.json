@@ -1,10 +1,10 @@
 {
   "batch": 902,
   "recordedAt": "2026-11-07T14:48:53.188Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Striking Hot 5",
       "slug": "striking-hot-5-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/striking-hot-5/",
       "officialFacts": "Official page confirms 5x3 reels, five paylines, classic fruit and high-paying seven symbols, three or more dollar symbols paying from any position, maximum win 5000x, and RTP 96.29%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser on 2026-11-07 showed Striking Hot 5 playable five-reel screen with balance, stake and spin controls; no spin or wager made."
     }
   ],
-  "nextCursor": "Catalog item 421 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 421 Happy Hooves after item 420 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "Full preview verify exit 0; exact official page, symbol, artwork hash and playable Demo checked.",
     "log": "tmp/verify-batch902.log"
+  },
+  "publication": {
+    "commit": "e3403f421c52e64f870ae8df8cefae13109b18f9",
+    "githubActionsRun": 42383618297,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "72aa6dd2-c537-413b-b1e7-0290dd8cd36f",
+    "cloudflareUrl": "https://72aa6dd2.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

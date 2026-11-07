@@ -1,0 +1,39 @@
+{
+  "batch": 903,
+  "recordedAt": "2026-11-07T14:54:54.059Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1427 published Game Markdown records and same-provider exact official path/name/gameSymbol; Happy Hooves /vs40mstrwild absent.",
+  "records": [
+    {
+      "index": 421,
+      "name": "Happy Hooves",
+      "slug": "happy-hooves-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/happy-hooves/",
+      "officialFacts": "Official page confirms 5x4 reels and forty paylines, four groups of two colour-coded symbols each with its own substituting Wild, three Scatter symbols triggering PowerNudge until no mystery symbols remain, each spin increasing the win multiplier by 1x, mystery symbols revealing base symbols, instant prizes or nudge-up extra spins, maximum win 5000x, and RTP 96.50%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/Happy_Hooves_EN_339x180.png",
+        "localPath": "public/assets/games/happy-hooves-pragmatic-play.png",
+        "sha256": "43E7B57DE6C2E16D66820B64E1335ED5A2583CCCF63446D013675778A91C3188",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser showed exact Happy Hooves Demo title but remained on Pragmatic Play loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 422 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "Full preview verify exit 0; exact official page, symbol and artwork hash checked; Demo loading splash only, not verified playable.",
+    "log": "tmp/verify-batch903.log"
+  }
+}

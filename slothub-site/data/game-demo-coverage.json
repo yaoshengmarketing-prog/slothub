@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1427,
+  "gameCount": 1428,
   "providerCount": 372,
-  "sourcePageCount": 2675,
+  "sourcePageCount": 2678,
   "counts": {
     "access-restricted": 4,
     "available": 1015,
-    "not-verified": 408
+    "not-verified": 409
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "happy-hooves-pragmatic-play",
+      "name": "Happy Hooves",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Happy Hooves; Official page confirms 5x4 reels and forty paylines, four groups of two colour-coded symbols each with its own substituting Wild, three Scatter symbols triggering PowerNudge until no mystery symbols remain, each spin increasing the win multiplier by 1x, mystery symbols revealing base symbols, instant prizes or nudge-up extra spins, maximum win 5000x, and RTP 96.50%. Codex in-app browser verified exact official game page and Demo loading state; official artwork visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs40mstrwild. Codex in-app browser showed exact Happy Hooves Demo title but remained on Pragmatic Play loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 43E7B57DE6C2E16D66820B64E1335ED5A2583CCCF63446D013675778A91C3188, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/happy-hooves/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 421"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/Happy_Hooves_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 43E7B57DE6C2E16D66820B64E1335ED5A2583CCCF63446D013675778A91C3188"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40mstrwild",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Happy Hooves Demo title but remained on Pragmatic Play loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "striking-hot-5-pragmatic-play",
       "name": "Striking Hot 5",
