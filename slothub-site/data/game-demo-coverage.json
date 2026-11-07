@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1445,
+  "gameCount": 1446,
   "providerCount": 372,
-  "sourcePageCount": 2729,
+  "sourcePageCount": 2732,
   "counts": {
     "access-restricted": 4,
-    "available": 1019,
+    "available": 1020,
     "not-verified": 422
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "bomb-bonanza-pragmatic-play",
+      "name": "Bomb Bonanza",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25bomb",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Bomb Bonanza; Official page confirms 5x5 reels, three Free Spins symbols award six Free Spins, Wild Bomb upgrades, maximum win 2015x and RTP 96.46%. Codex in-app browser verified exact official title, page facts, og:image and playable Demo; official artwork visually shows Bomb Bonanza. No paid browser used. Official HTML includes gameSymbol vs25bomb. Codex in-app browser opened the matching official Bomb Bonanza Demo and observed full reel grid, balance, stake and spin controls. No spin or wager was initiated. Exact official image URL maps through page og:image; image/png SHA256 294B5EFCF9516648D82CC3AD769AA5C60871B9C847556348E784756879F70044, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/bomb-bonanza/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 439"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/06/Bomb-Bonanza_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 294B5EFCF9516648D82CC3AD769AA5C60871B9C847556348E784756879F70044"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25bomb",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the matching official Bomb Bonanza Demo and observed full reel grid, balance, stake and spin controls. No spin or wager was initiated."
+        }
+      ]
+    },
     {
       "slug": "cosmic-cash-pragmatic-play",
       "name": "Cosmic Cash",

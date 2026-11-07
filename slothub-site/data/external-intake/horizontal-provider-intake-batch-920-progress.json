@@ -1,10 +1,10 @@
 {
   "batch": 920,
   "recordedAt": "2026-11-07T16:55:07.457Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Cosmic Cash",
       "slug": "cosmic-cash-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/cosmic-cash/",
       "officialFacts": "Official page confirms 5x4 reels, 40 paylines, money-symbol respins, Wilds, jackpots, free spins, maximum win 2650x and RTP 96.55%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser opened the matching official Cosmic Cash Demo, but only the loading view was observed; playable reels were not verified."
     }
   ],
-  "nextCursor": "Catalog item 439 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 439 Bomb Bonanza after item 438 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "Full preview verify exit 0; exact official page, symbol and artwork SHA checked; Demo loading view only.",
     "log": "tmp/verify-batch920.log"
+  },
+  "publication": {
+    "commit": "ed858b57ae9fefefc68cee7d11625844ffbe219b",
+    "githubActionsRun": 42393984045,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "31e198fd-028a-4a82-8a05-f0dfc0c50b31",
+    "cloudflareUrl": "https://31e198fd.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
