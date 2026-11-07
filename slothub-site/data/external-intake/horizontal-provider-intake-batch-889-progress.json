@@ -1,0 +1,38 @@
+{
+  "batch": 889,
+  "recordedAt": "2026-11-07T10:11:14.498Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1413 published Game Markdown records and same-provider exact official path/name/gameSymbol; Release the Kraken 2 /vs20kraken2 absent.",
+  "records": [
+    {
+      "index": 407,
+      "name": "Release the Kraken 2",
+      "slug": "release-the-kraken-2-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/release-the-kraken-2/",
+      "officialFacts": "Official page confirms 5x4 reels, random base-game Wild Respins, shifting stacked Wilds and guaranteed-win spins, bonus gamble for extra spins, an increasing multiplier, and RTP 96.50%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/10/Release_The_Kraken_2_339x180.png",
+        "localPath": "public/assets/games/release-the-kraken-2-pragmatic-play.png",
+        "sha256": "B917467F72A196C45A8FD2C583F84DCE9C60E0ABADB638DC3DA38BE8F912EB75",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser on 2026-11-07 observed exact Release the Kraken 2 Demo identity and introductory feature screen; playable reels with balance and stake controls were not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 408 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "log": "tmp/verify-batch889.log"
+  }
+}
