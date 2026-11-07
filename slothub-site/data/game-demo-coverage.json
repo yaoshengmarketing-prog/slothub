@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1403,
+  "gameCount": 1404,
   "providerCount": 372,
-  "sourcePageCount": 2603,
+  "sourcePageCount": 2606,
   "counts": {
     "access-restricted": 4,
     "available": 1008,
-    "not-verified": 391
+    "not-verified": 392
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "hot-pepper-pragmatic-play",
+      "name": "Hot Pepper",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Hot Pepper; Official page confirms 7x7 grid, clusters of five or more adjacent matching symbols, tumbling wins, multiplier Wild creation, level-up to fifth level, 10000x max win, and RTP 96.45%. Codex in-app browser verified exact official page and Demo intro; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs20dugems. Codex in-app browser on 2026-11-07 observed exact Hot Pepper intro/loading from official direct Demo URL but gameplay controls did not load; marked not-verified. Exact official image URL maps through page og:image; image/png SHA256 5DD4E5C21AE8D41662B1C94144C763CECA1A39044883A8C098AF0471F701BCE6, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/hot-pepper/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 397"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/11/HOT-PEPPER_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 5DD4E5C21AE8D41662B1C94144C763CECA1A39044883A8C098AF0471F701BCE6"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20dugems",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Hot Pepper intro/loading from official direct Demo URL but gameplay controls did not load; marked not-verified."
+        }
+      ]
+    },
     {
       "slug": "pizza-pizza-pizza-pragmatic-play",
       "name": "PIZZA! PIZZA? PIZZA!",
