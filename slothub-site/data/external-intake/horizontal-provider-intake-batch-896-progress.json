@@ -1,10 +1,10 @@
 {
   "batch": 896,
   "recordedAt": "2026-11-07T14:07:49.025Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "John Hunter and the Book of Tut Respin",
       "slug": "john-hunter-book-of-tut-respin-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/john-hunter-and-the-book-of-tut-respin/",
       "officialFacts": "Official page confirms random Mystery symbol expansion during base spins triggering repeatable respins, three Book Scatters triggering ten Free Spins, bonus expanding symbol chosen by player and causing further respins, three more Books retriggering Free Spins, maximum win 4,000x, and RTP 96.50%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser on 2026-11-07 opened gameSymbol vs10tut Demo titled Book Of Tut Respin, a short title matching the exact official John Hunter and the Book of Tut Respin page; playable reels and controls were not yet observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 415 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 415 Aztec Blaze after item 414 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "Full preview verify exit 0; exact official page, gameSymbol and artwork hash checked; Demo intro only, not verified playable.",
     "log": "tmp/verify-batch896.log"
+  },
+  "publication": {
+    "commit": "3b47d0e1571354402341da27b47c9d27fef704b2",
+    "githubActionsRun": 42380398119,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "da959e47-764d-4975-b47f-004a72b02b5d",
+    "cloudflareUrl": "https://da959e47.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

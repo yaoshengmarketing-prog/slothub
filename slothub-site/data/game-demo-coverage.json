@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1421,
+  "gameCount": 1422,
   "providerCount": 372,
-  "sourcePageCount": 2657,
+  "sourcePageCount": 2660,
   "counts": {
     "access-restricted": 4,
     "available": 1013,
-    "not-verified": 404
+    "not-verified": 405
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "aztec-blaze-pragmatic-play",
+      "name": "Aztec Blaze",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Aztec Blaze; Official page confirms 6x4 grid and 25 paylines, random Colossal symbols growing from 2x2 to 4x4 through wins, max-size Colossal multipliers rising to 10x, two Scatters triggering Free Spins with five initial lives, lives falling on spins without Colossal-symbol wins, and RTP 96.50%. Codex in-app browser verified exact official page and playable Demo visual state; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs25kfruit. Codex in-app browser on 2026-11-07 opened exact Aztec Blaze Demo identity and introductory Colossal-symbol screen; playable reels with balance and stake controls were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 D1487730F6983E32D042B4822DC054B77C39391673FD6A5D798EFB254E8C8FA3, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/aztec-blaze/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 415"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Aztec-Blaze_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 D1487730F6983E32D042B4822DC054B77C39391673FD6A5D798EFB254E8C8FA3"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25kfruit",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 opened exact Aztec Blaze Demo identity and introductory Colossal-symbol screen; playable reels with balance and stake controls were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "john-hunter-book-of-tut-respin-pragmatic-play",
       "name": "John Hunter and the Book of Tut Respin",
