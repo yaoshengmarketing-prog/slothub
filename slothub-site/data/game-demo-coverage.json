@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1395,
+  "gameCount": 1396,
   "providerCount": 372,
-  "sourcePageCount": 2577,
+  "sourcePageCount": 2580,
   "counts": {
     "access-restricted": 4,
-    "available": 1006,
+    "available": 1007,
     "not-verified": 385
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mammoth-gold-megaways-pragmatic-play",
+      "name": "Mammoth Gold Megaways",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20mammoth",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Mammoth Gold Megaways; Official page confirms variable reel sizes, Wilds, tumbling wins, Free Spins with growing multiplier, optional Free Spins gamble and RTP 96.03%. Codex in-app browser verified exact official page, artwork mapping and playable Demo visual state; no paid browser used. Official HTML includes gameSymbol vs20mammoth. Codex in-app browser on 2026-11-07 observed exact Mammoth Gold Megaways title, dynamic reels, balance/stake readout and spin control in official direct Demo; no spin or bet performed. Exact official image URL maps through page og:image; image/png SHA256 BACB9F6332A9CA5B120EBCF385851DF2D5573B5D9DC41A09B3795401D48FAA55, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/mammoth-gold-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 389"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/01/MM_MW_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 BACB9F6332A9CA5B120EBCF385851DF2D5573B5D9DC41A09B3795401D48FAA55"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20mammoth",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Mammoth Gold Megaways title, dynamic reels, balance/stake readout and spin control in official direct Demo; no spin or bet performed."
+        }
+      ]
+    },
     {
       "slug": "fish-eye-reel-kingdom",
       "name": "Fish Eye",
