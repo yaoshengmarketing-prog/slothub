@@ -1,0 +1,39 @@
+{
+  "batch": 906,
+  "recordedAt": "2026-11-07T15:14:10.334Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1430 published Game Markdown records and same-provider exact official path/name/gameSymbol; Fire Hot 20 /vs20fh absent.",
+  "records": [
+    {
+      "index": 424,
+      "name": "Fire Hot 20",
+      "slug": "fire-hot-20-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/fire-hot-20/",
+      "officialFacts": "Official single-game page identifies Fire Hot 20 with RTP 96.29% and says the Fire Hot series uses classic fruit-machine design and symbols with Wilds expanding to Wild reels; variant-specific paylines and maximum win are not stated.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/Fire-Hot-20_339x180.png",
+        "localPath": "public/assets/games/fire-hot-20-pragmatic-play.png",
+        "sha256": "B3FBFCB20C5DE2203966D8897994D1888E4BEADE3FF46B8E9A475D12FC3BAE1F",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser showed exact Fire Hot 20 Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 425 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "Full preview verify exit 0; exact official symbol and artwork hash checked; variant-specific unverified values omitted; Demo loading splash only.",
+    "log": "tmp/verify-batch906.log"
+  }
+}

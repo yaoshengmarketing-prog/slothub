@@ -1,10 +1,10 @@
 {
   "batch": 905,
   "recordedAt": "2026-11-07T15:08:08.01Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Fire Hot 100",
       "slug": "fire-hot-100-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/fire-hot-100/",
       "officialFacts": "Official single-game page identifies Fire Hot 100 with RTP 96.43% and says the Fire Hot series uses classic fruit-machine design and symbols with Wilds expanding to Wild reels; variant-specific paylines and maximum win are not stated.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser showed exact Fire Hot 100 Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 424 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 424 Fire Hot 20 after item 423 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "Full preview verify exit 0; official source and exact symbol/image checked; variant-specific unverified values omitted; Demo loading splash only.",
     "log": "tmp/verify-batch905.log"
+  },
+  "publication": {
+    "commit": "76aaf2b3c0c41dc793345206b98d0c88aa4bbdf9",
+    "githubActionsRun": 42385176225,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "c5cd5474-2d81-4918-ad81-10ad8bd26a41",
+    "cloudflareUrl": "https://c5cd5474.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
