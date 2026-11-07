@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1456,
+  "gameCount": 1457,
   "providerCount": 372,
-  "sourcePageCount": 2762,
+  "sourcePageCount": 2765,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 430
+    "not-verified": 431
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fire-strike-2-pragmatic-play",
+      "name": "Fire Strike 2",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fire Strike 2; Official page confirms ten paylines, collecting Fire Strike Wilds for instant cash prizes and a jackpot, RTP 96.50%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Fire Strike 2. No paid browser used. Official HTML includes gameSymbol vs10firestrike2. Codex in-app browser opened matching official Fire Strike 2 Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 2448BDEC89FC89BDC6785BEB1A984494B748D2243E4D70B791D500FEE9EDBC6B, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fire-strike-2/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 451"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/04/FIRE-STRIKE2_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 2448BDEC89FC89BDC6785BEB1A984494B748D2243E4D70B791D500FEE9EDBC6B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10firestrike2",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Fire Strike 2 Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "goblin-heist-powernudge-pragmatic-play",
       "name": "Goblin Heist PowerNudge",
