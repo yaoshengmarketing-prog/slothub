@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1451,
+  "gameCount": 1452,
   "providerCount": 372,
-  "sourcePageCount": 2747,
+  "sourcePageCount": 2750,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 425
+    "not-verified": 426
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wild-west-gold-megaways-pragmatic-play",
+      "name": "Wild West Gold Megaways",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wild West Gold Megaways; Official page confirms Megaways with 117649 winning ways, Wild multipliers, Double Chance, sticky Wilds and bonus retriggers, RTP 96.44%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Wild West Gold Megaways. No paid browser used. Official HTML includes gameSymbol vswayswildwest. Codex in-app browser opened matching official Wild West Gold Megaways Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 DE407818B279C7FA81EAAEF4789027CC985AB7440AC74A3244E73A27C6B07FF5, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-west-gold-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 446"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/05/Wild_West_Gold_Megaways_EN_339x180_01-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 DE407818B279C7FA81EAAEF4789027CC985AB7440AC74A3244E73A27C6B07FF5"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayswildwest",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Wild West Gold Megaways Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "zombie-carnival-pragmatic-play",
       "name": "Zombie Carnival",
