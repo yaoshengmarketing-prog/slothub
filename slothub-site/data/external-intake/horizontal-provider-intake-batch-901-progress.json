@@ -1,10 +1,10 @@
 {
   "batch": 901,
   "recordedAt": "2026-11-07T14:41:52.858Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Book of Golden Sands",
       "slug": "book-of-golden-sands-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/book-of-golden-sands/",
       "officialFacts": "Official page confirms 6x3 reels, 729 winning ways, Egyptian symbols, multiplier Wilds, Book symbol as Wild and Scatter, three or more Books triggering Free Spins, expanding special symbol adding winning ways on repeat expansions, maximum win 10000x, and RTP 96.46%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser showed exact Book of Golden Sands Demo title and tutorial screen; playable reels were not independently observed, so Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 420 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 420 Striking Hot 5 after item 419 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "Full preview verify exit 0; exact official page, symbol and artwork hash checked; Demo tutorial only, not verified playable.",
     "log": "tmp/verify-batch901.log"
+  },
+  "publication": {
+    "commit": "f6c37477771f397e199cae9e5f9b7e970a6d27a4",
+    "githubActionsRun": 42383120514,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "9222d50d-548c-48e9-ad75-6a8b57034904",
+    "cloudflareUrl": "https://9222d50d.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

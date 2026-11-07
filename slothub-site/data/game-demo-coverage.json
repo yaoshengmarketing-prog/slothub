@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1426,
+  "gameCount": 1427,
   "providerCount": 372,
-  "sourcePageCount": 2672,
+  "sourcePageCount": 2675,
   "counts": {
     "access-restricted": 4,
-    "available": 1014,
+    "available": 1015,
     "not-verified": 408
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "striking-hot-5-pragmatic-play",
+      "name": "Striking Hot 5",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5strh",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Striking Hot 5; Official page confirms 5x3 reels, five paylines, classic fruit and high-paying seven symbols, three or more dollar symbols paying from any position, maximum win 5000x, and RTP 96.29%. Codex in-app browser verified exact official game page and playable Demo visual state; official artwork visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs5strh. Codex in-app browser on 2026-11-07 showed Striking Hot 5 playable five-reel screen with balance, stake and spin controls; no spin or wager made. Exact official image URL maps through page og:image; image/png SHA256 95EA72BFB9A64DE3F7D7A8906A71D10FB7641EEB09E906CA6BB1ED5C53F69B9E, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/striking-hot-5/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 420"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/Striking-Hot-5_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 95EA72BFB9A64DE3F7D7A8906A71D10FB7641EEB09E906CA6BB1ED5C53F69B9E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5strh",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 showed Striking Hot 5 playable five-reel screen with balance, stake and spin controls; no spin or wager made."
+        }
+      ]
+    },
     {
       "slug": "book-of-golden-sands-pragmatic-play",
       "name": "Book of Golden Sands",
