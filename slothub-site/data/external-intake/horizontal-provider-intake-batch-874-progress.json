@@ -1,0 +1,39 @@
+{
+  "batch": 874,
+  "recordedAt": "2026-11-07T08:11:48.641Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1398 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild Wild Bananas /vswayswwhex absent.",
+  "records": [
+    {
+      "index": 392,
+      "name": "Wild Wild Bananas",
+      "slug": "wild-wild-bananas-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/wild-wild-bananas/",
+      "officialFacts": "Official game page and first-party news confirm 576 ways, banana cash collection, jackpots up to 500x, Free Spins and reel expansion; official news has conflicting cluster-pay wording, so win mechanism is left unspecified.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/12/xd3TfPnE.png",
+        "localPath": "public/assets/games/wild-wild-bananas-pragmatic-play.png",
+        "sha256": "864BF1B979CCDDEF4B88D07A3BE129185ED6BC0FAEC93FF6DEBB6298BD5D59E8",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser on 2026-11-07 observed exact Wild Wild Bananas intro screen from official direct Demo URL but gameplay controls did not load; marked not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 393 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "log": "tmp/verify-batch874.log",
+    "note": "Full preview verify exit 0; 1804 HTML pages isolated; all project checks pass."
+  }
+}
