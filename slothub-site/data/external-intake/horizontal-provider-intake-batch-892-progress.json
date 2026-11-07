@@ -1,10 +1,10 @@
 {
   "batch": 892,
   "recordedAt": "2026-11-07T13:27:36.810Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Candy Stars",
       "slug": "candy-stars-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/candy-stars/",
       "officialFacts": "Official page confirms 5x3 grid, tumbling wins, Sticky Wilds on top reel gaining 1x per participating win, three diamonds awarding eight Free Spins, and Free Spins Sticky Wild multipliers doubling up to 128x; RTP 96.47%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser on 2026-11-07 displayed Candy Stars playable five-reel game screen with balance, stake and spin controls; no wager or spin was made."
     }
   ],
-  "nextCursor": "Catalog item 411 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 411 Muertos Multiplier Megaways after item 410 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "log": "tmp/verify-batch892.log"
+  },
+  "publication": {
+    "commit": "8760307f0e691f4e60d2641c1f94a80f9671de97",
+    "githubActionsRun": 42377485998,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "5f38a03a-3ea8-4ffc-a915-b3489e5fca1a",
+    "cloudflareUrl": "https://5f38a03a.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

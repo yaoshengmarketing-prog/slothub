@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1417,
+  "gameCount": 1418,
   "providerCount": 372,
-  "sourcePageCount": 2645,
+  "sourcePageCount": 2648,
   "counts": {
     "access-restricted": 4,
     "available": 1012,
-    "not-verified": 401
+    "not-verified": 402
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "muertos-multiplier-megaways-pragmatic-play",
+      "name": "Muertos Multiplier Megaways",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Muertos Multiplier Megaways; Official page confirms six reel Megaways with up to 117,649 winning ways, tumble after wins, Multiplier Wild substitution except Bonus symbols, three Bonus symbols triggering Free Spins with gamble for spin count, every bonus tumble adding 1x to overall multiplier, Wild multipliers multiplying current multiplier, maximum win 10,000x, and RTP 96.03%. Codex in-app browser verified exact official page and playable Demo visual state; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs20muertos. Codex in-app browser on 2026-11-07 observed exact Muertos Multiplier Megaways Demo identity and introductory feature screen, but playable reels with balance and stake controls were not observed; Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 0FF5CCB19F63AFA8CAC219929D5D372493F4D50B9606649BC54153835BCD8395, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/muertos-multiplier-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 411"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Muertos-Multiplier-Megaways_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 0FF5CCB19F63AFA8CAC219929D5D372493F4D50B9606649BC54153835BCD8395"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20muertos",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Muertos Multiplier Megaways Demo identity and introductory feature screen, but playable reels with balance and stake controls were not observed; Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "candy-stars-pragmatic-play",
       "name": "Candy Stars",
