@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1412,
+  "gameCount": 1413,
   "providerCount": 372,
-  "sourcePageCount": 2630,
+  "sourcePageCount": 2633,
   "counts": {
     "access-restricted": 4,
-    "available": 1010,
+    "available": 1011,
     "not-verified": 398
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "spin-score-megaways-pragmatic-play",
+      "name": "Spin & Score Megaways",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysfrywld",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Spin & Score Megaways; Official page confirms six variable reels with up to 117,649 ways, football Wild substituting except Scatter, tumble after wins, four or more trophy Scatters triggering Free Spins with gamble for more spins, each Free Spins win increasing overall multiplier by 1x, maximum win 5,000x, and RTP 96.97%. Codex in-app browser verified exact official page and Demo identity; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vswaysfrywld. Codex in-app browser on 2026-11-07 displayed Spin & Score Megaways playable six-reel game screen with balance, stake and spin controls; no wager or spin was made. Exact official image URL maps through page og:image; image/png SHA256 8CB447F07EB01C61C604D65A002A29CB6DBD283BBE4033982212E8687666DF88, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/spin-score-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 406"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/10/Spin__Score_Megaways_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 8CB447F07EB01C61C604D65A002A29CB6DBD283BBE4033982212E8687666DF88"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysfrywld",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 displayed Spin & Score Megaways playable six-reel game screen with balance, stake and spin controls; no wager or spin was made."
+        }
+      ]
+    },
     {
       "slug": "towering-fortunes-pragmatic-play",
       "name": "Towering Fortunes",
