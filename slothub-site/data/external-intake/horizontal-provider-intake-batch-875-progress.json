@@ -1,10 +1,10 @@
 {
   "batch": 875,
   "recordedAt": "2026-11-07T08:19:25.053Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Dragon Hero",
       "slug": "dragon-hero-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/dragon-hero/",
       "officialFacts": "Official page confirms 5x4 grid, dragons placing up to three Wilds, three Scatters triggering at least six Free Spins, held dragon positions in bonus, and RTP 96.00%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser on 2026-11-07 observed exact Dragon Hero intro screen from official direct Demo URL but gameplay controls did not load; marked not-verified."
     }
   ],
-  "nextCursor": "Catalog item 394 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 394 Starlight Christmas after item 393 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "log": "tmp/verify-batch875.log",
     "note": "Full preview verify exit 0; 1805 HTML pages isolated; all project checks pass."
+  },
+  "publication": {
+    "commit": "06a4c921b87602c088f4084b78c0241d7ac74266",
+    "githubActionsRun": 42355263902,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "1192345e-2269-49d7-8316-bebf8bc7e0c8",
+    "cloudflareUrl": "https://1192345e.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

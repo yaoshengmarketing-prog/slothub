@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1400,
+  "gameCount": 1401,
   "providerCount": 372,
-  "sourcePageCount": 2593,
+  "sourcePageCount": 2596,
   "counts": {
     "access-restricted": 4,
     "available": 1007,
-    "not-verified": 389
+    "not-verified": 390
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "starlight-christmas-pragmatic-play",
+      "name": "Starlight Christmas",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Starlight Christmas; Official page confirms 6x5 grid, tumbling wins, multiplier up to 500x and RTP 96.50%; source conflicts between 12-symbol clusters and 20 paylines, so win mechanism is left unspecified. Codex in-app browser verified exact official page and Demo intro; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs20schristmas. Codex in-app browser on 2026-11-07 observed exact Starlight Christmas intro screen from official direct Demo URL but gameplay controls did not load; marked not-verified. Exact official image URL maps through page og:image; image/png SHA256 05CCE8B738D077DB6B9D065F12EC9C02AC69017B9E870527EDB025B09F0FEBF4, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/starlight-christmas/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 394"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/11/Starlight-Christmas_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 05CCE8B738D077DB6B9D065F12EC9C02AC69017B9E870527EDB025B09F0FEBF4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20schristmas",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Starlight Christmas intro screen from official direct Demo URL but gameplay controls did not load; marked not-verified."
+        }
+      ]
+    },
     {
       "slug": "dragon-hero-pragmatic-play",
       "name": "Dragon Hero",
