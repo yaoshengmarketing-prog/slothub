@@ -1,10 +1,10 @@
 {
   "batch": 869,
   "recordedAt": "2026-11-07T07:33:42.737Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Monster Superlanche",
       "slug": "monster-superlanche-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/monster-superlanche/",
       "officialFacts": "Official page confirms pay-anywhere wins, tumbling symbols, four Scatter bonus trigger, persistent multipliers from stacked winning symbols, max win 5000x and RTP 96.03%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser on 2026-11-07 observed exact Monster Superlanche title and matching game intro artwork in the direct official Demo; playable balance/stake and controls were not observed, so Demo is not-verified."
     }
   ],
-  "nextCursor": "Catalog item 388 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 388 Fish Eye after item 387 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "exit 0; complete preview build, CSS, data, links and outbound nofollow PASS",
     "log": "tmp/verify-batch869.log"
+  },
+  "publication": {
+    "commit": "38319c3ed8f6ec7852022e8a93289d86a2bbad4c",
+    "githubActionsRun": 42352103366,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "26c376f1-4d34-412e-ad26-7bcb638c0930",
+    "cloudflareUrl": "https://26c376f1.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

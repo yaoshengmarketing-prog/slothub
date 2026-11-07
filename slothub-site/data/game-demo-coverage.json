@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1394,
+  "gameCount": 1395,
   "providerCount": 372,
-  "sourcePageCount": 2573,
+  "sourcePageCount": 2577,
   "counts": {
     "access-restricted": 4,
     "available": 1006,
-    "not-verified": 384
+    "not-verified": 385
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,42 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fish-eye-reel-kingdom",
+      "name": "Fish Eye",
+      "provider": "reel-kingdom",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Reel Kingdom first-party exact individual page and Pragmatic Play official page establish developer Reel Kingdom, distribution Powered by Pragmatic Play, exact Fish Eye title and gameSymbol vs10fisheye; Demo boot showed Reel Kingdom Powered by Pragmatic Play and intro only, so not-verified. Official artwork SHA256 C794928B826BE793E25DDDAAADFF9623553D87B8265FF32E429AC58A102315A1. No same-symbol or exact-title record exists. Codex in-app browser only; no paid browser.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://reelkingdom.com/games/fish-eye-slot",
+          "httpStatus": 200,
+          "notes": "Reel Kingdom first-party exact Fish Eye page: ten paylines, Free Spins, cash fish, RTP 96.07 and embedded vs10fisheye Demo, checked in Codex in-app browser"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fish-eye/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 388"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2023/01/Fish-Eye_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 C794928B826BE793E25DDDAAADFF9623553D87B8265FF32E429AC58A102315A1"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10fisheye",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed Reel Kingdom Powered by Pragmatic Play boot and exact Fish Eye intro artwork; playable controls were not observed, so Demo is not-verified."
+        }
+      ]
+    },
     {
       "slug": "monster-superlanche-pragmatic-play",
       "name": "Monster Superlanche",
