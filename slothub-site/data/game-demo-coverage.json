@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1470,
+  "gameCount": 1471,
   "providerCount": 372,
-  "sourcePageCount": 2804,
+  "sourcePageCount": 2807,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 444
+    "not-verified": 445
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "might-of-ra-pragmatic-play",
+      "name": "Might of Ra",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Might of Ra; Official page confirms six reels, three adjacent symbols pay, Ra wilds, scarab bonus scatter, collect ankhs to add up to 24 wild symbols, and RTP 96.49%. Codex in-app browser previously checked the exact official page; official artwork bytes visually inspected and title says Might of Ra. No paid browser used. Official HTML includes gameSymbol vs50mightra. Codex in-app browser prechecked matching official Might of Ra Demo but playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 00D2F9048C65A0FB5FD0BDFBA94244108F7A5005FF78EF27B601F34CE5341997, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/might-of-ra/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 465"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/02/Might_of_Ra_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 00D2F9048C65A0FB5FD0BDFBA94244108F7A5005FF78EF27B601F34CE5341997"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50mightra",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser prechecked matching official Might of Ra Demo but playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "snakes-and-ladders-megadice-pragmatic-play",
       "name": "Snakes and Ladders Megadice",
