@@ -1,0 +1,48 @@
+{
+  "batch": 911,
+  "recordedAt": "2026-11-07T15:51:46.785Z",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1435 published Game Markdown records and same-provider exact official path/name/gameSymbol; Black Bull /vs20trswild2 absent.",
+  "records": [
+    {
+      "index": 429,
+      "name": "Black Bull",
+      "slug": "black-bull-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pragmaticplay.com/en/games/black-bull/",
+      "officialFacts": "Official page confirms 5x4 reels, money collect with cash bags collecting values on each spin, six or more golden coins triggering progressive free spins with wilds and more spins, maximum win 4500x and RTP 96.51%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Black-Bull_339x180.png",
+        "localPath": "public/assets/games/black-bull-pragmatic-play.png",
+        "sha256": "4378381C1473AEC20307FD36F88B9D0075E367A7C25E3631740D884A979AF423",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser followed exact official Demo gameSymbol to Black Bull; screenshot showed fully rendered 5x4 reels, title, demo balance, stake and spin control. No spin or wager was initiated."
+    }
+  ],
+  "nextCursor": "Catalog item 430 Greedy Wolf after item 429 full publication closure.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "Full preview verify exit 0 after correcting unsupported wilds feature tag to wild; exact official page, symbol, artwork SHA and playable Demo checked.",
+    "log": "tmp/verify-batch911.log"
+  },
+  "publication": {
+    "commit": "41e1d56e85f55bcc89d261b7f6463933f630063a",
+    "githubActionsRun": 42388760794,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "f6ab7e18-4ba7-4021-ade5-42be702ef69c",
+    "cloudflareUrl": "https://f6ab7e18.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
+  }
+}

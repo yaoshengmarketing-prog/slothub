@@ -1,0 +1,48 @@
+{
+  "batch": 898,
+  "recordedAt": "2026-11-07T14:21:11.121Z",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1422 published Game Markdown records and same-provider exact official path/name/gameSymbol; Floating Dragon Megaways /vswaysfltdrg absent.",
+  "records": [
+    {
+      "index": 416,
+      "name": "Floating Dragon Megaways",
+      "slug": "floating-dragon-megaways-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pragmaticplay.com/en/games/floating-dragon-megaways/",
+      "officialFacts": "Official page confirms 6x6 Megaways grid with up to 236,196 ways, Free Spins collecting instant wins and raising overall multiplier, four Collect symbols retriggering Free Spins, Hold and Spin awarding three respins renewed for each instant-win prize, maximum win 20,000x, and RTP 96.70%. Official page calls it Floating Dragon Megaways Hold&Spin while exact Demo uses Floating Dragon Hold & Spin Megaways.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Floating-Dragon-Megaways_339x180-1.png",
+        "localPath": "public/assets/games/floating-dragon-megaways-pragmatic-play.png",
+        "sha256": "4C88DDEF4F4642FEA8288AB0B33464494E4385F9BB918A72EA51E738E0DE828E",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser on 2026-11-07 opened exact gameSymbol vswaysfltdrg Demo titled Floating Dragon Hold & Spin Megaways matching official page and artwork; playable reels and balance/stake controls were not yet observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 417 Wild Hop&Drop after item 416 full publication closure.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "Full preview verify exit 0; exact symbol differs from New Year Festival suffix variant; Demo intro only, not verified playable.",
+    "log": "tmp/verify-batch898.log"
+  },
+  "publication": {
+    "commit": "013dd884e98141ce6931fbf6eb12c6adb4a84679",
+    "githubActionsRun": 42381457393,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "256531ca-0c79-4734-9744-2a0458a02a86",
+    "cloudflareUrl": "https://256531ca.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
+  }
+}

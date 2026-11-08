@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1415,
+  "gameCount": 1467,
   "providerCount": 372,
-  "sourcePageCount": 2639,
+  "sourcePageCount": 2795,
   "counts": {
     "access-restricted": 4,
-    "available": 1011,
-    "not-verified": 400
+    "available": 1022,
+    "not-verified": 441
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,1651 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wild-beach-party-pragmatic-play",
+      "name": "Wild Beach Party",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wild Beach Party; Official page confirms 7x7 cluster pays, wild multipliers, three pearls trigger free spins, maximum 5000x and RTP 96.53%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Wild Beach Party. A navigation timeout resolved in the same internal browser without switching. No paid browser used. Official HTML includes gameSymbol vs20bchprty. Codex in-app browser opened matching official Wild Beach Party Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 B387889E8D41514411076D3C9549D35D71A5824340E954196B4495029FF8602D, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-beach-party/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 461"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/02/Wild_Beach_Party_EN_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 B387889E8D41514411076D3C9549D35D71A5824340E954196B4495029FF8602D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20bchprty",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Wild Beach Party Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "rainbow-gold-pragmatic-play",
+      "name": "Rainbow Gold",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Rainbow Gold; Official page confirms 3x5 grid, maximum 5000x and RTP 96.63% with Irish luck theme; unspecified payment mechanism remains missing. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Rainbow Gold. No paid browser used. Official HTML includes gameSymbol vs20rainbowg. Codex in-app browser opened matching official Rainbow Gold Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 B8562DBEC6B0009142FAAA4DBC70C7CF90F5E0B9249457E2C83BABE9FD12958B, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/rainbow-gold/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 460"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/03/Rainbow_Gold_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 B8562DBEC6B0009142FAAA4DBC70C7CF90F5E0B9249457E2C83BABE9FD12958B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20rainbowg",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Rainbow Gold Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "tic-tac-take-pragmatic-play",
+      "name": "Tic Tac Take",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Tic Tac Take; Official page confirms 5x3 grid, ten paylines, wild substitution, maximum 22000x and RTP 96.63%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Tic Tac Take. No paid browser used. Official HTML includes gameSymbol vs10tictac. Codex in-app browser opened matching official Tic Tac Take Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 21FCB477FA01D1B4B43CAD423E43970CAFCAB92EB520CB10C9138D451C8AD6C8, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/tic-tac-take/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 459"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/03/TTT_EN_339x180_04.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 21FCB477FA01D1B4B43CAD423E43970CAFCAB92EB520CB10C9138D451C8AD6C8"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10tictac",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Tic Tac Take Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "barn-festival-pragmatic-play",
+      "name": "Barn Festival",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Barn Festival; Official page confirms tumbling pays-anywhere, three money symbols unlock multiplier, four unlock free spins with three respins and expanding reels, maximum 20000x and RTP 96.45%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Barn Festival. No paid browser used. Official HTML includes gameSymbol vs20farmfest. Codex in-app browser opened matching official Barn Festival Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 4CE784BCCE6FA39295F7295BA8FF12A4E54B3A7BD1F03CE242216A36DF1CBC8A, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/barn-festival/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 458"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/03/Barn-Festival_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 4CE784BCCE6FA39295F7295BA8FF12A4E54B3A7BD1F03CE242216A36DF1CBC8A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20farmfest",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Barn Festival Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "drill-that-gold-pragmatic-play",
+      "name": "Drill that Gold",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Drill that Gold; Official page confirms gold-mining theme and maximum 5000x; RTP label has no displayed numeric value, so RTP remains missing. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Drill that Gold. No paid browser used. Official HTML includes gameSymbol vs20drtgold. Codex in-app browser opened matching official Drill That Gold Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 884FDAF11612D0FED9B9F770A24424EA61150FF185730F28AC633AD9876B72DF, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/drill-that-gold/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 457"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/03/Drill_That_Gold_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 884FDAF11612D0FED9B9F770A24424EA61150FF185730F28AC633AD9876B72DF"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20drtgold",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Drill That Gold Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "chicken-chase-pragmatic-play",
+      "name": "Chicken Chase",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Chicken Chase; Official page confirms 3x5 grid, wolf/chicken theme and a stated 210x bonus win; RTP label has no displayed numeric value, so RTP remains missing. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Chicken Chase. No paid browser used. Official HTML includes gameSymbol vs10chkchase. Codex in-app browser opened matching official Chicken Chase Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 481BE5CE7DD690D5D1346209A0A956BD778F5AB12F2D81397C642236924B33F4, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/chicken-chase/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 456"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/03/Chicken-Chase_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 481BE5CE7DD690D5D1346209A0A956BD778F5AB12F2D81397C642236924B33F4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10chkchase",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Chicken Chase Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "eye-of-cleopatra-pragmatic-play",
+      "name": "Eye of Cleopatra",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Eye of Cleopatra; Official page confirms five reels and four rows, wild substitutions, high volatility, maximum 4000x and RTP 96.50%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Eye of Cleopatra. No paid browser used. Official HTML includes gameSymbol vs40cleoeye. Codex in-app browser opened matching official Eye of Cleopatra Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 C05F889C7A2CF443E614C7082D8DC56ECB33321CD2ADCD9FF59FB769037DA53D, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/eye-of-cleopatra/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 455"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/04/Eye-of-Cleo_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 C05F889C7A2CF443E614C7082D8DC56ECB33321CD2ADCD9FF59FB769037DA53D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40cleoeye",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Eye of Cleopatra Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "clover-gold-pragmatic-play",
+      "name": "Clover Gold",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Clover Gold; Official page confirms money symbols on reels one to four worth 1 to 100x, collect modifiers on reel five, respins, eight free spins from three bonus symbols, retriggers and multiplier, maximum 5000x and RTP 96.54%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Clover Gold. No paid browser used. Official HTML includes gameSymbol vs20mustanggld2. Codex in-app browser opened matching official Clover Gold Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 141A1A345CD1AC26D8C9F832F31BCAC26FFFA850B24AD0E2F62A5342D9574DF3, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/clover-gold/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 454"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/04/Clover_Gold_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 141A1A345CD1AC26D8C9F832F31BCAC26FFFA850B24AD0E2F62A5342D9574DF3"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20mustanggld2",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Clover Gold Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "spirit-of-adventure-pragmatic-play",
+      "name": "Spirit of Adventure",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Spirit of Adventure; Official page confirms 5x3 reels, ten paylines, instant cash, multipliers and bonus round, maximum win 5100x and RTP 96.60%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Spirit of Adventure. No paid browser used. Official HTML includes gameSymbol vs10spiritadv. Codex in-app browser opened matching official Spirit of Adventure Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 023A1C3594E529F49188C7D74F2FC4DB20EC2C4541F758C220B803DC4CA3FD10, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/spirit-of-adventure/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 453"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/04/Spirit-of-Adventure™_EN_339x180_04.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 023A1C3594E529F49188C7D74F2FC4DB20EC2C4541F758C220B803DC4CA3FD10"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10spiritadv",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Spirit of Adventure Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "north-guardians-pragmatic-play",
+      "name": "North Guardians",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title North Guardians; Official page confirms 5x5 grid, unlockable Wild patterns, maximum win 5000x and RTP 96.38%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says North Guardians. No paid browser used. Official HTML includes gameSymbol vs50northgard. Codex in-app browser opened matching official North Guardians Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 745F6F475204E7A1C5247BA2312F7BC6E1A1F79C39165131DFB63B7BEC342DA7, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/north-guardians/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 452"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/04/NORTH-GUARDIANS_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 745F6F475204E7A1C5247BA2312F7BC6E1A1F79C39165131DFB63B7BEC342DA7"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50northgard",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official North Guardians Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "fire-strike-2-pragmatic-play",
+      "name": "Fire Strike 2",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fire Strike 2; Official page confirms ten paylines, collecting Fire Strike Wilds for instant cash prizes and a jackpot, RTP 96.50%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Fire Strike 2. No paid browser used. Official HTML includes gameSymbol vs10firestrike2. Codex in-app browser opened matching official Fire Strike 2 Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 2448BDEC89FC89BDC6785BEB1A984494B748D2243E4D70B791D500FEE9EDBC6B, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fire-strike-2/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 451"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/04/FIRE-STRIKE2_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 2448BDEC89FC89BDC6785BEB1A984494B748D2243E4D70B791D500FEE9EDBC6B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10firestrike2",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Fire Strike 2 Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "goblin-heist-powernudge-pragmatic-play",
+      "name": "Goblin Heist PowerNudge",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Goblin Heist PowerNudge; Official page confirms 3x5 grid, PowerNudge, multiplier and mystery coins, maximum win 4000x and RTP 96.47%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Goblin Heist PowerNudge despite a misspelled filename. No paid browser used. Official HTML includes gameSymbol vs20gobnudge. Codex in-app browser opened matching official Goblin Heist PowerNudge Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 23F43327D40E94057098A2A38969ACA3FFE044D2BF027E4B9177E6529A23D83D, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/goblin-heist-powernudge/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 450"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/04/Goblin_Hiest_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 23F43327D40E94057098A2A38969ACA3FFE044D2BF027E4B9177E6529A23D83D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20gobnudge",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Goblin Heist PowerNudge Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "the-great-stick-up-pragmatic-play",
+      "name": "The Great Stick-Up",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Great Stick-Up; Official page confirms crime-themed cash, map, handcuff and detective symbols, and RTP 96.30%; it does not provide a supported numeric maximum win. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says The Great Stick-Up. No paid browser used. Official HTML includes gameSymbol vs20stickysymbol. Codex in-app browser opened matching official The Great Stick-Up Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 9B84495CA3CF7775E2C3BDC9C33B271AAC248F6CA993C99C8E595D6A82777FCC, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-great-stick-up/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 449"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/05/THE-GREAT-STICK-UP_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 9B84495CA3CF7775E2C3BDC9C33B271AAC248F6CA993C99C8E595D6A82777FCC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20stickysymbol",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official The Great Stick-Up Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "little-gem-pragmatic-play",
+      "name": "Little Gem",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Little Gem; Official page confirms Hold & Spin respins, maximum win 2460x and RTP 96.70%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Little Gem Hold and Spin. No paid browser used. Official HTML includes gameSymbol vs5littlegem. Codex in-app browser opened the matching official Little Gem Hold and Spin Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 0374B923C9EE10B6E6337AD7CD7A9604D1EBB3BA7066FFD9214B83DBC15CA3B7, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/little-gem/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 448"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/05/Little-Gem_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 0374B923C9EE10B6E6337AD7CD7A9604D1EBB3BA7066FFD9214B83DBC15CA3B7"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5littlegem",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the matching official Little Gem Hold and Spin Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "cleocatra-pragmatic-play",
+      "name": "Cleocatra",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Cleocatra; Official page confirms 2x or 3x multiplier Wilds, sticky respins from a first-reel cat stack, eight to sixteen Free Spins from three to five scatters, maximum win 5000x and RTP 96.20%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Cleocatra. No paid browser used. Official HTML includes gameSymbol vs20cleocatra. Codex in-app browser opened matching official Cleocatra Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 D54AED186316D50D9C70C1523C3516F3FA6255527691726C02928106A06C4C8B, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/cleocatra/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 447"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/05/Cleocatra_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 D54AED186316D50D9C70C1523C3516F3FA6255527691726C02928106A06C4C8B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20cleocatra",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Cleocatra Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "wild-west-gold-megaways-pragmatic-play",
+      "name": "Wild West Gold Megaways",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wild West Gold Megaways; Official page confirms Megaways with 117649 winning ways, Wild multipliers, Double Chance, sticky Wilds and bonus retriggers, RTP 96.44%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Wild West Gold Megaways. No paid browser used. Official HTML includes gameSymbol vswayswildwest. Codex in-app browser opened matching official Wild West Gold Megaways Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 DE407818B279C7FA81EAAEF4789027CC985AB7440AC74A3244E73A27C6B07FF5, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-west-gold-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 446"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/05/Wild_West_Gold_Megaways_EN_339x180_01-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 DE407818B279C7FA81EAAEF4789027CC985AB7440AC74A3244E73A27C6B07FF5"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayswildwest",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Wild West Gold Megaways Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "zombie-carnival-pragmatic-play",
+      "name": "Zombie Carnival",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Zombie Carnival; Official page confirms a 4x6 grid, brain Scatter Free Spins, maximum win 5000x and RTP 96.50%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Zombie Carnival. No paid browser used. Official HTML includes gameSymbol vswayszombcarn. Codex in-app browser opened the matching official Zombie Carnival Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 A1E1F677638370872954F300A1120FD35FDE97B8D6B111EB3CC70FAD2922B8FD, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/zombie-carnival/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 445"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/05/ZOMBIE-CARNIVAL_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 A1E1F677638370872954F300A1120FD35FDE97B8D6B111EB3CC70FAD2922B8FD"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayszombcarn",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the matching official Zombie Carnival Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "fortune-of-giza-pragmatic-play",
+      "name": "Fortune of Giza",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fortune of Giza; Official page confirms Egyptian pyramid setting, sticky Wilds, a bonus round and RTP 96.51%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Fortune of Giza despite an older filename. No paid browser used. Official HTML includes gameSymbol vs20amuleteg. Codex in-app browser opened the matching official Fortune of Giza Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 52069F19C5082D2424D7D6A8492FE455B5CAD2E2E8C4A62831FCC298E444084C, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fortune-of-giza/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 444"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/12/Amulet_of_Egypt_667x414.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 52069F19C5082D2424D7D6A8492FE455B5CAD2E2E8C4A62831FCC298E444084C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20amuleteg",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the matching official Fortune of Giza Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "queen-of-gods-pragmatic-play",
+      "name": "Queen of Gods",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10egrich",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Queen of Gods; Official page confirms Egyptian symbols, Wild and multiplier Wild effects, maximum win 5000x and RTP 96.38%. Codex in-app browser verified exact official title, page facts, og:image and playable Demo; official artwork visually shows Queen of Gods. No paid browser used. Official HTML includes gameSymbol vs10egrich. Codex in-app browser opened matching official Queen of Gods Demo and observed full reel grid, balance, stake and spin controls. No spin or wager was initiated. Exact official image URL maps through page og:image; image/png SHA256 FB612A9C944FD71BF65A40FB36BE42B283AD73A827FAB7A0C82B2699B54279CB, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/queen-of-gods/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 443"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/06/Queen-of-Gods_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 FB612A9C944FD71BF65A40FB36BE42B283AD73A827FAB7A0C82B2699B54279CB"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10egrich",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Queen of Gods Demo and observed full reel grid, balance, stake and spin controls. No spin or wager was initiated."
+        }
+      ]
+    },
+    {
+      "slug": "cash-patrol-pragmatic-play",
+      "name": "Cash Patrol",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25copsrobbers",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Cash Patrol; Official page confirms 5x3 reels, Money symbol collection, expanding Wilds, final-bust Free Spins and RTP 96.50%. Codex in-app browser verified exact official title, page facts, og:image and playable Demo; official artwork visually shows Cash Patrol. No paid browser used. Official HTML includes gameSymbol vs25copsrobbers. Codex in-app browser opened matching official Cash Patrol Demo and observed full reel grid, balance, stake and spin controls. No spin or wager was initiated. Exact official image URL maps through page og:image; image/png SHA256 C355A2C4921A680C8FDBD8AD193BAE199883B3F52D1DB620F43050DF35F4DD87, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/cash-patrol/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 442"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/02/Cash-Patrol_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 C355A2C4921A680C8FDBD8AD193BAE199883B3F52D1DB620F43050DF35F4DD87"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25copsrobbers",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Cash Patrol Demo and observed full reel grid, balance, stake and spin controls. No spin or wager was initiated."
+        }
+      ]
+    },
+    {
+      "slug": "big-bass-splash-pragmatic-play",
+      "name": "Big Bass Splash",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Big Bass Splash; Official page confirms Free Spins awards of 10, 15 or 20 from three, four or five scatters, Wild money collection, retriggers with multipliers, bonus modifiers and RTP 96.71%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visually shows Big Bass Splash. No paid browser used. Official HTML includes gameSymbol vs10txbigbass. Codex in-app browser opened the matching official Big Bass Splash Demo but only the introductory tutorial was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 0CDAB076F2DC5315E90266E9C3AC388FCDC12BB43FA6C3CABFBF845FBED45D5D, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-splash/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 441"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/06/BBSPLASH_EN_339x180_04-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 0CDAB076F2DC5315E90266E9C3AC388FCDC12BB43FA6C3CABFBF845FBED45D5D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10txbigbass",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the matching official Big Bass Splash Demo but only the introductory tutorial was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "bomb-bonanza-pragmatic-play",
+      "name": "Bomb Bonanza",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25bomb",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Bomb Bonanza; Official page confirms 5x5 reels, three Free Spins symbols award six Free Spins, Wild Bomb upgrades, maximum win 2015x and RTP 96.46%. Codex in-app browser verified exact official title, page facts, og:image and playable Demo; official artwork visually shows Bomb Bonanza. No paid browser used. Official HTML includes gameSymbol vs25bomb. Codex in-app browser opened the matching official Bomb Bonanza Demo and observed full reel grid, balance, stake and spin controls. No spin or wager was initiated. Exact official image URL maps through page og:image; image/png SHA256 294B5EFCF9516648D82CC3AD769AA5C60871B9C847556348E784756879F70044, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/bomb-bonanza/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 439"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/06/Bomb-Bonanza_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 294B5EFCF9516648D82CC3AD769AA5C60871B9C847556348E784756879F70044"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25bomb",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the matching official Bomb Bonanza Demo and observed full reel grid, balance, stake and spin controls. No spin or wager was initiated."
+        }
+      ]
+    },
+    {
+      "slug": "cosmic-cash-pragmatic-play",
+      "name": "Cosmic Cash",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Cosmic Cash; Official page confirms 5x4 reels, 40 paylines, money-symbol respins, Wilds, jackpots, free spins, maximum win 2650x and RTP 96.55%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visually shows Cosmic Cash. No paid browser used. Official HTML includes gameSymbol vs40cosmiccash. Codex in-app browser opened the matching official Cosmic Cash Demo, but only the loading view was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 3D7BAC1D215078A25E3F2C42D333825F928C7082DCA78E8EFCB88E1BB705258C, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/cosmic-cash/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 438"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/06/Cosmic-Cash_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 3D7BAC1D215078A25E3F2C42D333825F928C7082DCA78E8EFCB88E1BB705258C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40cosmiccash",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the matching official Cosmic Cash Demo, but only the loading view was observed; playable reels were not verified."
+        }
+      ]
+    },
+    {
+      "slug": "shining-hot-100-pragmatic-play",
+      "name": "Shining Hot 100",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs100sh",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Shining Hot 100; Official page confirms classic fruit symbols, flaming diamonds and bells, one hundred paylines, maximum win 2500x and RTP 96.32%. Codex in-app browser verified exact official title, page facts, og:image and playable Demo; official artwork visually shows Shining Hot 100. No paid browser used. Official HTML includes gameSymbol vs100sh. Codex in-app browser followed exact official Shining Hot 100 Demo gameSymbol to a fully rendered reel grid with title, demo balance, stake and spin control. No spin or wager was initiated. Exact official image URL maps through page og:image; image/png SHA256 383E0A3953EBCC4CE31F37D34749F72C03C5D4CCDD0E3145784151C32FE8EF08, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/shining-hot-100/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 437"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Shining-Hot-100_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 383E0A3953EBCC4CE31F37D34749F72C03C5D4CCDD0E3145784151C32FE8EF08"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs100sh",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser followed exact official Shining Hot 100 Demo gameSymbol to a fully rendered reel grid with title, demo balance, stake and spin control. No spin or wager was initiated."
+        }
+      ]
+    },
+    {
+      "slug": "shining-hot-20-pragmatic-play",
+      "name": "Shining Hot 20",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Shining Hot 20; Official page confirms classic fruit symbols, flaming diamonds and bells, twenty paylines, maximum win 2500x and RTP 96.35%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visually shows Shining Hot 20. The exact gameSymbol vs20sh is distinct from the longer existing vs20shootstars. No paid browser used. Official HTML includes gameSymbol vs20sh. Codex in-app browser reached exact Shining Hot 20 Demo title, but repeated screenshots stayed on loading splash; playable reels, balance and stake controls were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 5A3A0F878E4534F36B39177F51EE3093BC86D673F4A25CBCFB84FD4A26DB5AA6, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/shining-hot-20/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 436"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Shining-Hot-20_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 5A3A0F878E4534F36B39177F51EE3093BC86D673F4A25CBCFB84FD4A26DB5AA6"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20sh",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser reached exact Shining Hot 20 Demo title, but repeated screenshots stayed on loading splash; playable reels, balance and stake controls were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "shining-hot-5-pragmatic-play",
+      "name": "Shining Hot 5",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5sh",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Shining Hot 5; Official page confirms classic fruit symbols, flaming diamonds and bells, five paylines, maximum win 2500x and RTP 96.33%. Codex in-app browser verified exact official title, gameplay, page og:image and playable Demo; official artwork visually shows Shining Hot 5. No paid browser used. Official HTML includes gameSymbol vs5sh. Codex in-app browser followed exact official Shining Hot 5 Demo gameSymbol to a fully rendered reel grid with title, demo balance, stake and spin control. No spin or wager was initiated. Exact official image URL maps through page og:image; image/png SHA256 1712A036421AB9934D660E60608D0EFB04FF852CEB8CD34CEEC3D9E2305DBED2, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/shining-hot-5/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 435"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Shining-Hot-5_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 1712A036421AB9934D660E60608D0EFB04FF852CEB8CD34CEEC3D9E2305DBED2"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5sh",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser followed exact official Shining Hot 5 Demo gameSymbol to a fully rendered reel grid with title, demo balance, stake and spin control. No spin or wager was initiated."
+        }
+      ]
+    },
+    {
+      "slug": "shining-hot-40-pragmatic-play",
+      "name": "Shining Hot 40",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40sh",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Shining Hot 40; Official page confirms classic fruit symbols, flaming diamonds and bells, forty paylines, maximum win 2500x and RTP 96.36%. Codex in-app browser verified exact official title, gameplay, page og:image and playable Demo; official artwork visually shows Shining Hot 40. No paid browser used. Official HTML includes gameSymbol vs40sh. Codex in-app browser followed exact official Shining Hot 40 Demo gameSymbol to a fully rendered reel grid with title, demo balance, stake and spin control. No spin or wager was initiated. Exact official image URL maps through page og:image; image/png SHA256 5B51F5A0E8857A8954F0DFE00FB0258DB538AE8976E7E89865A5283C53F28A6E, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/shining-hot-40/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 434"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Shining-Hot-40_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 5B51F5A0E8857A8954F0DFE00FB0258DB538AE8976E7E89865A5283C53F28A6E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40sh",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser followed exact official Shining Hot 40 Demo gameSymbol to a fully rendered reel grid with title, demo balance, stake and spin control. No spin or wager was initiated."
+        }
+      ]
+    },
+    {
+      "slug": "tropical-tiki-pragmatic-play",
+      "name": "Tropical Tiki",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Tropical Tiki; Official page confirms 3x6 reels, tumbling feature in which all symbols except winning ones disappear, expanding grid in Free Spins, maximum win 3000x and RTP 96.43%. Codex in-app browser verified exact official title, gameplay, page og:image and direct Demo tutorial; official artwork visually shows Tropical Tiki. No paid browser used. Official HTML includes gameSymbol vswaysjkrdrop. Codex in-app browser showed exact Tropical Tiki Demo title and animated in-game tutorial, but no visible balance, stake or ready-to-play controls; Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 5FDF98C6B83D4CD1B973EA2D612B62DC728A7819216B9A075B14D1B131559BD9, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/tropical-tiki/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 433"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Tropical-Tiki_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 5FDF98C6B83D4CD1B973EA2D612B62DC728A7819216B9A075B14D1B131559BD9"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysjkrdrop",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Tropical Tiki Demo title and animated in-game tutorial, but no visible balance, stake or ready-to-play controls; Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "magic-money-maze-pragmatic-play",
+      "name": "Magic Money Maze",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Magic Money Maze; Official page confirms 5x3 reels, ten paylines, high volatility, dice-triggered maze bonus, maximum win 10000x and RTP 96.61%. Codex in-app browser checked exact official title and facts again on 2026-11-08 and direct Demo loading/intro state; official artwork visually shows Magic Money Maze. No paid browser used. Official HTML includes gameSymbol vs10mmm. Codex in-app browser reached exact Magic Money Maze Demo title but repeated screenshots showed only Reel Kingdom loading or introduction, without visible balance, stake and ready-to-play controls; Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 60C76E914D45ABBA2C92717BC7B6830D90C1876743FFBFA443128E075F7F19D5, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/magic-money-maze/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 432"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Magic-Money-Maze™_EN_339x180_04.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 60C76E914D45ABBA2C92717BC7B6830D90C1876743FFBFA443128E075F7F19D5"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10mmm",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser reached exact Magic Money Maze Demo title but repeated screenshots showed only Reel Kingdom loading or introduction, without visible balance, stake and ready-to-play controls; Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "gorilla-mayhem-pragmatic-play",
+      "name": "Gorilla Mayhem",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Gorilla Mayhem; Official page confirms 5x4 reels, 1024 ways to win, wild multipliers, jewels triggering a progressive and retriggerable Free Spins bonus, and RTP 96.50%. Codex in-app browser checked official game page again on 2026-11-08, exact facts and direct Demo tutorial; official artwork visually shows Gorilla Mayhem. No paid browser used. Official HTML includes gameSymbol vs1024gmayhem. Codex in-app browser reached exact Gorilla Mayhem Demo title and animated in-game tutorial, but no visible balance, stake or ready-to-play controls; Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 43BA534DAD039A8F74B5D48E32060E18E476323A1479CDCC8D4A0EC338301D19, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gorilla-mayhem/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 431"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Gorilla-Mayhem_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 43BA534DAD039A8F74B5D48E32060E18E476323A1479CDCC8D4A0EC338301D19"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs1024gmayhem",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser reached exact Gorilla Mayhem Demo title and animated in-game tutorial, but no visible balance, stake or ready-to-play controls; Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "greedy-wolf-pragmatic-play",
+      "name": "Greedy Wolf",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Greedy Wolf; Official page confirms 5x4 reels, twenty paylines, medium volatility, two wild types including stacked Greedy Wolf and 3 Little Pigs, six or more scatters triggering a straw-house bonus, maximum win 3000x and RTP 96.48%. Codex in-app browser verified exact official title, gameplay, page og:image and direct Demo tutorial; official artwork visually shows Greedy Wolf. No paid browser used. Official HTML includes gameSymbol vs20wolfie. Codex in-app browser showed exact Greedy Wolf Demo title and animated in-game tutorial, but no visible balance, stake or ready-to-play controls; Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 336D14001199580D1832F1E0F6394896788E1B4C6580754B3CA5D3CB5E8147D2, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/greedy-wolf/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 430"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Greedy-Wolf_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 336D14001199580D1832F1E0F6394896788E1B4C6580754B3CA5D3CB5E8147D2"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20wolfie",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Greedy Wolf Demo title and animated in-game tutorial, but no visible balance, stake or ready-to-play controls; Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "black-bull-pragmatic-play",
+      "name": "Black Bull",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20trswild2",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Black Bull; Official page confirms 5x4 reels, money collect with cash bags collecting values on each spin, six or more golden coins triggering progressive free spins with wilds and more spins, maximum win 4500x and RTP 96.51%. Codex in-app browser verified exact official title, gameplay, page og:image and playable Demo view; official artwork visually shows Black Bull. No paid browser used. Official HTML includes gameSymbol vs20trswild2. Codex in-app browser followed exact official Demo gameSymbol to Black Bull; screenshot showed fully rendered 5x4 reels, title, demo balance, stake and spin control. No spin or wager was initiated. Exact official image URL maps through page og:image; image/png SHA256 4378381C1473AEC20307FD36F88B9D0075E367A7C25E3631740D884A979AF423, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/black-bull/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 429"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/07/Black-Bull_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 4378381C1473AEC20307FD36F88B9D0075E367A7C25E3631740D884A979AF423"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20trswild2",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser followed exact official Demo gameSymbol to Black Bull; screenshot showed fully rendered 5x4 reels, title, demo balance, stake and spin control. No spin or wager was initiated."
+        }
+      ]
+    },
+    {
+      "slug": "hot-to-burn-extreme-pragmatic-play",
+      "name": "Hot to Burn® Extreme",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Hot to Burn® Extreme; Official page confirms 5x3 reels, forty paylines, maximum win 5000x, three to five scatters awarding ten to twenty retriggerable free spins, and RTP 96.65%. Codex in-app browser verified exact official title, official game facts, page og:image and direct Demo loading state; the official artwork was visually inspected to show Hot to Burn Extreme. No paid browser used. Official HTML includes gameSymbol vs40hotburnx. Codex in-app browser showed exact Hot To Burn Extreme Demo title but remained on a loading spinner on repeated observation; playable reels were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 C52A8392146D4E272B782B19436013D82C32C7D61ED3555F97BBF79F3D0D5B9C, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/hot-to-burn-extreme/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 428"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/Hot-to-Burn™_EN_339x180_04.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 C52A8392146D4E272B782B19436013D82C32C7D61ED3555F97BBF79F3D0D5B9C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40hotburnx",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Hot To Burn Extreme Demo title but remained on a loading spinner on repeated observation; playable reels were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "down-the-rails-pragmatic-play",
+      "name": "Down the Rails",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Down the Rails; Official page confirms 5x3 reels, twenty paylines, five different random base-game features, five Free Spins variations and optional gamble for the highest-volatility End of the Line bonus, and RTP 96.51%. Codex in-app browser verified exact official game page and Demo loading state; the generic filename artwork was verified through this page og:image and visually inspected to show Down the Rails title. No paid browser used. Official HTML includes gameSymbol vs20underground. Codex in-app browser showed exact Down the Rails Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 2AA5A8E30B2EE41D65737961E4566646577FEB5C7CF3BDF77731C50DCF7AE3DE, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/down-the-rails/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 427"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 2AA5A8E30B2EE41D65737961E4566646577FEB5C7CF3BDF77731C50DCF7AE3DE"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20underground",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Down the Rails Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "fire-hot-40-pragmatic-play",
+      "name": "Fire Hot 40",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fire Hot 40; Official single-game page identifies Fire Hot 40 with RTP 96.43% and says the Fire Hot series uses classic fruit-machine design and symbols with Wilds expanding to Wild reels; variant-specific paylines and maximum win are not stated. Codex in-app browser verified exact official game page and Demo loading state; official artwork visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs40firehot. Codex in-app browser showed exact Fire Hot 40 Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 04E60EF8CE2CBB515F0ACEB0BBF57614D210EC12DE75D589EE95598F90E07EB1, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fire-hot-40/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 426"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/Fire-Hot-40_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 04E60EF8CE2CBB515F0ACEB0BBF57614D210EC12DE75D589EE95598F90E07EB1"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40firehot",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Fire Hot 40 Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "fire-hot-5-pragmatic-play",
+      "name": "Fire Hot 5",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fire Hot 5; Official single-game page identifies Fire Hot 5 with RTP 96.27% and says the Fire Hot series uses classic fruit-machine design and symbols with Wilds expanding to Wild reels; variant-specific paylines and maximum win are not stated. Codex in-app browser verified exact official game page and Demo loading state; official artwork visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs5firehot. Codex in-app browser showed exact Fire Hot 5 Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 38A0AB519636706C2351EA0149BE36C8291FFEB7AE0F41F83F69FCB3B102FEA4, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fire-hot-5/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 425"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/Fire-Hot-5_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 38A0AB519636706C2351EA0149BE36C8291FFEB7AE0F41F83F69FCB3B102FEA4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5firehot",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Fire Hot 5 Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "fire-hot-20-pragmatic-play",
+      "name": "Fire Hot 20",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fire Hot 20; Official single-game page identifies Fire Hot 20 with RTP 96.29% and says the Fire Hot series uses classic fruit-machine design and symbols with Wilds expanding to Wild reels; variant-specific paylines and maximum win are not stated. Codex in-app browser verified exact official game page and Demo loading state; official artwork visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs20fh. Codex in-app browser showed exact Fire Hot 20 Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 B3FBFCB20C5DE2203966D8897994D1888E4BEADE3FF46B8E9A475D12FC3BAE1F, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fire-hot-20/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 424"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/Fire-Hot-20_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 B3FBFCB20C5DE2203966D8897994D1888E4BEADE3FF46B8E9A475D12FC3BAE1F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20fh",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Fire Hot 20 Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "fire-hot-100-pragmatic-play",
+      "name": "Fire Hot 100",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fire Hot 100; Official single-game page identifies Fire Hot 100 with RTP 96.43% and says the Fire Hot series uses classic fruit-machine design and symbols with Wilds expanding to Wild reels; variant-specific paylines and maximum win are not stated. Codex in-app browser verified exact official game page and Demo loading state; official artwork visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs100firehot. Codex in-app browser showed exact Fire Hot 100 Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 6CC1A24DD69070315CF28E333A1F1813372A814B62C5E5D508403BFF1C29B7A8, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fire-hot-100/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 423"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/Fire-Hot-100_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 6CC1A24DD69070315CF28E333A1F1813372A814B62C5E5D508403BFF1C29B7A8"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs100firehot",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Fire Hot 100 Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "octobeer-fortunes-pragmatic-play",
+      "name": "Octobeer Fortunes",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Octobeer Fortunes; Official page confirms 5x3 reels, twenty fixed paylines, collection feature awarding instant cash prizes in base game, Free Spins gathering instant prizes throughout bonus, maximum win 4500x, and RTP 96.53%. Codex in-app browser verified exact official game page and Demo loading state; official artwork visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs20octobeer. Codex in-app browser showed exact Octobeer Fortunes Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 D504CB345DE2416D9D3CE1E661B8285CE79E1BA910E28A2678C37AE6DEC95940, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/octobeer-fortunes/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 422"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/Octobeer-Fortunes_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 D504CB345DE2416D9D3CE1E661B8285CE79E1BA910E28A2678C37AE6DEC95940"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20octobeer",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Octobeer Fortunes Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "happy-hooves-pragmatic-play",
+      "name": "Happy Hooves",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Happy Hooves; Official page confirms 5x4 reels and forty paylines, four groups of two colour-coded symbols each with its own substituting Wild, three Scatter symbols triggering PowerNudge until no mystery symbols remain, each spin increasing the win multiplier by 1x, mystery symbols revealing base symbols, instant prizes or nudge-up extra spins, maximum win 5000x, and RTP 96.50%. Codex in-app browser verified exact official game page and Demo loading state; official artwork visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs40mstrwild. Codex in-app browser showed exact Happy Hooves Demo title but remained on Pragmatic Play loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 43E7B57DE6C2E16D66820B64E1335ED5A2583CCCF63446D013675778A91C3188, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/happy-hooves/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 421"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/Happy_Hooves_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 43E7B57DE6C2E16D66820B64E1335ED5A2583CCCF63446D013675778A91C3188"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40mstrwild",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Happy Hooves Demo title but remained on Pragmatic Play loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "striking-hot-5-pragmatic-play",
+      "name": "Striking Hot 5",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5strh",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Striking Hot 5; Official page confirms 5x3 reels, five paylines, classic fruit and high-paying seven symbols, three or more dollar symbols paying from any position, maximum win 5000x, and RTP 96.29%. Codex in-app browser verified exact official game page and playable Demo visual state; official artwork visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs5strh. Codex in-app browser on 2026-11-07 showed Striking Hot 5 playable five-reel screen with balance, stake and spin controls; no spin or wager made. Exact official image URL maps through page og:image; image/png SHA256 95EA72BFB9A64DE3F7D7A8906A71D10FB7641EEB09E906CA6BB1ED5C53F69B9E, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/striking-hot-5/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 420"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/Striking-Hot-5_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 95EA72BFB9A64DE3F7D7A8906A71D10FB7641EEB09E906CA6BB1ED5C53F69B9E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5strh",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 showed Striking Hot 5 playable five-reel screen with balance, stake and spin controls; no spin or wager made."
+        }
+      ]
+    },
+    {
+      "slug": "book-of-golden-sands-pragmatic-play",
+      "name": "Book of Golden Sands",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Book of Golden Sands; Official page confirms 6x3 reels, 729 winning ways, Egyptian symbols, multiplier Wilds, Book symbol as Wild and Scatter, three or more Books triggering Free Spins, expanding special symbol adding winning ways on repeat expansions, maximum win 10000x, and RTP 96.46%. Codex in-app browser verified the exact official page and Demo intro visual state; official artwork visually inspected locally. No paid browser used. Official HTML includes gameSymbol vswaysbook. Codex in-app browser showed exact Book of Golden Sands Demo title and tutorial screen; playable reels were not independently observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 EFC862C4CFA3B4CB8FD4C5A17868B0915708BFF71FF5BFFB0AD6255093C40440, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/book-of-golden-sands/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 419"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Book-of-Golden-Sands_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 EFC862C4CFA3B4CB8FD4C5A17868B0915708BFF71FF5BFFB0AD6255093C40440"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysbook",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser showed exact Book of Golden Sands Demo title and tutorial screen; playable reels were not independently observed, so Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "crown-of-fire-pragmatic-play",
+      "name": "Crown of Fire",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10crownfire",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Crown of Fire; Official page confirms 5x3 reels and ten paylines with fruit and bell symbols, expanding Wild reel, Scatter and Special symbols paying from any position, and RTP 96.36%. Codex in-app browser verified exact official game page and playable Demo visual state; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs10crownfire. Codex in-app browser on 2026-11-07 showed Crown of Fire playable five-reel screen with balance, stake and spin controls; no spin or wager made. Exact official image URL maps through page og:image; image/png SHA256 7EAFF636586B6B42566A8FFF37E1BF502640D0B2ADC49F8E7B222CEE727ED4B9, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/crown-of-fire/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 418"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Crown-of-Fire_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 7EAFF636586B6B42566A8FFF37E1BF502640D0B2ADC49F8E7B222CEE727ED4B9"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10crownfire",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 showed Crown of Fire playable five-reel screen with balance, stake and spin controls; no spin or wager made."
+        }
+      ]
+    },
+    {
+      "slug": "wild-hopdrop-pragmatic-play",
+      "name": "Wild Hop&Drop",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wild Hop&Drop; Official page confirms 6x6 cluster game requiring six or more matching symbols, regular Wild and random giant frog Wild up to 6x6, four Bonus symbols awarding six Free Spins, each four additional Bonus symbols growing frog Wild and adding spins, maximum win 5,000x and RTP 96.46%. Codex in-app browser verified exact official page and playable Demo visual state; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs20mparty. Codex in-app browser on 2026-11-07 opened exact gameSymbol vs20mparty Demo titled Wild Hop & Drop, matching official Wild Hop&Drop page and artwork; playable reels and balance/stake controls were not yet observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 AF353750B2756C24EB992537D2F4AB272CD06F3BF5EBF7CEB6DE5349F42D2B19, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-hopdrop/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 417"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Wild-HopDrop_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 AF353750B2756C24EB992537D2F4AB272CD06F3BF5EBF7CEB6DE5349F42D2B19"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20mparty",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 opened exact gameSymbol vs20mparty Demo titled Wild Hop & Drop, matching official Wild Hop&Drop page and artwork; playable reels and balance/stake controls were not yet observed, so Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "floating-dragon-megaways-pragmatic-play",
+      "name": "Floating Dragon Megaways",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Floating Dragon Megaways; Official page confirms 6x6 Megaways grid with up to 236,196 ways, Free Spins collecting instant wins and raising overall multiplier, four Collect symbols retriggering Free Spins, Hold and Spin awarding three respins renewed for each instant-win prize, maximum win 20,000x, and RTP 96.70%. Official page calls it Floating Dragon Megaways Hold&Spin while exact Demo uses Floating Dragon Hold & Spin Megaways. Codex in-app browser verified exact official page and playable Demo visual state; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vswaysfltdrg. Codex in-app browser on 2026-11-07 opened exact gameSymbol vswaysfltdrg Demo titled Floating Dragon Hold & Spin Megaways matching official page and artwork; playable reels and balance/stake controls were not yet observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 4C88DDEF4F4642FEA8288AB0B33464494E4385F9BB918A72EA51E738E0DE828E, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/floating-dragon-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 416"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Floating-Dragon-Megaways_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 4C88DDEF4F4642FEA8288AB0B33464494E4385F9BB918A72EA51E738E0DE828E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysfltdrg",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 opened exact gameSymbol vswaysfltdrg Demo titled Floating Dragon Hold & Spin Megaways matching official page and artwork; playable reels and balance/stake controls were not yet observed, so Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "aztec-blaze-pragmatic-play",
+      "name": "Aztec Blaze",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Aztec Blaze; Official page confirms 6x4 grid and 25 paylines, random Colossal symbols growing from 2x2 to 4x4 through wins, max-size Colossal multipliers rising to 10x, two Scatters triggering Free Spins with five initial lives, lives falling on spins without Colossal-symbol wins, and RTP 96.50%. Codex in-app browser verified exact official page and playable Demo visual state; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs25kfruit. Codex in-app browser on 2026-11-07 opened exact Aztec Blaze Demo identity and introductory Colossal-symbol screen; playable reels with balance and stake controls were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 D1487730F6983E32D042B4822DC054B77C39391673FD6A5D798EFB254E8C8FA3, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/aztec-blaze/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 415"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Aztec-Blaze_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 D1487730F6983E32D042B4822DC054B77C39391673FD6A5D798EFB254E8C8FA3"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25kfruit",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 opened exact Aztec Blaze Demo identity and introductory Colossal-symbol screen; playable reels with balance and stake controls were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "john-hunter-book-of-tut-respin-pragmatic-play",
+      "name": "John Hunter and the Book of Tut Respin",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title John Hunter and the Book of Tut Respin; Official page confirms random Mystery symbol expansion during base spins triggering repeatable respins, three Book Scatters triggering ten Free Spins, bonus expanding symbol chosen by player and causing further respins, three more Books retriggering Free Spins, maximum win 4,000x, and RTP 96.50%. Codex in-app browser verified exact official page and playable Demo visual state; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs10tut. Codex in-app browser on 2026-11-07 opened gameSymbol vs10tut Demo titled Book Of Tut Respin, a short title matching the exact official John Hunter and the Book of Tut Respin page; playable reels and controls were not yet observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 FCE5E8CC9167DD153C2956C5D38A1DF75274B5608E047B130E28E751A41E8F1F, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/john-hunter-and-the-book-of-tut-respin/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 414"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/John-Hunter-Book-of-Tut-Respin_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 FCE5E8CC9167DD153C2956C5D38A1DF75274B5608E047B130E28E751A41E8F1F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10tut",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 opened gameSymbol vs10tut Demo titled Book Of Tut Respin, a short title matching the exact official John Hunter and the Book of Tut Respin page; playable reels and controls were not yet observed, so Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "pirate-golden-age-pragmatic-play",
+      "name": "Pirate Golden Age",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20mtreasure",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Pirate Golden Age; Official page confirms 5x3 grid and twenty paylines, Skull Wilds, three Bonus symbols triggering Free Spins, Mystery Coins revealing matching symbols and redistributing in later spins, stacked coin multipliers, every five collected coins retriggering one to three spins, maximum win 3,000x and RTP 96.49%. Codex in-app browser verified exact official page and playable Demo visual state; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs20mtreasure. Codex in-app browser on 2026-11-07 displayed Pirate Golden Age playable five-reel game screen with balance, stake and spin controls; no wager or spin was made. Exact official image URL maps through page og:image; image/png SHA256 7903FBF40806EFFC315FEE026E5D7B43CFFABE1C35C1190865E7BF5DB027A2D2, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/pirate-golden-age/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 413"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Pirate-Golden-Age_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 7903FBF40806EFFC315FEE026E5D7B43CFFABE1C35C1190865E7BF5DB027A2D2"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20mtreasure",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 displayed Pirate Golden Age playable five-reel game screen with balance, stake and spin controls; no wager or spin was made."
+        }
+      ]
+    },
+    {
+      "slug": "firebird-spirit-pragmatic-play",
+      "name": "Firebird Spirit",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Firebird Spirit; Official page confirms 5x6 grid and 1,875 ways, adjacent Connect and Collect pathways reaching special prize positions on reels three and six, Quick Collect, Respin rounds, Money Values, Jackpots, extra Wilds and Free Spins, maximum win 4,250x and RTP 96.00%. Codex in-app browser verified exact official page and playable Demo visual state; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vswaysconcoll. Codex in-app browser on 2026-11-07 observed exact gameSymbol vswaysconcoll Demo titled Firebird Spirit - Connect & Collect and introductory feature screen, but playable reels with balance and stake controls were not observed; Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 B54D5FA93770933BCB552BB0B6F817C83DE67D6FD5F3BD576503F806CF4AEC2F, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/firebird-spirit/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 412"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Firebird-Spirit_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 B54D5FA93770933BCB552BB0B6F817C83DE67D6FD5F3BD576503F806CF4AEC2F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysconcoll",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact gameSymbol vswaysconcoll Demo titled Firebird Spirit - Connect & Collect and introductory feature screen, but playable reels with balance and stake controls were not observed; Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "muertos-multiplier-megaways-pragmatic-play",
+      "name": "Muertos Multiplier Megaways",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Muertos Multiplier Megaways; Official page confirms six reel Megaways with up to 117,649 winning ways, tumble after wins, Multiplier Wild substitution except Bonus symbols, three Bonus symbols triggering Free Spins with gamble for spin count, every bonus tumble adding 1x to overall multiplier, Wild multipliers multiplying current multiplier, maximum win 10,000x, and RTP 96.03%. Codex in-app browser verified exact official page and playable Demo visual state; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs20muertos. Codex in-app browser on 2026-11-07 observed exact Muertos Multiplier Megaways Demo identity and introductory feature screen, but playable reels with balance and stake controls were not observed; Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 0FF5CCB19F63AFA8CAC219929D5D372493F4D50B9606649BC54153835BCD8395, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/muertos-multiplier-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 411"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Muertos-Multiplier-Megaways_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 0FF5CCB19F63AFA8CAC219929D5D372493F4D50B9606649BC54153835BCD8395"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20muertos",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 observed exact Muertos Multiplier Megaways Demo identity and introductory feature screen, but playable reels with balance and stake controls were not observed; Demo remains not-verified."
+        }
+      ]
+    },
+    {
+      "slug": "candy-stars-pragmatic-play",
+      "name": "Candy Stars",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysstrwild",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Candy Stars; Official page confirms 5x3 grid, tumbling wins, Sticky Wilds on top reel gaining 1x per participating win, three diamonds awarding eight Free Spins, and Free Spins Sticky Wild multipliers doubling up to 128x; RTP 96.47%. Codex in-app browser verified exact official page and playable Demo visual state; official artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vswaysstrwild. Codex in-app browser on 2026-11-07 displayed Candy Stars playable five-reel game screen with balance, stake and spin controls; no wager or spin was made. Exact official image URL maps through page og:image; image/png SHA256 DF1AA8B7D42126DA16851E1A40FB613DF7A3C58C214925FE3F892FB24372CA65, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/candy-stars/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 410"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/09/Candy_Star_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 DF1AA8B7D42126DA16851E1A40FB613DF7A3C58C214925FE3F892FB24372CA65"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysstrwild",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 displayed Candy Stars playable five-reel game screen with balance, stake and spin controls; no wager or spin was made."
+        }
+      ]
+    },
+    {
+      "slug": "big-bass-keeping-it-reel-reel-kingdom",
+      "name": "Big Bass – Keeping it Reel",
+      "provider": "reel-kingdom",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-07",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Big Bass – Keeping it Reel; Official page confirms 5x3 grid and ten paylines, up to twenty Free Spins from one trigger, Golden Wilds in bonus mode, levels unlocking multipliers, maximum win 10,000x, and RTP 96.07%. Codex in-app browser verified exact Pragmatic Play official page and matching direct Demo; Demo splash explicitly identifies Reel Kingdom powered by Pragmatic Play. Reel Kingdom already has a published Provider record and official homepage. Artwork bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs10bbkir. Codex in-app browser on 2026-11-07 opened exact Big Bass Bonanza - Keeping it Reel Demo with gameSymbol vs10bbkir; Reel Kingdom splash identified the studio, then an introductory title screen appeared. Playable reels with balance/stake controls were not observed, so Demo remains not-verified. Exact official image URL maps through page og:image; image/png SHA256 9613E7FA3C89F2AD27E46934048C03DED57BE0EDB86B0C37C21F6C41707A7849, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-keeping-it-reel/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 409"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/10/Big_Bass_Bonanza_Keeping_it_Reel_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 9613E7FA3C89F2AD27E46934048C03DED57BE0EDB86B0C37C21F6C41707A7849"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbkir",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser on 2026-11-07 opened exact Big Bass Bonanza - Keeping it Reel Demo with gameSymbol vs10bbkir; Reel Kingdom splash identified the studio, then an introductory title screen appeared. Playable reels with balance/stake controls were not observed, so Demo remains not-verified."
+        }
+      ]
+    },
     {
       "slug": "sword-of-ares-pragmatic-play",
       "name": "Sword of Ares",

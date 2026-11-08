@@ -1,0 +1,48 @@
+{
+  "batch": 905,
+  "recordedAt": "2026-11-07T15:08:08.01Z",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1429 published Game Markdown records and same-provider exact official path/name/gameSymbol; Fire Hot 100 /vs100firehot absent.",
+  "records": [
+    {
+      "index": 423,
+      "name": "Fire Hot 100",
+      "slug": "fire-hot-100-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pragmaticplay.com/en/games/fire-hot-100/",
+      "officialFacts": "Official single-game page identifies Fire Hot 100 with RTP 96.43% and says the Fire Hot series uses classic fruit-machine design and symbols with Wilds expanding to Wild reels; variant-specific paylines and maximum win are not stated.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/08/Fire-Hot-100_339x180.png",
+        "localPath": "public/assets/games/fire-hot-100-pragmatic-play.png",
+        "sha256": "6CC1A24DD69070315CF28E333A1F1813372A814B62C5E5D508403BFF1C29B7A8",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser showed exact Fire Hot 100 Demo title but remained on loading splash on repeated observation; playable reels were not observed, so Demo remains not-verified."
+    }
+  ],
+  "nextCursor": "Catalog item 424 Fire Hot 20 after item 423 full publication closure.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "note": "Full preview verify exit 0; official source and exact symbol/image checked; variant-specific unverified values omitted; Demo loading splash only.",
+    "log": "tmp/verify-batch905.log"
+  },
+  "publication": {
+    "commit": "76aaf2b3c0c41dc793345206b98d0c88aa4bbdf9",
+    "githubActionsRun": 42385176225,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "c5cd5474-2d81-4918-ad81-10ad8bd26a41",
+    "cloudflareUrl": "https://c5cd5474.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
+  }
+}

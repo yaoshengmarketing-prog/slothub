@@ -1,10 +1,10 @@
 {
   "batch": 890,
   "recordedAt": "2026-11-07T13:12:06.074Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Sword of Ares",
       "slug": "sword-of-ares-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/sword-of-ares/",
       "officialFacts": "Official page confirms pays-anywhere wins, repeatable tumbles after wins, Multiplier Collection with three or six levels and up to 15x, Bomb symbols, Free Spins multipliers up to 500x, maximum win 10,000x, and RTP 96.40%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser on 2026-11-07 observed exact Sword of Ares Demo identity and introductory feature screen, but playable reels with balance and stake controls were not observed; Demo remains not-verified."
     }
   ],
-  "nextCursor": "Catalog item 409 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 409 Big Bass – Keeping it Reel after item 408 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "log": "tmp/verify-batch890.log"
+  },
+  "publication": {
+    "commit": "d160e8608428787afcc5a896101544da3ec27333",
+    "githubActionsRun": 42376186368,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "85a5ccf8-3b55-4698-8089-929d2f928065",
+    "cloudflareUrl": "https://85a5ccf8.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
