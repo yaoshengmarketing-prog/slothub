@@ -1,10 +1,10 @@
 {
   "batch": 942,
   "recordedAt": "2026-11-07T19:31:31.148Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Wild Beach Party",
       "slug": "wild-beach-party-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/wild-beach-party/",
       "officialFacts": "Official page confirms 7x7 cluster pays, wild multipliers, three pearls trigger free spins, maximum 5000x and RTP 96.53%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser opened matching official Wild Beach Party Demo but only the loading screen was observed; playable reels were not verified."
     }
   ],
-  "nextCursor": "Catalog item 462 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 462 Queenie after item 461 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "Full preview verify exit 0; exact official page, symbol and artwork SHA checked; Demo loading only.",
     "log": "tmp/verify-batch942.log"
+  },
+  "publication": {
+    "commit": "95c3a891815abad9e61604043ade80da4dd78b05",
+    "githubActionsRun": 42407137766,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "40578be3-cab1-4551-b8d6-0f45401dbd40",
+    "cloudflareUrl": "https://40578be3.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
