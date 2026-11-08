@@ -1,10 +1,10 @@
 {
   "batch": 946,
   "recordedAt": "2026-11-08T18:30:09.483Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Might of Ra",
       "slug": "might-of-ra-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/might-of-ra/",
       "officialFacts": "Official page confirms six reels, three adjacent symbols pay, Ra wilds, scarab bonus scatter, collect ankhs to add up to 24 wild symbols, and RTP 96.49%.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser prechecked matching official Might of Ra Demo but playable reels were not verified."
     }
   ],
-  "nextCursor": "Catalog item 466 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 466 Elemental Gems Megaways after item 465 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "Full preview verify exit 0; exact official page, symbol and artwork SHA checked; Demo loading only.",
     "log": "tmp/verify-batch946.log"
+  },
+  "publication": {
+    "commit": "87525e37e97028c8f5cda42ea431449a7a7ac893",
+    "githubActionsRun": 42510523682,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "9cb288ba-04a7-4bdc-8b0f-78f75d15dfd8",
+    "cloudflareUrl": "https://9cb288ba.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

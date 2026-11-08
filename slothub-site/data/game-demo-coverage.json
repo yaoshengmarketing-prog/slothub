@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1471,
+  "gameCount": 1472,
   "providerCount": 372,
-  "sourcePageCount": 2807,
+  "sourcePageCount": 2810,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 445
+    "not-verified": 446
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "elemental-gems-megaways-pragmatic-play",
+      "name": "Elemental Gems Megaways",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Elemental Gems Megaways; Official page confirms Megaways, three matching symbols pay, fourth-reel multiplier up to 100x, and RTP 96.51%; no overall maximum is inferred. Codex in-app browser previously checked the exact official page; official artwork bytes visually inspected and title says Elemental Gems Megaways. No paid browser used. Official HTML includes gameSymbol vswayselements. Codex in-app browser prechecked matching official Elemental Gems Megaways Demo but playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 6A16C40C62DBAB0B93E50E0D1E8B1C4CFA91DB64DFB48C6D696DA9540AE7CC72, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/elemental-gems-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 466"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/01/ELEMENTAL-GEMS-MW_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 6A16C40C62DBAB0B93E50E0D1E8B1C4CFA91DB64DFB48C6D696DA9540AE7CC72"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayselements",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser prechecked matching official Elemental Gems Megaways Demo but playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "might-of-ra-pragmatic-play",
       "name": "Might of Ra",
