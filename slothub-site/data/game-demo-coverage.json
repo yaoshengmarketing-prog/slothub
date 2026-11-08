@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1469,
+  "gameCount": 1470,
   "providerCount": 372,
-  "sourcePageCount": 2801,
+  "sourcePageCount": 2804,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 443
+    "not-verified": 444
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "snakes-and-ladders-megadice-pragmatic-play",
+      "name": "Snakes and Ladders Megadice",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Snakes and Ladders Megadice; Official page confirms 3x5 grid, ten paylines, wild multiplier dice, 12x12 bonus board with 1000x instant prize at top and RTP 96.68%; no overall maximum is inferred. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Snakes and Ladders Megadice. No paid browser used. Official HTML includes gameSymbol vs10snakeladd. Codex in-app browser opened matching official Snakes and Ladders Megadice Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 A9EA34AF5DBB9918496F8BC8B76D7C213025F95D168CC2B4C5A09FC7F00B3201, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/snakes-and-ladders-megadice/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 464"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/02/Snakes-and-Ladders_EN_339x180_04.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 A9EA34AF5DBB9918496F8BC8B76D7C213025F95D168CC2B4C5A09FC7F00B3201"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10snakeladd",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Snakes and Ladders Megadice Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "extra-juicy-megaways-pragmatic-play",
       "name": "Extra Juicy Megaways",
