@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1468,
+  "gameCount": 1469,
   "providerCount": 372,
-  "sourcePageCount": 2798,
+  "sourcePageCount": 2801,
   "counts": {
     "access-restricted": 4,
     "available": 1022,
-    "not-verified": 442
+    "not-verified": 443
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "extra-juicy-megaways-pragmatic-play",
+      "name": "Extra Juicy Megaways",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-08",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Extra Juicy Megaways; Official page confirms Megaways fruit theme, multiplier scatter, gamble option within free spins, high volatility, maximum 5000x and RTP 96.42%. Codex in-app browser verified exact official title, page facts and og:image; official artwork visibly says Extra Juicy Megaways. No paid browser used. Official HTML includes gameSymbol vswaysxjuicy. Codex in-app browser opened matching official Extra Juicy Megaways Demo but only the loading screen was observed; playable reels were not verified. Exact official image URL maps through page og:image; image/png SHA256 E498091CD312EA81595A0A3CCB7C15223AE003596EFD726B5574B46BA8143F73, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/extra-juicy-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 463"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/01/Extra-Juicy-Megaways_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 E498091CD312EA81595A0A3CCB7C15223AE003596EFD726B5574B46BA8143F73"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysxjuicy",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened matching official Extra Juicy Megaways Demo but only the loading screen was observed; playable reels were not verified."
+        }
+      ]
+    },
     {
       "slug": "queenie-pragmatic-play",
       "name": "Queenie",
