@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1474,
+  "gameCount": 1475,
   "providerCount": 372,
-  "sourcePageCount": 2816,
+  "sourcePageCount": 2819,
   "counts": {
     "access-restricted": 4,
-    "available": 1024,
+    "available": 1025,
     "not-verified": 446
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gates-of-valhalla-pragmatic-play",
+      "name": "Gates of Valhalla",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10runes&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Gates of Valhalla; Official page confirms Roaming Wilds that move after each tumble, Wild multipliers up to 5x, three Free Spins symbols triggering up to ten Free Spins with an increasing multiplier, and RTP 96.46%. Codex in-app browser opened exact official game page and direct Demo; official HTML confirms gameSymbol and page og:image; image bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs10runes. Codex in-app browser directly opened matching official Gates of Valhalla Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 DE23DA4589B7B8BBC5F5B09B9DFE879F91D9AC21C92A307267318DF17A5CA68A, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gates-of-valhalla/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 469"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/01/Gate_Of_Valhalla_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 DE23DA4589B7B8BBC5F5B09B9DFE879F91D9AC21C92A307267318DF17A5CA68A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10runes&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened matching official Gates of Valhalla Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "colossal-cash-zone-pragmatic-play",
       "name": "Colossal Cash Zone",

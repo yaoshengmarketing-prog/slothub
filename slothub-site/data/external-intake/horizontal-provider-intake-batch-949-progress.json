@@ -1,10 +1,10 @@
 {
   "batch": 949,
   "recordedAt": "2026-11-09T02:26:43.381Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser initially timed out for item 467; paid browser was used in error before the user clarified their choice. For item 468, Codex in-app browser then loaded the exact official page and direct Demo, showing the matching title, reels and spin control. Do not use the paid browser again without the user choosing it for that task.",
@@ -15,7 +15,7 @@
       "name": "Colossal Cash Zone",
       "slug": "colossal-cash-zone-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/colossal-cash-zone/",
       "officialFacts": "Official page confirms 1x1, 2x2 and 3x3 Colossal Symbols, Cash Zone multiplier up to 250x for nine of a kind, Free Spins with random multipliers up to 20x, and RTP 96.50%; English page does not state an overall maximum.",
       "image": {
@@ -29,11 +29,20 @@
       "demo": "Codex in-app browser directly opened official Demo for gameSymbol vs20colcashzone and visibly showed title, populated reels and spin control; no spin or bet. Paid read-only browser was also used earlier in error, before user correction."
     }
   ],
-  "nextCursor": "Catalog item 469 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 469 Gates of Valhalla after item 468 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "note": "Full preview verify rerun exit 0; Codex in-app browser independently confirmed exact official page and matching Demo title, reels and spin control.",
     "log": "tmp/verify-batch949-resume.log"
+  },
+  "publication": {
+    "commit": "1e1ab2b7b6001bd7546fb5e03109f28008c0493c",
+    "githubActionsRun": 42552261737,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "08a09237-abff-43ea-9cb1-e65818fb77da",
+    "cloudflareUrl": "https://08a09237.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
