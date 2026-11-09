@@ -1,0 +1,38 @@
+{
+  "batch": 959,
+  "recordedAt": "2026-11-09T04:17:26.161Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+  "dedupScope": "All 1483 published Game Markdown records and same-provider exact official path/name/gameSymbol; John Hunter and the Quest for Bermuda Riches /vs20bermuda absent.",
+  "records": [
+    {
+      "index": 483,
+      "name": "John Hunter and the Quest for Bermuda Riches",
+      "slug": "john-hunter-and-the-quest-for-bermuda-riches-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/john-hunter-and-the-quest-for-bermuda-riches/",
+      "officialFacts": "Official page confirms 7x7 adventure theme, five Wilds paying in both directions, and RTP 96.33%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/10/John-Hunter-the-Quest-for-Bermuda-Riches_339x180.png",
+        "localPath": "public/assets/games/john-hunter-and-the-quest-for-bermuda-riches-pragmatic-play.png",
+        "sha256": "82FC166703880020F71AAB2D30C7E90AE5FA33C111CD14E752DDEE31C2FDE09C",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser directly opened matching official Demo for John Hunter and the Quest for Bermuda Riches, visibly showing title, reels and spin control; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 485 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Full preview verify exit 0, tmp/verify-batch959.log, 1889 pages, internal links and outbound nofollow PASS."
+  }
+}
