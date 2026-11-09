@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1476,
+  "gameCount": 1477,
   "providerCount": 372,
-  "sourcePageCount": 2822,
+  "sourcePageCount": 2825,
   "counts": {
     "access-restricted": 4,
     "available": 1026,
-    "not-verified": 446
+    "not-verified": 447
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,37 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "magicians-secrets-pragmatic-play",
+      "name": "Magician's Secrets",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Magician's Secrets; Official page confirms Wilds, three Scatters triggering Free Spins, and Expanding or Sticky Wilds in the Free Spins round. Its RTP field has no numeric value. Codex in-app browser opened exact official game page and direct Demo; official HTML confirms gameSymbol and page og:image; image bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs4096magician. Codex in-app browser opened the exact official Demo and reached title Magician's Secrets, but the viewport stayed on the Pragmatic Play loading logo; playable reels and spin control were not observed. Demo marked not-verified. No HTTP 403 observed. Exact official image URL maps through page og:image; image/png SHA256 5C37837F7B4C2030D4125FE477B581E046590DCDE47986330E6011AA7ECB3830, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/magicians-secrets/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 473"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/12/MASE_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 5C37837F7B4C2030D4125FE477B581E046590DCDE47986330E6011AA7ECB3830"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs4096magician&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the exact official Demo and reached title Magician's Secrets, but the viewport stayed on the Pragmatic Play loading logo; playable reels and spin control were not observed. Demo marked not-verified. No HTTP 403 observed."
+        }
+      ]
+    },
     {
       "slug": "wild-depths-pragmatic-play",
       "name": "Wild Depths",

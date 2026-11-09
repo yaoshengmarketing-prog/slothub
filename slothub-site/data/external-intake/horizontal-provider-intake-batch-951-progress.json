@@ -1,10 +1,10 @@
 {
   "batch": 951,
   "recordedAt": "2026-11-09T02:54:29.87Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Wild Depths",
       "slug": "wild-depths-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/wild-depths/",
       "officialFacts": "Official page confirms Wild symbols, three Scatters triggering 6, 9 or 12 Free Spins, retrigger with three or more Scatters adding five spins without limit, and RTP 96.48%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser directly opened matching official Wild Depths Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 473 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 473 Magician's Secrets after item 472 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/verify-batch951.log exit 0; preview isolation and source checks PASS"
+  },
+  "publication": {
+    "commit": "ea09f379025a019672f2d7b52effa935a6159ec3",
+    "githubActionsRun": 42553790792,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "1516aa9f-ff68-4d31-bd47-0a5606d1527d",
+    "cloudflareUrl": "https://1516aa9f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
