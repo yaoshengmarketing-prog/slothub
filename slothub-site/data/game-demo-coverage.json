@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1491,
+  "gameCount": 1492,
   "providerCount": 372,
-  "sourcePageCount": 2867,
+  "sourcePageCount": 2870,
   "counts": {
     "access-restricted": 4,
-    "available": 1040,
+    "available": 1041,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "rise-of-giza-powernudge-pragmatic-play",
+      "name": "Rise of Giza PowerNudge",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10nudgeit&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Rise of Giza PowerNudge; Official page confirms ten paylines, three Scarab Scatter overlays trigger Free Games, each PowerNudge and following Free Spin increases multiplier by 1x, and RTP 96.49%. Codex in-app browser opened exact official page and direct Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs10nudgeit. Codex in-app browser directly opened official Rise of Giza PowerNudge Demo, visibly showing exact title, Egyptian reels, PowerNudge header and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 E93B3E06C6DD93EF56F5D8ADD5927566484EE2188167E0D5EF85317ADB340938, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/rise-of-giza-powernudge/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 494"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/07/Rise_of_Giza_PN_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 E93B3E06C6DD93EF56F5D8ADD5927566484EE2188167E0D5EF85317ADB340938"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10nudgeit&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened official Rise of Giza PowerNudge Demo, visibly showing exact title, Egyptian reels, PowerNudge header and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "chilli-heat-megaways-pragmatic-play",
       "name": "Chilli Heat Megaways",

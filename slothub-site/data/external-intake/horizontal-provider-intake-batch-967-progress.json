@@ -1,0 +1,38 @@
+{
+  "batch": 967,
+  "recordedAt": "2026-11-09T05:19:36.027Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+  "dedupScope": "All 1491 published Game Markdown records and same-provider exact official path/name/gameSymbol; Rise of Giza PowerNudge /vs10nudgeit absent.",
+  "records": [
+    {
+      "index": 494,
+      "name": "Rise of Giza PowerNudge",
+      "slug": "rise-of-giza-powernudge-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/rise-of-giza-powernudge/",
+      "officialFacts": "Official page confirms ten paylines, three Scarab Scatter overlays trigger Free Games, each PowerNudge and following Free Spin increases multiplier by 1x, and RTP 96.49%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/07/Rise_of_Giza_PN_EN_339x180.png",
+        "localPath": "public/assets/games/rise-of-giza-powernudge-pragmatic-play.png",
+        "sha256": "E93B3E06C6DD93EF56F5D8ADD5927566484EE2188167E0D5EF85317ADB340938",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser directly opened official Rise of Giza PowerNudge Demo, visibly showing exact title, Egyptian reels, PowerNudge header and spin control; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 495 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Full preview verify exit 0, tmp/verify-batch967.log, 1897 pages, internal links and outbound nofollow PASS."
+  }
+}
