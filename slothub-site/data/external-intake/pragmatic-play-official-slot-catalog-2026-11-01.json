@@ -10,13 +10,13 @@
   "nextPageCards": 0,
   "totalCards": 665,
   "exactGameCards": 663,
-  "publishedExisting": 492,
-  "pendingIndividualCheck": 162,
+  "publishedExisting": 493,
+  "pendingIndividualCheck": 160,
   "comingSoon": 2,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 498 Lucky Grace And Charm after item 497 Book of Vikings individual publication closure.",
+  "nextCursor": "Catalog item 500 5 Lions Megaways™ after item 499 Empty the Bank individual publication closure.",
   "pages": [
     {
       "page": 1,
@@ -5453,7 +5453,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/book-of-vikings/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/06/BOV__EN_339x180.png",
       "releaseLabel": null,
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "book-of-vikings-pragmatic-play"
     },
     {
@@ -5463,8 +5463,19 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/lucky-grace-and-charm/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/06/Lucky_Grace__Charm_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "checkedAt": "2026-11-09",
+        "browser": "Codex in-app browser only",
+        "officialPage": "https://www.pragmaticplay.com/en/games/lucky-grace-and-charm/",
+        "reason": "The exact Pragmatic Play listing, gameSymbol and artwork match Lucky Grace And Charm, but the official Demo prominently shows the crowned gorilla studio mark also observed on Reel Kingdom powered-by-Pragmatic titles. Original studio attribution is unresolved, so do not classify it as a Pragmatic Play original.",
+        "evidence": [
+          "Exact official page HTTP 200, title Lucky Grace And Charm, RTP 96.71%, gameSymbol vs10luckcharm and matching og:image HTTP 200, SHA256 53E6661F8852B44D5FA914EF59F60DC20F358184272799A17FECB7AC80087A5E.",
+          "Codex in-app browser direct Demo for vs10luckcharm showed matching Lucky, Grace & Charm title and the crowned gorilla studio mark. No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "nextStep": "Keep out of Pragmatic Play Provider batch until original studio is corroborated by a stronger official source. Continue item 499 after Book of Vikings full publication closure."
+      }
     },
     {
       "index": 499,
@@ -5473,8 +5484,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/empty-the-bank/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/06/Empty_The_Bank_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "empty-the-bank-pragmatic-play"
     },
     {
       "index": 500,

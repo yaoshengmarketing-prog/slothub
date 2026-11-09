@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1495,
+  "gameCount": 1496,
   "providerCount": 372,
-  "sourcePageCount": 2879,
+  "sourcePageCount": 2882,
   "counts": {
     "access-restricted": 4,
-    "available": 1044,
+    "available": 1045,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "empty-the-bank-pragmatic-play",
+      "name": "Empty the Bank",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20emptybank&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Empty the Bank; Official page confirms 4x5 grid, 25 paylines, Empty the Bank Respin Feature can increase remaining Respins or apply up to 10x random multiplier to total bet, and RTP 96.48%. Codex in-app browser opened exact official page and direct Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs20emptybank. Codex in-app browser directly opened official Empty the Bank Demo, showing matching title and Pragmatic Play splash; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 BDE588CFB711AC7E5DCF056E8C81CEEEE0E6D85E8A9EEAB9C220A3319D2B5169, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/empty-the-bank/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 499"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/06/Empty_The_Bank_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 BDE588CFB711AC7E5DCF056E8C81CEEEE0E6D85E8A9EEAB9C220A3319D2B5169"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20emptybank&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened official Empty the Bank Demo, showing matching title and Pragmatic Play splash; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "book-of-vikings-pragmatic-play",
       "name": "Book of Vikings",
