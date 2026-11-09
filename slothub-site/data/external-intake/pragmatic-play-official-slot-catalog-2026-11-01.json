@@ -10,13 +10,13 @@
   "nextPageCards": 0,
   "totalCards": 665,
   "exactGameCards": 663,
-  "publishedExisting": 478,
-  "pendingIndividualCheck": 180,
+  "publishedExisting": 479,
+  "pendingIndividualCheck": 178,
   "comingSoon": 2,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 479 after item 478 Book of the Fallen individual publication closure.",
+  "nextCursor": "Catalog item 481 Bounty Gold™ after item 479 Super X individual publication closure.",
   "pages": [
     {
       "page": 1,
@@ -5218,7 +5218,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/book-of-the-fallen/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/11/Book-of-Fallen_339x180-1.png",
       "releaseLabel": null,
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "book-of-the-fallen-pragmatic-play"
     },
     {
@@ -5228,8 +5228,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/super-x/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/11/Super_X_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "super-x-pragmatic-play"
     },
     {
       "index": 480,
@@ -5238,8 +5238,19 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-bonanza-megaways/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/11/Big_Bass_Bonanaza_MEGAWAYS_EN_339x180_04.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "checkedAt": "2026-11-09",
+        "browser": "Codex in-app browser only",
+        "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-bonanza-megaways/",
+        "reason": "The exact Pragmatic Play listing and gameSymbol vswaysbbb match Big Bass Bonanza Megaways, but the official Demo intro shows the Reel Kingdom gorilla-crown logo on its spin control. Catalog placement alone cannot establish Pragmatic Play as the studio.",
+        "evidence": [
+          "Exact official page HTTP 200, title Big Bass Bonanza Megaways, RTP 96.70%, gameSymbol vswaysbbb, and matching og:image HTTP 200, SHA256 8D224230E614E66B936DD30D19F0297A1963C932DC3B1CA05AE8973A458D7079.",
+          "Codex in-app browser direct Demo for vswaysbbb displayed matching Big Bass Bonanza Megaways intro and a Reel Kingdom gorilla-crown logo inside the spin control. No HTTP 403 or IP restriction observed."
+        ],
+        "nextStep": "Keep out of Pragmatic Play Provider batch; verify exact Reel Kingdom official listing separately if needed. Continue catalog item481 after item479."
+      }
     },
     {
       "index": 481,
