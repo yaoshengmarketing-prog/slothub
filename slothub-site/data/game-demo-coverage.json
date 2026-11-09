@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1500,
+  "gameCount": 1501,
   "providerCount": 372,
-  "sourcePageCount": 2894,
+  "sourcePageCount": 2897,
   "counts": {
     "access-restricted": 4,
-    "available": 1049,
+    "available": 1050,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-magic-cauldron-enchanted-brew-pragmatic-play",
+      "name": "The Magic Cauldron – Enchanted Brew",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20magicpot&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Magic Cauldron – Enchanted Brew; Official page confirms 7x7 cluster pays of five or more matching symbols, cascading wins, Enchanted Brew modifiers, and RTP 96.44%. Codex in-app browser opened exact official page and Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs20magicpot. Codex in-app browser directly opened the exact official Demo and visibly showed The Magic Cauldron title, reels and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 7E68763FB12DB223D6DDC9E4A7E9E6D44CC7470DA10D774BBD3FA7C6FC3F257A, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-magic-cauldron-enchanted-brew/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 505"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/05/The_Magic_Cauldron_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 7E68763FB12DB223D6DDC9E4A7E9E6D44CC7470DA10D774BBD3FA7C6FC3F257A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20magicpot&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened the exact official Demo and visibly showed The Magic Cauldron title, reels and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "panda-fortune-2-pragmatic-play",
       "name": "Panda’s Fortune 2",
