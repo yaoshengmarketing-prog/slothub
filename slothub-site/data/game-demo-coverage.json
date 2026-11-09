@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1502,
+  "gameCount": 1503,
   "providerCount": 372,
-  "sourcePageCount": 2900,
+  "sourcePageCount": 2903,
   "counts": {
     "access-restricted": 4,
-    "available": 1051,
+    "available": 1052,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-amazing-money-machine-pragmatic-play",
+      "name": "The Amazing Money Machine",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10amm&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Amazing Money Machine; Official page confirms dynamic reels, up to 60 paylines, Money Machine Wild and Mystery symbols, Money symbol Respins, four Jackpot tiers, and RTP 96.42%. Codex in-app browser opened exact official page and Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs10amm. Codex in-app browser directly opened exact official Demo and visibly showed The Amazing Money Machine title, reels and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 B37068BC24606D4D5585DC300B3EA1A6E66002F525C9E3D0921116A9EE82855E, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-amazing-money-machine/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 508"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/04/Amazing_Money_Machine_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 B37068BC24606D4D5585DC300B3EA1A6E66002F525C9E3D0921116A9EE82855E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10amm&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened exact official Demo and visibly showed The Amazing Money Machine title, reels and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "phoenix-forge-pragmatic-play",
       "name": "Phoenix Forge",
