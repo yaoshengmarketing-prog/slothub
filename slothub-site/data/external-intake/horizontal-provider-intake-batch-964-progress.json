@@ -1,10 +1,10 @@
 {
   "batch": 964,
   "recordedAt": "2026-11-09T04:59:23.653Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Treasure Wild",
       "slug": "treasure-wild-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/treasure-wild/",
       "officialFacts": "Official page confirms 20 paylines, Money symbols up to 50x collected during Free Spins and awarded when Wild lands, and RTP 96.53%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser directly opened official Treasure Wild Demo, visibly showing exact title, treasure reels, Wild and Money symbols and spin control; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 492 after current one-game CI, Cloudflare and immutable readback; item 490 published existing and item 491 excluded-source-conflict.",
+  "nextCursor": "Catalog item 492 Yum Yum PowerWays after item 489 full publication closure; skipped documented item(s) 490:published-existing, 491:excluded-source-conflict.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exit 0, tmp/verify-batch964.log, 1894 pages, internal links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "75761ea4eea87ea317d4f32d7146bba63c391f79",
+    "githubActionsRun": 42565068663,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "9d051332-4065-4cca-830f-ec3cf1b1ad8e",
+    "cloudflareUrl": "https://9d051332.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

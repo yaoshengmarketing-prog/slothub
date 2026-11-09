@@ -1,0 +1,38 @@
+{
+  "batch": 965,
+  "recordedAt": "2026-11-09T05:06:22.821Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+  "dedupScope": "All 1489 published Game Markdown records and same-provider exact official path/name/gameSymbol; Yum Yum PowerWays /vswaysyumyum absent.",
+  "records": [
+    {
+      "index": 492,
+      "name": "Yum Yum PowerWays",
+      "slug": "yum-yum-powerways-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/yum-yum-powerways/",
+      "officialFacts": "Official page confirms 16,384 ways, edge symbol replacement and a 3x starting Free Spins win multiplier, and RTP 96.43%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/08/339x180_Yum-Yum-Powerways_Thumbnails-1.png",
+        "localPath": "public/assets/games/yum-yum-powerways-pragmatic-play.png",
+        "sha256": "A0A9BBF8DF0C30238528AE5853046176BF1DE1BC11405B9286ADD48CF606A322",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser directly opened official Yum Yum PowerWays Demo, visibly showing exact title, food-truck reels, spin control and Pragmatic Play branding; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 493 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Full preview verify exit 0, tmp/verify-batch965.log, 1895 pages, internal links and outbound nofollow PASS."
+  }
+}
