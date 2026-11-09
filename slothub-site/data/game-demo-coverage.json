@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1497,
+  "gameCount": 1498,
   "providerCount": 372,
-  "sourcePageCount": 2885,
+  "sourcePageCount": 2888,
   "counts": {
     "access-restricted": 4,
-    "available": 1046,
+    "available": 1047,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "lucky-lightning-pragmatic-play",
+      "name": "Lucky Lightning",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayslight&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Lucky Lightning; Official page confirms 243 ways, Lightning changes reel grid, Wild Respin and Collect, up to 50 Free Games on a 3x6 grid, and RTP 96.45%. Codex in-app browser opened exact official page and direct Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vswayslight. Codex in-app browser directly opened official Lucky Lightning Demo, eventually visibly showing matching title, grid and spin control after a transient loading screen; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 05BC8A616831AF0C9D8F1EF5708BF868A66D71344868427F8F13127E7C62A782, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/lucky-lightning/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 501"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/06/Lucky_Lightning_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 05BC8A616831AF0C9D8F1EF5708BF868A66D71344868427F8F13127E7C62A782"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayslight&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened official Lucky Lightning Demo, eventually visibly showing matching title, grid and spin control after a transient loading screen; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "5-lions-megaways-pragmatic-play",
       "name": "5 Lions Megaways",
