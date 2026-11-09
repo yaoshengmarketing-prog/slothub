@@ -1,10 +1,10 @@
 {
   "batch": 974,
   "recordedAt": "2026-11-09T06:19:29.606Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Heart of Rio",
       "slug": "heart-of-rio-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/heart-of-rio/",
       "officialFacts": "Official page confirms 25 paylines; five Collect symbols can expand or multiply Money symbols during Respins; Free Spins may return Money and Collect as giant Money symbol on extra Respin; RTP 96.50%.",
       "image": {
@@ -29,9 +29,18 @@
       "demo": "Codex in-app browser directly opened official Heart of Rio Demo, visibly showing matching title, reel symbols and spin control; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 504 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 504 Panda’s Fortune 2 after item 503 full publication closure.",
   "validation": {
     "result": "pending",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  },
+  "publication": {
+    "commit": "48b3cdb62cd146fc38404df6a8957da388e7f063",
+    "githubActionsRun": 42572886296,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "42f91fd1-a0c1-449b-abb5-11900811dbba",
+    "cloudflareUrl": "https://42f91fd1.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

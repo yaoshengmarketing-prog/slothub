@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1499,
+  "gameCount": 1500,
   "providerCount": 372,
-  "sourcePageCount": 2891,
+  "sourcePageCount": 2894,
   "counts": {
     "access-restricted": 4,
-    "available": 1048,
+    "available": 1049,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "panda-fortune-2-pragmatic-play",
+      "name": "Panda’s Fortune 2",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25pandatemple&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Panda’s Fortune 2; Official page confirms 25 paylines, golden symbols, marked cells during Free Spins, and RTP 95.50%. Codex in-app browser opened exact official page and Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs25pandatemple. Codex in-app browser directly opened exact official Panda’s Fortune 2 Demo and visibly showed matching title, reels and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 694118E7F68DF66A8BE666A67C20A843CD5877AC31CFA214442EBCB7576EA977, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/panda-fortune-2/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 504"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/05/Pandas_Fortune_2_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 694118E7F68DF66A8BE666A67C20A843CD5877AC31CFA214442EBCB7576EA977"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25pandatemple&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened exact official Panda’s Fortune 2 Demo and visibly showed matching title, reels and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "heart-of-rio-pragmatic-play",
       "name": "Heart of Rio",
