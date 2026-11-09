@@ -1,0 +1,37 @@
+{
+  "batch": 972,
+  "recordedAt": "2026-11-09T05:53:32.276Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+  "dedupScope": "All 1496 published Game Markdown records and same-provider exact official path/name/gameSymbol; 5 Lions Megaways /vswayslions absent.",
+  "records": [
+    {
+      "index": 500,
+      "name": "5 Lions Megaways",
+      "slug": "5-lions-megaways-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/5-lions-megaways/",
+      "officialFacts": "Official page confirms three Scatter symbols trigger bonus; seven Free Spins options offer up to 25 spins and Wild multipliers up to 40x; RTP 96.50%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/06/5_Lions_Megaways_EN_339x180-1.png",
+        "localPath": "public/assets/games/5-lions-megaways-pragmatic-play.png",
+        "sha256": "C561D6654825BBD56FD2B48F939C267C082049CF9DA980A88DB36BCD2D6BD938",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser directly opened official 5 Lions Megaways Demo, visibly showing matching title, reel symbols, spin control and Pragmatic Play splash; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 501 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pending",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  }
+}

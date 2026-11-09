@@ -1,10 +1,10 @@
 {
   "batch": 971,
   "recordedAt": "2026-11-09T05:46:32.489Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Empty the Bank",
       "slug": "empty-the-bank-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/empty-the-bank/",
       "officialFacts": "Official page confirms 4x5 grid, 25 paylines, Empty the Bank Respin Feature can increase remaining Respins or apply up to 10x random multiplier to total bet, and RTP 96.48%.",
       "image": {
@@ -29,9 +29,18 @@
       "demo": "Codex in-app browser directly opened official Empty the Bank Demo, showing matching title and Pragmatic Play splash; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 500 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 500 5 Lions Megaways after item 499 full publication closure.",
   "validation": {
     "result": "pending",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  },
+  "publication": {
+    "commit": "1a26a787713a403d6c9efebcbc13049eedbc4bb3",
+    "githubActionsRun": 42569547841,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "15821455-fb5b-4476-a93e-d2d8c3c8c5ca",
+    "cloudflareUrl": "https://15821455.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
