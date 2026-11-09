@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1482,
+  "gameCount": 1483,
   "providerCount": 372,
-  "sourcePageCount": 2840,
+  "sourcePageCount": 2843,
   "counts": {
     "access-restricted": 4,
-    "available": 1031,
+    "available": 1032,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "bounty-gold-pragmatic-play",
+      "name": "Bounty Gold",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25btygold&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Bounty Gold; Official page confirms 3x5 Western theme, green and gold Wilds, Money Respin feature with predefined Money symbol values and jackpots in settlement, and RTP 96.50%. Codex in-app browser opened exact official page and direct Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs25btygold. Codex in-app browser directly opened matching official Bounty Gold Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 2D34AC7D4AB745E60A1A4BB8A36EBEF83B157FE328335705A709B2B3289781D8, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/bounty-gold/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 481"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/10/BOUNTY-GOLD_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 2D34AC7D4AB745E60A1A4BB8A36EBEF83B157FE328335705A709B2B3289781D8"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25btygold&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened matching official Bounty Gold Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "super-x-pragmatic-play",
       "name": "Super X",
