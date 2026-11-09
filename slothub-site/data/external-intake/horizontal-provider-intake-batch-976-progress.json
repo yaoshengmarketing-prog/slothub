@@ -1,10 +1,10 @@
 {
   "batch": 976,
   "recordedAt": "2026-11-09T07:08:47.415Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "The Magic Cauldron – Enchanted Brew",
       "slug": "the-magic-cauldron-enchanted-brew-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/the-magic-cauldron-enchanted-brew/",
       "officialFacts": "Official page confirms 7x7 cluster pays of five or more matching symbols, cascading wins, Enchanted Brew modifiers, and RTP 96.44%.",
       "image": {
@@ -29,9 +29,18 @@
       "demo": "Codex in-app browser directly opened the exact official Demo and visibly showed The Magic Cauldron title, reels and spin control; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 506 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 507 Phoenix Forge after item 505 full publication closure.",
   "validation": {
     "result": "pending",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  },
+  "publication": {
+    "commit": "fa051060c5e9d46208aa71a740907d74383bf1c4",
+    "githubActionsRun": 42577743280,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "d3860f4a-297c-4f1f-b362-6d84762d5080",
+    "cloudflareUrl": "https://d3860f4a.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

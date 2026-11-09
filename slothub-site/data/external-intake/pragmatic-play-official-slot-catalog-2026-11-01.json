@@ -10,13 +10,13 @@
   "nextPageCards": 0,
   "totalCards": 665,
   "exactGameCards": 663,
-  "publishedExisting": 498,
-  "pendingIndividualCheck": 154,
+  "publishedExisting": 499,
+  "pendingIndividualCheck": 152,
   "comingSoon": 2,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 506 after item 505 The Magic Cauldron – Enchanted Brew individual publication closure.",
+  "nextCursor": "Catalog item 508 after item 507 Phoenix Forge individual publication closure.",
   "pages": [
     {
       "page": 1,
@@ -5555,7 +5555,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/the-magic-cauldron-enchanted-brew/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/05/The_Magic_Cauldron_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "the-magic-cauldron-enchanted-brew-pragmatic-play"
     },
     {
@@ -5565,8 +5565,19 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/cash-elevator/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/05/CashElevator_EN_339x180_04-1.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "checkedAt": "2026-11-09",
+        "browser": "Codex in-app browser only",
+        "officialPage": "https://www.pragmaticplay.com/en/games/cash-elevator/",
+        "reason": "The exact Pragmatic Play listing, gameSymbol and artwork match Cash Elevator, but the official Demo intro prominently shows the crowned gorilla studio mark also observed on Reel Kingdom powered-by-Pragmatic titles. Original studio attribution is unresolved, so do not classify it as a Pragmatic Play original.",
+        "evidence": [
+          "Exact official page HTTP 200, title Cash Elevator, RTP 96.64%, gameSymbol vs20terrorv and matching og:image HTTP 200, SHA256 5C6ED4904F0F8ECFA0A509AC17A03EFD47C4B843489CC90E081FFA13DF784A44.",
+          "Codex in-app browser direct Demo for vs20terrorv showed matching Cash Elevator title and crowned gorilla mark inside the spin control on the intro. No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "nextStep": "Keep out of Pragmatic Play Provider batch until original studio is corroborated by a stronger official source. Continue item 507 after The Magic Cauldron – Enchanted Brew full publication closure."
+      }
     },
     {
       "index": 507,
@@ -5575,8 +5586,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/phoenix-forge/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/04/Phoenix_Forge_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "phoenix-forge-pragmatic-play"
     },
     {
       "index": 508,

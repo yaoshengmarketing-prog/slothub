@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1501,
+  "gameCount": 1502,
   "providerCount": 372,
-  "sourcePageCount": 2897,
+  "sourcePageCount": 2900,
   "counts": {
     "access-restricted": 4,
-    "available": 1050,
+    "available": 1051,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "phoenix-forge-pragmatic-play",
+      "name": "Phoenix Forge",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20phoenixf&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Phoenix Forge; Official page confirms 3x5 grid, 20 paylines, Phoenix Bonus Free Spins, Hot Spot Multiplier, and RTP 96.51%. Codex in-app browser opened exact official page and Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs20phoenixf. Codex in-app browser direct Demo for vs20phoenixf showed the exact in-game Phoenix Forge title, reels and spin control; redirect metadata says Phoenix Fire, so identity was resolved by the exact symbol and in-game title. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 B62DE95187F3943313A74F76B66CB49A604D03398311E40CF48DC680E403F77F, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/phoenix-forge/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 507"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/04/Phoenix_Forge_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 B62DE95187F3943313A74F76B66CB49A604D03398311E40CF48DC680E403F77F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20phoenixf&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser direct Demo for vs20phoenixf showed the exact in-game Phoenix Forge title, reels and spin control; redirect metadata says Phoenix Fire, so identity was resolved by the exact symbol and in-game title. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "the-magic-cauldron-enchanted-brew-pragmatic-play",
       "name": "The Magic Cauldron – Enchanted Brew",
