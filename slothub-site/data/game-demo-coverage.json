@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1487,
+  "gameCount": 1488,
   "providerCount": 372,
-  "sourcePageCount": 2855,
+  "sourcePageCount": 2858,
   "counts": {
     "access-restricted": 4,
-    "available": 1036,
+    "available": 1037,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "piggy-bank-bills-pragmatic-play",
+      "name": "Piggy Bank Bills",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs9piggybank&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Piggy Bank Bills; Official page confirms matching split bills, Free Spins with random multipliers up to 3x, and RTP 96.50%. Codex in-app browser opened exact official page and direct Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. Initial screenshot capture failed once and Demo loading was slow, but same in-app tab eventually showed full matching game. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs9piggybank. Codex in-app browser directly opened official Piggy Bank Bills Demo; loading was slow but eventually visibly showed exact title, pig bill-matching reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 3C2F417318425013788803DD95FC19D5C7C97C95ABC20A68C5E973F19F4ADFA4, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks; slow load resolved in same browser. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/piggy-bank-bills/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks; slow load resolved in same browser. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 488"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/09/Piggy-Bank-Bills_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 3C2F417318425013788803DD95FC19D5C7C97C95ABC20A68C5E973F19F4ADFA4"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs9piggybank&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened official Piggy Bank Bills Demo; loading was slow but eventually visibly showed exact title, pig bill-matching reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "mystic-chief-pragmatic-play",
       "name": "Mystic Chief",

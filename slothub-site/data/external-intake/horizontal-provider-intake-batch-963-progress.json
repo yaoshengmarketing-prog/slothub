@@ -1,0 +1,38 @@
+{
+  "batch": 963,
+  "recordedAt": "2026-11-09T04:49:36.988Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks; slow load resolved in same browser. No paid browser used.",
+  "dedupScope": "All 1487 published Game Markdown records and same-provider exact official path/name/gameSymbol; Piggy Bank Bills /vs9piggybank absent.",
+  "records": [
+    {
+      "index": 488,
+      "name": "Piggy Bank Bills",
+      "slug": "piggy-bank-bills-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/piggy-bank-bills/",
+      "officialFacts": "Official page confirms matching split bills, Free Spins with random multipliers up to 3x, and RTP 96.50%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/09/Piggy-Bank-Bills_339x180.png",
+        "localPath": "public/assets/games/piggy-bank-bills-pragmatic-play.png",
+        "sha256": "3C2F417318425013788803DD95FC19D5C7C97C95ABC20A68C5E973F19F4ADFA4",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser directly opened official Piggy Bank Bills Demo; loading was slow but eventually visibly showed exact title, pig bill-matching reels and spin control. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 489 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Full preview verify exit 0, tmp/verify-batch963.log, 1893 pages, internal links and outbound nofollow PASS."
+  }
+}

@@ -1,10 +1,10 @@
 {
   "batch": 962,
   "recordedAt": "2026-11-09T04:42:52.016Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Mystic Chief",
       "slug": "mystic-chief-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/mystic-chief/",
       "officialFacts": "Official page confirms 576 ways to win, Bonus symbols adding Free Games in Free Spins, and RTP 96.55%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser directly opened official Mystic Chief Demo, visibly showing exact title, reels, Pragmatic Play splash and spin control; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 488 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 488 Piggy Bank Bills after item 487 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exit 0, tmp/verify-batch962.log, 1892 pages, internal links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "865ad9157f2fe1717a99f6780c2c9d31eb7e1266",
+    "githubActionsRun": 42563574750,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "f20f6f1c-03e6-4ada-8cf4-525358dff1f1",
+    "cloudflareUrl": "https://f20f6f1c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
