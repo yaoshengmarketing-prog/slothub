@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1492,
+  "gameCount": 1493,
   "providerCount": 372,
-  "sourcePageCount": 2870,
+  "sourcePageCount": 2873,
   "counts": {
     "access-restricted": 4,
-    "available": 1041,
+    "available": 1042,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fruit-party-2-pragmatic-play",
+      "name": "Fruit Party 2",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20fparty2&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fruit Party 2; Official page confirms cluster wins can leave 2x Wild multipliers that may rise to 256x over tumbles, 3-7 Scatters trigger 10-25 Free Spins, and RTP 96.53%. Codex in-app browser opened exact official page and direct Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs20fparty2. Codex in-app browser directly opened official Fruit Party 2 Demo, visibly showing exact title, fruit cluster grid, spin control and Pragmatic Play splash; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 BF4C1ACA3FB7907091DEC2344094F7F0FB17C77AA7F6118EE400292532D909A8, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fruit-party-2/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 495"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/07/Fruit_Party_2_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 BF4C1ACA3FB7907091DEC2344094F7F0FB17C77AA7F6118EE400292532D909A8"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20fparty2&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened official Fruit Party 2 Demo, visibly showing exact title, fruit cluster grid, spin control and Pragmatic Play splash; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "rise-of-giza-powernudge-pragmatic-play",
       "name": "Rise of Giza PowerNudge",
