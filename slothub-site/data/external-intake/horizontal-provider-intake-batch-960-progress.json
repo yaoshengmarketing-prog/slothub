@@ -1,10 +1,10 @@
 {
   "batch": 960,
   "recordedAt": "2026-11-09T04:24:35.489Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser only for exact page and Demo checks; transient 504 resolved by reload, no paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Day of Dead",
       "slug": "day-of-dead-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/day-of-dead/",
       "officialFacts": "Official page confirms 5x4 Day of the Dead theme, Scatter and Wild symbols, and RTP 96.49%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser directly opened official Day of Dead Demo, visibly showing exact title, reels, Scatter/Wild symbols and spin control; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 486 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 486 Cash Bonanza after item 485 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full clean preview verify exit 0, tmp/verify-batch960-clean.log, 1890 pages, internal links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "2a8c42e1dc55b2105feeb219817bb1894467b7af",
+    "githubActionsRun": 42562352960,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "95bc6eae-2982-4124-9423-ae2d3b662fbc",
+    "cloudflareUrl": "https://95bc6eae.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

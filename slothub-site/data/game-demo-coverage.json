@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1485,
+  "gameCount": 1486,
   "providerCount": 372,
-  "sourcePageCount": 2849,
+  "sourcePageCount": 2852,
   "counts": {
     "access-restricted": 4,
-    "available": 1034,
+    "available": 1035,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "cash-bonanza-pragmatic-play",
+      "name": "Cash Bonanza",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysbankbonz&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Cash Bonanza; Official page confirms 4x6 fruit and bank vault theme, Wild symbols, and RTP 96.52%. Codex in-app browser opened exact official page and direct Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vswaysbankbonz. Codex in-app browser directly opened matching official Cash Bonanza Demo, visibly showing title, fruit reels, ways 4096, Pragmatic Play branding and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 E005764676A4764F5EAB1342394E40F4B5EE08D7A59D1D9B6F199078A38779C6, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/cash-bonanza/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 486"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/09/Cash_Bonanza_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 E005764676A4764F5EAB1342394E40F4B5EE08D7A59D1D9B6F199078A38779C6"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysbankbonz&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened matching official Cash Bonanza Demo, visibly showing title, fruit reels, ways 4096, Pragmatic Play branding and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "day-of-dead-pragmatic-play",
       "name": "Day of Dead",
