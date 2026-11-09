@@ -1,10 +1,10 @@
 {
   "batch": 959,
   "recordedAt": "2026-11-09T04:17:26.161Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
@@ -15,7 +15,7 @@
       "name": "John Hunter and the Quest for Bermuda Riches",
       "slug": "john-hunter-and-the-quest-for-bermuda-riches-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/john-hunter-and-the-quest-for-bermuda-riches/",
       "officialFacts": "Official page confirms 7x7 adventure theme, five Wilds paying in both directions, and RTP 96.33%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser directly opened matching official Demo for John Hunter and the Quest for Bermuda Riches, visibly showing title, reels and spin control; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 485 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 485 Day of Dead after item 483 full publication closure; skipped documented item(s) 484:excluded-source-conflict.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exit 0, tmp/verify-batch959.log, 1889 pages, internal links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "4d901fb4d3d7af2a723b59b08067f01d89eb1dd0",
+    "githubActionsRun": 42561320385,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "a1ee4675-05de-4d9b-99cd-9613247d22e9",
+    "cloudflareUrl": "https://a1ee4675.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

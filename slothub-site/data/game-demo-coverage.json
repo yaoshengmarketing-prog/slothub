@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1484,
+  "gameCount": 1485,
   "providerCount": 372,
-  "sourcePageCount": 2846,
+  "sourcePageCount": 2849,
   "counts": {
     "access-restricted": 4,
-    "available": 1033,
+    "available": 1034,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "day-of-dead-pragmatic-play",
+      "name": "Day of Dead",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20daydead&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Day of Dead; Official page confirms 5x4 Day of the Dead theme, Scatter and Wild symbols, and RTP 96.49%. Codex in-app browser first saw a transient 504 on exact page: Cloudflare reported Browser Working, Cloudflare Working, Host Error; reload succeeded, title, RTP, HTML gameSymbol and og:image matched. Exact Demo loaded. No HTTP 403 or IP restriction and no paid browser used. Official HTML includes gameSymbol vs20daydead. Codex in-app browser directly opened official Day of Dead Demo, visibly showing exact title, reels, Scatter/Wild symbols and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 66C8880E453DB71719CB58D37DC1092BFD039361DE8C0DED1CF0E673B8ED6FC0, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo checks; transient 504 resolved by reload, no paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/day-of-dead/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo checks; transient 504 resolved by reload, no paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 485"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/10/Day-of-Dead_339x180-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 66C8880E453DB71719CB58D37DC1092BFD039361DE8C0DED1CF0E673B8ED6FC0"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20daydead&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened official Day of Dead Demo, visibly showing exact title, reels, Scatter/Wild symbols and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "john-hunter-and-the-quest-for-bermuda-riches-pragmatic-play",
       "name": "John Hunter and the Quest for Bermuda Riches",

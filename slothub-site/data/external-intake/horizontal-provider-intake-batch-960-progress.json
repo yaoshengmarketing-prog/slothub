@@ -1,0 +1,38 @@
+{
+  "batch": 960,
+  "recordedAt": "2026-11-09T04:24:35.489Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser only for exact page and Demo checks; transient 504 resolved by reload, no paid browser used.",
+  "dedupScope": "All 1484 published Game Markdown records and same-provider exact official path/name/gameSymbol; Day of Dead /vs20daydead absent.",
+  "records": [
+    {
+      "index": 485,
+      "name": "Day of Dead",
+      "slug": "day-of-dead-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/day-of-dead/",
+      "officialFacts": "Official page confirms 5x4 Day of the Dead theme, Scatter and Wild symbols, and RTP 96.49%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/10/Day-of-Dead_339x180-2.png",
+        "localPath": "public/assets/games/day-of-dead-pragmatic-play.png",
+        "sha256": "66C8880E453DB71719CB58D37DC1092BFD039361DE8C0DED1CF0E673B8ED6FC0",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser directly opened official Day of Dead Demo, visibly showing exact title, reels, Scatter/Wild symbols and spin control; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 486 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Full clean preview verify exit 0, tmp/verify-batch960-clean.log, 1890 pages, internal links and outbound nofollow PASS."
+  }
+}
