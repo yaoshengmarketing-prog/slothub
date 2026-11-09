@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1472,
+  "gameCount": 1473,
   "providerCount": 372,
-  "sourcePageCount": 2810,
+  "sourcePageCount": 2813,
   "counts": {
     "access-restricted": 4,
-    "available": 1022,
+    "available": 1023,
     "not-verified": 446
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-ultimate-5-pragmatic-play",
+      "name": "The Ultimate 5",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20ultim5&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Ultimate 5; Official page confirms African wildlife, money symbols, three or more scatters triggering Free Spins, leveling reel sets, maximum 5000x and RTP 96.50%. Codex in-app browser twice timed out; direct HTML initially returned 502, then HTTP 200 on retry. Read-only paid browser opened the exact official page and Demo, confirmed title, provider, RTP, 5000x, gameSymbol and og:image. Official artwork bytes visually inspected locally; no security warning bypass. Official HTML includes gameSymbol vs20ultim5. Read-only paid browser opened exact official iframe Demo; redirect returned HTTP 200 and visibly rendered matching The Ultimate 5 reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 A475DCFFC4534B86734FDCB0A458088C9B20809A165EA0188A5DBC44BC5DBB1E, artwork title visually checked. Same-provider exact title, official path and symbol absent. Fallback reason: Codex in-app browser Page.navigate and focus emulation timed out; direct HTML transient 502. Read-only paid browser then loaded exact official URL and Demo without login, age submission, or security bypass.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-ultimate-5/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Fallback reason: Codex in-app browser Page.navigate and focus emulation timed out; direct HTML transient 502. Read-only paid browser then loaded exact official URL and Demo without login, age submission, or security bypass."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 467"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/01/TU5_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 A475DCFFC4534B86734FDCB0A458088C9B20809A165EA0188A5DBC44BC5DBB1E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20ultim5&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Read-only paid browser opened exact official iframe Demo; redirect returned HTTP 200 and visibly rendered matching The Ultimate 5 reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "elemental-gems-megaways-pragmatic-play",
       "name": "Elemental Gems Megaways",
