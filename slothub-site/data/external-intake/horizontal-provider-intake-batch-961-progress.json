@@ -1,10 +1,10 @@
 {
   "batch": 961,
   "recordedAt": "2026-11-09T04:35:51.76Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Cash Bonanza",
       "slug": "cash-bonanza-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/cash-bonanza/",
       "officialFacts": "Official page confirms 4x6 fruit and bank vault theme, Wild symbols, and RTP 96.52%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser directly opened matching official Cash Bonanza Demo, visibly showing title, fruit reels, ways 4096, Pragmatic Play branding and spin control; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 487 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 487 Mystic Chief after item 486 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exit 0, tmp/verify-batch961.log, 1891 pages, internal links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "a14c24bc0065c58f57036843be643c41928efad2",
+    "githubActionsRun": 42563002233,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "4420f9e6-7608-4a2e-8009-be6b46f016ce",
+    "cloudflareUrl": "https://4420f9e6.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

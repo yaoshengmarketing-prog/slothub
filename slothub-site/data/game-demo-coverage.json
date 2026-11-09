@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1486,
+  "gameCount": 1487,
   "providerCount": 372,
-  "sourcePageCount": 2852,
+  "sourcePageCount": 2855,
   "counts": {
     "access-restricted": 4,
-    "available": 1035,
+    "available": 1036,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mystic-chief-pragmatic-play",
+      "name": "Mystic Chief",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayswest&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Mystic Chief; Official page confirms 576 ways to win, Bonus symbols adding Free Games in Free Spins, and RTP 96.55%. Codex in-app browser opened exact official page and direct Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vswayswest. Codex in-app browser directly opened official Mystic Chief Demo, visibly showing exact title, reels, Pragmatic Play splash and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 93D7540F58542DBE5DA60871388041B06EEDC8A102672D74F0CF15FD3F9081E7, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/mystic-chief/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 487"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/09/Mystic-Chief_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 93D7540F58542DBE5DA60871388041B06EEDC8A102672D74F0CF15FD3F9081E7"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayswest&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened official Mystic Chief Demo, visibly showing exact title, reels, Pragmatic Play splash and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "cash-bonanza-pragmatic-play",
       "name": "Cash Bonanza",
