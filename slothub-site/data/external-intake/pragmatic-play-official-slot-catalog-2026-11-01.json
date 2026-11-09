@@ -10,13 +10,13 @@
   "nextPageCards": 0,
   "totalCards": 665,
   "exactGameCards": 663,
-  "publishedExisting": 472,
-  "pendingIndividualCheck": 189,
+  "publishedExisting": 473,
+  "pendingIndividualCheck": 186,
   "comingSoon": 2,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 470 after item 469 Gates of Valhalla individual publication closure.",
+  "nextCursor": "Catalog item 473 after item 472 Wild Depths individual publication closure.",
   "pages": [
     {
       "page": 1,
@@ -5094,7 +5094,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/gates-of-valhalla/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/01/Gate_Of_Valhalla_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "gates-of-valhalla-pragmatic-play"
     },
     {
@@ -5104,8 +5104,20 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/rock-vegas/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/01/Rock-Vegas™_EN_339x180_04.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "checkedAt": "2026-11-09",
+        "browser": "Codex in-app browser only",
+        "officialPage": "https://www.pragmaticplay.com/en/games/rock-vegas/",
+        "reason": "Pragmatic Play official listing and exact gameSymbol vs20rockvegas coexist with an official Demo loading screen clearly branded Reel Kingdom powered by Pragmatic Play. Studio identity must not be assigned to Pragmatic Play by catalog placement alone.",
+        "evidence": [
+          "Pragmatic Play exact single-game page HTTP 200, title Rock Vegas, gameSymbol vs20rockvegas, official og:image mapped to the exact Rock Vegas artwork.",
+          "Codex in-app browser direct Demo for vs20rockvegas showed Reel Kingdom / Powered by Pragmatic Play on its loading screen, followed by matching Rock Vegas title.",
+          "Reel Kingdom official site https://reelkingdom.com/ and /games/ loaded, but the games directory showed an unsubmitted 18+ gate; no exact studio listing was confirmed. No HTTP 403 or IP restriction was observed."
+        ],
+        "nextStep": "Keep out of the Pragmatic Play Provider batch; verify exact Reel Kingdom official catalog/game page without bypassing age gate, then consider a separate Reel Kingdom record. Continue catalog item471."
+      }
     },
     {
       "index": 471,
@@ -5114,8 +5126,19 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/gold-party/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/01/Gold-Party_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "checkedAt": "2026-11-09",
+        "browser": "Codex in-app browser only",
+        "officialPage": "https://www.pragmaticplay.com/en/games/gold-party/",
+        "reason": "The exact official Pragmatic Play listing and gameSymbol vs25goldparty match Gold Party, but the official Demo loading screen brands Wild Streak Gaming powered by Pragmatic Play. Catalog placement alone cannot establish Pragmatic Play as the studio.",
+        "evidence": [
+          "Exact official page HTTP 200, title Gold Party, RTP 96.50%, gameSymbol vs25goldparty and matching official og:image HTTP 200, SHA256 E117B0B8250491DAD29E97AEC4F7433EFBB4125DAEB563DAB3A574FFA31820A6.",
+          "Codex in-app browser direct Demo for vs25goldparty displayed Wild Streak Gaming / Powered by Pragmatic Play on its loading screen. No HTTP 403 or IP restriction observed."
+        ],
+        "nextStep": "Keep out of Pragmatic Play Provider batch; verify exact Wild Streak Gaming official listing separately if needed. Continue catalog item472."
+      }
     },
     {
       "index": 472,
@@ -5124,8 +5147,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/wild-depths/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/12/Wild-Depth_339x180-1.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "wild-depths-pragmatic-play"
     },
     {
       "index": 473,
