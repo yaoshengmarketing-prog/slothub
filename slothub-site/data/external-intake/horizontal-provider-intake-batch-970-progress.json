@@ -1,0 +1,37 @@
+{
+  "batch": 970,
+  "recordedAt": "2026-11-09T05:39:57.540Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+  "dedupScope": "All 1494 published Game Markdown records and same-provider exact official path/name/gameSymbol; Book of Vikings /vs10bookviking absent.",
+  "records": [
+    {
+      "index": 497,
+      "name": "Book of Vikings",
+      "slug": "book-of-vikings-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/book-of-vikings/",
+      "officialFacts": "Official page confirms a 5x3 video slot with 10 paylines, expanding symbol during Free Spins, and RTP 96.50%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/06/BOV__EN_339x180.png",
+        "localPath": "public/assets/games/book-of-vikings-pragmatic-play.png",
+        "sha256": "780213C24FA5B4A499FCDE9074116E7A7DE84CD0C338C87C5AA467DD604E713B",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser directly opened official Book of Vikings Demo, visibly showing matching title, reels and spin control; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 498 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pending",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  }
+}
