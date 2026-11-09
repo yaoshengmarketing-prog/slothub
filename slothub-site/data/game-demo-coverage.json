@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1481,
+  "gameCount": 1482,
   "providerCount": 372,
-  "sourcePageCount": 2837,
+  "sourcePageCount": 2840,
   "counts": {
     "access-restricted": 4,
-    "available": 1030,
+    "available": 1031,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "super-x-pragmatic-play",
+      "name": "Super X",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20superx&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Super X; Official page confirms 3x5 reels, Wilds on reels two through four, two X symbols triggering X Bet Respin, Super Spins Ante Bet, Free Spins, and RTP 96.51%. Codex in-app browser opened exact official page and direct Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs20superx. Codex in-app browser directly opened matching official Super X Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 B93516F314403B9908E44C7A6367F850761D8FDA6842DD098A621629F4B45F09, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/super-x/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 479"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/11/Super_X_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 B93516F314403B9908E44C7A6367F850761D8FDA6842DD098A621629F4B45F09"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20superx&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened matching official Super X Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "book-of-the-fallen-pragmatic-play",
       "name": "Book of the Fallen",

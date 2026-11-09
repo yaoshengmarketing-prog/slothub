@@ -1,0 +1,38 @@
+{
+  "batch": 957,
+  "recordedAt": "2026-11-09T03:55:16.421Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+  "dedupScope": "All 1481 published Game Markdown records and same-provider exact official path/name/gameSymbol; Super X /vs20superx absent.",
+  "records": [
+    {
+      "index": 479,
+      "name": "Super X",
+      "slug": "super-x-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/super-x/",
+      "officialFacts": "Official page confirms 3x5 reels, Wilds on reels two through four, two X symbols triggering X Bet Respin, Super Spins Ante Bet, Free Spins, and RTP 96.51%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/11/Super_X_EN_339x180.png",
+        "localPath": "public/assets/games/super-x-pragmatic-play.png",
+        "sha256": "B93516F314403B9908E44C7A6367F850761D8FDA6842DD098A621629F4B45F09",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser directly opened matching official Super X Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 481 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/verify-batch957.log exit 0; preview isolation and source checks PASS"
+  }
+}
