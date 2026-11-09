@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1478,
+  "gameCount": 1479,
   "providerCount": 372,
-  "sourcePageCount": 2828,
+  "sourcePageCount": 2831,
   "counts": {
     "access-restricted": 4,
-    "available": 1027,
+    "available": 1028,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "smugglers-cove-pragmatic-play",
+      "name": "Smugglers Cove",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20smugcove&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Smugglers Cove; Official page confirms 3x5 reels, substituting Wilds, three skull bonus symbols triggering Free Spins, five or more coins triggering Treasure Bonus, fifteen coins paying 1000x total bet, special coins with random multipliers up to 10x, and RTP 96.50%. Codex in-app browser opened exact official page and direct Demo; initial page navigation call timed out, but the created in-app tab loaded and was read successfully. Official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs20smugcove. Codex in-app browser directly opened matching official Smugglers Cove Demo and visibly showed titled intro reels and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 F955EDF86FAB296095C8D8335F9A5FB6F700B8E83E23D838A2CC327FC7AFB06E, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/smugglers-cove/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 475"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/11/SMUGGLERS-COVE_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 F955EDF86FAB296095C8D8335F9A5FB6F700B8E83E23D838A2CC327FC7AFB06E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20smugcove&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened matching official Smugglers Cove Demo and visibly showed titled intro reels and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "crystal-caverns-megaways-pragmatic-play",
       "name": "Crystal Caverns Megaways",
