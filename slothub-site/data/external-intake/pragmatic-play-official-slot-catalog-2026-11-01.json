@@ -10,13 +10,13 @@
   "nextPageCards": 0,
   "totalCards": 665,
   "exactGameCards": 663,
-  "publishedExisting": 485,
-  "pendingIndividualCheck": 170,
+  "publishedExisting": 486,
+  "pendingIndividualCheck": 168,
   "comingSoon": 2,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 489 Treasure Wild™ after item 488 Piggy Bank Bills individual publication closure.",
+  "nextCursor": "Catalog item 492 Yum Yum PowerWays after item 489 Treasure Wild full publication closure; item 490 published existing and item 491 excluded for source identity conflict.",
   "pages": [
     {
       "page": 1,
@@ -5352,7 +5352,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/piggy-bank-bills/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/09/Piggy-Bank-Bills_339x180.png",
       "releaseLabel": null,
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "piggy-bank-bills-pragmatic-play"
     },
     {
@@ -5362,8 +5362,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/treasure-wild/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/09/Treasure-wild_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "treasure-wild-pragmatic-play"
     },
     {
       "index": 490,
@@ -5382,8 +5382,19 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/bigger-bass-bonanza/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/08/Bigger-Bass-Bonanza_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "checkedAt": "2026-11-09",
+        "browser": "Codex in-app browser only",
+        "officialPage": "https://www.pragmaticplay.com/en/games/bigger-bass-bonanza/",
+        "reason": "The exact Pragmatic Play listing, gameSymbol and image match Bigger Bass Bonanza, but the official Demo intro prominently shows the crowned gorilla studio mark also observed on Reel Kingdom powered-by-Pragmatic titles. Original studio attribution is unresolved, so do not classify it as a Pragmatic Play original.",
+        "evidence": [
+          "Exact official page HTTP 200, title Bigger Bass Bonanza, RTP 96.71%, gameSymbol vs12bbb and matching og:image HTTP 200, SHA256 B0D176BBA5C3C3BC3D7C8BA79C526953CC1C614D9CD9CD41F70D739B5EE8E19B.",
+          "Codex in-app browser direct Demo for vs12bbb showed matching title and the crowned gorilla mark over the spin control. No HTTP 403 or IP restriction observed."
+        ],
+        "nextStep": "Keep out of Pragmatic Play Provider batch until original studio is corroborated by a stronger official source. Continue item 492 after Treasure Wild closure."
+      }
     },
     {
       "index": 492,

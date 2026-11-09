@@ -1,10 +1,10 @@
 {
   "batch": 963,
   "recordedAt": "2026-11-09T04:49:36.988Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks; slow load resolved in same browser. No paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Piggy Bank Bills",
       "slug": "piggy-bank-bills-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/piggy-bank-bills/",
       "officialFacts": "Official page confirms matching split bills, Free Spins with random multipliers up to 3x, and RTP 96.50%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser directly opened official Piggy Bank Bills Demo; loading was slow but eventually visibly showed exact title, pig bill-matching reels and spin control. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 489 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 489 Treasure Wild after item 488 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exit 0, tmp/verify-batch963.log, 1893 pages, internal links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "7f73cac5551f2c2ce81fd063a4572b1efe12519b",
+    "githubActionsRun": 42564178637,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "3e009840-60dc-4484-80e1-b2394440b354",
+    "cloudflareUrl": "https://3e009840.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

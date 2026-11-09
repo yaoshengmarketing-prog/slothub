@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1488,
+  "gameCount": 1489,
   "providerCount": 372,
-  "sourcePageCount": 2858,
+  "sourcePageCount": 2861,
   "counts": {
     "access-restricted": 4,
-    "available": 1037,
+    "available": 1038,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "treasure-wild-pragmatic-play",
+      "name": "Treasure Wild",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20trsbox&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Treasure Wild; Official page confirms 20 paylines, Money symbols up to 50x collected during Free Spins and awarded when Wild lands, and RTP 96.53%. Codex in-app browser opened exact official page and direct Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. Demo needed normal loading time before full matching game appeared. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs20trsbox. Codex in-app browser directly opened official Treasure Wild Demo, visibly showing exact title, treasure reels, Wild and Money symbols and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 1276E4B7DA6054472F3663B02D5F5460CE99D982A022DF3B0F8BFDECE4400097, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/treasure-wild/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 489"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/09/Treasure-wild_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 1276E4B7DA6054472F3663B02D5F5460CE99D982A022DF3B0F8BFDECE4400097"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20trsbox&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened official Treasure Wild Demo, visibly showing exact title, treasure reels, Wild and Money symbols and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "piggy-bank-bills-pragmatic-play",
       "name": "Piggy Bank Bills",
