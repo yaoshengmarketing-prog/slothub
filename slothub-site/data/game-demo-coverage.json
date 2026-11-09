@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1493,
+  "gameCount": 1494,
   "providerCount": 372,
-  "sourcePageCount": 2873,
+  "sourcePageCount": 2876,
   "counts": {
     "access-restricted": 4,
-    "available": 1042,
+    "available": 1043,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "chicken-drop-pragmatic-play",
+      "name": "Chicken Drop",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20chickdrop&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Chicken Drop; Official page confirms a 7x7 cluster-pay grid; Golden Egg randomly converts covered symbols to the same matching symbol; during Free Spins one Golden Egg follows every tumble; RTP 96.50%. Codex in-app browser opened exact official page and direct Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs20chickdrop. Codex in-app browser directly opened the official Chicken Drop Demo, visibly showing exact title, 7x7 grid and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 16754A121605E6DD8F18BDB367244BA28D611B200A5600BE7E6BF98F19880829, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/chicken-drop/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 496"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/07/Chicken_Drop_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 16754A121605E6DD8F18BDB367244BA28D611B200A5600BE7E6BF98F19880829"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20chickdrop&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened the official Chicken Drop Demo, visibly showing exact title, 7x7 grid and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "fruit-party-2-pragmatic-play",
       "name": "Fruit Party 2",
