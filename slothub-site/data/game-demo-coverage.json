@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1473,
+  "gameCount": 1474,
   "providerCount": 372,
-  "sourcePageCount": 2813,
+  "sourcePageCount": 2816,
   "counts": {
     "access-restricted": 4,
-    "available": 1023,
+    "available": 1024,
     "not-verified": 446
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "colossal-cash-zone-pragmatic-play",
+      "name": "Colossal Cash Zone",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20colcashzone&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Colossal Cash Zone; Official page confirms 1x1, 2x2 and 3x3 Colossal Symbols, Cash Zone multiplier up to 250x for nine of a kind, Free Spins with random multipliers up to 20x, and RTP 96.50%; English page does not state an overall maximum. Codex in-app browser timed out twice on this official site in this run; read-only paid browser loaded exact official page and Demo, confirmed title, provider, RTP, gameSymbol and og:image. Official artwork bytes visually inspected locally; no security warning bypass. Official HTML includes gameSymbol vs20colcashzone. Read-only paid browser opened exact official iframe Demo; redirect returned HTTP 200 and visibly rendered matching Colossal Cash Zone reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 CA91A67A7B47ED0CC64BEE007A744478D4BD198DECD481727A9C9F3500435779, artwork title visually checked. Same-provider exact title, official path and symbol absent. Fallback reason: Codex in-app browser Page.navigate and focus emulation timed out on the same official site. Read-only paid browser then loaded exact official URL and Demo without login, age submission, or security bypass. After the user corrected the browser choice, Codex in-app browser independently loaded the exact official page and direct Demo, showing title, reels and spin control; no spin or bet. The earlier paid browser use was an agent error and is retained here as an audit fact.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/colossal-cash-zone/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Fallback reason: Codex in-app browser Page.navigate and focus emulation timed out on the same official site. Read-only paid browser then loaded exact official URL and Demo without login, age submission, or security bypass."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 468"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/01/Colossal_Cash_Zone_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 CA91A67A7B47ED0CC64BEE007A744478D4BD198DECD481727A9C9F3500435779"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20colcashzone&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Read-only paid browser opened exact official iframe Demo; redirect returned HTTP 200 and visibly rendered matching Colossal Cash Zone reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "the-ultimate-5-pragmatic-play",
       "name": "The Ultimate 5",
