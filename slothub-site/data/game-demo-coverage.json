@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1480,
+  "gameCount": 1481,
   "providerCount": 372,
-  "sourcePageCount": 2834,
+  "sourcePageCount": 2837,
   "counts": {
     "access-restricted": 4,
-    "available": 1029,
+    "available": 1030,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "book-of-the-fallen-pragmatic-play",
+      "name": "Book of the Fallen",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bookfallen&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Book of the Fallen; Official page confirms 3x5 tomb theme, Eye of Anubis Book as Wild and Scatter, three Books triggering ten Free Spins, optional Super Spins Ante Bet, and RTP 96.50%. Codex in-app browser opened exact official page and direct Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs10bookfallen. Codex in-app browser directly opened exact official Demo; redirected page title abbreviated Book of Fallen, but visible title read Book of the Fallen over matching reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 CFC5730014081E0543B355C8EEF163AA9F2408E2B2282AEC0F2F80C83298AB70, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/book-of-the-fallen/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 478"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/11/Book-of-Fallen_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 CFC5730014081E0543B355C8EEF163AA9F2408E2B2282AEC0F2F80C83298AB70"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bookfallen&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened exact official Demo; redirected page title abbreviated Book of Fallen, but visible title read Book of the Fallen over matching reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "santas-wonderland-pragmatic-play",
       "name": "Santa's Wonderland",

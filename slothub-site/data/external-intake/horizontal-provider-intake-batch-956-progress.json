@@ -1,0 +1,38 @@
+{
+  "batch": 956,
+  "recordedAt": "2026-11-09T03:47:55.621Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+  "dedupScope": "All 1480 published Game Markdown records and same-provider exact official path/name/gameSymbol; Book of the Fallen /vs10bookfallen absent.",
+  "records": [
+    {
+      "index": 478,
+      "name": "Book of the Fallen",
+      "slug": "book-of-the-fallen-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/book-of-the-fallen/",
+      "officialFacts": "Official page confirms 3x5 tomb theme, Eye of Anubis Book as Wild and Scatter, three Books triggering ten Free Spins, optional Super Spins Ante Bet, and RTP 96.50%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/11/Book-of-Fallen_339x180-1.png",
+        "localPath": "public/assets/games/book-of-the-fallen-pragmatic-play.png",
+        "sha256": "CFC5730014081E0543B355C8EEF163AA9F2408E2B2282AEC0F2F80C83298AB70",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser directly opened exact official Demo; redirected page title abbreviated Book of Fallen, but visible title read Book of the Fallen over matching reels and spin control. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 479 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/verify-batch956.log exit 0; preview isolation and source checks PASS"
+  }
+}
