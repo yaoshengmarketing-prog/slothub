@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1477,
+  "gameCount": 1478,
   "providerCount": 372,
-  "sourcePageCount": 2825,
+  "sourcePageCount": 2828,
   "counts": {
     "access-restricted": 4,
-    "available": 1026,
+    "available": 1027,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "crystal-caverns-megaways-pragmatic-play",
+      "name": "Crystal Caverns Megaways",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayscryscav&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Crystal Caverns Megaways; Official page confirms Gold Wilds on reels two through six, expanding Wilds outside the top row, Tumbles with increasing total-win multiplier, Scatter awards up to twenty Free Spins, and RTP 96.46%. Codex in-app browser opened exact official game page and direct Demo; the first page navigation call timed out, but its created in-app tab loaded the exact page and was read successfully. Official HTML confirms gameSymbol and page og:image; image bytes visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vswayscryscav. Codex in-app browser directly opened matching official Crystal Caverns Megaways Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 E305EFFF0FAF703F316698C4240AB40206121ADC992944B7F7A26E48AEA05F69, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/crystal-caverns-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 474"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/12/Crystal-Cavern-Megaways_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 E305EFFF0FAF703F316698C4240AB40206121ADC992944B7F7A26E48AEA05F69"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayscryscav&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened matching official Crystal Caverns Megaways Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "magicians-secrets-pragmatic-play",
       "name": "Magician's Secrets",

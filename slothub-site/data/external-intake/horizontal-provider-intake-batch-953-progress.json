@@ -1,0 +1,38 @@
+{
+  "batch": 953,
+  "recordedAt": "2026-11-09T03:14:13.976Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+  "dedupScope": "All 1477 published Game Markdown records and same-provider exact official path/name/gameSymbol; Crystal Caverns Megaways /vswayscryscav absent.",
+  "records": [
+    {
+      "index": 474,
+      "name": "Crystal Caverns Megaways",
+      "slug": "crystal-caverns-megaways-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/crystal-caverns-megaways/",
+      "officialFacts": "Official page confirms Gold Wilds on reels two through six, expanding Wilds outside the top row, Tumbles with increasing total-win multiplier, Scatter awards up to twenty Free Spins, and RTP 96.46%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/12/Crystal-Cavern-Megaways_339x180-1.png",
+        "localPath": "public/assets/games/crystal-caverns-megaways-pragmatic-play.png",
+        "sha256": "E305EFFF0FAF703F316698C4240AB40206121ADC992944B7F7A26E48AEA05F69",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser directly opened matching official Crystal Caverns Megaways Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 475 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/verify-batch953.log exit 0; preview isolation and source checks PASS"
+  }
+}
