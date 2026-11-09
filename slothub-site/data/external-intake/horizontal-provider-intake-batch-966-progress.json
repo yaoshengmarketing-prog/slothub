@@ -1,0 +1,38 @@
+{
+  "batch": 966,
+  "recordedAt": "2026-11-09T05:12:25.858Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+  "dedupScope": "All 1490 published Game Markdown records and same-provider exact official path/name/gameSymbol; Chilli Heat Megaways /vswayschilheat absent.",
+  "records": [
+    {
+      "index": 493,
+      "name": "Chilli Heat Megaways",
+      "slug": "chilli-heat-megaways-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/chilli-heat-megaways/",
+      "officialFacts": "Official page confirms 200,704 ways, 5,000x maximum, six Money symbols trigger three respins with top-row modifiers, and RTP 96.50%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/08/Chilli_Heat_Megaways_339x180.png",
+        "localPath": "public/assets/games/chilli-heat-megaways-pragmatic-play.png",
+        "sha256": "AF02EFFD9E9A4E7A0A7478D6FE60B27A96B90CD239CCD7C594FC91378A3F9F80",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser directly opened official Chilli Heat Megaways Demo, visibly showing title, reels, spin control, Pragmatic Play splash and Big Time Gaming license notice; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 494 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Full preview verify exit 0 after feature tag correction, tmp/verify-batch966.log, 1896 pages, internal links and outbound nofollow PASS."
+  }
+}

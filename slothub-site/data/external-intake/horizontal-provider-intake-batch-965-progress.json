@@ -1,10 +1,10 @@
 {
   "batch": 965,
   "recordedAt": "2026-11-09T05:06:22.821Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Yum Yum PowerWays",
       "slug": "yum-yum-powerways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/yum-yum-powerways/",
       "officialFacts": "Official page confirms 16,384 ways, edge symbol replacement and a 3x starting Free Spins win multiplier, and RTP 96.43%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser directly opened official Yum Yum PowerWays Demo, visibly showing exact title, food-truck reels, spin control and Pragmatic Play branding; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 493 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 493 Chilli Heat Megaways after item 492 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exit 0, tmp/verify-batch965.log, 1895 pages, internal links and outbound nofollow PASS."
+  },
+  "publication": {
+    "commit": "2f15d3ee70309d9ac2eedf0ead9c65f348e75f6b",
+    "githubActionsRun": 42565654077,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "c5fdea67-5fea-441a-b137-34a68a392337",
+    "cloudflareUrl": "https://c5fdea67.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
