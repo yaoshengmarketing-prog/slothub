@@ -1,10 +1,10 @@
 {
   "batch": 978,
   "recordedAt": "2026-11-09T07:25:20.269Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "The Amazing Money Machine",
       "slug": "the-amazing-money-machine-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/the-amazing-money-machine/",
       "officialFacts": "Official page confirms dynamic reels, up to 60 paylines, Money Machine Wild and Mystery symbols, Money symbol Respins, four Jackpot tiers, and RTP 96.42%.",
       "image": {
@@ -29,9 +29,18 @@
       "demo": "Codex in-app browser directly opened exact official Demo and visibly showed The Amazing Money Machine title, reels and spin control; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 509 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 509 Buffalo King Megaways after item 508 full publication closure.",
   "validation": {
     "result": "pending",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  },
+  "publication": {
+    "commit": "bd039395f49453e707568a6e112b9040883d2263",
+    "githubActionsRun": 42579537264,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "be7583b3-b91f-47fd-81fc-81d9e6d53a37",
+    "cloudflareUrl": "https://be7583b3.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

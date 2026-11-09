@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1503,
+  "gameCount": 1504,
   "providerCount": 372,
-  "sourcePageCount": 2903,
+  "sourcePageCount": 2906,
   "counts": {
     "access-restricted": 4,
-    "available": 1052,
+    "available": 1053,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "buffalo-king-megaways-pragmatic-play",
+      "name": "Buffalo King Megaways",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysbufking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Buffalo King Megaways; Official page confirms six cascading reels, over 200000 ways, 12 to 22 Free Spins from 4 to 6 Bonus symbols, 2x/3x/5x Wild multipliers, and RTP 96.52%. Codex in-app browser opened exact official page and Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vswaysbufking. Codex in-app browser directly opened exact official Demo and visibly showed Buffalo King Megaways title, reels and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 8D12B20FC8AF1AEFC702CC8951AD038BBBCA714FF4653C12156C57A1F9460AD6, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/buffalo-king-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 509"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/04/Buffalo-King-Megaways_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 8D12B20FC8AF1AEFC702CC8951AD038BBBCA714FF4653C12156C57A1F9460AD6"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysbufking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened exact official Demo and visibly showed Buffalo King Megaways title, reels and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "the-amazing-money-machine-pragmatic-play",
       "name": "The Amazing Money Machine",
