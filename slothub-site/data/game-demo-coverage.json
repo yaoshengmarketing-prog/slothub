@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1474,
+  "gameCount": 1481,
   "providerCount": 372,
-  "sourcePageCount": 2816,
+  "sourcePageCount": 2837,
   "counts": {
     "access-restricted": 4,
-    "available": 1024,
-    "not-verified": 446
+    "available": 1030,
+    "not-verified": 447
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,241 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "book-of-the-fallen-pragmatic-play",
+      "name": "Book of the Fallen",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bookfallen&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Book of the Fallen; Official page confirms 3x5 tomb theme, Eye of Anubis Book as Wild and Scatter, three Books triggering ten Free Spins, optional Super Spins Ante Bet, and RTP 96.50%. Codex in-app browser opened exact official page and direct Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs10bookfallen. Codex in-app browser directly opened exact official Demo; redirected page title abbreviated Book of Fallen, but visible title read Book of the Fallen over matching reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 CFC5730014081E0543B355C8EEF163AA9F2408E2B2282AEC0F2F80C83298AB70, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/book-of-the-fallen/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 478"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/11/Book-of-Fallen_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 CFC5730014081E0543B355C8EEF163AA9F2408E2B2282AEC0F2F80C83298AB70"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bookfallen&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened exact official Demo; redirected page title abbreviated Book of Fallen, but visible title read Book of the Fallen over matching reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "santas-wonderland-pragmatic-play",
+      "name": "Santa's Wonderland",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20santawonder&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Santa's Wonderland; Official page confirms 8x8 screen, five horizontally or vertically connected symbols paying, Wilds, Tumbles replacing winning symbols, colored marking Spin Features, and RTP 96.23%. Codex in-app browser opened exact official game page and direct Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs20santawonder. Codex in-app browser directly opened matching official Santa's Wonderland Demo and visibly showed titled grid and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 490C37314FDA4BD9CFE8A3C46193E57A74648371495C460A5C52CC31AB1C8ABC, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/santas-wonderland/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 477"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/11/Santass-Wonderland_339x180-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 490C37314FDA4BD9CFE8A3C46193E57A74648371495C460A5C52CC31AB1C8ABC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20santawonder&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened matching official Santa's Wonderland Demo and visibly showed titled grid and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "smugglers-cove-pragmatic-play",
+      "name": "Smugglers Cove",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20smugcove&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Smugglers Cove; Official page confirms 3x5 reels, substituting Wilds, three skull bonus symbols triggering Free Spins, five or more coins triggering Treasure Bonus, fifteen coins paying 1000x total bet, special coins with random multipliers up to 10x, and RTP 96.50%. Codex in-app browser opened exact official page and direct Demo; initial page navigation call timed out, but the created in-app tab loaded and was read successfully. Official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs20smugcove. Codex in-app browser directly opened matching official Smugglers Cove Demo and visibly showed titled intro reels and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 F955EDF86FAB296095C8D8335F9A5FB6F700B8E83E23D838A2CC327FC7AFB06E, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/smugglers-cove/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 475"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/11/SMUGGLERS-COVE_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 F955EDF86FAB296095C8D8335F9A5FB6F700B8E83E23D838A2CC327FC7AFB06E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20smugcove&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened matching official Smugglers Cove Demo and visibly showed titled intro reels and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "crystal-caverns-megaways-pragmatic-play",
+      "name": "Crystal Caverns Megaways",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayscryscav&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Crystal Caverns Megaways; Official page confirms Gold Wilds on reels two through six, expanding Wilds outside the top row, Tumbles with increasing total-win multiplier, Scatter awards up to twenty Free Spins, and RTP 96.46%. Codex in-app browser opened exact official game page and direct Demo; the first page navigation call timed out, but its created in-app tab loaded the exact page and was read successfully. Official HTML confirms gameSymbol and page og:image; image bytes visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vswayscryscav. Codex in-app browser directly opened matching official Crystal Caverns Megaways Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 E305EFFF0FAF703F316698C4240AB40206121ADC992944B7F7A26E48AEA05F69, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/crystal-caverns-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 474"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/12/Crystal-Cavern-Megaways_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 E305EFFF0FAF703F316698C4240AB40206121ADC992944B7F7A26E48AEA05F69"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayscryscav&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened matching official Crystal Caverns Megaways Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "magicians-secrets-pragmatic-play",
+      "name": "Magician's Secrets",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Magician's Secrets; Official page confirms Wilds, three Scatters triggering Free Spins, and Expanding or Sticky Wilds in the Free Spins round. Its RTP field has no numeric value. Codex in-app browser opened exact official game page and direct Demo; official HTML confirms gameSymbol and page og:image; image bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs4096magician. Codex in-app browser opened the exact official Demo and reached title Magician's Secrets, but the viewport stayed on the Pragmatic Play loading logo; playable reels and spin control were not observed. Demo marked not-verified. No HTTP 403 observed. Exact official image URL maps through page og:image; image/png SHA256 5C37837F7B4C2030D4125FE477B581E046590DCDE47986330E6011AA7ECB3830, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/magicians-secrets/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 473"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/12/MASE_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 5C37837F7B4C2030D4125FE477B581E046590DCDE47986330E6011AA7ECB3830"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs4096magician&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the exact official Demo and reached title Magician's Secrets, but the viewport stayed on the Pragmatic Play loading logo; playable reels and spin control were not observed. Demo marked not-verified. No HTTP 403 observed."
+        }
+      ]
+    },
+    {
+      "slug": "wild-depths-pragmatic-play",
+      "name": "Wild Depths",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40wanderw&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wild Depths; Official page confirms Wild symbols, three Scatters triggering 6, 9 or 12 Free Spins, retrigger with three or more Scatters adding five spins without limit, and RTP 96.48%. Codex in-app browser opened exact official game page and direct Demo; official HTML confirms gameSymbol and page og:image; image bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs40wanderw. Codex in-app browser directly opened matching official Wild Depths Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 C7C9F29B5F4A9C3556EEA28237BB88CE2EA99BAFE0B2B8EDE59D457BF0295DCA, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-depths/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 472"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/12/Wild-Depth_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 C7C9F29B5F4A9C3556EEA28237BB88CE2EA99BAFE0B2B8EDE59D457BF0295DCA"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40wanderw&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened matching official Wild Depths Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "gates-of-valhalla-pragmatic-play",
+      "name": "Gates of Valhalla",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10runes&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Gates of Valhalla; Official page confirms Roaming Wilds that move after each tumble, Wild multipliers up to 5x, three Free Spins symbols triggering up to ten Free Spins with an increasing multiplier, and RTP 96.46%. Codex in-app browser opened exact official game page and direct Demo; official HTML confirms gameSymbol and page og:image; image bytes visually inspected locally. No paid browser used. Official HTML includes gameSymbol vs10runes. Codex in-app browser directly opened matching official Gates of Valhalla Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 DE23DA4589B7B8BBC5F5B09B9DFE879F91D9AC21C92A307267318DF17A5CA68A, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gates-of-valhalla/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 469"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2022/01/Gate_Of_Valhalla_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 DE23DA4589B7B8BBC5F5B09B9DFE879F91D9AC21C92A307267318DF17A5CA68A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10runes&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened matching official Gates of Valhalla Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "colossal-cash-zone-pragmatic-play",
       "name": "Colossal Cash Zone",

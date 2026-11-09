@@ -1,0 +1,47 @@
+{
+  "batch": 951,
+  "recordedAt": "2026-11-09T02:54:29.87Z",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+  "dedupScope": "All 1475 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild Depths /vs40wanderw absent.",
+  "records": [
+    {
+      "index": 472,
+      "name": "Wild Depths",
+      "slug": "wild-depths-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pragmaticplay.com/en/games/wild-depths/",
+      "officialFacts": "Official page confirms Wild symbols, three Scatters triggering 6, 9 or 12 Free Spins, retrigger with three or more Scatters adding five spins without limit, and RTP 96.48%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/12/Wild-Depth_339x180-1.png",
+        "localPath": "public/assets/games/wild-depths-pragmatic-play.png",
+        "sha256": "C7C9F29B5F4A9C3556EEA28237BB88CE2EA99BAFE0B2B8EDE59D457BF0295DCA",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser directly opened matching official Wild Depths Demo and visibly showed titled reels and spin control; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 473 Magician's Secrets after item 472 full publication closure.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/verify-batch951.log exit 0; preview isolation and source checks PASS"
+  },
+  "publication": {
+    "commit": "ea09f379025a019672f2d7b52effa935a6159ec3",
+    "githubActionsRun": 42553790792,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "1516aa9f-ff68-4d31-bd47-0a5606d1527d",
+    "cloudflareUrl": "https://1516aa9f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
+  }
+}
