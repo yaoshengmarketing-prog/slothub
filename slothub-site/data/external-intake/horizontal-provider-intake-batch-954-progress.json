@@ -1,10 +1,10 @@
 {
   "batch": 954,
   "recordedAt": "2026-11-09T03:22:53.301Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Smugglers Cove",
       "slug": "smugglers-cove-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/smugglers-cove/",
       "officialFacts": "Official page confirms 3x5 reels, substituting Wilds, three skull bonus symbols triggering Free Spins, five or more coins triggering Treasure Bonus, fifteen coins paying 1000x total bet, special coins with random multipliers up to 10x, and RTP 96.50%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser directly opened matching official Smugglers Cove Demo and visibly showed titled intro reels and spin control; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 476 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 477 Santa's Wonderland after item 475 full publication closure; skipped documented item(s) 476:excluded-source-conflict.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/verify-batch954.log exit 0; preview isolation and source checks PASS"
+  },
+  "publication": {
+    "commit": "53cc9b774e45a2628fbf444e51c661afd36cfbd2",
+    "githubActionsRun": 42556440596,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "e776bb86-e91a-4957-b6b9-7e802b0b166f",
+    "cloudflareUrl": "https://e776bb86.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

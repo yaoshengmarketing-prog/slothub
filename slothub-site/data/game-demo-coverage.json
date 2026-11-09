@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1479,
+  "gameCount": 1480,
   "providerCount": 372,
-  "sourcePageCount": 2831,
+  "sourcePageCount": 2834,
   "counts": {
     "access-restricted": 4,
-    "available": 1028,
+    "available": 1029,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "santas-wonderland-pragmatic-play",
+      "name": "Santa's Wonderland",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20santawonder&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Santa's Wonderland; Official page confirms 8x8 screen, five horizontally or vertically connected symbols paying, Wilds, Tumbles replacing winning symbols, colored marking Spin Features, and RTP 96.23%. Codex in-app browser opened exact official game page and direct Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs20santawonder. Codex in-app browser directly opened matching official Santa's Wonderland Demo and visibly showed titled grid and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 490C37314FDA4BD9CFE8A3C46193E57A74648371495C460A5C52CC31AB1C8ABC, artwork title visually checked. Same-provider exact title, official path and symbol absent. Codex in-app browser only for exact page and Demo visual checks. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/santas-wonderland/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with official HTML and Codex in-app browser only for exact page and Demo visual checks. No paid browser used."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 477"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/11/Santass-Wonderland_339x180-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 490C37314FDA4BD9CFE8A3C46193E57A74648371495C460A5C52CC31AB1C8ABC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20santawonder&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened matching official Santa's Wonderland Demo and visibly showed titled grid and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "smugglers-cove-pragmatic-play",
       "name": "Smugglers Cove",

@@ -10,13 +10,13 @@
   "nextPageCards": 0,
   "totalCards": 665,
   "exactGameCards": 663,
-  "publishedExisting": 476,
-  "pendingIndividualCheck": 183,
+  "publishedExisting": 477,
+  "pendingIndividualCheck": 181,
   "comingSoon": 2,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 476 after item 475 Smugglers Cove individual publication closure.",
+  "nextCursor": "Catalog item 478 after item 477 Santa's Wonderland individual publication closure.",
   "pages": [
     {
       "page": 1,
@@ -5177,7 +5177,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/smugglers-cove/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/11/SMUGGLERS-COVE_339x180.png",
       "releaseLabel": null,
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "smugglers-cove-pragmatic-play"
     },
     {
@@ -5187,8 +5187,19 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/christmas-big-bass-bonanza/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/11/ChristmasBBB™_EN_339x180_04.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "checkedAt": "2026-11-09",
+        "browser": "Codex in-app browser only",
+        "officialPage": "https://www.pragmaticplay.com/en/games/christmas-big-bass-bonanza/",
+        "reason": "The exact Pragmatic Play listing and gameSymbol vs10bxmasbnza match Christmas Big Bass Bonanza, but its official Demo loading screen brands Reel Kingdom powered by Pragmatic Play. Catalog placement does not establish Pragmatic Play as the studio.",
+        "evidence": [
+          "Exact official page HTTP 200, title Christmas Big Bass Bonanza, RTP 96.71%, gameSymbol vs10bxmasbnza, and matching og:image HTTP 200, SHA256 3F43C8D89EE4384A78A0181B345980DBAC0C3A3225607547D63FEC10126EB4F1.",
+          "Codex in-app browser direct Demo for vs10bxmasbnza displayed Reel Kingdom / Powered by Pragmatic Play on loading screen; no HTTP 403 or IP restriction observed."
+        ],
+        "nextStep": "Keep out of Pragmatic Play Provider batch; verify exact Reel Kingdom official listing separately if needed. Continue catalog item477."
+      }
     },
     {
       "index": 477,
@@ -5197,8 +5208,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/santas-wonderland/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/11/Santass-Wonderland_339x180-2.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "santas-wonderland-pragmatic-play"
     },
     {
       "index": 478,
