@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1549,
+  "gameCount": 1550,
   "providerCount": 372,
-  "sourcePageCount": 3041,
+  "sourcePageCount": 3044,
   "counts": {
     "access-restricted": 4,
-    "available": 1098,
+    "available": 1099,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "greek-gods-pragmatic-play",
+      "name": "Greek Gods™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243fortseren&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Greek Gods™; Official page describes a 3x5 video slot with 243 ways to win, random reel awards when Zeus strikes Scatter lightning, a high-volatility Free Spins round, and RTP 96.50%. Exact official Demo showed Greek Gods title, Zeus, lightning symbols, five reels and three rows, WIN UP TO 1000X BET and low-volatility intro indicator. The conflicting volatility descriptions were not normalized into fixed game volatility. Codex in-app browser loaded exact official page with matching H1, gameplay text, RTP and iframe gameSymbol, and directly viewed matching Demo and official art. Fresh official HTML returned HTTP 200. Official page displayed an age confirmation overlay; no age submission was made. No 403, IP restriction or paid browser use. Exact same-provider name/path/symbol absent. Official page says high volatility for Free Spins while Demo intro labels low volatility; no fixed volatility inferred. Official HTML includes gameSymbol vs243fortseren. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Greek Gods title, matching Zeus and lightning artwork, five reels by three rows, startup spin control and WIN UP TO 1000X BET intro. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 3A61CC7C36AFC820C37CB2DCF4A9554578298A7DD534780BAC9687CBFE7678F0, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/greek-gods-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 570"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/11/Greek-Gods™_EN_339x180_02-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 3A61CC7C36AFC820C37CB2DCF4A9554578298A7DD534780BAC9687CBFE7678F0"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243fortseren&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Greek Gods title, matching Zeus and lightning artwork, five reels by three rows, startup spin control and WIN UP TO 1000X BET intro. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "buffalo-king-pragmatic-play",
       "name": "Buffalo King™",
