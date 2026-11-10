@@ -1,0 +1,38 @@
+{
+  "batch": 1063,
+  "recordedAt": "2026-11-10T20:09:30.797Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1587 published Game Markdown records and same-provider exact official path/name/gameSymbol; Great Rhino® /vs20rhino absent.",
+  "records": [
+    {
+      "index": 610,
+      "name": "Great Rhino®",
+      "slug": "great-rhino-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/great-rhino-slot/",
+      "officialFacts": "Official page confirms three Bonus symbols on reels 2, 3 and 4 trigger ten Free Spins, with all Rhino symbols Wild. Two or more Rhino stacks trigger three Super Respins with sticky Rhinos; new Rhinos retrigger. Fourteen Rhinos award 375x Major jackpot, fifteen award 500x Grand jackpot. RTP 96.53%. Base grid and paylines not stated, left blank. Distinct from Great Rhino Deluxe vs20rhinoluxe and Great Rhino Megaways vswaysrhino.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/04/new-thumbs-1.png",
+        "localPath": "public/assets/games/great-rhino-pragmatic-play.png",
+        "sha256": "F14972D917BA714E190BC6CD56C9ED649349B93DA5ED21E6FBD22F542E5F4A79",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; title Great Rhino and gameSymbol vs20rhino matched official page. Loading image observed; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 611 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1063-verify.log; preview built isolation across 1993 HTML pages, storyboard, Densho and RTP checks passed"
+  }
+}
