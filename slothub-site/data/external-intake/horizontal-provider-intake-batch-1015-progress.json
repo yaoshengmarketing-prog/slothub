@@ -1,10 +1,10 @@
 {
   "batch": 1015,
   "recordedAt": "2026-11-10T11:06:43.573Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Dance Party™",
       "slug": "dance-party-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/dance-party-slot/",
       "officialFacts": "Official page confirms 3x5 presentation, 243 ways to win, Progressive Multiplier Free Spins with multiplier increasing up to 30x and RTP 96.50%. Exact official Demo intro separately shows medium volatility and overall win up to 36450x bet; 30x feature multiplier and 36450x total maximum have different scopes.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup mark, Dance Party title, reels, spin control, medium volatility and win up to 36450x bet. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 561 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 561 The Wild Machine™ after item 560 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exited 0 on 2026-11-10; 1945 HTML pages, internal links and preview isolation passed. 30x feature multiplier and official Demo 36450x total maximum attributed separately."
+  },
+  "publication": {
+    "commit": "69f6090e4c682e9823fecbcdb57e00f21b6ef386",
+    "githubActionsRun": 42805349918,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "ba10d016-209b-4213-a5b2-45d107f81ada",
+    "cloudflareUrl": "https://ba10d016.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
