@@ -1,10 +1,10 @@
 {
   "batch": 1013,
   "recordedAt": "2026-11-10T10:33:14.818Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Fruit Rainbow™",
       "slug": "fruit-rainbow-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/fruit-rainbow-slot/",
       "officialFacts": "Official page confirms 5x4, 40 paylines, stacked symbols and RTP 96.53%. Exact official Demo visibly shows low volatility and win up to 2000x bet; the maximum is attributed to Demo rather than single-game page. Distinct from Rainbow Gold vs20rainbowg and Rainbow Reels vs40rainbowr.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup mark, Fruit Rainbow title, reels, spin control, low volatility and win up to 2000x bet. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 559 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 559 Wild West Gold® after item 558 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exited 0 on 2026-11-10; 1943 HTML pages, internal links and preview isolation passed. 2000x attributed to official Demo; page confirms 5x4 and 40 lines."
+  },
+  "publication": {
+    "commit": "1ca01fb013cde6b82d269d3f69f984c14543271f",
+    "githubActionsRun": 42800714287,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "d90b875f-91ac-4f4c-9b27-aa1f75c4e0e9",
+    "cloudflareUrl": "https://d90b875f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
