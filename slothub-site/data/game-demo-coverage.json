@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1529,
+  "gameCount": 1530,
   "providerCount": 372,
-  "sourcePageCount": 2981,
+  "sourcePageCount": 2984,
   "counts": {
     "access-restricted": 4,
-    "available": 1078,
+    "available": 1079,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "great-rhino-deluxe-pragmatic-play",
+      "name": "Great Rhino® Deluxe",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20rhinoluxe&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Great Rhino® Deluxe; Official page confirms three Bonus symbols trigger ten free spins, two or more Rhino stacks trigger Super Respin, 14 or 15 Rhinos can award Major or Grand jackpot, and RTP 96.54%. Exact max-win conflict preserved: official page says 6,242x while official Demo screen says 6,000x; max-win field intentionally omitted. Codex in-app browser loaded exact official page with matching H1, RTP, iframe gameSymbol and official art; direct official Demo and image visually matched. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Exact same-provider name, path and symbol absent. Official HTML includes gameSymbol vs20rhinoluxe. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Great Rhino Deluxe title, reels and bonus introduction screen. Demo screen says Win up to 6,000x bet, while official game page says 6,242x; public max-win field omitted. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 896E4C795D5730DC9B323C7C86D7D805BBCC2583148982A3E1F7FAB3FEA5B966, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/great-rhino-deluxe-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 547"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/07/GR_Deluxe™_EN_339x180_03.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 896E4C795D5730DC9B323C7C86D7D805BBCC2583148982A3E1F7FAB3FEA5B966"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20rhinoluxe&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Great Rhino Deluxe title, reels and bonus introduction screen. Demo screen says Win up to 6,000x bet, while official game page says 6,242x; public max-win field omitted. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "aztec-gems-deluxe-pragmatic-play",
       "name": "Aztec Gems Deluxe™",

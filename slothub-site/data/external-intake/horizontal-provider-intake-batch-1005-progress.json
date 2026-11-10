@@ -1,0 +1,38 @@
+{
+  "batch": 1005,
+  "recordedAt": "2026-11-10T09:08:54.070Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1529 published Game Markdown records and same-provider exact official path/name/gameSymbol; Great Rhino® Deluxe /vs20rhinoluxe absent.",
+  "records": [
+    {
+      "index": 547,
+      "name": "Great Rhino® Deluxe",
+      "slug": "great-rhino-deluxe-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/great-rhino-deluxe-slot/",
+      "officialFacts": "Official page confirms three Bonus symbols trigger ten free spins, two or more Rhino stacks trigger Super Respin, 14 or 15 Rhinos can award Major or Grand jackpot, and RTP 96.54%. Exact max-win conflict preserved: official page says 6,242x while official Demo screen says 6,000x; max-win field intentionally omitted.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/07/GR_Deluxe™_EN_339x180_03.png",
+        "localPath": "public/assets/games/great-rhino-deluxe-pragmatic-play.png",
+        "sha256": "896E4C795D5730DC9B323C7C86D7D805BBCC2583148982A3E1F7FAB3FEA5B966",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Great Rhino Deluxe title, reels and bonus introduction screen. Demo screen says Win up to 6,000x bet, while official game page says 6,242x; public max-win field omitted. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 548 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Full preview verify exited 0 twice on 2026-11-10, including after safe fast-forward of unrelated Storm of Seth commit ba84cbeb; 1935 HTML pages, internal links and preview isolation passed. Public max-win omitted because official page and Demo conflict."
+  }
+}
