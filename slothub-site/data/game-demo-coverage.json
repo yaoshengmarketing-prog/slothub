@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1523,
+  "gameCount": 1524,
   "providerCount": 372,
-  "sourcePageCount": 2963,
+  "sourcePageCount": 2966,
   "counts": {
     "access-restricted": 4,
-    "available": 1072,
+    "available": 1073,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wild-wild-riches-pragmatic-play",
+      "name": "Wild Wild Riches™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs576treasures&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wild Wild Riches™; Official page confirms Wilds on reels 1 and 2, Money symbols on reels 3 to 5 with 1x to 25x bet values, Jackpot values on reel 5, 2x 3x or 5x random multipliers, ten retriggerable Free Spins and RTP 96.77%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. Official page displayed an age gate; it was not submitted. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs576treasures. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Wild Wild Riches title, reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 6024A6A92B6AC177497592F4D28E4E23E8189E1E0BCF95CE53FFBE0F0AE31B82, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-wild-riches-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 540"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/Wild_Wild_Riches™_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 6024A6A92B6AC177497592F4D28E4E23E8189E1E0BCF95CE53FFBE0F0AE31B82"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs576treasures&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Wild Wild Riches title, reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "wild-walker-pragmatic-play",
       "name": "Wild Walker™",

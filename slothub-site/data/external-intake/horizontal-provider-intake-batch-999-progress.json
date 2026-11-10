@@ -1,0 +1,38 @@
+{
+  "batch": 999,
+  "recordedAt": "2026-11-10T06:52:36.502Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1523 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild Wild Riches™ /vs576treasures absent.",
+  "records": [
+    {
+      "index": 540,
+      "name": "Wild Wild Riches™",
+      "slug": "wild-wild-riches-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/wild-wild-riches-slot/",
+      "officialFacts": "Official page confirms Wilds on reels 1 and 2, Money symbols on reels 3 to 5 with 1x to 25x bet values, Jackpot values on reel 5, 2x 3x or 5x random multipliers, ten retriggerable Free Spins and RTP 96.77%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/Wild_Wild_Riches™_EN_339x180.png",
+        "localPath": "public/assets/games/wild-wild-riches-pragmatic-play.png",
+        "sha256": "6024A6A92B6AC177497592F4D28E4E23E8189E1E0BCF95CE53FFBE0F0AE31B82",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Wild Wild Riches title, reels and spin control. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 541 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Full preview verify exited 0 on 2026-11-10; 1929 HTML pages, internal links, outbound nofollow and preview isolation passed."
+  }
+}
