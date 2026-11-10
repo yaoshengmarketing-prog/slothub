@@ -1,10 +1,10 @@
 {
   "batch": 1012,
   "recordedAt": "2026-11-10T10:24:50.853Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Great Rhino® Megaways",
       "slug": "great-rhino-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/great-rhino-megaways-slot/",
       "officialFacts": "Official page confirms tumbling Megaways with over 200000 ways, 4-6 Scatters offering 15-23 Free Spins and starting 1x/5x/10x multipliers, +1x multiplier per tumble win and unlimited five-spin retriggers, RTP 96.50% and maximum 20000x bet. Official Demo intro separately shows win up to 20000x. Distinct from Great Rhino Deluxe symbol vs20rhinoluxe and separate official URL.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup mark, Great Rhino Megaways title, reels, spin control and win up to 20000x bet. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 558 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 558 Fruit Rainbow™ after item 557 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exited 0 on 2026-11-10; 1942 HTML pages, internal links and preview isolation passed. Great Rhino Megaways vswaysrhino distinct from Great Rhino Deluxe vs20rhinoluxe."
+  },
+  "publication": {
+    "commit": "673d9b4552fc9dadafc34999953067397c81f493",
+    "githubActionsRun": 42799444707,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "0a733c7e-bb54-400f-8f12-fe6c0b3d5e43",
+    "cloudflareUrl": "https://0a733c7e.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
