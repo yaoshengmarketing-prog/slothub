@@ -1,10 +1,10 @@
 {
   "batch": 1008,
   "recordedAt": "2026-11-10T09:42:45.300Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Pyramid King™",
       "slug": "pyramid-king-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/pyramid-king-slot/",
       "officialFacts": "Official page confirms 5x3 and 25 lines, Money-symbol Respin Round with jackpot prizes up to 1000x bet, Free Spins with random special expanding symbols, and RTP 96.50%. Demo intro separately advertises overall 2,500x; jackpot and total maximum have different scopes. No overall max-win field was inferred from page's jackpot figure.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Pyramid King title, reels, spin control and intro values. Demo displays overall win up to 2,500x bet, distinct from official page's up to 1,000x jackpot component. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 551 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 551 Three Star Fortune™ after item 550 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exited 0 on 2026-11-10; 1938 HTML pages, internal links and preview isolation passed. Jackpot 1000x and Demo total 2500x scoped separately; public total max-win left unverified."
+  },
+  "publication": {
+    "commit": "231fa3974d397a808b9ec760dda3973f483d13b8",
+    "githubActionsRun": 42793612060,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "c01d6f05-6703-42bc-aec9-308ba27b474b",
+    "cloudflareUrl": "https://c01d6f05.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

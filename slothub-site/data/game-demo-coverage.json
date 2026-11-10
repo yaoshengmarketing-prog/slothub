@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1533,
+  "gameCount": 1534,
   "providerCount": 372,
-  "sourcePageCount": 2993,
+  "sourcePageCount": 2996,
   "counts": {
     "access-restricted": 4,
-    "available": 1082,
+    "available": 1083,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "three-star-fortune-pragmatic-play",
+      "name": "Three Star Fortune™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10threestar&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Three Star Fortune™; Official page confirms 5x3, selected paylines paying left-to-right and right-to-left, expanding Wilds on reels 2-4 with repeatable free respins, RTP 96.27%, and a 500x maximum win. Official Demo intro separately confirms win up to 500x bet; no line count was inferred. Codex in-app browser loaded exact official page with matching H1, RTP, iframe gameSymbol and official art; direct official Demo and image visually matched. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Exact same-provider name, path and symbol absent. Official HTML includes gameSymbol vs10threestar. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Three Star Fortune title, reels, spin control and win up to 500x bet. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 BB954BAECCE86D71FF1A6AC8AD05077AB7CB2FBD432499AE6F3BD5B62FA64D97, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/three-star-fortune-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 551"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/06/Three-Star-Fortune_EN-_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 BB954BAECCE86D71FF1A6AC8AD05077AB7CB2FBD432499AE6F3BD5B62FA64D97"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10threestar&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Three Star Fortune title, reels, spin control and win up to 500x bet. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "pyramid-king-pragmatic-play",
       "name": "Pyramid King™",
