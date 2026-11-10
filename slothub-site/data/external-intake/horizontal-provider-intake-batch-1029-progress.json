@@ -1,0 +1,38 @@
+{
+  "batch": 1029,
+  "recordedAt": "2026-11-10T13:26:20.335Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1553 published Game Markdown records and same-provider exact official path/name/gameSymbol; Honey Honey Honey™ /vs20honey absent.",
+  "records": [
+    {
+      "index": 574,
+      "name": "Honey Honey Honey™",
+      "slug": "honey-honey-honey-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/honey-honey-honey-slot/",
+      "officialFacts": "Official page describes a 3x5, 20-line bee-themed video slot where choosing a bee triggers random wins with special features, Free Spins offer sticky or colossal symbols, and RTP 96.50%. Exact official Demo visibly showed Honey Honey Honey title, matching bees, five reels by three rows, spin control and WIN UP TO 800X intro. No fixed volatility inferred from Demo indicator.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/09/Honey-Honey-Honey™_339x180-1.png",
+        "localPath": "public/assets/games/honey-honey-honey-pragmatic-play.png",
+        "sha256": "87A073BC7737B5E64F92D988DCA06753516B4550BFF3D888A990D5D73BD8B1AC",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Honey Honey Honey title, matching bees, five reels by three rows, startup spin control and WIN UP TO 800X intro. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 575 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Exit 0; preview built isolation across 1959 HTML pages; content and Astro diagnostics, internal links, outbound nofollow, source, schema and route checks passed."
+  }
+}

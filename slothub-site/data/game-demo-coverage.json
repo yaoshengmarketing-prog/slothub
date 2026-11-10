@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1553,
+  "gameCount": 1554,
   "providerCount": 372,
-  "sourcePageCount": 3053,
+  "sourcePageCount": 3056,
   "counts": {
     "access-restricted": 4,
-    "available": 1102,
+    "available": 1103,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "honey-honey-honey-pragmatic-play",
+      "name": "Honey Honey Honey™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20honey&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Honey Honey Honey™; Official page describes a 3x5, 20-line bee-themed video slot where choosing a bee triggers random wins with special features, Free Spins offer sticky or colossal symbols, and RTP 96.50%. Exact official Demo visibly showed Honey Honey Honey title, matching bees, five reels by three rows, spin control and WIN UP TO 800X intro. No fixed volatility inferred from Demo indicator. Codex in-app browser loaded exact official page with matching H1, gameplay text, RTP and iframe gameSymbol, and directly viewed matching Demo and official art. Fresh official HTML returned HTTP 200. Official page displayed an age confirmation overlay; no age submission was made. No 403, IP restriction or paid browser use. Exact same-provider name/path/symbol absent. Official HTML includes gameSymbol vs20honey. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Honey Honey Honey title, matching bees, five reels by three rows, startup spin control and WIN UP TO 800X intro. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 87A073BC7737B5E64F92D988DCA06753516B4550BFF3D888A990D5D73BD8B1AC, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/honey-honey-honey-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 574"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/09/Honey-Honey-Honey™_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 87A073BC7737B5E64F92D988DCA06753516B4550BFF3D888A990D5D73BD8B1AC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20honey&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Honey Honey Honey title, matching bees, five reels by three rows, startup spin control and WIN UP TO 800X intro. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "aladdin-and-the-sorcerer-pragmatic-play",
       "name": "Aladdin and the Sorcerer™",
