@@ -1,0 +1,38 @@
+{
+  "batch": 1055,
+  "recordedAt": "2026-11-10T18:46:57.121Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1579 published Game Markdown records and same-provider exact official path/name/gameSymbol; John Hunter and the secrets of Da Vinci’s Treasure /vs25davinci absent.",
+  "records": [
+    {
+      "index": 602,
+      "name": "John Hunter and the secrets of Da Vinci’s Treasure",
+      "slug": "john-hunter-da-vincis-treasure-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/da-vincis-treasure-slot/",
+      "officialFacts": "Official H1 is John Hunter and the secrets of Da Vinci’s Treasure; page describes a 3x5 25-line video slot, clues that award instant wins, and free-spin multiplier increasing by 1x per free spin up to 60x. RTP 96.53%. The same official page maps artwork and gameSymbol vs25davinci to short Demo title Da Vinci's Treasure, so this is one game identity; 100x quest prize is not recorded as full-game max win.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/08/thumb_DaVincis-Treasure_339x180_ver2.png",
+        "localPath": "public/assets/games/john-hunter-da-vincis-treasure-pragmatic-play.png",
+        "sha256": "B084C2FCEDB353EC72D63F70DD8964EDC83FA020C093D306DABFD4A20CA00602",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened the official page's exact Demo on 2026-11-11; title Da Vinci's Treasure and gameSymbol vs25davinci matched the official page iframe and artwork short title. Loading screen observed; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 603 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1055-verify.log; preview built isolation across 1985 HTML pages, storyboard, Densho and RTP checks passed"
+  }
+}
