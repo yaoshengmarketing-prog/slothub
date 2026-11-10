@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1580,
+  "gameCount": 1581,
   "providerCount": 372,
-  "sourcePageCount": 3134,
+  "sourcePageCount": 3137,
   "counts": {
     "access-restricted": 4,
-    "available": 1129,
+    "available": 1130,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "leprechaun-song-pragmatic-play",
+      "name": "Leprechaun Song™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-11",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20leprechaun&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Leprechaun Song™; Official page describes a 3x5 20-line video slot with random treasures including raining wilds, pick a prize, and giant symbols. Bonus game awards one random feature, including free spins. RTP 96.46%. Official Demo short title The Leprechaun Song and symbol vs20leprechaun match. Distinct from Leprechaun Carol's official path and symbol vs20leprexmas. Codex in-app browser checked official H1, gameplay, RTP, iframe symbol via read-only DOM, direct Demo and art. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Same-provider exact title/path/symbol absent; Leprechaun Carol has distinct symbol vs20leprexmas. Official HTML includes gameSymbol vs20leprechaun. Codex in-app browser opened the exact official Demo on 2026-11-11; title The Leprechaun Song and gameSymbol vs20leprechaun matched the official page. Loading screen observed; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 673A28C7BF4E2286F8569411B01ED8FA9F68DC0EAF39246AF35AFD7C1F39B1B9, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/leprechaun-song-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 603"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/08/thumb_Leprechaun_Song_339X180-1-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 673A28C7BF4E2286F8569411B01ED8FA9F68DC0EAF39246AF35AFD7C1F39B1B9"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20leprechaun&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the exact official Demo on 2026-11-11; title The Leprechaun Song and gameSymbol vs20leprechaun matched the official page. Loading screen observed; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "john-hunter-da-vincis-treasure-pragmatic-play",
       "name": "John Hunter and the secrets of Da Vinci’s Treasure",
