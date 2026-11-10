@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1513,
+  "gameCount": 1514,
   "providerCount": 372,
-  "sourcePageCount": 2933,
+  "sourcePageCount": 2936,
   "counts": {
     "access-restricted": 4,
-    "available": 1062,
+    "available": 1063,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mysterious-egypt-pragmatic-play",
+      "name": "Mysterious Egypt™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10wildtut&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Mysterious Egypt™; Official page confirms a 5x3 video slot with 10 paylines and high volatility, randomly selected vertically expanding mystery symbol each spin, two expanding mystery symbols in Free Spins that can pay on non-adjacent positions, and RTP 96.50%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. Items 524 and 525 excluded because Demo shows third-party providers. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs10wildtut. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Mysterious Egypt title, 5x3 reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 D741A1FFD407413A06F70CBCCD6B5DF68A87DAA820C9D31EFC0DAAE97E87D1DD, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/mysterious-egypt/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 526"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/12/Mysterious_Egypt_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 D741A1FFD407413A06F70CBCCD6B5DF68A87DAA820C9D31EFC0DAAE97E87D1DD"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10wildtut&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Mysterious Egypt title, 5x3 reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "madame-destiny-megaways-pragmatic-play",
       "name": "Madame Destiny Megaways™",

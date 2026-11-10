@@ -10,13 +10,13 @@
   "nextPageCards": 0,
   "totalCards": 665,
   "exactGameCards": 663,
-  "publishedExisting": 510,
-  "pendingIndividualCheck": 137,
+  "publishedExisting": 511,
+  "pendingIndividualCheck": 134,
   "comingSoon": 2,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 524 after item 523 Madame Destiny Megaways™ individual publication closure.",
+  "nextCursor": "Catalog item 527 after item 526 Mysterious Egypt™ individual publication closure.",
   "pages": [
     {
       "page": 1,
@@ -5794,7 +5794,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/madame-destiny-megaways/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/01/MDM_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "madame-destiny-megaways-pragmatic-play"
     },
     {
@@ -5804,8 +5804,20 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/congo-cash/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/01/Congo-Cash™_EN_339x180_01.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "checkedAt": "2026-11-10",
+        "browser": "Codex in-app browser only",
+        "officialPage": "https://www.pragmaticplay.com/en/games/congo-cash/",
+        "reason": "The exact official Demo for gameSymbol vs432congocash visibly opens with Wild Streak Gaming and Powered by Pragmatic Play. The next screen displays Congo Cash. This identifies a Wild Streak Gaming title distributed by Pragmatic Play, so do not count it as a Pragmatic Play original.",
+        "evidence": [
+          "Codex in-app browser opened exact Congo Cash official page on 2026-11-10; H1 and iframe identify gameSymbol vs432congocash.",
+          "The same in-app browser opened direct Demo for vs432congocash. Startup explicitly showed Wild Streak Gaming and Powered by Pragmatic Play; next screen displayed Congo Cash title and gorilla artwork.",
+          "Official page og:image maps to https://www.pragmaticplay.com/wp-content/uploads/2021/01/Congo-Cash™_EN_339x180_01.png. No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "nextStep": "Keep out of Pragmatic Play original-game intake. Continue catalog item 525 after item 523 Madame Destiny Megaways full publication closure."
+      }
     },
     {
       "index": 525,
@@ -5814,8 +5826,20 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/emerald-king-rainbow-road/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/01/EKRR_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "checkedAt": "2026-11-10",
+        "browser": "Codex in-app browser only",
+        "officialPage": "https://www.pragmaticplay.com/en/games/emerald-king-rainbow-road/",
+        "reason": "The exact official Demo for gameSymbol vs20ekingrr visibly opens with Reel Kingdom and Powered by Pragmatic Play. This identifies a Reel Kingdom title distributed by Pragmatic Play, so do not count it as a Pragmatic Play original.",
+        "evidence": [
+          "Codex in-app browser opened the exact Emerald King Rainbow Road official page on 2026-11-10; H1 and iframe identify gameSymbol vs20ekingrr.",
+          "The same in-app browser opened the direct Demo for vs20ekingrr. Startup explicitly showed Reel Kingdom and Powered by Pragmatic Play; the next screen displayed Emerald King Rainbow Road title.",
+          "Official page og:image maps to https://www.pragmaticplay.com/wp-content/uploads/2021/01/EKRR_EN_339x180.png. No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "nextStep": "Keep out of Pragmatic Play original-game intake. Continue catalog item 526 Mysterious Egypt after item 523 Madame Destiny Megaways full publication closure."
+      }
     },
     {
       "index": 526,
@@ -5824,8 +5848,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/mysterious-egypt/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/12/Mysterious_Egypt_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "mysterious-egypt-pragmatic-play"
     },
     {
       "index": 527,
