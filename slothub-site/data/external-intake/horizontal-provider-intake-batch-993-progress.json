@@ -1,10 +1,10 @@
 {
   "batch": 993,
   "recordedAt": "2026-11-10T05:54:39.444Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Christmas Carol Megaways™",
       "slug": "christmas-carol-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/christmas-carol-megaways/",
       "officialFacts": "Official page confirms 200704 ways to win, each tumble raises the Free Spins multiplier by 1x, up to 23 frozen Free Spins and 10x multiplier, Buy Feature, and RTP 96.50%.",
       "image": {
@@ -29,9 +29,18 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Christmas Carol Megaways title, Pragmatic Play startup logo, Big Time Gaming Megaways license, reels and spin control. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 532 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 532 Cowboys Gold™ after item 531 full publication closure.",
   "validation": {
     "result": "pending",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  },
+  "publication": {
+    "commit": "89633f3386930cacb23468cd6a188edd9ee710e4",
+    "githubActionsRun": 42765413419,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "fe871703-cf25-4f71-a326-b33f33c3a067",
+    "cloudflareUrl": "https://fe871703.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

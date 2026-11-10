@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1518,
+  "gameCount": 1519,
   "providerCount": 372,
-  "sourcePageCount": 2948,
+  "sourcePageCount": 2951,
   "counts": {
     "access-restricted": 4,
-    "available": 1067,
+    "available": 1068,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "cowboys-gold-pragmatic-play",
+      "name": "Cowboys Gold™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10cowgold&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Cowboys Gold™; Official page confirms 3x5 video slot with 10 paylines, Renegade Symbol collecting all money values, three Bonus Symbols triggering up to 25 Free Spins with up to 5x multiplier, and RTP 96.50%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. Actual artwork dimensions 339x169 despite URL suffix. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs10cowgold. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Cowboys Gold title, reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 50B54561870D198647539CA09F224545F72B713163A526888910BFDA1C0BA0D1, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/cowboys-gold/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 532"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/10/Cow-Boys-GoldOao_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 50B54561870D198647539CA09F224545F72B713163A526888910BFDA1C0BA0D1"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10cowgold&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Cowboys Gold title, reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "christmas-carol-megaways-pragmatic-play",
       "name": "Christmas Carol Megaways™",
