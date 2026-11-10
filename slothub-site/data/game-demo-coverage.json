@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1540,
+  "gameCount": 1541,
   "providerCount": 372,
-  "sourcePageCount": 3014,
+  "sourcePageCount": 3017,
   "counts": {
     "access-restricted": 4,
-    "available": 1089,
+    "available": 1090,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-wild-machine-pragmatic-play",
+      "name": "The Wild Machine™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40madwheel&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Wild Machine™; Official page confirms 5x5, 40 paylines, machine-created Wilds, wins with up to seven symbols, choice of Expanded Wilds or Sticky Wilds in Free Spins and RTP 96.52%. Exact official Demo intro shows win up to 7000x bet and a low volatility indicator; page explicitly says players can choose volatility in Free Spins, so no fixed volatility was inferred. Codex in-app browser loaded exact official page with matching H1, RTP, iframe gameSymbol and official art; direct official Demo and image visually matched. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Exact same-provider name/path/symbol absent. Official HTML includes gameSymbol vs40madwheel. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup mark, The Wild Machine title, reels, spin control, low-volatility intro state and win up to 7000x bet. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 B111228763802F4E8D1610D6D1B6C9BF2A8B4ADB9BC5646EBA9A72E7AB2C1B56, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-wild-machine-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 561"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/02/The-Wild-Machine™_EN_339x180_01-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 B111228763802F4E8D1610D6D1B6C9BF2A8B4ADB9BC5646EBA9A72E7AB2C1B56"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40madwheel&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup mark, The Wild Machine title, reels, spin control, low-volatility intro state and win up to 7000x bet. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "dance-party-pragmatic-play",
       "name": "Dance Party™",
