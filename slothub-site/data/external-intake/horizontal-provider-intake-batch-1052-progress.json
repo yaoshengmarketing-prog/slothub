@@ -1,0 +1,38 @@
+{
+  "batch": 1052,
+  "recordedAt": "2026-11-10T17:23:33.998Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1576 published Game Markdown records and same-provider exact official path/name/gameSymbol; Ancient Egypt Classic™ /vs10egyptcls absent.",
+  "records": [
+    {
+      "index": 599,
+      "name": "Ancient Egypt Classic™",
+      "slug": "ancient-egypt-classic-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/ancient-egypt-classic-slot/",
+      "officialFacts": "Official page describes a 3x5 10-line video slot; three Scattered Wilds trigger Free Spins, where a special symbol is revealed, expands, and pays anywhere. RTP 96.51%. Official Demo title and symbol match.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/10/Thumb_Ancient-Egypt-Classic_339x180px-2-2.png",
+        "localPath": "public/assets/games/ancient-egypt-classic-pragmatic-play.png",
+        "sha256": "F347AFDB63821D1AF7325E2B9153C4A55046580A8D7009E970C64446DDFF9B0F",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; title Ancient Egypt Classic and gameSymbol vs10egyptcls matched official page. Loading screen observed; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 600 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1052-verify.log; preview built isolation across 1982 HTML pages, storyboard, Densho and RTP checks passed"
+  }
+}
