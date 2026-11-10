@@ -1,10 +1,10 @@
 {
   "batch": 1032,
   "recordedAt": "2026-11-10T13:52:33.447Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "John Hunter and the Tomb of the Scarab Queen™",
       "slug": "john-hunter-tomb-of-the-scarab-queen-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/john-hunter-and-the-tomb-of-the-scarab-queen-slot/",
       "officialFacts": "Official page describes a 3x5 25-line game with Collect money-symbol feature and RTP 96.50%. Exact official Demo visibly showed John Hunter & the Tomb of the Scarab Queen title, matching artwork and WIN UP TO 10500X BET intro. Official page H1 spells and rather than ampersand; same title identity and exact symbol.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed John Hunter & the Tomb of the Scarab Queen title, matching art and WIN UP TO 10500X BET intro. Ampersand is Demo presentation of official page and title. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 578 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 578 Super Joker™ after item 577 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Exit 0; preview built isolation across 1962 HTML pages; content and Astro diagnostics, internal links, outbound nofollow, source, schema and route checks passed."
+  },
+  "publication": {
+    "commit": "10cf5980187dbc6d15f9e2a3cf7c82acc1f862c7",
+    "githubActionsRun": 42829273294,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "967d6ae2-7f23-4b1b-8b8a-5394a1326df3",
+    "cloudflareUrl": "https://967d6ae2.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
