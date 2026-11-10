@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1536,
+  "gameCount": 1540,
   "providerCount": 372,
-  "sourcePageCount": 3002,
+  "sourcePageCount": 3014,
   "counts": {
     "access-restricted": 4,
-    "available": 1085,
+    "available": 1089,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,142 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "dance-party-pragmatic-play",
+      "name": "Dance Party™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243dancingpar&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Dance Party™; Official page confirms 3x5 presentation, 243 ways to win, Progressive Multiplier Free Spins with multiplier increasing up to 30x and RTP 96.50%. Exact official Demo intro separately shows medium volatility and overall win up to 36450x bet; 30x feature multiplier and 36450x total maximum have different scopes. Codex in-app browser loaded exact official page with matching H1, RTP, iframe gameSymbol and official art; direct official Demo and image visually matched. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Exact same-provider name/path/symbol absent. Official HTML includes gameSymbol vs243dancingpar. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup mark, Dance Party title, reels, spin control, medium volatility and win up to 36450x bet. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 57391EA78F1A2174503E5729DE8100791083CD270E55E3CD608EB08835BEF026, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/dance-party-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 560"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/03/Dance-Party™_EN_339x180_01-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 57391EA78F1A2174503E5729DE8100791083CD270E55E3CD608EB08835BEF026"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243dancingpar&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup mark, Dance Party title, reels, spin control, medium volatility and win up to 36450x bet. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "wild-west-gold-pragmatic-play",
+      "name": "Wild West Gold®",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40wildwest&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wild West Gold®; Official page confirms 5x4, base Wild 2x/3x/5x multipliers that add together, three Scatters starting eight Free Spins, sticky multiplier Wilds and 2-5 bonus Scatters adding 4-20 spins, RTP 96.51%. Exact official Demo visibly shows low volatility and win up to 10000x bet; maximum attributed to Demo. Distinct from Wild West Gold Megaways symbol vswayswildwest and Wild West Gold Blazing Bounty symbol vs20wwgcluster. Codex in-app browser loaded exact official page with matching H1, RTP, iframe gameSymbol and official art; direct official Demo and image visually matched. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Exact same-provider name/path/symbol absent; Megaways and Blazing Bounty variants have distinct symbols. Official HTML includes gameSymbol vs40wildwest. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup mark, Wild West Gold title, reels, spin control, low volatility and win up to 10000x bet. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 C31AFBBEE568BF2842C24699D8382E066D57C9CCBF93B5F139C1AE001569ADE8, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-west-gold-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 559"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/03/Wild-West-Gold™_EN_339x180_01-3.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 C31AFBBEE568BF2842C24699D8382E066D57C9CCBF93B5F139C1AE001569ADE8"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40wildwest&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup mark, Wild West Gold title, reels, spin control, low volatility and win up to 10000x bet. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "fruit-rainbow-pragmatic-play",
+      "name": "Fruit Rainbow™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40frrainbow&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fruit Rainbow™; Official page confirms 5x4, 40 paylines, stacked symbols and RTP 96.53%. Exact official Demo visibly shows low volatility and win up to 2000x bet; the maximum is attributed to Demo rather than single-game page. Distinct from Rainbow Gold vs20rainbowg and Rainbow Reels vs40rainbowr. Codex in-app browser loaded exact official page with matching H1, RTP, iframe gameSymbol and official art; direct official Demo and image visually matched. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Exact same-provider name/path/symbol absent; Rainbow Gold and Rainbow Reels have separate identities. Official HTML includes gameSymbol vs40frrainbow. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup mark, Fruit Rainbow title, reels, spin control, low volatility and win up to 2000x bet. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 2CC9FE135F755036DEB4FAED6C4EB36EA8A2648C1130903406E70840A062BF9A, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fruit-rainbow-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 558"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/03/Fruit-Rainbow™_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 2CC9FE135F755036DEB4FAED6C4EB36EA8A2648C1130903406E70840A062BF9A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40frrainbow&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup mark, Fruit Rainbow title, reels, spin control, low volatility and win up to 2000x bet. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "great-rhino-megaways-pragmatic-play",
+      "name": "Great Rhino® Megaways",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysrhino&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Great Rhino® Megaways; Official page confirms tumbling Megaways with over 200000 ways, 4-6 Scatters offering 15-23 Free Spins and starting 1x/5x/10x multipliers, +1x multiplier per tumble win and unlimited five-spin retriggers, RTP 96.50% and maximum 20000x bet. Official Demo intro separately shows win up to 20000x. Distinct from Great Rhino Deluxe symbol vs20rhinoluxe and separate official URL. Codex in-app browser loaded exact official page with matching H1, RTP, iframe gameSymbol and official art; direct official Demo and image visually matched. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Great Rhino Deluxe has separate symbol vs20rhinoluxe; exact same-provider name/path/symbol absent. Official HTML includes gameSymbol vswaysrhino. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup mark, Great Rhino Megaways title, reels, spin control and win up to 20000x bet. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 CB2A1BBCD454A984A6E0AE15FEECD22D1A0C18CB372CA978D3A211993C474E02, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/great-rhino-megaways-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 557"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/04/Great-Rhino-Megaways™_EN_339x180_02-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 CB2A1BBCD454A984A6E0AE15FEECD22D1A0C18CB372CA978D3A211993C474E02"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysrhino&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup mark, Great Rhino Megaways title, reels, spin control and win up to 20000x bet. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "john-hunter-book-of-tut-pragmatic-play",
       "name": "John Hunter and the book of Tut™",

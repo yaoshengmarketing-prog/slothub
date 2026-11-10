@@ -1,10 +1,10 @@
 {
   "batch": 1011,
   "recordedAt": "2026-11-10T10:15:36.384Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "John Hunter and the book of Tut™",
       "slug": "john-hunter-book-of-tut-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/john-hunter-and-the-book-of-tut-slot/",
       "officialFacts": "Official page confirms 3+ Book of Tut symbols trigger 10 Free Spins, a selected special symbol expands vertically when enough symbols are visible to win, three more Books retrigger 10 Free Spins without a limit, RTP 96.50% and maximum win 5500x. Official Demo intro confirms 5500x and visually shows 5x3. Distinct from already published Book of Tut Respin with symbol vs10tut, different official URL, mechanics and 4000x maximum.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed John Hunter and the Book of Tut title, reels, spin control, medium volatility and win up to 5500x bet. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 557 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 557 Great Rhino® Megaways after item 556 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exited 0 on 2026-11-10; 1941 HTML pages, internal links and preview isolation passed. Catalog items 553/555 excluded as Reel Kingdom; item 554 published-existing. Distinct vs10bookoftut and vs10tut identities preserved."
+  },
+  "publication": {
+    "commit": "cecb80a7ed76e2aa3bf46a16dc722d1ee7808ccf",
+    "githubActionsRun": 42798212372,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "d79027f8-0be0-4f93-b33d-91caa3291fa0",
+    "cloudflareUrl": "https://d79027f8.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
