@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1583,
+  "gameCount": 1584,
   "providerCount": 372,
-  "sourcePageCount": 3143,
+  "sourcePageCount": 3146,
   "counts": {
     "access-restricted": 4,
-    "available": 1132,
+    "available": 1133,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "madame-destiny-pragmatic-play",
+      "name": "Madame Destiny™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-11",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10madame&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Madame Destiny™; Official page describes a 5x3 grid; Madame Destiny Wild doubles wins in which she appears. Three or more Scatters trigger 15 Free Spins with 3x win multiplier and unlimited retriggers. RTP 96.50%. Official page does not specify base-game paylines, so left unrecorded. Distinct from Madame Destiny Megaways page/symbol vswaysmadame. Codex in-app browser checked official H1, gameplay, RTP, iframe symbol via read-only DOM, direct Demo and art. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Same-provider exact title/path/symbol absent; Megaways variant has distinct symbol vswaysmadame. Official HTML includes gameSymbol vs10madame. Codex in-app browser opened exact official Demo on 2026-11-11; title Madame Destiny and gameSymbol vs10madame matched official page. Loading screen observed; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 D5F4DA22F0816F70811782DC7DF2E10999158E34376A3190F3AB2C77BF3437B0, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/madame-destiny-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 606"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/06/thumb_madame_destiny_330x140-3.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 D5F4DA22F0816F70811782DC7DF2E10999158E34376A3190F3AB2C77BF3437B0"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10madame&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-11; title Madame Destiny and gameSymbol vs10madame matched official page. Loading screen observed; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "jade-butterfly-pragmatic-play",
       "name": "Jade Butterfly™",
