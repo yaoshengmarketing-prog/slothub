@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1563,
+  "gameCount": 1564,
   "providerCount": 372,
-  "sourcePageCount": 3083,
+  "sourcePageCount": 3086,
   "counts": {
     "access-restricted": 4,
-    "available": 1112,
+    "available": 1113,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "5-lions-gold-pragmatic-play",
+      "name": "5 Lions Gold™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243lionsgold&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title 5 Lions Gold™; Official page describes seven bonus choices, up to 25 Free Spins, 1x to 40x Wild feature multiplier, three Golden Reels Jackpot types up to 2000x, RTP 96.50%. Demo intro says WIN OVER 7000X BET, not used as exact total maxWinMultiplier. Codex in-app browser checked official H1, gameplay text, RTP, iframe gameSymbol, direct Demo and official art. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Catalog item 584 Sweet Bonanza is a published-existing same-provider game and was skipped without counting. Same-provider exact name/path/symbol for this item absent. Official HTML includes gameSymbol vs243lionsgold. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed 5 Lions Gold title and matching artwork. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 805FDFEE42597775E9AC161E3D5BE747EEF0FE8E07C58F3CCC3FF11AE989427D, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/5-lions-gold-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 585"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/03/Thumb_5-Lions-Gold™_339x180px-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 805FDFEE42597775E9AC161E3D5BE747EEF0FE8E07C58F3CCC3FF11AE989427D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243lionsgold&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed 5 Lions Gold title and matching artwork. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "monkey-warrior-pragmatic-play",
       "name": "Monkey Warrior™",

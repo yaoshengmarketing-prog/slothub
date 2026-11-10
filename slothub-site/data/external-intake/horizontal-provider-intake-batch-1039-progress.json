@@ -1,0 +1,38 @@
+{
+  "batch": 1039,
+  "recordedAt": "2026-11-10T14:56:11.356Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1563 published Game Markdown records and same-provider exact official path/name/gameSymbol; 5 Lions Gold™ /vs243lionsgold absent.",
+  "records": [
+    {
+      "index": 585,
+      "name": "5 Lions Gold™",
+      "slug": "5-lions-gold-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/5-lions-gold-slot/",
+      "officialFacts": "Official page describes seven bonus choices, up to 25 Free Spins, 1x to 40x Wild feature multiplier, three Golden Reels Jackpot types up to 2000x, RTP 96.50%. Demo intro says WIN OVER 7000X BET, not used as exact total maxWinMultiplier.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/03/Thumb_5-Lions-Gold™_339x180px-2.png",
+        "localPath": "public/assets/games/5-lions-gold-pragmatic-play.png",
+        "sha256": "805FDFEE42597775E9AC161E3D5BE747EEF0FE8E07C58F3CCC3FF11AE989427D",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed 5 Lions Gold title and matching artwork. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 586 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Exit 0; preview built isolation across 1969 HTML pages; content and Astro diagnostics, internal links, outbound nofollow, source, schema and route checks passed."
+  }
+}
