@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1512,
+  "gameCount": 1513,
   "providerCount": 372,
-  "sourcePageCount": 2930,
+  "sourcePageCount": 2933,
   "counts": {
     "access-restricted": 4,
-    "available": 1061,
+    "available": 1062,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "madame-destiny-megaways-pragmatic-play",
+      "name": "Madame Destiny Megaways™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysmadame&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Madame Destiny Megaways™; Official page confirms Madame Destiny Wild doubling winning lines, three to six Scatters triggering Free Spins and paying 5x to 100x stake, bonus wheel up to twelve Free Spins and 25x multiplier, and RTP 96.56%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vswaysmadame. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Madame Destiny Megaways title, Pragmatic Play startup logo, reels, Wild symbols and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 0D3E381A6440475B8BDA5C04192D3F7AA3BE94B5A619DD8D226594CD93A44B35, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/madame-destiny-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 523"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/01/MDM_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 0D3E381A6440475B8BDA5C04192D3F7AA3BE94B5A619DD8D226594CD93A44B35"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysmadame&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Madame Destiny Megaways title, Pragmatic Play startup logo, reels, Wild symbols and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "dragon-kingdom-eyes-of-fire-pragmatic-play",
       "name": "Dragon Kingdom – Eyes of Fire™",
