@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1586,
+  "gameCount": 1587,
   "providerCount": 372,
-  "sourcePageCount": 3152,
+  "sourcePageCount": 3155,
   "counts": {
     "access-restricted": 4,
-    "available": 1135,
+    "available": 1136,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "5-lions-pragmatic-play",
+      "name": "5 Lions™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-11",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243lions&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title 5 Lions™; Official page describes a 5x3 base grid and up to 40x random multiplier for wins with lion Wild. Three to five Scatters trigger up to 25 Free Spins, with an added row and 576 winning lines during the feature. RTP 96.50%. Base-game mechanism and line count not specified, left blank. Distinct from 5 Lions Gold symbol vs243lionsgold. Codex in-app browser checked official H1, gameplay, RTP, iframe symbol via read-only DOM, direct Demo and art. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Same-provider exact title/path/symbol absent; 5 Lions Gold has distinct symbol vs243lionsgold. Official HTML includes gameSymbol vs243lions. Codex in-app browser opened exact official Demo on 2026-11-11; title 5 Lions and gameSymbol vs243lions matched official page. Loading screen observed; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 CA3E83BA14CD4AA60DF0557326D54873C02179784D5D8FFDBE4E6028F9B9D4E1, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/5-lions-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 609"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/05/thumbs_5_lions_330x140px.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 CA3E83BA14CD4AA60DF0557326D54873C02179784D5D8FFDBE4E6028F9B9D4E1"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243lions&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-11; title 5 Lions and gameSymbol vs243lions matched official page. Loading screen observed; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "the-champions-pragmatic-play",
       "name": "The Champions™",

@@ -1,10 +1,10 @@
 {
   "batch": 1061,
   "recordedAt": "2026-11-10T19:48:45.016Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "The Champions™",
       "slug": "the-champions-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/the-champions-slot/",
       "officialFacts": "Official page describes a 3x5 25-line video slot; goals can increase win multiplier up to 20x, and Bonus Game has five penalty shots with increasing prizes. RTP 96.51%. Official Demo title and symbol match. Twenty-fold feature multiplier is not recorded as full-game max win.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; title The Champions and gameSymbol vs25champ matched official page. Loading screen observed; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 609 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 609 5 Lions™ after item 608 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1061-verify.log; preview built isolation across 1991 HTML pages, storyboard, Densho and RTP checks passed"
+  },
+  "publication": {
+    "commit": "d7ef8b0a0bc28202282eee7878ac93f79d8cbb97",
+    "githubActionsRun": 42889675133,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "ed854e43-3ea9-4a06-bfa3-0aa9e2ecf8f7",
+    "cloudflareUrl": "https://ed854e43.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
