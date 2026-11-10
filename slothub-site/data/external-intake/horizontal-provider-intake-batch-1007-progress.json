@@ -1,0 +1,38 @@
+{
+  "batch": 1007,
+  "recordedAt": "2026-11-10T09:31:12.082Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1531 published Game Markdown records and same-provider exact official path/name/gameSymbol; Drago – Jewels of Fortune™ /vs1600drago absent.",
+  "records": [
+    {
+      "index": 549,
+      "name": "Drago – Jewels of Fortune™",
+      "slug": "drago-jewels-of-fortune-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/drago-jewels-of-fortune-slot/",
+      "officialFacts": "Official page confirms 1600 ways to win, Respin Round, Free Spins with modifiers and RTP 96.50%. Page calls the Free Spins feature very volatile while Demo intro labels overall volatility Low; these differently scoped statements were not converted to a normalized volatility value. Demo intro shows 48,000x but page does not corroborate, so no max-win field was recorded.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/06/Drago_JOF™_339x180-1.png",
+        "localPath": "public/assets/games/drago-jewels-of-fortune-pragmatic-play.png",
+        "sha256": "4E36A69E7DF21969C36D90A81CCB4CDF9B83608CE917E66EED14E596277D6DCB",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Drago Jewels of Fortune title, reels, spin control and intro values. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 550 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Full preview verify exited 0 on 2026-11-10; 1937 HTML pages, internal links and preview isolation passed. Volatility and max-win were not inferred from differently scoped or single-screen evidence."
+  }
+}

@@ -1,10 +1,10 @@
 {
   "batch": 1006,
   "recordedAt": "2026-11-10T09:22:09.858Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Street Racer™",
       "slug": "street-racer-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/street-racer-slot/",
       "officialFacts": "Official page confirms a 4x5 video slot with 40 lines, maximum payout 2,000x and RTP 96.52%; direct official Demo intro screen also displays 2,000x.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Street Racer title, reels, spin control and 2,000x intro value. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 549 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 549 Drago – Jewels of Fortune™ after item 548 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exited 0 on 2026-11-10; 1936 HTML pages, internal links and preview isolation passed."
+  },
+  "publication": {
+    "commit": "4d2ca759fb0ff0e05872939492cb8bf70cd2cef7",
+    "githubActionsRun": 42790711931,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "bd799dcc-01c2-47f2-9623-c4b729246216",
+    "cloudflareUrl": "https://bd799dcc.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1531,
+  "gameCount": 1532,
   "providerCount": 372,
-  "sourcePageCount": 2987,
+  "sourcePageCount": 2990,
   "counts": {
     "access-restricted": 4,
-    "available": 1080,
+    "available": 1081,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "drago-jewels-of-fortune-pragmatic-play",
+      "name": "Drago – Jewels of Fortune™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs1600drago&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Drago – Jewels of Fortune™; Official page confirms 1600 ways to win, Respin Round, Free Spins with modifiers and RTP 96.50%. Page calls the Free Spins feature very volatile while Demo intro labels overall volatility Low; these differently scoped statements were not converted to a normalized volatility value. Demo intro shows 48,000x but page does not corroborate, so no max-win field was recorded. Codex in-app browser loaded exact official page with matching H1, RTP, iframe gameSymbol and official art; direct official Demo and image visually matched. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Exact same-provider name, path and symbol absent. Official HTML includes gameSymbol vs1600drago. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Drago Jewels of Fortune title, reels, spin control and intro values. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 4E36A69E7DF21969C36D90A81CCB4CDF9B83608CE917E66EED14E596277D6DCB, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/drago-jewels-of-fortune-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 549"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/06/Drago_JOF™_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 4E36A69E7DF21969C36D90A81CCB4CDF9B83608CE917E66EED14E596277D6DCB"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs1600drago&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Drago Jewels of Fortune title, reels, spin control and intro values. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "street-racer-pragmatic-play",
       "name": "Street Racer™",
