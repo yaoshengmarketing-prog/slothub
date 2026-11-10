@@ -1,10 +1,10 @@
 {
   "batch": 1027,
   "recordedAt": "2026-11-10T13:07:48.746Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Hercules and Pegasus™",
       "slug": "hercules-and-pegasus-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/hercules-and-pegasus-slot/",
       "officialFacts": "Official page describes a 3x5, 20-line video slot with random Wilds and stacked symbols, Free Spins where wins increase progressively, and RTP 96.50%. Exact official Demo visibly showed Hercules and Pegasus title, matching characters, five reels by three rows, spin control and intro mentioning magical modifiers and three Herculean bonus rounds. No max win inferred.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Hercules and Pegasus title, matching characters, five reels by three rows, startup spin control and intro about magical modifiers and three Herculean bonus rounds. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 573 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 573 Aladdin and the Sorcerer™ after item 572 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Exit 0; preview built isolation across 1957 HTML pages; full verify log tmp/verify-batch1027.log."
+  },
+  "publication": {
+    "commit": "fad1924e424c39d8c0370b2c090bd42221d25e80",
+    "githubActionsRun": 42822335375,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "c9fcf6d3-bab7-42dc-8a24-87a9643a05ca",
+    "cloudflareUrl": "https://c9fcf6d3.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
