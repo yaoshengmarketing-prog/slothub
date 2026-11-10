@@ -1,10 +1,10 @@
 {
   "batch": 997,
   "recordedAt": "2026-11-10T06:34:41.674Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "5 Lions Dance™",
       "slug": "5-lions-dance-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/5-lions-dance/",
       "officialFacts": "Official page confirms 4x5 video slot, 1024 ways, Lion symbols transforming reels 1 and 2 into an expanded reel with multipliers, Free Spins changing lion-head symbols to one random lion symbol, and RTP 96.50%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, 5 Lions Dance title, 4x5 reels and spin control. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 538 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 539 Wild Walker™ after item 537 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exited 0 on 2026-11-10; 1927 HTML pages, internal links, outbound nofollow and preview isolation passed."
+  },
+  "publication": {
+    "commit": "cff799f60ccbf05b37ba1157ddc6a1381b5c239b",
+    "githubActionsRun": 42769871968,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "415cc06b-d57c-477f-bf33-d84e9b3f221a",
+    "cloudflareUrl": "https://415cc06b.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

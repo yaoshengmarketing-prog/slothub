@@ -1,0 +1,38 @@
+{
+  "batch": 998,
+  "recordedAt": "2026-11-10T06:44:06.466Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1522 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild Walker™ /vs25walker absent.",
+  "records": [
+    {
+      "index": 539,
+      "name": "Wild Walker™",
+      "slug": "wild-walker-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/wild-walker-slot/",
+      "officialFacts": "Official page confirms 3x8 dynamic-reel video slot, four-level Progressive Free Spins, a Wild symbol that changes position every spin, and RTP 96.55%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/Wild-Walker™_EN_339x180_02.png",
+        "localPath": "public/assets/games/wild-walker-pragmatic-play.png",
+        "sha256": "B13463E451592163B9558C4AAAB79FCAFE8BE919D6B499F45730A1B918F0B768",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Wild Walker title, reels and spin control. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 540 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Full preview verify exited 0 on 2026-11-10; 1928 HTML pages, internal links, outbound nofollow and preview isolation passed."
+  }
+}

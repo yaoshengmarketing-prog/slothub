@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1522,
+  "gameCount": 1523,
   "providerCount": 372,
-  "sourcePageCount": 2960,
+  "sourcePageCount": 2963,
   "counts": {
     "access-restricted": 4,
-    "available": 1071,
+    "available": 1072,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wild-walker-pragmatic-play",
+      "name": "Wild Walker™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25walker&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wild Walker™; Official page confirms 3x8 dynamic-reel video slot, four-level Progressive Free Spins, a Wild symbol that changes position every spin, and RTP 96.55%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. Official page displayed an age gate; it was not submitted. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs25walker. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Wild Walker title, reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 B13463E451592163B9558C4AAAB79FCAFE8BE919D6B499F45730A1B918F0B768, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-walker-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 539"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/Wild-Walker™_EN_339x180_02.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 B13463E451592163B9558C4AAAB79FCAFE8BE919D6B499F45730A1B918F0B768"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25walker&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Wild Walker title, reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "5-lions-dance-pragmatic-play",
       "name": "5 Lions Dance™",
