@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1539,
+  "gameCount": 1540,
   "providerCount": 372,
-  "sourcePageCount": 3011,
+  "sourcePageCount": 3014,
   "counts": {
     "access-restricted": 4,
-    "available": 1088,
+    "available": 1089,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "dance-party-pragmatic-play",
+      "name": "Dance Party™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243dancingpar&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Dance Party™; Official page confirms 3x5 presentation, 243 ways to win, Progressive Multiplier Free Spins with multiplier increasing up to 30x and RTP 96.50%. Exact official Demo intro separately shows medium volatility and overall win up to 36450x bet; 30x feature multiplier and 36450x total maximum have different scopes. Codex in-app browser loaded exact official page with matching H1, RTP, iframe gameSymbol and official art; direct official Demo and image visually matched. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Exact same-provider name/path/symbol absent. Official HTML includes gameSymbol vs243dancingpar. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup mark, Dance Party title, reels, spin control, medium volatility and win up to 36450x bet. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 57391EA78F1A2174503E5729DE8100791083CD270E55E3CD608EB08835BEF026, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/dance-party-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 560"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/03/Dance-Party™_EN_339x180_01-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 57391EA78F1A2174503E5729DE8100791083CD270E55E3CD608EB08835BEF026"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243dancingpar&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup mark, Dance Party title, reels, spin control, medium volatility and win up to 36450x bet. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "wild-west-gold-pragmatic-play",
       "name": "Wild West Gold®",
