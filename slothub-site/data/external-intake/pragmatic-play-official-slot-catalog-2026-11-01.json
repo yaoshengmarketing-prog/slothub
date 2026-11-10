@@ -10,13 +10,13 @@
   "nextPageCards": 0,
   "totalCards": 665,
   "exactGameCards": 663,
-  "publishedExisting": 532,
-  "pendingIndividualCheck": 109,
+  "publishedExisting": 533,
+  "pendingIndividualCheck": 106,
   "comingSoon": 2,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 553 after item 552 Starz Megaways™ individual publication closure.",
+  "nextCursor": "Catalog item 557 after item 556 John Hunter and the book of Tut™ individual publication closure.",
   "pages": [
     {
       "page": 1,
@@ -6157,7 +6157,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/starz-megaways-slot/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/05/Starz-Megaways™_339x180-1.png",
       "releaseLabel": null,
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "starz-megaways-pragmatic-play"
     },
     {
@@ -6167,8 +6167,20 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/ultra-burn-slot/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/05/Ultra_Burn_EN_339x180-1.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "nextStep": "Do not count as Pragmatic Play original. Continue catalog item 556 after item 552 full publication closure; item 554 Fruit Party is already published.",
+        "checkedAt": "2026-11-10",
+        "evidence": [
+          "Codex in-app browser opened exact official page and verified H1 Ultra Burn®, iframe gameSymbol vs5ultrab and official image URL.",
+          "Direct exact Demo startup showed Reel Kingdom and Powered by Pragmatic Play; following ready-to-play screen showed Ultra Burn title and Reel Kingdom logo.",
+          "No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "reason": "Exact official Demo for gameSymbol vs5ultrab visibly opens with Reel Kingdom and Powered by Pragmatic Play; Ultra Burn® is a Reel Kingdom title distributed by Pragmatic Play.",
+        "officialPage": "https://www.pragmaticplay.com/en/games/ultra-burn-slot/",
+        "browser": "Codex in-app browser only"
+      }
     },
     {
       "index": 554,
@@ -6187,8 +6199,20 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/hot-to-burn-slot/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/04/Hot-to-Burn™_EN-_339x180-1.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "nextStep": "Do not count as Pragmatic Play original. Continue catalog item 556 after item 552 full publication closure; item 554 Fruit Party is already published.",
+        "checkedAt": "2026-11-10",
+        "evidence": [
+          "Codex in-app browser opened exact official page and verified H1 Hot to Burn®, iframe gameSymbol vs5hotburn and official image URL.",
+          "Direct exact Demo startup showed Reel Kingdom and Powered by Pragmatic Play; following ready-to-play screen showed Hot to Burn title and Reel Kingdom logo.",
+          "No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "reason": "Exact official Demo for gameSymbol vs5hotburn visibly opens with Reel Kingdom and Powered by Pragmatic Play; Hot to Burn® is a Reel Kingdom title distributed by Pragmatic Play.",
+        "officialPage": "https://www.pragmaticplay.com/en/games/hot-to-burn-slot/",
+        "browser": "Codex in-app browser only"
+      }
     },
     {
       "index": 556,
@@ -6197,8 +6221,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/john-hunter-and-the-book-of-tut-slot/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/04/John-Hunter-Book-of-Tut™_339x180-1-1.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "john-hunter-book-of-tut-pragmatic-play"
     },
     {
       "index": 557,

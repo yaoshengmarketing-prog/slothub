@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1535,
+  "gameCount": 1536,
   "providerCount": 372,
-  "sourcePageCount": 2999,
+  "sourcePageCount": 3002,
   "counts": {
     "access-restricted": 4,
-    "available": 1084,
+    "available": 1085,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "john-hunter-book-of-tut-pragmatic-play",
+      "name": "John Hunter and the book of Tut™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bookoftut&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title John Hunter and the book of Tut™; Official page confirms 3+ Book of Tut symbols trigger 10 Free Spins, a selected special symbol expands vertically when enough symbols are visible to win, three more Books retrigger 10 Free Spins without a limit, RTP 96.50% and maximum win 5500x. Official Demo intro confirms 5500x and visually shows 5x3. Distinct from already published Book of Tut Respin with symbol vs10tut, different official URL, mechanics and 4000x maximum. Codex in-app browser loaded exact official page with matching H1, RTP, iframe gameSymbol and official art; direct official Demo and image visually matched. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Distinct Respin sequel has symbol vs10tut and different official path; exact title/path/symbol absent. Official HTML includes gameSymbol vs10bookoftut. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed John Hunter and the Book of Tut title, reels, spin control, medium volatility and win up to 5500x bet. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 FCAA892B011BE0DC9A97FD36968F06217486E54C8214E794C5F7D875B74E1E65, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/john-hunter-and-the-book-of-tut-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 556"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/04/John-Hunter-Book-of-Tut™_339x180-1-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 FCAA892B011BE0DC9A97FD36968F06217486E54C8214E794C5F7D875B74E1E65"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bookoftut&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed John Hunter and the Book of Tut title, reels, spin control, medium volatility and win up to 5500x bet. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "starz-megaways-pragmatic-play",
       "name": "Starz Megaways™",

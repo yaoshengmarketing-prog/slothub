@@ -1,10 +1,10 @@
 {
   "batch": 1010,
   "recordedAt": "2026-11-10T10:03:18.692Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Starz Megaways™",
       "slug": "starz-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/starz-megaways-slot/",
       "officialFacts": "Official page confirms Megaways, expanding Wilds in the base game, sticky expanding Wilds in Free Spins and RTP 96.48%. Exact official Demo visibly shows 117649 Megaways, win up to 10000x bet and medium volatility; these details are attributed to Demo rather than the page.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Starz Megaways title, reels, spin control, 117649 Megaways, medium volatility and win up to 10000x bet. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 553 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 556 John Hunter and the book of Tut™ after item 552 full publication closure and 3 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exited 0 on 2026-11-10; 1940 HTML pages, internal links and preview isolation passed. Demo-sourced 117649 Megaways and 10000x clearly attributed."
+  },
+  "publication": {
+    "commit": "0add6d5b6a4b88f35681bcb0af8dcc398f8c7e9e",
+    "githubActionsRun": 42796416527,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "b6bda6e5-5ebe-476f-a02c-ad5d2d5139b3",
+    "cloudflareUrl": "https://b6bda6e5.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
