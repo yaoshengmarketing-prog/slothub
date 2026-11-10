@@ -1,10 +1,10 @@
 {
   "batch": 1036,
   "recordedAt": "2026-11-10T14:29:18.97Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Hot Chilli™",
       "slug": "hot-chilli-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/hot-chilli-slot/",
       "officialFacts": "Official page describes 3x3 Hot Chilli, matching or some nonmatching combinations and chilli feature multipliers 2x to 5x, RTP 96.52%. Official page mentions wins up to 888x without an explicit bet basis, so no maxWinMultiplier is assigned. Exact Demo showed matching title and artwork.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Hot Chilli title and matching artwork. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 582 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 582 John Hunter and the Aztec Treasure™ after item 581 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Exit 0; preview built isolation across 1966 HTML pages; content and Astro diagnostics, internal links, outbound nofollow, source, schema and route checks passed."
+  },
+  "publication": {
+    "commit": "e069f50b191d6af96970ff619fb24d8a2050f95f",
+    "githubActionsRun": 42835366114,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "5c3529df-7ba0-4482-a44b-2a1f8d3a644a",
+    "cloudflareUrl": "https://5c3529df.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
