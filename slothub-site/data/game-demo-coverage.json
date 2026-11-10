@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1511,
+  "gameCount": 1512,
   "providerCount": 372,
-  "sourcePageCount": 2927,
+  "sourcePageCount": 2930,
   "counts": {
     "access-restricted": 4,
-    "available": 1060,
+    "available": 1061,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "dragon-kingdom-eyes-of-fire-pragmatic-play",
+      "name": "Dragon Kingdom – Eyes of Fire™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5drmystery&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Dragon Kingdom – Eyes of Fire™; Official page confirms a 3x3 grid, 5 paylines, a Progressive Feature without detailed trigger rules, and RTP 96.50%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs5drmystery. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Dragon Kingdom Eyes of Fire title, three-by-three dragon reels, Pragmatic Play branding at screen bottom and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 99F74B56F0348FEF82D6740AB3FE608DF7623E7615B811DEAFAB1A39A0E39F5D, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/dragon-kingdom-eyes-of-fire/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 522"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/01/DKEOF_EN_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 99F74B56F0348FEF82D6740AB3FE608DF7623E7615B811DEAFAB1A39A0E39F5D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5drmystery&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Dragon Kingdom Eyes of Fire title, three-by-three dragon reels, Pragmatic Play branding at screen bottom and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "the-hand-of-midas-pragmatic-play",
       "name": "The Hand of Midas™",

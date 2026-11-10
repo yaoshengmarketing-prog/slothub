@@ -1,0 +1,37 @@
+{
+  "batch": 987,
+  "recordedAt": "2026-11-10T05:01:56.680Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1511 published Game Markdown records and same-provider exact official path/name/gameSymbol; Dragon Kingdom – Eyes of Fire™ /vs5drmystery absent.",
+  "records": [
+    {
+      "index": 522,
+      "name": "Dragon Kingdom – Eyes of Fire™",
+      "slug": "dragon-kingdom-eyes-of-fire-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/dragon-kingdom-eyes-of-fire/",
+      "officialFacts": "Official page confirms a 3x3 grid, 5 paylines, a Progressive Feature without detailed trigger rules, and RTP 96.50%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/01/DKEOF_EN_339x180-1.png",
+        "localPath": "public/assets/games/dragon-kingdom-eyes-of-fire-pragmatic-play.png",
+        "sha256": "99F74B56F0348FEF82D6740AB3FE608DF7623E7615B811DEAFAB1A39A0E39F5D",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Dragon Kingdom Eyes of Fire title, three-by-three dragon reels, Pragmatic Play branding at screen bottom and spin control. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 523 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pending",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  }
+}
