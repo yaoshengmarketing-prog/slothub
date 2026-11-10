@@ -1,0 +1,38 @@
+{
+  "batch": 1031,
+  "recordedAt": "2026-11-10T13:43:51.39Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1555 published Game Markdown records and same-provider exact official path/name/gameSymbol; Tree of Riches™ /vs1fortunetree absent.",
+  "records": [
+    {
+      "index": 576,
+      "name": "Tree of Riches™",
+      "slug": "tree-of-riches-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/tree-of-riches-slot/",
+      "officialFacts": "Official page describes a 1x3 three-reel single-row slot, Wild triggering respin until you win, up to 10x feature multiplier and RTP 96.50%. Exact official Demo visibly showed matching Tree of Riches title, money-bag symbols and three reels in one row. No total max win inferred from feature multiplier.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/08/Tree-of-Riches™_339x180-1.png",
+        "localPath": "public/assets/games/tree-of-riches-pragmatic-play.png",
+        "sha256": "810284F5A441829AF0005E39861623F41ACCF87961BEE9BBF651CE578577BB07",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Tree of Riches title, money-bag symbols and three reels in one row. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 577 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Exit 0; preview built isolation across 1961 HTML pages; content and Astro diagnostics, internal links, outbound nofollow, source, schema and route checks passed."
+  }
+}

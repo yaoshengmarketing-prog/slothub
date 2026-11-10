@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1555,
+  "gameCount": 1556,
   "providerCount": 372,
-  "sourcePageCount": 3059,
+  "sourcePageCount": 3062,
   "counts": {
     "access-restricted": 4,
-    "available": 1104,
+    "available": 1105,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "tree-of-riches-pragmatic-play",
+      "name": "Tree of Riches™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs1fortunetree&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Tree of Riches™; Official page describes a 1x3 three-reel single-row slot, Wild triggering respin until you win, up to 10x feature multiplier and RTP 96.50%. Exact official Demo visibly showed matching Tree of Riches title, money-bag symbols and three reels in one row. No total max win inferred from feature multiplier. Codex in-app browser checked exact official page H1, gameplay text, RTP, iframe gameSymbol, matching Demo and official art. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Same-provider exact name/path/symbol absent. Official HTML includes gameSymbol vs1fortunetree. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Tree of Riches title, money-bag symbols and three reels in one row. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 810284F5A441829AF0005E39861623F41ACCF87961BEE9BBF651CE578577BB07, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/tree-of-riches-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 576"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/08/Tree-of-Riches™_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 810284F5A441829AF0005E39861623F41ACCF87961BEE9BBF651CE578577BB07"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs1fortunetree&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Tree of Riches title, money-bag symbols and three reels in one row. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "fire-strike-pragmatic-play",
       "name": "Fire Strike™",

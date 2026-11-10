@@ -1,10 +1,10 @@
 {
   "batch": 1030,
   "recordedAt": "2026-11-10T13:35:33.936Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Fire Strike™",
       "slug": "fire-strike-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/fire-strike-slot/",
       "officialFacts": "Official page describes a 3x5 10-line slot, 6+ Fire Strike symbols paying direct bonuses anywhere and 15 Wild Fire Strike symbols yielding a jackpot up to 25000x bet, RTP 96.50%. Exact Demo visibly matched Fire Strike title and artwork. Jackpot cap was not mapped to total maxWin.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Fire Strike title and matching artwork. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 576 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 576 Tree of Riches™ after item 575 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Exit 0; preview built isolation across 1960 HTML pages; content and Astro diagnostics, internal links, outbound nofollow, source, schema and route checks passed."
+  },
+  "publication": {
+    "commit": "41b0787291b196b239bf505abb698d01127af0f1",
+    "githubActionsRun": 42826579430,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "4ecf0d07-b8cd-4f02-afa3-14a003efdea6",
+    "cloudflareUrl": "https://4ecf0d07.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
