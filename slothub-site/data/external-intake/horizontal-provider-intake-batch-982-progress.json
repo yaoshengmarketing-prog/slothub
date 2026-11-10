@@ -1,10 +1,10 @@
 {
   "batch": 982,
   "recordedAt": "2026-11-10T04:18:41.526Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Power of Thor Megaways™",
       "slug": "power-of-thor-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/power-of-thor-megaways/",
       "officialFacts": "Official page confirms up to 117,649 ways to win, top-row Hammer transforming symbols below into Wilds, THOR Scatters triggering Free Spins, a growing Free Games multiplier after tumbles, and RTP 96.55%.",
       "image": {
@@ -29,9 +29,18 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Power of Thor Megaways title, Pragmatic Play startup logo, game reels, Megaways counter, Thor artwork and spin control. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 514 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 514 Juicy Fruits™ after item 513 full publication closure.",
   "validation": {
     "result": "pending",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  },
+  "publication": {
+    "commit": "3fdc99070f07def346da4e991cf9d6c63dce6359",
+    "githubActionsRun": 42755491391,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "2a4acbb1-7a03-4f97-8c6c-a47e7a757f4e",
+    "cloudflareUrl": "https://2a4acbb1.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
