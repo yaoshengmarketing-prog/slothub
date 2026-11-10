@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1573,
+  "gameCount": 1574,
   "providerCount": 372,
-  "sourcePageCount": 3113,
+  "sourcePageCount": 3116,
   "counts": {
     "access-restricted": 4,
-    "available": 1122,
+    "available": 1123,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mustang-gold-pragmatic-play",
+      "name": "Mustang Gold™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-11",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25mustang&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Mustang Gold™; Official page states Money symbols on reels 1-4 carry 1x to 35x and Collect on reel 5 awards visible values; Jackpot Reveal matches three symbols for 50x, 100x, 200x or 1000x; three Scatter trigger eight Free Spins and can retrigger. RTP 96.53%, maximum win 12,000x. Base grid and primary payout mechanism not stated, so left blank. Official Demo title and symbol match. Codex in-app browser checked official H1, gameplay, RTP, iframe symbol, direct Demo and official art. Fresh official HTML returned HTTP 200. Mustang Gold Megaways is a separate game and symbol; same-provider exact title/path/symbol absent. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs25mustang. Codex in-app browser opened exact official Demo on 2026-11-11; title Mustang Gold and gameSymbol vs25mustang matched official page. Loading screen observed; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 26F7D98DA792534A2532C6DCE2A7017EB154F04137A3784CD94708FA900AC154, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/mustang-gold-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 596"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/12/Thumb_mustang-gold_339x180px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 26F7D98DA792534A2532C6DCE2A7017EB154F04137A3784CD94708FA900AC154"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25mustang&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-11; title Mustang Gold and gameSymbol vs25mustang matched official page. Loading screen observed; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "treasure-horse-pragmatic-play",
       "name": "Treasure Horse™",

@@ -1,0 +1,38 @@
+{
+  "batch": 1049,
+  "recordedAt": "2026-11-10T16:48:33.850Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1573 published Game Markdown records and same-provider exact official path/name/gameSymbol; Mustang Gold™ /vs25mustang absent.",
+  "records": [
+    {
+      "index": 596,
+      "name": "Mustang Gold™",
+      "slug": "mustang-gold-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/mustang-gold-slot/",
+      "officialFacts": "Official page states Money symbols on reels 1-4 carry 1x to 35x and Collect on reel 5 awards visible values; Jackpot Reveal matches three symbols for 50x, 100x, 200x or 1000x; three Scatter trigger eight Free Spins and can retrigger. RTP 96.53%, maximum win 12,000x. Base grid and primary payout mechanism not stated, so left blank. Official Demo title and symbol match.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/12/Thumb_mustang-gold_339x180px-1.png",
+        "localPath": "public/assets/games/mustang-gold-pragmatic-play.png",
+        "sha256": "26F7D98DA792534A2532C6DCE2A7017EB154F04137A3784CD94708FA900AC154",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; title Mustang Gold and gameSymbol vs25mustang matched official page. Loading screen observed; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 597 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1049-verify.log; preview built isolation across 1979 HTML pages, storyboard, Densho and RTP checks passed"
+  }
+}
