@@ -1,10 +1,10 @@
 {
   "batch": 1035,
   "recordedAt": "2026-11-10T14:21:05.787Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Vampires vs Wolves™",
       "slug": "vampires-vs-wolves-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/vampires-vs-wolves-slot/",
       "officialFacts": "Official page describes 3x5 10-line Vampires vs Wolves, werewolf or vampire Free Spins choice, vampire sticky Wilds, RTP 96.49%. Exact official Demo visibly showed matching title/art and WIN UP TO 1000X BET.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Vampires vs Wolves title, matching artwork, and WIN UP TO 1000X BET. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 581 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 581 Hot Chilli™ after item 580 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Exit 0; preview built isolation across 1965 HTML pages; content and Astro diagnostics, internal links, outbound nofollow, source, schema and route checks passed."
+  },
+  "publication": {
+    "commit": "70d6d8bb1f39aeed06bf280ebfacc2be7d06e985",
+    "githubActionsRun": 42833943146,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "7910e257-da99-4aeb-ba32-8ecedaac67a4",
+    "cloudflareUrl": "https://7910e257.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
