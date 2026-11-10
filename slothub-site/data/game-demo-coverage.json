@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1574,
+  "gameCount": 1575,
   "providerCount": 372,
-  "sourcePageCount": 3116,
+  "sourcePageCount": 3119,
   "counts": {
     "access-restricted": 4,
-    "available": 1123,
+    "available": 1124,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "leprechaun-carol-pragmatic-play",
+      "name": "Leprechaun Carol™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-11",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20leprexmas&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Leprechaun Carol™; Official page describes a 3x5 video slot with random Wilds and expanded symbols; Free Spins feature has multipliers, Wilds and progressive increasing wins. RTP 96.53%. Exact payline or ways count not stated, so left blank. Image filename says Leprechaun Song but visible art text says Leprechaun Carol and page og:image points to exact file. Official Demo title and symbol match. Codex in-app browser checked official H1, gameplay, RTP, iframe symbol, direct Demo and official art. Filename Leprechaun Song differs from title, but visible image title and official og:image match Leprechaun Carol. Fresh HTML returned HTTP 200. No 403, IP restriction or paid browser use. Same-provider exact title/path/symbol absent. Official HTML includes gameSymbol vs20leprexmas. Codex in-app browser opened exact official Demo on 2026-11-11; title Leprechaun Carol and gameSymbol vs20leprexmas matched official page. Loading screen observed; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 6E77935D952E9575F9FEDC72980C2EC8B3CEFF189E1D301C347086DABC5A9357, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/leprechaun-carol-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 597"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/11/Leprechaun-Song™_Thumb_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 6E77935D952E9575F9FEDC72980C2EC8B3CEFF189E1D301C347086DABC5A9357"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20leprexmas&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-11; title Leprechaun Carol and gameSymbol vs20leprexmas matched official page. Loading screen observed; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "mustang-gold-pragmatic-play",
       "name": "Mustang Gold™",

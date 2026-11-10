@@ -1,0 +1,38 @@
+{
+  "batch": 1050,
+  "recordedAt": "2026-11-10T16:58:34.795Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1574 published Game Markdown records and same-provider exact official path/name/gameSymbol; Leprechaun Carol™ /vs20leprexmas absent.",
+  "records": [
+    {
+      "index": 597,
+      "name": "Leprechaun Carol™",
+      "slug": "leprechaun-carol-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/leprechaun-carol-slot/",
+      "officialFacts": "Official page describes a 3x5 video slot with random Wilds and expanded symbols; Free Spins feature has multipliers, Wilds and progressive increasing wins. RTP 96.53%. Exact payline or ways count not stated, so left blank. Image filename says Leprechaun Song but visible art text says Leprechaun Carol and page og:image points to exact file. Official Demo title and symbol match.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/11/Leprechaun-Song™_Thumb_339x180-1.png",
+        "localPath": "public/assets/games/leprechaun-carol-pragmatic-play.png",
+        "sha256": "6E77935D952E9575F9FEDC72980C2EC8B3CEFF189E1D301C347086DABC5A9357",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; title Leprechaun Carol and gameSymbol vs20leprexmas matched official page. Loading screen observed; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 598 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1050-verify.log; preview built isolation across 1980 HTML pages, storyboard, Densho and RTP checks passed"
+  }
+}
