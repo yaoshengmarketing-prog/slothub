@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1520,
+  "gameCount": 1521,
   "providerCount": 372,
-  "sourcePageCount": 2954,
+  "sourcePageCount": 2957,
   "counts": {
     "access-restricted": 4,
-    "available": 1069,
+    "available": 1070,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gems-bonanza-pragmatic-play",
+      "name": "Gems Bonanza®",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20goldfever&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Gems Bonanza®; Official page confirms 8x8 video slot, map path to Spin Feature with Nuclear new symbols or random Lucky Wilds, Gold Fever activating spin modifiers and final 10x multiplier, and RTP 96.51%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. Official H1 uses registered mark while prose uses trademark mark; H1 identity retained. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs20goldfever. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Gems Bonanza title, 8x8 grid and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 0D08CA8E4C6F30A59174FFE6C13F982752267A2F848D18067E0272880DE497FE, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gems-bonanza/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 535"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/Gems-Bonanza™_339x180_01-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 0D08CA8E4C6F30A59174FFE6C13F982752267A2F848D18067E0272880DE497FE"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20goldfever&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Gems Bonanza title, 8x8 grid and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "pirate-gold-deluxe-pragmatic-play",
       "name": "Pirate Gold Deluxe™",

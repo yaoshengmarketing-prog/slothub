@@ -1,0 +1,37 @@
+{
+  "batch": 996,
+  "recordedAt": "2026-11-10T06:22:34.038Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1520 published Game Markdown records and same-provider exact official path/name/gameSymbol; Gems Bonanza® /vs20goldfever absent.",
+  "records": [
+    {
+      "index": 535,
+      "name": "Gems Bonanza®",
+      "slug": "gems-bonanza-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/gems-bonanza/",
+      "officialFacts": "Official page confirms 8x8 video slot, map path to Spin Feature with Nuclear new symbols or random Lucky Wilds, Gold Fever activating spin modifiers and final 10x multiplier, and RTP 96.51%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/Gems-Bonanza™_339x180_01-1.png",
+        "localPath": "public/assets/games/gems-bonanza-pragmatic-play.png",
+        "sha256": "0D08CA8E4C6F30A59174FFE6C13F982752267A2F848D18067E0272880DE497FE",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Gems Bonanza title, 8x8 grid and spin control. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 536 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pending",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  }
+}
