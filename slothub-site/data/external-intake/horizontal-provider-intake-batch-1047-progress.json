@@ -1,10 +1,10 @@
 {
   "batch": 1047,
   "recordedAt": "2026-11-10T16:24:36.657Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Safari King™",
       "slug": "safari-king-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/safari-king-slot/",
       "officialFacts": "Official page describes a 4x5 50-payline video slot. Three Bonus symbols trigger 8 Free Spins; Safari King joins the reel strips, and every Bonus symbol awards more Free Spins without a stated limit. Official RTP 96.49%. Official Demo title and symbol match.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; browser title Safari King and gameSymbol vs50safariking matched official page. Loading screen observed; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 595 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 595 Treasure Horse™ after item 594 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1047-verify.log; preview built isolation across 1977 HTML pages, storyboard, Densho and RTP checks passed"
+  },
+  "publication": {
+    "commit": "e098d28ececb9c8c908b9587bbcda270a8a18181",
+    "githubActionsRun": 42855007315,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "3c140a50-be7a-4764-98e9-231be644c8ba",
+    "cloudflareUrl": "https://3c140a50.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
