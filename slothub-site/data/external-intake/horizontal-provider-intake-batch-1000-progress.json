@@ -1,10 +1,10 @@
 {
   "batch": 1000,
   "recordedAt": "2026-11-10T07:01:56.424Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Star Bounty™",
       "slug": "star-bounty-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/star-bounty-slot/",
       "officialFacts": "Official page confirms 4x6 video slot, 4096 ways, Missile symbol turning target symbols into Wilds, tumbling symbols, extra Free Spins at feature start, Buy Free Spins option and RTP 96.61%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Star Bounty title, reels and spin control. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 542 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 542 Ultra Hold and Spin after item 541 full publication closure. Official pragmaticplay.com domain currently times out in Codex in-app browser; no HTTP 403 proven.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exited 0 on 2026-11-10 after fast-forward to 1b853e768e5f0540875efb4517df8ec05b6d034e; 1930 HTML pages, links and preview isolation passed."
+  },
+  "publication": {
+    "commit": "a951accb222c63789261c2a5c94554dfc0104e5e",
+    "githubActionsRun": 42778019424,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "8fed210f-876c-417f-869c-9a4e3e760e12",
+    "cloudflareUrl": "https://8fed210f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap; in-app desktop and 390x844 mobile visuals passed"
   }
 }

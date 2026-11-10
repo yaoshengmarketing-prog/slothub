@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1525,
+  "gameCount": 1526,
   "providerCount": 372,
-  "sourcePageCount": 2969,
+  "sourcePageCount": 2972,
   "counts": {
     "access-restricted": 4,
-    "available": 1074,
+    "available": 1075,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "curse-of-the-werewolf-megaways-pragmatic-play",
+      "name": "Curse of the Werewolf Megaways™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayswerewolf&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Curse of the Werewolf Megaways™; Official page confirms Curse of the Werewolf Megaways identity, two features without detailed rules and RTP 96.50%; direct Demo visually confirms Wild symbol and Megaways licence branding. Codex in-app browser loaded exact official page despite Page.navigate timeout; later tab read showed correct H1, RTP and iframe gameSymbol. Official image and direct Demo visibly matched. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vswayswerewolf. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Curse of the Werewolf Megaways title, reels, Wild symbols, Megaways licence mark and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 2EA9F0E22302C513082BF2F0280D7D4DCC39AD2AF4DDD7B17D34419562AFEFAE, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/curse-of-the-werewolf-megaways-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 543"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/08/Curse_of_the_Werewolf_Megaways™_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 2EA9F0E22302C513082BF2F0280D7D4DCC39AD2AF4DDD7B17D34419562AFEFAE"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayswerewolf&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Curse of the Werewolf Megaways title, reels, Wild symbols, Megaways licence mark and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "star-bounty-pragmatic-play",
       "name": "Star Bounty™",

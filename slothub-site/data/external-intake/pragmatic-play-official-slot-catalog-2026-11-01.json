@@ -10,13 +10,13 @@
   "nextPageCards": 0,
   "totalCards": 665,
   "exactGameCards": 663,
-  "publishedExisting": 522,
-  "pendingIndividualCheck": 120,
+  "publishedExisting": 523,
+  "pendingIndividualCheck": 118,
   "comingSoon": 2,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 542 after item 541 Star Bounty™ individual publication closure.",
+  "nextCursor": "Catalog item 544 after item 543 Curse of the Werewolf Megaways™ individual publication closure.",
   "pages": [
     {
       "page": 1,
@@ -6035,7 +6035,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/star-bounty-slot/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/Star_Bounty™_339x180.png",
       "releaseLabel": null,
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "star-bounty-pragmatic-play"
     },
     {
@@ -6045,8 +6045,20 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/ultra-hold-and-spin-slot/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/08/Ultra_Hold__Spin™_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "nextStep": "Do not count as Pragmatic Play original. Continue catalog item 543 after item 541 Star Bounty full publication closure.",
+        "browser": "Codex in-app browser only",
+        "evidence": [
+          "Initial IAB Page.navigate timed out, but existing tab subsequently exposed HTTP-loaded official title, H1, 3x3 details, RTP 96.70% and iframe gameSymbol vs5ultra; not a confirmed 403 or IP block.",
+          "Direct exact Demo title Ultra Hold and Spin displayed a prominent crowned gorilla mark in the control, matching Reel Kingdom branding on other official Pragmatic Play distributed titles.",
+          "Exact official artwork visually matches the Demo title and was available as a 339x180 PNG. No paid browser used."
+        ],
+        "checkedAt": "2026-11-10",
+        "officialPage": "https://www.pragmaticplay.com/en/games/ultra-hold-and-spin-slot/",
+        "reason": "Exact direct Demo for gameSymbol vs5ultra prominently displays crowned gorilla Reel Kingdom branding; studio identity conflicts with Pragmatic Play original-only intake."
+      }
     },
     {
       "index": 543,
@@ -6055,8 +6067,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/curse-of-the-werewolf-megaways-slot/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/08/Curse_of_the_Werewolf_Megaways™_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "curse-of-the-werewolf-megaways-pragmatic-play"
     },
     {
       "index": 544,
