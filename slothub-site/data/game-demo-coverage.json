@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1551,
+  "gameCount": 1552,
   "providerCount": 372,
-  "sourcePageCount": 3047,
+  "sourcePageCount": 3050,
   "counts": {
     "access-restricted": 4,
-    "available": 1100,
+    "available": 1101,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "hercules-and-pegasus-pragmatic-play",
+      "name": "Hercules and Pegasus™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20hercpeg&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Hercules and Pegasus™; Official page describes a 3x5, 20-line video slot with random Wilds and stacked symbols, Free Spins where wins increase progressively, and RTP 96.50%. Exact official Demo visibly showed Hercules and Pegasus title, matching characters, five reels by three rows, spin control and intro mentioning magical modifiers and three Herculean bonus rounds. No max win inferred. Codex in-app browser loaded exact official page with matching H1, gameplay text, RTP and iframe gameSymbol, and directly viewed matching Demo and official art. Fresh official HTML returned HTTP 200. Official page displayed an age confirmation overlay; no age submission was made. No 403, IP restriction or paid browser use. Exact same-provider name/path/symbol absent. Official HTML includes gameSymbol vs20hercpeg. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Hercules and Pegasus title, matching characters, five reels by three rows, startup spin control and intro about magical modifiers and three Herculean bonus rounds. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 65E96D9B9C4DFACFE203EB49A22EA355ED890184ECCDBDE0F5D63D548B182E5E, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/hercules-and-pegasus-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 572"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/10/Hercules-Pegasus_339x180_01-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 65E96D9B9C4DFACFE203EB49A22EA355ED890184ECCDBDE0F5D63D548B182E5E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20hercpeg&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Hercules and Pegasus title, matching characters, five reels by three rows, startup spin control and intro about magical modifiers and three Herculean bonus rounds. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "sweet-bonanza-xmas-pragmatic-play",
       "name": "Sweet Bonanza® Xmas",
