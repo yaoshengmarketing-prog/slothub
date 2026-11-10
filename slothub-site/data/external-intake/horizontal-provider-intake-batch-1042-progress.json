@@ -1,0 +1,38 @@
+{
+  "batch": 1042,
+  "recordedAt": "2026-11-10T15:26:36.428Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1566 published Game Markdown records and same-provider exact official path/name/gameSymbol; Caishen’s Cash™ /vs243caishien absent.",
+  "records": [
+    {
+      "index": 588,
+      "name": "Caishen’s Cash™",
+      "slug": "caishens-cash-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/caishens-cash-slot/",
+      "officialFacts": "Official page describes 3x5 243-Ways Caishen’s Cash, choose Money Respin or Free Spins when bonus hits and seek Grand Jackpot in Jackpot Bonus, RTP 96.50%. Official Demo title and artwork match exact symbol.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/03/Caishens-Cah™_339x180px-2.png",
+        "localPath": "public/assets/games/caishens-cash-pragmatic-play.png",
+        "sha256": "E9B7BF4E4FEB9A65BC6C945ABEC89B79145CB72688AC9C5EF4DF1BE7A29F12A6",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10; browser title Caishen’s Cash and splash artwork matched the official page and symbol. Loading screen observed, no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 589 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Exit 0; preview built isolation across 1972 HTML pages; content and Astro diagnostics, internal links, outbound nofollow, source, schema and route checks passed."
+  }
+}

@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1566,
+  "gameCount": 1567,
   "providerCount": 372,
-  "sourcePageCount": 3092,
+  "sourcePageCount": 3095,
   "counts": {
     "access-restricted": 4,
-    "available": 1115,
+    "available": 1116,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "caishens-cash-pragmatic-play",
+      "name": "Caishen’s Cash™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243caishien&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Caishen’s Cash™; Official page describes 3x5 243-Ways Caishen’s Cash, choose Money Respin or Free Spins when bonus hits and seek Grand Jackpot in Jackpot Bonus, RTP 96.50%. Official Demo title and artwork match exact symbol. Codex in-app browser checked official H1, gameplay text, RTP, iframe symbol, direct Demo and official art. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Official art filename has Cah typo, but page og:image and visible title confirm Caishen’s Cash. Existing Caishen’s Cash Pots is distinct; same-provider exact name/path/symbol absent. Official HTML includes gameSymbol vs243caishien. Codex in-app browser opened exact official Demo on 2026-11-10; browser title Caishen’s Cash and splash artwork matched the official page and symbol. Loading screen observed, no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 E9B7BF4E4FEB9A65BC6C945ABEC89B79145CB72688AC9C5EF4DF1BE7A29F12A6, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/caishens-cash-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 588"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/03/Caishens-Cah™_339x180px-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 E9B7BF4E4FEB9A65BC6C945ABEC89B79145CB72688AC9C5EF4DF1BE7A29F12A6"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243caishien&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10; browser title Caishen’s Cash and splash artwork matched the official page and symbol. Loading screen observed, no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "pirate-gold-pragmatic-play",
       "name": "Pirate Gold™",

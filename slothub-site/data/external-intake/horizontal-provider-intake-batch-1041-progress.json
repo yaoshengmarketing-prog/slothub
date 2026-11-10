@@ -1,10 +1,10 @@
 {
   "batch": 1041,
   "recordedAt": "2026-11-10T15:16:21.784Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Pirate Gold™",
       "slug": "pirate-gold-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/pirate-gold-slot/",
       "officialFacts": "Official page describes 5x4 40-line Pirate Gold, eight money bags triggering respins with jackpot/multiplier/retrigger and Wild Free Spins, RTP 96.50%. Official Demo intro says WIN UP TO 32,270 X BET. Official art filename says Pirates Code but visible artwork says Pirate Gold and page og:image maps it exactly.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pirate Gold title, matching artwork and WIN UP TO 32,270 X BET. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 588 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 588 Caishen’s Cash™ after item 587 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Exit 0; preview built isolation across 1971 HTML pages; content and Astro diagnostics, internal links, outbound nofollow, source, schema and route checks passed."
+  },
+  "publication": {
+    "commit": "377244207982690480f9427277d553874efcb620",
+    "githubActionsRun": 42843240903,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "7a5bf178-4122-45e4-8175-1f45d8185fd3",
+    "cloudflareUrl": "https://7a5bf178.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
