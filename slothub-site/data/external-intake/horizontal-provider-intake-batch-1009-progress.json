@@ -1,10 +1,10 @@
 {
   "batch": 1009,
   "recordedAt": "2026-11-10T09:54:17.633Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Three Star Fortune™",
       "slug": "three-star-fortune-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/three-star-fortune-slot/",
       "officialFacts": "Official page confirms 5x3, selected paylines paying left-to-right and right-to-left, expanding Wilds on reels 2-4 with repeatable free respins, RTP 96.27%, and a 500x maximum win. Official Demo intro separately confirms win up to 500x bet; no line count was inferred.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Three Star Fortune title, reels, spin control and win up to 500x bet. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 552 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 552 Starz Megaways™ after item 551 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exited 0 on 2026-11-10; 1939 HTML pages, internal links and preview isolation passed. Official page and Demo agree on 500x overall maximum."
+  },
+  "publication": {
+    "commit": "0b129fe52a82ef3fde204f2771cfc9bb15627163",
+    "githubActionsRun": 42795107033,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "badebcce-642c-46b3-9d33-40d9105a546c",
+    "cloudflareUrl": "https://badebcce.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

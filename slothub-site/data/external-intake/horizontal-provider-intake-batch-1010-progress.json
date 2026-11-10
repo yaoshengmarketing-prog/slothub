@@ -1,0 +1,38 @@
+{
+  "batch": 1010,
+  "recordedAt": "2026-11-10T10:03:18.692Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1534 published Game Markdown records and same-provider exact official path/name/gameSymbol; Starz Megaways™ /vs117649starz absent.",
+  "records": [
+    {
+      "index": 552,
+      "name": "Starz Megaways™",
+      "slug": "starz-megaways-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/starz-megaways-slot/",
+      "officialFacts": "Official page confirms Megaways, expanding Wilds in the base game, sticky expanding Wilds in Free Spins and RTP 96.48%. Exact official Demo visibly shows 117649 Megaways, win up to 10000x bet and medium volatility; these details are attributed to Demo rather than the page.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/05/Starz-Megaways™_339x180-1.png",
+        "localPath": "public/assets/games/starz-megaways-pragmatic-play.png",
+        "sha256": "0E306FDFCAF5277BD36666AFA71DF945C1E0A42C8F1EC832B9D01207B7D8284B",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Starz Megaways title, reels, spin control, 117649 Megaways, medium volatility and win up to 10000x bet. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 553 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Full preview verify exited 0 on 2026-11-10; 1940 HTML pages, internal links and preview isolation passed. Demo-sourced 117649 Megaways and 10000x clearly attributed."
+  }
+}

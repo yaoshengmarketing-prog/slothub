@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1534,
+  "gameCount": 1535,
   "providerCount": 372,
-  "sourcePageCount": 2996,
+  "sourcePageCount": 2999,
   "counts": {
     "access-restricted": 4,
-    "available": 1083,
+    "available": 1084,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "starz-megaways-pragmatic-play",
+      "name": "Starz Megaways™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs117649starz&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Starz Megaways™; Official page confirms Megaways, expanding Wilds in the base game, sticky expanding Wilds in Free Spins and RTP 96.48%. Exact official Demo visibly shows 117649 Megaways, win up to 10000x bet and medium volatility; these details are attributed to Demo rather than the page. Codex in-app browser loaded exact official page with matching H1, RTP, iframe gameSymbol and official art; direct official Demo and image visually matched. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Exact same-provider name, path and symbol absent. Official HTML includes gameSymbol vs117649starz. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Starz Megaways title, reels, spin control, 117649 Megaways, medium volatility and win up to 10000x bet. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 0E306FDFCAF5277BD36666AFA71DF945C1E0A42C8F1EC832B9D01207B7D8284B, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/starz-megaways-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 552"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/05/Starz-Megaways™_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 0E306FDFCAF5277BD36666AFA71DF945C1E0A42C8F1EC832B9D01207B7D8284B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs117649starz&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Starz Megaways title, reels, spin control, 117649 Megaways, medium volatility and win up to 10000x bet. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "three-star-fortune-pragmatic-play",
       "name": "Three Star Fortune™",
