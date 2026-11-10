@@ -10,13 +10,13 @@
   "nextPageCards": 0,
   "totalCards": 665,
   "exactGameCards": 663,
-  "publishedExisting": 506,
-  "pendingIndividualCheck": 143,
+  "publishedExisting": 507,
+  "pendingIndividualCheck": 141,
   "comingSoon": 2,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 517 after item 516 Fishin’ Reels™ individual publication closure.",
+  "nextCursor": "Catalog item 520 after item 519 Joker King™ individual publication closure.",
   "pages": [
     {
       "page": 1,
@@ -5700,7 +5700,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/fishin-reels/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/02/Fishin_Reels_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "fishin-reels-pragmatic-play"
     },
     {
@@ -5710,8 +5710,20 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/hot-to-burn-hold-and-spin/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/02/HTBHAS_EN_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "checkedAt": "2026-11-10",
+        "browser": "Codex in-app browser only",
+        "officialPage": "https://www.pragmaticplay.com/en/games/hot-to-burn-hold-and-spin/",
+        "reason": "The exact official Demo for gameSymbol vs20hburnhs visibly opens with the Reel Kingdom studio logo and Powered by Pragmatic Play. The following screen displays Hot to Burn Hold & Spin. This identifies a Reel Kingdom title distributed by Pragmatic Play, so do not count it as a Pragmatic Play original.",
+        "evidence": [
+          "Codex in-app browser opened the exact official Hot to Burn Hold and Spin page on 2026-11-10; page H1 and iframe identify gameSymbol vs20hburnhs.",
+          "The same in-app browser opened the direct Demo for vs20hburnhs. Its startup screen explicitly showed Reel Kingdom and Powered by Pragmatic Play; the next screen showed the Hot to Burn Hold & Spin title and Reel Kingdom crowned gorilla mark.",
+          "Official page og:image maps to https://www.pragmaticplay.com/wp-content/uploads/2021/02/HTBHAS_EN_EN_339x180.png. No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "nextStep": "Keep out of Pragmatic Play original-game intake. Item 518 Gates of Olympus is already published as gates-of-olympus; continue catalog item 519 Joker King after item 516 Fishin’ Reels full publication closure."
+      }
     },
     {
       "index": 518,
@@ -5730,8 +5742,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/joker-king/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/02/Joker_King_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "joker-king-pragmatic-play"
     },
     {
       "index": 520,

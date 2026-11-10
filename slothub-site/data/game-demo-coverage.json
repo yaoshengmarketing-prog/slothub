@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1509,
+  "gameCount": 1510,
   "providerCount": 372,
-  "sourcePageCount": 2921,
+  "sourcePageCount": 2924,
   "counts": {
     "access-restricted": 4,
-    "available": 1058,
+    "available": 1059,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "joker-king-pragmatic-play",
+      "name": "Joker King™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25jokerking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Joker King™; Official page confirms 25 paylines, a Joker converting a random symbol to Wild whenever a Wild lands, Scatter multiplier up to 25x, up to 20 Free Spins with multipliers and active Wild Symbols, and RTP 96.50%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs25jokerking. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Joker King title, fruit reels, Wild and Scatter symbols, and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 E9B33D8D281A6D7AF6A239882B298A3BC4EF53B84592E1FED7BED3365FA80BD7, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/joker-king/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 519"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/02/Joker_King_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 E9B33D8D281A6D7AF6A239882B298A3BC4EF53B84592E1FED7BED3365FA80BD7"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25jokerking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Joker King title, fruit reels, Wild and Scatter symbols, and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "fishin-reels-pragmatic-play",
       "name": "Fishin’ Reels™",
