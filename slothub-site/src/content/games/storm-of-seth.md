@@ -31,7 +31,9 @@ bonusBuy: true
 image: { src: /assets/games/storm-of-seth.webp, alt: Storm of Seth 官方遊戲圖示, sourceUrl: https://www.atg-games.com/_ipx/f_webp/storm-of-seth/en/game_icon.png, retrievedAt: 2026-08-28 }
 status: published
 source: { label: ATG Games 官方繁中產品頁（無賠付線、聖甲蟲、靈魂之火與免費遊戲）, url: https://atg-games.com/zh-tw/games/slot/storm-of-seth, checkedAt: 2026-11-10 }
-sources: [{ label: ATG Games 官方英文產品頁（Scatter Pays、Soul Fire、Free Games 與標示差異）, url: https://www.atg-games.com/en/games/slot/storm-of-seth, checkedAt: 2026-11-10 }]
+sources:
+  - { label: ATG Games 官方繁中產品頁（無賠付線、聖甲蟲、靈魂之火與免費遊戲）, url: https://atg-games.com/zh-tw/games/slot/storm-of-seth, checkedAt: 2026-11-10 }
+  - { label: ATG Games 官方英文產品頁（Scatter Pays、Soul Fire、Free Games 與標示差異）, url: https://www.atg-games.com/en/games/slot/storm-of-seth, checkedAt: 2026-11-10 }
 demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.atg-games.com/games/slot/storm-of-seth","accessType":"official-game-page","presentation":"external"}
 lastVerifiedAt: 2026-08-28
 updatedAt: 2026-11-10
