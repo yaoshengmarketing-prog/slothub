@@ -1,0 +1,38 @@
+{
+  "batch": 1060,
+  "recordedAt": "2026-11-10T19:38:50.03Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1584 published Game Markdown records and same-provider exact official path/name/gameSymbol; Asgard™ /vs25asgard absent.",
+  "records": [
+    {
+      "index": 607,
+      "name": "Asgard™",
+      "slug": "asgard-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/asgard-slot/",
+      "officialFacts": "Official page describes a 3x5 25-line video slot with four Gods' Wild and mystery stacked-symbol blessings; one blessing lasts throughout Free Spins. RTP 96.48%. Official Demo title and symbol match.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/05/thumb_Asgard_330x140-1.png",
+        "localPath": "public/assets/games/asgard-pragmatic-play.png",
+        "sha256": "2DB03FB873B8326D8F5515541F6042D36DEEADFDB97494969BB88F42DBC84844",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; title Asgard and gameSymbol vs25asgard matched official page. Loading screen observed; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 608 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1060-verify.log; preview built isolation across 1990 HTML pages, storyboard, Densho and RTP checks passed"
+  }
+}
