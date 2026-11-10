@@ -1,10 +1,10 @@
 {
   "batch": 1063,
   "recordedAt": "2026-11-10T20:09:30.797Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Great Rhino®",
       "slug": "great-rhino-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/great-rhino-slot/",
       "officialFacts": "Official page confirms three Bonus symbols on reels 2, 3 and 4 trigger ten Free Spins, with all Rhino symbols Wild. Two or more Rhino stacks trigger three Super Respins with sticky Rhinos; new Rhinos retrigger. Fourteen Rhinos award 375x Major jackpot, fifteen award 500x Grand jackpot. RTP 96.53%. Base grid and paylines not stated, left blank. Distinct from Great Rhino Deluxe vs20rhinoluxe and Great Rhino Megaways vswaysrhino.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; title Great Rhino and gameSymbol vs20rhino matched official page. Loading image observed; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 611 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 611 Joker’s Jewels™ after item 610 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1063-verify.log; preview built isolation across 1993 HTML pages, storyboard, Densho and RTP checks passed"
+  },
+  "publication": {
+    "commit": "b313176e0b53f70d416f148781c0b10d582c0d49",
+    "githubActionsRun": 42893126804,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "960d71ac-19b5-4055-ac69-f5aa2c4b0d4b",
+    "cloudflareUrl": "https://960d71ac.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

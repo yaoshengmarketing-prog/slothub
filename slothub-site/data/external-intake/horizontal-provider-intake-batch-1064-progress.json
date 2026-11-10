@@ -1,0 +1,38 @@
+{
+  "batch": 1064,
+  "recordedAt": "2026-11-10T20:20:20.718Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1588 published Game Markdown records and same-provider exact official path/name/gameSymbol; Joker’s Jewels™ /vs5joker absent.",
+  "records": [
+    {
+      "index": 611,
+      "name": "Joker’s Jewels™",
+      "slug": "jokers-jewels-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/jokers-jewels-slot/",
+      "officialFacts": "Official page confirms a 5x3 grid, left-to-right matching, up to 1040x overall wins, Joker symbol payout up to 1000x, and three to five Bonus symbols anywhere award 10x to 250x stake. RTP 96.50%. Exact paylines and base payout mechanism not stated, left blank. Distinct from named Wild, Hot, Cash and Hold Spin variants with separate pages and symbols.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/03/thumbs_Jokers_jewels_330x140px.png",
+        "localPath": "public/assets/games/jokers-jewels-pragmatic-play.png",
+        "sha256": "183096083EF019C2D6505C783E10F385CA72D59F9B35F0923FEB7BDECF93D697",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; title Joker's Jewels and gameSymbol vs5joker matched official page. Matching loading image observed; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 612 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1064-verify.log; preview built isolation across 1994 HTML pages, storyboard, Densho and RTP checks passed"
+  }
+}
