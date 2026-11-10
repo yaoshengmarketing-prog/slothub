@@ -1,10 +1,10 @@
 {
   "batch": 990,
   "recordedAt": "2026-11-10T05:29:48.834Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Voodoo Magic™",
       "slug": "voodoo-magic-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/voodoo-magic/",
       "officialFacts": "Official page confirms a 5x4 video slot with 40 paylines, symbols paying up to 10x stake, five Free Spins with Mystery Symbols transforming into character symbols, feature wins up to 50x stake, and RTP 96.50%.",
       "image": {
@@ -29,9 +29,18 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Voodoo Magic title, reels and spin control. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 528 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 529 John Hunter and the Mayan Gods™ after item 527 full publication closure.",
   "validation": {
     "result": "pending",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  },
+  "publication": {
+    "commit": "035ff389ea6988b0382fce81f1faee5ac525aea1",
+    "githubActionsRun": 42762893109,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "e41d6b81-2496-49ba-baf7-843340bc1d78",
+    "cloudflareUrl": "https://e41d6b81.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

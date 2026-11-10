@@ -1,0 +1,37 @@
+{
+  "batch": 991,
+  "recordedAt": "2026-11-10T05:38:16.391Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1515 published Game Markdown records and same-provider exact official path/name/gameSymbol; John Hunter and the Mayan Gods™ /vs10mayangods absent.",
+  "records": [
+    {
+      "index": 529,
+      "name": "John Hunter and the Mayan Gods™",
+      "slug": "john-hunter-and-the-mayan-gods-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/john-hunter-and-the-mayan-gods/",
+      "officialFacts": "Official page confirms 3x5 video slot with 10 paylines, Progressive Free Spins giving more spins at each achieved level, multipliers, and RTP 96.46%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/11/John-Hunter-and-the-Mayan-Gods™_EN_339x180_01.png",
+        "localPath": "public/assets/games/john-hunter-and-the-mayan-gods-pragmatic-play.png",
+        "sha256": "462B5BE9A7A256179C9640420A74096ACF60B774CF738BFAF98D3CE8A7BDA1CC",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, John Hunter and the Mayan Gods title, reels and spin control. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 530 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pending",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  }
+}
