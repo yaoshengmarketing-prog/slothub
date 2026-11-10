@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1575,
+  "gameCount": 1576,
   "providerCount": 372,
-  "sourcePageCount": 3119,
+  "sourcePageCount": 3122,
   "counts": {
     "access-restricted": 4,
-    "available": 1124,
+    "available": 1125,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "triple-dragons-pragmatic-play",
+      "name": "Triple Dragons™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-11",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5trdragons&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Triple Dragons™; Official page says three vertically stacked dragons turn into Wilds and trigger a Respin until you win feature. RTP 96.51%. Base grid, payline count and primary payout mechanism are not specified and remain blank. Official Demo title and symbol match. Codex in-app browser checked official H1, gameplay, RTP, iframe symbol, direct Demo and official art. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Same-provider exact title/path/symbol absent. Official HTML includes gameSymbol vs5trdragons. Codex in-app browser opened exact official Demo on 2026-11-11; title Triple Dragons and gameSymbol vs5trdragons matched official page. Loading screen observed; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 0A8CB5DE9AA50E99EE7BABD21C68C12ADC92993102918D1DC2CFF60146EFF499, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/triple-dragons-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 598"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/10/Thumb_Triple-Dragons_339x180px-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 0A8CB5DE9AA50E99EE7BABD21C68C12ADC92993102918D1DC2CFF60146EFF499"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5trdragons&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-11; title Triple Dragons and gameSymbol vs5trdragons matched official page. Loading screen observed; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "leprechaun-carol-pragmatic-play",
       "name": "Leprechaun Carol™",

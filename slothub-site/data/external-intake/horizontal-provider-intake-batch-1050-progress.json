@@ -1,10 +1,10 @@
 {
   "batch": 1050,
   "recordedAt": "2026-11-10T16:58:34.795Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Leprechaun Carol™",
       "slug": "leprechaun-carol-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/leprechaun-carol-slot/",
       "officialFacts": "Official page describes a 3x5 video slot with random Wilds and expanded symbols; Free Spins feature has multipliers, Wilds and progressive increasing wins. RTP 96.53%. Exact payline or ways count not stated, so left blank. Image filename says Leprechaun Song but visible art text says Leprechaun Carol and page og:image points to exact file. Official Demo title and symbol match.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; title Leprechaun Carol and gameSymbol vs20leprexmas matched official page. Loading screen observed; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 598 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 598 Triple Dragons™ after item 597 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1050-verify.log; preview built isolation across 1980 HTML pages, storyboard, Densho and RTP checks passed"
+  },
+  "publication": {
+    "commit": "ae9507d4a3cc350cf2e7f9dfdb2eb6b8a6c58457",
+    "githubActionsRun": 42861362376,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "7ef31dd4-e152-4ab4-ac16-98b4ce5c1695",
+    "cloudflareUrl": "https://7ef31dd4.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
