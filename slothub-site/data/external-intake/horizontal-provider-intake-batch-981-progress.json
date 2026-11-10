@@ -1,0 +1,37 @@
+{
+  "batch": 981,
+  "recordedAt": "2026-11-10T04:08:44.003Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1505 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild Booster /vs20wildboost absent.",
+  "records": [
+    {
+      "index": 512,
+      "name": "Wild Booster",
+      "slug": "wild-booster-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/wild-booster/",
+      "officialFacts": "Official page confirms 3x5 grid, 20 paylines, random Wild multiplier, Super Boost, Mega Boost and Ultra Boost Free Spins rules, and RTP 96.47%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/03/Wild_Booster_EN_339x180.png",
+        "localPath": "public/assets/games/wild-booster-pragmatic-play.png",
+        "sha256": "8A4D621E430113DAC4E1367288B407B165B3FBAD3C4F1C8ACEA1CB7C1FA5EA06",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Wild Booster title, reel symbols and spin control. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 513 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pending",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  }
+}

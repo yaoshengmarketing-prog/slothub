@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1505,
+  "gameCount": 1506,
   "providerCount": 372,
-  "sourcePageCount": 2909,
+  "sourcePageCount": 2912,
   "counts": {
     "access-restricted": 4,
-    "available": 1054,
+    "available": 1055,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wild-booster-pragmatic-play",
+      "name": "Wild Booster",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20wildboost&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wild Booster; Official page confirms 3x5 grid, 20 paylines, random Wild multiplier, Super Boost, Mega Boost and Ultra Boost Free Spins rules, and RTP 96.47%. Codex in-app browser initially saw official Host 502 at 04:03:43 and 04:04:51 UTC, then reload recovered the exact official page. It also opened official art and Demo. Fresh HTML and PNG returned HTTP 200 with matching gameSymbol, og:image and SHA. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs20wildboost. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Wild Booster title, reel symbols and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 8A4D621E430113DAC4E1367288B407B165B3FBAD3C4F1C8ACEA1CB7C1FA5EA06, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-booster/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 512"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/03/Wild_Booster_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 8A4D621E430113DAC4E1367288B407B165B3FBAD3C4F1C8ACEA1CB7C1FA5EA06"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20wildboost&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Wild Booster title, reel symbols and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "hot-fiesta-pragmatic-play",
       "name": "Hot Fiesta",
