@@ -10,13 +10,13 @@
   "nextPageCards": 0,
   "totalCards": 665,
   "exactGameCards": 663,
-  "publishedExisting": 518,
-  "pendingIndividualCheck": 126,
+  "publishedExisting": 519,
+  "pendingIndividualCheck": 124,
   "comingSoon": 2,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 536 after item 535 Gems Bonanza® individual publication closure.",
+  "nextCursor": "Catalog item 538 after item 537 5 Lions Dance™ individual publication closure.",
   "pages": [
     {
       "page": 1,
@@ -5950,7 +5950,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/gems-bonanza/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/Gems-Bonanza™_339x180_01-1.png",
       "releaseLabel": null,
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "gems-bonanza-pragmatic-play"
     },
     {
@@ -5960,8 +5960,21 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/return-of-the-dead/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/10/Return-of-Ra™_EN_339x180_04.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "nextStep": "Do not count as Pragmatic Play original. Continue catalog item 537 after item 535 Gems Bonanza full publication closure.",
+        "browser": "Codex in-app browser only",
+        "evidence": [
+          "Codex in-app browser opened exact Return of the Dead official page and verified H1, gameSymbol vs10returndead and official og:image.",
+          "Direct exact Demo startup showed Reel Kingdom and Powered by Pragmatic Play; next screen showed Return of the Dead title.",
+          "Official image filename Return-of-Ra™_EN_339x180_04.png differs, but the actual image visibly depicts Return of the Dead matching Demo; filename discrepancy is recorded, not used as exclusion basis.",
+          "No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "checkedAt": "2026-11-10",
+        "officialPage": "https://www.pragmaticplay.com/en/games/return-of-the-dead/",
+        "reason": "Exact official Demo for gameSymbol vs10returndead visibly opens with Reel Kingdom and Powered by Pragmatic Play; Return of the Dead is a Reel Kingdom title distributed by Pragmatic Play."
+      }
     },
     {
       "index": 537,
@@ -5970,8 +5983,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/5-lions-dance/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/5-Lion-Dance™_EN_339x180_01_c-2.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "5-lions-dance-pragmatic-play"
     },
     {
       "index": 538,
