@@ -1,10 +1,10 @@
 {
   "batch": 979,
   "recordedAt": "2026-11-09T07:32:16.332Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Buffalo King Megaways",
       "slug": "buffalo-king-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/buffalo-king-megaways/",
       "officialFacts": "Official page confirms six cascading reels, over 200000 ways, 12 to 22 Free Spins from 4 to 6 Bonus symbols, 2x/3x/5x Wild multipliers, and RTP 96.52%.",
       "image": {
@@ -29,9 +29,18 @@
       "demo": "Codex in-app browser directly opened exact official Demo and visibly showed Buffalo King Megaways title, reels and spin control; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 510 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 510 Hot Fiesta after item 509 full publication closure.",
   "validation": {
     "result": "pending",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  },
+  "publication": {
+    "commit": "ad24ed8acefed80f774d3c4dc752b6f457509868",
+    "githubActionsRun": 42580238608,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "e82ebd82-4ae6-4051-98bf-59384f8bb3b9",
+    "cloudflareUrl": "https://e82ebd82.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
