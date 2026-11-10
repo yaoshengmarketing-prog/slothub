@@ -1,10 +1,10 @@
 {
   "batch": 981,
   "recordedAt": "2026-11-10T04:08:44.003Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Wild Booster",
       "slug": "wild-booster-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/wild-booster/",
       "officialFacts": "Official page confirms 3x5 grid, 20 paylines, random Wild multiplier, Super Boost, Mega Boost and Ultra Boost Free Spins rules, and RTP 96.47%.",
       "image": {
@@ -29,9 +29,18 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Wild Booster title, reel symbols and spin control. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 513 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 513 Power of Thor Megaways™ after item 512 full publication closure.",
   "validation": {
     "result": "pending",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  },
+  "publication": {
+    "commit": "42cc90e68e19074b97bbefca06d5466582e412a7",
+    "githubActionsRun": 42754407219,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "9a5298df-d703-40ab-871e-45c41dd1ed7f",
+    "cloudflareUrl": "https://9a5298df.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

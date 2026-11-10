@@ -1,0 +1,37 @@
+{
+  "batch": 982,
+  "recordedAt": "2026-11-10T04:18:41.526Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1506 published Game Markdown records and same-provider exact official path/name/gameSymbol; Power of Thor Megaways™ /vswayshammthor absent.",
+  "records": [
+    {
+      "index": 513,
+      "name": "Power of Thor Megaways™",
+      "slug": "power-of-thor-megaways-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/power-of-thor-megaways/",
+      "officialFacts": "Official page confirms up to 117,649 ways to win, top-row Hammer transforming symbols below into Wilds, THOR Scatters triggering Free Spins, a growing Free Games multiplier after tumbles, and RTP 96.55%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/03/Power_of_Thor_Megaways_EN_339x180.png",
+        "localPath": "public/assets/games/power-of-thor-megaways-pragmatic-play.png",
+        "sha256": "DF9F4EBB4906ADAD4CB5CC5717E1D12A06E9E068F2317EC5F5661CFE03036CBD",
+        "dimensions": "337x160",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Power of Thor Megaways title, Pragmatic Play startup logo, game reels, Megaways counter, Thor artwork and spin control. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 514 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pending",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  }
+}
