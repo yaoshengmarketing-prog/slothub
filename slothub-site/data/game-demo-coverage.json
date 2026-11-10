@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1517,
+  "gameCount": 1518,
   "providerCount": 372,
-  "sourcePageCount": 2945,
+  "sourcePageCount": 2948,
   "counts": {
     "access-restricted": 4,
-    "available": 1066,
+    "available": 1067,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "christmas-carol-megaways-pragmatic-play",
+      "name": "Christmas Carol Megaways™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20xmascarol&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Christmas Carol Megaways™; Official page confirms 200704 ways to win, each tumble raises the Free Spins multiplier by 1x, up to 23 frozen Free Spins and 10x multiplier, Buy Feature, and RTP 96.50%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs20xmascarol. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Christmas Carol Megaways title, Pragmatic Play startup logo, Big Time Gaming Megaways license, reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 4F814C3E9C7749221A1DFA2BC24F5A49EF3CB2433D225CDFFF5D14A62A772C24, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/christmas-carol-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 531"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/11/Christmas-Carol-Megaways__EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 4F814C3E9C7749221A1DFA2BC24F5A49EF3CB2433D225CDFFF5D14A62A772C24"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20xmascarol&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Christmas Carol Megaways title, Pragmatic Play startup logo, Big Time Gaming Megaways license, reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "spartan-king-pragmatic-play",
       "name": "Spartan King™",
