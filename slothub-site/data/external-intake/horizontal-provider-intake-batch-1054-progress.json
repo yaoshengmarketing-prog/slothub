@@ -1,0 +1,38 @@
+{
+  "batch": 1054,
+  "recordedAt": "2026-11-10T17:54:15.949Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1578 published Game Markdown records and same-provider exact official path/name/gameSymbol; Master Chen’s Fortune™ /vs9chen absent.",
+  "records": [
+    {
+      "index": 601,
+      "name": "Master Chen’s Fortune™",
+      "slug": "master-chens-fortune-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/master-chens-fortune-slot/",
+      "officialFacts": "Official page describes a 3x5 9-line video slot with wins from left to right and right to left; Wild Master Chen multiplies all wins by 2x. RTP 96.48%. Official Demo title and symbol match.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/09/thumb_Master-Chens-Fortune_339x180-1.png",
+        "localPath": "public/assets/games/master-chens-fortune-pragmatic-play.png",
+        "sha256": "D2E011EC32B625504AA5EAC965D060C087307659F995742A90F1F3CAB7481C44",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; title Master Chen's Fortune and gameSymbol vs9chen matched official page. Loading screen observed; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 602 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1054-verify.log; preview built isolation across 1984 HTML pages, storyboard, Densho and RTP checks passed"
+  }
+}`n

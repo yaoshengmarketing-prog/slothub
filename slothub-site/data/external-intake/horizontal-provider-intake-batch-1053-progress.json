@@ -1,10 +1,10 @@
 {
   "batch": 1053,
   "recordedAt": "2026-11-10T17:37:43.708Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Vegas Magic™",
       "slug": "vegas-magic-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/vegas-magic-slot/",
       "officialFacts": "Official page describes a 3x5 25-line collapsible video slot; winning symbols tumble, new symbols replace them, and multipliers increase at every tumble. RTP 96.08%. Official Demo title and symbol match.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; title Vegas Magic and gameSymbol vs20vegasmagic matched official page. Loading screen observed; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 601 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 601 Master Chen’s Fortune™ after item 600 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1053-verify.log; preview built isolation across 1983 HTML pages, storyboard, Densho and RTP checks passed"
+  },
+  "publication": {
+    "commit": "86526183d89efcff7eaac404d25e188e50c82319",
+    "githubActionsRun": 42868028834,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "d55b66bc-05b8-4986-b992-646afc7521ab",
+    "cloudflareUrl": "https://d55b66bc.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
