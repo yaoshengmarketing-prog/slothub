@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1581,
+  "gameCount": 1582,
   "providerCount": 372,
-  "sourcePageCount": 3137,
+  "sourcePageCount": 3140,
   "counts": {
     "access-restricted": 4,
-    "available": 1130,
+    "available": 1131,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "peking-luck-pragmatic-play",
+      "name": "Peking Luck™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-11",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25peking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Peking Luck™; Official page describes a 3x5 25-line video slot; Wild dancer doubles all wins, with up to 38 free spins and up to 18x multiplier. RTP 96.50%. Official Demo title and symbol match. Codex in-app browser checked official H1, gameplay, RTP, iframe symbol via read-only DOM, direct Demo and art. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Same-provider exact title/path/symbol absent. Official HTML includes gameSymbol vs25peking. Codex in-app browser opened exact official Demo on 2026-11-11; title Peking Luck and gameSymbol vs25peking matched official page. Loading screen observed; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 8AA1533625F455870723252BCA11C9BA002E982F9A83B4BD466AD73AFDE8B652, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/peking-luck-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 604"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/07/thumb_Peking_Luck_330x140-1-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 8AA1533625F455870723252BCA11C9BA002E982F9A83B4BD466AD73AFDE8B652"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25peking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-11; title Peking Luck and gameSymbol vs25peking matched official page. Loading screen observed; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "leprechaun-song-pragmatic-play",
       "name": "Leprechaun Song™",
