@@ -1,10 +1,10 @@
 {
   "batch": 1005,
   "recordedAt": "2026-11-10T09:08:54.070Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Great Rhino® Deluxe",
       "slug": "great-rhino-deluxe-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/great-rhino-deluxe-slot/",
       "officialFacts": "Official page confirms three Bonus symbols trigger ten free spins, two or more Rhino stacks trigger Super Respin, 14 or 15 Rhinos can award Major or Grand jackpot, and RTP 96.54%. Exact max-win conflict preserved: official page says 6,242x while official Demo screen says 6,000x; max-win field intentionally omitted.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Great Rhino Deluxe title, reels and bonus introduction screen. Demo screen says Win up to 6,000x bet, while official game page says 6,242x; public max-win field omitted. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 548 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 548 Street Racer™ after item 547 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exited 0 twice on 2026-11-10, including after safe fast-forward of unrelated Storm of Seth commit ba84cbeb; 1935 HTML pages, internal links and preview isolation passed. Public max-win omitted because official page and Demo conflict."
+  },
+  "publication": {
+    "commit": "87ce472349fd164594436b927ce6205f66017a54",
+    "githubActionsRun": 42789440701,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "06d365d5-0fa0-4b3b-adfe-83b27bdc8b27",
+    "cloudflareUrl": "https://06d365d5.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

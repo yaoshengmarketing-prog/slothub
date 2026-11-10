@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1530,
+  "gameCount": 1531,
   "providerCount": 372,
-  "sourcePageCount": 2984,
+  "sourcePageCount": 2987,
   "counts": {
     "access-restricted": 4,
-    "available": 1079,
+    "available": 1080,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "street-racer-pragmatic-play",
+      "name": "Street Racer™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40streetracer&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Street Racer™; Official page confirms a 4x5 video slot with 40 lines, maximum payout 2,000x and RTP 96.52%; direct official Demo intro screen also displays 2,000x. Codex in-app browser loaded exact official page with matching H1, RTP, iframe gameSymbol and official art; direct official Demo and image visually matched. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Exact same-provider name, path and symbol absent. Official HTML includes gameSymbol vs40streetracer. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Street Racer title, reels, spin control and 2,000x intro value. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 A5A58A04CFBD97D34651F358B117267FEB1696F963144CBFA3F1D4CF9CB9EAAC, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/street-racer-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 548"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/06/Street-Racer_™_339x180_02.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 A5A58A04CFBD97D34651F358B117267FEB1696F963144CBFA3F1D4CF9CB9EAAC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40streetracer&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Street Racer title, reels, spin control and 2,000x intro value. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "great-rhino-deluxe-pragmatic-play",
       "name": "Great Rhino® Deluxe",
