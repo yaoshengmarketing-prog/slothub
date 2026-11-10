@@ -1,0 +1,38 @@
+{
+  "batch": 1041,
+  "recordedAt": "2026-11-10T15:16:21.784Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1565 published Game Markdown records and same-provider exact official path/name/gameSymbol; Pirate Gold™ /vs40pirate absent.",
+  "records": [
+    {
+      "index": 587,
+      "name": "Pirate Gold™",
+      "slug": "pirate-gold-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/pirate-gold-slot/",
+      "officialFacts": "Official page describes 5x4 40-line Pirate Gold, eight money bags triggering respins with jackpot/multiplier/retrigger and Wild Free Spins, RTP 96.50%. Official Demo intro says WIN UP TO 32,270 X BET. Official art filename says Pirates Code but visible artwork says Pirate Gold and page og:image maps it exactly.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/03/Pirates-Code™_Thumb_339x180_02-4.png",
+        "localPath": "public/assets/games/pirate-gold-pragmatic-play.png",
+        "sha256": "BD684F97D69E5049ED5EFAF0409396C8E0D8E14C3844774CC35E9194F54B3A66",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pirate Gold title, matching artwork and WIN UP TO 32,270 X BET. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 588 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Exit 0; preview built isolation across 1971 HTML pages; content and Astro diagnostics, internal links, outbound nofollow, source, schema and route checks passed."
+  }
+}

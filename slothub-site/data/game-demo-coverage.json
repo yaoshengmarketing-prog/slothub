@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1565,
+  "gameCount": 1566,
   "providerCount": 372,
-  "sourcePageCount": 3089,
+  "sourcePageCount": 3092,
   "counts": {
     "access-restricted": 4,
-    "available": 1114,
+    "available": 1115,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "pirate-gold-pragmatic-play",
+      "name": "Pirate Gold™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40pirate&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Pirate Gold™; Official page describes 5x4 40-line Pirate Gold, eight money bags triggering respins with jackpot/multiplier/retrigger and Wild Free Spins, RTP 96.50%. Official Demo intro says WIN UP TO 32,270 X BET. Official art filename says Pirates Code but visible artwork says Pirate Gold and page og:image maps it exactly. Codex in-app browser checked official H1, gameplay text, RTP, iframe gameSymbol, direct Demo and official art. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Art URL filename Pirates-Code differs from visible image title Pirate Gold but maps exactly from page og:image. Pirate Gold Deluxe is distinct symbol vs40pirgold; same-provider exact name/path/symbol for Pirate Gold absent. Official HTML includes gameSymbol vs40pirate. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pirate Gold title, matching artwork and WIN UP TO 32,270 X BET. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 BD684F97D69E5049ED5EFAF0409396C8E0D8E14C3844774CC35E9194F54B3A66, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/pirate-gold-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 587"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/03/Pirates-Code™_Thumb_339x180_02-4.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 BD684F97D69E5049ED5EFAF0409396C8E0D8E14C3844774CC35E9194F54B3A66"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40pirate&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pirate Gold title, matching artwork and WIN UP TO 32,270 X BET. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "triple-jokers-pragmatic-play",
       "name": "Triple Jokers™",
