@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1542,
+  "gameCount": 1543,
   "providerCount": 372,
-  "sourcePageCount": 3020,
+  "sourcePageCount": 3023,
   "counts": {
     "access-restricted": 4,
-    "available": 1091,
+    "available": 1092,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mysterious-pragmatic-play",
+      "name": "Mysterious™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs4096mystery&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Mysterious™; Official page confirms variable reel size up to 4096 ways, the Lord's multipliers, the Lady's Mystery Symbols, the Baron's Infectious Wilds, Free Spins choice of roaming Wilds or up to 12x feature multiplier, and RTP 96.50%. The 12x is a feature multiplier, not a total max win. Exact Demo intro shows Mysterious title, reels, three unique game modes and medium-volatility indicator; no game-wide volatility was inferred from the intro indicator. Codex in-app browser loaded exact official page with matching H1, RTP and iframe gameSymbol, and directly viewed matching Demo and official art. Fresh official HTML returned HTTP 200. Official page displayed an age confirmation overlay; no age submission was made. No 403, IP restriction or paid browser use. Exact same-provider name/path/symbol absent. Official HTML includes gameSymbol vs4096mystery. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup, Mysterious title, reels, three unique game modes and medium-volatility intro indicator. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 6BE177ACAF0F3A8B68EE237E63687845C777A6E4D8251D4714BB0ED97E90A6FD, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/mysterious-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 563"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/02/Mysterious™_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 6BE177ACAF0F3A8B68EE237E63687845C777A6E4D8251D4714BB0ED97E90A6FD"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs4096mystery&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup, Mysterious title, reels, three unique game modes and medium-volatility intro indicator. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "aztec-bonanza-pragmatic-play",
       "name": "Aztec Bonanza™",
