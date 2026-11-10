@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1536,
+  "gameCount": 1537,
   "providerCount": 372,
-  "sourcePageCount": 3002,
+  "sourcePageCount": 3005,
   "counts": {
     "access-restricted": 4,
-    "available": 1085,
+    "available": 1086,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "great-rhino-megaways-pragmatic-play",
+      "name": "Great Rhino® Megaways",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysrhino&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Great Rhino® Megaways; Official page confirms tumbling Megaways with over 200000 ways, 4-6 Scatters offering 15-23 Free Spins and starting 1x/5x/10x multipliers, +1x multiplier per tumble win and unlimited five-spin retriggers, RTP 96.50% and maximum 20000x bet. Official Demo intro separately shows win up to 20000x. Distinct from Great Rhino Deluxe symbol vs20rhinoluxe and separate official URL. Codex in-app browser loaded exact official page with matching H1, RTP, iframe gameSymbol and official art; direct official Demo and image visually matched. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Great Rhino Deluxe has separate symbol vs20rhinoluxe; exact same-provider name/path/symbol absent. Official HTML includes gameSymbol vswaysrhino. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup mark, Great Rhino Megaways title, reels, spin control and win up to 20000x bet. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 CB2A1BBCD454A984A6E0AE15FEECD22D1A0C18CB372CA978D3A211993C474E02, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/great-rhino-megaways-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 557"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/04/Great-Rhino-Megaways™_EN_339x180_02-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 CB2A1BBCD454A984A6E0AE15FEECD22D1A0C18CB372CA978D3A211993C474E02"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysrhino&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup mark, Great Rhino Megaways title, reels, spin control and win up to 20000x bet. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "john-hunter-book-of-tut-pragmatic-play",
       "name": "John Hunter and the book of Tut™",
