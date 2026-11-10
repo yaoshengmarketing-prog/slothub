@@ -10,13 +10,13 @@
   "nextPageCards": 0,
   "totalCards": 665,
   "exactGameCards": 663,
-  "publishedExisting": 516,
-  "pendingIndividualCheck": 129,
+  "publishedExisting": 517,
+  "pendingIndividualCheck": 127,
   "comingSoon": 2,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 533 after item 532 Cowboys Gold™ individual publication closure.",
+  "nextCursor": "Catalog item 535 after item 534 Pirate Gold Deluxe™ individual publication closure.",
   "pages": [
     {
       "page": 1,
@@ -5908,7 +5908,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/cowboys-gold/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/10/Cow-Boys-GoldOao_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "cowboys-gold-pragmatic-play"
     },
     {
@@ -5918,8 +5918,20 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/book-of-kingdoms/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/10/Book_of_KingdomsOao_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "nextStep": "Do not count as Pragmatic Play original. Continue catalog item 534 Pirate Gold Deluxe after item 532 Cowboys Gold full publication closure.",
+        "checkedAt": "2026-11-10",
+        "evidence": [
+          "Codex in-app browser opened exact official page and verified H1 Book of Kingdoms®, iframe gameSymbol vs25bkofkngdm and official image URL.",
+          "Direct exact Demo startup showed Reel Kingdom and Powered by Pragmatic Play; following screen showed Book of Kingdoms title.",
+          "No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "reason": "Exact official Demo for gameSymbol vs25bkofkngdm visibly opens with Reel Kingdom and Powered by Pragmatic Play; Book of Kingdoms is a Reel Kingdom title distributed by Pragmatic Play.",
+        "officialPage": "https://www.pragmaticplay.com/en/games/book-of-kingdoms/",
+        "browser": "Codex in-app browser only"
+      }
     },
     {
       "index": 534,
@@ -5928,8 +5940,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/pirate-gold-deluxe/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/10/Pirate_Gold_Deluxe™_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "pirate-gold-deluxe-pragmatic-play"
     },
     {
       "index": 535,
