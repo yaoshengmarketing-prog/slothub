@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1544,
+  "gameCount": 1545,
   "providerCount": 372,
-  "sourcePageCount": 3026,
+  "sourcePageCount": 3029,
   "counts": {
     "access-restricted": 4,
-    "available": 1093,
+    "available": 1094,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "super-7s-pragmatic-play",
+      "name": "Super 7s™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5super7&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Super 7s™; Official page describes a classic video slot with three rows and five reels and RTP 96.50%. Exact official Demo shows matching Super 7s title, fruit-and-seven artwork, a five-reel three-row layout and spin control. No unsupported win mechanism, feature or max-win figure was inferred. Codex in-app browser loaded exact official page with matching H1 and RTP, and directly viewed matching Demo and official art. Fresh official HTML returned HTTP 200 with exact iframe gameSymbol. Official page displayed an age confirmation overlay; no age submission was made. No 403, IP restriction or paid browser use. Exact same-provider name/path/symbol absent. Official HTML includes gameSymbol vs5super7. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play label, Super 7s title, matching artwork, five-reel three-row grid and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 249FF6D72CF9E16BEEB5AAE9E9646B9842C31F8841EBF7C554CFC25091035CC6, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/super-7s-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 565"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/01/Super7s™_EN_339x180_03.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 249FF6D72CF9E16BEEB5AAE9E9646B9842C31F8841EBF7C554CFC25091035CC6"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5super7&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play label, Super 7s title, matching artwork, five-reel three-row grid and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "master-joker-pragmatic-play",
       "name": "Master Joker™",
