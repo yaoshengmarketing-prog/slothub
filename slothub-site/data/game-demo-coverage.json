@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1516,
+  "gameCount": 1517,
   "providerCount": 372,
-  "sourcePageCount": 2942,
+  "sourcePageCount": 2945,
   "counts": {
     "access-restricted": 4,
-    "available": 1065,
+    "available": 1066,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "spartan-king-pragmatic-play",
+      "name": "Spartan King™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40spartaking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Spartan King™; Official page confirms a 4x5 video slot, 2x2 Shield Symbols with multiplier up to 25x, and RTP 96.60%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs40spartaking. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Spartan King title, reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 F1451E271A48AC202115630B2DCDFD4E945B0EDD9C5D214D97C6466FD1169EE0, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/spartan-king/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 530"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/11/Spartan-King™_EN_339x180_01.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 F1451E271A48AC202115630B2DCDFD4E945B0EDD9C5D214D97C6466FD1169EE0"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40spartaking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Spartan King title, reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "john-hunter-and-the-mayan-gods-pragmatic-play",
       "name": "John Hunter and the Mayan Gods™",
