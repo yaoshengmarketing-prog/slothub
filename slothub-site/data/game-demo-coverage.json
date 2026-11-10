@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1514,
+  "gameCount": 1515,
   "providerCount": 372,
-  "sourcePageCount": 2936,
+  "sourcePageCount": 2939,
   "counts": {
     "access-restricted": 4,
-    "available": 1063,
+    "available": 1064,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "voodoo-magic-pragmatic-play",
+      "name": "Voodoo Magic™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40voodoo&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Voodoo Magic™; Official page confirms a 5x4 video slot with 40 paylines, symbols paying up to 10x stake, five Free Spins with Mystery Symbols transforming into character symbols, feature wins up to 50x stake, and RTP 96.50%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs40voodoo. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Voodoo Magic title, reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 CD851CF293CACBAACA149E259C43074138EE42F2658553056A208FBE772C6A04, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/voodoo-magic/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 527"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/12/Voodoo_Magic_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 CD851CF293CACBAACA149E259C43074138EE42F2658553056A208FBE772C6A04"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40voodoo&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Voodoo Magic title, reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "mysterious-egypt-pragmatic-play",
       "name": "Mysterious Egypt™",

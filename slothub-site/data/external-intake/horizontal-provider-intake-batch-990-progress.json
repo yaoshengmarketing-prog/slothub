@@ -1,0 +1,37 @@
+{
+  "batch": 990,
+  "recordedAt": "2026-11-10T05:29:48.834Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1514 published Game Markdown records and same-provider exact official path/name/gameSymbol; Voodoo Magic™ /vs40voodoo absent.",
+  "records": [
+    {
+      "index": 527,
+      "name": "Voodoo Magic™",
+      "slug": "voodoo-magic-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/voodoo-magic/",
+      "officialFacts": "Official page confirms a 5x4 video slot with 40 paylines, symbols paying up to 10x stake, five Free Spins with Mystery Symbols transforming into character symbols, feature wins up to 50x stake, and RTP 96.50%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/12/Voodoo_Magic_EN_339x180.png",
+        "localPath": "public/assets/games/voodoo-magic-pragmatic-play.png",
+        "sha256": "CD851CF293CACBAACA149E259C43074138EE42F2658553056A208FBE772C6A04",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Voodoo Magic title, reels and spin control. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 528 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pending",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  }
+}
