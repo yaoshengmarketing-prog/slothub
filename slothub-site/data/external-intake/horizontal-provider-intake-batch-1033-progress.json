@@ -1,10 +1,10 @@
 {
   "batch": 1033,
   "recordedAt": "2026-11-10T14:01:32.872Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Super Joker™",
       "slug": "super-joker-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/super-joker-slot/",
       "officialFacts": "Official page describes 3x3 5-line Super Joker, stacked-symbol respin-until-win and full-screen multiplier wheel, RTP 96.52%. Exact official Demo visibly showed Super Joker title and three-reel three-row artwork matching the official image.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Super Joker title, 3x3 reels and matching symbols. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 579 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 579 The Great Chicken Escape™ after item 578 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Exit 0; preview built isolation across 1963 HTML pages; content and Astro diagnostics, internal links, outbound nofollow, source, schema and route checks passed."
+  },
+  "publication": {
+    "commit": "6138d8ad0eb504ebbf20e21e868b059173952d4f",
+    "githubActionsRun": 42830840194,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "ece7eefd-c968-4e8b-ba7e-5d6d2cfa1ed1",
+    "cloudflareUrl": "https://ece7eefd.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

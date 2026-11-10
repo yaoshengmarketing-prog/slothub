@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1558,
+  "gameCount": 1559,
   "providerCount": 372,
-  "sourcePageCount": 3068,
+  "sourcePageCount": 3071,
   "counts": {
     "access-restricted": 4,
-    "available": 1107,
+    "available": 1108,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-great-chicken-escape-pragmatic-play",
+      "name": "The Great Chicken Escape™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20chicken&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Great Chicken Escape™; Official page describes 3x5 20-line The Great Chicken Escape, random symbols or expanding Wilds and five bonus games with increasing payout, RTP 96.50%. Exact official Demo visibly showed matching title, chicken characters and five-reel three-row artwork. Codex in-app browser checked official H1, gameplay text, RTP, iframe gameSymbol, direct Demo and official art. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Same-provider exact name/path/symbol absent. Official HTML includes gameSymbol vs20chicken. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed The Great Chicken Escape title, matching chicken characters and 5x3 reels. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 3116A1A5F37AE4ACB8BC848CE0EB67973E2976491F75FAF470A20B0F8F3363BD, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-great-chicken-escape-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 579"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/07/The-Great-Chicken-Escape™_339x180px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 3116A1A5F37AE4ACB8BC848CE0EB67973E2976491F75FAF470A20B0F8F3363BD"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20chicken&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed The Great Chicken Escape title, matching chicken characters and 5x3 reels. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "super-joker-pragmatic-play",
       "name": "Super Joker™",
