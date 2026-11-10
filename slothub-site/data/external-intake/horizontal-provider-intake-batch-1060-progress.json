@@ -1,10 +1,10 @@
 {
   "batch": 1060,
   "recordedAt": "2026-11-10T19:38:50.03Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Asgard™",
       "slug": "asgard-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/asgard-slot/",
       "officialFacts": "Official page describes a 3x5 25-line video slot with four Gods' Wild and mystery stacked-symbol blessings; one blessing lasts throughout Free Spins. RTP 96.48%. Official Demo title and symbol match.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; title Asgard and gameSymbol vs25asgard matched official page. Loading screen observed; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 608 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 608 The Champions™ after item 607 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1060-verify.log; preview built isolation across 1990 HTML pages, storyboard, Densho and RTP checks passed"
+  },
+  "publication": {
+    "commit": "42ac49da1051c86b680e142247df800b96a8d296",
+    "githubActionsRun": 42888023195,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "a522e07e-a583-4726-803a-9dd424065cf3",
+    "cloudflareUrl": "https://a522e07e.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
