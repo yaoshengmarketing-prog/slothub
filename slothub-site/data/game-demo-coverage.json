@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1548,
+  "gameCount": 1549,
   "providerCount": 372,
-  "sourcePageCount": 3038,
+  "sourcePageCount": 3041,
   "counts": {
     "access-restricted": 4,
-    "available": 1097,
+    "available": 1098,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "buffalo-king-pragmatic-play",
+      "name": "Buffalo King™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs4096bufking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Buffalo King™; Official page describes a 6x4 slot, 3-6 Bonus symbols starting 8-100 Free Spins, 2-6 Bonus symbols retriggering 5-100 additional spins, Free Spins Wild multipliers of 2x, 3x or 5x that can stack, and RTP 96.06%. Exact official Demo visibly showed Buffalo King title, matching buffalo and reels, and WIN UP TO 93,750 X BET on its intro. No unverified 4096-ways mechanic inferred from gameSymbol. Codex in-app browser loaded exact official page with matching H1, RTP and iframe gameSymbol, and directly viewed matching Demo and official art. Fresh official HTML returned HTTP 200. Official page displayed an age confirmation overlay; no age submission was made. No 403, IP restriction or paid browser use. Exact same-provider name/path/symbol absent; two existing Megaways variants have distinct names, pages and symbols. Official HTML includes gameSymbol vs4096bufking. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Buffalo King title, matching buffalo, 6x4 reels, startup controls, and WIN UP TO 93,750 X BET intro. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 CD97F919179D0C7DE7A6CE1877690B924A487DC8D5B909001D149BAE657CEC71, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/buffalo-king-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 569"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/11/Buffalo-King_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 CD97F919179D0C7DE7A6CE1877690B924A487DC8D5B909001D149BAE657CEC71"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs4096bufking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Buffalo King title, matching buffalo, 6x4 reels, startup controls, and WIN UP TO 93,750 X BET intro. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "magic-journey-pragmatic-play",
       "name": "Magic Journey™",
