@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1541,
+  "gameCount": 1542,
   "providerCount": 372,
-  "sourcePageCount": 3017,
+  "sourcePageCount": 3020,
   "counts": {
     "access-restricted": 4,
-    "available": 1090,
+    "available": 1091,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "aztec-bonanza-pragmatic-play",
+      "name": "Aztec Bonanza™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs7776aztec&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Aztec Bonanza™; Official page confirms a 5x6 variable-ways slot, consecutive tumbles unlocking mystery symbols, replacing symbols and giant reels, random features on every Free Spin, up to 7776 ways and RTP 96.53%. Exact official Demo intro shows the Aztec Bonanza title, reels, spin control, medium-volatility indicator and up to 7776 ways unlocked in consecutive tumbles; no game-wide volatility was inferred from the intro indicator. Codex in-app browser loaded exact official page with matching H1, RTP and iframe gameSymbol, and directly viewed matching Demo and official art. Fresh official HTML returned HTTP 200. Official page displayed an age confirmation overlay; no age submission was made. No 403, IP restriction or paid browser use. Exact same-provider name/path/symbol absent. Official HTML includes gameSymbol vs7776aztec. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup, Aztec Bonanza title, reels, spin control, medium-volatility intro indicator and up to 7776 ways in consecutive tumbles. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 19A13F3ACC9184005AF957B30C5047C2BF31442C8A5C8C55F541D18FF73C8529, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/aztec-bonanza-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 562"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/02/Aztec-Bonanza™_EN_03_339x180_01-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 19A13F3ACC9184005AF957B30C5047C2BF31442C8A5C8C55F541D18FF73C8529"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs7776aztec&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup, Aztec Bonanza title, reels, spin control, medium-volatility intro indicator and up to 7776 ways in consecutive tumbles. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "the-wild-machine-pragmatic-play",
       "name": "The Wild Machine™",
