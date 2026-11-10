@@ -1,10 +1,10 @@
 {
   "batch": 1001,
   "recordedAt": "2026-11-10T08:07:17.344Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Curse of the Werewolf Megaways™",
       "slug": "curse-of-the-werewolf-megaways-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/curse-of-the-werewolf-megaways-slot/",
       "officialFacts": "Official page confirms Curse of the Werewolf Megaways identity, two features without detailed rules and RTP 96.50%; direct Demo visually confirms Wild symbol and Megaways licence branding.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Curse of the Werewolf Megaways title, reels, Wild symbols, Megaways licence mark and spin control. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 544 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 544 Jungle Gorilla™ after item 543 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exited 0 on 2026-11-10; 1931 HTML pages, internal links and preview isolation passed."
+  },
+  "publication": {
+    "commit": "c1273c4b304986637ca3625e7d96525eaf182f48",
+    "githubActionsRun": 42780682644,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "4eb80bbf-e70b-44d5-9331-58d1d7247691",
+    "cloudflareUrl": "https://4eb80bbf.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
