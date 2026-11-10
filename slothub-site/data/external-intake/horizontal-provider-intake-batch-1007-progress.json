@@ -1,10 +1,10 @@
 {
   "batch": 1007,
   "recordedAt": "2026-11-10T09:31:12.082Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Drago – Jewels of Fortune™",
       "slug": "drago-jewels-of-fortune-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/drago-jewels-of-fortune-slot/",
       "officialFacts": "Official page confirms 1600 ways to win, Respin Round, Free Spins with modifiers and RTP 96.50%. Page calls the Free Spins feature very volatile while Demo intro labels overall volatility Low; these differently scoped statements were not converted to a normalized volatility value. Demo intro shows 48,000x but page does not corroborate, so no max-win field was recorded.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play mark, Drago Jewels of Fortune title, reels, spin control and intro values. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 550 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 550 Pyramid King™ after item 549 full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exited 0 on 2026-11-10; 1937 HTML pages, internal links and preview isolation passed. Volatility and max-win were not inferred from differently scoped or single-screen evidence."
+  },
+  "publication": {
+    "commit": "3810201a56e7b6e8838b2e2935c8469038ac3f5b",
+    "githubActionsRun": 42792049519,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "dec2b013-1cdc-4a34-b968-4d7ac8c97a0b",
+    "cloudflareUrl": "https://dec2b013.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
