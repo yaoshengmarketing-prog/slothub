@@ -10,13 +10,13 @@
   "nextPageCards": 0,
   "totalCards": 665,
   "exactGameCards": 663,
-  "publishedExisting": 497,
-  "pendingIndividualCheck": 155,
+  "publishedExisting": 521,
+  "pendingIndividualCheck": 121,
   "comingSoon": 2,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 505 after item 504 Panda’s Fortune 2 individual publication closure.",
+  "nextCursor": "Catalog item 541 after item 540 Wild Wild Riches™ individual publication closure.",
   "pages": [
     {
       "page": 1,
@@ -5545,7 +5545,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/panda-fortune-2/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/05/Pandas_Fortune_2_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "panda-fortune-2-pragmatic-play"
     },
     {
@@ -5555,8 +5555,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/the-magic-cauldron-enchanted-brew/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/05/The_Magic_Cauldron_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "the-magic-cauldron-enchanted-brew-pragmatic-play"
     },
     {
       "index": 506,
@@ -5565,8 +5565,19 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/cash-elevator/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/05/CashElevator_EN_339x180_04-1.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "checkedAt": "2026-11-09",
+        "browser": "Codex in-app browser only",
+        "officialPage": "https://www.pragmaticplay.com/en/games/cash-elevator/",
+        "reason": "The exact Pragmatic Play listing, gameSymbol and artwork match Cash Elevator, but the official Demo intro prominently shows the crowned gorilla studio mark also observed on Reel Kingdom powered-by-Pragmatic titles. Original studio attribution is unresolved, so do not classify it as a Pragmatic Play original.",
+        "evidence": [
+          "Exact official page HTTP 200, title Cash Elevator, RTP 96.64%, gameSymbol vs20terrorv and matching og:image HTTP 200, SHA256 5C6ED4904F0F8ECFA0A509AC17A03EFD47C4B843489CC90E081FFA13DF784A44.",
+          "Codex in-app browser direct Demo for vs20terrorv showed matching Cash Elevator title and crowned gorilla mark inside the spin control on the intro. No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "nextStep": "Keep out of Pragmatic Play Provider batch until original studio is corroborated by a stronger official source. Continue item 507 after The Magic Cauldron – Enchanted Brew full publication closure."
+      }
     },
     {
       "index": 507,
@@ -5575,8 +5586,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/phoenix-forge/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/04/Phoenix_Forge_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "phoenix-forge-pragmatic-play"
     },
     {
       "index": 508,
@@ -5585,8 +5596,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/the-amazing-money-machine/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/04/Amazing_Money_Machine_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "the-amazing-money-machine-pragmatic-play"
     },
     {
       "index": 509,
@@ -5595,8 +5606,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/buffalo-king-megaways/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/04/Buffalo-King-Megaways_339x180_EN.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "buffalo-king-megaways-pragmatic-play"
     },
     {
       "index": 510,
@@ -5605,8 +5616,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/hot-fiesta/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/04/Hot_Fiesta_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "hot-fiesta-pragmatic-play"
     },
     {
       "index": 511,
@@ -5615,8 +5626,20 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/floating-dragon-hold-and-spin/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/03/Floating_Dragon_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "checkedAt": "2026-11-10",
+        "browser": "Codex in-app browser only",
+        "officialPage": "https://www.pragmaticplay.com/en/games/floating-dragon-hold-and-spin/",
+        "reason": "The exact official Demo for gameSymbol vs10floatdrg visibly opens with the Reel Kingdom studio logo and Powered by Pragmatic Play. The following screen displays Floating Dragon Hold & Spin. This identifies a Reel Kingdom title distributed by Pragmatic Play, so do not count it as a Pragmatic Play original.",
+        "evidence": [
+          "Codex in-app browser opened https://www.pragmaticplay.com/en/games/floating-dragon-hold-and-spin/ on 2026-11-10; page title and H1 identify Floating Dragon Hold and Spin and the iframe points to gameSymbol vs10floatdrg.",
+          "The same in-app browser opened the direct Demo for vs10floatdrg. Its first visible loading screen showed Reel Kingdom and Powered by Pragmatic Play; its next screen showed the exact Floating Dragon Hold & Spin title and crowned gorilla mark.",
+          "The official page maps to https://www.pragmaticplay.com/wp-content/uploads/2021/03/Floating_Dragon_EN_339x180.png; stored image/png SHA256 1D8C973B8E5C0FD97CFD220F6D72469ED6230A28707612C794114435CBD55AF7. No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "nextStep": "Keep out of Pragmatic Play original-game intake. Continue official catalog item 512 Wild Booster after item 510 Hot Fiesta full publication closure."
+      }
     },
     {
       "index": 512,
@@ -5625,8 +5648,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/wild-booster/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/03/Wild_Booster_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "wild-booster-pragmatic-play"
     },
     {
       "index": 513,
@@ -5635,8 +5658,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/power-of-thor-megaways/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/03/Power_of_Thor_Megaways_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "power-of-thor-megaways-pragmatic-play"
     },
     {
       "index": 514,
@@ -5645,8 +5668,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/juicy-fruits/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/03/Juicy_Fruits_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "juicy-fruits-pragmatic-play"
     },
     {
       "index": 515,
@@ -5655,8 +5678,20 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/temujin-treasures/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/03/Tamujin_Treasures_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "checkedAt": "2026-11-10",
+        "browser": "Codex in-app browser only",
+        "officialPage": "https://www.pragmaticplay.com/en/games/temujin-treasures/",
+        "reason": "The exact official Demo for gameSymbol vs1024temuj visibly opens with the Wild Streak Gaming studio logo and Powered by Pragmatic Play. The following screen displays Temujin Treasures. This identifies a Wild Streak Gaming title distributed by Pragmatic Play, so do not count it as a Pragmatic Play original.",
+        "evidence": [
+          "Codex in-app browser opened the exact official Temujin Treasures page on 2026-11-10; page H1 and iframe identify gameSymbol vs1024temuj.",
+          "The same in-app browser opened the direct Demo for vs1024temuj. Its startup screen explicitly showed Wild Streak Gaming and Powered by Pragmatic Play; the next screen showed the Temujin Treasures title and reels.",
+          "Official page og:image maps to https://www.pragmaticplay.com/wp-content/uploads/2021/03/Tamujin_Treasures_EN_339x180.png. The filename spelling Tamujin is the actual official URL; the artwork itself displays Temujin Treasures. No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "nextStep": "Keep out of Pragmatic Play original-game intake. Continue official catalog item 516 Fishin’ Reels after item 514 Juicy Fruits full publication closure."
+      }
     },
     {
       "index": 516,
@@ -5665,8 +5700,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/fishin-reels/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/02/Fishin_Reels_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "fishin-reels-pragmatic-play"
     },
     {
       "index": 517,
@@ -5675,8 +5710,20 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/hot-to-burn-hold-and-spin/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/02/HTBHAS_EN_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "checkedAt": "2026-11-10",
+        "browser": "Codex in-app browser only",
+        "officialPage": "https://www.pragmaticplay.com/en/games/hot-to-burn-hold-and-spin/",
+        "reason": "The exact official Demo for gameSymbol vs20hburnhs visibly opens with the Reel Kingdom studio logo and Powered by Pragmatic Play. The following screen displays Hot to Burn Hold & Spin. This identifies a Reel Kingdom title distributed by Pragmatic Play, so do not count it as a Pragmatic Play original.",
+        "evidence": [
+          "Codex in-app browser opened the exact official Hot to Burn Hold and Spin page on 2026-11-10; page H1 and iframe identify gameSymbol vs20hburnhs.",
+          "The same in-app browser opened the direct Demo for vs20hburnhs. Its startup screen explicitly showed Reel Kingdom and Powered by Pragmatic Play; the next screen showed the Hot to Burn Hold & Spin title and Reel Kingdom crowned gorilla mark.",
+          "Official page og:image maps to https://www.pragmaticplay.com/wp-content/uploads/2021/02/HTBHAS_EN_EN_339x180.png. No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "nextStep": "Keep out of Pragmatic Play original-game intake. Item 518 Gates of Olympus is already published as gates-of-olympus; continue catalog item 519 Joker King after item 516 Fishin’ Reels full publication closure."
+      }
     },
     {
       "index": 518,
@@ -5695,8 +5742,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/joker-king/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/02/Joker_King_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "joker-king-pragmatic-play"
     },
     {
       "index": 520,
@@ -5705,8 +5752,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/the-hand-of-midas/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/02/THOM_EN_339x180-1.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "the-hand-of-midas-pragmatic-play"
     },
     {
       "index": 521,
@@ -5715,8 +5762,20 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/eye-of-the-storm/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/01/EOTS_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "checkedAt": "2026-11-10",
+        "browser": "Codex in-app browser only",
+        "officialPage": "https://www.pragmaticplay.com/en/games/eye-of-the-storm/",
+        "reason": "The exact official Demo for gameSymbol vs10eyestorm visibly opens with Reel Kingdom and Powered by Pragmatic Play. The subsequent game screen identifies Eye of the Storm and also prints Reel Kingdom on the lower edge. This identifies a Reel Kingdom title distributed by Pragmatic Play, so do not count it as a Pragmatic Play original.",
+        "evidence": [
+          "Codex in-app browser opened the exact official Eye of the Storm page on 2026-11-10; page H1 and iframe identify gameSymbol vs10eyestorm.",
+          "The same in-app browser opened the direct Demo for vs10eyestorm. Startup explicitly showed Reel Kingdom and Powered by Pragmatic Play; the loaded reels showed Eye of the Storm with Reel Kingdom in the lower left.",
+          "Official page og:image maps to https://www.pragmaticplay.com/wp-content/uploads/2021/01/EOTS_EN_339x180.png. No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "nextStep": "Keep out of Pragmatic Play original-game intake. Continue catalog item 522 after item 520 The Hand of Midas full publication closure."
+      }
     },
     {
       "index": 522,
@@ -5725,8 +5784,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/dragon-kingdom-eyes-of-fire/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/01/DKEOF_EN_339x180-1.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "dragon-kingdom-eyes-of-fire-pragmatic-play"
     },
     {
       "index": 523,
@@ -5735,8 +5794,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/madame-destiny-megaways/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/01/MDM_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "madame-destiny-megaways-pragmatic-play"
     },
     {
       "index": 524,
@@ -5745,8 +5804,20 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/congo-cash/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/01/Congo-Cash™_EN_339x180_01.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "checkedAt": "2026-11-10",
+        "browser": "Codex in-app browser only",
+        "officialPage": "https://www.pragmaticplay.com/en/games/congo-cash/",
+        "reason": "The exact official Demo for gameSymbol vs432congocash visibly opens with Wild Streak Gaming and Powered by Pragmatic Play. The next screen displays Congo Cash. This identifies a Wild Streak Gaming title distributed by Pragmatic Play, so do not count it as a Pragmatic Play original.",
+        "evidence": [
+          "Codex in-app browser opened exact Congo Cash official page on 2026-11-10; H1 and iframe identify gameSymbol vs432congocash.",
+          "The same in-app browser opened direct Demo for vs432congocash. Startup explicitly showed Wild Streak Gaming and Powered by Pragmatic Play; next screen displayed Congo Cash title and gorilla artwork.",
+          "Official page og:image maps to https://www.pragmaticplay.com/wp-content/uploads/2021/01/Congo-Cash™_EN_339x180_01.png. No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "nextStep": "Keep out of Pragmatic Play original-game intake. Continue catalog item 525 after item 523 Madame Destiny Megaways full publication closure."
+      }
     },
     {
       "index": 525,
@@ -5755,8 +5826,20 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/emerald-king-rainbow-road/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/01/EKRR_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "checkedAt": "2026-11-10",
+        "browser": "Codex in-app browser only",
+        "officialPage": "https://www.pragmaticplay.com/en/games/emerald-king-rainbow-road/",
+        "reason": "The exact official Demo for gameSymbol vs20ekingrr visibly opens with Reel Kingdom and Powered by Pragmatic Play. This identifies a Reel Kingdom title distributed by Pragmatic Play, so do not count it as a Pragmatic Play original.",
+        "evidence": [
+          "Codex in-app browser opened the exact Emerald King Rainbow Road official page on 2026-11-10; H1 and iframe identify gameSymbol vs20ekingrr.",
+          "The same in-app browser opened the direct Demo for vs20ekingrr. Startup explicitly showed Reel Kingdom and Powered by Pragmatic Play; the next screen displayed Emerald King Rainbow Road title.",
+          "Official page og:image maps to https://www.pragmaticplay.com/wp-content/uploads/2021/01/EKRR_EN_339x180.png. No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "nextStep": "Keep out of Pragmatic Play original-game intake. Continue catalog item 526 Mysterious Egypt after item 523 Madame Destiny Megaways full publication closure."
+      }
     },
     {
       "index": 526,
@@ -5765,8 +5848,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/mysterious-egypt/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/12/Mysterious_Egypt_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "mysterious-egypt-pragmatic-play"
     },
     {
       "index": 527,
@@ -5775,8 +5858,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/voodoo-magic/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/12/Voodoo_Magic_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "voodoo-magic-pragmatic-play"
     },
     {
       "index": 528,
@@ -5795,8 +5878,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/john-hunter-and-the-mayan-gods/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/11/John-Hunter-and-the-Mayan-Gods™_EN_339x180_01.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "john-hunter-and-the-mayan-gods-pragmatic-play"
     },
     {
       "index": 530,
@@ -5805,8 +5888,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/spartan-king/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/11/Spartan-King™_EN_339x180_01.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "spartan-king-pragmatic-play"
     },
     {
       "index": 531,
@@ -5815,8 +5898,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/christmas-carol-megaways/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/11/Christmas-Carol-Megaways__EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "christmas-carol-megaways-pragmatic-play"
     },
     {
       "index": 532,
@@ -5825,8 +5908,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/cowboys-gold/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/10/Cow-Boys-GoldOao_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "cowboys-gold-pragmatic-play"
     },
     {
       "index": 533,
@@ -5835,8 +5918,20 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/book-of-kingdoms/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/10/Book_of_KingdomsOao_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "nextStep": "Do not count as Pragmatic Play original. Continue catalog item 534 Pirate Gold Deluxe after item 532 Cowboys Gold full publication closure.",
+        "checkedAt": "2026-11-10",
+        "evidence": [
+          "Codex in-app browser opened exact official page and verified H1 Book of Kingdoms®, iframe gameSymbol vs25bkofkngdm and official image URL.",
+          "Direct exact Demo startup showed Reel Kingdom and Powered by Pragmatic Play; following screen showed Book of Kingdoms title.",
+          "No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "reason": "Exact official Demo for gameSymbol vs25bkofkngdm visibly opens with Reel Kingdom and Powered by Pragmatic Play; Book of Kingdoms is a Reel Kingdom title distributed by Pragmatic Play.",
+        "officialPage": "https://www.pragmaticplay.com/en/games/book-of-kingdoms/",
+        "browser": "Codex in-app browser only"
+      }
     },
     {
       "index": 534,
@@ -5845,8 +5940,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/pirate-gold-deluxe/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/10/Pirate_Gold_Deluxe™_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "pirate-gold-deluxe-pragmatic-play"
     },
     {
       "index": 535,
@@ -5855,8 +5950,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/gems-bonanza/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/Gems-Bonanza™_339x180_01-1.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "gems-bonanza-pragmatic-play"
     },
     {
       "index": 536,
@@ -5865,8 +5960,21 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/return-of-the-dead/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/10/Return-of-Ra™_EN_339x180_04.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "nextStep": "Do not count as Pragmatic Play original. Continue catalog item 537 after item 535 Gems Bonanza full publication closure.",
+        "browser": "Codex in-app browser only",
+        "evidence": [
+          "Codex in-app browser opened exact Return of the Dead official page and verified H1, gameSymbol vs10returndead and official og:image.",
+          "Direct exact Demo startup showed Reel Kingdom and Powered by Pragmatic Play; next screen showed Return of the Dead title.",
+          "Official image filename Return-of-Ra™_EN_339x180_04.png differs, but the actual image visibly depicts Return of the Dead matching Demo; filename discrepancy is recorded, not used as exclusion basis.",
+          "No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "checkedAt": "2026-11-10",
+        "officialPage": "https://www.pragmaticplay.com/en/games/return-of-the-dead/",
+        "reason": "Exact official Demo for gameSymbol vs10returndead visibly opens with Reel Kingdom and Powered by Pragmatic Play; Return of the Dead is a Reel Kingdom title distributed by Pragmatic Play."
+      }
     },
     {
       "index": 537,
@@ -5875,8 +5983,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/5-lions-dance/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/5-Lion-Dance™_EN_339x180_01_c-2.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "5-lions-dance-pragmatic-play"
     },
     {
       "index": 538,
@@ -5885,8 +5993,20 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/emerald-king-slot/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/Emerald_King_Thumbnail.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "excluded-source-conflict",
+      "existingSlug": null,
+      "exclusion": {
+        "nextStep": "Do not count as Pragmatic Play original. Continue catalog item 539 after item 537 5 Lions Dance full publication closure.",
+        "browser": "Codex in-app browser only",
+        "evidence": [
+          "Codex in-app browser opened exact Emerald King official page and verified H1, gameSymbol vs20eking and official page facts.",
+          "Direct exact Demo startup showed Reel Kingdom and Powered by Pragmatic Play; next screen showed Emerald King title.",
+          "No HTTP 403 or IP restriction observed; no paid browser used."
+        ],
+        "checkedAt": "2026-11-10",
+        "officialPage": "https://www.pragmaticplay.com/en/games/emerald-king-slot/",
+        "reason": "Exact official Demo for gameSymbol vs20eking visibly opens with Reel Kingdom and Powered by Pragmatic Play; Emerald King is a Reel Kingdom title distributed by Pragmatic Play."
+      }
     },
     {
       "index": 539,
@@ -5895,8 +6015,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/wild-walker-slot/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/Wild-Walker™_EN_339x180_02.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "published-live-verified",
+      "existingSlug": "wild-walker-pragmatic-play"
     },
     {
       "index": 540,
@@ -5905,8 +6025,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/wild-wild-riches-slot/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/Wild_Wild_Riches™_EN_339x180.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check",
-      "existingSlug": null
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "wild-wild-riches-pragmatic-play"
     },
     {
       "index": 541,

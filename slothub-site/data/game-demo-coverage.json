@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1500,
+  "gameCount": 1524,
   "providerCount": 372,
-  "sourcePageCount": 2894,
+  "sourcePageCount": 2966,
   "counts": {
     "access-restricted": 4,
-    "available": 1049,
+    "available": 1073,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,822 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wild-wild-riches-pragmatic-play",
+      "name": "Wild Wild Riches™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs576treasures&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wild Wild Riches™; Official page confirms Wilds on reels 1 and 2, Money symbols on reels 3 to 5 with 1x to 25x bet values, Jackpot values on reel 5, 2x 3x or 5x random multipliers, ten retriggerable Free Spins and RTP 96.77%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. Official page displayed an age gate; it was not submitted. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs576treasures. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Wild Wild Riches title, reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 6024A6A92B6AC177497592F4D28E4E23E8189E1E0BCF95CE53FFBE0F0AE31B82, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-wild-riches-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 540"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/Wild_Wild_Riches™_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 6024A6A92B6AC177497592F4D28E4E23E8189E1E0BCF95CE53FFBE0F0AE31B82"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs576treasures&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Wild Wild Riches title, reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "wild-walker-pragmatic-play",
+      "name": "Wild Walker™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25walker&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wild Walker™; Official page confirms 3x8 dynamic-reel video slot, four-level Progressive Free Spins, a Wild symbol that changes position every spin, and RTP 96.55%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. Official page displayed an age gate; it was not submitted. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs25walker. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Wild Walker title, reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 B13463E451592163B9558C4AAAB79FCAFE8BE919D6B499F45730A1B918F0B768, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-walker-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 539"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/Wild-Walker™_EN_339x180_02.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 B13463E451592163B9558C4AAAB79FCAFE8BE919D6B499F45730A1B918F0B768"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25walker&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Wild Walker title, reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "5-lions-dance-pragmatic-play",
+      "name": "5 Lions Dance™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs1024lionsd&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title 5 Lions Dance™; Official page confirms 4x5 video slot, 1024 ways, Lion symbols transforming reels 1 and 2 into an expanded reel with multipliers, Free Spins changing lion-head symbols to one random lion symbol, and RTP 96.50%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs1024lionsd. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, 5 Lions Dance title, 4x5 reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 6B04263302B1B22F37B1BE970C38569C2A52C721ED55E8EEA1F5EE90A3CC325B, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/5-lions-dance/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 537"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/5-Lion-Dance™_EN_339x180_01_c-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 6B04263302B1B22F37B1BE970C38569C2A52C721ED55E8EEA1F5EE90A3CC325B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs1024lionsd&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, 5 Lions Dance title, 4x5 reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "gems-bonanza-pragmatic-play",
+      "name": "Gems Bonanza®",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20goldfever&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Gems Bonanza®; Official page confirms 8x8 video slot, map path to Spin Feature with Nuclear new symbols or random Lucky Wilds, Gold Fever activating spin modifiers and final 10x multiplier, and RTP 96.51%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. Official H1 uses registered mark while prose uses trademark mark; H1 identity retained. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs20goldfever. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Gems Bonanza title, 8x8 grid and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 0D08CA8E4C6F30A59174FFE6C13F982752267A2F848D18067E0272880DE497FE, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gems-bonanza/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 535"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/09/Gems-Bonanza™_339x180_01-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 0D08CA8E4C6F30A59174FFE6C13F982752267A2F848D18067E0272880DE497FE"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20goldfever&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Gems Bonanza title, 8x8 grid and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "pirate-gold-deluxe-pragmatic-play",
+      "name": "Pirate Gold Deluxe™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40pirgold&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Pirate Gold Deluxe™; Official page confirms 4x5 video slot with 40 paylines, Lucky Treasure Bag Feature that can award Grand Jackpot 1000x stake, and RTP 96.48%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. Item 533 Book of Kingdoms excluded as Reel Kingdom. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs40pirgold. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Pirate Gold Deluxe title, reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 6BEE26E0F3D9681C58F209F684A8D5EF5092D55D45D0D8556295D199732A9B41, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/pirate-gold-deluxe/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 534"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/10/Pirate_Gold_Deluxe™_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 6BEE26E0F3D9681C58F209F684A8D5EF5092D55D45D0D8556295D199732A9B41"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40pirgold&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Pirate Gold Deluxe title, reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "cowboys-gold-pragmatic-play",
+      "name": "Cowboys Gold™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10cowgold&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Cowboys Gold™; Official page confirms 3x5 video slot with 10 paylines, Renegade Symbol collecting all money values, three Bonus Symbols triggering up to 25 Free Spins with up to 5x multiplier, and RTP 96.50%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. Actual artwork dimensions 339x169 despite URL suffix. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs10cowgold. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Cowboys Gold title, reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 50B54561870D198647539CA09F224545F72B713163A526888910BFDA1C0BA0D1, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/cowboys-gold/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 532"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/10/Cow-Boys-GoldOao_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 50B54561870D198647539CA09F224545F72B713163A526888910BFDA1C0BA0D1"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10cowgold&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Cowboys Gold title, reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "christmas-carol-megaways-pragmatic-play",
+      "name": "Christmas Carol Megaways™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20xmascarol&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Christmas Carol Megaways™; Official page confirms 200704 ways to win, each tumble raises the Free Spins multiplier by 1x, up to 23 frozen Free Spins and 10x multiplier, Buy Feature, and RTP 96.50%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs20xmascarol. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Christmas Carol Megaways title, Pragmatic Play startup logo, Big Time Gaming Megaways license, reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 4F814C3E9C7749221A1DFA2BC24F5A49EF3CB2433D225CDFFF5D14A62A772C24, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/christmas-carol-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 531"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/11/Christmas-Carol-Megaways__EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 4F814C3E9C7749221A1DFA2BC24F5A49EF3CB2433D225CDFFF5D14A62A772C24"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20xmascarol&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Christmas Carol Megaways title, Pragmatic Play startup logo, Big Time Gaming Megaways license, reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "spartan-king-pragmatic-play",
+      "name": "Spartan King™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40spartaking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Spartan King™; Official page confirms a 4x5 video slot, 2x2 Shield Symbols with multiplier up to 25x, and RTP 96.60%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs40spartaking. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Spartan King title, reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 F1451E271A48AC202115630B2DCDFD4E945B0EDD9C5D214D97C6466FD1169EE0, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/spartan-king/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 530"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/11/Spartan-King™_EN_339x180_01.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 F1451E271A48AC202115630B2DCDFD4E945B0EDD9C5D214D97C6466FD1169EE0"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40spartaking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Spartan King title, reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "john-hunter-and-the-mayan-gods-pragmatic-play",
+      "name": "John Hunter and the Mayan Gods™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10mayangods&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title John Hunter and the Mayan Gods™; Official page confirms 3x5 video slot with 10 paylines, Progressive Free Spins giving more spins at each achieved level, multipliers, and RTP 96.46%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. Catalog item 528 Big Bass Bonanza is already published and not counted. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs10mayangods. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, John Hunter and the Mayan Gods title, reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 462B5BE9A7A256179C9640420A74096ACF60B774CF738BFAF98D3CE8A7BDA1CC, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/john-hunter-and-the-mayan-gods/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 529"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/11/John-Hunter-and-the-Mayan-Gods™_EN_339x180_01.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 462B5BE9A7A256179C9640420A74096ACF60B774CF738BFAF98D3CE8A7BDA1CC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10mayangods&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, John Hunter and the Mayan Gods title, reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "voodoo-magic-pragmatic-play",
+      "name": "Voodoo Magic™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40voodoo&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Voodoo Magic™; Official page confirms a 5x4 video slot with 40 paylines, symbols paying up to 10x stake, five Free Spins with Mystery Symbols transforming into character symbols, feature wins up to 50x stake, and RTP 96.50%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs40voodoo. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Voodoo Magic title, reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 CD851CF293CACBAACA149E259C43074138EE42F2658553056A208FBE772C6A04, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/voodoo-magic/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 527"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/12/Voodoo_Magic_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 CD851CF293CACBAACA149E259C43074138EE42F2658553056A208FBE772C6A04"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40voodoo&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Voodoo Magic title, reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "mysterious-egypt-pragmatic-play",
+      "name": "Mysterious Egypt™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10wildtut&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Mysterious Egypt™; Official page confirms a 5x3 video slot with 10 paylines and high volatility, randomly selected vertically expanding mystery symbol each spin, two expanding mystery symbols in Free Spins that can pay on non-adjacent positions, and RTP 96.50%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. Items 524 and 525 excluded because Demo shows third-party providers. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs10wildtut. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Mysterious Egypt title, 5x3 reels and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 D741A1FFD407413A06F70CBCCD6B5DF68A87DAA820C9D31EFC0DAAE97E87D1DD, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/mysterious-egypt/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 526"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/12/Mysterious_Egypt_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 D741A1FFD407413A06F70CBCCD6B5DF68A87DAA820C9D31EFC0DAAE97E87D1DD"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10wildtut&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Mysterious Egypt title, 5x3 reels and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "madame-destiny-megaways-pragmatic-play",
+      "name": "Madame Destiny Megaways™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysmadame&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Madame Destiny Megaways™; Official page confirms Madame Destiny Wild doubling winning lines, three to six Scatters triggering Free Spins and paying 5x to 100x stake, bonus wheel up to twelve Free Spins and 25x multiplier, and RTP 96.56%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vswaysmadame. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Madame Destiny Megaways title, Pragmatic Play startup logo, reels, Wild symbols and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 0D3E381A6440475B8BDA5C04192D3F7AA3BE94B5A619DD8D226594CD93A44B35, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/madame-destiny-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 523"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/01/MDM_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 0D3E381A6440475B8BDA5C04192D3F7AA3BE94B5A619DD8D226594CD93A44B35"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysmadame&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Madame Destiny Megaways title, Pragmatic Play startup logo, reels, Wild symbols and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "dragon-kingdom-eyes-of-fire-pragmatic-play",
+      "name": "Dragon Kingdom – Eyes of Fire™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5drmystery&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Dragon Kingdom – Eyes of Fire™; Official page confirms a 3x3 grid, 5 paylines, a Progressive Feature without detailed trigger rules, and RTP 96.50%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs5drmystery. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Dragon Kingdom Eyes of Fire title, three-by-three dragon reels, Pragmatic Play branding at screen bottom and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 99F74B56F0348FEF82D6740AB3FE608DF7623E7615B811DEAFAB1A39A0E39F5D, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/dragon-kingdom-eyes-of-fire/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 522"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/01/DKEOF_EN_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 99F74B56F0348FEF82D6740AB3FE608DF7623E7615B811DEAFAB1A39A0E39F5D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5drmystery&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Dragon Kingdom Eyes of Fire title, three-by-three dragon reels, Pragmatic Play branding at screen bottom and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "the-hand-of-midas-pragmatic-play",
+      "name": "The Hand of Midas™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20midas&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Hand of Midas™; Official page confirms Wilds bearing random stacking 1x, 2x or 3x multipliers, three to five Scatters triggering Free Spins with minimum 10x, 20x or 30x wins, up to 45 Free Spins, maximum win 5,000x and RTP 96.54%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. The existing Hand of Midas 2 is a separate sequel with gameSymbol vs20midas2. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs20midas. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, The Hand of Midas title, Wild reels, Midas artwork and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 9D1FE36D1D09235E33075ECFF4B6E23DB2BE782788AD6C0493FA3050DE8C8404, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-hand-of-midas/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 520"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/02/THOM_EN_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 9D1FE36D1D09235E33075ECFF4B6E23DB2BE782788AD6C0493FA3050DE8C8404"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20midas&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, The Hand of Midas title, Wild reels, Midas artwork and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "joker-king-pragmatic-play",
+      "name": "Joker King™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25jokerking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Joker King™; Official page confirms 25 paylines, a Joker converting a random symbol to Wild whenever a Wild lands, Scatter multiplier up to 25x, up to 20 Free Spins with multipliers and active Wild Symbols, and RTP 96.50%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs25jokerking. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Joker King title, fruit reels, Wild and Scatter symbols, and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 E9B33D8D281A6D7AF6A239882B298A3BC4EF53B84592E1FED7BED3365FA80BD7, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/joker-king/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 519"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/02/Joker_King_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 E9B33D8D281A6D7AF6A239882B298A3BC4EF53B84592E1FED7BED3365FA80BD7"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25jokerking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Joker King title, fruit reels, Wild and Scatter symbols, and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "fishin-reels-pragmatic-play",
+      "name": "Fishin’ Reels™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10goldfish&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fishin’ Reels™; Official page confirms 3x5 grid, 10 paylines, Big Catch golden swordfish adding Free Spins in Free Games, Fisherman collecting Money Symbols in Reel 'Em In round, and RTP 96.50%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs10goldfish. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Fishin Reels title, fish and Fisherman symbols, and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 23B957E5B1B3B54E37E30F1027788E536E3033257F9D8E2B00299463157DAF3E, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fishin-reels/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 516"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/02/Fishin_Reels_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 23B957E5B1B3B54E37E30F1027788E536E3033257F9D8E2B00299463157DAF3E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10goldfish&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Fishin Reels title, fish and Fisherman symbols, and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "juicy-fruits-pragmatic-play",
+      "name": "Juicy Fruits™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50juicyfr&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Juicy Fruits™; Official page confirms 5x5 grid, 50 paylines, Progressive Free Spins with Scatters awarding more Free Games, Wilds expanding to 5x5, and RTP 96.51%. Codex in-app browser opened the exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs50juicyfr. Codex in-app browser opened the exact official Demo on 2026-11-10 and visibly showed the Pragmatic Play startup logo, Juicy Fruits title, fruit reels, Wild symbol and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 177BD1AB6793D73AC9E007C962F5EAD94E7046D39BBC7B90AD608ED62009375A, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/juicy-fruits/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 514"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/03/Juicy_Fruits_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 177BD1AB6793D73AC9E007C962F5EAD94E7046D39BBC7B90AD608ED62009375A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50juicyfr&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the exact official Demo on 2026-11-10 and visibly showed the Pragmatic Play startup logo, Juicy Fruits title, fruit reels, Wild symbol and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "power-of-thor-megaways-pragmatic-play",
+      "name": "Power of Thor Megaways™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayshammthor&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Power of Thor Megaways™; Official page confirms up to 117,649 ways to win, top-row Hammer transforming symbols below into Wilds, THOR Scatters triggering Free Spins, a growing Free Games multiplier after tumbles, and RTP 96.55%. Codex in-app browser opened the exact official page, image and direct Demo. Official HTML returned HTTP 200 on retry after one CLI timeout, with matching gameSymbol and og:image. Official PNG was downloaded through the in-app browser and SHA verified. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vswayshammthor. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Power of Thor Megaways title, Pragmatic Play startup logo, game reels, Megaways counter, Thor artwork and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 DF9F4EBB4906ADAD4CB5CC5717E1D12A06E9E068F2317EC5F5661CFE03036CBD, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/power-of-thor-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 513"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/03/Power_of_Thor_Megaways_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 DF9F4EBB4906ADAD4CB5CC5717E1D12A06E9E068F2317EC5F5661CFE03036CBD"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswayshammthor&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Power of Thor Megaways title, Pragmatic Play startup logo, game reels, Megaways counter, Thor artwork and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "wild-booster-pragmatic-play",
+      "name": "Wild Booster",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20wildboost&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wild Booster; Official page confirms 3x5 grid, 20 paylines, random Wild multiplier, Super Boost, Mega Boost and Ultra Boost Free Spins rules, and RTP 96.47%. Codex in-app browser initially saw official Host 502 at 04:03:43 and 04:04:51 UTC, then reload recovered the exact official page. It also opened official art and Demo. Fresh HTML and PNG returned HTTP 200 with matching gameSymbol, og:image and SHA. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs20wildboost. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Wild Booster title, reel symbols and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 8A4D621E430113DAC4E1367288B407B165B3FBAD3C4F1C8ACEA1CB7C1FA5EA06, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-booster/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 512"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/03/Wild_Booster_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 8A4D621E430113DAC4E1367288B407B165B3FBAD3C4F1C8ACEA1CB7C1FA5EA06"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20wildboost&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Wild Booster title, reel symbols and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "hot-fiesta-pragmatic-play",
+      "name": "Hot Fiesta",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25hotfiesta&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Hot Fiesta; Official page confirms 3x5 grid, 25 paylines, Wild pinata multipliers of 2x, 3x and 5x during Free Spins, and RTP 96.56%. Codex in-app browser opened the exact official page, image and Demo on 2026-11-10. Fresh official HTML confirms gameSymbol and og:image; PNG bytes match mapped artwork. No HTTP 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs25hotfiesta. Codex in-app browser directly opened the exact official Demo on 2026-11-10; its title, reels, pinata symbols and spin control were visible. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 484B91A901D290D8ED4518F37694223AB53CBC4D101FE23965382C111EC018BB, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/hot-fiesta/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 510"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/04/Hot_Fiesta_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 484B91A901D290D8ED4518F37694223AB53CBC4D101FE23965382C111EC018BB"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25hotfiesta&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened the exact official Demo on 2026-11-10; its title, reels, pinata symbols and spin control were visible. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "buffalo-king-megaways-pragmatic-play",
+      "name": "Buffalo King Megaways",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysbufking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Buffalo King Megaways; Official page confirms six cascading reels, over 200000 ways, 12 to 22 Free Spins from 4 to 6 Bonus symbols, 2x/3x/5x Wild multipliers, and RTP 96.52%. Codex in-app browser opened exact official page and Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vswaysbufking. Codex in-app browser directly opened exact official Demo and visibly showed Buffalo King Megaways title, reels and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 8D12B20FC8AF1AEFC702CC8951AD038BBBCA714FF4653C12156C57A1F9460AD6, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/buffalo-king-megaways/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 509"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/04/Buffalo-King-Megaways_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 8D12B20FC8AF1AEFC702CC8951AD038BBBCA714FF4653C12156C57A1F9460AD6"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysbufking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened exact official Demo and visibly showed Buffalo King Megaways title, reels and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "the-amazing-money-machine-pragmatic-play",
+      "name": "The Amazing Money Machine",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10amm&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Amazing Money Machine; Official page confirms dynamic reels, up to 60 paylines, Money Machine Wild and Mystery symbols, Money symbol Respins, four Jackpot tiers, and RTP 96.42%. Codex in-app browser opened exact official page and Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs10amm. Codex in-app browser directly opened exact official Demo and visibly showed The Amazing Money Machine title, reels and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 B37068BC24606D4D5585DC300B3EA1A6E66002F525C9E3D0921116A9EE82855E, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-amazing-money-machine/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 508"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/04/Amazing_Money_Machine_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 B37068BC24606D4D5585DC300B3EA1A6E66002F525C9E3D0921116A9EE82855E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10amm&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened exact official Demo and visibly showed The Amazing Money Machine title, reels and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "phoenix-forge-pragmatic-play",
+      "name": "Phoenix Forge",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20phoenixf&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Phoenix Forge; Official page confirms 3x5 grid, 20 paylines, Phoenix Bonus Free Spins, Hot Spot Multiplier, and RTP 96.51%. Codex in-app browser opened exact official page and Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs20phoenixf. Codex in-app browser direct Demo for vs20phoenixf showed the exact in-game Phoenix Forge title, reels and spin control; redirect metadata says Phoenix Fire, so identity was resolved by the exact symbol and in-game title. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 B62DE95187F3943313A74F76B66CB49A604D03398311E40CF48DC680E403F77F, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/phoenix-forge/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 507"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/04/Phoenix_Forge_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 B62DE95187F3943313A74F76B66CB49A604D03398311E40CF48DC680E403F77F"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20phoenixf&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser direct Demo for vs20phoenixf showed the exact in-game Phoenix Forge title, reels and spin control; redirect metadata says Phoenix Fire, so identity was resolved by the exact symbol and in-game title. No spin, bet, login or age submission."
+        }
+      ]
+    },
+    {
+      "slug": "the-magic-cauldron-enchanted-brew-pragmatic-play",
+      "name": "The Magic Cauldron – Enchanted Brew",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-09",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20magicpot&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Magic Cauldron – Enchanted Brew; Official page confirms 7x7 cluster pays of five or more matching symbols, cascading wins, Enchanted Brew modifiers, and RTP 96.44%. Codex in-app browser opened exact official page and Demo; official HTML confirms gameSymbol and og:image; image visually inspected locally. No HTTP 403 and no paid browser used. Official HTML includes gameSymbol vs20magicpot. Codex in-app browser directly opened the exact official Demo and visibly showed The Magic Cauldron title, reels and spin control; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 7E68763FB12DB223D6DDC9E4A7E9E6D44CC7470DA10D774BBD3FA7C6FC3F257A, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-magic-cauldron-enchanted-brew/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 505"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/05/The_Magic_Cauldron_EN_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 7E68763FB12DB223D6DDC9E4A7E9E6D44CC7470DA10D774BBD3FA7C6FC3F257A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20magicpot&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser directly opened the exact official Demo and visibly showed The Magic Cauldron title, reels and spin control; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "panda-fortune-2-pragmatic-play",
       "name": "Panda’s Fortune 2",

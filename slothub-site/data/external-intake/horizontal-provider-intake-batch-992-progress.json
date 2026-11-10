@@ -1,0 +1,46 @@
+{
+  "batch": 992,
+  "recordedAt": "2026-11-10T05:46:02.174Z",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1516 published Game Markdown records and same-provider exact official path/name/gameSymbol; Spartan King™ /vs40spartaking absent.",
+  "records": [
+    {
+      "index": 530,
+      "name": "Spartan King™",
+      "slug": "spartan-king-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pragmaticplay.com/en/games/spartan-king/",
+      "officialFacts": "Official page confirms a 4x5 video slot, 2x2 Shield Symbols with multiplier up to 25x, and RTP 96.60%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/11/Spartan-King™_EN_339x180_01.png",
+        "localPath": "public/assets/games/spartan-king-pragmatic-play.png",
+        "sha256": "F1451E271A48AC202115630B2DCDFD4E945B0EDD9C5D214D97C6466FD1169EE0",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, Spartan King title, reels and spin control. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 531 Christmas Carol Megaways™ after item 530 full publication closure.",
+  "validation": {
+    "result": "pending",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify"
+  },
+  "publication": {
+    "commit": "5e319be2f79ecd6a05b74f4a1a763f8712096960",
+    "githubActionsRun": 42764555558,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "7bd4efbb-fa76-4ae8-9d3d-4741122800ef",
+    "cloudflareUrl": "https://7bd4efbb.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
+  }
+}
