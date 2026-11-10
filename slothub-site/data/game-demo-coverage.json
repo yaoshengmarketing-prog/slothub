@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1568,
+  "gameCount": 1569,
   "providerCount": 372,
-  "sourcePageCount": 3098,
+  "sourcePageCount": 3101,
   "counts": {
     "access-restricted": 4,
-    "available": 1117,
+    "available": 1118,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wild-pixies-pragmatic-play",
+      "name": "Wild Pixies™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20wildpix&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wild Pixies™; Official page describes 3x5 Wild Pixies, Scatter Diamond triggering roaming wilds Free Spins and magic butterfly theme, RTP 96.50%. Official Demo title and symbol match, loading screen observed. Codex in-app browser checked official H1, gameplay text, RTP, iframe symbol, direct Demo and official art. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Same-provider exact name/path/symbol absent. Official HTML includes gameSymbol vs20wildpix. Codex in-app browser opened exact official Demo on 2026-11-10; browser title Wild Pixies matched official page and symbol. Loading screen observed, no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 BA3B27F16BDBD90ED838B6F5A7E2A96AF2F57B375835E65615F9BBA0BBEF36E8, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-pixies-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 591"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/02/Thumb_Wild-Pixies_339x180px-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 BA3B27F16BDBD90ED838B6F5A7E2A96AF2F57B375835E65615F9BBA0BBEF36E8"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20wildpix&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10; browser title Wild Pixies matched official page and symbol. Loading screen observed, no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "egyptian-fortunes-pragmatic-play",
       "name": "Egyptian Fortunes™",
