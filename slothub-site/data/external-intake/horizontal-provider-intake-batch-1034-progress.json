@@ -1,10 +1,10 @@
 {
   "batch": 1034,
   "recordedAt": "2026-11-10T14:11:18.24Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "The Great Chicken Escape™",
       "slug": "the-great-chicken-escape-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/the-great-chicken-escape-slot/",
       "officialFacts": "Official page describes 3x5 20-line The Great Chicken Escape, random symbols or expanding Wilds and five bonus games with increasing payout, RTP 96.50%. Exact official Demo visibly showed matching title, chicken characters and five-reel three-row artwork.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed The Great Chicken Escape title, matching chicken characters and 5x3 reels. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 580 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 580 Vampires vs Wolves™ after item 579 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Exit 0; preview built isolation across 1964 HTML pages; content and Astro diagnostics, internal links, outbound nofollow, source, schema and route checks passed."
+  },
+  "publication": {
+    "commit": "6ef1e91efef864b7a8d26de4eaafa3552993c76b",
+    "githubActionsRun": 42832427901,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "17fd10a7-d3bf-45f3-b9d1-f3f7fba24cf2",
+    "cloudflareUrl": "https://17fd10a7.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
