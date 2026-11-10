@@ -1,10 +1,10 @@
 {
   "batch": 1039,
   "recordedAt": "2026-11-10T14:56:11.356Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "5 Lions Gold™",
       "slug": "5-lions-gold-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/5-lions-gold-slot/",
       "officialFacts": "Official page describes seven bonus choices, up to 25 Free Spins, 1x to 40x Wild feature multiplier, three Golden Reels Jackpot types up to 2000x, RTP 96.50%. Demo intro says WIN OVER 7000X BET, not used as exact total maxWinMultiplier.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed 5 Lions Gold title and matching artwork. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 586 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 586 Triple Jokers™ after item 585 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Exit 0; preview built isolation across 1969 HTML pages; content and Astro diagnostics, internal links, outbound nofollow, source, schema and route checks passed."
+  },
+  "publication": {
+    "commit": "80d4e125eaf8bd711e189d1715cc6f9966fe9d17",
+    "githubActionsRun": 42839830080,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "7b99cdfb-128e-44a7-a647-09436a29573f",
+    "cloudflareUrl": "https://7b99cdfb.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
