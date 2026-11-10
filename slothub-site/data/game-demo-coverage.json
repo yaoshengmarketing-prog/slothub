@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1510,
+  "gameCount": 1511,
   "providerCount": 372,
-  "sourcePageCount": 2924,
+  "sourcePageCount": 2927,
   "counts": {
     "access-restricted": 4,
-    "available": 1059,
+    "available": 1060,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-hand-of-midas-pragmatic-play",
+      "name": "The Hand of Midas™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20midas&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Hand of Midas™; Official page confirms Wilds bearing random stacking 1x, 2x or 3x multipliers, three to five Scatters triggering Free Spins with minimum 10x, 20x or 30x wins, up to 45 Free Spins, maximum win 5,000x and RTP 96.54%. Codex in-app browser opened exact official page, art and direct Demo. Fresh official HTML returned HTTP 200 with matching gameSymbol and og:image; browser-downloaded image/png SHA matched. The existing Hand of Midas 2 is a separate sequel with gameSymbol vs20midas2. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs20midas. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, The Hand of Midas title, Wild reels, Midas artwork and spin control. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 9D1FE36D1D09235E33075ECFF4B6E23DB2BE782788AD6C0493FA3050DE8C8404, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-hand-of-midas/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 520"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2021/02/THOM_EN_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 9D1FE36D1D09235E33075ECFF4B6E23DB2BE782788AD6C0493FA3050DE8C8404"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20midas&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup logo, The Hand of Midas title, Wild reels, Midas artwork and spin control. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "joker-king-pragmatic-play",
       "name": "Joker King™",
