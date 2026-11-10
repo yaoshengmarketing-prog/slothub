@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1545,
+  "gameCount": 1546,
   "providerCount": 372,
-  "sourcePageCount": 3029,
+  "sourcePageCount": 3032,
   "counts": {
     "access-restricted": 4,
-    "available": 1094,
+    "available": 1095,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "release-the-kraken-pragmatic-play",
+      "name": "Release the Kraken®",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20kraken&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Release the Kraken®; Official page confirms a 4x5 20-line video slot, random features possible at any spin, Free Spins with progressive multiplier and roaming Wilds, and RTP 96.50%. Exact Demo intro states WIN UP TO 10,000X, shows Release the Kraken title, reels and a low-volatility indicator; no fixed game volatility was inferred from the indicator. Original symbol vs20kraken is distinct from sequel vs20kraken2 and Megaways vswayskrakenmw. Codex in-app browser loaded exact official page with matching H1, RTP and iframe gameSymbol, and directly viewed matching Demo and official art. Fresh official HTML returned HTTP 200. Official page displayed an age confirmation overlay; no age submission was made. No 403, IP restriction or paid browser use. Exact same-provider name/path/symbol absent. Official HTML includes gameSymbol vs20kraken. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup, Release the Kraken title, reels, intro maximum WIN UP TO 10,000X and low-volatility intro indicator. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 F238AECE5BDB978EA2EFF928A9118D73A00819566143AC57894BE5CB7A1B2CEA, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/release-the-kraken-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 566"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2020/01/ReleaseTheKraken™_EN_339x180_01-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 F238AECE5BDB978EA2EFF928A9118D73A00819566143AC57894BE5CB7A1B2CEA"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20kraken&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play startup, Release the Kraken title, reels, intro maximum WIN UP TO 10,000X and low-volatility intro indicator. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "super-7s-pragmatic-play",
       "name": "Super 7s™",

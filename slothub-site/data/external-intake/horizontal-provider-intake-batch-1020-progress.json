@@ -1,10 +1,10 @@
 {
   "batch": 1020,
   "recordedAt": "2026-11-10T12:02:19.977Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Super 7s™",
       "slug": "super-7s-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/super-7s-slot/",
       "officialFacts": "Official page describes a classic video slot with three rows and five reels and RTP 96.50%. Exact official Demo shows matching Super 7s title, fruit-and-seven artwork, a five-reel three-row layout and spin control. No unsupported win mechanism, feature or max-win figure was inferred.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Pragmatic Play label, Super 7s title, matching artwork, five-reel three-row grid and spin control. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 566 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 566 Release the Kraken® after item 565 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Full preview verify exited 0 on 2026-11-10; 1950 HTML pages, internal links and preview isolation passed. Unsupported win mechanism and features remain missing."
+  },
+  "publication": {
+    "commit": "05b5c978d344233f3ef9105475d7b796fa0c639e",
+    "githubActionsRun": 42812882225,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "d9cdf83c-b192-4358-af60-9cf94dd5e002",
+    "cloudflareUrl": "https://d9cdf83c.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
