@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1571,
+  "gameCount": 1572,
   "providerCount": 372,
-  "sourcePageCount": 3107,
+  "sourcePageCount": 3110,
   "counts": {
     "access-restricted": 4,
-    "available": 1120,
+    "available": 1121,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "safari-king-pragmatic-play",
+      "name": "Safari King™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-11",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50safariking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Safari King™; Official page describes a 4x5 50-payline video slot. Three Bonus symbols trigger 8 Free Spins; Safari King joins the reel strips, and every Bonus symbol awards more Free Spins without a stated limit. Official RTP 96.49%. Official Demo title and symbol match. Codex in-app browser checked official H1, gameplay, RTP, iframe symbol, direct Demo and official art. Fresh official HTML returned HTTP 200. JILI Safari King is a distinct provider, official path and symbol, and not a duplicate. No 403, IP restriction or paid browser use. Official HTML includes gameSymbol vs50safariking. Codex in-app browser opened exact official Demo on 2026-11-11; browser title Safari King and gameSymbol vs50safariking matched official page. Loading screen observed; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 DD71AC3C0CEED74CFDB87BBE59409553AA516A1EA4F664835B926332B8A49453, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/safari-king-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 594"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/01/Safari-Kings™_339x180px-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 DD71AC3C0CEED74CFDB87BBE59409553AA516A1EA4F664835B926332B8A49453"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50safariking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-11; browser title Safari King and gameSymbol vs50safariking matched official page. Loading screen observed; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "wild-gladiators-pragmatic-play",
       "name": "Wild Gladiators™",
