@@ -1,10 +1,10 @@
 {
   "batch": 1031,
   "recordedAt": "2026-11-10T13:43:51.39Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Tree of Riches™",
       "slug": "tree-of-riches-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/tree-of-riches-slot/",
       "officialFacts": "Official page describes a 1x3 three-reel single-row slot, Wild triggering respin until you win, up to 10x feature multiplier and RTP 96.50%. Exact official Demo visibly showed matching Tree of Riches title, money-bag symbols and three reels in one row. No total max win inferred from feature multiplier.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Tree of Riches title, money-bag symbols and three reels in one row. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 577 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 577 John Hunter and the Tomb of the Scarab Queen™ after item 576 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Exit 0; preview built isolation across 1961 HTML pages; content and Astro diagnostics, internal links, outbound nofollow, source, schema and route checks passed."
+  },
+  "publication": {
+    "commit": "038e08fd1c578495a45de930d961d4b90810321e",
+    "githubActionsRun": 42827886026,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "9556e626-2ee9-47ba-89df-1523db114055",
+    "cloudflareUrl": "https://9556e626.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
