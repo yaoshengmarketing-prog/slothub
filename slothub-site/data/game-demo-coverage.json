@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1562,
+  "gameCount": 1563,
   "providerCount": 372,
-  "sourcePageCount": 3080,
+  "sourcePageCount": 3083,
   "counts": {
     "access-restricted": 4,
-    "available": 1111,
+    "available": 1112,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "monkey-warrior-pragmatic-play",
+      "name": "Monkey Warrior™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-10",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243mwarrior&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Monkey Warrior™; Official page describes 3x5 243-Ways Monkey Warrior, feature respins to hunt money or jackpots and Free Spins using high-value symbols, RTP 96.50%. Demo intro says WIN OVER 6000 X BET, not used as maxWinMultiplier. Codex in-app browser checked official H1, gameplay text, RTP, iframe gameSymbol, direct Demo and official art. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Same-provider exact name/path/symbol absent. Official HTML includes gameSymbol vs243mwarrior. Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Monkey Warrior title and matching artwork. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 E2B1D2EF71627C6C38857B84128288D89E06B1672D52990F32BAE26C5062480D, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/monkey-warrior-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 583"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/06/Monkey-warrior™.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 E2B1D2EF71627C6C38857B84128288D89E06B1672D52990F32BAE26C5062480D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243mwarrior&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Monkey Warrior title and matching artwork. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "john-hunter-aztec-treasure-pragmatic-play",
       "name": "John Hunter and the Aztec Treasure™",
