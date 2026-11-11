@@ -1,0 +1,47 @@
+{
+  "batch": 1024,
+  "recordedAt": "2026-11-10T12:41:51.271Z",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1548 published Game Markdown records and same-provider exact official path/name/gameSymbol; Buffalo King™ /vs4096bufking absent.",
+  "records": [
+    {
+      "index": 569,
+      "name": "Buffalo King™",
+      "slug": "buffalo-king-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pragmaticplay.com/en/games/buffalo-king-slot/",
+      "officialFacts": "Official page describes a 6x4 slot, 3-6 Bonus symbols starting 8-100 Free Spins, 2-6 Bonus symbols retriggering 5-100 additional spins, Free Spins Wild multipliers of 2x, 3x or 5x that can stack, and RTP 96.06%. Exact official Demo visibly showed Buffalo King title, matching buffalo and reels, and WIN UP TO 93,750 X BET on its intro. No unverified 4096-ways mechanic inferred from gameSymbol.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/11/Buffalo-King_339x180_EN.png",
+        "localPath": "public/assets/games/buffalo-king-pragmatic-play.png",
+        "sha256": "CD97F919179D0C7DE7A6CE1877690B924A487DC8D5B909001D149BAE657CEC71",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10 and visibly showed Buffalo King title, matching buffalo, 6x4 reels, startup controls, and WIN UP TO 93,750 X BET intro. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 570 Greek Gods™ after item 569 full publication closure and 0 previously resolved intervening catalog item(s).",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Exit 0; preview built isolation across 1954 HTML pages; full verify log tmp/verify-batch1024.log."
+  },
+  "publication": {
+    "commit": "24d5e07b1c528948703151373d9779091855366c",
+    "githubActionsRun": 42818529108,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "e82bf1ce-9be3-4654-a3e8-f9e1a2bb5161",
+    "cloudflareUrl": "https://e82bf1ce.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
+  }
+}

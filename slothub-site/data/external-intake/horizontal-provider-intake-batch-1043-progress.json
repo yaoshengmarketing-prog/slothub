@@ -1,0 +1,47 @@
+{
+  "batch": 1043,
+  "recordedAt": "2026-11-10T15:36:05.39Z",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1567 published Game Markdown records and same-provider exact official path/name/gameSymbol; Egyptian Fortunes™ /vs20egypttrs absent.",
+  "records": [
+    {
+      "index": 590,
+      "name": "Egyptian Fortunes™",
+      "slug": "egyptian-fortunes-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pragmaticplay.com/en/games/egyptian-fortunes-slot/",
+      "officialFacts": "Official page describes 3x5 Egyptian Fortunes, find three Bonus Pyramid symbols to enter pyramid bonus, RTP 96.50%. Official Demo title and artwork match exact symbol; loading screen observed.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2019/02/Egyptian-Fortunes™_Thumb_339x180-1-1.png",
+        "localPath": "public/assets/games/egyptian-fortunes-pragmatic-play.png",
+        "sha256": "03875F72E45202BA44721E04B679D85A6762B61B9FF21977AECB28588213965B",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-10; browser title Egyptian Fortunes and splash artwork matched the official page and symbol. Loading screen observed, no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 591 Wild Pixies™ after item 590 full publication closure and 0 previously resolved intervening catalog item(s).",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Exit 0; preview built isolation across 1973 HTML pages; content and Astro diagnostics, internal links, outbound nofollow, source, schema and route checks passed."
+  },
+  "publication": {
+    "commit": "de405cdd972e12379ae2425eff338fd8906d4c8b",
+    "githubActionsRun": 42846751027,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "7ee9646d-9689-4599-957a-a2fe42f3297c",
+    "cloudflareUrl": "https://7ee9646d.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
+  }
+}

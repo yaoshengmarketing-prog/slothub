@@ -1,0 +1,47 @@
+{
+  "batch": 1058,
+  "recordedAt": "2026-11-10T19:19:16.981Z",
+  "state": "published-live-verified",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 1,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1582 published Game Markdown records and same-provider exact official path/name/gameSymbol; Jade Butterfly™ /vs1024butterfly absent.",
+  "records": [
+    {
+      "index": 605,
+      "name": "Jade Butterfly™",
+      "slug": "jade-butterfly-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "published-live-verified",
+      "officialPage": "https://www.pragmaticplay.com/en/games/jade-butterfly-slot/",
+      "officialFacts": "Official page describes a 4x5, 1024-ways video slot with individual reel betting; Free Spins can award 13 spins with 3x multiplier. RTP 96.47%. Official Demo title and symbol match.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/06/thumbs_jade_butterfly_330x140px-1-1.png",
+        "localPath": "public/assets/games/jade-butterfly-pragmatic-play.png",
+        "sha256": "F335694D69C2F0B51259BE7550F362F2D8ECFC0880B0A14089564C202FE71B4D",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; title Jade Butterfly and gameSymbol vs1024butterfly matched official page. Loading screen observed; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 606 Madame Destiny™ after item 605 full publication closure and 0 previously resolved intervening catalog item(s).",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1058-verify.log; preview built isolation across 1988 HTML pages, storyboard, Densho and RTP checks passed"
+  },
+  "publication": {
+    "commit": "84bc98d98a09372b9c844edbb2fea6554fb007da",
+    "githubActionsRun": 42884771907,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "802dff27-ccf4-4c89-b1f1-b0c9b5d21391",
+    "cloudflareUrl": "https://802dff27.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
+  }
+}
