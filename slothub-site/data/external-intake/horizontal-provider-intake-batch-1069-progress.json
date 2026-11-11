@@ -1,0 +1,38 @@
+{
+  "batch": 1069,
+  "recordedAt": "2026-11-11T13:27:20.392Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1593 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lucky New Year™ /vs25newyear absent.",
+  "records": [
+    {
+      "index": 616,
+      "name": "Lucky New Year™",
+      "slug": "lucky-new-year-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/lucky-new-year-slot/",
+      "officialFacts": "Official page calls it a 3x5, 25 lines video slot. Dog Wild stacks on all reels. Six money-filled festive lamps trigger a respin round with up to 15 prizes plus any of three jackpots. Blazing Reels Free Spins include giant symbols. RTP 96.00%. 3x5 preserved as official wording, not inferred into structured reel/row counts. Jackpot sizes and overall max win not specified.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/01/thumb-Lucky-New-Year_330x140px-2-1.png",
+        "localPath": "public/assets/games/lucky-new-year-pragmatic-play.png",
+        "sha256": "24DAC6575A1718A5048EA3220420B838FF2AE12E3D9F205649DD9B4521A8C686",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; title Lucky New Year and gameSymbol vs25newyear matched official page. Matching loading image observed; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 617 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1069-post-sync-verify.log; preview built isolation across 1999 HTML pages, storyboard, Densho and RTP checks passed after fast-forward to origin/main 5323309750a3b1949b59bc4c33a78939a846ff8c"
+  }
+}

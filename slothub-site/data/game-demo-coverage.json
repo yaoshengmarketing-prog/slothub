@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1593,
+  "gameCount": 1594,
   "providerCount": 372,
-  "sourcePageCount": 3173,
+  "sourcePageCount": 3176,
   "counts": {
     "access-restricted": 4,
-    "available": 1142,
+    "available": 1143,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "lucky-new-year-pragmatic-play",
+      "name": "Lucky New Year™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-11",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25newyear&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Lucky New Year™; Official page calls it a 3x5, 25 lines video slot. Dog Wild stacks on all reels. Six money-filled festive lamps trigger a respin round with up to 15 prizes plus any of three jackpots. Blazing Reels Free Spins include giant symbols. RTP 96.00%. 3x5 preserved as official wording, not inferred into structured reel/row counts. Jackpot sizes and overall max win not specified. Codex in-app browser checked official H1, gameplay, RTP, iframe symbol via read-only DOM, direct Demo and artwork. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Same-provider exact title/path/symbol absent. Official HTML includes gameSymbol vs25newyear. Codex in-app browser opened exact official Demo on 2026-11-11; title Lucky New Year and gameSymbol vs25newyear matched official page. Matching loading image observed; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 24DAC6575A1718A5048EA3220420B838FF2AE12E3D9F205649DD9B4521A8C686, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/lucky-new-year-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 616"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/01/thumb-Lucky-New-Year_330x140px-2-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 24DAC6575A1718A5048EA3220420B838FF2AE12E3D9F205649DD9B4521A8C686"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25newyear&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-11; title Lucky New Year and gameSymbol vs25newyear matched official page. Matching loading image observed; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "ancient-egypt-pragmatic-play",
       "name": "Ancient Egypt™",
