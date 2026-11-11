@@ -1,10 +1,10 @@
 {
   "batch": 1066,
   "recordedAt": "2026-11-11T09:59:33.748Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Fairytale Fortune™",
       "slug": "fairytale-fortune-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/fairytale-fortune-slot/",
       "officialFacts": "Official page calls the game a 3x5, 15 lines videoslot with stacked Wilds and one of four bonus games: Wheel of Fortune, Progressive Free Spins, Super Wilds Free Spin or Raining Wilds Free Spins. Bonus winnings can be gambled up to 5x. RTP 96.52%. The 3x5 orientation is preserved as official wording rather than inferred into structured reel/row counts; 5x gamble is not overall max win.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; title Fairytale Fortune and gameSymbol vs15fairytale matched official page. Matching loading image observed; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 614 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 614 Aztec Gems™ after item 613 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1066-verify.log; preview built isolation across 1996 HTML pages, storyboard, Densho and RTP checks passed"
+  },
+  "publication": {
+    "commit": "b9f5302889e3c1f8ef8ad31f6b8cb0a04fb79476",
+    "githubActionsRun": 43000501788,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "6d3d0809-d88c-4805-bf1d-d2917ee418c2",
+    "cloudflareUrl": "https://6d3d0809.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
