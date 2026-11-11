@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1590,
+  "gameCount": 1591,
   "providerCount": 372,
-  "sourcePageCount": 3164,
+  "sourcePageCount": 3167,
   "counts": {
     "access-restricted": 4,
-    "available": 1139,
+    "available": 1140,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "fairytale-fortune-pragmatic-play",
+      "name": "Fairytale Fortune™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-11",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs15fairytale&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Fairytale Fortune™; Official page calls the game a 3x5, 15 lines videoslot with stacked Wilds and one of four bonus games: Wheel of Fortune, Progressive Free Spins, Super Wilds Free Spin or Raining Wilds Free Spins. Bonus winnings can be gambled up to 5x. RTP 96.52%. The 3x5 orientation is preserved as official wording rather than inferred into structured reel/row counts; 5x gamble is not overall max win. Codex in-app browser checked official H1, gameplay, RTP, iframe symbol via read-only DOM, direct Demo and artwork. Fresh official HTML returned HTTP 200. No 403, IP restriction or paid browser use. Same-provider exact title/path/symbol absent. Official HTML includes gameSymbol vs15fairytale. Codex in-app browser opened exact official Demo on 2026-11-11; title Fairytale Fortune and gameSymbol vs15fairytale matched official page. Matching loading image observed; no spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 03D9955CE6C8C152002AA1696527E7DC9F79ED4179DFD72FD2216D9F2F53F1AA, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/fairytale-fortune-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 613"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/03/thumb-Fairytale-Fortune_330x140px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 03D9955CE6C8C152002AA1696527E7DC9F79ED4179DFD72FD2216D9F2F53F1AA"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs15fairytale&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo on 2026-11-11; title Fairytale Fortune and gameSymbol vs15fairytale matched official page. Matching loading image observed; no spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "fire-88-pragmatic-play",
       "name": "Fire 88™",
