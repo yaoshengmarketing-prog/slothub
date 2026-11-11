@@ -1,0 +1,38 @@
+{
+  "batch": 1068,
+  "recordedAt": "2026-11-11T10:20:32.075Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1592 published Game Markdown records and same-provider exact official path/name/gameSymbol; Ancient Egypt™ /vs10egypt absent.",
+  "records": [
+    {
+      "index": 615,
+      "name": "Ancient Egypt™",
+      "slug": "ancient-egypt-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/ancient-egypt-slot/",
+      "officialFacts": "Official page calls it a 3x5, 10 lines video slot. Bonus Game can award Free Spins with a special expanding symbol paying anywhere or direct awards up to 500x bet. RTP 96.13%. 3x5 preserved as original wording, no inferred structured reels/rows. The 500x direct award is feature-specific, not overall max win. Distinct from Ancient Egypt Classic symbol vs10egyptcls and separate official page.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/01/thumb-Ancient-Egypt_330x140-2px-1.png",
+        "localPath": "public/assets/games/ancient-egypt-pragmatic-play.png",
+        "sha256": "90E8BCF4B75BD10D0B22D7697FFEA76635E94C621EC689EC7070CFB5FE4094D9",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; title Ancient Egypt and gameSymbol vs10egypt matched official page. Matching loading image observed; no spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 616 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1068-verify.log; preview built isolation across 1998 HTML pages, storyboard, Densho and RTP checks passed"
+  }
+}
