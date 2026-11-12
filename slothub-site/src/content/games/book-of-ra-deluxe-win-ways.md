@@ -8,7 +8,7 @@ relatedGames: []
 provider: greentube
 primaryType: slots
 subtypes: [video-slots, ways-to-win]
-summary: Greentube 的 Book of Ra™ deluxe Win Ways™ 使用 6 個主轉輪與 4 符號頂列；頂列符號加入下方第 2～5 軸，盤面變化時最多可形成 117,649 種 Win Ways。得獎符號會移除並補入新符號，另有 Free Games 與 Special Expanding Symbol。原廠另有 10 軸、雙盤面的 Book of Ra™ deluxe 10: Win Ways™，不是本頁這款。
+summary: "Greentube 的 Book of Ra™ deluxe Win Ways™ 使用 6 個主轉輪與 4 符號頂列；頂列符號加入下方第 2～5 軸，盤面變化時最多可形成 117,649 種 Win Ways。得獎符號會移除並補入新符號，另有 Free Games 與 Special Expanding Symbol。原廠另有 10 軸、雙盤面的 Book of Ra™ deluxe 10: Win Ways™，不是本頁這款。"
 reels: "6 main reels plus a 4-symbol top reel"
 winMechanism: ways-to-win
 paylines: Up to 117,649 Win Ways; dynamic reel heights
