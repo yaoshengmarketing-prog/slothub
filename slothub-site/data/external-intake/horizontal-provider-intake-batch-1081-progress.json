@@ -1,0 +1,38 @@
+{
+  "batch": 1081,
+  "recordedAt": "2026-11-12T11:11:07.61Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1605 published Game Markdown records and same-provider exact official path/name/gameSymbol; Pixie Wings® /vs50pixie absent.",
+  "records": [
+    {
+      "index": 632,
+      "name": "Pixie Wings®",
+      "slug": "pixie-wings-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/pixie-wings-slot/",
+      "officialFacts": "Official page calls it a 4x5, 50-line video slot. Royal family symbols stack on every reel and Free Spins include a side choice. Official H1 uses registered mark while prose and artwork use trademark mark. RTP 96.00%. No overall max win inferred.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/07/thumbs-pt-sitePixie_Wings_330x140px-2-1.png",
+        "localPath": "public/assets/games/pixie-wings-pragmatic-play.png",
+        "sha256": "1C3F490E5352DCAC41431223B54EF449075B94B8DFAAC33051BFE933E7952F29",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Pixie Wings and symbol vs50pixie; visible intro showed matching Pixie Wings branding, super stacked symbols and Free Spins options. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 633 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1081-verify.log; preview built isolation across 2011 HTML pages; full verify exited 0"
+  }
+}

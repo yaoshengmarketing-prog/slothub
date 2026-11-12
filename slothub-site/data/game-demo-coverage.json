@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1605,
+  "gameCount": 1606,
   "providerCount": 372,
-  "sourcePageCount": 3209,
+  "sourcePageCount": 3212,
   "counts": {
     "access-restricted": 4,
-    "available": 1154,
+    "available": 1155,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "pixie-wings-pragmatic-play",
+      "name": "Pixie Wings®",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50pixie&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Pixie Wings®; Official page calls it a 4x5, 50-line video slot. Royal family symbols stack on every reel and Free Spins include a side choice. Official H1 uses registered mark while prose and artwork use trademark mark. RTP 96.00%. No overall max win inferred. Codex in-app browser displayed official exact page title, 50-line description and RTP; official art title matched page og:image. Official H1 uses registered mark whereas art and text use trademark mark. Site age gate was not submitted; direct Demo checked separately. Official HTML includes gameSymbol vs50pixie. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Pixie Wings and symbol vs50pixie; visible intro showed matching Pixie Wings branding, super stacked symbols and Free Spins options. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 1C3F490E5352DCAC41431223B54EF449075B94B8DFAAC33051BFE933E7952F29, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/pixie-wings-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 632"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/07/thumbs-pt-sitePixie_Wings_330x140px-2-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 1C3F490E5352DCAC41431223B54EF449075B94B8DFAAC33051BFE933E7952F29"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50pixie&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Pixie Wings and symbol vs50pixie; visible intro showed matching Pixie Wings branding, super stacked symbols and Free Spins options. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "caishens-gold-pragmatic-play",
       "name": "Caishen’s Gold™",

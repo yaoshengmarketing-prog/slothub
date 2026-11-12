@@ -1,10 +1,10 @@
 {
   "batch": 1080,
   "recordedAt": "2026-11-12T11:02:29.816Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Caishen’s Gold™",
       "slug": "caishens-gold-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/caishens-gold-slot/",
       "officialFacts": "Official page calls it a 3x5, 243-Ways video slot. Caishen Wild can randomly trigger a pick-and-reveal Jackpot Bonus Game. Free Spins remove small-value symbols. RTP 97.08%. No overall max win inferred.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Caishen's Gold and symbol vs243fortune; visible intro showed matching Caishen's Gold branding, Jackpot Bonus pick coins and Free Spins. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 632 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 632 Pixie Wings® after item 631 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1080-verify.log; preview built isolation across 2010 HTML pages; full verify exited 0 after correcting winMechanism to ways-to-win"
+  },
+  "publication": {
+    "commit": "7603f3d0a1d408e966bd01a79536b94eb4f2f312",
+    "githubActionsRun": 43206188509,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "ad24a250-cdc9-4b45-a656-c9c3b1f319c1",
+    "cloudflareUrl": "https://ad24a250.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
