@@ -1,10 +1,10 @@
 {
   "batch": 1106,
   "recordedAt": "2026-11-12T14:38:36.718Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Magic Crystals",
       "slug": "magic-crystals-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/magic-crystals-slot/",
       "officialFacts": "Official page describes five reels and 243 ways; Wild wins 2x and up to 25 Free Spins at 3x. RTP 96.35%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Magic Crystals and symbol vs243crystalcave; visible branded intro showed 243 ways and 3x Free Spins. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 659 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 659 Hockey League after item 658 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1106-verify.log; preview built isolation across 2036 HTML pages; full verify exited 0"
+  },
+  "publication": {
+    "commit": "ca34a06f320a60e98b609b4388a10471386d18fd",
+    "githubActionsRun": 43239836915,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "6efdb8e8-a843-4f21-8099-4e8dd0117d09",
+    "cloudflareUrl": "https://6efdb8e8.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

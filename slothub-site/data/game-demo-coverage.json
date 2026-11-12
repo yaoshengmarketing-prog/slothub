@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1631,
+  "gameCount": 1632,
   "providerCount": 372,
-  "sourcePageCount": 3287,
+  "sourcePageCount": 3290,
   "counts": {
     "access-restricted": 4,
-    "available": 1180,
+    "available": 1181,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "hockey-league-pragmatic-play",
+      "name": "Hockey League",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20hockey&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Hockey League; Official page describes five reels and 20 lines. Up to 10 Free Spins with mystery Scatter. RTP 91.93%. Codex in-app browser showed exact official page, matching og:image artwork and direct Demo game screen on 2026-11-12. Distinct from Hockey League Wild Match by official path and gameSymbol. No age confirmation submitted. Official HTML includes gameSymbol vs20hockey. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Hockey League and symbol vs20hockey; visible branded game screen matched official page. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 58D0BE1C5EFC23FD84353A0427D3B9A3D702F7F3717C1850EDC78DC5E0893E66, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/hockey-league-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 659"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/thumbs_Hockey_remake_330x140px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 58D0BE1C5EFC23FD84353A0427D3B9A3D702F7F3717C1850EDC78DC5E0893E66"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20hockey&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Hockey League and symbol vs20hockey; visible branded game screen matched official page. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "magic-crystals-pragmatic-play",
       "name": "Magic Crystals",
