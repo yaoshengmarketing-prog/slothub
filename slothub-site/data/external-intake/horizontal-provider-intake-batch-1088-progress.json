@@ -1,10 +1,10 @@
 {
   "batch": 1088,
   "recordedAt": "2026-11-12T12:13:44.091Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Panther Queen™",
       "slug": "panther-queen-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/panther-queen-slot/",
       "officialFacts": "Official page calls it a 3x5 video slot plus sixth reel Win Multiplier applied to total spin win. Panther Queen Wild expands to fill a reel; Blazing Reels groups reels 2 through 4 into a giant symbol. RTP 96.50%. No overall max win inferred.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Panther Queen and symbol vs25pantherqueen; visible intro showed matching Panther Queen branding, Blazing Reels, Win Multiplier and Expanding Wild. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 641 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 641 Queen of Atlantis™ after item 640 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1088-verify.log; preview built isolation across 2018 HTML pages; full verify exited 0"
+  },
+  "publication": {
+    "commit": "6265659bad1ecb3bdd8dcb6005dc5d591a4ad3ed",
+    "githubActionsRun": 43216465298,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "70a0fac5-37b9-4868-943d-1faadbc1bcf7",
+    "cloudflareUrl": "https://70a0fac5.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
