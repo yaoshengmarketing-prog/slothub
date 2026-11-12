@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1634,
+  "gameCount": 1635,
   "providerCount": 372,
-  "sourcePageCount": 3296,
+  "sourcePageCount": 3299,
   "counts": {
     "access-restricted": 4,
-    "available": 1183,
+    "available": 1184,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "dwarven-gold-pragmatic-play",
+      "name": "Dwarven Gold",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25dwarves&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Dwarven Gold; Official page and Demo identify Dwarven Gold: 25 lines, up to 33 Free Spins at 6x and RTP 96.64%. Distinct from Dwarven Gold Deluxe, symbol vs25dwarves_new. Codex in-app browser showed exact official page, matching artwork and direct Demo game screen on 2026-11-12. No age confirmation submitted. Official HTML includes gameSymbol vs25dwarves. Codex in-app browser opened direct Demo on 2026-11-12: visible branded Dwarven Gold game screen matching official page and exact symbol vs25dwarves. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 E14BC112A5DC13A8667708DB3717453A993F1E1C2CEEAA03DF0BFEB44791F5EF, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/dwarven-gold-slot-2/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 662"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/25_Dwarven-Gold_desktop_330x140px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 E14BC112A5DC13A8667708DB3717453A993F1E1C2CEEAA03DF0BFEB44791F5EF"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25dwarves&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened direct Demo on 2026-11-12: visible branded Dwarven Gold game screen matching official page and exact symbol vs25dwarves. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "lady-of-the-moon-pragmatic-play",
       "name": "Lady of the Moon",

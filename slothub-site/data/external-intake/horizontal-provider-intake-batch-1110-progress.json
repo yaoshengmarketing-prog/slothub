@@ -1,0 +1,38 @@
+{
+  "batch": 1110,
+  "recordedAt": "2026-11-12T15:11:07.151Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1634 published Game Markdown records and same-provider exact official path/name/gameSymbol; Dwarven Gold /vs25dwarves absent.",
+  "records": [
+    {
+      "index": 662,
+      "name": "Dwarven Gold",
+      "slug": "dwarven-gold-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/dwarven-gold-slot-2/",
+      "officialFacts": "Official page and Demo identify Dwarven Gold: 25 lines, up to 33 Free Spins at 6x and RTP 96.64%. Distinct from Dwarven Gold Deluxe, symbol vs25dwarves_new.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/25_Dwarven-Gold_desktop_330x140px-1.png",
+        "localPath": "public/assets/games/dwarven-gold-pragmatic-play.png",
+        "sha256": "E14BC112A5DC13A8667708DB3717453A993F1E1C2CEEAA03DF0BFEB44791F5EF",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened direct Demo on 2026-11-12: visible branded Dwarven Gold game screen matching official page and exact symbol vs25dwarves. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 663 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Preview verify exit 0; 2040 HTML pages; all source, relationship and RTP checks passed."
+  }
+}

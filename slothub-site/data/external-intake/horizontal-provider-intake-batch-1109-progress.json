@@ -1,10 +1,10 @@
 {
   "batch": 1109,
   "recordedAt": "2026-11-12T15:03:41.954Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Lady of the Moon",
       "slug": "lady-of-the-moon-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/lady-of-the-moon-slot/",
       "officialFacts": "Official page and Demo identify Lady of the Moon: five reels, 13 lines, bonus up to 3300 points, up to 13 Free Spins, RTP 96.52%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened direct Demo on 2026-11-12: visible branded Lady of the Moon intro matching official game and exact symbol vs13ladyofmoon. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 662 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 662 Dwarven Gold after item 661 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Preview verify exit 0; 2039 HTML pages; all source, relationship and RTP checks passed."
+  },
+  "publication": {
+    "commit": "96642cc661154f2791a04e83fa94a48a4b39e51f",
+    "githubActionsRun": 43244278563,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "a2d46088-4d02-4190-a440-54a8fc088b62",
+    "cloudflareUrl": "https://a2d46088.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
