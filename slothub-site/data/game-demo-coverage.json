@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1626,
+  "gameCount": 1627,
   "providerCount": 372,
-  "sourcePageCount": 3272,
+  "sourcePageCount": 3275,
   "counts": {
     "access-restricted": 4,
-    "available": 1175,
+    "available": 1176,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "hockey-league-wild-match-pragmatic-play",
+      "name": "Hockey League Wild Match™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs9hockey&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Hockey League Wild Match™; Official page describes 3x5 and 9 lines with bidirectional pays, full-reel Wild feature and 3x Free Spins wins. RTP 96.52%. Codex in-app browser showed exact official page, matching og:image artwork and direct Demo game screen on 2026-11-12. No age confirmation submitted. Official HTML includes gameSymbol vs9hockey. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Hockey League Wild Match and symbol vs9hockey; visible branded game screen matched official page. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 5AA1205CE73B8D4B98D16E80D2F225CF94268CBF33A4A083FADA67AD576A1892, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/hockey-league-wild-match-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 654"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/04_Hockey-League-Wild-Match_desktop_330x140px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 5AA1205CE73B8D4B98D16E80D2F225CF94268CBF33A4A083FADA67AD576A1892"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs9hockey&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Hockey League Wild Match and symbol vs9hockey; visible branded game screen matched official page. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "7-monkeys-pragmatic-play",
       "name": "7 Monkeys",
