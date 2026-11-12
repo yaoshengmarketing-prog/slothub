@@ -1,0 +1,38 @@
+{
+  "batch": 1108,
+  "recordedAt": "2026-11-12T14:53:49.56Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1632 published Game Markdown records and same-provider exact official path/name/gameSymbol; Aladdin’s Treasure /vs50amt absent.",
+  "records": [
+    {
+      "index": 660,
+      "name": "Aladdin’s Treasure",
+      "slug": "aladdins-treasure-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/aladdins-treasure-slot/",
+      "officialFacts": "Official heading and art brand as Aladdins Treasure; description and Demo html5 title use Aladdins Magical Treasure. Exact iframe symbol vs50amt matches both. Official page describes 4x5, 50 lines, up to 50 Free Spins at 2x or up to 10500 bonus points. RTP 96.58%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/12_Aladdins-Treasure_desktop-330x140px-1.png",
+        "localPath": "public/assets/games/aladdins-treasure-pragmatic-play.png",
+        "sha256": "D2910BC10706618EA0A4796C35BBAE0DE3E82F652F7D701FCD0CC19A75D43ADF",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened direct Demo on 2026-11-12: redirect to html5Game.do symbol vs50amt, HTML title Aladdins Magical Treasure, visible intro Aladdins Treasure showing stackable Wilds and up to 50 Free Spins at 2x. Official heading and art use Treasure and description uses Magical Treasure, so they are aliases of one symbol. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 661 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1108-verify.log; preview built isolation across 2038 HTML pages; full verify exited 0"
+  }
+}

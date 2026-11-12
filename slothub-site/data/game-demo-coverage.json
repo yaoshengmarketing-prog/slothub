@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1632,
+  "gameCount": 1633,
   "providerCount": 372,
-  "sourcePageCount": 3290,
+  "sourcePageCount": 3293,
   "counts": {
     "access-restricted": 4,
-    "available": 1181,
+    "available": 1182,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "aladdins-treasure-pragmatic-play",
+      "name": "Aladdin’s Treasure",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50amt&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Aladdin’s Treasure; Official heading and art brand as Aladdins Treasure; description and Demo html5 title use Aladdins Magical Treasure. Exact iframe symbol vs50amt matches both. Official page describes 4x5, 50 lines, up to 50 Free Spins at 2x or up to 10500 bonus points. RTP 96.58%. Codex in-app browser showed exact official page, matching og:image artwork and direct Demo game intro on 2026-11-12. No age confirmation submitted. Official HTML includes gameSymbol vs50amt. Codex in-app browser opened direct Demo on 2026-11-12: redirect to html5Game.do symbol vs50amt, HTML title Aladdins Magical Treasure, visible intro Aladdins Treasure showing stackable Wilds and up to 50 Free Spins at 2x. Official heading and art use Treasure and description uses Magical Treasure, so they are aliases of one symbol. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 D2910BC10706618EA0A4796C35BBAE0DE3E82F652F7D701FCD0CC19A75D43ADF, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/aladdins-treasure-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 660"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/12_Aladdins-Treasure_desktop-330x140px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 D2910BC10706618EA0A4796C35BBAE0DE3E82F652F7D701FCD0CC19A75D43ADF"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50amt&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened direct Demo on 2026-11-12: redirect to html5Game.do symbol vs50amt, HTML title Aladdins Magical Treasure, visible intro Aladdins Treasure showing stackable Wilds and up to 50 Free Spins at 2x. Official heading and art use Treasure and description uses Magical Treasure, so they are aliases of one symbol. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "hockey-league-pragmatic-play",
       "name": "Hockey League",
