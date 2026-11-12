@@ -1,0 +1,38 @@
+{
+  "batch": 1105,
+  "recordedAt": "2026-11-12T14:31:31.022Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1629 published Game Markdown records and same-provider exact official path/name/gameSymbol; The Catfather™ /vs9catz absent.",
+  "records": [
+    {
+      "index": 657,
+      "name": "The Catfather™",
+      "slug": "the-catfather-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/the-catfather-slot/",
+      "officialFacts": "Official page describes 3x5, nine lines and bidirectional pays. Random Wild Night covers designated reels with Wilds; all Free Spins wins are multiplied by 4x. RTP 98.10%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/thumb_The-Catfather-__330x140px.png",
+        "localPath": "public/assets/games/the-catfather-pragmatic-play.png",
+        "sha256": "97B0339CBA9E14B9C8417800071BD0CE80042D8DC0F0318EF093ADE1FF65B420",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title The Catfather and symbol vs9catz; visible branded intro showed random stacked Wilds. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 658 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1105-verify.log; preview built isolation across 2035 HTML pages; full verify exited 0"
+  }
+}
