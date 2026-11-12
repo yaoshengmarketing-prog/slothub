@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1620,
+  "gameCount": 1621,
   "providerCount": 372,
-  "sourcePageCount": 3254,
+  "sourcePageCount": 3257,
   "counts": {
     "access-restricted": 4,
-    "available": 1169,
+    "available": 1170,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "lucky-dragons-pragmatic-play",
+      "name": "Lucky Dragons™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50chinesecharms&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Lucky Dragons™; Official page calls it a 4x5, 50-line video slot. Stacked dragons pay from two; Free Spins add one Wild on reels 2, 3 and 4 before every spin, Scatter awards another bonus spin. RTP 95.19%. Page's 40000 is not converted to a wager multiplier. Codex in-app browser showed the exact official page, matching og:image artwork and direct Demo intro on 2026-11-12. No age confirmation submitted. Official HTML includes gameSymbol vs50chinesecharms. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Lucky Dragons and symbol vs50chinesecharms; visible intro showed matching Lucky Dragons branding and stacked dragon symbols. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 32D01FF90EAC09B499B483BD2BF60DB951CF886D722D66BE563628544743BAD5, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/lucky-dragons-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 648"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/07/Lucky-Dragons_330x140px-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 32D01FF90EAC09B499B483BD2BF60DB951CF886D722D66BE563628544743BAD5"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50chinesecharms&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Lucky Dragons and symbol vs50chinesecharms; visible intro showed matching Lucky Dragons branding and stacked dragon symbols. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "journey-to-the-west-pragmatic-play",
       "name": "Journey to the West™",
