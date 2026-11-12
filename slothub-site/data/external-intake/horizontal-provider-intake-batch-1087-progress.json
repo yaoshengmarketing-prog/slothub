@@ -1,0 +1,38 @@
+{
+  "batch": 1087,
+  "recordedAt": "2026-11-12T12:03:20.262Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1611 published Game Markdown records and same-provider exact official path/name/gameSymbol; Hot Safari™ /vs25safari absent.",
+  "records": [
+    {
+      "index": 639,
+      "name": "Hot Safari™",
+      "slug": "hot-safari-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/hot-safari-slot/",
+      "officialFacts": "Official page calls it a 3x5, 25-line video slot. A lion on middle row expands to fill its reel. Sixth reel awards multipliers or Super Wild respin; Scatter triggers ten Free Spins with possible Super Wild. RTP 96.17%. No overall max win inferred.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/03_Hot-Safari_desktop_330x140px-2.png",
+        "localPath": "public/assets/games/hot-safari-pragmatic-play.png",
+        "sha256": "939CC7F3EB5D912CBF9E77E7D5AA8BB7FE1CFD4FD692713D7BEF1F8BA39B0972",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Hot Safari and symbol vs25safari; visible intro showed matching Hot Safari branding and sixth-reel multiplier up to 10x. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 640 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1087-verify.log; preview built isolation across 2017 HTML pages; full verify exited 0"
+  }
+}
