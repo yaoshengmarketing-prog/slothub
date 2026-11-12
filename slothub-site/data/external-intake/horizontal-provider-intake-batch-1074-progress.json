@@ -1,0 +1,38 @@
+{
+  "batch": 1074,
+  "recordedAt": "2026-11-12T09:48:37.906Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1598 published Game Markdown records and same-provider exact official path/name/gameSymbol; Santa /vs20santa absent.",
+  "records": [
+    {
+      "index": 625,
+      "name": "Santa",
+      "slug": "santa-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/santa-slot/",
+      "officialFacts": "Exact official page identifies Santa Wild on reels and jackpots possible in the Bonus Game. RTP 95.92%. Main win mechanic and overall max win not inferred. Distinct from published Santa's Wonderland symbol vs20santawonder.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/11/thumbs-pt-site_Santa_330x140px-3.png",
+        "localPath": "public/assets/games/santa-pragmatic-play.png",
+        "sha256": "2452715E57B2601E0DEC6465FEA2093AFDF6CE67C7FAEBB47DEEFBC57554D55C",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do with title Santa and symbol vs20santa; visible intro showed Santa title, presents and jackpot feature with Pragmatic Play branding. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 626 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1074-verify.log; preview built isolation across 2004 HTML pages; full verify exited 0"
+  }
+}
