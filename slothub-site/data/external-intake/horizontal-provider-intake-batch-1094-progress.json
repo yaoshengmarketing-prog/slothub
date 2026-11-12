@@ -1,0 +1,38 @@
+{
+  "batch": 1094,
+  "recordedAt": "2026-11-12T13:03:17.429Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1618 published Game Markdown records and same-provider exact official path/name/gameSymbol; 3 Genie Wishes™ /vs50aladdin absent.",
+  "records": [
+    {
+      "index": 646,
+      "name": "3 Genie Wishes™",
+      "slug": "3-genie-wishes-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/3-genie-wishes-slot/",
+      "officialFacts": "Official page calls it a 4x5, 50-line video slot. Genie stacks on every reel and substitutes for all symbols; magic lamp grants Raining Wilds Free Spins, Sticky Wilds Free Spins or direct award. RTP 96.53%. No overall max win inferred from feature-specific intro number.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/11/thumbs-pt-site_3-GENIE-WISHES_330x140px.png",
+        "localPath": "public/assets/games/3-genie-wishes-pragmatic-play.png",
+        "sha256": "18EFEFC8C4C6E75C63AD4EFF8AC24D6FBD4866D0AEF27551185E534FA1F8D40C",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 3 Genie Wishes and symbol vs50aladdin; visible intro showed matching 3 Genie Wishes branding, stacked Wild Genie. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 647 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1094-verify.log; preview built isolation across 2024 HTML pages; full verify exited 0"
+  }
+}

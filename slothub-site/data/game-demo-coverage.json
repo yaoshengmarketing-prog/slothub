@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1618,
+  "gameCount": 1619,
   "providerCount": 372,
-  "sourcePageCount": 3248,
+  "sourcePageCount": 3251,
   "counts": {
     "access-restricted": 4,
-    "available": 1167,
+    "available": 1168,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "3-genie-wishes-pragmatic-play",
+      "name": "3 Genie Wishes™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50aladdin&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title 3 Genie Wishes™; Official page calls it a 4x5, 50-line video slot. Genie stacks on every reel and substitutes for all symbols; magic lamp grants Raining Wilds Free Spins, Sticky Wilds Free Spins or direct award. RTP 96.53%. No overall max win inferred from feature-specific intro number. Codex in-app browser showed the exact official page, matching og:image artwork and direct Demo intro on 2026-11-12. No age confirmation submitted. Official HTML includes gameSymbol vs50aladdin. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 3 Genie Wishes and symbol vs50aladdin; visible intro showed matching 3 Genie Wishes branding, stacked Wild Genie. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 18EFEFC8C4C6E75C63AD4EFF8AC24D6FBD4866D0AEF27551185E534FA1F8D40C, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/3-genie-wishes-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 646"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/11/thumbs-pt-site_3-GENIE-WISHES_330x140px.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 18EFEFC8C4C6E75C63AD4EFF8AC24D6FBD4866D0AEF27551185E534FA1F8D40C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50aladdin&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 3 Genie Wishes and symbol vs50aladdin; visible intro showed matching 3 Genie Wishes branding, stacked Wild Genie. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "dragon-kingdom-pragmatic-play",
       "name": "Dragon Kingdom™",
