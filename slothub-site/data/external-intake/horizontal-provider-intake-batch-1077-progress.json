@@ -1,0 +1,38 @@
+{
+  "batch": 1077,
+  "recordedAt": "2026-11-12T10:37:35.704Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1601 published Game Markdown records and same-provider exact official path/name/gameSymbol; Diamond Strike® /vs15diamond absent.",
+  "records": [
+    {
+      "index": 628,
+      "name": "Diamond Strike®",
+      "slug": "diamond-strike-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/diamond-strike-slot/",
+      "officialFacts": "Official page calls it a 3x5, 15-line video slot with diamond Wilds stacked on all reels. Free Spins add more diamonds. Three golden 7 symbols offer a Jackpot Bonus Game up to 1000x bet; this is feature-specific, not an overall max-win claim. RTP 97.02%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/09/thumbs-pt-site_Diamond-Strike_330x140px-1.png",
+        "localPath": "public/assets/games/diamond-strike-pragmatic-play.png",
+        "sha256": "280438296CC71EDC3F7F8618F1D7B58E4999AFCD6763C7A395D2DEEC11D74BEF",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Diamond Strike and symbol vs15diamond; visible intro showed matching Diamond Strike branding, Jackpot Bonus and Free Spins. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 629 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1077-verify.log; preview built isolation across 2007 HTML pages; full verify exited 0"
+  }
+}

@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1601,
+  "gameCount": 1602,
   "providerCount": 372,
-  "sourcePageCount": 3197,
+  "sourcePageCount": 3200,
   "counts": {
     "access-restricted": 4,
-    "available": 1150,
+    "available": 1151,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "diamond-strike-pragmatic-play",
+      "name": "Diamond Strike®",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs15diamond&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Diamond Strike®; Official page calls it a 3x5, 15-line video slot with diamond Wilds stacked on all reels. Free Spins add more diamonds. Three golden 7 symbols offer a Jackpot Bonus Game up to 1000x bet; this is feature-specific, not an overall max-win claim. RTP 97.02%. Codex in-app browser displayed official exact page title, 15-line description and RTP; official art title matched page og:image. Site age gate was not submitted; direct Demo checked separately. Official HTML includes gameSymbol vs15diamond. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Diamond Strike and symbol vs15diamond; visible intro showed matching Diamond Strike branding, Jackpot Bonus and Free Spins. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 280438296CC71EDC3F7F8618F1D7B58E4999AFCD6763C7A395D2DEEC11D74BEF, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/diamond-strike-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 628"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/09/thumbs-pt-site_Diamond-Strike_330x140px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 280438296CC71EDC3F7F8618F1D7B58E4999AFCD6763C7A395D2DEEC11D74BEF"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs15diamond&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Diamond Strike and symbol vs15diamond; visible intro showed matching Diamond Strike branding, Jackpot Bonus and Free Spins. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "7-piggies-pragmatic-play",
       "name": "7 Piggies™",

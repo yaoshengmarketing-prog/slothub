@@ -1,10 +1,10 @@
 {
   "batch": 1076,
   "recordedAt": "2026-11-12T10:27:39.808Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "7 Piggies™",
       "slug": "7-piggies-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/7-piggies-slot/",
       "officialFacts": "Official page calls it a 3x5, seven-line video slot. Pig symbols stack on all reels. Scatter barns in Free Spins may reveal multipliers and additional free games. RTP 95.99%. No overall max win inferred.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 7 Piggies and symbol vs7pigs; visible intro showed matching title, reels and Free Spins multipliers. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 628 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 628 Diamond Strike® after item 627 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1076-verify.log; preview built isolation across 2006 HTML pages; full verify exited 0"
+  },
+  "publication": {
+    "commit": "8b2a24b0406693532c0fae3eb35e835f4995eb08",
+    "githubActionsRun": 43200997632,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "c280b404-b813-4536-87b6-a83d37624f72",
+    "cloudflareUrl": "https://c280b404.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
