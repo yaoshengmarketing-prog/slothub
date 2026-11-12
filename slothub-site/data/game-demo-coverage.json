@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1621,
+  "gameCount": 1622,
   "providerCount": 372,
-  "sourcePageCount": 3257,
+  "sourcePageCount": 3260,
   "counts": {
     "access-restricted": 4,
-    "available": 1170,
+    "available": 1171,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "diamonds-are-forever-3-lines-pragmatic-play",
+      "name": "Diamonds are Forever 3 Lines™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=cs3w&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Diamonds are Forever 3 Lines™; Official page describes three blue diamonds worth 200 coins and three diamond-encrusted sevens worth up to 6000 coins. Exact Demo shows three paylines and 7 Wild. RTP 96.96%. Coin awards not converted to wager multiplier. Codex in-app browser showed the exact official page, matching og:image artwork and direct Demo game screen on 2026-11-12. No age confirmation submitted. Official HTML includes gameSymbol cs3w. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Diamonds are Forever 3 Lines and symbol cs3w; visible three-reel game screen showed matching Diamonds are Forever branding, three lines and 7 Wild paytable. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 408C7AD4B3DC299AEAA8D79D55FAE9632CCD845378591C4BAFE20EBAC650FFA2, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/diamonds-are-forever-3-lines-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 649"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/thumbs-pt-site_330x140px.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 408C7AD4B3DC299AEAA8D79D55FAE9632CCD845378591C4BAFE20EBAC650FFA2"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=cs3w&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Diamonds are Forever 3 Lines and symbol cs3w; visible three-reel game screen showed matching Diamonds are Forever branding, three lines and 7 Wild paytable. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "lucky-dragons-pragmatic-play",
       "name": "Lucky Dragons™",

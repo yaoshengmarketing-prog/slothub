@@ -1,0 +1,38 @@
+{
+  "batch": 1097,
+  "recordedAt": "2026-11-12T13:31:32.324Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1621 published Game Markdown records and same-provider exact official path/name/gameSymbol; Diamonds are Forever 3 Lines™ /cs3w absent.",
+  "records": [
+    {
+      "index": 649,
+      "name": "Diamonds are Forever 3 Lines™",
+      "slug": "diamonds-are-forever-3-lines-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/diamonds-are-forever-3-lines-slot/",
+      "officialFacts": "Official page describes three blue diamonds worth 200 coins and three diamond-encrusted sevens worth up to 6000 coins. Exact Demo shows three paylines and 7 Wild. RTP 96.96%. Coin awards not converted to wager multiplier.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/thumbs-pt-site_330x140px.png",
+        "localPath": "public/assets/games/diamonds-are-forever-3-lines-pragmatic-play.png",
+        "sha256": "408C7AD4B3DC299AEAA8D79D55FAE9632CCD845378591C4BAFE20EBAC650FFA2",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Diamonds are Forever 3 Lines and symbol cs3w; visible three-reel game screen showed matching Diamonds are Forever branding, three lines and 7 Wild paytable. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 650 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1097-verify.log; preview built isolation across 2027 HTML pages; full verify exited 0"
+  }
+}
