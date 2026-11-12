@@ -1,10 +1,10 @@
 {
   "batch": 1108,
   "recordedAt": "2026-11-12T14:53:49.56Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Aladdin’s Treasure",
       "slug": "aladdins-treasure-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/aladdins-treasure-slot/",
       "officialFacts": "Official heading and art brand as Aladdins Treasure; description and Demo html5 title use Aladdins Magical Treasure. Exact iframe symbol vs50amt matches both. Official page describes 4x5, 50 lines, up to 50 Free Spins at 2x or up to 10500 bonus points. RTP 96.58%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened direct Demo on 2026-11-12: redirect to html5Game.do symbol vs50amt, HTML title Aladdins Magical Treasure, visible intro Aladdins Treasure showing stackable Wilds and up to 50 Free Spins at 2x. Official heading and art use Treasure and description uses Magical Treasure, so they are aliases of one symbol. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 661 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 661 Lady of the Moon after item 660 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1108-verify.log; preview built isolation across 2038 HTML pages; full verify exited 0"
+  },
+  "publication": {
+    "commit": "90b75887935ef16bf36d5f4e9c8531780a942e38",
+    "githubActionsRun": 43242523309,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "0f6fd91f-9b96-400c-9574-5336ea9f36be",
+    "cloudflareUrl": "https://0f6fd91f.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
