@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1622,
+  "gameCount": 1623,
   "providerCount": 372,
-  "sourcePageCount": 3260,
+  "sourcePageCount": 3263,
   "counts": {
     "access-restricted": 4,
-    "available": 1171,
+    "available": 1172,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "the-catfather-part-ii-pragmatic-play",
+      "name": "The Catfather Part II™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs30catz&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title The Catfather Part II™; Official page describes 3x5, 30 lines and bidirectional symbol pays; random Wild kittens expand to fill a reel and 10 Free Spins guarantee Random Wilds. RTP 96.07%. Codex in-app browser showed exact official page, matching og:image artwork and direct Demo game screen on 2026-11-12. One navigation wait timeout recovered by reading loaded page; no HTTP block or age submission. Official HTML includes gameSymbol vs30catz. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title The Catfather Part II and symbol vs30catz; visible branded game screen and Free Spins panel matched official page. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 F0A509141C1EFFD7E793DECCD00ACA29F497445C7F87004D9C6D9D9FCEA93B81, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/the-catfather-part-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 650"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/11/thumbs-pt-site_Catz-Part-II_330x140px-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 F0A509141C1EFFD7E793DECCD00ACA29F497445C7F87004D9C6D9D9FCEA93B81"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs30catz&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title The Catfather Part II and symbol vs30catz; visible branded game screen and Free Spins panel matched official page. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "diamonds-are-forever-3-lines-pragmatic-play",
       "name": "Diamonds are Forever 3 Lines™",
