@@ -1,0 +1,38 @@
+{
+  "batch": 1103,
+  "recordedAt": "2026-11-12T14:17:56.209Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1627 published Game Markdown records and same-provider exact official path/name/gameSymbol; Mighty Kong™ /vs50kingkong absent.",
+  "records": [
+    {
+      "index": 655,
+      "name": "Mighty Kong™",
+      "slug": "mighty-kong-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/mighty-kong-slot/",
+      "officialFacts": "Official page describes 4x5 and 50 lines. Third-reel Wild can expand to fill reel when creating a win, with up to 40 Free Spins and up to 8x multiplier choices. RTP 94.00%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/05_Mighty-Kong_desktop-330x140px-5.png",
+        "localPath": "public/assets/games/mighty-kong-pragmatic-play.png",
+        "sha256": "74E61EF4B4CE7FCD64B11AE36E00CC1355E0EAEA9B15B126CC9EE5EC0B542F6E",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Mighty Kong and symbol vs50kingkong; visible branded intro showed expanding middle-reel Wild and Free Spins choices. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 656 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1103-verify.log; preview built isolation across 2033 HTML pages; full verify exited 0"
+  }
+}

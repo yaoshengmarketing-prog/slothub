@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1627,
+  "gameCount": 1628,
   "providerCount": 372,
-  "sourcePageCount": 3275,
+  "sourcePageCount": 3278,
   "counts": {
     "access-restricted": 4,
-    "available": 1176,
+    "available": 1177,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "mighty-kong-pragmatic-play",
+      "name": "Mighty Kong™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50kingkong&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Mighty Kong™; Official page describes 4x5 and 50 lines. Third-reel Wild can expand to fill reel when creating a win, with up to 40 Free Spins and up to 8x multiplier choices. RTP 94.00%. Codex in-app browser showed exact official page, matching og:image artwork and direct Demo game intro on 2026-11-12. Initial page navigation wait timeout recovered by reading loaded page; no HTTP block or age submission. Official HTML includes gameSymbol vs50kingkong. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Mighty Kong and symbol vs50kingkong; visible branded intro showed expanding middle-reel Wild and Free Spins choices. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 74E61EF4B4CE7FCD64B11AE36E00CC1355E0EAEA9B15B126CC9EE5EC0B542F6E, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/mighty-kong-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 655"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/05_Mighty-Kong_desktop-330x140px-5.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 74E61EF4B4CE7FCD64B11AE36E00CC1355E0EAEA9B15B126CC9EE5EC0B542F6E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50kingkong&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Mighty Kong and symbol vs50kingkong; visible branded intro showed expanding middle-reel Wild and Free Spins choices. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "hockey-league-wild-match-pragmatic-play",
       "name": "Hockey League Wild Match™",
