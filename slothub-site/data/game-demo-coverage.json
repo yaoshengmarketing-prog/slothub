@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1596,
+  "gameCount": 1597,
   "providerCount": 372,
-  "sourcePageCount": 3182,
+  "sourcePageCount": 3185,
   "counts": {
     "access-restricted": 4,
-    "available": 1145,
+    "available": 1146,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "monkey-madness-pragmatic-play",
+      "name": "Monkey Madness™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs9madmonkey&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Monkey Madness™; Official page calls it a 3x3, 9 lines classic slot. One substituting monkey Wild triples a win, two monkeys multiply by 9x, three monkeys award up to 1000x bet. RTP 96.53%. The three-monkey figure is not inferred as overall max win. Codex in-app browser displayed exact official page title, classic slot description and RTP. Site age gate was not submitted; direct Demo separately loaded. Official artwork title matched page og:image. Official HTML includes gameSymbol vs9madmonkey. Codex in-app browser opened exact direct Demo on 2026-11-12: redirected to html5Game.do with title Monkey Madness and symbol vs9madmonkey; visible reel screen showed Monkey Madness title, three reels and Pragmatic Play branding. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 88334D57A42392B055724F9573D10C64A8070EBB248A692684A587369D464676, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/monkey-madness-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 623"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/11/thumbs-pt-site_Monkey-Madness_330x140px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 88334D57A42392B055724F9573D10C64A8070EBB248A692684A587369D464676"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs9madmonkey&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirected to html5Game.do with title Monkey Madness and symbol vs9madmonkey; visible reel screen showed Monkey Madness title, three reels and Pragmatic Play branding. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "gold-rush-pragmatic-play",
       "name": "Gold Rush™",

@@ -1,0 +1,38 @@
+{
+  "batch": 1072,
+  "recordedAt": "2026-11-12T09:31:31.536Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1596 published Game Markdown records and same-provider exact official path/name/gameSymbol; Monkey Madness™ /vs9madmonkey absent.",
+  "records": [
+    {
+      "index": 623,
+      "name": "Monkey Madness™",
+      "slug": "monkey-madness-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/monkey-madness-slot/",
+      "officialFacts": "Official page calls it a 3x3, 9 lines classic slot. One substituting monkey Wild triples a win, two monkeys multiply by 9x, three monkeys award up to 1000x bet. RTP 96.53%. The three-monkey figure is not inferred as overall max win.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/11/thumbs-pt-site_Monkey-Madness_330x140px-1.png",
+        "localPath": "public/assets/games/monkey-madness-pragmatic-play.png",
+        "sha256": "88334D57A42392B055724F9573D10C64A8070EBB248A692684A587369D464676",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirected to html5Game.do with title Monkey Madness and symbol vs9madmonkey; visible reel screen showed Monkey Madness title, three reels and Pragmatic Play branding. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 624 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1072-verify.log; preview built isolation across 2002 HTML pages; full verify exited 0"
+  }
+}

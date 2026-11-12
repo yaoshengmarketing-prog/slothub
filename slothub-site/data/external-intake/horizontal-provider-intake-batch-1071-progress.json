@@ -1,10 +1,10 @@
 {
   "batch": 1071,
   "recordedAt": "2026-11-12T09:21:23.769Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Gold Rush™",
       "slug": "gold-rush-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/gold-rush-slot/",
       "officialFacts": "Official page calls it a 3x5, 25 lines video slot. Wild dynamite stacks on reels. Gold nuggets advance mine levels and add higher-paying prospectors in Progressive Free Spins. RTP 96.50%. No overall max win inferred. Distinct from JILI Gold Rush game ID 137.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Gold Rush and symbol vs25goldrush; visible intro showed Gold Rush title, reels, gold-nugget levels and Pragmatic Play branding. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 619 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 623 Monkey Madness™ after item 618 full publication closure and 4 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1071-verify.log; preview built isolation across 2001 HTML pages; full verify exited 0"
+  },
+  "publication": {
+    "commit": "bc79da85aa1cfab1869b76f76bd327a33b264112",
+    "githubActionsRun": 43191179394,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "a1cc6816-d6ae-4906-9968-9f1e49b432a5",
+    "cloudflareUrl": "https://a1cc6816.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
