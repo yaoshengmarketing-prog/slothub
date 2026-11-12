@@ -1,10 +1,10 @@
 {
   "batch": 1113,
   "recordedAt": "2026-11-12T15:36:24.997Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Tales of Egypt",
       "slug": "tales-of-egypt-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/tales-of-egypt-slot/",
       "officialFacts": "Official page and Demo identify Tales of Egypt: 20 lines, two Wilds, Raiding the Pyramid Free Spins and RTP 91.93%. Exact symbol vs20egypt is distinct from existing vs20egypttrs.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened direct Demo on 2026-11-12: visible branded Tales of Egypt game screen matching official page and exact symbol vs20egypt. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 666 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Official SLOTS catalog snapshot items 1-665 individually resolved. Refresh the official catalog on the next run to find newly added cards; do not restart at item 627.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Preview verify exit 0; 2043 HTML pages; all source, relationship and RTP checks passed."
+  },
+  "publication": {
+    "commit": "ef3d70ae194409c8da4c59a03e3e1087fa53187d",
+    "githubActionsRun": 43250153654,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "b27cf9b6-a155-48a6-80d9-e6482161b7c2",
+    "cloudflareUrl": "https://b27cf9b6.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap; desktop and mobile in-app browser visual check passed"
   }
 }
