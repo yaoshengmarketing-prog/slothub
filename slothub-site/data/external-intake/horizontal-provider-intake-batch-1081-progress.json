@@ -1,10 +1,10 @@
 {
   "batch": 1081,
   "recordedAt": "2026-11-12T11:11:07.61Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Pixie Wings®",
       "slug": "pixie-wings-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/pixie-wings-slot/",
       "officialFacts": "Official page calls it a 4x5, 50-line video slot. Royal family symbols stack on every reel and Free Spins include a side choice. Official H1 uses registered mark while prose and artwork use trademark mark. RTP 96.00%. No overall max win inferred.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Pixie Wings and symbol vs50pixie; visible intro showed matching Pixie Wings branding, super stacked symbols and Free Spins options. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 633 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 633 Jurassic Giants® after item 632 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1081-verify.log; preview built isolation across 2011 HTML pages; full verify exited 0"
+  },
+  "publication": {
+    "commit": "62faba8e5d1fcb246cdb938539a67f15ac4f280e",
+    "githubActionsRun": 43207388782,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "dd002023-c0e4-4968-921e-bb6628ea736b",
+    "cloudflareUrl": "https://dd002023.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

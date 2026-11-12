@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1606,
+  "gameCount": 1607,
   "providerCount": 372,
-  "sourcePageCount": 3212,
+  "sourcePageCount": 3215,
   "counts": {
     "access-restricted": 4,
-    "available": 1155,
+    "available": 1156,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "jurassic-giants-pragmatic-play",
+      "name": "Jurassic Giants®",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs4096jurassic&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Jurassic Giants®; Official page calls it a 4x6, 4096-Ways video slot. Stacked Scatters can award up to 250 Free Spins. T-Rex and Mammoth meeting during Free Spins multiply that spin's total win up to 4x; this is feature-specific, not overall max win. H1 uses registered mark, prose and art use trademark mark. RTP 96.03%. Codex in-app browser displayed official exact page title, 4096-Ways description and RTP; official art title matched page og:image. H1 uses registered mark, art and prose use trademark mark. Site age gate was not submitted; direct Demo checked separately. Official HTML includes gameSymbol vs4096jurassic. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Jurassic Giants and symbol vs4096jurassic; visible intro showed matching Jurassic Giants branding, stacked dinosaur and mammoth symbols, Free Spins and 4096 Ways. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 70AEAEC602A2F526067B78E2F529591B041DA6F2A64A851A8C5ECB36790634F6, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/jurassic-giants-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 633"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/06/thumbs_Jurassic-Giants_330x140px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 70AEAEC602A2F526067B78E2F529591B041DA6F2A64A851A8C5ECB36790634F6"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs4096jurassic&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Jurassic Giants and symbol vs4096jurassic; visible intro showed matching Jurassic Giants branding, stacked dinosaur and mammoth symbols, Free Spins and 4096 Ways. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "pixie-wings-pragmatic-play",
       "name": "Pixie Wings®",
