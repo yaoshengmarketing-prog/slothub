@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1623,
+  "gameCount": 1624,
   "providerCount": 372,
-  "sourcePageCount": 3263,
+  "sourcePageCount": 3266,
   "counts": {
     "access-restricted": 4,
-    "available": 1172,
+    "available": 1173,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "dwarven-gold-deluxe-pragmatic-play",
+      "name": "Dwarven Gold Deluxe™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25dwarves_new&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Dwarven Gold Deluxe™; Official page describes 3x5 and 25 lines. Dwarves act as Wilds, and two Wilds are added to reels before each Free Spin. RTP 96.47%. Codex in-app browser showed exact official page, matching og:image artwork and direct Demo game screen on 2026-11-12. No age confirmation submitted. Official HTML includes gameSymbol vs25dwarves_new. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Dwarven Gold Deluxe and symbol vs25dwarves_new; visible branded game screen matched official page. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 548BCC565EADCF982B4FD1304A06CAD955A187338FD6288A0F49BE73890EBAA0, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/dwarven-gold-deluxe-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 651"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/thumbs-pt-site_Dwarven-Gold-Deluxe_330x140px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 548BCC565EADCF982B4FD1304A06CAD955A187338FD6288A0F49BE73890EBAA0"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25dwarves_new&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Dwarven Gold Deluxe and symbol vs25dwarves_new; visible branded game screen matched official page. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "the-catfather-part-ii-pragmatic-play",
       "name": "The Catfather Part II™",

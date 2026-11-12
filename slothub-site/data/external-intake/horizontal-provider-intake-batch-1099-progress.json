@@ -1,0 +1,38 @@
+{
+  "batch": 1099,
+  "recordedAt": "2026-11-12T13:45:59.825Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1623 published Game Markdown records and same-provider exact official path/name/gameSymbol; Dwarven Gold Deluxe™ /vs25dwarves_new absent.",
+  "records": [
+    {
+      "index": 651,
+      "name": "Dwarven Gold Deluxe™",
+      "slug": "dwarven-gold-deluxe-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/dwarven-gold-deluxe-slot/",
+      "officialFacts": "Official page describes 3x5 and 25 lines. Dwarves act as Wilds, and two Wilds are added to reels before each Free Spin. RTP 96.47%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/thumbs-pt-site_Dwarven-Gold-Deluxe_330x140px-1.png",
+        "localPath": "public/assets/games/dwarven-gold-deluxe-pragmatic-play.png",
+        "sha256": "548BCC565EADCF982B4FD1304A06CAD955A187338FD6288A0F49BE73890EBAA0",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Dwarven Gold Deluxe and symbol vs25dwarves_new; visible branded game screen matched official page. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 652 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1099-verify.log; preview built isolation across 2029 HTML pages; full verify exited 0"
+  }
+}
