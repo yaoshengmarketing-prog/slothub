@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1624,
+  "gameCount": 1625,
   "providerCount": 372,
-  "sourcePageCount": 3266,
+  "sourcePageCount": 3269,
   "counts": {
     "access-restricted": 4,
-    "available": 1173,
+    "available": 1174,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "romeo-and-juliet-pragmatic-play",
+      "name": "Romeo and Juliet™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25romeoandjuliet&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Romeo and Juliet™; Official page describes 3x5 and 25 lines. Romeo and Juliet Wilds move toward each other, granting Free Respins; meeting triggers Free Spins with a full sticky Wild reel. RTP 96.18%. Codex in-app browser showed exact official page, matching og:image artwork and direct Demo game intro on 2026-11-12. Initial navigation wait timeout recovered by reading loaded page; no HTTP block or age submission. Official HTML includes gameSymbol vs25romeoandjuliet. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Romeo and Juliet and symbol vs25romeoandjuliet; visible branded game intro matched official page. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 5916263C5C4785D2A773870DCE0807EB2F794EF8249F51EDB477A8B577C9C577, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/romeo-and-juliet-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 652"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/02_Romeo-and-Juliet_desktop_330x140px-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 5916263C5C4785D2A773870DCE0807EB2F794EF8249F51EDB477A8B577C9C577"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25romeoandjuliet&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Romeo and Juliet and symbol vs25romeoandjuliet; visible branded game intro matched official page. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "dwarven-gold-deluxe-pragmatic-play",
       "name": "Dwarven Gold Deluxe™",

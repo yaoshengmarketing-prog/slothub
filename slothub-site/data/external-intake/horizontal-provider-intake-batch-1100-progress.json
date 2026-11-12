@@ -1,0 +1,38 @@
+{
+  "batch": 1100,
+  "recordedAt": "2026-11-12T13:53:17.05Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1624 published Game Markdown records and same-provider exact official path/name/gameSymbol; Romeo and Juliet™ /vs25romeoandjuliet absent.",
+  "records": [
+    {
+      "index": 652,
+      "name": "Romeo and Juliet™",
+      "slug": "romeo-and-juliet-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/romeo-and-juliet-slot/",
+      "officialFacts": "Official page describes 3x5 and 25 lines. Romeo and Juliet Wilds move toward each other, granting Free Respins; meeting triggers Free Spins with a full sticky Wild reel. RTP 96.18%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/02_Romeo-and-Juliet_desktop_330x140px-2.png",
+        "localPath": "public/assets/games/romeo-and-juliet-pragmatic-play.png",
+        "sha256": "5916263C5C4785D2A773870DCE0807EB2F794EF8249F51EDB477A8B577C9C577",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Romeo and Juliet and symbol vs25romeoandjuliet; visible branded game intro matched official page. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 653 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1100-verify.log; preview built isolation across 2030 HTML pages; full verify exited 0"
+  }
+}

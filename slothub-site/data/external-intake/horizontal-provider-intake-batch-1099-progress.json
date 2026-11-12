@@ -1,10 +1,10 @@
 {
   "batch": 1099,
   "recordedAt": "2026-11-12T13:45:59.825Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Dwarven Gold Deluxe™",
       "slug": "dwarven-gold-deluxe-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/dwarven-gold-deluxe-slot/",
       "officialFacts": "Official page describes 3x5 and 25 lines. Dwarves act as Wilds, and two Wilds are added to reels before each Free Spin. RTP 96.47%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Dwarven Gold Deluxe and symbol vs25dwarves_new; visible branded game screen matched official page. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 652 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 652 Romeo and Juliet™ after item 651 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1099-verify.log; preview built isolation across 2029 HTML pages; full verify exited 0"
+  },
+  "publication": {
+    "commit": "f5d08c7ad596b7e6b58ccdfd25c929baca8ab882",
+    "githubActionsRun": 43230969502,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "53f334d7-644c-41f6-b338-dcc0cd7c71d7",
+    "cloudflareUrl": "https://53f334d7.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
