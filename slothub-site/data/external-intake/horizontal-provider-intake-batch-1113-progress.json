@@ -1,0 +1,38 @@
+{
+  "batch": 1113,
+  "recordedAt": "2026-11-12T15:36:24.997Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1637 published Game Markdown records and same-provider exact official path/name/gameSymbol; Tales of Egypt /vs20egypt absent.",
+  "records": [
+    {
+      "index": 665,
+      "name": "Tales of Egypt",
+      "slug": "tales-of-egypt-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/tales-of-egypt-slot/",
+      "officialFacts": "Official page and Demo identify Tales of Egypt: 20 lines, two Wilds, Raiding the Pyramid Free Spins and RTP 91.93%. Exact symbol vs20egypt is distinct from existing vs20egypttrs.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/59_Tales-of-Egypt_desktop-330x140px-1.png",
+        "localPath": "public/assets/games/tales-of-egypt-pragmatic-play.png",
+        "sha256": "FD1BE604A2D375B51FB019600FFC0F210B6AE2061FC7B9EEF47EA296A04CFFB1",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened direct Demo on 2026-11-12: visible branded Tales of Egypt game screen matching official page and exact symbol vs20egypt. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 666 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Preview verify exit 0; 2043 HTML pages; all source, relationship and RTP checks passed."
+  }
+}
