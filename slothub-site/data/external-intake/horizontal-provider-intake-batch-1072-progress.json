@@ -1,10 +1,10 @@
 {
   "batch": 1072,
   "recordedAt": "2026-11-12T09:31:31.536Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Monkey Madness™",
       "slug": "monkey-madness-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/monkey-madness-slot/",
       "officialFacts": "Official page calls it a 3x3, 9 lines classic slot. One substituting monkey Wild triples a win, two monkeys multiply by 9x, three monkeys award up to 1000x bet. RTP 96.53%. The three-monkey figure is not inferred as overall max win.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirected to html5Game.do with title Monkey Madness and symbol vs9madmonkey; visible reel screen showed Monkey Madness title, three reels and Pragmatic Play branding. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 624 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 624 Triple Tigers™ after item 623 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1072-verify.log; preview built isolation across 2002 HTML pages; full verify exited 0"
+  },
+  "publication": {
+    "commit": "6a827ef2bd2a131372bd1cad0e26c44dabbd1702",
+    "githubActionsRun": 43192631947,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "840ceed9-705a-4fdc-a596-a8898a83d66a",
+    "cloudflareUrl": "https://840ceed9.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

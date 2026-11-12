@@ -1,0 +1,38 @@
+{
+  "batch": 1073,
+  "recordedAt": "2026-11-12T09:40:21.921Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1597 published Game Markdown records and same-provider exact official path/name/gameSymbol; Triple Tigers™ /vs1tigers absent.",
+  "records": [
+    {
+      "index": 624,
+      "name": "Triple Tigers™",
+      "slug": "triple-tigers-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/triple-tigers-slot/",
+      "officialFacts": "Exact official page calls it a 3x3, one-line classic slot and states RTP 96.52%. No additional feature or overall max win inferred.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/11/thumb-TRIPLE-TIGERS_330x140px-1.png",
+        "localPath": "public/assets/games/triple-tigers-pragmatic-play.png",
+        "sha256": "00B5FAB8FD46F8A6FF208EBDE7A1D7FA06600CD1B2AD376A7E45C924D0B5C061",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do with title Triple Tigers and symbol vs1tigers; visible screen showed Triple Tigers title and three reels. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 625 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1073-verify.log; preview built isolation across 2003 HTML pages; full verify exited 0"
+  }
+}
