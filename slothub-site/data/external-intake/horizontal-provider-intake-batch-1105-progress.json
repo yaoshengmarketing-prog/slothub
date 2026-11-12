@@ -1,10 +1,10 @@
 {
   "batch": 1105,
   "recordedAt": "2026-11-12T14:31:31.022Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "The Catfather™",
       "slug": "the-catfather-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/the-catfather-slot/",
       "officialFacts": "Official page describes 3x5, nine lines and bidirectional pays. Random Wild Night covers designated reels with Wilds; all Free Spins wins are multiplied by 4x. RTP 98.10%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title The Catfather and symbol vs9catz; visible branded intro showed random stacked Wilds. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 658 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 658 Magic Crystals after item 657 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1105-verify.log; preview built isolation across 2035 HTML pages; full verify exited 0"
+  },
+  "publication": {
+    "commit": "7f0c9fbd0ab8852013c35f21e889d11faa0b28e5",
+    "githubActionsRun": 43238609894,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "b36a9939-3943-434f-9565-65e116187f1b",
+    "cloudflareUrl": "https://b36a9939.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

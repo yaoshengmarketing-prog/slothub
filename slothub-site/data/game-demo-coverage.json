@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1630,
+  "gameCount": 1631,
   "providerCount": 372,
-  "sourcePageCount": 3284,
+  "sourcePageCount": 3287,
   "counts": {
     "access-restricted": 4,
-    "available": 1179,
+    "available": 1180,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "magic-crystals-pragmatic-play",
+      "name": "Magic Crystals",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243crystalcave&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Magic Crystals; Official page describes five reels and 243 ways; Wild wins 2x and up to 25 Free Spins at 3x. RTP 96.35%. Codex in-app browser showed exact official page, matching og:image artwork and direct Demo game intro on 2026-11-12. No age confirmation submitted. Official HTML includes gameSymbol vs243crystalcave. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Magic Crystals and symbol vs243crystalcave; visible branded intro showed 243 ways and 3x Free Spins. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 4EEF2D1A4F713293896AB6E9DD9EEFEA0E3F5E4ABEEAC79CD3F499F6D98307CD, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/magic-crystals-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 658"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/thumb-_Magic-Crystals__330x140px.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 4EEF2D1A4F713293896AB6E9DD9EEFEA0E3F5E4ABEEAC79CD3F499F6D98307CD"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243crystalcave&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Magic Crystals and symbol vs243crystalcave; visible branded intro showed 243 ways and 3x Free Spins. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "the-catfather-pragmatic-play",
       "name": "The Catfather™",
