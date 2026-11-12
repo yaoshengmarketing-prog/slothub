@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1610,
+  "gameCount": 1611,
   "providerCount": 372,
-  "sourcePageCount": 3224,
+  "sourcePageCount": 3227,
   "counts": {
     "access-restricted": 4,
-    "available": 1159,
+    "available": 1160,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "3-kingdoms-battle-of-red-cliffs-pragmatic-play",
+      "name": "3 Kingdoms – Battle of Red Cliffs™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25kingdoms&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title 3 Kingdoms – Battle of Red Cliffs™; Official page calls it a 3x5, 25-line video slot. Three generals stack; all three together progress a Spoils of War single-player jackpot. Free Spins choice turns generals Wild. RTP 96.50%. No overall max win inferred. Codex in-app browser displayed official exact page title, 25-line description and RTP; official art title matched page og:image, which abbreviates the subtitle to 3 Kingdoms. Site age gate was not submitted; direct Demo checked separately. Official HTML includes gameSymbol vs25kingdoms. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 3 Kingdoms - Battle of Red Cliffs and symbol vs25kingdoms; visible intro showed matching generals, Spoils of War and progressive feature points. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 703123C05DCC5044440B4ADF2C0FA0993795F273DD554321C18BB23AFACE7CAB, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/3-kingdoms-battle-of-red-cliffs-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 638"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/04/thumb-_3-Kingdoms__330x140px.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 703123C05DCC5044440B4ADF2C0FA0993795F273DD554321C18BB23AFACE7CAB"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25kingdoms&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 3 Kingdoms - Battle of Red Cliffs and symbol vs25kingdoms; visible intro showed matching generals, Spoils of War and progressive feature points. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "gold-train-pragmatic-play",
       "name": "Gold Train™",

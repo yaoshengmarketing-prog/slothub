@@ -1,0 +1,38 @@
+{
+  "batch": 1086,
+  "recordedAt": "2026-11-12T11:54:06.999Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1610 published Game Markdown records and same-provider exact official path/name/gameSymbol; 3 Kingdoms – Battle of Red Cliffs™ /vs25kingdoms absent.",
+  "records": [
+    {
+      "index": 638,
+      "name": "3 Kingdoms – Battle of Red Cliffs™",
+      "slug": "3-kingdoms-battle-of-red-cliffs-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/3-kingdoms-battle-of-red-cliffs-slot/",
+      "officialFacts": "Official page calls it a 3x5, 25-line video slot. Three generals stack; all three together progress a Spoils of War single-player jackpot. Free Spins choice turns generals Wild. RTP 96.50%. No overall max win inferred.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/04/thumb-_3-Kingdoms__330x140px.png",
+        "localPath": "public/assets/games/3-kingdoms-battle-of-red-cliffs-pragmatic-play.png",
+        "sha256": "703123C05DCC5044440B4ADF2C0FA0993795F273DD554321C18BB23AFACE7CAB",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 3 Kingdoms - Battle of Red Cliffs and symbol vs25kingdoms; visible intro showed matching generals, Spoils of War and progressive feature points. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 639 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1086-verify.log; preview built isolation across 2016 HTML pages; full verify exited 0"
+  }
+}
