@@ -1,10 +1,10 @@
 {
   "batch": 1111,
   "recordedAt": "2026-11-12T15:19:49.089Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Glorious Rome",
       "slug": "glorious-rome-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/glorious-rome-slot/",
       "officialFacts": "Official page and Demo identify Glorious Rome: 20 lines, Jupiters Gift up to 10 Free Spins and RTP 94.11%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened direct Demo on 2026-11-12: visible branded Glorious Rome game screen matching official page and exact symbol vs20rome. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 664 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 664 Great Reef after item 663 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Preview verify exit 0; 2041 HTML pages; all source, relationship and RTP checks passed."
+  },
+  "publication": {
+    "commit": "7b5c29abcd7fce7e9830e7e4cea41357375c00b7",
+    "githubActionsRun": 43247123019,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "98b8e810-07c0-4f78-93a0-1b43a19d7d45",
+    "cloudflareUrl": "https://98b8e810.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
