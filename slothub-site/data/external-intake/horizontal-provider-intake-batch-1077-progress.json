@@ -1,10 +1,10 @@
 {
   "batch": 1077,
   "recordedAt": "2026-11-12T10:37:35.704Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Diamond Strike®",
       "slug": "diamond-strike-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/diamond-strike-slot/",
       "officialFacts": "Official page calls it a 3x5, 15-line video slot with diamond Wilds stacked on all reels. Free Spins add more diamonds. Three golden 7 symbols offer a Jackpot Bonus Game up to 1000x bet; this is feature-specific, not an overall max-win claim. RTP 97.02%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Diamond Strike and symbol vs15diamond; visible intro showed matching Diamond Strike branding, Jackpot Bonus and Free Spins. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 629 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 629 Vegas Nights™ after item 628 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1077-verify.log; preview built isolation across 2007 HTML pages; full verify exited 0"
+  },
+  "publication": {
+    "commit": "f2934630334893477eb5a955311d3b0137310c75",
+    "githubActionsRun": 43202504116,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "9dc4ac7b-eeba-42ab-a873-6f3ac4c3ab63",
+    "cloudflareUrl": "https://9dc4ac7b.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

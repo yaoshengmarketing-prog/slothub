@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1602,
+  "gameCount": 1603,
   "providerCount": 372,
-  "sourcePageCount": 3200,
+  "sourcePageCount": 3203,
   "counts": {
     "access-restricted": 4,
-    "available": 1151,
+    "available": 1152,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "vegas-nights-pragmatic-play",
+      "name": "Vegas Nights™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25vegas&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Vegas Nights™; Official page calls it a 3x5, 25-line video slot. Golden chip can trigger three Extra Wilds respins with royals turned Wild. Free Spins Wilds apply 2x or 3x multipliers, with a feature multiplier up to 81x; this is not an overall max-win claim. RTP 96.03%. Codex in-app browser displayed official exact page title, 25-line description and RTP; official art title matched page og:image. Site age gate was not submitted; direct Demo checked separately. Official HTML includes gameSymbol vs25vegas. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Vegas Nights and symbol vs25vegas; visible intro showed matching Vegas Nights branding, Extra Wilds respins and Free Spins multipliers. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 ADA231584496ABFD8AC2BC60C11D05843B965C3A8DF6EC183CAD8990DC70D00D, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/vegas-nights-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 629"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/09/thumbs-pt-site_Vegas-Nights_330x140px-3.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 ADA231584496ABFD8AC2BC60C11D05843B965C3A8DF6EC183CAD8990DC70D00D"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25vegas&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Vegas Nights and symbol vs25vegas; visible intro showed matching Vegas Nights branding, Extra Wilds respins and Free Spins multipliers. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "diamond-strike-pragmatic-play",
       "name": "Diamond Strike®",
