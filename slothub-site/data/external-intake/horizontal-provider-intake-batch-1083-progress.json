@@ -1,10 +1,10 @@
 {
   "batch": 1083,
   "recordedAt": "2026-11-12T11:27:49.84Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "888 Dragons™",
       "slug": "888-dragons-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/888-dragons-slot/",
       "officialFacts": "Official page calls it a 3x3, one-line dragon-themed video slot with RTP 96.84%. Exact symbol vs1dragon8 differs from already published Plushie Wins vs1dragon888; no gameplay features or overall max win inferred.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 888 Dragons and symbol vs1dragon8; visible reel screen showed matching 888 Dragons title and three dragon symbols. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 636 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 636 8 Dragons™ after item 635 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1083-verify.log; preview built isolation across 2013 HTML pages; full verify exited 0"
+  },
+  "publication": {
+    "commit": "c521b73dee19176b9074316b2265444473f1d467",
+    "githubActionsRun": 43209793350,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "69138a86-9584-460c-b553-6e0fa4949aa3",
+    "cloudflareUrl": "https://69138a86.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

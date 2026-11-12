@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1608,
+  "gameCount": 1609,
   "providerCount": 372,
-  "sourcePageCount": 3218,
+  "sourcePageCount": 3221,
   "counts": {
     "access-restricted": 4,
-    "available": 1157,
+    "available": 1158,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "8-dragons-pragmatic-play",
+      "name": "8 Dragons™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20eightdragons&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title 8 Dragons™; Official page calls it a 3x5, 20-line video slot. Dragon Wilds stack in pairs and multiply wins by 2x; Free Spins offer choice-dependent random stacked-dragon multipliers up to 30x. This is feature-specific, not overall max win. RTP 96.37%. Distinct from 888 Dragons exact path and symbol. Codex in-app browser displayed official exact page title, 20-line description and RTP; official art title matched page og:image. Site age gate was not submitted; direct Demo checked separately. Official HTML includes gameSymbol vs20eightdragons. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 8 Dragons and symbol vs20eightdragons; visible intro showed matching 8 Dragons title, stacked Dragon Wilds and Free Spins. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 174A54AAB11962630673F89D97C9118D13411041579EEC4B7A11C7E7E97D764C, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/8-dragons-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 636"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/05/thumb_8_Dragons_330x140px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 174A54AAB11962630673F89D97C9118D13411041579EEC4B7A11C7E7E97D764C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20eightdragons&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 8 Dragons and symbol vs20eightdragons; visible intro showed matching 8 Dragons title, stacked Dragon Wilds and Free Spins. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "888-dragons-pragmatic-play",
       "name": "888 Dragons™",

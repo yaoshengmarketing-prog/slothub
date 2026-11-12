@@ -1,0 +1,38 @@
+{
+  "batch": 1084,
+  "recordedAt": "2026-11-12T11:35:55.729Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1608 published Game Markdown records and same-provider exact official path/name/gameSymbol; 8 Dragons™ /vs20eightdragons absent.",
+  "records": [
+    {
+      "index": 636,
+      "name": "8 Dragons™",
+      "slug": "8-dragons-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/8-dragons-slot/",
+      "officialFacts": "Official page calls it a 3x5, 20-line video slot. Dragon Wilds stack in pairs and multiply wins by 2x; Free Spins offer choice-dependent random stacked-dragon multipliers up to 30x. This is feature-specific, not overall max win. RTP 96.37%. Distinct from 888 Dragons exact path and symbol.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/05/thumb_8_Dragons_330x140px-1.png",
+        "localPath": "public/assets/games/8-dragons-pragmatic-play.png",
+        "sha256": "174A54AAB11962630673F89D97C9118D13411041579EEC4B7A11C7E7E97D764C",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 8 Dragons and symbol vs20eightdragons; visible intro showed matching 8 Dragons title, stacked Dragon Wilds and Free Spins. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 637 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1084-verify.log; preview built isolation across 2014 HTML pages; full verify exited 0"
+  }
+}
