@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1615,
+  "gameCount": 1616,
   "providerCount": 372,
-  "sourcePageCount": 3239,
+  "sourcePageCount": 3242,
   "counts": {
     "access-restricted": 4,
-    "available": 1164,
+    "available": 1165,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "888-gold-pragmatic-play",
+      "name": "888 Gold™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=cs5triple8gold&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title 888 Gold™; Official page calls it a 3x3, five-payline classic slot. 8 is Wild and substitutes for all symbols; full lines of 8 symbols pay up to 6000 in an unstated base. RTP 97.52%. No wager multiplier inferred. Codex in-app browser showed the exact official page, matching og:image artwork and direct Demo game screen on 2026-11-12. No age confirmation submitted. Official HTML includes gameSymbol cs5triple8gold. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 888 Gold and symbol cs5triple8gold; visible three-reel game screen showed matching 888 Gold branding, five lines and 8 Wild paytable. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 5464E21B45D25BAC5633E378C04D9D13C2AC36A4F3D58B09700F49D84760547B, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/888-gold-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 643"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/02/thumbs-pt-site_888_GOLD_330x140px-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 5464E21B45D25BAC5633E378C04D9D13C2AC36A4F3D58B09700F49D84760547B"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=cs5triple8gold&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 888 Gold and symbol cs5triple8gold; visible three-reel game screen showed matching 888 Gold branding, five lines and 8 Wild paytable. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "irish-charms-pragmatic-play",
       "name": "Irish Charms™",

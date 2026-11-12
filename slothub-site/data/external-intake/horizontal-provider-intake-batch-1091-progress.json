@@ -1,0 +1,38 @@
+{
+  "batch": 1091,
+  "recordedAt": "2026-11-12T12:39:45.492Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1615 published Game Markdown records and same-provider exact official path/name/gameSymbol; 888 Gold™ /cs5triple8gold absent.",
+  "records": [
+    {
+      "index": 643,
+      "name": "888 Gold™",
+      "slug": "888-gold-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/888-gold-slot/",
+      "officialFacts": "Official page calls it a 3x3, five-payline classic slot. 8 is Wild and substitutes for all symbols; full lines of 8 symbols pay up to 6000 in an unstated base. RTP 97.52%. No wager multiplier inferred.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/02/thumbs-pt-site_888_GOLD_330x140px-2.png",
+        "localPath": "public/assets/games/888-gold-pragmatic-play.png",
+        "sha256": "5464E21B45D25BAC5633E378C04D9D13C2AC36A4F3D58B09700F49D84760547B",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 888 Gold and symbol cs5triple8gold; visible three-reel game screen showed matching 888 Gold branding, five lines and 8 Wild paytable. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 644 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1091-verify.log; preview built isolation across 2021 HTML pages; full verify exited 0"
+  }
+}
