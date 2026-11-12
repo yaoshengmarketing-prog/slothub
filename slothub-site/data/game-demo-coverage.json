@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1595,
+  "gameCount": 1596,
   "providerCount": 372,
-  "sourcePageCount": 3179,
+  "sourcePageCount": 3182,
   "counts": {
     "access-restricted": 4,
-    "available": 1144,
+    "available": 1145,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gold-rush-pragmatic-play",
+      "name": "Gold Rush™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25goldrush&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Gold Rush™; Official page calls it a 3x5, 25 lines video slot. Wild dynamite stacks on reels. Gold nuggets advance mine levels and add higher-paying prospectors in Progressive Free Spins. RTP 96.50%. No overall max win inferred. Distinct from JILI Gold Rush game ID 137. Codex in-app browser displayed official exact page title, 25-line description and RTP. Site page age gate was not submitted; direct Demo checked separately. Official art title visually matched page og:image. Official HTML includes gameSymbol vs25goldrush. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Gold Rush and symbol vs25goldrush; visible intro showed Gold Rush title, reels, gold-nugget levels and Pragmatic Play branding. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 FA403EE39C117C8A81116B0EF22FB24ED5EBE8A0759EF05C508FCDFD6114BBE5, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gold-rush-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 618"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/12/thumbs-pt-site_Gold-Rush_330x140px-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 FA403EE39C117C8A81116B0EF22FB24ED5EBE8A0759EF05C508FCDFD6114BBE5"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25goldrush&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Gold Rush and symbol vs25goldrush; visible intro showed Gold Rush title, reels, gold-nugget levels and Pragmatic Play branding. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "chilli-heat-pragmatic-play",
       "name": "Chilli Heat®",
