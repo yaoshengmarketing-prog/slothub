@@ -1,0 +1,38 @@
+{
+  "batch": 1079,
+  "recordedAt": "2026-11-12T10:53:45.191Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1603 published Game Markdown records and same-provider exact official path/name/gameSymbol; Wild Spells™ /vs25wildspells absent.",
+  "records": [
+    {
+      "index": 630,
+      "name": "Wild Spells™",
+      "slug": "wild-spells-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/wild-spells-slot/",
+      "officialFacts": "Official page calls it a 3x5, 25-line video slot. Fire, Water and Nature Witches stack on all reels and can award jackpots. Free Spins include a spell choice transforming up to three witches into Wilds. RTP 96.40%. No overall max win inferred.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/08/thumbs-pt-site_Wild_Spells_330x140px-2.png",
+        "localPath": "public/assets/games/wild-spells-pragmatic-play.png",
+        "sha256": "AAADC8CA1B46BBDA29774EB2AB54698CA3BAE114FF01B809BCE5236955A4FD92",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Wild Spells and symbol vs25wildspells; visible intro showed matching Wild Spells branding, stacked witch symbols, jackpots and Free Spins. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 631 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1079-verify.log; preview built isolation across 2009 HTML pages; full verify exited 0"
+  }
+}

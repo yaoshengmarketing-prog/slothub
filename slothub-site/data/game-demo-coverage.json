@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1603,
+  "gameCount": 1604,
   "providerCount": 372,
-  "sourcePageCount": 3203,
+  "sourcePageCount": 3206,
   "counts": {
     "access-restricted": 4,
-    "available": 1152,
+    "available": 1153,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "wild-spells-pragmatic-play",
+      "name": "Wild Spells™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25wildspells&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Wild Spells™; Official page calls it a 3x5, 25-line video slot. Fire, Water and Nature Witches stack on all reels and can award jackpots. Free Spins include a spell choice transforming up to three witches into Wilds. RTP 96.40%. No overall max win inferred. Codex in-app browser displayed official exact page title, 25-line description and RTP; official art title matched page og:image. Site age gate was not submitted; direct Demo checked separately. Official HTML includes gameSymbol vs25wildspells. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Wild Spells and symbol vs25wildspells; visible intro showed matching Wild Spells branding, stacked witch symbols, jackpots and Free Spins. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 AAADC8CA1B46BBDA29774EB2AB54698CA3BAE114FF01B809BCE5236955A4FD92, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/wild-spells-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 630"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/08/thumbs-pt-site_Wild_Spells_330x140px-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 AAADC8CA1B46BBDA29774EB2AB54698CA3BAE114FF01B809BCE5236955A4FD92"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25wildspells&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Wild Spells and symbol vs25wildspells; visible intro showed matching Wild Spells branding, stacked witch symbols, jackpots and Free Spins. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "vegas-nights-pragmatic-play",
       "name": "Vegas Nights™",
