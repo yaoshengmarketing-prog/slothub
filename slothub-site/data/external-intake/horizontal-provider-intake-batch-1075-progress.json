@@ -1,0 +1,38 @@
+{
+  "batch": 1075,
+  "recordedAt": "2026-11-12T09:56:58.421Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1599 published Game Markdown records and same-provider exact official path/name/gameSymbol; Panda’s Fortune™ /vs25pandagold absent.",
+  "records": [
+    {
+      "index": 626,
+      "name": "Panda’s Fortune™",
+      "slug": "panda-fortune-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/pandas-fortune-slot/",
+      "officialFacts": "Official page calls it a 3x5, 25-line video slot. Five of a kind with golden symbols on reel five can award up to 25 jackpots in one spin. RTP 96.17%. No overall max win inferred. Distinct from published Panda's Fortune 2 with separate official page and symbol.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/11/thumbs-pt-site_Panda-Fortune_330x140px-1.png",
+        "localPath": "public/assets/games/panda-fortune-pragmatic-play.png",
+        "sha256": "18484AA7AEA5FF1AB7D1B918CDD13918103BDDA30A23285ECA221E5878B02EBA",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do with symbol vs25pandagold and shortened metadata Panda Fortune; in-game title visibly read Panda's Fortune, matching the official page and image. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 627 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1075-verify.log; preview built isolation across 2005 HTML pages; full verify exited 0"
+  }
+}

@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1599,
+  "gameCount": 1600,
   "providerCount": 372,
-  "sourcePageCount": 3191,
+  "sourcePageCount": 3194,
   "counts": {
     "access-restricted": 4,
-    "available": 1148,
+    "available": 1149,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "panda-fortune-pragmatic-play",
+      "name": "Panda’s Fortune™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25pandagold&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Panda’s Fortune™; Official page calls it a 3x5, 25-line video slot. Five of a kind with golden symbols on reel five can award up to 25 jackpots in one spin. RTP 96.17%. No overall max win inferred. Distinct from published Panda's Fortune 2 with separate official page and symbol. Codex in-app browser displayed exact official page title, 25-line description and RTP. Site age gate was not submitted; direct Demo checked separately. Official artwork title matched page og:image. Official HTML includes gameSymbol vs25pandagold. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do with symbol vs25pandagold and shortened metadata Panda Fortune; in-game title visibly read Panda's Fortune, matching the official page and image. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 18484AA7AEA5FF1AB7D1B918CDD13918103BDDA30A23285ECA221E5878B02EBA, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/pandas-fortune-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 626"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/11/thumbs-pt-site_Panda-Fortune_330x140px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 18484AA7AEA5FF1AB7D1B918CDD13918103BDDA30A23285ECA221E5878B02EBA"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25pandagold&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do with symbol vs25pandagold and shortened metadata Panda Fortune; in-game title visibly read Panda's Fortune, matching the official page and image. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "santa-pragmatic-play",
       "name": "Santa",
