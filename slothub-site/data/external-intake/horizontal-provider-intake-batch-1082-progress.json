@@ -1,10 +1,10 @@
 {
   "batch": 1082,
   "recordedAt": "2026-11-12T11:19:25.664Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Jurassic Giants®",
       "slug": "jurassic-giants-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/jurassic-giants-slot/",
       "officialFacts": "Official page calls it a 4x6, 4096-Ways video slot. Stacked Scatters can award up to 250 Free Spins. T-Rex and Mammoth meeting during Free Spins multiply that spin's total win up to 4x; this is feature-specific, not overall max win. H1 uses registered mark, prose and art use trademark mark. RTP 96.03%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Jurassic Giants and symbol vs4096jurassic; visible intro showed matching Jurassic Giants branding, stacked dinosaur and mammoth symbols, Free Spins and 4096 Ways. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 634 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 635 888 Dragons™ after item 633 full publication closure and 1 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1082-verify.log; preview built isolation across 2012 HTML pages; full verify exited 0"
+  },
+  "publication": {
+    "commit": "f3bd02e15736c615aadd2e9b3720ef2a69ac8a8a",
+    "githubActionsRun": 43208621354,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "1f654e56-2176-45d7-beda-398cf2814788",
+    "cloudflareUrl": "https://1f654e56.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
