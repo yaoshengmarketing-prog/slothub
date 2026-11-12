@@ -1,0 +1,38 @@
+{
+  "batch": 1085,
+  "recordedAt": "2026-11-12T11:44:34.181Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1609 published Game Markdown records and same-provider exact official path/name/gameSymbol; Gold Train™ /vs3train absent.",
+  "records": [
+    {
+      "index": 637,
+      "name": "Gold Train™",
+      "slug": "gold-train-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/gold-train-slot/",
+      "officialFacts": "Official page calls it a 3x3, three-line video slot. Progressive train bonus starts with five wagons, each offering a random prize; every collected Upgrade ticket adds five more wagons. RTP 97.16%. No overall max win inferred.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/05/thumbs-pt-site_Gold-Train_330x140px-1-2.png",
+        "localPath": "public/assets/games/gold-train-pragmatic-play.png",
+        "sha256": "E7F840DFF660F6CA56C954AA41555F97DD295767E15A3251F06DA137E71A3426",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Gold Train and symbol vs3train; visible intro showed matching Gold Train branding and Upgrade tickets adding carriages. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 638 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1085-verify.log; preview built isolation across 2015 HTML pages; full verify exited 0"
+  }
+}

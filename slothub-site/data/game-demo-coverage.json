@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1609,
+  "gameCount": 1610,
   "providerCount": 372,
-  "sourcePageCount": 3221,
+  "sourcePageCount": 3224,
   "counts": {
     "access-restricted": 4,
-    "available": 1158,
+    "available": 1159,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "gold-train-pragmatic-play",
+      "name": "Gold Train™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs3train&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Gold Train™; Official page calls it a 3x3, three-line video slot. Progressive train bonus starts with five wagons, each offering a random prize; every collected Upgrade ticket adds five more wagons. RTP 97.16%. No overall max win inferred. Codex in-app browser displayed official exact page title, three-line description and RTP; official art title matched page og:image. Site age gate was not submitted; direct Demo checked separately. Official HTML includes gameSymbol vs3train. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Gold Train and symbol vs3train; visible intro showed matching Gold Train branding and Upgrade tickets adding carriages. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 E7F840DFF660F6CA56C954AA41555F97DD295767E15A3251F06DA137E71A3426, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/gold-train-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 637"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/05/thumbs-pt-site_Gold-Train_330x140px-1-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 E7F840DFF660F6CA56C954AA41555F97DD295767E15A3251F06DA137E71A3426"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs3train&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Gold Train and symbol vs3train; visible intro showed matching Gold Train branding and Upgrade tickets adding carriages. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "8-dragons-pragmatic-play",
       "name": "8 Dragons™",
