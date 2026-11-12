@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1635,
+  "gameCount": 1636,
   "providerCount": 372,
-  "sourcePageCount": 3299,
+  "sourcePageCount": 3302,
   "counts": {
     "access-restricted": 4,
-    "available": 1184,
+    "available": 1185,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "glorious-rome-pragmatic-play",
+      "name": "Glorious Rome",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20rome&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Glorious Rome; Official page and Demo identify Glorious Rome: 20 lines, Jupiters Gift up to 10 Free Spins and RTP 94.11%. Codex in-app browser showed exact official page, matching artwork and direct Demo game screen on 2026-11-12. No age confirmation submitted. Official HTML includes gameSymbol vs20rome. Codex in-app browser opened direct Demo on 2026-11-12: visible branded Glorious Rome game screen matching official page and exact symbol vs20rome. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 B5CA248FFC5241DEE12A50D13A6D7C7780EF84140C217D5C32FEEC044F4C9524, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/glorious-rome-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 663"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/30_Glorious-Rome_desktop-330x140px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 B5CA248FFC5241DEE12A50D13A6D7C7780EF84140C217D5C32FEEC044F4C9524"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20rome&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened direct Demo on 2026-11-12: visible branded Glorious Rome game screen matching official page and exact symbol vs20rome. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "dwarven-gold-pragmatic-play",
       "name": "Dwarven Gold",
