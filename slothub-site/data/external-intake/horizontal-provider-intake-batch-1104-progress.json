@@ -1,0 +1,38 @@
+{
+  "batch": 1104,
+  "recordedAt": "2026-11-12T14:24:29.223Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1628 published Game Markdown records and same-provider exact official path/name/gameSymbol; Lady Godiva™ /vs20godiva absent.",
+  "records": [
+    {
+      "index": 656,
+      "name": "Lady Godiva™",
+      "slug": "lady-godiva-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/lady-godiva-slot/",
+      "officialFacts": "Official page describes 3x5, 20 lines and stacked symbols. Demo shows four Free Spins choices: 30 at 1x, 15 at 2x, 10 at 3x or 5 at 6x. RTP 94.05%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/06_Lady-Godiva_desktop_330x140px-1.png",
+        "localPath": "public/assets/games/lady-godiva-pragmatic-play.png",
+        "sha256": "F55FD86C2088836FDA0DF9531EB87AEFB30C76A357D413FA100215554A26C9DC",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Lady Godiva and symbol vs20godiva; visible branded intro showed stackable symbols and four Free Spins/multiplier options. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 657 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1104-verify.log; preview built isolation across 2034 HTML pages; full verify exited 0"
+  }
+}

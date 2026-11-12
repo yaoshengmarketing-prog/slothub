@@ -1,10 +1,10 @@
 {
   "batch": 1103,
   "recordedAt": "2026-11-12T14:17:56.209Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Mighty Kong™",
       "slug": "mighty-kong-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/mighty-kong-slot/",
       "officialFacts": "Official page describes 4x5 and 50 lines. Third-reel Wild can expand to fill reel when creating a win, with up to 40 Free Spins and up to 8x multiplier choices. RTP 94.00%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Mighty Kong and symbol vs50kingkong; visible branded intro showed expanding middle-reel Wild and Free Spins choices. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 656 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 656 Lady Godiva™ after item 655 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1103-verify.log; preview built isolation across 2033 HTML pages; full verify exited 0"
+  },
+  "publication": {
+    "commit": "9ca20340e95f7ede461ab50351f9097a3d150b57",
+    "githubActionsRun": 43236228688,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "3834db26-a9fd-4a6d-986d-6e069aae9feb",
+    "cloudflareUrl": "https://3834db26.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

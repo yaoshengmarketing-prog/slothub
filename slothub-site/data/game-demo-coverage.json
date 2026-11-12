@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1628,
+  "gameCount": 1629,
   "providerCount": 372,
-  "sourcePageCount": 3278,
+  "sourcePageCount": 3281,
   "counts": {
     "access-restricted": 4,
-    "available": 1177,
+    "available": 1178,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "lady-godiva-pragmatic-play",
+      "name": "Lady Godiva™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20godiva&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Lady Godiva™; Official page describes 3x5, 20 lines and stacked symbols. Demo shows four Free Spins choices: 30 at 1x, 15 at 2x, 10 at 3x or 5 at 6x. RTP 94.05%. Codex in-app browser showed exact official page, matching og:image artwork and direct Demo game intro on 2026-11-12. No age confirmation submitted. Official HTML includes gameSymbol vs20godiva. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Lady Godiva and symbol vs20godiva; visible branded intro showed stackable symbols and four Free Spins/multiplier options. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 F55FD86C2088836FDA0DF9531EB87AEFB30C76A357D413FA100215554A26C9DC, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/lady-godiva-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 656"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/06_Lady-Godiva_desktop_330x140px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 F55FD86C2088836FDA0DF9531EB87AEFB30C76A357D413FA100215554A26C9DC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20godiva&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Lady Godiva and symbol vs20godiva; visible branded intro showed stackable symbols and four Free Spins/multiplier options. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "mighty-kong-pragmatic-play",
       "name": "Mighty Kong™",
