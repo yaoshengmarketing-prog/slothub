@@ -1,0 +1,38 @@
+{
+  "batch": 1092,
+  "recordedAt": "2026-11-12T12:47:34.863Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1616 published Game Markdown records and same-provider exact official path/name/gameSymbol; Hercules Son of Zeus™ /vs50hercules absent.",
+  "records": [
+    {
+      "index": 644,
+      "name": "Hercules Son of Zeus™",
+      "slug": "hercules-son-of-zeus-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/hercules-son-zeus-slot/",
+      "officialFacts": "Official page calls it a 4x5, 50-line video slot. Hercules stacks on all reels and pays from two; three Zeus symbols trigger Free Spins with Wilds added on reels 2, 3 and 4 before every spin, Scatter adds one spin during bonus. RTP 95.19%. Intro displayed 40000 without a wager base; no max multiplier inferred.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/12/thumbs-pt-site_Hercules-son-of-Zeus_330x140px-2.png",
+        "localPath": "public/assets/games/hercules-son-of-zeus-pragmatic-play.png",
+        "sha256": "0234DC8A1F3704342FAD96FA8841DF7B59A546A829545A549269A418BE19FB8C",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do gname Hercules and symbol vs50hercules; visible intro showed full Hercules Son of Zeus branding, stacked Hercules and prize display. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 645 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1092-verify.log; preview built isolation across 2022 HTML pages; full verify exited 0"
+  }
+}

@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1616,
+  "gameCount": 1617,
   "providerCount": 372,
-  "sourcePageCount": 3242,
+  "sourcePageCount": 3245,
   "counts": {
     "access-restricted": 4,
-    "available": 1165,
+    "available": 1166,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "hercules-son-of-zeus-pragmatic-play",
+      "name": "Hercules Son of Zeus™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50hercules&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Hercules Son of Zeus™; Official page calls it a 4x5, 50-line video slot. Hercules stacks on all reels and pays from two; three Zeus symbols trigger Free Spins with Wilds added on reels 2, 3 and 4 before every spin, Scatter adds one spin during bonus. RTP 95.19%. Intro displayed 40000 without a wager base; no max multiplier inferred. Codex in-app browser showed the exact official page, matching og:image artwork and direct Demo intro on 2026-11-12. No age confirmation submitted. Official HTML includes gameSymbol vs50hercules. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do gname Hercules and symbol vs50hercules; visible intro showed full Hercules Son of Zeus branding, stacked Hercules and prize display. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 0234DC8A1F3704342FAD96FA8841DF7B59A546A829545A549269A418BE19FB8C, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/hercules-son-zeus-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 644"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/12/thumbs-pt-site_Hercules-son-of-Zeus_330x140px-2.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 0234DC8A1F3704342FAD96FA8841DF7B59A546A829545A549269A418BE19FB8C"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs50hercules&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do gname Hercules and symbol vs50hercules; visible intro showed full Hercules Son of Zeus branding, stacked Hercules and prize display. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "888-gold-pragmatic-play",
       "name": "888 Gold™",
