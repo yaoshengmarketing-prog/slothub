@@ -1,0 +1,38 @@
+{
+  "batch": 1101,
+  "recordedAt": "2026-11-12T14:02:35.223Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1625 published Game Markdown records and same-provider exact official path/name/gameSymbol; 7 Monkeys /vs7monkeys absent.",
+  "records": [
+    {
+      "index": 653,
+      "name": "7 Monkeys",
+      "slug": "7-monkeys-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/7-monkeys-slot/",
+      "officialFacts": "Official page describes five reels and seven lines. Monkey symbols stack, with up to 150 Free Spins and a 3x multiplier. RTP 92.71%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/11_7-Monkeys_desktop_330x140px-1.png",
+        "localPath": "public/assets/games/7-monkeys-pragmatic-play.png",
+        "sha256": "9948FD663F4B6CE8CED4FA7FC87DE8506A10FB1276839652AAAE91D9DABE8046",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 7 Monkeys and symbol vs7monkeys; visible branded game intro matched official page. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 654 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1101-verify.log; preview built isolation across 2031 HTML pages; full verify exited 0"
+  }
+}

@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1625,
+  "gameCount": 1626,
   "providerCount": 372,
-  "sourcePageCount": 3269,
+  "sourcePageCount": 3272,
   "counts": {
     "access-restricted": 4,
-    "available": 1174,
+    "available": 1175,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "7-monkeys-pragmatic-play",
+      "name": "7 Monkeys",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs7monkeys&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title 7 Monkeys; Official page describes five reels and seven lines. Monkey symbols stack, with up to 150 Free Spins and a 3x multiplier. RTP 92.71%. Codex in-app browser showed exact official page, matching og:image artwork and direct Demo game intro on 2026-11-12. Two transient page evaluation timeouts recovered by screenshot and subsequent DOM read; no HTTP block or age submission. Official HTML includes gameSymbol vs7monkeys. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 7 Monkeys and symbol vs7monkeys; visible branded game intro matched official page. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 9948FD663F4B6CE8CED4FA7FC87DE8506A10FB1276839652AAAE91D9DABE8046, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/7-monkeys-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 653"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/05/11_7-Monkeys_desktop_330x140px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 9948FD663F4B6CE8CED4FA7FC87DE8506A10FB1276839652AAAE91D9DABE8046"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs7monkeys&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 7 Monkeys and symbol vs7monkeys; visible branded game intro matched official page. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "romeo-and-juliet-pragmatic-play",
       "name": "Romeo and Juliet™",
