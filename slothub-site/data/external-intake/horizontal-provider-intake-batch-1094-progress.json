@@ -1,10 +1,10 @@
 {
   "batch": 1094,
   "recordedAt": "2026-11-12T13:03:17.429Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "3 Genie Wishes™",
       "slug": "3-genie-wishes-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/3-genie-wishes-slot/",
       "officialFacts": "Official page calls it a 4x5, 50-line video slot. Genie stacks on every reel and substitutes for all symbols; magic lamp grants Raining Wilds Free Spins, Sticky Wilds Free Spins or direct award. RTP 96.53%. No overall max win inferred from feature-specific intro number.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title 3 Genie Wishes and symbol vs50aladdin; visible intro showed matching 3 Genie Wishes branding, stacked Wild Genie. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 647 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 647 Journey to the West™ after item 646 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1094-verify.log; preview built isolation across 2024 HTML pages; full verify exited 0"
+  },
+  "publication": {
+    "commit": "528a766ace8e669c86031f81f3ae1e0b1f031c20",
+    "githubActionsRun": 43224944958,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "70879ff7-a61b-47d8-a0e4-c3138b9fa3b0",
+    "cloudflareUrl": "https://70879ff7.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

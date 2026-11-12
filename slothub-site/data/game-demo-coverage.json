@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1619,
+  "gameCount": 1620,
   "providerCount": 372,
-  "sourcePageCount": 3251,
+  "sourcePageCount": 3254,
   "counts": {
     "access-restricted": 4,
-    "available": 1168,
+    "available": 1169,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "journey-to-the-west-pragmatic-play",
+      "name": "Journey to the West™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25journey&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Journey to the West™; Official page calls it a 3x5, 25-line video slot. Wukong, Xuanzang, Zhu and Sha symbols stack; Free Spins let players choose more of one symbol to stack, with up to 5x bonus multiplier. RTP 96.47%. No overall max win inferred from intro display. Codex in-app browser showed the exact official page, matching og:image artwork and direct Demo intro on 2026-11-12. No age confirmation submitted. Official HTML includes gameSymbol vs25journey. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Journey to the West and symbol vs25journey; visible intro showed matching Journey to the West branding. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 F646A5E2CAFE6BA399C138B5E4DF1B1296A334E5F80DB317E12A8D0EAD2FA971, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/journey-to-the-west-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 647"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/10/thumbs-pt-site_Journey-to-the-West_330x140px.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 F646A5E2CAFE6BA399C138B5E4DF1B1296A334E5F80DB317E12A8D0EAD2FA971"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25journey&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Journey to the West and symbol vs25journey; visible intro showed matching Journey to the West branding. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "3-genie-wishes-pragmatic-play",
       "name": "3 Genie Wishes™",

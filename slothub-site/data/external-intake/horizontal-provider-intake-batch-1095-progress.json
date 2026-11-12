@@ -1,0 +1,38 @@
+{
+  "batch": 1095,
+  "recordedAt": "2026-11-12T13:16:44.196Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1619 published Game Markdown records and same-provider exact official path/name/gameSymbol; Journey to the West™ /vs25journey absent.",
+  "records": [
+    {
+      "index": 647,
+      "name": "Journey to the West™",
+      "slug": "journey-to-the-west-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/journey-to-the-west-slot/",
+      "officialFacts": "Official page calls it a 3x5, 25-line video slot. Wukong, Xuanzang, Zhu and Sha symbols stack; Free Spins let players choose more of one symbol to stack, with up to 5x bonus multiplier. RTP 96.47%. No overall max win inferred from intro display.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2016/10/thumbs-pt-site_Journey-to-the-West_330x140px.png",
+        "localPath": "public/assets/games/journey-to-the-west-pragmatic-play.png",
+        "sha256": "F646A5E2CAFE6BA399C138B5E4DF1B1296A334E5F80DB317E12A8D0EAD2FA971",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Journey to the West and symbol vs25journey; visible intro showed matching Journey to the West branding. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 648 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1095-verify.log; preview built isolation across 2025 HTML pages; full verify exited 0"
+  }
+}
