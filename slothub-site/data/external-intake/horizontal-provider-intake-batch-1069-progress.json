@@ -1,10 +1,10 @@
 {
   "batch": 1069,
   "recordedAt": "2026-11-11T13:27:20.392Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Lucky New Year™",
       "slug": "lucky-new-year-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/lucky-new-year-slot/",
       "officialFacts": "Official page calls it a 3x5, 25 lines video slot. Dog Wild stacks on all reels. Six money-filled festive lamps trigger a respin round with up to 15 prizes plus any of three jackpots. Blazing Reels Free Spins include giant symbols. RTP 96.00%. 3x5 preserved as official wording, not inferred into structured reel/row counts. Jackpot sizes and overall max win not specified.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo on 2026-11-11; title Lucky New Year and gameSymbol vs25newyear matched official page. Matching loading image observed; no spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 617 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 617 Chilli Heat® after item 616 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1069-post-sync-verify.log; preview built isolation across 1999 HTML pages, storyboard, Densho and RTP checks passed after fast-forward to origin/main 5323309750a3b1949b59bc4c33a78939a846ff8c"
+  },
+  "publication": {
+    "commit": "472b90ca682f12f328bf61f7cb9820a76a96e2ce",
+    "githubActionsRun": 43030088053,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "e835490d-f33a-4c9c-a241-55583adc4a49",
+    "cloudflareUrl": "https://e835490d.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

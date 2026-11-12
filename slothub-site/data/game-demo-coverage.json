@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1594,
+  "gameCount": 1595,
   "providerCount": 372,
-  "sourcePageCount": 3176,
+  "sourcePageCount": 3179,
   "counts": {
     "access-restricted": 4,
-    "available": 1143,
+    "available": 1144,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "chilli-heat-pragmatic-play",
+      "name": "Chilli Heat®",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25chilli&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Chilli Heat®; Official page calls it a 5x3 slot. Six or more money symbols trigger three respins; new sticky symbols reset the counter. Filling the grid awards the feature-specific 1000x Grande Jackpot. Three scatters trigger eight Free Spins. RTP 96.50%. No overall max win inferred. Codex in-app browser displayed the exact official page title, game description and RTP. The site page presented an age gate; it was not submitted. The direct Demo was checked separately. Official HTML includes gameSymbol vs25chilli. Codex in-app browser opened the exact direct Demo on 2026-11-12: it redirected to html5Game.do with symbol vs25chilli and title Chilli Heat; visible intro showed matching Chilli Heat artwork, respin feature and Pragmatic Play branding. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 7F9C50A466C8FAABF0E3D81AD75CF968041E76CFD081653D9A33B69FC96914A5, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/chilli-heat-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 617"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/01/thumbs-pt-site_Chilli-Heat_330x140px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 7F9C50A466C8FAABF0E3D81AD75CF968041E76CFD081653D9A33B69FC96914A5"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25chilli&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened the exact direct Demo on 2026-11-12: it redirected to html5Game.do with symbol vs25chilli and title Chilli Heat; visible intro showed matching Chilli Heat artwork, respin feature and Pragmatic Play branding. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "lucky-new-year-pragmatic-play",
       "name": "Lucky New Year™",

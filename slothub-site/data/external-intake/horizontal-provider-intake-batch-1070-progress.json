@@ -1,0 +1,38 @@
+{
+  "batch": 1070,
+  "recordedAt": "2026-11-12T09:11:31.122Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1594 published Game Markdown records and same-provider exact official path/name/gameSymbol; Chilli Heat® /vs25chilli absent.",
+  "records": [
+    {
+      "index": 617,
+      "name": "Chilli Heat®",
+      "slug": "chilli-heat-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/chilli-heat-slot/",
+      "officialFacts": "Official page calls it a 5x3 slot. Six or more money symbols trigger three respins; new sticky symbols reset the counter. Filling the grid awards the feature-specific 1000x Grande Jackpot. Three scatters trigger eight Free Spins. RTP 96.50%. No overall max win inferred.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2018/01/thumbs-pt-site_Chilli-Heat_330x140px-1.png",
+        "localPath": "public/assets/games/chilli-heat-pragmatic-play.png",
+        "sha256": "7F9C50A466C8FAABF0E3D81AD75CF968041E76CFD081653D9A33B69FC96914A5",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened the exact direct Demo on 2026-11-12: it redirected to html5Game.do with symbol vs25chilli and title Chilli Heat; visible intro showed matching Chilli Heat artwork, respin feature and Pragmatic Play branding. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 618 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1070-verify.log; preview built isolation across 2000 HTML pages; full verify exited 0 after safe fast-forward to origin/main 22d605ee053d4e08988adf64561b5eb615f6fac5"
+  }
+}
