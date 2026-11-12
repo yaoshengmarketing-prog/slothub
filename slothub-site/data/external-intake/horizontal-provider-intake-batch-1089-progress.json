@@ -1,10 +1,10 @@
 {
   "batch": 1089,
   "recordedAt": "2026-11-12T12:22:32.528Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Queen of Atlantis™",
       "slug": "queen-of-atlantis-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/queen-of-atlantis-slot/",
       "officialFacts": "Official page calls it a 5x4, 1024-ways video slot. Queen symbols stack on all reels. Three pearl oysters trigger Free Spins; black pearl awards Super Free Spins with added Queen symbols. Two oysters trigger Second Chance pick bonus. RTP 96.41%. No overall max win inferred.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Queen of Atlantis and symbol vs1024atlantis; visible intro showed matching Queen of Atlantis branding, 1024 Ways to Win, Stacked Queens and Free Spins. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 642 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 642 Irish Charms™ after item 641 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1089-verify.log; preview built isolation across 2019 HTML pages; full verify exited 0"
+  },
+  "publication": {
+    "commit": "54efb4bfb0dc93a4ad8f80bd06676cc88468917a",
+    "githubActionsRun": 43217804790,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "68b34c65-3519-4643-b71e-d698137699d4",
+    "cloudflareUrl": "https://68b34c65.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

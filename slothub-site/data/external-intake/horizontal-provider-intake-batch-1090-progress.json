@@ -1,0 +1,38 @@
+{
+  "batch": 1090,
+  "recordedAt": "2026-11-12T12:29:42.816Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1614 published Game Markdown records and same-provider exact official path/name/gameSymbol; Irish Charms™ /cs3irishcharms absent.",
+  "records": [
+    {
+      "index": 642,
+      "name": "Irish Charms™",
+      "slug": "irish-charms-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/irish-charms-slot/",
+      "officialFacts": "Official page describes Irish lucky symbols and a prize up to 6000 coins, with all 7 symbols Wild and Beer Mug paying anywhere. RTP 96.96%. Coin prize not converted to wager multiplier. Direct official Demo showed three reels and matching title.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/03/thumbs-pt-site_IRISH-CHARMS__330x140px-1-1.png",
+        "localPath": "public/assets/games/irish-charms-pragmatic-play.png",
+        "sha256": "B22C79894B8990E02B4B3963A9C13B470FDA5858A56722442068DF8977AE98BC",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Irish Charms and symbol cs3irishcharms; visible three-reel game screen showed matching Irish Charms branding, Wild 7 and 6000-coin prize table. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 643 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1090-verify.log; preview built isolation across 2020 HTML pages; full verify exited 0 after isolating next draft"
+  }
+}

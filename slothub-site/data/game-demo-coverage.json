@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1614,
+  "gameCount": 1615,
   "providerCount": 372,
-  "sourcePageCount": 3236,
+  "sourcePageCount": 3239,
   "counts": {
     "access-restricted": 4,
-    "available": 1163,
+    "available": 1164,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "irish-charms-pragmatic-play",
+      "name": "Irish Charms™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=cs3irishcharms&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Irish Charms™; Official page describes Irish lucky symbols and a prize up to 6000 coins, with all 7 symbols Wild and Beer Mug paying anywhere. RTP 96.96%. Coin prize not converted to wager multiplier. Direct official Demo showed three reels and matching title. Codex in-app browser showed the exact official page, matching og:image artwork and direct Demo game screen on 2026-11-12. No age confirmation submitted. Official HTML includes gameSymbol cs3irishcharms. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Irish Charms and symbol cs3irishcharms; visible three-reel game screen showed matching Irish Charms branding, Wild 7 and 6000-coin prize table. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 B22C79894B8990E02B4B3963A9C13B470FDA5858A56722442068DF8977AE98BC, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/irish-charms-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 642"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/03/thumbs-pt-site_IRISH-CHARMS__330x140px-1-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 B22C79894B8990E02B4B3963A9C13B470FDA5858A56722442068DF8977AE98BC"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=cs3irishcharms&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Irish Charms and symbol cs3irishcharms; visible three-reel game screen showed matching Irish Charms branding, Wild 7 and 6000-coin prize table. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "queen-of-atlantis-pragmatic-play",
       "name": "Queen of Atlantis™",
