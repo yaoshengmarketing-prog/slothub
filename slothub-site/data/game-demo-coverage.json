@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1604,
+  "gameCount": 1605,
   "providerCount": 372,
-  "sourcePageCount": 3206,
+  "sourcePageCount": 3209,
   "counts": {
     "access-restricted": 4,
-    "available": 1153,
+    "available": 1154,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "caishens-gold-pragmatic-play",
+      "name": "Caishen’s Gold™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243fortune&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Caishen’s Gold™; Official page calls it a 3x5, 243-Ways video slot. Caishen Wild can randomly trigger a pick-and-reveal Jackpot Bonus Game. Free Spins remove small-value symbols. RTP 97.08%. No overall max win inferred. Codex in-app browser initially timed out on navigation but immediately showed the exact loaded official page upon state check; title, 243-Ways description, RTP, iframe and og:image were visible. Official artwork title matched. Site age gate was not submitted; direct Demo checked separately. Official HTML includes gameSymbol vs243fortune. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Caishen's Gold and symbol vs243fortune; visible intro showed matching Caishen's Gold branding, Jackpot Bonus pick coins and Free Spins. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 BB527BD2199CDEA203E44AD46A9A9EB81F6070B150B03D6B4045C8A9414B7475, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/caishens-gold-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 631"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/08/thumbs-pt-site_Cashien_s-Gold_330x140px.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 BB527BD2199CDEA203E44AD46A9A9EB81F6070B150B03D6B4045C8A9414B7475"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243fortune&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Caishen's Gold and symbol vs243fortune; visible intro showed matching Caishen's Gold branding, Jackpot Bonus pick coins and Free Spins. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "wild-spells-pragmatic-play",
       "name": "Wild Spells™",

@@ -1,0 +1,38 @@
+{
+  "batch": 1080,
+  "recordedAt": "2026-11-12T11:02:29.816Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1604 published Game Markdown records and same-provider exact official path/name/gameSymbol; Caishen’s Gold™ /vs243fortune absent.",
+  "records": [
+    {
+      "index": 631,
+      "name": "Caishen’s Gold™",
+      "slug": "caishens-gold-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/caishens-gold-slot/",
+      "officialFacts": "Official page calls it a 3x5, 243-Ways video slot. Caishen Wild can randomly trigger a pick-and-reveal Jackpot Bonus Game. Free Spins remove small-value symbols. RTP 97.08%. No overall max win inferred.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/08/thumbs-pt-site_Cashien_s-Gold_330x140px.png",
+        "localPath": "public/assets/games/caishens-gold-pragmatic-play.png",
+        "sha256": "BB527BD2199CDEA203E44AD46A9A9EB81F6070B150B03D6B4045C8A9414B7475",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Caishen's Gold and symbol vs243fortune; visible intro showed matching Caishen's Gold branding, Jackpot Bonus pick coins and Free Spins. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 632 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1080-verify.log; preview built isolation across 2010 HTML pages; full verify exited 0 after correcting winMechanism to ways-to-win"
+  }
+}

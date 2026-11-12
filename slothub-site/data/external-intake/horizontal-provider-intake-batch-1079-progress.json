@@ -1,10 +1,10 @@
 {
   "batch": 1079,
   "recordedAt": "2026-11-12T10:53:45.191Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Wild Spells™",
       "slug": "wild-spells-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/wild-spells-slot/",
       "officialFacts": "Official page calls it a 3x5, 25-line video slot. Fire, Water and Nature Witches stack on all reels and can award jackpots. Free Spins include a spell choice transforming up to three witches into Wilds. RTP 96.40%. No overall max win inferred.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Wild Spells and symbol vs25wildspells; visible intro showed matching Wild Spells branding, stacked witch symbols, jackpots and Free Spins. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 631 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 631 Caishen’s Gold™ after item 630 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1079-verify.log; preview built isolation across 2009 HTML pages; full verify exited 0"
+  },
+  "publication": {
+    "commit": "526cffa5ba8508e1f2efbe608713ca922de97a41",
+    "githubActionsRun": 43204797588,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "ea63b552-3188-4506-a52e-a015dcdc1b32",
+    "cloudflareUrl": "https://ea63b552.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
