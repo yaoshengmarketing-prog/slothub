@@ -1,0 +1,38 @@
+{
+  "batch": 1088,
+  "recordedAt": "2026-11-12T12:13:44.091Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1612 published Game Markdown records and same-provider exact official path/name/gameSymbol; Panther Queen™ /vs25pantherqueen absent.",
+  "records": [
+    {
+      "index": 640,
+      "name": "Panther Queen™",
+      "slug": "panther-queen-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/panther-queen-slot/",
+      "officialFacts": "Official page calls it a 3x5 video slot plus sixth reel Win Multiplier applied to total spin win. Panther Queen Wild expands to fill a reel; Blazing Reels groups reels 2 through 4 into a giant symbol. RTP 96.50%. No overall max win inferred.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/03/thumbs-pt-site__Panther-Queen__330x140px-1.png",
+        "localPath": "public/assets/games/panther-queen-pragmatic-play.png",
+        "sha256": "A9723B63D420822108BCA57F21CA516300D64CE22D3E976093882E02C4C685CB",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Panther Queen and symbol vs25pantherqueen; visible intro showed matching Panther Queen branding, Blazing Reels, Win Multiplier and Expanding Wild. No spin, bet, login or age submission."
+    }
+  ],
+  "nextCursor": "Catalog item 641 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "tmp/batch1088-verify.log; preview built isolation across 2018 HTML pages; full verify exited 0"
+  }
+}

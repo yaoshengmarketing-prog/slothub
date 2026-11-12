@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1612,
+  "gameCount": 1613,
   "providerCount": 372,
-  "sourcePageCount": 3230,
+  "sourcePageCount": 3233,
   "counts": {
     "access-restricted": 4,
-    "available": 1161,
+    "available": 1162,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "panther-queen-pragmatic-play",
+      "name": "Panther Queen™",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-12",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25pantherqueen&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Panther Queen™; Official page calls it a 3x5 video slot plus sixth reel Win Multiplier applied to total spin win. Panther Queen Wild expands to fill a reel; Blazing Reels groups reels 2 through 4 into a giant symbol. RTP 96.50%. No overall max win inferred. Codex in-app browser showed the exact official page, matching og:image artwork and direct Demo intro on 2026-11-12. No age confirmation submitted. Official HTML includes gameSymbol vs25pantherqueen. Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Panther Queen and symbol vs25pantherqueen; visible intro showed matching Panther Queen branding, Blazing Reels, Win Multiplier and Expanding Wild. No spin, bet, login or age submission. Exact official image URL maps through page og:image; image/png SHA256 A9723B63D420822108BCA57F21CA516300D64CE22D3E976093882E02C4C685CB, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/panther-queen-slot/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 640"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2017/03/thumbs-pt-site__Panther-Queen__330x140px-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 A9723B63D420822108BCA57F21CA516300D64CE22D3E976093882E02C4C685CB"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25pantherqueen&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do title Panther Queen and symbol vs25pantherqueen; visible intro showed matching Panther Queen branding, Blazing Reels, Win Multiplier and Expanding Wild. No spin, bet, login or age submission."
+        }
+      ]
+    },
     {
       "slug": "hot-safari-pragmatic-play",
       "name": "Hot Safari™",
