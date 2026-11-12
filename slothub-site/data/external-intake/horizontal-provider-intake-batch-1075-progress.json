@@ -1,10 +1,10 @@
 {
   "batch": 1075,
   "recordedAt": "2026-11-12T09:56:58.421Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-01.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Panda’s Fortune™",
       "slug": "panda-fortune-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/pandas-fortune-slot/",
       "officialFacts": "Official page calls it a 3x5, 25-line video slot. Five of a kind with golden symbols on reel five can award up to 25 jackpots in one spin. RTP 96.17%. No overall max win inferred. Distinct from published Panda's Fortune 2 with separate official page and symbol.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact direct Demo on 2026-11-12: redirect to html5Game.do with symbol vs25pandagold and shortened metadata Panda Fortune; in-game title visibly read Panda's Fortune, matching the official page and image. No spin, bet, login or age submission."
     }
   ],
-  "nextCursor": "Catalog item 627 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 627 7 Piggies after item 626 Panda’s Fortune full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "tmp/batch1075-verify.log; preview built isolation across 2005 HTML pages; full verify exited 0"
+  },
+  "publication": {
+    "commit": "f88b5830dd5f749154556e6a71f0acb2c14e5f45",
+    "githubActionsRun": 43196416282,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "86a1b523-f170-43b4-9993-d0232eae7559",
+    "cloudflareUrl": "https://86a1b523.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap; Codex in-app browser desktop and 390x844 mobile passed."
   }
 }
