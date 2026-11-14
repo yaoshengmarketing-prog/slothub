@@ -1,0 +1,183 @@
+{
+  "version": "game-media-pilot-20261029-review-v2",
+  "checkedAt": "2026-10-29",
+  "previousReviewCommit": "f25b4674f9006948c6818f5b0dd0bc0900d5d043",
+  "baseMainSHA": "444028b0ee5de690877a652be832390ace07d682",
+  "latestMainObserved": "f95167d47866ad53cc7770ee1296ee97b509b50d",
+  "sourceFiles": [
+    {
+      "path": "densho.html",
+      "sha256": "4517d86b56de4881a5cd272a823c84d94c9d190e187f981dcb87583853f6cb89"
+    },
+    {
+      "path": "razor-shark.html",
+      "sha256": "099b4430a1d01238a6b32b26577471c2e5b4887750b6f55f5ce0a5e9ef6b2bfe"
+    },
+    {
+      "path": "media.css",
+      "sha256": "525cf6788df12a1453b863d3602c6cb2b6b1a2dcd54ef747e90675dde8f3f2cc"
+    },
+    {
+      "path": "media.js",
+      "sha256": "2e9fa233d8440f4e6488b37b5263ceecb97accb14bf03f72b9720bad83d091a3"
+    },
+    {
+      "path": "materials.html",
+      "sha256": "38bfd5c32bfc542a44d507ea2423225069f2e51fc672b134674f497fe321364c"
+    },
+    {
+      "path": "materials.json",
+      "sha256": "f8f2eaef6ac29146559be0c12b472afc66cd553f34994cba2052f11c7db73ef9"
+    },
+    {
+      "path": "review/serve-preview.mjs",
+      "sha256": "e3c82e2c9bc84eac05e8079bd0a3e9c8fb86951605bf34516323f8f3ac08a5a2"
+    },
+    {
+      "path": "review/verify-pilot.mjs",
+      "sha256": "93d9f04782b0e64f89610b58a1a616d0e889ba126b5052c61d4bdabbd474d1ab"
+    },
+    {
+      "path": "assets/densho.png",
+      "sha256": "dbce0dbaf191978306d746b65759be5ec88276f1f48be4cab9b58f194adacfbb"
+    },
+    {
+      "path": "assets/razor-feature.png",
+      "sha256": "92276c201405bf05ce94740be432f99ba26f49b1d516c321a2ac22eee116ecc0"
+    },
+    {
+      "path": "assets/site-base.css",
+      "sha256": "b3563767f06b21fb171a9a73d4d9ff89cfe7c8a6f95004ea5013a1dfb6d73ac2"
+    }
+  ],
+  "purpose": "Finite media-pilot correction and acceptance; review branch only; do not merge directly",
+  "preview": {
+    "status": "not-deployed",
+    "url": null,
+    "localOnly": "http://127.0.0.1:4347/materials.html",
+    "start": "node reviews/game-media-pilot-20261029/review/serve-preview.mjs",
+    "note": "Local server is stopped after review. Restart locally to operate it. Loopback address is not a shareable online preview; GitHub blob is source only."
+  },
+  "personallyConfirmed": [
+    "Exact local files and image assets",
+    "Desktop and actual 390/320 CSS-pixel browser emulation",
+    "Image dialog click/Enter, close/Escape and focus return; Tab and Shift+Tab stay on close",
+    "Densho board/symbol/control-strip position and Razor feature-symbol identification",
+    "Both source videos really played and sampled visual game content was observed",
+    "Razor embedded video played to ended in the updated HTTP preview; paused at 0 before Play",
+    "Six image-only/empty/absent fixtures: no empty module, no player requests and no media-script error",
+    "Independent external Demo retained; native rule details still open without media"
+  ],
+  "browserSimulation": {
+    "details": "review/browser-results.json",
+    "physicalDeviceTested": false,
+    "viewportMethod": "Browser viewport capability did not change observed innerWidth (1281); supported same-tab CDP Emulation then verified actual widths 390 and 320; emulation reset afterwards."
+  },
+  "videos": [
+    {
+      "slug": "densho",
+      "sourceURL": "https://vimeo.com/860852013",
+      "contentViewed": true,
+      "viewingScope": "sampled actual frames, including 29.89s Free Spins board with expanded character and multiplier; not frame-by-frame entire clip",
+      "sourceCanPlay": true,
+      "observedEnded": true,
+      "observedDuration": 86.912,
+      "previewEmbed": "not tested by design; external only",
+      "adoption": "external-only",
+      "timestamps": [],
+      "initialObservation": "Verify to continue / Checking if the site connection is secure. Page subsequently completed the check itself; no verification action or bypass was performed.",
+      "probabilityClaims": "Not adopted, including conflicting RTP in third-party description"
+    },
+    {
+      "slug": "razor-shark",
+      "sourceURL": "https://vimeo.com/494271522",
+      "playerURL": "https://player.vimeo.com/video/494271522?autoplay=0&dnt=1",
+      "contentViewed": true,
+      "viewingScope": "sampled real frames at start, about 4/5 seconds and 13/14 seconds; golden shark to multiplier coin reveal; not frame-by-frame review",
+      "sourceCanPlay": true,
+      "observedSourceEnded": true,
+      "previewCanEmbed": true,
+      "observedPreviewEnded": true,
+      "observedDuration": 15.083,
+      "adoption": "click-to-load player plus permanent external fallback",
+      "timestamps": [],
+      "probabilityClaims": "Feature demonstration only, not occurrence-rate evidence"
+    }
+  ],
+  "actualErrorsAndTestURLs": [
+    {
+      "url": "http://127.0.0.1:4347/razor-shark.html#gm-title",
+      "result": "Initial server attempt timed out: ERR_CONNECTION_TIMED_OUT. The stale error tab was then blocked as data: by browser policy. No bypass; after scoped server networking was available, a fresh same-browser HTTP tab successfully opened Densho and Razor."
+    },
+    {
+      "url": "http://127.0.0.1:4347/densho.html#gm-title",
+      "result": "First Enter immediately after reload did not open; subsequent live click/Enter passed after script load. Final correction includes explicit close focus and Tab handling."
+    }
+  ],
+  "executorRecordsOnly": {
+    "files": [
+      "review/preview-results.json",
+      "review/densho-1440.png",
+      "review/densho-390.png",
+      "review/densho-320.png",
+      "review/razor-shark-1440.png",
+      "review/razor-shark-390.png",
+      "review/razor-shark-320.png"
+    ],
+    "note": "Historical v1 files; not used as proof of v2 tests"
+  },
+  "notConfirmed": [
+    "Physical device behavior",
+    "All fine text in Densho mobile image (not required)",
+    "Continuous frame-by-frame full video review",
+    "Densho embedded playback (not requested)",
+    "Full site application controls in detached snapshot"
+  ],
+  "concreteRemainingLimitations": [
+    "Physical phones not tested",
+    "Screenshots already in review directory and preview-results.json are historical v1 executor artifacts; not v2 screenshots or current PASS evidence",
+    "No hosted interactive preview",
+    "Full site Add Compare hydration remains a pre-existing snapshot limitation",
+    "Video playback and sampled visual frames are confirmed; not continuous human frame-by-frame viewing or probability verification"
+  ],
+  "validation": {
+    "staticCommand": "node reviews/game-media-pilot-20261029/review/verify-pilot.mjs",
+    "staticChecks": 13,
+    "staticExitCode": 0,
+    "syntaxCommands": [
+      "node --check reviews/game-media-pilot-20261029/media.js",
+      "node --check reviews/game-media-pilot-20261029/review/serve-preview.mjs"
+    ],
+    "syntaxExitCodes": [
+      0,
+      0
+    ],
+    "nodeVersion": "v24.19.0",
+    "fullSiteVerify": "not run: no project source/build changes; pilot-only validation scope",
+    "diffCheck": "passed"
+  },
+  "deploymentSafety": {
+    "productionBranch": "main",
+    "buildRoot": "slothub-site",
+    "workflowPushBranches": [
+      "main"
+    ],
+    "workflowPaths": [
+      "slothub-site/**",
+      ".github/workflows/validate-site.yml"
+    ],
+    "artifactRoot": "reviews/game-media-pilot-20261029",
+    "commitPrefix": "[CF-Pages-Skip]",
+    "configChanges": false,
+    "manualDeployment": false,
+    "observedProductionId": "5527cb2d-a566-4d27-86bf-662b479c65d6",
+    "observedProductionSHA": "f95167d47866ad53cc7770ee1296ee97b509b50d"
+  },
+  "authorization": {
+    "commitReviewBranch": true,
+    "pushReviewBranch": true,
+    "draftPR": true,
+    "mergeMain": false,
+    "deployProduction": false
+  }
+}
