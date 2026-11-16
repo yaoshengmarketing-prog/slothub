@@ -1,0 +1,38 @@
+{
+  "batch": 1115,
+  "recordedAt": "2026-11-16T05:15:28.222Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-16.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1639 published Game Markdown records and same-provider exact official path/name/gameSymbol; Chronos – Sands of Eternity /vs20clock absent.",
+  "records": [
+    {
+      "index": 667,
+      "name": "Chronos – Sands of Eternity",
+      "slug": "chronos-sands-of-eternity-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/chronos-sands-of-eternity/",
+      "officialFacts": "Official page identifies Chronos – Sands of Eternity, expanding wild/high symbols, multiplier bonus levels, money/collect feature and RTP 96.50%. Intro text says 3–5 scatters award 6/8/10 free spins, while a later bullet says 6–8; the conflicting count is omitted from the Game record.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Chronos-Sands-of-Eternity_339x180_EN.png",
+        "localPath": "public/assets/games/chronos-sands-of-eternity-pragmatic-play.png",
+        "sha256": "526D04F1576274714D3ABEA4987BA85A167AA5FEB30317003E1792F9A261B879",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo and showed Chronos – Sands of Eternity branded reels and controls, without spinning or betting."
+    }
+  ],
+  "nextCursor": "Catalog item 668 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Preview verify exit 0; 2045 HTML pages; source, image, relationship, RTP, internal-link and noindex checks passed."
+  }
+}

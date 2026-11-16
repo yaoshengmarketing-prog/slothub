@@ -3,20 +3,20 @@
   "officialCatalog": "https://www.pragmaticplay.com/en/games/",
   "checkedAt": "2026-11-16",
   "capturedAt": "2026-11-16T05:04:09.917Z",
-  "scope": "Original 665-card full archive scan of 2026-11-01, plus four newly observed official first-page cards on 2026-11-16. Refreshed full-archive reconciliation remains pending; this supplement does not assert catalog exhaustion.",
+  "scope": "Original 665-card baseline of 2026-11-01 plus four newly observed first-page cards on 2026-11-16. Complete 2026-11-16 native catalog scan: 75 populated pages, 668 linked games and one 17 November coming-soon card; page 76 returned zero cards. Stable baseline indices retained for the two formerly coming-soon games.",
   "pageSize": 9,
-  "terminalPage": 74,
-  "terminalPageCards": 8,
+  "terminalPage": 75,
+  "terminalPageCards": 3,
   "nextPageCards": 0,
   "totalCards": 669,
-  "exactGameCards": 666,
-  "publishedExisting": 636,
-  "pendingIndividualCheck": 2,
-  "comingSoon": 3,
+  "exactGameCards": 668,
+  "publishedExisting": 637,
+  "pendingIndividualCheck": 3,
+  "comingSoon": 1,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 667 after item 666 Jewels of Ra individual publication closure.",
+  "nextCursor": "Catalog item 668 after item 667 Chronos – Sands of Eternity individual publication closure.",
   "pages": [
     {
       "page": 1,
@@ -387,7 +387,12 @@
     {
       "page": 74,
       "url": "https://www.pragmaticplay.com/en/games/?ajax=1&cats=&lang=en&cur=USD&studio=all&device=undefined&search=&page=74",
-      "count": 8
+      "count": 9
+    },
+    {
+      "page": 75,
+      "url": "https://www.pragmaticplay.com/en/games/?ajax=1&cats=&lang=en&cur=USD&studio=all&device=undefined&search=&page=75",
+      "count": 3
     }
   ],
   "cards": [
@@ -395,21 +400,23 @@
       "index": 1,
       "page": 1,
       "name": "Super Golden Spins",
-      "officialPage": null,
+      "officialPage": "https://www.pragmaticplay.com/en/games/super-golden-spins/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Super-Golden-Spins_339x180_EN.png",
       "releaseLabel": "5th November 2026",
-      "decision": "coming-soon",
-      "existingSlug": null
+      "decision": "pending-individual-check",
+      "existingSlug": null,
+      "availabilityNote": "Exact official game page now linked in the 2026-11-16 SLOTS catalog; individual checks pending."
     },
     {
       "index": 2,
       "page": 1,
       "name": "Killer Night",
-      "officialPage": null,
+      "officialPage": "https://www.pragmaticplay.com/en/games/killer-night/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Killer-Night_339x180_EN.png",
       "releaseLabel": "2nd November 2026",
-      "decision": "coming-soon",
-      "existingSlug": null
+      "decision": "pending-individual-check",
+      "existingSlug": null,
+      "availabilityNote": "Exact official game page now linked in the 2026-11-16 SLOTS catalog; individual checks pending."
     },
     {
       "index": 3,
@@ -7366,7 +7373,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/jewels-of-ra/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Jewels-of-Ra_339x180_EN.png",
       "releaseLabel": null,
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "jewels-of-ra-pragmatic-play"
     },
     {
@@ -7376,14 +7383,15 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/chronos-sands-of-eternity/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Chronos-Sands-of-Eternity_339x180_EN.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check"
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "chronos-sands-of-eternity-pragmatic-play"
     },
     {
       "index": 668,
       "page": 1,
       "name": "Big Bass Christmas Blast 1000",
       "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-christmas-blast-1000/",
-      "imageUrl": null,
+      "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Big-Bass-Christmas-Blast-1000_339x180-1.png",
       "releaseLabel": null,
       "decision": "pending-individual-check"
     },

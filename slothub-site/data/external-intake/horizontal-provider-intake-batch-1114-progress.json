@@ -1,10 +1,10 @@
 {
   "batch": 1114,
   "recordedAt": "2026-11-16T05:04:13.639Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-16.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Jewels of Ra",
       "slug": "jewels-of-ra-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/jewels-of-ra/",
       "officialFacts": "Official page identifies Jewels of Ra, 5×4 grid, synchronised reels, Wild multipliers and scarab respins; RTP 96.53%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo and showed Jewels of Ra branded reels and controls, without spinning or betting."
     }
   ],
-  "nextCursor": "Catalog item 667 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 667 Chronos – Sands of Eternity after item 666 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Preview verify exit 0; 2044 HTML pages; source, image, relationship, RTP, internal-link and noindex checks passed."
+  },
+  "publication": {
+    "commit": "e1d1b1b771592b2c9e518fc7f103d39fe906783d",
+    "githubActionsRun": 43808330412,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "be2a1ce1-e694-4b22-909e-430711e8ad07",
+    "cloudflareUrl": "https://be2a1ce1.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
