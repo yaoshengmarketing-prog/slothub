@@ -1,0 +1,38 @@
+{
+  "batch": 1114,
+  "recordedAt": "2026-11-16T05:04:13.639Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-16.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1638 published Game Markdown records and same-provider exact official path/name/gameSymbol; Jewels of Ra /vswaysjwofra absent.",
+  "records": [
+    {
+      "index": 666,
+      "name": "Jewels of Ra",
+      "slug": "jewels-of-ra-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/jewels-of-ra/",
+      "officialFacts": "Official page identifies Jewels of Ra, 5×4 grid, synchronised reels, Wild multipliers and scarab respins; RTP 96.53%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Jewels-of-Ra_339x180_EN.png",
+        "localPath": "public/assets/games/jewels-of-ra-pragmatic-play.png",
+        "sha256": "F48C1D1238BD3CE4457FBA2974B731D2F6F4060642CDF182BEEA0D3DF54FABAB",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo and showed Jewels of Ra branded reels and controls, without spinning or betting."
+    }
+  ],
+  "nextCursor": "Catalog item 667 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Preview verify exit 0; 2044 HTML pages; source, image, relationship, RTP, internal-link and noindex checks passed."
+  }
+}

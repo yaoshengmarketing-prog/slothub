@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1638,
+  "gameCount": 1639,
   "providerCount": 372,
-  "sourcePageCount": 3308,
+  "sourcePageCount": 3311,
   "counts": {
     "access-restricted": 4,
-    "available": 1187,
+    "available": 1188,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "jewels-of-ra-pragmatic-play",
+      "name": "Jewels of Ra",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-16",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysjwofra&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Jewels of Ra; Official page identifies Jewels of Ra, 5×4 grid, synchronised reels, Wild multipliers and scarab respins; RTP 96.53%. Codex in-app browser visually checked exact official page, artwork and direct Demo on 2026-11-16; user confirmed age-gate submission for this check. Official HTML includes gameSymbol vswaysjwofra. Codex in-app browser opened exact official Demo and showed Jewels of Ra branded reels and controls, without spinning or betting. Exact official image URL maps through page og:image; image/png SHA256 F48C1D1238BD3CE4457FBA2974B731D2F6F4060642CDF182BEEA0D3DF54FABAB, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/jewels-of-ra/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 666"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Jewels-of-Ra_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 F48C1D1238BD3CE4457FBA2974B731D2F6F4060642CDF182BEEA0D3DF54FABAB"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vswaysjwofra&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo and showed Jewels of Ra branded reels and controls, without spinning or betting."
+        }
+      ]
+    },
     {
       "slug": "tales-of-egypt-pragmatic-play",
       "name": "Tales of Egypt",
