@@ -1,0 +1,38 @@
+{
+  "batch": 1116,
+  "recordedAt": "2026-11-16T05:24:32.053Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-16.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1640 published Game Markdown records and same-provider exact official path/name/gameSymbol; Super Golden Spins /vs10gwheelst absent.",
+  "records": [
+    {
+      "index": 1,
+      "name": "Super Golden Spins",
+      "slug": "super-golden-spins-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/super-golden-spins/",
+      "officialFacts": "Official page identifies Super Golden Spins, a 3x3 slot with 9 paylines, two prize wheels, cash and multiplier outcomes, and RTP 96.55%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Super-Golden-Spins_339x180_EN.png",
+        "localPath": "public/assets/games/super-golden-spins-pragmatic-play.png",
+        "sha256": "01F4BAEBCBA82F97211E277680B6BB458D2FF24A5FE648B6EE5563A0B872895A",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo and showed Super Golden Spins branded reels and controls, without spinning or betting."
+    }
+  ],
+  "nextCursor": "Catalog item 2 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Preview verify exit 0; 2046 HTML pages; source, image, relationship, RTP, internal-link and noindex checks passed."
+  }
+}

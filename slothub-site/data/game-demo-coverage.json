@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1640,
+  "gameCount": 1641,
   "providerCount": 372,
-  "sourcePageCount": 3314,
+  "sourcePageCount": 3317,
   "counts": {
     "access-restricted": 4,
-    "available": 1189,
+    "available": 1190,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "super-golden-spins-pragmatic-play",
+      "name": "Super Golden Spins",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-16",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10gwheelst&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Super Golden Spins; Official page identifies Super Golden Spins, a 3x3 slot with 9 paylines, two prize wheels, cash and multiplier outcomes, and RTP 96.55%. Codex in-app browser visually checked exact official page, artwork and direct Demo on 2026-11-16. Official HTML includes gameSymbol vs10gwheelst. Codex in-app browser opened exact official Demo and showed Super Golden Spins branded reels and controls, without spinning or betting. Exact official image URL maps through page og:image; image/png SHA256 01F4BAEBCBA82F97211E277680B6BB458D2FF24A5FE648B6EE5563A0B872895A, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/super-golden-spins/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 1"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Super-Golden-Spins_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 01F4BAEBCBA82F97211E277680B6BB458D2FF24A5FE648B6EE5563A0B872895A"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10gwheelst&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo and showed Super Golden Spins branded reels and controls, without spinning or betting."
+        }
+      ]
+    },
     {
       "slug": "chronos-sands-of-eternity-pragmatic-play",
       "name": "Chronos – Sands of Eternity",
