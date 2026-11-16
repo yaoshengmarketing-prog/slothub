@@ -1,10 +1,10 @@
 {
   "batch": 1116,
   "recordedAt": "2026-11-16T05:24:32.053Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-16.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Super Golden Spins",
       "slug": "super-golden-spins-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/super-golden-spins/",
       "officialFacts": "Official page identifies Super Golden Spins, a 3x3 slot with 9 paylines, two prize wheels, cash and multiplier outcomes, and RTP 96.55%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo and showed Super Golden Spins branded reels and controls, without spinning or betting."
     }
   ],
-  "nextCursor": "Catalog item 2 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 2 Killer Night after item 1 full publication closure and 0 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Preview verify exit 0; 2046 HTML pages; source, image, relationship, RTP, internal-link and noindex checks passed."
+  },
+  "publication": {
+    "commit": "223b3c64d40709227bc98dc5329bb1a0a99583cd",
+    "githubActionsRun": 43810590461,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "41224bf7-6cdb-4f78-bb08-10735e503dd7",
+    "cloudflareUrl": "https://41224bf7.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

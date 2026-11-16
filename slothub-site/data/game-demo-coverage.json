@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1641,
+  "gameCount": 1642,
   "providerCount": 372,
-  "sourcePageCount": 3317,
+  "sourcePageCount": 3320,
   "counts": {
     "access-restricted": 4,
-    "available": 1190,
+    "available": 1191,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "killer-night-pragmatic-play",
+      "name": "Killer Night",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-16",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs15killerp&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Killer Night; Official page identifies Killer Night, expanding and sticky Wilds, multipliers, free spins and RTP 96.52%. Codex in-app browser visually checked exact official page, artwork and direct Demo on 2026-11-16. Official HTML includes gameSymbol vs15killerp. Codex in-app browser opened exact official Demo and showed Killer Night branded reels and controls, without spinning or betting. Exact official image URL maps through page og:image; image/png SHA256 D82924612FF52014916FCB1D963F7ACD7D7F501EED0B9F45824914CACC39739E, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/killer-night/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 2"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Killer-Night_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 D82924612FF52014916FCB1D963F7ACD7D7F501EED0B9F45824914CACC39739E"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs15killerp&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo and showed Killer Night branded reels and controls, without spinning or betting."
+        }
+      ]
+    },
     {
       "slug": "super-golden-spins-pragmatic-play",
       "name": "Super Golden Spins",
