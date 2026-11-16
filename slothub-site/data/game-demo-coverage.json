@@ -2,12 +2,12 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1642,
+  "gameCount": 1643,
   "providerCount": 372,
-  "sourcePageCount": 3320,
+  "sourcePageCount": 3323,
   "counts": {
     "access-restricted": 4,
-    "available": 1191,
+    "available": 1192,
     "not-verified": 447
   },
   "rules": {
@@ -17,6 +17,40 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "big-bass-christmas-blast-1000-pragmatic-play",
+      "name": "Big Bass Christmas Blast 1000",
+      "provider": "pragmatic-play",
+      "status": "available",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-16",
+      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbcbls1000&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Big Bass Christmas Blast 1000; Pragmatic Play official individual page identifies Big Bass Christmas Blast 1000, fisherman wild cash collection, wild multipliers, free spins and RTP 96.50%. Direct Demo displays Reel Kingdom Powered by Pragmatic Play branding; Pragmatic Play is the official catalog publisher, while Reel Kingdom studio site search did not list this exact new title on 2026-11-16. Codex in-app browser visually checked exact official Pragmatic Play page, artwork and direct Demo on 2026-11-16. Reel Kingdom studio catalog search returned no exact listing, so studio attribution is recorded as a caveat. Official HTML includes gameSymbol vs10bbcbls1000. Codex in-app browser opened exact official Demo and showed Big Bass Christmas Blast 1000 branded reels and controls, including Reel Kingdom Powered by Pragmatic Play branding, without spinning or betting. Exact official image URL maps through page og:image; image/png SHA256 1BA86A7AE0A8B371A9D27A6C6B20E61AD6BA1521C05EB2B01524EFD88325F3B5, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/big-bass-christmas-blast-1000/",
+          "httpStatus": 200,
+          "notes": "Exact official title, gameplay and embedded gameSymbol checked with Codex in-app browser and official HTML"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Official SLOTS catalog card 668"
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Big-Bass-Christmas-Blast-1000_339x180-1.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 1BA86A7AE0A8B371A9D27A6C6B20E61AD6BA1521C05EB2B01524EFD88325F3B5"
+        },
+        {
+          "requestedUrl": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs10bbcbls1000&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD",
+          "httpStatus": 200,
+          "notes": "Codex in-app browser opened exact official Demo and showed Big Bass Christmas Blast 1000 branded reels and controls, including Reel Kingdom Powered by Pragmatic Play branding, without spinning or betting."
+        }
+      ]
+    },
     {
       "slug": "killer-night-pragmatic-play",
       "name": "Killer Night",

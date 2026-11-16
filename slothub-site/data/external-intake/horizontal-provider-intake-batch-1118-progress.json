@@ -1,0 +1,38 @@
+{
+  "batch": 1118,
+  "recordedAt": "2026-11-16T05:56:34.991Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-16.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
+  "dedupScope": "All 1642 published Game Markdown records and same-provider exact official path/name/gameSymbol; Big Bass Christmas Blast 1000 /vs10bbcbls1000 absent.",
+  "records": [
+    {
+      "index": 668,
+      "name": "Big Bass Christmas Blast 1000",
+      "slug": "big-bass-christmas-blast-1000-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-christmas-blast-1000/",
+      "officialFacts": "Pragmatic Play official individual page identifies Big Bass Christmas Blast 1000, fisherman wild cash collection, wild multipliers, free spins and RTP 96.50%. Direct Demo displays Reel Kingdom Powered by Pragmatic Play branding; Pragmatic Play is the official catalog publisher, while Reel Kingdom studio site search did not list this exact new title on 2026-11-16.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Big-Bass-Christmas-Blast-1000_339x180-1.png",
+        "localPath": "public/assets/games/big-bass-christmas-blast-1000-pragmatic-play.png",
+        "sha256": "1BA86A7AE0A8B371A9D27A6C6B20E61AD6BA1521C05EB2B01524EFD88325F3B5",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork bytes visually inspected; title matches official page og:image mapping."
+      },
+      "demo": "Codex in-app browser opened exact official Demo and showed Big Bass Christmas Blast 1000 branded reels and controls, including Reel Kingdom Powered by Pragmatic Play branding, without spinning or betting."
+    }
+  ],
+  "nextCursor": "Catalog item 669 after current one-game CI, Cloudflare and immutable readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Preview verify exit 0; 2048 HTML pages; source, image, relationship, RTP, internal-link and noindex checks passed."
+  }
+}

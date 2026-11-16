@@ -1,10 +1,10 @@
 {
   "batch": 1117,
   "recordedAt": "2026-11-16T05:34:33.128Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Complete full Pragmatic Play official SLOTS catalog in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-2026-11-16.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and Demo; official artwork bytes visually inspected locally. No external paid browser used.",
@@ -15,7 +15,7 @@
       "name": "Killer Night",
       "slug": "killer-night-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/killer-night/",
       "officialFacts": "Official page identifies Killer Night, expanding and sticky Wilds, multipliers, free spins and RTP 96.52%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Codex in-app browser opened exact official Demo and showed Killer Night branded reels and controls, without spinning or betting."
     }
   ],
-  "nextCursor": "Catalog item 3 after current one-game CI, Cloudflare and immutable readback.",
+  "nextCursor": "Catalog item 668 Big Bass Christmas Blast 1000 after item 2 full publication closure and 665 previously resolved intervening catalog item(s).",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Preview verify exit 0; 2047 HTML pages; source, image, relationship, RTP, internal-link and noindex checks passed."
+  },
+  "publication": {
+    "commit": "ffeeefdfccdd3908c5e164238608bf96521cec09",
+    "githubActionsRun": 43812826562,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "9791dec6-1d80-4b8b-a2f7-a09f3f744a84",
+    "cloudflareUrl": "https://9791dec6.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }

@@ -10,13 +10,13 @@
   "nextPageCards": 0,
   "totalCards": 669,
   "exactGameCards": 668,
-  "publishedExisting": 639,
-  "pendingIndividualCheck": 1,
+  "publishedExisting": 640,
+  "pendingIndividualCheck": 0,
   "comingSoon": 1,
   "duplicateOfficialPaths": [],
   "duplicateOfficialNames": [],
   "sourceQuality": "Catalog card identifies a candidate; publication requires individual official exact page, type/mechanic facts, official image review, exact Demo check, same-provider dedup, full validation, one game commit, push, same-SHA CI, Cloudflare deployment and live readback.",
-  "nextCursor": "Catalog item 3 after item 2 Killer Night individual publication closure.",
+  "nextCursor": "Catalog item 669 after item 668 Big Bass Christmas Blast 1000 individual publication closure.",
   "pages": [
     {
       "page": 1,
@@ -414,7 +414,7 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/killer-night/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Killer-Night_339x180_EN.png",
       "releaseLabel": "2nd November 2026",
-      "decision": "validated-ready-for-publication",
+      "decision": "published-live-verified",
       "existingSlug": "killer-night-pragmatic-play",
       "availabilityNote": "Exact official game page now linked in the 2026-11-16 SLOTS catalog; individual checks pending."
     },
@@ -7393,7 +7393,8 @@
       "officialPage": "https://www.pragmaticplay.com/en/games/big-bass-christmas-blast-1000/",
       "imageUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Big-Bass-Christmas-Blast-1000_339x180-1.png",
       "releaseLabel": null,
-      "decision": "pending-individual-check"
+      "decision": "validated-ready-for-publication",
+      "existingSlug": "big-bass-christmas-blast-1000-pragmatic-play"
     },
     {
       "index": 669,
