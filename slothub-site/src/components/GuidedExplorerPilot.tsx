@@ -1,22 +1,19 @@
-import { useMemo, useState } from 'react';
-import type { GameCatalogItem } from '../lib/game-catalog';
+import { useState } from 'react';
 import {
   buildGuidedExplorerResult,
+  type buildGuidedExplorerCounts,
   GUIDED_EXPLORER_FEATURES,
   GUIDED_EXPLORER_MECHANISMS,
 } from '../lib/guided-explorer-pilot.mjs';
 import { featureLabels, winMechanismLabels } from '../lib/taxonomy';
 import { gamesIndexUrl } from '../lib/urls';
 
-type Props = { games: GameCatalogItem[]; resultAnchor?: string };
+type Props = { counts: ReturnType<typeof buildGuidedExplorerCounts>; resultAnchor?: string };
 
-export default function GuidedExplorerPilot({ games, resultAnchor }: Props) {
+export default function GuidedExplorerPilot({ counts, resultAnchor }: Props) {
   const [mechanism, setMechanism] = useState('');
   const [feature, setFeature] = useState('');
-  const result = useMemo(
-    () => buildGuidedExplorerResult(games, mechanism, feature),
-    [games, mechanism, feature],
-  );
+  const result = buildGuidedExplorerResult(counts, mechanism, feature);
   const explorerUrl = result.explorerState ? gamesIndexUrl(result.explorerState) : undefined;
   const destinationUrl = explorerUrl && resultAnchor ? `${explorerUrl}#${resultAnchor}` : explorerUrl;
   const canOpen = result.complete && Boolean(result.count) && explorerUrl;
