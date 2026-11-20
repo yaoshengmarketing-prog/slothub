@@ -53,8 +53,8 @@ const updatedDate = provider.updatedAt.toISOString().slice(0, 10);
 ---
 
 <BaseLayout
-  title={`${provider.name}｜遊戲廠商｜Slot Hub`}
-  description={provider.summary}
+  title={entry.data.seoTitle ?? `${provider.name}｜遊戲廠商｜Slot Hub`}
+  description={entry.data.seoDescription ?? provider.summary}
   canonicalPath={providerUrl(providerSlug)}
 >
   <article class="detail-page shell provider-detail-v2">

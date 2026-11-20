@@ -200,9 +200,10 @@ const schema = {
   datePublished: entry.data.releaseDate ? formatDate(entry.data.releaseDate) : undefined,
   dateModified: formatDate(entry.data.updatedAt),
 };
+const pageTitle = entry.data.seoTitle ?? `${displayName}｜遊戲資料｜Slot Hub`;
+const pageDescription = entry.data.seoDescription ?? entry.data.summary;
 ---
-
-<BaseLayout title={`${displayName}｜遊戲資料｜Slot Hub`} description={entry.data.summary} canonicalPath={gameUrl(entry.id)} schema={schema}>
+<BaseLayout title={pageTitle} description={pageDescription} canonicalPath={gameUrl(entry.id)} schema={schema}>
   <article class="game-file-page shell">
     <a class="back-link game-file-back" href="/games/">前往遊戲庫 →</a>
 

@@ -11,6 +11,8 @@ provider: atg-games
 primaryType: slots
 subtypes: [video-slots]
 summary: ATG Games《戰神賽特》原作採無賠付線的 Scatter Pays 說法：盤面任意位置出現 8 個以上相同符號可構成得獎；4 個 Scarab（聖甲蟲）符號觸發免費遊戲。原廠另說明靈魂之火的贏分加乘、免費遊戲中的倍數累積，以及購買免費遊戲功能。
+seoTitle: "戰神賽特老虎機｜Scatter Pays、免費遊戲與試玩｜Slot Hub"
+seoDescription: "ATG Games《戰神賽特》原作老虎機資料頁。原廠採無賠付線的 Scatter Pays 說法：盤面任意位置出現 8 個以上相同符號可構成得獎；4 個 Scarab（聖甲蟲）符號觸發免費遊戲。本頁附官方遊戲頁／試玩入口。"
 rtp: 96.89
 volatility: high
 volatilityOriginal: Advanced
