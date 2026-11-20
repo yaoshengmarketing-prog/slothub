@@ -23,13 +23,13 @@ const jackpotType = z.enum(['none','fixed','progressive','local','networked','mu
 const providers = defineCollection({ loader: glob({ pattern: '**/*.md', base: './src/content/providers' }), schema: z.object({
   name: z.string(), brandName: z.string().optional(), aliases: z.array(z.string()).default([]), roles: z.array(z.enum(['developer','publisher','aggregator','platform'])),
   parentOrganization: z.string().optional(), subBrands: z.array(z.string()).default([]), originRegions: z.array(z.string()).default([]), serviceMarkets: z.array(z.string()).default([]),
-  marketTags: z.array(z.string()).default([]), languages: z.array(z.string()).default([]), gameTypes: z.array(z.string()).default([]), summary: z.string(),
+  marketTags: z.array(z.string()).default([]), languages: z.array(z.string()).default([]), gameTypes: z.array(z.string()).default([]), summary: z.string(), seoTitle: z.string().min(1).optional(), seoDescription: z.string().min(1).optional(),
   officialUrl: z.string().url(), logo: media.optional(), status: z.enum(['candidate','draft','published','inactive']).default('candidate'), source, updatedAt: z.coerce.date(),
 }) });
 const games = defineCollection({ loader: glob({ pattern: '**/*.md', base: './src/content/games' }), schema: z.object({
   name: z.string(), originalName: z.string().optional(), displayNameZhHant: z.string().optional(), aliases: z.array(z.string()).default([]),
   seriesId: z.string().optional(), seriesNameZhHant: z.string().optional(), installment: z.number().int().positive().optional(), relatedGames: z.array(z.string()).default([]),
-  provider: z.string(), primaryType: z.enum(['slots','fishing-games','other']), subtypes: z.array(z.string()).default([]), summary: z.string(),
+  provider: z.string(), primaryType: z.enum(['slots','fishing-games','other']), subtypes: z.array(z.string()).default([]), summary: z.string(), seoTitle: z.string().min(1).optional(), seoDescription: z.string().min(1).optional(),
   // Compatibility fields remain available while v1 fields become the canonical structured layer.
   rtp: z.number().min(0).max(100).optional(), rtpVariants: z.array(z.number().min(0).max(100)).default([]), volatility: normalizedVolatility.optional(),
   volatilityOriginal: z.string().optional(), volatilityNormalized: normalizedVolatility.optional(), maxWinMultiplier: z.number().positive().optional(), maxWinLabelOriginal: z.string().optional(),

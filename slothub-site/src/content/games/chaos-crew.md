@@ -4,6 +4,8 @@ provider: hacksaw-gaming
 primaryType: slots
 subtypes: [video-slots]
 summary: Hacksaw Gaming 的 Chaos Crew 原作，採 5×5 盤面與賠線判定。Cranky Cat 影響得獎組合的倍數，Bonus Game 則收集倍數符號並在結束時結算。
+seoTitle: "Chaos Crew 老虎機｜Cranky Cat 倍數、Bonus Game 與 Demo｜Slot Hub"
+seoDescription: "Hacksaw Gaming 的 Chaos Crew 原作老虎機資料頁，採 5×5 盤面與賠線判定。Cranky Cat 影響得獎組合的倍數；Bonus Game 會收集倍數符號並在結束時結算。本頁附官方遊戲頁／Demo 入口。主要 RTP 標為 96.3%，另有 92.4% 與 88.4% 版本。"
 rtp: 96.3
 rtpVariants: [96.3, 92.4, 88.4]
 volatility: very-high

@@ -9,6 +9,8 @@ provider: play-n-go
 primaryType: slots
 subtypes: [video-slots, cluster-pays]
 summary: Play’n GO 的 5×5 Grid Slot；得獎群集清除後由新符號補位，Round Multiplier、Hand of God 與 Free Spins 各自保留原廠功能名稱。
+seoTitle: "Rise of Olympus 老虎機｜群集清除、Hand of God 與 Demo｜Slot Hub"
+seoDescription: "Play’n GO 的 Rise of Olympus 老虎機資料頁，為 5×5 Grid Slot：得獎群集清除後由新符號補位。Round Multiplier、Hand of God 與 Free Spins 均保留原廠功能名稱。本頁附官方 Demo 入口。"
 reels: 5x5
 rows: 5
 winMechanism: cluster-pays

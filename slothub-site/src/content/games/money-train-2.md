@@ -10,6 +10,8 @@ provider: relax-gaming
 primaryType: slots
 subtypes: [video-slots]
 summary: Relax Gaming 的 5 軸、40 Paylines 作品，以 Money Cart Bonus Round 為重要功能。本頁整理進入條件、角色作用與 Buy Feature 的用途；目前已收錄的 90% RTP 僅對應原廠標示的德國版。
+seoTitle: "Money Train 2 老虎機｜Money Cart Bonus Round、Buy Feature 與 Demo｜Slot Hub"
+seoDescription: "Relax Gaming 的 Money Train 2 老虎機資料頁，官方標示 5 軸、40 Paylines。本頁整理 Money Cart Bonus Round 的進入條件與角色作用，以及付費進入 Bonus Round 的 Buy Feature。目前已收錄的 90% RTP 僅對應原廠標示的德國版；本頁附官方遊戲頁／Demo 入口。"
 rtpVariants: [90]
 maxWinMultiplier: 50000
 maxWinLabelOriginal: "Official release: maximum payout of 50,000x stake"

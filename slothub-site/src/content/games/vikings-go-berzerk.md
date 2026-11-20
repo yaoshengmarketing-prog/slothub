@@ -9,6 +9,8 @@ provider: yggdrasil-gaming
 primaryType: slots
 subtypes: [video-slots]
 summary: Yggdrasil Gaming 的 5×4、25 條賠線作品；官方列出 96.1% RTP、Medium - High 波動度與歐元 Max Win，Slot Hub 不把貨幣金額改寫成投注倍數。
+seoTitle: "Vikings Go Berzerk 老虎機｜96.1% RTP、25 賠線與 Demo｜Slot Hub"
+seoDescription: "Yggdrasil 的 Vikings Go Berzerk 老虎機資料頁。官方標示 5×4、25 條賠線、96.1% RTP 與 Medium - High 波動度，並說明 Rage metres、Sticky Wild 與 Berzerk Mode。本頁附官方遊戲頁／Demo 入口；Max Win 維持官方歐元金額，不改寫成投注倍數。"
 rtp: 96.1
 volatility: medium-high
 volatilityOriginal: Medium - High
