@@ -1,0 +1,38 @@
+{
+  "batch": 1119,
+  "recordedAt": "2026-11-21T09:21:47.391Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue full Pragmatic Play official SLOTS catalog delta in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-delta-2026-11-21.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and official artwork. No paid or alternate browser used. Demo was attempted, but the age confirmation was not crossed; status remains not-verified.",
+  "dedupScope": "All 1643 previously published Game Markdown records and same-provider exact name, official path and gameSymbol; Zeus vs Hades POP /vs10zsvhdspp absent.",
+  "records": [
+    {
+      "index": 669,
+      "name": "Zeus vs Hades POP",
+      "slug": "zeus-vs-hades-pop-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/zeus-vs-hades-pop/",
+      "officialFacts": "Pragmatic Play official page identifies Zeus vs Hades POP, 5x3 grid, expanding Wild multipliers, five free spins and RTP 96.50%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Zeus-vs-Hades-POP_339x180_B.png",
+        "localPath": "public/assets/games/zeus-vs-hades-pop-pragmatic-play.png",
+        "sha256": "5AC7CBED745F7CB3D2079C7144CB19C12520F511B7ACC06AFF361A421FF56E9D",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork title visually inspected in Codex in-app browser and matched to official page og:image."
+      },
+      "demo": "Official page has an 18+ confirmation before the Demo can load. Confirmation was not crossed; Demo remains not-verified and no outbound URL is published."
+    }
+  ],
+  "nextCursor": "Catalog item 670 Sugar Megarush after this game completes same-SHA CI, Cloudflare deployment and immutable online readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Preview full verify exit 0; 2049 HTML pages; source, image, relationship, RTP, internal-link and noindex checks passed."
+  }
+}

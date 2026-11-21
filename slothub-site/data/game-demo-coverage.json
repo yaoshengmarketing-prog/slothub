@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1643,
+  "gameCount": 1644,
   "providerCount": 372,
-  "sourcePageCount": 3323,
+  "sourcePageCount": 3326,
   "counts": {
     "access-restricted": 4,
     "available": 1192,
-    "not-verified": 447
+    "not-verified": 448
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,32 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "zeus-vs-hades-pop-pragmatic-play",
+      "name": "Zeus vs Hades POP",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-21",
+      "evidence": "Official Pragmatic Play catalog and exact page identify Zeus vs Hades POP; the official page lists a 5x3 grid, expanding Wild multipliers, five free spins and RTP 96.50%. Codex in-app browser displayed the exact official page and visually matched the title on its official artwork. Official HTML includes gameSymbol vs10zsvhdspp; page og:image maps to https://www.pragmaticplay.com/wp-content/uploads/2026/10/Zeus-vs-Hades-POP_339x180_B.png, image/png 339x180 SHA256 5AC7CBED745F7CB3D2079C7144CB19C12520F511B7ACC06AFF361A421FF56E9D. No existing Game record matches exact name, official path or symbol. The official page's Demo region remained blank behind an 18+ confirmation, which was not crossed, so playable Demo loading is not verified and no outbound Demo URL is published. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/zeus-vs-hades-pop/",
+          "httpStatus": 200,
+          "notes": "Exact official page title, gameplay, RTP and age gate visible in Codex in-app browser; embedded Demo did not load before age confirmation."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Full 76-page official catalog scan; linked exact path present."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/10/Zeus-vs-Hades-POP_339x180_B.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, page og:image mapping, title visually checked, SHA256 5AC7CBED745F7CB3D2079C7144CB19C12520F511B7ACC06AFF361A421FF56E9D"
+        }
+      ]
+    },
     {
       "slug": "big-bass-christmas-blast-1000-pragmatic-play",
       "name": "Big Bass Christmas Blast 1000",
