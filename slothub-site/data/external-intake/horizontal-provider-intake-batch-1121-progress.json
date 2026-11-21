@@ -1,0 +1,38 @@
+{
+  "batch": 1121,
+  "recordedAt": "2026-11-21T10:44:14.085Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue full Pragmatic Play official SLOTS catalog delta in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-delta-2026-11-21.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and official artwork. No paid or alternate browser used. Demo attempted, but age confirmation was not crossed; status remains not-verified.",
+  "dedupScope": "All 1645 previously published Game Markdown records and same-provider exact name, official path and gameSymbol; Double Mummy’s Jewels 1000 /vswaysmjwld absent.",
+  "records": [
+    {
+      "index": 671,
+      "name": "Double Mummy’s Jewels 1000",
+      "slug": "double-mummys-jewels-1000-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/double-mummys-jewels-1000/",
+      "officialFacts": "Official page describes Eye of Ra Collect symbols, coloured Wild-triggered wheel features and respins, and RTP 96.50%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/11/Double-Mummys-Jewels-1000_339x180_EN.png",
+        "localPath": "public/assets/games/double-mummys-jewels-1000-pragmatic-play.png",
+        "sha256": "B8E289E0ED791514BC0FD218FC02578AE1A335C16FC80D96F378D839CD1FFF3E",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork title visually inspected in Codex in-app browser."
+      },
+      "demo": "Official page has an 18+ confirmation before the Demo can load. Confirmation was not crossed; Demo remains not-verified and no outbound URL is published."
+    }
+  ],
+  "nextCursor": "Catalog item 672 after this game completes same-SHA CI, Cloudflare deployment and immutable online readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Preview full verify exit 0; 2051 HTML pages; source, image, relationship, RTP, internal-link and noindex checks passed."
+  }
+}

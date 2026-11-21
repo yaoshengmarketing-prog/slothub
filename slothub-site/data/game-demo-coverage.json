@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1645,
+  "gameCount": 1646,
   "providerCount": 372,
-  "sourcePageCount": 3329,
+  "sourcePageCount": 3332,
   "counts": {
     "access-restricted": 4,
     "available": 1192,
-    "not-verified": 449
+    "not-verified": 450
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,32 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "double-mummys-jewels-1000-pragmatic-play",
+      "name": "Double Mummy’s Jewels 1000",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-21",
+      "evidence": "Official Pragmatic Play catalog and exact page identify Double Mummy’s Jewels 1000; Official page describes Eye of Ra Collect symbols, coloured Wild-triggered wheel features and respins, and RTP 96.50%. Codex in-app browser displayed the exact official page and visually matched the title on its official artwork. Official HTML includes gameSymbol vswaysmjwld; official artwork URL is https://www.pragmaticplay.com/wp-content/uploads/2026/11/Double-Mummys-Jewels-1000_339x180_EN.png, image/png 339x180 SHA256 B8E289E0ED791514BC0FD218FC02578AE1A335C16FC80D96F378D839CD1FFF3E. No existing Game record matches exact name, official path or symbol. The official page's Demo region remained blank behind an 18+ confirmation, which was not crossed, so playable Demo loading is not verified and no outbound Demo URL is published. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/double-mummys-jewels-1000/",
+          "httpStatus": 200,
+          "notes": "Exact official page title, gameplay, RTP and age gate visible in Codex in-app browser; embedded Demo did not load before age confirmation."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Full 76-page official catalog scan; linked exact path present at adopted index 671."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/11/Double-Mummys-Jewels-1000_339x180_EN.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, title visually checked, SHA256 B8E289E0ED791514BC0FD218FC02578AE1A335C16FC80D96F378D839CD1FFF3E"
+        }
+      ]
+    },
     {
       "slug": "sugar-megarush-pragmatic-play",
       "name": "Sugar Megarush",

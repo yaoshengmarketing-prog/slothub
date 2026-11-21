@@ -1,10 +1,10 @@
 {
   "batch": 1120,
   "recordedAt": "2026-11-21T10:35:14.679Z",
-  "state": "validated-ready-for-publication",
+  "state": "published-live-verified",
   "batchSize": 1,
   "capturedCount": 1,
-  "publishedCount": 0,
+  "publishedCount": 1,
   "priority": "Continue full Pragmatic Play official SLOTS catalog delta in source order",
   "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-delta-2026-11-21.json",
   "browserSwitch": "Codex in-app browser checked exact official game page and official artwork. No paid or alternate browser used. Demo attempted, but age confirmation was not crossed; status remains not-verified.",
@@ -15,7 +15,7 @@
       "name": "Sugar Megarush",
       "slug": "sugar-megarush-pragmatic-play",
       "provider": "pragmatic-play",
-      "status": "validated-ready",
+      "status": "published-live-verified",
       "officialPage": "https://www.pragmaticplay.com/en/games/sugar-megarush/",
       "officialFacts": "Official page describes changing reel heights, cluster pays, marked-position multipliers, scatter-triggered free spins and RTP 96.53%.",
       "image": {
@@ -29,10 +29,19 @@
       "demo": "Official page has an 18+ confirmation before the Demo can load. Confirmation was not crossed; Demo remains not-verified and no outbound URL is published."
     }
   ],
-  "nextCursor": "Catalog item 671 after this game completes same-SHA CI, Cloudflare deployment and immutable online readback.",
+  "nextCursor": "Catalog item 671 Double Mummy’s Jewels 1000 after prior game full publication closure.",
   "validation": {
     "result": "pass",
     "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
     "evidence": "Preview full verify exit 0; 2050 HTML pages; source, image, relationship, RTP, internal-link and noindex checks passed."
+  },
+  "publication": {
+    "commit": "d66959134f4e967fbd334a81d7198d7250368b6c",
+    "githubActionsRun": 44895287101,
+    "githubActionsConclusion": "success",
+    "cloudflareDeployment": "2f0ec479-e69f-46ba-9f91-227f585bdf49",
+    "cloudflareUrl": "https://2f0ec479.slothub-4cu.pages.dev",
+    "cloudflareStatus": "success",
+    "readback": "Seven immutable routes and image SHA256 passed; noindex/nofollow, no canonical, empty sitemap"
   }
 }
