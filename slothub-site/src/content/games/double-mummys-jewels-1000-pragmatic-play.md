@@ -1,6 +1,6 @@
 ---
 name: Double Mummy's Jewels 1000
-originalName: Double Mummy’s Jewels 1000
+originalName: Double Mummy's Jewels 1000
 aliases: [Double Mummy’s Jewels 1000]
 relatedGames: []
 provider: pragmatic-play
