@@ -1,12 +1,12 @@
 ---
-name: Double Mummy’s Jewels 1000
+name: Double Mummy's Jewels 1000
 originalName: Double Mummy’s Jewels 1000
-aliases: [Double Mummy's Jewels 1000]
+aliases: [Double Mummy’s Jewels 1000]
 relatedGames: []
 provider: pragmatic-play
 primaryType: slots
 subtypes: [video-slots]
-summary: Pragmatic Play 官方 Double Mummy’s Jewels 1000 單款頁描述第一與第五軸的 Eye of Ra Collect 或 Super Collect 符號會收集相鄰金額符號；不同顏色的 Wild 可開啟現金獎勵、額外指針或重轉功能。官方頁列示 RTP 96.50%。
+summary: Pragmatic Play 官方 Double Mummy's Jewels 1000 單款頁描述第一與第五軸的 Eye of Ra Collect 或 Super Collect 符號會收集相鄰金額符號；不同顏色的 Wild 可開啟現金獎勵、額外指針或重轉功能。官方頁列示 RTP 96.50%。
 reels: "5"
 features: [wild, respins, cash-collection, multiplier]
 bonusFeatures: [Eye of Ra Collect and Super Collect, Blue Wild Gift Wheel, Green Wild Extra Pointers, Red Wild Respins]
