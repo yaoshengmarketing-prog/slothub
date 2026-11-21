@@ -1,0 +1,38 @@
+{
+  "batch": 1120,
+  "recordedAt": "2026-11-21T10:35:14.679Z",
+  "state": "validated-ready-for-publication",
+  "batchSize": 1,
+  "capturedCount": 1,
+  "publishedCount": 0,
+  "priority": "Continue full Pragmatic Play official SLOTS catalog delta in source order",
+  "catalogSnapshot": "data/external-intake/pragmatic-play-official-slot-catalog-delta-2026-11-21.json",
+  "browserSwitch": "Codex in-app browser checked exact official game page and official artwork. No paid or alternate browser used. Demo attempted, but age confirmation was not crossed; status remains not-verified.",
+  "dedupScope": "All 1644 previously published Game Markdown records and same-provider exact name, official path and gameSymbol; Sugar Megarush /vs20mgsugarush absent.",
+  "records": [
+    {
+      "index": 670,
+      "name": "Sugar Megarush",
+      "slug": "sugar-megarush-pragmatic-play",
+      "provider": "pragmatic-play",
+      "status": "validated-ready",
+      "officialPage": "https://www.pragmaticplay.com/en/games/sugar-megarush/",
+      "officialFacts": "Official page describes changing reel heights, cluster pays, marked-position multipliers, scatter-triggered free spins and RTP 96.53%.",
+      "image": {
+        "sourceUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/11/Sugar-Megarush_339x180.png",
+        "localPath": "public/assets/games/sugar-megarush-pragmatic-play.png",
+        "sha256": "6D847F82AD968EA59E9B19452018370C3DF8466CE5643D3E0AF84E25CA48DB87",
+        "dimensions": "339x180",
+        "mime": "image/png",
+        "visualCheck": "Exact official artwork title visually inspected in Codex in-app browser."
+      },
+      "demo": "Official page has an 18+ confirmation before the Demo can load. Confirmation was not crossed; Demo remains not-verified and no outbound URL is published."
+    }
+  ],
+  "nextCursor": "Catalog item 671 after this game completes same-SHA CI, Cloudflare deployment and immutable online readback.",
+  "validation": {
+    "result": "pass",
+    "command": "PUBLIC_SITE_ENV=preview SLOTHUB_ASCII_WORKDIR=1 node scripts/run-package-script.mjs verify",
+    "evidence": "Preview full verify exit 0; 2050 HTML pages; source, image, relationship, RTP, internal-link and noindex checks passed."
+  }
+}

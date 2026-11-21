@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-10-15T00:00:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1644,
+  "gameCount": 1645,
   "providerCount": 372,
-  "sourcePageCount": 3326,
+  "sourcePageCount": 3329,
   "counts": {
     "access-restricted": 4,
     "available": 1192,
-    "not-verified": 448
+    "not-verified": 449
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,32 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "sugar-megarush-pragmatic-play",
+      "name": "Sugar Megarush",
+      "provider": "pragmatic-play",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-21",
+      "evidence": "Official Pragmatic Play catalog and exact page identify Sugar Megarush; Official page describes changing reel heights, cluster pays, marked-position multipliers, scatter-triggered free spins and RTP 96.53%. Codex in-app browser displayed the exact official page and visually matched the title on its official artwork. Official HTML includes gameSymbol vs20mgsugarush; official artwork URL is https://www.pragmaticplay.com/wp-content/uploads/2026/11/Sugar-Megarush_339x180.png, image/png 339x180 SHA256 6D847F82AD968EA59E9B19452018370C3DF8466CE5643D3E0AF84E25CA48DB87. No existing Game record matches exact name, official path or symbol. The official page's Demo region remained blank behind an 18+ confirmation, which was not crossed, so playable Demo loading is not verified and no outbound Demo URL is published. No paid browser used.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/sugar-megarush/",
+          "httpStatus": 200,
+          "notes": "Exact official page title, gameplay, RTP and age gate visible in Codex in-app browser; embedded Demo did not load before age confirmation."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/en/games/",
+          "httpStatus": 200,
+          "notes": "Full 76-page official catalog scan; linked exact path present at adopted index 670."
+        },
+        {
+          "requestedUrl": "https://www.pragmaticplay.com/wp-content/uploads/2026/11/Sugar-Megarush_339x180.png",
+          "httpStatus": 200,
+          "notes": "Official image/png, title visually checked, SHA256 6D847F82AD968EA59E9B19452018370C3DF8466CE5643D3E0AF84E25CA48DB87"
+        }
+      ]
+    },
     {
       "slug": "zeus-vs-hades-pop-pragmatic-play",
       "name": "Zeus vs Hades POP",
