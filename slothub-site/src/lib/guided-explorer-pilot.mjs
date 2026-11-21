@@ -15,21 +15,35 @@ export const GUIDED_EXPLORER_FEATURES = Object.freeze([
   'free-spins',
 ]);
 
-export function buildGuidedExplorerResult(games, mechanism = '', feature = '') {
+const featureChoices = ['', ...GUIDED_EXPLORER_FEATURES];
+
+function guidedExplorerState(mechanism, feature) {
+  return {
+    ...emptyExplorerState(),
+    mechanism,
+    features: feature ? [feature] : [],
+  };
+}
+
+export function buildGuidedExplorerCounts(games) {
+  return Object.fromEntries(GUIDED_EXPLORER_MECHANISMS.map((mechanism) => [
+    mechanism,
+    Object.fromEntries(featureChoices.map((feature) => [
+      feature,
+      filterAndSortGames(games, guidedExplorerState(mechanism, feature)).length,
+    ])),
+  ]));
+}
+
+export function buildGuidedExplorerResult(counts, mechanism = '', feature = '') {
   if (!GUIDED_EXPLORER_MECHANISMS.includes(mechanism)) {
     return { complete: false, count: undefined, explorerState: undefined };
   }
 
   const normalizedFeature = GUIDED_EXPLORER_FEATURES.includes(feature) ? feature : '';
-  const explorerState = {
-    ...emptyExplorerState(),
-    mechanism,
-    features: normalizedFeature ? [normalizedFeature] : [],
-  };
-
   return {
     complete: true,
-    count: filterAndSortGames(games, explorerState).length,
-    explorerState,
+    count: counts[mechanism][normalizedFeature],
+    explorerState: guidedExplorerState(mechanism, normalizedFeature),
   };
 }
