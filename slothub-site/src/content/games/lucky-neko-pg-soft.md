@@ -1,6 +1,8 @@
 ---
 name: "Lucky Neko"
 originalName: "Lucky Neko"
+displayNameZhHant: 招財喵
+aliases: [招財貓]
 provider: pg-soft
 primaryType: slots
 subtypes: [video-slots]
@@ -17,9 +19,10 @@ editorialFeatured: false
 status: published
 source: { label: "PG SOFT 官方 Lucky Neko 單款頁", url: "https://www.pgsoft.com/en/games/78/", checkedAt: 2026-11-01 }
 sources:
+  - { label: "PG SOFT 官方中文版 Lucky Neko 中文規則 PDF（招财喵）", url: "https://www.pgsoft.com/uploads/Games/Pdf/Lucky_Neko_Gameinformation_ZH.pdf", checkedAt: 2026-11-25 }
   - { label: "PG SOFT 官方 Lucky Neko 單款頁（身份、類型、RTP、波動度、最高倍數與遊戲 ID）", url: "https://www.pgsoft.com/en/games/78/", checkedAt: 2026-11-01 }
   - { label: "PG SOFT 官方 Lucky Neko 遊戲圖示", url: "https://www.pgsoft.com/uploads/Games/Images/1bb52586-61f5-41fc-a513-0164c34d0949.png", checkedAt: 2026-11-01 }
 demo: { status: not-verified, checkedAt: 2026-11-01, iframeStatus: not-tested }
 lastVerifiedAt: 2026-11-01
-updatedAt: 2026-11-01
+updatedAt: 2026-11-25
 ---

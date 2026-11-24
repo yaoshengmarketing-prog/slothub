@@ -1,6 +1,7 @@
 ---
 name: "Captain’s Bounty"
 originalName: "Captain’s Bounty"
+displayNameZhHant: 賞金船長
 provider: pg-soft
 primaryType: slots
 subtypes: [video-slots, cascading-reels]
@@ -17,9 +18,10 @@ editorialFeatured: false
 status: published
 source: { label: "PG SOFT 官方 Captain’s Bounty 單款頁", url: "https://www.pgsoft.com/en/games/43/", checkedAt: 2026-11-01 }
 sources:
+  - { label: "PG SOFT 官方中文版 Captain’s Bounty 中文規則 PDF（赏金船长）", url: "https://www.pgsoft.com/uploads/Games/Pdf/Captains_Bounty_Gameinformation_ZH.pdf", checkedAt: 2026-11-25 }
   - { label: "PG SOFT 官方 Captain’s Bounty 單款頁（身份、類型、RTP、波動度、最高倍數與遊戲 ID）", url: "https://www.pgsoft.com/en/games/43/", checkedAt: 2026-11-01 }
   - { label: "PG SOFT 官方 Captain’s Bounty 遊戲圖示", url: "https://www.pgsoft.com/uploads/Games/Images/d21582d6-3caf-4201-9896-c23a3d6560e0.png", checkedAt: 2026-11-01 }
 demo: { status: not-verified, checkedAt: 2026-11-01, iframeStatus: not-tested }
 lastVerifiedAt: 2026-11-01
-updatedAt: 2026-11-01
+updatedAt: 2026-11-25
 ---

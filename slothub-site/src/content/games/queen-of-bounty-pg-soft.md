@@ -1,6 +1,7 @@
 ---
 name: "Queen of Bounty"
 originalName: "Queen of Bounty"
+displayNameZhHant: 賞金女王
 provider: pg-soft
 primaryType: slots
 subtypes: [video-slots]
@@ -17,9 +18,10 @@ editorialFeatured: false
 status: published
 source: { label: "PG SOFT 官方 Queen of Bounty 單款頁", url: "https://www.pgsoft.com/en/games/76/", checkedAt: 2026-11-01 }
 sources:
+  - { label: "PG SOFT 官方中文版 Queen of Bounty 中文規則 PDF（賞金女王）", url: "https://www.pgsoft.com/uploads/Games/Pdf/Queen_of_Bounty_Gameinformation_ZH.pdf", checkedAt: 2026-11-25 }
   - { label: "PG SOFT 官方 Queen of Bounty 單款頁（身份、類型、RTP、波動度、最高倍數與遊戲 ID）", url: "https://www.pgsoft.com/en/games/76/", checkedAt: 2026-11-01 }
   - { label: "PG SOFT 官方 Queen of Bounty 遊戲圖示", url: "https://www.pgsoft.com/uploads/Games/Images/7c545509-fb5a-47a7-ae9f-9692a26cecf8.png", checkedAt: 2026-11-01 }
 demo: { status: not-verified, checkedAt: 2026-11-01, iframeStatus: not-tested }
 lastVerifiedAt: 2026-11-01
-updatedAt: 2026-11-01
+updatedAt: 2026-11-25
 ---

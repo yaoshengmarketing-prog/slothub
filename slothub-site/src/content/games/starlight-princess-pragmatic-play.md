@@ -21,10 +21,11 @@ editorialFeatured: false
 status: published
 source: { label: Pragmatic Play 官方 Starlight Princess 單款頁, url: "https://www.pragmaticplay.com/en/games/starlight-princess/", checkedAt: 2026-11-24 }
 sources:
+  - { label: "Pragmatic Play 官方中文版 Starlight Princess™ 遊戲頁（星光公主）", url: "https://www.pragmaticplay.com/zh/%E6%B8%B8%E6%88%8F/starlight-princess/", checkedAt: 2026-11-25 }
   - { label: Pragmatic Play 官方 Starlight Princess 單款玩法與 Basic Game Info RTP, url: "https://www.pragmaticplay.com/en/games/starlight-princess/", checkedAt: 2026-11-24 }
   - { label: Pragmatic Play 官方發布稿（類型、波動度、玩法與發布日期）, url: "https://www.pragmaticplay.com/en/news/pragmatic-play-delivers-regal-adventure-in-starlight-princess/", checkedAt: 2026-11-01 }
   - { label: Pragmatic Play 官方單款作品圖, url: "https://www.pragmaticplay.com/wp-content/uploads/2021/08/Starlight-Princess_EN_339x180_01.png", checkedAt: 2026-11-01 }
 demo: { status: available, checkedAt: 2026-11-24, iframeStatus: not-tested, url: "https://demogamesfree-asia.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20starlight&websiteUrl=https://demogamesfree.pragmaticplay.net&jurisdiction=99&lang=zh&cur=USD", accessType: direct-demo, presentation: external }
 lastVerifiedAt: 2026-11-24
-updatedAt: 2026-11-24
+updatedAt: 2026-11-25
 ---
