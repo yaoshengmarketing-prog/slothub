@@ -1,6 +1,7 @@
 ---
 name: Elder God Baphomet
 originalName: Elder God Baphomet
+displayNameZhHant: 古神巴風特
 provider: atg-games
 primaryType: slots
 subtypes: [video-slots, cluster-pays]
@@ -23,9 +24,10 @@ editorialFeatured: false
 status: published
 source: { label: ATG Games 官方 Elder God Baphomet 單款頁, url: "https://www.atg-games.com/games/slot/elder-god-baphomet", checkedAt: 2026-10-31 }
 sources:
-  - { label: "ATG Games 官方 Elder God Baphomet 單款頁（身份、日期、玩法、RTP、波動度與 Winning ratio）", url: "https://www.atg-games.com/games/slot/elder-god-baphomet", checkedAt: 2026-10-31 }
+  - { label: "ATG Games 官方 Elder God Baphomet 單款頁（身份、日期、玩法、RTP、波動度與 Winning ratio）", url: "https://www.atg-games.com/games/slot/elder-god-baphomet", checkedAt: 2026-11-24 }
+  - { label: ATG Games 官方繁中《古神巴風特》單款頁, url: "https://atg-games.com/zh-tw/games/slot/elder-god-baphomet", checkedAt: 2026-11-24 }
   - { label: ATG Games 官方 Elder God Baphomet 標題圖, url: "https://www.atg-games.com/_ipx/f_webp/elder-god-baphomet/en/game_icon.png", checkedAt: 2026-10-31 }
 demo: {"status":"not-verified","checkedAt":"2026-10-31","iframeStatus":"not-tested"}
-lastVerifiedAt: 2026-10-31
-updatedAt: 2026-10-31
+lastVerifiedAt: 2026-11-24
+updatedAt: 2026-11-24
 ---

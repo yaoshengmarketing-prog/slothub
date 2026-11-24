@@ -1,6 +1,7 @@
 ---
 name: Flaming Three Kingdoms
 originalName: Flaming Three Kingdoms
+displayNameZhHant: 赤三國
 provider: atg-games
 primaryType: slots
 subtypes: [video-slots, ways-to-win, cascading-reels]
@@ -21,8 +22,9 @@ status: published
 source: { label: ATG Games 官方 Flaming Three Kingdoms 單款頁, url: "https://www.atg-games.com/games/slot/scarlet-three-kingdoms", checkedAt: 2026-10-31 }
 sources:
   - { label: "ATG Games 官方 Flaming Three Kingdoms 單款頁（身份、玩法、RTP、波動度及最高倍數）", url: "https://www.atg-games.com/games/slot/scarlet-three-kingdoms", checkedAt: 2026-10-31 }
+  - { label: ATG Games 官方繁中《赤三國》單款頁, url: "https://atg-games.com/zh-tw/games/slot/scarlet-three-kingdoms", checkedAt: 2026-11-24 }
   - { label: ATG Games 官方 Flaming Three Kingdoms 標題圖, url: "https://www.atg-games.com/_ipx/f_webp/scarlet-three-kingdoms/en/game_icon.png", checkedAt: 2026-10-31 }
 demo: {"status":"not-verified","checkedAt":"2026-10-31","iframeStatus":"not-tested"}
-lastVerifiedAt: 2026-10-31
-updatedAt: 2026-10-31
+lastVerifiedAt: 2026-11-24
+updatedAt: 2026-11-24
 ---
