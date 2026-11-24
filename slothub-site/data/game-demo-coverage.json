@@ -9260,11 +9260,11 @@
       "provider": "pragmatic-play",
       "status": "available",
       "iframeStatus": "not-tested",
-      "checkedAt": "2026-11-06",
-      "url": "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs15godsofwar",
+      "checkedAt": "2026-11-24",
+      "url": "https://demogamesfree-asia.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs15godsofwar&websiteUrl=https://demogamesfree.pragmaticplay.net&jurisdiction=99&lang=zh&cur=USD",
       "accessType": "direct-demo",
       "presentation": "external",
-      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Zeus vs Hades – Gods of War™; Official page confirms Olympus and Hades volatility choices, up to 15000x maximum win, Expanding Wild multipliers up to 100x, three Scatters triggering ten Free Spins with sticky expanding Wilds, and RTP 96.07%. Exact page and symbol differ from the existing 250 edition. Codex in-app browser showed the exact official page title, game choices and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vs15godsofwar. Codex in-app browser opened the exact official openGame.do URL and observed the Zeus vs Hades Gods of War mode-selection screen with virtual balance and stake controls, without selecting a mode, spinning or betting; direct HTTP returned 200 and matching HTML title. Exact official image URL maps through page og:image; image/png SHA256 208773B0C0C7D7FFA7FFCA8774B71693ED55CFE00B0181CF3444D148807C0728, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used.",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Zeus vs Hades – Gods of War™; Official page confirms Olympus and Hades volatility choices, up to 15000x maximum win, Expanding Wild multipliers up to 100x, three Scatters triggering ten Free Spins with sticky expanding Wilds, and RTP 96.07%. Exact page and symbol differ from the existing 250 edition. Codex in-app browser showed the exact official page title, game choices and RTP, and mapped its embedded gameSymbol to the official Demo. Official HTML includes gameSymbol vs15godsofwar. Codex in-app browser opened the exact official openGame.do URL and observed the Zeus vs Hades Gods of War mode-selection screen with virtual balance and stake controls, without selecting a mode, spinning or betting; direct HTTP returned 200 and matching HTML title. Exact official image URL maps through page og:image; image/png SHA256 208773B0C0C7D7FFA7FFCA8774B71693ED55CFE00B0181CF3444D148807C0728, artwork title visually checked. Same-provider exact title, official path and symbol absent. No external paid browser used. 2026-11-24 Codex in-app browser opened Pragmatic Play direct Demo vs15godsofwar; the page title was Zeus vs Hades - Gods of War and the matching game screen loaded without sign-in or any spin. Official in-game rules page 4/7 lists base-game RTP 96.05% for Olympus and 96.07% for Hades; feature-buy RTP is separately scoped.",
       "inspectedUrls": [
         {
           "requestedUrl": "https://www.pragmaticplay.com/en/games/zeus-vs-hades-gods-of-war/",
@@ -10445,10 +10445,10 @@
       "slug": "starlight-princess-1000-pragmatic-play",
       "name": "Starlight Princess 1000™",
       "provider": "pragmatic-play",
-      "status": "not-verified",
+      "status": "available",
       "iframeStatus": "not-tested",
-      "checkedAt": "2026-11-05",
-      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Starlight Princess 1000™; 5x6 grid with unlimited tumbles, multiplier symbols from x2 to x1000, and four or more Scatters award Free Spins with collected multipliers. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20starlightx. Direct official Demo request returned HTTP 200 and title Starlight Princess 1000; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 FBB4E554A0F1C1DBD1D908C2E71F2341EE897AF3A550C58C4A6F9C8BA78589A3. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used.",
+      "checkedAt": "2026-11-24",
+      "evidence": "Exact official Pragmatic Play page returned HTTP 200 with title Starlight Princess 1000™; 5x6 grid with unlimited tumbles, multiplier symbols from x2 to x1000, and four or more Scatters award Free Spins with collected multipliers. Codex in-app browser failed locally before navigation; same official HTML was read directly, including embedded gameSymbol vs20starlightx. Direct official Demo request returned HTTP 200 and title Starlight Princess 1000; playable reels were not observed. Official image URL was cross-checked to catalog and page metadata, returned image/png, was visually inspected from downloaded bytes, SHA256 FBB4E554A0F1C1DBD1D908C2E71F2341EE897AF3A550C58C4A6F9C8BA78589A3. Same-provider exact name, official path and symbol absent from existing game records. No paid browser used. 2026-11-24 Codex in-app browser opened Pragmatic Play direct Demo vs20starlightx; the page title was Starlight Princess 1000 and the matching game screen loaded without sign-in or any spin.",
       "inspectedUrls": [
         {
           "requestedUrl": "https://www.pragmaticplay.com/en/games/starlight-princess-1000/",
@@ -10470,7 +10470,10 @@
           "httpStatus": 200,
           "notes": "Direct official Demo returned HTML title Starlight Princess 1000; playable reels not observed"
         }
-      ]
+      ],
+      "url": "https://demogamesfree-asia.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20starlightx&websiteUrl=https://demogamesfree.pragmaticplay.net&jurisdiction=99&lang=zh&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external"
     },
     {
       "slug": "the-money-men-megaways-pragmatic-play",
@@ -11533,10 +11536,10 @@
       "slug": "sugar-rush-1000-pragmatic-play",
       "name": "Sugar Rush 1000",
       "provider": "pragmatic-play",
-      "status": "not-verified",
+      "status": "available",
       "iframeStatus": "not-tested",
-      "checkedAt": "2026-11-04",
-      "evidence": "Official Pragmatic Play exact page confirms Sugar Rush 1000, a 7x7 cluster pays slot with tumble and marked-position multipliers from x2 to x1024 plus Scatter Free Spins. Official page iframe exposes exact gameSymbol vs20sugarrushx in Codex in-app browser; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 584FDF799C18C33CBEE5B359E550535F7729E53DAC568851C6DF33834FDB503D. Same-provider name, official path and symbol absent from existing game records.",
+      "checkedAt": "2026-11-24",
+      "evidence": "Official Pragmatic Play exact page confirms Sugar Rush 1000, a 7x7 cluster pays slot with tumble and marked-position multipliers from x2 to x1024 plus Scatter Free Spins. Official page iframe exposes exact gameSymbol vs20sugarrushx in Codex in-app browser; playable reels were not observed. Official 339x180 title artwork visually checked in Codex in-app browser, SHA256 584FDF799C18C33CBEE5B359E550535F7729E53DAC568851C6DF33834FDB503D. Same-provider name, official path and symbol absent from existing game records. 2026-11-24 Codex in-app browser opened Pragmatic Play direct Demo vs20sugarrushx; the page title was Sugar Rush 1000 and the matching game screen loaded without sign-in or any spin.",
       "inspectedUrls": [
         {
           "requestedUrl": "https://www.pragmaticplay.com/en/games/sugar-rush-1000/",
@@ -11558,7 +11561,10 @@
           "httpStatus": 200,
           "notes": "Official embedded Demo iframe showed exact gameSymbol in Codex in-app browser; playable reels not observed"
         }
-      ]
+      ],
+      "url": "https://demogamesfree-asia.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20sugarrushx&websiteUrl=https://demogamesfree.pragmaticplay.net&jurisdiction=99&lang=zh&cur=USD",
+      "accessType": "direct-demo",
+      "presentation": "external"
     },
     {
       "slug": "fire-portals-pragmatic-play",
@@ -21209,12 +21215,12 @@
       "name": "Sugar Rush",
       "provider": "pragmatic-play",
       "status": "available",
-      "url": "https://www.pragmaticplay.com/en/games/sugar-rush/",
-      "accessType": "official-game-page",
+      "url": "https://demogamesfree-asia.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20sugarrush&websiteUrl=https://demogamesfree.pragmaticplay.net&jurisdiction=99&lang=zh&cur=USD",
+      "accessType": "direct-demo",
       "presentation": "external",
       "iframeStatus": "not-tested",
-      "checkedAt": "2026-11-01",
-      "evidence": "Official Pragmatic Play exact game page identifies Sugar Rush and embeds gameSymbol vs20sugarrush. Exact official iframe URL returned HTTP 200; playable reels were not visually tested.",
+      "checkedAt": "2026-11-24",
+      "evidence": "Official Pragmatic Play exact game page identifies Sugar Rush and embeds gameSymbol vs20sugarrush. Exact official iframe URL returned HTTP 200; playable reels were not visually tested. 2026-11-24 Codex in-app browser opened Pragmatic Play direct Demo vs20sugarrush; the page title was Sugar Rush and the matching game screen loaded without sign-in or any spin.",
       "inspectedUrls": [
         {
           "requestedUrl": "https://www.pragmaticplay.com/en/games/sugar-rush/",
@@ -21243,12 +21249,12 @@
       "name": "Starlight Princess",
       "provider": "pragmatic-play",
       "status": "available",
-      "url": "https://www.pragmaticplay.com/en/games/starlight-princess/",
-      "accessType": "official-game-page",
+      "url": "https://demogamesfree-asia.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20starlight&websiteUrl=https://demogamesfree.pragmaticplay.net&jurisdiction=99&lang=zh&cur=USD",
+      "accessType": "direct-demo",
       "presentation": "external",
       "iframeStatus": "not-tested",
-      "checkedAt": "2026-11-01",
-      "evidence": "Official Pragmatic Play exact game page identifies Starlight Princess and embeds gameSymbol vs20starlight. Exact official iframe URL returned HTTP 200; playable reels were not visually tested.",
+      "checkedAt": "2026-11-24",
+      "evidence": "Official Pragmatic Play exact game page identifies Starlight Princess and embeds gameSymbol vs20starlight. Exact official iframe URL returned HTTP 200; playable reels were not visually tested. 2026-11-24 Codex in-app browser opened Pragmatic Play direct Demo vs20starlight; the page title was Starlight Princess and the matching game screen loaded without sign-in or any spin.",
       "inspectedUrls": [
         {
           "requestedUrl": "https://www.pragmaticplay.com/en/games/starlight-princess/",
