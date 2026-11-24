@@ -1,6 +1,7 @@
 ---
 name: Poseidon
-aliases: []
+displayNameZhHant: 波賽頓
+aliases: [波塞冬]
 relatedGames: []
 provider: jili-games
 primaryType: slots
@@ -18,8 +19,9 @@ status: published
 source: { label: JILI 官方 Poseidon 遊戲頁, url: "https://jiligames.com/PlusIntro/375?showGame=false", checkedAt: 2026-10-29 }
 sources:
   - { label: JILI 官方 Poseidon Game Info（類型與欄位）, url: "https://jiligames.com/PlusIntro/375?showGame=false", checkedAt: 2026-10-29 }
+  - { label: JILI 官方中文版 Poseidon 遊戲頁（波賽頓）, url: "https://jiligames.com/zh-CN/PlusIntro/375?showGame=false", checkedAt: 2026-11-24 }
   - { label: JILI 官方目錄作品圖, url: "https://wbgame.jlfafafa3.com/All-In-One/production/img/jiliPlusPlayer/games/jTmRGs1p07DbqHmo4wvw9A0CSGp6U6SPKLqX3Opi.png", checkedAt: 2026-10-29 }
 demo: { status: available, checkedAt: 2026-10-29, iframeStatus: not-tested, url: "https://jiligames.com/PlusIntro/375?showGame=true", accessType: official-game-page, presentation: external }
-lastVerifiedAt: 2026-10-29
-updatedAt: 2026-10-29
+lastVerifiedAt: 2026-11-24
+updatedAt: 2026-11-24
 ---

@@ -1,5 +1,6 @@
 ---
 name: Book of Gold
+displayNameZhHant: 黃金之書
 aliases: []
 relatedGames: []
 provider: jili-games
@@ -18,8 +19,9 @@ status: published
 source: { label: JILI 官方 Book of Gold 遊戲頁, url: "https://jiligames.com/PlusIntro/87?showGame=false", checkedAt: 2026-10-30 }
 sources:
   - { label: JILI 官方 Book of Gold Game Info（類型與欄位）, url: "https://jiligames.com/PlusIntro/87?showGame=false", checkedAt: 2026-10-30 }
+  - { label: JILI 官方中文版 Book of Gold 遊戲頁（黃金之書）, url: "https://jiligames.com/zh-CN/PlusIntro/87?showGame=false", checkedAt: 2026-11-24 }
   - { label: JILI 官方目錄作品圖, url: "https://wbgame.jlfafafa3.com/All-In-One/production/img/jiliPlusPlayer/games/Qw37suZFMwVp2VJr5JwxD88mEAEln7oEtCkRQBLc.png", checkedAt: 2026-10-30 }
 demo: { status: available, checkedAt: 2026-10-30, iframeStatus: not-tested, url: "https://jiligames.com/PlusIntro/87?showGame=true", accessType: official-game-page, presentation: external }
-lastVerifiedAt: 2026-10-30
-updatedAt: 2026-10-30
+lastVerifiedAt: 2026-11-24
+updatedAt: 2026-11-24
 ---
