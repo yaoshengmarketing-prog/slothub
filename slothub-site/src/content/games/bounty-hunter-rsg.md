@@ -6,6 +6,9 @@ provider: rsg
 primaryType: slots
 subtypes: [video-slots]
 summary: RSG 官方單款頁確認《賞金獵人》為老虎機，標示3600 路及最高 5000 倍。
+winMechanism: ways-to-win
+winCount: 3600
+paylines: 3600路
 maxWinMultiplier: 5000
 maxWinLabelOriginal: "最大倍數 5000X"
 gameId: "131"

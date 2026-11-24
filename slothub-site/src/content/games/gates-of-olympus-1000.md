@@ -10,6 +10,7 @@ provider: pragmatic-play
 primaryType: slots
 subtypes: [video-slots, cascading-reels]
 summary: Pragmatic Play 官方確認的 Gates of Olympus 續作，採 6×5 任意位置賠付、Tumble 與累積倍數玩法；1000 是正式名稱，不作系列代數。
+rtp: 96.5
 maxWinMultiplier: 15000
 maxWinLabelOriginal: "Maximum Win: 15,000x"
 reels: 6x5
@@ -23,13 +24,13 @@ gameId: "Pragmatic Play gameSymbol: vs20olympx"
 image: { src: /assets/games/gates-of-olympus-1000.png, alt: Gates of Olympus 1000 官方作品圖, sourceUrl: https://www.pragmaticplay.com/wp-content/uploads/2023/12/Gates-of-Olympus_1000_339x180.png, retrievedAt: 2026-08-29 }
 editorialFeatured: false
 status: published
-source: { label: Pragmatic Play 官方 Gates of Olympus 1000 遊戲頁, url: https://www.pragmaticplay.com/en/games/gates-of-olympus-1000/, checkedAt: 2026-08-29 }
+source: { label: Pragmatic Play 官方 Gates of Olympus 1000 遊戲頁, url: https://www.pragmaticplay.com/en/games/gates-of-olympus-1000/, checkedAt: 2026-11-24 }
 sources:
-  - { label: Pragmatic Play 官方 Gates of Olympus 1000 遊戲頁, url: https://www.pragmaticplay.com/en/games/gates-of-olympus-1000/, checkedAt: 2026-08-29 }
+  - { label: Pragmatic Play 官方 Gates of Olympus 1000 遊戲頁（RTP 96.50%）, url: https://www.pragmaticplay.com/en/games/gates-of-olympus-1000/, checkedAt: 2026-11-24 }
   - { label: Pragmatic Play 官方 Gates of Olympus 1000 中文市場頁, url: "https://www.pragmaticplay.com/zh/%E6%B8%B8%E6%88%8F/gates-of-olympus-1000/", checkedAt: 2026-08-29 }
   - { label: Pragmatic Play 官方發布稿（續作、15,000x）, url: https://www.pragmaticplay.com/en/news/zeus-strikes-mighty-multipliers-in-pragmatic-plays-latest-release-gates-of-olympus-1000/, checkedAt: 2026-08-29 }
   - { label: Pragmatic Play 官方作品圖（原始 339×180 PNG；未裁切、未轉檔）, url: https://www.pragmaticplay.com/wp-content/uploads/2023/12/Gates-of-Olympus_1000_339x180.png, checkedAt: 2026-08-29 }
 demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.pragmaticplay.com/en/games/gates-of-olympus-1000/","accessType":"official-game-page","presentation":"external"}
-lastVerifiedAt: 2026-08-29
-updatedAt: 2026-08-29
+lastVerifiedAt: 2026-11-24
+updatedAt: 2026-11-24
 ---

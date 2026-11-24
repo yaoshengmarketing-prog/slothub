@@ -6,6 +6,9 @@ provider: rsg
 primaryType: slots
 subtypes: [video-slots]
 summary: RSG 官方單款頁確認《美杜莎》為老虎機，標示25線及最高 6500 倍。
+winMechanism: paylines
+winCount: 25
+paylines: 25線
 maxWinMultiplier: 6500
 maxWinLabelOriginal: "最大倍數 6500X"
 gameId: "51"

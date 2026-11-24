@@ -6,6 +6,8 @@ provider: rsg
 primaryType: slots
 subtypes: [video-slots]
 summary: RSG 官方單款頁確認《聚寶財神》為老虎機，標示2025–32400 路及最高 76800 倍。
+winMechanism: ways-to-win
+paylines: 2025–32400路
 maxWinMultiplier: 76800
 maxWinLabelOriginal: "最大倍數 76800X"
 gameId: "114"

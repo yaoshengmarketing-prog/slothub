@@ -6,6 +6,9 @@ provider: rsg
 primaryType: slots
 subtypes: [video-slots]
 summary: RSG 官方單款頁確認《美狄亞》為老虎機，標示25 線及最高 150000 倍。
+winMechanism: paylines
+winCount: 25
+paylines: 25線
 maxWinMultiplier: 150000
 maxWinLabelOriginal: "最大倍數 150000X"
 gameId: "52"

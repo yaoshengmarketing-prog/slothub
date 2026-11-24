@@ -6,6 +6,8 @@ provider: rsg
 primaryType: slots
 subtypes: [video-slots]
 summary: RSG 官方單款頁確認《侏羅紀寶藏》為老虎機，標示隨處支付及最高 51000 倍。
+winMechanism: pay-anywhere
+paylines: 隨處支付
 maxWinMultiplier: 51000
 maxWinLabelOriginal: "最大倍數 51000X"
 gameId: "123"

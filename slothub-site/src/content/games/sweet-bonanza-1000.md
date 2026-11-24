@@ -10,6 +10,7 @@ provider: pragmatic-play
 primaryType: slots
 subtypes: [video-slots, cascading-reels]
 summary: Pragmatic Play 官方確認的 Sweet Bonanza 續作，採英文產品頁與發布稿一致的 6×5 任意位置賠付結構；官方中文頁另寫 5×5，該來源衝突保留於 sources，不將 1000 當作系列代數。
+rtp: 96.53
 maxWinMultiplier: 25000
 maxWinLabelOriginal: "Maximum Win: 25,000x"
 reels: 6x5
@@ -22,13 +23,13 @@ gameId: "Pragmatic Play gameSymbol: vs20fruitswx"
 image: { src: /assets/games/sweet-bonanza-1000.png, alt: Sweet Bonanza 1000 官方作品圖, sourceUrl: https://www.pragmaticplay.com/wp-content/uploads/2024/05/Sweet-Bonanza-1000_339x180.png, retrievedAt: 2026-08-29 }
 editorialFeatured: false
 status: published
-source: { label: Pragmatic Play 官方 Sweet Bonanza 1000 遊戲頁, url: https://www.pragmaticplay.com/en/games/sweet-bonanza-1000/, checkedAt: 2026-08-29 }
+source: { label: Pragmatic Play 官方 Sweet Bonanza 1000 遊戲頁, url: https://www.pragmaticplay.com/en/games/sweet-bonanza-1000/, checkedAt: 2026-11-24 }
 sources:
-  - { label: Pragmatic Play 官方 Sweet Bonanza 1000 遊戲頁（6×5）, url: https://www.pragmaticplay.com/en/games/sweet-bonanza-1000/, checkedAt: 2026-08-29 }
+  - { label: Pragmatic Play 官方 Sweet Bonanza 1000 遊戲頁（6×5、RTP 96.53%）, url: https://www.pragmaticplay.com/en/games/sweet-bonanza-1000/, checkedAt: 2026-11-24 }
   - { label: Pragmatic Play 官方中文遊戲頁（文字記為 5×5，與英文官方來源衝突）, url: "https://www.pragmaticplay.com/zh/%E6%B8%B8%E6%88%8F/sweet-bonanza-1000/", checkedAt: 2026-08-29 }
   - { label: Pragmatic Play 官方發布稿（續作、6×5、25,000x）, url: https://www.pragmaticplay.com/en/news/pragmatic-play-sweetens-up-candyland-in-sweet-bonanza-1000/, checkedAt: 2026-08-29 }
   - { label: Pragmatic Play 官方作品圖（原始 339×180 PNG；未裁切、未轉檔）, url: https://www.pragmaticplay.com/wp-content/uploads/2024/05/Sweet-Bonanza-1000_339x180.png, checkedAt: 2026-08-29 }
 demo: {"status":"available","checkedAt":"2026-09-19","iframeStatus":"not-tested","url":"https://www.pragmaticplay.com/en/games/sweet-bonanza-1000/","accessType":"official-game-page","presentation":"external"}
-lastVerifiedAt: 2026-08-29
-updatedAt: 2026-08-29
+lastVerifiedAt: 2026-11-24
+updatedAt: 2026-11-24
 ---

@@ -6,6 +6,9 @@ provider: rsg
 primaryType: slots
 subtypes: [video-slots]
 summary: RSG 官方單款頁確認《大過年3》為老虎機，標示243 路及最高 16800 倍。
+winMechanism: ways-to-win
+winCount: 243
+paylines: 243路
 maxWinMultiplier: 16800
 maxWinLabelOriginal: "最大倍數 16800X"
 gameId: "127"

@@ -6,6 +6,8 @@ provider: rsg
 primaryType: slots
 subtypes: [video-slots]
 summary: RSG 官方單款頁確認《狗來富》為老虎機，標示2025–32400 路及最高 120000 倍。
+winMechanism: ways-to-win
+paylines: 2025–32400路
 maxWinMultiplier: 120000
 maxWinLabelOriginal: "最大倍數 120000X"
 gameId: "122"

@@ -6,6 +6,8 @@ provider: rsg
 primaryType: slots
 subtypes: [video-slots]
 summary: RSG 官方單款頁確認《勇闖黃金城》為老虎機，標示2025–32400 路及最高 12500 倍。
+winMechanism: ways-to-win
+paylines: 2025–32400路
 maxWinMultiplier: 12500
 maxWinLabelOriginal: "最大倍數 12500X"
 gameId: "116"
