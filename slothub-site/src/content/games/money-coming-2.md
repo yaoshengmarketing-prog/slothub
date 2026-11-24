@@ -1,6 +1,7 @@
 ---
 name: Money Coming 2
-aliases: []
+displayNameZhHant: 瘋狂錢來也 2
+aliases: [瘋狂錢來也2]
 relatedGames: []
 provider: jili-games
 primaryType: slots
@@ -10,6 +11,8 @@ volatilityOriginal: MED
 maxWinMultiplier: 10000
 maxWinLabelOriginal: "MAX WIN: 10000x"
 paylines: "1 Line"
+winMechanism: paylines
+winCount: 1
 bonusFeatures: ["Publish Time: 2025.07"]
 gameId: "543"
 image: { src: /assets/games/money-coming-2.png, alt: JILI 官方 Money Coming 2 作品圖, sourceUrl: "https://wbgame.jlfafafa3.com/All-In-One/production/img/jiliPlusPlayer/games/RyuxXRCA63Mf5dz5a6eFPiFPfOTvrfr6pSAqwjO4.png", retrievedAt: 2026-10-29 }
@@ -18,8 +21,9 @@ status: published
 source: { label: JILI 官方 Money Coming 2 遊戲頁, url: "https://jiligames.com/PlusIntro/543?showGame=false", checkedAt: 2026-10-29 }
 sources:
   - { label: JILI 官方 Money Coming 2 Game Info（類型與欄位）, url: "https://jiligames.com/PlusIntro/543?showGame=false", checkedAt: 2026-10-29 }
+  - { label: JILI 官方簡中《瘋狂錢來也2》同 ID 遊戲頁, url: "https://jiligames.com/zh-CN/PlusIntro/543?showGame=false", checkedAt: 2026-11-24 }
   - { label: JILI 官方目錄作品圖, url: "https://wbgame.jlfafafa3.com/All-In-One/production/img/jiliPlusPlayer/games/RyuxXRCA63Mf5dz5a6eFPiFPfOTvrfr6pSAqwjO4.png", checkedAt: 2026-10-29 }
 demo: { status: available, checkedAt: 2026-10-29, iframeStatus: not-tested, url: "https://jiligames.com/PlusIntro/543?showGame=true", accessType: official-game-page, presentation: external }
-lastVerifiedAt: 2026-10-29
-updatedAt: 2026-10-29
+lastVerifiedAt: 2026-11-24
+updatedAt: 2026-11-24
 ---
