@@ -1,6 +1,7 @@
 ---
 name: Starlight Princess 1000™
 originalName: Starlight Princess 1000™
+displayNameZhHant: 星光公主1000
 aliases: [Starlight Princess 1000]
 relatedGames: []
 provider: pragmatic-play
@@ -18,7 +19,8 @@ sources:
   - { label: Pragmatic Play 官方單款玩法與試玩入口, url: "https://www.pragmaticplay.com/en/games/starlight-princess-1000/", checkedAt: 2026-11-05 }
   - { label: Pragmatic Play 官方 Slot 目錄, url: "https://www.pragmaticplay.com/en/games/", checkedAt: 2026-11-05 }
   - { label: Pragmatic Play 官方作品圖, url: "https://www.pragmaticplay.com/wp-content/uploads/2023/07/Starlight-Princess-1000_339x180.png", checkedAt: 2026-11-05 }
+  - { label: 台灣常用名稱參考（非原廠）星光公主1000, url: "https://www.slot-demo.tw/slot/star-princess-1000/", checkedAt: 2026-11-24 }
 demo: { status: not-verified, checkedAt: 2026-11-05, iframeStatus: not-tested }
 lastVerifiedAt: 2026-11-05
-updatedAt: 2026-11-05
+updatedAt: 2026-11-24
 ---

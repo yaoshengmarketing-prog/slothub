@@ -1,6 +1,7 @@
 ---
 name: Sugar Rush 1000
 originalName: Sugar Rush 1000
+displayNameZhHant: 極速糖果1000
 aliases: []
 relatedGames: []
 provider: pragmatic-play
@@ -18,7 +19,8 @@ sources:
   - { label: Pragmatic Play 官方單款玩法與試玩入口, url: "https://www.pragmaticplay.com/en/games/sugar-rush-1000/", checkedAt: 2026-11-04 }
   - { label: Pragmatic Play 官方 Slot 目錄, url: "https://www.pragmaticplay.com/en/games/", checkedAt: 2026-11-04 }
   - { label: Pragmatic Play 官方作品圖, url: "https://www.pragmaticplay.com/wp-content/uploads/2024/03/Sugar-Rush-1000_339x180.png", checkedAt: 2026-11-04 }
+  - { label: 台灣常用名稱參考（非原廠）極速糖果1000, url: "https://www.slot-demo.tw/slot/speed-candy-1000/", checkedAt: 2026-11-24 }
 demo: { status: not-verified, checkedAt: 2026-11-04, iframeStatus: not-tested }
 lastVerifiedAt: 2026-11-04
-updatedAt: 2026-11-04
+updatedAt: 2026-11-24
 ---

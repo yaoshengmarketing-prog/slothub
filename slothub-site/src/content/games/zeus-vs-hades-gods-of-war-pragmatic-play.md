@@ -1,6 +1,7 @@
 ---
 name: Zeus vs Hades – Gods of War™
 originalName: Zeus vs Hades – Gods of War™
+displayNameZhHant: 宙斯vs哈迪斯 眾神之戰
 aliases: [Zeus vs Hades Gods of War, Zeus vs Hades - Gods of War]
 relatedGames: []
 provider: pragmatic-play
@@ -20,7 +21,8 @@ sources:
   - { label: Pragmatic Play 官方單款玩法與 Demo 入口, url: "https://www.pragmaticplay.com/en/games/zeus-vs-hades-gods-of-war/", checkedAt: 2026-11-06 }
   - { label: Pragmatic Play 官方 Slot 目錄, url: "https://www.pragmaticplay.com/en/games/", checkedAt: 2026-11-06 }
   - { label: Pragmatic Play 官方作品圖, url: "https://www.pragmaticplay.com/wp-content/uploads/2023/05/Zeus-vs-Hades-Gods-of-war_339x180.png", checkedAt: 2026-11-06 }
+  - { label: 台灣常用名稱參考（非原廠）宙斯vs哈迪斯 眾神之戰, url: "https://www.slot-demo.tw/slot/zeus-vs-hades-war-of-the-gods/", checkedAt: 2026-11-24 }
 demo: { status: available, checkedAt: 2026-11-06, iframeStatus: not-tested, url: "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs15godsofwar", accessType: direct-demo, presentation: external }
 lastVerifiedAt: 2026-11-06
-updatedAt: 2026-11-06
+updatedAt: 2026-11-24
 ---
