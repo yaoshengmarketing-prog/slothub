@@ -18,11 +18,12 @@ editorialFeatured: false
 status: published
 source: { label: Pragmatic Play 官方 Zeus vs Hades – Gods of War™ 單款頁, url: "https://www.pragmaticplay.com/en/games/zeus-vs-hades-gods-of-war/", checkedAt: 2026-11-06 }
 sources:
+  - { label: "Pragmatic Play 官方中文版 Zeus vs Hades – Gods of War™ 遊戲頁（宙斯vs哈迪斯 眾神之戰）", url: "https://www.pragmaticplay.com/zh/%E6%B8%B8%E6%88%8F/zeus-vs-hades-gods-of-war/", checkedAt: 2026-11-25 }
   - { label: Pragmatic Play 官方單款玩法與 Demo 入口, url: "https://www.pragmaticplay.com/en/games/zeus-vs-hades-gods-of-war/", checkedAt: 2026-11-06 }
   - { label: Pragmatic Play 官方 Slot 目錄, url: "https://www.pragmaticplay.com/en/games/", checkedAt: 2026-11-06 }
   - { label: Pragmatic Play 官方作品圖, url: "https://www.pragmaticplay.com/wp-content/uploads/2023/05/Zeus-vs-Hades-Gods-of-war_339x180.png", checkedAt: 2026-11-06 }
   - { label: Pragmatic Play 官方 Demo 遊戲內規則第 4 頁（Olympus／Hades 模式 RTP）, url: "https://demogamesfree-asia.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs15godsofwar&websiteUrl=https://demogamesfree.pragmaticplay.net&jurisdiction=99&lang=zh&cur=USD", checkedAt: 2026-11-24 }
 demo: { status: available, checkedAt: 2026-11-24, iframeStatus: not-tested, url: "https://demogamesfree-asia.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs15godsofwar&websiteUrl=https://demogamesfree.pragmaticplay.net&jurisdiction=99&lang=zh&cur=USD", accessType: direct-demo, presentation: external }
 lastVerifiedAt: 2026-11-06
-updatedAt: 2026-11-24
+updatedAt: 2026-11-25
 ---

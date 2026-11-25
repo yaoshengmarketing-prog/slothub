@@ -1,6 +1,7 @@
 ---
 name: "Treasures of Aztec"
 originalName: "Treasures of Aztec"
+displayNameZhHant: 尋寶黃金城
 provider: pg-soft
 primaryType: slots
 subtypes: [video-slots]
@@ -17,9 +18,10 @@ editorialFeatured: false
 status: published
 source: { label: "PG SOFT 官方 Treasures of Aztec 單款頁", url: "https://www.pgsoft.com/en/games/72/", checkedAt: 2026-11-01 }
 sources:
+  - { label: "PG SOFT 官方中文版 Treasures of Aztec 中文規則 PDF（尋寶黃金城）", url: "https://www.pgsoft.com/uploads/Games/Pdf/Treasures_of_Aztec_Gameinformation_ZH.pdf", checkedAt: 2026-11-25 }
   - { label: "PG SOFT 官方 Treasures of Aztec 單款頁（身份、類型、RTP、波動度、最高倍數與遊戲 ID）", url: "https://www.pgsoft.com/en/games/72/", checkedAt: 2026-11-01 }
   - { label: "PG SOFT 官方 Treasures of Aztec 遊戲圖示", url: "https://www.pgsoft.com/uploads/Games/Images/a3322373-822c-4001-82a4-7762bba041a3.png", checkedAt: 2026-11-01 }
 demo: { status: not-verified, checkedAt: 2026-11-01, iframeStatus: not-tested }
 lastVerifiedAt: 2026-11-01
-updatedAt: 2026-11-01
+updatedAt: 2026-11-25
 ---

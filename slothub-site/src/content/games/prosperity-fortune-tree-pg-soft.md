@@ -1,6 +1,7 @@
 ---
 name: "Prosperity Fortune Tree"
 originalName: "Prosperity Fortune Tree"
+displayNameZhHant: 黃金搖錢樹
 provider: pg-soft
 primaryType: slots
 subtypes: [video-slots]
@@ -17,9 +18,10 @@ editorialFeatured: false
 status: published
 source: { label: "PG SOFT 官方 Prosperity Fortune Tree 單款頁", url: "https://www.pgsoft.com/en/games/123/", checkedAt: 2026-11-01 }
 sources:
+  - { label: "PG SOFT 官方中文版 Prosperity Fortune Tree 中文規則 PDF（黃金搖錢樹）", url: "https://www.pgsoft.com/uploads/Games/Pdf/Prosperity_Fortune_Tree_Gameinformation_ZH.pdf", checkedAt: 2026-11-25 }
   - { label: "PG SOFT 官方 Prosperity Fortune Tree 單款頁（身份、類型、RTP、波動度、最高倍數與遊戲 ID）", url: "https://www.pgsoft.com/en/games/123/", checkedAt: 2026-11-01 }
   - { label: "PG SOFT 官方 Prosperity Fortune Tree 遊戲圖示", url: "https://www.pgsoft.com/uploads/Games/Images/fe0deca8-9e51-43e2-8416-76c3843d6c84.png", checkedAt: 2026-11-01 }
 demo: { status: not-verified, checkedAt: 2026-11-01, iframeStatus: not-tested }
 lastVerifiedAt: 2026-11-01
-updatedAt: 2026-11-01
+updatedAt: 2026-11-25
 ---

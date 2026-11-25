@@ -1,6 +1,7 @@
 ---
 name: The Hand of Midas™
 originalName: The Hand of Midas™
+displayNameZhHant: 邁達斯之手
 aliases: [The Hand of Midas]
 relatedGames: []
 provider: pragmatic-play
@@ -17,10 +18,11 @@ editorialFeatured: false
 status: published
 source: { label: Pragmatic Play 官方 The Hand of Midas™ 單款頁, url: "https://www.pragmaticplay.com/en/games/the-hand-of-midas/", checkedAt: 2026-11-10 }
 sources:
+  - { label: "Pragmatic Play 官方中文版 The Hand of Midas™ 遊戲頁（邁達斯之手）", url: "https://www.pragmaticplay.com/zh/%E6%B8%B8%E6%88%8F/the-hand-of-midas/", checkedAt: 2026-11-25 }
   - { label: Pragmatic Play 官方單款玩法與 Demo 入口, url: "https://www.pragmaticplay.com/en/games/the-hand-of-midas/", checkedAt: 2026-11-10 }
   - { label: Pragmatic Play 官方 SLOTS 目錄, url: "https://www.pragmaticplay.com/en/games/", checkedAt: 2026-11-10 }
   - { label: Pragmatic Play 官方作品圖, url: "https://www.pragmaticplay.com/wp-content/uploads/2021/02/THOM_EN_339x180-1.png", checkedAt: 2026-11-10 }
 demo: { status: available, url: "https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20midas&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD", accessType: direct-demo, presentation: external, checkedAt: 2026-11-10, iframeStatus: not-tested }
 lastVerifiedAt: 2026-11-10
-updatedAt: 2026-11-10
+updatedAt: 2026-11-25
 ---
