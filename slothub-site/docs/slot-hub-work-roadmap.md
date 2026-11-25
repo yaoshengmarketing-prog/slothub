@@ -2,7 +2,7 @@
 
 文件狀態：`APPROVED`
 
-最近更新：2026-09-03
+最近更新：2026-11-25
 
 目前依據：`docs/slot-hub-master-blueprint-v2.md` 是目前最高產品與施工順序依據；`docs/slot-hub-master-blueprint-v1.md` 保留為歷史決策文件。
 
@@ -167,9 +167,9 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 
 **狀態：** `已完成`
 
-### 目前項目：第 10 項 Game／Provider 擴充
+### 目前項目：第 10 項 台灣娛樂城遊戲佇列（data/tw-casino-queue）
 
-**目前進度：**
+**歷史批次紀錄：**
 
 - 第四批四款 Game 與 Relax Gaming 已完成收錄、CI、Cloudflare Pages Preview 部署及線上回讀。
 - 第五批依自動接棒授權收斂為 Extra Chilli、Jammin’ Jars、Razor Shark、Vikings Go Berzerk，以及新 Provider Push Gaming、Yggdrasil Gaming。
@@ -180,7 +180,7 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 
 **狀態：** `本機製作`
 
-**下一個允許動作：** 依既有授權建立第五批合法 draft、完整驗證、發布與 Cloudflare Pages Preview 線上回讀。
+**下一個允許動作：** 依台灣娛樂城遊戲佇列的 README 取下一批。
 
 ## 5. 第 2～10 項施工順序
 
@@ -194,7 +194,7 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 | 7 | Guide 閱讀路線 v1 | 讓首頁、Guide index、Slots 依「第一次使用、核心數據、玩法、功能、限制」組織內容。 | `已完成` | 已結案。 |
 | 8 | 引導式遊戲探索 Pilot | 用幾個容易理解的選擇，轉成看得見、可修改、可分享的 Explorer 條件。 | `已完成` | 已結案。 |
 | 9 | 遊戲 DNA 單款 Pilot | 用一個精簡區塊整理單款遊戲的數據狀態、玩法、版本與可信度，不建立分數。 | `已完成` | 已結案。 |
-| 10 | Game／Provider 擴充 | 持續增加可靠、可搜尋的 Game 與 Provider，不以數量取代來源品質。 | `本機製作` | 完成第五批四款 Game 與兩家 Provider 的收錄、驗證、Preview 部署及線上回讀。 |
+| 10 | 台灣娛樂城遊戲佇列（data/tw-casino-queue） | 依佇列順序查核既有頁面與收錄遊戲。 | `本機製作` | 依佇列 README 取下一批，完成驗證後開 PR。 |
 
 第 10 項是長期持續工作，可在一個主要產品項目完成後，以獨立核准範圍交錯進行；不得在其他主要項目施工中自行插隊。
 
@@ -242,6 +242,7 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 
 | 項目 | 狀態 | 說明 |
 | --- | --- | --- |
+| Horizontal provider intake 批次（`external-intake/horizontal-provider-intake-batch-*`） | `暫停／封存` | 保留歷史批次與 `nextCursor` 紀錄。 |
 | Wix／migration／301／410／GSC／DNS／舊內容搬移 | `暫停／封存` | `OUT_OF_SCOPE FOR NEW-SITE ROADMAP`；不屬第 1～10 項施工順序，不在第 10 項完成後自動恢復，不得要求資料或自行盤點、施工；只有使用者明確開啟新的獨立範圍時才可重新討論。 |
 | D1／CMS／自建後台 | `暫停／封存` | 維持 `DO_NOT_BUILD_YET`，近期維持靜態內容與既有驗證流程。 |
 | R2／媒體儲存 | `暫停／封存` | 目前不導入，現有圖片及媒體沿用已核准方式；保留未來接口可能性，只有資料量、圖片管理、授權或媒體需求成熟後才能另案評估，預留接口不代表施工授權。 |
@@ -265,28 +266,26 @@ Slot Hub 不以預測輸贏、保證獲利或不透明推薦為核心。
 
 `STAGE_RESULT: PASS_TO_NEXT_STAGE`
 
-`CURRENT_STATE: FIFTH_BATCH_VALIDATION_COMPLETE`
-
-`CURRENT_ITEM: 第10項 Game／Provider 擴充`
+`CURRENT_ITEM: 台灣娛樂城遊戲佇列（data/tw-casino-queue）`
 
 `CURRENT_STATUS: 本機製作`
 
-`CURRENT_STEP: 第五批正式只讀驗證完成`
+`CURRENT_STEP: 建立佇列驗證並接入 verify`
 
 `ROADMAP_STATUS: APPROVED`
 
-`NEXT_ITEM: 第10項 Game／Provider 擴充（第五批）`
+`NEXT_ITEM: 依佇列 README 取下一批`
 
-`NEXT_ITEM_STATUS: 已核准繼續建立 draft、驗證、發布與 Preview 線上回讀`
+`NEXT_ITEM_STATUS: 本機製作`
 
-`WEBSITE_CHANGED: NO；目前只完成驗證文件`
+`WEBSITE_CHANGED: NO；本次只新增佇列、驗證與工作流程設定`
 
-`COMMIT_ALLOWED: YES；僅核准規格、實作與發布 Commit`
+`COMMIT_ALLOWED: YES；僅限 tw-queue/ 分支上的佇列批次 Commit`
 
-`PUSH_ALLOWED: YES；完整本機驗證通過後`
+`PUSH_ALLOWED: YES；只 push tw-queue/ 分支並開 PR，不 push main`
 
-`DEPLOY_ALLOWED: YES；僅 Cloudflare Pages Preview`
+`DEPLOY_ALLOWED: NO；PR 合併後由既有 CI／Cloudflare Pages 自動部署`
 
-`HUMAN_APPROVAL_REQUIRED: NO；本輪已核准自動續行至線上回讀，遇到新產品決策或重大風險時停止`
+`HUMAN_APPROVAL_REQUIRED: YES；佇列 PR 由站主授權的審核助理（Grok Bot）審過後合併；刪頁、轉址、noindex 仍須站主核准`
 
-`NEXT_ALLOWED_ACTION: 完成第五批資料與圖片收錄、Commit、Push、CI、Preview 部署及線上回讀；不得擴張批次`
+`NEXT_ALLOWED_ACTION: 依佇列 README 取下一批，完成驗證後開 PR`
