@@ -2,11 +2,13 @@
 
 ## 「請繼續」與每日排程＝台灣娛樂城佇列
 
-- 唯一工作順序是 `slothub-site/data/tw-casino-queue/queue.csv`，規則在同資料夾的 `README.md`。
-- 「請繼續」＝依 README 取下一批（最多 5 筆、同一 provider、`queue_state=todo`、依檔案順序），做到完成標準後開一個 PR。
-- `external-intake/horizontal-provider-intake-batch-*` 與 `nextCursor` 已暫停，不得再往下延伸；也不得為新批次再新增 verify script 或 progress JSON。
-- Codex 只開 PR，不合併、不 push main；佇列 PR 由站主授權的審核助理（Grok Bot）審過後合併，合併即 draft→published 核准；刪頁、轉址、noindex 仍須站主核准。
-- 數字只用原廠官方的；不提及、不連結、不抄禁用的競品網站（禁字清單見佇列 README 的驗證段）。
+- 唯一工作順序由 `slothub-site/data/tw-casino-queue/queue.csv` 決定，作業規則見同目錄的 `README.md`，原廠目錄與比對資料存於 `provider-data/`。
+- 「請繼續」或每日排程開始時，先處理既有 `tw-queue/` PR 的審查意見，再依 README 一家一家做。先收集官方目錄並存入 `provider-data/`，再分批建頁或補頁。每個 PR 最多約 10 款且只含一家遊戲商，每次執行所有 PR 合計以至少 10 款為目標，最多開 3 個 PR。
+- 單款做不到就標 `blocked`，以 `<類別>: <具體細節>` 記錄原因並接著做下一款。同一家在建頁階段連續 3 款 `blocked` 就換下一家。只有環境故障才中止整次執行。
+- 發布須通過原廠身分、官方圖片、中文名與不重複檢查，並至少有原廠遊戲介紹或功能說明。完整門檻見 README D。
+- `external-intake/horizontal-provider-intake-batch-*` 與 `nextCursor` 已暫停，不得再往下延伸。不得為新批次新增驗證腳本或進度 JSON，`provider-data/*.json` 除外。
+- Codex 只開 PR，不合併、不 push main。佇列 PR 由站主授權的審核助理（Grok Bot）審過後合併，合併即 draft→published 核准。刪頁、轉址、noindex 仍須站主核准。
+- 數字只用原廠官方的。不提及、不連結、不抄禁用的競品網站（禁字檢查見佇列 README 的驗證段）。
 
 - Slot Hub Guide 的選題、Brief、內容草稿、來源核對、結構化關聯、模擬發布、人工審查或 Preview 發布工作，使用 `$slot-hub-guide-content`。
 - Slot Hub 的 Game／Provider 收錄、既有遊戲回查或 Demo 補查，必須先讀取 `slothub-site/docs/game-intake-workflow-v1.md` 與 `slothub-site/docs/game-demo-coverage-and-presentation-v1.md`。固定責任是：每款 published Game 必須有站內 Provider 頁、每個 published Provider 的 `officialUrl` 必須是可追溯的官方頁：優先使用工作室自有並經核實的官方網站；只在 Stake 發行的 Stake Engine 工作室，若找不到自有網站，可使用 Stake 工作室目錄頁（`https://stake.com/casino/group/<studio>`）；其他娛樂城／營運商頁面與聯盟行銷、推廣碼網站一律不得作為 `officialUrl`（規則 2026-10-18，由 `npm run verify:provider-official-urls` 檢查）；Demo／單款遊戲入口是獨立的可選資料，有精確入口才加入，不得以 Provider 首頁冒充。
