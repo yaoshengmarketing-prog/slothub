@@ -7,11 +7,11 @@ subBrands: []
 originRegions: []
 serviceMarkets: []
 marketTags: [international, online]
-languages: [English]
+languages: [English, Chinese]
 gameTypes: [slots]
 summary: BNG 是延續 Booongo 品牌脈絡的線上老虎機開發與發行品牌；官方目錄同時包含自有作品與合作 studio 作品，本站只按逐款公開署名保存。
 officialUrl: https://bng.games/
 status: published
-source: { label: BNG 官方遊戲目錄, url: https://bng.games/games/, checkedAt: 2026-09-19 }
-updatedAt: 2026-09-19
+source: { label: BNG 官方中英文遊戲目錄, url: https://asia.bng.games/games/, checkedAt: 2026-11-24 }
+updatedAt: 2026-11-24
 ---
