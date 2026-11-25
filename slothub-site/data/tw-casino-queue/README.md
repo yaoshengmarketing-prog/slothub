@@ -33,7 +33,7 @@
 5. **Demo**：原廠精確單款 Demo，實際打開確認是同一款才放；沒有就記 not-verified。
 6. **中文名**：顯示名順序＝原廠繁中官方名 → 原廠簡中轉繁（OpenCC s2twp）→ 台灣大廳名 → 玩家常用名；其他名稱放 aliases。
 7. **同名不同款**：不同遊戲商的同名遊戲，標題帶遊戲商名稱，兩頁互相連結並寫明不是同一款。
-8. 新頁用英文 kebab-case slug；status 依 `docs/game-intake-workflow-v1.md`。
+8. 新頁用英文 kebab-case slug；完成標準 1–7 都做到的頁，在 PR 內直接設為 `published`（PR 合併即 draft→published 核准，取代 `docs/game-intake-workflow-v1.md` 的另行人工核准）；做不到的維持 `draft` 或標 blocked，不得硬發布。
 9. 驗證全過（見下）後才改 `pr_open`，PR 合併後下一次執行改 `done`。
 
 ## 驗證
