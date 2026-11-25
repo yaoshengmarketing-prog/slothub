@@ -108,3 +108,10 @@ npm run build
 PUBLIC_SITE_ENV=preview npm run verify
 npm run verify:tw-queue -- --diff
 ```
+
+## 規則變更
+
+- 改規則、改流程一律單獨開 PR，不得與遊戲 PR 混在一起。
+- 規則 PR 合併後，每次執行開工先把所有 open 的 `tw-queue/` 遊戲 PR 更新到最新 main，依最新規則重新檢查，不符合的先修正再做新工作；審核助理不合併依舊規則做的 PR。
+- 已上線的頁面不因規則變更自動回溯修改；需要回頭修改舊頁時，另開一批並經站主核准後才做。
+- 佇列工作不使用付費瀏覽器或切換 IP，除非站主當次明確同意；此條優先於 `docs/geo-restricted-source-access.md` 的切換順序。
