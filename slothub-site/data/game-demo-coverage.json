@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-11-28T08:55:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1664,
+  "gameCount": 1674,
   "providerCount": 372,
-  "sourcePageCount": 3352,
+  "sourcePageCount": 3372,
   "counts": {
     "access-restricted": 4,
     "available": 1194,
-    "not-verified": 466
+    "not-verified": 476
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -47910,6 +47910,167 @@
           "notes": "Official exact single-game page and API returned 200."
         }
       ]
+    },
+    {
+      "slug": "moon-sisters-bng",
+      "name": "Moon Sisters Hold and Win",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description and image SHA256 verified by terminal GET. Exact /play/ path returned HTTP 200, text/html; charset=utf-8; playable rendering was not visually verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/moon_sisters/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "fire-coins-bng",
+      "name": "Fire Coins: Hold and Win",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description and image SHA256 verified by terminal GET. Exact /play/ path returned HTTP 200, text/html; charset=utf-8; playable rendering was not visually verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/fire_coins/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "boom-boom-gold-bng",
+      "name": "Boom! Boom! Gold!",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description and image SHA256 verified by terminal GET. Exact /play/ path returned HTTP 200, text/html; charset=utf-8; playable rendering was not visually verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/boom_gold/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "aztec-fire-bng",
+      "name": "Aztec Fire Hold and Win",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description and image SHA256 verified by terminal GET. Exact /play/ path returned HTTP 200, text/html; charset=utf-8; playable rendering was not visually verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/aztec_fire/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "3-carts-of-gold-bng",
+      "name": "3 Carts of Gold: Hold and Win",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description and image SHA256 verified by terminal GET. Exact /play/ path returned HTTP 200, text/html; charset=utf-8; playable rendering was not visually verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/3carts_of_gold/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "black-wolf-bng",
+      "name": "Black Wolf Hold and Win",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description and image SHA256 verified by terminal GET. Exact /play/ path returned HTTP 200, text/html; charset=utf-8; playable rendering was not visually verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/black_wolf/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "3-super-hot-chillies-bng",
+      "name": "3 Super Hot Chillies: Hold and Win",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description and image SHA256 verified by terminal GET. Exact /play/ path returned HTTP 200, text/html; charset=utf-8; playable rendering was not visually verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/3_super_hot_chillies/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "arizona-heist-bng",
+      "name": "Arizona Heist: Hold and Win",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description and image SHA256 verified by terminal GET. Exact /play/ path returned HTTP 200, text/html; charset=utf-8; playable rendering was not visually verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/arizona_heist/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "hot-fire-fruits-bng",
+      "name": "Hot Fire Fruits",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description and image SHA256 verified by terminal GET. Exact /play/ path returned HTTP 200, text/html; charset=utf-8; playable rendering was not visually verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/hot_fire_fruits/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "forest-spirit-bng",
+      "name": "Forest Spirit",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description and image SHA256 verified by terminal GET. Exact /play/ path returned HTTP 200, text/html; charset=utf-8; playable rendering was not visually verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/forest_spirit/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
     }
+
   ]
 }
