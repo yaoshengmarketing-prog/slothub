@@ -2,7 +2,8 @@
   "provider": "RSG",
   "harvestedAt": "2026-11-28",
   "catalogSources": [
-    "https://www.rsg-games.com/zh-TW/games.html"
+    "https://www.rsg-games.com/zh-TW/games.html",
+    "https://docs.rsg-games.com/seamless/zh-tw/"
   ],
   "catalogHttp": "2026-11-28 terminal read-only GET HTTP 200 text/html; 89 distinct exact game links in official zh-TW catalog. Built-in browser host unavailable. No paid browser or IP switch.",
   "catalogCount": 89,
@@ -813,6 +814,204 @@
       ],
       "matchConfidence": "high",
       "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 5 and title match existing Game gold-chicken-rsg; official image HTTP 200 image/webp SHA256 c1050f09c5a6e40d0475610360fdaf913da98a111724160ad29c2e83fb77119e equals local bytes; detail maximum undefined matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00212"
+      ],
+      "officialName": "逛夜市3",
+      "officialGameId": "126",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_126.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/126/slot-NightMarket3-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 5200,
+      "demoUrl": null,
+      "zhNames": [
+        "逛夜市3"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 126 and title match existing Game night-market-3-rsg; official image HTTP 200 image/webp SHA256 f23a3235072c8710679c4079a2498ee943bdc5a75fbfa5806cf0bbc42a406fa5 equals local bytes; detail maximum undefined matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00213"
+      ],
+      "officialName": "大過年3",
+      "officialGameId": "127",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_127.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/127/slot-ChineseNewYear3-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 16800,
+      "demoUrl": null,
+      "zhNames": [
+        "大過年3"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 127 and title match existing Game chinese-new-year-3-rsg; official image HTTP 200 image/webp SHA256 c3b84d88bebb96e9fc34d45873c2bce98e3463c64946ce456e0072d02e63a9a1 equals local bytes; detail maximum undefined matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00214"
+      ],
+      "officialName": "Roma",
+      "officialGameId": "100",
+      "officialPageUrl": null,
+      "officialImageUrl": null,
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [
+        "羅馬競技場"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official API reference HTTP 200 lists Roma / ID 100 / zh-TW queue title in slot codes. Official 89-game zh-TW catalog has no Roma. Exact /zh-TW/games_detail_100.html returns HTTP 200 but visible title is 404 Page Not Found. No official game image or game description found; do not publish."
+    },
+    {
+      "queueIds": [
+        "Q00215"
+      ],
+      "officialName": "賞金獵人",
+      "officialGameId": "131",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_131.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/131/slot-BountyHunter-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 5000,
+      "demoUrl": null,
+      "zhNames": [
+        "賞金獵人"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 131 and title match existing Game bounty-hunter-rsg; official image HTTP 200 image/webp SHA256 e98bfdfc45b1484664a4f0097fb2bc34e85c06df8789eb80446de34830be17e4 equals local bytes; detail maximum undefined matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00216"
+      ],
+      "officialName": "能量外星人",
+      "officialGameId": "2001",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_2001.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/2001/slot-EnergyCombo-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 2400,
+      "demoUrl": null,
+      "zhNames": [
+        "能量外星人"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 2001 and title match existing Game energy-alien-rsg; official image HTTP 200 image/webp SHA256 51c98d1b60e33bbdb0792c74c173eccb0e982418fa46001103eef85b65121bfb equals local bytes; detail maximum undefined matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00217"
+      ],
+      "officialName": "財神到",
+      "officialGameId": "27",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_27.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/27/slot-GodofWealth-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 500,
+      "demoUrl": null,
+      "zhNames": [
+        "財神到"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 27 and title match existing Game god-of-wealth-rsg; official image HTTP 200 image/webp SHA256 a2d76db72241016daecee31b77d6584abd7b9e52f95f31bd515d20084218ecfa equals local bytes; detail maximum undefined matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00218"
+      ],
+      "officialName": "武媚娘",
+      "officialGameId": "39",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_39.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/39/slot-ChinaEmpress-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 6000,
+      "demoUrl": null,
+      "zhNames": [
+        "武媚娘"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 39 and title match existing Game china-empress-rsg; official image HTTP 200 image/webp SHA256 c7f228ed838470a6839b9de256eca3872b8f4decfa0aa2708fcd1a985d1b9325 equals local bytes; detail maximum undefined matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00219"
+      ],
+      "officialName": "五龍爭霸",
+      "officialGameId": "19",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_19.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/19/slot-5Dragons-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 2600,
+      "demoUrl": null,
+      "zhNames": [
+        "五龍爭霸"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 19 and title match existing Game five-dragons-rsg; official image HTTP 200 image/webp SHA256 ce13e85938aff51f7b3113e68ee90ab53c60a20874aa9dd436ed2e140c8bc5b8 equals local bytes; detail maximum undefined matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00220"
+      ],
+      "officialName": "法老王",
+      "officialGameId": "6",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_6.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/6/slot-Pharaoh-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 10300,
+      "demoUrl": null,
+      "zhNames": [
+        "法老王"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 6 and title match existing Game pharaoh-rsg; official image HTTP 200 image/webp SHA256 2e678c6f437669bc0683d25df30fe7c28a070f4b78a92ea3dbd4e8936d6c8264 equals local bytes; detail maximum undefined matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00221"
+      ],
+      "officialName": "福娃發發",
+      "officialGameId": "40",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_40.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/40/slot-FuWaFaFa-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 4800,
+      "demoUrl": null,
+      "zhNames": [
+        "福娃發發"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 40 and title match existing Game fu-wa-fa-fa-rsg; official image HTTP 200 image/webp SHA256 8679302b1133214303c74b97bb1a96a36ef95c865aadda49ab06e032cb9ea986 equals local bytes; detail maximum undefined matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00222"
+      ],
+      "officialName": "皇家7777",
+      "officialGameId": "78",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_78.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/78/slot-Royal7777-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 8300,
+      "demoUrl": null,
+      "zhNames": [
+        "皇家7777"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 78 and title match existing Game royal-7777-rsg; official image HTTP 200 image/webp SHA256 853ebc957db0b16385b987e4205dcb6998ede6240cfd3e241144fe0349e996c7 equals local bytes; detail maximum undefined matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
     },
     {
       "queueIds": [
