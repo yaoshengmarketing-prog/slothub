@@ -7,9 +7,13 @@ relatedGames: []
 provider: bng
 primaryType: slots
 subtypes: [video-slots]
-summary: "BNG《驚天大盜》（Big Heist）。銀行金庫主題遊戲；保險箱 Scatter 可開啟免費遊戲。Collect 與 Super Collect 符號會收集盤面上的金錢符號，後者另帶倍數效果。RTP、波動度與整款遊戲最高倍數未確認。原廠介紹免費遊戲、Collect 與 Super-Collect 倍數符號；未在已核對資料公布 RTP、波動度或整款最高倍數。"
+reels: "5"
+rows: 3
+winMechanism: paylines
+winCount: 10
+summary: "BNG《驚天大盜》（Big Heist）採 5×3 盤面與 10 條線。保險箱 Scatter 可開啟免費遊戲；Collect 收集盤面金錢符號，Super Collect 則觸發額外的 Collect 符號。免費遊戲中的進度表可增加旋轉次數及收集符號倍數。RTP、波動度與整款遊戲最高倍數在已核對的官方公開資料中未列出。"
 seoTitle: "驚天大盜老虎機｜BNG 官方玩法資料｜Slot Hub"
-seoDescription: "BNG《驚天大盜》官方資料整理：銀行金庫主題遊戲；保險箱 Scatter 可開啟免費遊戲。Collect 與 Super Collect 符號會收集盤面上的金錢符號，後者另帶倍數效果。"
+seoDescription: "BNG《驚天大盜》官方資料整理：5×3、10 條線；保險箱 Scatter 開啟免費遊戲，Collect 收集盤面金錢符號。"
 features: [free-spins, scatter, cash-collection, multiplier]
 releaseDate: 2022-09-08
 gameId: big_heist
