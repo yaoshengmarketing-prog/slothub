@@ -7,9 +7,9 @@ relatedGames: []
 provider: bng
 primaryType: slots
 subtypes: [video-slots]
-summary: "BNG《埃及女神》（Goddess of Egypt）。6×5 消除玩法；8 個以上相同符號可得獎，連續消除後的倍數符號與免費遊戲累積倍數為主要功能。RTP、波動度與整款遊戲最高倍數在已核對的官方資料中未確認。"
+summary: "BNG《埃及女神》（Goddess of Egypt）。6×5 盤面有連續消除與倍數功能；4 個 Goddess Scatter 可觸發免費遊戲，免費遊戲中的倍數會累積。RTP、波動度與整款遊戲最高倍數在已核對的官方資料中未確認。"
 seoTitle: "埃及女神老虎機｜BNG 官方玩法資料｜Slot Hub"
-seoDescription: "BNG《埃及女神》官方資料整理：6×5 消除玩法；8 個以上相同符號可得獎，連續消除後的倍數符號與免費遊戲累積倍數為主要功能。"
+seoDescription: "BNG《埃及女神》官方資料整理：6×5 盤面有連續消除與倍數功能；4 個 Goddess Scatter 可觸發免費遊戲，免費遊戲中的倍數會累積。"
 features: [cascading, multiplier, free-spins]
 releaseDate: 2025-04-18
 gameId: goddess_of_egypt

@@ -7,6 +7,10 @@ relatedGames: []
 provider: bng
 primaryType: slots
 subtypes: [video-slots]
+reels: "3"
+rows: 3
+winMechanism: paylines
+winCount: 5
 summary: "BNG《777幣勝》（777 Coins）。3×3、5 條線的遊戲；777 收集符號與金幣獎勵符號可觸發 Hold and Win 重轉，獎勵符號落下會重設重轉次數。RTP、波動度與整款遊戲最高倍數在已核對的官方資料中未確認。"
 seoTitle: "777幣勝老虎機｜BNG 官方玩法資料｜Slot Hub"
 seoDescription: "BNG《777幣勝》官方資料整理：3×3、5 條線的遊戲；777 收集符號與金幣獎勵符號可觸發 Hold and Win 重轉，獎勵符號落下會重設重轉次數。"
