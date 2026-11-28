@@ -1,6 +1,6 @@
 {
   "provider": "BNG",
-  "harvestedAt": "2026-11-28",
+  "harvestedAt": "2026-11-29",
   "catalogSources": [
     "https://bng.games/games/",
     "https://bng.games/api/games"
@@ -16,10 +16,26 @@
     "maximumWin": "https://bng.games/api/games/777_coins describes an x6,000+ wager payout specifically within the Hold and Win round, and a separate x2,000 Grand Jackpot symbol. Neither is an unambiguous whole-game maxWinMultiplier; leave the field null. Other jackpot and feature multipliers were likewise not promoted to whole-game caps."
   },
   "zhNameAudit": {
-    "checkedAt": "2026-11-28",
-    "queueIds": ["Q00008", "Q00015", "Q00018", "Q00024", "Q00029", "Q00041", "Q00043", "Q00045", "Q00056"],
-    "officialSources": ["https://bng.games/games/", "https://bng.games/api/games", "https://bng.games/api/games/clover_charm", "https://bng.games/api/games/charge_clovers", "https://bng.games/api/games/magic_clovers"],
-    "result": "官方 /api/games HTTP 200，213 筆目錄的公開欄位無 zh、zh-hant、title_zh 或 name_zh，JSON 無中文字。抽查 clover_charm 單款 API 的 languages 列表雖含 zh／zh-hant，但 ?lang=zh-hant、?language=zh-hant、?locale=zh-hant 與 Accept-Language: zh-Hant 測試仍回傳英文 title。抽查 /play/clover_charm/ launcher 的 HTML title 仍是英文，未取得官方中文名稱對照或 Game ID 對應。九筆既有 name-uncertain 維持 blocked；不得以原廠支援中文介面推論大廳中文名。"
+    "checkedAt": "2026-11-29",
+    "queueIds": [
+      "Q00008",
+      "Q00015",
+      "Q00018",
+      "Q00024",
+      "Q00029",
+      "Q00041",
+      "Q00043",
+      "Q00045",
+      "Q00056"
+    ],
+    "officialSources": [
+      "https://bng.games/games/",
+      "https://bng.games/api/games",
+      "https://bng.games/api/games/clover_charm",
+      "https://bng.games/api/games/charge_clovers",
+      "https://bng.games/api/games/magic_clovers"
+    ],
+    "result": "官方 /api/games HTTP 200，213 筆目錄的公開欄位無 zh、zh-hant、title_zh 或 name_zh，JSON 無中文字。抽查 clover_charm 單款 API 的 languages 列表雖含 zh／zh-hant，但 ?lang=zh-hant、?language=zh-hant、?locale=zh-hant 與 Accept-Language: zh-Hant 測試仍回傳英文 title。抽查 /play/clover_charm/ launcher 的 HTML title 仍是英文，未取得官方中文名稱對照或 Game ID 對應。九筆既有 name-uncertain 維持 blocked；不得以原廠支援中文介面推論大廳中文名。 2026-11-29: BNG public channel bilingual posts 108, 40, 126 and 119 now uniquely map four current queue titles to first-party API game IDs; the earlier 12 name-uncertain rows were not reclassified in this run. Social post IDs are discovery/name evidence; game pages use first-party BNG detail/API/image URLs. Bilingual post 36 maps More Magic Apple to distinct Q00143; Q00083 remains name-uncertain."
   },
   "catalogCount": 213,
   "catalog": [
@@ -1534,15 +1550,11 @@
     "Q00067",
     "Q00070",
     "Q00073",
-    "Q00074",
     "Q00076",
-    "Q00077",
-    "Q00081",
     "Q00082",
     "Q00083",
     "Q00084",
     "Q00085",
-    "Q00086",
     "Q00087",
     "Q00091",
     "Q00092",
@@ -2350,7 +2362,9 @@
       "matchNote": "name-uncertain: BNG 官方目錄與單款 API HTTP 200；「瘋狂淘金樂」無原廠中文名或 Game ID，Grab More Gold、Hit More Gold 等候選無法唯一排除。"
     },
     {
-      "queueIds": ["Q00032"],
+      "queueIds": [
+        "Q00032"
+      ],
       "officialName": "Dragon-themed candidates",
       "officialPageUrl": null,
       "officialImageUrl": null,
@@ -2363,7 +2377,9 @@
       "matchNote": "name-uncertain: 2026-11-28 官方目錄 https://bng.games/api/games 與單款 API 可用；「火龍秘寶: 幸運奪寶」缺官方中文名或 Game ID，Dragon Wealth、Treasures of Fire、Fire Temple 等龍／火／寶藏候選不能唯一排除。"
     },
     {
-      "queueIds": ["Q00067"],
+      "queueIds": [
+        "Q00067"
+      ],
       "officialName": "Three-symbol candidates",
       "officialPageUrl": null,
       "officialImageUrl": null,
@@ -2376,7 +2392,9 @@
       "matchNote": "name-uncertain: 2026-11-28 官方目錄 https://bng.games/api/games 可用；「大三元 - 集鴻運」缺官方中文名或 Game ID，3 Royal Coins、3 Coins、3 China Pots 等三符號／三罐系列不能唯一排除。"
     },
     {
-      "queueIds": ["Q00070"],
+      "queueIds": [
+        "Q00070"
+      ],
       "officialName": "Clover Hit the Bonus candidates",
       "officialPageUrl": null,
       "officialImageUrl": null,
@@ -2389,7 +2407,171 @@
       "matchNote": "name-uncertain: 2026-11-28 官方 https://bng.games/api/games/clover_charm HTTP 200，英文名 Clover Charm: Hit the Bonus、發行 2025-06-06、原圖 SHA256 437d86c58e6050406bcaeba7a5973bcd2925e09a63cc1727f8eef39937c3b654；https://bng.games/api/games/charge_clovers 同屬 Clover／Hit the Bonus，https://bng.games/api/games/magic_clovers 又吻合「魔幻四葉草」字面。沒有官方中文名或 Game ID 可唯一對應。/play/clover_charm/ 僅 HTTP 200 HTML，Demo 未目視核實。"
     },
     {
-      "queueIds": ["Q00087"],
+      "queueIds": [
+        "Q00074"
+      ],
+      "officialName": "Lamp of Wonder",
+      "officialGameId": "lamp_of_wonder",
+      "officialPageUrl": "https://bng.games/game/lamp_of_wonder/",
+      "officialImageUrl": "https://bng.games/media/public/lamp_of_wonder/lamp_of_wonder_banner_pliut.jpg",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [
+        "拉丁神燈"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-29 BNG public bilingual channel post 108 explicitly pairs Chinese and English titles; official BNG catalog and exact API HTTP 200 confirm provider bng, game ID, release date, feature description and banner path. Image HTTP 200 image/jpeg SHA256 432b1094a927a3dbaa23a5beb4f9b159f3ff54c570aff7abe43be297cf0d63bc; visual title matches and local bytes match. Official specification only states a Grand Jackpot amount, not overall max win; RTP and volatility absent from checked API. Exact /play/ redirects to HTTP 200 HTML; gameplay not visually verified because built-in browser host unavailable. "
+    },
+    {
+      "queueIds": [
+        "Q00077"
+      ],
+      "officialName": "Tiger Gems-Hold and Win",
+      "officialGameId": "tiger_gems",
+      "officialPageUrl": "https://bng.games/game/tiger_gems/",
+      "officialImageUrl": "https://bng.games/media/public/tiger_gems/tiger_gems_banner_lyyjr.jpg",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [
+        "白虎傳-集鴻運"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-29 BNG public bilingual channel post 40 explicitly pairs Chinese and English titles; official BNG catalog and exact API HTTP 200 confirm provider bng, game ID, release date, feature description and banner path. Image HTTP 200 image/jpeg SHA256 480c84c19627e3f8345a0cb37c09c15a3666db83141b50fc2d3cedff55585900; visual title matches and local bytes match. Official specification only states a Grand Jackpot amount, not overall max win; RTP and volatility absent from checked API. Exact /play/ redirects to HTTP 200 HTML; gameplay not visually verified because built-in browser host unavailable. "
+    },
+    {
+      "queueIds": [
+        "Q00081"
+      ],
+      "officialName": "3 Pots of Egypt",
+      "officialGameId": "3_pots_of_egypt",
+      "officialPageUrl": "https://bng.games/game/3_pots_of_egypt/",
+      "officialImageUrl": "https://bng.games/media/public/3_pots_of_egypt/3_pots_of_egypt_banner_tvlna.jpg",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [
+        "埃及三寶壺"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-29 BNG public bilingual channel post 126 explicitly pairs Chinese and English titles; official BNG catalog and exact API HTTP 200 confirm provider bng, game ID, release date, feature description and banner path. Image HTTP 200 image/jpeg SHA256 7cc8da172fd753ab6bacbf35ad294a1bcef44e12688050d3b468654e9395f8de; visual title matches and local bytes match. Official specification only states a Grand Jackpot amount, not overall max win; RTP and volatility absent from checked API. Exact /play/ redirects to HTTP 200 HTML; gameplay not visually verified because built-in browser host unavailable. "
+    },
+    {
+      "queueIds": [
+        "Q00086"
+      ],
+      "officialName": "3 China Pots",
+      "officialGameId": "3_china_pots",
+      "officialPageUrl": "https://bng.games/game/3_china_pots/",
+      "officialImageUrl": "https://bng.games/media/public/3_china_pots/3_china_pots_banner_ewphx.jpg",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [
+        "3金滿福-集鴻運"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-29 BNG public bilingual channel post 119 explicitly pairs Chinese and English titles; official BNG catalog and exact API HTTP 200 confirm provider bng, game ID, release date, feature description and banner path. Image HTTP 200 image/jpeg SHA256 e394999dcb7485f5058dc61cb6590dd08364bdee457a4ee835c3a4d59e8b8c37; visual title matches and local bytes match. Official specification only states a Grand Jackpot amount, not overall max win; RTP and volatility absent from checked API. Exact /play/ redirects to HTTP 200 HTML; gameplay not visually verified because built-in browser host unavailable. Queue title omits the official Hold and Win subtitle; retained as alias."
+    },
+    {
+      "queueIds": [
+        "Q00073"
+      ],
+      "officialName": "Unresolved BNG candidates",
+      "officialPageUrl": null,
+      "officialImageUrl": null,
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [],
+      "matchConfidence": "low",
+      "matchNote": "name-uncertain: 2026-11-29 official BNG catalog and exact candidate API HTTP 200; Tiger Stone and Tigers Gold remain possible; no official Chinese/Game ID mapping for 金鑽霸虎. No page or image was assigned."
+    },
+    {
+      "queueIds": [
+        "Q00076"
+      ],
+      "officialName": "Unresolved BNG candidates",
+      "officialPageUrl": null,
+      "officialImageUrl": null,
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [],
+      "matchConfidence": "low",
+      "matchNote": "name-uncertain: 2026-11-29 official BNG catalog and exact candidate API HTTP 200; Hit the Gold and Hit More Gold remain possible; no official Chinese/Game ID mapping for 淘金樂. No page or image was assigned."
+    },
+    {
+      "queueIds": [
+        "Q00082"
+      ],
+      "officialName": "Unresolved BNG candidates",
+      "officialPageUrl": null,
+      "officialImageUrl": null,
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [],
+      "matchConfidence": "low",
+      "matchNote": "name-uncertain: 2026-11-29 official BNG catalog and exact candidate API HTTP 200; Super Hot Chilli and Hot Chilli Joker remain possible; no official Chinese/Game ID mapping for 嗆辣魔鬼椒. No page or image was assigned."
+    },
+    {
+      "queueIds": [
+        "Q00084"
+      ],
+      "officialName": "Unresolved BNG candidates",
+      "officialPageUrl": null,
+      "officialImageUrl": null,
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [],
+      "matchConfidence": "low",
+      "matchNote": "name-uncertain: 2026-11-29 official BNG catalog and exact candidate API HTTP 200; Piggy Power and Pig Up remain possible; no official Chinese/Game ID mapping for 財氣豬寶. No page or image was assigned."
+    },
+    {
+      "queueIds": [
+        "Q00085"
+      ],
+      "officialName": "Unresolved BNG candidates",
+      "officialPageUrl": null,
+      "officialImageUrl": null,
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [],
+      "matchConfidence": "low",
+      "matchNote": "name-uncertain: 2026-11-29 official BNG catalog and exact candidate API HTTP 200; Super China Pots and other Pots variants remain possible; no official Chinese/Game ID mapping for 超級金滿福. No page or image was assigned."
+    },
+    {
+      "queueIds": [
+        "Q00083"
+      ],
+      "officialName": "Magic Apple / More Magic Apple candidates",
+      "officialPageUrl": null,
+      "officialImageUrl": null,
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [],
+      "matchConfidence": "low",
+      "matchNote": "name-uncertain: 2026-11-29 BNG bilingual channel posts 36 and 69 explicitly pair 瘋狂致命毒蘋果-集鴻運 with More Magic Apple, which is separate queue Q00143. Q00083 lacks that first word and BNG catalog lists magic_apple and more_magic_apple as separate IDs. No first-party evidence uniquely maps Q00083 to magic_apple or another exact game; do not use More Magic Apple image or page."
+    },
+    {
+      "queueIds": [
+        "Q00087"
+      ],
       "officialName": "Wolf-themed candidates",
       "officialPageUrl": null,
       "officialImageUrl": null,
@@ -2402,7 +2584,9 @@
       "matchNote": "name-uncertain: 2026-11-29 BNG official catalog and https://bng.games/api/games/wolf_saga HTTP 200, but no first-party bilingual title or Game ID evidence links 狼佐賀-集鴻運 uniquely to Wolf Saga; the catalog has other wolf-themed games. No page or image assigned."
     },
     {
-      "queueIds": ["Q00091"],
+      "queueIds": [
+        "Q00091"
+      ],
       "officialName": "Scarab-themed candidates",
       "officialPageUrl": null,
       "officialImageUrl": null,
@@ -2415,7 +2599,9 @@
       "matchNote": "name-uncertain: 2026-11-29 BNG official catalog and https://bng.games/api/games/scarab_boost and https://bng.games/api/games/scarab_temple each HTTP 200; no first-party Chinese/Game ID mapping for 聖甲蟲大三元-集鴻運. No page or image assigned."
     },
     {
-      "queueIds": ["Q00092"],
+      "queueIds": [
+        "Q00092"
+      ],
       "officialName": "Diamonds Power candidates",
       "officialPageUrl": null,
       "officialImageUrl": null,
@@ -2428,5 +2614,5 @@
       "matchNote": "name-uncertain: 2026-11-29 BNG official catalog and https://bng.games/api/games/diamonds_power and https://bng.games/api/games/diamonds_power_xxl each HTTP 200; these are distinct games and no first-party Chinese/Game ID mapping for 超能寶鑽: 集鴻運 was found. No page or image assigned."
     }
   ],
-  "skipNote": "2026-11-29 本次建頁階段 Q00087、Q00091、Q00092 連續 3 款 name-uncertain blocked，依 queue README C 停止本輪 BNG；官方 API /api/games 及候選單款可存取，但缺三個中文大廳名對應原廠 Game ID 的證據。內建瀏覽器 browser access host unavailable，未使用付費瀏覽器或切換 IP。此前 2026-11-28 Q00032、Q00067、Q00070 也因相同類型證據不足而 blocked。"
+  "skipNote": "2026-11-28 本次建頁階段 Q00032、Q00067、Q00070 連續 3 款 name-uncertain blocked，依 queue README C 切換下一家；官方 API /api/games 及候選單款可存取，但缺三個中文大廳名對應原廠 Game ID 的證據。內建瀏覽器 browser access host unavailable，未使用付費瀏覽器或切換 IP。"
 }
