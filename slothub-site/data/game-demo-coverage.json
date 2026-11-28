@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-28T08:55:00Z",
+  "generatedAt": "2026-11-28T15:15:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1674,
+  "gameCount": 1675,
   "providerCount": 372,
-  "sourcePageCount": 3372,
+  "sourcePageCount": 3374,
   "counts": {
     "access-restricted": 4,
     "available": 1194,
-    "not-verified": 476
+    "not-verified": 477
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -48070,7 +48070,22 @@
           "notes": "Official exact single-game page and API returned 200."
         }
       ]
+    },
+    {
+      "slug": "crown-5pk-rsg",
+      "name": "皇冠5PK",
+      "provider": "rsg",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official RSG exact zh-TW and en-US game detail pages returned HTTP 200 and confirmed title and Game ID 5001. Built-in browser host was unavailable, so playable Demo rendering was not verified and no Demo URL is published.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://www.rsg-games.com/zh-TW/games_detail_5001.html",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and artwork source returned 200; gameplay not verified."
+        }
+      ]
     }
-
   ]
 }
