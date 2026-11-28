@@ -1,12 +1,12 @@
 ---
-name: Boom Boom Gold
+name: Boom Boom Gold（LLAMA Games）
 originalName: Boom Boom Gold
 aliases: []
-relatedGames: []
+relatedGames: [boom-boom-gold-bng]
 provider: llama-games
 primaryType: slots
 subtypes: [video-slots]
-summary: LLAMA Games 的淘金主題 5×3 線上老虎機；官方單款頁確認 20 線、97.30% RTP、最高 1,500x、Wild、Scatter、Free Spins 與 Buy Bonus。
+summary: LLAMA Games 的淘金主題 5×3 線上老虎機；官方單款頁確認 20 線、97.30% RTP、最高 1,500x、Wild、Scatter、Free Spins 與 Buy Bonus。此款與 BNG 的《Boom! Boom! Gold!》是不同遊戲。
 rtp: 97.3
 rtpVariants: [97.3]
 maxWinMultiplier: 1500
