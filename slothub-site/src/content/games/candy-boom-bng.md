@@ -7,7 +7,7 @@ relatedGames: []
 provider: bng
 primaryType: slots
 subtypes: [video-slots]
-summary: "BNG《轟炸糖果》（Candy Boom）。糖果符號得獎後會觸發連續消除，讓新符號落入盤面。原廠也列出彩虹果凍倍數、免費遊戲與購買功能。RTP、波動度與最高倍數在本次核對的官方來源未確認。"
+summary: "BNG《轟炸糖果》（Candy Boom）。糖果符號得獎後會觸發連續消除，讓新符號落入盤面。原廠也列出彩虹果凍倍數、免費遊戲與購買功能。RTP、波動度與整款遊戲最高倍數未確認。原廠介紹了 Jelly Cascade 與局部倍數，文中提到 x10,000 機會，但未明定為整款遊戲的最高倍數；RTP 與波動度也未確認。"
 seoTitle: "轟炸糖果老虎機｜BNG 官方玩法資料｜Slot Hub"
 seoDescription: "BNG《轟炸糖果》官方資料整理：糖果符號得獎後會觸發連續消除，讓新符號落入盤面。原廠也列出彩虹果凍倍數、免費遊戲與購買功能。"
 features: [cascading, multiplier, free-spins, bonus-buy]

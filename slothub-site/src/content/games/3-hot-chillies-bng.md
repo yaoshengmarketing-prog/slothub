@@ -7,7 +7,7 @@ relatedGames: []
 provider: bng
 primaryType: slots
 subtypes: [video-slots]
-summary: "BNG《辣椒3重奏－集鴻運》（3 Hot Chillies）。三色辣椒分別累積在對應的進度表；集滿後開啟 Hold and Win 獎勵回合。原廠列出倍數、額外重轉與雙盤面功能。RTP、波動度與最高倍數在本次核對的官方來源未確認。"
+summary: "BNG《辣椒3重奏－集鴻運》（3 Hot Chillies）。三色辣椒分別累積在對應的進度表；集滿後開啟 Hold and Win 獎勵回合。原廠列出倍數、額外重轉與雙盤面功能。RTP、波動度與整款遊戲最高倍數未確認。原廠列出 Grand Jackpot 為投注額的 1,000 倍；這是獎勵回合獎項，不能視為整款遊戲的最高倍數。"
 seoTitle: "辣椒3重奏－集鴻運老虎機｜BNG 官方玩法資料｜Slot Hub"
 seoDescription: "BNG《辣椒3重奏－集鴻運》官方資料整理：三色辣椒分別累積在對應的進度表；集滿後開啟 Hold and Win 獎勵回合。原廠列出倍數、額外重轉與雙盤面功能。"
 features: [hold-and-spin, multiplier, jackpot]
