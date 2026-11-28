@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-15T00:00:00Z",
+  "generatedAt": "2026-11-28T07:20:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1646,
+  "gameCount": 1654,
   "providerCount": 372,
   "sourcePageCount": 3332,
   "counts": {
     "access-restricted": 4,
-    "available": 1192,
-    "not-verified": 450
+    "available": 1194,
+    "not-verified": 456
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -17,6 +17,134 @@
     "unknownLabel": "尚未核實精確入口"
   },
   "entries": [
+    {
+      "slug": "3-hot-chillies-bng",
+      "name": "3 Hot Chillies",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Terminal read-only GET verified the BNG catalog, exact single-game API, official artwork bytes and the precise /play/ path. The /play/ response redirected to official HTML; browser host was unavailable, so actual game rendering was not verified and no Demo URL is published.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/3_hot_chillies/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "happy-fish-bng",
+      "name": "Happy Fish",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Terminal read-only GET verified the BNG catalog, exact single-game API, official artwork bytes and the precise /play/ path. The /play/ response redirected to official HTML; browser host was unavailable, so actual game rendering was not verified and no Demo URL is published.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/happy_fish/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "candy-boom-bng",
+      "name": "Candy Boom",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Terminal read-only GET verified the BNG catalog, exact single-game API, official artwork bytes and the precise /play/ path. The /play/ response redirected to official HTML; browser host was unavailable, so actual game rendering was not verified and no Demo URL is published.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/candy_boom/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "big-heist-bng",
+      "name": "Big Heist",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Terminal read-only GET verified the BNG catalog, exact single-game API, official artwork bytes and the precise /play/ path. The /play/ response redirected to official HTML; browser host was unavailable, so actual game rendering was not verified and no Demo URL is published.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/big_heist/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "super-sticky-piggy-bng",
+      "name": "Super Sticky Piggy",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Terminal read-only GET verified the BNG catalog, exact single-game API, official artwork bytes and the precise /play/ path. The /play/ response redirected to official HTML; browser host was unavailable, so actual game rendering was not verified and no Demo URL is published.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/super_sticky_piggy/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "15-dragon-pearls-bng",
+      "name": "15 Dragon Pearls Hold and Win",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Terminal read-only GET verified the BNG catalog, exact single-game API, official artwork bytes and the precise /play/ path. The /play/ response redirected to official HTML; browser host was unavailable, so actual game rendering was not verified and no Demo URL is published.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/15_dragon_pearls/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "coin-volcano-bng",
+      "name": "Coin Volcano",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Terminal read-only GET verified the BNG catalog, exact single-game API, official artwork bytes and the precise /play/ path. The /play/ response redirected to official HTML; browser host was unavailable, so actual game rendering was not verified and no Demo URL is published.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/coin_volcano/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "pearl-diver-2-treasure-chest-bng",
+      "name": "Pearl Diver 2: Treasure Chest",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Terminal read-only GET verified the BNG catalog, exact single-game API, official artwork bytes and the precise /play/ path. The /play/ response redirected to official HTML; browser host was unavailable, so actual game rendering was not verified and no Demo URL is published.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/pearl_diver_2/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
     {
       "slug": "double-mummys-jewels-1000-pragmatic-play",
       "name": "Double Mummy's Jewels 1000",

@@ -1,21 +1,21 @@
 queue_id,master_id,zh_name,provider,type,provider_tier,provider_casino_count,game_casino_count,lobby_clicks_sum,work_type,slothub_slug,queue_state,blocker,pr,updated_at,note
-Q00001,TW00001,戰神賽特,ATG,slot,A,15,12,12092203,existing-check,storm-of-seth,pr_open,,38,2026-11-27,官方目錄與單款頁已核對
-Q00002,TW00002,戰神賽特2 覺醒之力,ATG,slot,A,15,11,3405881,existing-check,storm-of-seth-2-awakening,pr_open,,38,2026-11-27,官方目錄與單款頁已核對
+Q00001,TW00001,戰神賽特,ATG,slot,A,15,12,12092203,existing-check,storm-of-seth,done,,38,2026-11-28,官方目錄與單款頁已核對
+Q00002,TW00002,戰神賽特2 覺醒之力,ATG,slot,A,15,11,3405881,existing-check,storm-of-seth-2-awakening,done,,38,2026-11-28,官方目錄與單款頁已核對
 Q00003,TW00026,天宮聖女,BNG,slot,A,15,11,590417,msi-draft,bng-lady-fortune,blocked,other: waiting-pr-35（草稿已在 PR #35，等站主決定）,,2026-11-25,
 Q00004,TW00027,幸運幣大亨,BNG,slot,A,15,11,551190,msi-draft,bng-lucky-penny,blocked,other: waiting-pr-35（草稿已在 PR #35，等站主決定）,,2026-11-25,
-Q00005,TW00028,辣椒3重奏-集鴻運,BNG,slot,A,15,11,266018,new-page,,todo,,,2026-11-25,
-Q00006,TW00029,快樂魚,BNG,slot,A,15,11,237324,new-page,,todo,,,2026-11-25,
-Q00007,TW00030,轟炸糖果,BNG,slot,A,15,11,184203,new-page,,todo,,,2026-11-25,
-Q00008,TW00031,錢滾滾聖甲蟲,BNG,slot,A,15,11,181161,new-page,,todo,,,2026-11-25,
-Q00009,TW00032,驚天大盜,BNG,slot,A,15,11,175158,new-page,,todo,,,2026-11-25,
+Q00005,TW00028,辣椒3重奏-集鴻運,BNG,slot,A,15,11,266018,new-page,3-hot-chillies-bng,pr_open,,39,2026-11-28,BNG 官方目錄與單款 API、圖片已核對；Demo not-verified
+Q00006,TW00029,快樂魚,BNG,slot,A,15,11,237324,new-page,happy-fish-bng,pr_open,,39,2026-11-28,BNG 官方目錄與單款 API、圖片已核對；Demo not-verified
+Q00007,TW00030,轟炸糖果,BNG,slot,A,15,11,184203,new-page,candy-boom-bng,pr_open,,39,2026-11-28,BNG 官方目錄與單款 API、圖片已核對；Demo not-verified
+Q00008,TW00031,錢滾滾聖甲蟲,BNG,slot,A,15,11,181161,new-page,,blocked,name-uncertain: BNG 官方目錄與單款 API 均為 HTTP 200，但錢滾滾聖甲蟲無官方中文對照或 Game ID；Scarab Boost、Scarab Riches 等候選無法排除,,2026-11-28,
+Q00009,TW00032,驚天大盜,BNG,slot,A,15,11,175158,new-page,big-heist-bng,pr_open,,39,2026-11-28,BNG 官方目錄與單款 API、圖片已核對；Demo not-verified
 Q00010,TW00033,豬寶大盜,BNG,slot,A,15,11,171256,msi-draft,bng-sticky-piggy,blocked,other: waiting-pr-35（草稿已在 PR #35，等站主決定）,,2026-11-25,
-Q00011,TW00034,超級豬寶大盜,BNG,slot,A,15,11,165640,new-page,,todo,,,2026-11-25,
-Q00012,TW00035,15龍珠 - 集鴻運,BNG,slot,A,15,11,139733,new-page,,todo,,,2026-11-25,
+Q00011,TW00034,超級豬寶大盜,BNG,slot,A,15,11,165640,new-page,super-sticky-piggy-bng,pr_open,,39,2026-11-28,BNG 官方目錄與單款 API、圖片已核對；Demo not-verified
+Q00012,TW00035,15龍珠 - 集鴻運,BNG,slot,A,15,11,139733,new-page,15-dragon-pearls-bng,pr_open,,39,2026-11-28,BNG 官方目錄與單款 API、圖片已核對；Demo not-verified
 Q00013,TW00036,太陽神殿 - 集鴻運,BNG,slot,A,15,11,139591,msi-draft,bng-sun-of-egypt,blocked,other: waiting-pr-35（草稿已在 PR #35，等站主決定）,,2026-11-25,
 Q00014,TW00037,福虎生風 - 集鴻運,BNG,slot,A,15,11,136822,msi-draft,bng-tigers-gold,blocked,other: waiting-pr-35（草稿已在 PR #35，等站主決定）,,2026-11-25,
-Q00015,TW00038,雷霆寶藏: 集鴻運,BNG,slot,A,15,11,122915,new-page,,todo,,,2026-11-25,
-Q00016,TW00040,金爆火山-集鴻運,BNG,slot,A,15,11,114571,new-page,,todo,,,2026-11-25,
-Q00017,TW00041,採珠潛水員2: 藏寶箱,BNG,slot,A,15,11,88486,new-page,,todo,,,2026-11-25,
+Q00015,TW00038,雷霆寶藏: 集鴻運,BNG,slot,A,15,11,122915,new-page,,blocked,name-uncertain: BNG 官方目錄與單款 API 均為 HTTP 200，但雷霆寶藏無官方中文對照或 Game ID；Thunder Coins、Thunder Coins XXL 等候選無法排除,,2026-11-28,
+Q00016,TW00040,金爆火山-集鴻運,BNG,slot,A,15,11,114571,new-page,coin-volcano-bng,pr_open,,39,2026-11-28,BNG 官方目錄與單款 API、圖片已核對；Demo not-verified
+Q00017,TW00041,採珠潛水員2: 藏寶箱,BNG,slot,A,15,11,88486,new-page,pearl-diver-2-treasure-chest-bng,pr_open,,39,2026-11-28,BNG 官方目錄與單款 API、圖片已核對；Demo not-verified
 Q00018,TW00042,法老寶典: 多勝彩,BNG,slot,A,15,11,84686,new-page,,todo,,,2026-11-25,
 Q00019,TW00043,埃及女神,BNG,slot,A,15,11,76074,new-page,,todo,,,2026-11-25,
 Q00020,TW00044,777幣勝,BNG,slot,A,15,11,74847,new-page,,todo,,,2026-11-25,
@@ -187,8 +187,8 @@ Q00185,TW00432,火山傳說,ZG,slot,A,15,9,8252,new-page,,todo,,,2026-11-25,
 Q00186,TW00433,世界波,ZG,slot,A,15,9,7110,new-page,,todo,,,2026-11-25,
 Q00187,TW00434,淘金蛋,ZG,slot,A,15,9,5637,new-page,,todo,,,2026-11-25,
 Q00188,TW00435,跳跳跳,ZG,slot,A,15,9,4605,new-page,,todo,,,2026-11-25,
-Q00189,TW00003,孫行者,ATG,slot,A,15,8,344655,existing-check,sun-wu-kong,pr_open,,38,2026-11-27,官方目錄與單款頁已核對
-Q00190,TW00004,武俠,ATG,slot,A,15,8,250289,existing-enrich,wuxia-atg,pr_open,,38,2026-11-27,官方目錄與單款頁已核對
+Q00189,TW00003,孫行者,ATG,slot,A,15,8,344655,existing-check,sun-wu-kong,done,,38,2026-11-28,官方目錄與單款頁已核對
+Q00190,TW00004,武俠,ATG,slot,A,15,8,250289,existing-enrich,wuxia-atg,done,,38,2026-11-28,官方目錄與單款頁已核對
 Q00191,TW00436,真龍聚寶,ZG,slot,A,15,8,21891,new-page,,todo,,,2026-11-25,
 Q00192,TW00437,飛天嫦娥,ZG,slot,A,15,8,19001,new-page,,todo,,,2026-11-25,
 Q00193,TW00255,聚寶財神,RSG,slot,A,15,7,2090683,existing-enrich,caishen-fortunes-rsg,todo,,,2026-11-25,
@@ -197,13 +197,13 @@ Q00195,TW00257,開心農場,RSG,slot,A,15,7,2009767,existing-enrich,happy-farm-r
 Q00196,TW00258,戰神呂布,RSG,slot,A,15,7,1136702,existing-enrich,legend-of-lu-bu-rsg,todo,,,2026-11-25,
 Q00197,TW00259,麻將發了2,RSG,slot,A,15,7,947775,existing-enrich,rich-mahjong-2-rsg,todo,,,2026-11-25,
 Q00198,TW00260,狗來富,RSG,slot,A,15,7,485643,existing-enrich,good-fortune-dog-rsg,todo,,,2026-11-25,
-Q00199,TW00005,赤三國,ATG,slot,A,15,7,449664,existing-enrich,flaming-three-kingdoms-atg,pr_open,,38,2026-11-27,官方目錄與單款頁已核對
+Q00199,TW00005,赤三國,ATG,slot,A,15,7,449664,existing-enrich,flaming-three-kingdoms-atg,done,,38,2026-11-28,官方目錄與單款頁已核對
 Q00200,TW00261,美狄亞,RSG,slot,A,15,7,363862,existing-enrich,medea-rsg,todo,,,2026-11-25,
 Q00201,TW00262,超級王牌2,RSG,slot,A,15,7,287790,existing-enrich,super-ace-2-rsg,todo,,,2026-11-25,
 Q00202,TW00263,嗨起來,RSG,slot,A,15,7,285503,existing-enrich,get-high-rsg,todo,,,2026-11-25,
 Q00203,TW00264,龍王2,RSG,slot,A,15,7,274785,existing-enrich,dragon-king-2-rsg,todo,,,2026-11-25,
-Q00204,TW00006,虎小妹,ATG,slot,A,15,7,242366,existing-enrich,tiger-girl-atg,pr_open,,38,2026-11-27,官方目錄與單款頁已核對
-Q00205,TW00007,古神巴風特,ATG,slot,A,15,7,207335,existing-enrich,elder-god-baphomet,pr_open,,38,2026-11-27,官方目錄與單款頁已核對
+Q00204,TW00006,虎小妹,ATG,slot,A,15,7,242366,existing-enrich,tiger-girl-atg,done,,38,2026-11-28,官方目錄與單款頁已核對
+Q00205,TW00007,古神巴風特,ATG,slot,A,15,7,207335,existing-enrich,elder-god-baphomet,done,,38,2026-11-28,官方目錄與單款頁已核對
 Q00206,TW00266,72變,RSG,slot,A,15,7,164335,existing-enrich,seventy-two-changes-rsg,todo,,,2026-11-25,
 Q00207,TW00267,龍行天下,RSG,slot,A,15,7,163704,existing-enrich,dragon-fight-rsg,todo,,,2026-11-25,
 Q00208,TW00268,法老王 II,RSG,slot,A,15,7,163503,existing-enrich,pharaoh-2-rsg,todo,,,2026-11-25,
@@ -241,7 +241,7 @@ Q00239,TW00296,幸運水果,RSG,slot,A,15,7,43888,existing-enrich,lucky-fruits-r
 Q00240,TW00297,忍者,RSG,slot,A,15,7,43516,existing-enrich,ninja-rsg,todo,,,2026-11-25,
 Q00241,TW00140, 3壺滿金:集鴻運,BNG,slot,A,15,7,42275,new-page,,todo,,,2026-11-25,
 Q00242,TW00298,非洲,RSG,slot,A,15,7,41785,existing-enrich,africa-rsg,todo,,,2026-11-25,
-Q00243,TW00008,惡魔血域,ATG,slot,A,15,7,41699,new-page,vampire-atg,pr_open,,38,2026-11-27,既有 Vampire 頁補入原廠繁中名與官方中文卡片圖
+Q00243,TW00008,惡魔血域,ATG,slot,A,15,7,41699,new-page,vampire-atg,done,,38,2026-11-28,既有 Vampire 頁補入原廠繁中名與官方中文卡片圖
 Q00244,TW00299,諸神之戰：雷神VS戰神,RSG,slot,A,15,7,40209,existing-enrich,gods-of-war-thor-vs-seth-rsg,todo,,,2026-11-25,
 Q00245,TW00300,潑水節,RSG,slot,A,15,7,39319,existing-enrich,songkran-rsg,todo,,,2026-11-25,
 Q00246,TW00301,西部牛仔,RSG,slot,A,15,7,38012,existing-enrich,cowboy-rsg,todo,,,2026-11-25,
@@ -335,7 +335,7 @@ Q00333,TW00184,宙斯之怒,BNG,slot,A,15,6,31339,new-page,,todo,,,2026-11-25,
 Q00334,TW00185,幸運幣大亨: 集運金,BNG,slot,A,15,6,20882,new-page,,todo,,,2026-11-25,
 Q00335,TW00186,電音虎王 x1000,BNG,slot,A,15,6,19740,new-page,,todo,,,2026-11-25,
 Q00336,TW00187,閃電金幣XXL:集鴻運,BNG,slot,A,15,6,18205,new-page,,todo,,,2026-11-25,
-Q00337,TW00009,暴風獵手,ATG,slot,A,15,6,17626,existing-enrich,froststorm-hunter-atg,pr_open,,38,2026-11-27,官方目錄與單款頁已核對
+Q00337,TW00009,暴風獵手,ATG,slot,A,15,6,17626,existing-enrich,froststorm-hunter-atg,done,,38,2026-11-28,官方目錄與單款頁已核對
 Q00338,TW00188,太陽神殿5: 集鴻運,BNG,slot,A,15,6,15826,new-page,,todo,,,2026-11-25,
 Q00339,TW00189,3重金字塔,BNG,slot,A,15,6,14687,new-page,,todo,,,2026-11-25,
 Q00340,TW00190,金蘋果公主 x1000,BNG,slot,A,15,6,13662,new-page,,todo,,,2026-11-25,
@@ -345,7 +345,7 @@ Q00343,TW00442,大警長,ZG,slot,A,15,6,11364,new-page,,todo,,,2026-11-25,
 Q00344,TW00193,超3座金爆火山: 擊紅利,BNG,slot,A,15,6,11111,new-page,,todo,,,2026-11-25,
 Q00345,TW00194,皇冠強襲: 集鴻運,BNG,slot,A,15,6,11060,new-page,,todo,,,2026-11-25,
 Q00346,TW00195,閃電金幣 XXL: Multicoin,BNG,slot,A,15,6,10799,new-page,,todo,,,2026-11-25,
-Q00347,TW00010,金蓮三缺一,ATG,slot,A,15,6,9615,existing-enrich,jinlian-atg,pr_open,,38,2026-11-27,已依原廠繁中頁修正中文名與中獎倍率
+Q00347,TW00010,金蓮三缺一,ATG,slot,A,15,6,9615,existing-enrich,jinlian-atg,done,,38,2026-11-28,已依原廠繁中頁修正中文名與中獎倍率
 Q00348,TW00196,3皇家錢滾滾: 集鴻運,BNG,slot,A,15,6,8927,new-page,,todo,,,2026-11-25,
 Q00349,TW00197,3超級貪食熊貓: 集鴻運,BNG,slot,A,15,6,8439,new-page,,todo,,,2026-11-25,
 Q00350,TW00198,4聖甲蟲傳奇: 集鴻運,BNG,slot,A,15,6,7542,new-page,,todo,,,2026-11-25,
