@@ -1,0 +1,141 @@
+{
+  "checkedAt": "2026-11-24",
+  "stage": "READONLY_VALIDATION",
+  "sourceAssessment": "RG 品牌目錄（網址依站規不收錄）逐款列出遊戲名稱與數值，但網站的立即遊玩連到帶註冊推廣碼的娛樂城。依 Provider officialUrl 規則，不能將此網域直接用作廠商官網；數值與圖片暫不寫入公開 Game。",
+  "demoAssessment": "2026-11-25 以 Codex 內建瀏覽器逐款開啟 13 個 hall.rg888.dev 精確入口，均跳至 casino.rg888.dev 並載入名稱相符、帶 DEMO 標記及虛擬點數的選台畫面；屠龍勇者與大法師進一步選台，看到實際滾輪。先前 game_id=194 的人機驗證是不同連線結果。精確 Demo 可用性已核實，但供應商官網身份、數值來源仍有獨立缺口，不可自動發布。",
+  "games": [
+    {
+      "name": "屠龍勇者",
+      "rtpCandidate": 98.08,
+      "maxWinCandidate": 51000,
+      "volatilityCandidate": "HIGH",
+      "demoCandidate": "https://hall.rg888.dev/demo?tryLogin=true&language=zh_TW&game_id=193",
+      "demoVerifiedAt": "2026-11-25",
+      "demoObservedStatus": "reels-loaded",
+      "demoRedirectUrl": "https://casino.rg888.dev/?game=3015",
+      "rulesVerifiedAt": "2026-11-25",
+      "rulesUrl": "https://casino.rg888.dev/member/rule/?game=3015&style=dark&hall=888&lang=zh-tw&betLevel=2.5",
+      "rulesObserved": "遊戲內說明顯示相同符號得獎後消除與補滿盤面、2 至 500 倍倍數符號、4 至 6 個 Scatter 觸發 15 局免費遊戲、加注 50% 且免遊機率增加 100%；以當下下注 50 的賠付表顯示。該說明未列 RTP 或波動度，不能驗證品牌頁候選數字。"
+    },
+    {
+      "name": "大法師",
+      "rtpCandidate": 97.8,
+      "maxWinCandidate": 10000,
+      "volatilityCandidate": "LOW",
+      "demoCandidate": "https://hall.rg888.dev/demo?tryLogin=true&language=zh_TW&game_id=194",
+      "demoVerifiedAt": "2026-11-25",
+      "demoObservedStatus": "reels-loaded",
+      "demoRedirectUrl": "https://casino.rg888.dev/?game=3032"
+    },
+    {
+      "name": "爆爆怪妞",
+      "rtpCandidate": 97.74,
+      "maxWinCandidate": 51000,
+      "volatilityCandidate": "HIGH",
+      "demoCandidate": "https://hall.rg888.dev/demo?tryLogin=true&language=zh_TW&game_id=191",
+      "demoVerifiedAt": "2026-11-25",
+      "demoObservedStatus": "named-demo-selection-loaded",
+      "demoRedirectUrl": "https://casino.rg888.dev/?game=3014"
+    },
+    {
+      "name": "激鬥擂台",
+      "rtpCandidate": 97.63,
+      "maxWinCandidate": 10000,
+      "volatilityCandidate": "HIGH",
+      "demoCandidate": "https://hall.rg888.dev/demo?tryLogin=true&language=zh_TW&game_id=189",
+      "demoVerifiedAt": "2026-11-25",
+      "demoObservedStatus": "named-demo-selection-loaded",
+      "demoRedirectUrl": "https://casino.rg888.dev/?game=3016"
+    },
+    {
+      "name": "奇幻魔藥",
+      "rtpCandidate": 98.28,
+      "maxWinCandidate": 20000,
+      "volatilityCandidate": "HIGH",
+      "demoCandidate": "https://hall.rg888.dev/demo?tryLogin=true&language=zh_TW&game_id=167",
+      "demoVerifiedAt": "2026-11-25",
+      "demoObservedStatus": "named-demo-selection-loaded",
+      "demoRedirectUrl": "https://casino.rg888.dev/?game=3012"
+    },
+    {
+      "name": "搖滾派對",
+      "rtpCandidate": 97.25,
+      "maxWinCandidate": 50000,
+      "volatilityCandidate": "HIGH",
+      "demoCandidate": "https://hall.rg888.dev/demo?tryLogin=true&language=zh_TW&game_id=186",
+      "demoVerifiedAt": "2026-11-25",
+      "demoObservedStatus": "named-demo-selection-loaded",
+      "demoRedirectUrl": "https://casino.rg888.dev/?game=3008"
+    },
+    {
+      "name": "忍 Kunoichi",
+      "rtpCandidate": 97.9,
+      "maxWinCandidate": 51000,
+      "volatilityCandidate": "MEDIUM",
+      "demoCandidate": "https://hall.rg888.dev/demo?tryLogin=true&language=zh_TW&game_id=58",
+      "demoVerifiedAt": "2026-11-25",
+      "demoObservedStatus": "named-demo-selection-loaded",
+      "demoRedirectUrl": "https://casino.rg888.dev/?game=3009"
+    },
+    {
+      "name": "異星進化 UPUP",
+      "rtpCandidate": 97.98,
+      "maxWinCandidate": 100000,
+      "volatilityCandidate": "MEDIUM",
+      "demoCandidate": "https://hall.rg888.dev/demo?tryLogin=true&language=zh_TW&game_id=59",
+      "demoVerifiedAt": "2026-11-25",
+      "demoObservedStatus": "named-demo-selection-loaded",
+      "demoRedirectUrl": "https://casino.rg888.dev/?game=3006"
+    },
+    {
+      "name": "鬥雞",
+      "rtpCandidate": 97.94,
+      "maxWinCandidate": 200,
+      "volatilityCandidate": "LOW",
+      "demoCandidate": "https://hall.rg888.dev/demo?tryLogin=true&language=zh_TW&game_id=185",
+      "demoVerifiedAt": "2026-11-25",
+      "demoObservedStatus": "named-demo-selection-loaded",
+      "demoRedirectUrl": "https://casino.rg888.dev/?game=3030"
+    },
+    {
+      "name": "魚魚魚",
+      "rtpCandidate": 97.19,
+      "maxWinCandidate": 10240,
+      "volatilityCandidate": "MEDIUM",
+      "demoCandidate": "https://hall.rg888.dev/demo?tryLogin=true&language=zh_TW&game_id=183",
+      "demoVerifiedAt": "2026-11-25",
+      "demoObservedStatus": "named-demo-selection-loaded",
+      "demoRedirectUrl": "https://casino.rg888.dev/?game=3025"
+    },
+    {
+      "name": "福爾摩斯",
+      "rtpCandidate": 98.03,
+      "maxWinCandidate": 1000,
+      "volatilityCandidate": "LOW",
+      "demoCandidate": "https://hall.rg888.dev/demo?tryLogin=true&language=zh_TW&game_id=184",
+      "demoVerifiedAt": "2026-11-25",
+      "demoObservedStatus": "named-demo-selection-loaded",
+      "demoRedirectUrl": "https://casino.rg888.dev/?game=3028"
+    },
+    {
+      "name": "鮨 Sushi",
+      "rtpCandidate": 96.98,
+      "maxWinCandidate": 5000,
+      "volatilityCandidate": "LOW",
+      "demoCandidate": "https://hall.rg888.dev/demo?tryLogin=true&language=zh_TW&game_id=176",
+      "demoVerifiedAt": "2026-11-25",
+      "demoObservedStatus": "named-demo-selection-loaded",
+      "demoRedirectUrl": "https://casino.rg888.dev/?game=3021"
+    },
+    {
+      "name": "魔獸世界",
+      "rtpCandidate": 96.9,
+      "maxWinCandidate": 17500,
+      "volatilityCandidate": "MEDIUM",
+      "demoCandidate": "https://hall.rg888.dev/demo?tryLogin=true&language=zh_TW&game_id=51",
+      "demoVerifiedAt": "2026-11-25",
+      "demoObservedStatus": "named-demo-selection-loaded",
+      "demoRedirectUrl": "https://casino.rg888.dev/?game=3001"
+    }
+  ]
+}
