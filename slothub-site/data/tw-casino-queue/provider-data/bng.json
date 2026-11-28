@@ -6,6 +6,15 @@
     "https://bng.games/api/games"
   ],
   "catalogHttp": "2026-11-28 terminal read-only GET: homepage and /api/games HTTP 200; 213 available, 10 upcoming per official API; BNG single-game endpoints and original images checked individually. Built-in browser access host unavailable. No IP change or paid browser used.",
+  "publishedGameAudit": {
+    "checkedAt": "2026-11-28",
+    "scope": "28 published BNG queue games from PR #39, #41 and #43",
+    "officialPublicApi": "https://bng.games/api/games",
+    "results": "All 28 exact /api/games/<gameId> requests returned HTTP 200 and matched the local gameId, English title, BNG provider_name, single-game path and official banner. No top-level RTP, volatility, math, paytable or whole-game maximum-win field was present. The local image SHA256 matched the current official banner bytes for all 28; seven PNG banners were served as text/plain but had a valid PNG signature.",
+    "clientArea": "https://bng.games/api/client-area/games/happy_fish returned HTTP 302 to the BNG login page; /client_area/games/ returned HTTP 200 with a 983-byte HTML app shell, not game math or paytable values. The public frontend bundle contains math and paytable UI labels, but it is not a source of per-game values.",
+    "demo": "https://bng.games/play/happy_fish/ returned HTTP 200 HTML with a launcher and ephemeral token; no rendered game was visually verified because the built-in browser access host was unavailable. Keep Demo not-verified.",
+    "maximumWin": "https://bng.games/api/games/777_coins describes an x6,000+ wager payout specifically within the Hold and Win round, and a separate x2,000 Grand Jackpot symbol. Neither is an unambiguous whole-game maxWinMultiplier; leave the field null. Other jackpot and feature multipliers were likewise not promoted to whole-game caps."
+  },
   "catalogCount": 213,
   "catalog": [
     {
