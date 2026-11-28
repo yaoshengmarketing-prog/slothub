@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-28T07:20:00Z",
+  "generatedAt": "2026-11-28T08:55:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1654,
+  "gameCount": 1664,
   "providerCount": 372,
-  "sourcePageCount": 3332,
+  "sourcePageCount": 3352,
   "counts": {
     "access-restricted": 4,
     "available": 1194,
-    "not-verified": 456
+    "not-verified": 466
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -47750,6 +47750,166 @@
         }
       ],
       "browserReviewedAt": "2026-10-18"
+    },
+    {
+      "slug": "goddess-of-egypt-bng",
+      "name": "Goddess of Egypt",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description, and image bytes verified by terminal GET. Precise playable demo rendering was not verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/goddess_of_egypt/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "777-coins-bng",
+      "name": "777 Coins",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description, and image bytes verified by terminal GET. Precise playable demo rendering was not verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/777_coins/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "aztec-fire-2-bng",
+      "name": "Aztec Fire 2 Hold and Win",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description, and image bytes verified by terminal GET. Precise playable demo rendering was not verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/aztec_fire_2/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "green-chilli-2-bng",
+      "name": "Green Chilli 2",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description, and image bytes verified by terminal GET. Precise playable demo rendering was not verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/green_chilli_2/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "black-wolf-2-bng",
+      "name": "Black Wolf 2",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description, and image bytes verified by terminal GET. Precise playable demo rendering was not verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/black_wolf_2/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "fishin-bear-bng",
+      "name": "Fishin’ Bear",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description, and image bytes verified by terminal GET. Precise playable demo rendering was not verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/fishing_bear/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "dragon-pearls-bng",
+      "name": "Dragon Pearls Hold and Win",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description, and image bytes verified by terminal GET. Precise playable demo rendering was not verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/dragon_pearls/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "sun-of-egypt-3-bng",
+      "name": "Sun of Egypt 3 Hold and Win",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description, and image bytes verified by terminal GET. Precise playable demo rendering was not verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/sun_of_egypt_3/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "green-chilli-bng",
+      "name": "Green Chilli",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description, and image bytes verified by terminal GET. Precise playable demo rendering was not verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/green_chilli/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
+    },
+    {
+      "slug": "great-panda-bng",
+      "name": "Great Panda",
+      "provider": "bng",
+      "status": "not-verified",
+      "iframeStatus": "not-tested",
+      "checkedAt": "2026-11-28",
+      "evidence": "Official BNG exact game page, API identity, description, and image bytes verified by terminal GET. Precise playable demo rendering was not verified.",
+      "inspectedUrls": [
+        {
+          "requestedUrl": "https://bng.games/game/great_panda/",
+          "httpStatus": 200,
+          "notes": "Official exact single-game page and API returned 200."
+        }
+      ]
     }
   ]
 }
