@@ -7,7 +7,7 @@ relatedGames: []
 provider: bng
 primaryType: slots
 subtypes: [video-slots]
-summary: "BNG《快樂魚》（Happy Fish）。海洋主題的 Megalines 遊戲，原廠介紹 Power Wild 可加乘參與的得獎組合，免費遊戲中另有黏著 Wild。RTP、波動度與最高倍數在本次核對的官方來源未確認。"
+summary: "BNG《快樂魚》（Happy Fish）。海洋主題的 Megalines 遊戲，原廠介紹 Power Wild 可加乘參與的得獎組合，免費遊戲中另有黏著 Wild。RTP、波動度與整款遊戲最高倍數未確認。原廠介紹了 Power Wild 與黏著 Wild 免費遊戲，未在已核對資料公布 RTP、波動度或整款最高倍數。"
 seoTitle: "快樂魚老虎機｜BNG 官方玩法資料｜Slot Hub"
 seoDescription: "BNG《快樂魚》官方資料整理：海洋主題的 Megalines 遊戲，原廠介紹 Power Wild 可加乘參與的得獎組合，免費遊戲中另有黏著 Wild。"
 features: [free-spins, multiplier, wild, bonus-buy]

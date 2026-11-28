@@ -7,7 +7,7 @@ relatedGames: []
 provider: bng
 primaryType: slots
 subtypes: [video-slots]
-summary: "BNG《採珠潛水員2：藏寶箱》（Pearl Diver 2: Treasure Chest）。採珠潛水員續作的免費遊戲中，潛水員會收集珍珠獎值與寶箱彩金。每軸的金珍珠進度表集滿後，原廠說明可增加免費旋轉並保證下一轉該軸出現潛水員。RTP、波動度與最高倍數在本次核對的官方來源未確認。"
+summary: "BNG《採珠潛水員2：藏寶箱》（Pearl Diver 2: Treasure Chest）。採珠潛水員續作的免費遊戲中，潛水員會收集珍珠獎值與寶箱彩金。每軸的金珍珠進度表集滿後，原廠說明可增加免費旋轉並保證下一轉該軸出現潛水員。RTP、波動度與整款遊戲最高倍數未確認。原廠介紹 Treasure Chest Grand Jackpot 1,000 倍與單次旋轉可達 4,000 倍的特定情境；未將兩者明定為整款遊戲最高倍數。"
 seoTitle: "採珠潛水員2：藏寶箱老虎機｜BNG 官方玩法資料｜Slot Hub"
 seoDescription: "BNG《採珠潛水員2：藏寶箱》官方資料整理：採珠潛水員續作的免費遊戲中，潛水員會收集珍珠獎值與寶箱彩金。每軸的金珍珠進度表集滿後，原廠說明可增加免費旋轉並保證下一轉該軸出現潛水員。"
 features: [free-spins, wild, cash-collection, jackpot]

@@ -7,7 +7,7 @@ relatedGames: []
 provider: bng
 primaryType: slots
 subtypes: [video-slots]
-summary: "BNG《超級豬寶大盜》（Super Sticky Piggy）。豬寶竊盜主題續作；主遊戲的 Piggy Wild 帶有倍數，免費遊戲中 Wild 會留在盤面。原廠另介紹進度表與 Super Free Spins。RTP、波動度與最高倍數在本次核對的官方來源未確認。"
+summary: "BNG《超級豬寶大盜》（Super Sticky Piggy）。豬寶竊盜主題續作；主遊戲的 Piggy Wild 帶有倍數，免費遊戲中 Wild 會留在盤面。原廠另介紹進度表與 Super Free Spins。RTP、波動度與整款遊戲最高倍數未確認。原廠列出的 x2、x3、x5、x10 是 Wild 或免費遊戲局部倍數，不能視為整款遊戲最高倍數；RTP 與波動度未確認。"
 seoTitle: "超級豬寶大盜老虎機｜BNG 官方玩法資料｜Slot Hub"
 seoDescription: "BNG《超級豬寶大盜》官方資料整理：豬寶竊盜主題續作；主遊戲的 Piggy Wild 帶有倍數，免費遊戲中 Wild 會留在盤面。原廠另介紹進度表與 Super Free Spins。"
 features: [free-spins, wild, multiplier]
