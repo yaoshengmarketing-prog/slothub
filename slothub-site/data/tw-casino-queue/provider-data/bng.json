@@ -15,6 +15,12 @@
     "demo": "https://bng.games/play/happy_fish/ returned HTTP 200 HTML with a launcher and ephemeral token; no rendered game was visually verified because the built-in browser access host was unavailable. Keep Demo not-verified.",
     "maximumWin": "https://bng.games/api/games/777_coins describes an x6,000+ wager payout specifically within the Hold and Win round, and a separate x2,000 Grand Jackpot symbol. Neither is an unambiguous whole-game maxWinMultiplier; leave the field null. Other jackpot and feature multipliers were likewise not promoted to whole-game caps."
   },
+  "zhNameAudit": {
+    "checkedAt": "2026-11-28",
+    "queueIds": ["Q00008", "Q00015", "Q00018", "Q00024", "Q00029", "Q00041", "Q00043", "Q00045", "Q00056"],
+    "officialSources": ["https://bng.games/games/", "https://bng.games/api/games", "https://bng.games/api/games/clover_charm", "https://bng.games/api/games/charge_clovers", "https://bng.games/api/games/magic_clovers"],
+    "result": "官方 /api/games HTTP 200，213 筆目錄的公開欄位無 zh、zh-hant、title_zh 或 name_zh，JSON 無中文字。抽查 clover_charm 單款 API 的 languages 列表雖含 zh／zh-hant，但 ?lang=zh-hant、?language=zh-hant、?locale=zh-hant 與 Accept-Language: zh-Hant 測試仍回傳英文 title。抽查 /play/clover_charm/ launcher 的 HTML title 仍是英文，未取得官方中文名稱對照或 Game ID 對應。九筆既有 name-uncertain 維持 blocked；不得以原廠支援中文介面推論大廳中文名。"
+  },
   "catalogCount": 213,
   "catalog": [
     {
@@ -2342,7 +2348,46 @@
       "zhNames": [],
       "matchConfidence": "low",
       "matchNote": "name-uncertain: BNG 官方目錄與單款 API HTTP 200；「瘋狂淘金樂」無原廠中文名或 Game ID，Grab More Gold、Hit More Gold 等候選無法唯一排除。"
+    },
+    {
+      "queueIds": ["Q00032"],
+      "officialName": "Dragon-themed candidates",
+      "officialPageUrl": null,
+      "officialImageUrl": null,
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [],
+      "matchConfidence": "low",
+      "matchNote": "name-uncertain: 2026-11-28 官方目錄 https://bng.games/api/games 與單款 API 可用；「火龍秘寶: 幸運奪寶」缺官方中文名或 Game ID，Dragon Wealth、Treasures of Fire、Fire Temple 等龍／火／寶藏候選不能唯一排除。"
+    },
+    {
+      "queueIds": ["Q00067"],
+      "officialName": "Three-symbol candidates",
+      "officialPageUrl": null,
+      "officialImageUrl": null,
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [],
+      "matchConfidence": "low",
+      "matchNote": "name-uncertain: 2026-11-28 官方目錄 https://bng.games/api/games 可用；「大三元 - 集鴻運」缺官方中文名或 Game ID，3 Royal Coins、3 Coins、3 China Pots 等三符號／三罐系列不能唯一排除。"
+    },
+    {
+      "queueIds": ["Q00070"],
+      "officialName": "Clover Hit the Bonus candidates",
+      "officialPageUrl": null,
+      "officialImageUrl": null,
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [],
+      "matchConfidence": "low",
+      "matchNote": "name-uncertain: 2026-11-28 官方 https://bng.games/api/games/clover_charm HTTP 200，英文名 Clover Charm: Hit the Bonus、發行 2025-06-06、原圖 SHA256 437d86c58e6050406bcaeba7a5973bcd2925e09a63cc1727f8eef39937c3b654；https://bng.games/api/games/charge_clovers 同屬 Clover／Hit the Bonus，https://bng.games/api/games/magic_clovers 又吻合「魔幻四葉草」字面。沒有官方中文名或 Game ID 可唯一對應。/play/clover_charm/ 僅 HTTP 200 HTML，Demo 未目視核實。"
     }
-
-  ]
+  ],
+  "skipNote": "2026-11-28 本次建頁階段 Q00032、Q00067、Q00070 連續 3 款 name-uncertain blocked，依 queue README C 切換下一家；官方 API /api/games 及候選單款可存取，但缺三個中文大廳名對應原廠 Game ID 的證據。內建瀏覽器 browser access host unavailable，未使用付費瀏覽器或切換 IP。"
 }
