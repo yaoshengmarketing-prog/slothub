@@ -2,13 +2,13 @@
   "version": 2,
   "generatedAt": "2026-11-28T16:32:00Z",
   "checkedAt": "2026-10-15",
-  "gameCount": 1680,
+  "gameCount": 1679,
   "providerCount": 372,
-  "sourcePageCount": 3389,
+  "sourcePageCount": 3386,
   "counts": {
     "access-restricted": 4,
     "available": 1194,
-    "not-verified": 482
+    "not-verified": 481
   },
   "rules": {
     "owner": "Each Game record owns its public demo state; this report is operational QA only.",
@@ -48130,22 +48130,6 @@
       "inspectedUrls": [
         {
           "requestedUrl": "https://bng.games/game/3_pots_of_egypt/",
-          "httpStatus": 200,
-          "notes": "Official exact single-game page and API returned 200."
-        }
-      ]
-    },
-    {
-      "slug": "more-magic-apple-bng",
-      "name": "More Magic Apple",
-      "provider": "bng",
-      "status": "not-verified",
-      "iframeStatus": "not-tested",
-      "checkedAt": "2026-11-29",
-      "evidence": "Official BNG exact game page, API identity, bilingual social title and image SHA256 verified. Exact /play/ path redirected to HTTP 200 HTML; playable rendering was not visually verified because built-in browser host was unavailable.",
-      "inspectedUrls": [
-        {
-          "requestedUrl": "https://bng.games/game/more_magic_apple/",
           "httpStatus": 200,
           "notes": "Official exact single-game page and API returned 200."
         }

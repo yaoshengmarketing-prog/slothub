@@ -35,7 +35,7 @@
       "https://bng.games/api/games/charge_clovers",
       "https://bng.games/api/games/magic_clovers"
     ],
-    "result": "官方 /api/games HTTP 200，213 筆目錄的公開欄位無 zh、zh-hant、title_zh 或 name_zh，JSON 無中文字。抽查 clover_charm 單款 API 的 languages 列表雖含 zh／zh-hant，但 ?lang=zh-hant、?language=zh-hant、?locale=zh-hant 與 Accept-Language: zh-Hant 測試仍回傳英文 title。抽查 /play/clover_charm/ launcher 的 HTML title 仍是英文，未取得官方中文名稱對照或 Game ID 對應。九筆既有 name-uncertain 維持 blocked；不得以原廠支援中文介面推論大廳中文名。 2026-11-29: BNG public channel bilingual posts 108, 40, 126, 36 and 119 now uniquely map five later queue titles to first-party API game IDs; the earlier 12 name-uncertain rows were not reclassified in this run. Social post IDs are discovery/name evidence; game pages use first-party BNG detail/API/image URLs."
+    "result": "官方 /api/games HTTP 200，213 筆目錄的公開欄位無 zh、zh-hant、title_zh 或 name_zh，JSON 無中文字。抽查 clover_charm 單款 API 的 languages 列表雖含 zh／zh-hant，但 ?lang=zh-hant、?language=zh-hant、?locale=zh-hant 與 Accept-Language: zh-Hant 測試仍回傳英文 title。抽查 /play/clover_charm/ launcher 的 HTML title 仍是英文，未取得官方中文名稱對照或 Game ID 對應。九筆既有 name-uncertain 維持 blocked；不得以原廠支援中文介面推論大廳中文名。 2026-11-29: BNG public channel bilingual posts 108, 40, 126 and 119 now uniquely map four current queue titles to first-party API game IDs; the earlier 12 name-uncertain rows were not reclassified in this run. Social post IDs are discovery/name evidence; game pages use first-party BNG detail/API/image URLs. Bilingual post 36 maps More Magic Apple to distinct Q00143; Q00083 remains name-uncertain."
   },
   "catalogCount": 213,
   "catalog": [
@@ -1552,6 +1552,7 @@
     "Q00073",
     "Q00076",
     "Q00082",
+    "Q00083",
     "Q00084",
     "Q00085",
     "Q00087",
@@ -2461,24 +2462,6 @@
     },
     {
       "queueIds": [
-        "Q00083"
-      ],
-      "officialName": "More Magic Apple",
-      "officialGameId": "more_magic_apple",
-      "officialPageUrl": "https://bng.games/game/more_magic_apple/",
-      "officialImageUrl": "https://bng.games/media/public/more_magic_apple/more_magic_apple_banner_qsbqe.jpg",
-      "rtp": null,
-      "volatility": null,
-      "maxWin": null,
-      "demoUrl": null,
-      "zhNames": [
-        "瘋狂致命毒蘋果-集鴻運"
-      ],
-      "matchConfidence": "high",
-      "matchNote": "2026-11-29 BNG public bilingual channel post 36 explicitly pairs Chinese and English titles; official BNG catalog and exact API HTTP 200 confirm provider bng, game ID, release date, feature description and banner path. Image HTTP 200 image/jpeg SHA256 db6f41f46bcb25be903f8b127d412fbc772e6472f4a287a75a37f5bd63ef7079; visual title matches and local bytes match. Official specification only states a Grand Jackpot amount, not overall max win; RTP and volatility absent from checked API. Exact /play/ redirects to HTTP 200 HTML; gameplay not visually verified because built-in browser host unavailable. "
-    },
-    {
-      "queueIds": [
         "Q00086"
       ],
       "officialName": "3 China Pots",
@@ -2569,6 +2552,21 @@
       "zhNames": [],
       "matchConfidence": "low",
       "matchNote": "name-uncertain: 2026-11-29 official BNG catalog and exact candidate API HTTP 200; Super China Pots and other Pots variants remain possible; no official Chinese/Game ID mapping for 超級金滿福. No page or image was assigned."
+    },
+    {
+      "queueIds": [
+        "Q00083"
+      ],
+      "officialName": "Magic Apple / More Magic Apple candidates",
+      "officialPageUrl": null,
+      "officialImageUrl": null,
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [],
+      "matchConfidence": "low",
+      "matchNote": "name-uncertain: 2026-11-29 BNG bilingual channel posts 36 and 69 explicitly pair 瘋狂致命毒蘋果-集鴻運 with More Magic Apple, which is separate queue Q00143. Q00083 lacks that first word and BNG catalog lists magic_apple and more_magic_apple as separate IDs. No first-party evidence uniquely maps Q00083 to magic_apple or another exact game; do not use More Magic Apple image or page."
     }
   ],
   "skipNote": "2026-11-28 本次建頁階段 Q00032、Q00067、Q00070 連續 3 款 name-uncertain blocked，依 queue README C 切換下一家；官方 API /api/games 及候選單款可存取，但缺三個中文大廳名對應原廠 Game ID 的證據。內建瀏覽器 browser access host unavailable，未使用付費瀏覽器或切換 IP。"
