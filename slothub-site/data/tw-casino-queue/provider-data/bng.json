@@ -2567,6 +2567,51 @@
       "zhNames": [],
       "matchConfidence": "low",
       "matchNote": "name-uncertain: 2026-11-29 BNG bilingual channel posts 36 and 69 explicitly pair 瘋狂致命毒蘋果-集鴻運 with More Magic Apple, which is separate queue Q00143. Q00083 lacks that first word and BNG catalog lists magic_apple and more_magic_apple as separate IDs. No first-party evidence uniquely maps Q00083 to magic_apple or another exact game; do not use More Magic Apple image or page."
+    },
+    {
+      "queueIds": [
+        "Q00087"
+      ],
+      "officialName": "Wolf-themed candidates",
+      "officialPageUrl": null,
+      "officialImageUrl": null,
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [],
+      "matchConfidence": "low",
+      "matchNote": "name-uncertain: 2026-11-29 BNG official catalog and https://bng.games/api/games/wolf_saga HTTP 200, but no first-party bilingual title or Game ID evidence links 狼佐賀-集鴻運 uniquely to Wolf Saga; the catalog has other wolf-themed games. No page or image assigned."
+    },
+    {
+      "queueIds": [
+        "Q00091"
+      ],
+      "officialName": "Scarab-themed candidates",
+      "officialPageUrl": null,
+      "officialImageUrl": null,
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [],
+      "matchConfidence": "low",
+      "matchNote": "name-uncertain: 2026-11-29 BNG official catalog and https://bng.games/api/games/scarab_boost and https://bng.games/api/games/scarab_temple each HTTP 200; no first-party Chinese/Game ID mapping for 聖甲蟲大三元-集鴻運. No page or image assigned."
+    },
+    {
+      "queueIds": [
+        "Q00092"
+      ],
+      "officialName": "Diamonds Power candidates",
+      "officialPageUrl": null,
+      "officialImageUrl": null,
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [],
+      "matchConfidence": "low",
+      "matchNote": "name-uncertain: 2026-11-29 BNG official catalog and https://bng.games/api/games/diamonds_power and https://bng.games/api/games/diamonds_power_xxl each HTTP 200; these are distinct games and no first-party Chinese/Game ID mapping for 超能寶鑽: 集鴻運 was found. No page or image assigned."
     }
   ],
   "skipNote": "2026-11-28 本次建頁階段 Q00032、Q00067、Q00070 連續 3 款 name-uncertain blocked，依 queue README C 切換下一家；官方 API /api/games 及候選單款可存取，但缺三個中文大廳名對應原廠 Game ID 的證據。內建瀏覽器 browser access host unavailable，未使用付費瀏覽器或切換 IP。"
