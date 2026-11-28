@@ -853,6 +853,24 @@
     },
     {
       "queueIds": [
+        "Q00214"
+      ],
+      "officialName": "Roma",
+      "officialGameId": "100",
+      "officialPageUrl": null,
+      "officialImageUrl": null,
+      "rtp": null,
+      "volatility": null,
+      "maxWin": null,
+      "demoUrl": null,
+      "zhNames": [
+        "羅馬競技場"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official API reference HTTP 200 lists Roma / ID 100 / zh-TW queue title in slot codes. Official 89-game zh-TW catalog has no Roma. Exact /zh-TW/games_detail_100.html returns HTTP 200 but visible title is 404 Page Not Found. No official game image or game description found; do not publish."
+    },
+    {
+      "queueIds": [
         "Q00215"
       ],
       "officialName": "賞金獵人",
@@ -997,21 +1015,201 @@
     },
     {
       "queueIds": [
-        "Q00214"
+        "Q00223"
       ],
-      "officialName": "Roma",
-      "officialGameId": "100",
-      "officialPageUrl": null,
-      "officialImageUrl": null,
+      "officialName": "迦羅寶石4",
+      "officialGameId": "125",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_125.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/125/slot-FortuneGems4-rsg-detail-banner-desktop-bg.webp",
       "rtp": null,
       "volatility": null,
-      "maxWin": null,
+      "maxWin": 10100,
       "demoUrl": null,
       "zhNames": [
-        "羅馬競技場"
+        "迦羅寶石4"
       ],
       "matchConfidence": "high",
-      "matchNote": "2026-11-28 official API reference HTTP 200 lists Roma / ID 100 / zh-TW queue title in slot codes. Official 89-game zh-TW catalog has no Roma. Exact /zh-TW/games_detail_100.html returns HTTP 200 but visible title is 404 Page Not Found. No official game image or game description found; do not publish."
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 125 and title match existing Game fortune-gems-4-rsg; official image HTTP 200 image/webp SHA256 7fec8333aa9cfb6e3ad8376aab66b182102fdb068c185262d75a27bedb0acde5 equals local bytes; detail maximum 10100X matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00225"
+      ],
+      "officialName": "金色幸運草",
+      "officialGameId": "66",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_66.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/66/slot-GoldenLeafClover-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 1000,
+      "demoUrl": null,
+      "zhNames": [
+        "金色幸運草"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 66 and title match existing Game golden-leaf-clover-rsg; official image HTTP 200 image/webp SHA256 e524004527a4c4333160f510d4d0ea5a293ed86623ae91dcf5bb3f390df07185 equals local bytes; detail maximum 1000X matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00228"
+      ],
+      "officialName": "海神",
+      "officialGameId": "49",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_49.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/49/slot-Poseidon-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 200,
+      "demoUrl": null,
+      "zhNames": [
+        "海神"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 49 and title match existing Game poseidon-rsg; official image HTTP 200 image/webp SHA256 61fded427d7e1c26c450bd516ca7fa54e971ee8441d1ca87e331382c144ceb16 equals local bytes; detail maximum 200X matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00229"
+      ],
+      "officialName": "龍王",
+      "officialGameId": "30",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_30.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/30/slot-DragonKing-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 14500,
+      "demoUrl": null,
+      "zhNames": [
+        "龍王"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 30 and title match existing Game dragon-king-rsg; official image HTTP 200 image/webp SHA256 2a9671ec82ffe4ddebf4f86b670c23efb41a7aba3683c80622d16984b446041a equals local bytes; detail maximum 14500X matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00230"
+      ],
+      "officialName": "黃金之書",
+      "officialGameId": "61",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_61.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/61/slot-BookOfGold-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 5000,
+      "demoUrl": null,
+      "zhNames": [
+        "黃金之書"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 61 and title match existing Game book-of-gold-rsg; official image HTTP 200 image/webp SHA256 9a9fa9ba634b81ae92cb486a2865b6760abdf86899f71c70dcb884dbb50f2ad8 equals local bytes; detail maximum 5000X matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00231"
+      ],
+      "officialName": "美杜莎",
+      "officialGameId": "51",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_51.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/51/slot-Medusa-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 6500,
+      "demoUrl": null,
+      "zhNames": [
+        "美杜莎"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 51 and title match existing Game medusa-rsg; official image HTTP 200 image/webp SHA256 28444db0fa10e0f6653e0edcc2c1292eed3033d3132ebdcb75d41c6734908c98 equals local bytes; detail maximum 6500X matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00232"
+      ],
+      "officialName": "霓虹圓",
+      "officialGameId": "53",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_53.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/53/slot-NeonCircle-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 22600,
+      "demoUrl": null,
+      "zhNames": [
+        "霓虹圓"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 53 and title match existing Game neon-circle-rsg; official image HTTP 200 image/webp SHA256 481cc8bd7bd284b00e4669a2313d9f460b9ae7aa12c56fa4cd39d23bb945e931 equals local bytes; detail maximum 22600X matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00233"
+      ],
+      "officialName": "太極",
+      "officialGameId": "65",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_65.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/65/slot-TaiChi-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 200,
+      "demoUrl": null,
+      "zhNames": [
+        "太極"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 65 and title match existing Game tai-chi-rsg; official image HTTP 200 image/webp SHA256 4ae708cb815ce6402d6e0af1bf8b4d88cf29735768d6a3dbea80c9a3f00351a8 equals local bytes; detail maximum 200X matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00234"
+      ],
+      "officialName": "墨西哥辣椒",
+      "officialGameId": "42",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_42.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/42/slot-Jalapeno-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 500,
+      "demoUrl": null,
+      "zhNames": [
+        "墨西哥辣椒"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 42 and title match existing Game jalapeno-rsg; official image HTTP 200 image/webp SHA256 349c31164be9417e541369343c8bde2a3939ec78069679d739cf979c2147ded1 equals local bytes; detail maximum 500X matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00235"
+      ],
+      "officialName": "跳跳獅",
+      "officialGameId": "50",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_50.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/50/slot-DancingLion-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 500,
+      "demoUrl": null,
+      "zhNames": [
+        "跳跳獅"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW catalog/detail HTTP 200; ID 50 and title match existing Game dancing-lion-rsg; official image HTTP 200 image/webp SHA256 3264b37f9297f2536b67bec57bae3376a0d9f47c4ede9bf1f9e5a3b4852f357c equals local bytes; detail maximum 500X matches stored value. RTP/volatility not shown in checked public detail. Demo not rechecked this run."
+    },
+    {
+      "queueIds": [
+        "Q00236"
+      ],
+      "officialName": "Crown 5PK",
+      "officialGameId": "5001",
+      "officialPageUrl": "https://www.rsg-games.com/zh-TW/games_detail_5001.html",
+      "officialImageUrl": "https://www.rsg-games.com/assets/images/games/5001/slot-Crown5PK-rsg-detail-banner-desktop-bg.webp",
+      "rtp": null,
+      "volatility": null,
+      "maxWin": 1000,
+      "demoUrl": null,
+      "zhNames": [
+        "皇冠5PK"
+      ],
+      "matchConfidence": "high",
+      "matchNote": "2026-11-28 official zh-TW and en-US detail HTTP 200: exact title 皇冠5PK / Crown 5PK and ID 5001 in 89-game official catalog; official page classifies as 老虎機 / Slot and describes five-card hold/exchange plus multiplier. Official maximum 1000X and release 2024.11.27. Official image HTTP 200 image/webp SHA256 5b4fa0303bb4e0c6dbea953492aac8a1605ff4db9b3c5015dd0db94b35715590, visually shows playing cards; stored local bytes match. RTP/volatility not shown on checked detail. Demo gameplay not verified."
     }
   ]
 }
